@@ -125,10 +125,10 @@ const hideDropdown = (menu) => {
     }, 200);
 };
 
-onMounted(()=>{
+onMounted(() => {
     showDropdown('personal')
-    isPersonalDropdownVisible.value = true;
 })
+
 </script>
 
 <template>
@@ -136,7 +136,7 @@ onMounted(()=>{
         <div class="shadow-4xl absolute bottom-0 left-[-150px] translate-y-full">
             <div class="flex flex-col">
 
-                <div class="bg-black border-r border-brand-divider">
+                <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')"
                         href="/solutions/boards-and-governance"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"

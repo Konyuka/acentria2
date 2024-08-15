@@ -309,27 +309,30 @@ onBeforeUnmount(() => {
                 <div class="z-50 content-center">
                     <div class="relative flex flex-col px-4 hover:cursor-default">
                         <div @mouseenter="showDropdown('insurance')" @mouseleave="hideDropdown('insurance')"
+                            :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '' ]"
                             class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                             Insurance
                         </div>
 
                         <InsuranceDropDown v-show="isInsuranceDropdownVisible" @mouseenter="showDropdown('insurance')"
                             @mouseleave="hideDropdown('insurance')" />
-
-
                     </div>
                 </div>
 
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <div
+                            <div @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')"
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 Reinsurance
                             </div>
+
+                            <ReinsuranceDropDown v-show="isReinsuranceDropdownVisible"
+                                @mouseenter="showDropdown('insurance')" @mouseleave="hideDropdown('insurance')" />
                         </div>
                     </div>
                 </div>
+
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
@@ -340,6 +343,7 @@ onBeforeUnmount(() => {
                         </div>
                     </div>
                 </div>
+
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
@@ -350,6 +354,7 @@ onBeforeUnmount(() => {
                         </div>
                     </div>
                 </div>
+
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
@@ -360,6 +365,7 @@ onBeforeUnmount(() => {
                         </div>
                     </div>
                 </div>
+
             </div>
             <a href="request-a-demo.html"
                 class="font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-secondary-dark focus:ring-brand-secondary-dark px-4 py-3 text-base">Request
