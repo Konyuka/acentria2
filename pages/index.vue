@@ -3,9 +3,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <div id="__next">
-    <main class="jsx-2839774277 __className_e3c363 __ptNoRemap font-sans">
-      
+  <div id="__next">      
 
       <main>
         <div>
@@ -1344,6 +1342,5 @@ const route = useRoute()
         </div>
       </main>
 
-    </main>
   </div>
 </template>

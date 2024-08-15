@@ -239,10 +239,11 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
+    
     <div class="relative z-10 mx-auto hidden w-full px-8 py-1.5 lg:block bg-brand-gray">
         <div class="container mx-auto flex flex-row items-center justify-between">
-            <div></div>
-            <div class="flex flex-row items-center justify-end text-sm text-light-content">
+            <!-- <div></div> -->
+            <div class="flex flex-row items-center justify-end text-sm text-light">
                 <a href="company/partners.html"
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-light-icon">Partner</a><a
                     href="company/about-us.html"

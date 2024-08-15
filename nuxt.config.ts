@@ -6,15 +6,11 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'preload',
-          href: '/assets/media/2b3f1035ed87a788-s.p.woff2',
+          href: '/assets/media/2b3f1035ed87a788-s.p.woff',
           as: 'font',
-          type: 'font/woff2',
+          type: 'font/woff',
           crossorigin: 'anonymous',
           'data-next-font': 'size-adjust'
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
         },
         {
           rel: "stylesheet",
@@ -23,6 +19,19 @@ export default defineNuxtConfig({
           crossorigin: "anonymous",
           referrerpolicy: "no-referrer"
         },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: 'anonymous'
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'
+        }
       ],
       script: [
         // { src: "/assets/plugins/mediabox/mediabox.min.js", body: true },
