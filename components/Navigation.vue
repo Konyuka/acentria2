@@ -1,7 +1,7 @@
 <script setup>
 const isScrolled = ref(false);
 const bottomBarClass = computed(() => {
-    return isScrolled.value ? 'bg-secondary sticky shadow-4xl text-white border-secondary' : 'bg-secondary text-white border-gray-100'; // Change colors as needed
+    return isScrolled.value ? 'sticky' : '';
 });
 
 
@@ -19,72 +19,82 @@ const isReinsuranceDropdownVisible = ref(false);
 
 let hideTimeout = null;
 
-const personalCover = ref([
-    {
-        name: 'My Health',
-        link: '/insurance/health-insurance',
-    },
-    {
-        name: 'My Life',
-        link: '/insurance/life-insurance',
-    },
-    {
-        name: 'My Home',
-        link: '/insurance/home-insurance',
-    },
-    {
-        name: 'My Car',
-        link: '/insurance/motor-insurance',
-    },
-    {
-        name: 'My Travel',
-        link: '/insurance/travel-insurance',
-    },
-]);
-const corpCover = ref([
-    {
-        name: 'Staff Health Cover',
-        link: '/insurance/staff-health-cover',
-    },
-    {
-        name: 'Staff Travel Cover',
-        link: '/insurance/staff-travel-cover',
-    },
-    {
-        name: 'Office Content Cover',
-        link: '/insurance/office-content-cover',
-    },
-    {
-        name: 'Cyber Liability Cover',
-        link: '/insurance/cyber-liability-cover',
-    },
-    {
-        name: 'Credit Risk Cover',
-        link: '/insurance/credit-risk-cover',
-    },
-]);
-const bizCover = ref([
-    {
-        name: 'Biashara Cover',
-        link: '/insurance/biasahara-cover',
-    },
-    {
-        name: 'General Liability Insurance',
-        link: '/insurance/general-liability-insurance',
-    },
-    {
-        name: 'Product Liability Insurance',
-        link: '/insurance/product-liability-insurance',
-    },
-    {
-        name: 'Commercial Property Insurance',
-        link: '/insurance/commercial-property-insurance',
-    },
-    {
-        name: 'Crops and Livestock',
-        link: '/insurance/crops-and-livestock',
-    },
-]);
+const personalCover = ref({
+    name:'Personal Cover',
+    items: [
+        {
+            name: 'My Health',
+            description:'My Health content',
+            link: '/insurance/health-insurance',
+        },
+        {
+            name: 'My Life',
+            link: '/insurance/life-insurance',
+        },
+        {
+            name: 'My Home',
+            link: '/insurance/home-insurance',
+        },
+        {
+            name: 'My Car',
+            link: '/insurance/motor-insurance',
+        },
+        {
+            name: 'My Travel',
+            link: '/insurance/travel-insurance',
+        },
+    ]
+});
+const corpCover = ref({
+    name:'Corporate Cover',
+    items: [
+        {
+            name: 'Staff Health Cover',
+            link: '/insurance/staff-health-cover',
+        },
+        {
+            name: 'Staff Travel Cover',
+            link: '/insurance/staff-travel-cover',
+        },
+        {
+            name: 'Office Content Cover',
+            link: '/insurance/office-content-cover',
+        },
+        {
+            name: 'Cyber Liability Cover',
+            link: '/insurance/cyber-liability-cover',
+        },
+        {
+            name: 'Credit Risk Cover',
+            link: '/insurance/credit-risk-cover',
+        },
+    ]
+});
+const bizCover = ref({
+    name:'Business Cover',
+    items: [
+        {
+            name: 'Biashara Cover',
+            link: '/insurance/biasahara-cover',
+        },
+        {
+            name: 'General Liability Insurance',
+            link: '/insurance/general-liability-insurance',
+        },
+        {
+            name: 'Product Liability Insurance',
+            link: '/insurance/product-liability-insurance',
+        },
+        {
+            name: 'Commercial Property Insurance',
+            link: '/insurance/commercial-property-insurance',
+        },
+        {
+            name: 'Crops and Livestock',
+            link: '/insurance/crops-and-livestock',
+        },
+    ]
+});
 
 const reServices = ref([
     {
@@ -176,6 +186,8 @@ const acProducts = ref([
     },
 ]);
 
+const activeMenuData = ref([]);
+
 const showDropdown = (menu) => {
     if (hideTimeout) {
         clearTimeout(hideTimeout);
@@ -185,6 +197,10 @@ const showDropdown = (menu) => {
         isITDropdownVisible.value = false;
         isReinsuranceDropdownVisible.value = false;
 
+        activeMenuData.value = [];
+        activeMenuData.value.push(personalCover.value)
+        activeMenuData.value.push(corpCover.value)
+        activeMenuData.value.push(bizCover.value)
         isInsuranceDropdownVisible.value = true;
     } else if (menu == 'actuarial') {
         isInsuranceDropdownVisible.value = false;
@@ -225,7 +241,7 @@ const hideDropdown = (menu) => {
 };
 
 const handleScroll = () => {
-    isScrolled.value = window.scrollY > 50; // Adjust this value as needed
+    isScrolled.value = window.scrollY > 60;
 };
 
 onMounted(() => {
@@ -239,10 +255,10 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    
+
     <div class="relative z-10 mx-auto hidden w-full px-8 py-1.5 lg:block bg-brand-gray">
-        <div class="container mx-auto flex flex-row items-center justify-between">
-            <!-- <div></div> -->
+        <div class="font-sans container mx-auto flex flex-row items-center justify-between">
+            <div></div>
             <div class="flex flex-row items-center justify-end text-sm text-light">
                 <a href="company/partners.html"
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-light-icon">Partner</a><a
@@ -282,54 +298,71 @@ onBeforeUnmount(() => {
         </div>
     </div>
 
-    <div
-        class="sticky top-0 z-[100] mx-auto hidden w-full items-center justify-between px-4 py-4 transition-all duration-200 lg:flex false bg-white false">
+    <div :class="bottomBarClass"
+        class="top-10 z-[100] mx-auto hidden w-full items-center justify-between px-4 py-4 transition-all duration-200 lg:flex false bg-white false">
         <div class="container mx-auto items-center justify-between lg:flex">
-            <div class="flex">
-                <a href="index.html"><img alt="Diligent" fetchPriority="high" width="157" height="44" decoding="async"
-                        data-nimg="1" class="mr-8" style="color: transparent" src="/_next/image2e4b.svg" />
+            <div class="flex font-sans">
+                <a href="index.html"><img alt="Acentria" fetchPriority="high" width="250" height="100" decoding="async"
+                        data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png " />
                 </a>
-                <div class="z-50">
+
+                <div class="z-50 content-center">
                     <div class="relative flex flex-col px-4 hover:cursor-default">
-                        <div
+                        <div @mouseenter="showDropdown('insurance')" @mouseleave="hideDropdown('insurance')"
                             class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                            Solutions
+                            Insurance
                         </div>
+
+                        <InsuranceDropDown v-show="isInsuranceDropdownVisible" @mouseenter="showDropdown('insurance')"
+                            @mouseleave="hideDropdown('insurance')" />
+
+
                     </div>
                 </div>
-                <div class="z-50">
+
+                <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
                             <div
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Products
+                                Reinsurance
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="z-50">
+                <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
                             <div
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Industries
+                                Actuarial
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="z-50">
+                <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
                             <div
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Resources
+                                Investements
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-50 content-center">
+                    <div class="z-50">
+                        <div class="relative flex flex-col px-4 hover:cursor-default">
+                            <div
+                                class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                Tech
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <a href="request-a-demo.html"
-                class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-secondary text-white hover:bg-brand-secondary-dark focus:ring-brand-secondary-dark px-4 py-3 text-base">Request
+                class="font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-secondary-dark focus:ring-brand-secondary-dark px-4 py-3 text-base">Request
                 a demo<svg
                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                     fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
