@@ -106,7 +106,7 @@ onMounted(()=>{
 
                 <div class="bg-black border-r border-brand-divider">
                     <a @mouseenter="showDropdown('consulting')" @mouseleave="hideDropdown('consulting')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isConsultingDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-calculator text-lg undefined" translate="no"></i>
@@ -135,7 +135,7 @@ onMounted(()=>{
 
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-briefcase text-lg undefined" translate="no"></i>
@@ -164,7 +164,7 @@ onMounted(()=>{
 
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isProductsDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-box text-lg undefined" translate="no"></i>

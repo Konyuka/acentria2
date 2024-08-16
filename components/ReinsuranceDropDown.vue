@@ -122,7 +122,7 @@ onMounted(() => {
 
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-shield text-lg undefined" translate="no"></i>
@@ -151,7 +151,7 @@ onMounted(() => {
 
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('solutions')" @mouseleave="hideDropdown('solutions')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isSolutionsDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-cogs text-lg undefined" translate="no"></i>
@@ -180,7 +180,7 @@ onMounted(() => {
 
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('data')" @mouseleave="hideDropdown('data')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isDataDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-chart-line text-lg undefined" translate="no"></i>

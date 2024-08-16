@@ -1349,7 +1349,7 @@
                   iconName: "chart_data",
                   mouseEnter: () => a("Risk"),
                   active: "Risk" === e,
-                  href: "/solutions/pillar-hub-risk-and-strategy",
+                  href: "/solutions/pillar-hub-risk-and-strategy", 
                   children:
                     "Risk" === e &&
                     (0, t.jsxs)("div", {

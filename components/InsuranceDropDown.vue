@@ -152,7 +152,7 @@ onMounted(()=>{
 
                 <div class="bg-black border-r border-brand-divider">
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-user text-lg undefined " translate="no"></i>
@@ -181,7 +181,7 @@ onMounted(()=>{
 
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('corporate')" @mouseleave="hideDropdown('corporate')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isCorporateDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-users text-lg undefined" translate="no"></i>
@@ -210,7 +210,7 @@ onMounted(()=>{
 
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('business')" @mouseleave="hideDropdown('business')"
-                        href="/solutions/boards-and-governance"
+                        href="#"
                         :class="[isBusinessDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-briefcase text-lg undefined" translate="no"></i>
