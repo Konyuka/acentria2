@@ -317,45 +317,43 @@ const route = useRoute()
               <div class="relative p-4 lg:basis-1/2">
                 <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy" width="500"
                   height="350" decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                  src="_next/imageaa61.png?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F33u1mixi%2Fproduction%2Fe7fdd088c7c28da2dbc7521c7f8751665d80e4cb-2340x2300.png%3Fq%3D90%26fit%3Dmax%26auto%3Dformat&amp;w=1080&amp;q=75" />
+                  class="rounded-lg"
+                  src="https://images.pexels.com/photos/7821685/pexels-photo-7821685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
               </div>
               <div class="flex flex-col justify-center lg:basis-1/2">
-                <label class="text-base leading-normal font-regular text-light-highlight font-bold">THE
-                  LEADER IN GRC</label>
+                <label class="text-base leading-normal font-regular text-light-highlight font-semibold">
+                  We belive in innovation and simplicity
+                </label>
                 <h2 id
                   class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                  Forrester recognizes Diligent as a
-                  Leader in GRC software
+                  Leader in Industry Standards
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
                   <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
-                    Diligent redefines governance,
-                    risk and compliance
-                    management, earning the highest
-                    recognition in Forrester
-                    Wave™ Q4 2023 as the only
-                    platform integrating boards of
-                    directors into the GRC
-                    ecosystem. Scoring top marks in
-                    14 categories including user
-                    experience and regulatory
-                    change management, Diligent
-                    “sets the standard for
-                    modern governance.”
+                    Uncover the fantastic opportunity to team up with Acentria Group, where collaboration is not just a
+                    buzzword but a way of life. In the world of Acentria Group, success isn't just a destination, it's a
+                    shared experience. With our innovative approach, award-winning culture, and unwavering focus on
+                    community, we stand as the epitome of what an ideal partnership should be. Welcome to a realm where
+                    simplicity meets professionalism, and your aspirations find a home.
+
+                    Experience the genuine difference that Acentria Group offers in a journey tailored for success,
+                    where your potential unfolds in every collaborative moment.
                   </p>
                 </div>
                 <a href="resources/research/diligent-sets-the-standard-for-modern-grc.html"
-                  class="cursor-pointer font-semibold text-brand-primary hover:text-brand-primary-dark text-base relative flex items-center w-fit self-center md:self-start">Explore
-                  the full report and see what sets
-                  Diligent
-                  apart<svg
+                  class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-primary-dark text-base relative flex items-center w-fit self-center md:self-start">
+                  Download Profile
+
+                  <i class="ml-2 fas fa-download"></i>
+                  <!-- <svg
                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
                     fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                     <g fill-rule="evenodd">
                       <path class="transition-opacity opacity-0" d="M0 5h7"></path>
                       <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4"></path>
                     </g>
-                  </svg></a>
+                  </svg> -->
+                </a>
               </div>
             </div>
           </div>
@@ -604,97 +602,68 @@ const route = useRoute()
                   <div
                     class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                     <div class="flex h-fit flex-col">
-                      <i class="material-symbols-outlined text-brand-primary text-4xl pb-4" translate="no">apps</i>
+                      <i class="fas fa-tools text-brand-primary text-4xl pb-4" translate="no"></i>
                       <div>
                         <h4 id
                           class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                          More than a
-                          collection of point
-                          solutions
+                          Risk Management Solutions
                         </h4>
                       </div>
                       <p
                         class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                        Bring all your
-                        governance, risk,
-                        compliance and ESG
-                        activities into one
-                        centralized platform, so
-                        you can
-                        easily deliver key
-                        insights to the board.
+                        Advanced tools for managing and assessing risk across insurance, reinsurance, and investment
+                        portfolios.
                       </p>
                     </div>
                   </div>
                   <div
                     class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                     <div class="flex h-fit flex-col">
-                      <i class="material-symbols-outlined text-brand-primary text-4xl pb-4" translate="no">web_asset</i>
+                      <i class="fas fa-chart-line text-brand-primary text-4xl pb-4" translate="no"></i>
                       <div>
                         <h4 id
                           class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                          More than a simple
-                          user interface
+                          Actuarial Analytics and Modeling
                         </h4>
                       </div>
                       <p
                         class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                        Access an intuitive GRC
-                        platform with analytics
-                        and
-                        automation built into
-                        its core.
+                        Robust actuarial modeling and analytics capabilities for accurate forecasting and financial
+                        projections.
                       </p>
                     </div>
                   </div>
                   <div
                     class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                     <div class="flex h-fit flex-col">
-                      <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                        translate="no">format_align_justify</i>
+                      <i class="fas fa-chart-pie text-brand-primary text-4xl pb-4" translate="no"></i>
                       <div>
                         <h4 id
                           class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                          More than a
-                          spreadsheet
+                          Investment Portfolio Optimization
                         </h4>
                       </div>
                       <p
                         class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                        Reduce human error,
-                        eliminate data gaps, and
-                        save
-                        your organization time
-                        and money. No extra
-                        headcount
-                        needed.
+                        Tools for optimizing investment portfolios, including performance tracking, asset allocation,
+                        and risk-return analysis.
                       </p>
                     </div>
                   </div>
                   <div
                     class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                     <div class="flex h-fit flex-col">
-                      <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                        translate="no">table_view</i>
+                      <i class="fas fa-laptop-code text-brand-primary text-4xl pb-4" translate="no"></i>
                       <div>
                         <h4 id
                           class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                          More than a GRC tool
+                          Integrated Tech Solutions
                         </h4>
                       </div>
                       <p
                         class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                        Whether you’re privately
-                        held, publicly traded or
-                        a
-                        mission-driven
-                        organization, the
-                        Diligent One
-                        Platform seamlessly
-                        integrates board
-                        management with
-                        a comprehensive set of
-                        GRC applications.
+                        A suite of tech solutions designed to streamline operations, enhance data management, and
+                        support digital transformation in the insurance and investment sectors.
                       </p>
                     </div>
                   </div>
@@ -705,10 +674,10 @@ const route = useRoute()
 
           <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-              <div class="relative p-4 lg:basis-1/2">
+              <div class="relative p-4 lg:basis-1/2 ">
                 <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
-                  decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                  src="_next/image18ed.png?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F33u1mixi%2Fproduction%2F34b1a095e597e23ebc02b3fe1cfcf0fbca41906c-2340x1630.png%3Fq%3D90%26fit%3Dmax%26auto%3Dformat&amp;w=1080&amp;q=75" />
+                  decoding="async" data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                  src="https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
               </div>
               <div class="flex flex-col justify-center lg:basis-1/2">
                 <label class="text-base leading-normal font-regular text-light-highlight font-bold">Build
@@ -716,16 +685,13 @@ const route = useRoute()
                 </label>
                 <h2 id
                   class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                  Elevate strategic risk management
+                  Empower Your Business with Innovative Insurance and Investment Solutions.
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
                   <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
-                    Give leaders the insights they
-                    need to make more
-                    confident, risk-informed
-                    decisions — so your
-                    organization is ready for
-                    anything that comes its way.
+                    Transform your operations with advanced risk management, precise actuarial analytics, and
+                    cutting-edge technology to drive growth and resilience. Let us help you navigate complexities and
+                    seize opportunities with confidence.
                   </p>
                 </div>
               </div>
@@ -733,8 +699,8 @@ const route = useRoute()
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
               <div class="relative p-4 lg:basis-1/2">
                 <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
-                  style="color: transparent; object-fit: contain"
-                  src="_next/image2533.png?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F33u1mixi%2Fproduction%2F7d555120bc36cfc7da18ed84cd4e08cb3dec8c7f-2340x1630.png%3Fq%3D90%26fit%3Dmax%26auto%3Dformat&amp;w=1080&amp;q=75" />
+                  style="color: transparent; object-fit: contain" class="rounded-lg"
+                  src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
               </div>
               <div class="flex flex-col justify-center lg:basis-1/2">
                 <label class="text-base leading-normal font-regular text-light-highlight font-bold">Stay
@@ -742,15 +708,12 @@ const route = useRoute()
                 </label>
                 <h2 id
                   class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                  Enable growth
+                  Elevate Your Strategies with Precision and Innovation
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
                   <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
-                    Empower leaders to act quickly
-                    and take more ambitious
-                    steps that drive growth and
-                    create new revenue streams
-                    in the short and long term.
+                    Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and
+                    investment decisions, ensuring you stay ahead in a rapidly evolving market.
                   </p>
                 </div>
               </div>
@@ -758,23 +721,20 @@ const route = useRoute()
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
               <div class="relative p-4 lg:basis-1/2">
                 <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
-                  decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                  src="_next/image4293.png?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F33u1mixi%2Fproduction%2Ff5056e6e088e7b9d6ca654aeacb665db67c09d37-2340x1630.png%3Fq%3D90%26fit%3Dmax%26auto%3Dformat&amp;w=1080&amp;q=75" />
+                  decoding="async" data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                  src="https://images.pexels.com/photos/7688460/pexels-photo-7688460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
               </div>
               <div class="flex flex-col justify-center lg:basis-1/2">
                 <label class="text-base leading-normal font-regular text-light-highlight font-bold">Reinforce
                   investor confidence</label>
                 <h2 id
                   class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                  Ensure regulatory compliance
+                  Unlock Greater Efficiency and Insight with Our Expertise.
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
                   <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
-                    Identify and manage risk, and
-                    avoid the costly penalties
-                    and legal and reputational
-                    damages that result from
-                    noncompliance.
+                    Streamline your operations and enhance decision-making with our integrated solutions in risk
+                    management, actuarial services, and tech advancements tailored for your industry needs.
                   </p>
                 </div>
               </div>
@@ -814,8 +774,10 @@ const route = useRoute()
                     <blockquote class="text-lg font-semibold leading-8 text-dark-content sm:leading-9">
                       <p
                         class="text-base leading-normal font-regular undefined leading-2 mb-1 text-xl font-thin md:text-base md:font-normal">
-                        "Greetings from Acentria Group, <br> I can confidently say that our comprehensive solutions have saved
-                        our clients significant costs while enhancing their decision-making processes. <br> Our expertise in
+                        "Greetings from Acentria Group, <br> I can confidently say that our comprehensive solutions have
+                        saved
+                        our clients significant costs while enhancing their decision-making processes. <br> Our
+                        expertise in
                         in the niche empowers businesses to thrive
                         in a complex world. Join us and experience the Acentria difference."
                       </p>
@@ -879,10 +841,7 @@ const route = useRoute()
                           class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Blog</label>
                         <h6
                           class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
-                          AI is here. AI
-                          regulations are on
-                          the way. Is your
-                          board ready?
+                          The Future of Insurance: How Acentria Group is Leading the Way
                         </h6>
                       </div>
                       <p
@@ -934,7 +893,7 @@ const route = useRoute()
                                         bottom: 0;
                                         color: transparent;
                                       " sizes="240w 100vw"
-                                  src="../cdn.sanity.io/images/33u1mixi/production/91928133ffeaf4a72748532d135837eff8dcff69-3334x250197c5.png?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
+                                  src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                               </picture>
                             </div>
                           </div>
@@ -953,11 +912,7 @@ const route = useRoute()
                           class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Guide</label>
                         <h6
                           class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
-                          Stronger
-                          consolidation:
-                          Elevating your GRC
-                          maturity for better
-                          risk management
+                          Navigating Reinsurance: Strategies for Success
                         </h6>
                       </div>
                       <p
@@ -1010,7 +965,7 @@ const route = useRoute()
                                         bottom: 0;
                                         color: transparent;
                                       " sizes="240w 100vw"
-                                  src="../cdn.sanity.io/images/33u1mixi/production/390236a7f54c1b802a03ad94f9dd09c4a9963a2d-3334x250197c5.jpg?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
+                                  src="https://images.pexels.com/photos/12442888/pexels-photo-12442888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                               </picture>
                             </div>
                           </div>
@@ -1029,8 +984,7 @@ const route = useRoute()
                           class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Guide</label>
                         <h6
                           class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
-                          Your guide to GRC
-                          vendor consolidation
+                          Actuarial Insights: Enhancing Decision-Making with tech
                         </h6>
                       </div>
                       <p
@@ -1084,7 +1038,7 @@ const route = useRoute()
                                         bottom: 0;
                                         color: transparent;
                                       " sizes="240w 100vw"
-                                  src="../cdn.sanity.io/images/33u1mixi/production/99c7224c9e1d6d90ef746a0bd0a35f5c56fa7d31-1080x72097c5.jpg?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
+                                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" />
                               </picture>
                             </div>
                           </div>
@@ -1105,11 +1059,7 @@ const route = useRoute()
                           class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
                           The case for
                           purpose-built
-                          software: Why
-                          tailored
-                          programming
-                          outperforms modified
-                          solutions
+                          software
                         </h6>
                       </div>
                       <p
@@ -1140,84 +1090,6 @@ const route = useRoute()
             </div>
           </section>
 
-          <div
-            class="flex flex-col gap-6 pb-12 pt-16 bg-brand-gray-1 mx-auto w-full items-center justify-center text-center">
-            <div class="max-w-5xl">
-              <div class="w-full pb-5">
-                <h2
-                  class="font-sans tracking-normal text-2xl lg:text-3xl h2 text-gray-900 font-semibold leading-tight lg:leading-tight">
-                  We are committed to providing a
-                  robust and secure service
-                  that protects all our customers’
-                  data.
-                </h2>
-              </div>
-              <div>
-                <p class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                  Diligent’s Security Program is
-                  governed based on the NIST
-                  Cybersecurity Framework and Diligent
-                  follows ISO/IEC 27001
-                  standards to keep information assets
-                  secure by
-                  implementing an Information Security
-                  Management System
-                  (ISMS).
-                </p>
-              </div>
-              <div class="mb-4 flex flex-wrap items-center justify-evenly gap-4 pb-8 pt-5 md:flex-row">
-                <div>
-                  <img alt="Image 0" loading="lazy" width="200" height="200" decoding="async" data-nimg="1"
-                    class="false undefined max-h-[80px] max-w-[120px]" style="color: transparent"
-                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                    src="../cdn.sanity.io/images/33u1mixi/production/b2b4fb47d8a545eafab82cd39185b1da68cbee42-200x11797c5.png?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
-                </div>
-                <div>
-                  <img alt="Image 1" loading="lazy" width="200" height="200" decoding="async" data-nimg="1"
-                    class="false undefined max-h-[80px] max-w-[120px]" style="color: transparent"
-                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                    src="../cdn.sanity.io/images/33u1mixi/production/37d6a5d06855594bf62e03d15dcce304c6797889-800x43997c5.png?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
-                </div>
-                <div>
-                  <img alt="Image 2" loading="lazy" width="200" height="200" decoding="async" data-nimg="1"
-                    class="false undefined max-h-[80px] max-w-[120px]" style="color: transparent"
-                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                    src="../cdn.sanity.io/images/33u1mixi/production/dc27e7d33ff7f7e30303cc5ad9da07a222ddf45b-177x6397c5.png?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
-                </div>
-                <div>
-                  <img alt="Image 3" loading="lazy" width="200" height="200" decoding="async" data-nimg="1"
-                    class="false undefined max-h-[80px] max-w-[120px]" style="color: transparent"
-                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                    src="https://cdn.sanity.io/images/33u1mixi/production/6110044bd0da11139fee025ac486681c85cbd022-82x80.svg?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
-                </div>
-                <div>
-                  <img alt="Image 4" loading="lazy" width="200" height="200" decoding="async" data-nimg="1"
-                    class="false undefined max-h-[80px] max-w-[120px]" style="color: transparent"
-                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                    src="../cdn.sanity.io/images/33u1mixi/production/25db433de34821c0f3bdc6ffa020e2960209176d-543x31397c5.png?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
-                </div>
-                <div>
-                  <img alt="Image 5" loading="lazy" width="200" height="200" decoding="async" data-nimg="1"
-                    class="false undefined max-h-[80px] max-w-[120px]" style="color: transparent"
-                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                    src="https://cdn.sanity.io/images/33u1mixi/production/39760c243eb79af4cffe8658b5a6870a111879ca-72x91.svg?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
-                </div>
-              </div>
-              <div class="w-full pt-7">
-                <a href="trust.html" target="_blank" rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Learn
-                  more<svg
-                    class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
-                    fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                    <g fill-rule="evenodd">
-                      <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                      <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4"></path>
-                    </g>
-                  </svg></a>
-              </div>
-            </div>
-          </div>
-
           <div class="bg-cover bg-center py-8 md:py-16 lg:py-20" style="
                   background-image: url(https://cdn.sanity.io/images/33u1mixi/production/b695dd70af0f5f4be3c091f4607fd14514ac5650-1440x447.svg);
                 ">
@@ -1228,12 +1100,10 @@ const route = useRoute()
                     <div class="mb-4 !text-dark-content">
                       <h2 id
                         class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight undefined lg:pt10 pt-6">
-                        Clarity &amp; control
-                        for the agile
-                        enterprise.
+                        Partner with Acentria Group for <br> Unmatched Expertise and Security
                       </h2>
                       <p class="undefined undefined">
-                        Reach out to our sales
+                        Reach out to our support
                         team, and we’ll work
                         with you
                         to schedule a demo or
@@ -1242,7 +1112,7 @@ const route = useRoute()
                     </div>
                     <a href="request-a-demo.html"
                       class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Talk
-                      to sales<svg
+                      to support<svg
                         class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                         fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                         <g fill-rule="evenodd">
@@ -1256,7 +1126,7 @@ const route = useRoute()
                     <div
                       class="flex flex-col items-center justify-start border-b border-b-brand-divider px-4 py-6 text-center md:items-start md:border-b-0 md:border-r md:border-r-brand-divider md:py-0 md:text-left">
                       <div class="flex flex-row items-center gap-2">
-                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
+                        <i class="material-symbols-outlined text-brand-primary text-2xl undefined"
                           translate="no">security</i>
                         <div class="!text-dark-content">
                           <h3 id
@@ -1290,7 +1160,7 @@ const route = useRoute()
                     <div
                       class="flex flex-col items-center justify-start px-4 py-6 text-center md:items-start md:py-0 md:text-left">
                       <div class="flex flex-row items-center gap-2">
-                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
+                        <i class="material-symbols-outlined text-brand-primary text-2xl undefined"
                           translate="no">account_circle</i>
                         <div class="!text-dark-content">
                           <h3 id

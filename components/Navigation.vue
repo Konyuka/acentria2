@@ -356,7 +356,7 @@ onBeforeUnmount(() => {
                         <div class="relative flex flex-col px-4 hover:cursor-default">
                             <div
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Investements
+                                Investments
                             </div>
                         </div>
                     </div>
