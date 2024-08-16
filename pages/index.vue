@@ -553,7 +553,7 @@ const route = useRoute()
                       translate="no">mouse</i><label
                       class="font-sans tracking-normal text-xs text-gray-300 lg:text-sm">Hover
                       on the pillars to learn more
-                      about the Diligent
+                      about the Acentria
                       One Platform</label>
                   </div>
                 </div>
@@ -1152,7 +1152,7 @@ const route = useRoute()
                           Ensuring your data
                           is protected is
                           critical to
-                          Diligent. Learn how
+                          Acentria. Learn how
                           we protect your
                           data.
                         </p>
