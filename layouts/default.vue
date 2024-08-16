@@ -25,7 +25,7 @@ onMounted(() => {
 
 <template>
 
-    <div class="font-sans">
+    <div class="">
         <Navigation />
     
         <slot />

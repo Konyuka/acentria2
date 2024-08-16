@@ -49,7 +49,7 @@ const route = useRoute()
                   </div>
                   <div class="w-full">
                     <a href="request-a-demo.html"
-                      class="button-animation inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-700 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
+                      class="font-sans button-animation inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-700 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                       Learn more about us
                       <svg
                         class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
@@ -62,7 +62,7 @@ const route = useRoute()
                       </svg>
                     </a>
                     <a href="pricing.html"
-                      class="button-animation inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-700 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
+                      class="font-sans button-animation inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-700 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                       Contact Us
                       <svg
                         class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
@@ -259,7 +259,7 @@ const route = useRoute()
             <div class="bg-secondary">
               <div class="container mx-auto px-4">
                 <div class="mb-12 flex flex-col items-center"></div>
-                <div class="flex flex-wrap justify-center gap-x-16">
+                <div class="font-sans flex flex-wrap justify-center gap-x-16">
                   <div class="mb-12 flex items-center justify-center">
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                       <span
@@ -312,7 +312,7 @@ const route = useRoute()
             </div>
           </div>
 
-          <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
+          <div class="font-sans py-6 text-white xl:py-12" style="background-color: #f6f8fc">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
               <div class="relative p-4 lg:basis-1/2">
                 <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy" width="500"
@@ -381,6 +381,9 @@ const route = useRoute()
               </h2>
               <div class="relative grid grid-cols-1 items-center gap-4 lg:grid-cols-2 lg:gap-10 lg:pb-28">
                 <div class="relative flex flex-col items-center">
+
+
+                  <!-- SVG Art -->
                   <div class="container max-w-lg overflow-y-visible pb-4 lg:pb-10">
                     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1"
                       viewBox="0 0 2158.75 2334">
@@ -543,6 +546,7 @@ const route = useRoute()
                       </svg>
                     </svg>
                   </div>
+
                   <div
                     class="absolute -bottom-2 flex items-center transition-all lg:-bottom-0 -translate-x-5 opacity-0">
                     <i class="material-symbols-outlined text-dark-icon text-2xl inline-block"
@@ -554,7 +558,7 @@ const route = useRoute()
                   </div>
                 </div>
                 <div>
-                  <div class="mx-auto flex flex-col items-start justify-start block">
+                  <div class="font-sans mx-auto flex flex-col items-start justify-start block">
                     <h2
                       class="font-sans tracking-normal text-3xl lg:text-4xl text-white font-bold leading-tight lg:leading-tight pb-5 lg:pb-10">
                       <span>Our Lines
@@ -564,24 +568,30 @@ const route = useRoute()
                     </h2>
                     <ul
                       class="grid list-disc grid-flow-col grid-rows-3 items-center justify-center gap-x-10 gap-y-2 pl-4 text-dark-content">
-                      <li class="text-md">Board
-                        reports</li>
-                      <li class="text-md">Risk
-                        reports</li>
-                      <li class="text-md">Audit
-                        reports</li>
-                      <li class="text-md">ESG
-                        reports</li>
-                      <li class="text-md">Reporting
-                        best practices</li>
-                      <li class="text-md">Benchmarking
-                        &amp; insights</li>
+                      <li class="text-md">
+                        Reinsurance Broking
+                      </li>
+                      <li class="text-md">
+                        Insurance Broking
+                      </li>
+                      <li class="text-md">
+                        Actuarial Solutions
+                      </li>
+                      <li class="text-md">
+                        Investment Solutions
+                      </li>
+                      <li class="text-md">
+                        Tech Solution
+                      </li>
+                      <li class="text-md">
+                        Consultations
+                      </li>
                     </ul>
                     <div class="self-start pt-7">
                       <a href="platform/diligent-one.html"
-                        class="cursor-pointer text-light-link hover:text-light-link-hover text-base relative flex items-center font-semibold">Learn
-                        about the #1 GRC
-                        platform<svg
+                        class="cursor-pointer text-brand-primary hover:text-light-link-hover text-base relative flex items-center font-semibold">
+                        Reqeust an engagement to find out more
+                        <svg
                           class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
                           fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                           <g fill-rule="evenodd">
@@ -600,7 +610,7 @@ const route = useRoute()
           <div class="hidden md:block">
             <section id class="relative py-4 lg:py-10">
               <div class="container px-4">
-                <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
+                <div class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
                   <div
                     class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                     <div class="flex h-fit flex-col">
@@ -674,7 +684,7 @@ const route = useRoute()
             </section>
           </div>
 
-          <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
+          <div class="font-sans py-6 text-white xl:py-12" style="background-color: #f6f8fc">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
               <div class="relative p-4 lg:basis-1/2 ">
                 <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
@@ -743,7 +753,7 @@ const route = useRoute()
             </div>
           </div>
 
-          <div class="bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
+          <div class="font-sans bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
             <div class="container bg-brand-dim pb-20 sm:pb-24 md:rounded xl:pb-0">
               <div
                 class="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-2 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
@@ -794,7 +804,7 @@ const route = useRoute()
           </div>
 
           <section id class="relative py-16 lg:py-32">
-            <div class="container px-4">
+            <div class="font-sans container px-4">
               <div class="pb-7 text-center">
                 <h2 class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 leading-tight lg:leading-tight">
                   Related content
@@ -1092,7 +1102,7 @@ const route = useRoute()
             </div>
           </section>
 
-          <div class="bg-cover bg-center py-8 md:py-16 lg:py-20" style="
+          <div class="font-sans bg-cover bg-center py-8 md:py-16 lg:py-20" style="
                   background-image: url(https://cdn.sanity.io/images/33u1mixi/production/b695dd70af0f5f4be3c091f4607fd14514ac5650-1440x447.svg);
                 ">
             <div class="container mx-auto px-4 lg:px-0">
