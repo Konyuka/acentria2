@@ -20,11 +20,11 @@ const isReinsuranceDropdownVisible = ref(false);
 let hideTimeout = null;
 
 const personalCover = ref({
-    name:'Personal Cover',
+    name: 'Personal Cover',
     items: [
         {
             name: 'My Health',
-            description:'My Health content',
+            description: 'My Health content',
             link: '/insurance/health-insurance',
         },
         {
@@ -46,7 +46,7 @@ const personalCover = ref({
     ]
 });
 const corpCover = ref({
-    name:'Corporate Cover',
+    name: 'Corporate Cover',
     items: [
         {
             name: 'Staff Health Cover',
@@ -71,7 +71,7 @@ const corpCover = ref({
     ]
 });
 const bizCover = ref({
-    name:'Business Cover',
+    name: 'Business Cover',
     items: [
         {
             name: 'Biashara Cover',
@@ -197,10 +197,7 @@ const showDropdown = (menu) => {
         isITDropdownVisible.value = false;
         isReinsuranceDropdownVisible.value = false;
 
-        activeMenuData.value = [];
-        activeMenuData.value.push(personalCover.value)
-        activeMenuData.value.push(corpCover.value)
-        activeMenuData.value.push(bizCover.value)
+
         isInsuranceDropdownVisible.value = true;
     } else if (menu == 'actuarial') {
         isInsuranceDropdownVisible.value = false;
@@ -258,42 +255,49 @@ onBeforeUnmount(() => {
 
     <div class="relative z-10 mx-auto hidden w-full px-8 py-1.5 lg:block bg-brand-gray">
         <div class="font-sans container mx-auto flex flex-row items-center justify-between">
-            <div></div>
-            <div class="flex flex-row items-center justify-end text-sm text-light">
-                <a href="company/partners.html"
-                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-light-icon">Partner</a><a
-                    href="company/about-us.html"
-                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-light-icon">Company</a><a
-                    href="support.html"
-                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-light-icon">Support</a><a
-                    href="login.html"
-                    class="relative mr-2 flex items-center gap-1 px-2 py-1.5 text-brand-primary hover:text-light-icon"><svg
-                        stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                        stroke-linejoin="round" color="currentColor" style="color: currentColor" height="16" width="16"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-                        <polyline points="10 17 15 12 10 7"></polyline>
-                        <line x1="15" y1="12" x2="3" y2="12"></line>
-                    </svg><span>Login</span></a><button
-                    class="inline-flex h-[32px] w-[32px] items-center justify-center rounded-full text-dark-icon outline-none"
-                    aria-label="Customise options" type="button" id="radix-:R1cadm:" aria-haspopup="menu"
-                    aria-expanded="false" data-state="closed">
-                    <div class="flex gap-x-1">
-                        <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M7.49996 1.80002C4.35194 1.80002 1.79996 4.352 1.79996 7.50002C1.79996 10.648 4.35194 13.2 7.49996 13.2C10.648 13.2 13.2 10.648 13.2 7.50002C13.2 4.352 10.648 1.80002 7.49996 1.80002ZM0.899963 7.50002C0.899963 3.85494 3.85488 0.900024 7.49996 0.900024C11.145 0.900024 14.1 3.85494 14.1 7.50002C14.1 11.1451 11.145 14.1 7.49996 14.1C3.85488 14.1 0.899963 11.1451 0.899963 7.50002Z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            <path d="M13.4999 7.89998H1.49994V7.09998H13.4999V7.89998Z" fill="currentColor"
-                                fill-rule="evenodd" clip-rule="evenodd"></path>
-                            <path
-                                d="M7.09991 13.5V1.5H7.89991V13.5H7.09991zM10.375 7.49998C10.375 5.32724 9.59364 3.17778 8.06183 1.75656L8.53793 1.24341C10.2396 2.82218 11.075 5.17273 11.075 7.49998 11.075 9.82724 10.2396 12.1778 8.53793 13.7566L8.06183 13.2434C9.59364 11.8222 10.375 9.67273 10.375 7.49998zM3.99969 7.5C3.99969 5.17611 4.80786 2.82678 6.45768 1.24719L6.94177 1.75281C5.4582 3.17323 4.69969 5.32389 4.69969 7.5 4.6997 9.67611 5.45822 11.8268 6.94179 13.2472L6.45769 13.7528C4.80788 12.1732 3.9997 9.8239 3.99969 7.5z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                            <path
-                                d="M7.49996 3.95801C9.66928 3.95801 11.8753 4.35915 13.3706 5.19448 13.5394 5.28875 13.5998 5.50197 13.5055 5.67073 13.4113 5.83948 13.198 5.89987 13.0293 5.8056 11.6794 5.05155 9.60799 4.65801 7.49996 4.65801 5.39192 4.65801 3.32052 5.05155 1.97064 5.8056 1.80188 5.89987 1.58866 5.83948 1.49439 5.67073 1.40013 5.50197 1.46051 5.28875 1.62927 5.19448 3.12466 4.35915 5.33063 3.95801 7.49996 3.95801zM7.49996 10.85C9.66928 10.85 11.8753 10.4488 13.3706 9.6135 13.5394 9.51924 13.5998 9.30601 13.5055 9.13726 13.4113 8.9685 13.198 8.90812 13.0293 9.00238 11.6794 9.75643 9.60799 10.15 7.49996 10.15 5.39192 10.15 3.32052 9.75643 1.97064 9.00239 1.80188 8.90812 1.58866 8.9685 1.49439 9.13726 1.40013 9.30601 1.46051 9.51924 1.62927 9.6135 3.12466 10.4488 5.33063 10.85 7.49996 10.85z"
-                                fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                </button>
+            <!-- socials -->
+            <div class="flex items-center justify-end md:justify-end md:col-span-1">
+                <div class="flex gap-6">
+                    <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
+                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                            <i class="!text-xl fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
+                        </div>
+                    </a>
+                    <a href="https://x.com/acentriagroup?lang=en" target="_blank">
+                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                            <i class="!text-xl fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                            <i class="!text-xl fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/acentriagroup/" target="_blank">
+                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                            <i class="!text-xl fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/@acentria.group" target="_blank">
+                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                            <i class="!text-xl fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Top Links -->
+            <div class="flex flex-row items-center justify-end text-sm text-black">
+                <a href="#"
+                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">About</a>
+                <a href="#"
+                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">Contacts</a>
+                <a href="#"
+                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">Blogs</a>
+                <a href="#"
+                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">Careers</a>
+
+
             </div>
         </div>
     </div>
@@ -309,7 +313,7 @@ onBeforeUnmount(() => {
                 <div class="z-50 content-center">
                     <div class="relative flex flex-col px-4 hover:cursor-default">
                         <div @mouseenter="showDropdown('insurance')" @mouseleave="hideDropdown('insurance')"
-                            :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '' ]"
+                            :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '']"
                             class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                             Insurance
                         </div>
@@ -328,7 +332,7 @@ onBeforeUnmount(() => {
                             </div>
 
                             <ReinsuranceDropDown v-show="isReinsuranceDropdownVisible"
-                                @mouseenter="showDropdown('insurance')" @mouseleave="hideDropdown('insurance')" />
+                                @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')" />
                         </div>
                     </div>
                 </div>
@@ -336,10 +340,13 @@ onBeforeUnmount(() => {
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <div
+                            <div @mouseenter="showDropdown('actuarial')" @mouseleave="hideDropdown('actuarial')"
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 Actuarial
                             </div>
+
+                            <ActuarialDropDown v-show="isActuarialDropdownVisible"
+                                @mouseenter="showDropdown('actuarial')" @mouseleave="hideDropdown('actuarial')" />
                         </div>
                     </div>
                 </div>
@@ -368,9 +375,9 @@ onBeforeUnmount(() => {
 
             </div>
             <a href="request-a-demo.html"
-                class="font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-secondary-dark focus:ring-brand-secondary-dark px-4 py-3 text-base">Request
-                a demo<svg
-                    class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
+                class="font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-3 text-base">
+                Get a Quote
+                <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                     fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                     <g fill-rule="evenodd">
                         <path class="transition-opacity opacity-0" d="M0 5h7"></path>

@@ -1,110 +1,95 @@
 <script setup>
 
-const personalCover = ref({
-    name: 'Personal Cover',
-    items: [
-        {
-            name: 'My Health',
-            description: 'My Health content',
-            link: '/insurance/health-insurance',
-        },
-        {
-            name: 'My Life',
-            link: '/insurance/life-insurance',
-        },
-        {
-            name: 'My Home',
-            link: '/insurance/home-insurance',
-        },
-        {
-            name: 'My Car',
-            link: '/insurance/motor-insurance',
-        },
-        {
-            name: 'My Travel',
-            link: '/insurance/travel-insurance',
-        },
-    ]
-});
-const corpCover = ref({
-    name: 'Corporate Cover',
-    items: [
-        {
-            name: 'Staff Health Cover',
-            link: '/insurance/staff-health-cover',
-        },
-        {
-            name: 'Staff Travel Cover',
-            link: '/insurance/staff-travel-cover',
-        },
-        {
-            name: 'Office Content Cover',
-            link: '/insurance/office-content-cover',
-        },
-        {
-            name: 'Cyber Liability Cover',
-            link: '/insurance/cyber-liability-cover',
-        },
-        {
-            name: 'Credit Risk Cover',
-            link: '/insurance/credit-risk-cover',
-        },
-    ]
-});
-const bizCover = ref({
-    name: 'Business Cover',
-    items: [
-        {
-            name: 'Biashara Cover',
-            link: '/insurance/biasahara-cover',
-        },
-        {
-            name: 'General Liability Insurance',
-            link: '/insurance/general-liability-insurance',
-        },
-        {
-            name: 'Product Liability Insurance',
-            link: '/insurance/product-liability-insurance',
-        },
-        {
-            name: 'Commercial Property Insurance',
-            link: '/insurance/commercial-property-insurance',
-        },
-        {
-            name: 'Crops and Livestock',
-            link: '/insurance/crops-and-livestock',
-        },
-    ]
-});
+const reServices = ref([
+    {
+        name: 'Reinsurance Optimization',
+        description: 'Maximize your reinsurance efficiency with our optimization services, tailored to enhance your risk management strategies.',
+        link: '/reinsurance/reinsurance-optimization',
+    },
+    {
+        name: 'Treaty Administration',
+        description: 'Streamline your reinsurance agreements with our comprehensive treaty administration services, ensuring smooth operations.',
+        link: '/reinsurance/treaty-administration',
+    },
+    {
+        name: 'Claims Management',
+        description: 'Efficiently handle reinsurance claims with our expert management services, providing timely and accurate claim resolutions.',
+        link: '/reinsurance/claims-management',
+    },
+    {
+        name: 'Value Addition',
+        description: 'Enhance your reinsurance portfolio with our value addition services, offering innovative solutions and expert insights.',
+        link: '/reinsurance/value-addition',
+    },
+]);
+const reSolutions = ref([
+    {
+        name: 'Facultative Solutions',
+        description: 'Access tailored reinsurance coverage with our facultative solutions, designed to meet specific risk requirements.',
+        link: '/reinsurance/facultative-solution',
+    },
+    {
+        name: 'Treaty Solutions',
+        description: 'Secure comprehensive reinsurance protection with our treaty solutions, offering stability and financial security.',
+        link: '/reinsurance/treaty-solutions',
+    },
+    {
+        name: 'Special Lines Solutions',
+        description: 'Protect unique and high-risk exposures with our special lines solutions, providing specialized reinsurance coverage.',
+        link: '/reinsurance/special-lines',
+    },
+]);
+const reData = ref([
+    {
+        name: 'Reinsurance Data Analytics Tool',
+        description: 'Leverage data-driven insights with our reinsurance data analytics tool, enhancing decision-making and risk assessment.',
+        link: '/reinsurance/reinsurance-data-analytics-tool',
+    },
+    {
+        name: 'Acentre Reinsurance Solution',
+        description: 'Optimize your reinsurance strategy with Acentre\'s comprehensive solutions, designed for maximum efficiency and effectiveness.',
+        link: '/reinsurance/acentre-reinsurance-solution',
+    },
+    {
+        name: 'Catastrophic Modelling',
+        description: 'Prepare for extreme events with our catastrophic modelling services, providing accurate risk assessments and mitigation strategies.',
+        link: '/reinsurance/catastrophic-modelling',
+    },
+    {
+        name: 'Return On Risk Adjusted Capital',
+        description: 'Maximize your financial performance with our return on risk-adjusted capital services, ensuring optimal capital allocation.',
+        link: '/reinsurance/return-on-risk-adjusted-capital',
+    },
+]);
 
 
 
 let hideTimeout = null;
 
-const isPersonalDropdownVisible = ref(false);
-const isCorporateDropdownVisible = ref(false);
-const isBusinessDropdownVisible = ref(false);
+const isServicesDropdownVisible = ref(true);
+const isSolutionsDropdownVisible = ref(false);
+const isDataDropdownVisible = ref(false);
 
 
 const showDropdown = (menu) => {
     if (hideTimeout) {
         clearTimeout(hideTimeout);
     }
-    if (menu == 'personal') {
-        isCorporateDropdownVisible.value = false;
-        isBusinessDropdownVisible.value = false;
+    if (menu == 'services') {
+        isSolutionsDropdownVisible.value = false;
+        isDataDropdownVisible.value = false;
 
-        isPersonalDropdownVisible.value = true;
-    } else if (menu == 'corporate') {
-        isPersonalDropdownVisible.value = false;
-        isBusinessDropdownVisible.value = false;
+        isServicesDropdownVisible.value = true;
+    } else if (menu == 'solutions') {
+        isServicesDropdownVisible.value = false;
+        isDataDropdownVisible.value = false;
 
-        isCorporateDropdownVisible.value = true;
-    } else if (menu == 'business') {
-        isPersonalDropdownVisible.value = false;
-        isCorporateDropdownVisible.value = false;
+        isSolutionsDropdownVisible.value = true;
+    } else if (menu == 'data') {
+        isServicesDropdownVisible.value = false;
+        isSolutionsDropdownVisible.value = false;
 
-        isBusinessDropdownVisible.value = true;
+        isDataDropdownVisible.value = true;
     }
 };
 
@@ -113,20 +98,19 @@ const hideDropdown = (menu) => {
         clearTimeout(hideTimeout);
     }
     hideTimeout = setTimeout(() => {
-        if (menu == 'personal') {
-            isPersonalDropdownVisible.value = false;
-        } else if (menu == 'actuarial') {
-            isActuarialDropdownVisible.value = false;
-        } else if (menu == 'it') {
-            isITDropdownVisible.value = false;
-        } else if (menu == 'reinsurance') {
-            isReinsuranceDropdownVisible.value = false;
+        if (menu == 'services') {
+            isServicesDropdownVisible.value = false;
+        } else if (menu == 'solutions') {
+            isSolutionsDropdownVisible.value = false;
+        } else if (menu == 'data') {
+            isDataDropdownVisible.value = false;
         }
     }, 200);
 };
 
 onMounted(() => {
-    showDropdown('personal')
+    showDropdown('services')
+    isServicesDropdownVisible.value = true;
 })
 
 </script>
@@ -137,19 +121,19 @@ onMounted(() => {
             <div class="flex flex-col">
 
                 <div class="border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')"
+                    <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')"
                         href="/solutions/boards-and-governance"
-                        :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"
+                        :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="material-symbols-outlined text-lg undefined" translate="no">assured_workload</i>
-                        Personal Cover
+                        <i class="fas fa-shield text-lg undefined" translate="no"></i>
+                        Reinsurance Services
                     </a>
 
-                    <div v-show="isPersonalDropdownVisible" @mouseenter="showDropdown('personal')"
-                        @mouseleave="hideDropdown('personal')"
+                    <div v-show="isServicesDropdownVisible" @mouseenter="showDropdown('services')"
+                        @mouseleave="hideDropdown('services')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in personalCover.items">
+                            <NuxtLink to="/" v-for="item in reServices">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div
@@ -166,19 +150,19 @@ onMounted(() => {
                 </div>
 
                 <div class="border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('corporate')" @mouseleave="hideDropdown('corporate')"
+                    <a @mouseenter="showDropdown('solutions')" @mouseleave="hideDropdown('solutions')"
                         href="/solutions/boards-and-governance"
-                        :class="[isCorporateDropdownVisible ? '!text-brand-primary' : '']"
+                        :class="[isSolutionsDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="material-symbols-outlined text-lg undefined" translate="no">assured_workload</i>
-                        Corporate Cover
+                        <i class="fas fa-cogs text-lg undefined" translate="no"></i>
+                        Reinsurance Solutions
                     </a>
 
-                    <div v-show="isCorporateDropdownVisible" @mouseenter="showDropdown('corporate')"
-                        @mouseleave="hideDropdown('corporate')"
+                    <div v-show="isSolutionsDropdownVisible" @mouseenter="showDropdown('solutions')"
+                        @mouseleave="hideDropdown('solutions')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in corpCover.items">
+                            <NuxtLink to="/" v-for="item in reSolutions">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div
@@ -195,19 +179,18 @@ onMounted(() => {
                 </div>
 
                 <div class="border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('business')" @mouseleave="hideDropdown('business')"
+                    <a @mouseenter="showDropdown('data')" @mouseleave="hideDropdown('data')"
                         href="/solutions/boards-and-governance"
-                        :class="[isBusinessDropdownVisible ? '!text-brand-primary' : '']"
+                        :class="[isDataDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="material-symbols-outlined text-lg undefined" translate="no">assured_workload</i>
-                        Business Cover
+                        <i class="fas fa-chart-line text-lg undefined" translate="no"></i>
+                        Data and Modelling
                     </a>
 
-                    <div v-show="isBusinessDropdownVisible" @mouseenter="showDropdown('business')"
-                        @mouseleave="hideDropdown('business')"
-                        class="shadow-4xl absolute right-0 top-0 translate-x-full">
+                    <div v-show="isDataDropdownVisible" @mouseenter="showDropdown('data')"
+                        @mouseleave="hideDropdown('data')" class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in bizCover.items">
+                            <NuxtLink to="/" v-for="item in reData">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div

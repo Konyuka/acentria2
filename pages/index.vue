@@ -8,55 +8,50 @@ const route = useRoute()
     <main>
       <div>
         <div>
+
+          <!-- Hero Section -->
           <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="
                   background-image: url(/cdn.sanity.io/images/33u1mixi/production/e8e19ed3e8c8d8616133ef8f2feeaab00819f123-2880x1162b238.png?fit=max&amp;auto=format);
                 ">
             <div class="container">
               <div
-                class="flex flex-col items-center bg-cover px-4 py-4 text-center md:py-16 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                class="flex flex-col items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                 <div
                   class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[50%] lg:justify-start lg:text-left">
                   <div class="w-full">
                     <h1
-                      class="font-sans tracking-normal text-4xl lg:text-5xl text-gray-900 font-semibold leading-tight lg:leading-tight">
-                      It’s time to bring
-                      <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">clarity,
-                        simplicity, and
-                        security</span>
-                      to your board meetings.
-                      <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                      </span>
+                      class="font-sans tracking-normal text-4xl lg:text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight">
+                      Welcome to Acentria Group <br>
+                      <span class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight"> your
+                        trusted partner in Insurance, Reinsurance, Actuarial, Investment and Tech Solutions.</span>
                     </h1>
                   </div>
                   <div>
                     <p class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                      Discover why 25,000+ boards
-                      and 700,000+ directors
-                      ​<br />rely on Diligent for
-                      their board solutions.
-                      Explore our risk-clarifying
-                      templates covering
-                      compliance, ESG, and beyond.
-                      With AI-driven insights
-                      and tools, spend less time
-                      deciphering data and more
-                      time making confident
-                      decisions all on one
-                      platform.​
+                      Discover why thousands of businesses
+                      and professionals trust Acentria Group
+                      for their Insurance, Reinsurance,
+                      Actuarial, Investment, and Tech solutions.
+                      At Acentria Group,
+                      we combine expertise with innovation
+                      to deliver tailored solutions that
+                      meet your unique needs. Trust us to
+                      provide clarity, security, and growth
+                      for businesses and individuals.
                     </p>
                     <p class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
                       <strong class="font-semibold">See
-                        why Forrester says
-                        Diligent “sets the
-                        standard
-                        ​<br />for modern
-                        governance.”</strong>
+                        why Kenya Reinsurance Corporation says <br>
+                        <span class="text-base !text-gray-900 font-normal">“Acentria sets the standard ​in the
+                          industry.”</span>
+                      </strong>
                     </p>
                   </div>
                   <div class="w-full">
                     <a href="request-a-demo.html"
-                      class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Request
-                      a demo<svg
+                      class="button-animation inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-700 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
+                      Learn more about us
+                      <svg
                         class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                         fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                         <g fill-rule="evenodd">
@@ -64,9 +59,12 @@ const route = useRoute()
                           <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4">
                           </path>
                         </g>
-                      </svg></a><a href="pricing.html"
-                      class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Request
-                      pricing<svg
+                      </svg>
+                    </a>
+                    <a href="pricing.html"
+                      class="button-animation inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-700 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
+                      Contact Us
+                      <svg
                         class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                         fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                         <g fill-rule="evenodd">
@@ -74,7 +72,8 @@ const route = useRoute()
                           <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4">
                           </path>
                         </g>
-                      </svg></a>
+                      </svg>
+                    </a>
                   </div>
                 </div>
                 <div class="flex aspect-video w-full max-w-3xl flex-col"></div>
@@ -82,6 +81,7 @@ const route = useRoute()
             </div>
           </div>
 
+          <!-- Clients -->
           <div class="w-full overflow-hidden py-4 lg:py-10">
             <div class="mx-auto flex w-fit justify-center">
               <div class="animate-logoAnimation flex w-max" style="
@@ -254,15 +254,16 @@ const route = useRoute()
             </div>
           </div>
 
-          <div class="py-6 text-white xl:py-12" style="background-color: #282e37">
-            <div class="bg-brand-dim">
+          <!-- Statistics -->
+          <div class="py-6 text-white xl:py-12" style="background-color: #000">
+            <div class="bg-secondary">
               <div class="container mx-auto px-4">
                 <div class="mb-12 flex flex-col items-center"></div>
                 <div class="flex flex-wrap justify-center gap-x-16">
                   <div class="mb-12 flex items-center justify-center">
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                       <span
-                        class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">25k</span>
+                        class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">13k</span>
                       <p class="undefined undefined text-base md:text-xl">
                         Customers
                       </p>
@@ -272,18 +273,18 @@ const route = useRoute()
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                       <span
                         class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold"><span
-                          class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">1m</span></span>
+                          class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">10+</span></span>
                       <p class="undefined undefined text-base md:text-xl">
-                        Users
+                        Years
                       </p>
                     </div>
                   </div>
                   <div class="mb-12 flex items-center justify-center">
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                       <span
-                        class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">700k</span>
+                        class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">7+</span>
                       <p class="undefined undefined text-base md:text-xl">
-                        Leaders
+                        Awards
                       </p>
                     </div>
                   </div>
@@ -291,7 +292,7 @@ const route = useRoute()
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                       <span
                         class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold"><span
-                          class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">130</span></span>
+                          class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">5+</span></span>
                       <p class="undefined undefined text-base md:text-xl">
                         Countries
                       </p>
@@ -789,7 +790,7 @@ const route = useRoute()
                     <img alt="Barclays" loading="lazy" width="455" height="227" decoding="async" data-nimg="1"
                       class="false undefined absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
                       style="color: transparent" sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                      src="https://cdn.sanity.io/images/33u1mixi/production/d15663fb773fdb7f3db14fb5ec3c57d9f2fa9c4e-4320x2700.webp?rect=644,0,2100,2700&amp;w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
+                      src="https://acentriagroup.com/wp-content/uploads/2024/01/Moses-Musau-2-683x1024.jpg" />
                   </div>
                 </div>
                 <div class="relative w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-11">
@@ -797,34 +798,26 @@ const route = useRoute()
                     <div class="flex flex-row items-center justify-start gap-6">
                       <div class="flex flex-col items-center pl-3 md:items-start md:border-l-4">
                         <p class="text-base leading-normal font-semibold text-dark-content !pb-0 text-xl md:!pb-0">
-                          Ross Surace
+                          Moses M.
                         </p>
-                        <span class="text-dark-content text-xs font-thin">Senior
-                          Technology Partner,
-                          Head Office
-                          Functions</span>
+                        <span class="text-dark-content text-xs font-thin">CEO / MD, <span
+                            class="text-white font-boold">Acentria Group</span></span>
                       </div>
                     </div>
                     <div class="w-fit max-w-[120px] text-center md:top-[5%]">
-                      <img
+                      <!-- <img
                         src="https://cdn.sanity.io/images/33u1mixi/production/bdee543a7500ad0542afd6cb8d91e356f4d96e53-200x40.svg"
-                        alt="Barclays" class />
+                        alt="Barclays" class /> -->
                     </div>
                   </div>
                   <div class="relative isolate pb-9 pt-6 sm:pt-12">
                     <blockquote class="text-lg font-semibold leading-8 text-dark-content sm:leading-9">
                       <p
                         class="text-base leading-normal font-regular undefined leading-2 mb-1 text-xl font-thin md:text-base md:font-normal">
-                        “Diligent has removed
-                        many, many thousands of
-                        pounds
-                        of cost from the
-                        organization, but it’s
-                        the
-                        experience that has
-                        really driven directors
-                        to make
-                        the right decisions.”
+                        "Greetings from Acentria Group, <br> I can confidently say that our comprehensive solutions have saved
+                        our clients significant costs while enhancing their decision-making processes. <br> Our expertise in
+                        in the niche empowers businesses to thrive
+                        in a complex world. Join us and experience the Acentria difference."
                       </p>
                       <p
                         class="text-base leading-normal font-regular undefined leading-2 mb-1 text-xl font-thin md:text-base md:font-normal">
