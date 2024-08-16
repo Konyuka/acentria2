@@ -372,9 +372,11 @@ const route = useRoute()
                 </span><span>tomorrow’s
                 </span><span>opportunities
                 </span><span>with
-                </span><span>the </span><span class="text-brand-primary">Diligent
-                </span><span class="text-brand-primary">One
-                </span><span class="text-brand-primary">Platform
+                </span>
+                <!-- <span>the </span> -->
+                <span class="text-brand-primary">Acentria
+                </span>
+                <span class="text-brand-primary">Group
                 </span><span> </span>
               </h2>
               <div class="relative grid grid-cols-1 items-center gap-4 lg:grid-cols-2 lg:gap-10 lg:pb-28">
@@ -555,9 +557,9 @@ const route = useRoute()
                   <div class="mx-auto flex flex-col items-start justify-start block">
                     <h2
                       class="font-sans tracking-normal text-3xl lg:text-4xl text-white font-bold leading-tight lg:leading-tight pb-5 lg:pb-10">
-                      <span>Diligent
-                      </span><span>One
-                      </span><span class="text-brand-primary">Platform
+                      <span>Our Lines
+                      </span><span>of
+                      </span><span class="text-brand-primary">Busniess
                       </span>
                     </h2>
                     <ul
