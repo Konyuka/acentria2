@@ -312,9 +312,9 @@ onBeforeUnmount(() => {
         class="top-10 z-[100] mx-auto hidden w-full items-center justify-between px-4 py-4 transition-all duration-200 lg:flex false bg-white false">
         <div class="container mx-auto items-center justify-between lg:flex">
             <div class="flex font-sans">
-                <a href="index.html"><img alt="Acentria" fetchPriority="high" width="250" height="100" decoding="async"
+                <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="250" height="100" decoding="async"
                         data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png " />
-                </a>
+                </NuxtLink>
 
                 <div class="z-50 content-center">
                     <div class="relative flex flex-col px-4 hover:cursor-default">
