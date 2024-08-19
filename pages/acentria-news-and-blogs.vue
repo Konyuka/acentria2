@@ -66,7 +66,7 @@ const blogs = ref([
                                     <div class="group relative">
                                         <h3 id=""
                                             class="text-xl pb-4 md:pb-5 font-semibold md:text-2xl xl:text-2xl 2xl:text-3xl leading-tight text-light-title !pb-0 !text-xl">
-                                            <a href="/company/newsroom/diligent-announces-elevate-2024">
+                                            <a href="#">
                                                 {{ blog.title }}
                                             </a>
                                         </h3>

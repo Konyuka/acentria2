@@ -64,7 +64,7 @@ const values = ref([
                                                 together</strong>.
                                         </p>
                                         <div>
-                                            <a href="jobs"
+                                            <a href="#"
                                                 class="button-animation font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Open
                                                 positions<svg
                                                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
@@ -580,7 +580,7 @@ const values = ref([
                                             create better outcomes for all.
                                         </p>
                                     </div>
-                                    <a href="jobs"
+                                    <a href="#"
                                         class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Search
                                         open positions<svg
                                             class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
