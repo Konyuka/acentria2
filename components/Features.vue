@@ -35,7 +35,7 @@
                       </div>
                     </div>
                     <div class="testimonials-one__thumb-carousel">
-                      <div class="swiper-wrapper">
+                      <div class="swiper-wrapper swiper">
                         <swiper :options="swiperOptions">
                           <swiper-slide>
                             <div class="swiper-slide">
@@ -221,6 +221,12 @@
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 // import "swiper/css/swiper.css";
 import 'swiper/swiper-bundle.css';
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+import { Pagination, Navigation, Autoplay } from 'swiper'
+
 
 export default {
   name: "Testimonial",
@@ -238,6 +244,7 @@ export default {
         loop: true,
         speed: 1000,
         spaceBetween: 30,
+        navigation: true,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
