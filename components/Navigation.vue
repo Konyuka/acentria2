@@ -292,8 +292,10 @@ onBeforeUnmount(() => {
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     About
                 </NuxtLink>
-                <a href="#"
-                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">Contacts</a>
+                <NuxtLink to="/contact-acentria-group"
+                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                    Contacts
+                </NuxtLink>
                 <a href="#"
                     class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">Blogs</a>
                 <a href="#"
@@ -461,7 +463,7 @@ onBeforeUnmount(() => {
                     </div>
                     <div>
                         <button
-                            class="group rounded border-2 border-brand-primary duration-200 px-3 py-2 font-semibold whitespace-nowrap bg-brand-primary rounded text-brand-white hover:bg-brand-red-2 active:bg-brand-red-1 active:border-brand-red-1 hover:border-brand-red-2 w-full"
+                            class="button-animation group rounded border-2 border-brand-primary duration-200 px-3 py-2 font-semibold whitespace-nowrap bg-brand-primary rounded text-brand-white hover:bg-brand-red-2 active:bg-brand-red-1 active:border-brand-red-1 hover:border-brand-red-2 w-full"
                             type="button">
                             <div class="flex items-center justify-center">
                                 <div class="px-2">Request a
