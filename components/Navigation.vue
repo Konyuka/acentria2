@@ -288,8 +288,10 @@ onBeforeUnmount(() => {
 
             <!-- Top Links -->
             <div class="flex flex-row items-center justify-end text-sm text-black">
-                <a href="#"
-                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">About</a>
+                <NuxtLink to="/about-acentria-group"
+                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                    About
+                </NuxtLink>
                 <a href="#"
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">Contacts</a>
                 <a href="#"

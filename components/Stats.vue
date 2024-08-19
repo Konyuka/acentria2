@@ -1,0 +1,65 @@
+<script setup>
+
+
+</script>
+
+<template>
+    <div class="py-6 text-white xl:py-12" style="background-color: #000">
+        <div class="bg-brand-dim">
+            <div class="container mx-auto px-4">
+                <div class="mb-12 flex flex-col items-center"></div>
+                <div class="font-sans flex flex-wrap justify-center gap-x-16">
+                    <div class="mb-12 flex items-center justify-center">
+                        <div class="border-brand-divider border-l pl-6 text-dark-title">
+                            <span
+                                class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">13k</span>
+                            <p class="undefined undefined text-base md:text-xl">
+                                Customers
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 flex items-center justify-center">
+                        <div class="border-brand-divider border-l pl-6 text-dark-title">
+                            <span
+                                class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold"><span
+                                    class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">10+</span></span>
+                            <p class="undefined undefined text-base md:text-xl">
+                                Years
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 flex items-center justify-center">
+                        <div class="border-brand-divider border-l pl-6 text-dark-title">
+                            <span
+                                class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">7+</span>
+                            <p class="undefined undefined text-base md:text-xl">
+                                Awards
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 flex items-center justify-center">
+                        <div class="border-brand-divider border-l pl-6 text-dark-title">
+                            <span
+                                class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold"><span
+                                    class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">5+</span></span>
+                            <p class="undefined undefined text-base md:text-xl">
+                                Countries
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 flex items-center justify-center">
+                        <div class="border-brand-divider border-l pl-6 text-dark-title">
+                            <span
+                                class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">24h</span>
+                            <p class="undefined undefined text-base md:text-xl">
+                                Support
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped></style>
