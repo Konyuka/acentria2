@@ -1,5 +1,20 @@
 <script setup lang="ts">
 const route = useRoute()
+
+import videojs from 'video.js';
+import 'video.js/dist/video-js.css';
+
+const videoOptions = {
+  autoplay: true,
+  controls: true,
+  sources: [
+    {
+      src:
+        '@/assets/media/intro.mp4',
+      type: 'video/mp4'
+    }
+  ]
+}
 </script>
 
 <template>
@@ -16,6 +31,7 @@ const route = useRoute()
             <div class="container">
               <div
                 class="flex flex-col items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+
                 <div
                   class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[50%] lg:justify-start lg:text-left">
                   <div class="w-full">
@@ -76,7 +92,23 @@ const route = useRoute()
                     </a>
                   </div>
                 </div>
-                <div class="flex aspect-video w-full max-w-3xl flex-col"></div>
+
+                <div class="flex aspect-video w-full max-w-3xl flex-col">
+
+                  <div id="root">
+
+                    <div class="_29Gjr rounded-xl">
+                      <div class="_1tW_F rounded-xl">
+                        <video :options="videoOptions" ref="videoPlayer" aria-label="Introducing the Acentria Platform"
+                          preload="metadata" class="video-js vjs-default-skin rounded-xl _1l-KU _3OgU3 w-[60vw] h-[50vh]" controls
+                          tabindex="0" src="@/assets/media/intro.mp4"></video>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
@@ -513,17 +545,18 @@ const route = useRoute()
                       <g>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
                           xml:space="preserve" viewBox="0 0 2158.75 2334">
-                          <g id="slice__esg" class="relative z-40 origin-center transition-all false">
+                          <g id="slice__esg"
+                            class="hover:bg-brand-primary relative z-40 origin-center transition-all false">
                             <path
                               d="m961.79 1176.412.001 1026.063c224.775 0 432.609-72.728 601.387-195.993l-601.388-830.07z"
-                              class="transition-all fill-white"></path>
+                              class="transition-all fill-white hover-path hover:bg-brand-primary"></path>
                             <path
                               d="m961.79 1176.412.001 1026.063c224.775 0 432.609-72.728 601.387-195.993l-601.388-830.07z"
                               class="fill-none stroke-[#0b4ccb] stroke-[8px]" style="
                                     stroke-linejoin: round;
                                     stroke-miterlimit: 10;
                                   "></path>
-                            <path class="transition-all fill-[#282e37]"
+                            <path class="transition-all fill-[#282e37] hover-path"
                               d="M1105.811 1985.553v-53.102h34.544v6.415h-27.507v16.821h26.085v6.486h-26.085v16.964h27.507v6.415h-34.544zM1167.078 1986.408c-3.317 0-6.373-.631-9.169-1.889-2.796-1.259-5.165-2.981-7.107-5.168-1.943-2.185-3.365-4.633-4.265-7.342l6.112-2.494c1.279 3.421 3.187 6.047 5.722 7.876 2.534 1.83 5.509 2.744 8.92 2.744 2.085 0 3.91-.332 5.474-.998 1.563-.665 2.783-1.604 3.66-2.815.876-1.212 1.315-2.625 1.315-4.241 0-2.232-.629-3.991-1.884-5.274-1.257-1.283-3.092-2.28-5.509-2.993l-9.737-2.994c-3.838-1.187-6.788-3.053-8.85-5.595-2.061-2.542-3.092-5.5-3.092-8.874 0-2.898.711-5.453 2.133-7.663 1.421-2.209 3.376-3.943 5.863-5.203 2.488-1.258 5.319-1.889 8.494-1.889 3.174 0 6.053.57 8.636 1.711 2.582 1.141 4.773 2.673 6.574 4.598a18.266 18.266 0 0 1 3.98 6.593l-6.041 2.495c-1.091-2.946-2.784-5.204-5.082-6.771-2.299-1.568-4.965-2.353-7.996-2.353-1.896 0-3.566.321-5.012.962-1.445.642-2.559 1.581-3.34 2.815-.782 1.236-1.173 2.662-1.173 4.277 0 1.949.615 3.683 1.848 5.203 1.231 1.521 3.104 2.685 5.615 3.492l8.885 2.638c4.169 1.283 7.321 3.112 9.453 5.488 2.132 2.377 3.198 5.322 3.198 8.838 0 2.899-.746 5.465-2.238 7.698-1.493 2.234-3.555 3.98-6.184 5.239-2.629 1.258-5.697 1.889-9.203 1.889zM1219.319 1986.408c-3.744 0-7.203-.678-10.377-2.031a24.562 24.562 0 0 1-8.28-5.738c-2.346-2.47-4.171-5.369-5.474-8.695-1.304-3.326-1.954-6.961-1.954-10.905 0-3.992.65-7.65 1.954-10.978 1.303-3.325 3.115-6.225 5.438-8.695a24.293 24.293 0 0 1 8.21-5.738c3.15-1.354 6.621-2.031 10.412-2.031 3.648 0 6.93.642 9.845 1.925 2.914 1.283 5.377 2.946 7.392 4.989 2.014 2.044 3.447 4.229 4.3 6.558l-6.255 3.064c-1.232-3.04-3.162-5.476-5.792-7.306-2.63-1.828-5.793-2.744-9.489-2.744-3.695 0-6.978.88-9.844 2.638-2.867 1.758-5.106 4.205-6.717 7.341-1.611 3.137-2.417 6.796-2.417 10.978 0 4.134.817 7.769 2.452 10.905 1.635 3.136 3.885 5.584 6.753 7.341 2.866 1.759 6.147 2.638 9.844 2.638 3.174 0 6.064-.688 8.671-2.067 2.605-1.377 4.68-3.278 6.22-5.702 1.539-2.423 2.31-5.227 2.31-8.41v-3.279l3.199 2.994h-20.471v-6.059h24.309v4.704c0 3.706-.64 7.057-1.919 10.05-1.279 2.994-3.033 5.56-5.26 7.698a22.712 22.712 0 0 1-7.747 4.883c-2.941 1.113-6.043 1.672-9.313 1.672z">
                             </path>
                           </g>
@@ -1212,3 +1245,19 @@ const route = useRoute()
 
   </div>
 </template>
+
+<style scoped>
+._29Gjr {
+  height: 100%;
+  width: inherit;
+  position: -ms-device-fixed
+}
+
+._1tW_F {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  overflow: hidden
+}
+
+</style>

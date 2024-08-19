@@ -146,6 +146,11 @@ export default defineNuxtConfig({
           crossorigin: "anonymous"
         },
         {
+          src: "/_next/static/chunks/v4.js",
+          defer: true,
+          crossorigin: "anonymous"
+        },
+        {
           src: "/_next/static/gpomiYuEi5Hk7liTdwws_/_buildManifest.js",
           defer: true,
           crossorigin: "anonymous"
