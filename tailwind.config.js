@@ -13,6 +13,9 @@ export default {
       colors: {
         secondary: "#4d4f51",
       },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [],

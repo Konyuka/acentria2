@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "nuxt": "^3.12.4",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-awesome-swiper": "^5.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

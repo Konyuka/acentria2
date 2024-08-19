@@ -67,7 +67,7 @@ const menuItem = ref([
     <div>
 
 
-        <div class="font-sans w-full border-t-8 border-brand-primary bg-secondary px-4 py-8">
+        <div class="font-sans w-full border-t-8 border-brand-primary bg-brand-dim px-4 py-8">
             <div class="container mx-auto">
                 <div class="mb-14 flex flex-col justify-between text-dark-content lg:flex-row lg:text-base">
 
