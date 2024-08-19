@@ -54,14 +54,19 @@ const values = ref([
                                             to lead with purpose?
                                         </h1>
                                         <p class="font-sans text-base leading-normal font-regular text-light-content">
-                                            We pioneered the modern governance movement. Our
-                                            technology gives leaders the view of their
-                                            organization to spark the insights they need to make
-                                            better decisions, for them—and for the world.<br /><br />At
-                                            Acentria, we’re always on the lookout for who want
-                                            to be part of a global team driven by a shared
-                                            vision of what business can and should be.<strong>Let’s make an impact
-                                                together</strong>.
+                                            We are at the forefront of innovation in the insurance and financial
+                                            services industry. Our solutions empower leaders with the tools and insights
+                                            they need to navigate complex challenges and drive meaningful change—both
+                                            within their organizations and on a global scale.
+                                            <br><br>
+                                            At Acentria Group, we’re constantly seeking passionate individuals who want
+                                            to join a dynamic team committed to redefining the future of business. If
+                                            you’re ready to make a difference and be part of something bigger, let’s
+                                            shape the future together.
+                                            <br><br>
+                                            <strong>
+                                                Let’s make an impact together
+                                            </strong>.
                                         </p>
                                         <div>
                                             <a href="#"
@@ -165,7 +170,8 @@ const values = ref([
                                                 class="text-base leading-normal font-regular text-light-content leading-2 mb-4">
                                                 <strong>Our Promise</strong>
                                                 Be a trusted partner, working tirelessly to provide the peace of mind
-                                                clients deserve, knowing that their assets and interests are safeguarded with
+                                                clients deserve, knowing that their assets and interests are safeguarded
+                                                with
                                                 care and expertise.
                                             </p>
                                             <hr class="h-0.5 bg-brand-divider mb-4" />
@@ -229,7 +235,8 @@ const values = ref([
                                         Here’s how we progress faster, together<br />
                                     </p>
                                 </div>
-                                <div class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
+                                <div
+                                    class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
                                     <div
                                         class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                                         <div class="flex h-fit flex-col">
@@ -531,7 +538,7 @@ const values = ref([
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">diversity</span>,
                             <span
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">equity</span>
-                            and    
+                            and
                             <span
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">inclusion</span>
                         </h2>
