@@ -296,12 +296,14 @@ onBeforeUnmount(() => {
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Contacts
                 </NuxtLink>
+                <NuxtLink to="acentria-news-and-blogs"
+                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                    Blogs
+                </NuxtLink>
                 <a href="#"
-                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">Blogs</a>
-                <a href="#"
-                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">Careers</a>
-
-
+                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                    Careers
+                </a>
             </div>
         </div>
     </div>
