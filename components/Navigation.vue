@@ -300,10 +300,10 @@ onBeforeUnmount(() => {
                     class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Blogs
                 </NuxtLink>
-                <a href="#"
+                <NuxtLink to="acentra-group-careers"
                     class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Careers
-                </a>
+                </NuxtLink>
             </div>
         </div>
     </div>
