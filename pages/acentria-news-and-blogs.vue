@@ -80,7 +80,7 @@ const blogs = ref([
                                                 <div>
                                                     <div
                                                         class="undefined flex-row text-brand-primary hover:text-brand-red-2 active:text-brand-red-3 group flex items-center font-semibold transition duration-300 w-fit text-base">
-                                                        <a href="/company/newsroom/diligent-announces-elevate-2024"
+                                                        <a href="#"
                                                             class="">Continue reading</a><i
                                                             class="material-symbols-outlined text-brand-primary text-2xl group-hover:text-brand-red-2 px-1 transition duration-300 group-hover:translate-x-1"
                                                             translate="no">chevron_right</i>
