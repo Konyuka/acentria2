@@ -1,0 +1,325 @@
+<script setup>
+
+const content = ref({
+    pageTitle: 'Acentria Group Reinsurance',
+    title: 'Secure Your Future with Comprehensive Reinsurance Solutions',
+    description: 'At Acentria Group, we provide robust reinsurance solutions designed to protect insurers from significant losses. Our comprehensive coverage options help manage risk, stabilize financial performance, and ensure long-term sustainability. Trust us to deliver the expertise and support you need to navigate the complexities of reinsurance, safeguarding your business and your peace of mind.',
+})
+
+const data = ref({
+    services: [
+        {
+            name: 'Reinsurance Optimization',
+            content: 'Optimize your reinsurance strategy with Acentria. We help you maximize efficiency and minimize risk.',
+            icon: 'trending_up',
+        },
+        {
+            name: 'Treaty Administration',
+            content: 'Efficiently manage your reinsurance treaties with our comprehensive administration services.',
+            icon: 'gavel',
+        },
+        {
+            name: 'Claims Management',
+            content: 'Streamline your claims process with our expert management services, ensuring quick and fair settlements.',
+            icon: 'assignment_turned_in',
+        },
+        {
+            name: 'Value Addition',
+            content: 'Enhance your reinsurance portfolio with our value-added services, tailored to meet your unique needs.',
+            icon: 'add_circle_outline',
+        },
+    ],
+    solutions: [
+        {
+            name: 'Facultative Solutions',
+            content: 'Tailored reinsurance solutions for specific risks, providing flexibility and targeted coverage.',
+            icon: 'build',
+        },
+        {
+            name: 'Treaty Solutions',
+            content: 'Comprehensive reinsurance agreements that cover a portfolio of risks, ensuring stability and predictability.',
+            icon: 'policy',
+        },
+        {
+            name: 'Special Lines Solutions',
+            content: 'Customized reinsurance for niche markets and unique risks, offering specialized protection.',
+            icon: 'category',
+        },
+    ],
+    data: [
+        {
+            name: 'Reinsurance Data Analytics Tool',
+            content: 'Leverage advanced analytics to optimize your reinsurance strategies and make informed decisions.',
+            icon: 'analytics',
+        },
+        {
+            name: 'Acentria Reinsurance Solution',
+            content: 'Comprehensive reinsurance solutions tailored to meet the unique needs of your business.',
+            icon: 'business_center',
+        },
+        {
+            name: 'Catastrophic Modelling',
+            content: 'Utilize sophisticated models to assess and mitigate the impact of catastrophic events on your portfolio.',
+            icon: 'bar_chart',
+        },
+        {
+            name: 'Return On Risk Adjusted Capital',
+            content: 'Maximize your returns by effectively managing risk-adjusted capital in your reinsurance operations.',
+            icon: 'trending_up',
+        },
+    ]
+})
+
+const data2 = ref({
+    services: [
+        {
+            name: 'Financial Services',
+            content: 'Comprehensive financial services to support your actuarial needs, ensuring stability and growth.',
+            icon: 'account_balance',
+        },
+        {
+            name: 'Insurance Consulting',
+            content: 'Expert insurance consulting to help you navigate complex actuarial challenges and optimize your strategies.',
+            icon: 'lightbulb',
+        },
+        {
+            name: 'Reinsurance Consulting',
+            content: 'Specialized reinsurance consulting to streamline your processes and enhance risk management.',
+            icon: 'policy',
+        },
+    ],
+    other: [
+        {
+            name: 'IFRS 17 Implementation',
+            content: 'Expert guidance on implementing IFRS 17, ensuring compliance and accurate financial reporting.',
+            icon: 'account_balance',
+        },
+        {
+            name: 'Innovation and Digitization',
+            content: 'Leverage cutting-edge technology to enhance actuarial processes and drive innovation.',
+            icon: 'lightbulb',
+        },
+        {
+            name: 'Retirement and Employee Benefits',
+            content: 'Comprehensive actuarial services for retirement plans and employee benefits, ensuring financial security.',
+            icon: 'group',
+        },
+    ],
+    products: [
+        {
+            name: 'AcentRe',
+            content: 'AcentRe is an online reinsurance platform that specializes in data cleaning, pricing, and optimization to enhance your reinsurance strategies.',
+            icon: 'cloud',
+        },
+        {
+            name: 'Data Analysis Tool',
+            content: 'Utilize our Data Analysis Tool for comprehensive insights and tailored reinsurance solutions to meet your unique business needs.',
+            icon: 'insights',
+        },
+    ]
+})
+
+
+const menus = ref([
+    {
+        name: 'Reinsurance Services',
+        tag: 'services',
+        icon: 'fas fa-handshake',
+    },
+    {
+        name: 'Reinsurance Solutions',
+        tag: 'solutions',
+        icon: 'fas fa-cogs',
+    },
+    {
+        name: 'Data and Modelling',
+        tag: 'data',
+        icon: 'fas fa-chart-line',
+    },
+])
+
+const whys = ref([
+    {
+        name:'Innovation',
+        content:'We are Passionate about innovation because we believe its a driving force that fuels creativity, curiosity, and the pursuit of novel ideas and solutions',
+        icon:'',
+    },
+    {
+        name:'Data driven analytical capabilities',
+        content:'Our ability to use data, advanced analytics, and technology to extract valuable insights, help us to guide business to make informed decisions',
+        icon:'',
+    },
+    {
+        name:'Distinctive consumer insight capabilities',
+        content:'We offer distinctive consumer insight capabilities to help our clients understand the needs, and preferences of their clients.',
+        icon:'',
+    },
+    {
+        name:'Better results',
+        content:'Achieving better results and long term prosperity is a shared long term goal for Acentria group, individuals, organizations, and societies alike',
+        icon:'',
+    },
+])
+
+</script>
+
+<template>
+    <main>
+        <div>
+            <div>
+
+                <ServiceHero :content="content" />
+
+                <div class="py-6 text-white xl:py-12" style="background-color: #282e37">
+                    <div class="undefined">
+                        <section id="" class="relative py-4 lg:py-10">
+                            <div class="container px-4">
+                                <div class="pb-10 text-center lg:pb-14">
+                                    <h2
+                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-white font-semibold leading-tight lg:leading-tight">
+                                        Some of the Services we Offer for Companies
+                                    </h2>
+                                    <!-- <label
+                                        class="pt-5 text-base leading-normal font-sans text-light-highlight font-bold">
+                                        Get a reinsurance quote today — It’s that simple with Acentria
+                                    </label> -->
+                                </div>
+
+                                <ServiceTabs :menus="menus" :data="data" />
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <section id="" class="relative py-8 lg:py-20 bg-white text-center">
+                    <div class="container px-4">
+                        <h2
+                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            <span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br>
+                            Let Acentria Tailor Your Coverage To Your Needs
+                        </h2>
+                    </div>
+                </section>
+
+                <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
+
+                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+
+                        <div class="relative p-4 lg:basis-1/2">
+                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="500"
+                                height="350" decoding="async" data-nimg="1"
+                                style="color: transparent; object-fit: contain" class="rounded-xl"
+                                src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2">
+                            <div class="text-light-content pb-5 md:pb-6">
+                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                    We specialize in addressing underwriting and capital management challenges,
+                                    showcasing a deep understanding of the complexities involved in managing risk and
+                                    financial resources within the insurance industry.
+                                    <br><br>
+                                    Our comprehensive range of
+                                    services supports insurance companies, encompassing risk analysis, designing and
+                                    placing reinsurance programs, providing claims support, developing alternative risk
+                                    strategies, and offering various risk management consulting services.
+                                    <br><br>
+                                    Through
+                                    services like reinsurance program design and alternative risk strategies, we create
+                                    tailored solutions, underscoring our commitment to helping clients achieve their
+                                    specific objectives by addressing their unique challenges and goals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="py-6 text-white xl:py-12" style="background-color:#282E37">
+
+                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                        <div class="relative p-4 lg:basis-1/2"><img alt="Image of Empower leaders to act with agility"
+                                loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
+                                style="color:transparent;object-fit:contain" class="rounded-xl"
+                                src="https://acentriagroup.com/wp-content/uploads/2023/11/acentria-re-6.jpg">
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2">
+                            <h2 id=""
+                                class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-dark-title ">
+                                Reinsurance Services
+                            </h2>
+                            <div class="text-dark-content pb-5 md:pb-6">
+                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                    Our reinsurance services are based on local and international best practices that
+                                    aim to forge long- term relationships with our clients and partners. The services
+                                    are powered by highly qualified staff and the application of the latest technology
+                                    in operations, risk analysis, data analytics, and actuarial models.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+                        <div class="relative p-4 lg:basis-1/2"><img alt="Image of Stay ahead of ESG expectations"
+                                loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
+                                style="color:transparent;object-fit:contain" class="rounded-xl"
+                                src="https://acentriagroup.com/wp-content/uploads/2023/11/acentria-re-4-1024x564.jpg">
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2">
+                            <h2 id=""
+                                class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-dark-title ">
+                                Reinsurance Solutions
+                            </h2>
+                            <div class="text-dark-content pb-5 md:pb-6">
+                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                    We offer a range of reinsurance broking solutions to equip our clients with a
+                                    competitive edge that goes beyond the best pricing in the reinsurance market.
+                                    Leveraging on our expertise, market experience and relationships, we craft solutions
+                                    that suit your business portfolio mix and negotiate for terms are with well-rated
+                                    markets. The products are anchored on a 360-risk solution that aims at growth in
+                                    premiums, balanced retention and ceding of risks, improved solvency margins, and, in
+                                    turn, achieve the best credit rating for a cedant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                        <div class="relative p-4 lg:basis-1/2"><img
+                                alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
+                                width="500" height="350" decoding="async" data-nimg="1"
+                                style="color:transparent;object-fit:contain" class="rounded-xl"
+                                src="https://acentriagroup.com/wp-content/uploads/2023/11/acentria-re-5.jpg">
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2">
+                            <h2 id=""
+                                class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-dark-title ">
+                                Data And Modelling
+                            </h2>
+                            <div class="text-dark-content pb-5 md:pb-6">
+                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                    Access all your risk management data and activities in a single platform. Automate
+                                    risk workflows to eliminate errors, save on costs and regain time. Easily screen
+                                    vendors and third parties, manage cyber threats, and generate custom dashboards and
+                                    reports.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <WhyRe :whys="whys" />
+
+
+                <ContactForm />
+
+                <InTouch />
+
+            </div>
+        </div>
+    </main>
+</template>
+
+<style scoped></style>

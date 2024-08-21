@@ -337,10 +337,12 @@ onBeforeUnmount(() => {
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <div @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')"
+                            <NuxtLink to="acentria-group-reinsurance" @mouseenter="showDropdown('reinsurance')"
+                                @mouseleave="hideDropdown('reinsurance')"
+                                :class="[isReinsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : '']"
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 Reinsurance
-                            </div>
+                            </NuxtLink>
 
                             <ReinsuranceDropDown v-show="isReinsuranceDropdownVisible"
                                 @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')" />
