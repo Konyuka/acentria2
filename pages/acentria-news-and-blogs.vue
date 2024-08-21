@@ -59,39 +59,41 @@ const blogs = ref([
                     <div class="container mx-auto pb-4 lg:pb-16">
                         <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
 
-                            <article v-for="blog in blogs" class="font-sans relative isolate !mt-8 lg:!mt-10">
-                                <div class="w-full">
-                                    <div class="flex items-center gap-x-2 pb-3"><span class="text-light-content ">August
-                                            6, 2024</span></div>
-                                    <div class="group relative">
-                                        <h3 id=""
-                                            class="text-xl pb-4 md:pb-5 font-semibold md:text-2xl xl:text-2xl 2xl:text-3xl leading-tight text-light-title !pb-0 !text-xl">
-                                            <a href="#">
-                                                {{ blog.title }}
-                                            </a>
-                                        </h3>
-                                        <p class="mt-5 line-clamp-2 text-sm leading-6 text-gray-600">
-                                            {{ blog.excerpt }}
-                                        </p>
-                                    </div>
-                                    <div class="mt-6 flex border-t border-gray-900/5 pt-3">
-                                        <div class="relative flex w-full items-center gap-x-4">
-                                            <div class="flex w-full flex-row justify-between">
-                                                <div>
-                                                    <div
-                                                        class="undefined flex-row text-brand-primary hover:text-brand-red-2 active:text-brand-red-3 group flex items-center font-semibold transition duration-300 w-fit text-base">
-                                                        <a href="#"
-                                                            class="">Continue reading</a><i
-                                                            class="material-symbols-outlined text-brand-primary text-2xl group-hover:text-brand-red-2 px-1 transition duration-300 group-hover:translate-x-1"
-                                                            translate="no">chevron_right</i>
-                                                    </div>
-                                                </div>
+                            <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
+
+                                <article v-for="blog in blogs" class="group flex flex-col items-start justify-between">
+                                    <a class="w-full" href="#">
+                                        <div class="relative w-full"><img alt="" loading="lazy" width="300" height="200"
+                                                decoding="async" data-nimg="1"
+                                                class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                                                sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
+                                                src="https://cdn.sanity.io/images/33u1mixi/production/7a247ca880f3cd09a47f4ab261720dc63ef2a404-7924x6309.jpg?w=3840&amp;q=90&amp;fit=clip&amp;auto=format"
+                                                style="color: transparent;">
+                                            <div
+                                                class="className='flex absolute inset-0 flex-col items-start justify-between  rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </article>
-
+                                        <div class="max-w-full">
+                                            <div class="mt-8 flex items-center gap-x-2 text-xs"><time
+                                                    datetime="August 20, 2024" class="text-gray-500">August 20,
+                                                    2024</time>
+                                                <div class="text-gray-500">•</div>
+                                                <div class="text-gray-500">4 min read</div>
+                                            </div>
+                                            <div class="font-sans group relative">
+                                                <h3
+                                                    class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
+                                                    <span class="absolute inset-0"></span>
+                                                    {{ blog.title }}
+                                                </h3>
+                                                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                    {{ blog.excerpt }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
 
                         </div>
                     </div>
