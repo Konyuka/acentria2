@@ -51,7 +51,7 @@
                 </svg>
                 <div class="mx-auto max-w-[80vw]">
                     <h2 class="font-sans text-3xl font-semibold tracking-tight text-gray-900">
-                        You have any <span class="text-brand-primary">burning enquiries?</span>
+                        Get in <span class="text-brand-primary">touch</span>
                     </h2>
                     <p class="font-sans mt-2 text-md leading-8 text-secondary">
                         We help both Companies and Individuals. Fill the the below form and
@@ -169,7 +169,7 @@
                                     Connect with our experts. Let's explore solutions together.
                                 </p>
                             </div>
-                            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+                            <div class="font-sans grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
                                 <div class="rounded-2xl bg-gray-50 p-10 shadow-md">
                                     <h3 class="text-base font-semibold leading-7 text-gray-900">
                                         Email

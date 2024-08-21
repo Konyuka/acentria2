@@ -213,6 +213,8 @@ const menus = ref([
                 <WhyUs />
 
                 <ContactForm />
+                
+                <InTouch />
 
             </div>
         </div>
