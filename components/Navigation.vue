@@ -5,17 +5,17 @@ const bottomBarClass = computed(() => {
 });
 
 
-// const currentRoute = computed(() => {
-//     const pathName = window.location.pathname;
-//     return pathName;
-// })
+const currentRoute = computed(() => {
+    const route = useRoute();
+    return route.path;
+})
 
 const openMobileMenu = ref(false);
-const currentRoute = ref(null);
 const isInsuranceDropdownVisible = ref(false);
 const isActuarialDropdownVisible = ref(false);
 const isITDropdownVisible = ref(false);
 const isReinsuranceDropdownVisible = ref(false);
+
 
 let hideTimeout = null;
 
@@ -289,18 +289,22 @@ onBeforeUnmount(() => {
             <!-- Top Links -->
             <div class="flex flex-row items-center justify-end text-sm text-black">
                 <NuxtLink to="/about-acentria-group"
+                    :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     About
                 </NuxtLink>
                 <NuxtLink to="/contact-acentria-group"
+                    :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Contacts
                 </NuxtLink>
                 <NuxtLink to="acentria-news-and-blogs"
+                    :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
                     class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Blogs
                 </NuxtLink>
-                <NuxtLink to="acentra-group-careers"
+                <NuxtLink to="acentria-group-careers"
+                    :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
                     class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Careers
                 </NuxtLink>
@@ -318,11 +322,12 @@ onBeforeUnmount(() => {
 
                 <div class="z-50 content-center">
                     <div class="relative flex flex-col px-4 hover:cursor-default">
-                        <div @mouseenter="showDropdown('insurance')" @mouseleave="hideDropdown('insurance')"
-                            :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '']"
+                        <NuxtLink to="acentria-group-insurance" @mouseenter="showDropdown('insurance')"
+                            @mouseleave="hideDropdown('insurance')"
+                            :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
                             class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                             Insurance
-                        </div>
+                        </NuxtLink>
 
                         <InsuranceDropDown v-show="isInsuranceDropdownVisible" @mouseenter="showDropdown('insurance')"
                             @mouseleave="hideDropdown('insurance')" />
