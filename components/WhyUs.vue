@@ -1,36 +1,9 @@
 <script setup>
-const whys = ref([
-    {
-        title: 'We save you money',
-        content:'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
-        icon:'savings',
-    },
-    {
-        title:'We are there for you',
-        content:'We will take care of your insurance needs through our versatile products and scope',
-        icon:'support_agent',
-    },
-    {
-        title:'Easy claim process',
-        content:'Our claims process is hassle-free, and we are proud of our service',
-        icon:'assignment_turned_in',
-    },
-    {
-        title:'Prompt Quotations',
-        content:'Let us help you with the best timely quotations for your needs',
-        icon:'query_builder',
-    },
-    {
-        title:'Convenience',
-        content: 'Our services and solutions are simplified for clients\' use.',
-        icon:'thumb_up',
-    },
-    {
-        title:'Peace of Mind',
-        content:'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
-        icon:'sentiment_satisfied',
-    },
-])
+const props = defineProps({
+    whys: Array,
+    intro: String,
+    leftTitle: String,
+})
 
 </script>
 
@@ -46,9 +19,7 @@ const whys = ref([
                         <div class="w-full">
                             <p
                                 class="text-left font-sans tracking-normal text-4xl lg:text-xl text-white font-semibold leading-tight lg:leading-tight">
-                                At Acentria, we’re not just about insurance – we understand what’s on your mind.
-                                Our easy process takes care of your insurance needs, offering reliable coverage
-                                that gives you peace of mind. Let us handle your insurance worries at Acentria.
+                                {{ intro }}
                             </p>
                         </div>
 
@@ -63,10 +34,9 @@ const whys = ref([
                     <div
                         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         <div>
-                            <h2
+                            <h2 
+                                v-html="leftTitle"
                                 class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
-                                Why Insure with <br>
-                                <span class="text-brand-primary">Acentria</span>
                             </h2>
                         </div>
 

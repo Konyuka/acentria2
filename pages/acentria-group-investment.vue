@@ -1,0 +1,106 @@
+<script setup>
+
+const content = ref({
+    pageTitle: 'Acentria Group Investment',
+    title: 'Grow Your Wealth with Expert Investment Solutions',
+    description: 'At Acentria Group, we provide comprehensive investment solutions tailored to your financial goals. Our expert team offers personalized strategies to help you grow and protect your wealth. Trust us to navigate the complexities of the investment landscape, ensuring your financial future is secure and prosperous.',
+})
+
+
+const whys = ref([
+    {
+        title: 'We save you money',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        icon: 'savings',
+    },
+    {
+        title: 'We are there for you',
+        content: 'We will take care of your insurance needs through our versatile products and scope',
+        icon: 'support_agent',
+    },
+    {
+        title: 'Convenience',
+        content: 'Our services and solutions are simplified for clients\' use.',
+        icon: 'thumb_up',
+    },
+    {
+        title: 'Peace of Mind',
+        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
+        icon: 'sentiment_satisfied',
+    },
+])
+const intro = ref('At Acentria, we’re not just about insurance – we understand your financial aspirations. Our comprehensive investment solutions are designed to help you grow and protect your wealth, offering personalized strategies that give you peace of mind. Let us handle your investment needs at Acentria.')
+const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Acentria</span>`)
+
+</script>
+
+<template>
+    <main>
+        <div>
+            <div>
+
+                <ServiceHero :content="content" />
+
+
+
+                <section id="" class="relative py-8 lg:py-20 bg-white text-center">
+                    <div class="container px-4">
+                        <h2
+                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            <span class="text-brand-primary">Acentria Investment Services</span> <br>
+                            Unlock Your Financial Potential
+                        </h2>
+                    </div>
+                </section>
+                <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
+
+                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+
+                        <div class="relative p-4 lg:basis-1/2">
+                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="500"
+                                height="350" decoding="async" data-nimg="1"
+                                style="color: transparent; object-fit: contain" class="rounded-xl"
+                                src="https://images.pexels.com/photos/6802048/pexels-photo-6802048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2">
+                            <div class="text-light-content pb-5 md:pb-6">
+                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                    We’re not your usual investment folks – we’re like your financial buddies. Our goal
+                                    is to understand your dreams and make them happen. Whether it’s setting up
+                                    guaranteed endowments that keep your future secure or showing you how unit trusts
+                                    can help your money grow in different ways, we’re here for you. And when it comes to
+                                    getting ready for retirement, we’re your guides to feeling confident about your
+                                    finances later in life.
+                                    <br><br>
+                                    We believe in building lasting relationships with our clients, understanding their
+                                    unique needs, and providing personalized investment solutions. Our team of experts
+                                    is dedicated to helping you navigate the complexities of the financial world,
+                                    ensuring that your investments are aligned with your long-term goals. We take the
+                                    time to educate you on the various investment options available, empowering you to
+                                    make informed decisions that will benefit you and your family.
+                                    <br><br>
+                                    The best part? We’re known for being straight-up and true, always giving you advice
+                                    that’s good for you. We follow the rules of Financial Planning to make sure we’re on
+                                    the right track. So, when you’re with Acentria, it’s not just advice – it’s a
+                                    friendship built on helping you succeed. Our commitment to transparency and
+                                    integrity means that you can trust us to always have your best interests at heart.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
+                <ContactForm />
+
+                <InTouch />
+
+            </div>
+        </div>
+    </main>
+</template>
+
+<style scoped></style>
