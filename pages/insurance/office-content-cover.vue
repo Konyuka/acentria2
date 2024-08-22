@@ -2,36 +2,12 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: '',
+    subtitle: 'Office Content Insurance',
     title: 'Protect your office\'s valuable assets.',
     image: 'https://images.pexels.com/photos/265072/pexels-photo-265072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content:'With Acentria’s office content insurance, you can rest easy knowing that your office equipment, furnishings, and technology are protected against a range of risks, including theft, fire, and natural disasters. We tailor our coverage to meet your specific needs, so you never pay for more than what you require.'
 })
 
-const InsuranceCardsContent = ref({
-    title: 'Who is this medical insurance for?',
-    users: [
-        {
-            name: 'Myself',
-            icon: 'fas fa-user',
-            description: 'Stay healthy without the stress. Get medical insurance that\'s got your back',
-        },
-        {
-            name: 'My family',
-            icon: 'fas fa-users',
-            description: 'Safeguard your family\'s health & wellbeing because their smiles mean everything.',
-        },
-        {
-            name: 'My Parents',
-            icon: 'fas fa-users',
-            description: 'Give your parents the gift of protection and care. Safeguard their future together.',
-        },
-    ],
-})
-
-const InsuranceFaqsContent = ref({
-
-})
 
 const faqs = ref([
     {
@@ -61,17 +37,53 @@ const faqs = ref([
 
 ])
 
+const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
+const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
+const whys = ref([
+    {
+        title: 'We save you money',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        icon: 'savings',
+    },
+    {
+        title: 'We are there for you',
+        content: 'We will take care of your insurance needs through our versatile products and scope',
+        icon: 'support_agent',
+    },
+    {
+        title: 'Easy claim process',
+        content: 'Our claims process is hassle-free, and we are proud of our service',
+        icon: 'assignment_turned_in',
+    },
+    {
+        title: 'Prompt Quotations',
+        content: 'Let us help you with the best timely quotations for your needs',
+        icon: 'query_builder',
+    },
+    {
+        title: 'Convenience',
+        content: 'Our services and solutions are simplified for clients\' use.',
+        icon: 'thumb_up',
+    },
+    {
+        title: 'Peace of Mind',
+        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
+        icon: 'sentiment_satisfied',
+    },
+])
 </script>
 
 <template>
 
     <div>
-        <InsuranceBanner :content="InsuranceBannerContent" />
-        <InsuranceFaqs :content="faqs" />
-        <InsuranceWhy />
-        <InTouch />
+        <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
+
+
+        <Accordion :faqs="faqs" />
+
+        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
+        <ContactForm />
     </div>
-
-
 
 </template>

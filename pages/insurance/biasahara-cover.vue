@@ -2,36 +2,12 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: '',
+    subtitle: 'Biashara Insurance',
     title: 'SME Business Insurance',
     image: 'https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content:'Acentria is here to make insurance work for small businesses like yours, keeping things simple and supportive. We get that running a small business is a mix of challenges and aspirations, which is why we’re excited to offer flexible insurance solutions designed just for you. With Acentria, you’re not just getting insurance; you’re getting a helping hand that’s there to support your business journey. We know you’re busy, so we’ve made getting the coverage you need straightforward.'
 })
 
-const InsuranceCardsContent = ref({
-    title: 'Who is this medical insurance for?',
-    users: [
-        {
-            name: 'Myself',
-            icon: 'fas fa-user',
-            description: 'Stay healthy without the stress. Get medical insurance that\'s got your back',
-        },
-        {
-            name: 'My family',
-            icon: 'fas fa-users',
-            description: 'Safeguard your family\'s health & wellbeing because their smiles mean everything.',
-        },
-        {
-            name: 'My Parents',
-            icon: 'fas fa-users',
-            description: 'Give your parents the gift of protection and care. Safeguard their future together.',
-        },
-    ],
-})
-
-const InsuranceFaqsContent = ref({
-
-})
 
 const faqs = ref([
     {
@@ -61,15 +37,53 @@ const faqs = ref([
 
 ])
 
+const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
+const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
+const whys = ref([
+    {
+        title: 'We save you money',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        icon: 'savings',
+    },
+    {
+        title: 'We are there for you',
+        content: 'We will take care of your insurance needs through our versatile products and scope',
+        icon: 'support_agent',
+    },
+    {
+        title: 'Easy claim process',
+        content: 'Our claims process is hassle-free, and we are proud of our service',
+        icon: 'assignment_turned_in',
+    },
+    {
+        title: 'Prompt Quotations',
+        content: 'Let us help you with the best timely quotations for your needs',
+        icon: 'query_builder',
+    },
+    {
+        title: 'Convenience',
+        content: 'Our services and solutions are simplified for clients\' use.',
+        icon: 'thumb_up',
+    },
+    {
+        title: 'Peace of Mind',
+        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
+        icon: 'sentiment_satisfied',
+    },
+])
 </script>
 
 <template>
 
     <div>
-        <InsuranceBanner :content="InsuranceBannerContent" />
-        <InsuranceFaqs :content="faqs" />
-        <InsuranceWhy />
-        <InTouch />
+        <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
+
+
+        <Accordion :faqs="faqs" />
+
+        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
+        <ContactForm />
     </div>
 
 

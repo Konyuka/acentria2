@@ -2,36 +2,12 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Empower Your Team\'s Well- being',
+    subtitle: 'Staff Health Insurance',
     title: 'Ensure the Health and Happiness of Your Team.',
     image: 'https://images.pexels.com/photos/3845129/pexels-photo-3845129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content: 'At Acentria, we know that your employees are the backbone of your organization’s success. When your team is healthy and happy, they bring their A-game to work. With Acentria’s Employee Health Insurance, you’re showing your team that you care, boosting their happiness, and making them want to stick around for long.'
 })
 
-const InsuranceCardsContent = ref({
-    title: 'Who is this medical insurance for?',
-    users: [
-        {
-            name: 'Myself',
-            icon: 'fas fa-user',
-            description: 'Stay healthy without the stress. Get medical insurance that\'s got your back',
-        },
-        {
-            name: 'My family',
-            icon: 'fas fa-users',
-            description: 'Safeguard your family\'s health & wellbeing because their smiles mean everything.',
-        },
-        {
-            name: 'My Parents',
-            icon: 'fas fa-users',
-            description: 'Give your parents the gift of protection and care. Safeguard their future together.',
-        },
-    ],
-})
-
-const InsuranceFaqsContent = ref({
-
-})
 
 const faqs = ref([
     {
@@ -61,52 +37,62 @@ const faqs = ref([
     
 ])
 
+const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
+const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
+const whys = ref([
+    {
+        title: 'We save you money',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        icon: 'savings',
+    },
+    {
+        title: 'We are there for you',
+        content: 'We will take care of your insurance needs through our versatile products and scope',
+        icon: 'support_agent',
+    },
+    {
+        title: 'Easy claim process',
+        content: 'Our claims process is hassle-free, and we are proud of our service',
+        icon: 'assignment_turned_in',
+    },
+    {
+        title: 'Prompt Quotations',
+        content: 'Let us help you with the best timely quotations for your needs',
+        icon: 'query_builder',
+    },
+    {
+        title: 'Convenience',
+        content: 'Our services and solutions are simplified for clients\' use.',
+        icon: 'thumb_up',
+    },
+    {
+        title: 'Peace of Mind',
+        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
+        icon: 'sentiment_satisfied',
+    },
+])
+
+const heroMinData = ref({
+    title: 'Boost Employee Morale and Loyalty',
+    content:`Healthy and motivated employees aren’t just assets; they’re catalysts for progress. The connection between a strong workforce and an organization’s triumph is undeniable. As your employees embrace their health journey with the support of Acentria’s Employee Health Insurance, their engagement and dedication multiply exponentially. When they feel genuinely valued, their morale reaches new heights, and their loyalty to your company strengthens. This dynamic cycle of care, appreciation, and commitment creates a virtuous loop where both your employees and your organization flourish in harmony. With every step, you’re nurturing a culture that prioritizes well-being, elevating the overall quality of work and paving the way for sustained achievements. At Acentria, we recognize that by investing in your employees’ health, you’re investing in a future that’s brighter, healthier, and more successful for everyone involved. This investment not only boosts productivity but also reduces absenteeism and healthcare costs, creating a more efficient and resilient workforce. By fostering a supportive environment, you empower your employees to reach their full potential, driving innovation and growth within your organization. Together, we can build a healthier, more prosperous future.`,
+    image: 'https://images.pexels.com/photos/7971229/pexels-photo-7971229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+})
 </script>
 
 <template>
 
     <div>
-        <InsuranceBanner :content="InsuranceBannerContent" />
-        <InsuranceFaqs :content="faqs" />
-        <div class="overflow-hidden bg-white py-24 sm:py-32">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
 
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div class="lg:pr-8 lg:pt-4">
-                        <div class="lg:max-w-lg">
-                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                Boost Employee Morale and Loyalty
-                            </p>
-                            <p class="mt-6 text-lg leading-8 text-gray-600">
-                                Healthy and motivated employees aren’t just assets; they’re catalysts for progress. The
-                                connection between a strong workforce and an organization’s triumph is undeniable. As
-                                your employees embrace their health journey with the support of Acentria’s Employee
-                                Health Insurance, their engagement and dedication multiply exponentially. When they feel
-                                genuinely valued, their morale reaches new heights, and their loyalty to your company
-                                strengthens. This dynamic cycle of care, appreciation, and commitment creates a virtuous
-                                loop where both your employees and your organization flourish in harmony. With every
-                                step, you’re nurturing a culture that prioritizes well-being, elevating the overall
-                                quality of work and paving the way for sustained achievements. At Acentria, we recognize
-                                that by investing in your employees’ health, you’re investing in a future that’s
-                                brighter, healthier, and more successful for everyone involved. This investment not only
-                                boosts productivity but also reduces absenteeism and healthcare costs, creating a more
-                                efficient and resilient workforce. By fostering a supportive environment, you empower
-                                your employees to reach their full potential, driving innovation and growth within your
-                                organization. Together, we can build a healthier, more prosperous future.
-                            </p>
+        <Accordion :faqs="faqs" />
 
-                        </div>
-                    </div>
-                    <img src="https://images.pexels.com/photos/7971229/pexels-photo-7971229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Product screenshot"
-                        class="w-full  max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover !lg:h-1/2">
-                </div>
-            </div>
-        </div>
-        <InsuranceWhy />
-        <InTouch />
+        <HeroMin :heroMinData="heroMinData" />
+
+
+        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
+        <ContactForm />
     </div>
 
 

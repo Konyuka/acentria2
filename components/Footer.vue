@@ -74,7 +74,7 @@ const menuItem = ref([
                     <!-- Logo -->
                     <div class="col-span-2 mb-8 lg:col-span-1 lg:mb-0">
                         <img alt="Diligent" loading="lazy" width="400" height="42" decoding="async" data-nimg="1" class="w-[18vw]"
-                            style="color: transparent" src="/img/logot.png" />
+                            style="color: transparent" src="/img/LogoT.png" />
                     </div>
 
                     <!-- Links -->

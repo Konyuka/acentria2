@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: '',
+    subtitle: 'Commercial Property Insurance',
     title: 'Protect your commercial assets.',
     image: 'https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content:'At Acentria, we understand that your business’s physical assets are the foundation of your success. That’s why we offer top-notch Commercial Property Insurance, providing you with the peace of mind that your investments are protected. Our policies are tailored to your unique needs, ensuring that your buildings, equipment, and inventory are safeguarded against unexpected disasters.'
@@ -35,17 +35,53 @@ const faqs = ref([
     },
 ])
 
+const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
+const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
+const whys = ref([
+    {
+        title: 'We save you money',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        icon: 'savings',
+    },
+    {
+        title: 'We are there for you',
+        content: 'We will take care of your insurance needs through our versatile products and scope',
+        icon: 'support_agent',
+    },
+    {
+        title: 'Easy claim process',
+        content: 'Our claims process is hassle-free, and we are proud of our service',
+        icon: 'assignment_turned_in',
+    },
+    {
+        title: 'Prompt Quotations',
+        content: 'Let us help you with the best timely quotations for your needs',
+        icon: 'query_builder',
+    },
+    {
+        title: 'Convenience',
+        content: 'Our services and solutions are simplified for clients\' use.',
+        icon: 'thumb_up',
+    },
+    {
+        title: 'Peace of Mind',
+        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
+        icon: 'sentiment_satisfied',
+    },
+])
 </script>
 
 <template>
 
     <div>
-        <InsuranceBanner :content="InsuranceBannerContent" />
-        <InsuranceFaqs class="mt-10" :content="faqs" />
-        <InsuranceWhy />
-        <InTouch />
+        <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
+
+
+        <Accordion :faqs="faqs" />
+
+        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
+        <ContactForm />
     </div>
-
-
 
 </template>

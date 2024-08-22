@@ -8,30 +8,6 @@ const InsuranceBannerContent = ref({
     content:'At Acentria, we understand that business success goes hand-in-hand with managing risk effectively. That’s why our General Liability Insurance is designed to be your first line of defense. With our tailored coverage, you can shield your business from unexpected accidents, lawsuits, and mishaps, allowing you to focus on what matters most – growing your enterprise. Let us be your partner in securing your business’s future with peace of mind.'
 })
 
-const InsuranceCardsContent = ref({
-    title: 'Who is this medical insurance for?',
-    users: [
-        {
-            name: 'Myself',
-            icon: 'fas fa-user',
-            description: 'Stay healthy without the stress. Get medical insurance that\'s got your back',
-        },
-        {
-            name: 'My family',
-            icon: 'fas fa-users',
-            description: 'Safeguard your family\'s health & wellbeing because their smiles mean everything.',
-        },
-        {
-            name: 'My Parents',
-            icon: 'fas fa-users',
-            description: 'Give your parents the gift of protection and care. Safeguard their future together.',
-        },
-    ],
-})
-
-const InsuranceFaqsContent = ref({
-
-})
 
 const faqs = ref([
     {
@@ -61,48 +37,62 @@ const faqs = ref([
 
 ])
 
+const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
+const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
+const whys = ref([
+    {
+        title: 'We save you money',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        icon: 'savings',
+    },
+    {
+        title: 'We are there for you',
+        content: 'We will take care of your insurance needs through our versatile products and scope',
+        icon: 'support_agent',
+    },
+    {
+        title: 'Easy claim process',
+        content: 'Our claims process is hassle-free, and we are proud of our service',
+        icon: 'assignment_turned_in',
+    },
+    {
+        title: 'Prompt Quotations',
+        content: 'Let us help you with the best timely quotations for your needs',
+        icon: 'query_builder',
+    },
+    {
+        title: 'Convenience',
+        content: 'Our services and solutions are simplified for clients\' use.',
+        icon: 'thumb_up',
+    },
+    {
+        title: 'Peace of Mind',
+        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
+        icon: 'sentiment_satisfied',
+    },
+])
+
+const heroMinData = ref({
+    title: 'Secure your business\'s future.',
+    content:`When it comes to safeguarding your business from unexpected challenges, General Liability Insurance is your frontline defense, and at Acentria, we’re here to provide you with the best protection.Running a business is a journey filled with ups and downs, and while you strive to provide excellent products and services, there are inherent risks that come with it. These risks could manifest in various ways – a customer slipping and getting injured on your premises, a claim of property damage caused by your employees, or even a legal dispute related to your advertising practices. <br><br> At Acentria, we take our role as your insurance partner seriously. We recognize that not all businesses are the same; they have unique needs, risks, and goals. That’s why we go the extra mile to provide you with the best protection.`,
+    image: 'https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+})
 </script>
 
 <template>
 
     <div>
-        <InsuranceBanner :content="InsuranceBannerContent" />
-        <InsuranceFaqs :content="faqs" />
-        <div class="overflow-hidden bg-white py-24 sm:py-32">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
 
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div class="lg:pr-8 lg:pt-4">
-                        <div class="lg:max-w-lg">
-                            <!-- <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                Boost Employee Morale and Loyalty
-                            </p> -->
-                            <p class="mt-6 text-lg leading-8 text-gray-600">
-                                When it comes to safeguarding your business from unexpected challenges, General
-                                Liability Insurance is your frontline defense, and at Acentria, we’re here to provide
-                                you with the best protection.Running a business is a journey filled with ups and downs,
-                                and while you strive to provide excellent products and services, there are inherent
-                                risks that come with it. These risks could manifest in various ways – a customer
-                                slipping and getting injured on your premises, a claim of property damage caused by your
-                                employees, or even a legal dispute related to your advertising practices.
+        <Accordion :faqs="faqs" />
 
-                                At Acentria, we take our role as your insurance partner seriously. We recognize that not
-                                all businesses are the same; they have unique needs, risks, and goals. That’s why we go
-                                the extra mile to provide you with the best protection.
-                            </p>
+        <HeroMin :heroMinData="heroMinData" />
 
-                        </div>
-                    </div>
-                    <img src="https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Product screenshot"
-                        class="w-full  max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover !lg:h-1/2">
-                </div>
-            </div>
-        </div>
-        <InsuranceWhy />
-        <InTouch />
+
+        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
+        <ContactForm />
     </div>
 
 

@@ -151,8 +151,7 @@ onMounted(()=>{
             <div class="flex flex-col">
 
                 <div class="bg-black border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')"
-                        href="#"
+                    <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')" href="#"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-user text-lg undefined " translate="no"></i>
@@ -180,8 +179,7 @@ onMounted(()=>{
                 </div>
 
                 <div class="border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('corporate')" @mouseleave="hideDropdown('corporate')"
-                        href="#"
+                    <a @mouseenter="showDropdown('corporate')" @mouseleave="hideDropdown('corporate')" href="#"
                         :class="[isCorporateDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-users text-lg undefined" translate="no"></i>
@@ -192,7 +190,7 @@ onMounted(()=>{
                         @mouseleave="hideDropdown('corporate')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in corpCover.items">
+                            <NuxtLink :to="item.link" v-for="item in corpCover.items">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div
@@ -209,8 +207,7 @@ onMounted(()=>{
                 </div>
 
                 <div class="border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('business')" @mouseleave="hideDropdown('business')"
-                        href="#"
+                    <a @mouseenter="showDropdown('business')" @mouseleave="hideDropdown('business')" href="#"
                         :class="[isBusinessDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-briefcase text-lg undefined" translate="no"></i>
@@ -221,7 +218,7 @@ onMounted(()=>{
                         @mouseleave="hideDropdown('business')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in bizCover.items">
+                            <NuxtLink :to="item.link" v-for="item in bizCover.items">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div
