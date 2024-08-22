@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.12",
     "nuxt": "^3.12.4",
     "pagedone": "^1.2.1",
     "swiper": "^8.4.7",

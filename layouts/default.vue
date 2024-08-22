@@ -1,6 +1,8 @@
 <script setup>
 import { onMounted, ref, watch, computed } from 'vue';
 // import WOW from 'wow.js';
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+
 
 
 const scrollTopButton = ref(false)
@@ -27,13 +29,14 @@ onMounted(() => {
 
     <div class="">
         <Navigation />
-    
+        
         <slot />
-    
+        
         <Footer />
+        <SpeedInsights />
     </div>
 
-<!-- 
+    <!-- 
     <button @click="scrollToTop" v-show="scrollTopButton" type="button" data-te-ripple-init data-te-ripple-color="light"
         class="tranform transition hover:scale-125 duration-700 ease-in-out !fixed bottom-5 right-3 rounded-full bg-primary p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg"
         id="btn-back-to-top">
