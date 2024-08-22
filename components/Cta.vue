@@ -24,7 +24,7 @@
                                 conversation.
                             </p>
                         </div>
-                        <a href="request-a-demo.html"
+                        <a href="#"
                             class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Talk
                             to support<svg
                                 class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
@@ -60,7 +60,7 @@
                                     data.
                                 </p>
                             </div>
-                            <a href="trust.html"
+                            <a href="#"
                                 class="cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">Learn
                                 more<svg
                                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
@@ -92,7 +92,7 @@
                                     24/7/365.
                                 </p>
                             </div>
-                            <a href="support.html"
+                            <a href="#"
                                 class="cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">Learn
                                 more<svg
                                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"

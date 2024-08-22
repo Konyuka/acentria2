@@ -33,7 +33,7 @@ const props = defineProps({
                             </p>
                         </div>
                         <div class="w-full">
-                            <a href="/request-a-demo"
+                            <a href="#"
                                 class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                                 Engage an Expert<svg
                                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
@@ -43,7 +43,7 @@ const props = defineProps({
                                         <path class="transition-all duration-75 translate-x-0 transform-none"
                                             d="M1 1l4 4-4 4"></path>
                                     </g>
-                                </svg></a><a href="/pricing"
+                                </svg></a><a href="#"
                                 class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                                 Get a Quote<svg
                                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"

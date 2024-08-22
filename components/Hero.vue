@@ -46,7 +46,7 @@
                         </p>
                     </div>
                     <div class="w-full">
-                        <a href="request-a-demo.html"
+                        <a href="#"
                             class="font-sans button-animation inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-700 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                             Learn more about us
                             <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
@@ -59,7 +59,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="pricing.html"
+                        <a href="#"
                             class="font-sans button-animation inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-700 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                             Contact Us
                             <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"

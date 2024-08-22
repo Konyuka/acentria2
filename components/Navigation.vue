@@ -391,7 +391,7 @@ onBeforeUnmount(() => {
                 </div>
 
             </div>
-            <a href="request-a-demo.html"
+            <a href="#"
                 class="font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-3 text-base">
                 Get a Quote
                 <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
@@ -406,7 +406,7 @@ onBeforeUnmount(() => {
 
     <div class="flex w-full flex-row justify-between bg-white lg:hidden">
         <div class="flex w-full justify-between px-4 py-4 shadow">
-            <a href="index.html"><img alt="Diligent" loading="lazy" width="103" height="29" decoding="async"
+            <a href="#"><img alt="Diligent" loading="lazy" width="103" height="29" decoding="async"
                     data-nimg="1" style="color: transparent" src="/_next/imagec2d9.svg" /></a>
             <div class="translate-y-2.5 cursor-pointer">
                 <div
@@ -417,7 +417,7 @@ onBeforeUnmount(() => {
         <div
             class="fixed left-0 top-0 z-[100] h-screen w-screen -translate-x-full overflow-y-scroll bg-white transition-all false null">
             <div class="mb-4 flex w-full justify-between px-4 py-4 shadow">
-                <a href="index.html"><img alt="Diligent" loading="lazy" width="103" height="29" decoding="async"
+                <a href="#"><img alt="Diligent" loading="lazy" width="103" height="29" decoding="async"
                         data-nimg="1" style="color: transparent" src="/_next/imagec2d9.svg" /></a>
                 <div
                     class="w-8 h-0.5 bg-light-icon rotate-45 before:content-[&quot;&quot;] before:absolute before:rotate-90 before:w-8 before:h-0.5 before:bg-light-icon translate-y-3">
@@ -427,9 +427,9 @@ onBeforeUnmount(() => {
                 <div class="rounded-sm bg-brand-gray px-3 py-6">
                     <div
                         class="mb-6 flex flex-row items-center justify-center text-sm font-semibold text-light-content">
-                        <a class="border-r border-brand-divider px-2 py-1.5" href="company/partners.html">Partner</a><a
-                            class="border-r border-brand-divider px-2 py-1.5" href="company/about-us.html">Company</a><a
-                            class="px-2 py-1.5" href="support.html">Support</a>
+                        <a class="border-r border-brand-divider px-2 py-1.5" href="#">Partner</a><a
+                            class="border-r border-brand-divider px-2 py-1.5" href="#">Company</a><a
+                            class="px-2 py-1.5" href="#">Support</a>
                     </div>
                     <div class="mb-4 flex flex-row justify-center gap-4">
                         <button
@@ -533,7 +533,7 @@ onBeforeUnmount(() => {
                     <div class="mb-4 text-xs font-semibold uppercase text-light-icon">
                         More
                     </div>
-                    <a href="elevate.html" class="pb-2 text-sm font-semibold text-light-content hover:text-light-link">
+                    <a href="#" class="pb-2 text-sm font-semibold text-light-content hover:text-light-link">
                         <div class="flex w-full flex-shrink flex-grow-0 cursor-pointer flex-row items-center gap-1">
                             Diligent Elevate<i class="material-symbols-outlined text-lg undefined"
                                 translate="no">open_in_new</i>
@@ -541,7 +541,7 @@ onBeforeUnmount(() => {
                         <div class="text-xs">
                             (formerly Modern Governance Summit)
                         </div>
-                    </a><a href="https://www.diligentinstitute.com/"
+                    </a><a href="#"
                         class="pb-2 text-sm font-semibold text-light-content hover:text-light-link">
                         <div class="flex w-full flex-shrink flex-grow-0 cursor-pointer flex-row items-center gap-1">
                             Diligent Institute<i class="material-symbols-outlined text-lg undefined"
