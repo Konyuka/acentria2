@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Guarding Your Haven, Inside and Out',
+    subtitle: 'Home Insurance',
     title: 'Protecting Your Home, Inside and Out',
     image: 'https://images.pexels.com/photos/731812/pexels-photo-731812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
@@ -35,15 +35,53 @@ const faqs = ref([
     },
 ])
 
+const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
+const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
+const whys = ref([
+    {
+        title: 'We save you money',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        icon: 'savings',
+    },
+    {
+        title: 'We are there for you',
+        content: 'We will take care of your insurance needs through our versatile products and scope',
+        icon: 'support_agent',
+    },
+    {
+        title: 'Easy claim process',
+        content: 'Our claims process is hassle-free, and we are proud of our service',
+        icon: 'assignment_turned_in',
+    },
+    {
+        title: 'Prompt Quotations',
+        content: 'Let us help you with the best timely quotations for your needs',
+        icon: 'query_builder',
+    },
+    {
+        title: 'Convenience',
+        content: 'Our services and solutions are simplified for clients\' use.',
+        icon: 'thumb_up',
+    },
+    {
+        title: 'Peace of Mind',
+        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
+        icon: 'sentiment_satisfied',
+    },
+])
+
 </script>
 
 <template>
 
     <div>
-        <InsuranceBanner :content="InsuranceBannerContent" />
-        <InsuranceFaqs class="mt-10" :content="faqs" />
-        <InsuranceWhy />
-        <InTouch />
+        <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
+
+        <Accordion :faqs="faqs" />
+
+        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
+        <ContactForm />
     </div>
 
 
