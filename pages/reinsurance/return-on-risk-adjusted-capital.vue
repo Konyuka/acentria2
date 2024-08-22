@@ -1,0 +1,129 @@
+<script setup>
+import { ref } from "vue";
+
+const ReinsuranceBannerContent = ref({
+    title: 'Managing Risk On Adjusted Capital',
+    image: 'https://images.pexels.com/photos/210679/pexels-photo-210679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+})
+const ReinsuranceFeatureContent = ref(
+    {
+        description: 'With AcentRe\'s Key Platform Features, you\'re not just purchasing a tool; you\'re investing in a transformative solution that puts you at the forefront of the reinsurance industry.These features are designed to provide the insights and flexibility required to make informed, data - driven decisions, ultimately enhancing your profitability, reducing risk, and ensuring the long - term success of your insurance business.',
+        items: [
+            {
+                title: 'Powerfull Pricing Engines For Treaty Structures',
+                icon: 'fa-calculator',
+                content: 'AcentRe boasts cutting-edge pricing engines capable of handling a wide spectrum of treaty structures. Say goodbye to the days of guesswork and reliance on outdated rules of thumb. With AcentRe, you can now set reinsurance and retrocession pricing with confidence, leveraging advanced data analytics and risk assessment tools.'
+            },
+            {
+                title: 'Compare Unlimited Scenarios for Optimization',
+                icon: 'fa-shield-alt',
+                content: 'In the fast-paced world of insurance, adaptability is key to success. AcentRe enables you to explore an unlimited number of scenarios, helping you optimize your reinsurance strategy effortlessly. Whether you\'re fine- tuning your approach to minimize risk or maximize profitability, our platform provides the flexibility you need.'
+            },
+            {
+                title: 'Accessible at your comfort',
+                icon: 'fa-sync-alt',
+                content: 'We understand the value of timely decision-making. AcentRe is accessible whenever and wherever you need it. The platform is designed to ensure that you have the data and insights at your fingertips, making it convenient for you to stay ahead of industry trends and respond to changing market conditions.'
+            },
+            {
+                title: 'Customizable to Reflect Client Needs',
+                icon: 'fa-chart-pie',
+                content: 'Every client is unique, and AcentRe recognizes that. Our platform is fully customizable to reflect the specific needs of your clients. This level of tailored service allows you to offer personalized solutions, setting you apart from the competition and strengthening client relationships.'
+            }
+
+        ]
+    }
+)
+
+const faqs = ref([
+    {
+        name: 'Data Driven Insights',
+        content:'Our approach to managing risk on adjusted capital is rooted in data-driven insights. Acentria leverages advanced analytics, historical data, and cutting-edge technology to assess and optimize the allocation of adjusted capital.'
+    },
+    {
+        name: 'Regulatory Adherence and Compliance',
+        content:'Stringent compliance with industry regulations and legal requirements is integral to our strategy. Acentria ensures that our risk management practices meet the highest standards, providing transparency and security.'
+    },
+    {
+        name: 'Profitability Objectives',
+        content: 'A core focus of our strategy is achieving profitability while managing risk on adjusted capital efficiently. We work to maintain financial strength and sustainability while supporting our clients\' goals.'
+    },
+    {
+        name: 'Sustainable Growth',
+        content:'Managing risk on adjusted capital is not only about protection but also about facilitating growth. We aim to strike a balance between preserving capital and enabling long-term financial success.'
+    },
+    
+
+])
+
+
+</script>
+
+<template>
+
+    <div>
+
+        <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+
+        <div class="overflow-hidden bg-white py-10">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+
+                <div
+                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                    <div class="lg:pr-8 lg:pt-4">
+                        <div class="lg:max-w-lg">
+                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                                Best of Our ROAC Services
+                            </p>
+                            <p class="mt-6 text-lg leading-8 text-gray-600">
+                                At Acentria, our commitment to managing risk on adjusted capital is deeply rooted in
+                                expertise, data-driven insights, and a dedication to delivering value to our clients. We
+                                understand the importance of aligning our goals with your specific financial needs and
+                                the ever-changing dynamics of the insurance and reinsurance industry. With our
+                                comprehensive approach, we are well-prepared to navigate the intricacies of risk
+                                management on adjusted capital, providing stability, reliability, and a competitive edge
+                                to our valued clients. Your financial security and long-term success are our top
+                                priorities, and our expertise in managing risk on adjusted capital reflects that
+                                unwavering commitment.
+                            </p>
+
+                        </div>
+                    </div>
+                    <img src="https://images.pexels.com/photos/4386325/pexels-photo-4386325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Product screenshot"
+                        class="w-full  max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover !lg:h-1/2">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-2">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 align-center my-10">
+                <div class="lg:pr-8 lg:pt-4">
+                    <div class="lg:max-w-lg">
+
+                        <!-- <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+                            Measurable Metrics for Informed Decisions
+                        </p> -->
+                        <p class="mt-6 text-lg leading-8 text-gray-600">
+                            In the world of insurance and reinsurance, managing risk on adjusted capital is a pivotal
+                            practice to ensure financial stability and security. Adjusted capital represents the capital
+                            held in excess of regulatory requirements, and effective risk management in this context is
+                            crucial for protecting assets and policyholders. At Acentria, we recognize the significance
+                            of managing risk on adjusted capital in addressing the complex dynamics of the insurance and
+                            reinsurance industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ReinsuranceFaqs :content="faqs" />
+            </div>
+        </div>
+        <ReinsuranceWhy />
+        <InTouch />
+    </div>
+
+
+
+</template>

@@ -121,8 +121,7 @@ onMounted(() => {
             <div class="flex flex-col">
 
                 <div class="border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')"
-                        href="#"
+                    <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')" href="#"
                         :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-shield text-lg undefined" translate="no"></i>
@@ -133,7 +132,7 @@ onMounted(() => {
                         @mouseleave="hideDropdown('services')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in reServices">
+                            <NuxtLink :to="item.link" v-for="item in reServices">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div
@@ -150,8 +149,7 @@ onMounted(() => {
                 </div>
 
                 <div class="border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('solutions')" @mouseleave="hideDropdown('solutions')"
-                        href="#"
+                    <a @mouseenter="showDropdown('solutions')" @mouseleave="hideDropdown('solutions')" href="#"
                         :class="[isSolutionsDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-cogs text-lg undefined" translate="no"></i>
@@ -162,7 +160,7 @@ onMounted(() => {
                         @mouseleave="hideDropdown('solutions')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in reSolutions">
+                            <NuxtLink :to="item.link" v-for="item in reSolutions">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div
@@ -179,8 +177,7 @@ onMounted(() => {
                 </div>
 
                 <div class="border-r border-brand-divider">
-                    <a @mouseenter="showDropdown('data')" @mouseleave="hideDropdown('data')"
-                        href="#"
+                    <a @mouseenter="showDropdown('data')" @mouseleave="hideDropdown('data')" href="#"
                         :class="[isDataDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-chart-line text-lg undefined" translate="no"></i>
@@ -190,7 +187,7 @@ onMounted(() => {
                     <div v-show="isDataDropdownVisible" @mouseenter="showDropdown('data')"
                         @mouseleave="hideDropdown('data')" class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in reData">
+                            <NuxtLink :to="item.link" v-for="item in reData">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div

@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
     <div class="bg-white px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
-        <div class="min-w-[90vw] mx-auto pb-4 lg:pb-16">
+        <div class="max-w-5xl mx-auto pb-4 lg:pb-16">
             <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20 grid grid-cols-2 gap-2">
 
                 <article v-for="faq in faqs" class="relative isolate !mt-8 lg:!mt-10">
