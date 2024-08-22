@@ -163,7 +163,7 @@ onMounted(()=>{
                         @mouseleave="hideDropdown('personal')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in personalCover.items">
+                            <NuxtLink :to="item.link" v-for="item in personalCover.items">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div

@@ -298,12 +298,12 @@ onBeforeUnmount(() => {
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Contacts
                 </NuxtLink>
-                <NuxtLink to="acentria-news-and-blogs"
+                <NuxtLink to="/acentria-news-and-blogs"
                     :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
                     class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Blogs
                 </NuxtLink>
-                <NuxtLink to="acentria-group-careers"
+                <NuxtLink to="/acentria-group-careers"
                     :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
                     class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Careers
@@ -322,7 +322,7 @@ onBeforeUnmount(() => {
 
                 <div class="z-50 content-center">
                     <div class="relative flex flex-col px-4 hover:cursor-default">
-                        <NuxtLink to="acentria-group-insurance" @mouseenter="showDropdown('insurance')"
+                        <NuxtLink to="/acentria-group-insurance" @mouseenter="showDropdown('insurance')"
                             @mouseleave="hideDropdown('insurance')"
                             :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
                             class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
@@ -337,7 +337,7 @@ onBeforeUnmount(() => {
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="acentria-group-reinsurance" @mouseenter="showDropdown('reinsurance')"
+                            <NuxtLink to="/acentria-group-reinsurance" @mouseenter="showDropdown('reinsurance')"
                                 @mouseleave="hideDropdown('reinsurance')"
                                 :class="[isReinsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : '']"
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
@@ -353,7 +353,7 @@ onBeforeUnmount(() => {
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="acentria-group-actuarial" @mouseenter="showDropdown('actuarial')"
+                            <NuxtLink to="/acentria-group-actuarial" @mouseenter="showDropdown('actuarial')"
                                 @mouseleave="hideDropdown('actuarial')"
                                 :class="[isActuarialDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : '']"
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
@@ -369,7 +369,7 @@ onBeforeUnmount(() => {
                 <div class="z-50 content-center">
                     <div class="z-50">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="acentria-group-investment"
+                            <NuxtLink to="/acentria-group-investment"
                                 :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : '']"
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 Investments
