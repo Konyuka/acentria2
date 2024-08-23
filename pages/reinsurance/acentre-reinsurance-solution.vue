@@ -33,6 +33,11 @@ const ReinsuranceFeatureContent = ref(
         ]
     }
 )
+const ReinsuranceFeatureContent2 = ref({
+    title: 'Measurable Metrics for Informed Decisions',
+    image: 'https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    content:'AcentRe empowers insurers to transform their understanding of risk and return transfer while planning and negotiating reinsurance and retrocession treaties. Granting cedants the power of faster data analytics and deliberate transformative decision making, is at the core of the platform’s design. AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our platform equips you with the metrics and analytics you need to make decisions with confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers you to make strategic choices based on real-time data and deep insights.AcentRe empowers insurers to transform their understanding of risk and return transfer while planning and negotiating reinsurance and retrocession treaties. Granting cedants the power of faster data analytics and deliberate transformative decision making, is at the core of the platform’s design. AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our platform equips you with the metrics and analytics you need to make decisions with confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers you to make strategic choices based on real-time data and deep insights.'
+})
 
 const faqs = ref([
     {
@@ -63,7 +68,7 @@ const usage = ref([
         content: 'Retrocession is no longer a guessing game. AcentRe\'s robust capabilities help you accurately evaluate retrocession pricing, ensuring that you make the most informed decisions for your organization.'
     },
     {
-        name:'Reinsurance Strategy Optimization',
+        name:'Reinsurance Optimization',
         content:'Optimize your reinsurance strategies like never before. AcentRe allows you to explore countless scenarios, so you can make choices that enhance your financial performance and mitigate risk effectively.'
     },
     {
@@ -79,98 +84,38 @@ const usage = ref([
     <div>
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+        <ReinsuranceFeature :content="ReinsuranceFeatureContent2" />
 
-        <div class="overflow-hidden bg-white py-10">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-10">
 
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-1 mb-20">
+            <article v-for="service in usage" class="shadow-2xl p-4 border-2 border-brand-primary rounded-lg group flex flex-col items-start justify-between">
+                <a class="w-full" href="#">
                     
-                    <div class="lg:pr-8 lg:pt-4">
-                        <div class="lg:max-w-full">
-                            <h2 class="text-base font-semibold leading-7 text-primary">Acentre</h2>
-                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                Measurable Metrics for Informed Decisions
+                    <!-- <i class="fas fa-caret-down text-brand-primary text-3xl"></i> -->
+                    <div class="max-w-full">
+
+                        <div class="font-sans group relative">
+                            <h3
+                                class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
+                                <span class="absolute inset-0"></span>
+                                {{ service.name }}
+                            </h3>
+                            <p class="mt-5 text-sm leading-6 text-gray-600">
+                                {{ service.content }}
                             </p>
-                            <p class="mt-6 text-lg leading-8 text-gray-600">
-                                AcentRe empowers insurers to transform their understanding of risk and return transfer
-                                while planning and negotiating reinsurance and retrocession treaties. Granting cedants
-                                the power of faster data analytics and deliberate transformative decision making, is at
-                                the core of the platform’s design.
-
-
-
-                                AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our
-                                platform equips you with the metrics and analytics you need to make decisions with
-                                confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers
-                                you to make strategic choices based on real-time data and deep insights.
-                            </p>
-
                         </div>
                     </div>
-                </div>
+                </a>
+            </article>
 
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div class="lg:pr-8 lg:pt-4">
-                        <div class="lg:max-w-lg">
-                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                How can it help you
-                            </p>
-                            <p class="mt-6 text-lg leading-8 text-gray-600">
-                                In a world where data and precision are paramount, AcentRe stands as the pinnacle of
-                                innovation in the insurance and reinsurance sector. Join us and unleash the power of
-                                data-driven decision-making for a brighter and more profitable future.
-                            </p>
-
-                        </div>
-                    </div>
-                    <img src="https://images.pexels.com/photos/171198/pexels-photo-171198.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Product screenshot"
-                        class="w-full  max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover lg:h-full">
-                </div>
-                <dl
-                    class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none grid grid-cols-2 gap-5">
-
-                    <div v-for="use in usage" class="relative pl-9">
-                        <dt class="inline font-semibold text-gray-900">
-                            <i class="left-1 top-1 h-5 w-5 text-primary fas fa-caret-right text-xl"></i>
-                            {{ use.name }}
-                        </dt>
-                        <dd class="inline">
-                            {{ use.content }}
-                        </dd>
-                    </div>
-
-                </dl>
-            </div>
         </div>
 
 
         <ReFeatures :content="ReinsuranceFeatureContent" />
-        <div class="grid grid-cols-2">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 align-center my-10">
-                <div class="lg:pr-8 lg:pt-4">
-                    <div class="lg:max-w-lg">
 
-                        <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-                            Measurable Metrics for Informed Decisions
-                        </p>
-                        <p class="mt-6 text-lg leading-8 text-gray-600">
-                            AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our
-                            platform equips you with the metrics and analytics you need to make decisions with
-                            confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers you to
-                            make strategic choices based on real-time data and deep insights.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <ReinsuranceFaqs :content="faqs" />
-            </div>
-        </div>
+        <Accordion :faqs="faqs" />
         <ReinsuranceWhy />
-        <InTouch />
+        <ContactForm />
     </div>
 
 

@@ -33,6 +33,11 @@ const ReinsuranceFeatureContent = ref(
         ]
     }
 )
+const ReinsuranceFeatureContent2 = ref({
+    title: 'Best of Our ROAC Services',
+    image: 'https://images.pexels.com/photos/4386325/pexels-photo-4386325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    content:'At Acentria, our commitment to managing risk on adjusted capital is deeply rooted in expertise, data-driven insights, and a dedication to delivering value to our clients. We understand the importance of aligning our goals with your specific financial needs and the ever-changing dynamics of the insurance and reinsurance industry. With our comprehensive approach, we are well-prepared to navigate the intricacies of risk management on adjusted capital, providing stability, reliability, and a competitive edge to our valued clients. Your financial security and long-term success are our top priorities, and our expertise in managing risk on adjusted capital reflects that unwavering commitment.'
+})
 
 const faqs = ref([
     {
@@ -61,67 +66,11 @@ const faqs = ref([
 <template>
 
     <div>
-
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-
-        <div class="overflow-hidden bg-white py-10">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-
-
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div class="lg:pr-8 lg:pt-4">
-                        <div class="lg:max-w-lg">
-                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                Best of Our ROAC Services
-                            </p>
-                            <p class="mt-6 text-lg leading-8 text-gray-600">
-                                At Acentria, our commitment to managing risk on adjusted capital is deeply rooted in
-                                expertise, data-driven insights, and a dedication to delivering value to our clients. We
-                                understand the importance of aligning our goals with your specific financial needs and
-                                the ever-changing dynamics of the insurance and reinsurance industry. With our
-                                comprehensive approach, we are well-prepared to navigate the intricacies of risk
-                                management on adjusted capital, providing stability, reliability, and a competitive edge
-                                to our valued clients. Your financial security and long-term success are our top
-                                priorities, and our expertise in managing risk on adjusted capital reflects that
-                                unwavering commitment.
-                            </p>
-
-                        </div>
-                    </div>
-                    <img src="https://images.pexels.com/photos/4386325/pexels-photo-4386325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Product screenshot"
-                        class="w-full  max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover !lg:h-1/2">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="grid grid-cols-2">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 align-center my-10">
-                <div class="lg:pr-8 lg:pt-4">
-                    <div class="lg:max-w-lg">
-
-                        <!-- <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-                            Measurable Metrics for Informed Decisions
-                        </p> -->
-                        <p class="mt-6 text-lg leading-8 text-gray-600">
-                            In the world of insurance and reinsurance, managing risk on adjusted capital is a pivotal
-                            practice to ensure financial stability and security. Adjusted capital represents the capital
-                            held in excess of regulatory requirements, and effective risk management in this context is
-                            crucial for protecting assets and policyholders. At Acentria, we recognize the significance
-                            of managing risk on adjusted capital in addressing the complex dynamics of the insurance and
-                            reinsurance industry.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <ReinsuranceFaqs :content="faqs" />
-            </div>
-        </div>
+        <ReinsuranceFeature :content="ReinsuranceFeatureContent2" />
+        <Accordion :faqs="faqs" />
         <ReinsuranceWhy />
-        <InTouch />
+        <ContactForm />
     </div>
 
 

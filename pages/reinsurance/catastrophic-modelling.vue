@@ -34,6 +34,12 @@ const ReinsuranceFeatureContent = ref(
     }
 )
 
+const ReinsuranceFeatureContent2 = ref({
+    title: 'Reinsurance Catastrophic Modelling',
+    image: 'https://images.pexels.com/photos/709542/pexels-photo-709542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    content:'In the realm of insurance and reinsurance, catastrophic modeling is a critical tool that enables us to understand and manage the impact of extreme events. Catastrophic modeling allows us to assess and prepare for natural disasters, pandemics, and other large-scale risks, providing invaluable insights to protect our clients and their assets. At Acentria, we recognize the vital role that catastrophic modeling plays in addressing the ever-evolving landscape of insurance and reinsurance.'
+})
+
 const faqs = ref([
     {
         name: 'Data Driven Insights',
@@ -62,71 +68,11 @@ const faqs = ref([
     <div>
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+        <ReinsuranceFeature :content="ReinsuranceFeatureContent2" />
 
-        <div class="overflow-hidden bg-white py-10">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-
-
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div class="lg:pr-8 lg:pt-4">
-                        <div class="lg:max-w-lg">
-                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                Our Modeling Services
-                            </p>
-                            <p class="mt-6 text-lg leading-8 text-gray-600">
-                                At Acentria, our commitment to catastrophic modeling is rooted in expertise, data-driven
-                                insights, and a dedication to delivering value to our clients. We understand the
-                                importance of aligning our goals with your specific risk assessment needs and the
-                                ever-changing dynamics of the insurance and reinsurance industry. With our comprehensive
-                                approach, we are well-prepared to navigate the complexities of catastrophic modeling,
-                                providing stability, reliability, and a competitive edge to our valued clients. Your
-                                protection and preparedness in the face of extreme events are our top priorities, and
-                                our catastrophic modeling expertise reflects that unwavering commitment. We leverage
-                                cutting-edge technology and advanced analytical techniques to ensure that our models
-                                are robust, accurate, and tailored to meet the unique challenges faced by our clients.
-                                Our team of experts continuously monitors and updates our models to reflect the latest
-                                scientific research and industry trends, ensuring that you receive the most up-to-date
-                                and relevant insights. At Acentria, we believe that proactive risk management is key
-                                to mitigating the impact of catastrophic events, and we are dedicated to helping you
-                                achieve that through our innovative and reliable modeling solutions.
-                            </p>
-
-                        </div>
-                    </div>
-                    <img src="https://images.pexels.com/photos/4839149/pexels-photo-4839149.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Product screenshot"
-                        class="w-full  max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover !lg:h-1/2">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="grid grid-cols-2">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 align-center my-10">
-                <div class="lg:pr-8 lg:pt-4">
-                    <div class="lg:max-w-lg">
-
-                        <!-- <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-                            Measurable Metrics for Informed Decisions
-                        </p> -->
-                        <p class="mt-6 text-lg leading-8 text-gray-600">
-                            In the realm of insurance and reinsurance, catastrophic modeling is a critical tool that
-                            enables us to understand and manage the impact of extreme events. Catastrophic modeling
-                            allows us to assess and prepare for natural disasters, pandemics, and other large-scale
-                            risks, providing invaluable insights to protect our clients and their assets. At Acentria,
-                            we recognize the vital role that catastrophic modeling plays in addressing the ever-evolving
-                            landscape of insurance and reinsurance.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <ReinsuranceFaqs :content="faqs" />
-            </div>
-        </div>
+        <Accordion :faqs="faqs" />
         <ReinsuranceWhy />
-        <InTouch />
+        <ContactForm />
     </div>
 
 

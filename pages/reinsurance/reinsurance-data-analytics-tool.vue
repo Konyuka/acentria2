@@ -43,7 +43,7 @@ const ReinsuranceFeatureContent = ref(
 
         <div class="bg-white">
             <div class="font-sans mx-auto max-w-7xl px-6 py-14 sm:py-5 lg:flex lg:items-center lg:justify-between lg:px-8">
-                <h2 class="font-sans text-3xl font-bold tracking-tight text-black sm:text-4xl">
+                <h2 class="font-sans text-3xl font-semibold tracking-tight text-black sm:text-4xl">
                     Adopt a deliberate data strategy with <br> <span class="text-brand-primary">Acentria's Data Analytics
                         tool</span>
                 </h2>

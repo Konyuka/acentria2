@@ -12,10 +12,10 @@ const props = defineProps({
         <div class="bg-white py-5 mb-10">
             <div class="font-sans mx-auto max-w-7xl px-6 lg:px-2">
                 <div class="mx-auto max-w-5xl lg:text-center">
-                    <p class="font-sans mt-2 text-4xl font-bold tracking-tight text-brand-primary sm:text-4xl">
+                    <p class="font-sans mt-2 text-4xl font-semibold tracking-tight text-brand-primary sm:text-4xl">
                         Key Platform Features
                     </p>
-                    <p class="mt-6 text-lg leading-8 text-secondary">
+                    <p class="mt-6 text-md text-secondary">
                         {{ content.description }}
                     </p>
                 </div>
@@ -23,7 +23,7 @@ const props = defineProps({
                     <dl class="grid max-w-xl grid-cols-1 gap-2  lg:max-w-none lg:grid-cols-2">
 
                         <div v-for="cont in content.items" class="relative pl-16 bg-brand-dim p-5 rounded-lg shadow-2xl">
-                            <dt class="text-2xl font-semibold leading-7 text-white">
+                            <dt class="text-xl font-semibold leading-7 text-white">
                                 <div
                                     class="mb-6 left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
                                     <i :class="cont.icon" class="fas text-brand-primary text-3xl"></i>

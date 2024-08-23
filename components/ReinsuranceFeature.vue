@@ -16,7 +16,7 @@ const props = defineProps({
                     <div class="lg:pr-8 lg:pt-4">
                         <div class="lg:max-w-lg">
                             <h2 class="text-base font-semibold leading-7 text-brand-primary">Acentria Reinsurance Brokers</h2>
-                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                            <p class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
                                 {{ content.title }}
                             </p>
                             <p class="mt-6 text-sm text-gray-600">

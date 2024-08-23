@@ -15,7 +15,7 @@ const props = defineProps({
                 <div class="font-sans mx-auto max-w-6xl px-6 lg:px-8">
                     <div class="mx-auto max-w-4xl text-center">
                         <h1 class="text-base font-semibold leading-7 text-brand-primary">Acentria Reinsurance</h1>
-                        <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900">
+                        <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900">
                             Why work with Acentria Re
                         </p>
                     </div>
@@ -32,7 +32,7 @@ const props = defineProps({
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
                                 <i class="fas fa-lightbulb text-4xl text-brand-primary"></i>
                             </h2>
-                            <h2 id="tier-hobby" class="mt-5 text-center text-2xl font-semibold leading-8 text-gray-900">
+                            <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
                                 Innovation
                             </h2>
                             <p class="text-center mt-8 text-sm">
@@ -44,8 +44,8 @@ const props = defineProps({
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
                                 <i class="fas fa-calculator text-4xl text-brand-primary"></i>
                             </h2>
-                            <h2 id="tier-hobby" class="mt-5 text-center text-2xl font-semibold leading-8 text-gray-900">
-                                Data-Driven Analytics
+                            <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
+                                Data Analytics
                             </h2>
                             <p class="text-center mt-8 text-sm">
                                 Our ability to use data, advanced analytics, and technology to extract valuable
@@ -56,7 +56,7 @@ const props = defineProps({
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
                                 <i class="fas fa-eye text-4xl text-brand-primary"></i>
                             </h2>
-                            <h2 id="tier-hobby" class="mt-5 text-center text-2xl font-semibold leading-8 text-gray-900">
+                            <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
                                 Distinctive Insight
 
                             </h2>
@@ -65,11 +65,11 @@ const props = defineProps({
                                 needs, and preferences of their clients.
                             </p>
                         </div>
-                        <div class="rounded-xl p-4 ring-1 ring-brand-brand-primary shadow-xl">
+                        <div class="rounded-xl p-4 ring-1 ring-brand-primary shadow-xl">
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
                                 <i class="fas fa-file-excel text-4xl text-brand-primary"></i>
                             </h2>
-                            <h2 id="tier-hobby" class="mt-5 text-center text-2xl font-semibold leading-8 text-gray-900">
+                            <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
                                 Better results
                             </h2>
                             <p class="text-center mt-8 text-sm">

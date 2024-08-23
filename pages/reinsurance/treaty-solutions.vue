@@ -6,9 +6,9 @@ const ReinsuranceBannerContent = ref({
     image: 'https://images.pexels.com/photos/1264438/pexels-photo-1264438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref({
-    title: 'Claims Management Expertise',
-    image: 'https://images.pexels.com/photos/2265634/pexels-photo-2265634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content: 'At Acentria Re, we understand that timely claims recovery plays an integral role in enhancing the financial stability, operational efficiency, and reputation of cedants. It not only aligns with regulatory standards but also enhances customer satisfaction and provides a competitive edge in the dynamic insurance market. Our seasoned team of experts brings a wealth of experience in claims management, processing, and dispute resolution. We leverage on technology, robust systems, and experienced claims experts to carefully evaluate and expedite claims, prioritizing accuracy, and efficiency at every stage of the process',
+    title: 'Comprehensive Treaty Solutions',
+    image: 'https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    content:'Our tailored treaty reinsurance programs provide clients with comprehensive coverage for their portfolio of risk. The programs aim to assist clients in preserving their capital by ensuring proper risk management structures that enable the identification, mitigation, and transfer of risks. We adopt a 360-degree approach to treaty analysis with an objective of giving clients well-balanced programs aimed at achieving optimum treaty structure that help reduce exposure, smooth earnings, supplement capital, and create surplus capital. This is achieved through advice from our team of experts, which includes technical reinsurance analysts, data analysts, and actuaries. Our clientele includes; insurance and reinsurance companies.'
 })
 
 const faqs = ref([
@@ -41,40 +41,8 @@ const faqs = ref([
     <div>
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-        
-        <div class="grid grid-cols-2">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 align-center my-10">
-                <div class="lg:pr-8 lg:pt-4">
-                    <div class="lg:max-w-lg">
-
-                        <p class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-                            Our Approach
-                        </p>
-                        <p class="mt-6 text-lg leading-8 text-gray-600">
-                            Our tailored treaty reinsurance programs provide clients with comprehensive coverage for
-                            their portfolio of risk. The programs
-                            aim to assist clients in preserving their capital by ensuring proper risk management
-                            structures that enable the identification,
-
-                            mitigation, and transfer of risks.
-
-                            We adopt a 360-degree approach to treaty analysis with an objective of giving clients
-                            well-balanced programs aimed at achieving optimum treaty structure that help reduce
-                            exposure, smooth earnings, supplement
-
-                            capital, and create surplus capital.
-                            This is achieved through advice from our team of experts, which includes technical
-                            reinsurance analysts, data analysts, and
-                            actuaries. Our clientele includes; insurance and reinsurance companies.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <ReinsuranceFaqs :content="faqs" />
-            </div>
-        </div>
-
+        <ReinsuranceFeature :content="ReinsuranceFeatureContent" />
+        <Accordion :faqs="faqs" />
         <ReinsuranceWhy />
         <ContactForm />
     </div>
