@@ -317,7 +317,7 @@ onBeforeUnmount(() => {
         <div class="container mx-auto items-center justify-between lg:flex">
             <div class="flex font-sans">
                 <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="250" height="100" decoding="async"
-                        data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png " />
+                        data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
                 </NuxtLink>
 
                 <div class="z-50 content-center">
@@ -406,8 +406,8 @@ onBeforeUnmount(() => {
 
     <div class="flex w-full flex-row justify-between bg-white lg:hidden">
         <div class="flex w-full justify-between px-4 py-4 shadow">
-            <a href="#"><img alt="Diligent" loading="lazy" width="103" height="29" decoding="async"
-                    data-nimg="1" style="color: transparent" src="/_next/imagec2d9.svg" /></a>
+            <a href="#"><img alt="Diligent" loading="lazy" width="103" height="29" decoding="async" data-nimg="1"
+                    style="color: transparent" src="/img/logo.png" /></a>
             <div class="translate-y-2.5 cursor-pointer">
                 <div
                     class="w-8 h-0.5 bg-light-icon before:content-[&quot;&quot;] before:absolute before:w-8 before:h-0.5 before:bg-light-icon before:translate-y-2.5 transition-all">
@@ -417,8 +417,8 @@ onBeforeUnmount(() => {
         <div
             class="fixed left-0 top-0 z-[100] h-screen w-screen -translate-x-full overflow-y-scroll bg-white transition-all false null">
             <div class="mb-4 flex w-full justify-between px-4 py-4 shadow">
-                <a href="#"><img alt="Diligent" loading="lazy" width="103" height="29" decoding="async"
-                        data-nimg="1" style="color: transparent" src="/_next/imagec2d9.svg" /></a>
+                <a href="#"><img alt="Diligent" loading="lazy" width="103" height="29" decoding="async" data-nimg="1"
+                        style="color: transparent" src="/img/logo.png" /></a>
                 <div
                     class="w-8 h-0.5 bg-light-icon rotate-45 before:content-[&quot;&quot;] before:absolute before:rotate-90 before:w-8 before:h-0.5 before:bg-light-icon translate-y-3">
                 </div>
@@ -428,8 +428,8 @@ onBeforeUnmount(() => {
                     <div
                         class="mb-6 flex flex-row items-center justify-center text-sm font-semibold text-light-content">
                         <a class="border-r border-brand-divider px-2 py-1.5" href="#">Partner</a><a
-                            class="border-r border-brand-divider px-2 py-1.5" href="#">Company</a><a
-                            class="px-2 py-1.5" href="#">Support</a>
+                            class="border-r border-brand-divider px-2 py-1.5" href="#">Company</a><a class="px-2 py-1.5"
+                            href="#">Support</a>
                     </div>
                     <div class="mb-4 flex flex-row justify-center gap-4">
                         <button
@@ -541,8 +541,7 @@ onBeforeUnmount(() => {
                         <div class="text-xs">
                             (formerly Modern Governance Summit)
                         </div>
-                    </a><a href="#"
-                        class="pb-2 text-sm font-semibold text-light-content hover:text-light-link">
+                    </a><a href="#" class="pb-2 text-sm font-semibold text-light-content hover:text-light-link">
                         <div class="flex w-full flex-shrink flex-grow-0 cursor-pointer flex-row items-center gap-1">
                             Diligent Institute<i class="material-symbols-outlined text-lg undefined"
                                 translate="no">open_in_new</i>
