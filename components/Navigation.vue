@@ -288,6 +288,11 @@ onBeforeUnmount(() => {
 
             <!-- Top Links -->
             <div class="flex flex-row items-center justify-end text-sm text-black">
+                <NuxtLink to="/"
+                    :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
+                    class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                    Home
+                </NuxtLink>
                 <NuxtLink to="/about-acentria-group"
                     :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
