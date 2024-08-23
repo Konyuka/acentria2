@@ -117,7 +117,7 @@ onMounted(()=>{
                         @mouseleave="hideDropdown('consulting')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in acServices">
+                            <NuxtLink :to="item.link" v-for="item in acServices">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div
@@ -146,7 +146,7 @@ onMounted(()=>{
                         @mouseleave="hideDropdown('services')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in acOther">
+                            <NuxtLink :to="item.link" v-for="item in acOther">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div
@@ -175,7 +175,7 @@ onMounted(()=>{
                         @mouseleave="hideDropdown('products')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
-                            <NuxtLink to="/" v-for="item in acProducts">
+                            <NuxtLink :to="item.link" v-for="item in acProducts">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
                                     <div

@@ -18,7 +18,7 @@
 
                 <div class="h-fit rounded-xl bg-brand-primary px-12 py-14 shadow-card">
                     <h5
-                        class="font-sans tracking-normal text-lg lg:text-xl text-white leading-tight lg:leading-tight pb-2">
+                        class="font-sans text-md text-white leading-tight lg:leading-tight pb-2">
                         Interested in learning more about how Acentria Group can support your business? Fill in your
                         details, and one of our experts will reach out to you with personalized information on our
                         comprehensive services. Let’s start a conversation.
