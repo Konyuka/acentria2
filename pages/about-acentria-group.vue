@@ -171,14 +171,14 @@ const InsuranceBannerContent = ref({
 
                             <section class="relative py-4 lg:py-10" data-v-inspector="components/Cards.vue:8:9">
                                 <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
-                                    <div class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0"
+                                    <div class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0"
                                         data-v-inspector="components/Cards.vue:10:17">
                                         <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
                                             data-v-inspector="components/Cards.vue:11:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:13:25"><i
-                                                    class="fas fa-tools text-brand-primary text-4xl pb-4" translate="no"
-                                                    data-v-inspector="components/Cards.vue:14:29"></i>
+                                                    class="fas fa-coffee text-brand-primary text-4xl pb-4"
+                                                    translate="no" data-v-inspector="components/Cards.vue:14:29"></i>
                                                 <div data-v-inspector="components/Cards.vue:15:29">
                                                     <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
                                                         data-v-inspector="components/Cards.vue:16:33">
@@ -197,7 +197,7 @@ const InsuranceBannerContent = ref({
                                             data-v-inspector="components/Cards.vue:29:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:31:25"><i
-                                                    class="fas fa-chart-line text-brand-primary text-4xl pb-4"
+                                                    class="fas fa-lightbulb text-brand-primary text-4xl pb-4"
                                                     translate="no" data-v-inspector="components/Cards.vue:32:29"></i>
                                                 <div data-v-inspector="components/Cards.vue:33:29">
                                                     <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
@@ -216,7 +216,7 @@ const InsuranceBannerContent = ref({
                                             data-v-inspector="components/Cards.vue:47:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:49:25"><i
-                                                    class="fas fa-chart-pie text-brand-primary text-4xl pb-4"
+                                                    class="fas fa-shield-alt text-brand-primary text-4xl pb-4"
                                                     translate="no" data-v-inspector="components/Cards.vue:50:29"></i>
                                                 <div data-v-inspector="components/Cards.vue:51:29">
                                                     <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
@@ -232,27 +232,118 @@ const InsuranceBannerContent = ref({
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
-                                            data-v-inspector="components/Cards.vue:65:21">
-                                            <div class="flex h-fit flex-col"
-                                                data-v-inspector="components/Cards.vue:67:25"><i
-                                                    class="fas fa-laptop-code text-brand-primary text-4xl pb-4"
-                                                    translate="no" data-v-inspector="components/Cards.vue:68:29"></i>
-                                                <div data-v-inspector="components/Cards.vue:69:29">
-                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
-                                                        data-v-inspector="components/Cards.vue:70:33"> Integrated Tech
-                                                        Solutions </h4>
-                                                </div>
-                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
-                                                    data-v-inspector="components/Cards.vue:75:29"> A suite of tech
-                                                    solutions designed to streamline operations, enhance data
-                                                    management, and support digital transformation in the insurance and
-                                                    investment sectors. </p>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </section>
+
+                            <div class="font-sans mx-auto mt-5 max-w-[97vw] px-6 sm:mt-10 lg:px-8 mb-10">
+                                <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
+                                    <h2 class="text-3xl font-bold tracking-widest text-brand-primary sm:text-4xl"> Our values
+                                    </h2>
+                                    <p class="mt-4 text-secondary text-md"> Our values are the guiding stars that
+                                        illuminate our path to success, shaping our actions and defining our character.
+                                    </p>
+                                </div>
+                                <dl
+                                    class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                    <!--[-->
+                                    <div
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
+                                            <div
+                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                <i
+                                                    class="fas fa-scale-balanced text-5xl text-brand-primary group-hover:text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold text-2xl !text-black tracking-widest">Integrity
+                                            </dt>
+                                            <dd class="mt-1 text-secondary text-sm">We do the right thing, through
+                                                honoring our commitments to our clients.</dd>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
+                                            <div
+                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                <i
+                                                    class="fas fa-award text-5xl text-brand-primary group-hover:text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold text-2xl !text-black tracking-widest">Excellence
+                                            </dt>
+                                            <dd class="mt-1 text-secondary text-sm">We strive to deliver the highest
+                                                levels of service and product excellence.</dd>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
+                                            <div
+                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                <i
+                                                    class="fas fa-lightbulb text-5xl text-brand-primary group-hover:text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold text-2xl !text-black tracking-widest">Innovative
+                                            </dt>
+                                            <dd class="mt-1 text-secondary text-sm">Acentria Group seek to use unique
+                                                and creative solutions in solving problems affecting our clients.</dd>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
+                                            <div
+                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                <i
+                                                    class="fas fa-users text-5xl text-brand-primary group-hover:text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold text-2xl !text-black tracking-widest">Teamwork</dt>
+                                            <dd class="mt-1 text-secondary text-sm">Acentria Group continuously promote
+                                                team spirit among its staff and stakeholders to attain its goals.</dd>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
+                                            <div
+                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                <i
+                                                    class="fas fa-handshake text-5xl text-brand-primary group-hover:text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold text-2xl !text-black tracking-widest">Relationships
+                                            </dt>
+                                            <dd class="mt-1 text-secondary text-sm">We value the relationships built
+                                                with our clients and partners.</dd>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
+                                            <div
+                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                <i
+                                                    class="fas fa-chart-line text-5xl text-brand-primary group-hover:text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <dt class="font-semibold text-2xl !text-black tracking-widest">Growth &amp;
+                                                Prosperity</dt>
+                                            <dd class="mt-1 text-secondary text-sm">We embrace opportunities to learn
+                                                and improve.</dd>
+                                        </div>
+                                    </div><!--]-->
+                                </dl>
+                            </div>
 
                             <Stats />
 
