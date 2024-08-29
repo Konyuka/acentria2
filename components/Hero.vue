@@ -16,10 +16,10 @@
                     <div class="w-full">
                         <h1
                             class="font-sans tracking-normal text-4xl lg:text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight">
-                            Welcome to Acentria Group <br>
-                            <span class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight"> your
-                                trusted partner in Insurance, Reinsurance, Actuarial, Investment and Tech
-                                Solutions.</span>
+                            Welcome to Acentria Group! <br>
+                            <span class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight text-2xl"> Your
+                                trusted partner in Insurance, Reinsurance, Actuarial, Investment & Tech
+                            </span>
                         </h1>
                     </div>
                     <div>
@@ -75,22 +75,12 @@
                     </div>
                 </div>
 
-                <div class="flex aspect-video w-full max-w-3xl flex-col">
-
-                    <div id="root">
-
-                        <div class="_29Gjr rounded-xl">
-                            <div class="_1tW_F rounded-xl">
-                                <video :options="videoOptions" ref="videoPlayer"
-                                    aria-label="Introducing the Acentria Platform" preload="metadata"
-                                    class="video-js vjs-default-skin rounded-xl _1l-KU _3OgU3 w-[60vw] h-[50vh]"
-                                    controls tabindex="0" src="@/assets/media/intro.mp4"></video>
-
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div class="flex justify-center">
+                    <img loading="lazy" width="500" height="300" decoding="async" data-nimg="1"
+                        class="drop-shadow-md undefined rounded-2xl"
+                        sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
+                        src="/img/hr.png"
+                        style="color: transparent" />
                 </div>
             </div>
         </div>

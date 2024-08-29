@@ -1,5 +1,12 @@
 <script setup>
-
+const InsuranceBannerContent = ref({
+    subtitle: "About Acentria Group",
+    title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
+    image:
+        "https://images.pexels.com/photos/3845129/pexels-photo-3845129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    content:
+        "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory.",
+});
 
 </script>
 
@@ -13,6 +20,8 @@
                 <main>
                     <div>
                         <div>
+
+                            <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
                             <AboutHero />
 
@@ -59,8 +68,7 @@
                                         <a href="careers/index.html"
                                             class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-primary-dark text-base relative flex items-center w-fit self-center md:self-start">
                                             Careers Page
-                                            <svg
-                                                class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
+                                            <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
                                                 fill="none" stroke="currentColor" viewBox="0 0 10 10"
                                                 aria-hidden="true">
                                                 <g fill-rule="evenodd">

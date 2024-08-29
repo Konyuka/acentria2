@@ -1,28 +1,33 @@
 <script setup>
-const blogs = ref([
-    {
-        title: 'The Future of Reinsurance: Trends and Opportunities',
-        excerpt: 'Discover the emerging trends and opportunities in the reinsurance industry that are shaping the future. From digital transformation to innovative risk management strategies, this blog explores what’s ahead for insurers and reinsurers alike.'
-    },
-    {
-        title: 'Navigating the Complexities of Aviation Insurance',
-        excerpt: 'Aviation insurance is a critical component of the aerospace industry, but it comes with its own set of challenges. This article delves into the complexities of aviation insurance and how companies can effectively manage risks in this high-stakes sector.'
-    },
-    {
-        title: 'Actuarial Science: The Backbone of Financial Stability',
-        excerpt: 'Actuarial science plays a pivotal role in ensuring financial stability across industries. Learn about the latest advancements in actuarial methods and how they are helping businesses make data-driven decisions to mitigate risk and enhance profitability.'
-    },
-    {
-        title: 'The Role of Technology in Modern Insurance Broking',
-        excerpt: 'As technology continues to evolve, it is transforming the insurance broking industry. This blog examines the impact of technological advancements on broking services, including the rise of digital platforms and data analytics in streamlining operations and improving client outcomes.'
-    },
-    {
-        title: 'ESG in Financial Services: A Pathway to Sustainable Growth',
-        excerpt: 'Environmental, Social, and Governance (ESG) factors are increasingly influencing business decisions. This post explores how financial services firms are integrating ESG into their strategies to achieve sustainable growth and meet the demands of socially-conscious investors.'
+import axios from 'axios';
+import moment from 'moment';
+
+const blogs = ref(null);
+
+const formatDate = (date) => {
+    return moment(date).format('lll');
+}
+
+const getUrl = (title, id) => {
+    const lowerCaseTitle = title.toLowerCase();
+    const cleanedTitle = lowerCaseTitle.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()'"]/g, '');
+    const words = cleanedTitle.split(' ');
+    const hyphenatedTitle = words.join('-');
+    // Return the URL with the blog ID
+    return `/blog/${hyphenatedTitle}-${id}`;
+}
+
+onMounted(async () => {
+    try {
+        const response = await axios.get('http://localhost:8000/api/get-published-blogs', {
+        });
+
+        blogs.value = response.data
+        // console.log(response.data);
+    } catch (error) {
+        console.error('Error making POST request:', error);
     }
-]);
-
-
+})
 </script>
 
 <template>
@@ -61,24 +66,28 @@ const blogs = ref([
 
                             <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
 
-                                <article v-for="blog in blogs" class="group flex flex-col items-start justify-between">
+                                <NuxtLink :to="getUrl(blog.title, blog.id)" v-for="blog in blogs"
+                                    class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                                     <a class="w-full" href="#">
                                         <div class="relative w-full"><img alt="" loading="lazy" width="300" height="200"
                                                 decoding="async" data-nimg="1"
                                                 class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                                                 sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                                                src="https://cdn.sanity.io/images/33u1mixi/production/7a247ca880f3cd09a47f4ab261720dc63ef2a404-7924x6309.jpg?w=3840&amp;q=90&amp;fit=clip&amp;auto=format"
+                                                :src="blog.cover"
                                                 style="color: transparent;">
                                             <div
                                                 class="className='flex absolute inset-0 flex-col items-start justify-between  rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
                                             </div>
                                         </div>
                                         <div class="max-w-full">
-                                            <div class="mt-8 flex items-center gap-x-2 text-xs"><time
-                                                    datetime="August 20, 2024" class="text-gray-500">August 20,
-                                                    2024</time>
+                                            <div class="font-sans mt-8 flex items-center gap-x-2 text-xs">
+                                                <time datetime="August 20, 2024"
+                                                    class="text-gray-500 font-semibold">
+                                                    {{ formatDate(blog.created_at) }}
+                                                </time>
                                                 <div class="text-gray-500">•</div>
-                                                <div class="text-gray-500">4 min read</div>
+                                                <div class="text-brand-primary font-semibold">{{ blog.categories.name }}
+                                                </div>
                                             </div>
                                             <div class="font-sans group relative">
                                                 <h3
@@ -92,7 +101,7 @@ const blogs = ref([
                                             </div>
                                         </div>
                                     </a>
-                                </article>
+                                </NuxtLink>
                             </div>
 
                         </div>

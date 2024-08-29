@@ -1,10 +1,28 @@
 <script setup>
 const teams = ref([
     {
-        name: "Moses Musau",
-        title: "CEO / Managing Director",
-        image:
-            "https://acentriagroup.com/wp-content/uploads/2024/02/mose-1.jpg",
+        name: "Enosh Bolo ",
+        image: "img/enosh.jpg",
+    },
+    {
+        name: "Carolyne Wambu",
+        image: "img/caro.jpg",
+    },
+    {
+        name: "Isabella Mwende",
+        image: "img/isa.jpg",
+    },
+    {
+        name: "Eric Orende",
+        image: "img/eric.jpg",
+    },
+    {
+        name: "Flossie Njagi",
+        image: "img/flo.jpg",
+    },
+    {
+        name: "Stephen Wandera",
+        image: "img/steve.jpg",
     },
     
     
@@ -26,7 +44,7 @@ const teams = ref([
             <div v-for="member in teams" class="flex shadow-xl button-animation">
                 <div class="w-full cursor-pointer rounded-xl bg-white">
                     <img alt="Brian Stafford" loading="lazy" width="400" height="400" decoding="async" data-nimg="1"
-                        class="p-5 min-h-[150px] w-full rounded-t-xl object-cover grayscale md:min-h-[247px]"
+                        class="p-5 min-h-[150px] w-full rounded-t-xl object-cover md:min-h-[247px]"
                         style="color: transparent" :src="member.image" />
                     <div class="font-sans flex max-h-[200px] flex-col items-center p-4">
                         <span class="text-xl font-bold text-light-title">
