@@ -3,7 +3,7 @@ const InsuranceBannerContent = ref({
     subtitle: "About Acentria Group",
     title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
     image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://acentriagroup.com/wp-content/uploads/2023/11/BeFunky-collage-1024x1024.jpg",
     content:
         "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory.",
 });
@@ -33,7 +33,7 @@ const InsuranceBannerContent = ref({
                                         <img alt="Image of Elevate strategic risk management " loading="lazy"
                                             width="500" height="350" decoding="async" data-nimg="1"
                                             style="color:transparent;object-fit:contain;" class="rounded-lg"
-                                            src="https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                                            src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                             data-v-inspector="components/Why.vue:10:17">
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
