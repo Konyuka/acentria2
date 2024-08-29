@@ -3,7 +3,7 @@ const InsuranceBannerContent = ref({
     subtitle: "About Acentria Group",
     title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
     image:
-        "https://images.pexels.com/photos/3845129/pexels-photo-3845129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     content:
         "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory.",
 });
@@ -63,7 +63,7 @@ const InsuranceBannerContent = ref({
                                         <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1" style="color:transparent;object-fit:contain;"
                                             class="rounded-lg"
-                                            src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                                            src="https://images.pexels.com/photos/4792286/pexels-photo-4792286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                             data-v-inspector="components/Why.vue:34:17">
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
@@ -101,7 +101,7 @@ const InsuranceBannerContent = ref({
                                         <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500"
                                             height="350" decoding="async" data-nimg="1"
                                             style="color:transparent;object-fit:contain;" class="rounded-lg"
-                                            src="https://images.pexels.com/photos/7688460/pexels-photo-7688460.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                                            src="https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-adventure-night-road-trip-in-the-forest-aerial-view-of-a-car-headlights-on-deep-jungle-road-on-1932802550-transformed-1024x571.jpeg"
                                             data-v-inspector="components/Why.vue:56:17">
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
@@ -142,7 +142,7 @@ const InsuranceBannerContent = ref({
                                         <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1" style="color:transparent;object-fit:contain;"
                                             class="rounded-lg"
-                                            src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                                            src="https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg"
                                             data-v-inspector="components/Why.vue:34:17">
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
@@ -238,11 +238,11 @@ const InsuranceBannerContent = ref({
 
                             <div class="font-sans mx-auto mt-5 max-w-[97vw] px-6 sm:mt-10 lg:px-8 mb-10">
                                 <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                                    <h2 class="text-3xl font-bold tracking-widest text-brand-primary sm:text-4xl"> Our values
+                                    <h2 class="text-3xl font-semibold text-brand-primary sm:text-4xl"> Our values
                                     </h2>
-                                    <p class="mt-4 text-secondary text-md"> Our values are the guiding stars that
+                                    <!-- <p class="mt-4 text-secondary text-md"> Our values are the guiding stars that
                                         illuminate our path to success, shaping our actions and defining our character.
-                                    </p>
+                                    </p> -->
                                 </div>
                                 <dl
                                     class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
