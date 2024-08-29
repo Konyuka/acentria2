@@ -23,7 +23,236 @@ const InsuranceBannerContent = ref({
 
                             <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-                            <AboutHero />
+                            <!-- <AboutHero /> -->
+
+                            <div data-v-02281a80="" class="font-sans py-6 text-white xl:py-12"
+                                style="background-color: rgb(246, 248, 252);">
+                                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
+                                    data-v-inspector="components/Why.vue:8:9">
+                                    <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
+                                        <img alt="Image of Elevate strategic risk management " loading="lazy"
+                                            width="500" height="350" decoding="async" data-nimg="1"
+                                            style="color:transparent;object-fit:contain;" class="rounded-lg"
+                                            src="https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                                            data-v-inspector="components/Why.vue:10:17">
+                                    </div>
+                                    <div class="flex flex-col justify-center lg:basis-1/2"
+                                        data-v-inspector="components/Why.vue:14:13"><label
+                                            class="text-base leading-normal font-regular text-light-highlight font-bold"
+                                            data-v-inspector="components/Why.vue:15:17">Acentria Group
+                                        </label>
+                                        <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                            data-v-inspector="components/Why.vue:18:17">
+                                            Who we are
+                                        </h2>
+                                        <div class="text-light-content pb-5 md:pb-6"
+                                            data-v-inspector="components/Why.vue:22:17">
+                                            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                                                data-v-inspector="components/Why.vue:23:21">
+                                                Acentria Group of companies is a trusted global consultant that seeks to
+                                                empower, innovate and steer growth and prosperity in Risk and Insurance,
+                                                Reinsurance, Actuarial and Investment Advisory.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
+                                    data-v-inspector="components/Why.vue:32:9">
+                                    <div class="relative p-4 lg:basis-1/2 content-center"
+                                        data-v-inspector="components/Why.vue:33:13">
+                                        <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
+                                            decoding="async" data-nimg="1" style="color:transparent;object-fit:contain;"
+                                            class="rounded-lg"
+                                            src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                                            data-v-inspector="components/Why.vue:34:17">
+                                    </div>
+                                    <div class="flex flex-col justify-center lg:basis-1/2"
+                                        data-v-inspector="components/Why.vue:38:13"><label
+                                            class="text-base leading-normal font-regular text-light-highlight font-bold"
+                                            data-v-inspector="components/Why.vue:39:17">Our Services
+                                        </label>
+                                        <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                            data-v-inspector="components/Why.vue:42:17">
+                                            What We Do
+                                        </h2>
+                                        <div class="text-light-content pb-5 md:pb-6"
+                                            data-v-inspector="components/Why.vue:46:17">
+                                            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                                                data-v-inspector="components/Why.vue:47:21">
+                                                We offer the best solutions in Risk and Insurance, Reinsurance,
+                                                Actuarial, and Investment Advisory. We consider the trust of our
+                                                stakeholders and communities to be our most valuable resource. To us,
+                                                success is not only measured by the products and services we offer, but
+                                                more importantly, by providing innovative solutions that ensure
+                                                sustainable development, and serve our environment and societies in the
+                                                best way possible. Accordingly, we make sure that we are in compliance
+                                                with laws and regulations and that we are investing in the public good
+                                                in terms of the projects we take on, the partners we choose, and the way
+                                                we do business We are committed to equal gender representation at all
+                                                levels having archived a 50:50 senior management gender parity.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
+                                    data-v-inspector="components/Why.vue:54:9">
+                                    <div class="relative p-4 lg:basis-1/2 content-center"
+                                        data-v-inspector="components/Why.vue:55:13">
+                                        <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500"
+                                            height="350" decoding="async" data-nimg="1"
+                                            style="color:transparent;object-fit:contain;" class="rounded-lg"
+                                            src="https://images.pexels.com/photos/7688460/pexels-photo-7688460.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                                            data-v-inspector="components/Why.vue:56:17">
+                                    </div>
+                                    <div class="flex flex-col justify-center lg:basis-1/2"
+                                        data-v-inspector="components/Why.vue:60:13"><label
+                                            class="text-base leading-normal font-regular text-light-highlight font-bold"
+                                            data-v-inspector="components/Why.vue:61:17">Experience</label>
+                                        <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                            data-v-inspector="components/Why.vue:63:17">
+                                            Our journey
+                                        </h2>
+                                        <div class="text-light-content pb-5 md:pb-6"
+                                            data-v-inspector="components/Why.vue:67:17">
+                                            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                                                data-v-inspector="components/Why.vue:68:21">
+                                                Our journey is about Empowering dreams, igniting imagination, and
+                                                propelling prosperity to infinite possibilities for all our partners and
+                                                the communities we serve. Internally we give a fair platform to all our
+                                                employees to achieve their dreams.
+
+                                                Our journey is a testament to humble beginnings, resilience,
+                                                adaptability, and trust; it involves building a resilient and prosperous
+                                                community. Through partnerships and collaborations, we have fostered
+                                                resilience in individuals, businesses, and society as a whole.
+
+                                                Our experience and expertise of over ten years have seen us grow to be
+                                                one of the top-tier companies, with a niche in the provision of
+                                                technical expertise in reinsurance, insurance actuarial, and investment
+                                                advisory. With an in-depth understanding of the market, we provide
+                                                solutions that are tailor-made to suit a client while assuring the
+                                                client of value addition.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
+                                    data-v-inspector="components/Why.vue:32:9">
+                                    <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
+                                        <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
+                                            decoding="async" data-nimg="1" style="color:transparent;object-fit:contain;"
+                                            class="rounded-lg"
+                                            src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1"
+                                            data-v-inspector="components/Why.vue:34:17">
+                                    </div>
+                                    <div class="flex flex-col justify-center lg:basis-1/2"
+                                        data-v-inspector="components/Why.vue:38:13"><label
+                                            class="text-base leading-normal font-regular text-light-highlight font-bold"
+                                            data-v-inspector="components/Why.vue:39:17">The team
+                                        </label>
+                                        <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                            data-v-inspector="components/Why.vue:42:17">
+                                            Our Leadership
+                                        </h2>
+                                        <div class="text-light-content pb-5 md:pb-6"
+                                            data-v-inspector="components/Why.vue:46:17">
+                                            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                                                data-v-inspector="components/Why.vue:47:21">
+                                                Our success is driven by a dynamic and dedicated leadership team.
+                                                Comprising individuals with diverse expertise and a shared commitment to
+                                                excellence, our leaders play a pivotal role in shaping the vision,
+                                                strategy, and culture of our organization.
+                                                Meet the visionaries and strategists w
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <section class="relative py-4 lg:py-10" data-v-inspector="components/Cards.vue:8:9">
+                                <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
+                                    <div class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0"
+                                        data-v-inspector="components/Cards.vue:10:17">
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
+                                            data-v-inspector="components/Cards.vue:11:21">
+                                            <div class="flex h-fit flex-col"
+                                                data-v-inspector="components/Cards.vue:13:25"><i
+                                                    class="fas fa-tools text-brand-primary text-4xl pb-4" translate="no"
+                                                    data-v-inspector="components/Cards.vue:14:29"></i>
+                                                <div data-v-inspector="components/Cards.vue:15:29">
+                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
+                                                        data-v-inspector="components/Cards.vue:16:33">
+                                                        Our Purpose
+                                                    </h4>
+                                                </div>
+                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
+                                                    data-v-inspector="components/Cards.vue:21:29">
+                                                    Empower our clients and communities through innovative solutions,
+                                                    enhancing prosperity and adding value to a dynamic global
+                                                    environment.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
+                                            data-v-inspector="components/Cards.vue:29:21">
+                                            <div class="flex h-fit flex-col"
+                                                data-v-inspector="components/Cards.vue:31:25"><i
+                                                    class="fas fa-chart-line text-brand-primary text-4xl pb-4"
+                                                    translate="no" data-v-inspector="components/Cards.vue:32:29"></i>
+                                                <div data-v-inspector="components/Cards.vue:33:29">
+                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
+                                                        data-v-inspector="components/Cards.vue:34:33"> Our Commitment
+                                                    </h4>
+                                                </div>
+                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
+                                                    data-v-inspector="components/Cards.vue:39:29">
+                                                    Passionately remain at the forefront in empowering the vision of our
+                                                    clients through igniting innovative thinking in offering the best
+                                                    solutions to enhance prosperity.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
+                                            data-v-inspector="components/Cards.vue:47:21">
+                                            <div class="flex h-fit flex-col"
+                                                data-v-inspector="components/Cards.vue:49:25"><i
+                                                    class="fas fa-chart-pie text-brand-primary text-4xl pb-4"
+                                                    translate="no" data-v-inspector="components/Cards.vue:50:29"></i>
+                                                <div data-v-inspector="components/Cards.vue:51:29">
+                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
+                                                        data-v-inspector="components/Cards.vue:52:33">
+                                                        Our Promise
+                                                    </h4>
+                                                </div>
+                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
+                                                    data-v-inspector="components/Cards.vue:57:29">
+                                                    Be your trusted partner, working tirelessly to provide the peace of
+                                                    mind you deserve, knowing that your assets and interests are
+                                                    safeguarded with care and expertise.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
+                                            data-v-inspector="components/Cards.vue:65:21">
+                                            <div class="flex h-fit flex-col"
+                                                data-v-inspector="components/Cards.vue:67:25"><i
+                                                    class="fas fa-laptop-code text-brand-primary text-4xl pb-4"
+                                                    translate="no" data-v-inspector="components/Cards.vue:68:29"></i>
+                                                <div data-v-inspector="components/Cards.vue:69:29">
+                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
+                                                        data-v-inspector="components/Cards.vue:70:33"> Integrated Tech
+                                                        Solutions </h4>
+                                                </div>
+                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
+                                                    data-v-inspector="components/Cards.vue:75:29"> A suite of tech
+                                                    solutions designed to streamline operations, enhance data
+                                                    management, and support digital transformation in the insurance and
+                                                    investment sectors. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
 
                             <Stats />
 
