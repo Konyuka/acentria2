@@ -28,7 +28,7 @@ const menuItem = ref([
                 link: '',
             },
             {
-                name: 'CSR',
+                name: 'Gallery',
                 link: '',
             },
         ]
