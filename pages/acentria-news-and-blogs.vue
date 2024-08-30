@@ -19,7 +19,7 @@ const getUrl = (title, id) => {
 
 onMounted(async () => {
     try {
-        const response = await axios.get('http://localhost:8000/api/get-published-blogs', {
+        const response = await axios.get('https://admin.acentriagroup.com/api/get-published-blogs', {
         });
 
         blogs.value = response.data
