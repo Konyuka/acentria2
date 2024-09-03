@@ -5,12 +5,16 @@ const teams = ref([
         image: "img/enosh.jpg",
     },
     {
-        name: "Carolyne Wambu",
-        image: "img/caro.jpg",
+        name: "Moses Musau",
+        image: "https://acentriagroup.com/wp-content/uploads/2024/02/mose-1.jpg",
     },
     {
         name: "Isabella Mwende",
         image: "img/isa.jpg",
+    },
+    {
+        name: "Carolyne Wambu",
+        image: "img/caro.jpg",
     },
     {
         name: "Eric Orende",

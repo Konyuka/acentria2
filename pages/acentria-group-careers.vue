@@ -525,7 +525,7 @@ const values = ref([
                                 <div class="grid grid-cols-1 md:grid-cols-2">
                                     <div
                                         class="flex flex-col items-center justify-start border-b border-b-brand-divider px-4 py-6 text-center md:items-start md:border-b-0 md:border-r md:border-r-brand-divider md:py-0 md:text-left">
-                                        <div class="flex flex-row items-center gap-2">
+                                        <!-- <div class="flex flex-row items-center gap-2">
                                             <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
                                                 translate="no">podcasts</i>
                                             <div class="!text-dark-content">
@@ -544,7 +544,8 @@ const values = ref([
                                         </div>
                                         <a href="../resources/podcasts.html"
                                             class="cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">Listen
-                                            to Podcasts<svg
+                                            to Podcasts
+                                            <svg
                                                 class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
                                                 fill="none" stroke="currentColor" viewBox="0 0 10 10"
                                                 aria-hidden="true">
@@ -554,7 +555,8 @@ const values = ref([
                                                         class="transition-all duration-75 translate-x-0 transform-none"
                                                         d="M1 1l4 4-4 4"></path>
                                                 </g>
-                                            </svg></a>
+                                            </svg>
+                                        </a> -->
                                     </div>
                                     <div
                                         class="flex flex-col items-center justify-start px-4 py-6 text-center md:items-start md:py-0 md:text-left">
@@ -575,8 +577,8 @@ const values = ref([
                                                 business.
                                             </p>
                                         </div>
-                                        <a href="../resources/blog.html"
-                                            class="cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">Read
+                                        <NuxtLink to="/acentria-news-and-blogs"
+                                            class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">Read
                                             our blog<svg
                                                 class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
                                                 fill="none" stroke="currentColor" viewBox="0 0 10 10"
@@ -587,7 +589,8 @@ const values = ref([
                                                         class="transition-all duration-75 translate-x-0 transform-none"
                                                         d="M1 1l4 4-4 4"></path>
                                                 </g>
-                                            </svg></a>
+                                            </svg>
+                                        </NuxtLink>
                                     </div>
                                 </div>
                             </div>

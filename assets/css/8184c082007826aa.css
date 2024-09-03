@@ -5483,7 +5483,8 @@ video {
 
 .hover\:bg-brand-primary-dark:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(var(--red-500)/var(--tw-bg-opacity))
+    /* background-color: rgb(var(--red-500)/var(--tw-bg-opacity)) */
+    background-color: #000
 }
 
 .hover\:bg-brand-primary\/10:hover {

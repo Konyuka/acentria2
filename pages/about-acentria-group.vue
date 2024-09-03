@@ -162,7 +162,8 @@ const InsuranceBannerContent = ref({
                                                 Comprising individuals with diverse expertise and a shared commitment to
                                                 excellence, our leaders play a pivotal role in shaping the vision,
                                                 strategy, and culture of our organization.
-                                                Meet the visionaries and strategists w
+                                                Meet the visionaries and strategists who lead us toward innovation,
+                                                growth, and success.
                                             </p>
                                         </div>
                                     </div>
@@ -347,7 +348,7 @@ const InsuranceBannerContent = ref({
 
                             <Stats />
 
-                            <Esg />
+                            <!-- <Esg /> -->
 
                             <Team />
 
