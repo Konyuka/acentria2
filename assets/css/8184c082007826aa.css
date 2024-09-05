@@ -7561,7 +7561,7 @@ video {
     }
 
     .lg\:grid-cols-footer-layout {
-        grid-template-columns: repeat(3, minmax(min-content, max-content))
+        grid-template-columns: repeat(4, minmax(min-content, max-content))
     }
 
     .lg\:grid-cols-form-block {

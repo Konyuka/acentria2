@@ -109,7 +109,7 @@ const menuItem = ref([
     <div>
 
 
-        <div class="font-sans w-full border-t-8 border-brand-primary bg-brand-dim px-4 py-8">
+        <div class="font-sans w-full border-t-8 border-brand-primary bg-brand-dim px-4 py-20">
             <div class="container mx-auto">
                 <div class="mb-14 flex flex-col justify-between text-dark-content lg:flex-row lg:text-base">
 
@@ -161,7 +161,7 @@ const menuItem = ref([
                 </div>
 
                 <!-- Section Two -->
-                <div class="mb-8 rounded bg-black px-6 py-8 text-dark-content">
+                <!-- <div class="mb-8 rounded bg-black px-6 py-8 text-dark-content">
                     <div class="grid grid-cols-2 gap-16">
                         <div class="col-span-2 flex flex-col lg:col-span-1">
                             <div class="mb-6 flex items-center gap-1">
@@ -214,7 +214,7 @@ const menuItem = ref([
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <hr class="h-0.25 bg-brand-divider mb-4" />
                 <div class="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0">

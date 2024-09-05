@@ -40,7 +40,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div
                             class="flex flex-col items-center justify-start border-b border-b-brand-divider px-4 py-6 text-center md:items-start md:border-b-0 md:border-r md:border-r-brand-divider md:py-0 md:text-left">
-                            <div class="flex flex-row items-center gap-2">
+                            <!-- <div class="flex flex-row items-center gap-2">
                                 <i class="material-symbols-outlined text-brand-primary text-2xl undefined"
                                     translate="no">security</i>
                                 <div class="!text-dark-content">
@@ -71,7 +71,8 @@
                                             d="M1 1l4 4-4 4">
                                         </path>
                                     </g>
-                                </svg></a>
+                                </svg>
+                            </a> -->
                         </div>
                         <div
                             class="flex flex-col items-center justify-start px-4 py-6 text-center md:items-start md:py-0 md:text-left">
