@@ -1,28 +1,25 @@
-<script setup lang="ts">
-const route = useRoute()
+<script setup>
 
-import videojs from 'video.js';
-import 'video.js/dist/video-js.css';
 
-const videoOptions = {
-  autoplay: true,
-  controls: true,
-  sources: [
-    {
-      src:
-        '@/assets/media/intro.mp4',
-      type: 'video/mp4'
-    }
-  ]
-}
+onMounted(() => {
+
+  // if (process.client) {
+  //   import('locomotive-scroll').then((LocomotiveScroll) => {
+  //     const scroll = new LocomotiveScroll.default({
+  //       el: document.querySelector('[data-scroll-container]'),
+  //       smooth: true,
+  //     });
+  //   });
+  // }
+
+});
 </script>
 
 <template>
   <div id="__next">
 
     <main>
-      <div>
-        <div>
+        <div >
 
           <Hero />
 
@@ -82,7 +79,6 @@ const videoOptions = {
           <Cta />
 
         </div>
-      </div>
     </main>
 
   </div>

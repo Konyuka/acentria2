@@ -238,7 +238,7 @@ const hideDropdown = (menu) => {
 };
 
 const handleScroll = () => {
-    isScrolled.value = window.scrollY > 60;
+    isScrolled.value = window.scrollY > 1;
 };
 
 onMounted(() => {
