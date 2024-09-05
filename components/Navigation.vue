@@ -253,7 +253,7 @@ onBeforeUnmount(() => {
 
 <template>
 
-    <div class="relative z-10 mx-auto hidden w-full px-8 py-1.5 lg:block bg-brand-gray">
+    <div class="relative z-50 mx-auto hidden w-full px-8 py-1.5 lg:block bg-brand-gray">
         <div class="font-sans container mx-auto flex flex-row items-center justify-between">
             <!-- socials -->
             <div class="flex items-center justify-end md:justify-end md:col-span-1">
@@ -288,8 +288,7 @@ onBeforeUnmount(() => {
 
             <!-- Top Links -->
             <div class="flex flex-row items-center justify-end text-sm text-black">
-                <NuxtLink to="/"
-                    :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
+                <NuxtLink to="/" :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
                     class="relative border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                     Home
                 </NuxtLink>
@@ -318,14 +317,18 @@ onBeforeUnmount(() => {
     </div>
 
     <div :class="bottomBarClass"
-        class="top-10 z-[100] mx-auto hidden w-full items-center justify-between px-4 py-4 transition-all duration-200 lg:flex false bg-white false">
+        class="top-10 z-50 mx-auto hidden w-full items-center justify-between px-4 py-4 transition-all duration-200 lg:flex false bg-white false">
         <div class="container mx-auto items-center justify-between lg:flex">
             <div class="flex font-sans">
                 <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="250" height="100" decoding="async"
                         data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
                 </NuxtLink>
 
+
                 <div class="z-50 content-center">
+
+
+
                     <div class="relative flex flex-col px-4 hover:cursor-default">
                         <NuxtLink to="/acentria-group-insurance" @mouseenter="showDropdown('insurance')"
                             @mouseleave="hideDropdown('insurance')"
@@ -334,8 +337,12 @@ onBeforeUnmount(() => {
                             Insurance
                         </NuxtLink>
 
+                        <!-- <div v-if="isInsuranceDropdownVisible" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div> -->
+
+
                         <InsuranceDropDown v-show="isInsuranceDropdownVisible" @mouseenter="showDropdown('insurance')"
                             @mouseleave="hideDropdown('insurance')" />
+
                     </div>
                 </div>
 
@@ -405,7 +412,8 @@ onBeforeUnmount(() => {
                         <path class="transition-opacity opacity-0" d="M0 5h7"></path>
                         <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4"></path>
                     </g>
-                </svg></a>
+                </svg>
+            </a>
         </div>
     </div>
 
@@ -559,6 +567,7 @@ onBeforeUnmount(() => {
             class="fixed left-0 top-0 z-[999] h-full w-screen -translate-x-full overflow-scroll bg-white transition-[transform] duration-300 null">
         </div>
     </div>
+
 </template>
 
 <style scoped>

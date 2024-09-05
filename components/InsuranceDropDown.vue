@@ -147,9 +147,9 @@ onMounted(()=>{
 
 <template>
     <div>
-        <div class="shadow-4xl absolute bottom-0 left-[-150px] translate-y-full">
-            <div class="flex flex-col">
 
+        <div class="shadow-4xl absolute bottom-0 left-[-150px] translate-y-full z-50">
+            <div class="flex flex-col">
                 <div class="bg-black border-r border-brand-divider">
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')" href="#"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"

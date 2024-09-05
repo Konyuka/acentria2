@@ -60,20 +60,13 @@ const videoOptions = {
                     where your potential unfolds in every collaborative moment.
                   </p>
                 </div>
-                <a href="resources/research/diligent-sets-the-standard-for-modern-grc.html"
+
+                <!-- <a href="resources/research/diligent-sets-the-standard-for-modern-grc.html"
                   class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-primary-dark text-base relative flex items-center w-fit self-center md:self-start">
                   Download Profile
-
                   <i class="ml-2 fas fa-download"></i>
-                  <!-- <svg
-                    class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
-                    fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                    <g fill-rule="evenodd">
-                      <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                      <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4"></path>
-                    </g>
-                  </svg> -->
-                </a>
+                </a> -->
+
               </div>
             </div>
           </div>
