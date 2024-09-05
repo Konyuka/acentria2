@@ -12,11 +12,11 @@ const menuItem = ref([
         name: 'Company',
         items: [
             {
-                name: 'About',
+                name: 'Home',
                 link: '',
             },
             {
-                name: 'Help',
+                name: 'About',
                 link: '',
             },
             {
@@ -54,6 +54,48 @@ const menuItem = ref([
             },
             {
                 name: 'Tech',
+                link: '',
+            },
+        ]
+    },
+    {
+        name: 'Help Center',
+        items: [
+            {
+                name: 'File a Claim',
+                link: '',
+            },
+            {
+                name: 'Contact Support',
+                link: '',
+            },
+            {
+                name: 'Procurement',
+                link: '',
+            },
+            {
+                name: 'Form & Downloads',
+                link: '',
+            },
+        ]
+    },
+    {
+        name: 'Legal',
+        items: [
+            {
+                name: 'Privacy Policy',
+                link: '',
+            },
+            {
+                name: 'Cookie Policy',
+                link: '',
+            },
+            {
+                name: 'Terms & Conditions',
+                link: '',
+            },
+            {
+                name: 'Ethics & Compliance',
                 link: '',
             },
         ]

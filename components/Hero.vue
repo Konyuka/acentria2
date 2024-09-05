@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    
+
     <div class="relative w-full bg-cover bg-center bg-no-repeat false"
         style="background-image:url(https://cdn.sanity.io/images/33u1mixi/production/e8e19ed3e8c8d8616133ef8f2feeaab00819f123-2880x1162.png?fit=max&amp;auto=format)">
         <div class="container">
@@ -30,25 +30,28 @@
                         </h1>
                     </div>
                     <div>
-                        <p class="font-sans tracking-normal text-base text-gray-700 leading-tight lg:leading-tight">
+                        <p
+                            class="!justify-around !w-full font-sans tracking-normal text-base text-gray-700 leading-tight lg:leading-tight">
                             Discover why thousands of businesses and professionals trust Acentria Group for their
                             Insurance, Reinsurance, Actuarial, Investment, and Tech solutions. At Acentria Group, we
                             combine expertise with innovation to deliver tailored solutions that meet your unique needs.
                             Trust us to provide clarity, security, and growth for businesses and individuals.
                         </p>
                     </div>
-                    <div class="w-full"><a href="/request-a-demo"
+                    <div class="w-full">
+                        <NuxtLink href="/about-acentria-group"
                             class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                             Learn more about us
-                            <svg
-                                class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
+                            <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                                 fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                                 <g fill-rule="evenodd">
                                     <path class="transition-opacity opacity-0" d="M0 5h7"></path>
                                     <path class="transition-all duration-75 translate-x-0 transform-none"
                                         d="M1 1l4 4-4 4"></path>
                                 </g>
-                            </svg></a></div>
+                            </svg>
+                        </NuxtLink>
+                    </div>
                 </div>
             </div>
         </div>
