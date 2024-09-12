@@ -123,7 +123,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')" href="#"
                         :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
-                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
+                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-black px-8 py-4 text-sm font-semibold text-white hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-shield text-lg undefined" translate="no"></i>
                         Reinsurance Services
                     </a>
@@ -134,12 +134,12 @@ onMounted(() => {
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in reServices">
                                 <div
-                                    class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
+                                    class="font-sans group flex w-96 flex-col bg-black px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-light-content group-hover:text-brand-primary">
+                                        class="text-sm font-semibold text-white group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
-                                    <div class="text-xs font-normal text-light-content">
+                                    <div class="text-xs font-normal text-white">
                                         {{ item.description }}
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('solutions')" @mouseleave="hideDropdown('solutions')" href="#"
                         :class="[isSolutionsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
+                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-black px-8 py-4 text-sm font-semibold text-white hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-cogs text-lg undefined" translate="no"></i>
                         Reinsurance Solutions
                     </a>
@@ -162,12 +162,12 @@ onMounted(() => {
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in reSolutions">
                                 <div
-                                    class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
+                                    class="font-sans group flex w-96 flex-col bg-black px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-light-content group-hover:text-brand-primary">
+                                        class="text-sm font-semibold text-white group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
-                                    <div class="text-xs font-normal text-light-content">
+                                    <div class="text-xs font-normal text-white">
                                         {{ item.description }}
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('data')" @mouseleave="hideDropdown('data')" href="#"
                         :class="[isDataDropdownVisible ? '!text-brand-primary' : '']"
-                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-light-title hover:text-brand-primary hover:cursor-pointer false">
+                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-black px-8 py-4 text-sm font-semibold text-white hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-chart-line text-lg undefined" translate="no"></i>
                         Data and Modelling
                     </a>
@@ -189,12 +189,12 @@ onMounted(() => {
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in reData">
                                 <div
-                                    class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary/10">
+                                    class="font-sans group flex w-96 flex-col bg-black px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-light-content group-hover:text-brand-primary">
+                                        class="text-sm font-semibold text-white group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
-                                    <div class="text-xs font-normal text-light-content">
+                                    <div class="text-xs font-normal text-white">
                                         {{ item.description }}
                                     </div>
                                 </div>
