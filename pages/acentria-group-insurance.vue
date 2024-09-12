@@ -106,7 +106,7 @@ const data = ref({
             name: 'Biashara Cover',
             content: 'Empower your SME with comprehensive business coverage – fortify your enterprise for a resilient future.',
             icon: 'storefront',
-            link: '/insurance/biashara-cover'
+            link: '/insurance/biasahara-cover'
         },
         {
             name: 'General Liability Cover',
