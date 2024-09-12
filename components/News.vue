@@ -12,7 +12,8 @@
                 </h2>
             </div>
             <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
-                <a class="relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+
+                <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                     href="resources/blog/preparing-for-ai-regulations.html">
                     <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                         <div
@@ -83,8 +84,8 @@
                                 </path>
                             </g>
                         </svg></button>
-                </a><a
-                    class="relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                </a>
+                <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                     href="resources/guides/elevating-grc-maturity.html">
                     <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                         <div
@@ -157,8 +158,8 @@
                                 </path>
                             </g>
                         </svg></button>
-                </a><a
-                    class="relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                </a>
+                <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                     href="resources/guides/grc-vendor-consolidation-checklist.html">
                     <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                         <div
@@ -231,8 +232,8 @@
                                 </path>
                             </g>
                         </svg></button>
-                </a><a
-                    class="relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                </a>
+                <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                     href="resources/blog/the-case-for-purpose-built-software.html">
                     <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                         <div

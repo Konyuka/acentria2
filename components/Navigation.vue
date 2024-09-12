@@ -75,7 +75,7 @@ const bizCover = ref({
     items: [
         {
             name: 'Biashara Cover',
-            link: '/insurance/biasahara-cover',
+            link: '/insurance/biashara-cover',
         },
         {
             name: 'General Liability Insurance',

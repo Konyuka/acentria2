@@ -33,7 +33,7 @@ onMounted(() => {
 
         <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0">
 
-            <div v-for="item in menuOptions"
+            <NuxtLink :href="item.link" v-for="item in menuOptions"
                 class="button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                 <div class="font-sans flex h-fit flex-col">
 
@@ -50,7 +50,7 @@ onMounted(() => {
                         {{ item.content }}
                     </p>
                 </div>
-            </div>
+            </NuxtLink>
 
         </div>
 

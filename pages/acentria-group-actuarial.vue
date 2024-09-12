@@ -13,16 +13,19 @@ const data = ref({
             name: 'Financial Services',
             content: 'Comprehensive financial services to support your actuarial needs, ensuring stability and growth.',
             icon: 'account_balance',
+            link: '/actuarial/financial-services'
         },
         {
             name: 'Insurance Consulting',
             content: 'Expert insurance consulting to help you navigate complex actuarial challenges and optimize your strategies.',
             icon: 'lightbulb',
+            link: '/actuarial/insurance-consulting'
         },
         {
             name: 'Reinsurance Consulting',
             content: 'Specialized reinsurance consulting to streamline your processes and enhance risk management.',
             icon: 'policy',
+            link: '/actuarial/reinsurance-consulting'
         },
     ],
     other: [
@@ -30,16 +33,19 @@ const data = ref({
             name: 'IFRS 17 Implementation',
             content: 'Expert guidance on implementing IFRS 17, ensuring compliance and accurate financial reporting.',
             icon: 'account_balance',
+            link: '/actuarial/ifrs-17-implementation'
         },
         {
             name: 'Innovation and Digitization',
             content: 'Leverage cutting-edge technology to enhance actuarial processes and drive innovation.',
             icon: 'lightbulb',
+            link: '/actuarial/innovation-and-digitization'
         },
         {
             name: 'Retirement and Employee Benefits',
             content: 'Comprehensive actuarial services for retirement plans and employee benefits, ensuring financial security.',
             icon: 'group',
+            link: '/actuarial/retirement-and-employee-benefits'
         },
     ],
     products: [
@@ -47,11 +53,13 @@ const data = ref({
             name: 'AcentRe',
             content: 'AcentRe is an online reinsurance platform that specializes in data cleaning, pricing, and optimization to enhance your reinsurance strategies.',
             icon: 'cloud',
+            link: '/reinsurance/acentre-reinsurance-solution'
         },
         {
             name: 'Data Analysis Tool',
             content: 'Utilize our Data Analysis Tool for comprehensive insights and tailored reinsurance solutions to meet your unique business needs.',
             icon: 'insights',
+            link: '/reinsurance/reinsurance-data-analytics-tool'
         },
     ]
 })

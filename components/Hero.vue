@@ -13,7 +13,7 @@
                 <div
                     class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-3xl">
                     <div class="w-full">
-                        <div class="flex items-center space-x-2 text-gray-500 pb-2 mx-auto justify-center">
+                        <!-- <div class="flex items-center space-x-2 text-gray-500 pb-2 mx-auto justify-center">
                             <label
                                 class="font-sans tracking-normal text-xs lg:text-sm text-gray-500 font-semibold leading-tight lg:leading-tight uppercase">
                                 Insurance <span class="text-brand-primary">|</span> Reinsurance <span
@@ -21,7 +21,7 @@
                                     class="text-brand-primary">|</span> Investment <span
                                     class="text-brand-primary">|</span> Tech
                             </label>
-                        </div>
+                        </div> -->
                         <h1
                             class="font-sans tracking-normal text-4xl lg:text-5xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             <span
@@ -32,10 +32,15 @@
                     <div>
                         <p
                             class="!justify-around !w-full font-sans tracking-normal text-base text-gray-700 leading-tight lg:leading-tight">
-                            Discover why thousands of businesses and professionals trust Acentria Group for their
-                            Insurance, Reinsurance, Actuarial, Investment, and Tech solutions. At Acentria Group, we
-                            combine expertise with innovation to deliver tailored solutions that meet your unique needs.
-                            Trust us to provide clarity, security, and growth for businesses and individuals.
+
+                            Acentria Group is a trusted global consultant committed to empowering, innovating, and
+                            driving prosperity in Risk and Insurance, Reinsurance, Actuarial, & Investment
+                            Advisory.
+                            <br><br>
+                            We offer unparalleled solutions in Risk and Insurance, Reinsurance, Actuarial, and
+                            Investment Advisory. We take pride in delivering the highest standards of expertise and
+                            service, ensuring your success is at the forefront of everything we do. Welcome to a world
+                            where we redefine excellence and tailor solutions to meet your unique needs.
                         </p>
                     </div>
                     <div class="w-full">

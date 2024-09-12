@@ -12,31 +12,37 @@ const data = ref({
             name: 'Health Insurance',
             content: 'Secure Your Wellness Today – Choose Acentria Health Insurance. Your Health, Our Priority',
             icon: 'health_and_safety',
+            link:'/insurance/health-insurance'
         },
         {
             name: 'Life Insurance',
             content: 'Protecting Your Loved Ones is Priceless – Secure Their Future with Acentria Life Insurance.',
             icon: 'favorite',
+            link: '/insurance/life-insurance'
         },
         {
             name: 'Car Insurance',
             content: 'Drive Confidently with Acentria Car Insurance. Your Safety, Our Priority – Get Covered Today',
             icon: 'directions_car',
+            link: '/insurance/home-insurance'
         },
         {
             name: 'Domestic Cover',
             content: 'Protect your home sweet home with reliable insurance for your peace of mind.',
             icon: 'home',
+            link: '/insurance/motor-insurance'
         },
         {
             name: 'Travel Insurance',
             content: 'Adventure Awaits – Secure Your Travels with Acentria Travel Insurance. Explore with Confidence..',
             icon: 'flight',
+            link: '/insurance/travel-insurance'
         },
         {
             name: 'Golfers Insurance',
             content: 'Don\'t let the unexpected ruin your game – Protect your swing with golfer\'s insurance today.',
             icon: 'sports_golf',
+            link: '/insurance/'
         },
     ],
     corporate: [
@@ -44,41 +50,49 @@ const data = ref({
             name: 'Staff Health Cover',
             content: 'Elevate Employee Well-being Today – Choose Acentria Staff Health Coverage. Their Health, Our Priority.',
             icon: 'medical_services',
+            link: '/insurance/staff-health-cover'
         },
         {
             name: 'Staff Travel Cover',
             content: 'Empower Your Team\'s Journeys Today – Choose Acentria Staff Travel Protection.Their Adventures, Our Priority.',
             icon: 'luggage',
+            link: '/insurance/staff-travel-cover'
         },
         {
             name: 'Professional Indemnity',
             content: 'Secure Your Professional Reputation Today – Choose Acentria Professional Indemnity Assurance. Your Expertise, Our Priority',
             icon: 'verified',
+            link: '/insurance/'
         },
         {
             name: 'Office Content Cover',
             content: 'Safeguard Your Business Assets with Acentria\'s Office Content Coverage.',
             icon: 'verified',
+            link: '/insurance/office-content-cover'
         },
         {
             name: 'Credit Risk Cover',
             content: 'Boost Financial Confidence with Acentria\'s Credit Risk Coverage.Safeguard Your Business\'s Financial Stability Today.',
             icon: 'verified',
+            link: '/insurance/credit-risk-cover'
         },
         {
             name: 'Cyber Liability Cover',
             content: 'Protect Your Digital Fortresses with Acentria\'s Cyber Liability Insurance.Defend Your Business Against Online Threats Today',
             icon: 'security',
+            link: '/insurance/cyber-liability-cover'
         },
         {
             name: 'Marine Cover',
             content: 'Sail Securely with Acentria\'s Marine Insurance.Protect Your Maritime Ventures with Confidence.',
             icon: 'sailing',
+            link: '/insurance/'
         },
         {
             name: 'Aviation Cover',
             content: 'Reach New Heights with Acentria\'s Aviation Insurance.Fly Safely and Confidently with Our Coverage.',
             icon: 'local_airport',
+            link: '/insurance/'
         },
     ],
     business: [
@@ -86,31 +100,37 @@ const data = ref({
             name: 'All-in -One Package',
             content: 'Simplify and Secure with Acentria\'s All-in-One Insurance Package.Comprehensive Protection for All Your Needs.',
             icon: 'all_inclusive',
+            link: '/insurance/'
         },
         {
             name: 'Biashara Cover',
             content: 'Empower your SME with comprehensive business coverage – fortify your enterprise for a resilient future.',
             icon: 'storefront',
+            link: '/insurance/biashara-cover'
         },
         {
             name: 'General Liability Cover',
             content: 'Protect your business with Acentria\'s General Liability Insurance – your shield against unexpected challenges and legal uncertainties',
             icon: 'gavel',
+            link: '/insurance/general-liability-insurance'
         },
         {
             name: 'Commercial Vehicle Cover',
             content: 'Drive with Confidence - Choose Acentria\'s Commercial Vehicle Coverage.Protect Your Business on the Road.',
             icon: 'local_shipping',
+            link: '/insurance/'
         },
         {
             name: 'Commercial Property Cover',
             content: 'Secure Your Business Space - Choose Acentria\'s Commercial Property Coverage.Protect Your Business Assets and Premises.',
             icon: 'store',
+            link: '/insurance/commercial-property-insurance'
         },
         {
             name: 'Crop & Livestock Cover',
             content: 'Guard your crops and livestock with comprehensive insurance coverage for a secure farming future.',
             icon: 'agriculture',
+            link: '/insurance/crops-and-livestock'
         },
     ]
 })

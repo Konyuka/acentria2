@@ -12,21 +12,25 @@ const data = ref({
             name: 'Reinsurance Optimization',
             content: 'Optimize your reinsurance strategy with Acentria. We help you maximize efficiency and minimize risk.',
             icon: 'trending_up',
+            link: '/reinsurance/reinsurance-optimization'
         },
         {
             name: 'Treaty Administration',
             content: 'Efficiently manage your reinsurance treaties with our comprehensive administration services.',
             icon: 'gavel',
+            link: '/reinsurance/treaty-administration'
         },
         {
             name: 'Claims Management',
             content: 'Streamline your claims process with our expert management services, ensuring quick and fair settlements.',
             icon: 'assignment_turned_in',
+            link: '/reinsurance/claims-management'
         },
         {
             name: 'Value Addition',
             content: 'Enhance your reinsurance portfolio with our value-added services, tailored to meet your unique needs.',
             icon: 'add_circle_outline',
+            link: '/reinsurance/value-addition'
         },
     ],
     solutions: [
@@ -34,16 +38,19 @@ const data = ref({
             name: 'Facultative Solutions',
             content: 'Tailored reinsurance solutions for specific risks, providing flexibility and targeted coverage.',
             icon: 'build',
+            link: '/reinsurance/facultative-solution'
         },
         {
             name: 'Treaty Solutions',
             content: 'Comprehensive reinsurance agreements that cover a portfolio of risks, ensuring stability and predictability.',
             icon: 'policy',
+            link: '/reinsurance/treaty-solutions'
         },
         {
             name: 'Special Lines Solutions',
             content: 'Customized reinsurance for niche markets and unique risks, offering specialized protection.',
             icon: 'category',
+            link: '/reinsurance/special-lines'
         },
     ],
     data: [
@@ -51,21 +58,25 @@ const data = ref({
             name: 'Reinsurance Data Analytics Tool',
             content: 'Leverage advanced analytics to optimize your reinsurance strategies and make informed decisions.',
             icon: 'analytics',
+            link: '/reinsurance/reinsurance-data-analytics-tool'
         },
         {
             name: 'Acentria Reinsurance Solution',
             content: 'Comprehensive reinsurance solutions tailored to meet the unique needs of your business.',
             icon: 'business_center',
+            link: '/reinsurance/acentre-reinsurance-solution'
         },
         {
             name: 'Catastrophic Modelling',
             content: 'Utilize sophisticated models to assess and mitigate the impact of catastrophic events on your portfolio.',
             icon: 'bar_chart',
+            link: '/reinsurance/catastrophic-modelling'
         },
         {
             name: 'Return On Risk Adjusted Capital',
             content: 'Maximize your returns by effectively managing risk-adjusted capital in your reinsurance operations.',
             icon: 'trending_up',
+            link: '/reinsurance/return-on-risk-adjusted-capital'
         },
     ]
 })

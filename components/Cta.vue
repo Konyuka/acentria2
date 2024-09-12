@@ -24,7 +24,7 @@
                                 conversation.
                             </p>
                         </div>
-                        <a href="#"
+                        <NuxtLink href="/contact-acentria-group"
                             class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Talk
                             to support<svg
                                 class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
@@ -35,7 +35,8 @@
                                         d="M1 1l4 4-4 4">
                                     </path>
                                 </g>
-                            </svg></a>
+                            </svg>
+                        </NuxtLink>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div
@@ -93,7 +94,7 @@
                                     24/7/365.
                                 </p>
                             </div>
-                            <a href="#"
+                            <NuxtLink href="/about-acentria-group"
                                 class="cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">Learn
                                 more<svg
                                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
@@ -104,7 +105,8 @@
                                             d="M1 1l4 4-4 4">
                                         </path>
                                     </g>
-                                </svg></a>
+                                </svg>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,7 @@ onMounted(() => {
 
           <Hero />
 
-          <Clients />
+          <!-- <Clients /> -->
 
           <Stats />
 
