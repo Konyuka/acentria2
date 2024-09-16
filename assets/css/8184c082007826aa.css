@@ -342,24 +342,25 @@ video {
 .container {
     width: 100%;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    max-width: 95vw;
 }
 
 @media (min-width:100%) {
     .container {
-        max-width: 100%
+        max-width: 95vw
     }
 }
 
 @media (min-width:1024px) {
     .container {
-        max-width: 1024px
+        max-width: 95vw
     }
 }
 
 @media (min-width:1080px) {
     .container {
-        max-width: 1080px
+        max-width: 95vw
     }
 }
 

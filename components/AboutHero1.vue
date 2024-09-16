@@ -35,10 +35,10 @@ const props = defineProps({
                         
                     </div>
                     <div class="flex justify-center">
-                        <img loading="lazy" width="500" height="300" decoding="async" data-nimg="1"
+                        <!-- <img loading="lazy" width="500" height="300" decoding="async" data-nimg="1"
                             class="drop-shadow-md undefined rounded-2xl"
                             sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                            :src="InsuranceBannerContent.image" style="color: transparent" />
+                            :src="InsuranceBannerContent.image" style="color: transparent" /> -->
                     </div>
                 </div>
             </div>
