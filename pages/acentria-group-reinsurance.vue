@@ -203,7 +203,7 @@ const whys = ref([
                     </div>
                 </div>
 
-                <section id="" class="relative py-8 lg:py-20 bg-white text-center">
+                <section id="" class="relative py-8 lg:py-5 bg-white text-center">
                     <div class="container px-4">
                         <h2
                             class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
@@ -213,7 +213,7 @@ const whys = ref([
                     </div>
                 </section>
 
-                <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
+                <div class="py-6 text-white xl:py-5" style="background-color: #f6f8fc">
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 

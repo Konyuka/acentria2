@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <div>
 
-        <section id="" class="relative py-8 lg:py-20 bg-white text-center">
+        <section id="" class="relative py-8 lg:py-5 bg-white text-center">
             <div class="container px-4">
                 <h2
                     class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">

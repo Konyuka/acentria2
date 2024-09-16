@@ -34,7 +34,7 @@ onMounted(async () => {
     <div id="__next">
         <main class="jsx-2839774277 __className_e3c363 __ptNoRemap font-sans">
             <main>
-                <div class="flex w-full flex-row px-4 py-4 md:px-16 md:pb-6 md:pt-16">
+                <div class="flex w-full flex-row px-4 py-4 md:px-16 md:pb-6">
                     <div class="container mx-auto flex h-full justify-center gap-0 md:gap-6 md:pb-0">
                         <div class="flex cursor-default flex-col md:flex-row">
                             <div
@@ -62,7 +62,7 @@ onMounted(async () => {
 
                 <div class="bg-white px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
                     <div class="container mx-auto pb-4 lg:pb-16">
-                        <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+                        <div class="mt-5 space-y-20 lg:space-y-20">
 
                             <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
 
@@ -108,8 +108,8 @@ onMounted(async () => {
                     </div>
                 </div>
 
-                <div class="flex flex-row px-4 py-3 md:px-16 md:pb-4 md:pt-8 lg:pb-6 lg:pt-10">
-                    <div class="container mx-auto flex h-full flex-col-reverse gap-6 pb-4 lg:flex-row lg:pb-16">
+                <div class="flex flex-row px-4 py-3 md:px-16 md:pb-4 md:pt-8 lg:pt-10">
+                    <div class="container mx-auto flex h-full flex-col-reverse gap-6 pb-4 lg:flex-row lg:pb-6">
                         <nav
                             class="flex w-full items-center justify-center gap-24 border-t border-gray-200 px-4 pb-8 sm:px-0">
                             <div class="-mt-px flex w-0 flex-1"></div>
