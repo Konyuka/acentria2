@@ -41,7 +41,7 @@ const teams = ref([
             "https://acentriagroup.com/wp-content/uploads/2024/02/symon-1.jpg",
     },
     {
-        name: "Donald Were",
+        name: "Donald Were, FIA",
         title: "Actuarial & Financial Services",
         email: "dwere@acentriagroup.com",
         profile: "Donald is the Head of Actuarial and Financial Services at Acentria Group. He is a qualified actuary and a Fellow of the Institute and Faculty of Actuaries in United Kingdom. He holds an MSc in Actuarial Management from Bayes Business School in London, and a Bachelor’s degree in Actuarial Science with Information Technology. He is an expert in actuarial techniques and risk management, with great interest in innovation and how tech and finance can be merged to deliver sustainable financial solutions. He has worked on numerous innovative projects, including development of a reinsurance pricing and optimization tool, to guide (re)insurance companies in impact assessment of reinsurance and retro structures. He is also an expert in the IFRS17 reporting standard and the current secretary to the TASK IFRS Working Party. Before joining Acentria, Donald was responsible for guiding Jubilee Holding Limited in transitioning to the IFRS17 reporting standard across 4 countries in East Africa, namely Kenya, Uganda, Tanzania and Burundi. He also worked for the Insurance Regulatory Authority in Kenya, where he was responsible for actuarial analytics and driving innovation.",
@@ -57,7 +57,7 @@ const teams = ref([
             "https://acentriagroup.com/wp-content/uploads/2024/02/kelvin-1.jpg",
     },
     {
-        name: "Fiona Kinyanjui",
+        name: "Fiona Kinyanjui, ACIM",
         title: "Marketing & Branding Manager",
         email: "fkinyanjui@acentriagroup.com",
         profile: "Fiona is an accomplished marketing and brand strategist with a robust professional background spanning nearly half a decade within the banking industry. Her diverse experience has honed her skills in developing and executing effective marketing strategies, strategic communications, brand management, and digital marketing solutions. Having earned a Bachelor’s Degree in Marketing from Daystar University, Fiona’s commitment to professional growth is evident through her certifications from the Chartered Institute of Marketing (CIM-UK). Her certifications in Managing Brands, Planning Campaigns, and Innovation in Marketing exemplify her dedication to staying at the forefront of the industry. Additionally, as an Affiliate member of the Chartered Institute of Marketing (CIM-UK), she remains actively engaged in the latest advancements and best practices within the marketing domain.",
@@ -70,7 +70,15 @@ const teams = ref([
         email: "amwangi@acentriagroup.com",
         profile: "",
         image:
-            "https://acentriagroup.com/wp-content/uploads/2024/02/andrew-1.jpg",
+            "/assets/media/andrew.jpg",
+    },
+    {
+        name: "Kelvin Ombal",
+        title: "IT Manager",
+        email: "kombal@acentriagroup.com",
+        profile: "",
+        image:
+            "/assets/media/kelvin.jpg",
     },
 ],)
 

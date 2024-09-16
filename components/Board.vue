@@ -75,7 +75,7 @@ const openPofile = (member) => {
                 Board
             </h2>
         </div>
-        <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-5">
+        <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-4">
 
             <div v-for="member in teams" @click="openPofile(member)" class="flex shadow-xl button-animation">
                 <div class="w-full cursor-pointer rounded-xl bg-white">

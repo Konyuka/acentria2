@@ -188,9 +188,10 @@ const openProfileBoardModal = () => {
                                 </div>
                             </div>
 
+                            <Board @openBoardProfile="openProfileBoardModal" ref="teamBoardComponent" />
+
                             <Team @openProfile="openProfileModal" ref="teamComponent" />
 
-                            <Board @openBoardProfile="openProfileBoardModal" ref="teamBoardComponent" />
 
                             <section class="relative py-4 lg:py-10" data-v-inspector="components/Cards.vue:8:9">
                                 <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
@@ -507,12 +508,12 @@ const openProfileBoardModal = () => {
                                                             </div>
                                                             <div
                                                                 class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
-                                                                <button type="button"
+                                                                <a :href="'mailto:' + profileData.email" type="button"
                                                                     class="button-animation inline-flex justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                                                                     <i
                                                                         class="fas fa-paper-plane text-lg text-brand-primary"></i>
                                                                     <span class="mt-1">Contact on Mail</span>
-                                                                </button>
+                                                                </a>
                                                                 <button type="button"
                                                                     class="button-animation inline-flex justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                                                                     <i
@@ -536,15 +537,15 @@ const openProfileBoardModal = () => {
                                                 <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
 
                                                     <div class="sm:col-span-1">
-                                                        <dt class="text-lg font-semibold text-black">Title</dt>
+                                                        <!-- <dt class="text-lg font-semibold text-black">Title</dt> -->
                                                         <dd class="mt-1 text-sm text-gray-900">{{ profileData.title }}
                                                         </dd>
                                                     </div>
-                                                    <div class="sm:col-span-1">
+                                                    <!-- <div class="sm:col-span-1">
                                                         <dt class="text-sm font-semibold text-black">Email</dt>
                                                         <dd class="mt-1 text-sm text-gray-900">{{ profileData.email }}
                                                         </dd>
-                                                    </div>
+                                                    </div> -->
 
 
                                                     <div class="sm:col-span-2">
@@ -657,18 +658,18 @@ const openProfileBoardModal = () => {
                                                             </div>
                                                             <div
                                                                 class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
-                                                                <button type="button"
+                                                                <!-- <button type="button"
                                                                     class="button-animation inline-flex justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                                                                     <i
                                                                         class="fas fa-paper-plane text-lg text-brand-primary"></i>
                                                                     <span class="mt-1">Contact on Mail</span>
-                                                                </button>
-                                                                <button type="button"
+                                                                </button> -->
+                                                                <!-- <button type="button"
                                                                     class="button-animation inline-flex justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                                                                     <i
                                                                         class="fab fa-linkedin text-lg text-brand-primary"></i>
                                                                     <span class="mt-1">Contact on LinkedIn</span>
-                                                                </button>
+                                                                </button> -->
 
                                                             </div>
                                                         </div>
@@ -686,17 +687,17 @@ const openProfileBoardModal = () => {
                                                 <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
 
                                                     <div class="sm:col-span-1">
-                                                        <dt class="text-lg font-semibold text-black">Title</dt>
+                                                        <!-- <dt class="text-lg font-semibold text-black">Title</dt> -->
                                                         <dd class="mt-1 text-sm text-gray-900">{{ profileBoardData.title
                                                             }}
                                                         </dd>
                                                     </div>
-                                                    <div class="sm:col-span-1">
+                                                    <!-- <div class="sm:col-span-1">
                                                         <dt class="text-sm font-semibold text-black">Email</dt>
                                                         <dd class="mt-1 text-sm text-gray-900">{{ profileBoardData.email
                                                             }}
                                                         </dd>
-                                                    </div>
+                                                    </div> -->
 
 
                                                     <div class="sm:col-span-2">

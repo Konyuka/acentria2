@@ -72,7 +72,9 @@ onMounted(() => {
 
           <Why />
 
-          <Message />
+          <Structure />
+
+          <!-- <Message /> -->
 
           <News />
 
