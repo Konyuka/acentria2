@@ -1,6 +1,21 @@
 <script setup>
 
+const route = useRoute();
+const currentRoute = computed(() => route.path);
 
+const companyMail = computed(() => {
+    if (currentRoute.value == '/acentria-group-insurance') {
+        return 'insurance@acentriagroup.com'
+    } else if (currentRoute.value == '/acentria-group-reinsurance'){
+        return 'reinsurance@acentriagroup.com'
+        
+    } else if (currentRoute.value == '/acentria-group-actuarial'){
+        return 'actuarial@acentriagroup.com'
+        
+    }else{
+        return 'info@acentriagroup.com'
+    }
+})
 </script>
 
 <template>
@@ -27,7 +42,7 @@
                                     <dd>
                                         <a class="font-semibold !text-brand-primary tracking-widest"
                                             href="mailto:collaborate@example.com">
-                                            info@acentraigaroup.com
+                                            {{ companyMail }}
                                         </a>
                                     </dd>
                                 </div>
