@@ -3,6 +3,7 @@ import axios from 'axios';
 import moment from 'moment';
 
 const blogs = ref(null);
+const currentMenu = ref('blogs');
 
 const formatDate = (date) => {
     return moment(date).format('lll');
@@ -15,6 +16,10 @@ const getUrl = (title, id) => {
     const hyphenatedTitle = words.join('-');
     // Return the URL with the blog ID
     return `/blog/${hyphenatedTitle}-${id}`;
+}
+
+const setMenu = (menu) => {
+    currentMenu.value = menu
 }
 
 onMounted(async () => {
@@ -60,6 +65,72 @@ onMounted(async () => {
                     </div>
                 </div>
 
+                <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+                <div>
+                    <div class="sm:hidden">
+                        <label for="tabs" class="sr-only">Select a tab</label>
+                        <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+                        <select id="tabs" name="tabs"
+                            class="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
+                            <option>My Account</option>
+                            <option>Company</option>
+                            <option selected>Team Members</option>
+                            <option>Billing</option>
+                        </select>
+                    </div>
+                    <div class="hidden sm:block font-sans">
+                        <div class="border-b border-gray-200">
+                            <nav class="-mb-px flex" aria-label="Tabs">
+                                <button @click="setMenu('blogs')"
+                                    :class="[currentMenu == 'blogs' ? 'border-brand-primary text-brand-primary' :'border-transparent text-gray-500']"
+                                    class="w-1/4 border-b-2  px-1 py-4 text-center text-sm font-medium  hover:border-gray-300 hover:text-gray-700">
+                                    Blogs
+                                </button>
+                                <button @click="setMenu('press')"
+                                    :class="[currentMenu == 'press' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
+                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
+                                    Press Release
+                                </button>
+                                <button @click="setMenu('events')"
+                                    :class="[currentMenu == 'events' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
+                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
+                                    Events
+                                </button>
+                                <button @click="setMenu('letters')"
+                                    :class="[currentMenu == 'letters' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
+                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
+                                    News Letters
+                                </button>
+                                <button @click="setMenu('pub')"
+                                    :class="[currentMenu == 'pub' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
+                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
+                                    Publications
+                                </button>
+                                <button @click="setMenu('media')"
+                                    :class="[currentMenu == 'media' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
+                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
+                                    Media Kit
+                                </button>
+                                
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="bg-white px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
                     <div class="container mx-auto pb-4 lg:pb-16">
                         <div class="mt-5 space-y-20 lg:space-y-20">
@@ -73,16 +144,14 @@ onMounted(async () => {
                                                 decoding="async" data-nimg="1"
                                                 class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                                                 sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                                                :src="blog.cover"
-                                                style="color: transparent;">
+                                                :src="blog.cover" style="color: transparent;">
                                             <div
                                                 class="className='flex absolute inset-0 flex-col items-start justify-between  rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
                                             </div>
                                         </div>
                                         <div class="max-w-full">
                                             <div class="font-sans mt-8 flex items-center gap-x-2 text-xs">
-                                                <time datetime="August 20, 2024"
-                                                    class="text-gray-500 font-semibold">
+                                                <time datetime="August 20, 2024" class="text-gray-500 font-semibold">
                                                     {{ formatDate(blog.created_at) }}
                                                 </time>
                                                 <div class="text-gray-500">•</div>
