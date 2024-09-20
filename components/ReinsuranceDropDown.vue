@@ -120,13 +120,13 @@ onMounted(() => {
         <div class="shadow-4xl absolute bottom-0 left-[-150px] translate-y-full">
             <div class="flex flex-col">
 
-                <div class="bg-black border-r border-brand-divider">
+                <div class="bg-gray-100 border-r border-brand-divider">
                     <NuxtLink to="/acentria-group-reinsurance"
-                        class="group bg-black flex w-full flex-row items-center gap-2 whitespace-nowrap px-8 py-4 text-sm font-semibold text-white hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-caret-right text-lg undefined " translate="no"></i>
-                        <span class="group-hover:button-animation">
-                            All Reinsurance Services
+                        class="button-animation group bg-gray-100 flex w-full flex-row items-center gap-2 whitespace-nowrap px-8 py-4 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
+                        <span class="group-hover:button-animation text-2xl">
+                            Reinsurance Page
                         </span>
+                        <i class="fas fa-arrow-right text-lg undefined " translate="no"></i>
                     </NuxtLink>
 
                 </div>
