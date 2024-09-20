@@ -8,10 +8,10 @@
                     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4 sm:px-8 text-white">
                     <h2 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" v-html="slide.title"></h2>
                     <p class="text-base sm:text-lg md:text-xl lg:text-3xl mb-8 mt-8">{{ slide.description }}</p>
-                    <button
-                        class="button-animation z-[51] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
+                    <NuxtLink to="/about-acentria-group"
+                        class="button-animation z-[51] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
                         Learn More <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
-                    </button>
+                    </NuxtLink>
                 </div>
             </Slide>
 
