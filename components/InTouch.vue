@@ -40,7 +40,7 @@ const companyMail = computed(() => {
                                 <div>
                                     <dt class="sr-only">Email</dt>
                                     <dd>
-                                        <a class="font-semibold !text-brand-primary tracking-widest"
+                                        <a class="font-semibold !text-brand-primary "
                                             href="mailto:collaborate@example.com">
                                             {{ companyMail }}
                                         </a>
@@ -57,7 +57,7 @@ const companyMail = computed(() => {
                                 <div class="mt-1">
                                     <dt class="sr-only">Phone number</dt>
                                     <dd>
-                                        <a class="font-semibold !text-brand-primary tracking-widest transform transition duration-700 hover:scale-125 "
+                                        <a class="font-semibold !text-brand-primary  transform transition duration-700 hover:scale-125 "
                                             href="tel:+254 705 200 222">
                                             +254 705 200 222
                                         </a>
@@ -103,7 +103,7 @@ const companyMail = computed(() => {
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900">
                             Visit Us
                         </h2>
-                        <p class="mt-4 leading-7 text-black tracking-widest">
+                        <p class="mt-4 leading-7 text-black ">
                             West Park Towers - 9th floor, Mpesi Lane <br />
                             Muthithi Road - Westlands Nairobi Kenya
                         </p>
