@@ -7,12 +7,12 @@ const props = defineProps({
 
 <template>
     <div>
-        <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="
+        <div class="relative w-full h-[50vh] bg-cover bg-center bg-no-repeat false" style="
             background-image: url(https://cdn.sanity.io/images/33u1mixi/production/9586fc11ddcb60222de682cdb07fe9d57103448b-1440x595.svg?fit=max&amp;auto=format);
           ">
             <div class="container">
                 <div
-                    class="flex flex-col items-center bg-cover px-4 py-4 text-center md:py-16 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                    class="flex flex-col items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                     <div
                         class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[50%] lg:justify-start lg:text-left">
                         <div class="w-full">

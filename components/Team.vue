@@ -34,7 +34,7 @@ const teams = ref([
         email: "mwakini@acentriagroup.com",
         profile: "Maureen has over fifteen (15) years of corporate and consulting experience in Human Resources and Professional coaching. She started her career as a Graduate Trainee at Industrial Promotion Services Limited (IPS Kenya), where she established a solid foundation in industrial relations within the manufacturing and agricultural sectors. Thereafter she joined Westcon-Comstor Sub-Saharan Africa as the Human Resources Manager, overseeing HR operations and Organizational Development in twenty pan-African and two european countries. Subsequently she served as a trusted advisor to senior c-suite leaders on strategic HR initiatives such as talent management, performance development and change management as a Human Resource Business Partner at Janus Continental Group (JCG). While at JCG, she supported the energy, real estate, hospitality sectors and enabling functions. She enjoys reading fictional books and is pursuing creative writing to inspire others. Further, she is Board Secretary at RCLN who is passionate about impacting the community positively and partners with tertiary institutions in training and mentorship programs in order to prepare them for the world of work.",
         image:
-            "https://acentriagroup.com/wp-content/uploads/2024/02/maureen-1.jpg",
+            "img/maureen.jpg",
     },
     {
         name: "Symon Gatimu",
@@ -61,7 +61,7 @@ const teams = ref([
         email: "kmwangi@acentriagroup.com",
         profile: "Kelvin is a dedicated and adaptable insurance professional, boasting more than 12 years of industry experience. With a Bachelor of Commerce degree, specializing in insurance from the University of Nairobi, Kelvin has honed his insurance expertise over the years. He’s not just academically qualified; he also holds a professional diploma in insurance from the College of Insurance (AIIK) and an international insurance diploma (ANZIIF) from the Australia and New Zealand Insurance Institute of Finance, as well as credentials from the Cambridge International College in the UK, among various other professional certifications. He has worked in various capacities, including Underwriting, Business Development, Broking, Claims & Recoveries, and Reinsurance Management. His career reflects a commitment to excellence and showcases his leadership qualities, strong work ethic, and exceptional organizational skills. Among his core competencies are Risk Management, Client Relationship Management, Underwriting Pricing, Claims Verification, Legal and Recovery expertise in both Marine and Motor claims, Business Development, and Client Retention. Kelvin is a driving force behind Acentria Group’s mission to provide top-tier insurance services.",
         image:
-            "https://acentriagroup.com/wp-content/uploads/2024/02/kelvin-1.jpg",
+            "img/kelvo.jpg",
     },
     {
         name: "Fiona Kinyanjui, ACIM",
@@ -116,11 +116,18 @@ const openPofile = (member) => {
         <div class="text-center">
             <h2 id=""
                 class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-brand-primary pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:!text-4xl 2xl:!text-4xl">
-                <span class="text-light-title pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:text-4xl 2xl:text-4xl">Acentria's Management</span>
+                <span class="text-light-title pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:text-4xl 2xl:text-4xl">Acentria's
+                    Management</span>
                 Leadership
             </h2>
-            <p>
-                
+            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
+                data-v-inspector="components/Why.vue:47:21">
+                This team is responsible for executing the company's vision, aligning day-to-day operations with
+                long-term goals, and fostering a culture of innovation and growth. By effectively managing resources and
+                ensuring the well-being of employees and clients alike, Acentria's Management Leadership continues to
+                enhance the company's reputation as a trusted partner in the insurance and financial industries. Their
+                commitment to operational excellence and customer satisfaction sets the foundation for Acentria's
+                continued success.
             </p>
         </div>
         <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-5">

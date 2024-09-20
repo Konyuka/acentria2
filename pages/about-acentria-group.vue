@@ -43,7 +43,7 @@ const openProfileBoardModal = () => {
 
                             <!-- <AboutHero /> -->
 
-                            <div data-v-02281a80="" class="font-sans py-6 text-white xl:py-12"
+                            <div data-v-02281a80="" class="font-sans py-6 text-white"
                                 style="background-color: rgb(246, 248, 252);">
                                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:8:9">
@@ -195,9 +195,10 @@ const openProfileBoardModal = () => {
 
                             <section class="relative py-4 lg:py-10" data-v-inspector="components/Cards.vue:8:9">
                                 <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
-                                    <div class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0"
+                                    <div class="font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0"
                                         data-v-inspector="components/Cards.vue:10:17">
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
+
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:11:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:13:25"><i
@@ -217,7 +218,8 @@ const openProfileBoardModal = () => {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
+
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:29:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:31:25"><i
@@ -236,7 +238,8 @@ const openProfileBoardModal = () => {
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full"
+
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:47:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:49:25"><i
@@ -256,12 +259,13 @@ const openProfileBoardModal = () => {
                                                 </p>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </section>
 
 
-                            <div class="font-sans mx-auto mt-5 max-w-[80vw] px-6 sm:mt-10 lg:px-8 mb-10">
+                            <div class="font-sans mx-auto mt-5 max-w-[93vw] px-6 sm:mt-10 lg:px-8 mb-10">
                                 <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
                                     <h2 class="text-3xl font-semibold text-brand-primary sm:text-4xl"> Our values
                                     </h2>
@@ -270,7 +274,7 @@ const openProfileBoardModal = () => {
                                     </p> -->
                                 </div>
                                 <dl
-                                    class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                    class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                     <!--[-->
                                     <div
                                         class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
@@ -382,7 +386,7 @@ const openProfileBoardModal = () => {
                                         <img alt="Image of null" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain"
-                                            src="../_next/image8d9c.jpg?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F33u1mixi%2Fproduction%2F2b7ceeeb456ba16cea1cd0a6be18f0d7c3f9d012-2121x1414.jpg%3Fq%3D90%26fit%3Dmax%26auto%3Dformat&amp;w=1080&amp;q=75" />
+                                            src="/img/team.jpeg" class="rounded-xl" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2">
                                         <div class="text-light-content pb-5 md:pb-6">

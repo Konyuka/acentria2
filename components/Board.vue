@@ -74,6 +74,16 @@ const openPofile = (member) => {
                 <span class="text-light-title pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:text-4xl 2xl:text-4xl">Acentria's</span>
                 Board
             </h2>
+            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
+                data-v-inspector="components/Why.vue:47:21">
+                Acentria's Board of Directors is a team of highly experienced and accomplished professionals, dedicated
+                to steering the company towards sustainable growth and success.
+                The board oversees strategic decisions,
+                risk management, and corporate governance, ensuring that Acentria consistently meets the needs of its
+                clients while maintaining the highest standards of service and ethical conduct. Through strong
+                leadership and a commitment to fostering innovation, the board plays a crucial role in shaping the
+                company's vision and driving long-term success.
+            </p>
         </div>
         <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-4">
 
