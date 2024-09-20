@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 <template>
 
-    <div>
+    <div class="!overflow-x-hidden">
         <Navigation />
 
         <slot />

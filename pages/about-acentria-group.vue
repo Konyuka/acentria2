@@ -514,12 +514,12 @@ const openProfileBoardModal = () => {
                                                                         class="fas fa-paper-plane text-lg text-brand-primary"></i>
                                                                     <span class="mt-1">Contact on Mail</span>
                                                                 </a>
-                                                                <button type="button"
+                                                                <a :href="profileData.linkedin" target="_blank"
                                                                     class="button-animation inline-flex justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                                                                     <i
                                                                         class="fab fa-linkedin text-lg text-brand-primary"></i>
                                                                     <span class="mt-1">Contact on LinkedIn</span>
-                                                                </button>
+                                                                </a>
 
                                                             </div>
                                                         </div>

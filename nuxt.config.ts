@@ -1,17 +1,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
+
   app: {
     head: {
       link: [
-        // {
-        //   rel: 'preload',
-        //   href: '/assets/media/2b3f1035ed87a788-s.p.woff',
-        //   as: 'font',
-        //   type: 'font/woff',
-        //   crossorigin: 'anonymous',
-        //   'data-next-font': 'size-adjust'
-        // },
         {
           rel: "stylesheet",
           href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css",
@@ -30,7 +23,6 @@ export default defineNuxtConfig({
         },
         {
           rel: 'stylesheet',
-          // href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet'
           href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'
         }
       ],
@@ -146,11 +138,6 @@ export default defineNuxtConfig({
           defer: true,
           crossorigin: "anonymous"
         },
-        // {
-        //   src: "/_next/static/chunks/v4.js",
-        //   defer: true,
-        //   crossorigin: "anonymous"
-        // },
         {
           src: "/_next/static/gpomiYuEi5Hk7liTdwws_/_buildManifest.js",
           defer: true,
@@ -164,6 +151,7 @@ export default defineNuxtConfig({
       ]
     },
   },
+
   css: [
     '@/assets/css/main.css',
     '@/assets/css/fonts.css',
@@ -171,15 +159,19 @@ export default defineNuxtConfig({
     '@/assets/css/8184c082007826aa.css',
     '@/assets/css/ee102810659ef561.css',
   ],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   runtimeConfig: {
     public: {
       API_BASE_URL: process.env.API_BASE_URL,
     },
   },
+
+  modules: ["vue3-carousel-nuxt"],
 })

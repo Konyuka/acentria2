@@ -21,6 +21,8 @@ onMounted(() => {
     <main>
         <div >
 
+          <Carousel />
+
           <Hero />
 
           <!-- <Clients /> -->
