@@ -537,7 +537,7 @@ const openProfileBoardModal = () => {
 
 
                                             <!-- Description list -->
-                                            <div class="font-sans mx-auto mt-2 max-w-5xl px-4 sm:px-6 lg:px-8">
+                                            <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                 <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
 
                                                     <div class="sm:col-span-1">
@@ -554,7 +554,7 @@ const openProfileBoardModal = () => {
 
                                                     <div class="sm:col-span-2">
                                                         <dt class="text-sm font-semibold text-black">About</dt>
-                                                        <dd class="mt-1 max-w-full space-y-3 text-xs text-gray-900">
+                                                        <dd class="max-w-full space-y-1 text-[13px] text-gray-900">
                                                             <p>
                                                                 {{ profileData.profile }}
                                                             </p>
@@ -687,7 +687,7 @@ const openProfileBoardModal = () => {
 
 
                                             <!-- Description list -->
-                                            <div class="font-sans mx-auto mt-2 max-w-5xl px-4 sm:px-6 lg:px-8">
+                                            <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                 <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
 
                                                     <div class="sm:col-span-1">
@@ -706,7 +706,7 @@ const openProfileBoardModal = () => {
 
                                                     <div class="sm:col-span-2">
                                                         <dt class="text-sm font-semibold text-black">About</dt>
-                                                        <dd class="mt-1 max-w-full space-y-3 text-xs text-gray-900">
+                                                        <dd class="max-w-full space-y-1 text-[13px] text-gray-900">
                                                             <p>
                                                                 {{ profileBoardData.profile }}
                                                             </p>
