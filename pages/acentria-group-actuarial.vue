@@ -173,6 +173,22 @@ const whys = ref([
                                     With Acentria, you gain access to a partner who not only comprehends the intricacies
                                     of the insurance landscape but also helps you navigate it with precision and
                                     insight. Allow us to empower your financial strategies and shape your success.
+                                    <br><br>
+                                    Our team of seasoned professionals brings a wealth of experience and knowledge to
+                                    every engagement, ensuring that you receive the highest level of service and
+                                    expertise. We pride ourselves on our ability to deliver innovative solutions that
+                                    address the unique challenges faced by our clients in the insurance and financial
+                                    sectors.
+                                    <br><br>
+                                    In addition to our core actuarial services, we offer specialized consulting services
+                                    that focus on risk management, financial modeling, and regulatory compliance. Our
+                                    consultants work closely with clients to develop customized strategies that enhance
+                                    their operational efficiency and financial performance.
+                                    <br><br>
+                                    Partner with Acentria Actuarial & Financial Services and experience the difference
+                                    that our expertise and commitment can make in achieving your financial goals. Let us
+                                    help you navigate the complexities of the insurance and financial landscapes with
+                                    confidence and success.
                                 </p>
                             </div>
                         </div>

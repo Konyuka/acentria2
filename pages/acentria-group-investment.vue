@@ -43,7 +43,7 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
 
 
 
-                <section id="" class="relative py-8 lg:py-20 bg-white text-center">
+                <section id="" class="relative py-2 lg:py-5 bg-white text-center">
                     <div class="container px-4">
                         <h2
                             class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
@@ -52,7 +52,7 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
                         </h2>
                     </div>
                 </section>
-                
+
                 <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
@@ -85,6 +85,13 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
                                     the right track. So, when you’re with Acentria, it’s not just advice – it’s a
                                     friendship built on helping you succeed. Our commitment to transparency and
                                     integrity means that you can trust us to always have your best interests at heart.
+                                    <br><br>
+                                    In addition to our core services, we offer specialized financial planning workshops
+                                    and seminars designed to keep you informed about the latest trends and strategies in
+                                    the investment world. These sessions are tailored to address your specific concerns
+                                    and provide you with the knowledge and tools needed to make the most of your
+                                    financial journey. By staying educated and proactive, you can confidently navigate
+                                    the ever-changing financial landscape and achieve your goals.
 
                                 </p>
                             </div>

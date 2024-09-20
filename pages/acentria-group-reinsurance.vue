@@ -151,24 +151,24 @@ const menus = ref([
 
 const whys = ref([
     {
-        name:'Innovation',
-        content:'We are Passionate about innovation because we believe its a driving force that fuels creativity, curiosity, and the pursuit of novel ideas and solutions',
-        icon:'',
+        name: 'Innovation',
+        content: 'We are Passionate about innovation because we believe its a driving force that fuels creativity, curiosity, and the pursuit of novel ideas and solutions',
+        icon: '',
     },
     {
-        name:'Data driven analytical capabilities',
-        content:'Our ability to use data, advanced analytics, and technology to extract valuable insights, help us to guide business to make informed decisions',
-        icon:'',
+        name: 'Data driven analytical capabilities',
+        content: 'Our ability to use data, advanced analytics, and technology to extract valuable insights, help us to guide business to make informed decisions',
+        icon: '',
     },
     {
-        name:'Distinctive consumer insight capabilities',
-        content:'We offer distinctive consumer insight capabilities to help our clients understand the needs, and preferences of their clients.',
-        icon:'',
+        name: 'Distinctive consumer insight capabilities',
+        content: 'We offer distinctive consumer insight capabilities to help our clients understand the needs, and preferences of their clients.',
+        icon: '',
     },
     {
-        name:'Better results',
-        content:'Achieving better results and long term prosperity is a shared long term goal for Acentria group, individuals, organizations, and societies alike',
-        icon:'',
+        name: 'Better results',
+        content: 'Achieving better results and long term prosperity is a shared long term goal for Acentria group, individuals, organizations, and societies alike',
+        icon: '',
     },
 ])
 
@@ -239,6 +239,13 @@ const whys = ref([
                                     services like reinsurance program design and alternative risk strategies, we create
                                     tailored solutions, underscoring our commitment to helping clients achieve their
                                     specific objectives by addressing their unique challenges and goals.
+                                    <br><br>
+                                    Additionally, we offer specialized consulting services to help insurance companies
+                                    navigate regulatory changes and optimize their operational efficiency. Our team of
+                                    experts is dedicated to providing innovative solutions that enhance risk management
+                                    practices and improve overall financial stability. By leveraging our extensive
+                                    industry knowledge and experience, we ensure that our clients are well-equipped to
+                                    face the evolving challenges of the insurance market.
                                 </p>
                             </div>
                         </div>
@@ -262,9 +269,27 @@ const whys = ref([
                             <div class="text-dark-content pb-5 md:pb-6">
                                 <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
                                     Our reinsurance services are based on local and international best practices that
-                                    aim to forge long- term relationships with our clients and partners. The services
+                                    aim to forge long-term relationships with our clients and partners. The services
                                     are powered by highly qualified staff and the application of the latest technology
                                     in operations, risk analysis, data analytics, and actuarial models.
+
+                                    <br><br>
+
+                                    We pride ourselves on our ability to provide tailored reinsurance solutions that
+                                    meet the unique needs of each client. Our team of experts works closely with clients
+                                    to understand their specific challenges and develop strategies that enhance their
+                                    risk management capabilities. By leveraging advanced data analytics and actuarial
+                                    models, we ensure that our clients receive the most accurate and effective
+                                    reinsurance coverage.
+
+                                    <br><br>
+
+                                    Our commitment to innovation drives us to continuously improve our services and
+                                    adopt the latest technological advancements. We invest in cutting-edge tools and
+                                    platforms that enhance our operational efficiency and enable us to deliver superior
+                                    service to our clients. By staying at the forefront of industry developments, we
+                                    ensure that our clients benefit from the most up-to-date and effective reinsurance
+                                    solutions available.
                                 </p>
                             </div>
                         </div>
@@ -313,6 +338,23 @@ const whys = ref([
                                     risk workflows to eliminate errors, save on costs and regain time. Easily screen
                                     vendors and third parties, manage cyber threats, and generate custom dashboards and
                                     reports.
+
+                                    <br><br>
+
+                                    Our platform provides a comprehensive solution for all your risk management needs,
+                                    ensuring that you have complete visibility and control over your risk landscape. By
+                                    integrating various risk management functions into a single platform, we help you
+                                    streamline processes and improve efficiency. You can easily monitor and assess
+                                    risks, track compliance, and ensure that your organization is prepared for any
+                                    potential threats.
+
+                                    <br><br>
+
+                                    Our platform also includes robust tools for vendor and third-party risk management.
+                                    You can easily screen and monitor vendors, ensuring that they meet your
+                                    organization's risk and compliance standards. Additionally, our platform helps you
+                                    manage cyber threats by providing real-time monitoring and alerts, enabling you to
+                                    respond quickly to any potential security incidents.
                                 </p>
                             </div>
                         </div>
