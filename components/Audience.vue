@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="py-6 text-white xl:py-12 bg-black/5">
+    <div class="text-white bg-black/5">
         <div class="undefined">
             <section id="" class="relative py-4 lg:py-10">
                 <div class="container px-4">
@@ -21,7 +21,7 @@ const props = defineProps({
                         <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0">
 
                             <div v-for="user in InsuranceCardsContent.users" :key="user.name"
-                                class="shadow-2xl group button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
+                                class="shadow-2xl group button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[75vw] rounded-xl bg-white p-5 md:max-w-[75vw] w-full h-full">
                                 <div class="font-sans flex h-fit flex-col"><i
                                         class="material-symbols-outlined text-brand-primary text-4xl pb-4"
                                         translate="no">health_and_safety</i>
