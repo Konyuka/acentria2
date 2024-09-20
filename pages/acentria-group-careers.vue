@@ -40,7 +40,7 @@ const values = ref([
     <main>
         <div>
             <div>
-                <div class="isolate">
+                <div class="isolate !mb-5">
                     <div class="relative isolate -z-10">
                         <div class="container overflow-hidden">
                             <div class="max-w-full">
@@ -48,7 +48,7 @@ const values = ref([
                                     class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
                                     <div class="flex w-full max-w-xl flex-col gap-6 pr-0 sm:pr-24 lg:shrink-0 lg:pr-0">
                                         <h1 id=""
-                                            class="font-sans pb-5 text-3xl font-semibold leading-tight md:pb-6 md:text-4xl xl:text-5xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">
+                                            class="font-sans text-3xl font-semibold leading-tight md:pb-6 md:text-4xl xl:text-5xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">
                                             <span
                                                 class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">Ready</span>
                                             to lead with purpose?
@@ -84,6 +84,7 @@ const values = ref([
                                                 </svg></a>
                                         </div>
                                     </div>
+
                                     <div
                                         class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                                         <div
@@ -139,10 +140,148 @@ const values = ref([
                         </div>
                     </div>
                 </div>
-                
-                <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
+
+                <div class="container mx-auto">
+                    <div class="py-14">
+                        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                            <div
+                                class="font-sans mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                <div>
+                                    <h2
+                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                                        <span
+                                            class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">We
+                                            take care</span>
+                                        of our team
+                                    </h2>
+                                    <p
+                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                        Joining Acentria is an enriching journey of growth and
+                                        collaboration. Embrace a culture that values
+                                        innovation, providing endless learning opportunities
+                                        and mentorship. We celebrate work-life balance,
+                                        nurturing a supportive and inclusive environment. Your
+                                        contributions will be recognized and rewarded,
+                                        ensuring a fulfilling and welcoming experience at
+                                        Acentria.
+                                    </p>
+                                    <p
+                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    </p>
+                                    <p
+                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                        Please note that while our vision, values and mission
+                                        are the same wherever out teams work, benefits may
+                                        vary by office and country.
+                                    </p>
+                                </div>
+                                <div
+                                    class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
+                                    <div class="flex flex-row gap-2">
+                                        <i class="fas fa-heart text-xl text-brand-primary mr-4"></i>
+                                        <div>
+                                            <h5 id=""
+                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                                Comprehensive
+                                                <span class="text-brand-primary">health benefits</span>
+                                            </h5>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-base">
+                                                You take care of our customers, we take care of
+                                                you. All Acentria team members receive
+                                                comprehensive health, vision and dental coverage.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <i class="fas fa-calendar-check text-xl text-brand-primary mr-4"></i>
+                                        <div>
+                                            <h5 id=""
+                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                                Competitive
+                                                <span class="text-brand-primary">time off</span>
+                                            </h5>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-base">
+                                                We offer competitive paid time off, including an
+                                                opportunity to earn an additional Recharge Week
+                                                tied to a company target achievement.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <i class="fas fa-piggy-bank text-xl text-brand-primary mr-4"></i>
+                                        <div>
+                                            <h5 id=""
+                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                                Retirement benefits &amp;
+                                                <span class="text-brand-primary">employer match</span>
+                                            </h5>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-base">
+                                                We offer 401(k) with strong match and regional
+                                                retirement plans so you’ll be ready for retirement
+                                                once you’re done changing the world.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <i class="fas fa-user-friends text-xl text-brand-primary mr-4"></i>
+                                        <div>
+                                            <h5 id=""
+                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                                Employee referral<span class="text-brand-primary">
+                                                    incentives</span>
+                                            </h5>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-base">
+                                                Know someone who’d be a great fit for our team?
+                                                Current employees who refer successful hires to
+                                                Acentria receive great incentives.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <i class="fas fa-dumbbell text-xl text-brand-primary mr-4"></i>
+                                        <div>
+                                            <h5 id=""
+                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                                <span class="text-brand-primary">Wellness</span>
+                                                programs
+                                            </h5>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-base">
+                                                Making a positive impact starts with you. We help
+                                                you look after your health with reimbursements for
+                                                your health club membership.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row gap-2">
+                                        <i class="fas fa-baby text-xl text-brand-primary mr-4"></i>
+                                        <div>
+                                            <h5 id=""
+                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                                Supportive
+                                                <span class="text-brand-primary">parental leave</span>
+                                            </h5>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-base">
+                                                Raising the next generation takes time. We support
+                                                parents in taking time to bond with their newest
+                                                family member.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-5 text-white" style="background-color: #f6f8fc">
                     <div class="undefined">
-                        <section id="" class="relative py-4 lg:py-10">
+                        <section id="" class="relative py-1">
                             <div class="container px-4">
                                 <div class="pb-10 text-center lg:pb-14">
                                     <h2
@@ -309,153 +448,11 @@ const values = ref([
                         </section>
                     </div>
                 </div>
-                <div class="container mx-auto">
-                    <div class="py-24 sm:py-32">
-                        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                            <div
-                                class="font-sans mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                                <div>
-                                    <h2
-                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
-                                        <span
-                                            class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">We
-                                            take care</span>
-                                        of our team
-                                    </h2>
-                                    <p
-                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                                        Joining Acentria is an enriching journey of growth and
-                                        collaboration. Embrace a culture that values
-                                        innovation, providing endless learning opportunities
-                                        and mentorship. We celebrate work-life balance,
-                                        nurturing a supportive and inclusive environment. Your
-                                        contributions will be recognized and rewarded,
-                                        ensuring a fulfilling and welcoming experience at
-                                        Acentria.
-                                    </p>
-                                    <p
-                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    </p>
-                                    <p
-                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                                        Please note that while our vision, values and mission
-                                        are the same wherever out teams work, benefits may
-                                        vary by office and country.
-                                    </p>
-                                </div>
-                                <div
-                                    class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
-                                    <div class="flex flex-row gap-2">
-                                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                            translate="no">done</i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Comprehensive
-                                                <span class="text-brand-primary">health benefits</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                You take care of our customers, we take care of
-                                                you. All Acentria team members receive
-                                                comprehensive health, vision and dental coverage.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                            translate="no">done</i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Competitive
-                                                <span class="text-brand-primary">time off</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                We offer competitive paid time off, including an
-                                                opportunity to earn an additional Recharge Week
-                                                tied to a company target achievement.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                            translate="no">done</i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Retirement benefits &amp;
-                                                <span class="text-brand-primary">employer match</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                We offer 401(k) with strong match and regional
-                                                retirement plans so you’ll be ready for retirement
-                                                once you’re done changing the world.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                            translate="no">done</i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Employee referral<span class="text-brand-primary">
-                                                    incentives</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                Know someone who’d be a great fit for our team?
-                                                Current employees who refer successful hires to
-                                                Acentria receive great incentives.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                            translate="no">done</i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                <span class="text-brand-primary">Wellness</span>
-                                                programs
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                Making a positive impact starts with you. We help
-                                                you look after your health with reimbursements for
-                                                your health club membership.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                            translate="no">done</i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Supportive
-                                                <span class="text-brand-primary">parental leave</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                Raising the next generation takes time. We support
-                                                parents in taking time to bond with their newest
-                                                family member.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <section id="" class="relative py-8 lg:py-20 bg-white text-left">
+
+                <section id="" class="relative py-8 bg-white text-left">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
                             Our commitment to
                             <span
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">diversity</span>,
@@ -465,33 +462,45 @@ const values = ref([
                             <span
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">inclusion</span>
                         </h2>
-                        <p
-                            class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                            Acentria is committed to fostering, cultivating and
-                            preserving a culture that celebrates and values diversity,
-                            equity and inclusion. Our DEI&amp;I plan accelerates
-                            progress, with education being a critical component. We
-                            offer access to training courses and resources which aim to
-                            build a shared vocabulary, develop new skills and foster
-                            collaboration in service to creating an even more inclusive
-                            organization.
-                        </p>
-                        <p
-                            class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                            Acentria also supports several Employee Resource Groups
-                            (ERGs) including Generational,
-                            Multicultural, Parenting &amp; Care Giving, Mental Health and Women in Tech. These groups
-                            fast-track DEI&amp;I education and create a safe place for
-                            growth, understanding, compassion and empathy.
-                        </p>
-                        <p
-                            class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                            We believe that diverse leadership is an essential part of
-                            modern governance and remain committed to exploring new
-                            opportunities to diversify our C-suite.
-                        </p>
+                        <div class="grid grid-cols-2 gap-5 mt-10">
+                            <div class="content-center items-center">
+                                <p
+                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    Acentria is committed to fostering, cultivating and
+                                    preserving a culture that celebrates and values diversity,
+                                    equity and inclusion. Our DEI&amp;I plan accelerates
+                                    progress, with education being a critical component. We
+                                    offer access to training courses and resources which aim to
+                                    build a shared vocabulary, develop new skills and foster
+                                    collaboration in service to creating an even more inclusive
+                                    organization.
+                                </p>
+                                <p
+                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    Acentria also supports several Employee Resource Groups
+                                    (ERGs) including Generational,
+                                    Multicultural, Parenting &amp; Care Giving, Mental Health and Women in Tech. These
+                                    groups
+                                    fast-track DEI&amp;I education and create a safe place for
+                                    growth, understanding, compassion and empathy.
+                                </p>
+                                <p
+                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    We believe that diverse leadership is an essential part of
+                                    modern governance and remain committed to exploring new
+                                    opportunities to diversify our C-suite.
+                                </p>
+                            </div>
+                            <div>
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                    width="600" height="350" decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain" class="rounded-xl"
+                                    src="https://images.pexels.com/photos/4427963/pexels-photo-4427963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                            </div>
+                        </div>
                     </div>
                 </section>
+
                 <div class="bg-cover bg-center py-8 md:py-16 lg:py-20" style="
                   background-image: url(https://cdn.sanity.io/images/33u1mixi/production/b695dd70af0f5f4be3c091f4607fd14514ac5650-1440x447.svg);
                 ">
@@ -578,7 +587,8 @@ const values = ref([
                                             </p>
                                         </div>
                                         <NuxtLink to="/acentria-news-and-blogs"
-                                            class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">Read
+                                            class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">
+                                            Read
                                             our blog<svg
                                                 class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
                                                 fill="none" stroke="currentColor" viewBox="0 0 10 10"
@@ -597,6 +607,7 @@ const values = ref([
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>

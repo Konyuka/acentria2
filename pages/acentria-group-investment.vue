@@ -52,6 +52,7 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
                         </h2>
                     </div>
                 </section>
+                
                 <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">

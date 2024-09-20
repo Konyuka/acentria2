@@ -13,19 +13,19 @@ const menuItem = ref([
         items: [
             {
                 name: 'Home',
-                link: '',
+                link: '/',
             },
             {
                 name: 'About',
-                link: '',
+                link: '/about-acentria-group',
             },
             {
                 name: 'Blogs',
-                link: '',
+                link: '/acentria-news-and-blogs',
             },
             {
                 name: 'Careers',
-                link: '',
+                link: '/acentria-group-careers',
             },
             {
                 name: 'Gallery',
@@ -38,24 +38,25 @@ const menuItem = ref([
         items: [
             {
                 name: 'Reinsurance',
-                link: '',
+                link: '/acentria-group-reinsurance',
             },
             {
                 name: 'Insurance',
-                link: '',
+                link: '/acentria-group-insurance',
             },
             {
                 name: 'Actuarial',
+                link: '/acentria-group-actuarial',
+            },
+            {
+                name: 'Technology',
                 link: '',
             },
             {
                 name: 'Investment',
-                link: '',
+                link: '/acentria-group-investment',
             },
-            {
-                name: 'Tech',
-                link: '',
-            },
+            
         ]
     },
     {
@@ -67,7 +68,7 @@ const menuItem = ref([
             },
             {
                 name: 'Contact Support',
-                link: '',
+                link: '/contact-acentria-group',
             },
             {
                 name: 'Procurement',
@@ -150,10 +151,10 @@ const menuItem = ref([
                             <ul
                                 class="left-0 top-full -z-10 flex w-full list-none flex-col gap-0 overflow-hidden pt-3 will-change-transform lg:mb-0 invisible absolute -translate-y-24 opacity-0 lg:visible lg:static lg:transform-none lg:opacity-100 lg:transition-none">
                                 <li v-for="link in item.items" class="button-animation mb-2 text-dark-content">
-                                    <a href="solutions/board-and-leadership-collaboration.html"
+                                    <NuxtLink :to="link.link"
                                         class="text-xs cursor-pointer font-normal text-dark-title hover:text-dark-title hover:underline relative flex items-center">
                                         {{ link.name }}
-                                    </a>
+                                    </NuxtLink>
                                 </li>
                             </ul>
                         </div>
