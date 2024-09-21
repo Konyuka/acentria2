@@ -65,20 +65,7 @@ onMounted(async () => {
                     </div>
                 </div>
 
-                <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
+
                 <div>
                     <div class="sm:hidden">
                         <label for="tabs" class="sr-only">Select a tab</label>
@@ -92,39 +79,23 @@ onMounted(async () => {
                         </select>
                     </div>
                     <div class="hidden sm:block font-sans">
-                        <div class="border-b border-gray-200">
-                            <nav class="-mb-px flex" aria-label="Tabs">
+                        <div class="border-2 divide-x divide-gray-200 border-gray-200">
+                            <nav class="-mb-px flex font-sans" aria-label="Tabs">
                                 <button @click="setMenu('blogs')"
-                                    :class="[currentMenu == 'blogs' ? 'border-brand-primary text-brand-primary' :'border-transparent text-gray-500']"
-                                    class="w-1/4 border-b-2  px-1 py-4 text-center text-sm font-medium  hover:border-gray-300 hover:text-gray-700">
-                                    Blogs
+                                    :class="[currentMenu == 'blogs' ? 'bg-brand-primary text-white' : 'border-transparent text-gray-500']"
+                                    class="w-1/3 border-2  px-1 py-4 text-center text-md font-semibold  hover:border-red-600 hover:text-black">
+                                    <i class="fas fa-blog mr-2"></i> Blogs
                                 </button>
-                                <button @click="setMenu('press')"
-                                    :class="[currentMenu == 'press' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
-                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
-                                    Press Release
-                                </button>
-                                <button @click="setMenu('events')"
-                                    :class="[currentMenu == 'events' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
-                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
-                                    Events
-                                </button>
-                                <button @click="setMenu('letters')"
-                                    :class="[currentMenu == 'letters' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
-                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
-                                    News Letters
-                                </button>
-                                <button @click="setMenu('pub')"
-                                    :class="[currentMenu == 'pub' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
-                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
-                                    Publications
+                                <button @click="setMenu('event')"
+                                    :class="[currentMenu == 'event' ? 'bg-brand-primary text-white' : 'border-transparent text-gray-500']"
+                                    class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold hover:border-red-600 hover:text-black">
+                                    <i class="fas fa-calendar-alt mr-2"></i> Events
                                 </button>
                                 <button @click="setMenu('media')"
-                                    :class="[currentMenu == 'media' ? 'border-brand-primary text-brand-primary' : 'border-transparent text-gray-500']"
-                                    class="w-1/4 border-b-2 px-1 py-4 text-center text-sm font-medium hover:border-gray-300 hover:text-gray-700">
-                                    Media Kit
+                                    :class="[currentMenu == 'media' ? 'bg-brand-primary text-white' : 'border-transparent text-gray-500']"
+                                    class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold hover:border-red-600 hover:text-black">
+                                    <i class="fas fa-images mr-2"></i> Media
                                 </button>
-                                
                             </nav>
                         </div>
                     </div>
@@ -208,6 +179,7 @@ onMounted(async () => {
                         </nav>
                     </div>
                 </div>
+
             </main>
         </main>
     </div>
