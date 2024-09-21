@@ -248,7 +248,7 @@ onMounted(()=>{
                 <div class="bg-white border-r border-brand-divider flex">
                     <a href="https://insurance.acentriagroup.com/" target="_blank"
                         class="button-animation ml-5 mt-10 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-sm">
-                        Get a Quote
+                        Compare Quotes
                         <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                             fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                             <g fill-rule="evenodd">
