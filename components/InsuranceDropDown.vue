@@ -90,6 +90,41 @@ const bizCover = ref({
         },
     ]
 });
+const claims = ref({
+    name: 'Claims ',
+    items: [
+        {
+            name: 'Claims Overview',
+            description: 'Get a comprehensive overview of the claims process, including what to expect and how to get started.',
+            link: '/insurance/biasahara-cover',
+        },
+        {
+            name: 'Claims Process',
+            description: 'Learn about the step-by-step process for filing a claim and what documentation is required.',
+            link: '/insurance/biasahara-cover',
+        },
+        {
+            name: 'Claims FAQ',
+            description: 'Find answers to frequently asked questions about the claims process and how to resolve common issues.',
+            link: '/insurance/biasahara-cover',
+        },
+        {
+            name: '',
+            description: '',
+            link: '',
+        },
+        {
+            name: '',
+            description: '',
+            link: '',
+        },
+        {
+            name: '',
+            description: '',
+            link: '',
+        },
+    ]
+});
 
 
 
@@ -98,6 +133,7 @@ let hideTimeout = null;
 const isPersonalDropdownVisible = ref(true);
 const isCorporateDropdownVisible = ref(false);
 const isBusinessDropdownVisible = ref(false);
+const isClaimsDropdownVisible = ref(false);
 
 
 const showDropdown = (menu) => {
@@ -107,18 +143,27 @@ const showDropdown = (menu) => {
     if (menu == 'personal') {
         isCorporateDropdownVisible.value = false;
         isBusinessDropdownVisible.value = false;
+        isClaimsDropdownVisible.value = false;
 
         isPersonalDropdownVisible.value = true;
     } else if (menu == 'corporate') {
         isPersonalDropdownVisible.value = false;
         isBusinessDropdownVisible.value = false;
+        isClaimsDropdownVisible.value = false;
 
         isCorporateDropdownVisible.value = true;
     } else if (menu == 'business') {
         isPersonalDropdownVisible.value = false;
         isCorporateDropdownVisible.value = false;
+        isClaimsDropdownVisible.value = false;
 
         isBusinessDropdownVisible.value = true;
+    } else if (menu == 'claims'){
+        isPersonalDropdownVisible.value = false;
+        isCorporateDropdownVisible.value = false;
+        isBusinessDropdownVisible.value = false;
+
+        isClaimsDropdownVisible.value = true;
     }
 };
 
@@ -230,6 +275,33 @@ onMounted(()=>{
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-auto flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in bizCover.items">
+                                <div
+                                    class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    <div
+                                        class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
+                                        {{ item.name }}
+                                    </div>
+                                    <div class="text-xs font-normal text-black">
+                                        {{ item.description }}
+                                    </div>
+                                </div>
+                            </NuxtLink>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-r border-brand-divider">
+                    <a @mouseenter="showDropdown('claims')" @mouseleave="hideDropdown('claims')" href="#"
+                        :class="[isClaimsDropdownVisible ? '!text-brand-primary' : '']"
+                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        <i class="fas fa-file-alt text-lg undefined" translate="no"></i>
+                        Claims
+                    </a>
+
+                    <div v-show="isClaimsDropdownVisible" @mouseenter="showDropdown('claims')"
+                        @mouseleave="hideDropdown('claims')" class="shadow-4xl absolute right-0 top-0 translate-x-full">
+                        <div class="flex h-auto flex-col rounded-br-xl bg-white">
+                            <NuxtLink :to="item.link" v-for="item in claims.items">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div

@@ -224,7 +224,126 @@ const menus = ref([
                     <div class="container px-4">
                         <h2
                             class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
-                            <span class="text-brand-primary">Your Insurance, Your Way.</span>
+                            <span class="text-brand-primary">Do it yourself</span>
+                            or with expert help
+                        </h2>
+                    </div>
+
+                    <div class="bg-white px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
+                        <div class="container mx-auto pb-2">
+                            <div class="mt-5 space-y-10">
+
+                                <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                                    <div
+                                        class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                                        <a class="w-full" href="#">
+                                            <div class="relative w-full"><img alt="" loading="lazy" width="300"
+                                                    height="200" decoding="async" data-nimg="1"
+                                                    class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                                                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
+                                                    src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                                                    style="color: transparent;">
+                                            </div>
+                                            <div class="max-w-full">
+                                                <div class="!text-left font-sans group relative">
+                                                    <h3
+                                                        class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
+                                                        <span class="absolute inset-0"></span>
+                                                        Do it yourself
+                                                    </h3>
+                                                    <p class="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                        Compare quotes, choose your policy, and get same-day coverage in
+                                                        a few clicks.
+                                                    </p>
+                                                    <button type="button"
+                                                        class="mt-5 rounded-md bg-brand-primary px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                                        Compare Quotes Online
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                    </div>
+
+                                    <div
+                                        class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                                        <a class="w-full" href="#">
+                                            <div class="relative w-full"><img alt="" loading="lazy" width="300"
+                                                    height="200" decoding="async" data-nimg="1"
+                                                    class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                                                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
+                                                    src="https://images.pexels.com/photos/5453822/pexels-photo-5453822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                    style="color: transparent;">
+                                            </div>
+                                            <div class="max-w-full">
+                                                <div class="!text-left font-sans group relative">
+                                                    <h3
+                                                        class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
+                                                        <span class="absolute inset-0"></span>
+                                                        Live agent assistance
+                                                    </h3>
+                                                    <p class="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                        Review your quotes online, then get tailored advice from a
+                                                        licensed insurance agent.
+                                                    </p>
+                                                    <button type="button"
+                                                        class="mt-5 rounded-md bg-brand-primary px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                                        See my Quotes
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                    </div>
+
+                                    <div
+                                        class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                                        <a class="w-full" href="#">
+                                            <div class="relative w-full"><img alt="" loading="lazy" width="300"
+                                                    height="200" decoding="async" data-nimg="1"
+                                                    class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                                                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
+                                                    src="https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                    style="color: transparent;">
+                                            </div>
+                                            <div class="max-w-full">
+                                                <div class="!text-left font-sans group relative">
+                                                    <h3
+                                                        class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
+                                                        <span class="absolute inset-0"></span>
+                                                        Full Service
+                                                    </h3>
+                                                    <p class="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                        Send us your current policy, and our agents will find a better
+                                                        fit for you.
+                                                    </p>
+                                                    <button type="button"
+                                                        class="mt-5 rounded-md bg-brand-primary px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                                        Connect with an Expert
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="" class="relative py-8 lg:py-5 bg-white text-center">
+                    <div class="container px-4">
+                        <h2
+                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
                             Let Acentria Tailor Your Coverage To Your Needs
                         </h2>
                     </div>
