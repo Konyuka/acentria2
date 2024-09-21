@@ -328,7 +328,7 @@ onBeforeUnmount(() => {
 
 
             </div>
-            <div class="flex font-sans mr-32">
+            <div class="flex font-sans mr-52">
 
                 <div class="z-50 content-center">
                     <div class="relative flex flex-col px-4 hover:cursor-default">
@@ -406,17 +406,7 @@ onBeforeUnmount(() => {
 
             </div>
 
-            <a href="#"
-                class="font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-3 text-base">
-                Get a Quote
-                <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
-                    fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                    <g fill-rule="evenodd">
-                        <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                        <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4"></path>
-                    </g>
-                </svg>
-            </a>
+            <div></div>
 
         </div>
     </div>
