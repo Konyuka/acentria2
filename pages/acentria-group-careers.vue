@@ -1,34 +1,34 @@
 <script setup>
-const values = ref([
+const principles = ref([
     {
-        name: 'Integrity',
-        icon: 'fas fa-scale-balanced',
-        description: 'We do the right thing, through honoring our commitments to our clients.'
-    },
-    {
-        name: 'Excellence',
-        icon: 'fas fa-award',
-        description: 'We strive to deliver the highest levels of service and product excellence.'
-    },
-    {
-        name: 'Innovative',
-        icon: 'fas fa-lightbulb',
-        description: 'Acentria Group seek to use unique and creative solutions in solving problems affecting our clients.'
-    },
-    {
-        name: 'Teamwork',
+        name: 'Empower and understand our customers\' needs and satisfy them.',
         icon: 'fas fa-users',
-        description: 'Acentria Group continuously promote team spirit among its staff and stakeholders to attain its goals.'
+        description: 'Work as a team to build lasting customer relationships by understanding their requirements and exceeding their expectations.'
     },
     {
-        name: 'Relationships',
-        icon: 'fas fa-handshake',
-        description: 'We value the relationships built with our clients and partners.'
+        name: 'Hire good people and empower them.',
+        icon: 'fas fa-award',
+        description: 'Place the right people in the right positions, develop their talent and skills and provide opportunities for them to influence outcomes.'
     },
     {
-        name: 'Growth & Prosperity',
-        icon: 'fas fa-chart-line',
-        description: 'We embrace opportunities to learn and improve.'
+        name: 'Innovate and Focus on solutions, not problems.',
+        icon: 'fas fa-lightbulb',
+        description: 'Begin with the end in mind and involve the right people. Stay positive and work together for desired results.'
+    },
+    {
+        name: 'Do what we say we\'re going to do.',
+        icon: 'fas fa-check-circle',
+        description: 'Set realistic expectations. Communicate clearly. Be accountable for your actions.'
+    },
+    {
+        name: 'Have fun.',
+        icon: 'fas fa-smile',
+        description: 'Recognize our success, celebrate together and contribute to a positive work environment.'
+    },
+    {
+        name: 'Prosper and Play to win.',
+        icon: 'fas fa-trophy',
+        description: 'Put integrity first. Be competitive. Work together as a team to exceed expectations.'
     },
 
 ])
@@ -50,23 +50,24 @@ const values = ref([
                                         <h1 id=""
                                             class="font-sans text-3xl font-semibold leading-tight md:pb-6 md:text-4xl xl:text-5xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">
                                             <span
-                                                class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">Ready</span>
-                                            to lead with purpose?
+                                                class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">Grow
+                                                With a</span> <br>
+                                            Market Leader
                                         </h1>
                                         <p class="font-sans text-base leading-normal font-regular text-light-content">
-                                            We are at the forefront of innovation in the insurance and financial
-                                            services industry. Our solutions empower leaders with the tools and insights
-                                            they need to navigate complex challenges and drive meaningful change—both
-                                            within their organizations and on a global scale.
-                                            <br><br>
-                                            At Acentria Group, we’re constantly seeking passionate individuals who want
-                                            to join a dynamic team committed to redefining the future of business. If
-                                            you’re ready to make a difference and be part of something bigger, let’s
-                                            shape the future together.
-                                            <br><br>
-                                            <strong>
-                                                Let’s make an impact together
-                                            </strong>.
+                                            At Acentria group, we have enjoyed tremendous growth over the last few
+                                            years. Today, we have employees who are responsible for the Company’s
+                                            success. They work together to provide the best services and solutions to
+                                            our customers. Our employees focus on doing business the right way,
+                                            ethically and with integrity and seek continuous improvement in everything
+                                            they do.
+                                            At Acentria Group, employees focused on our shared success. Our culture is
+                                            based on integrity, accountability, hard work, collaboration and social
+                                            responsibility. Employees work at an organization that values their ideas
+                                            and teamwork. We offer careers in a variety of fields where talented people
+                                            can learn, develop and grow professionally.
+                                            No matter where you join us, you’ll find a diverse team of global
+
                                         </p>
                                         <div>
                                             <a href="#"
@@ -138,6 +139,42 @@ const values = ref([
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="py-5 text-white" style="background-color: #f6f8fc">
+                    <div class="undefined">
+                        <section id="" class="relative py-1">
+                            <div class="container px-4">
+                                <div class="pb-10 text-center lg:pb-14">
+                                    <h2
+                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
+                                        We are Always Devoted to <span class="text-brand-primary">Our Core
+                                            Principles</span>
+                                    </h2>
+                                </div>
+                                <div
+                                    class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0">
+
+                                    <div v-for="principle in principles"
+                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[90vw] rounded-xl bg-white p-5 md:max-w-[90vw] w-full h-full">
+                                        <div class="flex h-fit flex-col">
+                                            <i :class="[principle.icon]" class="text-brand-primary text-4xl pb-4"></i>
+                                            <div>
+                                                <h4 id=""
+                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
+                                                    {{ principle.name }}
+                                                </h4>
+                                            </div>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
+                                                {{ principle.description }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
 
@@ -278,6 +315,46 @@ const values = ref([
                         </div>
                     </div>
                 </div>
+
+                <section id="" class="relative py-8 bg-white text-left">
+                    <div class="container px-4">
+                        <h2
+                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            We Firmly Believe That What Makes Us <br>
+                            <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                                Different Also Makes us Stronger
+                            </span>
+                        </h2>
+                        <div class="grid grid-cols-2 gap-5 mt-10">
+                            <div class="content-center items-center">
+                                <p
+                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    It is critical to our success to foster a diverse workforce that not only reflects
+                                    the communities where we do business, but also encourages a variety of thoughts,
+                                    opinions and ideas. Each of us is unique and our employees represent a diverse team
+                                    of industry veterans, seasoned professionals and new team members with fresh ideas
+                                    and different perspectives.
+                                </p>
+                                <p
+                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    We all work to ensure our workplace is free from discrimination and intolerance. We
+                                    celebrate the diverse talent and skills of these team members, provide equal access
+                                    to growth and advancement, and treat each other with respect. Our philosophy of
+                                    inclusion influences how we relate to each other, how we manage our company and how
+                                    we serve our customers. Above all, it’s about respect and what each of our employees
+                                    brings to Acentria Group
+                                </p>
+
+                            </div>
+                            <div>
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                    width="600" height="350" decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain" class="rounded-xl"
+                                    src="/img/team2.jpeg" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <div class="py-5 text-white" style="background-color: #f6f8fc">
                     <div class="undefined">
