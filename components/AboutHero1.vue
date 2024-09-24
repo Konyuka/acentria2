@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
     <div>
-        <div class="relative w-full h-[50vh] bg-cover bg-center bg-no-repeat false" style="
+        <div class="relative w-full h-[60vh] bg-cover bg-center bg-no-repeat false" style="
             background-image: url(https://cdn.sanity.io/images/33u1mixi/production/9586fc11ddcb60222de682cdb07fe9d57103448b-1440x595.svg?fit=max&amp;auto=format);
           ">
             <div class="container">
@@ -35,10 +35,10 @@ const props = defineProps({
                         
                     </div>
                     <div class="flex justify-center">
-                        <!-- <img loading="lazy" width="500" height="300" decoding="async" data-nimg="1"
+                        <img loading="lazy" width="500" height="300" decoding="async" data-nimg="1"
                             class="drop-shadow-md undefined rounded-2xl"
                             sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                            :src="InsuranceBannerContent.image" style="color: transparent" /> -->
+                            :src="InsuranceBannerContent.image" style="color: transparent" />
                     </div>
                 </div>
             </div>

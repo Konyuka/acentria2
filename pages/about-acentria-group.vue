@@ -3,7 +3,7 @@ const InsuranceBannerContent = ref({
     subtitle: "About Acentria Group",
     title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
     image:
-        "https://acentriagroup.com/wp-content/uploads/2023/11/BeFunky-collage-1024x1024.jpg",
+        "/img/empower.jpeg",
     content:
         "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory.",
 });
