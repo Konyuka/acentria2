@@ -76,7 +76,7 @@ onMounted(() => {
 
         <!-- <Structure /> -->
 
-        <Message />
+        <!-- <Message /> -->
 
         <Testimonials />
 

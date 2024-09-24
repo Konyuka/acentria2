@@ -76,7 +76,7 @@
                                 </div>
                             </figcaption>
                         </figure>
-                        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
+                        <!-- <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
                             <blockquote class="text-gray-900">
 
                                 <p>“Acentria's expertise in risk management has been pivotal in protecting our assets,
@@ -87,7 +87,7 @@
                                     <div class="font-semibold text-brand-primary">Harrison Kamau</div>
                                 </div>
                             </figcaption>
-                        </figure>
+                        </figure> -->
 
                     </div>
                     <div class="space-y-8 xl:row-start-1">
@@ -102,7 +102,7 @@
                                 </div>
                             </figcaption>
                         </figure>
-                        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
+                        <!-- <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
                             <blockquote class="text-gray-900">
                                 <p>“The insurance broking expertise at Acentria has consistently helped us secure the
                                     best deals for our business, optimizing both coverage and cost.”</p>
@@ -112,7 +112,7 @@
                                     <div class="font-semibold text-brand-primary">Faith Rotich</div>
                                 </div>
                             </figcaption>
-                        </figure>
+                        </figure> -->
 
                     </div>
 
@@ -131,7 +131,7 @@
                                 </div>
                             </figcaption>
                         </figure>
-                        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
+                        <!-- <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
                             <blockquote class="text-gray-900">
                                 <p>“Acentria's reinsurance solutions have significantly strengthened our risk management
                                     strategy, ensuring stability and growth in uncertain markets.”</p>
@@ -142,7 +142,7 @@
                                     <div class="font-semibold text-brand-primary">Whitney Akinyi</div>
                                 </div>
                             </figcaption>
-                        </figure>
+                        </figure> -->
 
                     </div>
                     <div class="space-y-8 xl:row-span-2">
@@ -170,7 +170,7 @@
                                 </div>
                             </figcaption>
                         </figure>
-                        <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
+                        <!-- <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
                             <blockquote class="text-gray-900">
                                 <p>“The team at Acentria goes above and beyond to tailor insurance solutions that
                                     perfectly meet our unique business needs.”</p>
@@ -180,7 +180,7 @@
                                     <div class="font-semibold text-brand-primary">Johnston Kangeso</div>
                                 </div>
                             </figcaption>
-                        </figure>
+                        </figure> -->
 
                     </div>
 
