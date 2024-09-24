@@ -158,7 +158,7 @@ const showDropdown = (menu) => {
         isClaimsDropdownVisible.value = false;
 
         isBusinessDropdownVisible.value = true;
-    } else if (menu == 'claims'){
+    } else if (menu == 'claims') {
         isPersonalDropdownVisible.value = false;
         isCorporateDropdownVisible.value = false;
         isBusinessDropdownVisible.value = false;
@@ -184,7 +184,7 @@ const hideDropdown = (menu) => {
     }, 200);
 };
 
-onMounted(()=>{
+onMounted(() => {
     showDropdown('personal')
     isPersonalDropdownVisible.value = true;
 })
@@ -193,9 +193,25 @@ onMounted(()=>{
 <template>
     <div>
 
-        <div class="shadow-4xl absolute bottom-0 left-[-150px] translate-y-full z-50">
-            <div class="flex flex-col">
+        <div class="flex flex-row shadow-4xl absolute bottom-0 left-[-150px] translate-y-full z-50">
+            <div class="flex flex-cols">
                 <div class="bg-white border-r border-brand-divider">
+                    <NuxtLink to="/acentria-group-insurance"
+                        class="button-animation group bg-white flex w-full flex-row items-center gap-2 whitespace-nowrap px-8 py-4 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
+                        <span class="group-hover:button-animation text-lg">
+                            Acentria Insurance Brokers
+                        </span>
+
+                        <!-- <i class="fas fa-arrow-right text-lg undefined " translate="no"></i> -->
+                    </NuxtLink>
+                    <p class="px-2 text-xs">
+                        Acentria Insurance Brokers Limited is at the forefront in providing insurance solutions. With a commitment to excellence and a deep understanding of the insurance industry, we offer a wide range of services tailored to meet the unique needs of our clients. Our team of experienced professionals works diligently to ensure that our clients receive the best possible coverage and support.
+                        We pride ourselves on our ability to deliver innovative and comprehensive insurance solutions that protect our clients' assets and provide peace of mind. Whether it's personal insurance, commercial insurance, or specialized coverage, Acentria Insurance Brokers Limited is dedicated to helping you navigate the complexities of the insurance market and find the right solutions for your needs.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <!-- <div class="bg-white border-r border-brand-divider">
                     <NuxtLink to="/acentria-group-insurance"
                         class="button-animation group bg-white flex w-full flex-row items-center gap-2 whitespace-nowrap px-8 py-4 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
                         <span class="group-hover:button-animation text-2xl">
@@ -203,8 +219,7 @@ onMounted(()=>{
                         </span>
                         <i class="fas fa-arrow-right text-lg undefined " translate="no"></i>
                     </NuxtLink>
-
-                </div>
+                </div> -->
 
                 <div class="bg-black border-r border-brand-divider">
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')" href="#"

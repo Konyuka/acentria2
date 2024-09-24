@@ -1,7 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-
   app: {
     head: {
       link: [
@@ -174,4 +173,9 @@ export default defineNuxtConfig({
   },
 
   modules: ["vue3-carousel-nuxt"],
+
+  // server: {
+  //       host: "10.8.6.83",
+  //       port: 3000,
+  //   },
 })

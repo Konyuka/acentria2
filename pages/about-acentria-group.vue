@@ -12,10 +12,10 @@ const profileModal = ref(false)
 const profileBoardModal = ref(false)
 const teamComponent = ref(null)
 const teamBoardComponent = ref(null)
-const profileData = computed(()=>{
+const profileData = computed(() => {
     return teamComponent.value?.profileContent
 })
-const profileBoardData = computed(()=>{
+const profileBoardData = computed(() => {
     return teamBoardComponent.value?.profileContent
 })
 
@@ -183,14 +183,20 @@ const openProfileBoardModal = () => {
                                                 Meet the visionaries and strategists who lead us toward innovation,
                                                 growth, and success.
                                             </p>
+
+                                            <NuxtLink href="/meet-the-team"
+                                                class="button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                Meet the Team
+                                                <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                            </NuxtLink>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <Board @openBoardProfile="openProfileBoardModal" ref="teamBoardComponent" />
 
-                            <Team @openProfile="openProfileModal" ref="teamComponent" />
+
+
 
 
                             <section class="relative py-4 lg:py-10" data-v-inspector="components/Cards.vue:8:9">
@@ -374,7 +380,99 @@ const openProfileBoardModal = () => {
                                 </dl>
                             </div>
 
+                            <div class="bg-white font-sans">
+                                <div class="mx-auto max-w-full px-4 py-4 sm:px-6 lg:px-8">
+                                    <div class="rounded-2xl bg-black px-6 py-16 sm:p-5">
+                                        <div class="mx-auto max-w-6xl">
+                                            <div class="text-center">
+                                                <h2 class="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+                                                    Our Lines of Business </h2>
+                                            </div>
+                                            <div
+                                                class="mx-auto mt-12 grid max-w-[80vw] grid-cols-1 gap-x-2 gap-y-10 sm:max-w-none lg:grid-cols-4">
+                                                <div
+                                                    class="text-center sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-5 border-2 border-primary">
+                                                    <!-- <div class="sm:flex-shrink-0">
+                                                        <div class="flow-root"><img class="mx-auto h-20 w-20"
+                                                                src="/img/risk-management.png" alt=""></div>
+                                                    </div> -->
+                                                    <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                                        <h3 class="text-3xl font-bold text-primary">Insurance</h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left"> Our
+                                                            comprehensive insurance broking services are designed to
+                                                            protect your assets and mitigate risks. Whether you are an
+                                                            individual or a business, Acentria Group offers customized
+                                                            insurance solutions that provide peace of mind and financial
+                                                            security.
+                                                        </p>
+                                                        <NuxtLink href="/meet-the-team"
+                                                            class="button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                            Meet the Team
+                                                            <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                                        </NuxtLink>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="text-center sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-5 border-2 border-primary">
+                                                    <!-- <div class="sm:flex-shrink-0">
+                                                        <div class="flow-root"><img class="mx-auto h-20 w-20"
+                                                                src="/img/insurance.png" alt=""></div>
+                                                    </div> -->
+                                                    <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                                        <h3 class="text-3xl font-bold text-primary">Reinsurance </h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left"> At Acentria
+                                                            Group, we provide expert reinsurance broking services
+                                                            tailored to meet the diverse needs of our clients. Our team
+                                                            of seasoned professionals works closely with insurance
+                                                            companies to design and implement reinsurance programs that
+                                                            enhance their financial stability and optimize risk
+                                                            management.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="text-center sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-5 border-2 border-primary">
+                                                    <!-- <div class="sm:flex-shrink-0">
+                                                        <div class="flow-root"><img class="mx-auto h-20 w-20"
+                                                                src="/img/research.png" alt=""></div>
+                                                    </div> -->
+                                                    <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                                        <h3 class="text-3xl font-bold text-primary">Actuarial</h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left"> Acentria
+                                                            Group's actuarial and financial services are at the
+                                                            forefront of the industry, providing critical insights and
+                                                            solutions that drive informed decision-making. Our actuaries
+                                                            utilize advanced modeling techniques to analyze financial
+                                                            risks and develop strategies for managing them effectively.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="text-center sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-5 border-2 border-primary">
+                                                    <!-- <div class="sm:flex-shrink-0">
+                                                        <div class="flow-root"><img class="mx-auto h-20 w-20"
+                                                                src="/img/money.png" alt=""></div>
+                                                    </div> -->
+                                                    <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                                        <h3 class="text-3xl font-bold text-primary">Investment</h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left"> Acentria
+                                                            Group's investment services are designed to optimize
+                                                            financial growth and secure long-term success for our
+                                                            clients. Our team of expert advisors employs cutting-edge
+                                                            strategies and market analysis to identify the most
+                                                            lucrative opportunities.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <Stats />
+
+                            <Testimonials class="mt-10" />
 
                             <!-- <Esg /> -->
 
@@ -385,31 +483,22 @@ const openProfileBoardModal = () => {
                                     <div class="relative p-4 lg:basis-1/2">
                                         <img alt="Image of null" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
-                                            style="color: transparent; object-fit: contain"
-                                            src="/img/team.jpeg" class="rounded-xl" />
+                                            style="color: transparent; object-fit: contain" src="/img/team.jpeg"
+                                            class="rounded-xl" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2">
                                         <div class="text-light-content pb-5 md:pb-6">
                                             <h2 id=""
                                                 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
                                                 <span
-                                                    class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-4xl 2xl:text-4xl">Join
-                                                    us</span>
-                                                and make an impact!
+                                                    class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-4xl 2xl:text-4xl">
+                                                Awards
+                                                </span>
+                                                and Recognitions
                                             </h2>
                                             <p
                                                 class="font-sans text-base leading-normal font-regular text-light-content !text-inherit mb-4">
-                                                At Acentria Group, we are catalysts of transformation. We are redefining
-                                                how businesses operate, reshaping the way industries function, and
-                                                empowering decision-makers to drive impactful change—for their
-                                                organizations and the world at large.
-                                                <br><br>
-                                                We believe that significant growth occurs when you're leading the charge
-                                                in creating extraordinary change. When you embrace challenges you've
-                                                never faced before and discover solutions that once seemed out of reach.
-                                                <br><br>
-                                                We are a global team united by a common vision for the future of
-                                                businesses. We invite you to join us in bringing that vision to life.
+                                                Have photos here
                                             </p>
                                         </div>
                                         <a href="careers/index.html"
@@ -428,6 +517,7 @@ const openProfileBoardModal = () => {
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </main>
@@ -574,7 +664,7 @@ const openProfileBoardModal = () => {
 
 
                         <div class="font-sans mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-1 sm:gap-3">
-                            <button @click="profileModal=false" type="button"
+                            <button @click="profileModal = false" type="button"
                                 class="inline-flex w-full justify-center rounded-md bg-brand-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2">
                                 Close Profile
                             </button>

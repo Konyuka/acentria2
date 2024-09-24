@@ -12,7 +12,7 @@ const props = defineProps({
           ">
             <div class="container">
                 <div
-                    class="flex flex-col items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                    class="flex flex-col items-center bg-cover px-4 py-4 text-center md:py-5 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                     <div
                         class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[50%] lg:justify-start lg:text-left">
                         <div class="w-full">
@@ -36,10 +36,10 @@ const props = defineProps({
                     </div>
                     <div class="flex justify-center">
 
-                        <video width="500" height="300" autoplay muted loop class="drop-shadow-md rounded-2xl"
-       src="/img/vid.mp4" style="color: transparent">
-    Your browser does not support the video tag.
-</video>
+                        <video width="1000" height="300" autoplay muted loop class="drop-shadow-md rounded-2xl"
+                            src="/img/vid.mp4" style="color: transparent">
+                            Your browser does not support the video tag.
+                        </video>
 
 
 

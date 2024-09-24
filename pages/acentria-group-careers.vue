@@ -46,7 +46,8 @@ const principles = ref([
                             <div class="max-w-full">
                                 <div
                                     class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
-                                    <div class="flex w-full max-w-xl flex-col gap-6 pr-0 sm:pr-24 lg:shrink-0 lg:pr-0">
+
+                                    <div class="flex w-full max-w-xl flex-col gap-6 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
                                         <h1 id=""
                                             class="font-sans text-3xl font-semibold leading-tight md:pb-6 md:text-4xl xl:text-5xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">
                                             <span
@@ -86,56 +87,27 @@ const principles = ref([
                                         </div>
                                     </div>
 
-                                    <div
+                                    <div class="relative p-4 lg:basis-1/2">
+                                        <img alt="Image of null" loading="lazy" width="900" height="350"
+                                            decoding="async" data-nimg="1"
+                                            style="color: transparent; object-fit: contain" src="/img/simo-office.jpg"
+                                            class="rounded-xl" />
+                                    </div>
+
+                                    <!-- <div
                                         class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                                         <div
                                             class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                                             <div class="relative">
-                                                <img src="https://images.pexels.com/photos/53176/architecture-iron-steel-building-53176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                    alt="Leaning against a wall"
+                                                <img src="/img/simo-office.jpg" alt="Leaning against a wall"
                                                     class="aspect-[2/3] w-full rounded bg-gray-900/5 object-cover shadow-lg" />
                                                 <div
                                                     class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-                                            <div class="relative">
-                                                <img src="https://images.pexels.com/photos/8860847/pexels-photo-8860847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                    alt="People doing team building"
-                                                    class="aspect-[2/3] w-full rounded bg-gray-900/5 object-cover shadow-lg" />
-                                                <div
-                                                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
-                                                </div>
-                                            </div>
-                                            <div class="relative">
-                                                <img src="https://images.pexels.com/photos/804129/pexels-photo-804129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                    alt="Working at a desk"
-                                                    class="aspect-[2/3] w-full rounded bg-gray-900/5 object-cover shadow-lg" />
-                                                <div
-                                                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                                            <div class="relative">
-                                                <img src="https://images.pexels.com/photos/12442888/pexels-photo-12442888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                    alt="People working and collaborating on a project"
-                                                    class="aspect-[2/3] w-full rounded bg-gray-900/5 object-cover shadow-lg" />
-                                                <div
-                                                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
-                                                </div>
-                                            </div>
-                                            <div class="relative">
-                                                <img src="https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                    alt="Coworkers laughing"
-                                                    class="aspect-[2/3] w-full rounded bg-gray-900/5 object-cover shadow-lg" />
-                                                <div
-                                                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> -->
+
                                 </div>
                             </div>
                         </div>
@@ -577,6 +549,52 @@ const principles = ref([
                         </div>
                     </div>
                 </section>
+
+                <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
+                    <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+                        <div class="relative p-4 lg:basis-1/2">
+                            <img alt="Image of null" loading="lazy" width="500" height="350" decoding="async"
+                                data-nimg="1" style="color: transparent; object-fit: contain" src="/img/team.jpeg"
+                                class="rounded-xl" />
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2">
+                            <div class="text-light-content pb-5 md:pb-6">
+                                <h2 id=""
+                                    class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                                    <span
+                                        class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-4xl 2xl:text-4xl">Join
+                                        us</span>
+                                    and make an impact!
+                                </h2>
+                                <p
+                                    class="font-sans text-base leading-normal font-regular text-light-content !text-inherit mb-4">
+                                    At Acentria Group, we are catalysts of transformation. We are redefining
+                                    how businesses operate, reshaping the way industries function, and
+                                    empowering decision-makers to drive impactful change—for their
+                                    organizations and the world at large.
+                                    <br><br>
+                                    We believe that significant growth occurs when you're leading the charge
+                                    in creating extraordinary change. When you embrace challenges you've
+                                    never faced before and discover solutions that once seemed out of reach.
+                                    <br><br>
+                                    We are a global team united by a common vision for the future of
+                                    businesses. We invite you to join us in bringing that vision to life.
+                                </p>
+                            </div>
+                            <a href="careers/index.html"
+                                class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-primary-dark text-base relative flex items-center w-fit self-center md:self-start">
+                                Careers Page
+                                <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
+                                    fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
+                                    <g fill-rule="evenodd">
+                                        <path class="transition-opacity opacity-0" d="M0 5h7"></path>
+                                        <path class="transition-all duration-75 translate-x-0 transform-none"
+                                            d="M1 1l4 4-4 4"></path>
+                                    </g>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="bg-cover bg-center py-8 md:py-16 lg:py-20" style="
                   background-image: url(https://cdn.sanity.io/images/33u1mixi/production/b695dd70af0f5f4be3c091f4607fd14514ac5650-1440x447.svg);
