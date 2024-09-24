@@ -32,13 +32,22 @@ const props = defineProps({
                                 {{ InsuranceBannerContent.content }}
                             </p>
                         </div>
-                        
+
                     </div>
                     <div class="flex justify-center">
-                        <img loading="lazy" width="500" height="300" decoding="async" data-nimg="1"
+
+                        <video width="500" height="300" autoplay muted loop class="drop-shadow-md rounded-2xl"
+       src="/img/vid.mp4" style="color: transparent">
+    Your browser does not support the video tag.
+</video>
+
+
+
+
+                        <!-- <img loading="lazy" width="500" height="300" decoding="async" data-nimg="1"
                             class="drop-shadow-md undefined rounded-2xl"
                             sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                            :src="InsuranceBannerContent.image" style="color: transparent" />
+                            :src="InsuranceBannerContent.image" style="color: transparent" /> -->
                     </div>
                 </div>
             </div>
