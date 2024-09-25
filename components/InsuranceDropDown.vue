@@ -265,7 +265,7 @@ onMounted(() => {
 
                     <div v-show="isPersonalDropdownVisible" @mouseenter="showDropdown('personal')"
                         @mouseleave="hideDropdown('personal')"
-                        class="shadow-4xl absolute right-0 top-0 translate-x-full min-w-[35vw]">
+                        class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-screen flex-col bg-white">
                             <NuxtLink :to="item.link" v-for="item in personalCover.items">
                                 <div
@@ -299,7 +299,7 @@ onMounted(() => {
                         <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in corpCover.items">
                                 <div
-                                    class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
@@ -329,7 +329,7 @@ onMounted(() => {
                         <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in bizCover.items">
                                 <div
-                                    class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
@@ -358,7 +358,7 @@ onMounted(() => {
                         <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in claims.items">
                                 <div
-                                    class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
