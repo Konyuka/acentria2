@@ -207,7 +207,7 @@ onMounted(() => {
                     </NuxtLink>
                     <div class="flex">
                         <i class="fas fa-caret-right mr-2 ml-4 text-brand-primary"></i>
-                        <p class="px-2 text-xs">
+                        <p class="px-2 text-xs text-black">
                             Acentria Insurance Brokers Limited is at the forefront in providing insurance solutions.
                             With a
                             commitment to excellence and a deep understanding of the insurance industry, we offer a wide

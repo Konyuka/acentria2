@@ -121,7 +121,7 @@ onMounted(() => {
 
         </div>
         <div
-            class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-336px] translate-y-full duration-800 z-50">
+            class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-450px] translate-y-full duration-800 z-50">
 
             <div class="flex flex-col min-w-[30vw]">
                 <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
@@ -134,14 +134,14 @@ onMounted(() => {
                     <div class="flex">
                         <i class="fas fa-caret-right mr-2 ml-4 text-brand-primary"></i>
                         <p class="px-2 text-xs">
-                            Acentria Insurance Brokers Limited is at the forefront in providing insurance solutions.
-                            With a
-                            commitment to excellence and a deep understanding of the insurance industry, we offer a wide
-                            range of services tailored to meet the unique needs of our clients. Our team of experienced
-                            professionals works diligently to ensure that our clients receive the best possible coverage
-                            and
-                            support.
-
+                            Acentria International Reinsurance Brokers is a fully
+                            owned subsidiary of Acentria Group. We are a world
+                            class reinsurance broking company that has skills and
+                            expertise to offer innovative solutions to clients globally,
+                            utilizing multiple solutions from well rated local and
+                            international securities. We pride ourselves as one of the
+                            top notch reinsurance experts with a reputation of
+                            professionalism and excellence in reinsurance
                         </p>
                     </div>
                     <div class="border-r border-brand-divider flex flex-col justify-between">

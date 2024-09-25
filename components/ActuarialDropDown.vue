@@ -103,27 +103,23 @@ onMounted(()=>{
 
         </div>
         <div
-            class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-336px] translate-y-full duration-800 z-50">
+            class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-580px] translate-y-full duration-800 z-50">
 
             <div class="flex flex-col min-w-[30vw]">
                 <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
                     <NuxtLink to="/acentria-group-actuarial"
                         class="group flex w-full flex-row items-center gap-2 whitespace-nowrap px-2 py-2 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
                         <span class="group-hover:button-animation text-xl mt-3 text-brand-primary">
-                            Acentria Actuarial & Financial Services
+                            Acentria Actuarial & <br> Financial Services
                         </span>
                     </NuxtLink>
                     <div class="flex">
                         <i class="fas fa-caret-right mr-2 ml-4 text-brand-primary"></i>
                         <p class="px-2 text-xs">
-                            Acentria Insurance Brokers Limited is at the forefront in providing insurance solutions.
-                            With a
-                            commitment to excellence and a deep understanding of the insurance industry, we offer a wide
-                            range of services tailored to meet the unique needs of our clients. Our team of experienced
-                            professionals works diligently to ensure that our clients receive the best possible coverage
-                            and
-                            support.
-
+                            Acentria Actuarial and Financial Services, a fully
+                            owned subsidiary of Acentria Group, is a world class
+                            company that has skills and expertise to offer
+                            innovative solutions to clients globally.
                         </p>
                     </div>
                     <div class="border-r border-brand-divider flex flex-col justify-between">
@@ -188,7 +184,7 @@ onMounted(()=>{
                     <div v-show="isServicesDropdownVisible" @mouseenter="showDropdown('services')"
                         @mouseleave="hideDropdown('services')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-screen flex-col rounded-br-xl bg-gray-100">
+                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in acOther">
                                 <div
                                     class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
@@ -218,7 +214,7 @@ onMounted(()=>{
                     <div v-show="isProductsDropdownVisible" @mouseenter="showDropdown('products')"
                         @mouseleave="hideDropdown('products')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-screen flex-col rounded-br-xl bg-gray-100">
+                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in acProducts">
                                 <div
                                     class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
