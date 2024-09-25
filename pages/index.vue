@@ -72,7 +72,7 @@ onMounted(() => {
 
         <!-- <Message /> -->
 
-        <Testimonials />
+        <!-- <Testimonials /> -->
 
         <News />
 

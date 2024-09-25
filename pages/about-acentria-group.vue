@@ -2,60 +2,55 @@
 const InsuranceBannerContent = ref({
     subtitle: "About Acentria Group",
     title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
-    image:
-        "/img/empower.jpeg",
+    image: "/img/empower.jpeg",
     content:
-        "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory.",
+        "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory. With a wealth of experience and a commitment to excellence, we provide comprehensive solutions tailored to meet the unique needs of our clients.",
 });
 
-const profileModal = ref(false)
-const profileBoardModal = ref(false)
-const teamComponent = ref(null)
-const teamBoardComponent = ref(null)
+const profileModal = ref(false);
+const profileBoardModal = ref(false);
+const teamComponent = ref(null);
+const teamBoardComponent = ref(null);
 const profileData = computed(() => {
-    return teamComponent.value?.profileContent
-})
+    return teamComponent.value?.profileContent;
+});
 const profileBoardData = computed(() => {
-    return teamBoardComponent.value?.profileContent
-})
+    return teamBoardComponent.value?.profileContent;
+});
 
 const openProfileModal = () => {
-    profileModal.value = true
-}
+    profileModal.value = true;
+};
 const openProfileBoardModal = () => {
-    profileBoardModal.value = true
-}
-
+    profileBoardModal.value = true;
+};
 </script>
 
 <template>
     <div>
-
         <div id="__next">
             <main class="jsx-2839774277 __className_e3c363 __ptNoRemap font-sans">
-
-
                 <main>
                     <div>
                         <div>
-
                             <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
                             <!-- <AboutHero /> -->
 
-                            <div data-v-02281a80="" class="font-sans py-6 text-white"
-                                style="background-color: rgb(246, 248, 252);">
+                            <div data-v-02281a80="" class="font-sans py-2 text-white"
+                                style="background-color: rgb(246, 248, 252)">
                                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:8:9">
                                     <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
                                         <img alt="Image of Elevate strategic risk management " loading="lazy"
                                             width="500" height="350" decoding="async" data-nimg="1"
-                                            style="color:transparent;object-fit:contain;" class="rounded-lg"
+                                            style="color: transparent; object-fit: contain" class="rounded-lg"
                                             src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            data-v-inspector="components/Why.vue:10:17">
+                                            data-v-inspector="components/Why.vue:10:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
-                                        data-v-inspector="components/Why.vue:14:13"><label
+                                        data-v-inspector="components/Why.vue:14:13">
+                                        <label
                                             class="text-base leading-normal font-regular text-light-highlight font-bold"
                                             data-v-inspector="components/Why.vue:15:17">Acentria Group
                                         </label>
@@ -67,9 +62,19 @@ const openProfileBoardModal = () => {
                                             data-v-inspector="components/Why.vue:22:17">
                                             <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
                                                 data-v-inspector="components/Why.vue:23:21">
-                                                Acentria Group of companies is a trusted global consultant that seeks to
-                                                empower, innovate and steer growth and prosperity in Risk and Insurance,
-                                                Reinsurance, Actuarial and Investment Advisory.
+                                                Acentria Group of companies is a trusted global
+                                                consultant in Risk and Insurance, Reinsurance,
+                                                Actuarial, and Investment Advisory. With decades of
+                                                experience and a commitment to excellence, we provide
+                                                comprehensive solutions tailored to meet the unique
+                                                needs of our clients. Our team of experts works
+                                                diligently to deliver innovative strategies that enhance
+                                                risk management, optimize insurance and reinsurance
+                                                programs, and provide insightful actuarial and
+                                                investment advice. By partnering with Acentria Group,
+                                                you gain access to a wealth of knowledge and resources
+                                                that empower you to make informed decisions, mitigate
+                                                risks, and achieve your financial goals.
                                             </p>
                                         </div>
                                     </div>
@@ -79,13 +84,14 @@ const openProfileBoardModal = () => {
                                     <div class="relative p-4 lg:basis-1/2 content-center"
                                         data-v-inspector="components/Why.vue:33:13">
                                         <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
-                                            decoding="async" data-nimg="1" style="color:transparent;object-fit:contain;"
-                                            class="rounded-lg"
+                                            decoding="async" data-nimg="1"
+                                            style="color: transparent; object-fit: contain" class="rounded-lg"
                                             src="https://images.pexels.com/photos/4792286/pexels-photo-4792286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            data-v-inspector="components/Why.vue:34:17">
+                                            data-v-inspector="components/Why.vue:34:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
-                                        data-v-inspector="components/Why.vue:38:13"><label
+                                        data-v-inspector="components/Why.vue:38:13">
+                                        <label
                                             class="text-base leading-normal font-regular text-light-highlight font-bold"
                                             data-v-inspector="components/Why.vue:39:17">Our Services
                                         </label>
@@ -97,17 +103,20 @@ const openProfileBoardModal = () => {
                                             data-v-inspector="components/Why.vue:46:17">
                                             <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
                                                 data-v-inspector="components/Why.vue:47:21">
-                                                We offer the best solutions in Risk and Insurance, Reinsurance,
-                                                Actuarial, and Investment Advisory. We consider the trust of our
-                                                stakeholders and communities to be our most valuable resource. To us,
-                                                success is not only measured by the products and services we offer, but
-                                                more importantly, by providing innovative solutions that ensure
-                                                sustainable development, and serve our environment and societies in the
-                                                best way possible. Accordingly, we make sure that we are in compliance
-                                                with laws and regulations and that we are investing in the public good
-                                                in terms of the projects we take on, the partners we choose, and the way
-                                                we do business We are committed to equal gender representation at all
-                                                levels having archived a 50:50 senior management gender parity.
+                                                We offer the best solutions in Risk and Insurance,
+                                                Reinsurance, Actuarial, and Investment Advisory. We
+                                                consider the trust of our stakeholders and communities
+                                                to be our most valuable resource. To us, success is not
+                                                only measured by the products and services we offer, but
+                                                more importantly, by providing innovative solutions that
+                                                ensure sustainable development, and serve our
+                                                environment and societies in the best way possible.
+                                                Accordingly, we make sure that we are in compliance with
+                                                laws and regulations and that we are investing in the
+                                                public good in terms of the projects we take on, the
+                                                partners we choose, and the way we do business We are
+                                                committed to equal gender representation at all levels
+                                                having archived a 50:50 senior management gender parity.
                                             </p>
                                         </div>
                                     </div>
@@ -118,12 +127,13 @@ const openProfileBoardModal = () => {
                                         data-v-inspector="components/Why.vue:55:13">
                                         <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500"
                                             height="350" decoding="async" data-nimg="1"
-                                            style="color:transparent;object-fit:contain;" class="rounded-lg"
+                                            style="color: transparent; object-fit: contain" class="rounded-lg"
                                             src="https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-adventure-night-road-trip-in-the-forest-aerial-view-of-a-car-headlights-on-deep-jungle-road-on-1932802550-transformed-1024x571.jpeg"
-                                            data-v-inspector="components/Why.vue:56:17">
+                                            data-v-inspector="components/Why.vue:56:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
-                                        data-v-inspector="components/Why.vue:60:13"><label
+                                        data-v-inspector="components/Why.vue:60:13">
+                                        <label
                                             class="text-base leading-normal font-regular text-light-highlight font-bold"
                                             data-v-inspector="components/Why.vue:61:17">Experience</label>
                                         <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
@@ -134,22 +144,16 @@ const openProfileBoardModal = () => {
                                             data-v-inspector="components/Why.vue:67:17">
                                             <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
                                                 data-v-inspector="components/Why.vue:68:21">
-                                                Our journey is about Empowering dreams, igniting imagination, and
-                                                propelling prosperity to infinite possibilities for all our partners and
-                                                the communities we serve. Internally we give a fair platform to all our
-                                                employees to achieve their dreams.
-
-                                                Our journey is a testament to humble beginnings, resilience,
-                                                adaptability, and trust; it involves building a resilient and prosperous
-                                                community. Through partnerships and collaborations, we have fostered
-                                                resilience in individuals, businesses, and society as a whole.
-
-                                                Our experience and expertise of over ten years have seen us grow to be
-                                                one of the top-tier companies, with a niche in the provision of
-                                                technical expertise in reinsurance, insurance actuarial, and investment
-                                                advisory. With an in-depth understanding of the market, we provide
-                                                solutions that are tailor-made to suit a client while assuring the
-                                                client of value addition.
+                                                Our journey is about Empowering dreams, igniting
+                                                imagination, and propelling prosperity to infinite
+                                                possibilities for all our partners and the communities
+                                                we serve. Internally we give a fair platform to all our
+                                                employees to achieve their dreams. Our journey is a
+                                                testament to humble beginnings, resilience,
+                                                adaptability, and trust; it involves building a
+                                                resilient and prosperous community. Through partnerships
+                                                and collaborations, we have fostered resilience in
+                                                individuals, businesses, and society as a whole.
                                             </p>
                                         </div>
                                     </div>
@@ -158,13 +162,14 @@ const openProfileBoardModal = () => {
                                     data-v-inspector="components/Why.vue:32:9">
                                     <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
                                         <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
-                                            decoding="async" data-nimg="1" style="color:transparent;object-fit:contain;"
-                                            class="rounded-lg"
+                                            decoding="async" data-nimg="1"
+                                            style="color: transparent; object-fit: contain" class="rounded-lg"
                                             src="https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg"
-                                            data-v-inspector="components/Why.vue:34:17">
+                                            data-v-inspector="components/Why.vue:34:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
-                                        data-v-inspector="components/Why.vue:38:13"><label
+                                        data-v-inspector="components/Why.vue:38:13">
+                                        <label
                                             class="text-base leading-normal font-regular text-light-highlight font-bold"
                                             data-v-inspector="components/Why.vue:39:17">The team
                                         </label>
@@ -176,16 +181,20 @@ const openProfileBoardModal = () => {
                                             data-v-inspector="components/Why.vue:46:17">
                                             <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
                                                 data-v-inspector="components/Why.vue:47:21">
-                                                Our success is driven by a dynamic and dedicated leadership team.
-                                                Comprising individuals with diverse expertise and a shared commitment to
-                                                excellence, our leaders play a pivotal role in shaping the vision,
-                                                strategy, and culture of our organization.
-                                                Meet the visionaries and strategists who lead us toward innovation,
-                                                growth, and success.
+                                                Our success is driven by a dynamic and dedicated
+                                                leadership team. Comprising individuals with diverse
+                                                expertise and a shared commitment to excellence, our
+                                                leaders play a pivotal role in shaping the vision,
+                                                strategy, and culture of our organization. Meet the
+                                                visionaries and strategists who lead us toward
+                                                innovation, growth, and success. Their unwavering
+                                                dedication and forward-thinking approach ensure that we
+                                                remain at the forefront of our industry, continuously
+                                                adapting to new challenges and opportunities.
                                             </p>
 
                                             <NuxtLink href="/meet-the-team"
-                                                class="button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                class="!button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
                                                 Meet the Team
                                                 <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                             </NuxtLink>
@@ -194,22 +203,16 @@ const openProfileBoardModal = () => {
                                 </div>
                             </div>
 
-
-
-
-
-
-                            <section class="relative py-4 lg:py-10" data-v-inspector="components/Cards.vue:8:9">
+                            <section class="relative py-4" data-v-inspector="components/Cards.vue:8:9">
                                 <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
                                     <div class="font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0"
                                         data-v-inspector="components/Cards.vue:10:17">
-
                                         <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:11:21">
                                             <div class="flex h-fit flex-col"
-                                                data-v-inspector="components/Cards.vue:13:25"><i
-                                                    class="fas fa-coffee text-brand-primary text-4xl pb-4"
-                                                    translate="no" data-v-inspector="components/Cards.vue:14:29"></i>
+                                                data-v-inspector="components/Cards.vue:13:25">
+                                                <i class="fas fa-coffee text-brand-primary text-4xl pb-4" translate="no"
+                                                    data-v-inspector="components/Cards.vue:14:29"></i>
                                                 <div data-v-inspector="components/Cards.vue:15:29">
                                                     <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
                                                         data-v-inspector="components/Cards.vue:16:33">
@@ -218,9 +221,9 @@ const openProfileBoardModal = () => {
                                                 </div>
                                                 <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
                                                     data-v-inspector="components/Cards.vue:21:29">
-                                                    Empower our clients and communities through innovative solutions,
-                                                    enhancing prosperity and adding value to a dynamic global
-                                                    environment.
+                                                    Empower our clients and communities through innovative
+                                                    solutions, enhancing prosperity and adding value to a
+                                                    dynamic global environment.
                                                 </p>
                                             </div>
                                         </div>
@@ -228,19 +231,21 @@ const openProfileBoardModal = () => {
                                         <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:29:21">
                                             <div class="flex h-fit flex-col"
-                                                data-v-inspector="components/Cards.vue:31:25"><i
-                                                    class="fas fa-lightbulb text-brand-primary text-4xl pb-4"
+                                                data-v-inspector="components/Cards.vue:31:25">
+                                                <i class="fas fa-lightbulb text-brand-primary text-4xl pb-4"
                                                     translate="no" data-v-inspector="components/Cards.vue:32:29"></i>
                                                 <div data-v-inspector="components/Cards.vue:33:29">
                                                     <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
-                                                        data-v-inspector="components/Cards.vue:34:33"> Our Commitment
+                                                        data-v-inspector="components/Cards.vue:34:33">
+                                                        Our Commitment
                                                     </h4>
                                                 </div>
                                                 <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
                                                     data-v-inspector="components/Cards.vue:39:29">
-                                                    Passionately remain at the forefront in empowering the vision of our
-                                                    clients through igniting innovative thinking in offering the best
-                                                    solutions to enhance prosperity.
+                                                    Passionately remain at the forefront in empowering the
+                                                    vision of our clients through igniting innovative
+                                                    thinking in offering the best solutions to enhance
+                                                    prosperity.
                                                 </p>
                                             </div>
                                         </div>
@@ -248,8 +253,8 @@ const openProfileBoardModal = () => {
                                         <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:47:21">
                                             <div class="flex h-fit flex-col"
-                                                data-v-inspector="components/Cards.vue:49:25"><i
-                                                    class="fas fa-shield-alt text-brand-primary text-4xl pb-4"
+                                                data-v-inspector="components/Cards.vue:49:25">
+                                                <i class="fas fa-shield-alt text-brand-primary text-4xl pb-4"
                                                     translate="no" data-v-inspector="components/Cards.vue:50:29"></i>
                                                 <div data-v-inspector="components/Cards.vue:51:29">
                                                     <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
@@ -259,29 +264,25 @@ const openProfileBoardModal = () => {
                                                 </div>
                                                 <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
                                                     data-v-inspector="components/Cards.vue:57:29">
-                                                    Be your trusted partner, working tirelessly to provide the peace of
-                                                    mind you deserve, knowing that your assets and interests are
-                                                    safeguarded with care and expertise.
+                                                    Be your trusted partner, working tirelessly to provide
+                                                    the peace of mind you deserve, knowing that your
+                                                    assets and interests are safeguarded with care and
+                                                    expertise.
                                                 </p>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </section>
 
-
                             <div class="font-sans mx-auto mt-5 max-w-[93vw] px-6 sm:mt-10 lg:px-8 mb-10">
                                 <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                                    <h2 class="text-3xl font-semibold text-brand-primary sm:text-4xl"> Our values
+                                    <h2 class="text-3xl font-semibold text-brand-primary sm:text-4xl">
+                                        Our values
                                     </h2>
-                                    <!-- <p class="mt-4 text-secondary text-md"> Our values are the guiding stars that
-                                        illuminate our path to success, shaping our actions and defining our character.
-                                    </p> -->
                                 </div>
                                 <dl
-                                    class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                                    <!--[-->
+                                    class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                     <div
                                         class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
@@ -292,10 +293,13 @@ const openProfileBoardModal = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <dt class="font-semibold text-xl !text-black tracking-widest">Integrity
+                                            <dt class="font-semibold text-xl !text-black">
+                                                Integrity
                                             </dt>
-                                            <dd class="mt-1 text-secondary text-sm">We do the right thing, through
-                                                honoring our commitments to our clients.</dd>
+                                            <dd class="mt-1 text-secondary text-sm">
+                                                We do the right thing, through honoring our commitments
+                                                to our clients.
+                                            </dd>
                                         </div>
                                     </div>
                                     <div
@@ -308,10 +312,13 @@ const openProfileBoardModal = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <dt class="font-semibold text-xl !text-black tracking-widest">Excellence
+                                            <dt class="font-semibold text-xl !text-black">
+                                                Excellence
                                             </dt>
-                                            <dd class="mt-1 text-secondary text-sm">We strive to deliver the highest
-                                                levels of service and product excellence.</dd>
+                                            <dd class="mt-1 text-secondary text-sm">
+                                                We strive to deliver the highest levels of service and
+                                                product excellence.
+                                            </dd>
                                         </div>
                                     </div>
                                     <div
@@ -324,10 +331,13 @@ const openProfileBoardModal = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <dt class="font-semibold text-xl !text-black tracking-widest">Innovative
+                                            <dt class="font-semibold text-xl !text-black">
+                                                Innovative
                                             </dt>
-                                            <dd class="mt-1 text-secondary text-sm">Acentria Group seek to use unique
-                                                and creative solutions in solving problems affecting our clients.</dd>
+                                            <dd class="mt-1 text-secondary text-sm">
+                                                Acentria Group seek to use unique and creative solutions
+                                                in solving problems affecting our clients.
+                                            </dd>
                                         </div>
                                     </div>
                                     <div
@@ -340,9 +350,13 @@ const openProfileBoardModal = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <dt class="font-semibold text-xl !text-black tracking-widest">Teamwork</dt>
-                                            <dd class="mt-1 text-secondary text-sm">Acentria Group continuously promote
-                                                team spirit among its staff and stakeholders to attain its goals.</dd>
+                                            <dt class="font-semibold text-xl !text-black">
+                                                Teamwork
+                                            </dt>
+                                            <dd class="mt-1 text-secondary text-sm">
+                                                Acentria Group continuously promote team spirit among
+                                                its staff and stakeholders to attain its goals.
+                                            </dd>
                                         </div>
                                     </div>
                                     <div
@@ -355,10 +369,13 @@ const openProfileBoardModal = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <dt class="font-semibold text-xl !text-black tracking-widest">Relationships
+                                            <dt class="font-semibold text-xl !text-black">
+                                                Relationships
                                             </dt>
-                                            <dd class="mt-1 text-secondary text-sm">We value the relationships built
-                                                with our clients and partners.</dd>
+                                            <dd class="mt-1 text-secondary text-sm">
+                                                We value the relationships built with our clients and
+                                                partners.
+                                            </dd>
                                         </div>
                                     </div>
                                     <div
@@ -371,97 +388,131 @@ const openProfileBoardModal = () => {
                                             </div>
                                         </div>
                                         <div>
-                                            <dt class="font-semibold text-xl !text-black tracking-widest">Growth &amp;
-                                                Prosperity</dt>
-                                            <dd class="mt-1 text-secondary text-sm">We embrace opportunities to learn
-                                                and improve.</dd>
+                                            <dt class="font-semibold text-xl !text-black">
+                                                Growth &amp; Prosperity
+                                            </dt>
+                                            <dd class="mt-1 text-secondary text-sm">
+                                                We embrace opportunities to learn and improve.
+                                            </dd>
                                         </div>
-                                    </div><!--]-->
+                                    </div>
                                 </dl>
                             </div>
 
                             <div class="bg-white font-sans">
                                 <div class="mx-auto max-w-full px-4 py-4 sm:px-6 lg:px-8">
-                                    <div class="rounded-2xl bg-black px-6 py-16 sm:p-5">
-                                        <div class="mx-auto max-w-6xl">
+                                    <div class="rounded-2xl bg-black px-2 py-5 sm:p-5">
+                                        <div class="mx-auto max-w-7xl">
                                             <div class="text-center">
-                                                <h2 class="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-                                                    Our Lines of Business </h2>
+                                                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                                                    Our Lines of Business
+                                                </h2>
                                             </div>
                                             <div
-                                                class="mx-auto mt-12 grid max-w-[80vw] grid-cols-1 gap-x-2 gap-y-10 sm:max-w-none lg:grid-cols-4">
+                                                class="mx-2 mt-5 grid max-w-[90vw] grid-cols-1 gap-x-2 gap-y-10 sm:max-w-none lg:grid-cols-5">
                                                 <div
-                                                    class="text-center sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-5 border-2 border-primary">
-                                                    <!-- <div class="sm:flex-shrink-0">
-                                                        <div class="flow-root"><img class="mx-auto h-20 w-20"
-                                                                src="/img/risk-management.png" alt=""></div>
-                                                    </div> -->
+                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">Insurance</h3>
-                                                        <p class="mt-2 text-sm text-gray-500 text-left"> Our
-                                                            comprehensive insurance broking services are designed to
-                                                            protect your assets and mitigate risks. Whether you are an
-                                                            individual or a business, Acentria Group offers customized
-                                                            insurance solutions that provide peace of mind and financial
-                                                            security.
+                                                        <h3 class="text-3xl font-bold text-primary">
+                                                            Insurance
+                                                        </h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left mb-5">
+                                                            Our comprehensive insurance broking services are
+                                                            designed to protect your assets and mitigate
+                                                            risks. Whether you are an individual or a
+                                                            business, Acentria Group offers customized
+                                                            insurance solutions that provide peace of mind and
+                                                            financial security.
                                                         </p>
-                                                        <NuxtLink href="/meet-the-team"
-                                                            class="button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
-                                                            Meet the Team
+                                                        <NuxtLink href="/acentria-group-insurance"
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                            Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </NuxtLink>
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="text-center sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-5 border-2 border-primary">
-                                                    <!-- <div class="sm:flex-shrink-0">
-                                                        <div class="flow-root"><img class="mx-auto h-20 w-20"
-                                                                src="/img/insurance.png" alt=""></div>
-                                                    </div> -->
+                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">Reinsurance </h3>
-                                                        <p class="mt-2 text-sm text-gray-500 text-left"> At Acentria
-                                                            Group, we provide expert reinsurance broking services
-                                                            tailored to meet the diverse needs of our clients. Our team
-                                                            of seasoned professionals works closely with insurance
-                                                            companies to design and implement reinsurance programs that
-                                                            enhance their financial stability and optimize risk
-                                                            management.
+                                                        <h3 class="text-3xl font-bold text-primary">
+                                                            Reinsurance
+                                                        </h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left mb-5">
+                                                            At Acentria Group, we provide expert reinsurance
+                                                            broking services tailored to meet the diverse
+                                                            needs of our esteemed clients. Our team works
+                                                            closely with insurance companies to implement
+                                                            reinsurance programs that enhance financial
+                                                            stability and risk management.
                                                         </p>
+                                                        <NuxtLink href="/acentria-group-reinsurance"
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                            Learn More
+                                                            <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                                        </NuxtLink>
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="text-center sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-5 border-2 border-primary">
-                                                    <!-- <div class="sm:flex-shrink-0">
-                                                        <div class="flow-root"><img class="mx-auto h-20 w-20"
-                                                                src="/img/research.png" alt=""></div>
-                                                    </div> -->
+                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">Actuarial</h3>
-                                                        <p class="mt-2 text-sm text-gray-500 text-left"> Acentria
-                                                            Group's actuarial and financial services are at the
-                                                            forefront of the industry, providing critical insights and
-                                                            solutions that drive informed decision-making. Our actuaries
-                                                            utilize advanced modeling techniques to analyze financial
-                                                            risks and develop strategies for managing them effectively.
+                                                        <h3 class="text-3xl font-bold text-primary">
+                                                            Actuarial
+                                                        </h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left mb-5">
+                                                            Our Actuarial team is at the forefront of the
+                                                            industry, providing insights and solutions that
+                                                            drive informed decision-making. Our actuaries
+                                                            utilize advanced modeling techniques to analyze
+                                                            critical financial risks and formulate management
+                                                            strategies.
                                                         </p>
+                                                        <NuxtLink href="/acentria-group-actuarial"
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                            Learn More
+                                                            <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                                        </NuxtLink>
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="text-center sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-5 border-2 border-primary">
-                                                    <!-- <div class="sm:flex-shrink-0">
-                                                        <div class="flow-root"><img class="mx-auto h-20 w-20"
-                                                                src="/img/money.png" alt=""></div>
-                                                    </div> -->
+                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">Investment</h3>
-                                                        <p class="mt-2 text-sm text-gray-500 text-left"> Acentria
-                                                            Group's investment services are designed to optimize
-                                                            financial growth and secure long-term success for our
-                                                            clients. Our team of expert advisors employs cutting-edge
-                                                            strategies and market analysis to identify the most
-                                                            lucrative opportunities.
+                                                        <h3 class="text-3xl font-bold text-primary">
+                                                            Technology
+                                                        </h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left mb-5">
+                                                            Acentria Group's technology services are designed
+                                                            to optimize operational efficiency and secure
+                                                            long-term success for our clients. Our team of
+                                                            expert technologists employs cutting-edge
+                                                            solutions and market analysis to identify the most
+                                                            innovative opportunities for business
                                                         </p>
+                                                        <a href="tech.acentriagroup.com" target="_blank"
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                            Learn More
+                                                            <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                    <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                                        <h3 class="text-3xl font-bold text-primary">
+                                                            Investments
+                                                        </h3>
+                                                        <p class="mt-2 text-sm text-gray-500 text-left mb-5">
+                                                            Acentria Group's investment services are designed
+                                                            to optimize financial growth and secure long-term
+                                                            success for our clients. Our team of expert
+                                                            advisors employs cutting-edge strategies and
+                                                            market analysis to identify the most lucrative
+                                                            opportunities for business
+                                                        </p>
+                                                        <NuxtLink href="/acentria-group-actuarial"
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                            Learn More
+                                                            <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                                        </NuxtLink>
                                                     </div>
                                                 </div>
                                             </div>
@@ -476,69 +527,239 @@ const openProfileBoardModal = () => {
 
                             <!-- <Esg /> -->
 
-
-
-                            <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
-                                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                                    <div class="relative p-4 lg:basis-1/2">
-                                        <img alt="Image of null" loading="lazy" width="500" height="350"
-                                            decoding="async" data-nimg="1"
-                                            style="color: transparent; object-fit: contain" src="/img/team.jpeg"
-                                            class="rounded-xl" />
-                                    </div>
-                                    <div class="flex flex-col justify-center lg:basis-1/2">
-                                        <div class="text-light-content pb-5 md:pb-6">
-                                            <h2 id=""
-                                                class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                                                <span
-                                                    class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-4xl 2xl:text-4xl">
+                            <section class="relative mb-10 mt-5">
+                                <div class="font-sans container px-4">
+                                    <div class="pb-7 text-center">
+                                        <h2 id=""
+                                            class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                                            <span
+                                                class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-4xl 2xl:text-4xl">
                                                 Awards
-                                                </span>
-                                                and Recognitions
-                                            </h2>
-                                            <p
-                                                class="font-sans text-base leading-normal font-regular text-light-content !text-inherit mb-4">
-                                                Have photos here
-                                            </p>
-                                        </div>
-                                        <a href="careers/index.html"
-                                            class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-primary-dark text-base relative flex items-center w-fit self-center md:self-start">
-                                            Careers Page
-                                            <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
-                                                fill="none" stroke="currentColor" viewBox="0 0 10 10"
-                                                aria-hidden="true">
-                                                <g fill-rule="evenodd">
-                                                    <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                                    <path
-                                                        class="transition-all duration-75 translate-x-0 transform-none"
-                                                        d="M1 1l4 4-4 4"></path>
-                                                </g>
-                                            </svg></a>
+                                            </span>
+                                            and Recognitions
+                                        </h2>
+                                    </div>
+                                    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
+                                        <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                                            href="resources/blog/preparing-for-ai-regulations.html">
+                                            <div
+                                                class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
+                                                <div
+                                                    class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
+                                                    <div
+                                                        class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
+                                                        <figure
+                                                            class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
+                                                            <div class="h-0 w-full max-w-full pb-[75%]">
+                                                                <div
+                                                                    class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
+                                                                    <picture class="flex h-[300px] w-full max-w-none">
+                                                                        <img alt="AI is here. AI regulations are on the way. Is your board ready?"
+                                                                            loading="lazy" decoding="async"
+                                                                            data-nimg="fill"
+                                                                            class="object-center object-cover" style="
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        left: 0;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        color: transparent;
+                                      " sizes="240w 100vw" src="../cdn.sanity.io/images/33u1mixi/production/7ef13321754c150f46ae8370675e14d1efce6c2e-1080x72097c5.jpg?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
+                                                <section class="grid items-start justify-start gap-y-3">
+                                                    <div class="relative flex min-h-[100px] flex-col gap-y-1">
+
+                                                        <h6
+                                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                                            Award 1
+                                                        </h6>
+                                                    </div>
+
+                                                </section>
+                                            </div>
+
+                                        </a>
+                                        <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                                            href="resources/guides/elevating-grc-maturity.html">
+                                            <div
+                                                class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
+                                                <div
+                                                    class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
+                                                    <div
+                                                        class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
+                                                        <figure
+                                                            class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
+                                                            <div class="h-0 w-full max-w-full pb-[75%]">
+                                                                <div
+                                                                    class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
+                                                                    <picture class="flex h-[300px] w-full max-w-none">
+                                                                        <img alt="Stronger consolidation: Elevating your GRC maturity for better risk management"
+                                                                            loading="lazy" decoding="async"
+                                                                            data-nimg="fill"
+                                                                            class="object-center object-cover" style="
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        left: 0;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        color: transparent;
+                                      " sizes="240w 100vw" src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
+                                                <section class="grid items-start justify-start gap-y-3">
+                                                    <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                                                        <h6
+                                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                                            Award 2
+                                                        </h6>
+                                                    </div>
+                                                </section>
+                                            </div>
+
+                                        </a>
+                                        <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                                            href="resources/guides/grc-vendor-consolidation-checklist.html">
+                                            <div
+                                                class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
+                                                <div
+                                                    class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
+                                                    <div
+                                                        class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
+                                                        <figure
+                                                            class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
+                                                            <div class="h-0 w-full max-w-full pb-[75%]">
+                                                                <div
+                                                                    class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
+                                                                    <picture class="flex h-[300px] w-full max-w-none">
+                                                                        <img alt="Your guide to GRC vendor consolidation"
+                                                                            loading="lazy" decoding="async"
+                                                                            data-nimg="fill"
+                                                                            class="object-center object-cover" style="
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        left: 0;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        color: transparent;
+                                      " sizes="240w 100vw" src="https://images.pexels.com/photos/12442888/pexels-photo-12442888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
+                                                <section class="grid items-start justify-start gap-y-3">
+                                                    <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                                                        <h6
+                                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                                            Award 3
+                                                        </h6>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </a>
+                                        <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                                            href="resources/blog/the-case-for-purpose-built-software.html">
+                                            <div
+                                                class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
+                                                <div
+                                                    class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
+                                                    <div
+                                                        class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
+                                                        <figure
+                                                            class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
+                                                            <div class="h-0 w-full max-w-full pb-[75%]">
+                                                                <div
+                                                                    class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
+                                                                    <picture class="flex h-[300px] w-full max-w-none">
+                                                                        <img alt="The case for purpose-built software: Why tailored programming outperforms modified solutions"
+                                                                            loading="lazy" decoding="async"
+                                                                            data-nimg="fill"
+                                                                            class="object-center object-cover" style="
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        left: 0;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        color: transparent;
+                                      " sizes="240w 100vw" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" />
+                                                                    </picture>
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
+                                                    <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
+                                                <section class="grid items-start justify-start gap-y-3">
+                                                    <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                                                        <h6
+                                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                                            Award 4
+                                                        </h6>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-
+                            </section>
                         </div>
                     </div>
                 </main>
-
-
             </main>
         </div>
 
         <div v-if="profileModal" class="relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-
             <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
 
             <div @click="profileModal = false" class="fixed inset-0 z-10 w-screen overflow-y-auto">
                 <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-
                     <div
                         class="relative transform overflow-hidden rounded-lg bg-gray-100 px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[80vw] sm:p-6">
-
                         <div class="flex h-full">
-
-
                             <div class="flex min-w-0 flex-1 flex-col overflow-hidden">
                                 <div class="lg:hidden">
                                     <div
@@ -546,7 +767,7 @@ const openProfileBoardModal = () => {
                                         <div>
                                             <img class="h-8 w-auto"
                                                 src="https://tailwindui.com/img/logos/mark.svg?color=pink&shade=500"
-                                                alt="Your Company">
+                                                alt="Your Company" />
                                         </div>
                                         <div>
                                             <button type="button"
@@ -585,13 +806,13 @@ const openProfileBoardModal = () => {
                                                 <div>
                                                     <img class="h-20 w-full object-cover lg:h-16"
                                                         src="https://cdn.sanity.io/images/33u1mixi/production/9586fc11ddcb60222de682cdb07fe9d57103448b-1440x595.svg?fit=max&amp;auto=format"
-                                                        alt="">
+                                                        alt="" />
                                                 </div>
                                                 <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                     <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                                                         <div class="flex">
                                                             <img class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
-                                                                :src="profileData.image" alt="">
+                                                                :src="profileData.image" alt="" />
                                                         </div>
                                                         <div
                                                             class="mt-2 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
@@ -614,25 +835,24 @@ const openProfileBoardModal = () => {
                                                                         class="fab fa-linkedin text-lg text-brand-primary"></i>
                                                                     <span class="mt-1">Contact on LinkedIn</span>
                                                                 </a>
-
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="mt-2 hidden min-w-0 flex-1 sm:block 2xl:hidden">
-                                                        <h1 class="truncate text-2xl font-bold text-gray-900">{{
-                                                            profileData.name }}</h1>
+                                                        <h1 class="truncate text-2xl font-bold text-gray-900">
+                                                            {{ profileData.name }}
+                                                        </h1>
                                                     </div>
                                                 </div>
                                             </div>
 
-
                                             <!-- Description list -->
                                             <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                 <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
-
                                                     <div class="sm:col-span-1">
                                                         <!-- <dt class="text-lg font-semibold text-black">Title</dt> -->
-                                                        <dd class="mt-1 text-sm text-gray-900">{{ profileData.title }}
+                                                        <dd class="mt-1 text-sm text-gray-900">
+                                                            {{ profileData.title }}
                                                         </dd>
                                                     </div>
                                                     <!-- <div class="sm:col-span-1">
@@ -641,34 +861,29 @@ const openProfileBoardModal = () => {
                                                         </dd>
                                                     </div> -->
 
-
                                                     <div class="sm:col-span-2">
-                                                        <dt class="text-sm font-semibold text-black">About</dt>
+                                                        <dt class="text-sm font-semibold text-black">
+                                                            About
+                                                        </dt>
                                                         <dd class="max-w-full space-y-1 text-[13px] text-gray-900">
                                                             <p>
                                                                 {{ profileData.profile }}
                                                             </p>
-
                                                         </dd>
                                                     </div>
                                                 </dl>
                                             </div>
-
-
                                         </article>
                                     </main>
-
                                 </div>
                             </div>
                         </div>
-
 
                         <div class="font-sans mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-1 sm:gap-3">
                             <button @click="profileModal = false" type="button"
                                 class="inline-flex w-full justify-center rounded-md bg-brand-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2">
                                 Close Profile
                             </button>
-
                         </div>
                     </div>
                 </div>
@@ -677,18 +892,13 @@ const openProfileBoardModal = () => {
 
         <div v-if="profileBoardModal" class="relative z-50" aria-labelledby="modal-title" role="dialog"
             aria-modal="true">
-
             <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
 
             <div @click="profileBoardModal = false" class="fixed inset-0 z-10 w-screen overflow-y-auto">
                 <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-
                     <div
                         class="relative transform overflow-hidden rounded-lg bg-gray-100 px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-[80vw] sm:p-6">
-
                         <div class="flex h-full">
-
-
                             <div class="flex min-w-0 flex-1 flex-col overflow-hidden">
                                 <div class="lg:hidden">
                                     <div
@@ -696,7 +906,7 @@ const openProfileBoardModal = () => {
                                         <div>
                                             <img class="h-8 w-auto"
                                                 src="https://tailwindui.com/img/logos/mark.svg?color=pink&shade=500"
-                                                alt="Your Company">
+                                                alt="Your Company" />
                                         </div>
                                         <div>
                                             <button type="button"
@@ -735,13 +945,13 @@ const openProfileBoardModal = () => {
                                                 <div>
                                                     <img class="h-20 w-full object-cover lg:h-16"
                                                         src="https://cdn.sanity.io/images/33u1mixi/production/9586fc11ddcb60222de682cdb07fe9d57103448b-1440x595.svg?fit=max&amp;auto=format"
-                                                        alt="">
+                                                        alt="" />
                                                 </div>
                                                 <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                     <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                                                         <div class="flex">
                                                             <img class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
-                                                                :src="profileBoardData.image" alt="">
+                                                                :src="profileBoardData.image" alt="" />
                                                         </div>
                                                         <div
                                                             class="mt-2 sm:flex sm:min-w-0 sm:flex-1 sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
@@ -764,26 +974,24 @@ const openProfileBoardModal = () => {
                                                                         class="fab fa-linkedin text-lg text-brand-primary"></i>
                                                                     <span class="mt-1">Contact on LinkedIn</span>
                                                                 </button> -->
-
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="mt-2 hidden min-w-0 flex-1 sm:block 2xl:hidden">
-                                                        <h1 class="truncate text-2xl font-bold text-gray-900">{{
-                                                            profileBoardData.name }}</h1>
+                                                        <h1 class="truncate text-2xl font-bold text-gray-900">
+                                                            {{ profileBoardData.name }}
+                                                        </h1>
                                                     </div>
                                                 </div>
                                             </div>
 
-
                                             <!-- Description list -->
                                             <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                 <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
-
                                                     <div class="sm:col-span-1">
                                                         <!-- <dt class="text-lg font-semibold text-black">Title</dt> -->
-                                                        <dd class="mt-1 text-sm text-gray-900">{{ profileBoardData.title
-                                                            }}
+                                                        <dd class="mt-1 text-sm text-gray-900">
+                                                            {{ profileBoardData.title }}
                                                         </dd>
                                                     </div>
                                                     <!-- <div class="sm:col-span-1">
@@ -793,41 +1001,34 @@ const openProfileBoardModal = () => {
                                                         </dd>
                                                     </div> -->
 
-
                                                     <div class="sm:col-span-2">
-                                                        <dt class="text-sm font-semibold text-black">About</dt>
+                                                        <dt class="text-sm font-semibold text-black">
+                                                            About
+                                                        </dt>
                                                         <dd class="max-w-full space-y-1 text-[13px] text-gray-900">
                                                             <p>
                                                                 {{ profileBoardData.profile }}
                                                             </p>
-
                                                         </dd>
                                                     </div>
                                                 </dl>
                                             </div>
-
-
                                         </article>
                                     </main>
-
                                 </div>
                             </div>
                         </div>
-
 
                         <div class="font-sans mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-1 sm:gap-3">
                             <button @click="profileModal = false" type="button"
                                 class="inline-flex w-full justify-center rounded-md bg-brand-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2">
                                 Close Profile
                             </button>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
 </template>
 

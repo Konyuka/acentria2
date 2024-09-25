@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <section class="relative mb-10">
+    <section class="relative mb-10 mt-5">
         <div class="font-sans container px-4">
             <div class="pb-7 text-center">
                 <h2 class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 leading-tight lg:leading-tight">
