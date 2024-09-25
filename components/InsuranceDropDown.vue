@@ -192,13 +192,13 @@ onMounted(() => {
 
 <template>
     <div class="">
-        <div class="h-5">
+        <div class="h-8">
 
         </div>
         <div
-            class=" min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-258px] translate-y-full duration-1000 z-50">
+            class=" min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-336px] translate-y-full duration-1000 z-50">
 
-            <div class="flex flex-col min-w-[30vw]]">
+            <div class="flex flex-col min-w-[30vw]">
                 <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
                     <NuxtLink to="/acentria-group-insurance"
                         class="group flex w-full flex-row items-center gap-2 whitespace-nowrap px-2 py-2 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
@@ -250,24 +250,26 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="flex flex-col min-w-[20vw] min-h-screen">
+            <div class="flex flex-col min-w-[25vw] min-h-screen">
 
 
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')" href="#"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"
-                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-user text-lg undefined mr-5" translate="no"></i>
-                        Personal Cover
+                        Personal Cover <i
+                            :class="[isPersonalDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
+                            class="absolute fas fa-caret-right !right-5"></i>
                     </a>
 
                     <div v-show="isPersonalDropdownVisible" @mouseenter="showDropdown('personal')"
                         @mouseleave="hideDropdown('personal')"
-                        class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-auto flex-col bg-white">
+                        class="shadow-4xl absolute right-0 top-0 translate-x-full min-w-[35vw]">
+                        <div class="flex h-screen flex-col bg-white">
                             <NuxtLink :to="item.link" v-for="item in personalCover.items">
                                 <div
-                                    class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
@@ -286,7 +288,9 @@ onMounted(() => {
                         :class="[isCorporateDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-users text-lg undefined mr-5" translate="no"></i>
-                        Corporate Cover
+                        Corporate Cover <i
+                            :class="[isCorporateDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
+                            class="absolute fas fa-caret-right !right-5"></i>
                     </a>
 
                     <div v-show="isCorporateDropdownVisible" @mouseenter="showDropdown('corporate')"
@@ -314,7 +318,9 @@ onMounted(() => {
                         :class="[isBusinessDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-briefcase text-lg undefined mr-5" translate="no"></i>
-                        Business Cover
+                        Business Cover <i
+                            :class="[isBusinessDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
+                            class="absolute fas fa-caret-right !right-5"></i>
                     </a>
 
                     <div v-show="isBusinessDropdownVisible" @mouseenter="showDropdown('business')"
@@ -342,7 +348,9 @@ onMounted(() => {
                         :class="[isClaimsDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-file-alt text-lg undefined mr-5" translate="no"></i>
-                        Claims
+                        Claims <i
+                            :class="[isClaimsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
+                            class="absolute fas fa-caret-right !right-5"></i>
                     </a>
 
                     <div v-show="isClaimsDropdownVisible" @mouseenter="showDropdown('claims')"

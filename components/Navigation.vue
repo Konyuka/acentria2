@@ -13,15 +13,20 @@ const currentRoute = computed(() => {
 
 
 const openMobileMenu = ref(false);
-watch(currentRoute, (newValue) => {
-    if (newValue) {
-        openMobileMenu.value = false
-    }
-})
 const isInsuranceDropdownVisible = ref(false);
 const isActuarialDropdownVisible = ref(false);
 const isITDropdownVisible = ref(false);
 const isReinsuranceDropdownVisible = ref(false);
+
+watch(currentRoute, (newValue) => {
+    if (newValue) {
+        openMobileMenu.value = false
+        isInsuranceDropdownVisible.value = false
+        isActuarialDropdownVisible.value = false
+        isITDropdownVisible.value = false
+        isReinsuranceDropdownVisible.value = false
+    }
+})
 
 const toggleMenu = () => {
     openMobileMenu.value = true
