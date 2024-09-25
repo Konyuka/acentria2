@@ -192,9 +192,11 @@ onMounted(() => {
 
 <template>
     <div class="">
+        <div class="h-5">
 
+        </div>
         <div
-            class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-258px] translate-y-full duration-1000 z-50">
+            class=" min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-258px] translate-y-full duration-1000 z-50">
 
             <div class="flex flex-col min-w-[30vw]]">
                 <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
