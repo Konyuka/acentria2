@@ -357,7 +357,7 @@ onBeforeUnmount(() => {
 
 
                         <InsuranceDropDown v-show="isInsuranceDropdownVisible" @mouseenter="showDropdown('insurance')"
-                            @mouseleave="hideDropdown('insurance')" />
+                            @mouseleave="hideDropdown('insurance')" class="animate-in zoom-in-150" />
 
                     </div>
                 </div>

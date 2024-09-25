@@ -191,48 +191,78 @@ onMounted(() => {
 </script>
 
 <template>
-    <div>
+    <div class="">
 
-        <div class="flex flex-row shadow-4xl absolute bottom-0 left-[-150px] translate-y-full z-50">
-            <div class="flex flex-cols">
-                <div class="bg-white border-r border-brand-divider">
+        <div
+            class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-258px] translate-y-full duration-1000 z-50">
+
+            <div class="flex flex-col min-w-[30vw]]">
+                <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
                     <NuxtLink to="/acentria-group-insurance"
-                        class="button-animation group bg-white flex w-full flex-row items-center gap-2 whitespace-nowrap px-8 py-4 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
-                        <span class="group-hover:button-animation text-lg">
+                        class="group flex w-full flex-row items-center gap-2 whitespace-nowrap px-2 py-2 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
+                        <span class="group-hover:button-animation text-xl mt-3 text-brand-primary">
                             Acentria Insurance Brokers
                         </span>
-
-                        <!-- <i class="fas fa-arrow-right text-lg undefined " translate="no"></i> -->
                     </NuxtLink>
-                    <p class="px-2 text-xs">
-                        Acentria Insurance Brokers Limited is at the forefront in providing insurance solutions. With a commitment to excellence and a deep understanding of the insurance industry, we offer a wide range of services tailored to meet the unique needs of our clients. Our team of experienced professionals works diligently to ensure that our clients receive the best possible coverage and support.
-                        We pride ourselves on our ability to deliver innovative and comprehensive insurance solutions that protect our clients' assets and provide peace of mind. Whether it's personal insurance, commercial insurance, or specialized coverage, Acentria Insurance Brokers Limited is dedicated to helping you navigate the complexities of the insurance market and find the right solutions for your needs.
-                    </p>
+                    <div class="flex">
+                        <i class="fas fa-caret-right mr-2 ml-4"></i>
+                        <p class="px-2 text-xs">
+                            Acentria Insurance Brokers Limited is at the forefront in providing insurance solutions.
+                            With a
+                            commitment to excellence and a deep understanding of the insurance industry, we offer a wide
+                            range of services tailored to meet the unique needs of our clients. Our team of experienced
+                            professionals works diligently to ensure that our clients receive the best possible coverage
+                            and
+                            support.
+
+                        </p>
+                    </div>
+                    <div class="border-r border-brand-divider flex flex-col justify-between">
+                        <NuxtLink to="/acentria-group-insurance"
+                            class="button-animation mt-10 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-xs">
+                            Learn More
+                            <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
+                                fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
+                                <g fill-rule="evenodd">
+                                    <path class="transition-opacity opacity-0" d="M0 5h7"></path>
+                                    <path class="transition-all duration-75 translate-x-0 transform-none"
+                                        d="M1 1l4 4-4 4">
+                                    </path>
+                                </g>
+                            </svg>
+                        </NuxtLink>
+                        <a href="https://insurance.acentriagroup.com/" target="_blank"
+                            class="button-animation mt-5 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-xs">
+                            Compare Quotes
+                            <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
+                                fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
+                                <g fill-rule="evenodd">
+                                    <path class="transition-opacity opacity-0" d="M0 5h7"></path>
+                                    <path class="transition-all duration-75 translate-x-0 transform-none"
+                                        d="M1 1l4 4-4 4">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col">
-                <!-- <div class="bg-white border-r border-brand-divider">
-                    <NuxtLink to="/acentria-group-insurance"
-                        class="button-animation group bg-white flex w-full flex-row items-center gap-2 whitespace-nowrap px-8 py-4 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
-                        <span class="group-hover:button-animation text-2xl">
-                            Insurance Page
-                        </span>
-                        <i class="fas fa-arrow-right text-lg undefined " translate="no"></i>
-                    </NuxtLink>
-                </div> -->
 
-                <div class="bg-black border-r border-brand-divider">
+            <div class="flex flex-col min-w-[20vw] min-h-screen">
+
+
+                <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')" href="#"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-user text-lg undefined " translate="no"></i>
+                        <i class="fas fa-user text-lg undefined mr-5" translate="no"></i>
                         Personal Cover
                     </a>
 
                     <div v-show="isPersonalDropdownVisible" @mouseenter="showDropdown('personal')"
                         @mouseleave="hideDropdown('personal')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-auto flex-col rounded-br-xl bg-white">
+                        <div class="flex h-auto flex-col bg-white">
                             <NuxtLink :to="item.link" v-for="item in personalCover.items">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
@@ -253,14 +283,14 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('corporate')" @mouseleave="hideDropdown('corporate')" href="#"
                         :class="[isCorporateDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-users text-lg undefined" translate="no"></i>
+                        <i class="fas fa-users text-lg undefined mr-5" translate="no"></i>
                         Corporate Cover
                     </a>
 
                     <div v-show="isCorporateDropdownVisible" @mouseenter="showDropdown('corporate')"
                         @mouseleave="hideDropdown('corporate')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-auto flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in corpCover.items">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
@@ -281,14 +311,14 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('business')" @mouseleave="hideDropdown('business')" href="#"
                         :class="[isBusinessDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-briefcase text-lg undefined" translate="no"></i>
+                        <i class="fas fa-briefcase text-lg undefined mr-5" translate="no"></i>
                         Business Cover
                     </a>
 
                     <div v-show="isBusinessDropdownVisible" @mouseenter="showDropdown('business')"
                         @mouseleave="hideDropdown('business')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-auto flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in bizCover.items">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
@@ -309,13 +339,13 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('claims')" @mouseleave="hideDropdown('claims')" href="#"
                         :class="[isClaimsDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-file-alt text-lg undefined" translate="no"></i>
+                        <i class="fas fa-file-alt text-lg undefined mr-5" translate="no"></i>
                         Claims
                     </a>
 
                     <div v-show="isClaimsDropdownVisible" @mouseenter="showDropdown('claims')"
                         @mouseleave="hideDropdown('claims')" class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-auto flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in claims.items">
                                 <div
                                     class="font-sans group flex w-96 flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
@@ -332,26 +362,7 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="bg-white border-r border-brand-divider flex">
-                    <a href="https://insurance.acentriagroup.com/" target="_blank"
-                        class="button-animation ml-5 mt-10 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-sm">
-                        Compare Quotes
-                        <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
-                            fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                            <g fill-rule="evenodd">
-                                <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4">
-                                </path>
-                            </g>
-                        </svg>
-                    </a>
-
-
-
-                </div>
-
-
-                <div class="flex h-[104px] flex-col rounded-bl-xl bg-brand-gray px-8 py-4"></div>
+                <div class="flex h-screen flex-col bg-white px-8 py-4 border-r border-brand-divider"></div>
             </div>
 
         </div>
