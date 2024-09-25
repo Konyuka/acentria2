@@ -378,7 +378,8 @@ onBeforeUnmount(() => {
                             </NuxtLink>
 
                             <ReinsuranceDropDown v-show="isReinsuranceDropdownVisible"
-                                @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')" />
+                                @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')"
+                                class="animate-in zoom-in-150" />
                         </div>
                     </div>
                 </div>
@@ -394,7 +395,8 @@ onBeforeUnmount(() => {
                             </NuxtLink>
 
                             <ActuarialDropDown v-show="isActuarialDropdownVisible"
-                                @mouseenter="showDropdown('actuarial')" @mouseleave="hideDropdown('actuarial')" />
+                                @mouseenter="showDropdown('actuarial')" @mouseleave="hideDropdown('actuarial')"
+                                class="animate-in zoom-in-150" />
                         </div>
                     </div>
                 </div>

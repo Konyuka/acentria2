@@ -127,7 +127,6 @@ const claims = ref({
 });
 
 
-
 let hideTimeout = null;
 
 const isPersonalDropdownVisible = ref(true);
@@ -191,12 +190,12 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="">
+    <div>
         <div class="h-8">
 
         </div>
         <div
-            class=" min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-336px] translate-y-full duration-1000 z-50">
+            class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-336px] translate-y-full duration-800 z-50">
 
             <div class="flex flex-col min-w-[30vw]">
                 <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
@@ -207,7 +206,7 @@ onMounted(() => {
                         </span>
                     </NuxtLink>
                     <div class="flex">
-                        <i class="fas fa-caret-right mr-2 ml-4"></i>
+                        <i class="fas fa-caret-right mr-2 ml-4 text-brand-primary"></i>
                         <p class="px-2 text-xs">
                             Acentria Insurance Brokers Limited is at the forefront in providing insurance solutions.
                             With a
@@ -251,8 +250,6 @@ onMounted(() => {
             </div>
 
             <div class="flex flex-col min-w-[25vw] min-h-screen">
-
-
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')" href="#"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"
