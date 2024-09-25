@@ -5,7 +5,7 @@
 
 <template>
     <div class="hidden md:block">
-        <section class="relative py-4 lg:py-10">
+        <section class="relative py-3">
             <div class="container px-4">
                 <div class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
                     <div

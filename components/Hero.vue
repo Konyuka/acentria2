@@ -9,7 +9,7 @@
         style="background-image:url(https://cdn.sanity.io/images/33u1mixi/production/e8e19ed3e8c8d8616133ef8f2feeaab00819f123-2880x1162.png?fit=max&amp;auto=format)">
         <div class="container">
             <div
-                class="flex items-center bg-cover px-4 py-4 text-center md:py-16 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                class="flex items-center bg-cover px-4 py-4 text-center md:py-1 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                 <div
                     class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-3xl">
                     <div class="w-full">
@@ -43,7 +43,7 @@
                             where we redefine excellence and tailor solutions to meet your unique needs.
                         </p>
                     </div>
-                    <div class="w-full">
+                    <!-- <div class="w-full">
                         <NuxtLink href="/about-acentria-group"
                             class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                             Learn more about us
@@ -56,7 +56,7 @@
                                 </g>
                             </svg>
                         </NuxtLink>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

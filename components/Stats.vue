@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="py-6 text-white font-sans" style="background-color: #fff">
+    <div class="py-2 text-white font-sans" style="background-color: #fff">
         <p class="text-brand-primary text-2xl text-center py-5 font-sans font-bold">
             Top choice for professional services and client satisfaction
         </p>

@@ -31,13 +31,13 @@ onMounted(() => {
 
         <Features />
 
-        <div class="font-sans mb-5 text-white xl:py-1" style="background-color: #fff">
-          <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+        <div class="font-sans text-white xl:py-1" style="background-color: #fff">
+          <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-2 lg:gap-16">
             <div class="relative p-4 lg:basis-1/2">
               <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy" width="500"
                 height="350" decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                 class="rounded-lg"
-                src="/public/img/team.jpeg" />
+                src="/public/img/award.jpg" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2">
               <label class="text-base leading-normal font-regular text-light-highlight font-semibold">
@@ -59,12 +59,6 @@ onMounted(() => {
                   where your potential unfolds in every collaborative moment.
                 </p>
               </div>
-
-              <!-- <a href="resources/research/diligent-sets-the-standard-for-modern-grc.html"
-                  class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-primary-dark text-base relative flex items-center w-fit self-center md:self-start">
-                  Download Profile
-                  <i class="ml-2 fas fa-download"></i>
-                </a> -->
 
             </div>
           </div>

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <section class="pt-5 py-2 lg:py-2 relative overflow-hidden bg-cover bg-center bg-no-repeat">
+    <section class="py-3 relative overflow-hidden bg-cover bg-center bg-no-repeat">
       <div class="container px-4">
         <div class="absolute left-0 top-0 h-full w-full origin-top-left overflow-hidden lg:-top-20 lg:-skew-y-6"
           style="background-color: #f6f6fb;">
         </div>
         <h2
-          class="font-sans tracking-normal text-3xl lg:text-4xl text-black font-bold leading-tight lg:leading-tight relative z-10 pb-1 text-center lg:pb-5">
+          class="font-sans text-3xl lg:text-4xl text-black font-bold leading-tight lg:leading-tight relative z-10 pb-1 text-center lg:pb-2">
           <span>Transform
           </span><span>today’s
           </span><span>risks
@@ -22,9 +22,9 @@
           <span class="text-brand-primary">Group
           </span><span> </span>
         </h2>
-        <div class="relative grid grid-cols-1 items-center gap-4 lg:grid-cols-1 lg:gap-10 lg:pb-28">
+        <div class="relative grid grid-cols-1 items-center gap-4 lg:grid-cols-1 lg:gap-2">
 
-          <section class="testimonials-one mb-5">
+          <section class="testimonials-one mb-2">
             <div class="container">
               <div class="row">
                 <div class="col-xl-6">
@@ -95,12 +95,12 @@
                       <div class="swiper-wrapper">
                         <swiper :options="swiperOptions">
                           <swiper-slide>
-                            <div class="swiper-slide bg-brand-dim p-4 rounded-xl shadow-2xl">
+                            <div class="swiper-slide bg-gray-300 p-4 rounded-xl shadow-2xl">
                               <div class="testimonials-one__single">
                                 <h3 class="!font-semibold !text-2xl !font-sans !text-brand-primary">
                                   Reinsurance Broking
                                 </h3>
-                                <p class="text-md font-sans mt-3 text-white">
+                                <p class="text-md font-sans mt-3 text-black">
                                   At Acentria Group, we provide expert reinsurance
                                   broking services tailored to meet the diverse needs of
                                   our clients. Our team of seasoned professionals works
@@ -116,12 +116,12 @@
                           </swiper-slide>
 
                           <swiper-slide>
-                            <div class="swiper-slide bg-brand-dim p-4 rounded-xl shadow-2xl">
+                            <div class="swiper-slide bg-gray-300 p-4 rounded-xl shadow-2xl">
                               <div class="testimonials-one__single">
                                 <h3 class="!font-semibold !text-2xl !font-sans !text-brand-primary">
                                   Insurance Broking
                                 </h3>
-                                <p class="text-md font-sans mt-3 text-white">
+                                <p class="text-md font-sans mt-3 text-black">
                                   Our comprehensive insurance broking services are
                                   designed to protect your assets and mitigate risks.
                                   Whether you are an individual or a business, Acentria
@@ -136,12 +136,12 @@
                           </swiper-slide>
 
                           <swiper-slide>
-                            <div class="swiper-slide bg-brand-dim p-4 rounded-xl shadow-2xl">
+                            <div class="swiper-slide bg-gray-300 p-4 rounded-xl shadow-2xl">
                               <div class="testimonials-one__single">
                                 <h3 class="!font-semibold !text-2xl !font-sans !text-brand-primary">
                                   Actuarial & Financial Services
                                 </h3>
-                                <p class="text-md font-sans mt-3 text-white">
+                                <p class="text-md font-sans mt-3 text-black">
                                   Acentria Group's actuarial and financial services are
                                   at the forefront of the industry, providing critical
                                   insights and solutions that drive informed
@@ -158,12 +158,12 @@
                           </swiper-slide>
 
                           <swiper-slide>
-                            <div class="swiper-slide bg-brand-dim p-4 rounded-xl shadow-2xl">
+                            <div class="swiper-slide bg-gray-300 p-4 rounded-xl shadow-2xl">
                               <div class="testimonials-one__single">
                                 <h3 class="!font-semibold !text-2xl !font-sans !text-brand-primary">
                                   Aviation Insurance
                                 </h3>
-                                <p class="text-md font-sans mt-3 text-white">
+                                <p class="text-md font-sans mt-3 text-black">
                                   Navigating the complexities of aviation insurance
                                   requires specialized knowledge and experience.
                                   Acentria Group is proud to offer comprehensive
@@ -179,12 +179,12 @@
                           </swiper-slide>
 
                           <swiper-slide>
-                            <div class="swiper-slide bg-brand-dim p-4 rounded-xl shadow-2xl">
+                            <div class="swiper-slide bg-gray-300 p-4 rounded-xl shadow-2xl">
                               <div class="testimonials-one__single">
                                 <h3 class="!font-semibold !text-2xl !font-sans !text-brand-primary">
                                   Innovative Tech Solutions
                                 </h3>
-                                <p class="text-md font-sans mt-3 text-white">
+                                <p class="text-md font-sans mt-3 text-black">
                                   In an increasingly digital world, Acentria Group
                                   offers innovative IT software products designed to
                                   streamline operations and enhance efficiency. Our
