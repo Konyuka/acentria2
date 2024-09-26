@@ -19,9 +19,9 @@ const companyMail = computed(() => {
 </script>
 
 <template>
-    <div class="bg-white py-8">
+    <div class="bg-white py-4">
         <div class="mx-[5vw] lg:px-8">
-            <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+            <div class="mx-auto max-w-2xl space-y-8 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
                 <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
                     <div>
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900">
@@ -98,7 +98,7 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-10 pt-7 lg:grid-cols-1 !mb-20">
+                <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-5 pt-2 lg:grid-cols-1 !mb-20">
                     <div>
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900">
                             Visit Us

@@ -32,7 +32,7 @@ onMounted(() => {
 <template>
     <div>
 
-        <div class="grid grid-cols-3 gap-10 mb-20">
+        <div class="grid grid-cols-3 gap-10 mb-5">
 
             <button v-for="menu in menus" @click="setMenu(menu.tag)"
                 :class="selectedMenu === menu.tag ? 'bg-brand-primary text-white' : 'bg-white text-black'"

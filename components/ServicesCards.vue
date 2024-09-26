@@ -36,7 +36,7 @@ const services = ref([
 
 <template>
     <main>
-        <div class="flex w-full flex-row px-4 py-4 md:px-16 md:pb-6 md:pt-16">
+        <div class="flex w-full flex-row px-4 py-4 md:px-16 md:pb-6">
             <div class="container mx-auto flex h-full justify-center gap-0 md:gap-6 md:pb-0">
                 <div class="font-sans flex cursor-default flex-col md:flex-row">
                     <div
