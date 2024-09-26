@@ -492,7 +492,7 @@ const openProfileBoardModal = () => {
                                                         </button>
                                                     </div>
                                                 </NuxtLink>
-                                                <NuxtLink to="/acentria-group-investments"
+                                                <NuxtLink to="/acentria-group-investment"
                                                     class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                                                         <h3 class="text-3xl font-bold text-primary">
