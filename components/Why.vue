@@ -9,7 +9,7 @@
             <div class="relative p-1 lg:basis-1/2 ">
                 <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
                     decoding="async" data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                    src="https://images.pexels.com/photos/957312/chess-checkmated-chess-pieces-black-white-957312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    src="/img/innovate.jpg" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2">
                 <label class="text-base leading-normal font-regular text-light-highlight font-bold">Build
@@ -49,11 +49,15 @@
                 <div class="text-light-content pb-5 md:pb-6">
                     <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
                         Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and
-                        investment decisions, ensuring you stay ahead in a rapidly evolving market. Our solutions provide
-                        you with the insights needed to make data-driven decisions, reduce risks, and enhance profitability.
-                        By leveraging state-of-the-art tools and methodologies, we help you navigate the complexities of the
+                        investment decisions, ensuring you stay ahead in a rapidly evolving market. Our solutions
+                        provide
+                        you with the insights needed to make data-driven decisions, reduce risks, and enhance
+                        profitability.
+                        By leveraging state-of-the-art tools and methodologies, we help you navigate the complexities of
+                        the
                         financial landscape, adapt to changing conditions, and seize new opportunities for growth. Stay
-                        competitive and resilient with our comprehensive suite of services designed to meet the unique needs
+                        competitive and resilient with our comprehensive suite of services designed to meet the unique
+                        needs
                         of your business.
                     </p>
                 </div>
@@ -63,7 +67,7 @@
             <div class="relative p-1 lg:basis-1/2">
                 <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                     decoding="async" data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                    src="https://images.pexels.com/photos/7688460/pexels-photo-7688460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    src="/img/boat.jpg" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2">
                 <label class="text-base leading-normal font-regular text-light-highlight font-bold">Reinforce

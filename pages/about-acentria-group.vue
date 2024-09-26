@@ -86,8 +86,7 @@ const openProfileBoardModal = () => {
                                         <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
-                                            src="https://images.pexels.com/photos/4792286/pexels-photo-4792286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            data-v-inspector="components/Why.vue:34:17" />
+                                            src="/img/what.jpg" data-v-inspector="components/Why.vue:34:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
                                         data-v-inspector="components/Why.vue:38:13">
@@ -128,8 +127,7 @@ const openProfileBoardModal = () => {
                                         <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500"
                                             height="350" decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
-                                            src="https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-adventure-night-road-trip-in-the-forest-aerial-view-of-a-car-headlights-on-deep-jungle-road-on-1932802550-transformed-1024x571.jpeg"
-                                            data-v-inspector="components/Why.vue:56:17" />
+                                            src="/img/journey.jpg" data-v-inspector="components/Why.vue:56:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
                                         data-v-inspector="components/Why.vue:60:13">
@@ -727,7 +725,7 @@ const openProfileBoardModal = () => {
                                                 <div
                                                     class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
                                                     <div class="relative flex min-h-[100px] flex-col gap-y-1">
-                                                       
+
                                                     </div>
                                                 </div>
                                             </div>

@@ -1,14 +1,14 @@
 <script setup>
 const principles = ref([
     {
-        name: 'Empower and understand our customers\' needs and satisfy them.',
+        name: 'We foster strong partnerships',
         icon: 'fas fa-users',
-        description: 'Work as a team to build lasting customer relationships by understanding their requirements and exceeding their expectations.'
+        description: 'Customer focus is at the heart of what we do! We work as a team to build lasting customer relationships by understanding their needs, offering competitive solutions and going beyond their expectations.'
     },
     {
         name: 'Hire good people and empower them.',
         icon: 'fas fa-award',
-        description: 'Place the right people in the right positions, develop their talent and skills and provide opportunities for them to influence outcomes.'
+        description: 'We are intentional about how we source talent in line with our key principles. We place the right people in the right positions, develop their talent and skills and provide opportunities for them to influence favorable outcomes.'
     },
     {
         name: 'Innovate and Focus on solutions, not problems.',
@@ -23,7 +23,7 @@ const principles = ref([
     {
         name: 'Have fun.',
         icon: 'fas fa-smile',
-        description: 'Recognize our success, celebrate together and contribute to a positive work environment.'
+        description: 'Celebrate success, diversity, engage respectfully and contribute to a positive working environment.'
     },
     {
         name: 'Prosper and Play to win.',
@@ -47,66 +47,43 @@ const principles = ref([
                                 <div
                                     class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
 
-                                    <div class="flex w-full max-w-xl flex-col gap-6 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
+                                    <div class="flex w-full max-w-xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
                                         <h1 id=""
-                                            class="font-sans text-3xl font-semibold leading-tight md:pb-6 md:text-4xl xl:text-5xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">
+                                            class="font-sans text-3xl font-semibold leading-tight md:text-4xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">
                                             <span
                                                 class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">Grow
                                                 With a</span> <br>
-                                            Market Leader
+                                            Pathfinder
                                         </h1>
                                         <p class="font-sans text-base leading-normal font-regular text-light-content">
-                                            At Acentria group, we have enjoyed tremendous growth over the last few
-                                            years. Today, we have employees who are responsible for the Company’s
-                                            success. They work together to provide the best services and solutions to
-                                            our customers. Our employees focus on doing business the right way,
-                                            ethically and with integrity and seek continuous improvement in everything
-                                            they do.
-                                            At Acentria Group, employees focused on our shared success. Our culture is
-                                            based on integrity, accountability, hard work, collaboration and social
-                                            responsibility. Employees work at an organization that values their ideas
-                                            and teamwork. We offer careers in a variety of fields where talented people
-                                            can learn, develop and grow professionally.
-                                            No matter where you join us, you’ll find a diverse team of global
+                                            Acentria Group has experienced tremendous growth over the last few years.
+                                            Our journey has been characterized by diversification of business, immense
+                                            learning experiences, changes in corporate culture and increased intensity
+                                            in the relationships with our partners. We have evolved from brokerage
+                                            services and ventured into other complimentary lines of business that
+                                            separate us from the pack and evoke trust and confidence from our partners.
+                                            We focus on doing business the right way, in a sustainable manner and
+                                            providing incremental value to our customers and employees.
+                                            <br><br>
+                                            At Acentria Group, we work collaboratively to achieve team success. Our
+                                            culture is underpinned by the principles of <b>Empowerment</b>,
+                                            <b>Innovation</b> and
+                                            <b>Prosperity</b>. We offer careers in a variety of fields where talented
+                                            people
+                                            can learn, develop, grow professionally and personally.
+
 
                                         </p>
-                                        <div>
-                                            <a href="#"
-                                                class="button-animation font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Open
-                                                positions<svg
-                                                    class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
-                                                    fill="none" stroke="currentColor" viewBox="0 0 10 10"
-                                                    aria-hidden="true">
-                                                    <g fill-rule="evenodd">
-                                                        <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                                        <path
-                                                            class="transition-all duration-75 translate-x-0 transform-none"
-                                                            d="M1 1l4 4-4 4"></path>
-                                                    </g>
-                                                </svg></a>
-                                        </div>
+
                                     </div>
 
                                     <div class="relative p-4 lg:basis-1/2">
-                                        <img alt="Image of null" loading="lazy" width="900" height="350"
+                                        <img alt="Image of null" loading="lazy" width="1000" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" src="/img/simo-office.jpg"
                                             class="rounded-xl" />
                                     </div>
 
-                                    <!-- <div
-                                        class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                                        <div
-                                            class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
-                                            <div class="relative">
-                                                <img src="/img/simo-office.jpg" alt="Leaning against a wall"
-                                                    class="aspect-[2/3] w-full rounded bg-gray-900/5 object-cover shadow-lg" />
-                                                <div
-                                                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
 
                                 </div>
                             </div>
@@ -118,10 +95,10 @@ const principles = ref([
                     <div class="undefined">
                         <section id="" class="relative py-1">
                             <div class="container px-4">
-                                <div class="pb-10 text-center lg:pb-14">
+                                <div class="pb-5 text-center">
                                     <h2
                                         class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
-                                        We are Always Devoted to <span class="text-brand-primary">Our Core
+                                        We are Devoted to <span class="text-brand-primary">Our Core
                                             Principles</span>
                                     </h2>
                                 </div>
@@ -151,37 +128,31 @@ const principles = ref([
                 </div>
 
                 <div class="container mx-auto">
-                    <div class="py-14">
+                    <div class="py-8">
                         <div class="mx-auto max-w-7xl px-6 lg:px-8">
                             <div
                                 class="font-sans mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                 <div>
                                     <h2
-                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight pb-4 pt-6">
                                         <span
-                                            class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">We
-                                            take care</span>
-                                        of our team
+                                            class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">
+                                            Why would you
+                                        </span>
+                                        work for Acentria
                                     </h2>
                                     <p
                                         class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                                        Joining Acentria is an enriching journey of growth and
-                                        collaboration. Embrace a culture that values
-                                        innovation, providing endless learning opportunities
-                                        and mentorship. We celebrate work-life balance,
-                                        nurturing a supportive and inclusive environment. Your
-                                        contributions will be recognized and rewarded,
-                                        ensuring a fulfilling and welcoming experience at
-                                        Acentria.
-                                    </p>
-                                    <p
-                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    </p>
-                                    <p
-                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                                        Please note that while our vision, values and mission
-                                        are the same wherever out teams work, benefits may
-                                        vary by office and country.
+                                        Working at Acentria is an enriching journey to growth and prosperity. We have
+                                        numerous engagement forums, propagate empowerment and job autonomy, nurture a
+                                        supportive and inclusive environment and do not have a “Straight-jacket”
+                                        approach towards learning and development.
+                                        Your contributions will be recognized and rewarded, ensuring a fulfilling, warm
+                                        and lasting experience at Acentria.
+
+                                        <br><br>
+                                        Here is how you benefit by joining our Team:
+
                                     </p>
                                 </div>
                                 <div
@@ -191,14 +162,15 @@ const principles = ref([
                                         <div>
                                             <h5 id=""
                                                 class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Comprehensive
-                                                <span class="text-brand-primary">health benefits</span>
+                                                Health &
+                                                <span class="text-brand-primary">Wellness</span>
                                             </h5>
                                             <p
                                                 class="text-base leading-normal font-regular text-light-content text-base">
-                                                You take care of our customers, we take care of
-                                                you. All Acentria team members receive
-                                                comprehensive health, vision and dental coverage.
+                                                You take care of our customers, We take care of you. All Acentria team
+                                                members receive comprehensive health care cover, access to wellness
+                                                programs, subsidized gym memberships and health care management
+                                                programs.
                                             </p>
                                         </div>
                                     </div>
@@ -207,14 +179,14 @@ const principles = ref([
                                         <div>
                                             <h5 id=""
                                                 class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Competitive
-                                                <span class="text-brand-primary">time off</span>
+                                                Competitive Staff
+                                                <span class="text-brand-primary">Benefits</span>
                                             </h5>
                                             <p
                                                 class="text-base leading-normal font-regular text-light-content text-base">
-                                                We offer competitive paid time off, including an
-                                                opportunity to earn an additional Recharge Week
-                                                tied to a company target achievement.
+                                                We provide workplace safety insurance covers, sufficient retirement
+                                                benefits, staff loan facilities and adequate time off to cater for
+                                                personal development and rejuvenation.
                                             </p>
                                         </div>
                                     </div>
@@ -223,14 +195,14 @@ const principles = ref([
                                         <div>
                                             <h5 id=""
                                                 class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Retirement benefits &amp;
-                                                <span class="text-brand-primary">employer match</span>
+                                                Personal &amp; Professional
+                                                <span class="text-brand-primary"> Development</span>
                                             </h5>
                                             <p
                                                 class="text-base leading-normal font-regular text-light-content text-base">
-                                                We offer 401(k) with strong match and regional
-                                                retirement plans so you’ll be ready for retirement
-                                                once you’re done changing the world.
+                                                We create development plans for our staff and have a robust education
+                                                support programme that boosts skills and academic qualifications and
+                                                prepares our high potential employees for their next big challenges!
                                             </p>
                                         </div>
                                     </div>
@@ -239,14 +211,15 @@ const principles = ref([
                                         <div>
                                             <h5 id=""
                                                 class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Employee referral<span class="text-brand-primary">
-                                                    incentives</span>
+                                                Skills Development<span class="text-brand-primary">
+                                                    program</span>
                                             </h5>
                                             <p
                                                 class="text-base leading-normal font-regular text-light-content text-base">
-                                                Know someone who’d be a great fit for our team?
-                                                Current employees who refer successful hires to
-                                                Acentria receive great incentives.
+                                                We give back to our future generations through partnerships with
+                                                mentorship associations, provide capacity building platforms and
+                                                programs for our partners and have internship programs to boost our
+                                                talent pipeline.
                                             </p>
                                         </div>
                                     </div>
@@ -255,14 +228,18 @@ const principles = ref([
                                         <div>
                                             <h5 id=""
                                                 class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                <span class="text-brand-primary">Wellness</span>
-                                                programs
+                                                <span class="text-brand-primary">Diversity, Equity &</span>
+                                                Inclusion
                                             </h5>
                                             <p
                                                 class="text-base leading-normal font-regular text-light-content text-base">
-                                                Making a positive impact starts with you. We help
-                                                you look after your health with reimbursements for
-                                                your health club membership.
+                                                Our workforce represents the face of the jurisdictions we dwell in and
+                                                appreciate contributions from all generations as a means of improving
+                                                our products, services and corporate culture.
+                                                Each of us is unique and our employees represent a diverse team of
+                                                industry veterans, seasoned professionals and new team members with
+                                                fresh ideas and different perspectives.
+
                                             </p>
                                         </div>
                                     </div>
@@ -288,10 +265,10 @@ const principles = ref([
                     </div>
                 </div>
 
-                <section id="" class="relative py-8 bg-white text-left">
+                <section id="" class="relative py-5 bg-white text-left">
                     <div class="container px-4">
                         <h2
-                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
                             We Firmly Believe That What Makes Us <br>
                             <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
                                 Different Also Makes us Stronger
@@ -332,7 +309,7 @@ const principles = ref([
                     <div class="undefined">
                         <section id="" class="relative py-1">
                             <div class="container px-4">
-                                <div class="pb-10 text-center lg:pb-14">
+                                <div class="pb-5 text-center">
                                     <h2
                                         class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
                                         What make you part of the team?
@@ -498,10 +475,10 @@ const principles = ref([
                     </div>
                 </div>
 
-                <section id="" class="relative py-8 bg-white text-left">
+                <section id="" class="relative py-5 bg-white text-left">
                     <div class="container px-4">
                         <h2
-                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
                             Our commitment to
                             <span
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">diversity</span>,
@@ -522,7 +499,10 @@ const principles = ref([
                                     offer access to training courses and resources which aim to
                                     build a shared vocabulary, develop new skills and foster
                                     collaboration in service to creating an even more inclusive
-                                    organization.
+                                    organization. We also encourage open dialogue and continuous
+                                    feedback to ensure that every voice is heard and valued,
+                                    promoting a sense of belonging and mutual respect among all
+                                    employees.
                                 </p>
                                 <p
                                     class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
@@ -544,17 +524,17 @@ const principles = ref([
                                 <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
                                     width="600" height="350" decoding="async" data-nimg="1"
                                     style="color: transparent; object-fit: contain" class="rounded-xl"
-                                    src="https://images.pexels.com/photos/4427963/pexels-photo-4427963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                                    src="/img/give.jpg" />
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <div class="py-6 text-white xl:py-12" style="background-color: #f6f8fc">
+                <div class="text-white" style="background-color: #f6f8fc">
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                         <div class="relative p-4 lg:basis-1/2">
                             <img alt="Image of null" loading="lazy" width="500" height="350" decoding="async"
-                                data-nimg="1" style="color: transparent; object-fit: contain" src="/img/team.jpeg"
+                                data-nimg="1" style="color: transparent; object-fit: contain" src="/img/join.jpg"
                                 class="rounded-xl" />
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
@@ -563,8 +543,8 @@ const principles = ref([
                                     class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
                                     <span
                                         class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-4xl 2xl:text-4xl">Join
-                                        us</span>
-                                    and make an impact!
+                                        our</span>
+                                    Talent Community
                                 </h2>
                                 <p
                                     class="font-sans text-base leading-normal font-regular text-light-content !text-inherit mb-4">
@@ -577,21 +557,38 @@ const principles = ref([
                                     in creating extraordinary change. When you embrace challenges you've
                                     never faced before and discover solutions that once seemed out of reach.
                                     <br><br>
-                                    We are a global team united by a common vision for the future of
-                                    businesses. We invite you to join us in bringing that vision to life.
+                                    Please join our talent community to get job alerts and share your career details
+                                    with us for future considerations.
                                 </p>
                             </div>
-                            <a href="careers/index.html"
-                                class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-primary-dark text-base relative flex items-center w-fit self-center md:self-start">
-                                Careers Page
-                                <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
-                                    fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                                    <g fill-rule="evenodd">
-                                        <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                        <path class="transition-all duration-75 translate-x-0 transform-none"
-                                            d="M1 1l4 4-4 4"></path>
-                                    </g>
-                                </svg></a>
+                            <div>
+
+                                <div class="font-sans mb-5">
+                                    <label for="email"
+                                        class="block text-lg font-semibold leading-6 text-black">Your Email Address</label>
+                                    <div class="relative mt-2 rounded-md shadow-sm">
+                                        <div
+                                            class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                            <i class="fas fa-paper-plane text-black"></i>
+                                        </div>
+                                        <input type="email" name="email" id="email"
+                                            class="tracking-widest font-semibold block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-black placeholder:text-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
+                                            placeholder="you@example.com">
+                                    </div>
+                                </div>
+
+                                <a href="#"
+                                    class="button-animation font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
+                                    Get Job Alerts
+                                    <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
+                                        fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
+                                        <g fill-rule="evenodd">
+                                            <path class="transition-opacity opacity-0" d="M0 5h7"></path>
+                                            <path class="transition-all duration-75 translate-x-0 transform-none"
+                                                d="M1 1l4 4-4 4"></path>
+                                        </g>
+                                    </svg></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -599,23 +596,23 @@ const principles = ref([
                 <div class="bg-cover bg-center py-8 md:py-16 lg:py-20" style="
                   background-image: url(https://cdn.sanity.io/images/33u1mixi/production/b695dd70af0f5f4be3c091f4607fd14514ac5650-1440x447.svg);
                 ">
-                    <div class="container mx-auto px-4 lg:px-0">
+                    <div class="font-sans container mx-auto px-4 lg:px-0">
                         <div class="rounded-sm px-6 py-8 bg-brand-dim">
-                            <div class="grid grid-cols-1 items-center gap-4 lg:grid-cols-2">
-                                <div class="mb-8 text-center lg:mb-0 lg:text-left">
-                                    <div class="mb-4 !text-dark-content">
+                            <div class="grid grid-cols-1 items-center gap-4 lg:grid-cols-1">
+                                <div class="relative mb-8 text-center lg:mb-0 lg:text-left">
+                                    <div class="mb-4 !text-dark-content justify-center">
                                         <h2 id=""
-                                            class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight undefined lg:pt10 pt-6">
+                                            class="text-center text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight undefined lg:pt10 pt-6">
                                             Let’s make an impact together?
                                         </h2>
-                                        <p class="undefined undefined">
+                                        <p class="text-center undefined undefined">
                                             At Acentria we collaborate, innovate and adapt in
                                             service of our clients and global communities to
                                             create better outcomes for all.
                                         </p>
                                     </div>
                                     <a href="#"
-                                        class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Search
+                                        class=" flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-white text-black hover:text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Search
                                         open positions<svg
                                             class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                                             fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
@@ -626,78 +623,7 @@ const principles = ref([
                                             </g>
                                         </svg></a>
                                 </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2">
-                                    <div
-                                        class="flex flex-col items-center justify-start border-b border-b-brand-divider px-4 py-6 text-center md:items-start md:border-b-0 md:border-r md:border-r-brand-divider md:py-0 md:text-left">
-                                        <!-- <div class="flex flex-row items-center gap-2">
-                                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                                translate="no">podcasts</i>
-                                            <div class="!text-dark-content">
-                                                <h3 id=""
-                                                    class="text-xl pb-4 md:pb-5 font-semibold md:text-2xl xl:text-2xl 2xl:text-3xl leading-tight undefined p-0 !pb-0">
-                                                    Listen
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow !text-dark-content">
-                                            <p
-                                                class="text-base leading-normal font-regular undefined pb-8 pt-4 text-sm">
-                                                Listen to our latest podcasts to hear how we are
-                                                helping to define an industry
-                                            </p>
-                                        </div>
-                                        <a href="../resources/podcasts.html"
-                                            class="cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">Listen
-                                            to Podcasts
-                                            <svg
-                                                class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
-                                                fill="none" stroke="currentColor" viewBox="0 0 10 10"
-                                                aria-hidden="true">
-                                                <g fill-rule="evenodd">
-                                                    <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                                    <path
-                                                        class="transition-all duration-75 translate-x-0 transform-none"
-                                                        d="M1 1l4 4-4 4"></path>
-                                                </g>
-                                            </svg>
-                                        </a> -->
-                                    </div>
-                                    <div
-                                        class="flex flex-col items-center justify-start px-4 py-6 text-center md:items-start md:py-0 md:text-left">
-                                        <div class="flex flex-row items-center gap-2">
-                                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                                translate="no">rss_feed</i>
-                                            <div class="!text-dark-content">
-                                                <h3 id=""
-                                                    class="text-xl pb-4 md:pb-5 font-semibold md:text-2xl xl:text-2xl 2xl:text-3xl leading-tight undefined p-0 !pb-0">
-                                                    Read
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow !text-dark-content">
-                                            <p
-                                                class="text-base leading-normal font-regular undefined pb-8 pt-4 text-sm">
-                                                Search the blog to get our latest updates to our
-                                                business.
-                                            </p>
-                                        </div>
-                                        <NuxtLink to="/acentria-news-and-blogs"
-                                            class="button-animation cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">
-                                            Read
-                                            our blog<svg
-                                                class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px]"
-                                                fill="none" stroke="currentColor" viewBox="0 0 10 10"
-                                                aria-hidden="true">
-                                                <g fill-rule="evenodd">
-                                                    <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                                    <path
-                                                        class="transition-all duration-75 translate-x-0 transform-none"
-                                                        d="M1 1l4 4-4 4"></path>
-                                                </g>
-                                            </svg>
-                                        </NuxtLink>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
