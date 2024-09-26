@@ -21,7 +21,7 @@ const faqs = ref([
         content:'Developing competitive and profitable insurance products is crucial in a dynamic market. Our consultants utilize their extensive knowledge to assist in pricing new insurance products and optimizing existing ones. By striking the right balance between affordability and profitability, we help you stay ahead in the ever-changing landscape of insurance offerings.'
     },
     {
-        name: 'Solventcy and Capital Adequacy',
+        name: 'Solvency and Capital Adequacy',
         content:'Maintaining sufficient capital to cover potential losses is crucial for insurers. Our consultancy offers comprehensive solvency assessments, ensuring your company complies with regulatory capital requirements. By conducting stress testing and scenario analyses, we help you optimize capital allocation and mitigate risks effectively.'
     },
     {
@@ -46,6 +46,12 @@ const faqs = ref([
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ActuarialFeature :content="ReinsuranceFeatureContent" />
+        <div class="pb-2 text-center">
+            <h2
+                class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
+                Services We Offer
+            </h2>
+        </div>
         <Accordion :faqs="faqs" />
         <ReinsuranceWhy />
         <ContactForm />

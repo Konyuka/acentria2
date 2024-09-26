@@ -12,11 +12,10 @@ const props = defineProps({
         <div class="bg-white">
             <main>
                 <!-- Pricing section -->
-                <div class="font-sans mx-auto max-w-6xl px-6 lg:px-8">
+                <div class="font-sans mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-4xl text-center">
-                        <h1 class="text-base font-semibold leading-7 text-brand-primary">Acentria Reinsurance</h1>
                         <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900">
-                            Why work with Acentria Re
+                            Why work with <span class="text-brand-primary">Acentria</span>
                         </p>
                     </div>
                     <p class="font-sans mx-auto mt-6 max-w-6xl text-center text-md text-secondary">
@@ -67,7 +66,7 @@ const props = defineProps({
                         </div>
                         <div class="rounded-xl p-4 ring-1 ring-brand-primary shadow-xl">
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
-                                <i class="fas fa-file-excel text-4xl text-brand-primary"></i>
+                                <i class="fas fa-chart-line text-4xl text-brand-primary"></i>
                             </h2>
                             <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
                                 Better results

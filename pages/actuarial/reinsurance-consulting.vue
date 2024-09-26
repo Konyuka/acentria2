@@ -13,22 +13,17 @@ const ReinsuranceFeatureContent2 = ref({
 
 const faqs = ref([
     {
-        name: 'Data Driven Insights',
-        content: 'Our approach to catastrophic modeling is founded on data-driven insights. Acentria harnesses advanced analytics, historical data, and cutting-edge technology to develop comprehensive models that simulate the impact of catastrophic events and assess the adequacy of our client\'s CAT covers.'
+        name: 'Return on risk adjusted capital (RORAC)',
+        content: 'Acentria is committed to providing reinsurance arrangements that create value for risk. While structuring reinsurance plans, both cedants and reinsurers must ensure the plans fit into their capital strategies. We assess the balance between risk retention and capital requirements to provide treaties that give the best return on investment for both reinsurers and cedants. Our commitment is to create value for our partners.'
     },
     {
-        name: 'Sustainability and Preparedness',
-        content: 'Catastrophic modeling not only aids in immediate response but also contributes to long-term sustainability and preparedness, ensuring that our clients are well-protected against the unexpected.'
+        name: 'Treaty analytics & optimization',
+        content: 'We conduct comprehensive analytics of your existing reinsurance treaties, evaluating their performance, risk exposure, and cost-effectiveness. Leveraging advanced modeling techniques, we identify opportunities for optimization, allowing you to tailor your reinsurance program to better align with your risk appetite and financial objectives. Our strategic recommendations enable you to make informed decisions to improve capital efficiency, reduce volatility, and enhance overall profitability.'
     },
     {
-        name: 'Risk Assessment and Mitigation',
-        content: 'Catastrophic modeling is instrumental in assessing risk and developing effective mitigation strategies. By simulating various scenarios, we can better prepare for extreme events and minimize their impact.'
+        name: 'Catastrophe modelling',
+        content: 'We are keen on building capacity to help organizations understand their portfolio risk exposure to catastrophes better for optimal reinsurance. Our catastrophe risk management measures focus on pricing, underwriting, accumulation, and the design of better risk transfer strategies. As such, we deploy both proprietary and third-party software to help with simulations that help organizations predict their annual average loss per return period. Our offering includes both earthquake and flooding models and captures how catastrophes behave and impact insurable assets using sophisticated simulation methods.'
     },
-    {
-        name: 'Continuous Monitoring and Updates',
-        content: 'We believe in continuous improvement. Acentria is committed to refining our models and risk assessment processes to stay ahead of emerging threats and deliver the most accurate and reliable insights'
-    },
-
 ])
 
 
@@ -40,6 +35,12 @@ const faqs = ref([
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ActuarialFeature :content="ReinsuranceFeatureContent2" />
+        <div class="pb-2 text-center">
+            <h2
+                class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
+                Services We Offer
+            </h2>
+        </div>
         <Accordion :faqs="faqs" />
         <ReinsuranceWhy />
         <ContactForm />

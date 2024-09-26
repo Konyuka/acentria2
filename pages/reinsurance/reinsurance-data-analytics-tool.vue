@@ -42,7 +42,7 @@ const ReinsuranceFeatureContent = ref(
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
         <div class="bg-white">
-            <div class="font-sans mx-auto max-w-7xl px-6 py-14 sm:py-5 lg:flex lg:items-center lg:justify-between lg:px-8">
+            <div class="font-sans mx-auto max-w-7xl px-6 py-5 lg:flex lg:items-center lg:justify-between lg:px-8">
                 <h2 class="font-sans text-3xl font-semibold tracking-tight text-black sm:text-4xl">
                     Adopt a deliberate data strategy with <br> <span class="text-brand-primary">Acentria's Data Analytics
                         tool</span>
@@ -52,8 +52,6 @@ const ReinsuranceFeatureContent = ref(
                         class="rounded-md bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                         Book a demo
                     </a>
-                    <a href="#" class="text-md font-semibold leading-6 text-gray-900">Learn more <span
-                            aria-hidden="true">→</span></a>
                 </div>
             </div>
         </div>

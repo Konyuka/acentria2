@@ -19,7 +19,7 @@ const acServices = ref([
 ]);
 const acOther = ref([
     {
-        name: 'IFRS 17 Implementation',
+        name: 'IFRS17 Implementation',
         description: 'Ensure compliance with IFRS 17 standards with our implementation services, offering expert guidance and support.',
         link: '/actuarial/ifrs-17-implementation',
     },

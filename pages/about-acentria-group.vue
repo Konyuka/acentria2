@@ -127,7 +127,7 @@ const openProfileBoardModal = () => {
                                         <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500"
                                             height="350" decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
-                                            src="/img/journey.jpg" data-v-inspector="components/Why.vue:56:17" />
+                                            src="/img/bill.jpg" data-v-inspector="components/Why.vue:56:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
                                         data-v-inspector="components/Why.vue:60:13">

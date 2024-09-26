@@ -67,7 +67,7 @@ const offers = ref([
         content:'We perform detailed analysis of the maturity profile, cash flows, and interest rate sensitivity of both assets and liabilities, enabling you to make informed decisions to achieve financial stability and maximize returns while considering the organization’s risk appetite.'
     },
     {
-        name: 'Financial Modelling and BP',
+        name: 'Financial Modelling and Business Planning',
         content:'Our financial modeling services assist in strategic business planning, including growth projections, mergers, acquisitions, and capital raising initiatives. These models provide a basis for informed decision-making and optimizing financial performance.'
     },
     {
@@ -75,15 +75,15 @@ const offers = ref([
         content:'We conduct in-depth risk assessments, utilizing sophisticated modeling techniques to quantify and manage various financial risks, including credit risk, market risk, and operational risk. Our expertise helps optimize capital allocation, ensuring compliance with regulatory requirements.'
     },
     {
-        name: 'Fair Value Measurement',
+        name: 'Valuation and Fair Value Assessment',
         content:'Our actuarial experts assist in the valuation of financial instruments, including complex derivatives and structured products, ensuring accurate and compliant financial reporting under accounting standards like IFRS and GAAP.'
     },
     {
-        name: 'FRS 9 Implementation',
+        name: 'FRS9 Implementation',
         content:'With a team of experienced accountants, risk analysts, and compliance experts, we assist in designing and implementing robust IFRS 9-compliant financial instruments accounting frameworks. Our services encompass classification and measurement of financial assets and liabilities, impairment modeling, and hedge accounting strategies.'
     },
     {
-        name: 'Investment Advisory',
+        name: 'Investment portfolio optimization',
         content: 'Our services cater to institutions seeking to achieve optimal risk-adjusted returns while aligning their investment strategies with clients\' risk tolerance.Through sophisticated modeling techniques and a deep understanding of financial markets, we assist in designing well- diversified and efficient investment portfolios.Our approach combines quantitative analysis with qualitative insights to identify suitable investment opportunities, manage portfolio risk, and enhance long - term performance.we empower you to deliver value and meet your clients\' financial objectives.'
     },
 ])
@@ -99,8 +99,8 @@ const offers = ref([
         <ActuarialFeature :content="ReinsuranceFeatureContent2" />
 
 
-        <div class="font-sans mx-auto max-w-6xl px-6 sm:mt-10 lg:px-8 my-10">
-            <div class="!mb-10 isolate mx-auto mt-10 grid max-w-[96vw] grid-cols-3 gap-8">
+        <div class="font-sans mx-auto max-w-7xl px-6 sm:mt-10 lg:px-8 my-10">
+            <div class="!mb-10 isolate mx-auto mt-10 grid max-w-7xl grid-cols-3 gap-8">
 
                 <div v-for="special in offers" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
 

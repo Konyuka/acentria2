@@ -70,9 +70,14 @@ const offers = ref([
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ActuarialFeature :content="ReinsuranceFeatureContent2" />
 
-
-        <div class="font-sans mx-auto max-w-6xl px-6 sm:mt-10 lg:px-8 my-10">
-            <div class="!mb-10 isolate mx-auto mt-10 grid max-w-[96vw] grid-cols-3 gap-8">
+        <div class="pb-2 text-center">
+            <h2
+                class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
+                Services We Offer
+            </h2>
+        </div>
+        <div class="font-sans mx-auto max-w-7xl px-6 sm:mt-1 lg:px-8 my-2">
+            <div class="!mb-10 isolate mx-auto mt-3 grid max-w-7xl grid-cols-3 gap-8">
 
                 <div v-for="special in offers" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
 

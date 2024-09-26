@@ -7,8 +7,8 @@ const ReinsuranceBannerContent = ref({
 })
 const ReinsuranceFeatureContent2 = ref({
     title: 'Helping you and your employees build a prosperous future',
-    image: 'https://images.pexels.com/photos/6667746/pexels-photo-6667746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content: 'In the realm of actuarial science, retirement and employee benefits are critical components that demand meticulous analysis and precise calculations. Actuaries play a pivotal role in designing, managing, and evaluating retirement plans and employee benefit programs to ensure their sustainability and effectiveness. Actuaries utilize advanced statistical methods and financial theories to analyze the current and future financial status of retirement and employee benefit plans. They consider various factors such as demographic changes, economic trends, and regulatory requirements to develop robust models that predict future liabilities and assets. Through rigorous data analysis and risk assessment, actuaries assess the financial implications of retirement plans, projecting future benefits and expenditures with utmost accuracy. They navigate complex actuarial models to determine contribution rates, funding levels, and investment strategies, safeguarding the long-term viability of these essential benefits. In addition to financial projections, actuaries also evaluate the impact of different investment strategies on the performance of retirement funds. They provide insights on asset allocation, risk management, and portfolio optimization to maximize returns while minimizing risks. Actuaries also play a key role in ensuring compliance with legal and regulatory standards, advising organizations on the implications of new laws and regulations on their benefit plans.'
+    image: 'https://acentriagroup.com/wp-content/uploads/2023/10/8.jpeg',
+    content: 'In the realm of actuarial science, retirement and employee benefits are critical components that demand meticulous analysis and precise calculations. Actuaries play a pivotal role in designing, managing, and evaluating retirement plans and employee benefit programs to ensure their sustainability and effectiveness. Actuaries utilize advanced statistical methods and financial theories to analyze the current and future financial status of retirement and employee benefit plans. They consider various factors such as demographic changes, economic trends, and regulatory requirements to develop robust models that predict future liabilities and assets. Through rigorous data analysis and risk assessment, actuaries assess the financial implications of retirement plans, projecting future benefits and expenditures with utmost accuracy. They navigate complex actuarial models to determine contribution rates, funding levels, and investment strategies, safeguarding the long-term viability of these essential benefits.'
 })
 
 
@@ -47,6 +47,12 @@ const faqs = ref([
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ActuarialFeature :content="ReinsuranceFeatureContent2" />
+        <div class="pb-2 text-center">
+            <h2
+                class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
+                Services We Offer
+            </h2>
+        </div>
         <Accordion :faqs="faqs" />
         <ReinsuranceWhy />
         <ContactForm />

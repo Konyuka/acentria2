@@ -36,7 +36,7 @@ const ReinsuranceFeatureContent = ref(
 const ReinsuranceFeatureContent2 = ref({
     title: 'Measurable Metrics for Informed Decisions',
     image: 'https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content:'AcentRe empowers insurers to transform their understanding of risk and return transfer while planning and negotiating reinsurance and retrocession treaties. Granting cedants the power of faster data analytics and deliberate transformative decision making, is at the core of the platform’s design. AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our platform equips you with the metrics and analytics you need to make decisions with confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers you to make strategic choices based on real-time data and deep insights.AcentRe empowers insurers to transform their understanding of risk and return transfer while planning and negotiating reinsurance and retrocession treaties. Granting cedants the power of faster data analytics and deliberate transformative decision making, is at the core of the platform’s design. AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our platform equips you with the metrics and analytics you need to make decisions with confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers you to make strategic choices based on real-time data and deep insights.'
+    content:'AcentRe empowers insurers to transform their understanding of risk and return transfer while planning and negotiating reinsurance and retrocession treaties. Granting cedants the power of faster data analytics and deliberate transformative decision making, is at the core of the platform’s design. AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our platform equips you with the metrics and analytics you need to make decisions with confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers you to make strategic choices based on real-time data and deep insights.'
 })
 
 const faqs = ref([
@@ -84,13 +84,29 @@ const usage = ref([
     <div>
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+        <div class="bg-white">
+            <div class="font-sans mx-auto max-w-7xl px-6 py-5 lg:flex lg:items-center lg:justify-between lg:px-8">
+                <h2 class="font-sans text-3xl font-semibold tracking-tight text-black sm:text-4xl">
+                    Adopt a deliberate data strategy with <br> <span class="text-brand-primary">Acentria's Data
+                        Analytics
+                        tool</span>
+                </h2>
+                <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
+                    <a href="#"
+                        class="rounded-md bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        Book a demo
+                    </a>
+                </div>
+            </div>
+        </div>
         <ReinsuranceFeature :content="ReinsuranceFeatureContent2" />
 
         <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-10">
 
-            <article v-for="service in usage" class="shadow-2xl p-4 border-2 border-brand-primary rounded-lg group flex flex-col items-start justify-between">
+            <article v-for="service in usage"
+                class="shadow-2xl p-4 border-2 border-brand-primary rounded-lg group flex flex-col items-start justify-between">
                 <a class="w-full" href="#">
-                    
+
                     <!-- <i class="fas fa-caret-down text-brand-primary text-3xl"></i> -->
                     <div class="max-w-full">
 
