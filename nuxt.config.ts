@@ -150,7 +150,6 @@ export default defineNuxtConfig({
       ]
     },
   },
-
   css: [
     '@/assets/css/main.css',
     '@/assets/css/fonts.css',
@@ -158,24 +157,20 @@ export default defineNuxtConfig({
     '@/assets/css/8184c082007826aa.css',
     '@/assets/css/ee102810659ef561.css',
   ],
-
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-
   runtimeConfig: {
     public: {
       API_BASE_URL: process.env.API_BASE_URL,
     },
   },
-
+  devServer: {
+    host: '0.0.0.0', 
+    port: 3000,
+  },
   modules: ["vue3-carousel-nuxt"],
-
-  // server: {
-  //       host: "10.8.6.83",
-  //       port: 3000,
-  //   },
 })

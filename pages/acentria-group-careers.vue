@@ -312,163 +312,97 @@ const principles = ref([
                                 <div class="pb-5 text-center">
                                     <h2
                                         class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
-                                        What make you part of the team?
+                                        Our <span class="text-brand-primary">Values</span>
                                     </h2>
-                                    <p
-                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                                        How we do things is just as meaningful as what we do.
-                                    </p>
-                                    <p
-                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
-                                        Here’s how we progress faster, together<br />
-                                    </p>
                                 </div>
                                 <div
-                                    class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
+                                    class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 py-0">
                                     <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
+                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
+                                        <div class="flex h-fit flex-col">
+                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
+                                                translate="no">work</i>
+                                            <div>
+                                                <h4 id=""
+                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
+                                                    Professionalism
+                                                </h4>
+                                            </div>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
+                                                We are a trusted partner and do things the right way.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
+                                        <div class="flex h-fit flex-col">
+                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
+                                                translate="no">man</i>
+                                            <div>
+                                                <h4 id=""
+                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
+                                                    Customer Focus
+                                                </h4>
+                                            </div>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
+                                                Our internal and external customers are our lifeline
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
+                                        <div class="flex h-fit flex-col">
+                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
+                                                translate="no">verified</i>
+                                            <div>
+                                                <h4 id=""
+                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
+                                                    Integrity
+                                                </h4>
+                                            </div>
+                                            <p
+                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
+                                                We do responsible business.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                                         <div class="flex h-fit flex-col">
                                             <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
                                                 translate="no">lightbulb</i>
                                             <div>
                                                 <h4 id=""
                                                     class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Think big
+                                                    Innovation
                                                 </h4>
                                             </div>
                                             <p
                                                 class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                You believe in the art of the possible.
+                                                We are agile and always investing ahead of the curve
                                             </p>
                                         </div>
                                     </div>
                                     <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
+                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                                         <div class="flex h-fit flex-col">
                                             <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">school</i>
+                                                translate="no">group</i>
                                             <div>
                                                 <h4 id=""
                                                     class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Learn relentlessly
+                                                    Teamwork
                                                 </h4>
                                             </div>
                                             <p
                                                 class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                You are ever curious, and tenaciously seek to
-                                                understand any unanswered questions.
+                                                We deliver value together
                                             </p>
                                         </div>
                                     </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">change_circle</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Embrace change
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                You are highly adaptive, flexible and resilient,
-                                                always looking for a better way to innovate for
-                                                the long term.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">waterfall_chart</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Set the bar high
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                You work to improve yourself and push beyond
-                                                boundaries.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">broken_image</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Break barriers
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                You are a true problem solver, you take
-                                                responsibility and work through challenges.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">favorite_border</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Partner with heart
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                You are generous with your time and expertise,
-                                                and, without exception, you lead with kindness.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">person_3</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Make It happen
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                You are naturally hungry. You wake up every day
-                                                ready to achieve, without anyone having to ask.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">check_circle</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Do the right thing
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                You are known for acting with integrity no matter
-                                                who is looking — for your clients and your team.
-                                            </p>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </section>
@@ -564,8 +498,8 @@ const principles = ref([
                             <div>
 
                                 <div class="font-sans mb-5">
-                                    <label for="email"
-                                        class="block text-lg font-semibold leading-6 text-black">Your Email Address</label>
+                                    <label for="email" class="block text-lg font-semibold leading-6 text-black">Your
+                                        Email Address</label>
                                     <div class="relative mt-2 rounded-md shadow-sm">
                                         <div
                                             class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -623,7 +557,7 @@ const principles = ref([
                                             </g>
                                         </svg></a>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>

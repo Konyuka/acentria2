@@ -99,13 +99,13 @@ onMounted(()=>{
 
 <template>
     <div>
-        <div class="h-8">
+        <!-- <div class="h-8">
 
-        </div>
+        </div> -->
         <div
             class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-580px] translate-y-full duration-800 z-50">
 
-            <div class="flex flex-col min-w-[30vw]">
+            <div class="flex flex-col min-w-[25vw]">
                 <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
                     <NuxtLink to="/acentria-group-actuarial"
                         class="group flex w-full flex-row items-center gap-2 whitespace-nowrap px-2 py-2 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
@@ -157,7 +157,7 @@ onMounted(()=>{
                         <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in acServices">
                                 <div
-                                    class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
@@ -187,7 +187,7 @@ onMounted(()=>{
                         <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in acOther">
                                 <div
-                                    class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
@@ -217,7 +217,7 @@ onMounted(()=>{
                         <div class="flex h-screen flex-col rounded-br-xl bg-white">
                             <NuxtLink :to="item.link" v-for="item in acProducts">
                                 <div
-                                    class="font-sans group flex w-[40vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
