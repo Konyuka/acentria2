@@ -12,20 +12,20 @@ const props = defineProps({
         <div class="bg-white">
             <main>
                 <!-- Pricing section -->
-                <div class="font-sans mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="font-sans mx-auto max-w-7xl">
                     <div class="mx-auto max-w-4xl text-center">
                         <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900">
                             Why work with <span class="text-brand-primary">Acentria</span>
                         </p>
                     </div>
-                    <p class="font-sans mx-auto mt-6 max-w-6xl text-center text-md text-secondary">
+                    <p class="font-sans mx-auto mt-6 max-w-7xl text-center text-md text-secondary">
                         At Acentria, we’re not just offering reinsurance; we’re delivering peace of mind wrapped in a
                         tailored experience. Our streamlined process isn’t just easy – it’s your shortcut to worry-free
                         coverage. We’re not just about coverage; we’re about your confidence, your security, and a
                         reinsurance experience that goes beyond expectations.
                     </p>
 
-                    <div class="isolate mx-auto mt-10 grid gap-8 max-w-[96vw] grid-cols-4 mb-10">
+                    <div class="isolate mx-auto mt-10 grid gap-8 max-w-7xl grid-cols-4 mb-10">
 
                         <div class="rounded-xl p-4 ring-1 ring-brand-primary shadow-xl">
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">

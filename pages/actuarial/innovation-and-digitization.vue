@@ -50,7 +50,7 @@ const offers = ref([
         content: 'Acentria helps you create targeted digital marketing campaigns and customer engagement strategies to attract and retain customers in a competitive market. From social media marketing to personalized offers, we enhance your institution\'s digital presence and customer outreach.'
     },
     {
-        name: 'Process Automation and AI',
+        name: 'Process Automation and Artificial Intelligence',
         content:'We streamline your operations through process automation and intelligent AI integration. This not only enhances efficiency and reduces costs but also allows your employees to focus on higher-value tasks and customer interactions.'
     },
     {

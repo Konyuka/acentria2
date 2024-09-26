@@ -28,7 +28,7 @@ const company = computed(() => {
                 <p></p>
                 <p></p>
             </div>
-            <div class="grid grid-cols-1 gap-14 lg:grid-cols-form-block">
+            <div class="container max-w-7xl grid grid-cols-1 gap-5 lg:grid-cols-form-block">
 
                 <div class="h-fit rounded-xl bg-brand-primary px-12 py-14 shadow-card">
                     <h5
@@ -127,7 +127,6 @@ const company = computed(() => {
                         </div>
                     </button>
                 </form>
-                <form hidden="" class="hidden" id="mktoForm_12556"></form>
             </div>
         </div>
     </section>

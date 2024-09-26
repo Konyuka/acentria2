@@ -79,7 +79,7 @@ const offers = ref([
         content:'Our actuarial experts assist in the valuation of financial instruments, including complex derivatives and structured products, ensuring accurate and compliant financial reporting under accounting standards like IFRS and GAAP.'
     },
     {
-        name: 'FRS9 Implementation',
+        name: 'IFRS9 Implementation',
         content:'With a team of experienced accountants, risk analysts, and compliance experts, we assist in designing and implementing robust IFRS 9-compliant financial instruments accounting frameworks. Our services encompass classification and measurement of financial assets and liabilities, impairment modeling, and hedge accounting strategies.'
     },
     {
