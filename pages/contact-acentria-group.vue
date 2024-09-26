@@ -61,52 +61,91 @@
                         <form action="#" method="POST" class="lg:flex-auto">
                             <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                                 <div>
-                                    <label for="first-name"
-                                        class="block text-sm font-semibold leading-6 text-gray-900">Full Name</label>
-                                    <div class="mt-2.5">
-                                        <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6" />
+                                    <div class="font-sans mb-5">
+                                        <label for="email" class="block text-lg font-semibold leading-6 text-black">
+                                            Full Name
+                                        </label>
+                                        <div class="relative mt-2 rounded-md shadow-sm">
+                                            <div
+                                                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                                <i class="fas fa-user text-brand-primary"></i>
+                                            </div>
+                                            <input type="email" name="email" id="email"
+                                                class="tracking-widest font-semibold block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-black placeholder:text-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="font-sans mb-5">
+                                        <label for="email" class="block text-lg font-semibold leading-6 text-black">
+                                            Phone Number
+                                        </label>
+                                        <div class="relative mt-2 rounded-md shadow-sm">
+                                            <div
+                                                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                                <i class="fas fa-mobile text-brand-primary"></i>
+                                            </div>
+                                            <input type="email" name="email" id="email"
+                                                class="tracking-widest font-semibold block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-black placeholder:text-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
+                                                placeholder="">
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <label for="budget"
-                                        class="block text-sm font-semibold leading-6 text-gray-900">Phone Number</label>
-                                    <div class="mt-2.5">
-                                        <input id="budget" name="budget" type="number"
-                                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6" />
+                                    <div class="font-sans mb-5">
+                                        <label for="email" class="block text-lg font-semibold leading-6 text-black">
+                                            Email Address
+                                        </label>
+                                        <div class="relative mt-2 rounded-md shadow-sm">
+                                            <div
+                                                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                                <i class="fas fa-envelope-open text-brand-primary"></i>
+                                            </div>
+                                            <input type="email" name="email" id="email"
+                                                class="tracking-widest font-semibold block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-black placeholder:text-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
+                                                placeholder="">
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <label for="website"
-                                        class="block text-sm font-semibold leading-6 text-gray-900">Email
-                                        Address</label>
-                                    <div class="mt-2.5">
-                                        <input type="email" name="website" id="website"
-                                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label for="last-name"
-                                        class="block text-sm font-semibold leading-6 text-gray-900">Service
-                                        Category</label>
-                                    <div class="mt-2.5">
-                                        <select id="location" name="location"
-                                            class="mt-2 block w-full rounded-md border-0 py-2.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-brand-primary sm:text-sm sm:leading-6">
-                                            <option selected>General Enquiry</option>
-                                            <option>Insurance</option>
-                                            <option>Reinsurance</option>
-                                            <option>Actuarial</option>
-                                            <option>Investment</option>
-                                            <option>Tech</option>
-                                        </select>
+                                    <div class="font-sans mb-5">
+                                        <label for="email" class="block text-lg font-semibold leading-6 text-black">
+                                            Service Category
+                                        </label>
+                                        <div class="relative mt-2 rounded-md shadow-sm">
+                                            <div
+                                                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                                <i class="fas fa-award text-brand-primary"></i>
+                                            </div>
+                                            <select id="location" name="location"
+                                                class="tracking-widest font-semibold text-center !px-10 mt-2 block w-full rounded-md border-0 py-2.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-black focus:ring-2 focus:ring-brand-primary sm:text-sm sm:leading-6">
+                                                <option selected>General Enquiry</option>
+                                                <option>Insurance</option>
+                                                <option>Reinsurance</option>
+                                                <option>Actuarial</option>
+                                                <option>Investment</option>
+                                                <option>Tech</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sm:col-span-2">
-                                    <label for="message"
-                                        class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
-                                    <div class="mt-2.5">
-                                        <textarea id="message" name="message" rows="4"
-                                            class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"></textarea>
+                                    <div class="font-sans mb-5">
+                                        <label for="email" class="block text-lg font-semibold leading-6 text-black">
+                                            Message
+                                        </label>
+                                        <div class="relative mt-2 rounded-md shadow-sm">
+                                            <div
+                                                class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                                <i class="fas fa-paper-plane text-brand-primary"></i>
+                                            </div>
+                                            <textarea type="email" name="email" id="email" rows="4"
+                                                class="tracking-widest font-semibold block w-full rounded-md border-0 py-5 pl-10 text-gray-900 ring-1 ring-inset ring-black placeholder:text-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
+                                                placeholder="">
+                                            </textarea>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
