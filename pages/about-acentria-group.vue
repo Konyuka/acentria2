@@ -408,8 +408,8 @@ const openProfileBoardModal = () => {
                                             </div>
                                             <div
                                                 class="mx-2 mt-5 grid max-w-[90vw] grid-cols-1 gap-x-2 gap-y-10 sm:max-w-none lg:grid-cols-5">
-                                                <div
-                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                <NuxtLink to="/acentria-group-insurance"
+                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                                                         <h3 class="text-3xl font-bold text-primary">
                                                             Insurance
@@ -422,15 +422,15 @@ const openProfileBoardModal = () => {
                                                             insurance solutions that provide peace of mind and
                                                             financial security.
                                                         </p>
-                                                        <NuxtLink href="/acentria-group-insurance"
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                        <button
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
-                                                        </NuxtLink>
+                                                        </button>
                                                     </div>
-                                                </div>
-                                                <div
-                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                </NuxtLink>
+                                                <NuxtLink to="/acentria-group-reinsurance"
+                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                                                         <h3 class="text-3xl font-bold text-primary">
                                                             Reinsurance
@@ -443,15 +443,15 @@ const openProfileBoardModal = () => {
                                                             reinsurance programs that enhance financial
                                                             stability and risk management.
                                                         </p>
-                                                        <NuxtLink href="/acentria-group-reinsurance"
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                        <button
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
-                                                        </NuxtLink>
+                                                        </button>
                                                     </div>
-                                                </div>
-                                                <div
-                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                </NuxtLink>
+                                                <NuxtLink to="/acentria-group-actuarial"
+                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                                                         <h3 class="text-3xl font-bold text-primary">
                                                             Actuarial
@@ -464,15 +464,15 @@ const openProfileBoardModal = () => {
                                                             critical financial risks and formulate management
                                                             strategies.
                                                         </p>
-                                                        <NuxtLink href="/acentria-group-actuarial"
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                        <button
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
-                                                        </NuxtLink>
+                                                        </button>
                                                     </div>
-                                                </div>
-                                                <div
-                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                </NuxtLink>
+                                                <NuxtLink href="tech.acentriagroup.com" target="_blank"
+                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                                                         <h3 class="text-3xl font-bold text-primary">
                                                             Technology
@@ -485,15 +485,15 @@ const openProfileBoardModal = () => {
                                                             solutions and market analysis to identify the most
                                                             innovative opportunities for business
                                                         </p>
-                                                        <a href="tech.acentriagroup.com" target="_blank"
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                        <button
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
-                                                        </a>
+                                                        </button>
                                                     </div>
-                                                </div>
-                                                <div
-                                                    class="text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                </NuxtLink>
+                                                <NuxtLink to="/acentria-group-investments"
+                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                                                         <h3 class="text-3xl font-bold text-primary">
                                                             Investments
@@ -506,13 +506,13 @@ const openProfileBoardModal = () => {
                                                             market analysis to identify the most lucrative
                                                             opportunities for business
                                                         </p>
-                                                        <NuxtLink href="/acentria-group-actuarial"
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                        <button
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
-                                                        </NuxtLink>
+                                                        </button>
                                                     </div>
-                                                </div>
+                                                </NuxtLink>
                                             </div>
                                         </div>
                                     </div>
