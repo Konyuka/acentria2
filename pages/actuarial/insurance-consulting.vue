@@ -6,7 +6,7 @@ const ReinsuranceBannerContent = ref({
     image: 'https://images.pexels.com/photos/5699447/pexels-photo-5699447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref({
-    title: 'Reinsurance Optimization for Enhanced Risk Management',
+    title: 'Enhanced Risk Management',
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content:'We specialize in providing top-notch consulting services tailored to the insurance industry. With an experienced team, we offer comprehensive solutions to meet the unique needs and challenges of insurance companies, reinsurers. We provide both long-term and short-term insurance consulting services. Our expertise spans across various domains including risk management, regulatory compliance, and strategic planning. We work closely with our clients to develop customized strategies that drive growth, enhance operational efficiency, and ensure regulatory adherence. Our goal is to empower insurance companies to navigate the complexities of the industry with confidence and achieve sustainable success.'
 })

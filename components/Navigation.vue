@@ -338,7 +338,7 @@ onBeforeUnmount(() => {
     <div :class="bottomBarClass"
         class="top-10 z-50 mx-auto hidden w-full items-center justify-between px-4 py-4 transition-all duration-200 lg:flex false bg-white false">
         <div class="container mx-auto items-center justify-between lg:flex">
-            <div class="flex font-sans">
+            <div class="flex font-sans mb-10">
 
                 <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="250" height="100" decoding="async"
                         data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
@@ -362,7 +362,7 @@ onBeforeUnmount(() => {
 
 
                         <InsuranceDropDown v-show="isInsuranceDropdownVisible" @mouseenter="showDropdown('insurance')"
-                            @mouseleave="hideDropdown('insurance')" class="animate-in zoom-in-150" />
+                            @mouseleave="hideDropdown('insurance')" class="" />
 
                     </div>
                 </div>
@@ -379,7 +379,7 @@ onBeforeUnmount(() => {
 
                             <ReinsuranceDropDown v-show="isReinsuranceDropdownVisible"
                                 @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')"
-                                class="animate-in zoom-in-150" />
+                                class="" />
                         </div>
                     </div>
                 </div>
@@ -396,7 +396,7 @@ onBeforeUnmount(() => {
 
                             <ActuarialDropDown v-show="isActuarialDropdownVisible"
                                 @mouseenter="showDropdown('actuarial')" @mouseleave="hideDropdown('actuarial')"
-                                class="animate-in zoom-in-150" />
+                                class="" />
                         </div>
                     </div>
                 </div>

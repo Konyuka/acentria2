@@ -41,7 +41,7 @@ const acProducts = ref([
         link: '/reinsurance/acentre-reinsurance-solution',
     },
     {
-        name: 'Data Analysis Tool',
+        name: 'Data Analytics Tool',
         description: 'Leverage data-driven insights with our data analysis tool, enhancing decision-making and risk assessment.',
         link: '/reinsurance/reinsurance-data-analytics-tool',
     },
