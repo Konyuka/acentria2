@@ -1,0 +1,153 @@
+<script setup>
+const ReinsuranceBannerContent = ref({
+    title: 'Corporate Social Responsibility',
+    image: 'https://images.pexels.com/photos/207489/pexels-photo-207489.jpeg?auto=compress&cs=tinysrgb&w=600',
+})
+
+</script>
+
+<template>
+    <section>
+        <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+
+        <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
+            <div class="mx-auto max-w-4xl text-center" data-v-inspector="components/ReinsuranceWhy.vue:16:21">
+                <!-- <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900"
+                    data-v-inspector="components/ReinsuranceWhy.vue:17:25"> Acentria's Commitment to
+                    <span class="text-brand-primary" data-v-inspector="components/ReinsuranceWhy.vue:18:43">
+                        CSR
+                    </span>
+                </p> -->
+            </div>
+            <p class="font-sans mx-auto mt-6 max-w-7xl text-center text-md text-secondary"
+                data-v-inspector="components/ReinsuranceWhy.vue:21:21">
+                At Acentria, we are dedicated to social responsibility, ethical practices, and community well-being. Our
+                initiatives include community engagement, education and awareness, diversity and inclusion, financial
+                literacy programs, and employee volunteering, reflecting our commitment to positive change. We
+                prioritize diversity and inclusion, implement sustainable practices, and uphold transparent, ethical
+                business standards. Our CSR efforts exemplify our values, making a meaningful impact on both our
+                workforce and the communities we serve
+            </p>
+
+        </div>
+
+        <div data-v-02281a80="" class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
+                data-v-inspector="components/Why.vue:8:9">
+                <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
+                    <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
+                        decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                        class="rounded-lg" src="https://acentriagroup.com/wp-content/uploads/2023/12/12-1024x625.jpg"
+                        data-v-inspector="components/Why.vue:10:17" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
+
+                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                        data-v-inspector="components/Why.vue:18:17">
+                        Sustainable Practices
+                    </h2>
+                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            data-v-inspector="components/Why.vue:23:21">
+                            Acentria is committed to minimizing its environmental footprint through the adoption of
+                            sustainable practices. From energy-efficient office spaces to responsible waste management,
+                            we actively seek ways to reduce our impact on the environment. We also encourage our
+                            partners and suppliers to embrace eco-friendly solutions.
+                        </p>
+                    </div>
+                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                        data-v-inspector="components/Why.vue:18:17">
+                        Carbon Neutrality
+                    </h2>
+                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            data-v-inspector="components/Why.vue:23:21">
+                            We recognize the urgency of addressing climate change. Acentria is actively working towards
+                            becoming a carbon-neutral company. This involves measuring and reducing our carbon
+                            emissions, as well as offsetting unavoidable emissions through investments in verified
+                            carbon offset projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
+                data-v-inspector="components/Why.vue:32:9">
+                <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:33:13">
+                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                        data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                        src="https://acentriagroup.com/wp-content/uploads/2023/12/13.jpg"
+                        data-v-inspector="components/Why.vue:34:17" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
+                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                        data-v-inspector="components/Why.vue:18:17">
+                        Diversity and Inclusion
+                    </h2>
+                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            data-v-inspector="components/Why.vue:23:21">
+                            Acentria values diversity and inclusion as essential components of a thriving workplace. We
+                            strive to create a culture that celebrates differences, fosters equality, and ensures that
+                            every team member feels valued. Our commitment to diversity extends to our partnerships,
+                            ensuring that we collaborate with organizations that share our values.
+                        </p>
+                    </div>
+                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                        data-v-inspector="components/Why.vue:18:17">
+                        Community Engagement
+                    </h2>
+                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            data-v-inspector="components/Why.vue:23:21">
+                            We believe in giving back to the communities in which we operate. Acentria actively supports
+                            local initiatives and charities, contributing to social development and making a positive
+                            impact on the lives of those in need. Our employees are encouraged to participate in
+                            volunteer programs that align with our commitment to social responsibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
+                data-v-inspector="components/Why.vue:54:9">
+                <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:55:13">
+                    <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                        decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                        class="rounded-lg"
+                        src="https://images.pexels.com/photos/761297/pexels-photo-761297.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        data-v-inspector="components/Why.vue:56:17" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:60:13">
+                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                        data-v-inspector="components/Why.vue:18:17">
+                        Ethical Business Practices
+                    </h2>
+                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            data-v-inspector="components/Why.vue:23:21">
+                            Integrity is at the core of Acentria's governance model. We adhere to the highest ethical
+                            standards in all our business dealings. Our governance practices prioritize transparency,
+                            accountability, and fairness, ensuring that our stakeholders can trust us to make decisions
+                            that align with their interests.
+                        </p>
+                    </div>
+                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                        data-v-inspector="components/Why.vue:18:17">
+                        Board Diversity
+                    </h2>
+                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            data-v-inspector="components/Why.vue:23:21">
+                            Acentria recognizes the importance of diverse perspectives in decision-making. Our board of
+                            directors is composed of individuals with varied backgrounds, experiences, and skills. This
+                            diversity enhances our ability to navigate complex challenges and make informed decisions
+                            that benefit our company and stakeholders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</template>
+
+<style scoped></style>

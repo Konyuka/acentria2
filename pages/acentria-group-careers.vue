@@ -91,6 +91,56 @@ const principles = ref([
                     </div>
                 </div>
 
+                <section id="" class="relative py-5 bg-white text-left">
+                    <div class="container px-4">
+                        <h2
+                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                            What drives us at <br>
+                            <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                                Acentria Group?
+                            </span>
+                        </h2>
+                        <div class="grid grid-cols-2 gap-5 mt-10">
+                            <div class="font-sans content-center items-center">
+                                <div class="flex flex-row gap-2">
+                                    <i class="fas fa-eye text-xl text-brand-primary mr-4"></i>
+                                    <div>
+                                        <h5 id=""
+                                            class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                            Our
+                                            <span class="text-brand-primary">Vision</span>
+                                        </h5>
+                                        <p class="text-base leading-normal font-regular text-light-content text-base">
+                                            To be a global leader empowering prosperity.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2 mt-5">
+                                    <i class="fas fa-compass text-xl text-brand-primary mr-4"></i>
+                                    <div>
+                                        <h5 id=""
+                                            class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                            Our
+                                            <span class="text-brand-primary">Mission</span>
+                                        </h5>
+                                        <p class="text-base leading-normal font-regular text-light-content text-base">
+                                            To provide financial and risk advisory services through innovations that
+                                            empower our clients’ prosperity.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                    width="500" height="350" decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain" class="rounded-xl"
+                                    src="/img/empower.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <div class="py-5 text-white" style="background-color: #f6f8fc">
                     <div class="undefined">
                         <section id="" class="relative py-1">

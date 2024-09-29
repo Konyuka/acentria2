@@ -201,6 +201,60 @@ const openProfileBoardModal = () => {
                                 </div>
                             </div>
 
+                            <section id="" class="relative py-5 bg-white text-left">
+                                <div class="container px-4">
+                                    <h2
+                                        class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                                        Our
+                                        <span
+                                            class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                                            Vision & Mission
+                                        </span>
+                                    </h2>
+                                    <div class="grid grid-cols-2 gap-5 mt-10">
+                                        <div class="font-sans content-center items-center">
+                                            <div class="flex flex-row gap-2">
+                                                <i class="fas fa-eye text-xl text-brand-primary mr-4"></i>
+                                                <div>
+                                                    <h5 id=""
+                                                        class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                                        Our
+                                                        <span class="text-brand-primary">Vision</span>
+                                                    </h5>
+                                                    <p
+                                                        class="text-base leading-normal font-regular text-light-content text-base">
+                                                        To be a global leader empowering prosperity.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-row gap-2 mt-5">
+                                                <i class="fas fa-compass text-xl text-brand-primary mr-4"></i>
+                                                <div>
+                                                    <h5 id=""
+                                                        class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                                        Our
+                                                        <span class="text-brand-primary">Mission</span>
+                                                    </h5>
+                                                    <p
+                                                        class="text-base leading-normal font-regular text-light-content text-base">
+                                                        To provide financial and risk advisory services through
+                                                        innovations that
+                                                        empower our clients’ prosperity.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div>
+                                            <img alt="Image of Streamline evaluations and questionnaires "
+                                                loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
+                                                style="color: transparent; object-fit: contain" class="rounded-xl"
+                                                src="/img/empower.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
                             <section class="relative py-4" data-v-inspector="components/Cards.vue:8:9">
                                 <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
                                     <div class="font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0"
@@ -744,6 +798,44 @@ const openProfileBoardModal = () => {
                                     </div>
                                 </div>
                             </section>
+                        </div>
+                    </div>
+
+                    <div class="font-sans container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
+                        data-v-inspector="components/Why.vue:32:9">
+                        <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
+                            <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                                data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                                src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                data-v-inspector="components/Why.vue:34:17" />
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2"
+                            data-v-inspector="components/Why.vue:38:13">
+                            <label class="text-base leading-normal font-regular text-light-highlight font-bold"
+                                data-v-inspector="components/Why.vue:39:17">CSR
+                            </label>
+                            <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                data-v-inspector="components/Why.vue:42:17">
+                                Corporate Social Responsibility
+                            </h2>
+                            <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:46:17">
+                                <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                                    data-v-inspector="components/Why.vue:47:21">
+                                    At Acentria, we are dedicated to social responsibility, ethical practices, and
+                                    community well-being. Our initiatives include community engagement, education and
+                                    awareness, diversity and inclusion, financial literacy programs, and employee
+                                    volunteering, reflecting our commitment to positive change. We prioritize diversity
+                                    and inclusion, implement sustainable practices, and uphold transparent, ethical
+                                    business standards. Our CSR efforts exemplify our values, making a meaningful impact
+                                    on both our workforce and the communities we serve
+                                </p>
+
+                                <NuxtLink href="/csr"
+                                    class="!button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                    Learn More
+                                    <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                </NuxtLink>
+                            </div>
                         </div>
                     </div>
                 </main>
