@@ -806,7 +806,7 @@ const openProfileBoardModal = () => {
                         <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
                             <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                                 data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                                src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                src="https://images.pexels.com/photos/955395/pexels-photo-955395.jpeg?auto=compress&cs=tinysrgb&w=600"
                                 data-v-inspector="components/Why.vue:34:17" />
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2"
@@ -838,6 +838,46 @@ const openProfileBoardModal = () => {
                             </div>
                         </div>
                     </div>
+
+                    <div class="font-sans container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
+                        data-v-inspector="components/Why.vue:32:9">
+                        <div class="flex flex-col justify-center lg:basis-1/2"
+                            data-v-inspector="components/Why.vue:38:13">
+                            <label class="text-base leading-normal font-regular text-light-highlight font-bold"
+                                data-v-inspector="components/Why.vue:39:17">ESG
+                            </label>
+                            <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                data-v-inspector="components/Why.vue:42:17">
+                                Environmental Social Governance
+                            </h2>
+                            <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:46:17">
+                                <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                                    data-v-inspector="components/Why.vue:47:21">
+                                    At Acentria, we understand the profound impact businesses can have on the world.
+                                    That’s why we are
+                                    dedicated to integrating Environmental, Social, and Governance (ESG) principles into
+                                    our core business
+                                    practices. Our commitment goes beyond financial success, focusing on sustainable and
+                                    responsible
+                                    business operations that contribute positively to the well-being of our planet and
+                                    society.
+                                </p>
+
+                                <NuxtLink href="/esg"
+                                    class="!button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                    Learn More
+                                    <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                </NuxtLink>
+                            </div>
+                        </div>
+                        <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
+                            <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                                data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                                src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                data-v-inspector="components/Why.vue:34:17" />
+                        </div>
+                    </div>
+
                 </main>
             </main>
         </div>

@@ -28,8 +28,12 @@ const menuItem = ref([
                 link: '/acentria-group-careers',
             },
             {
-                name: 'Gallery',
-                link: '',
+                name: 'CSR',
+                link: '/csr',
+            },
+            {
+                name: 'ESG',
+                link: '/esg',
             },
         ]
     },
