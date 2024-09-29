@@ -63,45 +63,45 @@ const menuItem = ref([
             
         ]
     },
-    {
-        name: 'Help Center',
-        items: [
-            {
-                name: 'File a Claim',
-                link: '',
-            },
-            {
-                name: 'Contact Support',
-                link: '/contact-acentria-group',
-            },
-            {
-                name: 'Procurement',
-                link: '',
-            },
-            {
-                name: 'Form & Downloads',
-                link: '',
-            },
-        ]
-    },
+    // {
+    //     name: 'Help Center',
+    //     items: [
+    //         {
+    //             name: 'File a Claim',
+    //             link: '',
+    //         },
+    //         {
+    //             name: 'Contact Support',
+    //             link: '/contact-acentria-group',
+    //         },
+    //         {
+    //             name: 'Procurement',
+    //             link: '',
+    //         },
+    //         {
+    //             name: 'Form & Downloads',
+    //             link: '',
+    //         },
+    //     ]
+    // },
     {
         name: 'Legal',
         items: [
             {
                 name: 'Privacy Policy',
-                link: '',
+                link: '/privacy-policy',
             },
             {
                 name: 'Cookie Policy',
-                link: '',
+                link: '/cookie-policy',
             },
             {
                 name: 'Terms & Conditions',
-                link: '',
+                link: '/tnc',
             },
             {
                 name: 'Ethics & Compliance',
-                link: '',
+                link: '/ethics-and-compliance',
             },
         ]
     },

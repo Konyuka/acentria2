@@ -365,6 +365,29 @@ const whys = ref([
 
                 <WhyRe :whys="whys" />
 
+                <div>
+
+                    <section id="" class="relative py-2 bg-white text-center">
+                        <div class="container px-4">
+                            <h2
+                                class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                                Our Market <span class="text-brand-primary">Presence</span>
+                            </h2>
+                        </div>
+                    </section>
+                    <div class="container flex items-center justify-center">
+
+                        <div class="relative p-4">
+                            <img alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
+                                width="1000" height="350" decoding="async" data-nimg="1"
+                                style="color:transparent;object-fit:contain" class="rounded-xl"
+                                src="/img/map.jpg">
+                        </div>
+
+                    </div>
+
+                </div>
+
 
                 <ContactForm />
 

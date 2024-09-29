@@ -1,7 +1,7 @@
 <script setup>
 const ReinsuranceBannerContent = ref({
     title: 'Environmental, Social & Governance',
-    image: 'https://images.pexels.com/photos/1048033/pexels-photo-1048033.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 
 </script>
