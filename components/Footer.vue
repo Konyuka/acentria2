@@ -208,10 +208,10 @@ const showDropdown = (menu) => {
 
                                 <div class="grid grid-cols-2">
                                     <li v-if="showDropdown(chosenItem)" v-for="item in chosenItem?.items" class="m-2 text-dark-content">
-                                        <a href="/solutions/board-and-leadership-collaboration"
+                                        <NuxtLink :to="item.link"
                                             class="cursor-pointer font-normal text-dark-title hover:text-dark-title hover:underline text-xs relative flex items-center">
                                             {{ item.name }}
-                                        </a>
+                                        </NuxtLink>
                                     </li>
                                 </div>
 
