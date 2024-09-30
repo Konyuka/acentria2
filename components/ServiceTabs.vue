@@ -32,7 +32,7 @@ onMounted(() => {
 <template>
     <div>
 
-        <div class="grid grid-cols-3 gap-10 mb-5">
+        <div class="grid md:grid-cols-3 gap-10 mb-5">
 
             <button v-for="menu in menus" @click="setMenu(menu.tag)"
                 :class="selectedMenu === menu.tag ? 'bg-brand-primary text-white' : 'bg-white text-black'"
@@ -47,7 +47,7 @@ onMounted(() => {
         class="container grid grid-cols-1 md:grid-cols-2 gap-4 py-0">
 
             <NuxtLink :href="item.link" v-for="item in menuOptions"
-                class="button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[70vw] rounded-xl bg-white p-5 md:max-w-[70vw] w-full h-full">
+                class="button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[90vw] rounded-xl bg-white p-5 md:max-w-[70vw] w-full h-full">
                 <div class="font-sans flex h-fit flex-col">
 
                     <i class="material-symbols-outlined text-brand-primary text-4xl pb-4" translate="no">{{ item.icon

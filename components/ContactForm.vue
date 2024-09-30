@@ -30,7 +30,7 @@ const company = computed(() => {
             </div>
             <div class="container max-w-7xl grid grid-cols-1 gap-5 lg:grid-cols-form-block">
 
-                <div class="h-fit rounded-xl bg-brand-primary px-12 py-14 shadow-card">
+                <div class="h-fit rounded-xl bg-brand-primary px-5 md:px-12 py-5 md:py-14 shadow-card">
                     <h5
                         class="font-sans text-md text-white leading-tight lg:leading-tight pb-2">
                         Interested in learning more about how {{ company }} can support your business? Fill in your
@@ -39,7 +39,7 @@ const company = computed(() => {
                     </h5>
                 </div>
 
-                <form class="font-sans border-brand-gray-100 rounded-xl border bg-brand-white px-10 py-12 shadow-card">
+                <form class="font-sans border-brand-gray-100 rounded-xl border bg-brand-white px-2 md:px-10 py-5 md:py-12 shadow-card">
                     <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-3">
                         <div class="relative pb-7">
                             <label for="FirstName"
