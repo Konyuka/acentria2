@@ -14,7 +14,7 @@ const props = defineProps({
                     Frequently Asked Questions
                 </h2>
             </div> -->
-            <div class="space-y-5 grid grid-cols-2 gap-2">
+            <div class="space-y-5 grid grid-cols-1 md:grid-cols-2 gap-2">
 
                 <article v-for="faq in faqs" class="relative isolate !mt-2">
                     <div class="w-full">

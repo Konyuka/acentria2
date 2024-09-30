@@ -12,7 +12,7 @@ const props = defineProps({
         <div class="bg-white">
             <main>
                 <!-- Pricing section -->
-                <div class="font-sans mx-auto max-w-7xl">
+                <div class="font-sans mx-5 md:mx-auto max-w-7xl">
                     <div class="mx-auto max-w-4xl text-center">
                         <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900">
                             Why work with <span class="text-brand-primary">Acentria</span>
@@ -25,7 +25,7 @@ const props = defineProps({
                         reinsurance experience that goes beyond expectations.
                     </p>
 
-                    <div class="isolate mx-auto mt-10 grid gap-8 max-w-7xl grid-cols-4 mb-10">
+                    <div class="isolate mx-5 md:mx-auto mt-10 grid gap-8 max-w-7xl md:grid-cols-4 mb-10">
 
                         <div class="rounded-xl p-4 ring-1 ring-brand-primary shadow-xl">
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">

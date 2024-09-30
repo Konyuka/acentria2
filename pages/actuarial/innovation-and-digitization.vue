@@ -77,7 +77,7 @@ const offers = ref([
             </h2>
         </div>
         <div class="font-sans mx-auto max-w-7xl px-6 sm:mt-1 lg:px-8 my-2">
-            <div class="!mb-10 isolate mx-auto mt-3 grid max-w-7xl grid-cols-3 gap-8">
+            <div class="!mb-10 isolate mx-auto mt-3 grid max-w-7xl grid-cols-1 md:grid-cols-3 gap-8">
 
                 <div v-for="special in offers" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
 

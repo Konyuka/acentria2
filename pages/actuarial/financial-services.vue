@@ -100,7 +100,7 @@ const offers = ref([
 
 
         <div class="font-sans mx-auto max-w-7xl px-6 sm:mt-10 lg:px-8 my-10">
-            <div class="!mb-10 isolate mx-auto mt-10 grid max-w-7xl grid-cols-3 gap-8">
+            <div class="!mb-10 isolate mx-auto mt-10 grid max-w-7xl grid-cols-1 md:grid-cols-3 gap-8">
 
                 <div v-for="special in offers" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
 

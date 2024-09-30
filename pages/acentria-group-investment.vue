@@ -57,7 +57,7 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
-                        <div class="relative p-4 lg:basis-1/2">
+                        <div class="relative py-4 lg:basis-1/2">
                             <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="500"
                                 height="350" decoding="async" data-nimg="1"
                                 style="color: transparent; object-fit: contain" class="rounded-xl"
