@@ -19,12 +19,12 @@ const props = defineProps({
                             <div
                                 class="flex items-center space-x-2 text-brand-primary pb-2 justify-center lg:justify-start">
                                 <label
-                                    class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight uppercase">
+                                    class="hidden sm:flex font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight uppercase">
                                     {{ InsuranceBannerContent.subtitle }}
                                 </label>
                             </div>
                             <h1 v-html="InsuranceBannerContent.title"
-                                class="font-sans tracking-normal text-4xl lg:text-5xl text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                class="font-sans tracking-normal mt-10 lg:mt-0 text-3xl lg:text-5xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             </h1>
                         </div>
                         <div>

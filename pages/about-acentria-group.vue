@@ -41,7 +41,7 @@ const openProfileBoardModal = () => {
                                 style="background-color: rgb(246, 248, 252)">
                                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:8:9">
-                                    <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
+                                    <div class="relative py-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
                                         <img alt="Image of Elevate strategic risk management " loading="lazy"
                                             width="500" height="350" decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
@@ -81,7 +81,7 @@ const openProfileBoardModal = () => {
                                 </div>
                                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:32:9">
-                                    <div class="relative p-4 lg:basis-1/2 content-center"
+                                    <div class="relative py-4 lg:basis-1/2 content-center"
                                         data-v-inspector="components/Why.vue:33:13">
                                         <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
@@ -122,7 +122,7 @@ const openProfileBoardModal = () => {
                                 </div>
                                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:54:9">
-                                    <div class="relative p-4 lg:basis-1/2 content-center"
+                                    <div class="relative py-4 lg:basis-1/2 content-center"
                                         data-v-inspector="components/Why.vue:55:13">
                                         <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500"
                                             height="350" decoding="async" data-nimg="1"
@@ -158,7 +158,7 @@ const openProfileBoardModal = () => {
                                 </div>
                                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:32:9">
-                                    <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
+                                    <div class="relative py-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
                                         <img alt="Image of Enable growth" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
@@ -192,9 +192,9 @@ const openProfileBoardModal = () => {
                                             </p>
 
                                             <NuxtLink href="/meet-the-team"
-                                                class="!button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
+                                                class="!button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
                                                 Meet the Team
-                                                <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                                <i class="fas fa-arrow-right text-primary ml-2"></i>
                                             </NuxtLink>
                                         </div>
                                     </div>
@@ -211,7 +211,7 @@ const openProfileBoardModal = () => {
                                             Vision & Mission
                                         </span>
                                     </h2>
-                                    <div class="grid grid-cols-2 gap-5 mt-10">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
                                         <div class="font-sans content-center items-center">
                                             <div class="flex flex-row gap-2">
                                                 <i class="fas fa-eye text-xl text-brand-primary mr-4"></i>
@@ -248,8 +248,8 @@ const openProfileBoardModal = () => {
                                         <div>
                                             <img alt="Image of Streamline evaluations and questionnaires "
                                                 loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
-                                                style="color: transparent; object-fit: contain" class="rounded-xl"
-                                                src="/img/empower.jpg" />
+                                                style="color: transparent; object-fit: contain"
+                                                class="hidden md:flex rounded-xl" src="/img/empower.jpg" />
                                         </div>
                                     </div>
                                 </div>
@@ -259,7 +259,7 @@ const openProfileBoardModal = () => {
                                 <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
                                     <div class="font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0"
                                         data-v-inspector="components/Cards.vue:10:17">
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:11:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:13:25">
@@ -280,7 +280,7 @@ const openProfileBoardModal = () => {
                                             </div>
                                         </div>
 
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:29:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:31:25">
@@ -302,7 +302,7 @@ const openProfileBoardModal = () => {
                                             </div>
                                         </div>
 
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[30vw] rounded-xl bg-white p-5 w-full h-full"
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
                                             data-v-inspector="components/Cards.vue:47:21">
                                             <div class="flex h-fit flex-col"
                                                 data-v-inspector="components/Cards.vue:49:25">
@@ -477,9 +477,9 @@ const openProfileBoardModal = () => {
                                                             financial security.
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
-                                                            <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
+                                                            <i class="fas fa-arrow-right text-primary ml-2"></i>
                                                         </button>
                                                     </div>
                                                 </NuxtLink>
@@ -498,7 +498,7 @@ const openProfileBoardModal = () => {
                                                             stability and risk management.
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </button>
@@ -519,7 +519,7 @@ const openProfileBoardModal = () => {
                                                             strategies.
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </button>
@@ -540,7 +540,7 @@ const openProfileBoardModal = () => {
                                                             innovative opportunities for business
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </button>
@@ -561,7 +561,7 @@ const openProfileBoardModal = () => {
                                                             opportunities for business
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-2">
+                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </button>
