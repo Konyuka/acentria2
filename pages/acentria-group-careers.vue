@@ -40,7 +40,7 @@ const principles = ref([
     <main>
         <div>
             <div>
-                <div class="isolate !mb-5">
+                <div class="isolate !mb-5 py-5 md:py-0">
                     <div class="relative isolate -z-10">
                         <div class="container overflow-hidden">
                             <div class="max-w-full">
@@ -77,7 +77,7 @@ const principles = ref([
 
                                     </div>
 
-                                    <div class="relative p-4 lg:basis-1/2">
+                                    <div class="relative py-4 lg:basis-1/2">
                                         <img alt="Image of null" loading="lazy" width="1000" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" src="/img/simo-office.jpg"
@@ -91,7 +91,7 @@ const principles = ref([
                     </div>
                 </div>
 
-                <section id="" class="relative py-5 bg-white text-left">
+                <section id="" class="relative md:py-5 bg-white text-left">
                     <div class="container px-4">
                         <h2
                             class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
@@ -100,7 +100,7 @@ const principles = ref([
                                 Acentria Group?
                             </span>
                         </h2>
-                        <div class="grid grid-cols-2 gap-5 mt-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
                             <div class="font-sans content-center items-center">
                                 <div class="flex flex-row gap-2">
                                     <i class="fas fa-eye text-xl text-brand-primary mr-4"></i>
@@ -147,8 +147,8 @@ const principles = ref([
                             <div class="container px-4">
                                 <div class="pb-5 text-center">
                                     <h2
-                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
-                                        We are Devoted to <span class="text-brand-primary">Our Core
+                                        class="font-sans tracking-normal text-2xl lg:text-4xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
+                                        We are Devoted to <br><span class="text-brand-primary">Our Core
                                             Principles</span>
                                     </h2>
                                 </div>
@@ -184,7 +184,7 @@ const principles = ref([
                                 class="font-sans mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                 <div>
                                     <h2
-                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                                        class="font-sans tracking-normal text-2xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight pb-4 pt-6">
                                         <span
                                             class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">
                                             Why would you
@@ -318,13 +318,13 @@ const principles = ref([
                 <section id="" class="relative py-5 bg-white text-left">
                     <div class="container px-4">
                         <h2
-                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                            class="text-center font-sans tracking-normal text-2xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
                             We Firmly Believe That What Makes Us <br>
                             <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
                                 Different Also Makes us Stronger
                             </span>
                         </h2>
-                        <div class="grid grid-cols-2 gap-5 mt-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
                             <div class="content-center items-center">
                                 <p
                                     class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
@@ -472,7 +472,7 @@ const principles = ref([
                             <span
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">inclusion</span>
                         </h2>
-                        <div class="grid grid-cols-2 gap-5 mt-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
                             <div class="content-center items-center">
                                 <p
                                     class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
@@ -516,7 +516,7 @@ const principles = ref([
 
                 <div class="text-white" style="background-color: #f6f8fc">
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                        <div class="relative p-4 lg:basis-1/2">
+                        <div class="relative py-4 lg:basis-1/2">
                             <img alt="Image of null" loading="lazy" width="500" height="350" decoding="async"
                                 data-nimg="1" style="color: transparent; object-fit: contain" src="/img/join.jpg"
                                 class="rounded-xl" />

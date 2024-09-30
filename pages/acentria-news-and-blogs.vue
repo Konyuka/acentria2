@@ -22,6 +22,11 @@ const setMenu = (menu) => {
     currentMenu.value = menu
 }
 
+const setMobileMenu = (event) => {
+    const selectedValue = event.target.value;
+    currentMenu.value = selectedValue
+}
+
 onMounted(async () => {
     try {
         const response = await axios.get('https://admin.acentriagroup.com/api/get-published-blogs', {
@@ -67,15 +72,14 @@ onMounted(async () => {
 
 
                 <div>
-                    <div class="sm:hidden">
+                    <div class="sm:hidden px-4">
                         <label for="tabs" class="sr-only">Select a tab</label>
                         <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-                        <select id="tabs" name="tabs"
-                            class="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
-                            <option>My Account</option>
-                            <option>Company</option>
-                            <option selected>Team Members</option>
-                            <option>Billing</option>
+                        <select @change="setMobileMenu($event)" id="tabs" name="tabs"
+                            class="block w-full rounded-md border-gray-300 focus:border-brand-primary focus:ring-brand-primary py-2 font-bold">
+                            <option selected value="blogs">Blogs</option>
+                            <option value="event">Events</option>
+                            <option value="media">Media</option>
                         </select>
                     </div>
                     <div class="hidden sm:block font-sans">
@@ -104,7 +108,7 @@ onMounted(async () => {
 
                 <div class="bg-white px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
                     <div class="container mx-auto pb-4 lg:pb-16">
-                        <div class="mt-5 space-y-20 lg:space-y-20">
+                        <div class="mt-5 space-y-10 lg:space-y-20">
 
                             <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
 
