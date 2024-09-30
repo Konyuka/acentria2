@@ -5,8 +5,8 @@
                 <img :src="slide.imageUrl" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-gradient-to-t from-gray-700 to-transparent"></div>
                 <div
-                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4 sm:px-8 text-white">
-                    <h2 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" v-html="slide.title"></h2>
+                    class="absolute top-1/2 mx-10 md:mx-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 sm:px-3 text-white">
+                    <h2 class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" v-html="slide.title"></h2>
                     <p class="text-base sm:text-lg md:text-xl lg:text-3xl mb-8 mt-8">{{ slide.description }}</p>
                     <NuxtLink to="/about-acentria-group"
                         class="button-animation z-[51] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
@@ -17,7 +17,7 @@
 
             <template #addons>
                 <Pagination />
-                <Navigation class="mx-[20vw] text-white" />
+                <Navigation class="mx-[2vw] md:mx-[20vw] text-white" />
             </template>
         </Carousel>
     </div>

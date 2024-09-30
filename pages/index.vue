@@ -29,11 +29,11 @@ onMounted(() => {
 
         <Stats />
 
-        <Features />
+        <Features class="hidden sm:block" />
 
         <div class="font-sans text-white xl:py-1" style="background-color: #fff">
           <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-2 lg:gap-16">
-            <div class="relative p-4 lg:basis-1/2">
+            <div class="relative py-4 lg:basis-1/2">
               <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy" width="500"
                 height="350" decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                 class="rounded-lg"

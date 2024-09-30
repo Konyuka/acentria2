@@ -232,7 +232,7 @@ const showDropdown = (menu) => {
                 </div>
 
                 <hr class="h-0.25 bg-brand-divider mb-4" />
-                <h2 class="text-white mb-4">Connect with us</h2>
+                <h2 class="text-white mb-4 text-center md:text-left">Connect with us</h2>
                 <div class="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0">
                     <!-- socials -->
                     <div class="flex items-center justify-end md:justify-end md:col-span-1">
