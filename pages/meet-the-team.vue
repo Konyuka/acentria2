@@ -25,7 +25,9 @@ const profileBoardData = computed(() => {
         <div class="relative isolate overflow-hidden bg-white py-20">
             <video autoplay loop muted
                 class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
-                <source src="@/assets/media/satellite.mp4" type="video/mp4">
+                <source
+                    src="https://www.shutterstock.com/shutterstock/videos/3512180955/preview/stock-footage-success-team-hands-up-business-team-teamwork-concept-group-of-people-holding-hands-raised-their.webm"
+                    type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="absolute inset-0 bg-black opacity-40"></div>
