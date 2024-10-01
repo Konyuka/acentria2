@@ -17,7 +17,7 @@ const props = defineProps({
             class="absolute top-1/2 mx-10 md:mx-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 sm:px-3 text-white">
             <div class="container">
                 <div
-                    class="ml-20 flex flex-col items-center bg-cover px-4 py-4 text-center md:py-5 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                    class="md:ml-20 flex flex-col items-center bg-cover px-4 py-4 text-center md:py-5 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                     <div
                         class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-2xl lg:mx-0 lg:max-w-5xl lg:justify-start lg:text-left">
                         <div class="w-full">

@@ -334,9 +334,9 @@ const openProfileBoardModal = () => {
                                     </h2>
                                 </div>
                                 <dl
-                                    class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                    class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-2 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
                                                 class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
@@ -355,7 +355,7 @@ const openProfileBoardModal = () => {
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
                                                 class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
@@ -374,7 +374,7 @@ const openProfileBoardModal = () => {
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
                                                 class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
@@ -393,7 +393,7 @@ const openProfileBoardModal = () => {
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
                                                 class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
@@ -412,7 +412,7 @@ const openProfileBoardModal = () => {
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
                                                 class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
@@ -431,7 +431,7 @@ const openProfileBoardModal = () => {
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-md group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
                                                 class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
@@ -463,9 +463,14 @@ const openProfileBoardModal = () => {
                                             <div
                                                 class="mx-2 mt-5 grid max-w-[90vw] grid-cols-1 gap-x-2 gap-y-10 sm:max-w-none lg:grid-cols-5">
                                                 <NuxtLink to="/acentria-group-insurance"
-                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                    class="group button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">
+                                                        <div
+                                                            class="group-hover:scale-110 transition ease-in-out duration-700 text-center">
+                                                            <i
+                                                                class="fas fa-shield-alt text-brand-primary text-4xl my-3"></i>
+                                                        </div>
+                                                        <h3 class="text-center text-3xl font-bold text-primary">
                                                             Insurance
                                                         </h3>
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
@@ -477,16 +482,21 @@ const openProfileBoardModal = () => {
                                                             financial security.
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
+                                                            class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2"></i>
                                                         </button>
                                                     </div>
                                                 </NuxtLink>
                                                 <NuxtLink to="/acentria-group-reinsurance"
-                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                    class="group button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">
+                                                        <div
+                                                            class="group-hover:scale-110 transition ease-in-out duration-700 text-center">
+                                                            <i
+                                                                class="fas fa-sync-alt text-brand-primary text-4xl my-3"></i>
+                                                        </div>
+                                                        <h3 class="text-center text-3xl font-bold text-primary">
                                                             Reinsurance
                                                         </h3>
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
@@ -498,16 +508,21 @@ const openProfileBoardModal = () => {
                                                             stability and risk management.
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
+                                                            class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </button>
                                                     </div>
                                                 </NuxtLink>
                                                 <NuxtLink to="/acentria-group-actuarial"
-                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                    class="group button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">
+                                                        <div
+                                                            class="group-hover:scale-110 transition ease-in-out duration-700 text-center">
+                                                            <i
+                                                                class="fas fa-chart-line text-brand-primary text-4xl my-3"></i>
+                                                        </div>
+                                                        <h3 class="text-center text-3xl font-bold text-primary">
                                                             Actuarial
                                                         </h3>
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
@@ -519,16 +534,21 @@ const openProfileBoardModal = () => {
                                                             strategies.
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
+                                                            class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </button>
                                                     </div>
                                                 </NuxtLink>
                                                 <NuxtLink href="tech.acentriagroup.com" target="_blank"
-                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                    class="group button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">
+                                                        <div
+                                                            class="group-hover:scale-110 transition ease-in-out duration-700 text-center">
+                                                            <i
+                                                                class="fas fa-laptop-code text-brand-primary text-4xl my-3"></i>
+                                                        </div>
+                                                        <h3 class="text-center text-3xl font-bold text-primary">
                                                             Technology
                                                         </h3>
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
@@ -540,16 +560,21 @@ const openProfileBoardModal = () => {
                                                             innovative opportunities for business
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
+                                                            class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </button>
                                                     </div>
                                                 </NuxtLink>
                                                 <NuxtLink to="/acentria-group-investment"
-                                                    class="button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
+                                                    class="group button-animation text-left sm:flex sm:text-left lg:block lg:text-center bg-white rounded-md p-2 border-2 border-primary">
                                                     <div class="mt-3 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                        <h3 class="text-3xl font-bold text-primary">
+                                                        <div
+                                                            class="group-hover:scale-110 transition ease-in-out duration-700 text-center">
+                                                            <i
+                                                                class="fas fa-chart-pie text-brand-primary text-4xl my-3"></i>
+                                                        </div>
+                                                        <h3 class="text-center text-3xl font-bold text-primary">
                                                             Investments
                                                         </h3>
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
@@ -561,7 +586,7 @@ const openProfileBoardModal = () => {
                                                             opportunities for business
                                                         </p>
                                                         <button
-                                                            class="button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
+                                                            class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
                                                             Learn More
                                                             <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
                                                         </button>
