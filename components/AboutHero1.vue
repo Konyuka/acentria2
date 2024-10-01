@@ -6,48 +6,39 @@ const props = defineProps({
 </script>
 
 <template>
-    <div>
-        <div class="relative w-full h-[60vh] bg-cover bg-center bg-no-repeat false" style="
-            background-image: url(https://cdn.sanity.io/images/33u1mixi/production/9586fc11ddcb60222de682cdb07fe9d57103448b-1440x595.svg?fit=max&amp;auto=format);
-          ">
+    <div class="relative h-[75vh]">
+        <!-- <img :src="slide.imageUrl" class="w-full h-full object-cover" /> -->
+        <video autoplay muted loop class="drop-shadow-md w-full h-full object-cover" src="/img/vid.webm"
+            style="color: transparent">
+            Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-t from-red-100 to-transparent"></div>
+        <div
+            class="absolute top-1/2 mx-10 md:mx-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 sm:px-3 text-white">
             <div class="container">
                 <div
-                    class="flex flex-col items-center bg-cover px-4 py-4 text-center md:py-5 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                    class="ml-20 flex flex-col items-center bg-cover px-4 py-4 text-center md:py-5 lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                     <div
-                        class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[50%] lg:justify-start lg:text-left">
+                        class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-2xl lg:mx-0 lg:max-w-5xl lg:justify-start lg:text-left">
                         <div class="w-full">
                             <div
-                                class="flex items-center space-x-2 text-brand-primary pb-2 justify-center lg:justify-start">
+                                class="flex items-center space-x-2 text-brand-primary pb-2 justify-center lg:justify-center">
                                 <label
-                                    class="hidden sm:flex font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight uppercase">
+                                    class="text-center hidden sm:flex font-semibold font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight uppercase">
                                     {{ InsuranceBannerContent.subtitle }}
                                 </label>
                             </div>
                             <h1 v-html="InsuranceBannerContent.title"
-                                class="font-sans tracking-normal mt-10 lg:mt-0 text-3xl lg:text-5xl text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                class="text-center font-sans tracking-normal mt-10 lg:mt-0 text-3xl lg:text-5xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             </h1>
                         </div>
                         <div>
-                            <p class="font-sans tracking-normal text-base text-gray-700 leading-tight lg:leading-tight">
+                            <p
+                                class="font-semibold font-sans tracking-normal text-base text-black leading-tight lg:leading-tight">
                                 {{ InsuranceBannerContent.content }}
                             </p>
                         </div>
 
-                    </div>
-                    <div class="flex justify-center">
-
-                        <video width="1000" height="300" autoplay muted loop class="drop-shadow-md rounded-2xl"
-                            src="/img/vid.webm" style="color: transparent">
-                            Your browser does not support the video tag.
-                        </video>
-
-
-
-
-                        <!-- <img loading="lazy" width="500" height="300" decoding="async" data-nimg="1"
-                            class="drop-shadow-md undefined rounded-2xl"
-                            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                            :src="InsuranceBannerContent.image" style="color: transparent" /> -->
                     </div>
                 </div>
             </div>
