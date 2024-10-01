@@ -1,6 +1,6 @@
 <script setup>
 const InsuranceBannerContent = ref({
-    subtitle: "About Acentria Group",
+    subtitle: "Acentria Group",
     title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
     image: "/img/empower.jpeg",
     content:
