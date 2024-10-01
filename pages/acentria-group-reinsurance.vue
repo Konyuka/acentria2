@@ -1,6 +1,7 @@
 <script setup>
 
 const content = ref({
+    vid:'https://www.shutterstock.com/shutterstock/videos/1058820289/preview/stock-footage-young-inspired-woman-raises-her-hands-up-standing-on-the-top-of-a-mountain-above-the-clouds-against.webm',
     pageTitle: 'Acentria Group Reinsurance',
     title: 'Secure Your Future with Comprehensive Reinsurance Solutions',
     description: 'At Acentria Group, we provide robust reinsurance solutions designed to protect insurers from significant losses. Our comprehensive coverage options help manage risk, stabilize financial performance, and ensure long-term sustainability. Trust us to deliver the expertise and support you need to navigate the complexities of reinsurance, safeguarding your business and your peace of mind.',
@@ -179,7 +180,7 @@ const whys = ref([
         <div>
             <div>
 
-                <ServiceHero :content="content" />
+                <ServiceHero2 :content="content" />
 
                 <div class="py-6 text-white xl:py-12" style="background-color: #282e37">
                     <div class="undefined">

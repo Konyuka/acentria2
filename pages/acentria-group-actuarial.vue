@@ -1,6 +1,7 @@
 <script setup>
 
 const content = ref({
+    img:'https://www.shutterstock.com/shutterstock/videos/1059842396/preview/stock-footage-young-woman-in-orange-jacket-running-up-on-top-of-mountain-summit-at-sunset-raises-arms-into-air.webm',
     pageTitle: 'Acentria Group Actuarial & Financial Services',
     title: 'Expert Actuarial & Financial Services for Your Business',
     description: 'At Acentria Group, we offer a wide range of actuarial and financial services designed to help your business thrive. Our team of experts provides tailored solutions to manage risk, optimize financial performance, and ensure long-term sustainability. Trust us to deliver the insights and support you need to navigate the complexities of the financial landscape, safeguarding your business and securing your future.',
@@ -113,7 +114,7 @@ const whys = ref([
         <div>
             <div>
 
-                <ServiceHero :content="content" />
+                <ServiceHero2 :content="content" />
 
                 <div class="py-5 text-white" style="background-color: #282e37">
                     <div class="undefined">

@@ -1,6 +1,7 @@
 <script setup>
 
 const content = ref({
+    vid: 'https://www.shutterstock.com/shutterstock/videos/1059842396/preview/stock-footage-young-woman-in-orange-jacket-running-up-on-top-of-mountain-summit-at-sunset-raises-arms-into-air.webm',
     pageTitle: 'Acentria Group Insurance',
     title: 'Secure Your Future with Comprehensive Insurance Solutions',
     description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
@@ -196,7 +197,7 @@ const menus = ref([
         <div>
             <div>
 
-                <ServiceHero :content="content" />
+                <ServiceHero2 :content="content" />
 
                 <div class="py-6 text-white" style="background-color: #282e37">
                     <div class="undefined">
