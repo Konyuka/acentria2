@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <div class="relative h-[75vh]">
         <!-- <img :src="slide.imageUrl" class="w-full h-full object-cover" /> -->
-        <video autoplay muted loop class="drop-shadow-md w-full h-full object-cover" src="/img/vid.webm"
+        <video autoplay muted loop class="drop-shadow-md w-full h-full object-cover" src="/img/vid.mp4"
             style="color: transparent">
             Your browser does not support the video tag.
         </video>
@@ -24,7 +24,7 @@ const props = defineProps({
                             <div
                                 class="flex items-center space-x-2 text-brand-primary pb-2 justify-center lg:justify-center">
                                 <label
-                                    class="text-center hidden sm:flex font-extrabold tracking-widest font-sans text-xs lg:text-sm text-brand-primary leading-tight lg:leading-tight uppercase">
+                                    class="text-center hidden sm:flex font-extrabold tracking-widest font-sans text-xs lg:text-sm text-black leading-tight lg:leading-tight uppercase">
                                     {{ InsuranceBannerContent.subtitle }}
                                 </label>
                             </div>
@@ -34,7 +34,7 @@ const props = defineProps({
                         </div>
                         <div>
                             <p
-                                class="text-center font-semibold font-sans tracking-normal text-base text-black leading-tight lg:leading-tight">
+                                class="text-center font-semibold font-sans tracking-normal text-base text-white leading-tight lg:leading-tight">
                                 {{ InsuranceBannerContent.content }}
                             </p>
                         </div>
