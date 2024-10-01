@@ -12,7 +12,7 @@ const props = defineProps({
             style="color: transparent">
             Your browser does not support the video tag.
         </video>
-        <div class="absolute inset-0 bg-gradient-to-t from-gray-50 to-transparent"></div>
+        <!-- <div class="absolute inset-0 bg-gradient-to-t from-gray-50 to-transparent"></div> -->
         <div
             class="absolute top-1/2 mx-10 md:mx-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 sm:px-3 text-white">
             <div class="container">
