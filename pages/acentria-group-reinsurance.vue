@@ -1,7 +1,7 @@
 <script setup>
 
 const content = ref({
-    vid:'/img/hd2.mp4',
+    vid: '/img/hd2.mp4',
     pageTitle: 'Acentria Group Reinsurance',
     title: 'Secure Your Future with Comprehensive Reinsurance Solutions',
     description: 'At Acentria Group, we provide robust reinsurance solutions designed to protect insurers from significant losses. Our comprehensive coverage options help manage risk, stabilize financial performance, and ensure long-term sustainability. Trust us to deliver the expertise and support you need to navigate the complexities of reinsurance, safeguarding your business and your peace of mind.',
@@ -173,6 +173,15 @@ const whys = ref([
     },
 ])
 
+const heroContent = ref({
+    name: `<h1
+                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-tight lg:leading-tight">
+                                    <span
+                                        class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">Acentria</span>
+                                    Reinsurance Brokers
+                                </h1>`,
+})
+
 </script>
 
 <template>
@@ -181,6 +190,8 @@ const whys = ref([
             <div>
 
                 <ServiceHero2 :content="content" />
+
+                <Hero2 :data="heroContent" />
 
                 <div class="py-6 text-white xl:py-12" style="background-color: #282e37">
                     <div class="undefined">
@@ -226,7 +237,8 @@ const whys = ref([
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
+                                <p
+                                    class="text-base leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
                                     We specialize in addressing underwriting and capital management challenges,
                                     showcasing a deep understanding of the complexities involved in managing risk and
                                     financial resources within the insurance industry.

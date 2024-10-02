@@ -107,6 +107,15 @@ const whys = ref([
     },
 ])
 
+const heroContent = ref({
+    name: `<h1
+                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-tight lg:leading-tight">
+                                    <span
+                                        class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">Acentria</span>
+                                    Actuarial & Financial Services
+                                </h1>`,
+})
+
 </script>
 
 <template>
@@ -115,6 +124,8 @@ const whys = ref([
             <div>
 
                 <ServiceHero2 :content="content" />
+
+                <Hero2 :data="heroContent" />
 
                 <div class="py-5 text-white" style="background-color: #282e37">
                     <div class="undefined">

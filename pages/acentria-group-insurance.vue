@@ -190,6 +190,15 @@ const menus = ref([
     },
 ])
 
+
+const heroContent = ref({
+    name: `<h1
+                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-tight lg:leading-tight">
+                                    <span
+                                        class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">Acentria</span>
+                                    Insurance Brokers
+                                </h1>`,
+})
 </script>
 
 <template>
@@ -199,7 +208,7 @@ const menus = ref([
 
                 <ServiceHero2 :content="content" />
 
-                <Hero2 />
+                <Hero2 :data="heroContent" />
 
                 <div class="py-6 text-white" style="background-color: #282e37">
                     <div class="undefined">

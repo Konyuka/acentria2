@@ -1,5 +1,7 @@
 <script setup>
-
+const props = defineProps({
+    data: Array,
+})
 
 </script>
 
@@ -14,13 +16,7 @@
                     <div class="col-span-4 flex justify-center align-middle items-center">
                         <div
                             class=" flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-3xl">
-                            <div class="w-full">
-                                <h1
-                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-tight lg:leading-tight">
-                                    <span
-                                        class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">Acentria</span>
-                                    Insurance Brokers
-                                </h1>
+                            <div v-html="data.name" class="w-full">
                             </div>
                             <div class="font-sans text-light-content">
                                 <p class="text-base leading-normal font-regular text-light-content !text-inherit"
