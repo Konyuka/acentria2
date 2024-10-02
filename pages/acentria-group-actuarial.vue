@@ -123,7 +123,7 @@ const whys = ref([
                                 <div class="pb-5 text-center">
                                     <h2
                                         class="font-sans tracking-normal text-3xl lg:text-4xl text-white font-semibold leading-tight lg:leading-tight">
-                                        Some of the Services we Offer for Companies
+                                        Best of Actuarial Consulting, Products & Services
                                     </h2>
                                 </div>
 

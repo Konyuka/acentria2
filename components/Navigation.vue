@@ -347,7 +347,21 @@ onBeforeUnmount(() => {
 
 
             </div>
-            <div class="flex font-sans mr-52">
+            <div class="flex font-sans mr-20">
+
+                <!-- <div class="z-50 content-center">
+                    <div class="relative flex flex-col px-4 hover:cursor-default">
+                        <NuxtLink to="/about-acentria-group" @mouseenter="showDropdown('insurance')"
+                            @mouseleave="hideDropdown('insurance')"
+                            :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
+                            class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                            About Us
+                        </NuxtLink>
+
+                        
+
+                    </div>
+                </div> -->
 
                 <div class="z-50 content-center">
                     <div class="relative flex flex-col px-4 hover:cursor-default">
