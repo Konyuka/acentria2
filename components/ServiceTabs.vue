@@ -47,14 +47,14 @@ onMounted(() => {
         class="container grid grid-cols-1 md:grid-cols-2 gap-4 py-0">
 
             <NuxtLink :href="item.link" v-for="item in menuOptions"
-                class="button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[90vw] rounded-xl bg-white p-5 md:max-w-[70vw] w-full h-full">
+                class="button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-auto max-w-[90vw] rounded-xl bg-white p-5 md:max-w-[70vw] w-full h-full">
                 <div class="font-sans flex h-fit flex-col">
 
-                    <i class="material-symbols-outlined text-brand-primary text-4xl pb-4" translate="no">{{ item.icon
+                    <i class="material-symbols-outlined text-brand-primary text-4xl pb-0" translate="no">{{ item.icon
                         }}</i>
                     <div>
                         <h4 id=""
-                            class="font-sans text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
+                            class="font-sans text-lg pb-0 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
                             {{ item.name }}
                         </h4>
                     </div>

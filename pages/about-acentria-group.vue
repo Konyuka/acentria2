@@ -4,7 +4,7 @@ const InsuranceBannerContent = ref({
     title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
     image: "/img/empower.jpeg",
     content:
-        "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory. With a wealth of experience and a commitment to excellence, we provide comprehensive solutions tailored to meet the unique needs of our clients.",
+        "At Acentria Group, we propel prosperity to infinite possibilities.",
 });
 
 const profileModal = ref(false);
@@ -28,25 +28,25 @@ const openProfileBoardModal = () => {
 
 <template>
     <div>
-        <div id="__next">
-            <main class="jsx-2839774277 __className_e3c363 __ptNoRemap font-sans">
+        <div id="">
+            <main class="font-sans">
                 <main>
                     <div>
                         <div>
                             <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-                            <!-- <AboutHero /> -->
+                            <Hero class="py-10" />
 
                             <div data-v-02281a80="" class="font-sans py-2 text-white"
                                 style="background-color: rgb(246, 248, 252)">
                                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:8:9">
-                                    <div class="relative py-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
+                                    <div class="relative py-4 lg:basis-1/2 scale-90"
+                                        data-v-inspector="components/Why.vue:9:13">
                                         <img alt="Image of Elevate strategic risk management " loading="lazy"
                                             width="500" height="350" decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
-                                            src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            data-v-inspector="components/Why.vue:10:17" />
+                                            src="/img/innovate.png" data-v-inspector="components/Why.vue:10:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2"
                                         data-v-inspector="components/Why.vue:14:13">
@@ -208,13 +208,13 @@ const openProfileBoardModal = () => {
                                         Our
                                         <span
                                             class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                                            Vision & Mission
+                                            Vision, Mission & Values
                                         </span>
                                     </h2>
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
-                                        <div class="font-sans content-center items-center">
+                                    <div class="grid grid-cols-1 md:grid-cols-1 gap-5 mt-10">
+                                        <div class="font-sans content-center items-center grid grid-cols-2">
                                             <div class="flex flex-row gap-2">
-                                                <i class="fas fa-eye text-xl text-brand-primary mr-4"></i>
+                                                <i class="fas fa-eye text-6xl text-brand-primary mr-4"></i>
                                                 <div>
                                                     <h5 id=""
                                                         class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
@@ -227,8 +227,8 @@ const openProfileBoardModal = () => {
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-row gap-2 mt-5">
-                                                <i class="fas fa-compass text-xl text-brand-primary mr-4"></i>
+                                            <div class="flex flex-row gap-2">
+                                                <i class="fas fa-compass text-6xl text-brand-primary mr-4"></i>
                                                 <div>
                                                     <h5 id=""
                                                         class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
@@ -246,93 +246,20 @@ const openProfileBoardModal = () => {
 
                                         </div>
                                         <div>
-                                            <img alt="Image of Streamline evaluations and questionnaires "
-                                                loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
-                                                style="color: transparent; object-fit: contain"
-                                                class="hidden md:flex rounded-xl" src="/img/empower.jpg" />
+
                                         </div>
                                     </div>
                                 </div>
                             </section>
 
-                            <section class="relative py-4" data-v-inspector="components/Cards.vue:8:9">
-                                <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
-                                    <div class="font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0"
-                                        data-v-inspector="components/Cards.vue:10:17">
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
-                                            data-v-inspector="components/Cards.vue:11:21">
-                                            <div class="flex h-fit flex-col"
-                                                data-v-inspector="components/Cards.vue:13:25">
-                                                <i class="fas fa-coffee text-brand-primary text-4xl pb-4" translate="no"
-                                                    data-v-inspector="components/Cards.vue:14:29"></i>
-                                                <div data-v-inspector="components/Cards.vue:15:29">
-                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
-                                                        data-v-inspector="components/Cards.vue:16:33">
-                                                        Our Purpose
-                                                    </h4>
-                                                </div>
-                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
-                                                    data-v-inspector="components/Cards.vue:21:29">
-                                                    Empower our clients and communities through innovative
-                                                    solutions, enhancing prosperity and adding value to a
-                                                    dynamic global environment.
-                                                </p>
-                                            </div>
-                                        </div>
 
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
-                                            data-v-inspector="components/Cards.vue:29:21">
-                                            <div class="flex h-fit flex-col"
-                                                data-v-inspector="components/Cards.vue:31:25">
-                                                <i class="fas fa-lightbulb text-brand-primary text-4xl pb-4"
-                                                    translate="no" data-v-inspector="components/Cards.vue:32:29"></i>
-                                                <div data-v-inspector="components/Cards.vue:33:29">
-                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
-                                                        data-v-inspector="components/Cards.vue:34:33">
-                                                        Our Commitment
-                                                    </h4>
-                                                </div>
-                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
-                                                    data-v-inspector="components/Cards.vue:39:29">
-                                                    Passionately remain at the forefront in empowering the
-                                                    vision of our clients through igniting innovative
-                                                    thinking in offering the best solutions to enhance
-                                                    prosperity.
-                                                </p>
-                                            </div>
-                                        </div>
 
-                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
-                                            data-v-inspector="components/Cards.vue:47:21">
-                                            <div class="flex h-fit flex-col"
-                                                data-v-inspector="components/Cards.vue:49:25">
-                                                <i class="fas fa-shield-alt text-brand-primary text-4xl pb-4"
-                                                    translate="no" data-v-inspector="components/Cards.vue:50:29"></i>
-                                                <div data-v-inspector="components/Cards.vue:51:29">
-                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
-                                                        data-v-inspector="components/Cards.vue:52:33">
-                                                        Our Promise
-                                                    </h4>
-                                                </div>
-                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
-                                                    data-v-inspector="components/Cards.vue:57:29">
-                                                    Be your trusted partner, working tirelessly to provide
-                                                    the peace of mind you deserve, knowing that your
-                                                    assets and interests are safeguarded with care and
-                                                    expertise.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <div class="font-sans mx-auto mt-5 max-w-[93vw] px-6 sm:mt-10 lg:px-8 mb-10">
-                                <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
+                            <div class="font-sans mx-auto max-w-[93vw] px-6 lg:px-8 mb-10">
+                                <!-- <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
                                     <h2 class="text-3xl font-semibold text-brand-primary sm:text-4xl">
                                         Our values
                                     </h2>
-                                </div>
+                                </div> -->
                                 <dl
                                     class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-2 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                     <div
@@ -451,6 +378,78 @@ const openProfileBoardModal = () => {
                                 </dl>
                             </div>
 
+                            <section class="relative py-10" data-v-inspector="components/Cards.vue:8:9">
+                                <div class="container px-4" data-v-inspector="components/Cards.vue:9:13">
+                                    <div class="font-sans grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0"
+                                        data-v-inspector="components/Cards.vue:10:17">
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
+                                            data-v-inspector="components/Cards.vue:11:21">
+                                            <div class="flex h-fit flex-col"
+                                                data-v-inspector="components/Cards.vue:13:25">
+                                                <i class="fas fa-coffee text-brand-primary text-4xl pb-4" translate="no"
+                                                    data-v-inspector="components/Cards.vue:14:29"></i>
+                                                <div data-v-inspector="components/Cards.vue:15:29">
+                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
+                                                        data-v-inspector="components/Cards.vue:16:33">
+                                                        Our Purpose
+                                                    </h4>
+                                                </div>
+                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
+                                                    data-v-inspector="components/Cards.vue:21:29">
+                                                    Empower our clients and communities through innovative
+                                                    solutions, enhancing prosperity and adding value to a
+                                                    dynamic global environment.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
+                                            data-v-inspector="components/Cards.vue:29:21">
+                                            <div class="flex h-fit flex-col"
+                                                data-v-inspector="components/Cards.vue:31:25">
+                                                <i class="fas fa-lightbulb text-brand-primary text-4xl pb-4"
+                                                    translate="no" data-v-inspector="components/Cards.vue:32:29"></i>
+                                                <div data-v-inspector="components/Cards.vue:33:29">
+                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
+                                                        data-v-inspector="components/Cards.vue:34:33">
+                                                        Our Commitment
+                                                    </h4>
+                                                </div>
+                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
+                                                    data-v-inspector="components/Cards.vue:39:29">
+                                                    Passionately remain at the forefront in empowering the
+                                                    vision of our clients through igniting innovative
+                                                    thinking in offering the best solutions to enhance
+                                                    prosperity.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full"
+                                            data-v-inspector="components/Cards.vue:47:21">
+                                            <div class="flex h-fit flex-col"
+                                                data-v-inspector="components/Cards.vue:49:25">
+                                                <i class="fas fa-shield-alt text-brand-primary text-4xl pb-4"
+                                                    translate="no" data-v-inspector="components/Cards.vue:50:29"></i>
+                                                <div data-v-inspector="components/Cards.vue:51:29">
+                                                    <h4 class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl"
+                                                        data-v-inspector="components/Cards.vue:52:33">
+                                                        Our Promise
+                                                    </h4>
+                                                </div>
+                                                <p class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal"
+                                                    data-v-inspector="components/Cards.vue:57:29">
+                                                    Be your trusted partner, working tirelessly to provide
+                                                    the peace of mind you deserve, knowing that your
+                                                    assets and interests are safeguarded with care and
+                                                    expertise.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
                             <div class="bg-white font-sans">
                                 <div class="mx-auto max-w-full px-4 py-4 sm:px-6 lg:px-8">
                                     <div class="rounded-2xl bg-black px-2 py-5 sm:p-5">
@@ -474,12 +473,10 @@ const openProfileBoardModal = () => {
                                                             Insurance
                                                         </h3>
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
-                                                            Our comprehensive insurance broking services are
+                                                            Acentria Group's comprehensive insurance broking services
+                                                            are
                                                             designed to protect your assets and mitigate
-                                                            risks. Whether you are an individual or a
-                                                            business, Acentria Group offers customized
-                                                            insurance solutions that provide peace of mind and
-                                                            financial security.
+                                                            risks.
                                                         </p>
                                                         <button
                                                             class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
@@ -502,10 +499,7 @@ const openProfileBoardModal = () => {
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
                                                             At Acentria Group, we provide expert reinsurance
                                                             broking services tailored to meet the diverse
-                                                            needs of our esteemed clients. Our team works
-                                                            closely with insurance companies to implement
-                                                            reinsurance programs that enhance financial
-                                                            stability and risk management.
+                                                            needs of our esteemed clients.
                                                         </p>
                                                         <button
                                                             class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
@@ -528,10 +522,7 @@ const openProfileBoardModal = () => {
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
                                                             Our Actuarial team is at the forefront of the
                                                             industry, providing insights and solutions that
-                                                            drive informed decision-making. Our actuaries
-                                                            utilize advanced modeling techniques to analyze
-                                                            critical financial risks and formulate management
-                                                            strategies.
+                                                            drive informed decision-making.
                                                         </p>
                                                         <button
                                                             class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
@@ -554,10 +545,7 @@ const openProfileBoardModal = () => {
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
                                                             Acentria Group's technology services are designed
                                                             to optimize operational efficiency and secure
-                                                            long-term success for our clients. Our team of
-                                                            expert technologists employs cutting-edge
-                                                            solutions and market analysis to identify the most
-                                                            innovative opportunities for business
+                                                            long-term success for our clients.
                                                         </p>
                                                         <button
                                                             class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
@@ -580,10 +568,7 @@ const openProfileBoardModal = () => {
                                                         <p class="mt-2 text-sm text-gray-500 text-left mb-5">
                                                             Acentria Group's investment services are designed
                                                             to optimize financial growth and secure long-term
-                                                            success for our clients. Our team of expert
-                                                            advisors employs cutting-edge strategies and
-                                                            market analysis to identify the most lucrative
-                                                            opportunities for business
+                                                            success for our clients.
                                                         </p>
                                                         <button
                                                             class="group-hover:scale-110 transition ease-in-out duration-900 button-animation relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm md:text-md rounded-sm mt-2">
@@ -826,82 +811,46 @@ const openProfileBoardModal = () => {
                         </div>
                     </div>
 
-                    <div class="font-sans container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
-                        data-v-inspector="components/Why.vue:32:9">
-                        <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
-                            <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                                data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                                src="https://images.pexels.com/photos/955395/pexels-photo-955395.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                data-v-inspector="components/Why.vue:34:17" />
-                        </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2"
-                            data-v-inspector="components/Why.vue:38:13">
-                            <label class="text-base leading-normal font-regular text-light-highlight font-bold"
-                                data-v-inspector="components/Why.vue:39:17">CSR
-                            </label>
-                            <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                                data-v-inspector="components/Why.vue:42:17">
-                                Corporate Social Responsibility
-                            </h2>
-                            <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:46:17">
-                                <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
-                                    data-v-inspector="components/Why.vue:47:21">
-                                    At Acentria, we are dedicated to social responsibility, ethical practices, and
-                                    community well-being. Our initiatives include community engagement, education and
-                                    awareness, diversity and inclusion, financial literacy programs, and employee
-                                    volunteering, reflecting our commitment to positive change. We prioritize diversity
-                                    and inclusion, implement sustainable practices, and uphold transparent, ethical
-                                    business standards. Our CSR efforts exemplify our values, making a meaningful impact
-                                    on both our workforce and the communities we serve
-                                </p>
+                    <div class="bg-gray-900">
 
-                                <NuxtLink href="/csr"
-                                    class="!button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
-                                    Learn More
-                                    <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
-                                </NuxtLink>
+                        <div class="relative isolate overflow-hidden pt-14">
+                            <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+                            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                                aria-hidden="true">
+                                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                                </div>
+                            </div>
+                            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+
+                                <div class="text-center">
+                                    <h1 class="text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                                        Sustainability and Corporate Social Responsibility
+                                    </h1>
+                                    <p class="mt-6 text-lg leading-8 text-white">
+                                        Anim aute id magna aliqua ad ad non
+                                        deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat
+                                        veniam occaecat fugiat aliqua.
+                                    </p>
+                                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                                        <NuxtLink href="/csr"
+                                            class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
+                                            Learn More
+                                        </NuxtLink>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                                aria-hidden="true">
+                                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="font-sans container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
-                        data-v-inspector="components/Why.vue:32:9">
-                        <div class="flex flex-col justify-center lg:basis-1/2"
-                            data-v-inspector="components/Why.vue:38:13">
-                            <label class="text-base leading-normal font-regular text-light-highlight font-bold"
-                                data-v-inspector="components/Why.vue:39:17">ESG
-                            </label>
-                            <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                                data-v-inspector="components/Why.vue:42:17">
-                                Environmental Social Governance
-                            </h2>
-                            <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:46:17">
-                                <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
-                                    data-v-inspector="components/Why.vue:47:21">
-                                    At Acentria, we understand the profound impact businesses can have on the world.
-                                    That’s why we are
-                                    dedicated to integrating Environmental, Social, and Governance (ESG) principles into
-                                    our core business
-                                    practices. Our commitment goes beyond financial success, focusing on sustainable and
-                                    responsible
-                                    business operations that contribute positively to the well-being of our planet and
-                                    society.
-                                </p>
-
-                                <NuxtLink href="/esg"
-                                    class="!button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-xl sm:text-sm rounded-sm mt-10">
-                                    Learn More
-                                    <i class="fas fa-arrow-right text-primary ml-2 text-md"></i>
-                                </NuxtLink>
-                            </div>
-                        </div>
-                        <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
-                            <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                                data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                                src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                data-v-inspector="components/Why.vue:34:17" />
-                        </div>
-                    </div>
 
                 </main>
             </main>

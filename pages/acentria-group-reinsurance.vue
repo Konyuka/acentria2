@@ -1,7 +1,7 @@
 <script setup>
 
 const content = ref({
-    vid:'https://www.shutterstock.com/shutterstock/videos/1058820289/preview/stock-footage-young-inspired-woman-raises-her-hands-up-standing-on-the-top-of-a-mountain-above-the-clouds-against.webm',
+    vid:'/img/hd2.mp4',
     pageTitle: 'Acentria Group Reinsurance',
     title: 'Secure Your Future with Comprehensive Reinsurance Solutions',
     description: 'At Acentria Group, we provide robust reinsurance solutions designed to protect insurers from significant losses. Our comprehensive coverage options help manage risk, stabilize financial performance, and ensure long-term sustainability. Trust us to deliver the expertise and support you need to navigate the complexities of reinsurance, safeguarding your business and your peace of mind.',
@@ -189,7 +189,7 @@ const whys = ref([
                                 <div class="pb-10 text-center lg:pb-14">
                                     <h2
                                         class="font-sans tracking-normal text-3xl lg:text-4xl text-white font-semibold leading-tight lg:leading-tight">
-                                        Some of the Services we Offer for Companies
+                                        Delivering Reinsurance Solutions & Services
                                     </h2>
                                     <!-- <label
                                         class="pt-5 text-base leading-normal font-sans text-light-highlight font-bold">
@@ -219,14 +219,14 @@ const whys = ref([
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
                         <div class="relative p-4 lg:basis-1/2">
-                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="500"
+                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="250"
                                 height="350" decoding="async" data-nimg="1"
-                                style="color: transparent; object-fit: contain" class="rounded-xl"
+                                style="color: transparent; object-fit: contain" class="ml-20 rounded-xl"
                                 src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
                                     We specialize in addressing underwriting and capital management challenges,
                                     showcasing a deep understanding of the complexities involved in managing risk and
                                     financial resources within the insurance industry.
@@ -235,18 +235,6 @@ const whys = ref([
                                     services supports insurance companies, encompassing risk analysis, designing and
                                     placing reinsurance programs, providing claims support, developing alternative risk
                                     strategies, and offering various risk management consulting services.
-                                    <br><br>
-                                    Through
-                                    services like reinsurance program design and alternative risk strategies, we create
-                                    tailored solutions, underscoring our commitment to helping clients achieve their
-                                    specific objectives by addressing their unique challenges and goals.
-                                    <br><br>
-                                    Additionally, we offer specialized consulting services to help insurance companies
-                                    navigate regulatory changes and optimize their operational efficiency. Our team of
-                                    experts is dedicated to providing innovative solutions that enhance risk management
-                                    practices and improve overall financial stability. By leveraging our extensive
-                                    industry knowledge and experience, we ensure that our clients are well-equipped to
-                                    face the evolving challenges of the insurance market.
                                 </p>
                             </div>
                         </div>
@@ -254,115 +242,8 @@ const whys = ref([
 
                 </div>
 
-                <div class="py-6 text-white xl:py-12" style="background-color:#282E37">
+                <Why />
 
-                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                        <div class="relative p-4 lg:basis-1/2"><img alt="Image of Empower leaders to act with agility"
-                                loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
-                                style="color:transparent;object-fit:contain" class="rounded-xl"
-                                src="https://acentriagroup.com/wp-content/uploads/2023/11/acentria-re-6.jpg">
-                        </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                            <h2 id=""
-                                class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-dark-title ">
-                                Reinsurance Services
-                            </h2>
-                            <div class="text-dark-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
-                                    Our reinsurance services are based on local and international best practices that
-                                    aim to forge long-term relationships with our clients and partners. The services
-                                    are powered by highly qualified staff and the application of the latest technology
-                                    in operations, risk analysis, data analytics, and actuarial models.
-
-                                    <br><br>
-
-                                    We pride ourselves on our ability to provide tailored reinsurance solutions that
-                                    meet the unique needs of each client. Our team of experts works closely with clients
-                                    to understand their specific challenges and develop strategies that enhance their
-                                    risk management capabilities. By leveraging advanced data analytics and actuarial
-                                    models, we ensure that our clients receive the most accurate and effective
-                                    reinsurance coverage.
-
-                                    <br><br>
-
-                                    Our commitment to innovation drives us to continuously improve our services and
-                                    adopt the latest technological advancements. We invest in cutting-edge tools and
-                                    platforms that enhance our operational efficiency and enable us to deliver superior
-                                    service to our clients. By staying at the forefront of industry developments, we
-                                    ensure that our clients benefit from the most up-to-date and effective reinsurance
-                                    solutions available.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                        <div class="relative p-4 lg:basis-1/2"><img alt="Image of Stay ahead of ESG expectations"
-                                loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
-                                style="color:transparent;object-fit:contain" class="rounded-xl"
-                                src="https://acentriagroup.com/wp-content/uploads/2023/11/acentria-re-4-1024x564.jpg">
-                        </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                            <h2 id=""
-                                class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-dark-title ">
-                                Reinsurance Solutions
-                            </h2>
-                            <div class="text-dark-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
-                                    We offer a range of reinsurance broking solutions to equip our clients with a
-                                    competitive edge that goes beyond the best pricing in the reinsurance market.
-                                    Leveraging on our expertise, market experience and relationships, we craft solutions
-                                    that suit your business portfolio mix and negotiate for terms are with well-rated
-                                    markets. The products are anchored on a 360-risk solution that aims at growth in
-                                    premiums, balanced retention and ceding of risks, improved solvency margins, and, in
-                                    turn, achieve the best credit rating for a cedant.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                        <div class="relative p-4 lg:basis-1/2"><img
-                                alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
-                                width="500" height="350" decoding="async" data-nimg="1"
-                                style="color:transparent;object-fit:contain" class="rounded-xl"
-                                src="https://acentriagroup.com/wp-content/uploads/2023/11/acentria-re-5.jpg">
-                        </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                            <h2 id=""
-                                class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-dark-title ">
-                                Data And Modelling
-                            </h2>
-                            <div class="text-dark-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
-                                    Access all your risk management data and activities in a single platform. Automate
-                                    risk workflows to eliminate errors, save on costs and regain time. Easily screen
-                                    vendors and third parties, manage cyber threats, and generate custom dashboards and
-                                    reports.
-
-                                    <br><br>
-
-                                    Our platform provides a comprehensive solution for all your risk management needs,
-                                    ensuring that you have complete visibility and control over your risk landscape. By
-                                    integrating various risk management functions into a single platform, we help you
-                                    streamline processes and improve efficiency. You can easily monitor and assess
-                                    risks, track compliance, and ensure that your organization is prepared for any
-                                    potential threats.
-
-                                    <br><br>
-
-                                    Our platform also includes robust tools for vendor and third-party risk management.
-                                    You can easily screen and monitor vendors, ensuring that they meet your
-                                    organization's risk and compliance standards. Additionally, our platform helps you
-                                    manage cyber threats by providing real-time monitoring and alerts, enabling you to
-                                    respond quickly to any potential security incidents.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
 
                 <WhyRe :whys="whys" />
 
@@ -381,8 +262,7 @@ const whys = ref([
                         <div class="relative p-4">
                             <img alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
                                 width="1000" height="350" decoding="async" data-nimg="1"
-                                style="color:transparent;object-fit:contain" class="rounded-xl"
-                                src="/img/map.jpg">
+                                style="color:transparent;object-fit:contain" class="rounded-xl" src="/img/map.jpg">
                         </div>
 
                     </div>

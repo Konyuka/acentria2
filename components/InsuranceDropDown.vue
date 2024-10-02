@@ -232,19 +232,7 @@ onMounted(() => {
                                 </g>
                             </svg>
                         </NuxtLink>
-                        <a href="https://insurance.acentriagroup.com/" target="_blank"
-                            class="button-animation mt-5 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-xs">
-                            Compare Quotes
-                            <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
-                                fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                                <g fill-rule="evenodd">
-                                    <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                    <path class="transition-all duration-75 translate-x-0 transform-none"
-                                        d="M1 1l4 4-4 4">
-                                    </path>
-                                </g>
-                            </svg>
-                        </a>
+
                     </div>
                 </div>
             </div>
@@ -367,6 +355,23 @@ onMounted(() => {
                             </NuxtLink>
                         </div>
                     </div>
+                </div>
+
+                <div class="border-r border-brand-divider">
+
+                    <a href="#"
+                        class="bg-brand-primary flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:text-brand-primary hover:cursor-pointer false">
+                        <i class="fas fa-balance-scale text-lg undefined mr-5" translate="no"></i>
+                        Compare Quotes <i
+                            class="absolute fas fa-arrow-right !right-5 hover:text-brand-primary hover:animate-in hover:slide-in-from-left"></i>
+                    </a>
+
+                    <!-- <button type="button"
+                        class="mt-5 rounded-md bg-brand-primary px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                        Compare Quotes Online
+                    </button> -->
+
+
                 </div>
 
                 <div class="flex h-screen flex-col bg-white px-8 py-4 border-r border-brand-divider"></div>

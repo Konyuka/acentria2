@@ -1,7 +1,7 @@
 <script setup>
 
 const content = ref({
-    vid: 'https://www.shutterstock.com/shutterstock/videos/1059842396/preview/stock-footage-young-woman-in-orange-jacket-running-up-on-top-of-mountain-summit-at-sunset-raises-arms-into-air.webm',
+    vid: '/img/hd1.mp4',
     pageTitle: 'Acentria Group Insurance',
     title: 'Secure Your Future with Comprehensive Insurance Solutions',
     description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
@@ -11,19 +11,19 @@ const data = ref({
     personal: [
         {
             name: 'Health Insurance',
-            content: 'Secure Your Wellness Today – Choose Acentria Health Insurance. Your Health, Our Priority',
+            content: 'Secure Your Wellness Today',
             icon: 'health_and_safety',
             link:'/insurance/health-insurance'
         },
         {
             name: 'Life Insurance',
-            content: 'Protecting Your Loved Ones is Priceless – Secure Their Future with Acentria Life Insurance.',
+            content: 'Protecting Your Loved Ones is Priceless.',
             icon: 'favorite',
             link: '/insurance/life-insurance'
         },
         {
             name: 'Car Insurance',
-            content: 'Drive Confidently with Acentria Car Insurance. Your Safety, Our Priority – Get Covered Today',
+            content: 'Drive Confidently. Your Safety, Our Priority',
             icon: 'directions_car',
             link: '/insurance/home-insurance'
         },
@@ -35,13 +35,13 @@ const data = ref({
         },
         {
             name: 'Travel Insurance',
-            content: 'Adventure Awaits – Secure Your Travels with Acentria Travel Insurance. Explore with Confidence..',
+            content: 'Adventure Awaits – Secure Your Travel Plans. Explore with Confidence.',
             icon: 'flight',
             link: '/insurance/travel-insurance'
         },
         {
             name: 'Golfers Insurance',
-            content: 'Don\'t let the unexpected ruin your game – Protect your swing with golfer\'s insurance today.',
+            content: 'Don\'t let the unexpected ruin your game – Protect your swing with golfer\'s insurance.',
             icon: 'sports_golf',
             link: '/insurance/'
         },
@@ -49,19 +49,19 @@ const data = ref({
     corporate: [
         {
             name: 'Staff Health Cover',
-            content: 'Elevate Employee Well-being Today – Choose Acentria Staff Health Coverage. Their Health, Our Priority.',
+            content: 'Elevate Employee Well-being Today',
             icon: 'medical_services',
             link: '/insurance/staff-health-cover'
         },
         {
             name: 'Staff Travel Cover',
-            content: 'Empower Your Team\'s Journeys Today – Choose Acentria Staff Travel Protection.Their Adventures, Our Priority.',
+            content: 'Empower Your Team\'s Journeys Today',
             icon: 'luggage',
             link: '/insurance/staff-travel-cover'
         },
         {
             name: 'Professional Indemnity',
-            content: 'Secure Your Professional Reputation Today – Choose Acentria Professional Indemnity Assurance. Your Expertise, Our Priority',
+            content: 'Secure Your Professional Reputation Today ',
             icon: 'verified',
             link: '/insurance/'
         },
@@ -140,12 +140,12 @@ const data = ref({
 const whys = ref([
     {
         title: 'We save you money',
-        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        content: 'We provide unique offerings that enable you to combine your insurance products.',
         icon: 'savings',
     },
     {
         title: 'We are there for you',
-        content: 'We will take care of your insurance needs through our versatile products and scope',
+        content: 'We will take care of your insurance needs through our versatile scope',
         icon: 'support_agent',
     },
     {
@@ -165,7 +165,7 @@ const whys = ref([
     },
     {
         title: 'Peace of Mind',
-        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
+        content: 'Our team of experts shall offer professional advice for your needs.',
         icon: 'sentiment_satisfied',
     },
 ])
@@ -198,6 +198,8 @@ const menus = ref([
             <div>
 
                 <ServiceHero2 :content="content" />
+
+                <Hero2 />
 
                 <div class="py-6 text-white" style="background-color: #282e37">
                     <div class="undefined">
@@ -239,8 +241,8 @@ const menus = ref([
                                     <div
                                         class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                                         <a class="w-full" href="#">
-                                            <div class="relative w-full"><img alt="" loading="lazy" width="300"
-                                                    height="200" decoding="async" data-nimg="1"
+                                            <div class="relative w-full"><img alt="" loading="lazy" width="200"
+                                                    height="100" decoding="async" data-nimg="1"
                                                     class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                                                     sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
                                                     src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
@@ -271,8 +273,8 @@ const menus = ref([
                                     <div
                                         class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                                         <a class="w-full" href="#">
-                                            <div class="relative w-full"><img alt="" loading="lazy" width="300"
-                                                    height="200" decoding="async" data-nimg="1"
+                                            <div class="relative w-full"><img alt="" loading="lazy" width="200"
+                                                    height="100" decoding="async" data-nimg="1"
                                                     class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                                                     sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
                                                     src="https://images.pexels.com/photos/5453822/pexels-photo-5453822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -303,8 +305,8 @@ const menus = ref([
                                     <div
                                         class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                                         <a class="w-full" href="#">
-                                            <div class="relative w-full"><img alt="" loading="lazy" width="300"
-                                                    height="200" decoding="async" data-nimg="1"
+                                            <div class="relative w-full"><img alt="" loading="lazy" width="200"
+                                                    height="100" decoding="async" data-nimg="1"
                                                     class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                                                     sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
                                                     src="https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -339,8 +341,47 @@ const menus = ref([
                     </div>
                 </section>
 
+                <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 
-                <section id="" class="relative md:py-8 lg:py-5 bg-white text-center">
+                <div class="font-sans text-white xl:py-1" style="background-color: #fff">
+                    <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-2 lg:gap-16">
+                        <div class="relative py-4 lg:basis-1/2">
+                            <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy"
+                                width="500" height="350" decoding="async" data-nimg="1"
+                                style="color: transparent; object-fit: contain" class="rounded-lg"
+                                src="/public/img/award.jpg" />
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2">
+                            <label class="text-base leading-normal font-regular text-light-highlight font-semibold">
+                                We belive in innovation and simplicity
+                            </label>
+                            <h2
+                                class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                                Leader in Industry Standards
+                            </h2>
+                            <div class="text-light-content pb-5 md:pb-6">
+                                <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
+                                    Uncover the fantastic opportunity to team up with Acentria Group, where
+                                    collaboration is not just a
+                                    buzzword but a way of life. In the world of Acentria Group, success isn't just a
+                                    destination, it's a
+                                    shared experience. With our innovative approach, award-winning culture, and
+                                    unwavering focus on
+                                    community, we stand as the epitome of what an ideal partnership should be. Welcome
+                                    to a realm where
+                                    simplicity meets professionalism, and your aspirations find a home.
+
+                                    Experience the genuine difference that Acentria Group offers in a journey tailored
+                                    for success,
+                                    where your potential unfolds in every collaborative moment.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <section id="" class="relative py-4 bg-white text-center">
                     <div class="container px-4">
                         <h2
                             class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
@@ -349,6 +390,8 @@ const menus = ref([
                         </h2>
                     </div>
                 </section>
+
+
                 <div class="py-3 text-white" style="background-color: #f6f8fc">
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
@@ -380,11 +423,11 @@ const menus = ref([
 
                 </div>
 
-                <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
-
                 <ContactForm />
 
                 <InTouch />
+
+                <News />
 
             </div>
         </div>

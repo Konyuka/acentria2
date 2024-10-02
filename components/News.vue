@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <section class="relative mb-10 mt-5">
+    <section class="relative mb-10">
         <div class="font-sans container px-4">
             <div class="pb-7 text-center">
                 <h2 class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 leading-tight lg:leading-tight">
@@ -52,7 +52,7 @@
                     <div
                         class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
                         <section class="grid items-start justify-start gap-y-3">
-                            <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                            <div class="relative flex min-h-[30px] flex-col gap-y-1">
                                 <label
                                     class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Blog</label>
                                 <h6
@@ -124,7 +124,7 @@
                     <div
                         class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
                         <section class="grid items-start justify-start gap-y-3">
-                            <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                            <div class="relative flex min-h-[30px] flex-col gap-y-1">
                                 <label
                                     class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Guide</label>
                                 <h6
@@ -198,7 +198,7 @@
                     <div
                         class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
                         <section class="grid items-start justify-start gap-y-3">
-                            <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                            <div class="relative flex min-h-[30px] flex-col gap-y-1">
                                 <label
                                     class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Guide</label>
                                 <h6
@@ -272,7 +272,7 @@
                     <div
                         class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
                         <section class="grid items-start justify-start gap-y-3">
-                            <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                            <div class="relative flex min-h-[30px] flex-col gap-y-1">
                                 <label
                                     class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Blog</label>
                                 <h6

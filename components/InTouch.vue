@@ -27,16 +27,16 @@ const companyMail = computed(() => {
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900">
                             Get in touch
                         </h2>
-                        <p class="mt-4 leading-7 text-gray-600">
+                        <p class="mt-2 leading-7 text-gray-600">
                             Connect with our experts. Let's explore solutions together.
                         </p>
                     </div>
                     <div class="font-sans grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-                        <div class="rounded-2xl bg-gray-50 p-10 shadow-md">
+                        <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
                             <h3 class="text-base font-semibold leading-7 text-gray-900">
                                 Email
                             </h3>
-                            <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                            <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div>
                                     <dt class="sr-only">Email</dt>
                                     <dd>
@@ -49,11 +49,11 @@ const companyMail = computed(() => {
                             </dl>
                         </div>
 
-                        <div class="rounded-2xl bg-gray-50 p-10 shadow-md">
+                        <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
                             <h3 class="text-base font-semibold leading-7 text-gray-900">
                                 Mobile
                             </h3>
-                            <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                            <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div class="mt-1">
                                     <dt class="sr-only">Phone number</dt>
                                     <dd>
@@ -66,11 +66,11 @@ const companyMail = computed(() => {
                             </dl>
                         </div>
 
-                        <div class="rounded-2xl bg-gray-50 p-10 shadow-md">
+                        <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
                             <h3 class="text-base font-semibold leading-7 text-gray-900">
                                 WhatsApp
                             </h3>
-                            <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                            <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div>
                                     <dt class="sr-only">Email</dt>
                                     <dd>
@@ -80,11 +80,11 @@ const companyMail = computed(() => {
                                 </div>
                             </dl>
                         </div>
-                        <div class="rounded-2xl bg-gray-50 p-10 shadow-md">
+                        <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
                             <h3 class="text-base font-semibold leading-7 text-gray-900">
                                 Box Office
                             </h3>
-                            <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
+                            <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div>
                                     <dt class="sr-only">Email</dt>
                                     <dd>
@@ -98,7 +98,7 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-5 pt-2 lg:grid-cols-1 !mb-20">
+                <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-5 pt-2 lg:grid-cols-1 !mb-5">
                     <div>
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900">
                             Visit Us
