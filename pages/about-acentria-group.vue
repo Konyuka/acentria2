@@ -8,7 +8,10 @@ const InsuranceBannerContent = ref({
 });
 
 const mission = ref(null)
-const selectedMenu = mission.value?.currentMenu
+// const selectedMenu = ref(null)
+const selectedMenu = computed(()=>{
+    return mission.value?.currentMenu
+})
 
 const profileModal = ref(false);
 const profileBoardModal = ref(false);
@@ -27,6 +30,12 @@ const openProfileModal = () => {
 const openProfileBoardModal = () => {
     profileBoardModal.value = true;
 };
+
+onMounted(() => {
+    // if (mission.value) {
+    //     selectedMenu.value = mission.value.currentMenu;
+    // }
+});
 </script>
 
 <template>
@@ -219,11 +228,12 @@ const openProfileBoardModal = () => {
                                         <MissionTabs ref="mission" />
                                     </div>
 
-                                    <div class="grid grid-cols-1 md:grid-cols-1 gap-5 mt-2">
+                                    <div class="grid grid-cols-1 md:grid-cols-1 gap-5 mt-4">
                                         <div class="font-sans content-center items-center grid grid-cols-1 gap-5">
-                                            <div v-show="selectedMenu=='mission'" class="flex flex-row gap-2 justify-center">
+                                            <div v-show="selectedMenu=='vision'"
+                                                class="flex flex-row gap-2 justify-center">
 
-                                                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-0"
+                                                <div class="mt-10 container mx-auto flex px-4 lg:flex-row flex-col lg:gap-0 justify-around"
                                                     data-v-inspector="components/Why.vue:54:9">
                                                     <div class="relative py-4 lg:basis-1/2 content-center"
                                                         data-v-inspector="components/Why.vue:55:13">
@@ -250,9 +260,10 @@ const openProfileBoardModal = () => {
                                                 </div>
 
                                             </div>
-                                            <div v-show="selectedMenu == 'vision'" class="flex flex-row gap-2 justify-center">
+                                            <div v-show="selectedMenu == 'mission'"
+                                                class="flex flex-row gap-2 justify-center">
 
-                                                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-0"
+                                                <div class="mt-10 container mx-auto flex px-4 lg:flex-row flex-col lg:gap-0"
                                                     data-v-inspector="components/Why.vue:54:9">
                                                     <div class="relative py-4 lg:basis-1/2 content-center"
                                                         data-v-inspector="components/Why.vue:55:13">
@@ -288,18 +299,14 @@ const openProfileBoardModal = () => {
                                 </div>
                             </section>
 
-                            <!-- <Values class="font-sans mx-auto max-w-[93vw] px-6 lg:px-8 mb-10 font-sans" /> -->
 
 
 
-                            <div class="font-sans mx-auto max-w-[93vw] px-6 lg:px-8 mb-10">
-                                <!-- <div class="mx-auto max-w-2xl text-center lg:max-w-4xl">
-                                    <h2 class="text-3xl font-semibold text-brand-primary sm:text-4xl">
-                                        Our values
-                                    </h2>
-                                </div> -->
+                            <div v-show="selectedMenu == 'values'"
+                                class="font-sans mx-auto max-w-[93vw] px-6 lg:px-8 mb-10">
+
                                 <dl
-                                    class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-2 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-2 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                     <div
                                         class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
@@ -866,43 +873,39 @@ const openProfileBoardModal = () => {
                         </div>
                     </div>
 
-                    <div class="bg-gray-900">
+                    <div class="bg-gray-900 font-sans">
 
-                        <div class="relative isolate overflow-hidden pt-14">
+                        <div class="relative isolate overflow-hidden pt-5 py-10">
                             <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
-                            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-                                aria-hidden="true">
-                                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-                                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-                                </div>
-                            </div>
-                            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                                alt="" class="absolute inset-0 -z-20 h-full w-full object-cover">
+                            <div class="absolute inset-0 bg-black opacity-60 -z-10"></div>
+                            <div class="mx-auto max-w-6xl py-10 !z-50">
 
-                                <div class="text-center">
-                                    <h1 class="text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                                        Sustainability and Corporate Social Responsibility
+                                <div class="justify-center text-center !z-50">
+                                    <h1
+                                        class="text-balance text-4xl font-bold tracking-tight text-brand-primary sm:text-6xl">
+                                        <span class="text-white">Sustainability &</span> Corporate Social Responsibility
                                     </h1>
-                                    <p class="mt-6 text-lg leading-8 text-white">
-                                        Anim aute id magna aliqua ad ad non
-                                        deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat
-                                        veniam occaecat fugiat aliqua.
+                                    <p class="mt-6 text-sm leading-8 text-white sm:mx-40">
+
+                                        Our initiatives focus on reducing our environmental impact, promoting ethical
+                                        business practices,
+                                        and contributing positively to the communities we serve. We believe in creating
+                                        long-term value
+                                        for our stakeholders by integrating sustainable practices into our core
+                                        operations and fostering
+                                        a culture of responsibility and transparency.
                                     </p>
                                     <div class="mt-10 flex items-center justify-center gap-x-6">
                                         <NuxtLink href="/csr"
-                                            class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
-                                            Learn More
+                                            class="rounded-md bg-brand-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
+                                            Learn More <i class="fas fa-arrow-right ml-2"></i>
                                         </NuxtLink>
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-                                aria-hidden="true">
-                                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-                                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
