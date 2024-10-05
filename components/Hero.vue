@@ -7,7 +7,7 @@
 
     <div class="relative w-full bg-cover bg-center bg-no-repeat false"
         style="background-image:url('/img/bg.png'); transform: scaleX(-1);">
-        <div class="container h-20" style="transform: scaleX(-1);">
+        <div class="container h-24" style="transform: scaleX(-1);">
             <div
                 class="flex items-center bg-cover px-4 py-4 text-center md:py-1 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-2 md:gap-2">
                 <div class="grid grid-cols-4">

@@ -47,7 +47,7 @@ onMounted(() => {
                         <div>
                             <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-                            <Hero class="py-10" />
+                            <Hero class="py-2" />
 
                             <div data-v-02281a80="" class="font-sans py-2 text-white"
                                 style="background-color: rgb(246, 248, 252)">
