@@ -240,7 +240,8 @@ onMounted(() => {
                                                         <img alt="Image of Ensure regulatory compliance" loading="lazy"
                                                             width="400" height="350" decoding="async" data-nimg="1"
                                                             style="color: transparent; object-fit: contain"
-                                                            class="rounded-lg" src="/img/bill.jpg"
+                                                            class="rounded-lg"
+                                                            src="https://images.pexels.com/photos/175744/pexels-photo-175744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                                             data-v-inspector="components/Why.vue:56:17" />
                                                     </div>
                                                     <div class="flex flex-col justify-center lg:basis-1/2"
@@ -270,7 +271,8 @@ onMounted(() => {
                                                         <img alt="Image of Ensure regulatory compliance" loading="lazy"
                                                             width="400" height="350" decoding="async" data-nimg="1"
                                                             style="color: transparent; object-fit: contain"
-                                                            class="rounded-lg" src="/img/bill.jpg"
+                                                            class="rounded-lg"
+                                                            src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                                             data-v-inspector="components/Why.vue:56:17" />
                                                     </div>
                                                     <div class="flex flex-col justify-center lg:basis-1/2"
