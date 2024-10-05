@@ -272,296 +272,305 @@ onBeforeUnmount(() => {
 
 <template>
 
-    <div class="relative z-50 mx-auto hidden w-full px-8 py-1.5 lg:block bg-brand-gray">
-        <div class="font-sans container mx-auto flex flex-row items-center justify-between">
-            <!-- socials -->
-            <div class="flex items-center justify-end md:justify-end md:col-span-1">
-                <div class="flex gap-6">
-                    <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
-                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
-                            <i class="!text-xl fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
-                        </div>
-                    </a>
-                    <a href="https://x.com/acentriagroup?lang=en" target="_blank">
-                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
-                            <i class="!text-xl fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
-                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
-                            <i class="!text-xl fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.instagram.com/acentriagroup/" target="_blank">
-                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
-                            <i class="!text-xl fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
-                        </div>
-                    </a>
-                    <a href="https://www.tiktok.com/@acentria.group" target="_blank">
-                        <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
-                            <i class="!text-xl fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Top Links -->
-            <div class="flex flex-row items-center justify-end text-sm text-black">
-                <NuxtLink to="/" :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
-                    Home
-                </NuxtLink>
-                <NuxtLink to="/about-acentria-group"
-                    :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
-                    About
-                </NuxtLink>
-                <NuxtLink to="/acentria-news-and-blogs"
-                    :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
-                    News & Updates
-                </NuxtLink>
-                <NuxtLink to="/acentria-group-careers"
-                    :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                    class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
-                    Careers
-                </NuxtLink>
-                <NuxtLink to="/contact-acentria-group"
-                    :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                    class="relative px-2 py-1.5 hover:text-brand-primary button-animation">
-                    Contacts Us
-                </NuxtLink>
-            </div>
-        </div>
-    </div>
-
-    <div :class="bottomBarClass"
-        class="top-10 z-50 mx-auto hidden w-full items-center justify-between px-4 py-4 transition-all duration-200 lg:flex false bg-white false">
-        <div class="container mx-auto items-center justify-between lg:flex">
-            <div class="flex font-sans mb-10">
-
-                <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="250" height="100" decoding="async"
-                        data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
-                </NuxtLink>
-
-
-
-            </div>
-            <div class="flex font-sans mr-20">
-
-                <!-- <div class="z-50 content-center">
-                    <div class="relative flex flex-col px-4 hover:cursor-default">
-                        <NuxtLink to="/about-acentria-group" @mouseenter="showDropdown('insurance')"
-                            @mouseleave="hideDropdown('insurance')"
-                            :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
-                            class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                            About Us
-                        </NuxtLink>
-
-                        
-
-                    </div>
-                </div> -->
-
-                <div class="z-50 content-center">
-                    <div class="relative flex flex-col px-4 hover:cursor-default">
-                        <NuxtLink to="/acentria-group-insurance" @mouseenter="showDropdown('insurance')"
-                            @mouseleave="hideDropdown('insurance')"
-                            :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
-                            class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                            Insurance
-                        </NuxtLink>
-
-                        <!-- <div v-if="isInsuranceDropdownVisible" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div> -->
-
-
-                        <InsuranceDropDown v-show="isInsuranceDropdownVisible" @mouseenter="showDropdown('insurance')"
-                            @mouseleave="hideDropdown('insurance')" class="" />
-
-                    </div>
-                </div>
-
-                <div class="z-50 content-center">
-                    <div class="z-50">
-                        <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="/acentria-group-reinsurance" @mouseenter="showDropdown('reinsurance')"
-                                @mouseleave="hideDropdown('reinsurance')"
-                                :class="[isReinsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : '']"
-                                class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Reinsurance
-                            </NuxtLink>
-
-                            <ReinsuranceDropDown v-show="isReinsuranceDropdownVisible"
-                                @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')"
-                                class="" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="z-50 content-center">
-                    <div class="z-50">
-                        <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="/acentria-group-actuarial" @mouseenter="showDropdown('actuarial')"
-                                @mouseleave="hideDropdown('actuarial')"
-                                :class="[isActuarialDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : '']"
-                                class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Actuarial
-                            </NuxtLink>
-
-                            <ActuarialDropDown v-show="isActuarialDropdownVisible"
-                                @mouseenter="showDropdown('actuarial')" @mouseleave="hideDropdown('actuarial')"
-                                class="" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="z-50 content-center">
-                    <div class="z-50">
-                        <a href="https://tech.acentriagroup.com/" target="_blank"
-                            class="relative flex flex-col px-4 hover:cursor-default">
+    <div :class="bottomBarClass">
+        <div class="relative z-50 mx-auto hidden w-full px-8 py-1.5 lg:block bg-brand-gray">
+            <div class="font-sans container mx-auto flex flex-row items-center justify-between">
+                <!-- socials -->
+                <div class="flex items-center justify-end md:justify-end md:col-span-1">
+                    <div class="flex gap-6">
+                        <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
                             <div
-                                class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Technologies
+                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                <i class="!text-xl fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
+                            </div>
+                        </a>
+                        <a href="https://x.com/acentriagroup?lang=en" target="_blank">
+                            <div
+                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                <i class="!text-xl fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                            <div
+                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                <i class="!text-xl fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/acentriagroup/" target="_blank">
+                            <div
+                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                <i class="!text-xl fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.tiktok.com/@acentria.group" target="_blank">
+                            <div
+                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                <i class="!text-xl fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <div class="z-50 content-center">
-                    <div class="z-50">
+                <!-- Top Links -->
+                <div class="flex flex-row items-center justify-end text-sm text-black">
+                    <NuxtLink to="/" :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
+                        class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                        Home
+                    </NuxtLink>
+                    <NuxtLink to="/about-acentria-group"
+                        :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
+                        class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                        About
+                    </NuxtLink>
+                    <NuxtLink to="/acentria-news-and-blogs"
+                        :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
+                        class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                        News & Updates
+                    </NuxtLink>
+                    <NuxtLink to="/acentria-group-careers"
+                        :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
+                        class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                        Careers
+                    </NuxtLink>
+                    <NuxtLink to="/contact-acentria-group"
+                        :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
+                        class="relative px-2 py-1.5 hover:text-brand-primary button-animation">
+                        Contacts Us
+                    </NuxtLink>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="top-1 z-50 mx-auto hidden w-full bottom-0 justify-between px-4 py-1 transition-all duration-200 lg:flex false bg-white false">
+            <div class="container mx-auto items-center justify-between lg:flex">
+                <div class="flex font-sans mb-0">
+
+                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="240" height="50" decoding="async"
+                            data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
+                    </NuxtLink>
+
+
+
+                </div>
+                <div class="flex font-sans mr-20">
+
+                    <!-- <div class="z-50 content-center">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="/acentria-group-investment"
-                                :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : '']"
+                            <NuxtLink to="/about-acentria-group" @mouseenter="showDropdown('insurance')"
+                                @mouseleave="hideDropdown('insurance')"
+                                :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
                                 class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Investments
+                                About Us
+                            </NuxtLink>
+    
+                            
+    
+                        </div>
+                    </div> -->
+
+                    <div class="z-50 content-center">
+                        <div class="relative flex flex-col px-4 hover:cursor-default">
+                            <NuxtLink to="/acentria-group-insurance" @mouseenter="showDropdown('insurance')"
+                                @mouseleave="hideDropdown('insurance')"
+                                :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
+                                class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                Insurance
+                            </NuxtLink>
+
+                            <!-- <div v-if="isInsuranceDropdownVisible" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div> -->
+
+
+                            <InsuranceDropDown v-show="isInsuranceDropdownVisible"
+                                @mouseenter="showDropdown('insurance')" @mouseleave="hideDropdown('insurance')"
+                                class="" />
+
+                        </div>
+                    </div>
+
+                    <div class="z-50 content-center">
+                        <div class="z-50">
+                            <div class="relative flex flex-col px-4 hover:cursor-default">
+                                <NuxtLink to="/acentria-group-reinsurance" @mouseenter="showDropdown('reinsurance')"
+                                    @mouseleave="hideDropdown('reinsurance')"
+                                    :class="[isReinsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : '']"
+                                    class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    Reinsurance
+                                </NuxtLink>
+
+                                <ReinsuranceDropDown v-show="isReinsuranceDropdownVisible"
+                                    @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')"
+                                    class="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="z-50 content-center">
+                        <div class="z-50">
+                            <div class="relative flex flex-col px-4 hover:cursor-default">
+                                <NuxtLink to="/acentria-group-actuarial" @mouseenter="showDropdown('actuarial')"
+                                    @mouseleave="hideDropdown('actuarial')"
+                                    :class="[isActuarialDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : '']"
+                                    class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    Actuarial
+                                </NuxtLink>
+
+                                <ActuarialDropDown v-show="isActuarialDropdownVisible"
+                                    @mouseenter="showDropdown('actuarial')" @mouseleave="hideDropdown('actuarial')"
+                                    class="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="z-50 content-center">
+                        <div class="z-50">
+                            <a href="https://tech.acentriagroup.com/" target="_blank"
+                                class="relative flex flex-col px-4 hover:cursor-default">
+                                <div
+                                    class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    Technologies
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="z-50 content-center">
+                        <div class="z-50">
+                            <div class="relative flex flex-col px-4 hover:cursor-default">
+                                <NuxtLink to="/acentria-group-investment"
+                                    :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : '']"
+                                    class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    Investments
+                                </NuxtLink>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div></div>
+
+            </div>
+        </div>
+
+        <div class="flex w-full flex-row justify-between bg-white lg:hidden">
+
+            <div class="flex w-full justify-between px-4 py-4 shadow">
+                <a href="#"><img alt="Acentria Group" loading="lazy" width="180" height="29" decoding="async"
+                        data-nimg="1" style="color: transparent" src="/img/logo.png" />
+                </a>
+                <div @click="toggleMenu()" class="translate-y-2.5 cursor-pointer">
+                    <div
+                        class="w-8 h-0.5 bg-light-icon before:content-[&quot;&quot;] before:absolute before:w-8 before:h-0.5 before:bg-light-icon before:translate-y-2.5 transition-all">
+                    </div>
+                </div>
+            </div>
+
+            <div :class="[openMobileMenu ? 'translate-x-0' : '']"
+                class="fixed left-0 top-0 z-[100] h-screen w-screen overflow-y-scroll bg-white transition-all null -translate-x-full">
+                <div class="mb-4 flex w-full justify-between px-4 py-4 shadow">
+                    <a href="#"><img alt="Diligent" loading="lazy" width="180" height="29" decoding="async"
+                            data-nimg="1" style="color: transparent" src="/img/logo.png" /></a>
+                    <div @click="closeMenu()"
+                        class="w-8 h-0.5 bg-light-icon rotate-45 before:content-[&quot;&quot;] before:absolute before:rotate-90 before:w-8 before:h-0.5 before:bg-light-icon translate-y-3">
+                    </div>
+                </div>
+                <div class="px-4">
+                    <div class="rounded-sm bg-brand-gray px-3 py-3">
+                        <div
+                            class="mb-6 flex flex-row items-center justify-center text-sm font-semibold text-light-content">
+                            <NuxtLink to="/"
+                                :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class="border-r border-brand-divider px-2 py-1.5">
+                                Home
+                            </NuxtLink>
+                            <NuxtLink to="/about-acentria-group"
+                                :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class="border-r border-brand-divider px-2 py-1.5">
+                                About
+                            </NuxtLink>
+                            <NuxtLink to="/acentria-news-and-blogs"
+                                :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class="border-r border-brand-divider px-2 py-1.5">
+                                News
+                            </NuxtLink>
+                            <NuxtLink to="/acentria-group-careers"
+                                :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class="border-r border-brand-divider px-2 py-1.5">
+                                Careers
+                            </NuxtLink>
+                            <NuxtLink to="/contact-acentria-group"
+                                :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class="px-2 py-1.5" href="#">
+                                Contacts
                             </NuxtLink>
                         </div>
                     </div>
-                </div>
 
-            </div>
 
-            <div></div>
-
-        </div>
-    </div>
-
-    <div class="flex w-full flex-row justify-between bg-white lg:hidden">
-
-        <div class="flex w-full justify-between px-4 py-4 shadow">
-            <a href="#"><img alt="Acentria Group" loading="lazy" width="180" height="29" decoding="async" data-nimg="1"
-                    style="color: transparent" src="/img/logo.png" />
-            </a>
-            <div @click="toggleMenu()" class="translate-y-2.5 cursor-pointer">
-                <div
-                    class="w-8 h-0.5 bg-light-icon before:content-[&quot;&quot;] before:absolute before:w-8 before:h-0.5 before:bg-light-icon before:translate-y-2.5 transition-all">
-                </div>
-            </div>
-        </div>
-
-        <div :class="[openMobileMenu ? 'translate-x-0' : '']"
-            class="fixed left-0 top-0 z-[100] h-screen w-screen overflow-y-scroll bg-white transition-all null -translate-x-full">
-            <div class="mb-4 flex w-full justify-between px-4 py-4 shadow">
-                <a href="#"><img alt="Diligent" loading="lazy" width="180" height="29" decoding="async" data-nimg="1"
-                        style="color: transparent" src="/img/logo.png" /></a>
-                <div @click="closeMenu()"
-                    class="w-8 h-0.5 bg-light-icon rotate-45 before:content-[&quot;&quot;] before:absolute before:rotate-90 before:w-8 before:h-0.5 before:bg-light-icon translate-y-3">
-                </div>
-            </div>
-            <div class="px-4">
-                <div class="rounded-sm bg-brand-gray px-3 py-3">
-                    <div
-                        class="mb-6 flex flex-row items-center justify-center text-sm font-semibold text-light-content">
-                        <NuxtLink to="/"
-                            :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class="border-r border-brand-divider px-2 py-1.5">
-                            Home
-                        </NuxtLink>
-                        <NuxtLink to="/about-acentria-group"
-                            :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class="border-r border-brand-divider px-2 py-1.5">
-                            About
-                        </NuxtLink>
-                        <NuxtLink to="/acentria-news-and-blogs"
-                            :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class="border-r border-brand-divider px-2 py-1.5">
-                            News
-                        </NuxtLink>
-                        <NuxtLink to="/acentria-group-careers"
-                            :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class="border-r border-brand-divider px-2 py-1.5">
-                            Careers
-                        </NuxtLink>
-                        <NuxtLink to="/contact-acentria-group"
-                            :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class="px-2 py-1.5" href="#">
-                            Contacts
+                    <div class="border-b border-brand-divider">
+                        <NuxtLink to="/acentria-group-insurance"
+                            :class="[currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : 'text-light-title']"
+                            class="flex flex-row justify-between py-3">
+                            <div class="text-base font-semibold">
+                                Insurance
+                            </div>
+                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
+                                translate="no">chevron_right</i>
                         </NuxtLink>
                     </div>
-                </div>
+                    <div class="border-b border-brand-divider">
+                        <NuxtLink to="/acentria-group-reinsurance"
+                            :class="[currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : 'text-light-title']"
+                            class="flex flex-row justify-between py-3">
+                            <div class="text-base font-semibold">
+                                Reinsurance
+                            </div>
+                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
+                                translate="no">chevron_right</i>
+                        </NuxtLink>
+                    </div>
+                    <div class="border-b border-brand-divider">
+                        <NuxtLink to="/acentria-group-actuarial"
+                            :class="[currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : 'text-light-title']"
+                            class="flex flex-row justify-between py-3">
+                            <div class="text-base font-semibold">
+                                Actuarial
+                            </div>
+                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
+                                translate="no">chevron_right</i>
+                        </NuxtLink>
+                    </div>
+                    <div class="border-b border-brand-divider">
+                        <a href="https://tech.acentriagroup.com/" target="_blank"
+                            class="flex flex-row justify-between py-3">
+                            <div class="text-base font-semibold text-light-title">
+                                Technologies
+                            </div>
+                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
+                                translate="no">chevron_right</i>
+                        </a>
+                    </div>
+                    <div class="border-b border-brand-divider">
+                        <NuxtLink to="/acentria-group-investment"
+                            :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : 'text-light-title']"
+                            class="flex flex-row justify-between py-3">
+                            <div class="text-base font-semibold">
+                                Investments
+                            </div>
+                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
+                                translate="no">chevron_right</i>
+                        </NuxtLink>
+                    </div>
 
-
-                <div class="border-b border-brand-divider">
-                    <NuxtLink to="/acentria-group-insurance"
-                        :class="[currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : 'text-light-title']"
-                        class="flex flex-row justify-between py-3">
-                        <div class="text-base font-semibold">
-                            Insurance
-                        </div>
-                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                            translate="no">chevron_right</i>
-                    </NuxtLink>
                 </div>
-                <div class="border-b border-brand-divider">
-                    <NuxtLink to="/acentria-group-reinsurance"
-                        :class="[currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : 'text-light-title']"
-                        class="flex flex-row justify-between py-3">
-                        <div class="text-base font-semibold">
-                            Reinsurance
-                        </div>
-                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                            translate="no">chevron_right</i>
-                    </NuxtLink>
-                </div>
-                <div class="border-b border-brand-divider">
-                    <NuxtLink to="/acentria-group-actuarial"
-                        :class="[currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : 'text-light-title']"
-                        class="flex flex-row justify-between py-3">
-                        <div class="text-base font-semibold">
-                            Actuarial
-                        </div>
-                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                            translate="no">chevron_right</i>
-                    </NuxtLink>
-                </div>
-                <div class="border-b border-brand-divider">
-                    <a href="https://tech.acentriagroup.com/" target="_blank"
-                        class="flex flex-row justify-between py-3">
-                        <div class="text-base font-semibold text-light-title">
-                            Technologies
-                        </div>
-                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                            translate="no">chevron_right</i>
-                    </a>
-                </div>
-                <div class="border-b border-brand-divider">
-                    <NuxtLink to="/acentria-group-investment"
-                        :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : 'text-light-title']"
-                        class="flex flex-row justify-between py-3">
-                        <div class="text-base font-semibold">
-                            Investments
-                        </div>
-                        <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                            translate="no">chevron_right</i>
-                    </NuxtLink>
-                </div>
-
+            </div>
+            <div
+                class="fixed left-0 top-0 z-[999] h-full w-screen -translate-x-full overflow-scroll bg-white transition-[transform] duration-300 null">
             </div>
         </div>
-        <div
-            class="fixed left-0 top-0 z-[999] h-full w-screen -translate-x-full overflow-scroll bg-white transition-[transform] duration-300 null">
-        </div>
     </div>
+
 
 </template>
 
