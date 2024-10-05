@@ -7,6 +7,9 @@ const InsuranceBannerContent = ref({
         "At Acentria Group, we propel prosperity to infinite possibilities.",
 });
 
+const mission = ref(null)
+const selectedMenu = mission.value?.currentMenu
+
 const profileModal = ref(false);
 const profileBoardModal = ref(false);
 const teamComponent = ref(null);
@@ -203,47 +206,80 @@ const openProfileBoardModal = () => {
 
                             <section id="" class="relative py-5 bg-white text-left">
                                 <div class="container px-4">
-                                    <h2
+                                    <!-- <h2
                                         class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
                                         Our
                                         <span
                                             class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
                                             Vision, Mission & Values
                                         </span>
-                                    </h2>
-                                    <div class="grid grid-cols-1 md:grid-cols-1 gap-5 mt-10">
-                                        <div class="font-sans content-center items-center grid grid-cols-2">
-                                            <div class="flex flex-row gap-2">
-                                                <i class="fas fa-eye text-6xl text-brand-primary mr-4"></i>
-                                                <div>
-                                                    <h5 id=""
-                                                        class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                        Our
-                                                        <span class="text-brand-primary">Vision</span>
-                                                    </h5>
-                                                    <p
-                                                        class="text-base leading-normal font-regular text-light-content text-base">
-                                                        To be a global leader empowering prosperity.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row gap-2">
-                                                <i class="fas fa-compass text-6xl text-brand-primary mr-4"></i>
-                                                <div>
-                                                    <h5 id=""
-                                                        class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                        Our
-                                                        <span class="text-brand-primary">Mission</span>
-                                                    </h5>
-                                                    <p
-                                                        class="text-base leading-normal font-regular text-light-content text-base">
-                                                        To provide financial and risk advisory services through
-                                                        innovations that
-                                                        empower our clients’ prosperity.
-                                                    </p>
-                                                </div>
-                                            </div>
+                                    </h2> -->
 
+                                    <div class="my-1">
+                                        <MissionTabs ref="mission" />
+                                    </div>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-1 gap-5 mt-2">
+                                        <div class="font-sans content-center items-center grid grid-cols-1 gap-5">
+                                            <div v-show="selectedMenu=='mission'" class="flex flex-row gap-2 justify-center">
+
+                                                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-0"
+                                                    data-v-inspector="components/Why.vue:54:9">
+                                                    <div class="relative py-4 lg:basis-1/2 content-center"
+                                                        data-v-inspector="components/Why.vue:55:13">
+                                                        <img alt="Image of Ensure regulatory compliance" loading="lazy"
+                                                            width="400" height="350" decoding="async" data-nimg="1"
+                                                            style="color: transparent; object-fit: contain"
+                                                            class="rounded-lg" src="/img/bill.jpg"
+                                                            data-v-inspector="components/Why.vue:56:17" />
+                                                    </div>
+                                                    <div class="flex flex-col justify-center lg:basis-1/2"
+                                                        data-v-inspector="components/Why.vue:60:13">
+                                                        <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                                            data-v-inspector="components/Why.vue:63:17">
+                                                            Our <span class="text-brand-primary">Vision</span>
+                                                        </h2>
+                                                        <div class="text-light-content pb-5 md:pb-6"
+                                                            data-v-inspector="components/Why.vue:67:17">
+                                                            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                                                                data-v-inspector="components/Why.vue:68:21">
+                                                                To be a global leader empowering prosperity.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div v-show="selectedMenu == 'vision'" class="flex flex-row gap-2 justify-center">
+
+                                                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-0"
+                                                    data-v-inspector="components/Why.vue:54:9">
+                                                    <div class="relative py-4 lg:basis-1/2 content-center"
+                                                        data-v-inspector="components/Why.vue:55:13">
+                                                        <img alt="Image of Ensure regulatory compliance" loading="lazy"
+                                                            width="400" height="350" decoding="async" data-nimg="1"
+                                                            style="color: transparent; object-fit: contain"
+                                                            class="rounded-lg" src="/img/bill.jpg"
+                                                            data-v-inspector="components/Why.vue:56:17" />
+                                                    </div>
+                                                    <div class="flex flex-col justify-center lg:basis-1/2"
+                                                        data-v-inspector="components/Why.vue:60:13">
+                                                        <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                                            data-v-inspector="components/Why.vue:63:17">
+                                                            Our <span class="text-brand-primary">Mission</span>
+                                                        </h2>
+                                                        <div class="text-light-content pb-5 md:pb-6"
+                                                            data-v-inspector="components/Why.vue:67:17">
+                                                            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                                                                data-v-inspector="components/Why.vue:68:21">
+                                                                To provide financial and risk advisory services through
+                                                                innovations that
+                                                                empower our clients’ prosperity.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div>
 
@@ -251,6 +287,8 @@ const openProfileBoardModal = () => {
                                     </div>
                                 </div>
                             </section>
+
+                            <!-- <Values class="font-sans mx-auto max-w-[93vw] px-6 lg:px-8 mb-10 font-sans" /> -->
 
 
 
@@ -263,12 +301,12 @@ const openProfileBoardModal = () => {
                                 <dl
                                     class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-2 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
-                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
                                                 <i
-                                                    class="fas fa-scale-balanced text-5xl text-brand-primary group-hover:text-white"></i>
+                                                    class="fas fa-scale-balanced text-xl text-brand-primary group-hover:text-white"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -282,12 +320,12 @@ const openProfileBoardModal = () => {
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
-                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
                                                 <i
-                                                    class="fas fa-award text-5xl text-brand-primary group-hover:text-white"></i>
+                                                    class="fas fa-award text-xl text-brand-primary group-hover:text-white"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -295,18 +333,18 @@ const openProfileBoardModal = () => {
                                                 Excellence
                                             </dt>
                                             <dd class="mt-1 text-secondary text-sm">
-                                                We strive to deliver the highest levels of service and
+                                                Deliver the highest levels of service and
                                                 product excellence.
                                             </dd>
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
-                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
                                                 <i
-                                                    class="fas fa-lightbulb text-5xl text-brand-primary group-hover:text-white"></i>
+                                                    class="fas fa-lightbulb text-xl text-brand-primary group-hover:text-white"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -314,18 +352,18 @@ const openProfileBoardModal = () => {
                                                 Innovative
                                             </dt>
                                             <dd class="mt-1 text-secondary text-sm">
-                                                Acentria Group seek to use unique and creative solutions
-                                                in solving problems affecting our clients.
+                                                Seek to use unique and creative solutions
+                                                in solving problems.
                                             </dd>
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
-                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
                                                 <i
-                                                    class="fas fa-users text-5xl text-brand-primary group-hover:text-white"></i>
+                                                    class="fas fa-users text-xl text-brand-primary group-hover:text-white"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -333,18 +371,18 @@ const openProfileBoardModal = () => {
                                                 Teamwork
                                             </dt>
                                             <dd class="mt-1 text-secondary text-sm">
-                                                Acentria Group continuously promote team spirit among
-                                                its staff and stakeholders to attain its goals.
+                                                Continuously promote team spirit among
+                                                its staff and stakeholders.
                                             </dd>
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
-                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
                                                 <i
-                                                    class="fas fa-handshake text-5xl text-brand-primary group-hover:text-white"></i>
+                                                    class="fas fa-handshake text-xl text-brand-primary group-hover:text-white"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -358,12 +396,12 @@ const openProfileBoardModal = () => {
                                         </div>
                                     </div>
                                     <div
-                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-3 rounded-2xl group">
+                                        class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
                                         <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
                                             <div
-                                                class="flex items-center justify-center h-20 w-20 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
+                                                class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
                                                 <i
-                                                    class="fas fa-chart-line text-5xl text-brand-primary group-hover:text-white"></i>
+                                                    class="fas fa-chart-line text-xl text-brand-primary group-hover:text-white"></i>
                                             </div>
                                         </div>
                                         <div>
@@ -451,8 +489,25 @@ const openProfileBoardModal = () => {
                             </section>
 
                             <div class="bg-white font-sans">
+                                <div>
+                                    <h2
+                                        class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                                        Our Lines
+                                        <span
+                                            class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                                            of Business
+                                        </span>
+                                    </h2>
+                                </div>
                                 <div class="mx-auto max-w-full px-4 py-4 sm:px-6 lg:px-8">
-                                    <div class="rounded-2xl bg-black px-2 py-5 sm:p-5">
+                                    <ServiceCarousel />
+                                </div>
+
+                            </div>
+
+                            <!-- <div class="bg-white font-sans">
+                                <div class="mx-auto max-w-full px-4 py-4 sm:px-6 lg:px-8">
+                                    <div class="rounded-lg border border-brand-primary border-2 bg-black px-2 py-5 sm:p-5">
                                         <div class="mx-auto max-w-7xl">
                                             <div class="text-center">
                                                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -581,7 +636,7 @@ const openProfileBoardModal = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <Stats />
 
