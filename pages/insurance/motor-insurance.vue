@@ -76,6 +76,8 @@ const whys = ref([
     <div>
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
+        <Covers/>
+
         <Accordion :faqs="faqs" />
 
         <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
