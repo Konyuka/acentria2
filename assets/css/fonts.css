@@ -101,7 +101,7 @@ blockquote {
   margin: 1em 0;
   padding: 0.5em 1em;
   border-left: 4px solid #ccc;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   font-style: italic;
   color: #555;
 }
