@@ -326,29 +326,29 @@ onBeforeUnmount(() => {
                 </div>
 
                 <!-- Top Links -->
-                <div class="flex flex-row items-center justify-end text-sm text-black">
+                <div class="flex flex-row items-center justify-end text-xs text-black">
                     <NuxtLink to="/" :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                        class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
                         Home
                     </NuxtLink>
                     <!-- <NuxtLink to="/about-acentria-group"
                         :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                        class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                         About
                     </NuxtLink> -->
                     <NuxtLink to="/acentria-news-and-blogs"
                         :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                        class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
                         News & Updates
                     </NuxtLink>
                     <NuxtLink to="/acentria-group-careers"
                         :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
+                        class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
                         Careers
                     </NuxtLink>
                     <NuxtLink to="/contact-acentria-group"
                         :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class="relative px-2 py-1.5 hover:text-brand-primary button-animation">
+                        class=" relative px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
                         Contacts Us
                     </NuxtLink>
                 </div>
@@ -367,14 +367,14 @@ onBeforeUnmount(() => {
 
 
                 </div>
-                <div class="flex font-sans mr-20">
+                <div class="flex font-sans mr-16">
 
                     <div class="z-50 content-center">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
                             <NuxtLink to="/about-acentria-group" @mouseenter="showDropdown('about')"
                                 @mouseleave="hideDropdown('about')"
-                                :class="[isAboutDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/about-us/who-we-are' ? '!text-brand-primary scale-105' : '']"
-                                class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                :class="[isAboutDropdownVisible ? '!text-brand-primary !font-bold' : 'font-semibold', currentRoute === '/about-us/who-we-are' ? '!text-brand-primary scale-105 !font-bold' : '']"
+                                class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 About Us
                             </NuxtLink>
 
@@ -390,8 +390,8 @@ onBeforeUnmount(() => {
                         <div class="relative flex flex-col px-4 hover:cursor-default">
                             <NuxtLink to="/acentria-group-insurance" @mouseenter="showDropdown('insurance')"
                                 @mouseleave="hideDropdown('insurance')"
-                                :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
-                                class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                :class="[isInsuranceDropdownVisible ? '!text-brand-primary !font-bold' : 'font-semibold', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
+                                class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 Insurance
                             </NuxtLink>
 
@@ -408,8 +408,8 @@ onBeforeUnmount(() => {
                             <div class="relative flex flex-col px-4 hover:cursor-default">
                                 <NuxtLink to="/acentria-group-reinsurance" @mouseenter="showDropdown('reinsurance')"
                                     @mouseleave="hideDropdown('reinsurance')"
-                                    :class="[isReinsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : '']"
-                                    class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    :class="[isReinsuranceDropdownVisible ? '!text-brand-primary' : 'font-semibold', currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : '']"
+                                    class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                     Reinsurance
                                 </NuxtLink>
 
@@ -425,8 +425,8 @@ onBeforeUnmount(() => {
                             <div class="relative flex flex-col px-4 hover:cursor-default">
                                 <NuxtLink to="/acentria-group-actuarial" @mouseenter="showDropdown('actuarial')"
                                     @mouseleave="hideDropdown('actuarial')"
-                                    :class="[isActuarialDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : '']"
-                                    class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    :class="[isActuarialDropdownVisible ? '!text-brand-primary !font-medium' : 'font-semibold', currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : '']"
+                                    class="mt-5 flex pb-5 pt-4 text-md    hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                     Actuarial
                                 </NuxtLink>
 
@@ -442,7 +442,7 @@ onBeforeUnmount(() => {
                             <a href="https://tech.acentriagroup.com/" target="_blank"
                                 class="relative flex flex-col px-4 hover:cursor-default">
                                 <div
-                                    class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    class="mt-5 flex pb-5 pt-4 text-md  font-semibold  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                     Technologies
                                 </div>
                             </a>
@@ -453,8 +453,8 @@ onBeforeUnmount(() => {
                         <div class="z-50">
                             <div class="relative flex flex-col px-4 hover:cursor-default">
                                 <NuxtLink to="/acentria-group-investment"
-                                    :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : '']"
-                                    class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : 'font-semibold']"
+                                    class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                     Investments
                                 </NuxtLink>
                             </div>
