@@ -586,7 +586,7 @@ const principles = ref([
                                 <div class="relative mb-8 text-center lg:mb-0 lg:text-left">
                                     <div class="mb-4 !text-dark-content justify-center">
                                         <h2 id=""
-                                            class="text-center text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight undefined lg:pt10 pt-6">
+                                            class="text-white text-center text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight undefined lg:pt10 pt-6">
                                             Let’s make an impact together?
                                         </h2>
                                         <p class="text-center undefined undefined">

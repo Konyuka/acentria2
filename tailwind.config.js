@@ -15,7 +15,12 @@ export default {
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
-        // sans: ["Plus Jakarta Sans", "sans-serif"],
+      },
+      fontWeight: {
+        semibold: 200,
+      },
+      fontSize: {
+        base: "8px", 
       },
     },
   },

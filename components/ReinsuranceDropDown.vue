@@ -124,7 +124,7 @@ onMounted(() => {
             class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-450px] translate-y-full duration-800 z-50">
 
             <div class="flex flex-col min-w-[25vw]">
-                <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
+                <div class="bg-gray-300  p-5 min-h-screen">
                     <NuxtLink to="/acentria-group-reinsurance"
                         class="group flex w-full flex-row items-center gap-2 whitespace-nowrap px-2 py-2 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
                         <span class="group-hover:button-animation text-xl mt-3 text-brand-primary">
@@ -144,7 +144,7 @@ onMounted(() => {
                             professionalism and excellence in reinsurance
                         </p>
                     </div>
-                    <div class="border-r border-brand-divider flex flex-col justify-between">
+                    <div class=" flex flex-col justify-between">
                         <NuxtLink to="/acentria-group-reinsurance"
                             class="button-animation mt-10 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-xs">
                             Learn More
@@ -163,11 +163,11 @@ onMounted(() => {
             </div>
 
             <div class="flex flex-col min-w-[25vw] min-h-screen">
-                <div class="border-r border-brand-divider">
+                <div class="">
                     <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')" href="#"
                         :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="text-brand-primary mr-2 fas fa-shield text-lg undefined" translate="no"></i>
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-shield text-lg undefined" translate="no"></i>
                         Reinsurance Services <i
                             :class="[isServicesDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -176,12 +176,12 @@ onMounted(() => {
                     <div v-show="isServicesDropdownVisible" @mouseenter="showDropdown('services')"
                         @mouseleave="hideDropdown('services')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in reServices">
                                 <div
                                     class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
+                                        class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
                                     <div class="text-xs font-normal text-black">
@@ -193,11 +193,11 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="border-r border-brand-divider">
+                <div class="">
                     <a @mouseenter="showDropdown('solutions')" @mouseleave="hideDropdown('solutions')" href="#"
                         :class="[isSolutionsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="text-brand-primary mr-2 fas fa-cogs text-lg undefined" translate="no"></i>
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-cogs text-lg undefined" translate="no"></i>
                         Reinsurance Solutions <i
                             :class="[isSolutionsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -206,12 +206,12 @@ onMounted(() => {
                     <div v-show="isSolutionsDropdownVisible" @mouseenter="showDropdown('solutions')"
                         @mouseleave="hideDropdown('solutions')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in reSolutions">
                                 <div
                                     class="font-sans group flex w-[20vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
+                                        class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
                                     <div class="text-xs font-normal text-black">
@@ -223,11 +223,11 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="border-r border-brand-divider">
+                <div class="">
                     <a @mouseenter="showDropdown('data')" @mouseleave="hideDropdown('data')" href="#"
                         :class="[isDataDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="text-brand-primary mr-2 fas fa-chart-line text-lg undefined" translate="no"></i>
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-chart-line text-lg undefined" translate="no"></i>
                         Data and Modelling <i
                             :class="[isDataDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -235,12 +235,12 @@ onMounted(() => {
 
                     <div v-show="isDataDropdownVisible" @mouseenter="showDropdown('data')"
                         @mouseleave="hideDropdown('data')" class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in reData">
                                 <div
                                     class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
+                                        class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
                                     <div class="text-xs font-normal text-black">
@@ -252,7 +252,7 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="flex h-screen flex-col bg-white px-8 py-4 border-r border-brand-divider"></div>
+                <div class="flex h-screen flex-col bg-white px-8 py-4"></div>
             </div>
 
         </div>

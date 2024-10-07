@@ -198,7 +198,7 @@ onMounted(() => {
             class="min-w-[10vw] flex flex-row shadow-4xl absolute bottom-0 left-[-336px] translate-y-full duration-800 z-50">
 
             <div class="flex flex-col min-w-[25vw]">
-                <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
+                <div class="bg-gray-300  p-5 min-h-screen">
                     <NuxtLink to="/acentria-group-insurance"
                         class="group flex w-full flex-row items-center gap-2 whitespace-nowrap px-2 py-2 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
                         <span class="group-hover:button-animation text-xl mt-3 text-brand-primary">
@@ -218,7 +218,7 @@ onMounted(() => {
 
                         </p>
                     </div>
-                    <div class="border-r border-brand-divider flex flex-col justify-between">
+                    <div class=" flex flex-col justify-between">
                         <NuxtLink to="/acentria-group-insurance"
                             class="button-animation mt-10 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-xs">
                             Learn More
@@ -238,10 +238,10 @@ onMounted(() => {
             </div>
 
             <div class="flex flex-col min-w-[25vw] min-h-screen">
-                <div class="border-r border-brand-divider">
+                <div class="">
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')" href="#"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="text-brand-primary mr-2 fas fa-user text-lg undefined mr-5" translate="no"></i>
                         Personal Cover <i
                             :class="[isPersonalDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -256,7 +256,7 @@ onMounted(() => {
                                 <div
                                     class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-2 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
+                                        class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
                                     <div class="text-xs font-normal text-black">
@@ -268,11 +268,11 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="border-r border-brand-divider">
+                <div class="">
                     <a @mouseenter="showDropdown('corporate')" @mouseleave="hideDropdown('corporate')" href="#"
                         :class="[isCorporateDropdownVisible ? '!text-brand-primary' : '']"
-                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="text-brand-primary mr-2 fas fa-users text-lg undefined mr-5" translate="no"></i>
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-users text-lg undefined mr-5" translate="no"></i>
                         Corporate Cover <i
                             :class="[isCorporateDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -281,12 +281,12 @@ onMounted(() => {
                     <div v-show="isCorporateDropdownVisible" @mouseenter="showDropdown('corporate')"
                         @mouseleave="hideDropdown('corporate')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in corpCover.items">
                                 <div
                                     class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
+                                        class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
                                     <div class="text-xs font-normal text-black">
@@ -298,11 +298,11 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="border-r border-brand-divider">
+                <div class="">
                     <a @mouseenter="showDropdown('business')" @mouseleave="hideDropdown('business')" href="#"
                         :class="[isBusinessDropdownVisible ? '!text-brand-primary' : '']"
-                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="text-brand-primary mr-2 fas fa-briefcase text-lg undefined mr-5" translate="no"></i>
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-briefcase text-lg undefined mr-5" translate="no"></i>
                         Business Cover <i
                             :class="[isBusinessDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -311,12 +311,12 @@ onMounted(() => {
                     <div v-show="isBusinessDropdownVisible" @mouseenter="showDropdown('business')"
                         @mouseleave="hideDropdown('business')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in bizCover.items">
                                 <div
                                     class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
+                                        class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
                                     <div class="text-xs font-normal text-black">
@@ -328,11 +328,11 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="border-r border-brand-divider">
+                <div class="">
                     <a @mouseenter="showDropdown('claims')" @mouseleave="hideDropdown('claims')" href="#"
                         :class="[isClaimsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="text-brand-primary mr-2 fas fa-file-alt text-lg undefined mr-5" translate="no"></i>
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-file-alt text-lg undefined mr-5" translate="no"></i>
                         Claims <i
                             :class="[isClaimsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -340,12 +340,12 @@ onMounted(() => {
 
                     <div v-show="isClaimsDropdownVisible" @mouseenter="showDropdown('claims')"
                         @mouseleave="hideDropdown('claims')" class="shadow-4xl absolute right-0 top-0 translate-x-full">
-                        <div class="flex h-screen flex-col rounded-br-xl bg-white">
+                        <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in claims.items">
                                 <div
                                     class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div
-                                        class="text-sm font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
+                                        class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
                                     </div>
                                     <div class="text-xs font-normal text-black">
@@ -357,24 +357,22 @@ onMounted(() => {
                     </div>
                 </div>
 
-                <div class="border-r border-brand-divider">
+                <div class=" bg-white">
 
-                    <a href="#"
-                        class="bg-brand-primary flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-balance-scale text-lg undefined mr-5" translate="no"></i>
-                        Compare Quotes <i
-                            class="absolute fas fa-arrow-right !right-5 hover:text-brand-primary hover:animate-in hover:slide-in-from-left"></i>
-                    </a>
+                    <div class="flex justify-center">
+                        <a href="/insurance.acentriagroup.com" target="_blank"
+                            class=" button-animation mt-10 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-xs">
+                            Compare Quotes Online
+                        </a>
+                    </div>
 
-                    <!-- <button type="button"
-                        class="mt-5 rounded-md bg-brand-primary px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                        Compare Quotes Online
-                    </button> -->
+
+                   
 
 
                 </div>
 
-                <div class="flex h-screen flex-col bg-white px-8 py-4 border-r border-brand-divider"></div>
+                <div class="flex h-screen flex-col bg-white px-8 py-4"></div>
             </div>
 
         </div>

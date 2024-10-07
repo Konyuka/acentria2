@@ -374,7 +374,7 @@ onBeforeUnmount(() => {
                             <NuxtLink to="/about-acentria-group" @mouseenter="showDropdown('about')"
                                 @mouseleave="hideDropdown('about')"
                                 :class="[isAboutDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/about-us/who-we-are' ? '!text-brand-primary scale-105' : '']"
-                                class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 About Us
                             </NuxtLink>
 
@@ -391,7 +391,7 @@ onBeforeUnmount(() => {
                             <NuxtLink to="/acentria-group-insurance" @mouseenter="showDropdown('insurance')"
                                 @mouseleave="hideDropdown('insurance')"
                                 :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
-                                class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 Insurance
                             </NuxtLink>
 
@@ -409,7 +409,7 @@ onBeforeUnmount(() => {
                                 <NuxtLink to="/acentria-group-reinsurance" @mouseenter="showDropdown('reinsurance')"
                                     @mouseleave="hideDropdown('reinsurance')"
                                     :class="[isReinsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : '']"
-                                    class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                     Reinsurance
                                 </NuxtLink>
 
@@ -426,7 +426,7 @@ onBeforeUnmount(() => {
                                 <NuxtLink to="/acentria-group-actuarial" @mouseenter="showDropdown('actuarial')"
                                     @mouseleave="hideDropdown('actuarial')"
                                     :class="[isActuarialDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : '']"
-                                    class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                     Actuarial
                                 </NuxtLink>
 
@@ -442,7 +442,7 @@ onBeforeUnmount(() => {
                             <a href="https://tech.acentriagroup.com/" target="_blank"
                                 class="relative flex flex-col px-4 hover:cursor-default">
                                 <div
-                                    class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                     Technologies
                                 </div>
                             </a>
@@ -454,7 +454,7 @@ onBeforeUnmount(() => {
                             <div class="relative flex flex-col px-4 hover:cursor-default">
                                 <NuxtLink to="/acentria-group-investment"
                                     :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : '']"
-                                    class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                                    class="mt-5 flex pb-5 pt-4 text-md font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                     Investments
                                 </NuxtLink>
                             </div>
