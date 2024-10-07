@@ -331,11 +331,11 @@ onBeforeUnmount(() => {
                         class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                         Home
                     </NuxtLink>
-                    <NuxtLink to="/about-acentria-group"
+                    <!-- <NuxtLink to="/about-acentria-group"
                         :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
                         class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
                         About
-                    </NuxtLink>
+                    </NuxtLink> -->
                     <NuxtLink to="/acentria-news-and-blogs"
                         :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
                         class="relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
