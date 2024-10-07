@@ -1,143 +1,53 @@
 <script setup>
 const ReinsuranceBannerContent = ref({
-    title: 'Cookie Policy',
-    image: 'https://images.pexels.com/photos/357514/pexels-photo-357514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Who We Are',
+    image: 'https://img.freepik.com/free-vector/v915-red_53876-174930.jpg?t=st=1728266840~exp=1728270440~hmac=e94c9d586c21dc1e57888d5e3b499c5109a624670b07a4c6188be1f6b9a5686b&w=826',
 })
 
 </script>
 
 <template>
     <section>
-        <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+        <!-- <ReinsuranceBanner :content="ReinsuranceBannerContent" /> -->
 
-        <div class="bg-white px-6 py-10 lg:px-8 font-sans">
-            <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-
-                <p class="mt-6 text-xl leading-8">
-                    Welcome to the Acentria Insurance website. Our website uses cookies. By using our website, you
-                    consent to the use of cookies in accordance with this Cookie Policy.
-                </p>
-
-
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">What are Cookies?</p>
-                    <p class="mt-8">
-                        Cookies are small text files that are stored on your device when you visit a website. They are
-                        widely used to make websites work more efficiently and to provide information to website owners.
-                    </p>
+        <div class="bg-white px-6 py-1  font-sans">
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
+                data-v-inspector="components/Why.vue:8:9">
+                <div class="relative py-4 lg:basis-1/2 scale-90" data-v-inspector="components/Why.vue:9:13">
+                    <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
+                        decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                        class="rounded-lg" src="/img/innovate.png" data-v-inspector="components/Why.vue:10:17" />
                 </div>
-
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">How We Use Cookies</p>
-                    <p class="mt-8">
-                        Acentria Insurance uses cookies for the following purposes:
-                    </p>
-                    <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-                        <li class="flex gap-x-3">
-                            <svg class="mt-1 h-5 w-5 flex-none text-brand-primary" viewBox="0 0 20 20"
-                                fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span>
-                                <strong class="font-semibold text-gray-900">
-                                    Essential Cookies: These cookies are necessary for the website to function properly.
-                                    They enable you to navigate the website and use its features.
-                                </strong>
-                            </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="mt-1 h-5 w-5 flex-none text-brand-primary" viewBox="0 0 20 20"
-                                fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span>
-                                <strong class="font-semibold text-gray-900">
-                                    Analytics Cookies: These cookies help us understand how visitors interact with our
-                                    website by collecting and reporting information anonymously. We use Google Analytics
-                                    for this purpose.
-                                </strong>
-                            </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="mt-1 h-5 w-5 flex-none text-brand-primary" viewBox="0 0 20 20"
-                                fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span>
-                                <strong class="font-semibold text-gray-900">
-                                    Preference Cookies: These cookies allow the website to remember choices you make,
-                                    such as language preferences and settings.
-                                </strong>
-                            </span>
-                        </li>
-                        <li class="flex gap-x-3">
-                            <svg class="mt-1 h-5 w-5 flex-none text-brand-primary" viewBox="0 0 20 20"
-                                fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span>
-                                <strong class="font-semibold text-gray-900">
-                                    Marketing Cookies: We may use marketing cookies to display personalized
-                                    advertisements based on your interests.
-                                </strong>
-                            </span>
-                        </li>
-                    </ul>
+                <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
+                    <label class="text-base leading-normal font-regular text-light-highlight font-bold"
+                        data-v-inspector="components/Why.vue:15:17">Acentria Group
+                    </label>
+                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                        data-v-inspector="components/Why.vue:18:17">
+                        Who we are
+                    </h2>
+                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            data-v-inspector="components/Why.vue:23:21">
+                            Acentria Group of companies is a trusted global
+                            consultant in Risk and Insurance, Reinsurance,
+                            Actuarial, and Investment Advisory. With decades of
+                            experience and a commitment to excellence, we provide
+                            comprehensive solutions tailored to meet the unique
+                            needs of our clients. Our team of experts works
+                            diligently to deliver innovative strategies that enhance
+                            risk management, optimize insurance and reinsurance
+                            programs, and provide insightful actuarial and
+                            investment advice. By partnering with Acentria Group,
+                            you gain access to a wealth of knowledge and resources
+                            that empower you to make informed decisions, mitigate
+                            risks, and achieve your financial goals.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">Types of Cookies We Use</p>
-                    <p class="mt-8">
-                        <strong>Session Cookies:</strong> These are temporary cookies that are deleted when you close
-                        your browser.
-                    </p>
-                    <p class="mt-4">
-                        <strong>Persistent Cookies:</strong> These cookies remain on your device for a set period or
-                        until you delete them manually.
-                    </p>
-                </div>
-
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">How to Control Cookies</p>
-                    <p class="mt-8">
-                        You can control and/or delete cookies as you wish. You can delete all cookies that are already
-                        on your computer, and you can set most browsers to prevent them from being placed. If you do
-                        this, however, you may have to manually adjust some preferences every time you visit a site, and
-                        some services and functionalities may not work.
-                    </p>
-                </div>
-
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">Third-Party Cookies</p>
-                    <p class="mt-8">
-                        We may also use third-party cookies on our website for various purposes, including but not
-                        limited to, understanding site usage, serving advertisements, and providing social media
-                        features.
-                    </p>
-                </div>
-
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">Changes to This Cookie Policy</p>
-                    <p class="mt-8">
-                        We may update our Cookie Policy from time to time. Any changes will be posted on this page with
-                        the revised date.
-                    </p>
-                </div>
-
-
-
             </div>
         </div>
 
-        <InTouch />
     </section>
 </template>
 

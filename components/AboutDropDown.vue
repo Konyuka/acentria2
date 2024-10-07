@@ -138,27 +138,27 @@ const hideDropdown = (menu) => {
     {
         name: 'How we work',
     description: 'Learn about our corporate governance practices and ethical standards.',
-    link: '/',
+    link: '/about-us/how-we-work',
     },
     {
         name: 'Our risk Management',
     description: 'Understand our approach to risk management and mitigation.',
-    link: '/',
+    link: '/about-us/our-risk-management',
     },
     {
         name: 'Customer feedback & dispute resolution',
     description: 'See how we handle customer feedback and resolve disputes.',
-    link: '/',
+    link: '/about-us/customer-feedback-dispute-resolution',
     },
     {
         name: 'Complaint',
     description: 'Learn about our complaint handling process and how to file a complaint.',
-    link: '/',
+    link: '/about-us/complaint',
     },
     {
         name: 'Data Privacy',
     description: 'Read about our commitment to data privacy and protection.',
-    link: '/',
+        link: '/privacy-policy',
     },
     ]);
 

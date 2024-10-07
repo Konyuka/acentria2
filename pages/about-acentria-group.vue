@@ -51,6 +51,7 @@ onMounted(() => {
 
                             <div data-v-02281a80="" class="font-sans py-2 text-white"
                                 style="background-color: rgb(246, 248, 252)">
+                                
                                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:8:9">
                                     <div class="relative py-4 lg:basis-1/2 scale-90"
@@ -91,6 +92,7 @@ onMounted(() => {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:32:9">
                                     <div class="relative py-4 lg:basis-1/2 content-center"
@@ -132,6 +134,7 @@ onMounted(() => {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:54:9">
                                     <div class="relative py-4 lg:basis-1/2 content-center"
@@ -168,6 +171,7 @@ onMounted(() => {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
                                     data-v-inspector="components/Why.vue:32:9">
                                     <div class="relative py-4 lg:basis-1/2" data-v-inspector="components/Why.vue:33:13">
