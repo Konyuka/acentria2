@@ -317,7 +317,7 @@ onMounted(() => {
 
                     <a @mouseenter="showDropdown('aboutUs')" @mouseleave="hideDropdown('aboutUs')" href="#"
                         :class="[isAboutUsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-calculator text-lg undefined" translate="no"></i>
                         About Us <i
                             :class="[isAboutUsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -347,7 +347,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('companies')" @mouseleave="hideDropdown('companies')" href="#"
                         :class="[isCompaniesDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-building text-lg undefined" translate="no"></i>
                         Companies <i
                             :class="[isCompaniesDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -378,7 +378,7 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('corporateGovernance')"
                         @mouseleave="hideDropdown('corporateGovernance')" href="#"
                         :class="[isCorporateGovernanceDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-gavel text-lg undefined" translate="no"></i>
                         Corporate Governance <i
                             :class="[isCorporateGovernanceDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -408,7 +408,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('ourCommitment')" @mouseleave="hideDropdown('ourCommitment')" href="#"
                         :class="[isOurCommitmentDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-hand-holding-heart text-lg undefined" translate="no"></i>
                         Our Commitment <i
                             :class="[isOurCommitmentDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -438,7 +438,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('sustainability')" @mouseleave="hideDropdown('sustainability')"
                         href="#" :class="[isSustainabilityDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-leaf text-lg undefined" translate="no"></i>
                         Sustainability <i
                             :class="[isSustainabilityDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -468,7 +468,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('joinUs')" @mouseleave="hideDropdown('joinUs')" href="#"
                         :class="[isJoinUsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-users text-lg undefined" translate="no"></i>
                         Join Us <i
                             :class="[isJoinUsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -497,7 +497,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('leadership')" @mouseleave="hideDropdown('leadership')" href="#"
                         :class="[isLeadershipDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-users text-lg undefined" translate="no"></i>
                         Leadership <i
                             :class="[isLeadershipDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -527,7 +527,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('awardsRecognitions')" @mouseleave="hideDropdown('awardsRecognitions')"
                         href="#" :class="[isAwardsRecognitionsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-trophy text-lg undefined" translate="no"></i>
                         Awards & Recognitions <i
                             :class="[isAwardsRecognitionsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -557,7 +557,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('clientTestimonials')" @mouseleave="hideDropdown('clientTestimonials')"
                         href="#" :class="[isClientTestimonialsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-comments text-lg undefined" translate="no"></i>
                         Client Testimonials <i
                             :class="[isClientTestimonialsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -587,7 +587,7 @@ onMounted(() => {
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('newsUpdates')" @mouseleave="hideDropdown('newsUpdates')" href="#"
                         :class="[isNewsUpdatesDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-newspaper text-lg undefined" translate="no"></i>
                         News & Updates <i
                             :class="[isNewsUpdatesDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
