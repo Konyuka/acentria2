@@ -149,7 +149,7 @@ const showDropdown = (menu) => {
     <div>
 
 
-        <div class="font-sans w-full border-t-8 border-brand-primary bg-brand-dim px-4 py-10">
+        <div class="font-sans w-full border-t-8 border-black bg-brand-dim px-4 py-10">
             <div class="container mx-auto">
                 <div class="mb-14 flex flex-col justify-between text-dark-content lg:flex-row lg:text-base">
 

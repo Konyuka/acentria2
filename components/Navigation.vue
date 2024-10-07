@@ -17,6 +17,7 @@ const isInsuranceDropdownVisible = ref(false);
 const isActuarialDropdownVisible = ref(false);
 const isITDropdownVisible = ref(false);
 const isReinsuranceDropdownVisible = ref(false);
+const isAboutDropdownVisible = ref(false);
 
 watch(currentRoute, (newValue) => {
     if (newValue) {
@@ -215,28 +216,38 @@ const showDropdown = (menu) => {
         isActuarialDropdownVisible.value = false;
         isITDropdownVisible.value = false;
         isReinsuranceDropdownVisible.value = false;
-
+        isAboutDropdownVisible.value = false;
 
         isInsuranceDropdownVisible.value = true;
     } else if (menu == 'actuarial') {
         isInsuranceDropdownVisible.value = false;
         isITDropdownVisible.value = false;
         isReinsuranceDropdownVisible.value = false;
+        isAboutDropdownVisible.value = false;
 
         isActuarialDropdownVisible.value = true;
     } else if (menu == 'it') {
         isInsuranceDropdownVisible.value = false;
         isActuarialDropdownVisible.value = false;
         isReinsuranceDropdownVisible.value = false;
+        isAboutDropdownVisible.value = false;
 
         isITDropdownVisible.value = true;
     } else if (menu == 'reinsurance') {
         isInsuranceDropdownVisible.value = false;
         isActuarialDropdownVisible.value = false;
         isITDropdownVisible.value = false;
+        isAboutDropdownVisible.value = false;
 
         isReinsuranceDropdownVisible.value = true;
-    }
+    } else if (menu == 'about'){
+        isInsuranceDropdownVisible.value = false;
+        isActuarialDropdownVisible.value = false;
+        isITDropdownVisible.value = false;
+        isReinsuranceDropdownVisible.value = false;
+
+        isAboutDropdownVisible.value = true;
+    } 
 };
 
 const hideDropdown = (menu) => {
@@ -252,6 +263,8 @@ const hideDropdown = (menu) => {
             isITDropdownVisible.value = false;
         } else if (menu == 'reinsurance') {
             isReinsuranceDropdownVisible.value = false;
+        }else if (menu == 'about') {
+            isAboutDropdownVisible.value = false;
         }
     }, 200);
 };
@@ -355,19 +368,22 @@ onBeforeUnmount(() => {
                 </div>
                 <div class="flex font-sans mr-20">
 
-                    <!-- <div class="z-50 content-center">
+                    <div class="z-50 content-center">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="/about-acentria-group" @mouseenter="showDropdown('insurance')"
-                                @mouseleave="hideDropdown('insurance')"
-                                :class="[isInsuranceDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
-                                class="flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
+                            <NuxtLink to="/about-acentria-group" @mouseenter="showDropdown('about')"
+                                @mouseleave="hideDropdown('about')"
+                                :class="[isAboutDropdownVisible ? '!text-brand-primary' : '', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
+                                class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 About Us
                             </NuxtLink>
-    
-                            
-    
+
+                            <AboutDropDown v-show="isAboutDropdownVisible" @mouseenter="showDropdown('about')"
+                                @mouseleave="hideDropdown('about')" class="" />
+
+
+
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="z-50 content-center">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
@@ -377,8 +393,6 @@ onBeforeUnmount(() => {
                                 class="mt-5 flex pb-5 pt-4 text-base font-semibold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 Insurance
                             </NuxtLink>
-
-                            <!-- <div v-if="isInsuranceDropdownVisible" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div> -->
 
 
                             <InsuranceDropDown v-show="isInsuranceDropdownVisible"
