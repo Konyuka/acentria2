@@ -259,17 +259,17 @@ const hideDropdown = (menu) => {
     {
         name: 'Blogs',
     description: 'Stay updated with our latest blog posts and articles.',
-    link: '/acentria-news-and-blog',
+    link: '/acentria-news-and-blogs',
     },
     {
         name: 'Events',
     description: 'Find out about upcoming events and activities.',
-        link: '/acentria-news-and-blog',
+        link: '/acentria-news-and-blogs',
     },
     {
         name: 'Media',
     description: 'Access our media resources and press releases.',
-        link: '/acentria-news-and-blog',
+        link: '/acentria-news-and-blogs',
     },
     ]);
 
