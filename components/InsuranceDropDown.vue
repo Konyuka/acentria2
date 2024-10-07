@@ -242,7 +242,7 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('personal')" @mouseleave="hideDropdown('personal')" href="#"
                         :class="[isPersonalDropdownVisible ? '!text-brand-primary' : '']"
                         class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-user text-lg undefined mr-5" translate="no"></i>
+                        <i class="text-brand-primary mr-2 fas fa-user text-lg undefined mr-5" translate="no"></i>
                         Personal Cover <i
                             :class="[isPersonalDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -272,7 +272,7 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('corporate')" @mouseleave="hideDropdown('corporate')" href="#"
                         :class="[isCorporateDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-users text-lg undefined mr-5" translate="no"></i>
+                        <i class="text-brand-primary mr-2 fas fa-users text-lg undefined mr-5" translate="no"></i>
                         Corporate Cover <i
                             :class="[isCorporateDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -302,7 +302,7 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('business')" @mouseleave="hideDropdown('business')" href="#"
                         :class="[isBusinessDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-briefcase text-lg undefined mr-5" translate="no"></i>
+                        <i class="text-brand-primary mr-2 fas fa-briefcase text-lg undefined mr-5" translate="no"></i>
                         Business Cover <i
                             :class="[isBusinessDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -332,7 +332,7 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('claims')" @mouseleave="hideDropdown('claims')" href="#"
                         :class="[isClaimsDropdownVisible ? '!text-brand-primary' : '']"
                         class="flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-file-alt text-lg undefined mr-5" translate="no"></i>
+                        <i class="text-brand-primary mr-2 fas fa-file-alt text-lg undefined mr-5" translate="no"></i>
                         Claims <i
                             :class="[isClaimsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>

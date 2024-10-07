@@ -167,7 +167,7 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')" href="#"
                         :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
                         class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-shield text-lg undefined" translate="no"></i>
+                        <i class="text-brand-primary mr-2 fas fa-shield text-lg undefined" translate="no"></i>
                         Reinsurance Services <i
                             :class="[isServicesDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -197,7 +197,7 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('solutions')" @mouseleave="hideDropdown('solutions')" href="#"
                         :class="[isSolutionsDropdownVisible ? '!text-brand-primary' : '']"
                         class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-cogs text-lg undefined" translate="no"></i>
+                        <i class="text-brand-primary mr-2 fas fa-cogs text-lg undefined" translate="no"></i>
                         Reinsurance Solutions <i
                             :class="[isSolutionsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
@@ -227,7 +227,7 @@ onMounted(() => {
                     <a @mouseenter="showDropdown('data')" @mouseleave="hideDropdown('data')" href="#"
                         :class="[isDataDropdownVisible ? '!text-brand-primary' : '']"
                         class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
-                        <i class="fas fa-chart-line text-lg undefined" translate="no"></i>
+                        <i class="text-brand-primary mr-2 fas fa-chart-line text-lg undefined" translate="no"></i>
                         Data and Modelling <i
                             :class="[isDataDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
                             class="absolute fas fa-caret-right !right-5"></i>
