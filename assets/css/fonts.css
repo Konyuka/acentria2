@@ -45,7 +45,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-html {
+/* html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
@@ -56,4 +56,75 @@ html {
   font-feature-settings: normal;
   font-variation-settings: normal;
   font-weight: 300;
+} */
+
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  color: #333; /* Set a default text color */
+  background-color: #f9f9f9; /* Set a light background color */
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px; /* Set a base font size */
+  line-height: 1.6; /* Slightly increase line height for better readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; /* Use a bolder weight for headings */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #222; /* Darker color for headings */
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-weight: 400; /* Normal weight for paragraphs */
+}
+
+
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid #ccc;
+  background-color: #f9f9f9;
+  font-style: italic;
+  color: #555;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
