@@ -92,22 +92,22 @@ const hideDropdown = (menu) => {
     {
         name: 'What we do',
     description: 'Discover the range of services and solutions we offer to our clients.',
-    link: '/about-us/what-we-do',
+        link: '/about-us/who-we-are',
     },
     {
         name: 'Our Journey',
     description: 'Explore our journey from inception to becoming a market leader.',
-    link: '/about-us/our-journey',
+        link: '/about-us/who-we-are',
     },
     {
         name: 'Our vision, Mission & Values',
     description: 'Understand our vision, mission, and the core values that guide our actions.',
-    link: '/about-us/our-vision-mission-values',
+        link: '/about-us/who-we-are',
     },
     {
         name: 'Awards & Recognitions',
     description: 'See the awards and recognitions we have received over the years.',
-    link: '/about-us/awards-recognitions',
+        link: '/about-us/who-we-are',
     },
     ]);
 
@@ -189,22 +189,22 @@ const hideDropdown = (menu) => {
     {
         name: 'Our purpose',
     description: 'Our commitment to sustainability and responsible business practices.',
-    link: '/about-us/our-purpose',
+    link: '/esg',
     },
     {
         name: 'Goals & commitments',
     description: 'Our sustainability goals and the commitments we have made.',
-    link: '/about-us/goals-commitments',
+        link: '/esg',
     },
     {
         name: 'Commitments',
     description: 'Detailed information about our sustainability commitments.',
-    link: '/about-us/commitments',
+        link: '/esg',
     },
     {
         name: 'Sustainability policies',
     description: 'Our policies and guidelines for sustainable business operations.',
-    link: '/about-us/sustainability-policies',
+        link: '/esg',
     },
     ]);
 
@@ -212,12 +212,12 @@ const hideDropdown = (menu) => {
     {
         name: 'New customer',
     description: 'Join us as a new customer and experience our exceptional services.',
-    link: '/about-us/new-customer',
+    link: '/contact-acentria-group',
     },
     {
         name: 'Suppliers',
     description: 'Partner with us as a supplier and grow your business.',
-    link: '/about-us/suppliers',
+        link: '/contact-acentria-group',
     },
     {
         name: 'Careers',
@@ -243,7 +243,7 @@ const hideDropdown = (menu) => {
     {
         name: 'Awards & Recognitions',
     description: 'Discover the awards and recognitions we have earned.',
-    link: '/about-us/awards-recognitions',
+            link: '/about-acentria-group',
     },
     ]);
 
@@ -251,7 +251,7 @@ const hideDropdown = (menu) => {
     {
         name: 'What Our Customers are Saying',
     description: 'Read testimonials from our satisfied customers.',
-    link: '/about-us/client-testimonials',
+    link: '/about-acentria-group',
     },
     ]);
 
@@ -273,6 +273,10 @@ const hideDropdown = (menu) => {
     },
     ]);
 
+
+const setScrollTo = (name) => {
+    localStorage.setItem('scrollTo', name);
+}    
 onMounted(() => {
     showDropdown('personal')
     isAboutUsDropdownVisible.value = true;
@@ -289,7 +293,7 @@ onMounted(() => {
 
             <div class="flex flex-col min-w-[24vw]">
                 <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
-                    <NuxtLink to="/acentria-group-insurance"
+                    <NuxtLink to="/acentria-group-insurance" @click="setScrollTo()"
                         class="group flex w-full flex-row items-center gap-2 whitespace-nowrap px-2 py-2 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
                         <span class="group-hover:button-animation text-xl mt-3 text-brand-primary">
                             Acentria Group
@@ -324,7 +328,7 @@ onMounted(() => {
                         @mouseleave="hideDropdown('aboutUs')"
                         class="shadow-4xl absolute right-0 top-0 translate-x-full">
                         <div class="flex h-screen flex-col rounded-br-xl bg-white">
-                            <NuxtLink :to="item.link" v-for="item in aboutUs">
+                            <NuxtLink :to="item.link" v-for="item in aboutUs" @click="setScrollTo(item.name)">
                                 <div
                                     class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
                                     <div

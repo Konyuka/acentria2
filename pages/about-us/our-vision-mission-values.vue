@@ -17,14 +17,6 @@ const selectedMenu = computed(() => {
 
         <section id="" class="relative py-5 bg-white text-left">
             <div class="container px-4">
-                <!-- <h2
-                                        class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
-                                        Our
-                                        <span
-                                            class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                                            Vision, Mission & Values
-                                        </span>
-                                    </h2> -->
 
                 <div class="my-1">
                     <MissionTabs ref="mission" />

@@ -26,6 +26,7 @@ watch(currentRoute, (newValue) => {
         isActuarialDropdownVisible.value = false
         isITDropdownVisible.value = false
         isReinsuranceDropdownVisible.value = false
+        isAboutDropdownVisible.value = false
     }
 })
 
