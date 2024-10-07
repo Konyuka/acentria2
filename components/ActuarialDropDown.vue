@@ -144,7 +144,7 @@ onMounted(()=>{
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('consulting')" @mouseleave="hideDropdown('consulting')" href="#"
                         :class="[isConsultingDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-calculator text-lg undefined" translate="no"></i>
                         Actuarial Consulting <i
                             :class="[isConsultingDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -174,7 +174,7 @@ onMounted(()=>{
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')" href="#"
                         :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-briefcase text-lg undefined" translate="no"></i>
                         Actuarial Services <i
                             :class="[isServicesDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -204,7 +204,7 @@ onMounted(()=>{
                 <div class="border-r border-brand-divider">
                     <a @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')" href="#"
                         :class="[isProductsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-4 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-sm font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="fas fa-box text-lg undefined" translate="no"></i>
                         Actuarial Products <i
                             :class="[isProductsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
