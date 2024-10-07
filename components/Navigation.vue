@@ -294,31 +294,31 @@ onBeforeUnmount(() => {
                     <div class="flex gap-6">
                         <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
                             <div
-                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                 <i class="!text-xl fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
                             </div>
                         </a>
                         <a href="https://x.com/acentriagroup?lang=en" target="_blank">
                             <div
-                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                 <i class="!text-xl fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
                             </div>
                         </a>
                         <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
                             <div
-                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                 <i class="!text-xl fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
                             </div>
                         </a>
                         <a href="https://www.instagram.com/acentriagroup/" target="_blank">
                             <div
-                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                 <i class="!text-xl fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
                             </div>
                         </a>
                         <a href="https://www.tiktok.com/@acentria.group" target="_blank">
                             <div
-                                class="bg-white w-8 h-8 rounded-full flex justify-center items-center button-animation">
+                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                 <i class="!text-xl fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
                             </div>
                         </a>
