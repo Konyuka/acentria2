@@ -12,7 +12,7 @@ const props = defineProps({
         <div class="relative isolate overflow-hidden bg-white py-14 font-sans">
             <img :src="content.image" alt="Windmill"
                 class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
-            <div class="absolute inset-0 bg-black opacity-5"></div>
+            <div class="absolute inset-0 bg-black opacity-60"></div>
             <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
                 aria-hidden="true">
                 <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-primary to-black opacity-60"
