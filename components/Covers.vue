@@ -27,7 +27,7 @@
                     </fieldset>
                 </div>
                 <div
-                    class="isolate mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 xl:mx-0 xl:max-w-none xl:grid-cols-4">
+                    class="isolate mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 xl:mx-0 xl:max-w-none xl:grid-cols-3">
                     <div v-for="tier in pricing.tiers" :key="tier.id"
                         :class="[tier.mostPopular ? 'ring-2 ring-brand-primary' : 'ring-1 ring-gray-200', 'rounded-3xl p-8']">
                         <h2 :id="tier.id"
