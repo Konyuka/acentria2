@@ -6,9 +6,9 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative h-[80vh]">
+    <div class="relative h-[68vh]">
         <!-- <img :src="slide.imageUrl" class="w-full h-full object-cover" /> -->
-        <video autoplay muted loop class="drop-shadow-md w-full h-[78vh] object-cover" src="/img/hd2.mp4"
+        <video autoplay muted loop class="drop-shadow-md w-full h-[68vh] object-cover" src="/img/hd2.mp4"
             style="color: transparent">
             Your browser does not support the video tag.
         </video>

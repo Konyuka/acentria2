@@ -33,16 +33,83 @@ const principles = ref([
 
 ])
 
+const ReinsuranceBannerContent = ref({
+    title: 'Acentria Group Careers',
+    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+})
 
+const joinAsMembers = ref([
+    {
+        name: 'Our Vision',
+        icon: 'fas fa-user-plus',
+        description: 'To be a global leader empowering prosperity.',
+    },
+    {
+        name: 'Our Mission',
+        icon: 'fas fa-truck',
+        description: 'To provide financial and risk advisory services through innovations that empower our clients’ prosperity.',
+    },
+    {
+        name: 'Our Mantra',
+        icon: 'fas fa-briefcase',
+        description: '<div class="text-center"> <span class="text-brand-primary">#</span>Empower <span class="text-brand-primary">#</span>Innovate <span class="text-brand-primary">#</span>Prosper </div>',
+    },
+])
 </script>
 
 <template>
     <main>
         <div>
             <div>
-                <div class="isolate !mb-5 py-5 md:py-0">
+
+                <div class="text-center">
+                    <span class="text-brand-primary">#</span>Empower <span class="text-brand-primary">#</span>Innovate
+                    <span class="text-brand-primary">#</span>Prosper
+                </div>
+
+                <div class="relative isolate overflow-hidden bg-white py-20">
+                    <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
+                        class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+
+                    <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
+                        <div class="grid grid-cols-10 -gap-10">
+                            <div class="text-white col-span-1">
+                                <div class="w-20 h-1 bg-white mt-3">
+
+                                </div>
+                            </div>
+                            <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
+                                <h2
+                                    class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
+                                    Careers
+                                </h2>
+                                <h2
+                                    class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
+                                    {{ ReinsuranceBannerContent.title }}
+                                </h2>
+                                <p class="text-white text-left max-w-2xl mt-7">
+                                    At Acentria, we understand the profound impact businesses can have on the world.
+                                    That’s why
+                                    we are dedicated to integrating Environmental, Social, and Governance (ESG)
+                                    principles into
+                                    our core business practices. Our commitment goes beyond financial success, focusing
+                                    on
+                                    sustainable and responsible business operations that contribute positively to the
+                                    well-being
+                                    of our planet and society.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="isolate !mb-5 py-5 md:py-0 mt-10">
                     <div class="relative isolate -z-10">
                         <div class="container overflow-hidden">
+
                             <div class="max-w-full">
                                 <div
                                     class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
@@ -100,46 +167,59 @@ const principles = ref([
                                 Acentria Group?
                             </span>
                         </h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
-                            <div class="font-sans content-center items-center">
-                                <div class="flex flex-row gap-2">
-                                    <i class="fas fa-eye text-xl text-brand-primary mr-4"></i>
-                                    <div>
-                                        <h5 id=""
-                                            class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                            Our
-                                            <span class="text-brand-primary">Vision</span>
-                                        </h5>
-                                        <p class="text-base leading-normal font-regular text-light-content text-base">
-                                            To be a global leader empowering prosperity.
-                                        </p>
+
+                        <div class="bg-white !font-sans container my-5">
+                            <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
+                                <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
+                                    <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
+                                        <div v-for="member in joinAsMembers" :key="member.name"
+                                            class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
+                                            <div class="sm:flex-shrink-0 flex justify-center">
+                                                <i :class="member.icon" class="text-black text-2xl"></i>
+                                            </div>
+                                            <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                                <h3
+                                                    class="text-lg text-brand-primary font-semibold flex justify-center">
+                                                    {{ member.name
+                                                    }}</h3>
+                                                <p class="mt-2 text-xs text-gray-500" v-html="member.description"></p>
+                                                <i
+                                                    class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row gap-2 mt-5">
-                                    <i class="fas fa-compass text-xl text-brand-primary mr-4"></i>
-                                    <div>
-                                        <h5 id=""
-                                            class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                            Our
-                                            <span class="text-brand-primary">Mission</span>
-                                        </h5>
-                                        <p class="text-base leading-normal font-regular text-light-content text-base">
-                                            To provide financial and risk advisory services through innovations that
-                                            empower our clients’ prosperity.
-                                        </p>
-                                    </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-5"
+                    style="background-image:url('/img/bg.png');">
+                    <div class="container">
+                        <div
+                            class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                            <div
+                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
+                                <div class="w-full">
+                                    <p
+                                        class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
+                                        At our company, we specialize in providing comprehensive insurance and
+                                        reinsurance solutions,
+                                        backed by expert actuarial services and strategic investment management. Our
+                                        cutting-edge
+                                        technology ensures that we deliver innovative and efficient solutions tailored
+                                        to meet the
+                                        unique needs of our clients. Trust us to safeguard your future with precision
+                                        and excellence.
+                                    </p>
                                 </div>
 
                             </div>
-                            <div>
-                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="500" height="350" decoding="async" data-nimg="1"
-                                    style="color: transparent; object-fit: contain" class="rounded-xl"
-                                    src="/img/empower.jpg" />
-                            </div>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 <div class="py-5 text-white" style="background-color: #f6f8fc">
                     <div class="undefined">
@@ -156,7 +236,7 @@ const principles = ref([
                                     class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0">
 
                                     <div v-for="principle in principles"
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[90vw] rounded-xl bg-white p-5 md:max-w-[90vw] w-full h-full">
+                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[90vw] rounded-xs bg-white p-5 md:max-w-[90vw] w-full h-full">
                                         <div class="flex h-fit flex-col">
                                             <i :class="[principle.icon]" class="text-brand-primary text-4xl pb-4"></i>
                                             <div>

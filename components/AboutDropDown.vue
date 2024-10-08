@@ -16,6 +16,30 @@ const isAwardsRecognitionsDropdownVisible = ref(false);
 const isClientTestimonialsDropdownVisible = ref(false);
 const isNewsUpdatesDropdownVisible = ref(false);
 
+const insuranceProductsMenus = ref([
+    {
+        name: 'Compare Quotes Instantly  Online',
+        link: '',
+    },
+    {
+        name: 'Get a Siscount on your Insurances',
+        link: '',
+    },
+    {
+        name: 'Get Insured',
+        link: '',
+    },
+])
+const insuranceClientMenus = ref([
+    {
+        name: 'Renew your Policy',
+        link: '',
+    },
+    {
+        name: 'Report a Claim',
+        link: '',
+    },
+])
 
 const showDropdown = (menu) => {
     if (hideTimeout) {
@@ -342,21 +366,41 @@ onMounted(() => {
 
             <div class="flex flex-col min-w-[25vw]">
                 <div class="bg-gray-300 border-r border-brand-divider p-5 min-h-screen">
-                    <NuxtLink to="/acentria-group-insurance" @click="setScrollTo()"
-                        class="group flex w-full flex-row items-center gap-2 whitespace-nowrap px-2 py-2 text-sm font-semibold text-black hover:bg-brand-primary hover:text-brand-primary hover:cursor-pointer false">
-                        <span class="group-hover:button-animation text-xl mt-3 text-brand-primary">
-                            Acentria Group
-                        </span>
-                    </NuxtLink>
-                    <div class="flex">
-                        <!-- <i class="fas fa-caret-right mr-2 ml-4 text-brand-primary"></i> -->
-                        <p class="px-2 text-xs text-black">
-                            Acentria Group of companies is a trusted global consultant in Risk and Insurance,
-                            Reinsurance, Actuarial, Technology and Investment Advisory.
-                            Our journey is about Empowering dreams, igniting imagination, and propelling prosperity to
-                            infinite possibilities
+                    <div class="ml-5 mb-5">
+                        <h2 class="font-bold text-lg">Explore Products</h2>
+                        <div class="flex flex-col gap-3 mt-3">
+                            <h2 v-for="menu in insuranceProductsMenus"
+                                class="hover:text-brand-primary text-xs font-semibold button-animation">
+                                {{ menu.name }}
+                                <i class="fas fa-arrow-right mt-1 ml-2"></i>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="ml-5 my-5">
+                        <h2 class="font-bold text-lg">Existing Client?</h2>
+                        <div class="flex flex-col gap-3 mt-3">
+                            <h2 v-for="menu in insuranceClientMenus"
+                                class="hover:text-brand-primary text-xs font-semibold button-animation">
+                                {{ menu.name }}
+                                <i class="fas fa-arrow-right mt-1 ml-2"></i>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class=" flex flex-col justify-between">
+                        <NuxtLink to="/acentria-group-insurance"
+                            class="button-animation mt-0 font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-black text-white hover:bg-brand-primary focus:ring-brand-secondary-dark px-4 py-2 text-xs">
+                            Learn More
+                            <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
+                                fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
+                                <g fill-rule="evenodd">
+                                    <path class="transition-opacity opacity-0" d="M0 5h7"></path>
+                                    <path class="transition-all duration-75 translate-x-0 transform-none"
+                                        d="M1 1l4 4-4 4">
+                                    </path>
+                                </g>
+                            </svg>
+                        </NuxtLink>
 
-                        </p>
                     </div>
                 </div>
             </div>

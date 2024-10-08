@@ -89,7 +89,36 @@ onMounted(() => {
             <div>
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-              <Hero class="py-2" />
+              <!-- <Hero class="py-2" /> -->
+
+              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-5 -mt-3"
+                style="background-image:url('/img/bg.png');">
+                <div class="container">
+                  <div
+                    class="flex items-center bg-cover px-4 py-4 text-center md:py-7 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                    <div
+                      class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
+                      <div class="w-full grid grid-cols-10">
+                        <div class="col-span-3">
+                          <h1 class="text-3xl text-white font-bold my-2 ">Acentria Group</h1>
+                        </div>
+                        <div class="col-span-7">
+                          <!-- <p
+                            class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
+                            At our company, we specialize in providing comprehensive insurance and reinsurance
+                            solutions,
+                            backed by expert actuarial services and strategic investment management. Our cutting-edge
+                            technology ensures that we deliver innovative and efficient solutions tailored to meet the
+                            unique needs of our clients. Trust us to safeguard your future with precision and
+                            excellence.
+                          </p> -->
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <MakesUs />
 
@@ -219,195 +248,6 @@ onMounted(() => {
                   </div>
                 </div>
               </div>
-
-              <!-- <section id="" class="relative py-5 bg-white text-left">
-                <div class="container px-4">
-                  <div class="my-1">
-                    <MissionTabs ref="mission" />
-                  </div>
-                  <div class="grid grid-cols-1 md:grid-cols-1 gap-5 mt-4">
-                    <div class="font-sans content-center items-center grid grid-cols-1 gap-5">
-                      <div v-show="selectedMenu == 'vision'" class="flex flex-row gap-2 justify-center">
-
-                        <div class="mt-10 container mx-auto flex px-4 lg:flex-row flex-col lg:gap-0 justify-around"
-                          data-v-inspector="components/Why.vue:54:9">
-                          <div class="relative py-4 lg:basis-1/2 content-center"
-                            data-v-inspector="components/Why.vue:55:13">
-                            <img alt="Image of Ensure regulatory compliance" loading="lazy" width="400" height="350"
-                              decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                              class="rounded-lg"
-                              src="https://images.pexels.com/photos/175744/pexels-photo-175744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                              data-v-inspector="components/Why.vue:56:17" />
-                          </div>
-                          <div class="flex flex-col justify-center lg:basis-1/2"
-                            data-v-inspector="components/Why.vue:60:13">
-                            <h2
-                              class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                              data-v-inspector="components/Why.vue:63:17">
-                              Our <span class="text-brand-primary">Vision</span>
-                            </h2>
-                            <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:67:17">
-                              <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
-                                data-v-inspector="components/Why.vue:68:21">
-                                To be a global leader empowering prosperity.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                      <div v-show="selectedMenu == 'mission'" class="flex flex-row gap-2 justify-center">
-
-                        <div class="mt-10 container mx-auto flex px-4 lg:flex-row flex-col lg:gap-0"
-                          data-v-inspector="components/Why.vue:54:9">
-                          <div class="relative py-4 lg:basis-1/2 content-center"
-                            data-v-inspector="components/Why.vue:55:13">
-                            <img alt="Image of Ensure regulatory compliance" loading="lazy" width="400" height="350"
-                              decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                              class="rounded-lg"
-                              src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                              data-v-inspector="components/Why.vue:56:17" />
-                          </div>
-                          <div class="flex flex-col justify-center lg:basis-1/2"
-                            data-v-inspector="components/Why.vue:60:13">
-                            <h2
-                              class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                              data-v-inspector="components/Why.vue:63:17">
-                              Our <span class="text-brand-primary">Mission</span>
-                            </h2>
-                            <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:67:17">
-                              <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
-                                data-v-inspector="components/Why.vue:68:21">
-                                To provide financial and risk advisory services through
-                                innovations that
-                                empower our clients’ prosperity.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-
-              <div v-show="selectedMenu == 'values'" class="font-sans mx-auto max-w-[93vw] px-6 lg:px-8 mb-10">
-
-                <dl
-                  class="mx-auto grid max-w-2xl grid-cols-1 gap-x-2 gap-y-3 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                  <div
-                    class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
-                    <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
-                        <i class="fas fa-scale-balanced text-xl text-brand-primary group-hover:text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <dt class="font-semibold text-xl !text-black">
-                        Integrity
-                      </dt>
-                      <dd class="mt-1 text-secondary text-sm">
-                        We do the right thing, through honoring our commitments
-                        to our clients.
-                      </dd>
-                    </div>
-                  </div>
-                  <div
-                    class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
-                    <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
-                        <i class="fas fa-award text-xl text-brand-primary group-hover:text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <dt class="font-semibold text-xl !text-black">
-                        Excellence
-                      </dt>
-                      <dd class="mt-1 text-secondary text-sm">
-                        Deliver the highest levels of service and
-                        product excellence.
-                      </dd>
-                    </div>
-                  </div>
-                  <div
-                    class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
-                    <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
-                        <i class="fas fa-lightbulb text-xl text-brand-primary group-hover:text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <dt class="font-semibold text-xl !text-black">
-                        Innovative
-                      </dt>
-                      <dd class="mt-1 text-secondary text-sm">
-                        Seek to use unique and creative solutions
-                        in solving problems.
-                      </dd>
-                    </div>
-                  </div>
-                  <div
-                    class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
-                    <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
-                        <i class="fas fa-users text-xl text-brand-primary group-hover:text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <dt class="font-semibold text-xl !text-black">
-                        Teamwork
-                      </dt>
-                      <dd class="mt-1 text-secondary text-sm">
-                        Continuously promote team spirit among
-                        its staff and stakeholders.
-                      </dd>
-                    </div>
-                  </div>
-                  <div
-                    class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
-                    <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
-                        <i class="fas fa-handshake text-xl text-brand-primary group-hover:text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <dt class="font-semibold text-xl !text-black">
-                        Relationships
-                      </dt>
-                      <dd class="mt-1 text-secondary text-sm">
-                        We value the relationships built with our clients and
-                        partners.
-                      </dd>
-                    </div>
-                  </div>
-                  <div
-                    class="flex gap-5 shadow-md border-2 hover:border-brand-primary p-5 rounded-lg border border-brand-primary border-2 group">
-                    <div class="flex items-center justify-center rounded-full h-3/4 w-auto p-2">
-                      <div
-                        class="flex items-center justify-center h-10 w-10 bg-gray-200 group-hover:bg-primary rounded-full duration-700 ease-in-out">
-                        <i class="fas fa-chart-line text-xl text-brand-primary group-hover:text-white"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <dt class="font-semibold text-xl !text-black">
-                        Growth &amp; Prosperity
-                      </dt>
-                      <dd class="mt-1 text-secondary text-sm">
-                        We embrace opportunities to learn and improve.
-                      </dd>
-                    </div>
-                  </div>
-                </dl>
-              </div> -->
 
               <section class="relative py-10">
                 <div class="container px-4">
