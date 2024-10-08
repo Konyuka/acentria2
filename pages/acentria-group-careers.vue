@@ -62,10 +62,10 @@ const joinAsMembers = ref([
         <div>
             <div>
 
-                <div class="text-center">
+                <!-- <div class="text-center">
                     <span class="text-brand-primary">#</span>Empower <span class="text-brand-primary">#</span>Innovate
                     <span class="text-brand-primary">#</span>Prosper
-                </div>
+                </div> -->
 
                 <div class="relative isolate overflow-hidden bg-white py-20">
                     <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
