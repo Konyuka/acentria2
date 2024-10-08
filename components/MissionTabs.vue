@@ -14,12 +14,12 @@
                                 :class="[stepIdx !== 0 ? 'lg:pl-9' : '', 'flex items-start px-6 py-5 text-sm font-medium']">
                                 <span class="flex-shrink-0">
                                     <span :class="[currentMenu === 'mission' ? 'bg-brand-primary' : 'bg-gray-500']"
-                                        class="flex h-10 w-10 items-center justify-center rounded-full">
+                                        class="flex h-8 w-8 items-center justify-center rounded-full">
                                         <i class="text-white fas fa-compass text-xl" aria-hidden="true"></i>
                                     </span>
                                 </span>
                                 <span class="ml-4 mt-0.5 flex min-w-0 flex-col">
-                                    <span class="text-4xl font-medium text-center">{{ step.name }}</span>
+                                    <span class="text-xl font-medium text-center">{{ step.name }}</span>
                                     <!-- <span class="text-sm font-medium text-gray-500">{{ step.description }}</span> -->
                                 </span>
                             </span>
@@ -32,12 +32,12 @@
                                 :class="[stepIdx !== 0 ? 'lg:pl-9' : '', 'flex items-start px-6 py-5 text-sm font-medium']">
                                 <span class="flex-shrink-0">
                                     <span :class="[currentMenu === 'vision' ? 'bg-brand-primary' : 'bg-gray-500']"
-                                        class="flex h-10 w-10 items-center justify-center rounded-full">
+                                        class="flex h-8 w-8 items-center justify-center rounded-full">
                                         <i class="text-white fas fa-eye text-xl" aria-hidden="true"></i>
                                     </span>
                                 </span>
                                 <span class="ml-4 mt-0.5 flex min-w-0 flex-col">
-                                    <span class="text-4xl font-medium text-center">{{ step.name }}</span>
+                                    <span class="text-xl font-medium text-center">{{ step.name }}</span>
                                     <!-- <span class="text-sm font-medium text-gray-500">{{ step.description }}</span> -->
                                 </span>
                             </span>
@@ -50,12 +50,12 @@
                                 :class="[stepIdx !== 0 ? 'lg:pl-9' : '', 'flex items-start px-6 py-5 text-sm font-medium']">
                                 <span class="flex-shrink-0">
                                     <span :class="[currentMenu === 'values' ? 'bg-brand-primary' : 'bg-gray-500']"
-                                        class="flex h-10 w-10 items-center justify-center rounded-full">
-                                        <i class="text-white fas fa-gem text-xl" aria-hidden="true"></i>
+                                        class="flex h-8 w-8 items-center justify-center rounded-full">
+                                        <i class="text-white fas fa-gem text-sm" aria-hidden="true"></i>
                                     </span>
                                 </span>
                                 <span class="ml-4 mt-0.5 flex min-w-0 flex-col">
-                                    <span class="text-4xl font-medium text-center">{{ step.name }}</span>
+                                    <span class="text-xl font-medium text-center">{{ step.name }}</span>
                                     <!-- <span class="text-sm font-medium text-gray-500">{{ step.description }}</span> -->
                                 </span>
                             </span>

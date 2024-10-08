@@ -8,17 +8,44 @@ const ReinsuranceBannerContent = ref({
 
 <template>
     <section>
-        <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+        <!-- <ReinsuranceBanner :content="ReinsuranceBannerContent" /> -->
 
-        <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
-            <div class="mx-auto max-w-4xl text-center" data-v-inspector="components/ReinsuranceWhy.vue:16:21">
-                <!-- <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900"
-                    data-v-inspector="components/ReinsuranceWhy.vue:17:25"> Acentria's Commitment to
-                    <span class="text-brand-primary" data-v-inspector="components/ReinsuranceWhy.vue:18:43">
-                        CSR
-                    </span>
-                </p> -->
+        <div class="relative isolate overflow-hidden bg-white py-20">
+
+            <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
+                class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+
+            <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
+                <div class="grid grid-cols-10 -gap-10">
+                    <div class="text-white col-span-1">
+                        <div class="w-20 h-1 bg-white mt-3">
+
+                        </div>
+                    </div>
+                    <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
+                        <h2 class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
+                            ESG
+                        </h2>
+                        <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
+                            {{ ReinsuranceBannerContent.title }}
+                        </h2>
+                        <p class="text-white text-left max-w-2xl mt-7">
+                            At Acentria, we understand the profound impact businesses can have on the world. That’s why
+                            we are dedicated to integrating Environmental, Social, and Governance (ESG) principles into
+                            our core business practices. Our commitment goes beyond financial success, focusing on
+                            sustainable and responsible business operations that contribute positively to the well-being
+                            of our planet and society.
+                        </p>
+                    </div>
+                </div>
             </div>
+
+        </div>
+
+        <!-- <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
+           
             <p class="font-sans mx-auto mt-6 max-w-7xl text-center text-md text-secondary"
                 data-v-inspector="components/ReinsuranceWhy.vue:21:21">
                 At Acentria, we understand the profound impact businesses can have on the world. That’s why we are
@@ -27,7 +54,7 @@ const ReinsuranceBannerContent = ref({
                 business operations that contribute positively to the well-being of our planet and society.
             </p>
 
-        </div>
+        </div> -->
 
         <div data-v-02281a80="" class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
@@ -45,7 +72,7 @@ const ReinsuranceBannerContent = ref({
                         ESG (Environmental, Social, and Governance)
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             We are a signatory to The Nairobi Declaration on Sustainable Insurance, a commitment by
                             African insurance industry leaders to support the achievement of the UN Sustainable
@@ -57,7 +84,7 @@ const ReinsuranceBannerContent = ref({
                         Governance and Compliance
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Acentria Group places a strong emphasis on governance and compliance. Our governance
                             structure ensures transparency, accountability, and adherence to regulatory standards. We
@@ -69,7 +96,7 @@ const ReinsuranceBannerContent = ref({
             </div>
 
             <div class="font-sans mx-auto max-w-7xl my-10 px-10" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
-                <p class="font-sans mx-auto mt-6 max-w-7xl text-left text-md text-secondary"
+                <p class="font-sans mx-auto mt-6 max-w-5xl text-left text-xs text-secondary"
                     data-v-inspector="components/ReinsuranceWhy.vue:21:21">
                     Our social responsibility extends beyond business operations. We prioritize fair labour practices,
                     employee well-being, and human rights considerations. We conduct regular audits to ensure compliance
@@ -94,7 +121,7 @@ const ReinsuranceBannerContent = ref({
                         Environmental Impact
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             As part of our commitment to environmental sustainability, our offices implement
                             energy-efficient practices, waste reduction programs, and sustainable sourcing initiatives
@@ -109,7 +136,7 @@ const ReinsuranceBannerContent = ref({
                         Risk Management
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             In the insurance industry, effective risk management is paramount. Our expert team of
                             professionals works tirelessly to assist clients in identifying, assessing, and mitigating

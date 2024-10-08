@@ -45,7 +45,7 @@ import { CheckIcon } from '@heroicons/vue/20/solid'
                                 </DisclosureButton>
                             </dt>
                             <DisclosurePanel as="dd" class="mt-2 pr-12">
-                                <p class="text-base leading-7 text-gray-600">{{ faq.content }}</p>
+                                <p class="text-base leading-7 text-gray-600" v-html="faq.content"></p>
                             </DisclosurePanel>
                         </Disclosure>
                     </dl>

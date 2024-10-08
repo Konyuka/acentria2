@@ -23,14 +23,12 @@ const profileBoardData = computed(() => {
 <template>
     <section>
         <div class="relative isolate overflow-hidden bg-white py-20">
-            <video autoplay loop muted
-                class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
-                <source
-                    src="https://www.shutterstock.com/shutterstock/videos/3512180955/preview/stock-footage-success-team-hands-up-business-team-teamwork-concept-group-of-people-holding-hands-raised-their.webm"
-                    type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+
+            <img src="/img/handshake.jpeg" alt="Success Team Hands Up"
+                class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+
             <div class="absolute inset-0 bg-black opacity-40"></div>
+
             <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
                 aria-hidden="true">
                 <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-brand-primary to-black opacity-60"
@@ -43,13 +41,31 @@ const profileBoardData = computed(() => {
                     style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
                 </div>
             </div>
-            <div class="relative z-50 mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mx-auto max-w-7xl lg:mx-0 text-center">
-                    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
-                        Leadership Team
-                    </h2>
+
+            <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
+                <div class="grid grid-cols-10 -gap-10">
+                    <div class="text-white col-span-1">
+                        <div class="w-20 h-1 bg-white mt-3">
+
+                        </div>
+                    </div>
+                    <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
+                        <h2 class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
+                            Board and Management
+                        </h2>
+                        <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
+                            Board and Management
+                        </h2>
+                        <p class="text-white text-left max-w-2xl mt-7">
+                            Our board sets strategic direction and provides oversight and control, acting as an
+                            independent
+                            check and balance to the executive management team, whose responsibility is to manage the
+                            business.
+                        </p>
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <Board @openBoardProfile="openProfileBoardModal" ref="teamBoardComponent" />

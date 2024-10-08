@@ -144,7 +144,7 @@ onMounted(()=>{
                 <div class="">
                     <a @mouseenter="showDropdown('consulting')" @mouseleave="hideDropdown('consulting')" href="#"
                         :class="[isConsultingDropdownVisible ? '!text-brand-primary' : '']"
-                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-calculator text-lg undefined" translate="no"></i>
                         Actuarial Consulting <i
                             :class="[isConsultingDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -157,7 +157,7 @@ onMounted(()=>{
                         <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in acServices">
                                 <div
-                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-2 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
@@ -174,7 +174,7 @@ onMounted(()=>{
                 <div class="">
                     <a @mouseenter="showDropdown('services')" @mouseleave="hideDropdown('services')" href="#"
                         :class="[isServicesDropdownVisible ? '!text-brand-primary' : '']"
-                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-briefcase text-lg undefined" translate="no"></i>
                         Actuarial Services <i
                             :class="[isServicesDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -187,7 +187,7 @@ onMounted(()=>{
                         <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in acOther">
                                 <div
-                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-2 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
@@ -204,7 +204,7 @@ onMounted(()=>{
                 <div class="">
                     <a @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')" href="#"
                         :class="[isProductsDropdownVisible ? '!text-brand-primary' : '']"
-                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-2 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
+                        class="group relative flex w-full flex-row items-center gap-2 whitespace-nowrap bg-white px-8 py-1 text-xs font-semibold text-black hover:text-brand-primary hover:cursor-pointer false">
                         <i class="group-hover:text-brand-primary text-gray-400 duration-700 mr-2 fas fa-box text-lg undefined" translate="no"></i>
                         Actuarial Products <i
                             :class="[isProductsDropdownVisible ? '!text-brand-primary animate-in slide-in-from-left' : '']"
@@ -217,7 +217,7 @@ onMounted(()=>{
                         <div class="flex h-screen flex-col  bg-white">
                             <NuxtLink :to="item.link" v-for="item in acProducts">
                                 <div
-                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-4 transition-all hover:bg-brand-primary">
+                                    class="font-sans group flex w-[30vw] flex-col bg-white px-6 py-2 transition-all hover:bg-brand-primary">
                                     <div
                                         class="text-xs font-semibold text-black group-hover:text-brand-primary group-hover:bg-brand-primary">
                                         {{ item.name }}
