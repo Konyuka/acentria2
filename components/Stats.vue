@@ -8,7 +8,7 @@
         <p class="text-brand-primary text-2xl text-center py-5 font-sans font-bold">
             Top choice for professional services and client satisfaction
         </p>
-        <div class="bg-brand-dim">
+        <div class="bg-gray-600">
             <div class="container mx-auto px-4">
                 <div class="mb-12 flex flex-col items-center"></div>
                 <div class="font-sans flex flex-wrap justify-center gap-x-16">

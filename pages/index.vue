@@ -186,7 +186,7 @@ onMounted(() => {
                 </h2>
               </div>
 
-              <div class="bg-secondary py-10">
+              <div class="bg-gray-600 py-10">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                   <div class="mx-auto max-w-7xl lg:mx-0">
                     <h2 class="text-3xl font-bold tracking-tight text-white text-center"> Empower <span
