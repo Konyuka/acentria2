@@ -89,13 +89,11 @@ onMounted(() => {
             <div>
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-              <!-- <Hero class="py-2" /> -->
-
-              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-5 -mt-3"
+              <div class=" w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[136px] z-20"
                 style="background-image:url('/img/bg.png');">
                 <div class="container">
                   <div
-                    class="flex items-center bg-cover px-4 py-4 text-center md:py-7 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                    class="flex items-center bg-cover px-4 py-1 text-center md:py-7 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                     <div
                       class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
                       <div class="w-full grid grid-cols-10">
@@ -103,15 +101,6 @@ onMounted(() => {
                           <h1 class="text-3xl text-white font-bold my-2 ">Acentria Group</h1>
                         </div>
                         <div class="col-span-7">
-                          <!-- <p
-                            class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
-                            At our company, we specialize in providing comprehensive insurance and reinsurance
-                            solutions,
-                            backed by expert actuarial services and strategic investment management. Our cutting-edge
-                            technology ensures that we deliver innovative and efficient solutions tailored to meet the
-                            unique needs of our clients. Trust us to safeguard your future with precision and
-                            excellence.
-                          </p> -->
                         </div>
                       </div>
 
@@ -120,9 +109,12 @@ onMounted(() => {
                 </div>
               </div>
 
-              <MakesUs />
+              <div class="w-full h-full bg-white">
+                <MakesUs />
+              </div>
 
-              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-5"
+
+              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0"
                 style="background-image:url('/img/bg.png');">
                 <div class="container">
                   <div
@@ -175,7 +167,7 @@ onMounted(() => {
                         adapting to new challenges and opportunities.
                       </p>
                       <NuxtLink href="/meet-the-team"
-                        class="!button-animation z-[20] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
                         Meet the Team
                         <i class="fas fa-arrow-right text-primary ml-2"></i>
                       </NuxtLink>
@@ -184,7 +176,76 @@ onMounted(() => {
                 </div>
               </div>
 
-              <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+              <div class=" py-10" style="background-color: rgb(246, 248, 252)">
+                <h2
+                  class="text-center font-sans tracking-normal text-2xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                  We Firmly Believe That What Makes Us <br>
+                  <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                    Different Also Makes us Stronger
+                  </span>
+                </h2>
+              </div>
+
+              <div class="bg-secondary py-10">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                  <div class="mx-auto max-w-7xl lg:mx-0">
+                    <h2 class="text-3xl font-bold tracking-tight text-white text-center"> Empower <span
+                        class="text-primary">|</span> Innovate <span class="text-primary">|</span> Prosper </h2>
+                  </div>
+                  <div class="mx-auto text-md mt-10 max-w-2xl lg:max-w-5xl text-white">
+                    <div class="grid grid-cols-3 gap-5">
+
+                      <div
+                        class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                        <div class="flex h-fit flex-col"><i
+                            class="fas fa-bullseye text-black text-4xl pb-4 group-hover:text-brand-primary"
+                            translate="no"></i>
+                          <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
+                            Our Mission</h3>
+                          <p class="mt-2 text-xs text-gray-500">
+                            To provide financial and risk advisory services through innovations that empower our
+                            clients’ prosperity.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                        <div class="flex h-fit flex-col"><i
+                            class="fas fa-eye text-black text-4xl pb-4 group-hover:text-brand-primary"
+                            translate="no"></i>
+                          <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
+                            Our Vision</h3>
+                          <p class="mt-2 text-xs text-gray-500">
+                            To be a global leader empowering prosperity.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                        <div class="flex h-fit flex-col"><i
+                            class="fas fa-gem text-black text-4xl pb-4 group-hover:text-brand-primary"
+                            translate="no"></i>
+                          <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
+                            Our Values</h3>
+                          <div class="grid grid-cols-2 gap-1 text-black text-xs">
+                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Integrity</p>
+                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Excellence</p>
+                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Innovative</p>
+                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Teamwork</p>
+                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Relationships</p>
+                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Growth &amp; Prosperity</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="flex flex-col justify-center lg:basis-1/2">
 
@@ -247,7 +308,7 @@ onMounted(() => {
                       src="/img/compass.jpeg" data-v-inspector="components/Why.vue:34:17" />
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <section class="relative py-10">
                 <div class="container px-4">
@@ -256,7 +317,7 @@ onMounted(() => {
                       Our <span class="text-brand-primary">Commitments</span>
                     </h2>
                     <p
-                      class="text-center max-w-2xl mx-auto my-5 text-base leading-normal font-regular text-light-content text-sm font-normal not-italic">
+                      class="text-center max-w-2xl mx-auto my-5 text-base leading-normal font-semibold text-white text-sm font-normal not-italic">
                       At Acentria, we believe we have a responsibility to not only our customers and business partners,
                       but
                       also to our people and the broader community.
@@ -302,32 +363,35 @@ onMounted(() => {
 
               <Stats />
 
-              <Testimonials class="mt-10" />
+              <Testimonials />
 
-              <Awards />
+              <div class="bg-white w-full h-full">
+                <Awards />
+              </div>
+
 
 
 
             </div>
           </div>
 
-          <div class="mx-auto mt-10 max-w-screen">
-            <div
-              class="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-xs sm:px-10 sm:py-24 md:px-12 lg:px-40">
-              <img class="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0"
+          <div class="mx-auto max-w-screen">
+            <div class="relative bg-gray-900 px-6 py-20 shadow-xl sm:rounded-xs sm:px-10 sm:py-24 md:px-12 lg:px-40">
+              <img class="absolute inset-0 h-full w-full object-cover brightness-50 saturate-10"
                 src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="" />
-              <div class="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
+              <div class="absolute inset-0 bg-gray-900/5 mix-blend-multiply" />
               <div class="absolute -left-80 -top-56 transform-gpu blur-3xl" aria-hidden="true">
-                <div
+                <!-- <div
                   class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-[0.45]"
-                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" /> -->
               </div>
               <div class="hidden md:absolute md:bottom-16 md:left-[50rem] md:block md:transform-gpu md:blur-3xl"
                 aria-hidden="true">
-                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25"
-                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+                <!-- <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25"
+                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" /> -->
               </div>
+
               <div class="relative mx-auto max-w-2xl lg:mx-0">
                 <h1 class="text-white font-bold text-2xl">
                   Corporate Social Responsibility
@@ -359,26 +423,28 @@ onMounted(() => {
             </div>
           </div>
 
-          <div class="bg-white !font-sans container my-5">
-            <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
-              <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
-                <div class="max-w-7xl justify-between content-center">
-                  <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-center">
-                    Join Our Team
-                  </h2>
-                </div>
-                <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
-                  <div v-for="member in joinAsMembers" :key="member.name"
-                    class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
-                    <div class="sm:flex-shrink-0 flex justify-center">
-                      <i :class="member.icon" class="text-black text-2xl"></i>
-                    </div>
-                    <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                      <h3 class="text-lg text-brand-primary font-semibold flex justify-center">{{ member.name
-                        }}</h3>
-                      <p class="mt-2 text-xs text-gray-500">{{ member.description }}</p>
-                      <i
-                        class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+          <div class="bg-white w-full h-full">
+            <div class="bg-white !font-sans container my-0">
+              <div class="mx-auto max-w-7xl py-10 sm:px-2 lg:px-4">
+                <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
+                  <div class="max-w-7xl justify-between content-center">
+                    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-center">
+                      Join Our Team
+                    </h2>
+                  </div>
+                  <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
+                    <div v-for="member in joinAsMembers" :key="member.name"
+                      class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
+                      <div class="sm:flex-shrink-0 flex justify-center">
+                        <i :class="member.icon" class="text-black text-2xl"></i>
+                      </div>
+                      <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                        <h3 class="text-lg text-brand-primary font-semibold flex justify-center">{{ member.name
+                          }}</h3>
+                        <p class="mt-2 text-xs text-gray-500">{{ member.description }}</p>
+                        <i
+                          class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -394,4 +460,14 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.sticky-div {
+  position: -webkit-sticky;
+  /* For Safari */
+  position: sticky;
+  top: 0;
+  /* Adjust this value to the height of your navigation bar */
+  z-index: 50;
+  /* Ensure it stays above other content */
+}
+</style>

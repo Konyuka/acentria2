@@ -6,9 +6,9 @@
 <template>
     <div>
 
-        <section class="relative mb-10 mt-5">
+        <section class="relative">
             <div class="font-sans container px-4">
-                <div class="pb-7 text-center">
+                <div class=" text-center">
                     <h2 id=""
                         class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
                         <span

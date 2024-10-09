@@ -1,7 +1,7 @@
 <script setup>
 const isScrolled = ref(false);
 const bottomBarClass = computed(() => {
-    return isScrolled.value ? 'sticky' : '';
+    return isScrolled.value ? 'sticky' : 'sticky';
 });
 
 
@@ -287,7 +287,7 @@ onBeforeUnmount(() => {
 <template>
 
     <div :class="bottomBarClass">
-        <div class="relative z-50 mx-auto hidden w-full px-8 py-1.5 lg:block bg-brand-gray">
+        <div class="relative z-50 mx-auto hidden w-full px-8 py-3 lg:block bg-brand-gray">
             <div class="font-sans container mx-auto flex flex-row items-center justify-between">
                 <!-- socials -->
                 <div class="flex items-center justify-end md:justify-end md:col-span-1">

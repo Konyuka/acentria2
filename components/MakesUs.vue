@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white !font-sans container">
+    <div class="!font-sans container">
         <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
             <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
                 <div class="max-w-7xl justify-between content-center">
@@ -7,8 +7,8 @@
                         About Us
                     </h2>
                 </div>
-                <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
-                    <div v-for="incentive in incentives" :key="incentive.name" class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
+                <div class="mt-5 grid grid-cols-1 gap-x-3 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
+                    <div v-for="incentive in incentives" :key="incentive.name" class="group button-animation sm:flex lg:block bg-gray-100 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
                         <div class="sm:flex-shrink-0 flex justify-center">
                             <img class="h-16 w-16" :src="incentive.imageSrc" alt="" />
                         </div>

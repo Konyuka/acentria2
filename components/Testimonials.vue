@@ -6,7 +6,7 @@
 
 
 <template>
-    <div class="font-sans relative isolate bg-white mb-3">
+    <div class="font-sans relative isolate bg-white py-5">
         <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
             aria-hidden="true">
             <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-brand-primary"
@@ -22,7 +22,7 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-xl text-center my-5">
                 <!-- <h2 class="text-2xl font-semibold leading-8 tracking-tight text-black">Testimonials</h2> -->
-                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <p class="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     What Our <span class="text-brand-primary">Customers are Saying!</span>
                 </p>
             </div>

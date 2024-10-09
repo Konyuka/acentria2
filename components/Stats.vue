@@ -1,5 +1,5 @@
 <script setup>
-
+// import CountUp from 'vue-countup-v3'
 
 </script>
 
@@ -15,7 +15,11 @@
                     <div class="mb-12 flex items-center justify-center">
                         <div class="border-brand-divider border-l pl-6 text-dark-title">
                             <span
-                                class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">13k+</span>
+                                class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
+                                13k+
+                                <!-- <count-up :end-val="13"></count-up> -->
+
+                            </span>
                             <p class="undefined undefined text-base md:text-xl">
                                 Customers
                             </p>
