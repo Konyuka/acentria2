@@ -384,8 +384,7 @@ const heroContent = ref({
                             <label class="text-base leading-normal font-regular text-light-highlight font-semibold">
                                 We belive in innovation and simplicity
                             </label>
-                            <h2
-                                class="pb-4 md:pb-5 font-semibold text-3xl leading-tight text-light-title">
+                            <h2 class="pb-4 md:pb-5 font-semibold text-3xl leading-tight text-light-title">
                                 Leader in Industry Standards
                             </h2>
                             <div class="text-light-content pb-5 md:pb-6">
@@ -421,14 +420,14 @@ const heroContent = ref({
                 </section>
 
 
-                <div class="py-3 text-white" style="background-color: #f6f8fc">
+                <div class="py-3 text-white max-w-3xl mx-auto" style="background-color: #f6f8fc">
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
                         <div class="relative p-4 lg:basis-1/2">
                             <div class="px-auto">
-                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="400"
-                                    height="350" decoding="async" data-nimg="1"
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                    width="400" height="350" decoding="async" data-nimg="1"
                                     style="color: transparent; object-fit: contain" class="rounded-xl"
                                     src="https://images.pexels.com/photos/7688374/pexels-photo-7688374.jpeg?auto=compress&cs=tinysrgb&w=600" />
                             </div>

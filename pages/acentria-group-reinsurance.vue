@@ -219,7 +219,7 @@ const heroContent = ref({
                             <div class="container px-4">
                                 <div class="pb-10 text-center lg:pb-14">
                                     <h2
-                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-white font-semibold leading-tight lg:leading-tight">
+                                        class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
                                         Delivering Reinsurance Solutions & Services
                                     </h2>
                                     <!-- <label
@@ -238,14 +238,14 @@ const heroContent = ref({
                 <section id="" class="relative py-8 lg:py-5 bg-white text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             <span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br>
                             Let Acentria Tailor Your Coverage To Your Needs
                         </h2>
                     </div>
                 </section>
 
-                <div class="py-6 text-white xl:py-5" style="background-color: #f6f8fc">
+                <div class="py-6 text-white xl:py-5 max-w-3xl mx-auto" style="background-color: #f6f8fc">
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
@@ -255,10 +255,10 @@ const heroContent = ref({
                                 style="color: transparent; object-fit: contain" class="ml-20 rounded-xl"
                                 src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                         </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2">
+                        <div class="flex flex-col justify-center items-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
                                 <p
-                                    class="text-base leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
+                                    class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
                                     We specialize in addressing underwriting and capital management challenges,
                                     showcasing a deep understanding of the complexities involved in managing risk and
                                     financial resources within the insurance industry.
@@ -281,14 +281,14 @@ const heroContent = ref({
 
                 <div>
 
-                    <section id="" class="relative py-2 bg-white text-center">
+                    <!-- <section id="" class="relative py-2 bg-white text-center">
                         <div class="container px-4">
                             <h2
-                                class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                                class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
                                 Our Market <span class="text-brand-primary">Presence</span>
                             </h2>
                         </div>
-                    </section>
+                    </section> -->
                     <div class="container flex items-center justify-center">
 
                         <div class="relative p-4">
