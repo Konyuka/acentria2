@@ -371,7 +371,7 @@ onBeforeUnmount(() => {
 
                     <div class="z-50 content-center">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="/about-acentria-group" @mouseenter="showDropdown('about')"
+                            <NuxtLink to="/" @mouseenter="showDropdown('about')"
                                 @mouseleave="hideDropdown('about')"
                                 :class="[isAboutDropdownVisible ? '!text-brand-primary !font-bold' : 'font-semibold', currentRoute === '/about-us/who-we-are' ? '!text-brand-primary scale-105 !font-bold' : '']"
                                 class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">

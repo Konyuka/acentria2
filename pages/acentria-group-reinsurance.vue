@@ -191,6 +191,26 @@ const heroContent = ref({
 
                 <ServiceHero2 :content="content" />
 
+                <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[120px] z-20"
+                    style="background-image:url('/img/bg.png');">
+                    <div class="container">
+                        <div
+                            class="flex items-center bg-cover px-4 py-1 text-center md:py-7 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                            <div
+                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
+                                <div class="w-full grid grid-cols-12">
+                                    <div class="col-span-6">
+                                        <h1 class="text-3xl text-white font-bold my-2 ">Acentria Reinsurance Brokers</h1>
+                                    </div>
+                                    <div class="col-span-6">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <Hero2 :data="heroContent" />
 
                 <div class="py-6 text-white xl:py-12" style="background-color: #282e37">
