@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
 
-    <div class="relative w-full bg-cover bg-center bg-no-repeat false py-10"
+    <div class="relative w-full bg-cover bg-center bg-no-repeat false py-4"
         style="background-image:url(''); transform: scaleX(-1);">
         <div class="container" style="transform: scaleX(-1);">
             <div
@@ -16,11 +16,10 @@ const props = defineProps({
                     <div class="col-span-4 flex justify-center align-middle items-center">
                         <div
                             class=" flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-3xl">
-                            <div v-html="data.name" class="w-full">
-                            </div>
+                            <!-- <div v-html="data.name" class="w-full text-3xl">
+                            </div> -->
                             <div class="font-sans text-light-content">
-                                <p class="text-base leading-normal font-regular text-light-content !text-inherit"
-                                    data-v-inspector="components/Why.vue:23:21">
+                                <p class="text-xs leading-normal font-regular text-light-content !text-inherit">
                                     Acentria Group of companies is a trusted global
                                     consultant in Risk and Insurance, Reinsurance,
                                     Actuarial, and Investment Advisory. With decades of

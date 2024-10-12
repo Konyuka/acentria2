@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
     <div>
 
-        <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600"
+        <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 font-sans"
             style="background-image:url('/img/bg.png');">
             <div class="container">
                 <div
@@ -19,7 +19,7 @@ const props = defineProps({
                         class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
                         <div class="w-full">
                             <p
-                                class="text-left font-sans tracking-normal text-2xl lg:text-xl text-white font-semibold leading-tight lg:leading-tight">
+                                class="text-left font-sans tracking-normal text-md text-white font-semibold leading-tight lg:leading-tight">
                                 {{ intro }}
                             </p>
                         </div>
@@ -36,7 +36,7 @@ const props = defineProps({
                         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         <div>
                             <h2 v-html="leftTitle"
-                                class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight sm:pb-4 pt-6">
+                                class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight sm:pb-4 pt-6">
                             </h2>
                         </div>
 
@@ -48,13 +48,11 @@ const props = defineProps({
                                     translate="no">{{ why.icon }}</i>
                                 <div>
                                     <h5 id=""
-                                        class="font-sans text-sm pb-3 xl:text-xl 2xl:text-2xl leading-tight text-light-title font-semibold md:!pb-3 md:!text-[18px]">
+                                        class="font-sans text-sm pb-3 leading-tight text-light-title font-semibold md:!pb-3">
                                         {{ why.title }}
                                     </h5>
                                     <p class="text-xs leading-normal font-sans text-light-content">
                                         {{ why.content }}
-                                    </p>
-                                    <p class="text-base leading-normal font-regular text-light-content text-base">
                                     </p>
                                 </div>
                             </div>

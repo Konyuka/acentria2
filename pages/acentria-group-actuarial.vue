@@ -3,7 +3,7 @@
 const content = ref({
     vid:'/img/hd3.mp4',
     pageTitle: 'Acentria Group Actuarial & Financial Services',
-    title: 'Expert Actuarial & Financial Services for Your Business',
+    title: 'Expert Actuarial & Financial <span class="text-brand-primary">Services for Your Business</span>',
     description: 'At Acentria Group, we offer a wide range of actuarial and financial services designed to help your business thrive. Our team of experts provides tailored solutions to manage risk, optimize financial performance, and ensure long-term sustainability. Trust us to deliver the insights and support you need to navigate the complexities of the financial landscape, safeguarding your business and securing your future.',
 })
 

@@ -3,7 +3,7 @@
 const content = ref({
     vid: '/img/hd1.mp4',
     pageTitle: 'Acentria Group Insurance',
-    title: 'Secure Your Future with Comprehensive Insurance Solutions',
+    title: 'Secure Your Future with <span class="text-brand-primary">Comprehensive Insurance Solutions</span>',
     description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
 })
 
@@ -236,7 +236,7 @@ const heroContent = ref({
                             <div class="container px-4">
                                 <div class="pb-10 text-center lg:pb-14">
                                     <h2
-                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-white font-semibold leading-tight lg:leading-tight">
+                                        class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
                                         Pick a cover, and we'll take care of the rest
                                     </h2>
                                     <label
@@ -252,10 +252,10 @@ const heroContent = ref({
                     </div>
                 </div>
 
-                <section id="" class="relative py-8 lg:py-5 bg-white text-center">
+                <section id="" class="relative py-3 bg-white text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             <span class="text-brand-primary">Do it yourself</span>
                             or with expert help
                         </h2>
@@ -284,7 +284,7 @@ const heroContent = ref({
                                                         <span class="absolute inset-0"></span>
                                                         Do it yourself
                                                     </h3>
-                                                    <p class="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                    <p class="mt-3 line-clamp-3 text-xs leading-6 text-gray-600">
                                                         Compare quotes, choose your policy, and get same-day coverage in
                                                         a few clicks.
                                                     </p>
@@ -316,7 +316,7 @@ const heroContent = ref({
                                                         <span class="absolute inset-0"></span>
                                                         Live agent assistance
                                                     </h3>
-                                                    <p class="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                    <p class="mt-3 line-clamp-3 text-xs leading-6 text-gray-600">
                                                         Review your quotes online, then get tailored advice from a
                                                         licensed insurance agent.
                                                     </p>
@@ -348,7 +348,7 @@ const heroContent = ref({
                                                         <span class="absolute inset-0"></span>
                                                         Full Service
                                                     </h3>
-                                                    <p class="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                    <p class="mt-3 line-clamp-3 text-xs leading-6 text-gray-600">
                                                         Send us your current policy, and our agents will find a better
                                                         fit for you.
                                                     </p>
@@ -385,11 +385,11 @@ const heroContent = ref({
                                 We belive in innovation and simplicity
                             </label>
                             <h2
-                                class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                                class="pb-4 md:pb-5 font-semibold text-3xl leading-tight text-light-title">
                                 Leader in Industry Standards
                             </h2>
                             <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
+                                <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                                     Uncover the fantastic opportunity to team up with Acentria Group, where
                                     collaboration is not just a
                                     buzzword but a way of life. In the world of Acentria Group, success isn't just a
@@ -413,7 +413,7 @@ const heroContent = ref({
                 <section id="" class="relative py-4 bg-white text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
                             Let Acentria Tailor Your Coverage To Your Needs
                         </h2>
@@ -426,14 +426,16 @@ const heroContent = ref({
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
                         <div class="relative p-4 lg:basis-1/2">
-                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="500"
-                                height="350" decoding="async" data-nimg="1"
-                                style="color: transparent; object-fit: contain" class="rounded-xl"
-                                src="https://images.pexels.com/photos/7688374/pexels-photo-7688374.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                            <div class="px-auto">
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="400"
+                                    height="350" decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain" class="rounded-xl"
+                                    src="https://images.pexels.com/photos/7688374/pexels-photo-7688374.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                            </div>
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
                                     Acentria Group is your trusted friend in the world of insurance. We’re here to make
                                     sure you and anything you care for is safe and sound. Insurance can be confusing,
                                     but we’re experts at making it simple. We’ll take the time to understand exactly

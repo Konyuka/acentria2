@@ -19,9 +19,9 @@ const props = defineProps({
                     <div
                         class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[90%] lg:justify-start lg:text-left">
                         <div class="w-full">
-                            <h1
-                                class="font-sans tracking-normal text-4xl  text-black font-semibold leading-tight lg:leading-tight">
-                                {{ content.title }}
+                            <h1 v-html="content.title"
+                                class="font-sans tracking-normal text-4xl  text-white font-semibold leading-tight lg:leading-tight">
+                                
                             </h1>
                         </div>
                         <div>

@@ -7,8 +7,8 @@
     <section class="relative mb-10">
         <div class="font-sans container px-4">
             <div class="pb-7 text-center">
-                <h2 class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 leading-tight lg:leading-tight">
-                    Related content
+                <h2 class="font-sans tracking-normal text-3xl text-gray-900 leading-tight lg:leading-tight">
+                    Related <span class="text-brand-primary">Content</span>
                 </h2>
             </div>
             <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
@@ -56,21 +56,10 @@
                                 <label
                                     class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Blog</label>
                                 <h6
-                                    class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                    class="font-sans tracking-normal text-sm text-gray-900 font-semibold leading-tight lg:leading-tight">
                                     The Future of Insurance: How Acentria Group is Leading the Way
                                 </h6>
                             </div>
-                            <p
-                                class="font-sans tracking-normal text-xs lg:text-sm p text-gray-700 leading-tight lg:leading-tight will-change-max-h will-change-opacity ease origin-bottom overflow-hidden transition-all duration-500 max-h-0 opacity-0">
-                                Your legal team is in
-                                the perfect position to
-                                help
-                                prepare your
-                                organization for new AI
-                                regulations.
-                                Here’s how — and how
-                                technology can help.
-                            </p>
                         </section>
                     </div>
                     <button
@@ -128,23 +117,10 @@
                                 <label
                                     class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Guide</label>
                                 <h6
-                                    class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                    class="font-sans tracking-normal text-sm text-gray-900 font-semibold leading-tight lg:leading-tight">
                                     Navigating Reinsurance: Strategies for Success
                                 </h6>
                             </div>
-                            <p
-                                class="font-sans tracking-normal text-xs lg:text-sm p text-gray-700 leading-tight lg:leading-tight will-change-max-h will-change-opacity ease origin-bottom overflow-hidden transition-all duration-500 max-h-0 opacity-0">
-                                Learn how you can
-                                leverage technology to
-                                elevate
-                                your organization&#x27;s
-                                governance maturity, so
-                                you
-                                can improve efficiency
-                                while transforming risks
-                                into
-                                rewards.
-                            </p>
                         </section>
                     </div>
                     <button
@@ -202,23 +178,10 @@
                                 <label
                                     class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Guide</label>
                                 <h6
-                                    class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                    class="font-sans tracking-normal text-sm text-gray-900 font-semibold leading-tight lg:leading-tight">
                                     Actuarial Insights: Enhancing Decision-Making with tech
                                 </h6>
                             </div>
-                            <p
-                                class="font-sans tracking-normal text-xs lg:text-sm p text-gray-700 leading-tight lg:leading-tight will-change-max-h will-change-opacity ease origin-bottom overflow-hidden transition-all duration-500 max-h-0 opacity-0">
-                                Download the free
-                                checklist to learn how
-                                you can
-                                transform your strategy,
-                                streamline your
-                                operations
-                                and elevate your GRC
-                                resilience by
-                                consolidating
-                                vendors today.
-                            </p>
                         </section>
                     </div>
                     <button
@@ -276,22 +239,12 @@
                                 <label
                                     class="font-sans tracking-normal text-xs lg:text-sm text-brand-primary font-semibold leading-tight lg:leading-tight">Blog</label>
                                 <h6
-                                    class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                    class="font-sans tracking-normal text-sm text-gray-900 font-semibold leading-tight lg:leading-tight">
                                     The case for
                                     purpose-built
                                     software
                                 </h6>
                             </div>
-                            <p
-                                class="font-sans tracking-normal text-xs lg:text-sm p text-gray-700 leading-tight lg:leading-tight will-change-max-h will-change-opacity ease origin-bottom overflow-hidden transition-all duration-500 max-h-0 opacity-0">
-                                Discover how
-                                purpose-built software
-                                enhances
-                                performance and proves
-                                more cost-effective than
-                                modified solutions in
-                                the long run.
-                            </p>
                         </section>
                     </div>
                     <button

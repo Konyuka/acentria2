@@ -3,7 +3,7 @@
 const content = ref({
     vid: '/img/hd2.mp4',
     pageTitle: 'Acentria Group Reinsurance',
-    title: 'Secure Your Future with Comprehensive Reinsurance Solutions',
+    title: 'Secure Your Future with <span class="text-brand-primary">Comprehensive Reinsurance</span>',
     description: 'At Acentria Group, we provide robust reinsurance solutions designed to protect insurers from significant losses. Our comprehensive coverage options help manage risk, stabilize financial performance, and ensure long-term sustainability. Trust us to deliver the expertise and support you need to navigate the complexities of reinsurance, safeguarding your business and your peace of mind.',
 })
 
