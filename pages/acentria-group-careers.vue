@@ -55,6 +55,39 @@ const joinAsMembers = ref([
         description: '<div class="text-center"> <span class="text-brand-primary">#</span>Empower <span class="text-brand-primary">#</span>Innovate <span class="text-brand-primary">#</span>Prosper </div>',
     },
 ])
+
+const benefits = ref([
+    {
+        name: 'Health & <span class="text-brand-primary"> Wellness </span>',
+        icon: 'fas fa-heart',
+        description: 'You take care of our customers, We take care of you. All Acentria team members receive comprehensive health care cover, access to wellness programs, subsidized gym memberships and health care management programs.'
+    },
+    {
+        name: 'Competitive Staff <span class="text-brand-primary"> Benefits </span>',
+        icon: 'fas fa-calendar-check',
+        description: 'We provide workplace safety insurance covers, sufficient retirement benefits, staff loan facilities and adequate time off to cater for personal development and rejuvenation.'
+    },
+    {
+        name: 'Personal &amp; Professional <span class="text-brand-primary"> Development </span>',
+        icon: 'fas fa-piggy-bank',
+        description: 'We create development plans for our staff and have a robust education support programme that boosts skills and academic qualifications and prepares our high potential employees for their next big challenges!'
+    },
+    {
+        name: 'Skills Development <span class="text-brand-primary"> program </span>',
+        icon: 'fas fa-user-friends',
+        description: 'We give back to our future generations through partnerships with mentorship associations, provide capacity building platforms and programs for our partners and have internship programs to boost our talent pipeline.'
+    },
+    {
+        name: '<span class="text-brand-primary"> Diversity, Equity & </span> Inclusion',
+        icon: 'fas fa-dumbbell',
+        description: 'Our workforce represents the face of the jurisdictions we dwell in and appreciate contributions from all generations as a means of improving our products, services and corporate culture.'
+    },
+    {
+        name: 'Supportive <span class="text-brand-primary"> parental leave </span>',
+        icon: 'fas fa-baby',
+        description: 'Raising the next generation takes time. We support parents in taking time to bond with their newest family member.'
+    }
+]);
 </script>
 
 <template>
@@ -62,12 +95,7 @@ const joinAsMembers = ref([
         <div>
             <div>
 
-                <!-- <div class="text-center">
-                    <span class="text-brand-primary">#</span>Empower <span class="text-brand-primary">#</span>Innovate
-                    <span class="text-brand-primary">#</span>Prosper
-                </div> -->
-
-                <div class="relative isolate overflow-hidden bg-white py-20">
+                <div class="relative isolate overflow-hidden bg-white py-10 mt-28">
                     <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
                         class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
 
@@ -85,11 +113,10 @@ const joinAsMembers = ref([
                                     class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
                                     Careers
                                 </h2>
-                                <h2
-                                    class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
+                                <h2 class="text-left text-3xl font-bold tracking-tight text-white font-sans">
                                     {{ ReinsuranceBannerContent.title }}
                                 </h2>
-                                <p class="text-white text-left max-w-2xl mt-7">
+                                <p class="text-white text-left max-w-2xl mt-7 text-xs">
                                     At Acentria, we understand the profound impact businesses can have on the world.
                                     That’s why
                                     we are dedicated to integrating Environmental, Social, and Governance (ESG)
@@ -106,7 +133,7 @@ const joinAsMembers = ref([
 
                 </div>
 
-                <div class="isolate !mb-5 py-5 md:py-0 mt-10">
+                <div class="isolate !mb-5 py-5 md:py-0 mt-5">
                     <div class="relative isolate -z-10">
                         <div class="container overflow-hidden">
 
@@ -116,13 +143,13 @@ const joinAsMembers = ref([
 
                                     <div class="flex w-full max-w-xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
                                         <h1 id=""
-                                            class="font-sans text-3xl font-semibold leading-tight md:text-4xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">
+                                            class="font-sans text-3xl font-semibold leading-tight md:text-4xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0">
                                             <span
-                                                class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-5xl 2xl:text-5xl">Grow
+                                                class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-3xl">Grow
                                                 With a</span> <br>
                                             Pathfinder
                                         </h1>
-                                        <p class="font-sans text-base leading-normal font-regular text-light-content">
+                                        <p class="font-sans text-xs leading-normal font-regular text-light-content">
                                             Acentria Group has experienced tremendous growth over the last few years.
                                             Our journey has been characterized by diversification of business, immense
                                             learning experiences, changes in corporate culture and increased intensity
@@ -145,7 +172,7 @@ const joinAsMembers = ref([
                                     </div>
 
                                     <div class="relative py-4 lg:basis-1/2">
-                                        <img alt="Image of null" loading="lazy" width="1000" height="350"
+                                        <img alt="Image of null" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" src="/img/simo-office.jpg"
                                             class="rounded-xl" />
@@ -158,17 +185,17 @@ const joinAsMembers = ref([
                     </div>
                 </div>
 
-                <section id="" class="relative md:py-5 bg-white text-left">
+                <section id="" class="relative md:py-2 bg-white text-left">
                     <div class="container px-4">
                         <h2
-                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                            class="text-center font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-1">
                             What drives us at <br>
                             <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
                                 Acentria Group?
                             </span>
                         </h2>
 
-                        <div class="bg-white !font-sans container my-5">
+                        <div class="bg-white !font-sans container my-1">
                             <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
                                 <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
                                     <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -183,8 +210,8 @@ const joinAsMembers = ref([
                                                     {{ member.name
                                                     }}</h3>
                                                 <p class="mt-2 text-xs text-gray-500" v-html="member.description"></p>
-                                                <i
-                                                    class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                                                <!-- <i
+                                                    class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i> -->
                                             </div>
                                         </div>
                                     </div>
@@ -221,32 +248,32 @@ const joinAsMembers = ref([
                     </div>
                 </div>
 
-                <div class="py-5 text-white" style="background-color: #f6f8fc">
+                <div class="py-3 text-white" style="background-color: #f6f8fc">
                     <div class="undefined">
                         <section id="" class="relative py-1">
                             <div class="container px-4">
                                 <div class="pb-5 text-center">
                                     <h2
-                                        class="font-sans tracking-normal text-2xl lg:text-4xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
+                                        class="font-sans tracking-normal text-3xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
                                         We are Devoted to <br><span class="text-brand-primary">Our Core
                                             Principles</span>
                                     </h2>
                                 </div>
                                 <div
-                                    class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0">
+                                    class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 py-0">
 
                                     <div v-for="principle in principles"
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[90vw] rounded-xs bg-white p-5 md:max-w-[90vw] w-full h-full">
+                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[200px] max-w-[90vw] rounded-xs bg-white p-5 md:max-w-[90vw] w-full h-full">
                                         <div class="flex h-fit flex-col">
                                             <i :class="[principle.icon]" class="text-brand-primary text-4xl pb-4"></i>
                                             <div>
                                                 <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
+                                                    class="text-md pb-4 md:pb-5 font-semibold leading-tight text-light-title">
                                                     {{ principle.name }}
                                                 </h4>
                                             </div>
                                             <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
+                                                class="text-xs leading-normal font-regular text-light-content text-sm font-normal not-italic">
                                                 {{ principle.description }}
                                             </p>
                                         </div>
@@ -264,15 +291,15 @@ const joinAsMembers = ref([
                                 class="font-sans mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                 <div>
                                     <h2
-                                        class="font-sans tracking-normal text-2xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                                        class="font-sans tracking-normal text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight pb-4 pt-6">
                                         <span
                                             class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">
-                                            Why would you
+                                            Why would you <br>
                                         </span>
                                         work for Acentria
                                     </h2>
                                     <p
-                                        class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                        class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
                                         Working at Acentria is an enriching journey to growth and prosperity. We have
                                         numerous engagement forums, propagate empowerment and job autonomy, nurture a
                                         supportive and inclusive environment and do not have a “Straight-jacket”
@@ -286,106 +313,16 @@ const joinAsMembers = ref([
                                     </p>
                                 </div>
                                 <div
-                                    class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
-                                    <div class="flex flex-row gap-2">
-                                        <i class="fas fa-heart text-xl text-brand-primary mr-4"></i>
+                                    class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
+                                    <div v-for="benefit in benefits" class="flex flex-row gap-2">
+                                        <i :class="benefit.icon" class="text-xl text-brand-primary mr-4"></i>
                                         <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Health &
-                                                <span class="text-brand-primary">Wellness</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                You take care of our customers, We take care of you. All Acentria team
-                                                members receive comprehensive health care cover, access to wellness
-                                                programs, subsidized gym memberships and health care management
-                                                programs.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="fas fa-calendar-check text-xl text-brand-primary mr-4"></i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Competitive Staff
-                                                <span class="text-brand-primary">Benefits</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                We provide workplace safety insurance covers, sufficient retirement
-                                                benefits, staff loan facilities and adequate time off to cater for
-                                                personal development and rejuvenation.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="fas fa-piggy-bank text-xl text-brand-primary mr-4"></i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Personal &amp; Professional
-                                                <span class="text-brand-primary"> Development</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                We create development plans for our staff and have a robust education
-                                                support programme that boosts skills and academic qualifications and
-                                                prepares our high potential employees for their next big challenges!
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="fas fa-user-friends text-xl text-brand-primary mr-4"></i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Skills Development<span class="text-brand-primary">
-                                                    program</span>
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                We give back to our future generations through partnerships with
-                                                mentorship associations, provide capacity building platforms and
-                                                programs for our partners and have internship programs to boost our
-                                                talent pipeline.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="fas fa-dumbbell text-xl text-brand-primary mr-4"></i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                <span class="text-brand-primary">Diversity, Equity &</span>
-                                                Inclusion
-                                            </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                Our workforce represents the face of the jurisdictions we dwell in and
-                                                appreciate contributions from all generations as a means of improving
-                                                our products, services and corporate culture.
-                                                Each of us is unique and our employees represent a diverse team of
-                                                industry veterans, seasoned professionals and new team members with
-                                                fresh ideas and different perspectives.
+                                            <h5 v-html="benefit.name"
+                                                class="text-sm pb-3 md:pb-4 font-semibold leading-tight text-light-title">
 
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row gap-2">
-                                        <i class="fas fa-baby text-xl text-brand-primary mr-4"></i>
-                                        <div>
-                                            <h5 id=""
-                                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
-                                                Supportive
-                                                <span class="text-brand-primary">parental leave</span>
                                             </h5>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-base">
-                                                Raising the next generation takes time. We support
-                                                parents in taking time to bond with their newest
-                                                family member.
+                                            <p class="leading-normal font-regular text-light-content text-xs">
+                                                {{ benefit.description }}
                                             </p>
                                         </div>
                                     </div>
@@ -397,25 +334,26 @@ const joinAsMembers = ref([
 
                 <section id="" class="relative py-5 bg-white text-left">
                     <div class="container px-4">
-                        <h2
+                        <!-- <h2
                             class="text-center font-sans tracking-normal text-2xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
                             We Firmly Believe That What Makes Us <br>
                             <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
                                 Different Also Makes us Stronger
                             </span>
-                        </h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
+                        </h2> -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <div class="content-center items-center">
                                 <p
-                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
                                     It is critical to our success to foster a diverse workforce that not only reflects
                                     the communities where we do business, but also encourages a variety of thoughts,
                                     opinions and ideas. Each of us is unique and our employees represent a diverse team
                                     of industry veterans, seasoned professionals and new team members with fresh ideas
                                     and different perspectives.
                                 </p>
+                                <br><br>
                                 <p
-                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
                                     We all work to ensure our workplace is free from discrimination and intolerance. We
                                     celebrate the diverse talent and skills of these team members, provide equal access
                                     to growth and advancement, and treat each other with respect. Our philosophy of
@@ -425,9 +363,9 @@ const joinAsMembers = ref([
                                 </p>
 
                             </div>
-                            <div>
+                            <div class="mx-auto">
                                 <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="600" height="350" decoding="async" data-nimg="1"
+                                    width="420" height="350" decoding="async" data-nimg="1"
                                     style="color: transparent; object-fit: contain" class="rounded-xl"
                                     src="/img/team2.jpeg" />
                             </div>
@@ -435,7 +373,7 @@ const joinAsMembers = ref([
                     </div>
                 </section>
 
-                <div class="py-5 text-white" style="background-color: #f6f8fc">
+                <!-- <div class="py-5 text-white" style="background-color: #f6f8fc">
                     <div class="undefined">
                         <section id="" class="relative py-1">
                             <div class="container px-4">
@@ -537,12 +475,12 @@ const joinAsMembers = ref([
                             </div>
                         </section>
                     </div>
-                </div>
+                </div> -->
 
                 <section id="" class="relative py-5 bg-white text-left">
                     <div class="container px-4">
                         <h2
-                            class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                            class="text-center font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
                             Our commitment to
                             <span
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">diversity</span>,
@@ -555,7 +493,7 @@ const joinAsMembers = ref([
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
                             <div class="content-center items-center">
                                 <p
-                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
                                     Acentria is committed to fostering, cultivating and
                                     preserving a culture that celebrates and values diversity,
                                     equity and inclusion. Our DEI&amp;I plan accelerates
@@ -568,8 +506,9 @@ const joinAsMembers = ref([
                                     promoting a sense of belonging and mutual respect among all
                                     employees.
                                 </p>
+                                <br>
                                 <p
-                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
                                     Acentria also supports several Employee Resource Groups
                                     (ERGs) including Generational,
                                     Multicultural, Parenting &amp; Care Giving, Mental Health and Women in Tech. These
@@ -577,16 +516,17 @@ const joinAsMembers = ref([
                                     fast-track DEI&amp;I education and create a safe place for
                                     growth, understanding, compassion and empathy.
                                 </p>
+                                <br>
                                 <p
-                                    class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
                                     We believe that diverse leadership is an essential part of
                                     modern governance and remain committed to exploring new
                                     opportunities to diversify our C-suite.
                                 </p>
                             </div>
-                            <div>
+                            <div class="mx-auto">
                                 <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="600" height="350" decoding="async" data-nimg="1"
+                                    width="420" height="350" decoding="async" data-nimg="1"
                                     style="color: transparent; object-fit: contain" class="rounded-xl"
                                     src="/img/give.jpg" />
                             </div>
@@ -604,14 +544,14 @@ const joinAsMembers = ref([
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
                                 <h2 id=""
-                                    class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                                    class="pb-4 md:pb-5 font-semibold text-3xl  leading-tight text-light-title">
                                     <span
-                                        class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-4xl 2xl:text-4xl">Join
+                                        class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-3xl">Join
                                         our</span>
                                     Talent Community
                                 </h2>
                                 <p
-                                    class="font-sans text-base leading-normal font-regular text-light-content !text-inherit mb-4">
+                                    class="font-sans text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                                     At Acentria Group, we are catalysts of transformation. We are redefining
                                     how businesses operate, reshaping the way industries function, and
                                     empowering decision-makers to drive impactful change—for their
@@ -657,7 +597,7 @@ const joinAsMembers = ref([
                     </div>
                 </div>
 
-                <div class="bg-cover bg-center py-8 md:py-16 lg:py-20" style="
+                <div class="bg-cover bg-center py-10 " style="
                   background-image: url(https://cdn.sanity.io/images/33u1mixi/production/b695dd70af0f5f4be3c091f4607fd14514ac5650-1440x447.svg);
                 ">
                     <div class="font-sans container mx-auto px-4 lg:px-0">
@@ -666,7 +606,7 @@ const joinAsMembers = ref([
                                 <div class="relative mb-8 text-center lg:mb-0 lg:text-left">
                                     <div class="mb-4 !text-dark-content justify-center">
                                         <h2 id=""
-                                            class="text-white text-center text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight undefined lg:pt10 pt-6">
+                                            class="text-white text-center text-3xl pb-4 md:pb-5 font-semibold leading-tight undefined lg:pt10 pt-6">
                                             Let’s make an impact together?
                                         </h2>
                                         <p class="text-center undefined undefined">

@@ -30,7 +30,7 @@
             <div
                 class="mx-auto mt-2 grid max-w-6xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-10 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                 
-                <div class="space-y-8 xl:contents xl:space-y-0">
+                <div class="space-y-8 xl:contents xl:space-y-0 text-xs">
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
                             <blockquote class="text-gray-900">
@@ -63,7 +63,7 @@
                     </div>
 
                 </div>
-                <div class="space-y-8 xl:contents xl:space-y-0">
+                <div class="space-y-8 xl:contents xl:space-y-0 text-xs">
                     <div class="space-y-8 xl:row-start-1">
                         <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-black">
                             <blockquote class="text-gray-900">

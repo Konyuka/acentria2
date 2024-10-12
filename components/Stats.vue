@@ -18,9 +18,8 @@
                                 class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
                                 13k+
                                 <!-- <count-up :end-val="13"></count-up> -->
-
                             </span>
-                            <p class="undefined undefined text-base md:text-xl">
+                            <p class="undefined undefined text-base md:text-xl font-bold">
                                 Customers
                             </p>
                         </div>
@@ -30,7 +29,7 @@
                             <span
                                 class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold"><span
                                     class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">10+</span></span>
-                            <p class="undefined undefined text-base md:text-xl">
+                            <p class="undefined undefined text-base md:text-xl font-bold">
                                 Years
                             </p>
                         </div>
@@ -39,7 +38,7 @@
                         <div class="border-brand-divider border-l pl-6 text-dark-title">
                             <span
                                 class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">5+</span>
-                            <p class="undefined undefined text-base md:text-xl">
+                            <p class="undefined undefined text-base md:text-xl font-bold">
                                 Awards
                             </p>
                         </div>
@@ -49,7 +48,7 @@
                             <span
                                 class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold"><span
                                     class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">5+</span></span>
-                            <p class="undefined undefined text-base md:text-xl">
+                            <p class="undefined undefined text-base md:text-xl font-bold">
                                 Countries
                             </p>
                         </div>
@@ -58,7 +57,7 @@
                         <div class="border-brand-divider border-l pl-6 text-dark-title">
                             <span
                                 class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">24h</span>
-                            <p class="undefined undefined text-base md:text-xl">
+                            <p class="undefined undefined text-base md:text-xl font-bold">
                                 Support
                             </p>
                         </div>

@@ -138,6 +138,7 @@ onMounted(() => {
 
 
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
@@ -174,16 +175,32 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class=" py-10" style="background-color: rgb(246, 248, 252)">
-                <h2
-                  class="text-center font-sans tracking-normal text-2xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
-                  We Firmly Believe That What Makes Us <br>
-                  <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                    Different Also Makes us Stronger
-                  </span>
-                </h2>
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                  <div class="flex flex-col justify-center lg:basis-1/2">
+                    <label class="text-base leading-normal font-regular text-light-highlight font-bold">
+                      The Roadmap
+                    </label>
+                    <h2
+                      class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                      Our <span class="text-brand-primary">Purpose</span>
+                    </h2>
+                    <div class="text-light-content pb-5 md:pb-6">
+                      <p class="text-sm leading-normal font-regular text-light-content !text-inherit mb-4">
+                        To continuously Empower our clients and communities through innovative solutions, which
+                        enhancing prosperity and adding value to a dynamic global environment.
+                        Passionately remain at the forefront in empowering the vision of our clients through igniting
+                        innovative thinking in offering the best solutions to enhance prosperity.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                      data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                      src="/img/purpose.jpeg" data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                </div>
+
               </div>
 
               <div class="bg-gray-600 py-10">
@@ -245,70 +262,15 @@ onMounted(() => {
                 </div>
               </div>
 
-              <!-- <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                  <div class="flex flex-col justify-center lg:basis-1/2">
-
-                    <div class="text-light-content pb-2">
-
-                      <div class="grid grid-cols-2 gap-3">
-
-                        <div class="flex flex-col justify-center lg:basis-1/2 mt-4">
-                          <h2
-                            class="text-2xl pb-1 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                            Our <span class="text-brand-primary">Mission</span>
-                          </h2>
-                          <div class="text-light-content pb-2">
-                            <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                              To provide financial and risk advisory services through
-                              innovations that
-                              empower our clients’ prosperity.
-                            </p>
-                          </div>
-                        </div>
-
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                          <h2
-                            class="text-2xl pb-1 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                            Our <span class="text-brand-primary">Vision</span>
-                          </h2>
-                          <div class="text-light-content pb-2">
-                            <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                              To be a global leader empowering prosperity.
-                            </p>
-                          </div>
-                        </div>
-
-
-                      </div>
-
-
-                      <div class="flex flex-col justify-center lg:basis-1/2 mt-10">
-                        <h2
-                          class="text-2xl pb-1 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                          Our <span class="text-brand-primary">Values</span>
-                        </h2>
-                        <div class="text-black pb-2">
-                          <div class="grid grid-cols-3 gap-3 mt-2">
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Integrity</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Excellence</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Innovative</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Teamwork</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Relationships</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Growth &amp; Prosperity</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                  <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                      src="/img/compass.jpeg" data-v-inspector="components/Why.vue:34:17" />
-                  </div>
-                </div>
-              </div> -->
+              <div class=" py-10" style="background-color: rgb(246, 248, 252)">
+                <h2
+                  class="text-center font-sans tracking-normal text-2xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                  We Firmly Believe That What Makes Us <br>
+                  <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                    Different Also Makes us Stronger
+                  </span>
+                </h2>
+              </div>
 
               <section class="relative py-10">
                 <div class="container px-4">
@@ -348,7 +310,7 @@ onMounted(() => {
               <div class="bg-white font-sans">
                 <div>
                   <h2
-                    class="text-center font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                    class="text-center font-sans tracking-normal text-3xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-5">
                     Our Lines
                     <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
                       of Business
