@@ -5,7 +5,7 @@
 
 <template>
     <div class="font-sans text-white py-2 max-w-5xl mx-auto" style="background-color: #f6f8fc">
-        <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-1 lg:gap-1">
+        <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-1 lg:gap-20">
             <div class="relative p-1 lg:basis-1/2 ">
                 <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
                     decoding="async" data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
@@ -15,8 +15,7 @@
                 <label class="text-md leading-normal font-regular text-light-highlight font-bold">Build
                     organizational resilience
                 </label>
-                <h2
-                    class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
+                <h2 class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
                     Empower Your Business with Innovative Insurance and Investment Solutions.
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
@@ -32,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-1 lg:gap-1">
+        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-1 lg:gap-20">
             <div class="relative p-1 lg:basis-1/2">
                 <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
                     style="color: transparent; object-fit: contain" class="rounded-lg"
@@ -42,8 +41,7 @@
                 <label class="text-md leading-normal font-regular text-light-highlight font-bold">Stay
                     ahead of the competition
                 </label>
-                <h2
-                    class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
+                <h2 class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
                     Elevate Your Strategies with Precision and Innovation
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
@@ -72,8 +70,7 @@
             <div class="flex flex-col justify-center lg:basis-1/2">
                 <label class="text-md leading-normal font-regular text-light-highlight font-bold">Reinforce
                     investor confidence</label>
-                <h2
-                    class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
+                <h2 class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
                     Unlock Greater Efficiency and Insight with Our Expertise.
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">

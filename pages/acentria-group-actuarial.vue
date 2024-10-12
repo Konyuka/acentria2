@@ -134,7 +134,8 @@ const heroContent = ref({
                                 class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
                                 <div class="w-full grid grid-cols-12">
                                     <div class="col-span-7">
-                                        <h1 class="text-3xl text-white font-bold my-2 ">Acentria Atuarial & Financial Services</h1>
+                                        <h1 class="text-3xl text-white font-bold my-2 ">Acentria Atuarial & Financial
+                                            Services</h1>
                                     </div>
                                     <div class="col-span-5">
                                     </div>
@@ -153,7 +154,7 @@ const heroContent = ref({
                             <div class="container px-4">
                                 <div class="pb-5 text-center">
                                     <h2
-                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-white font-semibold leading-tight lg:leading-tight">
+                                        class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
                                         Best of Actuarial Consulting, Products & Services
                                     </h2>
                                 </div>
@@ -165,17 +166,17 @@ const heroContent = ref({
                     </div>
                 </div>
 
-                <section id="" class="relative py-4  bg-white text-center">
+                <section id="" class="relative py-8  bg-white text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             <span class="text-brand-primary">Your Actuarial Services, Your Way.</span> <br>
                             Let Acentria Tailor Your Solutions To Your Needs
                         </h2>
                     </div>
                 </section>
 
-                <div class="py-4 text-white" style="background-color: #f6f8fc">
+                <div class="py-4 text-white max-w-3xl mx-auto" style="background-color: #f6f8fc">
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2  lg:gap-16">
 
@@ -187,7 +188,7 @@ const heroContent = ref({
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
                                     Acentria Actuarial & Financial Services has been a trusted provider of Actuarial
                                     Services to Life, Non-Life Companies, and Pension Schemes in East & Central Africa
                                     for many years. Our dedicated expertise extends to advising various Health Insurance

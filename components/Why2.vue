@@ -4,23 +4,22 @@
 </script>
 
 <template>
-    <div class="font-sans text-white py-2" style="background-color: #f6f8fc">
-        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-1 lg:gap-1">
+    <div class="font-sans text-white py-2 max-w-5xl mx-auto" style="background-color: #f6f8fc">
+        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-1 lg:gap-20">
             <div class="relative p-1 lg:basis-1/2">
                 <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
                     style="color: transparent; object-fit: contain" class="rounded-lg"
                     src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2">
-                <label class="text-base leading-normal font-regular text-light-highlight font-bold">Stay
+                <label class="text-md leading-normal font-regular text-light-highlight font-bold">Stay
                     ahead of the competition
                 </label>
-                <h2
-                    class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                <h2 class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
                     Elevate Your Strategies with Precision and Innovation
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
-                    <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
+                    <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                         Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and
                         investment decisions, ensuring you stay ahead in a rapidly evolving market. Our solutions
                         provide
@@ -36,21 +35,20 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-1">
+        <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-20">
             <div class="relative p-1 lg:basis-1/2">
                 <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                     decoding="async" data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                     src="/img/boat.jpg" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2">
-                <label class="text-base leading-normal font-regular text-light-highlight font-bold">Reinforce
+                <label class="text-md leading-normal font-regular text-light-highlight font-bold">Reinforce
                     investor confidence</label>
-                <h2
-                    class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                <h2 class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
                     Unlock Greater Efficiency and Insight with Our Expertise.
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
-                    <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4">
+                    <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                         Streamline your operations and enhance decision-making with our integrated solutions in risk
                         management, actuarial services, and tech advancements tailored for your industry needs. Our
                         comprehensive approach ensures that you have the tools and insights necessary to navigate
