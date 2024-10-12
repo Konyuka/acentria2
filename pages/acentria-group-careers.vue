@@ -35,7 +35,7 @@ const principles = ref([
 
 const ReinsuranceBannerContent = ref({
     title: 'Acentria Group Careers',
-    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/careers.jpg',
 })
 
 const joinAsMembers = ref([
@@ -341,7 +341,7 @@ const benefits = ref([
                                 Different Also Makes us Stronger
                             </span>
                         </h2> -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto max-w-5xl">
                             <div class="content-center items-center">
                                 <p
                                     class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
@@ -490,7 +490,13 @@ const benefits = ref([
                             <span
                                 class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">inclusion</span>
                         </h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 mx-auto max-w-5xl">
+                            <div class="mx-auto">
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                    width="420" height="350" decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain" class="rounded-xl"
+                                    src="/img/give.jpg" />
+                            </div>
                             <div class="content-center items-center">
                                 <p
                                     class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
@@ -524,12 +530,7 @@ const benefits = ref([
                                     opportunities to diversify our C-suite.
                                 </p>
                             </div>
-                            <div class="mx-auto">
-                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="420" height="350" decoding="async" data-nimg="1"
-                                    style="color: transparent; object-fit: contain" class="rounded-xl"
-                                    src="/img/give.jpg" />
-                            </div>
+
                         </div>
                     </div>
                 </section>
@@ -543,8 +544,7 @@ const benefits = ref([
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
-                                <h2 id=""
-                                    class="pb-4 md:pb-5 font-semibold text-3xl  leading-tight text-light-title">
+                                <h2 id="" class="pb-4 md:pb-5 font-semibold text-3xl  leading-tight text-light-title">
                                     <span
                                         class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-3xl">Join
                                         our</span>

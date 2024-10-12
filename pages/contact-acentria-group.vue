@@ -65,7 +65,7 @@ const ReinsuranceBannerContent = ref({
                                         <div>
                                             <dt class="sr-only">Email</dt>
                                             <dd>
-                                                <a class="font-semibold !text-brand-primary tracking-widest"
+                                                <a class="font-bold !text-brand-primary "
                                                     href="mailto:collaborate@example.com">
                                                     info@acentraigaroup.com
                                                 </a>
@@ -82,7 +82,7 @@ const ReinsuranceBannerContent = ref({
                                         <div class="mt-1">
                                             <dt class="sr-only">Phone number</dt>
                                             <dd>
-                                                <a class="font-semibold !text-brand-primary tracking-widest transform transition duration-700 hover:scale-125 "
+                                                <a class="font-bold !text-brand-primary  transform transition duration-700 hover:scale-125 "
                                                     href="tel:+254 705 200 222">
                                                     +254 705 200 222
                                                 </a>
@@ -92,7 +92,7 @@ const ReinsuranceBannerContent = ref({
                                 </div>
 
                                 <div class="rounded-lg bg-gray-50 p-3 shadow-md">
-                                    <h3 class="text-base font-semibold leading-7 text-gray-900">
+                                    <h3 class="text-base font-bold leading-7 text-gray-900">
                                         WhatsApp
                                     </h3>
                                     <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
@@ -106,7 +106,7 @@ const ReinsuranceBannerContent = ref({
                                     </dl>
                                 </div>
                                 <div class="rounded-lg bg-gray-50 p-3 shadow-md">
-                                    <h3 class="text-base font-semibold leading-7 text-gray-900">
+                                    <h3 class="text-base font-bold leading-7 text-gray-900">
                                         Box Office
                                     </h3>
                                     <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600">
@@ -128,9 +128,9 @@ const ReinsuranceBannerContent = ref({
                                 <h2 class="text-3xl font-bold tracking-tight text-gray-900">
                                     Visit Us
                                 </h2>
-                                <p class="mt-4 leading-7 text-black tracking-widest">
+                                <p class="mt-4 leading-7 text-black font-bold">
                                     West Park Towers - 9th floor, Mpesi Lane <br />
-                                    Muthithi Road - Westlands Nairobi Kenya
+                                    <span class="text-brand-primary">Muthithi Road - Westlands Nairobi Kenya</span>
                                 </p>
                             </div>
 
