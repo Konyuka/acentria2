@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative w-full h-auto bg-cover bg-center bg-no-repeat false" style="
+    <div class="relative w-full h-auto bg-cover bg-center bg-no-repeat false mt-40" style="
                   background-image: url(https://cdn.sanity.io/images/33u1mixi/production/9586fc11ddcb60222de682cdb07fe9d57103448b-1440x595.svg?fit=max&amp;auto=format);
                 ">
         <div class="container">
@@ -22,13 +22,13 @@ const props = defineProps({
                     </div>
                     <div class="w-full">
                         <h1
-                            class="font-sans tracking-normal text-4xl  text-gray-900 font-semibold leading-tight lg:leading-tight">
+                            class="font-sans tracking-normal text-3xl  text-gray-900 font-semibold leading-tight lg:leading-tight">
                             {{ content.title }}
                         </h1>
                     </div>
                     <div>
                         <p
-                            class="font-sans tracking-normal text-base text-gray-900 leading-tight lg:leading-tight pb-2">
+                            class="font-sans tracking-normal text-md text-gray-900 leading-tight lg:leading-tight pb-2">
                             {{ content.description }}
                         </p>
                     </div>

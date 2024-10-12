@@ -46,26 +46,26 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
                 <section id="" class="relative py-2 bg-white text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             <span class="text-brand-primary">Acentria Investment Services</span> <br>
                             Unlock Your Financial Potential
                         </h2>
                     </div>
                 </section>
 
-                <div class="py-3 text-white" style="background-color: #f6f8fc">
+                <div class="py-3 text-white mx-auto max-w-5xl align-center h-full" style="background-color: #f6f8fc">
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
                         <div class="relative py-4 lg:basis-1/2">
-                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="500"
+                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="400"
                                 height="350" decoding="async" data-nimg="1"
                                 style="color: transparent; object-fit: contain" class="rounded-xl"
                                 src="https://images.pexels.com/photos/6802048/pexels-photo-6802048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-base leading-normal font-sans text-light-content !text-inherit mb-4">
+                                <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
                                     We’re not your usual investment folks – we’re like your financial buddies. Our goal
                                     is to understand your dreams and make them happen. Whether it’s setting up
                                     guaranteed endowments that keep your future secure or showing you how unit trusts
