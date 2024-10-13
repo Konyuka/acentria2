@@ -9,6 +9,11 @@ const formatDate = (date) => {
     return moment(date).format('lll');
 }
 
+const ReinsuranceBannerContent = ref({
+    title: 'Acentria\'s Newsroom',
+    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+})
+
 const getUrl = (title, id) => {
     const lowerCaseTitle = title.toLowerCase();
     const cleanedTitle = lowerCaseTitle.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()'"]/g, '');
@@ -41,9 +46,42 @@ onMounted(async () => {
 </script>
 
 <template>
-    <main class="font-sans mt-32">
+    <div class="relative isolate overflow-hidden bg-white py-10 mt-32">
+        <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
+            class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+        <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
+            <div class="grid grid-cols-10 -gap-10">
+                <div class="text-white col-span-1">
+                    <div class="w-20 h-1 bg-white mt-3">
+
+                    </div>
+                </div>
+                <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
+                    <h2 class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
+                        News & Updates
+                    </h2>
+                    <h2 class="text-left text-3xl font-bold tracking-tight text-white font-sans">
+                        {{ ReinsuranceBannerContent.title }}
+                    </h2>
+                    <p class="text-white text-left max-w-2xl mt-7 text-xs">
+                        Stay informed on the latest developments and trends shaping the world of risk, insurance, and
+                        financial services. Explore our resources and insights, covering everything from reinsurance
+                        strategies and aviation insurance to actuarial analysis and innovative IT solutions for the
+                        public and private sectors.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <main class="font-sans mt-5">
         <main>
-            <div class="flex w-full flex-row px-4 py-4 md:px-16 md:pb-6">
+
+            <!-- <div class="flex w-full flex-row px-4 py-4 md:px-16 md:pb-6">
                 <div class="container mx-auto flex h-full justify-center gap-0 md:gap-6 md:pb-0">
                     <div class="flex cursor-default flex-col md:flex-row">
                         <div
@@ -67,7 +105,7 @@ onMounted(async () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
             <div class="max-w-6xl mx-auto">
