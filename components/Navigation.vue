@@ -321,12 +321,12 @@ onBeforeUnmount(() => {
 
     <div :class="bottomBarClass">
         <div class="relative z-50 mx-auto hidden w-full px-2 py-2 lg:block bg-white">
-            <div class="font-sans px-10 mx-auto flex flex-row items-center justify-between">
+            <div class="font-sans px-2 mx-auto flex flex-row items-center justify-between">
 
 
                 <div class="flex font-sans mb-0">
 
-                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="240" height="50" decoding="async"
+                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="260" height="50" decoding="async"
                             data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
                     </NuxtLink>
 

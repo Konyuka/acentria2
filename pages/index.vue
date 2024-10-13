@@ -89,7 +89,7 @@ onMounted(() => {
             <div>
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-              <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[138px] z-20"
+              <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
                 style="background-image:url('/img/bg.png');">
                 <div class="container">
                   <div
