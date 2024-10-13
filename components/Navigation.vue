@@ -324,7 +324,7 @@ onBeforeUnmount(() => {
             <div class="font-sans px-2 mx-auto flex flex-row items-center justify-between">
 
 
-                <div class="flex font-sans mb-0">
+                <div class="flex font-sans mb-0 mt-1">
 
                     <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="260" height="50" decoding="async"
                             data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
