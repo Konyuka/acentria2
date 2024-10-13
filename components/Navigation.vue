@@ -209,6 +209,39 @@ const acProducts = ref([
 
 const activeMenuData = ref([]);
 
+const menus = ref([
+    {
+        name: 'About Us',
+        icon: 'fas fa-info-circle',
+        link: '/about-us',
+    },
+    {
+        name: 'Insurance',
+        icon: 'fas fa-shield-alt',
+        link: '/insurance',
+    },
+    {
+        name: 'Reinsurance',
+        icon: 'fas fa-sync-alt',
+        link: '/reinsurance',
+    },
+    {
+        name: 'Actuarial',
+        icon: 'fas fa-calculator',
+        link: '/actuarial',
+    },
+    {
+        name: 'Technology',
+        icon: 'fas fa-laptop-code',
+        link: '/technology',
+    },
+    {
+        name: 'Investment',
+        icon: 'fas fa-chart-line',
+        link: '/investment',
+    },
+]);
+
 const showDropdown = (menu) => {
     if (hideTimeout) {
         clearTimeout(hideTimeout);
@@ -287,8 +320,8 @@ onBeforeUnmount(() => {
 <template>
 
     <div :class="bottomBarClass">
-        <div class="relative z-50 mx-auto hidden w-full px-8 py-1 lg:block bg-brand-gray">
-            <div class="font-sans container mx-auto flex flex-row items-center justify-between">
+        <div class="relative z-50 mx-auto hidden w-full px-2 py-2 lg:block bg-white">
+            <div class="font-sans px-10 mx-auto flex flex-row items-center justify-between">
                 <!-- socials -->
                 <div class="flex items-center justify-end md:justify-end md:col-span-1">
                     <div class="flex gap-6">
@@ -325,6 +358,16 @@ onBeforeUnmount(() => {
                     </div>
                 </div>
 
+                <div class="flex font-sans mb-0">
+
+                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="240" height="50" decoding="async"
+                            data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
+                    </NuxtLink>
+
+
+
+                </div>
+
                 <!-- Top Links -->
                 <div class="flex flex-row items-center justify-end text-xs text-black">
                     <NuxtLink to="/" :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
@@ -356,27 +399,23 @@ onBeforeUnmount(() => {
         </div>
 
         <div
-            class="top-1 z-50 mx-auto hidden w-full bottom-0 justify-between px-4 py-1 transition-all duration-200 lg:flex false bg-white false">
-            <div class="container mx-auto items-center justify-between lg:flex">
-                <div class="flex font-sans mb-0">
+            class="top-0 z-50 mx-auto hidden w-full bottom-0 justify-between px-4 py-0 transition-all duration-200 lg:flex false bg-white false relative">
+            <div class="mx-auto ">
+                <div class="flex font-sans">
 
-                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="240" height="50" decoding="async"
-                            data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
-                    </NuxtLink>
+                    <div class="flex gap-2 my-2">
+                        <FlyoutMenu v-for="menu in menus" :theMenu="menu" />
+                    </div>
 
 
-
-                </div>
-                <div class="flex font-sans mr-16">
-
-                    <div class="z-50 content-center">
+                    <!-- <div class="z-50 content-center">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="/" @mouseenter="showDropdown('about')"
-                                @mouseleave="hideDropdown('about')"
+                            <NuxtLink to="/" @mouseenter="showDropdown('about')" @mouseleave="hideDropdown('about')"
                                 :class="[isAboutDropdownVisible ? '!text-brand-primary !font-bold' : 'font-semibold', currentRoute === '/about-us/who-we-are' ? '!text-brand-primary scale-105 !font-bold' : '']"
                                 class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
                                 About Us
                             </NuxtLink>
+
 
                             <AboutDropDown v-show="isAboutDropdownVisible" @mouseenter="showDropdown('about')"
                                 @mouseleave="hideDropdown('about')" class="" />
@@ -384,9 +423,9 @@ onBeforeUnmount(() => {
 
 
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="z-50 content-center">
+                    <!-- <div class="z-50 content-center">
                         <div class="relative flex flex-col px-4 hover:cursor-default">
                             <NuxtLink to="/acentria-group-insurance" @mouseenter="showDropdown('insurance')"
                                 @mouseleave="hideDropdown('insurance')"
@@ -459,11 +498,10 @@ onBeforeUnmount(() => {
                                 </NuxtLink>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
-                <div></div>
 
             </div>
         </div>
@@ -584,6 +622,7 @@ onBeforeUnmount(() => {
                 class="fixed left-0 top-0 z-[999] h-full w-screen -translate-x-full overflow-scroll bg-white transition-[transform] duration-300 null">
             </div>
         </div>
+
     </div>
 
 

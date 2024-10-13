@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 <template>
 
-    <div class=" scroll-smooth">
+    <div class="">
         <Navigation />
 
         <slot />

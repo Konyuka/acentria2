@@ -206,21 +206,6 @@ const claims = ref({
             description: 'Find answers to frequently asked questions about the claims process and how to resolve common issues.',
             link: '/insurance/biasahara-cover',
         },
-        {
-            name: '',
-            description: '',
-            link: '',
-        },
-        {
-            name: '',
-            description: '',
-            link: '',
-        },
-        {
-            name: '',
-            description: '',
-            link: '',
-        },
     ]
 });
 
