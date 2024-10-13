@@ -1,5 +1,5 @@
 <template>
-    <Popover class="isolate z-50 shadow-3xl w-38">
+    <Popover class="isolate z-50 shadow-3xl w-32">
         <div class="bg-white py-2 justify-center flex">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <PopoverButton @click="openFlyover(theMenu.name)"

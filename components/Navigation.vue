@@ -211,7 +211,7 @@ const activeMenuData = ref([]);
 
 const menus = ref([
     {
-        name: 'About Us',
+        name: 'About',
         icon: 'fas fa-info-circle',
         link: '/about-us',
     },
@@ -322,41 +322,7 @@ onBeforeUnmount(() => {
     <div :class="bottomBarClass">
         <div class="relative z-50 mx-auto hidden w-full px-2 py-2 lg:block bg-white">
             <div class="font-sans px-10 mx-auto flex flex-row items-center justify-between">
-                <!-- socials -->
-                <div class="flex items-center justify-end md:justify-end md:col-span-1">
-                    <div class="flex gap-6">
-                        <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
-                            <div
-                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                <i class="!text-xl fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
-                            </div>
-                        </a>
-                        <a href="https://x.com/acentriagroup?lang=en" target="_blank">
-                            <div
-                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                <i class="!text-xl fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
-                            <div
-                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                <i class="!text-xl fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/acentriagroup/" target="_blank">
-                            <div
-                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                <i class="!text-xl fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
-                            </div>
-                        </a>
-                        <a href="https://www.tiktok.com/@acentria.group" target="_blank">
-                            <div
-                                class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                <i class="!text-xl fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
 
                 <div class="flex font-sans mb-0">
 
@@ -369,31 +335,71 @@ onBeforeUnmount(() => {
                 </div>
 
                 <!-- Top Links -->
-                <div class="flex flex-row items-center justify-end text-xs text-black">
-                    <NuxtLink to="/" :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
-                        Home
-                    </NuxtLink>
-                    <!-- <NuxtLink to="/about-acentria-group"
-                        :class="currentRoute === '/about-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation">
-                        About
-                    </NuxtLink> -->
-                    <NuxtLink to="/acentria-news-and-blogs"
-                        :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
-                        News & Updates
-                    </NuxtLink>
-                    <NuxtLink to="/acentria-group-careers"
-                        :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
-                        Careers
-                    </NuxtLink>
-                    <NuxtLink to="/contact-acentria-group"
-                        :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                        class=" relative px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
-                        Contacts Us
-                    </NuxtLink>
+                <div class="flex flex-col gap-4 items-center justify-end text-xs text-black">
+                    <!-- socials -->
+                    <div class="pl-32 flex items-center justify-end md:justify-end md:col-span-1">
+                        <div class="flex gap-6">
+                            <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-md fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://x.com/acentriagroup?lang=en" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-md fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-md fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/acentriagroup/" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-md fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.tiktok.com/@acentria.group" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-md fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <NuxtLink to="/"
+                            :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
+                            class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            Home
+                        </NuxtLink>
+                        <NuxtLink to="/acentria-news-and-blogs"
+                            :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
+                            class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            News & Updates
+                        </NuxtLink>
+                        <NuxtLink to="/acentria-group-careers"
+                            :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
+                            class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            Careers
+                        </NuxtLink>
+                        <NuxtLink to="/contact-acentria-group"
+                            :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
+                            class=" relative px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            Contacts Us
+                        </NuxtLink>
+                    </div>
+
                 </div>
             </div>
         </div>
