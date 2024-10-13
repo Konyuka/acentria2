@@ -14,7 +14,8 @@
         <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 -translate-y-1"
             enter-to-class="opacity-100 translate-y-1" leave-active-class="transition ease-in duration-150"
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-1">
-            <PopoverPanel
+
+            <!-- <PopoverPanel
                 class=" w-screen absolute inset-x-0 top-0 -z-20 bg-white pt-8 shadow-lg ring-1 border-1 ring-gray-900/5">
                 <div
                     class="my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-4 lg:gap-4 lg:px-8 gap-8">
@@ -34,7 +35,6 @@
                                 {{ item.name }}
                                 <span class="absolute inset-0" />
                             </a>
-                            <!-- <p class="mt-1 text-black text-xs">{{ item.description }}</p> -->
                         </div>
                         <div 
                         v-if="currentSubmenu === item.name"
@@ -76,7 +76,74 @@
                         </div>
                     </div>
                 </div>
+            </PopoverPanel> -->
+            <PopoverPanel
+                class=" w-screen absolute inset-x-0 top-0 -z-20 bg-white pt-8 shadow-lg ring-1 border-1 ring-gray-900/5">
+                <div
+                    class="my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-4 lg:gap-4 lg:px-8 gap-8">
+
+                    <template v-for="(item, index) in currentMenuItems" :key="item.name">
+                        <!-- Individual Menu Item -->
+                        <div @click="setSubmenu(item, index)"
+                            :class="[currentSubmenu === item.name ? 'bg-gray-200 scale-105' : 'bg-gray-100']"
+                            class="relative hover:cursor-pointer hover:scale-105 duration-700 ease-in-out transform transition group mx-3 flex gap-6 rounded-sm text-sm leading-6 hover:bg-gray-200 sm:flex-col sm:py-5 px-3">
+                            <div
+                                class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                <i :class="[item.icon, currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
+                                    class=" group-hover:text-brand-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <a :href="item.href"
+                                    :class="[currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
+                                    class="font-bold  text-md">
+                                    {{ item.name }}
+                                    <span class="absolute inset-0" />
+                                </a>
+                            </div>
+                            <div v-if="currentSubmenu === item.name"
+                                class="absolute -bottom-4 ml-5 bg-gray-200 h-14 w-3 -mb-10">
+                            </div>
+                        </div>
+
+                        <!-- Conditionally Insert Submenu Items Between Rows -->
+                        <!-- Check if the index is at the end of a row (for lg:grid-cols-4), insert submenu row after it -->
+                        <div v-if="(index + 1) % 4 === 0 && currentSubmenuItems !== null && selectedIndex <= index"
+                            class="col-span-4 bg-gray-200">
+                            <div class="mx-auto max-w-full">
+                                <div
+                                    class="z-50 bg-gray-200 mx-auto grid grid-cols-1 gap-4 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-4 lg:gap-4 lg:px-8 xl:gap-8">
+                                    <NuxtLink :to="item.link" v-for="submenuItem in currentSubmenuItems"
+                                        :key="submenuItem.name"
+                                        class="bg-gray-100 button-animation group relative mx-2 flex gap-6 rounded-lg p-3 text-sm leading-6 hover:bg-gray-100 sm:flex-col sm:p-6">
+                                        <div>
+                                            <a :href="submenuItem.href" class="font-bold text-brand-primary text-xs">
+                                                {{ submenuItem.name }}
+                                                <span class="absolute inset-0" />
+                                            </a>
+                                            <p class="mt-1 text-black text-xs">{{ submenuItem.description }}</p>
+                                        </div>
+                                    </NuxtLink>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+
+                <div class="bg-gray-50">
+                    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+                        <div
+                            class="grid grid-cols-3 divide-y divide-gray-900/5 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
+                            <a v-for="item in callsToAction" :key="item.name" :href="item.href"
+                                class="flex items-center gap-x-2.5 p-3 px-6 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 sm:justify-center sm:px-0">
+                                <component :is="item.icon" class="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                                {{ item.name }}
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </PopoverPanel>
+
+
         </transition>
     </Popover>
 </template>
@@ -662,6 +729,8 @@ const ActuarialMenus = ref([
     },
 ])
 
+const selectedIndex = ref(null)
+
 const openFlyover = (menu) => {
     if (currentMenu.value === menu) {
         currentMenu.value = null
@@ -684,16 +753,18 @@ const openFlyover = (menu) => {
     }
 }
 
-const setSubmenu = (menu) => {
+const setSubmenu = (menu, index) => {
 
     if(currentSubmenu.value === menu.name){
         currentSubmenu.value = null
         currentSubmenuItems.value = null
+        selectedIndex.value = null
         return
 
     }
     currentSubmenu.value = menu.name
     currentSubmenuItems.value = menu.items
+    selectedIndex.value = index;
     if(menu.name === 'Personal Cover'){
         currentSubmenuItems.value = currentMenuItems.value[0].items
     }

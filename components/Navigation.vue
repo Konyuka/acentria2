@@ -343,35 +343,35 @@ onBeforeUnmount(() => {
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-md fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-lg fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://x.com/acentriagroup?lang=en" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-md fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-lg fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-md fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-lg fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://www.instagram.com/acentriagroup/" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-md fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-lg fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://www.tiktok.com/@acentria.group" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-md fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-lg fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                         </div>
