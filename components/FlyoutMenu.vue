@@ -38,7 +38,7 @@
                         </div>
                         <div 
                         v-if="currentSubmenu === item.name"
-                        class="absolute -bottom-4 ml-5 bg-gray-200 h-14 w-5 -mb-10">
+                        class="absolute -bottom-4 ml-5 bg-gray-200 h-14 w-3 -mb-10">
                         </div>
                     </div>
                 </div>
@@ -668,7 +668,7 @@ const openFlyover = (menu) => {
         return
     } else {
         currentMenu.value = menu
-        if (currentMenu.value === 'About Us') {
+        if (currentMenu.value === 'About') {
             currentMenuItems.value = AboutMenus.value
         }
         if (currentMenu.value === 'Insurance') {
