@@ -12,7 +12,7 @@ const props = defineProps({
                 <div class="container px-4">
                     <div class="pb-10 text-center lg:pb-14">
                         <h2
-                            class="font-sans tracking-normal text-3xl lg:text-4xl text-black font-semibold leading-tight lg:leading-tight">
+                            class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
                             {{ InsuranceCardsContent.title }}
                         </h2>
                     </div>
@@ -21,26 +21,26 @@ const props = defineProps({
                         <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-0">
 
                             <div v-for="user in InsuranceCardsContent.users" :key="user.name"
-                                class="shadow-2xl group button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[290px] max-w-[90vw] rounded-xl bg-white p-5 md:max-w-[75vw] w-full h-full">
+                                class="shadow-2xl group button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[190px] max-w-[90vw] rounded-xl bg-white p-5 md:max-w-[75vw] w-full h-full">
                                 <div class="font-sans flex h-fit flex-col"><i
                                         class="material-symbols-outlined text-brand-primary text-4xl pb-4"
                                         translate="no">health_and_safety</i>
                                     <div>
                                         <h4 id=""
-                                            class="font-sans text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
+                                            class="font-sans text-md pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
                                             {{ user.name }}
                                         </h4>
                                     </div>
                                     <p
-                                        class="font-sans text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
+                                        class="font-sans font-regular text-light-content text-xs font-normal not-italic leading-normal">
                                         {{ user.description }}
                                     </p>
                                     <button
-                                        class="group-hover:scale-90 rounded border-2 border-brand-primary duration-200 px-3 py-2 font-semibold whitespace-nowrap bg-brand-primary rounded text-brand-white hover:bg-brand-red-2 active:bg-brand-red-1 active:border-brand-red-1 hover:border-brand-red-2 mt-8 flex font-semibold"
+                                        class="group-hover:scale-90 rounded border-2 border-brand-primary duration-200 px-3 py-2 whitespace-nowrap bg-brand-primary rounded text-brand-white hover:bg-brand-red-2 active:bg-brand-red-1 active:border-brand-red-1 hover:border-brand-red-2 mt-8 flex font-semibold"
                                         type="submit" data-v-inspector="components/ContactForm.vue:105:21">
                                         <div class="flex items-center justify-center !text-center w-full"
                                             data-v-inspector="components/ContactForm.vue:108:25">
-                                            <div class="px-2 text-center"
+                                            <div class="px-2 text-center text-xs"
                                                 data-v-inspector="components/ContactForm.vue:109:29">
                                                 Get a Quote
                                             </div>

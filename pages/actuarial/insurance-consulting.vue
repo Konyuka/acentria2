@@ -46,9 +46,9 @@ const faqs = ref([
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ActuarialFeature :content="ReinsuranceFeatureContent" />
-        <div class="pb-2 text-center">
+        <div class="text-center">
             <h2
-                class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
+                class="font-sans tracking-normal text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
                 Services We Offer
             </h2>
         </div>

@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
     <div>
-        <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="
+        <div class="relative w-full bg-cover bg-center bg-no-repeat false mt-40" style="
             background-image: url(https://cdn.sanity.io/images/33u1mixi/production/9586fc11ddcb60222de682cdb07fe9d57103448b-1440x595.svg?fit=max&amp;auto=format);
           ">
             <div class="container">
@@ -24,17 +24,17 @@ const props = defineProps({
                                 </label>
                             </div>
                             <h1 v-html="InsuranceBannerContent.title"
-                                class="font-sans tracking-normal text-4xl lg:text-5xl text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                class="font-sans tracking-normal text-4xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
                             </h1>
                         </div>
                         <div>
-                            <p class="font-sans tracking-normal text-base text-gray-700 leading-tight lg:leading-tight">
+                            <p class="font-sans tracking-normal text-xs text-gray-700 leading-tight lg:leading-tight">
                                 {{ InsuranceBannerContent.content }}
                             </p>
                         </div>
                         <div class="w-full">
                             <a href="#"
-                                class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
+                                class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-md">
                                 Engage an Expert<svg
                                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                                     fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
@@ -44,7 +44,7 @@ const props = defineProps({
                                             d="M1 1l4 4-4 4"></path>
                                     </g>
                                 </svg></a><a href="#"
-                                class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
+                                class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-md">
                                 Get a Quote<svg
                                     class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                                     fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">

@@ -12,9 +12,9 @@ const props = defineProps({
         <div class="bg-white">
             <main>
                 <!-- Pricing section -->
-                <div class="font-sans mx-5 md:mx-auto max-w-7xl">
+                <div class="font-sans mx-5 md:mx-auto max-w-6xl">
                     <div class="mx-auto max-w-4xl text-center">
-                        <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900">
+                        <p class="mt-2 text-3xl font-semibold tracking-tight text-gray-900">
                             Why work with <span class="text-brand-primary">Acentria</span>
                         </p>
                     </div>
@@ -31,10 +31,10 @@ const props = defineProps({
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
                                 <i class="fas fa-lightbulb text-4xl text-brand-primary"></i>
                             </h2>
-                            <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
+                            <h2 id="tier-hobby" class="mt-3 text-center text-md font-semibold leading-8 text-gray-900">
                                 Innovation
                             </h2>
-                            <p class="text-center mt-8 text-sm">
+                            <p class="text-center mt-2 text-xs">
                                 We are Passionate about innovation because we believe its a driving force that fuels
                                 creativity, curiosity, and the pursuit of novel ideas and solutions
                             </p>
@@ -43,10 +43,10 @@ const props = defineProps({
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
                                 <i class="fas fa-calculator text-4xl text-brand-primary"></i>
                             </h2>
-                            <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
+                            <h2 id="tier-hobby" class="mt-3 text-center text-md font-semibold leading-8 text-gray-900">
                                 Data Analytics
                             </h2>
-                            <p class="text-center mt-8 text-sm">
+                            <p class="text-center mt-2 text-xs">
                                 Our ability to use data, advanced analytics, and technology to extract valuable
                                 insights, help us to guide business to make informed decisions
                             </p>
@@ -55,11 +55,11 @@ const props = defineProps({
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
                                 <i class="fas fa-eye text-4xl text-brand-primary"></i>
                             </h2>
-                            <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
+                            <h2 id="tier-hobby" class="mt-3 text-center text-md font-semibold leading-8 text-gray-900">
                                 Distinctive Insight
 
                             </h2>
-                            <p class="text-center mt-8 text-sm">
+                            <p class="text-center mt-2 text-xs">
                                 We offer distinctive consumer insight capabilities to help our clients understand the
                                 needs, and preferences of their clients.
                             </p>
@@ -68,10 +68,10 @@ const props = defineProps({
                             <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
                                 <i class="fas fa-chart-line text-4xl text-brand-primary"></i>
                             </h2>
-                            <h2 id="tier-hobby" class="mt-5 text-center text-xl font-semibold leading-8 text-gray-900">
+                            <h2 id="tier-hobby" class="mt-3 text-center text-md font-semibold leading-8 text-gray-900">
                                 Better results
                             </h2>
-                            <p class="text-center mt-8 text-sm">
+                            <p class="text-center mt-2 text-xs">
                                 Achieving better results and long term prosperity is a shared long term goal for
                                 Acentria group, individuals, organizations, and societies alike.
                             </p>

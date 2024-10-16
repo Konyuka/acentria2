@@ -767,6 +767,7 @@ const closeFlyOver = () => {
     currentSubmenu.value = null
     currentSubmenuItems.value = null
     selectedIndex.value = null
+    footerOptions.value = null
 }
 const currentRoute = computed(() => {
     const route = useRoute();
