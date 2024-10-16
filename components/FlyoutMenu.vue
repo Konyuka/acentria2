@@ -56,7 +56,7 @@
                                 class="mx-auto max-w-full">
                                 <div
                                     class="z-50 bg-gray-200 mx-auto grid grid-cols-1 gap-4 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 xl:gap-8">
-                                    <NuxtLink :to="item.link" v-for="submenuItem in currentSubmenuItems"
+                                    <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                         :key="submenuItem.name"
                                         class="bg-gray-100 button-animation group relative mx-2 flex gap-6 rounded-lg p-3 text-sm leading-0 hover:bg-gray-100 sm:flex-col">
                                         <div>
@@ -140,8 +140,77 @@ const currentMenu = ref(null)
 const currentMenuItems = ref(null)
 const currentSubmenu = ref(null)
 const currentSubmenuItems = ref(null)
+const footerOptions = ref(null)
 
+const aboutFooterMenus = ref([
+    {
+        name: 'About Acentria Group',
+        icon: 'fas fa-info-circle', 
+        link: '/',
+    },
+    {
+        name: 'News & Updates',
+        icon: 'fas fa-newspaper', 
+        link: '/acentria-news-and-blogs',
+    },
+    {
+        name: 'Contact Us',
+        icon: 'fas fa-envelope', 
+        link: 'contact-acentria-group',
+    },
+]);
+const insuranceFooterMenus = ref([
+    {
+        name: 'Insurance Home Page',
+        icon: 'fas fa-home', 
+        link: '/acentria-group-insurance',
+    },
+    {
+        name: 'Renew your Policy',
+        icon: 'fas fa-redo', 
+        link: '/contact-acentria-group',
+    },
+    {
+        name: 'Report a Claim',
+        icon: 'fas fa-file-alt', 
+        link: '/contact-acentria-group',
+    },
+]);
+const reinsuranceFooterMenus = ref([
+    {
+        name: 'Reinsurance Home Page',
+        icon: 'fas fa-home', 
+        link: '/acentria-group-reinsurance',
+    },
+    {
+        name: 'Renew your Policy',
+        icon: 'fas fa-redo', 
+        link: '/contact-acentria-group',
+    },
+    {
+        name: 'Report a Claim',
+        icon: 'fas fa-file-alt', 
+        link: '/contact-acentria-group',
+    },
+]);
 
+const actuarialFooterMenus = ref([
+    {
+        name: 'Actuarial Home Page',
+        icon: 'fas fa-home', 
+        link: '/acentria-group-actuarial',
+    },
+    {
+        name: 'Book a Product Demo',
+        icon: 'fas fa-calendar-alt', 
+        link: '/contact-acentria-group',
+    },
+    {
+        name: 'Book a Consultation',
+        icon: 'fas fa-calendar-check', 
+        link: '/contact-acentria-group',
+    },
+]);
 
 const AboutMenus = ref([
     {
@@ -175,29 +244,14 @@ const AboutMenus = ref([
         icon: 'fas fa-user-tie',
         items: [
             {
-                name: 'My Health',
-                description: 'Comprehensive health coverage tailored to your needs, ensuring peace of mind and access to quality healthcare services.',
-                link: '/insurance/health-insurance',
+                name: 'Board',
+                description: 'Meet the members of our board of directors.',
+                link: '/meet-the-team',
             },
             {
-                name: 'My Life',
-                description: 'Secure your family\'s future with our flexible life insurance plans, providing financial stability and peace of mind.',
-                link: '/insurance/life-insurance',
-            },
-            {
-                name: 'My Home',
-                description: 'Protect your home and belongings with our comprehensive home insurance plans, offering peace of mind and financial security.',
-                link: '/insurance/home-insurance',
-            },
-            {
-                name: 'My Car',
-                description: 'Drive with confidence knowing your vehicle is protected with our comprehensive car insurance plans.',
-                link: '/insurance/motor-insurance',
-            },
-            {
-                name: 'My Travel',
-                description: 'Explore the world worry-free with our travel insurance, offering coverage for unexpected events and emergencies.',
-                link: '/insurance/travel-insurance',
+                name: 'Management Team',
+                description: 'Learn about our experienced management team.',
+                link: '/meet-the-team',
             },
         ]
     },
@@ -332,83 +386,6 @@ const AboutMenus = ref([
         ]
     },
 ])
-
-
-const footerOptions = ref(null)
-
-
-const aboutFooterMenus = ref([
-    {
-        name: 'About Acentria Group',
-        icon: 'fas fa-info-circle', 
-        link: '/',
-    },
-    {
-        name: 'News & Updates',
-        icon: 'fas fa-newspaper', 
-        link: '/acentria-news-and-blogs',
-    },
-    {
-        name: 'Contact Us',
-        icon: 'fas fa-envelope', 
-        link: 'contact-acentria-group',
-    },
-]);
-
-const insuranceFooterMenus = ref([
-    {
-        name: 'Insurance Home Page',
-        icon: 'fas fa-home', 
-        link: '/acentria-group-insurance',
-    },
-    {
-        name: 'Renew your Policy',
-        icon: 'fas fa-redo', 
-        link: '/contact-acentria-group',
-    },
-    {
-        name: 'Report a Claim',
-        icon: 'fas fa-file-alt', 
-        link: '/contact-acentria-group',
-    },
-]);
-
-const reinsuranceFooterMenus = ref([
-    {
-        name: 'Reinsurance Home Page',
-        icon: 'fas fa-home', 
-        link: '/acentria-group-reinsurance',
-    },
-    {
-        name: 'Renew your Policy',
-        icon: 'fas fa-redo', 
-        link: '/contact-acentria-group',
-    },
-    {
-        name: 'Report a Claim',
-        icon: 'fas fa-file-alt', 
-        link: '/contact-acentria-group',
-    },
-]);
-
-const actuarialFooterMenus = ref([
-    {
-        name: 'Actuarial Home Page',
-        icon: 'fas fa-home', 
-        link: '/acentria-group-actuarial',
-    },
-    {
-        name: 'Book a Product Demo',
-        icon: 'fas fa-calendar-alt', 
-        link: '/contact-acentria-group',
-    },
-    {
-        name: 'Book a Consultation',
-        icon: 'fas fa-calendar-check', 
-        link: '/contact-acentria-group',
-    },
-]);
-
 const InsuranceMenus = ref([
     {
         name: 'Personal Cover',
@@ -620,7 +597,6 @@ const InsuranceMenus = ref([
         ]
     }
 ])
-
 const ReinsuranceMenus = ref([
     {
         name: 'Reinsurance Services',
@@ -696,7 +672,6 @@ const ReinsuranceMenus = ref([
         ]
     },
 ])
-
 const ActuarialMenus = ref([
     {
         name: 'Actuarial Consulting',
