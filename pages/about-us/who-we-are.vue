@@ -57,7 +57,7 @@ onMounted(()=>{
                         Who we are
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Acentria Group of companies is a trusted global
                             consultant in Risk and Insurance, Reinsurance,
@@ -94,7 +94,7 @@ onMounted(()=>{
                             What We Do
                         </h2>
                         <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:46:17">
-                            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                                 data-v-inspector="components/Why.vue:47:21">
                                 We offer the best solutions in Risk and Insurance,
                                 Reinsurance, Actuarial, and Investment Advisory. We
@@ -132,7 +132,7 @@ onMounted(()=>{
                             Our journey
                         </h2>
                         <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:67:17">
-                            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                            <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                                 data-v-inspector="components/Why.vue:68:21">
                                 Our journey is about Empowering dreams, igniting
                                 imagination, and propelling prosperity to infinite
