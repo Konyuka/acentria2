@@ -84,8 +84,8 @@
                 <div class="bg-gray-50">
                     <div class="mx-auto max-w-7xl px-0">
                         <div
-                            class="grid grid-cols-3 divide-y divide-gray-900/5 sm:grid-cols-3 gap-10 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
-                            <NuxtLink v-for="item in insuranceFooterMenus" :key="item.name" :to="item.link"
+                            class="my-4 grid grid-cols-3 divide-y divide-gray-900/5 sm:grid-cols-3 gap-10 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
+                            <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
                                 class="group button-animation flex items-center hover:text-white bg-gray-100 gap-x-2.5 p-3 px-6 text-sm font-bold leading-6 text-gray-900 hover:!bg-black sm:justify-center sm:px-0">
                                 <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
                                 {{ item.name }} <i class="fas fa-arrow-right"></i>
@@ -141,24 +141,7 @@ const currentMenuItems = ref(null)
 const currentSubmenu = ref(null)
 const currentSubmenuItems = ref(null)
 
-const insuranceFooterMenus = ref([
-    
-    {
-        name: 'Insurance Home Page',
-        icon: 'fas fa-home',
-        link: '',
-    },
-    {
-        name: 'Renew your Policy',
-        icon: 'fas fa-sync-alt',
-        link: '',
-    },
-    {
-        name: 'Report a Claim',
-        icon: 'fas fa-file-invoice-dollar',
-        link: '',
-    },
-])
+
 
 const AboutMenus = ref([
     {
@@ -349,6 +332,82 @@ const AboutMenus = ref([
         ]
     },
 ])
+
+
+const footerOptions = ref(null)
+
+
+const aboutFooterMenus = ref([
+    {
+        name: 'About Acentria Group',
+        icon: 'fas fa-info-circle', 
+        link: '/',
+    },
+    {
+        name: 'News & Updates',
+        icon: 'fas fa-newspaper', 
+        link: '/acentria-news-and-blogs',
+    },
+    {
+        name: 'Contact Us',
+        icon: 'fas fa-envelope', 
+        link: 'contact-acentria-group',
+    },
+]);
+
+const insuranceFooterMenus = ref([
+    {
+        name: 'Insurance Home Page',
+        icon: 'fas fa-home', 
+        link: '/acentria-group-insurance',
+    },
+    {
+        name: 'Renew your Policy',
+        icon: 'fas fa-redo', 
+        link: '/contact-acentria-group',
+    },
+    {
+        name: 'Report a Claim',
+        icon: 'fas fa-file-alt', 
+        link: '/contact-acentria-group',
+    },
+]);
+
+const reinsuranceFooterMenus = ref([
+    {
+        name: 'Reinsurance Home Page',
+        icon: 'fas fa-home', 
+        link: '/acentria-group-reinsurance',
+    },
+    {
+        name: 'Renew your Policy',
+        icon: 'fas fa-redo', 
+        link: '/contact-acentria-group',
+    },
+    {
+        name: 'Report a Claim',
+        icon: 'fas fa-file-alt', 
+        link: '/contact-acentria-group',
+    },
+]);
+
+const actuarialFooterMenus = ref([
+    {
+        name: 'Actuarial Home Page',
+        icon: 'fas fa-home', 
+        link: '/acentria-group-actuarial',
+    },
+    {
+        name: 'Book a Product Demo',
+        icon: 'fas fa-calendar-alt', 
+        link: '/contact-acentria-group',
+    },
+    {
+        name: 'Book a Consultation',
+        icon: 'fas fa-calendar-check', 
+        link: '/contact-acentria-group',
+    },
+]);
 
 const InsuranceMenus = ref([
     {
@@ -709,19 +768,40 @@ const openFlyover = (menu) => {
         currentMenu.value = menu
         if (currentMenu.value === 'About') {
             currentMenuItems.value = AboutMenus.value
+            footerOptions.value = aboutFooterMenus.value
         }
         if (currentMenu.value === 'Insurance') {
             currentMenuItems.value = InsuranceMenus.value
+            footerOptions.value = insuranceFooterMenus.value
         }
         if (currentMenu.value === 'Reinsurance') {
             currentMenuItems.value = ReinsuranceMenus.value
+            footerOptions.value = reinsuranceFooterMenus.value
         }
         if (currentMenu.value === 'Actuarial') {
             currentMenuItems.value = ActuarialMenus.value
+            footerOptions.value = actuarialFooterMenus.value
         }
 
     }
 }
+
+const closeFlyOver = () => {
+    currentMenu.value = null
+    currentMenuItems.value = null
+    currentSubmenu.value = null
+    currentSubmenuItems.value = null
+    selectedIndex.value = null
+}
+const currentRoute = computed(() => {
+    const route = useRoute();
+    return route.path;
+})
+watch(currentRoute, (newValue) => {
+    if (newValue) {
+        closeFlyOver()
+    }
+})
 
 const setSubmenu = (menu, index) => {
 
