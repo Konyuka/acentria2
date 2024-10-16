@@ -112,11 +112,11 @@ const usage = ref([
 
                         <div class="font-sans group relative">
                             <h3
-                                class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
+                                class="mt-3 line-clamp-2 text-md text-center font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
                                 <span class="absolute inset-0"></span>
                                 {{ service.name }}
                             </h3>
-                            <p class="mt-5 text-sm leading-6 text-gray-600">
+                            <p class="mt-2 text-xs leading-6 text-gray-600">
                                 {{ service.content }}
                             </p>
                         </div>
