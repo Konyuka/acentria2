@@ -1,12 +1,15 @@
 <template>
-    <Popover class="isolate z-50 shadow-3xl w-32">
+    <Popover class="isolate z-50 shadow-3xl w-32 font-sans">
         <div class="bg-white py-2 justify-center flex">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
                     class="ring-0 inline-flex items-center gap-x-1 text-sm font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
-                    <i :class="theMenu.icon" class="mr-2 text-brand-primary"></i> {{ theMenu.name }}
-                    <!-- <ChevronDownIcon class="h-5 w-5" aria-hidden="true" /> -->
+                    <div
+                        class="mr-1 flex h-6 w-6 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
+                        <i :class="theMenu.icon" class="text-xs text-white"></i>
+                    </div>
+                    {{ theMenu.name }}
                 </PopoverButton>
             </div>
         </div>
@@ -15,90 +18,31 @@
             enter-to-class="opacity-100 translate-y-1" leave-active-class="transition ease-in duration-150"
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-1">
 
-            <!-- <PopoverPanel
-                class=" w-screen absolute inset-x-0 top-0 -z-20 bg-white pt-8 shadow-lg ring-1 border-1 ring-gray-900/5">
-                <div
-                    class="my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-4 lg:gap-4 lg:px-8 gap-8">
-                    <div v-for="item in currentMenuItems" :key="item.name" @click="setSubmenu(item)"
-                        :class="[currentSubmenu === item.name ? 'bg-gray-200 scale-105' : 'bg-gray-100']"
-                        class="relative hover:cursor-pointer hover:scale-105 duration-700 ease-in-out transform transition group mx-3 flex gap-6 rounded-sm text-sm leading-6 hover:bg-gray-200 sm:flex-col sm:py-5 px-3">
-                        <div
-                            class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                            <i 
-                                :class="[item.icon, currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
-                                class=" group-hover:text-brand-primary text-xl"></i>
-                        </div>
-                        <div>
-                            <a :href="item.href"
-                                :class="[currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
-                                class="font-bold  text-md">
-                                {{ item.name }}
-                                <span class="absolute inset-0" />
-                            </a>
-                        </div>
-                        <div 
-                        v-if="currentSubmenu === item.name"
-                        class="absolute -bottom-4 ml-5 bg-gray-200 h-14 w-3 -mb-10">
-                        </div>
-                    </div>
-                </div>
-
-                <div v-if="currentSubmenuItems !== null" class="bg-gray-200">
-                    <div class="mx-auto max-w-full">
-                        <div
-                            class="z-50 bg-gray-200 mx-auto grid grid-cols-1 gap-4 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-4 lg:gap-4 lg:px-8 xl:gap-8">
-                            <NuxtLink :to="item.link" v-for="item in currentSubmenuItems" :key="item.name"
-                                class="bg-gray-100 button-animation group relative mx-2 flex gap-6 rounded-lg p-3 text-sm leading-6 hover:bg-gray-100 sm:flex-col sm:p-6">
-
-
-                                <div>
-                                    <a :href="item.href" class="font-bold text-brand-primary text-xs">
-                                        {{ item.name }}
-                                        <span class="absolute inset-0" />
-                                    </a>
-                                    <p class="mt-1 text-black text-xs">{{ item.description }}</p>
-                                </div>
-                            </NuxtLink>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="bg-gray-50">
-                    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                        <div
-                            class="grid grid-cols-3 divide-y divide-gray-900/5 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
-                            <a v-for="item in callsToAction" :key="item.name" :href="item.href"
-                                class="flex items-center gap-x-2.5 p-3 px-6 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 sm:justify-center sm:px-0">
-                                <component :is="item.icon" class="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                                {{ item.name }}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </PopoverPanel> -->
             <PopoverPanel
                 class=" w-screen absolute inset-x-0 top-0 -z-20 bg-white pt-8 shadow-lg ring-1 border-1 ring-gray-900/5">
                 <div
-                    class="my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-4 lg:gap-4 lg:px-8 gap-8">
+                    class="!overflow-y-scroll my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 gap-8">
 
-                    <template v-for="(item, index) in currentMenuItems" :key="item.name">
+                    <template v-for="(item, index) in currentMenuItems" :key="index">
                         <!-- Individual Menu Item -->
                         <div @click="setSubmenu(item, index)"
                             :class="[currentSubmenu === item.name ? 'bg-gray-200 scale-105' : 'bg-gray-100']"
-                            class="relative hover:cursor-pointer hover:scale-105 duration-700 ease-in-out transform transition group mx-3 flex gap-6 rounded-sm text-sm leading-6 hover:bg-gray-200 sm:flex-col sm:py-5 px-3">
-                            <div
-                                class="flex h-10 w-10 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                            class="relative hover:cursor-pointer hover:scale-105 duration-700 ease-in-out transform transition group mx-3 flex gap-6 rounded-sm text-sm leading-6 hover:bg-gray-200 sm:flex-col sm:py-3 px-3">
+
+                            <div class="flex gap-2">
+
                                 <i :class="[item.icon, currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
-                                    class=" group-hover:text-brand-primary text-xl"></i>
-                            </div>
-                            <div>
-                                <a :href="item.href"
+                                    class=" group-hover:text-brand-primary text-xs"></i>
+                                <!-- <div
+                                    class="flex h-6 w-6 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
+                                </div> -->
+
+                                <a :href="item.href" v-html="item.name"
                                     :class="[currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
-                                    class="font-bold  text-md">
-                                    {{ item.name }}
-                                    <span class="absolute inset-0" />
+                                    class="flex items-center justify-center font-semibold  text-xs">
                                 </a>
+
+
                             </div>
                             <div v-if="currentSubmenu === item.name"
                                 class="absolute -bottom-4 ml-5 bg-gray-200 h-14 w-3 -mb-10">
@@ -106,38 +50,46 @@
                         </div>
 
                         <!-- Conditionally Insert Submenu Items Between Rows -->
-                        <!-- Check if the index is at the end of a row (for lg:grid-cols-4), insert submenu row after it -->
-                        <div v-if="(index + 1) % 4 === 0 && currentSubmenuItems !== null && selectedIndex <= index"
-                            class="col-span-4 bg-gray-200">
-                            <div class="mx-auto max-w-full">
+                        <!-- <div v-if="((index + 1) % 5 === 0 || index + 1 === currentMenuItems.length) && currentSubmenuItems !== null && selectedIndex <= index" -->
+                        <div v-if="(index + 1) % 5 === 0 || index + 1 === currentMenuItems.length" class="col-span-5 ">
+                            <div v-if="currentSubmenuItems !== null && selectedIndex <= index"
+                                class="mx-auto max-w-full">
                                 <div
-                                    class="z-50 bg-gray-200 mx-auto grid grid-cols-1 gap-4 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-4 lg:gap-4 lg:px-8 xl:gap-8">
+                                    class="z-50 bg-gray-200 mx-auto grid grid-cols-1 gap-4 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 xl:gap-8">
                                     <NuxtLink :to="item.link" v-for="submenuItem in currentSubmenuItems"
                                         :key="submenuItem.name"
-                                        class="bg-gray-100 button-animation group relative mx-2 flex gap-6 rounded-lg p-3 text-sm leading-6 hover:bg-gray-100 sm:flex-col sm:p-6">
+                                        class="bg-gray-100 button-animation group relative mx-2 flex gap-6 rounded-lg p-3 text-sm leading-0 hover:bg-gray-100 sm:flex-col">
                                         <div>
-                                            <a :href="submenuItem.href" class="font-bold text-brand-primary text-xs">
-                                                {{ submenuItem.name }}
-                                                <span class="absolute inset-0" />
-                                            </a>
+                                            <div class="flex justify-between content-center">
+                                                <p
+                                                    class="font-semibold text-gray-600 group-hover:text-brand-primary text-xs">
+                                                    {{ submenuItem.name }}
+                                                    <span class="absolute inset-0" />
+                                                </p>
+                                                <span>
+                                                    <i
+                                                        class="fas fa-arrow-right text-[8px] group-hover:text-brand-primary"></i>
+                                                </span>
+                                            </div>
                                             <p class="mt-1 text-black text-xs">{{ submenuItem.description }}</p>
                                         </div>
                                     </NuxtLink>
                                 </div>
                             </div>
                         </div>
+
                     </template>
                 </div>
 
                 <div class="bg-gray-50">
-                    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="mx-auto max-w-7xl px-0">
                         <div
-                            class="grid grid-cols-3 divide-y divide-gray-900/5 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
-                            <a v-for="item in callsToAction" :key="item.name" :href="item.href"
-                                class="flex items-center gap-x-2.5 p-3 px-6 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 sm:justify-center sm:px-0">
-                                <component :is="item.icon" class="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                                {{ item.name }}
-                            </a>
+                            class="grid grid-cols-3 divide-y divide-gray-900/5 sm:grid-cols-3 gap-10 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
+                            <NuxtLink v-for="item in insuranceFooterMenus" :key="item.name" :to="item.link"
+                                class="group button-animation flex items-center hover:text-white bg-gray-100 gap-x-2.5 p-3 px-6 text-sm font-bold leading-6 text-gray-900 hover:!bg-black sm:justify-center sm:px-0">
+                                <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
+                                {{ item.name }} <i class="fas fa-arrow-right"></i>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -152,7 +104,7 @@
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '@heroicons/vue/20/solid'
 import { ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon } from '@heroicons/vue/24/outline'
-
+import { nextTick } from "vue";
 const props = defineProps({
     theMenu: String,
     // callsToAction: Array,
@@ -180,15 +132,33 @@ const solutions = [
     },
 ]
 const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
     { name: 'View all products', href: '#', icon: RectangleGroupIcon },
+    { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
 
 const currentMenu = ref(null)
 const currentMenuItems = ref(null)
 const currentSubmenu = ref(null)
 const currentSubmenuItems = ref(null)
+
+const insuranceFooterMenus = ref([
+    
+    {
+        name: 'Insurance Home Page',
+        icon: 'fas fa-home',
+        link: '',
+    },
+    {
+        name: 'Renew your Policy',
+        icon: 'fas fa-sync-alt',
+        link: '',
+    },
+    {
+        name: 'Report a Claim',
+        icon: 'fas fa-file-invoice-dollar',
+        link: '',
+    },
+])
 
 const AboutMenus = ref([
     {
@@ -475,7 +445,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Industrial, Manufacturing & Eng.',
+        name: 'Industrial Covers',
         icon: 'fas fa-industry',
         items: [
             {
@@ -527,7 +497,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Career / Professional covers',
+        name: 'Career & Profession',
         icon: 'fas fa-user-tie',
         items: [
             {
@@ -548,7 +518,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Schools & Institutions covers',
+        name: 'Schools & Institutions',
         icon: 'fas fa-school',
         items: [
             {
@@ -559,7 +529,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Agriculture Insurance',
+        name: 'Agricultural Insurance',
         icon: 'fas fa-tractor',
         items: [
             {
@@ -570,7 +540,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Claims ',
+        name: 'Claims & Filing',
         icon: 'fas fa-file-invoice-dollar',
         items: [
             {
@@ -593,7 +563,7 @@ const InsuranceMenus = ref([
 ])
 
 const ReinsuranceMenus = ref([
-   {
+    {
         name: 'Reinsurance Services',
         icon: 'fas fa-sync-alt',
         items: [
@@ -618,10 +588,10 @@ const ReinsuranceMenus = ref([
                 link: '/reinsurance/value-addition',
             },
         ]
-   }, 
-   {
+    },
+    {
         name: 'Reinsurance Solutions',
-       icon: 'fas fa-cogs',
+        icon: 'fas fa-cogs',
         items: [
             {
                 name: 'Facultative Solutions',
@@ -639,10 +609,10 @@ const ReinsuranceMenus = ref([
                 link: '/reinsurance/special-lines',
             },
         ]
-   }, 
-   {
+    },
+    {
         name: 'Data & Modelling',
-       icon: 'fas fa-database',
+        icon: 'fas fa-database',
         items: [
             {
                 name: 'Reinsurance Data Analytics Tool',
@@ -665,7 +635,7 @@ const ReinsuranceMenus = ref([
                 link: '/reinsurance/return-on-risk-adjusted-capital',
             },
         ]
-   }, 
+    },
 ])
 
 const ActuarialMenus = ref([
@@ -755,7 +725,7 @@ const openFlyover = (menu) => {
 
 const setSubmenu = (menu, index) => {
 
-    if(currentSubmenu.value === menu.name){
+    if (currentSubmenu.value === menu.name) {
         currentSubmenu.value = null
         currentSubmenuItems.value = null
         selectedIndex.value = null
@@ -765,9 +735,28 @@ const setSubmenu = (menu, index) => {
     currentSubmenu.value = menu.name
     currentSubmenuItems.value = menu.items
     selectedIndex.value = index;
-    if(menu.name === 'Personal Cover'){
+    if (menu.name === 'Personal Cover') {
         currentSubmenuItems.value = currentMenuItems.value[0].items
     }
 }
+
+// const shouldInsertSubmenu = (index) => {
+//     // Insert submenu after every 5 items or at the end of the list
+//     const isEndOfRow = (index + 1) % 5 === 0;
+//     const isLastItem = index + 1 === currentMenuItems.value.length;
+
+//     // Ensure submenu appears only once between rows
+//     return (isEndOfRow || isLastItem) && currentSubmenuItems.value !== null && selectedIndex.value <= index;
+// }
+
+const shouldInsertSubmenu = (index) => {
+    nextTick()
+    const isEndOfRow = (index + 1) % 5 === 0;
+    const isLastItem = index + 1 === currentMenuItems.value?.length;
+    console.log('End of row: '+isEndOfRow + ' Index: ' +index)
+    console.log('Is Last Item: ' + isLastItem + ' Index: ' + index)
+    
+    return (isEndOfRow || isLastItem) && currentSubmenuItems.value?.length > 0 && selectedIndex.value <= index;
+};
 
 </script>
