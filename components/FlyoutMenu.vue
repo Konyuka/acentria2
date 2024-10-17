@@ -23,7 +23,7 @@
                 <div
                     class="!overflow-y-scroll my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 gap-8">
 
-                    <template v-for="(item, index) in currentMenuItems" :key="index">
+                    <template v-for="(item, index) in currentMenuItems" :key="item.name">
                         <!-- Individual Menu Item -->
                         <div @click="setSubmenu(item, index)"
                             :class="[currentSubmenu === item.name ? 'bg-gray-200 scale-105' : 'bg-gray-100']"
@@ -51,9 +51,8 @@
 
                         <!-- Conditionally Insert Submenu Items Between Rows -->
                         <!-- <div v-if="((index + 1) % 5 === 0 || index + 1 === currentMenuItems.length) && currentSubmenuItems !== null && selectedIndex <= index" -->
-                        <div v-if="(index + 1) % 5 === 0 || index + 1 === currentMenuItems.length" class="col-span-5 ">
-                            <div v-if="currentSubmenuItems !== null && selectedIndex <= index"
-                                class="mx-auto max-w-full">
+                        <div v-if="shouldInsertSubmenu(index)" class="col-span-5 ">
+                            <div class="mx-auto max-w-full">
                                 <div
                                     class="z-50 bg-gray-200 mx-auto grid grid-cols-1 gap-4 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 xl:gap-8">
                                     <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
@@ -193,7 +192,6 @@ const reinsuranceFooterMenus = ref([
         link: '/contact-acentria-group',
     },
 ]);
-
 const actuarialFooterMenus = ref([
     {
         name: 'Actuarial Home Page',
@@ -796,23 +794,19 @@ const setSubmenu = (menu, index) => {
     }
 }
 
-// const shouldInsertSubmenu = (index) => {
-//     // Insert submenu after every 5 items or at the end of the list
-//     const isEndOfRow = (index + 1) % 5 === 0;
-//     const isLastItem = index + 1 === currentMenuItems.value.length;
-
-//     // Ensure submenu appears only once between rows
-//     return (isEndOfRow || isLastItem) && currentSubmenuItems.value !== null && selectedIndex.value <= index;
-// }
-
 const shouldInsertSubmenu = (index) => {
-    nextTick()
     const isEndOfRow = (index + 1) % 5 === 0;
     const isLastItem = index + 1 === currentMenuItems.value?.length;
-    console.log('End of row: '+isEndOfRow + ' Index: ' +index)
-    console.log('Is Last Item: ' + isLastItem + ' Index: ' + index)
-    
-    return (isEndOfRow || isLastItem) && currentSubmenuItems.value?.length > 0 && selectedIndex.value <= index;
+    const result = (isEndOfRow || isLastItem) && currentSubmenuItems.value?.length > 0 && selectedIndex.value <= index;
+
+    if(result){
+        if(index == 4 && selectedIndex.value < 4){
+            return true
+        }
+        if (index > 4 && selectedIndex.value > 4){
+            return true
+        }
+    }
 };
 
 </script>
