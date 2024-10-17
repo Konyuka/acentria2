@@ -800,7 +800,9 @@ const shouldInsertSubmenu = (index) => {
     const result = (isEndOfRow || isLastItem) && currentSubmenuItems.value?.length > 0 && selectedIndex.value <= index;
 
     if(result){
-        if(index == 4 && selectedIndex.value < 4){
+        console.log('Index:', index)
+        console.log('Selected Index:', selectedIndex.value)
+        if(index <= 4 && selectedIndex.value < 4){
             return true
         }
         if (index > 4 && selectedIndex.value > 4){
