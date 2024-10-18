@@ -107,8 +107,8 @@ const ReinsuranceBannerContent = ref({
                 </p>
 
                 <video src="/img/esg.mp4" alt="Success Team Hands Up"
-                    class="my-5 h-full w-full object-cover object-right md:object-center" autoplay
-                    muted loop>
+                    class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted
+                    loop>
                     Your browser does not support the video tag.
                 </video>
 

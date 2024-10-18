@@ -51,7 +51,7 @@ const ReinsuranceBannerContent = ref({
         </div>
 
         <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
-           
+
             <!-- <p class="font-sans mx-auto mt-6 max-w-7xl text-center text-md text-secondary"
                 data-v-inspector="components/ReinsuranceWhy.vue:21:21">
                 At Acentria, we are dedicated to social responsibility, ethical practices, and community well-being. Our
@@ -137,6 +137,13 @@ const ReinsuranceBannerContent = ref({
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div class="container mx-auto max-w-6xl">
+                <video src="/img/csr.mp4" alt="Success Team Hands Up"
+                    class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted loop>
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:54:9">
