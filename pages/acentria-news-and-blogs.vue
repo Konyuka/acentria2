@@ -11,7 +11,7 @@ const formatDate = (date) => {
 
 const ReinsuranceBannerContent = ref({
     title: 'Acentria\'s Newsroom',
-    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://www.shutterstock.com/shutterstock/photos/1023861067/display_1500/stock-photo-morning-cup-of-coffee-warm-coffee-and-morning-news-concept-on-a-wooden-textured-table-1023861067.jpg',
 })
 
 const getUrl = (title, id) => {

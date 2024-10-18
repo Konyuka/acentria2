@@ -1,7 +1,7 @@
 <script setup>
 const ReinsuranceBannerContent = ref({
     title: 'Reach Out to Us',
-    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/contact1.jpg',
 })
 
 </script>
