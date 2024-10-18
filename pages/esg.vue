@@ -15,6 +15,7 @@ const ReinsuranceBannerContent = ref({
             <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
                 class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
 
+
             <div class="absolute inset-0 bg-black opacity-40"></div>
 
             <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
@@ -96,7 +97,7 @@ const ReinsuranceBannerContent = ref({
             </div>
 
             <div class="font-sans mx-auto max-w-7xl my-10 px-10" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
-                <p class="font-sans mx-auto mt-6 max-w-5xl text-left text-xs text-secondary"
+                <p class="font-sans mx-auto mt-6 max-w-7xl text-left text-xs text-secondary"
                     data-v-inspector="components/ReinsuranceWhy.vue:21:21">
                     Our social responsibility extends beyond business operations. We prioritize fair labour practices,
                     employee well-being, and human rights considerations. We conduct regular audits to ensure compliance
@@ -104,6 +105,12 @@ const ReinsuranceBannerContent = ref({
                     wellness programs.With our cycling team, we support cycling in Kenya for a greener tomorrow. We also
                     support the youth through the Maven Mentorship Programme.
                 </p>
+
+                <video src="/img/esg.mp4" alt="Success Team Hands Up"
+                    class="my-5 h-full w-full object-cover object-right md:object-center" autoplay
+                    muted loop>
+                    Your browser does not support the video tag.
+                </video>
 
             </div>
 

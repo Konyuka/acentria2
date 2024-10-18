@@ -71,10 +71,10 @@ const openPofile = (member) => {
         <div class="text-center">
             <h2 id=""
                 class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-brand-primary pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:!text-4xl 2xl:!text-4xl">
-                <span class="text-light-title pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:text-4xl 2xl:text-4xl">Acentria's</span>
+                <span class="text-light-title pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 text-3xl">Acentria's</span>
                 Board
             </h2>
-            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
+            <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
                 data-v-inspector="components/Why.vue:47:21">
                 Acentria's Board of Directors is a team of highly experienced and accomplished professionals, dedicated
                 to steering the company towards sustainable growth and success.

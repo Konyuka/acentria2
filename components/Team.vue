@@ -116,11 +116,11 @@ const openPofile = (member) => {
         <div class="text-center">
             <h2 id=""
                 class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-brand-primary pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:!text-4xl 2xl:!text-4xl">
-                <span class="text-light-title pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:text-4xl 2xl:text-4xl">Acentria's
+                <span class="text-light-title pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 text-3xl">Acentria's
                     Management</span>
                 Leadership
             </h2>
-            <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
+            <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
                 data-v-inspector="components/Why.vue:47:21">
                 This team is responsible for executing the company's vision, aligning day-to-day operations with
                 long-term goals, and fostering a culture of innovation and growth. By effectively managing resources and
