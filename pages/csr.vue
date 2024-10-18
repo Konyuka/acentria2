@@ -139,12 +139,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto max-w-6xl">
-                <video src="/img/csr.mp4" alt="Success Team Hands Up"
-                    class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted loop>
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:54:9">
                 <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:55:13">
@@ -182,6 +177,14 @@ const ReinsuranceBannerContent = ref({
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div class="container mx-auto max-w-6xl">
+                <video src="/img/csr.mp4" alt="Success Team Hands Up"
+                    class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted
+                    loop>
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
 

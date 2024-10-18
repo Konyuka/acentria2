@@ -733,7 +733,17 @@ const ActuarialMenus = ref([
 
 const selectedIndex = ref(null)
 
+const router = useRouter()
+
 const openFlyover = (menu) => {
+    if (menu =='Investment'){
+        router.push('/acentria-group-investment');
+        return;
+    }
+    if (menu == 'Technology') {
+        window.open('https://tech.acentriagroup.com/', '_blank'); 
+        return;
+    }
     if (currentMenu.value === menu) {
         currentMenu.value = null
         return
