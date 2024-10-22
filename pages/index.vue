@@ -370,12 +370,14 @@ onMounted(() => {
                 <Awards />
               </div>
 
-              <h1 class="text-white font-bold text-2xl bg-white max-w-2xl">
-                Corporate Social Responsibility
-                <br>
-                <span class="text-brand-primary">&
-                  Sustainability
-                </span>
+              <h1 class="text-black font-bold text-2xl bg-white mx-auto">
+                <div class="max-w-6xl mx-auto text-left py-5 bg-white">
+                  Corporate Social Responsibility
+                  <br>
+                  <span class="text-brand-primary">&
+                    Sustainability
+                  </span>
+                </div>
               </h1>
 
               <div class="mx-auto max-w-screen">
