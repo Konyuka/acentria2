@@ -70,7 +70,7 @@
                                                         class="fas fa-arrow-right text-[8px] group-hover:text-brand-primary"></i>
                                                 </span>
                                             </div>
-                                            <p class="mt-1 text-black text-xs">{{ submenuItem.description }}</p>
+                                            <!-- <p class="mt-1 text-black text-xs">{{ submenuItem.description }}</p> -->
                                         </div>
                                     </NuxtLink>
                                 </div>
