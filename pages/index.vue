@@ -362,18 +362,17 @@ onMounted(() => {
 
               <Testimonials />
 
-              <div class="w-full h-[35vh]">
+              <!-- <div class="w-full h-[35vh]">
 
-              </div>
+              </div> -->
 
               <div class="bg-white w-full h-full">
                 <Awards />
               </div>
 
-              <h1 class="text-black font-bold text-2xl bg-white mx-auto">
+              <h1 class="text-black font-semibold text-3xl bg-white mx-auto">
                 <div class="max-w-6xl mx-auto text-left py-5 bg-white">
                   Corporate Social Responsibility
-                  <br>
                   <span class="text-brand-primary">&
                     Sustainability
                   </span>
@@ -429,7 +428,7 @@ onMounted(() => {
                     <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
                       <div class="max-w-7xl justify-between content-center">
                         <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left max-w-6xl mx-auto">
-                          Join Our Team
+                          Join Our <span class="text-brand-primary">Team</span>
                         </h2>
                       </div>
                       <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">

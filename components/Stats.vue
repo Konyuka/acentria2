@@ -4,8 +4,10 @@
 </script>
 
 <template>
-    <p class="text-black text-2xl text-center py-5 font-sans font-bold bg-white">
-        Top Choice for Professional <span class="text-brand-primary">Services and Client Satisfaction</span>
+    <p class="text-black text-3xl text-left py-5 font-sans font-semibold bg-white">
+        <div class="mr-6 max-w-7xl mx-auto text-left">
+            Top Choice for Professional <span class="text-brand-primary"><br> Services and Client Satisfaction</span>
+        </div>
     </p>
     <div id="stats" class="py-2 text-white font-sans bg-black/70">
         <div class="">

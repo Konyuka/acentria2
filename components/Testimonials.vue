@@ -20,9 +20,9 @@
             </div>
         </div>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-xl text-center my-5">
+            <div class="mx-auto max-w-7xl text-left my-5">
                 <!-- <h2 class="text-2xl font-semibold leading-8 tracking-tight text-black">Testimonials</h2> -->
-                <p class="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <p class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
                     What Our <span class="text-brand-primary">Customers are Saying!</span>
                 </p>
             </div>
