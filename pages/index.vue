@@ -114,7 +114,7 @@ onMounted(() => {
               </div>
 
 
-              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0"
+              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black/70 mb-0"
                 style="background-image:url('/img/bg.png');">
                 <div class="container">
                   <div
@@ -152,7 +152,7 @@ onMounted(() => {
                     </label>
                     <h2
                       class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                      Our Leadership
+                      Our <span class="text-brand-primary">Leadership</span>
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">
                       <p class="text-sm leading-normal font-regular text-light-content !text-inherit mb-4">
@@ -176,7 +176,7 @@ onMounted(() => {
                   </div>
                 </div>
 
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                <!-- <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="flex flex-col justify-center lg:basis-1/2">
                     <label class="text-base leading-normal font-regular text-light-highlight font-bold">
                       The Roadmap
@@ -199,74 +199,103 @@ onMounted(() => {
                       data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                       src="/img/purpose.jpeg" data-v-inspector="components/Why.vue:34:17" />
                   </div>
-                </div>
+                </div> -->
 
               </div>
 
-              <div class="w-full h-[45vh]">
+              <!-- <div class="w-full h-[10vh]">
 
-              </div>
+              </div> -->
 
-              <div class="bg-gray-600 py-10">
-                <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                  <div class="mx-auto max-w-7xl lg:mx-0">
-                    <h2 class="text-3xl font-bold tracking-tight text-white text-center"> Empower <span
-                        class="text-primary">|</span> Innovate <span class="text-primary">|</span> Prosper </h2>
-                  </div>
-                  <div class="mx-auto text-md mt-10 max-w-2xl lg:max-w-5xl text-white">
-                    <div class="grid grid-cols-3 gap-5">
+              <section id="" class="bg-white relative md:py-2  text-left">
+                <div class="container px-4">
+                  <h2
+                    class="text-left font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-1">
+                    What drives us at <br>
+                    <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                      Acentria Group?
+                    </span>
+                  </h2>
 
-                      <div
-                        class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
-                        <div class="flex h-fit flex-col"><i
-                            class="fas fa-bullseye text-black text-4xl pb-4 group-hover:text-brand-primary"
-                            translate="no"></i>
-                          <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
-                            Our Mission</h3>
-                          <p class="mt-2 text-xs text-gray-500">
-                            To provide financial and risk advisory services through innovations that empower our
-                            clients’ prosperity.
-                          </p>
-                        </div>
-                      </div>
+                  <div class=" !font-sans container my-1">
+                    <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
+                      <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
+                        <div class="grid grid-cols-4 gap-5">
 
-                      <div
-                        class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
-                        <div class="flex h-fit flex-col"><i
-                            class="fas fa-eye text-black text-4xl pb-4 group-hover:text-brand-primary"
-                            translate="no"></i>
-                          <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
-                            Our Vision</h3>
-                          <p class="mt-2 text-xs text-gray-500">
-                            To be a global leader empowering prosperity.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div
-                        class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
-                        <div class="flex h-fit flex-col"><i
-                            class="fas fa-gem text-black text-4xl pb-4 group-hover:text-brand-primary"
-                            translate="no"></i>
-                          <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
-                            Our Values</h3>
-                          <div class="grid grid-cols-2 gap-1 text-black text-xs">
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Integrity</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Excellence</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Innovative</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Teamwork</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Relationships</p>
-                            <p><i class="fas fa-check mr-1 text-brand-primary"></i> Growth &amp; Prosperity</p>
+                          <div
+                            class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                            <div class="flex h-fit flex-col"><i
+                                class="fas fa-bullseye text-black text-4xl pb-4 group-hover:text-brand-primary"
+                                translate="no"></i>
+                              <h3
+                                class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
+                                Our Purpose</h3>
+                              <p class="mt-2 text-xs text-gray-500">
+                                To Empower clients through innovative solutions, which
+                                enhancing prosperity and add value to a dynamic environment.
+                              </p>
+                            </div>
                           </div>
+
+                          <div
+                            class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                            <div class="flex h-fit flex-col"><i
+                                class="fas fa-bullseye text-black text-4xl pb-4 group-hover:text-brand-primary"
+                                translate="no"></i>
+                              <h3
+                                class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
+                                Our Mission</h3>
+                              <p class="mt-2 text-xs text-gray-500">
+                                To provide financial and risk advisory services through innovations that empower our
+                                clients’ prosperity.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div
+                            class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                            <div class="flex h-fit flex-col"><i
+                                class="fas fa-eye text-black text-4xl pb-4 group-hover:text-brand-primary"
+                                translate="no"></i>
+                              <h3
+                                class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
+                                Our Vision</h3>
+                              <p class="mt-2 text-xs text-gray-500">
+                                To be a global leader empowering prosperity.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div
+                            class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                            <div class="flex h-fit flex-col"><i
+                                class="fas fa-gem text-black text-4xl pb-4 group-hover:text-brand-primary"
+                                translate="no"></i>
+                              <h3
+                                class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
+                                Our Values</h3>
+                              <div class="grid grid-cols-2 gap-1 text-black text-xs">
+                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Integrity</p>
+                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Excellence</p>
+                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Innovative</p>
+                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Teamwork</p>
+                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Relationships</p>
+                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Growth &amp; Prosperity</p>
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
-
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <div class=" py-10" style="background-color: rgb(246, 248, 252)">
+                </div>
+              </section>
+
+
+
+              <!-- <div class=" py-10" style="background-color: rgb(246, 248, 252)">
                 <h2
                   class="text-center font-sans tracking-normal text-2xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
                   We Firmly Believe That What Makes Us <br>
@@ -274,21 +303,23 @@ onMounted(() => {
                     Different Also Makes us Stronger
                   </span>
                 </h2>
+              </div> -->
+
+              <div class="font-sans justify-between content-center bg-white py-5">
+                <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left max-w-6xl mx-auto">
+                  Our <span class="text-brand-primary">Commitments</span>
+                </h2>
+                <!-- <p
+                  class="text-left max-w-6xl mx-auto my-5 text-base leading-normal text-black text-sm font-normal not-italic">
+                  At Acentria, we believe we have a responsibility to not only our customers and business partners, <br>
+                  but
+                  also to our people and the broader community.
+                </p> -->
               </div>
 
-              <section class="relative py-10">
-                <div class="container px-4">
-                  <div class=" max-w-6xl justify-between content-center">
-                    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-center">
-                      Our <span class="text-brand-primary">Commitments</span>
-                    </h2>
-                    <p
-                      class="text-center max-w-2xl mx-auto my-5 text-base leading-normal font-semibold text-white text-sm font-normal not-italic">
-                      At Acentria, we believe we have a responsibility to not only our customers and business partners,
-                      but
-                      also to our people and the broader community.
-                    </p>
-                  </div>
+              <section class="container relative py-10">
+
+                <div class=" px-4">
                   <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
 
                     <div v-for="item in commitments"
@@ -314,14 +345,14 @@ onMounted(() => {
               <div class="bg-white font-sans">
                 <div>
                   <h2
-                    class="text-center font-sans tracking-normal text-3xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-5">
+                    class="text-left max-w-6xl mx-auto font-sans tracking-normal text-3xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-5">
                     Our Lines
                     <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
                       of Business
                     </span>
                   </h2>
                 </div>
-                <div class="mx-auto max-w-full px-4 py-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
                   <ServiceCarousel />
                 </div>
 
@@ -331,10 +362,21 @@ onMounted(() => {
 
               <Testimonials />
 
+              <div class="w-full h-[35vh]">
+
+              </div>
+
               <div class="bg-white w-full h-full">
                 <Awards />
               </div>
 
+              <h1 class="text-white font-bold text-2xl bg-white max-w-2xl">
+                Corporate Social Responsibility
+                <br>
+                <span class="text-brand-primary">&
+                  Sustainability
+                </span>
+              </h1>
 
               <div class="mx-auto max-w-screen">
                 <div
@@ -355,13 +397,7 @@ onMounted(() => {
                   </div>
 
                   <div class="relative mx-auto max-w-2xl lg:mx-0">
-                    <h1 class="text-white font-bold text-2xl">
-                      Corporate Social Responsibility
-                      <br>
-                      <span class="text-brand-primary">&
-                        Sustainability
-                      </span>
-                    </h1>
+
                     <figure>
                       <blockquote class="mt-6 text-xs font-semibold text-white sm:text-xl sm:leading-5 ">
                         <p>
@@ -390,7 +426,7 @@ onMounted(() => {
                   <div class="mx-auto max-w-7xl py-10 sm:px-2 lg:px-4">
                     <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
                       <div class="max-w-7xl justify-between content-center">
-                        <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-center">
+                        <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left max-w-6xl mx-auto">
                           Join Our Team
                         </h2>
                       </div>

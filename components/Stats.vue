@@ -4,11 +4,11 @@
 </script>
 
 <template>
-    <div id="stats" class="py-2 text-white font-sans" style="background-color: #fff">
-        <p class="text-brand-primary text-2xl text-center py-5 font-sans font-bold">
-            Top choice for professional services and client satisfaction
-        </p>
-        <div class="bg-gray-600">
+    <p class="text-black text-2xl text-center py-5 font-sans font-bold bg-white">
+        Top Choice for Professional <span class="text-brand-primary">Services and Client Satisfaction</span>
+    </p>
+    <div id="stats" class="py-2 text-white font-sans bg-black/70">
+        <div class="">
             <div class="container mx-auto px-4">
                 <div class="mb-12 flex flex-col items-center"></div>
                 <div class="font-sans flex flex-wrap justify-center gap-x-16">

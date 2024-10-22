@@ -539,7 +539,7 @@ const benefits = ref([
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                         <div class="relative py-4 lg:basis-1/2">
                             <img alt="Image of null" loading="lazy" width="500" height="350" decoding="async"
-                                data-nimg="1" style="color: transparent; object-fit: contain" src="/img/journey.jpg"
+                                data-nimg="1" style="color: transparent; object-fit: contain" src="/img/join.jpg"
                                 class="rounded-xl" />
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">

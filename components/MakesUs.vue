@@ -1,10 +1,10 @@
 <template>
     <div class="!font-sans container">
-        <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
-            <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
+        <div class="mx-auto max-w-7xl py-5">
+            <div class="mx-auto max-w-7xl lg:max-w-none">
                 <div class="max-w-7xl justify-between content-center">
                     <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
-                        About Us
+                        About <span class="text-brand-primary">Us</span>
                     </h2>
                 </div>
                 <div class="mt-5 grid grid-cols-1 gap-x-3 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
