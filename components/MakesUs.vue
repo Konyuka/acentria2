@@ -3,7 +3,7 @@
         <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
             <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
                 <div class="max-w-7xl justify-between content-center">
-                    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-center">
+                    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
                         About Us
                     </h2>
                 </div>

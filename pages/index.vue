@@ -89,7 +89,7 @@ onMounted(() => {
             <div>
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-              <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
+              <!-- <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
                 style="background-image:url('/img/bg.png');">
                 <div class="container">
                   <div
@@ -107,7 +107,7 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <div class="w-full h-full bg-white">
                 <MakesUs />
@@ -200,6 +200,10 @@ onMounted(() => {
                       src="/img/purpose.jpeg" data-v-inspector="components/Why.vue:34:17" />
                   </div>
                 </div>
+
+              </div>
+
+              <div class="w-full h-[45vh]">
 
               </div>
 

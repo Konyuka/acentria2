@@ -180,7 +180,7 @@ const ReinsuranceBannerContent = ref({
             </div>
 
             <div class="container mx-auto max-w-6xl">
-                <video src="/img/csr.mp4" alt="Success Team Hands Up"
+                <video src="/img/esg.mp4" alt="Success Team Hands Up"
                     class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted
                     loop>
                     Your browser does not support the video tag.
