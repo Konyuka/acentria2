@@ -3,7 +3,7 @@
 const bannerTitle = ref('Acentria Actuarial & Financial Services')
 
 const content = ref({
-    vid:'/img/hd3.mp4',
+    vid: '/img/hd3.mp4',
     pageTitle: 'Acentria Group Actuarial & Financial Services',
     title: 'Expert Actuarial & Financial <span class="text-brand-primary">Services for Your Business</span>',
     // description: 'At Acentria Group, we offer a wide range of actuarial and financial services designed to help your business thrive. Our team of experts provides tailored solutions to manage risk, optimize financial performance, and ensure long-term sustainability. Trust us to deliver the insights and support you need to navigate the complexities of the financial landscape, safeguarding your business and securing your future.',
@@ -129,96 +129,79 @@ const heroContent = ref({
 
                 <BannerVid :bannerTitle="bannerTitle" />
 
-                <!-- <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
-                    style="background-image:url('/img/bg.png');">
-                    <div class="container">
-                        <div
-                            class="flex items-center bg-cover px-4 py-1 text-center md:py-7 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                            <div
-                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                                <div class="w-full grid grid-cols-12">
-                                    <div class="col-span-7">
-                                        <h1 class="text-3xl text-white font-bold my-2 ">Acentria Actuarial & Financial
-                                            Services</h1>
-                                    </div>
-                                    <div class="col-span-5">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                 <Hero2 :data="heroContent" />
 
-                <div class="py-5 text-white" style="background-color: #282e37">
-                    <div class="undefined">
-                        <section id="" class="relative py-2">
-                            <div class="container px-4">
-                                <div class="pb-5 text-center">
-                                    <h2
-                                        class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
-                                        Best of Actuarial Consulting, Products & Services
-                                    </h2>
-                                </div>
-
-                                <ServiceTabs :menus="menus" :data="data" />
-
-                            </div>
-                        </section>
-                    </div>
+                <div class="pb-5 text-center bg-white">
+                    <h2
+                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
+                        Best of Actuarial Consulting, <span class="text-brand-primary">Products & Services</span>
+                    </h2>
                 </div>
 
-                <section id="" class="relative py-8  bg-white text-center">
+                <div class="py-5 text-white bg-white">
+                    <section class="relative py-2">
+                        <div class="container px-4">
+                            <ServiceTabs :menus="menus" :data="data" />
+                        </div>
+                    </section>
+                </div>
+
+                <section id="" class="relative py-8 bg-black/60 text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
+                            class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
                             <span class="text-brand-primary">Your Actuarial Services, Your Way.</span> <br>
                             Let Acentria Tailor Your Solutions To Your Needs
                         </h2>
                     </div>
                 </section>
 
-                <div class="py-4 text-white max-w-3xl mx-auto" style="background-color: #f6f8fc">
+                <div class="bg-white">
+                    <div class="py-4 text-white max-w-3xl mx-auto" style="background-color: #f6f8fc">
 
-                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2  lg:gap-16">
+                        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2  lg:gap-16">
 
-                        <div class="relative py-4 lg:basis-1/2">
-                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="500"
-                                height="350" decoding="async" data-nimg="1"
-                                style="color: transparent; object-fit: contain" class="rounded-xl"
-                                src="https://acentriagroup.com/wp-content/uploads/2023/10/8.jpeg" />
-                        </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                            <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
-                                    Acentria Actuarial & Financial Services has been a trusted provider of Actuarial
-                                    Services to Life, Non-Life Companies, and Pension Schemes in East & Central Africa
-                                    for many years. Our dedicated expertise extends to advising various Health Insurance
-                                    Schemes and actively participating in the development and design of insurance
-                                    products. Rooted in our deep understanding of regional markets and their
-                                    ever-changing dynamics, we offer a comprehensive range of services tailored to meet
-                                    your needs.
+                            <div class="relative py-4 lg:basis-1/2">
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                    width="500" height="350" decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain" class="rounded-xl"
+                                    src="https://acentriagroup.com/wp-content/uploads/2023/10/8.jpeg" />
+                            </div>
+                            <div class="flex flex-col justify-center lg:basis-1/2">
+                                <div class="text-light-content pb-5 md:pb-6">
+                                    <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
+                                        Acentria Actuarial & Financial Services has been a trusted provider of Actuarial
+                                        Services to Life, Non-Life Companies, and Pension Schemes in East & Central
+                                        Africa
+                                        for many years. Our dedicated expertise extends to advising various Health
+                                        Insurance
+                                        Schemes and actively participating in the development and design of insurance
+                                        products. Rooted in our deep understanding of regional markets and their
+                                        ever-changing dynamics, we offer a comprehensive range of services tailored to
+                                        meet
+                                        your needs.
 
-                                    <br><br>
+                                        <br><br>
 
-                                    With Acentria, you gain access to a partner who not only comprehends the intricacies
-                                    of the insurance landscape but also helps you navigate it with precision and
-                                    insight. Allow us to empower your financial strategies and shape your success.
-                                </p>
+                                        With Acentria, you gain access to a partner who not only comprehends the
+                                        intricacies
+                                        of the insurance landscape but also helps you navigate it with precision and
+                                        insight. Allow us to empower your financial strategies and shape your success.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
-                <ServicesCards />
 
-                <Why2 />
+                <ServicesCards class="bg-white" />
 
-                <WhyRe :whys="whys" />
+                <Why2 class="bg-white" />
 
+                <WhyRe :whys="whys" class="bg-white" />
 
                 <ContactForm />
 

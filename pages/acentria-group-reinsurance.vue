@@ -182,6 +182,9 @@ const heroContent = ref({
                                 </h1>`,
 })
 
+
+const bannerTitle = ref('Acentria Reinsurance Brokers')
+
 </script>
 
 <template>
@@ -191,88 +194,70 @@ const heroContent = ref({
 
                 <ServiceHero2 :content="content" />
 
-                <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
-                    style="background-image:url('/img/bg.png');">
-                    <div class="container">
-                        <div
-                            class="flex items-center bg-cover px-4 py-1 text-center md:py-7 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                            <div
-                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                                <div class="w-full grid grid-cols-12">
-                                    <div class="col-span-6">
-                                        <h1 class="text-3xl text-white font-bold my-2 ">Acentria Reinsurance Brokers</h1>
-                                    </div>
-                                    <div class="col-span-6">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <BannerVid :bannerTitle="bannerTitle" />
 
                 <Hero2 :data="heroContent" />
 
-                <div class="py-6 text-white xl:py-12" style="background-color: #282e37">
-                    <div class="undefined">
-                        <section id="" class="relative py-4 lg:py-10">
-                            <div class="container px-4">
-                                <div class="pb-10 text-center lg:pb-14">
-                                    <h2
-                                        class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
-                                        Delivering Reinsurance Solutions & Services
-                                    </h2>
-                                    <!-- <label
-                                        class="pt-5 text-base leading-normal font-sans text-light-highlight font-bold">
-                                        Get a reinsurance quote today — It’s that simple with Acentria
-                                    </label> -->
-                                </div>
-
-                                <ServiceTabs :menus="menus" :data="data" />
-
-                            </div>
-                        </section>
-                    </div>
+                <div class="pb-5 text-center bg-white">
+                    <h2
+                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
+                        Delivering Reinsurance <span class="text-brand-primary">Solutions & Services</span>
+                    </h2>
                 </div>
 
-                <section id="" class="relative py-8 lg:py-5 bg-white text-center">
+                <div class="py-5 text-white bg-white">
+                    <section class="relative py-2">
+                        <div class="container px-4">
+                            <ServiceTabs :menus="menus" :data="data" />
+                        </div>
+                    </section>
+                </div>
+
+
+
+                <section id="" class="relative py-8 bg-black/60 text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
+                            class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
                             <span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br>
                             Let Acentria Tailor Your Coverage To Your Needs
                         </h2>
                     </div>
                 </section>
 
-                <div class="py-6 text-white xl:py-5 max-w-3xl mx-auto" style="background-color: #f6f8fc">
+                <div class="bg-white">
+                    <div class="py-6 text-white xl:py-5 max-w-3xl mx-auto" style="background-color: #f6f8fc">
 
-                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
-                        <div class="relative p-4 lg:basis-1/2">
-                            <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" width="250"
-                                height="350" decoding="async" data-nimg="1"
-                                style="color: transparent; object-fit: contain" class="ml-20 rounded-xl"
-                                src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center lg:basis-1/2">
-                            <div class="text-light-content pb-5 md:pb-6">
-                                <p
-                                    class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
-                                    We specialize in addressing underwriting and capital management challenges,
-                                    showcasing a deep understanding of the complexities involved in managing risk and
-                                    financial resources within the insurance industry.
-                                    <br><br>
-                                    Our comprehensive range of
-                                    services supports insurance companies, encompassing risk analysis, designing and
-                                    placing reinsurance programs, providing claims support, developing alternative risk
-                                    strategies, and offering various risk management consulting services.
-                                </p>
+                            <div class="relative p-4 lg:basis-1/2">
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                    width="250" height="350" decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain" class="ml-20 rounded-xl"
+                                    src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                            </div>
+                            <div class="flex flex-col justify-center items-center lg:basis-1/2">
+                                <div class="text-light-content pb-5 md:pb-6">
+                                    <p
+                                        class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
+                                        We specialize in addressing underwriting and capital management challenges,
+                                        showcasing a deep understanding of the complexities involved in managing risk
+                                        and
+                                        financial resources within the insurance industry.
+                                        <br><br>
+                                        Our comprehensive range of
+                                        services supports insurance companies, encompassing risk analysis, designing and
+                                        placing reinsurance programs, providing claims support, developing alternative
+                                        risk
+                                        strategies, and offering various risk management consulting services.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
 
                 <Why />
 
@@ -280,25 +265,13 @@ const heroContent = ref({
                 <WhyRe :whys="whys" />
 
                 <div>
-
-                    <!-- <section id="" class="relative py-2 bg-white text-center">
-                        <div class="container px-4">
-                            <h2
-                                class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
-                                Our Market <span class="text-brand-primary">Presence</span>
-                            </h2>
-                        </div>
-                    </section> -->
                     <div class="container flex items-center justify-center">
-
                         <div class="relative p-4">
                             <img alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
                                 width="1000" height="350" decoding="async" data-nimg="1"
                                 style="color:transparent;object-fit:contain" class="rounded-xl" src="/img/map.jpg">
                         </div>
-
                     </div>
-
                 </div>
 
 

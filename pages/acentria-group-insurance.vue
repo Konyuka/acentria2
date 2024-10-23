@@ -3,7 +3,7 @@
 const content = ref({
     vid: '/img/hd1.mp4',
     pageTitle: 'Acentria Group Insurance',
-    title: 'Secure Your Future with <span class="text-brand-primary">Comprehensive Insurance Solutions</span>',
+    title: 'Secure Your Future with <span class="text-brand-primary">Comprehensive Insurance <br> Solutions</span>',
     // description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
 })
 
@@ -199,6 +199,9 @@ const heroContent = ref({
                                     Insurance Brokers
                                 </h1>`,
 })
+
+const bannerTitle = ref('Acentria Insurance Brokers')
+
 </script>
 
 <template>
@@ -208,48 +211,23 @@ const heroContent = ref({
 
                 <ServiceHero2 :content="content" />
 
-                <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
-                    style="background-image:url('/img/bg.png');">
-                    <div class="container">
-                        <div
-                            class="flex items-center bg-cover px-4 py-1 text-center md:py-7 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                            <div
-                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                                <div class="w-full grid grid-cols-12">
-                                    <div class="col-span-6">
-                                        <h1 class="text-3xl text-white font-bold my-2 ">Acentria Insurance Brokers</h1>
-                                    </div>
-                                    <div class="col-span-6">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <BannerVid :bannerTitle="bannerTitle" />
 
                 <Hero2 :data="heroContent" />
 
-                <div class="py-6 text-white" style="background-color: #282e37">
-                    <div class="undefined">
-                        <section id="" class="relative py-4 lg:py-10">
-                            <div class="container px-4">
-                                <div class="pb-10 text-center lg:pb-14">
-                                    <h2
-                                        class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
-                                        Pick a cover, and we'll take care of the rest
-                                    </h2>
-                                    <label
-                                        class="pt-5 text-base leading-normal font-sans text-light-highlight font-bold">
-                                        Get an insurance quote today — It’s that simple with Acentria
-                                    </label>
-                                </div>
+                <div class="pb-5 text-center bg-white">
+                    <h2
+                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
+                        Pick a cover and, <span class="text-brand-primary">we'll take care of the rest</span>
+                    </h2>
+                </div>
 
-                                <ServiceTabs :menus="menus" :data="data" />
-
-                            </div>
-                        </section>
-                    </div>
+                <div class="py-5 text-white bg-white">
+                    <section class="relative py-2">
+                        <div class="container px-4">
+                            <ServiceTabs :menus="menus" :data="data" />
+                        </div>
+                    </section>
                 </div>
 
                 <section id="" class="relative py-3 bg-white text-center">
@@ -372,8 +350,8 @@ const heroContent = ref({
 
                 <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 
-                <div class="font-sans text-white xl:py-1" style="background-color: #fff">
-                    <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-2 lg:gap-16">
+                <div class=" font-sans text-white xl:py-1" style="background-color: #fff">
+                    <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:my-2 lg:gap-16">
                         <div class="relative py-4 lg:basis-1/2">
                             <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy"
                                 width="500" height="350" decoding="async" data-nimg="1"
@@ -409,10 +387,10 @@ const heroContent = ref({
                     </div>
                 </div>
 
-                <section id="" class="relative py-4 bg-white text-center">
+                <section id="" class="relative py-8 bg-black/60 text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
+                            class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
                             <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
                             Let Acentria Tailor Your Coverage To Your Needs
                         </h2>
@@ -420,38 +398,41 @@ const heroContent = ref({
                 </section>
 
 
-                <div class="py-3 text-white max-w-3xl mx-auto" style="background-color: #f6f8fc">
-
-                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-
-                        <div class="relative p-4 lg:basis-1/2">
-                            <div class="px-auto">
-                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="400" height="350" decoding="async" data-nimg="1"
-                                    style="color: transparent; object-fit: contain" class="rounded-xl"
-                                    src="https://images.pexels.com/photos/7688374/pexels-photo-7688374.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                <div class="bg-white">
+                    <div class="py-3 text-white max-w-3xl mx-auto">
+    
+                        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+    
+                            <div class="relative p-4 lg:basis-1/2">
+                                <div class="px-auto">
+                                    <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                        width="400" height="350" decoding="async" data-nimg="1"
+                                        style="color: transparent; object-fit: contain" class="rounded-xl"
+                                        src="https://images.pexels.com/photos/7688374/pexels-photo-7688374.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center lg:basis-1/2">
+                                <div class="text-light-content pb-5 md:pb-6">
+                                    <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
+                                        Acentria Group is your trusted friend in the world of insurance. We’re here to make
+                                        sure you and anything you care for is safe and sound. Insurance can be confusing,
+                                        but we’re experts at making it simple. We’ll take the time to understand exactly
+                                        what you need and find the right insurance plan just for you.
+    
+                                        So, why choose us? Because we genuinely care about keeping you and your things
+                                        protected. We’re not just about selling insurance; we’re about making sure you’re
+                                        worry-free and your wallet stays happy. Whether it’s your health, home, car, or
+                                        business, we’ve got the perfect insurance plan that won’t break the bank. Trust us
+                                        to be your friendly insurance guide, making sure you’re covered no matter what life
+                                        throws your way.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                            <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
-                                    Acentria Group is your trusted friend in the world of insurance. We’re here to make
-                                    sure you and anything you care for is safe and sound. Insurance can be confusing,
-                                    but we’re experts at making it simple. We’ll take the time to understand exactly
-                                    what you need and find the right insurance plan just for you.
-
-                                    So, why choose us? Because we genuinely care about keeping you and your things
-                                    protected. We’re not just about selling insurance; we’re about making sure you’re
-                                    worry-free and your wallet stays happy. Whether it’s your health, home, car, or
-                                    business, we’ve got the perfect insurance plan that won’t break the bank. Trust us
-                                    to be your friendly insurance guide, making sure you’re covered no matter what life
-                                    throws your way.
-                                </p>
-                            </div>
-                        </div>
+    
                     </div>
-
                 </div>
+
 
                 <ContactForm />
 

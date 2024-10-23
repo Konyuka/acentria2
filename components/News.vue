@@ -6,7 +6,7 @@
 <template>
     <section class="relative mb-10">
         <div class="font-sans container px-4">
-            <div class="pb-7 text-center">
+            <div class="py-7 text-center">
                 <h2 class="font-sans tracking-normal text-3xl text-gray-900 leading-tight lg:leading-tight">
                     Related <span class="text-brand-primary">Content</span>
                 </h2>

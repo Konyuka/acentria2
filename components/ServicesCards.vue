@@ -3,32 +3,32 @@ const services = ref([
     {
         name:'Insurance <span class="text-brand-primary">Consulting</span>',
         image:'https://images.pexels.com/photos/5699447/pexels-photo-5699447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        content:'We specialize in providing top-notch consulting services tailored to the insurance industry. With an experienced team, we offer comprehensive solutions to meet the unique needs and challenges of insurance companies, reinsurers. We provide both longterm and short-term insurance consulting services.',
+        content:'We specialize in providing top-notch consulting services tailored to the insurance industry.',
     },
     {
         name:'IFRS17 <span class="text-brand-primary">Implementation</span>',
         image:'https://images.pexels.com/photos/210679/pexels-photo-210679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        content:'We strive to help insurance companies navigate the complexities of implementing the International Financial Reporting Standard 17 (Insurance Contracts). With a team of experts well-versed in accounting, actuarial science, and regulatory compliance, we offer comprehensive solutions to ensure a smooth and successful transition to this new accounting standard.',
+        content:'We strive to help insurance companies navigate the complexities of implementing the International Financial Reporting Standard 17 (Insurance Contracts).',
     },
     {
         name:'Retirement <span class="text-brand-primary">Employee benefits</span>',
         image:'https://images.pexels.com/photos/33786/hands-walking-stick-elderly-old-person.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        content:'In the realm of actuarial science, retirement and employee benefits are critical components that demand meticulous analysis and precise calculations. Actuaries play a pivotal role in designing, managing, and evaluating retirement plans and employee benefit programs to ensure their sustainability and effectiveness',
+        content:'In the realm of actuarial science, retirement and employee benefits are critical components that demand meticulous analysis and precise calculations.',
     },
     {
         name:'Reinsurance Consulting <span class="text-brand-primary">Consulting</span>',
         image:'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        content:'Our team works with clients to design reinsurance structures that fit their risk management framework. This involves designing structures that target optimal volatility transfer, while ensuring cover is placed with reinsurers who have high credit standing.',
+        content:'Our team works with clients to design reinsurance structures that fit their risk management framework.',
     },
     {
         name:'Financial <span class="text-brand-primary">Services</span>',
         image:'https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        content:'Financial services in actuarial science encompass a wide range of areas where actuarial expertise is utilized to assess and manage risk, make financial decisions, and provide valuable insights. Actuarial science plays a crucial role in managing risk and uncertainty insurance and pension industries',
+        content:'Financial services in actuarial science encompass a wide range of areas where actuarial expertise is utilized to assess and manage risk, make financial decisions, and provide valuable insights.',
     },
     {
         name:'Innovation &<span class="text-brand-primary"> Digitization</span>',
         image:'https://images.pexels.com/photos/3803517/pexels-photo-3803517.jpeg?auto=compress&cs=tinysrgb&w=600',
-        content:'Innovation and digitization in actuarial science have led to more agile, data-driven, and customer-focused practices. At Acentria our actuaries embrace these technological advancements and are better equipped to tackle complex challenges.',
+        content:'Innovation and digitization in actuarial science have led to more agile, data-driven, and customer-focused practices.',
     },
 ])
 

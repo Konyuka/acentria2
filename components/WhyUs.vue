@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
     <div>
 
-        <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 font-sans"
+        <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black/60 font-sans"
             style="background-image:url('/img/bg.png');">
             <div class="container">
                 <div
@@ -29,41 +29,42 @@ const props = defineProps({
             </div>
         </div>
 
-        <div class="container mx-auto">
-            <div class="md:py-10">
-                <div class="mx-auto max-w-7xl px-2 lg:px-8">
-                    <div
-                        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                        <div>
-                            <h2 v-html="leftTitle"
-                                class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight sm:pb-4 pt-6">
-                            </h2>
-                        </div>
-
+        <div class="bg-white">
+            <div class="container mx-auto ">
+                <div class="md:py-10">
+                    <div class="mx-auto max-w-7xl px-2 lg:px-8">
                         <div
-                            class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-5 text-base leading-7 text-gray-600 sm:grid-cols-2">
+                            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                            <div>
+                                <h2 v-html="leftTitle"
+                                    class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight sm:pb-4 pt-6">
+                                </h2>
+                            </div>
 
-                            <div v-for="why in whys" class="flex flex-row gap-2">
-                                <i class="material-symbols-outlined text-brand-primary text-4xl undefined"
-                                    translate="no">{{ why.icon }}</i>
-                                <div>
-                                    <h5 id=""
-                                        class="font-sans text-sm pb-3 leading-tight text-light-title font-semibold md:!pb-3">
-                                        {{ why.title }}
-                                    </h5>
-                                    <p class="text-xs leading-normal font-sans text-light-content">
-                                        {{ why.content }}
-                                    </p>
+                            <div
+                                class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-5 text-base leading-7 text-gray-600 sm:grid-cols-2">
+
+                                <div v-for="why in whys" class="flex flex-row gap-2">
+                                    <i class="material-symbols-outlined text-brand-primary text-4xl undefined"
+                                        translate="no">{{ why.icon }}</i>
+                                    <div>
+                                        <h5 id=""
+                                            class="font-sans text-sm pb-3 leading-tight text-light-title font-semibold md:!pb-3">
+                                            {{ why.title }}
+                                        </h5>
+                                        <p class="text-xs leading-normal font-sans text-light-content">
+                                            {{ why.content }}
+                                        </p>
+                                    </div>
                                 </div>
+
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 

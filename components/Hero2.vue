@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
 
-    <div class="relative w-full bg-cover bg-center bg-no-repeat false py-4"
+    <div class="relative w-full bg-cover bg-center bg-no-repeat false py-4 bg-white"
         style="background-image:url(''); transform: scaleX(-1);">
         <div class="container" style="transform: scaleX(-1);">
             <div

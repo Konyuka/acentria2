@@ -6,7 +6,7 @@
 <template>
     <div>
 
-        <section class="relative py-10">
+        <section class="container relative py-10">
             <div class="font-sans container px-4">
                 <div class="text-left">
                     <h2 id=""

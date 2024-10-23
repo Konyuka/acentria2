@@ -18,7 +18,7 @@ const company = computed(() => {
 </script>
 
 <template>
-    <section id="register-section" class="relative my-5">
+    <section class="relative my-5">
         <div class="container px-4">
             <div class="mx-auto max-w-4xl pb-2 text-center">
                 <h2 id=""

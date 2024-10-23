@@ -82,32 +82,12 @@ onMounted(() => {
 
 <template>
   <div>
-    <div id="">
+    <div class="">
       <main class="font-sans">
         <main>
           <div>
             <div>
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
-
-              <!-- <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
-                style="background-image:url('/img/bg.png');">
-                <div class="container">
-                  <div
-                    class="flex items-center bg-cover px-4 py-1 text-center md:py-7 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                    <div
-                      class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                      <div class="w-full grid grid-cols-10">
-                        <div class="col-span-3">
-                          <h1 class="text-3xl text-white font-bold my-2 ">Acentria Group</h1>
-                        </div>
-                        <div class="col-span-7">
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div> -->
 
               <div class="w-full h-full bg-white">
                 <MakesUs />
@@ -225,7 +205,7 @@ onMounted(() => {
                           <div
                             class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
                             <div class="flex h-fit flex-col"><i
-                                class="fas fa-bullseye text-black text-4xl pb-4 group-hover:text-brand-primary"
+                                class="fas fa-check-circle text-black text-4xl pb-4 group-hover:text-brand-primary"
                                 translate="no"></i>
                               <h3
                                 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
@@ -295,26 +275,12 @@ onMounted(() => {
 
 
 
-              <!-- <div class=" py-10" style="background-color: rgb(246, 248, 252)">
-                <h2
-                  class="text-center font-sans tracking-normal text-2xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
-                  We Firmly Believe That What Makes Us <br>
-                  <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                    Different Also Makes us Stronger
-                  </span>
-                </h2>
-              </div> -->
+
 
               <div class="font-sans justify-between content-center bg-white py-5">
-                <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left max-w-6xl mx-auto">
+                <h2 class="container text-3xl font-semibold tracking-tight text-gray-900 text-left max-w-6xl mx-auto">
                   Our <span class="text-brand-primary">Commitments</span>
                 </h2>
-                <!-- <p
-                  class="text-left max-w-6xl mx-auto my-5 text-base leading-normal text-black text-sm font-normal not-italic">
-                  At Acentria, we believe we have a responsibility to not only our customers and business partners, <br>
-                  but
-                  also to our people and the broader community.
-                </p> -->
               </div>
 
               <section class="container relative py-10">
@@ -342,36 +308,18 @@ onMounted(() => {
                 </div>
               </section>
 
-              <div class="bg-white font-sans">
-                <div>
-                  <h2
-                    class="text-left max-w-6xl mx-auto font-sans tracking-normal text-3xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-5">
-                    Our Lines
-                    <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                      of Business
-                    </span>
-                  </h2>
-                </div>
-                <div class="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
-                  <ServiceCarousel />
-                </div>
-
-              </div>
+              <Services />
 
               <Stats />
 
               <Testimonials />
-
-              <!-- <div class="w-full h-[35vh]">
-
-              </div> -->
 
               <div class="bg-white w-full h-full">
                 <Awards />
               </div>
 
               <h1 class="text-black font-semibold text-3xl bg-white mx-auto">
-                <div class="max-w-6xl mx-auto text-left py-5 bg-white">
+                <div class="container max-w-6xl mx-auto text-left py-5 bg-white">
                   Corporate Social Responsibility
                   <span class="text-brand-primary">&
                     Sustainability

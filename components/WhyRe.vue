@@ -16,7 +16,7 @@ const props = defineProps({
                 </h2>
             </div>
         </section>
-        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0 mb-5">
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10 mb-5">
 
             <div v-for="item in whys"
                 class="button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[200px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
