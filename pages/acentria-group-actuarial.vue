@@ -1,10 +1,12 @@
 <script setup>
 
+const bannerTitle = ref('Acentria Actuarial & Financial Services')
+
 const content = ref({
     vid:'/img/hd3.mp4',
     pageTitle: 'Acentria Group Actuarial & Financial Services',
     title: 'Expert Actuarial & Financial <span class="text-brand-primary">Services for Your Business</span>',
-    description: 'At Acentria Group, we offer a wide range of actuarial and financial services designed to help your business thrive. Our team of experts provides tailored solutions to manage risk, optimize financial performance, and ensure long-term sustainability. Trust us to deliver the insights and support you need to navigate the complexities of the financial landscape, safeguarding your business and securing your future.',
+    // description: 'At Acentria Group, we offer a wide range of actuarial and financial services designed to help your business thrive. Our team of experts provides tailored solutions to manage risk, optimize financial performance, and ensure long-term sustainability. Trust us to deliver the insights and support you need to navigate the complexities of the financial landscape, safeguarding your business and securing your future.',
 })
 
 
@@ -125,7 +127,9 @@ const heroContent = ref({
 
                 <ServiceHero2 :content="content" />
 
-                <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
+                <BannerVid :bannerTitle="bannerTitle" />
+
+                <!-- <div class="w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-0 -mt-3 sticky top-[148px] z-20"
                     style="background-image:url('/img/bg.png');">
                     <div class="container">
                         <div
@@ -134,7 +138,7 @@ const heroContent = ref({
                                 class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
                                 <div class="w-full grid grid-cols-12">
                                     <div class="col-span-7">
-                                        <h1 class="text-3xl text-white font-bold my-2 ">Acentria Atuarial & Financial
+                                        <h1 class="text-3xl text-white font-bold my-2 ">Acentria Actuarial & Financial
                                             Services</h1>
                                     </div>
                                     <div class="col-span-5">
@@ -144,7 +148,7 @@ const heroContent = ref({
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <Hero2 :data="heroContent" />
 

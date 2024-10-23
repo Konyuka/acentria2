@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
     <div class="relative h-[75vh] mt-28">
-        <video autoplay muted loop class="drop-shadow-md w-full h-[75vh] object-cover transform -translate-y-0"
+        <video autoplay muted loop class="drop-shadow-md w-full h-[70vh] object-cover fixed top-32 left-0 z-[-1]"
             :src="content.vid" style="color: transparent">
             Your browser does not support the video tag.
         </video>
@@ -21,14 +21,14 @@ const props = defineProps({
                         <div class="w-full">
                             <h1 v-html="content.title"
                                 class="font-sans tracking-normal text-4xl  text-white font-semibold leading-tight lg:leading-tight">
-                                
+
                             </h1>
                         </div>
-                        <div>
+                        <!-- <div>
                             <p class="font-semibold font-sans tracking-wide text-base text-white leading-7 pb-2">
                                 {{ content.description }}
                             </p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

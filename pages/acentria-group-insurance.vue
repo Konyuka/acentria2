@@ -4,7 +4,7 @@ const content = ref({
     vid: '/img/hd1.mp4',
     pageTitle: 'Acentria Group Insurance',
     title: 'Secure Your Future with <span class="text-brand-primary">Comprehensive Insurance Solutions</span>',
-    description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
+    // description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
 })
 
 const data = ref({

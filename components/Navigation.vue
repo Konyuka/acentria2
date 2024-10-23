@@ -153,7 +153,7 @@ onBeforeUnmount(() => {
 
 <template>
 
-    <div :class="bottomBarClass" class="shadow-2xl">
+    <div :class="bottomBarClass" class="shadow-md">
         <div class="relative z-50 mx-auto hidden w-full px-2 py-2 lg:block bg-white">
             <div class="font-sans px-2 mx-auto flex flex-row items-center justify-between">
 
