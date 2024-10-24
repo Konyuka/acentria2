@@ -14,6 +14,12 @@ const ReinsuranceBannerContent = ref({
     image: 'https://www.shutterstock.com/shutterstock/photos/1023861067/display_1500/stock-photo-morning-cup-of-coffee-warm-coffee-and-morning-news-concept-on-a-wooden-textured-table-1023861067.jpg',
 })
 
+const bannerContent = ref({
+    subtitle: 'News & Updates',
+    title: 'Acentria\'s Newsroom',
+    image: 'https://www.shutterstock.com/shutterstock/photos/1023861067/display_1500/stock-photo-morning-cup-of-coffee-warm-coffee-and-morning-news-concept-on-a-wooden-textured-table-1023861067.jpg'
+})
+
 const getUrl = (title, id) => {
     const lowerCaseTitle = title.toLowerCase();
     const cleanedTitle = lowerCaseTitle.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()'"]/g, '');
@@ -46,69 +52,11 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div class="relative isolate overflow-hidden bg-white py-20 mt-40">
-        <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
-            class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
-
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-
-        <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
-            <div class="grid grid-cols-10 -gap-10">
-                <div class="text-white col-span-1">
-                    <div class="w-20 h-1 bg-white mt-3">
-
-                    </div>
-                </div>
-                <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                    <h2 class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
-                        News & Updates
-                    </h2>
-                    <h2 class="text-left text-3xl font-bold tracking-tight text-white font-sans">
-                        {{ ReinsuranceBannerContent.title }}
-                    </h2>
-                    <p class="text-white text-left max-w-2xl mt-7 text-xs">
-                        Stay informed on the latest developments and trends shaping the world of risk, insurance, and
-                        financial services. Explore our resources and insights, covering everything from reinsurance
-                        strategies and aviation insurance to actuarial analysis and innovative IT solutions for the
-                        public and private sectors.
-
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
     <main class="font-sans mt-5">
         <main>
-
-            <!-- <div class="flex w-full flex-row px-4 py-4 md:px-16 md:pb-6">
-                <div class="container mx-auto flex h-full justify-center gap-0 md:gap-6 md:pb-0">
-                    <div class="flex cursor-default flex-col md:flex-row">
-                        <div
-                            class="font-sans border-brand-light-content flex flex-row items-center justify-center gap-2 border-none py-2 md:border-r-2 md:border-solid border-brand-primary md:py-6 md:pr-8">
-                            <h1 id=""
-                                class="text-3xl font-semibold leading-tight md:pb-6 md:text-3xl xl:leading-tight text-brand-primary !pb-0">
-                                Acentria's
-                            </h1>
-                            <h1 id=""
-                                class="text-3xl font-semibold leading-tight md:pb-6 md:text-3xl xl:leading-tight text-light-title !pb-0">
-                                Newsroom
-                            </h1>
-                        </div>
-                        <div class="hidden flex-col py-4 pl-8 sm:flex md:py-6">
-                            <p class="font-sans text-xs leading-normal font-regular text-light-content">
-                                Stay informed on the latest developments and trends shaping the world of risk,
-                                insurance, and financial services. Explore our resources and insights, covering
-                                everything from reinsurance strategies and aviation insurance to actuarial analysis
-                                and innovative IT solutions for the public and private sectors.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <div class="max-w-6xl mx-auto">
+            
+            <BannerMain :content="bannerContent" />
+            <div class="max-w-full mx-auto">
                 <div class="sm:hidden px-4">
                     <label for="tabs" class="sr-only">Select a tab</label>
                     <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->

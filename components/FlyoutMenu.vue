@@ -238,7 +238,7 @@ const AboutMenus = ref([
         ]
     },
     {
-        name: 'Leadership',
+        name: 'Our Governance',
         icon: 'fas fa-user-tie',
         items: [
             {
@@ -305,37 +305,37 @@ const AboutMenus = ref([
             },
         ]
     },
-    {
-        name: 'Corporate Governance',
-        icon: 'fas fa-gavel',
-        items: [
-            {
-                name: 'How we work',
-                description: 'Learn about our corporate governance practices and ethical standards.',
-                link: '/corporate-governance',
-            },
-            {
-                name: 'Our risk Management',
-                description: 'Understand our approach to risk management and mitigation.',
-                link: '/corporate-governance',
-            },
-            {
-                name: 'Customer feedback & dispute resolution',
-                description: 'See how we handle customer feedback and resolve disputes.',
-                link: '/corporate-governance',
-            },
-            {
-                name: 'Complaint',
-                description: 'Learn about our complaint handling process and how to file a complaint.',
-                link: '/corporate-governance',
-            },
-            {
-                name: 'Data Privacy',
-                description: 'Read about our commitment to data privacy and protection.',
-                link: '/corporate-governance',
-            },
-        ]
-    },
+    // {
+    //     name: 'Corporate Governance',
+    //     icon: 'fas fa-gavel',
+    //     items: [
+    //         {
+    //             name: 'How we work',
+    //             description: 'Learn about our corporate governance practices and ethical standards.',
+    //             link: '/corporate-governance',
+    //         },
+    //         {
+    //             name: 'Our risk Management',
+    //             description: 'Understand our approach to risk management and mitigation.',
+    //             link: '/corporate-governance',
+    //         },
+    //         {
+    //             name: 'Customer feedback & dispute resolution',
+    //             description: 'See how we handle customer feedback and resolve disputes.',
+    //             link: '/corporate-governance',
+    //         },
+    //         {
+    //             name: 'Complaint',
+    //             description: 'Learn about our complaint handling process and how to file a complaint.',
+    //             link: '/corporate-governance',
+    //         },
+    //         {
+    //             name: 'Data Privacy',
+    //             description: 'Read about our commitment to data privacy and protection.',
+    //             link: '/corporate-governance',
+    //         },
+    //     ]
+    // },
     {
         name: 'Sustainability',
         icon: 'fas fa-leaf',

@@ -1,7 +1,9 @@
 <script setup>
-const ReinsuranceBannerContent = ref({
+
+const bannerContent = ref({
+    subtitle: 'Contact Us',
     title: 'Reach Out to Us',
-    image: '/img/contact1.jpg',
+    image: '/img/contact1.jpg'
 })
 
 </script>
@@ -10,48 +12,14 @@ const ReinsuranceBannerContent = ref({
     <section>
         <div>
 
-            <div class="relative isolate overflow-hidden bg-white py-20 mt-40">
-                <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
-                    class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
-
-                <div class="absolute inset-0 bg-black opacity-40"></div>
-
-                <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
-                    <div class="grid grid-cols-10 -gap-10">
-                        <div class="text-white col-span-1">
-                            <div class="w-20 h-1 bg-white mt-3">
-
-                            </div>
-                        </div>
-                        <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                            <h2
-                                class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
-                                Contact Us
-                            </h2>
-                            <h2 class="text-left text-3xl font-bold tracking-tight text-white font-sans">
-                                {{ ReinsuranceBannerContent.title }}
-                            </h2>
-                            <p class="text-white text-left max-w-2xl mt-7 text-xs">
-                                We are here to assist you with any inquiries or support you may need. Whether you have
-                                questions about our services, need help with your account, or want to provide feedback,
-                                our dedicated team is ready to help. Reach out to us via email or call.
-                                You can also visit us at our office located at West Park Towers 9th floor, Mpesi Lane,
-                                Muthithi Road, Westlands, Nairobi, Kenya. We look forward to hearing from you and
-                                ensuring your experience with Acentria is exceptional.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <BannerMain :content="bannerContent" />
 
             <div class="bg-white py-8">
                 <div class="mx-[5vw] lg:px-8">
                     <div class="mx-auto max-w-2xl space-y-5 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
                         <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
                             <div>
-                                <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+                                <h2 class="text-3xl font-semibold tracking-tight text-gray-900">
                                     Connect with <br> <span class="text-brand-primary">Our experts</span>
                                 </h2>
                             </div>
@@ -125,7 +93,7 @@ const ReinsuranceBannerContent = ref({
 
                         <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-1 py-5 lg:grid-cols-1">
                             <div>
-                                <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+                                <h2 class="text-3xl font-semibold tracking-tight text-gray-900">
                                     Visit Us
                                 </h2>
                                 <p class="mt-4 leading-7 text-black font-bold">

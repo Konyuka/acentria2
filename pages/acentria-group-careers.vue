@@ -33,9 +33,10 @@ const principles = ref([
 
 ])
 
-const ReinsuranceBannerContent = ref({
+const bannerContent = ref({
+    subtitle: 'Careers',
     title: 'Acentria Group Careers',
-    image: '/img/careers.jpg',
+    image: '/img/careers.jpg'
 })
 
 const joinAsMembers = ref([
@@ -95,43 +96,7 @@ const benefits = ref([
         <div>
             <div>
 
-                <div class="relative isolate overflow-hidden bg-white py-20 mt-40">
-                    <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
-                        class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
-
-                    <div class="absolute inset-0 bg-black opacity-40"></div>
-
-                    <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
-                        <div class="grid grid-cols-10 -gap-10">
-                            <div class="text-white col-span-1">
-                                <div class="w-20 h-1 bg-white mt-3">
-
-                                </div>
-                            </div>
-                            <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                                <h2
-                                    class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
-                                    Careers
-                                </h2>
-                                <h2 class="text-left text-3xl font-bold tracking-tight text-white font-sans">
-                                    {{ ReinsuranceBannerContent.title }}
-                                </h2>
-                                <p class="text-white text-left max-w-2xl mt-7 text-xs">
-                                    At Acentria, we understand the profound impact businesses can have on the world.
-                                    That’s why
-                                    we are dedicated to integrating Environmental, Social, and Governance (ESG)
-                                    principles into
-                                    our core business practices. Our commitment goes beyond financial success, focusing
-                                    on
-                                    sustainable and responsible business operations that contribute positively to the
-                                    well-being
-                                    of our planet and society.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <BannerMain :content="bannerContent" />
 
                 <div class="isolate !mb-5 py-5 md:py-0 mt-5">
                     <div class="relative isolate -z-10">
