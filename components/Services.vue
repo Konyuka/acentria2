@@ -16,7 +16,7 @@
                             {{ feature.title }}
                         </dt>
                         <dd class="mt-1 flex flex-auto flex-col text-xs leading-7 text-gray-300">
-                            <p class="flex-auto">{{ feature.description }}</p>
+                            <p class="flex-auto">{{ feature.description }}</p> 
                             <p class="mt-2">
                                 <NuxtLink :to="feature.url" class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary">
                                     Learn more <span aria-hidden="true">→</span>

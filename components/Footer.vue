@@ -166,7 +166,7 @@ const showDropdown = (menu) => {
     <div>
 
 
-        <div class="font-sans w-full border-t-8 border-black bg-black/70 px-4 py-3">
+        <div class="font-sans w-full border-t-8 border-black bg-black px-4 py-3">
             <div class="container mx-auto">
                 <!-- Links -->
                 <div class="grid grid-cols-4 gap-2 text-sm lg:gap-2 px-auto my-2">

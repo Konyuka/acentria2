@@ -187,7 +187,7 @@ const benefits = ref([
                     </div>
                 </section>
 
-                <div class="relative w-full bg-cover bg-center bg-no-repeat bg-gray-600 mb-5"
+                <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-5"
                     style="background-image:url('/img/bg.png');">
                     <div class="container">
                         <div

@@ -155,37 +155,7 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-
-                <!-- <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                  <div class="flex flex-col justify-center lg:basis-1/2">
-                    <label class="text-base leading-normal font-regular text-light-highlight font-bold">
-                      The Roadmap
-                    </label>
-                    <h2
-                      class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                      Our <span class="text-brand-primary">Purpose</span>
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                      <p class="text-sm leading-normal font-regular text-light-content !text-inherit mb-4">
-                        To continuously Empower our clients and communities through innovative solutions, which
-                        enhancing prosperity and adding value to a dynamic global environment.
-                        Passionately remain at the forefront in empowering the vision of our clients through igniting
-                        innovative thinking in offering the best solutions to enhance prosperity.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                      src="/img/purpose.jpeg" data-v-inspector="components/Why.vue:34:17" />
-                  </div>
-                </div> -->
-
               </div>
-
-              <!-- <div class="w-full h-[10vh]">
-
-              </div> -->
 
               <section id="" class="bg-white relative md:py-2  text-left">
                 <div class="container px-4">

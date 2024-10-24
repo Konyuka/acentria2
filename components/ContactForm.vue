@@ -19,27 +19,25 @@ const company = computed(() => {
 
 <template>
     <section class="relative my-5">
-        <div class="container px-4">
-            <div class="mx-auto max-w-4xl pb-2 text-center">
+        <div class="container">
+            <div class="mx-auto max-w-4xl pb-2 text-left">
                 <h2 id=""
-                    class="font-sans text-2xl  font-semibold xl:text-3xl 2xl:text-4xl leading-tight undefined !text-xl md:!text-4xl 2xl:text-4xl lg:pb-4">
-                    Let’s talk.
+                    class="font-sans text-3xl  font-semibold lg:pb-4">
+                    Let’s <span class="text-brand-primary">Talk</span>
                 </h2>
-                <p></p>
-                <p></p>
             </div>
             <div class="container max-w-7xl grid grid-cols-1 gap-5 lg:grid-cols-form-block">
 
                 <div class="h-fit rounded-xl bg-brand-primary px-5 md:px-12 py-5 md:py-14 shadow-card">
-                    <h5
-                        class="font-sans text-sm text-white leading-tight lg:leading-tight pb-2">
+                    <h5 class="font-sans text-sm text-white leading-tight lg:leading-tight pb-2">
                         Interested in learning more about how {{ company }} can support your business? Fill in your
                         details, and one of our experts will reach out to you with personalized information on our
                         comprehensive services. Let’s start a conversation.
                     </h5>
                 </div>
 
-                <form class="font-sans border-brand-gray-100 rounded-xl border bg-brand-white px-2 md:px-10 py-5 shadow-card">
+                <form
+                    class="font-sans border-brand-gray-100 rounded-xl border bg-brand-white px-2 md:px-10 py-5 shadow-card">
                     <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-3">
                         <div class="relative pb-2">
                             <label for="FirstName"
@@ -62,8 +60,7 @@ const company = computed(() => {
                     </div>
                     <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-3">
                         <div class="relative pb-2">
-                            <label for="WorkEmail"
-                                class="text-light-title block pl-2 text-sm font-semibold leading-6">
+                            <label for="WorkEmail" class="text-light-title block pl-2 text-sm font-semibold leading-6">
                                 Email address
                             </label>
                             <div class="relative mt-2 rounded-md shadow-sm">
@@ -104,12 +101,12 @@ const company = computed(() => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <p class="leading-normal font-sans text-light-content pl-4 text-xs">
                         By submitting this form, you agree to receive the
                         information requested as well as sales and/or marketing
                         communication on resources, news, and events related to
-                        Acentria Group.                      
+                        Acentria Group.
                     </p>
                     <button
                         class="group rounded border-2 border-brand-primary duration-200 px-3 py-1 font-semibold whitespace-nowrap bg-brand-primary rounded text-brand-white hover:bg-brand-red-2 active:bg-brand-red-1 active:border-brand-red-1 hover:border-brand-red-2 mt-4 flex font-semibold"
