@@ -187,7 +187,7 @@ onBeforeUnmount(() => {
                                         class="!text-lg fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
-                            <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                            <a href="https://www.facebook.com/Acentriagroup" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i

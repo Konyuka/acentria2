@@ -38,7 +38,16 @@ const setMobileMenu = (event) => {
     currentMenu.value = selectedValue
 }
 
+const loadTwitterWidgets = () => {
+    const script = document.createElement('script');
+    script.src = "https://platform.twitter.com/widgets.js";
+    script.async = true;
+    script.charset = "utf-8";
+    document.body.appendChild(script);
+};
+
 onMounted(async () => {
+    loadTwitterWidgets();
     try {
         const response = await axios.get('https://admin.acentriagroup.com/api/get-published-blogs', {
         });
@@ -54,7 +63,7 @@ onMounted(async () => {
 <template>
     <main class="font-sans mt-5">
         <main>
-            
+
             <BannerMain :content="bannerContent" />
             <div class="max-w-full mx-auto">
                 <div class="sm:hidden px-4">
@@ -78,12 +87,12 @@ onMounted(async () => {
                             <button @click="setMenu('event')"
                                 :class="[currentMenu == 'event' ? 'bg-brand-primary text-white' : 'border-transparent text-gray-500']"
                                 class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold hover:border-red-600 hover:text-black">
-                                <i class="fas fa-calendar-alt mr-2"></i> Events
+                                <i class="fas fa-calendar-alt mr-2"></i> News & Events
                             </button>
                             <button @click="setMenu('media')"
                                 :class="[currentMenu == 'media' ? 'bg-brand-primary text-white' : 'border-transparent text-gray-500']"
                                 class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold hover:border-red-600 hover:text-black">
-                                <i class="fas fa-images mr-2"></i> Media
+                                <i class="fas fa-images mr-2"></i> Media Kit
                             </button>
                         </nav>
                     </div>
@@ -95,7 +104,8 @@ onMounted(async () => {
                 <div class="container mx-auto pb-4 lg:pb-16">
                     <div class="mt-5 space-y-5">
 
-                        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-3">
+                        <div v-if="currentMenu == 'blogs'"
+                            class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-3">
 
                             <NuxtLink :to="getUrl(blog.title, blog.id)" v-for="blog in blogs"
                                 class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
@@ -131,6 +141,49 @@ onMounted(async () => {
                                     </div>
                                 </a>
                             </NuxtLink>
+                        </div>
+
+                        <div v-if="currentMenu == 'event'" class="container grid grid-cols-1 md:grid-cols-2 gap-8 py-3">
+
+                            <div class="h-[70vh]">
+                                <h2 class="text-xl font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    Instagram Feeds
+                                </h2>
+                                <iframe src="https://www.instagram.com/acentriagroup/embed" class="flex-1 w-full"
+                                    height="100%" frameborder="0" allowtransparency="true" allowfullscreen="true"
+                                    title="Instagram Post"></iframe>
+                            </div>
+
+                            <div class="h-[70vh]">
+                                <h2 class="text-xl font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    Facebook Feeds
+                                </h2>
+                                <iframe
+                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAcentriagroup%2F&tabs=timeline&width=600&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=993383061651806"
+                                    class="flex-1 w-full" height="100%" frameborder="0" allowfullscreen="true"
+                                    title="Facebook Post"></iframe>
+                            </div>
+
+                            <div class="h-[70vh]">
+                                <h2 class="text-xl font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    Twitter/X Feeds
+                                </h2>
+                                <iframe src="https://twitter.com/acentriagroup?ref_src=twsrc%5Etfw"
+                                    class="flex-1 w-full" height="100%" frameborder="0" allowfullscreen="true"
+                                    title="Twitter Post"></iframe>
+
+                            </div>
+
+                            <div class="h-[70vh]">
+                                <h2 class="text-xl font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    LinkedIn Feeds
+                                </h2>
+                                <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed"
+                                    class="flex-1 w-full" height="100%" frameborder="0" allowfullscreen="true"
+                                    title="LinkedIn Post"></iframe>
+                            </div>
+
+
                         </div>
 
                     </div>
