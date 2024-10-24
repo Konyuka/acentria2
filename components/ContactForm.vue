@@ -20,7 +20,7 @@ const company = computed(() => {
 <template>
     <section class="relative my-5">
         <div class="container">
-            <div class="mx-auto max-w-4xl pb-2 text-left">
+            <div class="mx-auto max-w-6xl pb-2 text-left">
                 <h2 id=""
                     class="font-sans text-3xl  font-semibold lg:pb-4">
                     Let’s <span class="text-brand-primary">Talk</span>

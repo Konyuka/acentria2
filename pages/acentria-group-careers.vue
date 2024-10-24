@@ -174,7 +174,7 @@ const benefits = ref([
                                                     class="text-lg text-brand-primary font-semibold flex justify-center">
                                                     {{ member.name
                                                     }}</h3>
-                                                <p class="mt-2 text-xs text-gray-500" v-html="member.description"></p>
+                                                <p class="mt-2 text-xs text-black" v-html="member.description"></p>
                                                 <!-- <i
                                                     class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i> -->
                                             </div>
@@ -187,31 +187,13 @@ const benefits = ref([
                     </div>
                 </section>
 
-                <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-5"
-                    style="background-image:url('/img/bg.png');">
-                    <div class="container">
-                        <div
-                            class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                            <div
-                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                                <div class="w-full">
-                                    <p
-                                        class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
-                                        At our company, we specialize in providing comprehensive insurance and
-                                        reinsurance solutions,
-                                        backed by expert actuarial services and strategic investment management. Our
-                                        cutting-edge
-                                        technology ensures that we deliver innovative and efficient solutions tailored
-                                        to meet the
-                                        unique needs of our clients. Trust us to safeguard your future with precision
-                                        and excellence.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
+                <section id="" class="relative py-5 bg-white text-left">
+                    <div class="mx-auto">
+                        <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" decoding="async"
+                            data-nimg="1" style="color: transparent; object-fit: contain" class=""
+                            src="/img/team3.jpeg" />
                     </div>
-                </div>
+                </section>
 
                 <div class="py-3 text-white" style="background-color: #f6f8fc">
                     <div class="undefined">
@@ -248,6 +230,7 @@ const benefits = ref([
                         </section>
                     </div>
                 </div>
+
 
                 <div class="container mx-auto">
                     <div class="py-8">
@@ -297,149 +280,31 @@ const benefits = ref([
                     </div>
                 </div>
 
-                <section id="" class="relative py-5 bg-white text-left">
-                    <div class="container px-4">
-                        <!-- <h2
-                            class="text-center font-sans tracking-normal text-2xl lg:text-4xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
-                            We Firmly Believe That What Makes Us <br>
-                            <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                                Different Also Makes us Stronger
-                            </span>
-                        </h2> -->
-                        <div class="grid grid-cols-1 md:grid-cols-1 gap-5 mx-auto max-w-5xl">
-                            <div class="mx-auto">
-                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                                    class="rounded-xl" src="/img/team2.jpeg" />
-                            </div>
-                            <div class="content-center items-center">
-                                <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    It is critical to our success to foster a diverse workforce that not only reflects
-                                    the communities where we do business, but also encourages a variety of thoughts,
-                                    opinions and ideas. Each of us is unique and our employees represent a diverse team
-                                    of industry veterans, seasoned professionals and new team members with fresh ideas
-                                    and different perspectives.
-                                </p>
-                                <br><br>
-                                <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    We all work to ensure our workplace is free from discrimination and intolerance. We
-                                    celebrate the diverse talent and skills of these team members, provide equal access
-                                    to growth and advancement, and treat each other with respect. Our philosophy of
-                                    inclusion influences how we relate to each other, how we manage our company and how
-                                    we serve our customers. Above all, it’s about respect and what each of our employees
-                                    brings to Acentria Group
-                                </p>
+                <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-5"
+                    style="background-image:url('/img/bg.png');">
+                    <div class="container">
+                        <div
+                            class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                            <div
+                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
+                                <div class="w-full">
+                                    <p
+                                        class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
+                                        At our company, we specialize in providing comprehensive insurance and
+                                        reinsurance solutions,
+                                        backed by expert actuarial services and strategic investment management. Our
+                                        cutting-edge
+                                        technology ensures that we deliver innovative and efficient solutions tailored
+                                        to meet the
+                                        unique needs of our clients. Trust us to safeguard your future with precision
+                                        and excellence.
+                                    </p>
+                                </div>
 
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <!-- <div class="py-5 text-white" style="background-color: #f6f8fc">
-                    <div class="undefined">
-                        <section id="" class="relative py-1">
-                            <div class="container px-4">
-                                <div class="pb-5 text-center">
-                                    <h2
-                                        class="font-sans tracking-normal text-3xl lg:text-4xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
-                                        Our <span class="text-brand-primary">Values</span>
-                                    </h2>
-                                </div>
-                                <div
-                                    class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 py-0">
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">work</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Professionalism
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                We are a trusted partner and do things the right way.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">man</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Customer Focus
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                Our internal and external customers are our lifeline
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">verified</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Integrity
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                We do responsible business.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">lightbulb</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Innovation
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                We are agile and always investing ahead of the curve
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[210px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i class="material-symbols-outlined text-brand-primary text-4xl pb-4"
-                                                translate="no">group</i>
-                                            <div>
-                                                <h4 id=""
-                                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
-                                                    Teamwork
-                                                </h4>
-                                            </div>
-                                            <p
-                                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
-                                                We deliver value together
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div> -->
+                </div>
 
                 <section id="" class="relative py-5 bg-white text-left">
                     <div class="container px-4">
@@ -498,6 +363,8 @@ const benefits = ref([
                         </div>
                     </div>
                 </section>
+
+
 
                 <div class="text-white" style="background-color: #f6f8fc">
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
