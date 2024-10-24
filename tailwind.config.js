@@ -20,10 +20,13 @@ export default {
         semibold: 200,
       },
       fontSize: {
-        base: "8px", 
+        base: "8px",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };
 

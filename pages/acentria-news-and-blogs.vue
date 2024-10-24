@@ -3,7 +3,7 @@ import axios from 'axios';
 import moment from 'moment';
 
 const blogs = ref(null);
-const currentMenu = ref('blogs');
+const currentMenu = ref('event');
 
 const formatDate = (date) => {
     return moment(date).format('lll');
@@ -65,7 +65,26 @@ onMounted(async () => {
         <main>
 
             <BannerMain :content="bannerContent" />
-            <div class="max-w-full mx-auto">
+
+            <div class="max-w-6xl mx-auto font-sans text-black mt-10">
+                <div class="mx-auto  mb-5 font-sans">
+                    <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                        News & <span class="text-brand-primary">Updates</span>
+                    </p>
+                </div>
+                <p>
+                    Welcome to the Acentria Group News & Updates and Blogs page. Here, you will find the latest news,
+                    insightful articles, and updates about our company, industry trends, and more. Our goal is to keep
+                    you informed and engaged with valuable content that highlights our commitment to excellence,
+                    innovation, and customer satisfaction. Whether you are looking for the latest company announcements,
+                    expert opinions, or in-depth analyses, our blogs and news sections are designed to provide you with
+                    the information you need. Stay connected with Acentria Group and explore the wealth of knowledge and
+                    insights we have to offer.
+
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto mt-10">
                 <div class="sm:hidden px-4">
                     <label for="tabs" class="sr-only">Select a tab</label>
                     <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
@@ -77,25 +96,56 @@ onMounted(async () => {
                     </select>
                 </div>
                 <div class="hidden sm:block font-sans">
-                    <div class="border-2 divide-x divide-gray-200 border-gray-200">
+                    <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
+                            alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+
+                        <div class="absolute inset-0 bg-black opacity-70"></div>
+                        <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
+
+                            <div class="border-2 divide-x divide-gray-200 border-gray-200">
+                                <nav class="-mb-px flex font-sans" aria-label="Tabs">
+                                    <button @click="setMenu('event')"
+                                        :class="[currentMenu == 'event' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
+                                        class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-black">
+                                        <i class="fas fa-calendar-alt mr-2"></i> News & Events
+                                    </button>
+                                    <button @click="setMenu('blogs')"
+                                        :class="[currentMenu == 'blogs' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
+                                        class="w-1/3 border-2  px-1 py-4 text-center text-md font-semibold   hover:text-black">
+                                        <i class="fas fa-blog mr-2"></i> Blogs
+                                    </button>
+
+                                    <button @click="setMenu('media')"
+                                        :class="[currentMenu == 'media' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
+                                        class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-black">
+                                        <i class="fas fa-images mr-2"></i> Media Kit
+                                    </button>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="border-2 divide-x divide-gray-200 border-gray-200">
                         <nav class="-mb-px flex font-sans" aria-label="Tabs">
-                            <button @click="setMenu('blogs')"
-                                :class="[currentMenu == 'blogs' ? 'bg-brand-primary text-white' : 'border-transparent text-gray-500']"
-                                class="w-1/3 border-2  px-1 py-4 text-center text-md font-semibold  hover:border-red-600 hover:text-black">
-                                <i class="fas fa-blog mr-2"></i> Blogs
-                            </button>
                             <button @click="setMenu('event')"
-                                :class="[currentMenu == 'event' ? 'bg-brand-primary text-white' : 'border-transparent text-gray-500']"
-                                class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold hover:border-red-600 hover:text-black">
+                                :class="[currentMenu == 'event' ? 'bg-gray-500 text-white' : 'border-transparent text-gray-500']"
+                                class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-black">
                                 <i class="fas fa-calendar-alt mr-2"></i> News & Events
                             </button>
+                            <button @click="setMenu('blogs')"
+                                :class="[currentMenu == 'blogs' ? 'bg-gray-500 text-white' : 'border-transparent text-gray-500']"
+                                class="w-1/3 border-2  px-1 py-4 text-center text-md font-semibold   hover:text-black">
+                                <i class="fas fa-blog mr-2"></i> Blogs
+                            </button>
+
                             <button @click="setMenu('media')"
-                                :class="[currentMenu == 'media' ? 'bg-brand-primary text-white' : 'border-transparent text-gray-500']"
-                                class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold hover:border-red-600 hover:text-black">
+                                :class="[currentMenu == 'media' ? 'bg-gray-500 text-white' : 'border-transparent text-gray-500']"
+                                class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-black">
                                 <i class="fas fa-images mr-2"></i> Media Kit
                             </button>
                         </nav>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -143,20 +193,20 @@ onMounted(async () => {
                             </NuxtLink>
                         </div>
 
-                        <div v-if="currentMenu == 'event'" class="container grid grid-cols-1 md:grid-cols-2 gap-8 py-3">
+                        <div v-if="currentMenu == 'event'" class="container grid grid-cols-4 md:grid-cols-4 gap-8 py-3">
 
                             <div class="h-[70vh]">
-                                <h2 class="text-xl font-semibold leading-6 text-gray-900" id="slide-over-title">
-                                    Instagram Feeds
+                                <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    <i class="fab fa-instagram"></i> Instagram Feeds
                                 </h2>
-                                <iframe src="https://www.instagram.com/acentriagroup/embed" class="flex-1 w-full"
+                                <iframe src="https://www.instagram.com/p/DBViY-to-Ea/embed" class="flex-1 w-full"
                                     height="100%" frameborder="0" allowtransparency="true" allowfullscreen="true"
                                     title="Instagram Post"></iframe>
                             </div>
 
                             <div class="h-[70vh]">
-                                <h2 class="text-xl font-semibold leading-6 text-gray-900" id="slide-over-title">
-                                    Facebook Feeds
+                                <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    <i class="fab fa-facebook"></i> Facebook Feeds
                                 </h2>
                                 <iframe
                                     src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAcentriagroup%2F&tabs=timeline&width=600&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=993383061651806"
@@ -165,8 +215,8 @@ onMounted(async () => {
                             </div>
 
                             <div class="h-[70vh]">
-                                <h2 class="text-xl font-semibold leading-6 text-gray-900" id="slide-over-title">
-                                    Twitter/X Feeds
+                                <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    <i class="fab fa-x-twitter"></i> Twitter/X Feeds
                                 </h2>
                                 <iframe src="https://twitter.com/acentriagroup?ref_src=twsrc%5Etfw"
                                     class="flex-1 w-full" height="100%" frameborder="0" allowfullscreen="true"
@@ -175,8 +225,8 @@ onMounted(async () => {
                             </div>
 
                             <div class="h-[70vh]">
-                                <h2 class="text-xl font-semibold leading-6 text-gray-900" id="slide-over-title">
-                                    LinkedIn Feeds
+                                <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    <i class="fab fa-linkedin"></i> LinkedIn Feeds
                                 </h2>
                                 <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed"
                                     class="flex-1 w-full" height="100%" frameborder="0" allowfullscreen="true"

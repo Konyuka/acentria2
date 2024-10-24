@@ -36,7 +36,7 @@ const principles = ref([
 const bannerContent = ref({
     subtitle: 'Careers',
     title: 'Acentria Group Careers',
-    image: '/img/careers.jpg'
+    image: '/img/team2.jpeg'
 })
 
 const joinAsMembers = ref([
@@ -53,7 +53,34 @@ const joinAsMembers = ref([
     {
         name: 'Our Mantra',
         icon: 'fas fa-briefcase',
-        description: '<div class="text-center"> <span class="text-brand-primary">#</span>Empower <span class="text-brand-primary">#</span>Innovate <span class="text-brand-primary">#</span>Prosper </div>',
+        description: '<div class="text-left"> <span class="text-brand-primary">#</span>Empower <span class="text-brand-primary">#</span>Innovate <span class="text-brand-primary">#</span>Prosper </div>',
+    },
+])
+
+const values = ref([
+    {
+        name: 'Integrity',
+        icon: 'fas fa-user-shield', 
+    },
+    {
+        name: 'Innovation',
+        icon: 'fas fa-lightbulb', 
+    },
+    {
+        name: 'Excellence',
+        icon: 'fas fa-award', 
+    },
+    {
+        name: 'Teamwork',
+        icon: 'fas fa-users', 
+    },
+    {
+        name: 'Relationships',
+        icon: 'fas fa-handshake', 
+    },
+    {
+        name: 'Prosperity',
+        icon: 'fas fa-chart-line', 
     },
 ])
 
@@ -89,6 +116,7 @@ const benefits = ref([
         description: 'Raising the next generation takes time. We support parents in taking time to bond with their newest family member.'
     }
 ]);
+
 </script>
 
 <template>
@@ -139,7 +167,7 @@ const benefits = ref([
                                     <div class="relative py-4 lg:basis-1/2">
                                         <img alt="Image of null" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
-                                            style="color: transparent; object-fit: contain" src="/img/simo-office.jpg"
+                                            style="color: transparent; object-fit: contain" src="/img/give.jpg"
                                             class="rounded-xl" />
                                     </div>
 
@@ -150,58 +178,51 @@ const benefits = ref([
                     </div>
                 </div>
 
-                <section id="" class="relative md:py-2 bg-white text-left">
-                    <div class="container px-4">
-                        <h2
-                            class="text-center font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-1">
-                            What drives us at <br>
-                            <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                                Acentria Group?
-                            </span>
-                        </h2>
+                <div>
+                    <div class="container mx-auto  mb-5 pl-20 font-sans">
+                        <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                            What Drives Us <span class="text-brand-primary"> <br> at Acentria Group</span>
+                        </p>
+                    </div>
 
-                        <div class="bg-white !font-sans container my-1">
-                            <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
-                                <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
-                                    <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
-                                        <div v-for="member in joinAsMembers" :key="member.name"
-                                            class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
-                                            <div class="sm:flex-shrink-0 flex justify-center">
-                                                <i :class="member.icon" class="text-black text-2xl"></i>
+                    <div class=" relative isolate overflow-hidden bg-black py-5 font-sans">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
+                            alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+
+                        <div class="absolute inset-0 bg-black opacity-70"></div>
+                        <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
+
+                            <div>
+                                <dl
+                                    class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-10 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                    <div v-for="(feature, index) in joinAsMembers" :key="feature.name"
+                                        class="flex flex-col">
+                                        <dt class="text-base font-semibold leading-7 text-white">
+                                            <div
+                                                class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                                                <i :class="feature.icon" class=" text-white" aria-hidden="true" />
                                             </div>
-                                            <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                                <h3
-                                                    class="text-lg text-brand-primary font-semibold flex justify-center">
-                                                    {{ member.name
-                                                    }}</h3>
-                                                <p class="mt-2 text-xs text-black" v-html="member.description"></p>
-                                                <!-- <i
-                                                    class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i> -->
-                                            </div>
-                                        </div>
+                                            {{ feature.name }}
+                                        </dt>
+                                        <dd
+                                            class="mt-1 flex flex-auto flex-col text-xs leading-2 text-white font-bold tracking-widest">
+                                            <p class="flex-auto" v-html="feature.description"></p>
+                                        </dd>
                                     </div>
-                                </div>
+                                </dl>
                             </div>
                         </div>
-
                     </div>
-                </section>
+                </div>
 
-                <section id="" class="relative py-5 bg-white text-left">
-                    <div class="mx-auto">
-                        <img alt="Image of Streamline evaluations and questionnaires " loading="lazy" decoding="async"
-                            data-nimg="1" style="color: transparent; object-fit: contain" class=""
-                            src="/img/team3.jpeg" />
-                    </div>
-                </section>
 
-                <div class="py-3 text-white" style="background-color: #f6f8fc">
+                <div class="py-2 text-white" style="background-color: #f6f8fc">
                     <div class="undefined">
                         <section id="" class="relative py-1">
                             <div class="container px-4">
-                                <div class="pb-5 text-center">
+                                <div class="pb-2 mt-2 text-left">
                                     <h2
-                                        class="font-sans tracking-normal text-3xl text-gray-700 font-semibold leading-tight lg:leading-tight mb-4">
+                                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight mb-4">
                                         We are Devoted to <br><span class="text-brand-primary">Our Core
                                             Principles</span>
                                     </h2>
@@ -210,12 +231,12 @@ const benefits = ref([
                                     class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 py-0">
 
                                     <div v-for="principle in principles"
-                                        class="border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[200px] max-w-[90vw] rounded-xs bg-white p-5 md:max-w-[90vw] w-full h-full">
+                                        class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] max-w-[90vw] rounded-xs bg-white p-5 md:max-w-[90vw] w-full h-full">
                                         <div class="flex h-fit flex-col">
-                                            <i :class="[principle.icon]" class="text-brand-primary text-4xl pb-4"></i>
+                                            <i :class="[principle.icon]" class="text-black text-xl pb-1"></i>
                                             <div>
                                                 <h4 id=""
-                                                    class="text-md pb-4 md:pb-5 font-semibold leading-tight text-light-title">
+                                                    class="text-md pb-1 font-semibold leading-tight text-light-title">
                                                     {{ principle.name }}
                                                 </h4>
                                             </div>
@@ -231,8 +252,43 @@ const benefits = ref([
                     </div>
                 </div>
 
+                <div class="font-sans py-0 text-white" style="background-color: rgb(246, 248, 252)">
 
-                <div class="container mx-auto">
+                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                        <div class="relative py-4 lg:basis-1/2">
+                            <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                                data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                                src="/img/what.jpg" data-v-inspector="components/Why.vue:34:17" />
+                        </div>
+                        <div class="flex flex-col justify-center lg:basis-1/2">
+                            <h2
+                                class="font-sans tracking-normal text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                                <span class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">
+                                    Why would you <br>
+                                </span>
+                                work for Acentria
+                            </h2>
+                            <div class="font-sans text-light-content pb-5 md:pb-6">
+                                <p class="text-sm leading-normal font-regular text-light-content !text-inherit mb-4">
+                                    Working at Acentria is an enriching journey to growth and prosperity. We have
+                                    numerous engagement forums, propagate empowerment and job autonomy, nurture a
+                                    supportive and inclusive environment and do not have a “Straight-jacket”
+                                    approach towards learning and development.
+                                    Your contributions will be recognized and rewarded, ensuring a fulfilling, warm
+                                    and lasting experience at Acentria.
+                                </p>
+                                <NuxtLink href="/meet-the-team"
+                                    class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                                    Learn how you benefit by joining us
+                                    <i class="fas fa-arrow-right text-primary ml-2"></i>
+                                </NuxtLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="container mx-auto">
                     <div class="py-8">
                         <div class="mx-auto max-w-7xl px-6 lg:px-8">
                             <div
@@ -278,35 +334,11 @@ const benefits = ref([
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-5"
-                    style="background-image:url('/img/bg.png');">
-                    <div class="container">
-                        <div
-                            class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                            <div
-                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                                <div class="w-full">
-                                    <p
-                                        class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
-                                        At our company, we specialize in providing comprehensive insurance and
-                                        reinsurance solutions,
-                                        backed by expert actuarial services and strategic investment management. Our
-                                        cutting-edge
-                                        technology ensures that we deliver innovative and efficient solutions tailored
-                                        to meet the
-                                        unique needs of our clients. Trust us to safeguard your future with precision
-                                        and excellence.
-                                    </p>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <section id="" class="relative py-5 bg-white text-left">
+                <!-- <section id="" class="relative py-5 bg-white text-left">
                     <div class="container px-4">
                         <h2
                             class="text-center font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
@@ -324,7 +356,7 @@ const benefits = ref([
                                 <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
                                     width="420" height="350" decoding="async" data-nimg="1"
                                     style="color: transparent; object-fit: contain" class="rounded-xl"
-                                    src="/img/give.jpg" />
+                                    src="/img/simo-office.jpg" />
                             </div>
                             <div class="content-center items-center">
                                 <p
@@ -362,23 +394,80 @@ const benefits = ref([
 
                         </div>
                     </div>
-                </section>
+                </section> -->
+
+                <!-- <Videos /> -->
+                 
+                <!-- 
+                <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-5"
+                    style="background-image:url('/img/bg.png');">
+                    <div class="container">
+                        <div
+                            class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                            <div
+                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
+                                <div class="w-full">
+                                    <p
+                                        class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
+                                        At our company, we specialize in providing comprehensive insurance and
+                                        reinsurance solutions,
+                                        backed by expert actuarial services and strategic investment management. Our
+                                        cutting-edge
+                                        technology ensures that we deliver innovative and efficient solutions tailored
+                                        to meet the
+                                        unique needs of our clients. Trust us to safeguard your future with precision
+                                        and excellence.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
 
 
+                <div>
+                    <div class="container mx-auto  mb-5 pl-20 font-sans">
+                        <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                            Our Shared <span class="text-brand-primary"><br>Company Values</span>
+                        </p>
+                    </div>
+
+                    <div class=" relative isolate overflow-hidden bg-black py-10 font-sans">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
+                            alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+
+                        <div class="absolute inset-0 bg-black opacity-70"></div>
+                        <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
+
+                            <div>
+                                <dl
+                                    class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-2 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-6">
+                                    <div v-for="(feature, index) in values" :key="feature.name" class="flex flex-col">
+                                        <dt class="text-xs font-semibold leading-7 text-white">
+                                            <div
+                                                class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                                                <i :class="feature.icon" class=" text-white" aria-hidden="true" />
+                                            </div>
+                                            {{ feature.name }}
+                                        </dt>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="text-white" style="background-color: #f6f8fc">
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                        <div class="relative py-4 lg:basis-1/2">
-                            <img alt="Image of null" loading="lazy" width="500" height="350" decoding="async"
-                                data-nimg="1" style="color: transparent; object-fit: contain" src="/img/join.jpg"
-                                class="rounded-xl" />
-                        </div>
+
+
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
-                                <h2 id="" class="pb-4 md:pb-5 font-semibold text-3xl  leading-tight text-light-title">
+                                <h2 id="" class="pb-4 md:pb-5 font-semibold text-3xl  leading-tight text-brand-primary">
                                     <span
-                                        class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-3xl">Join
-                                        our</span>
+                                        class="font-sans text-black pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-3xl">Join
+                                        our</span> <br>
                                     Talent Community
                                 </h2>
                                 <p
@@ -425,44 +514,15 @@ const benefits = ref([
                                     </svg></a>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="bg-cover bg-center py-10 " style="
-                  background-image: url(https://cdn.sanity.io/images/33u1mixi/production/b695dd70af0f5f4be3c091f4607fd14514ac5650-1440x447.svg);
-                ">
-                    <div class="font-sans container mx-auto px-4 lg:px-0">
-                        <div class="rounded-sm px-6 py-8 bg-brand-dim">
-                            <div class="grid grid-cols-1 items-center gap-4 lg:grid-cols-1">
-                                <div class="relative mb-8 text-center lg:mb-0 lg:text-left">
-                                    <div class="mb-4 !text-dark-content justify-center">
-                                        <h2 id=""
-                                            class="text-white text-center text-3xl pb-4 md:pb-5 font-semibold leading-tight undefined lg:pt10 pt-6">
-                                            Let’s make an impact together?
-                                        </h2>
-                                        <p class="text-center undefined undefined">
-                                            At Acentria we collaborate, innovate and adapt in
-                                            service of our clients and global communities to
-                                            create better outcomes for all.
-                                        </p>
-                                    </div>
-                                    <a href="#"
-                                        class=" flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-white text-black hover:text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">Search
-                                        open positions<svg
-                                            class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
-                                            fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                                            <g fill-rule="evenodd">
-                                                <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                                <path class="transition-all duration-75 translate-x-0 transform-none"
-                                                    d="M1 1l4 4-4 4"></path>
-                                            </g>
-                                        </svg></a>
-                                </div>
-
-                            </div>
+                        <div class="relative py-4 lg:basis-1/2">
+                            <img alt="Image of null" loading="lazy" width="500" height="350" decoding="async"
+                                data-nimg="1" style="color: transparent; object-fit: contain" src="/img/join.jpg"
+                                class="rounded-xl" />
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>

@@ -32,34 +32,6 @@
 </template>
 
 <script setup>
-const socials = ref([
-    {
-        icon: 'fab fa-linkedin',
-        title: 'Linkedin',
-        description: '@acentria-groupltd',
-    },
-    {
-        icon: 'fab fa-x-twitter',
-        title: 'X / Twitter',
-        description: '@acentriagroup',
-    },
-    {
-        icon: 'fab fa-facebook',
-        title: 'Facebook',
-        description: '@acentriagroup',
-    },
-    {
-        icon: 'fab fa-instagram',
-        title: 'Instagram',
-        description: '@acentriagroup',
-    },
-    {
-        icon: 'fab fa-tiktok',
-        title: 'Tiktok',
-        description: '@acentria.group',
-    },
-]
-)
 
 const contacts = ref([
     {

@@ -12,7 +12,7 @@ const props = defineProps({
             alt="Success Team Hands Up"
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
 
-        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="absolute inset-0 bg-black opacity-30"></div>
 
         <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
             <div class="grid grid-cols-10 -gap-10">
