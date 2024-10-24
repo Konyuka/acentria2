@@ -4,33 +4,30 @@
 
         <div class="absolute inset-0 bg-black opacity-80"></div>
         <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
-            <div class="absolute -bottom-8 -left-96 -z-10 transform-gpu blur-3xl sm:-bottom-64 sm:-left-40 lg:-bottom-32 lg:left-8 xl:-left-10"
-                aria-hidden="true">
-
-            </div>
 
             <div>
                 <div class="container mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                     <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-white">
-                        Follows us on:
+                        Follow us on:
                     </p>
                 </div>
                 <dl
                     class="pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-4 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-5">
                     <div v-for="(feature, index) in socials" :key="feature.name" class="flex flex-col">
                         <dt class="text-base font-semibold leading-7 text-white">
-                            <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                            <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
                                 <i :class="feature.icon" class=" text-white" aria-hidden="true" />
                             </div>
                             {{ feature.title }}
                         </dt>
-                        <dd class="mt-1 flex flex-auto flex-col text-xs leading-7 text-white font-bold tracking-widest">
+                        <dd class="mt-1 flex flex-auto flex-col text-xs leading-2 text-white font-bold tracking-widest">
                             <p class="flex-auto" v-html="feature.description"></p>
                         </dd>
                     </div>
                 </dl>
             </div>
         </div>
+       
     </div>
 </template>
 

@@ -38,9 +38,6 @@ const contactsContent = ref({
     <section>
         <div>
 
-            <!-- <BannerMain :content="bannerContent" /> -->
-
-
             <div class="bg-white py-8 mt-24">
 
                 <div class="isolate !mb-5 py-5 md:py-0 mt-5">
@@ -83,8 +80,6 @@ const contactsContent = ref({
                         </div>
                     </div>
                 </div>
-
-                <!-- <BlackCard :content="contactsContent" class="mt-10" /> -->
 
                 <Socials />
 
