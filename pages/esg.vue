@@ -1,61 +1,18 @@
 <script setup>
-const ReinsuranceBannerContent = ref({
+
+const bannerContent = ref({
+    subtitle: 'ESG',
     title: 'Environmental, Social & Governance',
-    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 })
+
 
 </script>
 
 <template>
     <section>
-        <!-- <ReinsuranceBanner :content="ReinsuranceBannerContent" /> -->
-
-        <div class="relative isolate overflow-hidden bg-white py-20 mt-40">
-
-            <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
-                class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
-
-
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-
-            <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
-                <div class="grid grid-cols-10 -gap-10">
-                    <div class="text-white col-span-1">
-                        <div class="w-20 h-1 bg-white mt-3">
-
-                        </div>
-                    </div>
-                    <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                        <h2 class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
-                            ESG
-                        </h2>
-                        <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
-                            {{ ReinsuranceBannerContent.title }}
-                        </h2>
-                        <p class="text-white text-left max-w-2xl mt-7">
-                            At Acentria, we understand the profound impact businesses can have on the world. That’s why
-                            we are dedicated to integrating Environmental, Social, and Governance (ESG) principles into
-                            our core business practices. Our commitment goes beyond financial success, focusing on
-                            sustainable and responsible business operations that contribute positively to the well-being
-                            of our planet and society.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
-           
-            <p class="font-sans mx-auto mt-6 max-w-7xl text-center text-md text-secondary"
-                data-v-inspector="components/ReinsuranceWhy.vue:21:21">
-                At Acentria, we understand the profound impact businesses can have on the world. That’s why we are
-                dedicated to integrating Environmental, Social, and Governance (ESG) principles into our core business
-                practices. Our commitment goes beyond financial success, focusing on sustainable and responsible
-                business operations that contribute positively to the well-being of our planet and society.
-            </p>
-
-        </div> -->
+        
+        <BannerMain :content="bannerContent" />
 
         <div data-v-02281a80="" class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"

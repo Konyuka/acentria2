@@ -1,54 +1,18 @@
 <script setup>
-const ReinsuranceBannerContent = ref({
+
+const bannerContent = ref({
+    subtitle: 'CSR',
     title: 'Corporate Social Responsibility',
-    image: 'https://images.pexels.com/photos/207489/pexels-photo-207489.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://images.pexels.com/photos/207489/pexels-photo-207489.jpeg?auto=compress&cs=tinysrgb&w=600'
 })
+
 
 </script>
 
 <template>
     <section>
-        <!-- <ReinsuranceBanner :content="ReinsuranceBannerContent" /> -->
 
-        <div class="relative isolate overflow-hidden bg-white py-20 mt-40">
-
-            <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
-                class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
-
-            <div class="absolute inset-0 bg-black opacity-40"></div>
-
-            <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
-                <div class="grid grid-cols-10 -gap-10">
-                    <div class="text-white col-span-1">
-                        <div class="w-20 h-1 bg-white mt-3">
-
-                        </div>
-                    </div>
-                    <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                        <h2 class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
-                            CSR
-                        </h2>
-                        <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
-                            {{ ReinsuranceBannerContent.title }}
-                        </h2>
-                        <p class="text-white text-left max-w-2xl mt-7">
-                            At Acentria, we are dedicated to social responsibility, ethical practices, and community
-                            well-being. Our
-                            initiatives include community engagement, education and awareness, diversity and inclusion,
-                            financial
-                            literacy programs, and employee volunteering, reflecting our commitment to positive change.
-                            We
-                            prioritize diversity and inclusion, implement sustainable practices, and uphold transparent,
-                            ethical
-                            business standards. Our CSR efforts exemplify our values, making a meaningful impact on both
-                            our
-                            workforce and the communities we serve
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <BannerMain :content="bannerContent" />
 
         <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
 
