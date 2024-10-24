@@ -93,6 +93,16 @@ onMounted(() => {
                 <MakesUs />
               </div>
 
+              <div class="relative min-h-[30vh] min-w-screen">
+                <div class="bottom-0 pl-16 absolute max-w-6xl mx-auto">
+
+                  <h2
+                    class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-white">
+                    Our <span class="text-brand-primary">Leadership</span>
+                  </h2>
+                </div>
+              </div>
+
 
 
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
@@ -101,17 +111,10 @@ onMounted(() => {
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                       data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                      src="https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg"
-                      data-v-inspector="components/Why.vue:34:17" />
+                      src="/img/careers.jpg" data-v-inspector="components/Why.vue:34:17" />
                   </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
-                    <label class="text-base leading-normal font-regular text-light-highlight font-bold">
-                      The team
-                    </label>
-                    <h2
-                      class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
-                      Our <span class="text-brand-primary">Leadership</span>
-                    </h2>
+
                     <div class="text-light-content pb-5 md:pb-6">
                       <p class="text-sm leading-normal font-regular text-light-content !text-inherit mb-4">
                         Our success is driven by a dynamic and dedicated
@@ -225,13 +228,17 @@ onMounted(() => {
 
 
 
-              <div class="font-sans justify-between content-center bg-white py-5">
+              <!-- <div class="font-sans justify-between content-center bg-white py-5">
                 <h2 class="container text-3xl font-semibold tracking-tight text-gray-900 text-left max-w-6xl mx-auto">
                   Our <span class="text-brand-primary">Commitments</span>
                 </h2>
-              </div>
+              </div> -->
 
-              <section class="container relative py-10">
+              <section class="container relative py-5">
+
+                <h2 class="py-5 container text-3xl font-semibold tracking-tight text-white text-left max-w-6xl mx-auto">
+                  Our <span class="text-brand-primary">Commitments</span>
+                </h2>
 
                 <div class=" px-4">
                   <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
@@ -240,12 +247,12 @@ onMounted(() => {
                       class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
 
                       <div class="flex h-fit flex-col">
-                        <i :class="item.icon" class="text-black text-4xl pb-4 group-hover:text-brand-primary"
+                        <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary"
                           translate="no"></i>
                         <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
                           {{ item.name
                           }}</h3>
-                        <p class="mt-2 text-xs text-gray-500">{{ item.description }}</p>
+                        <p class="mt-1 text-xs text-gray-500">{{ item.description }}</p>
                         <i
                           class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
                       </div>
@@ -318,8 +325,7 @@ onMounted(() => {
                 </div>
               </div>
 
-              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-white mb-0"
-                >
+              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-white mb-0">
                 <div class="container">
                   <div
                     class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
