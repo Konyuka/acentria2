@@ -306,7 +306,12 @@ const benefits = ref([
                                 Different Also Makes us Stronger
                             </span>
                         </h2> -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto max-w-5xl">
+                        <div class="grid grid-cols-1 md:grid-cols-1 gap-5 mx-auto max-w-5xl">
+                            <div class="mx-auto">
+                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                    decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                                    class="rounded-xl" src="/img/team2.jpeg" />
+                            </div>
                             <div class="content-center items-center">
                                 <p
                                     class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
@@ -327,12 +332,6 @@ const benefits = ref([
                                     brings to Acentria Group
                                 </p>
 
-                            </div>
-                            <div class="mx-auto">
-                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="420" height="350" decoding="async" data-nimg="1"
-                                    style="color: transparent; object-fit: contain" class="rounded-xl"
-                                    src="/img/team2.jpeg" />
                             </div>
                         </div>
                     </div>
