@@ -3,13 +3,15 @@
 </script>
 
 <template>
-    <div class="bg-white">
-        <p class="container text-black text-3xl text-left py-5 font-sans font-semibold max-w-6xl mx-auto">
-        <div class="ml-6 max-w-6xl mx-auto text-left">
-            Top Choice for Professional <span class="text-brand-primary"><br> Services and Client Satisfaction</span>
+    <div class="">
+        <div class="mt-5">
+            <div class=" container text-white text-3xl text-left py-5 font-sans font-semibold max-w-6xl mx-auto">
+            <div class=" ml-6 max-w-6xl mx-auto text-left">
+                Top Choice for Professional <span class="text-brand-primary"><br> Services and Client Satisfaction</span>
+            </div>
         </div>
-        </p>
-        <div id="stats" class="py-2 text-white font-sans !bg-black/70">
+        </div>
+        <div id="stats" class="py-2 text-white font-sans ">
             <div class="">
                 <div class="container mx-auto px-4">
                     <div class="mb-12 flex flex-col items-center"></div>

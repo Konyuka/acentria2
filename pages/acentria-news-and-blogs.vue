@@ -193,9 +193,9 @@ onMounted(async () => {
                             </NuxtLink>
                         </div>
 
-                        <div v-if="currentMenu == 'event'" class="container grid grid-cols-4 md:grid-cols-4 gap-8 py-3">
+                        <div v-if="currentMenu == 'event'" class="container grid grid-cols-3 md:grid-cols-3 gap-8 py-3">
 
-                            <div class="h-[70vh]">
+                            <div class="h-[50vh]">
                                 <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
                                     <i class="fab fa-instagram"></i> Instagram Feeds
                                 </h2>
@@ -204,7 +204,7 @@ onMounted(async () => {
                                     title="Instagram Post"></iframe>
                             </div>
 
-                            <div class="h-[70vh]">
+                            <div class="h-[50vh]">
                                 <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
                                     <i class="fab fa-facebook"></i> Facebook Feeds
                                 </h2>
@@ -214,7 +214,7 @@ onMounted(async () => {
                                     title="Facebook Post"></iframe>
                             </div>
 
-                            <div class="h-[70vh]">
+                            <div class="h-[50vh]">
                                 <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
                                     <i class="fab fa-x-twitter"></i> Twitter/X Feeds
                                 </h2>
@@ -224,9 +224,27 @@ onMounted(async () => {
 
                             </div>
 
-                            <div class="h-[70vh]">
+                            <div class="h-[50vh]">
                                 <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
                                     <i class="fab fa-linkedin"></i> LinkedIn Feeds
+                                </h2>
+                                <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed"
+                                    class="flex-1 w-full" height="100%" frameborder="0" allowfullscreen="true"
+                                    title="LinkedIn Post"></iframe>
+                            </div>
+
+                            <div class="h-[50vh]">
+                                <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    <i class="fab fa-tiktok"></i> Tiktok Feeds
+                                </h2>
+                                <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed"
+                                    class="flex-1 w-full" height="100%" frameborder="0" allowfullscreen="true"
+                                    title="LinkedIn Post"></iframe>
+                            </div>
+
+                            <div class="h-[50vh]">
+                                <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                                    <i class="fab fa-youtube"></i> Youtube Feeds
                                 </h2>
                                 <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed"
                                     class="flex-1 w-full" height="100%" frameborder="0" allowfullscreen="true"

@@ -36,7 +36,7 @@ const principles = ref([
 const bannerContent = ref({
     subtitle: 'Careers',
     title: 'Acentria Group Careers',
-    image: '/img/team2.jpeg'
+    image: '/img/team.jpeg'
 })
 
 const joinAsMembers = ref([
@@ -397,7 +397,7 @@ const benefits = ref([
                 </section> -->
 
                 <!-- <Videos /> -->
-                 
+
                 <!-- 
                 <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-5"
                     style="background-image:url('/img/bg.png');">
@@ -433,7 +433,7 @@ const benefits = ref([
                         </p>
                     </div>
 
-                    <div class=" relative isolate overflow-hidden bg-black py-10 font-sans">
+                    <div class=" relative isolate overflow-hidden bg-black py-14 font-sans">
                         <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
                             alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
@@ -444,7 +444,7 @@ const benefits = ref([
                                 <dl
                                     class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-2 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-6">
                                     <div v-for="(feature, index) in values" :key="feature.name" class="flex flex-col">
-                                        <dt class="text-xs font-semibold leading-7 text-white">
+                                        <dt class="text-sm font-semibold leading-7 text-white">
                                             <div
                                                 class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
                                                 <i :class="feature.icon" class=" text-white" aria-hidden="true" />

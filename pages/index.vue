@@ -94,28 +94,6 @@ onMounted(() => {
               </div>
 
 
-              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black/70 mb-0"
-                style="background-image:url('/img/bg.png');">
-                <div class="container">
-                  <div
-                    class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                    <div
-                      class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                      <div class="w-full">
-                        <p
-                          class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
-                          At our company, we specialize in providing comprehensive insurance and reinsurance solutions,
-                          backed by expert actuarial services and strategic investment management. Our cutting-edge
-                          technology ensures that we deliver innovative and efficient solutions tailored to meet the
-                          unique needs of our clients. Trust us to safeguard your future with precision and excellence.
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
 
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
 
@@ -340,8 +318,30 @@ onMounted(() => {
                 </div>
               </div>
 
-              <div class="bg-white w-full h-full">
-                <div class="bg-white !font-sans container my-0">
+              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-white mb-0"
+                >
+                <div class="container">
+                  <div
+                    class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                    <div
+                      class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
+                      <div class="w-full">
+                        <p
+                          class="text-left font-sans tracking-normal text-2xl lg:text-sm text-black font-semibold leading-tight lg:leading-tight">
+                          At our company, we specialize in providing comprehensive insurance and reinsurance solutions,
+                          backed by expert actuarial services and strategic investment management. Our cutting-edge
+                          technology ensures that we deliver innovative and efficient solutions tailored to meet the
+                          unique needs of our clients. Trust us to safeguard your future with precision and excellence.
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" w-full h-full">
+                <div class=" !font-sans container my-0">
                   <div class="mx-auto max-w-7xl py-10 sm:px-2 lg:px-4">
                     <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
                       <div class="max-w-7xl justify-between content-center">
