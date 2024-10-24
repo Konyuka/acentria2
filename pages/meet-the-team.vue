@@ -18,56 +18,67 @@ const profileBoardData = computed(() => {
     return teamBoardComponent.value?.profileContent
 })
 
+const bannerContent = ref({
+    subtitle:'Meet the Team',
+    title: 'Board and Management',
+    image: 'https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg'
+})
+
+const currentMenu = ref('Board');
+const setMenu = (menu) => {
+    currentMenu.value = menu
+}
+const setMobileMenu = (event) => {
+    const selectedValue = event.target.value;
+    currentMenu.value = selectedValue
+}
+
 </script>
 
 <template>
-    <section>
-        <div class="relative isolate overflow-hidden bg-white py-20 mt-40">
+    <section class="min-h-screen">
 
-            <img src="https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg"
-                alt="Success Team Hands Up"
-                class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
 
-            <div class="absolute inset-0 bg-black opacity-40"></div>
 
-            <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-                aria-hidden="true">
-                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-brand-primary to-black opacity-60"
-                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        <BannerMain :content="bannerContent" />
+
+        <div class="max-w-full mx-auto mt-0">
+            <div class="sm:hidden px-4">
+                <label for="tabs" class="sr-only">Select a tab</label>
+                <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+                <select @change="setMobileMenu($event)" id="tabs" name="tabs"
+                    class="block w-full rounded-md border-gray-300 focus:border-brand-primary focus:ring-brand-primary py-2 font-bold">
+                    <option selected value="blogs">Blogs</option>
+                    <option value="event">Events</option>
+                    <option value="media">Media</option>
+                </select>
+            </div>
+            <div class="hidden sm:block font-sans">
+                <div class="border-2 divide-x divide-gray-200 border-gray-200">
+                    <nav class="-mb-px flex font-sans" aria-label="Tabs">
+                        <button @click="setMenu('Board')"
+                            :class="[currentMenu == 'Board' ? 'bg-brand-primary text-white' : 'border-transparent text-black']"
+                            class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:border-gray-500 hover:text-black">
+                            <i class="fas fa-blog mr-2"></i> Board of Directors
+                        </button>
+                        <button @click="setMenu('Executive')"
+                            :class="[currentMenu == 'Executive' ? 'bg-brand-primary text-white' : 'border-transparent text-black']"
+                            class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold hover:border-gray-500 hover:text-black">
+                            <i class="fas fa-calendar-alt mr-2"></i> Executive Team
+                        </button>
+                        <button @click="setMenu('Governance')"
+                            :class="[currentMenu == 'Governance' ? 'bg-brand-primary text-white' : 'border-transparent text-black']"
+                            class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold hover:border-gray-500 hover:text-black">
+                            <i class="fas fa-images mr-2"></i> Corporate Governance
+                        </button>
+                    </nav>
                 </div>
             </div>
-            <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-                aria-hidden="true">
-                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-brand-primary to-black opacity-60"
-                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-                </div>
-            </div>
-
-            <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
-                <div class="grid grid-cols-10 -gap-10">
-                    <div class="text-white col-span-1">
-                        <div class="w-20 h-1 bg-white mt-3">
-
-                        </div>
-                    </div>
-                    <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                        <h2 class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
-                            Board and Management
-                        </h2>
-                        <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
-                            Board and Management
-                        </h2>
-                        <p class="text-white text-left max-w-2xl mt-7">
-                            Our board sets strategic direction and provides oversight and control, acting as an
-                            independent
-                            check and balance to the executive management team, whose responsibility is to manage the
-                            business.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <Board v-if="currentMenu == 'Board'" @openBoardProfile="openProfileBoardModal" ref="teamBoardComponent" />
+
+        <Team v-if="currentMenu == 'Executive'" @openProfile="openProfileModal" ref="teamComponent" />
 
         <div v-if="profileBoardModal" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"
             aria-modal="true">
@@ -328,9 +339,7 @@ const profileBoardData = computed(() => {
         </div>
 
 
-        <Board @openBoardProfile="openProfileBoardModal" ref="teamBoardComponent" />
 
-        <Team @openProfile="openProfileModal" ref="teamComponent" />
 
     </section>
 </template>
