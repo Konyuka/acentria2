@@ -4,9 +4,9 @@
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
-                    class="ring-0 inline-flex items-center gap-x-1 text-sm font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
+                    class="border-0 ring-0 inline-flex items-center gap-x-1 text-sm font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
                     <div
-                        class="mr-1 flex h-6 w-6 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
+                        class="border-0 ring-0 mr-1 flex h-6 w-6 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
                         <i :class="theMenu.icon" class="text-xs text-white"></i>
                     </div>
                     {{ theMenu.name }}
@@ -55,46 +55,41 @@
                                 </div>
 
                                 <div class="flex flex-col gap-5">
-                                    <h2 class="text-xl font-bold">For Kids</h2>
+                                    <h2 class="text-xl font-bold">{{ currentMenuSubtitle }}</h2>
                                     <p class="pr-20 text-xs">
-                                        An initiative to support all micro, small and medium scale businesses.
+                                        {{ currentMenuDescription }}
                                     </p>
                                 </div>
 
                                 <div>
-                                    <div
-                                        class="w-72 border-b border-gray-300 dark:border-gray-700">
+                                    <div class="w-72 border-b border-gray-300 dark:border-gray-700">
                                         <div class="w-full rounded h-32">
                                             <img src="https://cdn.tuk.dev/assets/photo-1575978108872-9b1429a19a0f.jfif"
                                                 alt="Display picture of Silene Tokyo" role="img"
                                                 class="object-cover h-full w-full overflow-hidden rounded shadow">
                                         </div>
                                         <div class="flex w-full items-center justify-between pt-6 pb-1">
-                                            <p class="text-xl font-normal text-gray-800 dark:text-white ">Silene Tokyo
+                                            <p class="text-xl font-normal text-gray-800 dark:text-white ">
+                                                <button class="button-animation hover:bg-brand-primary px-2 py-1 bg-black text-white text-sm">
+                                                    Contact Us
+                                                </button>
                                             </p>
                                             <div class="flex justify-center">
                                                 <a aria-label="Open github" role="link" href="javascript:void(0)"
                                                     class="mx-2">
-                                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/white-bg-with-description-svg1.svg"
-                                                        alt="github">
+                                                    <i class="fas fa-paper-plane"></i>
                                                 </a>
-                                                <a aria-label="Open twitter" role="link" href="javascript:void(0)"
+                                                <a aria-label="Open github" role="link" href="javascript:void(0)"
                                                     class="mx-2">
-                                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/white-bg-with-description-svg2.svg"
-                                                        alt="twiter">
+                                                    <i class="fas fa-mobile-alt"></i>
                                                 </a>
-                                                <a aria-label="Open instagram" role="link" href="javascript:void(0)"
-                                                    class="mx-2">
-                                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/white-bg-with-description-svg3.svg"
-                                                        alt="instagram">
-                                                </a>
+                                                
                                             </div>
                                         </div>
-                                        <p class="text-base text-gray-600 pb-1">VP Operations</p>
-                                        <p class="text-xs text-gray-600 font-normal">The
-                                            Vice President, Operations is responsible for planning, directing, and
-                                            overseeing finance and operations activities in the organization, and
-                                            ensuring development.</p>
+                                        <p class="text-xs text-gray-600 font-normal">
+                                            Access all the ways you can reach us at your convenience. We have a
+                                            representative wherever you are.
+                                        </p>
                                     </div>
                                 </div>
 
@@ -152,7 +147,7 @@
                         </div>
 
                     </template>
-                </div> -->
+</div> -->
 
                 <div class="bg-black/20">
                     <div class="mx-auto max-w-7xl px-0">
@@ -181,111 +176,83 @@
 
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, RectangleGroupIcon } from '@heroicons/vue/20/solid'
-import { ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon } from '@heroicons/vue/24/outline'
-import { nextTick } from "vue";
 const props = defineProps({
     theMenu: String,
-    // callsToAction: Array,
 })
-
-const solutions = [
-    {
-        name: 'Analytics',
-        description: 'Get a better understanding of where your traffic is coming from',
-        href: '#',
-        icon: ChartPieIcon,
-    },
-    {
-        name: 'Engagement',
-        description: 'Speak directly to your customers with our engagement tool',
-        href: '#',
-        icon: CursorArrowRaysIcon,
-    },
-    { name: 'Security', description: "Your customers' data will be safe and secure", href: '#', icon: FingerPrintIcon },
-    {
-        name: 'Integrations',
-        description: "Connect with third-party tools that you're already using",
-        href: '#',
-        icon: SquaresPlusIcon,
-    },
-]
-const callsToAction = [
-    { name: 'View all products', href: '#', icon: RectangleGroupIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
 
 const currentMenu = ref(null)
 const currentMenuItems = ref(null)
 const currentSubmenu = ref(null)
+const currentMenuSubtitle = ref(null)
+const currentMenuDescription = ref(null)
 const currentSubmenuItems = ref(null)
 const footerOptions = ref(null)
 
 const aboutFooterMenus = ref([
     {
         name: 'About Acentria Group',
-        icon: 'fas fa-info-circle', 
+        icon: 'fas fa-info-circle',
         link: '/',
     },
     {
         name: 'News & Updates',
-        icon: 'fas fa-newspaper', 
+        icon: 'fas fa-newspaper',
         link: '/acentria-news-and-blogs',
     },
     {
         name: 'Contact Us',
-        icon: 'fas fa-envelope', 
+        icon: 'fas fa-envelope',
         link: 'contact-acentria-group',
     },
 ]);
 const insuranceFooterMenus = ref([
     {
         name: 'Insurance Home Page',
-        icon: 'fas fa-home', 
+        icon: 'fas fa-home',
         link: '/acentria-group-insurance',
     },
     {
         name: 'Renew your Policy',
-        icon: 'fas fa-redo', 
+        icon: 'fas fa-redo',
         link: '/contact-acentria-group',
     },
     {
         name: 'Report a Claim',
-        icon: 'fas fa-file-alt', 
+        icon: 'fas fa-file-alt',
         link: '/contact-acentria-group',
     },
 ]);
 const reinsuranceFooterMenus = ref([
     {
         name: 'Reinsurance Home Page',
-        icon: 'fas fa-home', 
+        icon: 'fas fa-home',
         link: '/acentria-group-reinsurance',
     },
     {
         name: 'Renew your Policy',
-        icon: 'fas fa-redo', 
+        icon: 'fas fa-redo',
         link: '/contact-acentria-group',
     },
     {
         name: 'Report a Claim',
-        icon: 'fas fa-file-alt', 
+        icon: 'fas fa-file-alt',
         link: '/contact-acentria-group',
     },
 ]);
 const actuarialFooterMenus = ref([
     {
         name: 'Actuarial Home Page',
-        icon: 'fas fa-home', 
+        icon: 'fas fa-home',
         link: '/acentria-group-actuarial',
     },
     {
         name: 'Book a Product Demo',
-        icon: 'fas fa-calendar-alt', 
+        icon: 'fas fa-calendar-alt',
         link: '/contact-acentria-group',
     },
     {
         name: 'Book a Consultation',
-        icon: 'fas fa-calendar-check', 
+        icon: 'fas fa-calendar-check',
         link: '/contact-acentria-group',
     },
 ]);
@@ -293,6 +260,8 @@ const actuarialFooterMenus = ref([
 const AboutMenus = ref([
     {
         name: 'About Us',
+        subMenu: 'About Acentria',
+        description: 'At Acentria Group, we propel prosperity to infinite possibilities.',
         icon: 'fas fa-info-circle',
         items: [
             {
@@ -319,6 +288,8 @@ const AboutMenus = ref([
     },
     {
         name: 'Our Governance',
+        subMenu: 'Governance Structure',
+        description: 'Meet the leaders who guide Acentria Group towards success.',
         icon: 'fas fa-user-tie',
         items: [
             {
@@ -335,6 +306,8 @@ const AboutMenus = ref([
     },
     {
         name: 'Our Commitment',
+        subMenu: 'Commitment to Excellence',
+        description: 'Our dedication to providing exceptional service and building strong relationships.',
         icon: 'fas fa-handshake',
         items: [
             {
@@ -361,6 +334,8 @@ const AboutMenus = ref([
     },
     {
         name: 'Our Lines of Business',
+        subMenu: 'Business Solutions',
+        description: 'Explore the diverse range of business solutions we offer.',
         icon: 'fas fa-briefcase',
         items: [
             {
@@ -385,39 +360,10 @@ const AboutMenus = ref([
             },
         ]
     },
-    // {
-    //     name: 'Corporate Governance',
-    //     icon: 'fas fa-gavel',
-    //     items: [
-    //         {
-    //             name: 'How we work',
-    //             description: 'Learn about our corporate governance practices and ethical standards.',
-    //             link: '/corporate-governance',
-    //         },
-    //         {
-    //             name: 'Our risk Management',
-    //             description: 'Understand our approach to risk management and mitigation.',
-    //             link: '/corporate-governance',
-    //         },
-    //         {
-    //             name: 'Customer feedback & dispute resolution',
-    //             description: 'See how we handle customer feedback and resolve disputes.',
-    //             link: '/corporate-governance',
-    //         },
-    //         {
-    //             name: 'Complaint',
-    //             description: 'Learn about our complaint handling process and how to file a complaint.',
-    //             link: '/corporate-governance',
-    //         },
-    //         {
-    //             name: 'Data Privacy',
-    //             description: 'Read about our commitment to data privacy and protection.',
-    //             link: '/corporate-governance',
-    //         },
-    //     ]
-    // },
     {
         name: 'Sustainability',
+        subMenu: 'Sustainable Practices',
+        description: 'Our commitment to sustainability and responsible business practices.',
         icon: 'fas fa-leaf',
         items: [
             {
@@ -444,6 +390,8 @@ const AboutMenus = ref([
     },
     {
         name: 'Join Us',
+        subMenu: 'Get Involved',
+        description: 'Join us and become a part of the Acentria Group family.',
         icon: 'fas fa-users',
         items: [
             {
@@ -467,6 +415,8 @@ const AboutMenus = ref([
 const InsuranceMenus = ref([
     {
         name: 'Personal Cover',
+        subMenu: 'Personal Insurance',
+        description: 'Comprehensive personal insurance solutions tailored to your individual needs.',
         icon: 'fas fa-user',
         items: [
             {
@@ -498,6 +448,8 @@ const InsuranceMenus = ref([
     },
     {
         name: 'Corporate Cover',
+        subMenu: 'Corporate Insurance',
+        description: 'Tailored corporate insurance solutions to protect your business and employees.',
         icon: 'fas fa-building',
         items: [
             {
@@ -529,6 +481,8 @@ const InsuranceMenus = ref([
     },
     {
         name: 'Business Cover',
+        subMenu: 'Business Insurance',
+        description: 'Comprehensive business insurance solutions to protect your enterprise from various risks.',
         icon: 'fas fa-money-bill-wave',
         items: [
             {
@@ -560,6 +514,8 @@ const InsuranceMenus = ref([
     },
     {
         name: 'Industrial Covers',
+        subMenu: 'Industrial Insurance',
+        description: 'Comprehensive industrial insurance solutions to protect your business operations.',
         icon: 'fas fa-industry',
         items: [
             {
@@ -586,6 +542,8 @@ const InsuranceMenus = ref([
     },
     {
         name: 'Contractors & Developers',
+        subMenu: 'Contractor Insurance',
+        description: 'Comprehensive insurance solutions for contractors and developers.',
         icon: 'fas fa-hard-hat',
         items: [
             {
@@ -612,6 +570,8 @@ const InsuranceMenus = ref([
     },
     {
         name: 'Career & Profession',
+        subMenu: 'Professional Insurance',
+        description: 'Insurance solutions tailored for various professions to protect against professional risks.',
         icon: 'fas fa-user-tie',
         items: [
             {
@@ -633,6 +593,8 @@ const InsuranceMenus = ref([
     },
     {
         name: 'Schools & Institutions',
+        subMenu: 'Institutional Insurance',
+        description: 'Insurance solutions for schools and institutions to protect against various risks.',
         icon: 'fas fa-school',
         items: [
             {
@@ -644,6 +606,8 @@ const InsuranceMenus = ref([
     },
     {
         name: 'Agricultural Insurance',
+        subMenu: 'Agricultural Insurance',
+        description: 'Comprehensive insurance solutions for agricultural activities.',
         icon: 'fas fa-tractor',
         items: [
             {
@@ -655,6 +619,8 @@ const InsuranceMenus = ref([
     },
     {
         name: 'Claims & Filing',
+        subMenu: 'Claims Process',
+        description: 'Information and guidance on the claims process and how to file a claim.',
         icon: 'fas fa-file-invoice-dollar',
         items: [
             {
@@ -678,6 +644,8 @@ const InsuranceMenus = ref([
 const ReinsuranceMenus = ref([
     {
         name: 'Reinsurance Services',
+        subMenu: 'Our Services',
+        description: 'Explore our comprehensive reinsurance services designed to optimize your risk management strategies.',
         icon: 'fas fa-sync-alt',
         items: [
             {
@@ -704,6 +672,8 @@ const ReinsuranceMenus = ref([
     },
     {
         name: 'Reinsurance Solutions',
+        subMenu: 'Our Solutions',
+        description: 'Discover our tailored reinsurance solutions designed to meet specific risk requirements and provide financial security.',
         icon: 'fas fa-cogs',
         items: [
             {
@@ -725,6 +695,8 @@ const ReinsuranceMenus = ref([
     },
     {
         name: 'Data & Modelling',
+        subMenu: 'Data & Modelling',
+        description: 'Leverage data-driven insights and advanced modelling techniques to enhance your reinsurance strategy.',
         icon: 'fas fa-database',
         items: [
             {
@@ -816,12 +788,12 @@ const selectedIndex = ref(null)
 const router = useRouter()
 
 const openFlyover = (menu) => {
-    if (menu =='Investment'){
+    if (menu == 'Investment') {
         router.push('/acentria-group-investment');
         return;
     }
     if (menu == 'Technology') {
-        window.open('https://tech.acentriagroup.com/', '_blank'); 
+        window.open('https://tech.acentriagroup.com/', '_blank');
         return;
     }
     if (currentMenu.value === menu) {
@@ -831,18 +803,35 @@ const openFlyover = (menu) => {
         currentMenu.value = menu
         if (currentMenu.value === 'About') {
             currentMenuItems.value = AboutMenus.value
+            currentSubmenu.value = 'About Us'
+            currentSubmenuItems.value = currentMenuItems.value[0]?.items
+            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+            currentMenuDescription.value = currentMenuItems.value[0]?.description
             footerOptions.value = aboutFooterMenus.value
         }
         if (currentMenu.value === 'Insurance') {
             currentMenuItems.value = InsuranceMenus.value
+            currentSubmenu.value = 'Personal Cover'
+            currentSubmenuItems.value = currentMenuItems.value[0]?.items
+            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+            currentMenuDescription.value = currentMenuItems.value[0]?.description
             footerOptions.value = insuranceFooterMenus.value
         }
         if (currentMenu.value === 'Reinsurance') {
             currentMenuItems.value = ReinsuranceMenus.value
+            currentSubmenu.value = 'Reinsurance Services'
+            currentSubmenuItems.value = currentMenuItems.value[0]?.items
+            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+            currentMenuDescription.value = currentMenuItems.value[0]?.description
             footerOptions.value = reinsuranceFooterMenus.value
         }
         if (currentMenu.value === 'Actuarial') {
             currentMenuItems.value = ActuarialMenus.value
+            // console.log(currentMenuItems.value)
+            currentSubmenu.value = 'Actuarial Consulting'
+            currentSubmenuItems.value = currentMenuItems.value[0]?.items
+            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+            currentMenuDescription.value = currentMenuItems.value[0]?.description
             footerOptions.value = actuarialFooterMenus.value
         }
 
@@ -877,6 +866,8 @@ const setSubmenu = (menu, index) => {
 
     }
     currentSubmenu.value = menu.name
+    currentMenuSubtitle.value = menu.subMenu
+    currentMenuDescription.value = menu.description
     currentSubmenuItems.value = menu.items
     selectedIndex.value = index;
     if (menu.name === 'Personal Cover') {
@@ -889,13 +880,13 @@ const shouldInsertSubmenu = (index) => {
     const isLastItem = index + 1 === currentMenuItems.value?.length;
     const result = (isEndOfRow || isLastItem) && currentSubmenuItems.value?.length > 0 && selectedIndex.value <= index;
 
-    if(result){
+    if (result) {
         console.log('Index:', index)
         console.log('Selected Index:', selectedIndex.value)
-        if(index <= 4 && selectedIndex.value < 4){
+        if (index <= 4 && selectedIndex.value < 4) {
             return true
         }
-        if (index > 4 && selectedIndex.value > 4){
+        if (index > 4 && selectedIndex.value > 4) {
             return true
         }
     }

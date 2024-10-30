@@ -5,8 +5,8 @@
 <template>
     <div class="">
         <div class="mt-5">
-            <div class=" container text-white text-3xl text-left py-5 font-sans font-semibold max-w-6xl mx-auto">
-            <div class=" ml-6 max-w-6xl mx-auto text-left">
+            <div class=" text-white text-3xl text-left py-5 font-sans font-semibold max-w-7xl mx-auto">
+            <div class=" ml-6 max-w-7xl mx-auto text-left">
                 Top Choice for Professional <span class="text-brand-primary"><br> Services and Client Satisfaction</span>
             </div>
         </div>

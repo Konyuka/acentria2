@@ -111,7 +111,7 @@ onMounted(() => {
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                      data-nimg="1" style="color: transparent; object-fit: contain" class="shadow-2xl rounded-lg"
                       src="/img/careers.jpg" data-v-inspector="components/Why.vue:34:17" />
                   </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
@@ -155,7 +155,7 @@ onMounted(() => {
                         <div class="grid grid-cols-4 gap-5">
 
                           <div
-                            class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                            class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
                             <div class="flex h-fit flex-col"><i
                                 class="fas fa-check-circle text-black text-4xl pb-4 group-hover:text-brand-primary"
                                 translate="no"></i>
@@ -170,7 +170,7 @@ onMounted(() => {
                           </div>
 
                           <div
-                            class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                            class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
                             <div class="flex h-fit flex-col"><i
                                 class="fas fa-bullseye text-black text-4xl pb-4 group-hover:text-brand-primary"
                                 translate="no"></i>
@@ -185,7 +185,7 @@ onMounted(() => {
                           </div>
 
                           <div
-                            class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                            class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
                             <div class="flex h-fit flex-col"><i
                                 class="fas fa-eye text-black text-4xl pb-4 group-hover:text-brand-primary"
                                 translate="no"></i>
@@ -199,7 +199,7 @@ onMounted(() => {
                           </div>
 
                           <div
-                            class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                            class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
                             <div class="flex h-fit flex-col"><i
                                 class="fas fa-gem text-black text-4xl pb-4 group-hover:text-brand-primary"
                                 translate="no"></i>
@@ -245,7 +245,7 @@ onMounted(() => {
                   <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
 
                     <div v-for="item in commitments"
-                      class="button-animation duration-700 group border-2 border-solid border-black shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-black/10 p-5 w-full h-full">
+                      class="shadow-2xl button-animation duration-700 group border-2 border-solid border-black shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-lg bg-black/10 p-5 w-full h-full">
 
                       <div class="flex h-fit flex-col">
                         <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary"
@@ -284,7 +284,7 @@ onMounted(() => {
               </h1>
 
 
-              <div class="2xl:mx-auto bg-gray-100 2xl:container md:px-20 px-4 md:py-12 py-9">
+              <div class="2xl:mx-auto bg-black/80 2xl:container md:px-20 px-4 md:py-12 py-9">
                 <div class="relative rounded-md">
                   <img
                     src="https://www.shutterstock.com/shutterstock/photos/2509093239/display_1500/stock-photo-autumn-natural-bokeh-background-with-maple-trees-in-park-with-copyspace-2509093239.jpg"
