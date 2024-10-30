@@ -38,18 +38,18 @@
                                         <i :class="item.icon" class="mr-2"></i>
                                         {{ item.name }}
                                         <i
-                                            class="absolute right-10 group-hover:text-brand-primary ml-10 fas fa-caret-right"></i>
+                                            class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-span-3 ml-10">
-                            <div class="py-10 grid grid-cols-3 gap-10">
+                            <div class="py-10 grid grid-cols-3 gap-5 max-w-4xl">
 
                                 <div class="flex flex-col gap-5">
                                     <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                         :key="submenuItem.name"
-                                        class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-md">
+                                        class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-xs">
                                         {{ submenuItem.name }}
                                     </NuxtLink>
                                 </div>
@@ -62,31 +62,32 @@
                                 </div>
 
                                 <div>
-                                    <div class="w-72 border-b border-gray-300 dark:border-gray-700">
+                                    <div class=" w-auto border-b border-gray-300 dark:border-gray-700">
                                         <div class="w-full rounded h-32">
-                                            <img src="https://cdn.tuk.dev/assets/photo-1575978108872-9b1429a19a0f.jfif"
-                                                alt="Display picture of Silene Tokyo" role="img"
+                                            <img src="/img/waterfal.jpeg" alt="Display picture of Silene Tokyo"
+                                                role="img"
                                                 class="object-cover h-full w-full overflow-hidden rounded shadow">
                                         </div>
                                         <div class="flex w-full items-center justify-between pt-6 pb-1">
                                             <p class="text-xl font-normal text-gray-800 dark:text-white ">
-                                                <button class="button-animation hover:bg-brand-primary px-2 py-1 bg-black text-white text-sm">
+                                                <button
+                                                    class="button-animation hover:bg-brand-primary px-2 py-1 bg-black text-white text-sm">
                                                     Contact Us
                                                 </button>
                                             </p>
                                             <div class="flex justify-center">
                                                 <a aria-label="Open github" role="link" href="javascript:void(0)"
-                                                    class="mx-2">
+                                                    class="button-animation mx-2">
                                                     <i class="fas fa-paper-plane"></i>
                                                 </a>
                                                 <a aria-label="Open github" role="link" href="javascript:void(0)"
-                                                    class="mx-2">
+                                                    class="button-animation mx-2">
                                                     <i class="fas fa-mobile-alt"></i>
                                                 </a>
-                                                
+
                                             </div>
                                         </div>
-                                        <p class="text-xs text-gray-600 font-normal">
+                                        <p class="mt-2 text-xs text-gray-600 font-normal">
                                             Access all the ways you can reach us at your convenience. We have a
                                             representative wherever you are.
                                         </p>
