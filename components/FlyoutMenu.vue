@@ -18,13 +18,94 @@
             enter-to-class="opacity-100 translate-y-1" leave-active-class="transition ease-in duration-150"
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-1">
 
+
             <PopoverPanel
                 class=" w-screen absolute inset-x-0 top-0 -z-20 bg-white pt-8 shadow-lg ring-1 border-1 ring-gray-900/5">
-                <div
-                    class="!overflow-y-scroll my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 gap-8">
+                <div class="w-full h-10 bg-black justify-center content-center mt-4">
+                    <div class="max-w-7xl mx-auto font-bold text-xl text-white">
+                        About Acentria Group
+                    </div>
+                </div>
 
+                <div class="h-auto bg-white w-full">
+                    <div class="grid grid-cols-4 w-full h-full">
+                        <div class="bg-gray-50 col-span-1">
+                            <div class="relative pl-20 py-10 flex flex-col gap-5">
+                                <div v-for="(item, index) in currentMenuItems">
+                                    <p @click="setSubmenu(item, index)"
+                                        :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
+                                        class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-md">
+                                        <i :class="item.icon" class="mr-2"></i>
+                                        {{ item.name }}
+                                        <i
+                                            class="absolute right-10 group-hover:text-brand-primary ml-10 fas fa-caret-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-3 ml-10">
+                            <div class="py-10 grid grid-cols-3 gap-10">
+
+                                <div class="flex flex-col gap-5">
+                                    <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
+                                        :key="submenuItem.name"
+                                        class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-md">
+                                        {{ submenuItem.name }}
+                                    </NuxtLink>
+                                </div>
+
+                                <div class="flex flex-col gap-5">
+                                    <h2 class="text-xl font-bold">For Kids</h2>
+                                    <p class="pr-20 text-xs">
+                                        An initiative to support all micro, small and medium scale businesses.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <div
+                                        class="w-72 border-b border-gray-300 dark:border-gray-700">
+                                        <div class="w-full rounded h-32">
+                                            <img src="https://cdn.tuk.dev/assets/photo-1575978108872-9b1429a19a0f.jfif"
+                                                alt="Display picture of Silene Tokyo" role="img"
+                                                class="object-cover h-full w-full overflow-hidden rounded shadow">
+                                        </div>
+                                        <div class="flex w-full items-center justify-between pt-6 pb-1">
+                                            <p class="text-xl font-normal text-gray-800 dark:text-white ">Silene Tokyo
+                                            </p>
+                                            <div class="flex justify-center">
+                                                <a aria-label="Open github" role="link" href="javascript:void(0)"
+                                                    class="mx-2">
+                                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/white-bg-with-description-svg1.svg"
+                                                        alt="github">
+                                                </a>
+                                                <a aria-label="Open twitter" role="link" href="javascript:void(0)"
+                                                    class="mx-2">
+                                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/white-bg-with-description-svg2.svg"
+                                                        alt="twiter">
+                                                </a>
+                                                <a aria-label="Open instagram" role="link" href="javascript:void(0)"
+                                                    class="mx-2">
+                                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/white-bg-with-description-svg3.svg"
+                                                        alt="instagram">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="text-base text-gray-600 pb-1">VP Operations</p>
+                                        <p class="text-xs text-gray-600 font-normal">The
+                                            Vice President, Operations is responsible for planning, directing, and
+                                            overseeing finance and operations activities in the organization, and
+                                            ensuring development.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div
+                    class="!overflow-y-scroll my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 gap-8">
                     <template v-for="(item, index) in currentMenuItems" :key="item.name">
-                        <!-- Individual Menu Item -->
                         <div @click="setSubmenu(item, index)"
                             :class="[currentSubmenu === item.name ? 'bg-gray-200 scale-105' : 'bg-gray-100']"
                             class="relative hover:cursor-pointer hover:scale-105 duration-700 ease-in-out transform transition group mx-3 flex gap-6 rounded-sm text-sm leading-6 hover:bg-gray-200 sm:flex-col sm:py-3 px-3">
@@ -33,15 +114,11 @@
 
                                 <i :class="[item.icon, currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
                                     class=" group-hover:text-brand-primary text-xs"></i>
-                                <!-- <div
-                                    class="flex h-6 w-6 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
-                                </div> -->
 
                                 <a :href="item.href" v-html="item.name"
                                     :class="[currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
                                     class="flex items-center justify-center font-semibold  text-xs">
                                 </a>
-
 
                             </div>
                             <div v-if="currentSubmenu === item.name"
@@ -49,8 +126,6 @@
                             </div>
                         </div>
 
-                        <!-- Conditionally Insert Submenu Items Between Rows -->
-                        <!-- <div v-if="((index + 1) % 5 === 0 || index + 1 === currentMenuItems.length) && currentSubmenuItems !== null && selectedIndex <= index" -->
                         <div v-if="shouldInsertSubmenu(index)" class="col-span-5 ">
                             <div class="mx-auto max-w-full">
                                 <div
@@ -70,7 +145,6 @@
                                                         class="fas fa-arrow-right text-[8px] group-hover:text-brand-primary"></i>
                                                 </span>
                                             </div>
-                                            <!-- <p class="mt-1 text-black text-xs">{{ submenuItem.description }}</p> -->
                                         </div>
                                     </NuxtLink>
                                 </div>
@@ -78,20 +152,26 @@
                         </div>
 
                     </template>
-                </div>
+                </div> -->
 
-                <div class="bg-gray-50">
+                <div class="bg-black/20">
                     <div class="mx-auto max-w-7xl px-0">
                         <div
-                            class="my-4 grid grid-cols-3 divide-y divide-gray-900/5 sm:grid-cols-3 gap-10 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
-                            <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
-                                class="group button-animation flex items-center hover:text-white bg-gray-100 gap-x-2.5 p-3 px-6 text-sm font-bold leading-6 text-gray-900 hover:!bg-black sm:justify-center sm:px-0">
-                                <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
-                                {{ item.name }} <i class="fas fa-arrow-right"></i>
-                            </NuxtLink>
+                            class=" grid grid-cols-3 divide-y divide-gray-900/5 gap-10 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
+                            <div class="flex gap-20 col-span-2">
+                                <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
+                                    class="group button-animation flex items-center hover:text-black gap-x-2.5 p-3 px-6 text-sm font-bold leading-6 text-white sm:justify-center sm:px-0">
+                                    <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
+                                    {{ item.name }} <i class="fas fa-arrow-right"></i>
+                                </NuxtLink>
+                            </div>
+                            <div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </PopoverPanel>
 
 

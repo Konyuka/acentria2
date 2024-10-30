@@ -28,7 +28,7 @@
                                     class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
                                     <figure
                                         class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
-                                        <div class="h-0 w-full max-w-full pb-[75%]">
+                                        <div class="h-0 w-full max-w-full pb-[25%]">
                                             <div
                                                 class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                 <picture class="flex h-[300px] w-full max-w-none">
@@ -56,8 +56,8 @@
                             </div>
                         </div>
                         <div
-                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
-                            <section class="grid items-start justify-start gap-y-3">
+                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
+                            <section class="grid items-start justify-start gap-y-0">
                                 <div class="relative flex min-h-[100px] flex-col gap-y-1">
 
                                     <h6
@@ -79,7 +79,7 @@
                                     class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
                                     <figure
                                         class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
-                                        <div class="h-0 w-full max-w-full pb-[75%]">
+                                        <div class="h-0 w-full max-w-full pb-[25%]">
                                             <div
                                                 class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                 <picture class="flex h-[300px] w-full max-w-none">
@@ -107,8 +107,8 @@
                             </div>
                         </div>
                         <div
-                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
-                            <section class="grid items-start justify-start gap-y-3">
+                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
+                            <section class="grid items-start justify-start gap-y-0">
                                 <div class="relative flex min-h-[100px] flex-col gap-y-1">
                                     <h6
                                         class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
@@ -128,7 +128,7 @@
                                     class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
                                     <figure
                                         class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
-                                        <div class="h-0 w-full max-w-full pb-[75%]">
+                                        <div class="h-0 w-full max-w-full pb-[25%]">
                                             <div
                                                 class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                 <picture class="flex h-[300px] w-full max-w-none">
@@ -156,8 +156,8 @@
                             </div>
                         </div>
                         <div
-                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
-                            <section class="grid items-start justify-start gap-y-3">
+                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
+                            <section class="grid items-start justify-start gap-y-0">
                                 <div class="relative flex min-h-[100px] flex-col gap-y-1">
                                     <h6
                                         class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
@@ -176,7 +176,7 @@
                                     class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
                                     <figure
                                         class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
-                                        <div class="h-0 w-full max-w-full pb-[75%]">
+                                        <div class="h-0 w-full max-w-full pb-[25%]">
                                             <div
                                                 class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                 <picture class="flex h-[300px] w-full max-w-none">
@@ -207,8 +207,8 @@
                             </div>
                         </div>
                         <div
-                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-6 transition-transform duration-500 will-change-transform translate-y-0">
-                            <section class="grid items-start justify-start gap-y-3">
+                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
+                            <section class="grid items-start justify-start gap-y-0">
                                 <div class="relative flex min-h-[100px] flex-col gap-y-1">
                                     <h6
                                         class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
