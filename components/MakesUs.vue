@@ -10,7 +10,7 @@
                 <div class="mt-5 grid grid-cols-1 gap-x-3 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
                     <div v-for="incentive in incentives" :key="incentive.name" class="group button-animation sm:flex lg:block bg-gray-100 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
                         <div class="sm:flex-shrink-0 flex justify-center">
-                            <img class="h-16 w-16" :src="incentive.imageSrc" alt="" />
+                            <i  :class="incentive.icon" class="text-black text-2xl"></i>
                         </div>
                         <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                             <h3 class="text-lg text-brand-primary font-semibold flex justify-center">{{ incentive.name
@@ -29,19 +29,18 @@
 const incentives = [
     {
         name: 'Who we are',
-        imageSrc: 'https://tailwindui.com/plus/img/ecommerce/icons/icon-shipping-simple.svg',
+        icon: 'fas fa-users',
         description: "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment Advisory",
     },
     {
         name: 'What We Do',
-        imageSrc: 'https://tailwindui.com/plus/img/ecommerce/icons/icon-warranty-simple.svg',
+        icon: 'fas fa-briefcase',
         description: "We offer the best solutions in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory. We consider the trust to be our most valuable resource.",
     },
     {
         name: 'Our journey',
-        imageSrc: 'https://tailwindui.com/plus/img/ecommerce/icons/icon-exchange-simple.svg',
-        description:
-            "Our journey is about Empowering dreams, igniting imagination, and propelling prosperity to infinite possibilities for all our partners and the communities we serve.",
+        icon: 'fas fa-road',
+        description: "Our journey is about Empowering dreams, igniting imagination, and propelling prosperity to infinite possibilities for all our partners and the communities we serve.",
     },
 ]
 </script>

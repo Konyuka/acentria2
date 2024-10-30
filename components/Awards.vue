@@ -15,7 +15,7 @@
                             class="font-sans text-black pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-3xl 2xl:text-4xl">
                             Awards
                         </span>
-                        and Recognitions
+                         & Recognitions
                     </h2>
                 </div>
                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">

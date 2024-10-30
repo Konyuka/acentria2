@@ -90,7 +90,8 @@ onMounted(() => {
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
               <div class="w-full h-full bg-white">
-                <MakesUs />
+                <!-- <MakesUs /> -->
+                <MakesUs2 />
               </div>
 
               <div class="relative min-h-[30vh] min-w-screen">
@@ -116,7 +117,7 @@ onMounted(() => {
                   <div class="flex flex-col justify-center lg:basis-1/2">
 
                     <div class="text-light-content pb-5 md:pb-6">
-                      <p class="text-sm leading-normal font-regular text-light-content !text-inherit mb-4">
+                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                         Our success is driven by a dynamic and dedicated
                         leadership team. Comprising individuals with diverse
                         expertise and a shared commitment to excellence, our
@@ -244,7 +245,7 @@ onMounted(() => {
                   <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
 
                     <div v-for="item in commitments"
-                      class="button-animation duration-700 group border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-white p-5 w-full h-full">
+                      class="button-animation duration-700 group border-2 border-solid border-black shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xs bg-black/10 p-5 w-full h-full">
 
                       <div class="flex h-fit flex-col">
                         <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary"
@@ -252,7 +253,7 @@ onMounted(() => {
                         <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
                           {{ item.name
                           }}</h3>
-                        <p class="mt-1 text-xs text-gray-500">{{ item.description }}</p>
+                        <p class="mt-1 text-xs text-white">{{ item.description }}</p>
                         <i
                           class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
                       </div>
@@ -276,30 +277,50 @@ onMounted(() => {
               <h1 class="text-black font-semibold text-3xl bg-white mx-auto">
                 <div class="container max-w-6xl mx-auto text-left py-5 bg-white">
                   Corporate Social Responsibility
-                  <span class="text-brand-primary">&
+                  <span class="text-brand-primary"><br> &
                     Sustainability
                   </span>
                 </div>
               </h1>
 
-              <div class="mx-auto max-w-screen">
+
+              <div class="2xl:mx-auto bg-gray-100 2xl:container md:px-20 px-4 md:py-12 py-9">
+                <div class="relative rounded-md">
+                  <img
+                    src="https://www.shutterstock.com/shutterstock/photos/2509093239/display_1500/stock-photo-autumn-natural-bokeh-background-with-maple-trees-in-park-with-copyspace-2509093239.jpg"
+                    alt="city view"
+                    class="w-full h-full rounded-md  object-center object-cover absolute sm:block hidden" />
+                  <img src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
+                    class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
+                  <div
+                    class="text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
+                    <div>
+                      <p class="text-xs leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
+                        Our initiatives focus on reducing our environmental impact, promoting ethical business
+                        practices, and contributing positively to the communities we serve. We believe in creating
+                        long-term value for our stakeholders by integrating sustainable practices into our core
+                        operations and fostering a culture of responsibility and transparency.
+                      </p>
+                    </div>
+                    <div class="mt-10 max-w-md">
+                      <NuxtLink to="/csr"
+                        class="text-white underline underline-offset-8 hover:button-animation font-semibold tracking-widest">
+                        Learn More <i class="fas fa-caret-right"></i>
+                      </NuxtLink>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- <div class="mx-auto max-w-screen">
                 <div
                   class="relative bg-gray-900 px-6 py-20 shadow-xl sm:rounded-xs sm:px-10 sm:py-24 md:px-12 lg:px-40">
                   <img class="absolute inset-0 h-full w-full object-cover brightness-50 saturate-10"
                     src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
                     alt="" />
                   <div class="absolute inset-0 bg-gray-900/5 mix-blend-multiply" />
-                  <div class="absolute -left-80 -top-56 transform-gpu blur-3xl" aria-hidden="true">
-                    <!-- <div
-                  class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-[0.45]"
-                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" /> -->
-                  </div>
-                  <div class="hidden md:absolute md:bottom-16 md:left-[50rem] md:block md:transform-gpu md:blur-3xl"
-                    aria-hidden="true">
-                    <!-- <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-r from-[#ff4694] to-[#776fff] opacity-25"
-                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" /> -->
-                  </div>
-
+                  
                   <div class="relative mx-auto max-w-2xl lg:mx-0">
 
                     <figure>
@@ -323,9 +344,9 @@ onMounted(() => {
                     </figure>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="relative w-full bg-cover bg-center bg-no-repeat bg-white mb-0">
+              <!-- <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-0">
                 <div class="container">
                   <div
                     class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
@@ -333,7 +354,7 @@ onMounted(() => {
                       class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
                       <div class="w-full">
                         <p
-                          class="text-left font-sans tracking-normal text-2xl lg:text-sm text-black font-semibold leading-tight lg:leading-tight">
+                          class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
                           At our company, we specialize in providing comprehensive insurance and reinsurance solutions,
                           backed by expert actuarial services and strategic investment management. Our cutting-edge
                           technology ensures that we deliver innovative and efficient solutions tailored to meet the
@@ -344,7 +365,7 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <div class=" w-full h-full">
                 <div class=" !font-sans container my-0">

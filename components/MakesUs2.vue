@@ -1,0 +1,71 @@
+<script setup>
+const incentives = [
+    {
+        name: 'Who we are',
+        icon: 'fas fa-users',
+        description: "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment Advisory",
+    },
+    {
+        name: 'What We Do',
+        icon: 'fas fa-briefcase',
+        description: "We offer the best solutions in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory. We consider the trust to be our most valuable resource.",
+    },
+    {
+        name: 'Our journey',
+        icon: 'fas fa-road',
+        description: "Our journey is about Empowering dreams, igniting imagination, and propelling prosperity to infinite possibilities for all our partners and the communities we serve.",
+    },
+]
+
+</script>
+
+<template>
+    <div>
+
+        <div class="bg-white pt-10 font-sans">
+
+            <div class="max-w-6xl mx-auto justify-between content-center">
+                <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
+                    About <span class="text-brand-primary">Us</span>
+                </h2>
+            </div>
+            <div class="relative pt-5">
+                <div
+                    class="absolute inset-x-0 bottom-0 top-48 bg-[radial-gradient(circle_at_center_var(--gradient-position),#df2416,#ffffff00,#4d4f541f_70%)] [--gradient-position:center] lg:[--gradient-position:150%]">
+                </div>
+                <div class="relative mx-auto max-w-6xl px-6 lg:px-8 pb-10">
+                    <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+
+                        <div v-for="incentive in incentives" :key="incentive.name"
+                            class="group button-animation -m-2 grid grid-cols-1 rounded-[2rem] shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
+                            <div class="grid grid-cols-1 rounded-[2rem] p-2 shadow-md shadow-black/5">
+                                <div class="rounded-3xl bg-white p-5 pb-1 shadow-2xl ring-1 ring-black/5">
+                                    <i :class="incentive.icon" class="text-black text-2xl"></i>
+                                    <p class="mt-2 font-semibold text-lg text-brand-primary">
+                                        {{ incentive.name }}
+                                    </p>
+                                    <div class="mt-2">
+                                        <h3 class="text-xs text-gray-950">
+                                            {{ incentive.description }}
+                                        </h3>
+                                    </div>
+                                    <div class="mt-2">
+                                        <i
+                                            class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</template>
+
+<style scoped></style>
