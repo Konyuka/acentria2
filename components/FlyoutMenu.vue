@@ -20,17 +20,17 @@
 
 
             <PopoverPanel
-                class=" w-screen absolute inset-x-0 top-0 -z-20 bg-white pt-8 shadow-lg ring-1 border-1 ring-gray-900/5">
-                <div class="w-full h-10 bg-black justify-center content-center mt-4">
+                class="mt-14 w-screen absolute inset-x-0 top-0 -z-20 bg-white shadow-lg ring-1 border-1 ring-gray-900/5">
+                <div class="w-full h-10 bg-black justify-center content-center mt-0">
                     <div class="max-w-7xl mx-auto font-bold text-xl text-white">
-                        About Acentria Group
+                        {{ flyoverHeader }}
                     </div>
                 </div>
 
                 <div class="h-auto bg-white w-full">
                     <div class="grid grid-cols-4 w-full h-full">
                         <div class="bg-gray-50 col-span-1">
-                            <div class="relative pl-20 py-10 flex flex-col gap-5">
+                            <div class="relative pl-20 py-5 flex flex-col gap-5">
                                 <div v-for="(item, index) in currentMenuItems">
                                     <p @click="setSubmenu(item, index)"
                                         :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="col-span-3 ml-10">
-                            <div class="py-10 grid grid-cols-3 gap-5 max-w-4xl">
+                            <div class="py-5 grid grid-cols-3 gap-5 max-w-4xl">
 
                                 <div class="flex flex-col gap-5">
                                     <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
@@ -188,6 +188,7 @@ const currentMenuSubtitle = ref(null)
 const currentMenuDescription = ref(null)
 const currentSubmenuItems = ref(null)
 const footerOptions = ref(null)
+const flyoverHeader = ref(null)
 
 const aboutFooterMenus = ref([
     {
@@ -803,6 +804,7 @@ const openFlyover = (menu) => {
     } else {
         currentMenu.value = menu
         if (currentMenu.value === 'About') {
+            flyoverHeader.value = 'Acentria Group'
             currentMenuItems.value = AboutMenus.value
             currentSubmenu.value = 'About Us'
             currentSubmenuItems.value = currentMenuItems.value[0]?.items
@@ -811,6 +813,7 @@ const openFlyover = (menu) => {
             footerOptions.value = aboutFooterMenus.value
         }
         if (currentMenu.value === 'Insurance') {
+            flyoverHeader.value = 'Insurance Solutions'
             currentMenuItems.value = InsuranceMenus.value
             currentSubmenu.value = 'Personal Cover'
             currentSubmenuItems.value = currentMenuItems.value[0]?.items
@@ -819,6 +822,7 @@ const openFlyover = (menu) => {
             footerOptions.value = insuranceFooterMenus.value
         }
         if (currentMenu.value === 'Reinsurance') {
+            flyoverHeader.value = 'Reinsurance Solutions'
             currentMenuItems.value = ReinsuranceMenus.value
             currentSubmenu.value = 'Reinsurance Services'
             currentSubmenuItems.value = currentMenuItems.value[0]?.items
@@ -827,8 +831,8 @@ const openFlyover = (menu) => {
             footerOptions.value = reinsuranceFooterMenus.value
         }
         if (currentMenu.value === 'Actuarial') {
+            flyoverHeader.value = 'Actuarial Services'
             currentMenuItems.value = ActuarialMenus.value
-            // console.log(currentMenuItems.value)
             currentSubmenu.value = 'Actuarial Consulting'
             currentSubmenuItems.value = currentMenuItems.value[0]?.items
             currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
