@@ -64,7 +64,7 @@
                                 <div>
                                     <div class=" w-auto border-b border-gray-300 dark:border-gray-700">
                                         <div class="w-full rounded h-32">
-                                            <img src="/img/waterfal.jpeg" alt="Display picture of Silene Tokyo"
+                                            <img src="/img/call.jpg" alt="Display picture of Silene Tokyo"
                                                 role="img"
                                                 class="object-cover h-full w-full overflow-hidden rounded shadow">
                                         </div>

@@ -147,7 +147,7 @@ onMounted(() => {
 
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
-                  <div class="flex flex-col justify-center lg:basis-1/2">
+                  <div class="flex flex-col justify-center  items-center lg:basis-1/2">
 
                     <div class="text-light-content pb-5 md:pb-6">
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
@@ -170,8 +170,8 @@ onMounted(() => {
                     </div>
                   </div>
                   <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" width="400" height="350" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain" class="shadow-2xl rounded-lg"
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      style="color: transparent; object-fit: contain" class="w-full h-60 shadow-2xl rounded-lg"
                       src="/img/waterfal.jpeg" data-v-inspector="components/Why.vue:34:17" />
                   </div>
                 </div>
