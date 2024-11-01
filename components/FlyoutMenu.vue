@@ -19,7 +19,7 @@
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-1">
 
 
-            <PopoverPanel
+            <PopoverPanel v-if="activeClick"
                 class="mt-12 w-screen mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg ring-1 border-1 ring-gray-900/5">
                 <div class="w-full h-10 bg-black justify-center content-center mt-0">
                     <div class="ml-2 max-w-7xl mx-auto font-bold text-xl text-white">
@@ -786,7 +786,7 @@ const ActuarialMenus = ref([
 ])
 
 const selectedIndex = ref(null)
-
+const activeClick = ref(false)
 const router = useRouter()
 
 const openFlyover = (menu) => {
@@ -802,6 +802,7 @@ const openFlyover = (menu) => {
         currentMenu.value = null
         return
     } else {
+        activeClick.value = true
         currentMenu.value = menu
         if (currentMenu.value === 'About') {
             flyoverHeader.value = 'Acentria Group'
@@ -844,12 +845,17 @@ const openFlyover = (menu) => {
 }
 
 const closeFlyOver = () => {
+    activeClick.value = false
     currentMenu.value = null
     currentMenuItems.value = null
     currentSubmenu.value = null
     currentSubmenuItems.value = null
     selectedIndex.value = null
     footerOptions.value = null
+    currentMenuSubtitle.value = null
+    currentMenuDescription.value = null
+    footerOptions.value = null
+    flyoverHeader.value = null
 }
 const currentRoute = computed(() => {
     const route = useRoute();
