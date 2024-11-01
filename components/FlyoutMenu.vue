@@ -28,9 +28,9 @@
                 </div>
 
                 <div class="h-auto bg-white w-full">
-                    <div class="grid grid-cols-4 w-full h-full">
+                    <div class="grid grid-cols-3 w-full h-full">
                         <div class="bg-gray-50 col-span-1">
-                            <div class="relative pl-5 py-5 flex flex-col gap-3">
+                            <div class="relative pl-10 py-5 flex flex-col gap-3">
                                 <div v-for="(item, index) in currentMenuItems">
                                     <p @click="setSubmenu(item, index)"
                                         :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-3 ml-4">
+                        <div class="col-span-2 ml-4">
                             <div class="py-5 grid grid-cols-3 gap-5 max-w-3xl">
 
                                 <div class="flex flex-col gap-5">
