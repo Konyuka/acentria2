@@ -18,15 +18,14 @@ const company = computed(() => {
 </script>
 
 <template>
-    <section class="relative my-5">
-        <div class="container">
-            <div class="mx-auto max-w-6xl pb-2 text-left">
-                <h2 id=""
-                    class="font-sans text-3xl  font-semibold lg:pb-4">
+    <section class="relative my-5 mx-auto container">
+        <div class="">
+            <div class="pb-2 text-left">
+                <h2 id="" class="font-sans text-3xl  font-semibold lg:pb-4">
                     Let’s <span class="text-brand-primary">Talk</span>
                 </h2>
             </div>
-            <div class="container max-w-7xl grid grid-cols-1 gap-5 lg:grid-cols-form-block">
+            <div class=" grid grid-cols-1 gap-5 lg:grid-cols-form-block">
 
                 <div class="h-fit rounded-xl bg-brand-primary px-5 md:px-12 py-5 md:py-14 shadow-card">
                     <h5 class="font-sans text-sm text-white leading-tight lg:leading-tight pb-2">

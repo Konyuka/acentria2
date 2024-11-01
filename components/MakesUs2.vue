@@ -24,7 +24,7 @@ const incentives = [
 
         <div class="bg-white pt-10 font-sans">
 
-            <div class="max-w-6xl mx-auto justify-between content-center">
+            <div class="container max-w-6xl mx-auto justify-between content-center">
                 <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
                     About <span class="text-brand-primary">Us</span>
                 </h2>

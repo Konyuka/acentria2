@@ -20,9 +20,9 @@
 
 
             <PopoverPanel
-                class="mt-14 w-screen absolute inset-x-0 top-0 -z-20 bg-white shadow-lg ring-1 border-1 ring-gray-900/5">
+                class="mt-14 w-screen mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg ring-1 border-1 ring-gray-900/5">
                 <div class="w-full h-10 bg-black justify-center content-center mt-0">
-                    <div class="max-w-7xl mx-auto font-bold text-xl text-white">
+                    <div class="ml-2 max-w-7xl mx-auto font-bold text-xl text-white">
                         {{ flyoverHeader }}
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                 <div class="h-auto bg-white w-full">
                     <div class="grid grid-cols-4 w-full h-full">
                         <div class="bg-gray-50 col-span-1">
-                            <div class="relative pl-20 py-5 flex flex-col gap-5">
+                            <div class="relative pl-5 py-5 flex flex-col gap-3">
                                 <div v-for="(item, index) in currentMenuItems">
                                     <p @click="setSubmenu(item, index)"
                                         :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
@@ -43,8 +43,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-3 ml-10">
-                            <div class="py-5 grid grid-cols-3 gap-5 max-w-4xl">
+                        <div class="col-span-3 ml-4">
+                            <div class="py-5 grid grid-cols-3 gap-5 max-w-3xl">
 
                                 <div class="flex flex-col gap-5">
                                     <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
@@ -153,7 +153,7 @@
                 <div class="bg-black/20">
                     <div class="mx-auto max-w-7xl px-0">
                         <div
-                            class=" grid grid-cols-3 divide-y divide-gray-900/5 gap-10 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
+                            class="ml-2 grid grid-cols-3 divide-y divide-gray-900/5 gap-10 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
                             <div class="flex gap-20 col-span-2">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
                                     class="group button-animation flex items-center hover:text-black gap-x-2.5 p-3 px-6 text-sm font-bold leading-6 text-white sm:justify-center sm:px-0">
@@ -856,9 +856,9 @@ const currentRoute = computed(() => {
     return route.path;
 })
 watch(currentRoute, (newValue) => {
-    if (newValue) {
-        closeFlyOver()
-    }
+    closeFlyOver()
+    // if (newValue) {
+    // }
 })
 
 const setSubmenu = (menu, index) => {

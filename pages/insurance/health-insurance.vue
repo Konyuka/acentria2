@@ -4,7 +4,7 @@ import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
     subtitle: "Health Insurance",
-    title: `Your health is, <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Your greatest wealth </span>`,
+    title: `Your health is, <span class="font-sans tracking-normal text-white leading-tight lg:leading-tight"> Your greatest wealth </span>`,
     image:
         "https://images.pexels.com/photos/3845129/pexels-photo-3845129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     content:

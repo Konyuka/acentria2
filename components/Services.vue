@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white/85 py-5 font-sans">
-        <div class="mx-auto max-w-7xl px-2">
+        <div class="container mx-auto max-w-6xl px-2">
             <div class="mx-auto max-w-6xl lg:mx-0">
                 <h2 class="text-pretty text-3xl font-semibold tracking-tight text-black">
                     Our Lines <span class="text-brand-primary">of Business</span>
@@ -8,7 +8,7 @@
             </div>
             <div class="mx-auto mt-8 max-w-2xl lg:max-w-none">
                 <dl class="grid max-w-xl grid-cols-1 gap-10 lg:max-w-none lg:grid-cols-5">
-                    <div v-for="feature in features" :key="feature.name" class="flex flex-col border-r-2 border-black">
+                    <div v-for="feature in features" :key="feature.name" class="flex flex-col border-b-2 py-4 border-black">
                         <dt class="text-base font-semibold leading-7 text-black">
                             <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
                                 <i :class="feature.icon" class=" text-white" aria-hidden="true" />

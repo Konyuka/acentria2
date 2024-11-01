@@ -94,8 +94,8 @@ onMounted(() => {
                 <MakesUs2 />
               </div>
 
-              <div class="relative min-h-[30vh] min-w-screen">
-                <div class="bottom-0 pl-16 absolute max-w-6xl mx-auto">
+              <div class="container relative min-h-[30vh] min-w-screen">
+                <div class="bottom-0 absolute max-w-7xl mx-auto">
 
                   <h2
                     class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-white">
@@ -137,10 +137,50 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
+
+                <div class="container bottom-0 max-w-6xl mx-auto">
+                  <h2
+                    class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
+                    Our <span class="text-brand-primary">Purpose</span>
+                  </h2>
+                </div>
+
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+
+                  <div class="flex flex-col justify-center lg:basis-1/2">
+
+                    <div class="text-light-content pb-5 md:pb-6">
+                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        In our daily work, not only do we meet our legal and regulatory obligations, but we aspire to
+                        exceed people's expectations.
+
+                        We focus on the areas where, as a Group, our activity can have the greatest impact, helping more
+                        people and businesses prosper in an inclusive, sustainable way.
+                        <br><br>
+                        Our commitment goes beyond compliance; we strive to set new standards of excellence in
+                        everything we do.
+                        By prioritizing integrity and transparency, we build trust with our clients, partners, and
+                        communities.
+
+                        We believe that our success is intertwined with the well-being of the communities we serve.
+                        Through innovative solutions and responsible practices, we aim to create lasting positive
+                        change.
+
+                      </p>
+                    </div>
+                  </div>
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" width="400" height="350" decoding="async"
+                      data-nimg="1" style="color: transparent; object-fit: contain" class="shadow-2xl rounded-lg"
+                      src="/img/waterfal.jpeg" data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                </div>
+
+
               </div>
 
               <section id="" class="bg-white relative md:py-2  text-left">
-                <div class="container px-4">
+                <div class="container">
                   <h2
                     class="text-left font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-1">
                     What drives us at <br>
@@ -150,7 +190,7 @@ onMounted(() => {
                   </h2>
 
                   <div class=" !font-sans container my-1">
-                    <div class="mx-auto max-w-7xl py-5 sm:px-2 lg:px-4">
+                    <div class="mx-auto max-w-7xl py-5">
                       <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
                         <div class="grid grid-cols-4 gap-5">
 
@@ -225,21 +265,11 @@ onMounted(() => {
                 </div>
               </section>
 
+              <section class="container max-w-6xl mx-auto relative py-5">
 
-
-
-
-              <!-- <div class="font-sans justify-between content-center bg-white py-5">
-                <h2 class="container text-3xl font-semibold tracking-tight text-gray-900 text-left max-w-6xl mx-auto">
+                <div class="py-5 text-3xl font-semibold tracking-tight text-white text-left">
                   Our <span class="text-brand-primary">Commitments</span>
-                </h2>
-              </div> -->
-
-              <section class="container relative py-5">
-
-                <h2 class="py-5 container text-3xl font-semibold tracking-tight text-white text-left max-w-6xl mx-auto">
-                  Our <span class="text-brand-primary">Commitments</span>
-                </h2>
+                </div>
 
                 <div class=" px-4">
                   <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
@@ -312,71 +342,16 @@ onMounted(() => {
                 </div>
               </div>
 
-
-              <!-- <div class="mx-auto max-w-screen">
-                <div
-                  class="relative bg-gray-900 px-6 py-20 shadow-xl sm:rounded-xs sm:px-10 sm:py-24 md:px-12 lg:px-40">
-                  <img class="absolute inset-0 h-full w-full object-cover brightness-50 saturate-10"
-                    src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="" />
-                  <div class="absolute inset-0 bg-gray-900/5 mix-blend-multiply" />
-                  
-                  <div class="relative mx-auto max-w-2xl lg:mx-0">
-
-                    <figure>
-                      <blockquote class="mt-6 text-xs font-semibold text-white sm:text-xl sm:leading-5 ">
-                        <p>
-                          Our initiatives focus on reducing our environmental impact, promoting ethical
-                          business practices,
-                          and contributing positively to the communities we serve. We believe in creating
-                          long-term value
-                          for our stakeholders by integrating sustainable practices into our core
-                          operations and fostering
-                          a culture of responsibility and transparency.
-                        </p>
-                      </blockquote>
-                      <figcaption class="mt-6 text-base text-white">
-                        <NuxtLink to="/csr"
-                          class="underline underline-offset-8 hover:button-animation font-semibold tracking-widest">
-                          Learn More <i class="fas fa-caret-right"></i>
-                        </NuxtLink>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-0">
-                <div class="container">
-                  <div
-                    class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                    <div
-                      class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                      <div class="w-full">
-                        <p
-                          class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
-                          At our company, we specialize in providing comprehensive insurance and reinsurance solutions,
-                          backed by expert actuarial services and strategic investment management. Our cutting-edge
-                          technology ensures that we deliver innovative and efficient solutions tailored to meet the
-                          unique needs of our clients. Trust us to safeguard your future with precision and excellence.
-                        </p>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
-              <div class=" w-full h-full">
-                <div class=" !font-sans container my-0">
-                  <div class="mx-auto max-w-7xl py-10 sm:px-2 lg:px-4">
-                    <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
-                      <div class="max-w-7xl justify-between content-center">
-                        <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left max-w-6xl mx-auto">
+              <div class=" w-full h-full container mx-auto max-w-6xl">
+                <div class=" !font-sans  my-0">
+                  <div class="py-10 sm:px-2 lg:px-4">
+                    <div class="lg:max-w-none">
+                      <div class="justify-between content-center">
+                        <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
                           Join Our <span class="text-brand-primary">Team</span>
                         </h2>
                       </div>
-                      <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3 max-w-6xl mx-auto">
+                      <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
                         <div v-for="member in joinAsMembers" :key="member.name"
                           class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
                           <div class="sm:flex-shrink-0 flex justify-center">

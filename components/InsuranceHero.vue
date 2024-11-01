@@ -25,12 +25,12 @@ const props = defineProps({
                         class="text-left text-xl font-bold tracking-tight text-brand-primary sm:text-6xl font-sans mb-4">
                         {{ InsuranceBannerContent.subtitle }}
                     </h2>
-                    <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
-                        {{ InsuranceBannerContent.title }}
+                    <h2 v-html="InsuranceBannerContent.title" class="text-left text-3xl font-bold tracking-tight text-white font-sans">
+                    
                     </h2>
                     <div class="mt-5 mx-auto text-left">
                         <div class="px-20">
-                            <p class="font-sans tracking-normal text-xs text-white leading-tight lg:leading-tight">
+                            <p class="font-sans tracking-normal text-sm text-white leading-tight lg:leading-tight">
                                 {{ InsuranceBannerContent.content }}
                             </p>
                         </div>

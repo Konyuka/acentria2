@@ -29,7 +29,7 @@ const contactsContent = ref({
             icon: 'fas fa-calculator',
             title: 'Box Office',
             description: 'P.O Box 5864-00100 <br> Nairobi, Kenya',
-        },   
+        },
     ]
 })
 </script>
@@ -38,6 +38,9 @@ const contactsContent = ref({
     <section>
         <div>
 
+
+            
+
             <div class="bg-white py-8 mt-24">
 
                 <div class="isolate !mb-5 py-5 md:py-0 mt-5">
@@ -45,10 +48,9 @@ const contactsContent = ref({
                         <div class="container overflow-hidden">
 
                             <div class="max-w-full">
-                                <div
-                                    class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
+                                <div class=" gap-x-2 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
 
-                                    <div class="flex w-full max-w-lg flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
+                                    <div class="flex w-full max-w-3xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
                                         <h1 id=""
                                             class="font-sans text-3xl font-semibold leading-tight md:text-4xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0">
                                             <span
@@ -56,22 +58,35 @@ const contactsContent = ref({
                                                 with</span> <br>
                                             Our Experts
                                         </h1>
-                                        <p class="font-sans text-xs leading-normal font-regular text-light-content">
-                                            We value your
-                                            trust and are committed to safeguarding your future with precision and
-                                            excellence.
+                                        <p
+                                            class="font-sans text-xs leading-normal font-regular text-light-content mr-10">
+                                            We value your trust and are committed to safeguarding your future with
+                                            precision and excellence.
                                             If you have any questions or need assistance, please don't hesitate to
                                             contact us.
                                             We are here to help and look forward to hearing from you.
+                                            <br> <br>
+                                            We believe in building lasting relationships with our
+                                            clients, grounded in trust and mutual respect.
+                                            Our team of dedicated professionals is always ready to provide you with the
+                                            support and guidance you need.
+                                            Whether you are looking for information about our services, need help with a
+                                            specific issue, or just want to learn more about how we can assist you, we
+                                            are here for you.
+                                            <br><br>
+                                            We understand the importance of timely and accurate communication, and we
+                                            are committed to responding to your inquiries promptly.
+                                            Thank you for choosing Acentria Group. We look forward to serving you and
+                                            helping you achieve your goals.
                                         </p>
 
                                     </div>
 
-                                    <div class="relative py-4">
+                                    <div class="relative py-4 mt-5">
                                         <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
-                                            width="500" height="350" style="color: transparent; object-fit: contain"
+                                            style="color: transparent; object-fit: contain"
                                             src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
-                                            class="rounded-xl" />
+                                            class="rounded-xl w-auto h-[50vh]" />
                                     </div>
 
 
