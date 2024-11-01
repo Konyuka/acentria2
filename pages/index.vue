@@ -99,7 +99,7 @@ onMounted(() => {
 
                   <h2
                     class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-white">
-                    Our <span class="text-brand-primary">Leadership</span>
+                    Our <span class="text-brand-primary">Purpose</span>
                   </h2>
                 </div>
               </div>
@@ -107,43 +107,6 @@ onMounted(() => {
 
 
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
-
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                  <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain" class="shadow-2xl rounded-lg"
-                      src="/img/careers.jpg" data-v-inspector="components/Why.vue:34:17" />
-                  </div>
-                  <div class="flex flex-col justify-center lg:basis-1/2">
-
-                    <div class="text-light-content pb-5 md:pb-6">
-                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                        Our success is driven by a dynamic and dedicated
-                        leadership team. Comprising individuals with diverse
-                        expertise and a shared commitment to excellence, our
-                        leaders play a pivotal role in shaping the vision,
-                        strategy, and culture of our organization. Meet the
-                        visionaries and strategists who lead us toward
-                        innovation, growth, and success. Their unwavering
-                        dedication and forward-thinking approach ensure that we
-                        remain at the forefront of our industry, continuously
-                        adapting to new challenges and opportunities.
-                      </p>
-                      <NuxtLink href="/meet-the-team"
-                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
-                        Meet the Team
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="container bottom-0 max-w-6xl mx-auto">
-                  <h2
-                    class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
-                    Our <span class="text-brand-primary">Purpose</span>
-                  </h2>
-                </div>
 
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
@@ -173,6 +136,44 @@ onMounted(() => {
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain" class="w-full h-60 shadow-2xl rounded-lg"
                       src="/img/waterfal.jpeg" data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                </div>
+
+
+                <div class="container bottom-0 max-w-6xl mx-auto border-t-2">
+                  <h2
+                    class="mt-10 text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
+                    Our <span class="text-brand-primary">Leadership</span>
+                  </h2>
+                </div>
+
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      style="color: transparent; object-fit: contain" class="w-full h-60 shadow-2xl rounded-lg"
+                      src="/img/careers.jpg" data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                  <div class="flex flex-col justify-center lg:basis-1/2">
+
+                    <div class="text-light-content pb-5 md:pb-6 py-auto">
+                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        Our success is driven by a dynamic and dedicated
+                        leadership team. Comprising individuals with diverse
+                        expertise and a shared commitment to excellence, our
+                        leaders play a pivotal role in shaping the vision,
+                        strategy, and culture of our organization. Meet the
+                        visionaries and strategists who lead us toward
+                        innovation, growth, and success. Their unwavering
+                        dedication and forward-thinking approach ensure that we
+                        remain at the forefront of our industry, continuously
+                        adapting to new challenges and opportunities.
+                      </p>
+                      <NuxtLink href="/meet-the-team"
+                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        Meet the Team
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                      </NuxtLink>
+                    </div>
                   </div>
                 </div>
 
@@ -314,7 +315,7 @@ onMounted(() => {
               </h1>
 
 
-              <div class="2xl:mx-auto bg-black/80 2xl:container md:px-20 px-4 md:py-12 py-9">
+              <div class="2xl:mx-auto bg-white/90 2xl:container md:px-20 px-4 md:py-12 py-9">
                 <div class="relative rounded-md">
                   <img
                     src="https://www.shutterstock.com/shutterstock/photos/2509093239/display_1500/stock-photo-autumn-natural-bokeh-background-with-maple-trees-in-park-with-copyspace-2509093239.jpg"

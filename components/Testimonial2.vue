@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="mt-2">
                                     <NuxtLink to="/reviews-and-testimonials"
-                                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-2 text-sm sm:text-md rounded-sm mt-10">
                                         Read Reviews & Watch Testimonials
                                         <i class="fas fa-arrow-right text-primary ml-2"></i>
                                     </NuxtLink>
