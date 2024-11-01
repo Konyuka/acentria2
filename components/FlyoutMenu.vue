@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="col-span-2 ml-4">
-                            <div class="py-5 grid grid-cols-3 gap-5 max-w-3xl">
+                            <div class="py-5 grid grid-cols-3 gap-5 max-w-full px-5">
 
                                 <div class="flex flex-col gap-5">
                                     <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
