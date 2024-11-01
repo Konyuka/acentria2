@@ -160,7 +160,7 @@ onBeforeUnmount(() => {
 
                 <div class="flex font-sans mb-0 mt-1">
 
-                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="260" height="50" decoding="async"
+                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="200" height="50" decoding="async"
                             data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
                     </NuxtLink>
 
@@ -169,7 +169,7 @@ onBeforeUnmount(() => {
                 </div>
 
                 <!-- Top Links -->
-                <div class="flex flex-col gap-4 items-center justify-end text-xs text-black">
+                <div class="flex flex-col gap-2 items-center justify-end text-xs text-black">
                     <!-- socials -->
                     <div class="pl-32 flex items-center justify-end md:justify-end md:col-span-1">
                         <div class="flex gap-6">
@@ -243,102 +243,9 @@ onBeforeUnmount(() => {
             <div class="mx-auto ">
                 <div class="flex font-sans">
 
-                    <div class="flex gap-2 my-2">
+                    <div class="flex gap-2 my-1">
                         <FlyoutMenu v-for="menu in menus" :theMenu="menu" />
                     </div>
-
-
-                    <!-- <div class="z-50 content-center">
-                        <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="/" @mouseenter="showDropdown('about')" @mouseleave="hideDropdown('about')"
-                                :class="[isAboutDropdownVisible ? '!text-brand-primary !font-bold' : 'font-semibold', currentRoute === '/about-us/who-we-are' ? '!text-brand-primary scale-105 !font-bold' : '']"
-                                class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                About Us
-                            </NuxtLink>
-
-
-                            <AboutDropDown v-show="isAboutDropdownVisible" @mouseenter="showDropdown('about')"
-                                @mouseleave="hideDropdown('about')" class="" />
-
-
-
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="z-50 content-center">
-                        <div class="relative flex flex-col px-4 hover:cursor-default">
-                            <NuxtLink to="/acentria-group-insurance" @mouseenter="showDropdown('insurance')"
-                                @mouseleave="hideDropdown('insurance')"
-                                :class="[isInsuranceDropdownVisible ? '!text-brand-primary !font-bold' : 'font-semibold', currentRoute === '/acentria-group-insurance' ? '!text-brand-primary scale-105' : '']"
-                                class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                Insurance
-                            </NuxtLink>
-
-
-                            <InsuranceDropDown v-show="isInsuranceDropdownVisible"
-                                @mouseenter="showDropdown('insurance')" @mouseleave="hideDropdown('insurance')"
-                                class="" />
-
-                        </div>
-                    </div>
-
-                    <div class="z-50 content-center">
-                        <div class="z-50">
-                            <div class="relative flex flex-col px-4 hover:cursor-default">
-                                <NuxtLink to="/acentria-group-reinsurance" @mouseenter="showDropdown('reinsurance')"
-                                    @mouseleave="hideDropdown('reinsurance')"
-                                    :class="[isReinsuranceDropdownVisible ? '!text-brand-primary' : 'font-semibold', currentRoute === '/acentria-group-reinsurance' ? '!text-brand-primary scale-105' : '']"
-                                    class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                    Reinsurance
-                                </NuxtLink>
-
-                                <ReinsuranceDropDown v-show="isReinsuranceDropdownVisible"
-                                    @mouseenter="showDropdown('reinsurance')" @mouseleave="hideDropdown('reinsurance')"
-                                    class="" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="z-50 content-center">
-                        <div class="z-50">
-                            <div class="relative flex flex-col px-4 hover:cursor-default">
-                                <NuxtLink to="/acentria-group-actuarial" @mouseenter="showDropdown('actuarial')"
-                                    @mouseleave="hideDropdown('actuarial')"
-                                    :class="[isActuarialDropdownVisible ? '!text-brand-primary !font-medium' : 'font-semibold', currentRoute === '/acentria-group-actuarial' ? '!text-brand-primary scale-105' : '']"
-                                    class="mt-5 flex pb-5 pt-4 text-md    hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                    Actuarial
-                                </NuxtLink>
-
-                                <ActuarialDropDown v-show="isActuarialDropdownVisible"
-                                    @mouseenter="showDropdown('actuarial')" @mouseleave="hideDropdown('actuarial')"
-                                    class="" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="z-50 content-center">
-                        <div class="z-50">
-                            <a href="https://tech.acentriagroup.com/" target="_blank"
-                                class="relative flex flex-col px-4 hover:cursor-default">
-                                <div
-                                    class="mt-5 flex pb-5 pt-4 text-md  font-semibold  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                    Technologies
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="z-50 content-center">
-                        <div class="z-50">
-                            <div class="relative flex flex-col px-4 hover:cursor-default">
-                                <NuxtLink to="/acentria-group-investment"
-                                    :class="[currentRoute === '/acentria-group-investment' ? '!text-brand-primary scale-105' : 'font-semibold']"
-                                    class="mt-5 flex pb-5 pt-4 text-md  font-medium  hover:font-bold text-light-title hover:text-brand-primary relative after:absolute after:bottom-0 after:w-0 after:bg-brand-primary after:h-1 after:transition-width after:duration-500 group-hover:w-full after:hover:w-full after:content[&quot;&quot;] false">
-                                    Investments
-                                </NuxtLink>
-                            </div>
-                        </div>
-                    </div> -->
 
                 </div>
 

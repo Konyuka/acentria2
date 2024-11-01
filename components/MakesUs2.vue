@@ -26,6 +26,46 @@ const incentives = [
 
             <div class="container max-w-6xl mx-auto justify-between content-center">
                 <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
+                    Our <span class="text-brand-primary">Purpose</span>
+                </h2>
+            </div>
+
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+
+                <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                        style="color: transparent; object-fit: contain" class="w-full h-52 shadow-2xl rounded-lg"
+                        src="/img/waterfal.jpeg" data-v-inspector="components/Why.vue:34:17" />
+                </div>
+                <div class="mt-6 flex flex-col justify-center  items-center lg:basis-1/2">
+
+                    <div class="text-light-content pb-5 md:pb-6">
+                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                            In our daily work, not only do we meet our legal and regulatory obligations, but we aspire
+                            to
+                            exceed people's expectations.
+
+                            We focus on the areas where, as a Group, our activity can have the greatest impact, helping
+                            more
+                            people and businesses prosper in an inclusive, sustainable way.
+                            <br><br>
+                            Our commitment goes beyond compliance; we strive to set new standards of excellence in
+                            everything we do.
+                            By prioritizing integrity and transparency, we build trust with our clients, partners, and
+                            communities.
+
+                            We believe that our success is intertwined with the well-being of the communities we serve.
+                            Through innovative solutions and responsible practices, we aim to create lasting positive
+                            change.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container max-w-6xl mx-auto justify-between content-center">
+                <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
                     About <span class="text-brand-primary">Us</span>
                 </h2>
             </div>
