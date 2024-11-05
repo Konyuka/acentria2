@@ -90,7 +90,6 @@ onMounted(() => {
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
               <div class="w-full h-full bg-white">
-                <!-- <MakesUs /> -->
                 <MakesUs2 />
               </div>
 
@@ -139,6 +138,45 @@ onMounted(() => {
                   </div>
                 </div>
 
+                <div class="container relative min-w-screen mt-14">
+                  <div class="bottom-0 absolute max-w-7xl mx-auto">
+
+                    <h2
+                      class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
+                      Corporate <span class="text-brand-primary">Culture</span>
+                    </h2>
+                  </div>
+                </div>
+
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                  <div class="flex flex-col justify-center lg:basis-1/2">
+                    <div class="text-light-content pb-5 md:pb-6 py-auto">
+                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        Our mission is to exceed our stakeholders' expectations by delivering excellence in every aspect
+                        of our business, every day.
+                        Central to this mission is fostering a strong corporate culture - a business environment where
+                        everything we do is guided by our core values of Integrity, Innovation, and Excellence.
+                        "The Acentria Way" embodies our global culture, perfectly aligned with our corporate strategy.
+                        It encompasses our purpose, our vision, and our approach to conducting business.
+                        It is the foundation of our organization, ensuring that we operate as a responsible and
+                        forward-thinking company.
+                      </p>
+                      <NuxtLink href="/corporate-culture"
+                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        Learn More
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                      </NuxtLink>
+                    </div>
+                  </div>
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      style="color: transparent; object-fit: contain"
+                      class="w-full h-60 shadow-2xl rounded-lg !object-cover"
+                      src="https://images.pexels.com/photos/3869651/pexels-photo-3869651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                </div>
+
 
               </div>
 
@@ -155,22 +193,7 @@ onMounted(() => {
                   <div class=" !font-sans container my-1">
                     <div class="mx-auto max-w-7xl py-5">
                       <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
-                        <div class="grid grid-cols-4 gap-5">
-
-                          <div
-                            class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
-                            <div class="flex h-fit flex-col"><i
-                                class="fas fa-check-circle text-black text-4xl pb-4 group-hover:text-brand-primary"
-                                translate="no"></i>
-                              <h3
-                                class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
-                                Our Purpose</h3>
-                              <p class="mt-2 text-xs text-gray-500">
-                                To Empower clients through innovative solutions, which
-                                enhancing prosperity and add value to a dynamic environment.
-                              </p>
-                            </div>
-                          </div>
+                        <div class="grid grid-cols-3 gap-5">
 
                           <div
                             class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
@@ -277,7 +300,7 @@ onMounted(() => {
               </h1>
 
 
-              <div class="2xl:mx-auto bg-white/90 2xl:container md:px-20 px-4 md:py-12 py-9">
+              <div class="2xl:mx-auto bg-black/50 2xl:container md:px-20 px-4 md:py-12 py-9">
                 <div class="relative rounded-md">
                   <img
                     src="https://www.shutterstock.com/shutterstock/photos/2509093239/display_1500/stock-photo-autumn-natural-bokeh-background-with-maple-trees-in-park-with-copyspace-2509093239.jpg"

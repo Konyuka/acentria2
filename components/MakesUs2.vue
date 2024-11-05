@@ -34,8 +34,9 @@ const incentives = [
 
                 <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                        style="color: transparent; object-fit: contain" class="w-full h-52 shadow-2xl rounded-lg"
-                        src="/img/waterfal.jpeg" data-v-inspector="components/Why.vue:34:17" />
+                        style="color: transparent; object-fit: contain" class="w-full h-60 shadow-2xl rounded-lg !object-cover"
+                        src="https://images.pexels.com/photos/669986/pexels-photo-669986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="mt-6 flex flex-col justify-center  items-center lg:basis-1/2">
 

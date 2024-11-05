@@ -16,7 +16,7 @@ const subtitle = computed(() => {
 
 <template>
 
-    <div class="relative isolate overflow-hidden bg-white py-20 mt-40 mb-5">
+    <div class="relative isolate overflow-hidden bg-white py-20 mt-20 mb-5">
 
         <img :src="content.image" alt="Success Team Hands Up"
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />

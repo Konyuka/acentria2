@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative isolate overflow-hidden bg-white py-32 mt-40">
+    <div class="relative isolate overflow-hidden bg-white py-32 mt-20">
 
         <img :src="content.image"
             alt="Success Team Hands Up"

@@ -1,12 +1,12 @@
 <template>
-    <Popover class="isolate z-50 shadow-3xl w-32 font-sans">
-        <div class="bg-white py-2 justify-center flex">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <Popover class="isolate z-50 shadow-3xl w-26 font-sans bg-transparent">
+        <div class="py-2 justify-center flex">
+            <div class=" px-1">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
-                    class="border-0 ring-0 inline-flex items-center gap-x-1 text-sm font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
+                    class="border-0 ring-0 inline-flex items-center gap-x-1 text-xs font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
                     <div
-                        class="border-0 ring-0 mr-1 flex h-6 w-6 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
+                        class="border-0 ring-0 mr-0 flex h-5 w-5 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
                         <i :class="theMenu.icon" class="text-xs text-white"></i>
                     </div>
                     {{ theMenu.name }}
@@ -20,17 +20,21 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="mt-12 w-screen mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg ring-1 border-1 ring-gray-900/5">
-                <div class="w-full h-10 bg-black justify-center content-center mt-0">
-                    <div class="ml-2 max-w-7xl mx-auto font-bold text-xl text-white">
+                class="!-left-40 w-[80vw] mt-14 mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg">
+
+                <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-gray-600 bg-opacity-50 transition-opacity"
+                    aria-hidden="true"></div>
+
+                <div class="h-10 bg-white justify-center content-center mt-0">
+                    <div class="ml-10  font-bold text-xl text-black">
                         {{ flyoverHeader }}
                     </div>
                 </div>
 
-                <div class="h-auto bg-white w-full">
-                    <div class="grid grid-cols-3 w-full h-full">
+                <div class="h-auto bg-white">
+                    <div class="grid grid-cols-3 h-full">
                         <div class="bg-gray-50 col-span-1">
-                            <div class="relative pl-10 py-5 flex flex-col gap-3">
+                            <div class="relative pl-16 py-5 flex flex-col gap-3">
                                 <div v-for="(item, index) in currentMenuItems">
                                     <p @click="setSubmenu(item, index)"
                                         :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
@@ -44,9 +48,9 @@
                             </div>
                         </div>
                         <div class="col-span-2 ml-4">
-                            <div class="py-5 grid grid-cols-3 gap-5 max-w-full px-5">
+                            <div class="py-5 grid grid-cols-3 gap-2 max-w-full px-2">
 
-                                <div class="flex flex-col gap-5">
+                                <div class="flex flex-col gap-5 border-r-2 border-gray-600">
                                     <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                         :key="submenuItem.name"
                                         class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-xs">
@@ -54,9 +58,9 @@
                                     </NuxtLink>
                                 </div>
 
-                                <div class="flex flex-col gap-5">
-                                    <h2 class="text-xl font-bold">{{ currentMenuSubtitle }}</h2>
-                                    <p class="pr-20 text-xs">
+                                <div class="flex flex-col gap-5 mx-3">
+                                    <h2 class="text-lg font-bold">{{ currentMenuSubtitle }}</h2>
+                                    <p class="text-xs">
                                         {{ currentMenuDescription }}
                                     </p>
                                 </div>
@@ -64,8 +68,7 @@
                                 <div>
                                     <div class=" w-auto border-b border-gray-300 dark:border-gray-700">
                                         <div class="w-full rounded h-32">
-                                            <img src="/img/call.jpg" alt="Display picture of Silene Tokyo"
-                                                role="img"
+                                            <img src="/img/call.jpg" alt="Display picture of Silene Tokyo" role="img"
                                                 class="object-cover h-full w-full overflow-hidden rounded shadow">
                                         </div>
                                         <div class="flex w-full items-center justify-between pt-6 pb-1">
@@ -99,68 +102,16 @@
                     </div>
                 </div>
 
-                <!-- <div
-                    class="!overflow-y-scroll my-5 z-50 bg-white mx-auto grid grid-cols-1 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 gap-8">
-                    <template v-for="(item, index) in currentMenuItems" :key="item.name">
-                        <div @click="setSubmenu(item, index)"
-                            :class="[currentSubmenu === item.name ? 'bg-gray-200 scale-105' : 'bg-gray-100']"
-                            class="relative hover:cursor-pointer hover:scale-105 duration-700 ease-in-out transform transition group mx-3 flex gap-6 rounded-sm text-sm leading-6 hover:bg-gray-200 sm:flex-col sm:py-3 px-3">
-
-                            <div class="flex gap-2">
-
-                                <i :class="[item.icon, currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
-                                    class=" group-hover:text-brand-primary text-xs"></i>
-
-                                <a :href="item.href" v-html="item.name"
-                                    :class="[currentSubmenu === item.name ? 'text-brand-primary' : 'text-black']"
-                                    class="flex items-center justify-center font-semibold  text-xs">
-                                </a>
-
-                            </div>
-                            <div v-if="currentSubmenu === item.name"
-                                class="absolute -bottom-4 ml-5 bg-gray-200 h-14 w-3 -mb-10">
-                            </div>
-                        </div>
-
-                        <div v-if="shouldInsertSubmenu(index)" class="col-span-5 ">
-                            <div class="mx-auto max-w-full">
-                                <div
-                                    class="z-50 bg-gray-200 mx-auto grid grid-cols-1 gap-4 px-5 py-2 sm:grid-cols-2 sm:gap-x-3 sm:gap-y-0 sm:py-10 lg:grid-cols-5 lg:gap-4 lg:px-8 xl:gap-8">
-                                    <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
-                                        :key="submenuItem.name"
-                                        class="bg-gray-100 button-animation group relative mx-2 flex gap-6 rounded-lg p-3 text-sm leading-0 hover:bg-gray-100 sm:flex-col">
-                                        <div>
-                                            <div class="flex justify-between content-center">
-                                                <p
-                                                    class="font-semibold text-gray-600 group-hover:text-brand-primary text-xs">
-                                                    {{ submenuItem.name }}
-                                                    <span class="absolute inset-0" />
-                                                </p>
-                                                <span>
-                                                    <i
-                                                        class="fas fa-arrow-right text-[8px] group-hover:text-brand-primary"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </NuxtLink>
-                                </div>
-                            </div>
-                        </div>
-
-                    </template>
-</div> -->
-
-                <div class="bg-black/20">
+                <div class="bg-black">
                     <div class="mx-auto max-w-7xl px-0">
                         <div
-                            class="ml-2 grid grid-cols-3 divide-y divide-gray-900/5 gap-10 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
-                            <div class="flex gap-20 col-span-2">
-                                <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
-                                    class="group button-animation flex items-center hover:text-black gap-x-2.5 p-3 px-6 text-sm font-bold leading-6 text-white sm:justify-center sm:px-0">
-                                    <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
-                                    {{ item.name }} <i class="fas fa-arrow-right"></i>
-                                </NuxtLink>
-                            </div>
+                            class="ml-2 grid grid-cols-3 divide-y divide-gray-900/5 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
+                            <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
+                                class="group button-animation flex items-center hover:text-white gap-x-2.5 p-3 px-6 text-xs font-bold leading-6 text-white sm:justify-center sm:px-0">
+                                <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
+                                {{ item.name }} <i class="fas fa-arrow-right"></i>
+                            </NuxtLink>
+
                             <div>
 
                             </div>
@@ -289,7 +240,7 @@ const AboutMenus = ref([
         ]
     },
     {
-        name: 'Our Governance',
+        name: 'Leadership & Governance',
         subMenu: 'Governance Structure',
         description: 'Meet the leaders who guide Acentria Group towards success.',
         icon: 'fas fa-user-tie',

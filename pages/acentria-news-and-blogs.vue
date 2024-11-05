@@ -3,7 +3,7 @@ import axios from 'axios';
 import moment from 'moment';
 
 const blogs = ref(null);
-const currentMenu = ref('event');
+const currentMenu = ref('blogs');
 
 const formatDate = (date) => {
     return moment(date).format('lll');
@@ -84,10 +84,9 @@ onMounted(async () => {
                 </p>
             </div>
 
-            <div class="max-w-6xl mx-auto mt-10">
+            <div class="max-w-screen mx-auto mt-10">
                 <div class="sm:hidden px-4">
                     <label for="tabs" class="sr-only">Select a tab</label>
-                    <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
                     <select @change="setMobileMenu($event)" id="tabs" name="tabs"
                         class="block w-full rounded-md border-gray-300 focus:border-brand-primary focus:ring-brand-primary py-2 font-bold">
                         <option selected value="blogs">Blogs</option>
@@ -97,55 +96,33 @@ onMounted(async () => {
                 </div>
                 <div class="hidden sm:block font-sans">
                     <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
-                        <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
+                        <img src="https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
                         <div class="absolute inset-0 bg-black opacity-70"></div>
-                        <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
+                        <div class="container relative mx-auto max-w-6xl h-32 px-6 lg:px-8">
 
-                            <div class="border-2 divide-x divide-gray-200 border-gray-200">
+                            <div class="mt-10 border-2 divide-x divide-gray-200 border-gray-200">
                                 <nav class="-mb-px flex font-sans" aria-label="Tabs">
-                                    <button @click="setMenu('event')"
-                                        :class="[currentMenu == 'event' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                        class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-black">
-                                        <i class="fas fa-calendar-alt mr-2"></i> News & Events
-                                    </button>
                                     <button @click="setMenu('blogs')"
                                         :class="[currentMenu == 'blogs' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                        class="w-1/3 border-2  px-1 py-4 text-center text-md font-semibold   hover:text-black">
-                                        <i class="fas fa-blog mr-2"></i> Blogs
+                                        class="w-1/3 border-2  px-1 py-4 text-center text-md font-semibold   hover:text-brand-primary">
+                                        <i class="fas fa-blog mr-2"></i> Latest News
                                     </button>
-
+                                    <button @click="setMenu('event')"
+                                        :class="[currentMenu == 'event' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
+                                        class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-brand-primary">
+                                        <i class="fas fa-calendar-alt mr-2"></i> News Feeds
+                                    </button>
                                     <button @click="setMenu('media')"
                                         :class="[currentMenu == 'media' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                        class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-black">
+                                        class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-brand-primary">
                                         <i class="fas fa-images mr-2"></i> Media Kit
                                     </button>
                                 </nav>
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="border-2 divide-x divide-gray-200 border-gray-200">
-                        <nav class="-mb-px flex font-sans" aria-label="Tabs">
-                            <button @click="setMenu('event')"
-                                :class="[currentMenu == 'event' ? 'bg-gray-500 text-white' : 'border-transparent text-gray-500']"
-                                class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-black">
-                                <i class="fas fa-calendar-alt mr-2"></i> News & Events
-                            </button>
-                            <button @click="setMenu('blogs')"
-                                :class="[currentMenu == 'blogs' ? 'bg-gray-500 text-white' : 'border-transparent text-gray-500']"
-                                class="w-1/3 border-2  px-1 py-4 text-center text-md font-semibold   hover:text-black">
-                                <i class="fas fa-blog mr-2"></i> Blogs
-                            </button>
-
-                            <button @click="setMenu('media')"
-                                :class="[currentMenu == 'media' ? 'bg-gray-500 text-white' : 'border-transparent text-gray-500']"
-                                class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-black">
-                                <i class="fas fa-images mr-2"></i> Media Kit
-                            </button>
-                        </nav>
-                    </div> -->
                 </div>
             </div>
 
@@ -252,6 +229,10 @@ onMounted(async () => {
                             </div>
 
 
+                        </div>
+
+                        <div v-if="currentMenu == 'media'">
+                            <Gallery />
                         </div>
 
                     </div>

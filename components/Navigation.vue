@@ -1,7 +1,7 @@
 <script setup>
 const isScrolled = ref(false);
 const bottomBarClass = computed(() => {
-    return isScrolled.value ? 'sticky' : 'sticky';
+    return isScrolled.value ? 'sticky bg-white' : 'sticky';
 });
 
 
@@ -138,7 +138,7 @@ const hideDropdown = (menu) => {
 };
 
 const handleScroll = () => {
-    isScrolled.value = window.scrollY > 1;
+    isScrolled.value = window.scrollY > 100;
 };
 
 onMounted(() => {
@@ -153,84 +153,94 @@ onBeforeUnmount(() => {
 
 <template>
 
-    <div :class="bottomBarClass" class="bg-white">
-        <div class="relative z-50 mx-auto hidden w-full px-2 py-2 lg:block bg-white">
-            <div class="font-sans px-2 mx-auto flex flex-row items-center justify-between">
+    <div :class="bottomBarClass" class="z-50">
+        <div class="relative z-50 mx-auto hidden w-full px-2 my-2 lg:block">
+            <div class="font-sans px-1 mx-auto flex flex-row items-center justify-between">
 
 
-                <div class="flex font-sans mb-0 mt-1">
-
-                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="200" height="50" decoding="async"
-                            data-nimg="1" class="mr-8" style="color: transparent" src="/img/logo.png" />
-                    </NuxtLink>
-
-
-
-                </div>
-
-                <!-- Top Links -->
-                <div class="flex flex-col gap-2 items-center justify-end text-xs text-black">
+                <div class="flex flex-col font-sans mb-0 mt-1">
                     <!-- socials -->
-                    <div class="pl-32 flex items-center justify-end md:justify-end md:col-span-1">
-                        <div class="flex gap-6">
+                    <div class="flex items-center justify-end md:justify-end md:col-span-1">
+                        <!-- <div class="flex gap-5">
                             <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-lg fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-md fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://x.com/acentriagroup?lang=en" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-lg fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-md fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://www.facebook.com/Acentriagroup" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-lg fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-md fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://www.instagram.com/acentriagroup/" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-lg fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-md fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://www.tiktok.com/@acentria.group" target="_blank">
                                 <div
                                     class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
                                     <i
-                                        class="!text-lg fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
+                                        class="!text-md fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
+                        </div> -->
+                    </div>
+
+                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="200" height="50" decoding="async"
+                            data-nimg="1" class="mr-8" style="color: transparent" src="/img/LogoT.png" />
+                    </NuxtLink>
+
+                </div>
+
+                <div
+                    class="top-0 z-50 mx-auto hidden w-1/2 bottom-0 justify-between px-4 py-0 transition-all duration-200 lg:flex relative">
+                    <div class="mx-auto ">
+                        <div class="flex font-sans">
+
+                            <div class="flex gap-2 my-1">
+                                <FlyoutMenu v-for="menu in menus" :theMenu="menu" />
+                            </div>
+
                         </div>
                     </div>
-                    
-                    <div>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center justify-end text-xs text-black">
+
+                    <div class="">
                         <NuxtLink to="/"
                             :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            class=" relative mr-1 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
                             Home
                         </NuxtLink>
                         <NuxtLink to="/acentria-news-and-blogs"
                             :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
-                            News & Updates
+                            class=" relative mr-1 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            News
                         </NuxtLink>
                         <NuxtLink to="/acentria-group-careers"
                             :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-2 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            class=" relative mr-1 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
                             Careers
                         </NuxtLink>
                         <NuxtLink to="/contact-acentria-group"
                             :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
                             class=" relative px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
-                            Contacts Us
+                            Contacts
                         </NuxtLink>
                     </div>
 
@@ -238,20 +248,7 @@ onBeforeUnmount(() => {
             </div>
         </div>
 
-        <div
-            class="top-0 z-50 mx-auto hidden w-full bottom-0 justify-between px-4 py-0 transition-all duration-200 lg:flex false bg-white false relative">
-            <div class="mx-auto ">
-                <div class="flex font-sans">
 
-                    <div class="flex gap-2 my-1">
-                        <FlyoutMenu v-for="menu in menus" :theMenu="menu" />
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
 
         <div class="flex w-full flex-row justify-between bg-white lg:hidden">
 

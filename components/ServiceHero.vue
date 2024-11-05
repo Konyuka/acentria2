@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative w-full h-auto bg-cover bg-center bg-no-repeat false mt-40" style="
+    <div class="relative w-full h-auto bg-cover bg-center bg-no-repeat false mt-20" style="
                   background-image: url(https://cdn.sanity.io/images/33u1mixi/production/9586fc11ddcb60222de682cdb07fe9d57103448b-1440x595.svg?fit=max&amp;auto=format);
                 ">
         <div class="container">
