@@ -342,7 +342,7 @@ const products = [
                         </div>
                     </div>
                 </div>
-
+<!-- HI -->
                 <div class="bg-white font-sans">
 
                     <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:max-w-6xl lg:px-8">
