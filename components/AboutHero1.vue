@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <div class="relative h-[85vh] mt-2">
         <video autoplay muted loop
-            class="drop-shadow-md w-full h-[85vh] object-cover fixed top-0 left-0 z-[-1]"
+            class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
             src="/img/hd2.mp4" style="color: transparent">
             Your browser does not support the video tag.
         </video>

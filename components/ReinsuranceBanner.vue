@@ -8,7 +8,7 @@ const currenRoute = useRoute().name
 
 const subtitle = computed(() => {
     const str = currenRoute;
-    const firstPart = str.split('-')[0];
+    const firstPart = str.split('-')[1];
     return firstPart
 } ) 
 

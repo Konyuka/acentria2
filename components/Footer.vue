@@ -96,6 +96,11 @@ const menuItem = ref([
                 icon: 'fas fa-balance-scale',
                 link: '/ethics-and-compliance',
             },
+            {
+                name: 'Whistle Blowing',
+                icon: 'fas fa-bullhorn',
+                link: '/whistle-blowing',
+            },
         ]
     },
     {

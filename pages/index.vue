@@ -53,23 +53,27 @@ const joinAsMembers = ref([
 const commitments = ref([
   {
     name: 'Our Customers',
-    icon: 'fas fa-users', // Represents a group of people, suitable for customers
+    icon: 'fas fa-users', 
     description: 'We\'re committed to helping Australians live a life that\'s as healthy and as full as possible.',
+    link: '/our-commitment'
   },
   {
     name: 'Our Partners',
-    icon: 'fas fa-handshake', // Represents partnerships and collaboration
+    icon: 'fas fa-handshake', 
     description: 'Our partnerships with advisers, super funds and employer funds help us protect more Australians.',
+    link: '/our-commitment'
   },
   {
     name: 'Our People',
-    icon: 'fas fa-user-friends', // Represents a group of people, suitable for employees or team members
+    icon: 'fas fa-user-friends', 
     description: 'We\'ve built a culture that lets our people make the most of every opportunity.',
+    link: '/our-commitment'
   },
   {
     name: 'Our Communities',
-    icon: 'fas fa-globe', // Represents global community and involvement
+    icon: 'fas fa-globe', 
     description: 'Improving lives through active involvement and raising standards for the industry as a whole.',
+    link: '/our-commitment'
   },
 ])
 
@@ -260,7 +264,7 @@ onMounted(() => {
                 <div class=" px-4">
                   <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
 
-                    <div v-for="item in commitments"
+                    <NuxtLink :to="item.link" v-for="item in commitments"
                       class="shadow-2xl button-animation duration-700 group border-2 border-solid border-black shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-lg bg-black/10 p-5 w-full h-full">
 
                       <div class="flex h-fit flex-col">
@@ -274,7 +278,7 @@ onMounted(() => {
                           class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
                       </div>
 
-                    </div>
+                    </NuxtLink>
 
                   </div>
                 </div>
