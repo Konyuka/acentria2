@@ -60,62 +60,88 @@ const joinAsMembers = ref([
 const values = ref([
     {
         name: 'Integrity',
-        icon: 'fas fa-user-shield', 
+        icon: 'fas fa-user-shield',
     },
     {
         name: 'Innovation',
-        icon: 'fas fa-lightbulb', 
+        icon: 'fas fa-lightbulb',
     },
     {
         name: 'Excellence',
-        icon: 'fas fa-award', 
+        icon: 'fas fa-award',
     },
     {
         name: 'Teamwork',
-        icon: 'fas fa-users', 
+        icon: 'fas fa-users',
     },
     {
         name: 'Relationships',
-        icon: 'fas fa-handshake', 
+        icon: 'fas fa-handshake',
     },
     {
         name: 'Prosperity',
-        icon: 'fas fa-chart-line', 
+        icon: 'fas fa-chart-line',
     },
 ])
 
-const benefits = ref([
+const careerPath = ref([
     {
-        name: 'Health & <span class="text-brand-primary"> Wellness </span>',
-        icon: 'fas fa-heart',
-        description: 'You take care of our customers, We take care of you. All Acentria team members receive comprehensive health care cover, access to wellness programs, subsidized gym memberships and health care management programs.'
+        name: 'Insurance',
+        icon: 'fas fa-shield-alt',
+        description: 'Join our insurance team and help provide comprehensive coverage solutions to protect our clients\' assets and well-being.',
     },
     {
-        name: 'Competitive Staff <span class="text-brand-primary"> Benefits </span>',
-        icon: 'fas fa-calendar-check',
-        description: 'We provide workplace safety insurance covers, sufficient retirement benefits, staff loan facilities and adequate time off to cater for personal development and rejuvenation.'
+        name: 'Reinsurance',
+        icon: 'fas fa-sync-alt',
+        description: 'Be a part of our reinsurance team and work on innovative solutions to manage and mitigate risk for our clients.',
     },
     {
-        name: 'Personal &amp; Professional <span class="text-brand-primary"> Development </span>',
-        icon: 'fas fa-piggy-bank',
-        description: 'We create development plans for our staff and have a robust education support programme that boosts skills and academic qualifications and prepares our high potential employees for their next big challenges!'
+        name: 'Actuarial',
+        icon: 'fas fa-chart-line',
+        description: 'Join our actuarial team and use your analytical skills to assess risk and help design insurance policies that meet our clients\' needs.',
     },
     {
-        name: 'Skills Development <span class="text-brand-primary"> program </span>',
-        icon: 'fas fa-user-friends',
-        description: 'We give back to our future generations through partnerships with mentorship associations, provide capacity building platforms and programs for our partners and have internship programs to boost our talent pipeline.'
+        name: 'Broking',
+        icon: 'fas fa-handshake',
+        description: 'Become a part of our broking team and facilitate the best insurance deals for our clients through strong relationships with insurers.',
     },
     {
-        name: '<span class="text-brand-primary"> Diversity, Equity & </span> Inclusion',
-        icon: 'fas fa-dumbbell',
-        description: 'Our workforce represents the face of the jurisdictions we dwell in and appreciate contributions from all generations as a means of improving our products, services and corporate culture.'
+        name: 'Technology',
+        icon: 'fas fa-laptop-code',
+        description: 'Join our technology team and drive innovation by developing cutting-edge solutions to enhance our services and operations.',
+    },
+])
+
+const products = [
+    {
+        id: 1,
+        name: 'Video 1',
+        href: '#',
+        price: '$13',
+        description: 'Ms 1',
+        imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-01-image-card-01.jpg',
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
-        name: 'Supportive <span class="text-brand-primary"> parental leave </span>',
-        icon: 'fas fa-baby',
-        description: 'Raising the next generation takes time. We support parents in taking time to bond with their newest family member.'
-    }
-]);
+        id: 2,
+        name: 'Video 2',
+        href: '#',
+        price: '$64',
+        description: 'Mr 1',
+        imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-01-image-card-02.jpg',
+        imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
+    },
+    {
+        id: 3,
+        name: 'Video 3',
+        href: '#',
+        price: '$32',
+        description: 'Ms 2',
+        imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-01-image-card-03.jpg',
+        imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
+    },
+    // More products...
+]
 
 </script>
 
@@ -277,7 +303,7 @@ const benefits = ref([
                                     Your contributions will be recognized and rewarded, ensuring a fulfilling, warm
                                     and lasting experience at Acentria.
                                 </p>
-                                <NuxtLink href="/meet-the-team"
+                                <NuxtLink href="/acentria-benefits"
                                     class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
                                     Learn how you benefit by joining us
                                     <i class="fas fa-arrow-right text-primary ml-2"></i>
@@ -287,114 +313,64 @@ const benefits = ref([
                     </div>
                 </div>
 
-
-                <!-- <div class="container mx-auto">
-                    <div class="py-8">
-                        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                            <div
-                                class="font-sans mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                                <div>
-                                    <h2
-                                        class="font-sans tracking-normal text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight pb-4 pt-6">
-                                        <span
-                                            class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">
-                                            Why would you <br>
-                                        </span>
-                                        work for Acentria
+                <div class=" w-full h-full container mx-auto max-w-6xl">
+                    <div class=" !font-sans  my-0">
+                        <div class="py-10 sm:px-2 lg:px-4">
+                            <div class="lg:max-w-none">
+                                <div class="justify-between content-center">
+                                    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
+                                        Career Paths <span class="text-brand-primary">At Acentria</span>
                                     </h2>
-                                    <p
-                                        class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-                                        Working at Acentria is an enriching journey to growth and prosperity. We have
-                                        numerous engagement forums, propagate empowerment and job autonomy, nurture a
-                                        supportive and inclusive environment and do not have a “Straight-jacket”
-                                        approach towards learning and development.
-                                        Your contributions will be recognized and rewarded, ensuring a fulfilling, warm
-                                        and lasting experience at Acentria.
-
-                                        <br><br>
-                                        Here is how you benefit by joining our Team:
-
-                                    </p>
                                 </div>
-                                <div
-                                    class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
-                                    <div v-for="benefit in benefits" class="flex flex-row gap-2">
-                                        <i :class="benefit.icon" class="text-xl text-brand-primary mr-4"></i>
-                                        <div>
-                                            <h5 v-html="benefit.name"
-                                                class="text-sm pb-3 md:pb-4 font-semibold leading-tight text-light-title">
-
-                                            </h5>
-                                            <p class="leading-normal font-regular text-light-content text-xs">
-                                                {{ benefit.description }}
-                                            </p>
+                                <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-5">
+                                    <div v-for="member in careerPath" :key="member.name"
+                                        class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-l-2  border-brand-primary">
+                                        <div class="sm:flex-shrink-0 flex justify-center">
+                                            <i :class="member.icon" class="text-black text-2xl"></i>
+                                        </div>
+                                        <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                            <h3 class="text-lg text-brand-primary font-semibold flex justify-center">{{
+                                                member.name
+                                                }}</h3>
+                                            <p class="mt-2 text-xs text-gray-500">{{ member.description }}</p>
+                                            <i
+                                                class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
+                <div class="bg-white font-sans">
 
+                    <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:max-w-6xl lg:px-8">
 
-                <!-- <section id="" class="relative py-5 bg-white text-left">
-                    <div class="container px-4">
-                        <h2
-                            class="text-center font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
-                            Our commitment to
-                            <span
-                                class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">diversity</span>,
-                            <span
-                                class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">equity</span>
-                            and
-                            <span
-                                class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">inclusion</span>
-                        </h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 mx-auto max-w-5xl">
-                            <div class="mx-auto">
-                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="420" height="350" decoding="async" data-nimg="1"
-                                    style="color: transparent; object-fit: contain" class="rounded-xl"
-                                    src="/img/simo-office.jpg" />
-                            </div>
-                            <div class="content-center items-center">
-                                <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    Acentria is committed to fostering, cultivating and
-                                    preserving a culture that celebrates and values diversity,
-                                    equity and inclusion. Our DEI&amp;I plan accelerates
-                                    progress, with education being a critical component. We
-                                    offer access to training courses and resources which aim to
-                                    build a shared vocabulary, develop new skills and foster
-                                    collaboration in service to creating an even more inclusive
-                                    organization. We also encourage open dialogue and continuous
-                                    feedback to ensure that every voice is heard and valued,
-                                    promoting a sense of belonging and mutual respect among all
-                                    employees.
-                                </p>
-                                <br>
-                                <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    Acentria also supports several Employee Resource Groups
-                                    (ERGs) including Generational,
-                                    Multicultural, Parenting &amp; Care Giving, Mental Health and Women in Tech. These
-                                    groups
-                                    fast-track DEI&amp;I education and create a safe place for
-                                    growth, understanding, compassion and empathy.
-                                </p>
-                                <br>
-                                <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    We believe that diverse leadership is an essential part of
-                                    modern governance and remain committed to exploring new
-                                    opportunities to diversify our C-suite.
-                                </p>
-                            </div>
+                        <div class="justify-between content-center my-5">
+                            <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
+                                Life at <span class="text-brand-primary">Acentria Group</span>
+                            </h2>
+                        </div>
 
+                        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                            <a v-for="product in products" :key="product.id" :href="product.href" class="group">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
+                                    <img :src="product.imageSrc" :alt="product.imageAlt"
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75" />
+                                </div>
+                                <div class="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
+                                    <h3>{{ product.name }}</h3>
+                                    <p>
+                                        <i class="fas fa-play text-2xl text-brand-primary"></i>
+                                    </p>
+                                </div>
+                                <p class="mt-1 text-sm italic text-gray-500">{{ product.description }}</p>
+                            </a>
                         </div>
                     </div>
-                </section> -->
+                </div>
 
                 <!-- <Videos /> -->
 

@@ -3,16 +3,19 @@ const incentives = [
     {
         name: 'Who we are',
         icon: 'fas fa-users',
+        link:'/about-us/who-we-are',
         description: "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment Advisory",
     },
     {
         name: 'What We Do',
         icon: 'fas fa-briefcase',
+        link: '/about-us/who-we-are',
         description: "We offer the best solutions in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory. We consider the trust to be our most valuable resource.",
     },
     {
         name: 'Our journey',
         icon: 'fas fa-road',
+        link: '/about-us/who-we-are',
         description: "Our journey is about Empowering dreams, igniting imagination, and propelling prosperity to infinite possibilities for all our partners and the communities we serve.",
     },
 ]
@@ -77,7 +80,7 @@ const incentives = [
                 <div class="relative mx-auto max-w-6xl px-6 lg:px-8 pb-10">
                     <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
 
-                        <div v-for="incentive in incentives" :key="incentive.name"
+                        <NuxtLink :to="incentive.link" v-for="incentive in incentives" :key="incentive.name"
                             class="group button-animation -m-2 grid grid-cols-1 rounded-[2rem] shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
                             <div class="grid grid-cols-1 rounded-[2rem] p-2 shadow-md shadow-black/5">
                                 <div class="rounded-3xl bg-white p-5 pb-1 shadow-2xl ring-1 ring-black/5">
@@ -96,7 +99,7 @@ const incentives = [
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </NuxtLink>
 
                     </div>
 

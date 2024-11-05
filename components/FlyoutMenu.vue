@@ -237,6 +237,11 @@ const AboutMenus = ref([
                 description: 'Understand our vision, mission, and the core values that guide our actions.',
                 link: '/about-us/who-we-are',
             },
+            {
+                name: 'Corporate Culture',
+                description: 'Understand our culture and the core values that guide our actions.',
+                link: '/corporate-culture',
+            },
         ]
     },
     {
