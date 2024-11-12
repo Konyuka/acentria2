@@ -1,10 +1,10 @@
 <template>
-    <Popover class="isolate z-50 shadow-3xl w-24 font-sans bg-transparent">
-        <div class="py-1 justify-center">
+    <Popover class="isolate z-50 shadow-3xl w-auto font-sans bg-transparent">
+        <div class="justify-center">
             <div class="">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
-                    class="border-0 ring-0 inline-flex items-center gap-x-1 text-md font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
+                    class="pr-2 border-0 ring-0 inline-flex items-center gap-x-1 text-md font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
                     <div
                         class="border-0 ring-0 mr-0 flex h-5 w-5 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
                         <i :class="theMenu.icon" class="text-xs text-white"></i>

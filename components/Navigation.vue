@@ -222,17 +222,17 @@ onBeforeUnmount(() => {
                     <div class="">
                         <NuxtLink to="/"
                             :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-1 border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
+                            class=" relative border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
                             Home
                         </NuxtLink>
                         <NuxtLink to="/acentria-news-and-blogs"
                             :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-1 border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
+                            class=" relative border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
                             News
                         </NuxtLink>
                         <NuxtLink to="/acentria-group-careers"
                             :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-1 border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
+                            class=" relative border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
                             Careers
                         </NuxtLink>
                         <NuxtLink to="/contact-acentria-group"
