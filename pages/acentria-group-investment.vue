@@ -36,7 +36,7 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
 
 <template>
     <main>
-        <div>
+        <div class="bg-white">
             <div>
 
                 <ServiceHero :content="content" />

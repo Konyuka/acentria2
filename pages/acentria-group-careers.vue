@@ -435,7 +435,7 @@ const products = [
                 </div>
 
                 <div class="text-white" style="background-color: #f6f8fc">
-                    <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+                    <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
 
 
                         <div class="flex flex-col justify-center lg:basis-1/2">

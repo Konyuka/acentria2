@@ -28,14 +28,14 @@ const bannerContent = ref({
 
         </div>
 
-        <div class=" bg-white max-w-7xl mx-auto h-full">
-            <div class=" max-w-7xl mx-auto font-sans text-black mt-10">
+        <div class=" bg-white max-w-6xl mx-auto h-full">
+            <div class="container max-w-6xl mx-auto font-sans text-black mt-10">
                 <div class="mx-auto  mb-5 font-sans">
                     <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
                         Our <span class="text-brand-primary">CSR Mission</span>
                     </p>
                 </div>
-                <p>
+                <p class="text-xs">
                     At Acentria Group, our Corporate Social Responsibility (CSR) mission is to drive meaningful impact
                     by
                     empowering prosperity across communities and industries. We are committed to fostering sustainable
@@ -48,6 +48,7 @@ const bannerContent = ref({
 
 
         <div data-v-02281a80="" class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:8:9">
                 <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
@@ -87,6 +88,7 @@ const bannerContent = ref({
                     </div>
                 </div>
             </div>
+
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:32:9">
                 <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:33:13">
@@ -128,7 +130,6 @@ const bannerContent = ref({
                 </div>
             </div>
 
-
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:54:9">
                 <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:55:13">
@@ -141,28 +142,86 @@ const bannerContent = ref({
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:60:13">
                     <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
                         data-v-inspector="components/Why.vue:18:17">
-                        Ethical Business Practices
+                        Ethical Responsibility
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
                         <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
-                            Integrity is at the core of Acentria's governance model. We adhere to the highest ethical
-                            standards in all our business dealings. Our governance practices prioritize transparency,
-                            accountability, and fairness, ensuring that our stakeholders can trust us to make decisions
-                            that align with their interests.
+                            At the heart of Acentria Group’s business practices is a commitment
+                            to integrity, fairness, and ethical governance. These are the core values that guide our
+                            actions <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Ensuring compliance with local and international regulations, promoting fair
+                            trade, and preventing corruption.
+                            <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            <b>Diversity in Leadership</b>: We are proud of our diverse board and
+                            management, with 50% of our board comprised of men and women equally,
+                            and a 60:40 representation of men and women in management. This
+                            commitment to gender diversity fosters balanced decision-making and
+                            reinforces our dedication to equal opportunity and inclusion.
+                            <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Enforcing a zero-tolerance policy on workplace discrimination, promoting
+                            diversity and inclusion within our workforce.
+                            <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Encouraging ethical sourcing by working with suppliers and partners who
+                            share our commitment to ethical standards.
+                            <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Developing a code of ethics that governs our business dealings and guides
+                            our relationships with clients, employees, and stakeholders.
+                            <br>
                         </p>
                     </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
+                data-v-inspector="components/Why.vue:32:9">
+                <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:33:13">
+                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                        data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                        src="https://acentriagroup.com/wp-content/uploads/2023/12/13.jpg"
+                        data-v-inspector="components/Why.vue:34:17" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
                     <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
                         data-v-inspector="components/Why.vue:18:17">
-                        Board Diversity
+                        Economic Responsibility
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
                         <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
-                            Acentria recognizes the importance of diverse perspectives in decision-making. Our board of
-                            directors is composed of individuals with varied backgrounds, experiences, and skills. This
-                            diversity enhances our ability to navigate complex challenges and make informed decisions
-                            that benefit our company and stakeholders.
+                            Acentria Group strives to contribute to economic development
+                            by creating value for our stakeholders, promoting responsible growth, and providing
+                            innovative solutions that support financial stability and prosperity. These are some of our
+                            initiatives <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Supporting small and medium-sized enterprises (SMEs) by providing tailored
+                            insurance products and financial services that promote their growth and
+                            resilience.
+                            <br>
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Investing in local communities by creating job opportunities and fostering
+                            economic empowerment through skills development programs.
+                            <br>
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Contributing to financial literacy initiatives that educate individuals and
+                            businesses on the importance of risk management and insurance in securing
+                            their future.
+                            <br>
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Prioritizing long-term sustainable business practices that drive profitability
+                            while ensuring positive socio-economic impacts.
+                            <br>
                         </p>
                     </div>
                 </div>
