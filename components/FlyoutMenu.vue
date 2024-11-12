@@ -1,7 +1,7 @@
 <template>
-    <Popover class="isolate z-50 shadow-3xl w-26 font-sans bg-transparent">
-        <div class="py-2 justify-center flex">
-            <div class=" px-1">
+    <Popover class="isolate z-50 shadow-3xl w-24 font-sans bg-transparent">
+        <div class="py-1 justify-center">
+            <div class="">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
                     class="border-0 ring-0 inline-flex items-center gap-x-1 text-md font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">

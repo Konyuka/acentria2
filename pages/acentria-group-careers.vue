@@ -147,12 +147,12 @@ const products = [
 
 <template>
     <main>
-        <div>
+        <div class="bg-white">
             <div>
 
                 <BannerMain :content="bannerContent" />
 
-                <div class="isolate !mb-5 py-5 md:py-0 mt-5">
+                <div class="isolate !mb-5 py-5 md:py-0 mt-5 bg-white">
                     <div class="relative isolate -z-10">
                         <div class="container overflow-hidden">
 

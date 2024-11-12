@@ -43,7 +43,7 @@ const faqs = ref([
 
 <template>
 
-    <div>
+    <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ActuarialFeature :content="ReinsuranceFeatureContent2" />

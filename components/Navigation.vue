@@ -200,46 +200,44 @@ onBeforeUnmount(() => {
                         </div> -->
                     </div>
 
-                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="250" height="50" decoding="async"
+                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="230" height="50" decoding="async"
                             data-nimg="1" class="mr-8" style="color: transparent" src="/img/LogoT.png" />
                     </NuxtLink>
 
                 </div>
 
                 <div
-                    class="top-0 z-50 mx-auto hidden w-1/2 bottom-0 justify-between px-4 py-0 transition-all duration-200 lg:flex relative">
+                    class="top-0 z-50 mx-auto hidden w-1/2 bottom-0 justify-between px-1 py-0 transition-all duration-200 lg:flex relative">
                     <div class="mx-auto ">
                         <div class="flex font-sans">
-
-                            <div class="flex gap-2 my-1">
+                            <div class="flex gap-1 my-1">
                                 <FlyoutMenu v-for="menu in menus" :theMenu="menu" />
                             </div>
-
                         </div>
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-2 items-center justify-end text-sm text-black">
+                <div class="flex flex-col gap-2 items-center justify-end text-xs text-black">
 
                     <div class="">
                         <NuxtLink to="/"
                             :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-1 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            class=" relative mr-1 border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
                             Home
                         </NuxtLink>
                         <NuxtLink to="/acentria-news-and-blogs"
                             :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-1 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            class=" relative mr-1 border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
                             News
                         </NuxtLink>
                         <NuxtLink to="/acentria-group-careers"
                             :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative mr-1 border-r border-brand-divider px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            class=" relative mr-1 border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
                             Careers
                         </NuxtLink>
                         <NuxtLink to="/contact-acentria-group"
                             :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative px-2 py-1.5 hover:text-brand-primary button-animation font-medium">
+                            class=" relative px-1 py-1 hover:text-brand-primary button-animation font-medium">
                             Contacts
                         </NuxtLink>
                     </div>

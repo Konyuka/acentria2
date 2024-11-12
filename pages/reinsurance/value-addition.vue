@@ -38,7 +38,7 @@ const faqs = ref([
 
 <template>
 
-    <div>
+    <div class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ReinsuranceFeature :content="ReinsuranceFeatureContent" />
         <Accordion :faqs="faqs" />

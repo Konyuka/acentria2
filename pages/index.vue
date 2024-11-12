@@ -115,7 +115,7 @@ onMounted(() => {
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain" class="w-full h-60 shadow-2xl rounded-lg"
+                      style="color: transparent; object-fit: contain" class="!object-cover w-full h-60 shadow-2xl rounded-lg"
                       src="/img/careers.jpg" data-v-inspector="components/Why.vue:34:17" />
                   </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
@@ -152,7 +152,7 @@ onMounted(() => {
                   </div>
                 </div>
 
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-20 lg:gap-16">
                   <div class="flex flex-col justify-center lg:basis-1/2">
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
@@ -178,6 +178,42 @@ onMounted(() => {
                       class="w-full h-60 shadow-2xl rounded-lg !object-cover"
                       src="https://images.pexels.com/photos/3869651/pexels-photo-3869651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                       data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                </div>
+
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      style="color: transparent; object-fit: contain"
+                      class="w-full h-60 shadow-2xl rounded-lg !object-cover"
+                      src="/img/award.jpg"
+                      data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                  <div class="flex flex-col justify-center lg:basis-1/2">
+
+                    <div class="text-light-content pb-5 md:pb-6 py-auto">
+                      <h2
+                        class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
+                        Our <span class="text-brand-primary">Brand</span>
+                      </h2>
+                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        Our brand represents the essence of who we are and what we stand for. It is built on a
+                        foundation of trust, integrity, and innovation. At Acentria Group, our brand is more than just a
+                        logo or a tagline; it is a reflection of our commitment to excellence and our dedication to our
+                        stakeholders.
+                        Central to our brand is a strong corporate identity that resonates with our clients, partners,
+                        and communities. Our core values of Integrity, Innovation, and Excellence are at the heart of
+                        everything we do, guiding our actions and decisions.
+                        "The Acentria Way" is not just a slogan; it is a way of life that embodies our global culture
+                        and aligns perfectly with our corporate strategy. It encompasses our purpose, our vision, and
+                        our approach to conducting business.
+                      </p>
+                      <NuxtLink href="/corporate-culture"
+                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        Learn More
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                      </NuxtLink>
+                    </div>
                   </div>
                 </div>
 

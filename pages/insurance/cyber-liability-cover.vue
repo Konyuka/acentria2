@@ -75,7 +75,7 @@ const whys = ref([
 
 <template>
 
-    <div>
+    <div class="bg-white">
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
 

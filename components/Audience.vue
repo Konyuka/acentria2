@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="text-white bg-black/5">
+    <div class="text-white bg-white">
         <div class="undefined">
             <section id="" class="relative py-4 lg:py-10">
                 <div class="container px-4">

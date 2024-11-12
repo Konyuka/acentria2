@@ -121,7 +121,7 @@ const specials = ref([
 
 <template>
 
-    <div>
+    <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ReinsuranceFeature :content="ReinsuranceFeatureContent" />
@@ -139,7 +139,8 @@ const specials = ref([
 
                         <li v-for="item in special.items" class="flex gap-x-4 py-1">
                             <div class="min-w-0">
-                                <p class="text-xs font-semibold leading-6 text-gray-900"><i class="fas fa-caret-right mr-2"></i> {{ item }}</p>
+                                <p class="text-xs font-semibold leading-6 text-gray-900"><i
+                                        class="fas fa-caret-right mr-2"></i> {{ item }}</p>
                             </div>
                         </li>
 

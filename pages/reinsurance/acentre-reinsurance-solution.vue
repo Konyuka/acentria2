@@ -81,7 +81,7 @@ const usage = ref([
 
 <template>
 
-    <div>
+    <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <div class="bg-white">

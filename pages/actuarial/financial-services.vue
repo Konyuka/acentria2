@@ -93,7 +93,7 @@ const offers = ref([
 
 <template>
 
-    <div>
+    <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ActuarialFeature :content="ReinsuranceFeatureContent2" />
@@ -112,8 +112,8 @@ const offers = ref([
 
                         <li class="flex gap-x-4 py-1">
                             <div class="min-w-0">
-                                <p class="text-xs leading-5 text-gray-900"><i
-                                        class="fas fa-caret-right mr-2"></i> {{ special.content }}</p>
+                                <p class="text-xs leading-5 text-gray-900"><i class="fas fa-caret-right mr-2"></i> {{
+                                    special.content }}</p>
                             </div>
                         </li>
 
