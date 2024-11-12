@@ -3,14 +3,14 @@
 const bannerContent = ref({
     subtitle: 'CSR',
     title: 'Corporate Social Responsibility',
-    image: 'https://images.pexels.com/photos/207489/pexels-photo-207489.jpeg?auto=compress&cs=tinysrgb&w=600'
+    image: 'https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 })
 
 
 </script>
 
 <template>
-    <section>
+    <section class="bg-white">
 
         <BannerMain :content="bannerContent" />
 
@@ -28,6 +28,25 @@ const bannerContent = ref({
 
         </div>
 
+        <div class=" bg-white max-w-7xl mx-auto h-full">
+            <div class=" max-w-7xl mx-auto font-sans text-black mt-10">
+                <div class="mx-auto  mb-5 font-sans">
+                    <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                        Our <span class="text-brand-primary">CSR Mission</span>
+                    </p>
+                </div>
+                <p>
+                    At Acentria Group, our Corporate Social Responsibility (CSR) mission is to drive meaningful impact
+                    by
+                    empowering prosperity across communities and industries. We are committed to fostering sustainable
+                    development, upholding the highest ethical standards, and creating long-lasting value for society
+                    through responsible business practices that align with our global vision to be a leader in shaping a
+                    prosperous future.
+                </p>
+            </div>
+        </div>
+
+
         <div data-v-02281a80="" class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:8:9">
@@ -41,26 +60,29 @@ const bannerContent = ref({
 
                     <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
                         data-v-inspector="components/Why.vue:18:17">
-                        Sustainable Practices
+                        Environmental Responsibility
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">
                         <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                            Acentria is committed to minimizing its environmental footprint through the adoption of
-                            sustainable practices. From energy-efficient office spaces to responsible waste management,
-                            we actively seek ways to reduce our impact on the environment. We also encourage our
-                            partners and suppliers to embrace eco-friendly solutions.
-                        </p>
-                    </div>
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                        data-v-inspector="components/Why.vue:18:17">
-                        Carbon Neutrality
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                            We recognize the urgency of addressing climate change. Acentria is actively working towards
-                            becoming a carbon-neutral company. This involves measuring and reducing our carbon
-                            emissions, as well as offsetting unavoidable emissions through investments in verified
-                            carbon offset projects.
+                            Acentria Group is dedicated to minimizing our
+                            environmental footprint and promoting sustainable practices within the industries we serve.
+                            Our Initiatives include:
+                        <div class="text-xs mx-10">
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Partnering with environmental organizations to support reforestation projects
+                            and marine conservation efforts across the country.
+                            <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Implementing eco-friendly office policies, including waste reduction, recycling
+                            programs, and the use of renewable energy sources.
+                            <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Raising awareness on climate risks and sustainability through digital
+                            campaigns and client education.
+                            <br>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -76,28 +98,31 @@ const bannerContent = ref({
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
                     <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
                         data-v-inspector="components/Why.vue:18:17">
-                        Diversity and Inclusion
+                        Philanthropic Responsibility
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
                         <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
-                            Acentria values diversity and inclusion as essential components of a thriving workplace. We
-                            strive to create a culture that celebrates differences, fosters equality, and ensures that
-                            every team member feels valued. Our commitment to diversity extends to our partnerships,
-                            ensuring that we collaborate with organizations that share our values.
-                        </p>
-                    </div>
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                        data-v-inspector="components/Why.vue:18:17">
-                        Community Engagement
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
-                            data-v-inspector="components/Why.vue:23:21">
-                            We believe in giving back to the communities in which we operate. Acentria actively supports
-                            local initiatives and charities, contributing to social development and making a positive
-                            impact on the lives of those in need. Our employees are encouraged to participate in
-                            volunteer programs that align with our commitment to social responsibility.
+                            We are committed to giving back to the communities in
+                            which we operate by supporting initiatives that empower individuals and improve livelihoods.
+                            Our philanthropic efforts include: <br>
+
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Providing scholarships and educational support to underprivileged students,
+                            especially in regions with limited access to quality education.
+                            <br>
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Engaging employees in volunteer activities, including mentorship programs
+                            and community service, to foster a culture of giving.
+                            <br>
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Partnering with local NGOs to support health and wellness programs, such as
+                            free medical camps and community health initiatives.
+                            <br>
+                            <span class="font-semibold mr-2 text-4xl pb-2">.</span>
+                            Contributing to disaster relief efforts by offering financial aid to affected
+                            communities.
+                            <br>
                         </p>
                     </div>
                 </div>

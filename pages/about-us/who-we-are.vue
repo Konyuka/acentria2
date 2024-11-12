@@ -37,10 +37,10 @@ onMounted(()=>{
 </script>
 
 <template>
-    <section>
+    <section class="bg-white">
         <!-- <ReinsuranceBanner :content="ReinsuranceBannerContent" /> -->
 
-        <div class="bg-white px-6 py-1  font-sans mt-40">
+        <div class="bg-white px-6 py-1  font-sans mt-20">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:8:9">
                 <div class="relative py-4 lg:basis-1/2 scale-90" data-v-inspector="components/Why.vue:9:13">
