@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black/85 py-5 font-sans">
+    <div class="bg-black/55 py-5 font-sans">
         <div class="container mx-auto max-w-6xl px-2">
             <div class="mx-auto max-w-6xl lg:mx-0">
                 <h2 class="text-pretty text-3xl font-semibold tracking-tight text-white">

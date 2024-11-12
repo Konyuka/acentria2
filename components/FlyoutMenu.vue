@@ -4,7 +4,7 @@
             <div class=" px-1">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
-                    class="border-0 ring-0 inline-flex items-center gap-x-1 text-xs font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
+                    class="border-0 ring-0 inline-flex items-center gap-x-1 text-md font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
                     <div
                         class="border-0 ring-0 mr-0 flex h-5 w-5 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
                         <i :class="theMenu.icon" class="text-xs text-white"></i>
@@ -20,7 +20,7 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-40 w-[80vw] mt-14 mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg">
+                class="!-left-64 w-[90vw] mt-14 mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg">
 
                 <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-gray-600 bg-opacity-50 transition-opacity"
                     aria-hidden="true"></div>
@@ -67,7 +67,7 @@
 
                                 <div>
                                     <div class=" w-auto border-b border-gray-300 dark:border-gray-700">
-                                        <div class="w-full rounded h-32">
+                                        <div class="w-full rounded h-56">
                                             <img src="/img/call.jpg" alt="Display picture of Silene Tokyo" role="img"
                                                 class="object-cover h-full w-full overflow-hidden rounded shadow">
                                         </div>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="bg-black">
+                <div class="bg-black/10">
                     <div class="mx-auto max-w-7xl px-0">
                         <div
                             class="ml-2 grid grid-cols-3 divide-y divide-gray-900/5 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
@@ -242,6 +242,11 @@ const AboutMenus = ref([
                 description: 'Understand our culture and the core values that guide our actions.',
                 link: '/corporate-culture',
             },
+            {
+                name: 'Our Brand',
+                description: 'Understand our culture and the core values that guide our actions.',
+                link: '/corporate-culture',
+            },
         ]
     },
     {
@@ -250,6 +255,11 @@ const AboutMenus = ref([
         description: 'Meet the leaders who guide Acentria Group towards success.',
         icon: 'fas fa-user-tie',
         items: [
+            {
+                name: 'Our Governance',
+                description: 'Discover our governance structure and meet the leaders who guide Acentria Group towards success.',
+                link: '/meet-the-team',
+            },
             {
                 name: 'Board',
                 description: 'Meet the members of our board of directors.',

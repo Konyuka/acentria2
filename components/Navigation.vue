@@ -200,7 +200,7 @@ onBeforeUnmount(() => {
                         </div> -->
                     </div>
 
-                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="200" height="50" decoding="async"
+                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="250" height="50" decoding="async"
                             data-nimg="1" class="mr-8" style="color: transparent" src="/img/LogoT.png" />
                     </NuxtLink>
 
@@ -219,7 +219,7 @@ onBeforeUnmount(() => {
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-2 items-center justify-end text-xs text-black">
+                <div class="flex flex-col gap-2 items-center justify-end text-sm text-black">
 
                     <div class="">
                         <NuxtLink to="/"
