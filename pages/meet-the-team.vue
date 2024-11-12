@@ -36,7 +36,7 @@ const setMobileMenu = (event) => {
 </script>
 
 <template>
-    <section class="min-h-screen">
+    <section class="min-h-screen bg-white">
 
 
 

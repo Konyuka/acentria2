@@ -30,7 +30,7 @@ const faqs = ref([
 </script>
 
 <template>
-    <section class="min-h-screen font-sans">
+    <section class="min-h-screen font-sans bg-white">
 
         <BannerMain :content="bannerContent" />
 
