@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 <template>
 
-    <div class="">
+    <div class="!font-sans">
         <Navigation />
 
         <div>

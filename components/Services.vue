@@ -39,31 +39,31 @@ const features = [
         icon: 'fas fa-shield-alt', 
         title: 'Insurance',
         description: 'Mitigating Risks, Maximizing Opportunities',
-        url: '/acentria-group-insurance',
+        url: '/lines-of-business',
     },
     {
         icon: 'fas fa-shield-virus', 
         title: 'Reinsurance',
         description: 'Protecting Your Assets, Empowering Your Future',
-        url: '/acentria-group-reinsurance',
+        url: '/lines-of-business',
     },
     {
         icon: 'fas fa-calculator', 
         title: 'Actuarial',
         description: 'Empowering Decisions, Simplifying Complexity',
-        url: '/acentria-group-actuarial',
+        url: '/lines-of-business',
     },
     {
         icon: 'fas fa-laptop-code', 
         title: 'Technology',
         description: 'Building prosperity, Securing Futures',
-        url: '/contact-acentria-group',
+        url: '/lines-of-business',
     },
     {
         icon: 'fas fa-dollar-sign', 
         title: 'Investment',
         description: 'Protecting Your Assets, Empowering Your Future',
-        url: '/acentria-group-investment',
+        url: '/lines-of-business',
     },
 
 ]

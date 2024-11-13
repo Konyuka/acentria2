@@ -115,8 +115,9 @@ onMounted(() => {
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain" class="!object-cover w-full h-60 shadow-2xl rounded-lg"
-                      src="/img/careers.jpg" data-v-inspector="components/Why.vue:34:17" />
+                      style="color: transparent; object-fit: contain"
+                      class="!object-cover w-full h-60 shadow-2xl rounded-lg" src="/img/careers.jpg"
+                      data-v-inspector="components/Why.vue:34:17" />
                   </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
 
@@ -185,8 +186,7 @@ onMounted(() => {
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
-                      class="w-full h-60 shadow-2xl rounded-lg !object-cover"
-                      src="/img/award.jpg"
+                      class="w-full h-60 shadow-2xl rounded-lg !object-cover" src="/img/award.jpg"
                       data-v-inspector="components/Why.vue:34:17" />
                   </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
@@ -282,6 +282,19 @@ onMounted(() => {
                               </div>
                             </div>
                           </div>
+
+                        </div>
+                        <div class="mt-10">
+                          <div class="flex gap-2 text-lg mb-5 italic">
+                            <p><span class="text-brand-primary">#</span>Empower</p>
+                            <p><span class="text-brand-primary">#</span>Innovate</p>
+                            <p><span class="text-brand-primary">#</span>Prosper</p>
+                          </div>
+                          <NuxtLink href="/corporate-culture"
+                            class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-20 text-sm sm:text-md rounded-sm mt-10">
+                            Learn More
+                            <i class="fas fa-arrow-right text-primary ml-2"></i>
+                          </NuxtLink>
 
                         </div>
                       </div>
