@@ -356,7 +356,7 @@ onMounted(() => {
               <div class="2xl:mx-auto bg-black/50 2xl:container md:px-20 px-4 md:py-12 py-9">
                 <div class="relative rounded-md">
                   <img
-                    src="https://www.shutterstock.com/shutterstock/photos/2509093239/display_1500/stock-photo-autumn-natural-bokeh-background-with-maple-trees-in-park-with-copyspace-2509093239.jpg"
+                    src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                     alt="city view"
                     class="w-full h-full rounded-md  object-center object-cover absolute sm:block hidden" />
                   <img src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
