@@ -1,5 +1,5 @@
 <template>
-    <div class=" relative isolate overflow-hidden bg-black py-5 font-sans">
+    <div class=" relative isolate overflow-hidden bg-black/5 py-5 font-sans">
         <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
             alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
