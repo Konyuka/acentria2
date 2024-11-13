@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative h-screen mt-2">
+    <div class="relative h-[95vh] mt-2">
         <video autoplay muted loop
             class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
             src="/img/hd2.mp4" style="color: transparent">

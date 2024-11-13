@@ -235,9 +235,9 @@ const showDropdown = (menu) => {
 
                         <ul
                             class="left-0 top-full -z-10 flex w-full list-none flex-col gap-0 overflow-hidden will-change-transform lg:mb-0 invisible absolute -translate-y-24 opacity-0 lg:visible lg:static lg:transform-none lg:opacity-100 lg:transition-none">
-                            <li v-for="link in item.items" class="button-animation mb-2 text-dark-content">
+                            <li v-for="link in item.items" class="button-animation mb-0 text-dark-content">
                                 <NuxtLink :to="link.link"
-                                    class="text-xs cursor-pointer font-normal text-dark-title hover:text-gray-100 relative flex items-center">
+                                    class="text-[13px] cursor-pointer font-normal text-dark-title hover:text-gray-100 relative flex items-center">
                                     <i :class="link.icon" class="text-brand-primary mr-2"></i> {{ link.name }}
                                 </NuxtLink>
                             </li>

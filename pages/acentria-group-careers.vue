@@ -101,14 +101,14 @@ const careerPath = ref([
         description: 'Join our actuarial team and use your analytical skills to assess risk and help design insurance policies that meet our clients\' needs.',
     },
     {
-        name: 'Broking',
-        icon: 'fas fa-handshake',
-        description: 'Become a part of our broking team and facilitate the best insurance deals for our clients through strong relationships with insurers.',
-    },
-    {
         name: 'Technology',
         icon: 'fas fa-laptop-code',
         description: 'Join our technology team and drive innovation by developing cutting-edge solutions to enhance our services and operations.',
+    },
+    {
+        name: 'Investment',
+        icon: 'fas fa-handshake',
+        description: 'Become a part of our broking team and facilitate the best insurance deals for our clients through strong relationships with insurers.',
     },
 ])
 
@@ -322,19 +322,26 @@ const products = [
                                         Career Paths <span class="text-brand-primary">At Acentria</span>
                                     </h2>
                                 </div>
+
+                                <div class="my-6">
+                                    <a href="/our-brand"
+                                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                                        Search for Open Positions <i class="fas fa-search text-primary ml-2"></i></a>
+                                </div>
+
                                 <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-5">
                                     <div v-for="member in careerPath" :key="member.name"
                                         class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-l-2  border-brand-primary">
                                         <div class="sm:flex-shrink-0 flex justify-center">
                                             <i :class="member.icon" class="text-black text-2xl"></i>
                                         </div>
-                                        <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                            <h3 class="text-lg text-brand-primary font-semibold flex justify-center">{{
+                                        <div class="mt-1 sm:ml-6 lg:ml-0">
+                                            <h3 class="text-md text-brand-primary font-semibold flex justify-center">{{
                                                 member.name
                                                 }}</h3>
-                                            <p class="mt-2 text-xs text-gray-500">{{ member.description }}</p>
+                                            <!-- <p class="mt-0 text-xs text-gray-500">{{ member.description }}</p> -->
                                             <i
-                                                class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                                                class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -342,10 +349,10 @@ const products = [
                         </div>
                     </div>
                 </div>
-<!-- HI -->
+                <!-- HI -->
                 <div class="bg-white font-sans">
 
-                    <div class="container mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:max-w-6xl lg:px-8">
+                    <div class="container mx-auto max-w-6xl px-4 py-0 sm:px-6 lg:max-w-6xl lg:px-8">
 
                         <div class="justify-between content-center my-5">
                             <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
@@ -356,7 +363,7 @@ const products = [
                         <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                             <a v-for="product in products" :key="product.id" :href="product.href" class="group">
                                 <div
-                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
                                     <img :src="product.imageSrc" :alt="product.imageAlt"
                                         class="h-full w-full object-cover object-center group-hover:opacity-75" />
                                 </div>

@@ -27,11 +27,7 @@ const incentives = [
 
         <div class="bg-white pt-10 font-sans">
 
-            <div class="container max-w-6xl mx-auto justify-between content-center">
-                <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
-                    Our <span class="text-brand-primary">Purpose</span>
-                </h2>
-            </div>
+
 
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
@@ -42,8 +38,12 @@ const incentives = [
                         src="https://images.pexels.com/photos/669986/pexels-photo-669986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
-                <div class="mt-6 flex flex-col justify-center  items-center lg:basis-1/2">
-
+                <div class="mt-2 flex flex-col justify-center  items-center lg:basis-1/2">
+                    <div class="container max-w-6xl mx-auto justify-between content-center">
+                        <h2 class="text-[27px] font-medium tracking-tight text-gray-900 text-left">
+                            Our <span class="text-brand-primary">Purpose</span>
+                        </h2>
+                    </div>
                     <div class="text-light-content pb-5 md:pb-6">
                         <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                             In our daily work, not only do we meet our legal and regulatory obligations, but we aspire
@@ -75,8 +75,7 @@ const incentives = [
                 </h2>
             </div>
             <div class="relative pt-5">
-                <div
-                    class="absolute inset-x-0 bottom-0 top-48 bg-white">
+                <div class="absolute inset-x-0 bottom-0 top-48 bg-white">
                 </div>
                 <div class="container relative mx-auto max-w-6xl px-6 lg:px-8 pb-10">
                     <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
@@ -90,8 +89,7 @@ const incentives = [
                                         {{ incentive.name }}
                                     </p>
                                     <div class="mt-2">
-                                        <p
-                                            class="text-xs leading-normal font-regular text-light-content !text-inherit">
+                                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit">
                                             {{ incentive.description }}
                                         </p>
                                     </div>

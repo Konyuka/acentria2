@@ -7,8 +7,8 @@
     <div class="font-sans">
 
         <div class="flex items-center justify-between h-full w-full absolute z-0">
-            <div class="w-1/3 bg-white dark:bg-gray-900 h-full"></div>
-            <div class="w-4/6 ml-16 bg-gray-100 dark:bg-gray-800 h-full"></div>
+            <div class="w-1/3 bg-white dark:bg-gray-900 h-auto"></div>
+            <div class="w-4/6 ml-16 bg-gray-100 dark:bg-gray-800 h-auto"></div>
         </div>
         <div class="xl:px-20 px-8 py-2 2xl:mx-auto 2xl:container relative z-40">
 
@@ -54,18 +54,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="flex items-center mt-8">
-                <button class="cursor-pointer" id="prev" role="button" aria-label="previous slide">
-                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonal-svg2.svg" alt="previous" />
-                </button>
-                <button id="next" role="button" aria-label="next slide" class="cursor-pointer ml-2">
-                    <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonial-svg3.svg"
-                        alt="next" />
-                    <img class="transform rotate-180 w-8 hidden dark:block"
-                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonal-svg2.svg" alt="previous" />
-                </button>
-            </div>
+            
         </div>
 
     </div>

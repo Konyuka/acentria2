@@ -102,7 +102,7 @@ onMounted(() => {
 
                   <h2
                     class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-white">
-                    Our <span class="text-brand-primary">Leadership</span>
+                    Our <span class="text-brand-primary">Brand</span>
                   </h2>
                 </div>
               </div>
@@ -111,48 +111,14 @@ onMounted(() => {
 
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
 
-
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                  <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain"
-                      class="!object-cover w-full h-60 shadow-2xl rounded-lg" src="/img/careers.jpg"
-                      data-v-inspector="components/Why.vue:34:17" />
-                  </div>
-                  <div class="flex flex-col justify-center lg:basis-1/2">
-
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                        Our success is driven by a dynamic and dedicated
-                        leadership team. Comprising individuals with diverse
-                        expertise and a shared commitment to excellence, our
-                        leaders play a pivotal role in shaping the vision,
-                        strategy, and culture of our organization. Meet the
-                        visionaries and strategists who lead us toward
-                        innovation, growth, and success. Their unwavering
-                        dedication and forward-thinking approach ensure that we
-                        remain at the forefront of our industry, continuously
-                        adapting to new challenges and opportunities.
-                      </p>
-                      <NuxtLink href="/meet-the-team"
-                        class="!button-animation z-[10] relative bg-black !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
-                        Meet the Team
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                </div>
-
-
-
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="flex flex-col justify-center lg:basis-1/2">
 
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <h2
+                      <!-- <h2
                         class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
                         Our <span class="text-brand-primary">Brand</span>
-                      </h2>
+                      </h2> -->
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                         Our brand represents the essence of who we are and what we stand for. It is built on a
                         foundation of trust, integrity, and innovation. At Acentria Group, our brand is more than just a
@@ -180,23 +146,52 @@ onMounted(() => {
                   </div>
                 </div>
 
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      style="color: transparent; object-fit: contain"
+                      class="w-full h-60 shadow-2xl rounded-lg !object-cover" src="/img/award.jpg"
+                      data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                  <div class="flex flex-col justify-center lg:basis-1/2">
+
+                    <div class="text-light-content pb-5 md:pb-6 py-auto">
+                      <h2
+                        class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
+                        Things that <span class="text-brand-primary">Inspire Us</span>
+                      </h2>
+                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        Our brand represents the essence of who we are and what we stand for. It is built on a
+                        foundation of trust, integrity, and innovation. At Acentria Group, our brand is more than just a
+                        logo or a tagline; it is a reflection of our commitment to excellence and our dedication to our
+                        stakeholders.
+                        Central to our brand is a strong corporate identity that resonates with our clients, partners,
+                        and communities. Our core values of Integrity, Innovation, and Excellence are at the heart of
+                        everything we do, guiding our actions and decisions.
+                        "The Acentria Way" is not just a slogan; it is a way of life that embodies our global culture
+                        and aligns perfectly with our corporate strategy. It encompasses our purpose, our vision, and
+                        our approach to conducting business.
+                      </p>
+                      <NuxtLink href="/our-brand"
+                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        Learn More
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                      </NuxtLink>
+                    </div>
+                  </div>
+                </div>
+
+
                 <div class="container relative min-w-screen mt-20">
                   <div class="bottom-0 absolute max-w-7xl mx-auto">
                     <h2
                       class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
-                      Corporate <span class="text-brand-primary">Culture</span>
+                      Our Corporate <span class="text-brand-primary">Culture</span>
                     </h2>
                   </div>
                 </div>
 
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-20 lg:gap-16">
-                  <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain"
-                      class="w-full h-60 shadow-2xl rounded-lg !object-cover"
-                      src="https://images.pexels.com/photos/3869651/pexels-photo-3869651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      data-v-inspector="components/Why.vue:34:17" />
-                  </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
@@ -216,9 +211,14 @@ onMounted(() => {
                       </NuxtLink>
                     </div>
                   </div>
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      style="color: transparent; object-fit: contain"
+                      class="w-full h-60 shadow-2xl rounded-lg !object-cover"
+                      src="https://images.pexels.com/photos/3869651/pexels-photo-3869651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      data-v-inspector="components/Why.vue:34:17" />
+                  </div>
                 </div>
-
-
 
 
               </div>
@@ -228,9 +228,9 @@ onMounted(() => {
 
                   <h2
                     class="mb-5 text-left font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight py-1">
-                    Things that <br>
+                    Our
                     <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                      Inspire Us
+                      Leadership
                     </span>
                   </h2>
                 </div>
@@ -239,79 +239,41 @@ onMounted(() => {
               <section id="" class="bg-white relative md:py-2  text-left">
                 <div class="container">
 
-                  <div class=" !font-sans container my-1">
-                    <div class="container mx-auto py-5">
-                      <div class="mx-auto">
-                        <div class="grid grid-cols-3 gap-5">
+                  <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                    <div class="relative py-4 lg:basis-1/2">
+                      <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                        style="color: transparent; object-fit: contain"
+                        class="!object-cover w-full h-60 shadow-2xl rounded-lg" src="/img/careers.jpg"
+                        data-v-inspector="components/Why.vue:34:17" />
+                    </div>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
 
-                          <div
-                            class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
-                            <div class="flex h-fit flex-col"><i
-                                class="fas fa-bullseye text-black text-4xl pb-4 group-hover:text-brand-primary"
-                                translate="no"></i>
-                              <h3
-                                class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
-                                Our Mission</h3>
-                              <p class="mt-2 text-xs text-gray-500">
-                                To provide financial and risk advisory services through innovations that empower our
-                                clients’ prosperity.
-                              </p>
-                            </div>
-                          </div>
-
-                          <div
-                            class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
-                            <div class="flex h-fit flex-col"><i
-                                class="fas fa-eye text-black text-4xl pb-4 group-hover:text-brand-primary"
-                                translate="no"></i>
-                              <h3
-                                class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
-                                Our Vision</h3>
-                              <p class="mt-2 text-xs text-gray-500">
-                                To be a global leader empowering prosperity.
-                              </p>
-                            </div>
-                          </div>
-
-                          <div
-                            class="shadow-2xl button-animation duration-700 group border-l-4 border-t-4 border-solid border-black/20 shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-xl bg-white p-5 w-full h-full">
-                            <div class="flex h-fit flex-col"><i
-                                class="fas fa-gem text-black text-4xl pb-4 group-hover:text-brand-primary"
-                                translate="no"></i>
-                              <h3
-                                class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
-                                Our Values</h3>
-                              <div class="grid grid-cols-2 gap-1 text-black text-xs">
-                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Integrity</p>
-                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Excellence</p>
-                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Innovative</p>
-                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Teamwork</p>
-                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Relationships</p>
-                                <p><i class="fas fa-check mr-1 text-brand-primary"></i> Growth &amp; Prosperity</p>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                        <div class="mt-10">
-                          <div class="flex gap-2 text-lg mb-5 italic">
-                            <p><span class="text-brand-primary">#</span>Empower</p>
-                            <p><span class="text-brand-primary">#</span>Innovate</p>
-                            <p><span class="text-brand-primary">#</span>Prosper</p>
-                          </div>
-                          <NuxtLink href="/corporate-culture"
-                            class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-20 text-sm sm:text-md rounded-sm mt-10">
-                            Learn More
-                            <i class="fas fa-arrow-right text-primary ml-2"></i>
-                          </NuxtLink>
-
-                        </div>
+                      <div class="text-light-content pb-5 md:pb-6 py-auto">
+                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                          Our success is driven by a dynamic and dedicated
+                          leadership team. Comprising individuals with diverse
+                          expertise and a shared commitment to excellence, our
+                          leaders play a pivotal role in shaping the vision,
+                          strategy, and culture of our organization. Meet the
+                          visionaries and strategists who lead us toward
+                          innovation, growth, and success. Their unwavering
+                          dedication and forward-thinking approach ensure that we
+                          remain at the forefront of our industry, continuously
+                          adapting to new challenges and opportunities.
+                        </p>
+                        <NuxtLink href="/meet-the-team"
+                          class="!button-animation z-[10] relative bg-black !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                          Meet the Team
+                          <i class="fas fa-arrow-right text-primary ml-2"></i>
+                        </NuxtLink>
                       </div>
                     </div>
                   </div>
 
                 </div>
               </section>
+
+              <Services />
 
               <section class="container max-w-6xl mx-auto relative py-5">
 
@@ -342,16 +304,14 @@ onMounted(() => {
                 </div>
               </section>
 
-              <Services />
+
 
               <Stats />
 
               <Testimonials />
 
-
-
-              <h1 class="text-black font-semibold text-3xl bg-white mx-auto">
-                <div class="container max-w-6xl mx-auto text-left py-5 bg-white">
+              <h1 class="text-black font-semibold text-3xl mx-auto bg-white">
+                <div class="container max-w-6xl mx-auto text-left py-5">
                   Corporate Social Responsibility
                   <span class="text-brand-primary"><br> &
                     Sustainability
@@ -359,8 +319,7 @@ onMounted(() => {
                 </div>
               </h1>
 
-
-              <div class="mx-auto bg-white w-screen pt-10">
+              <div class="mx-auto bg-white w-screen">
                 <div class="relative">
                   <img
                     src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -370,6 +329,7 @@ onMounted(() => {
                   <div
                     class="text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
                     <div>
+
                       <p class="ml-20 text-xs leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
                         Our initiatives focus on reducing our environmental impact, promoting ethical business
                         practices, and contributing positively to the communities we serve. We believe in creating
@@ -419,6 +379,10 @@ onMounted(() => {
                   </div>
                 </div>
               </div>
+
+
+
+
 
             </div>
           </div>

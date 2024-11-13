@@ -20,12 +20,12 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-[19vw] w-[87vw] h-20 mt-[71px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg">
+                class="!-left-[19vw] w-[87vw] h-20 mt-[71px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
-                <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
-                    aria-hidden="true"></div>
+                <!-- <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
+                    aria-hidden="true"></div> -->
 
-                <div class="h-10 bg-white justify-center content-center mt-0">
+                <div class="h-10 bg-gray-200 justify-center content-center mt-0">
                     <div class="ml-10  font-bold text-xl text-black">
                         {{ flyoverHeader }}
                     </div>
@@ -33,7 +33,7 @@
 
                 <div class="h-auto bg-white">
                     <div class="grid grid-cols-3 h-full">
-                        <div class="bg-gray-50 col-span-1 relative">
+                        <div class="bg-gray-200 col-span-1 relative">
                             <div class="relative pl-16 py-5 flex flex-col gap-3">
                                 <div v-for="(item, index) in currentMenuItems">
                                     <p @click="setSubmenu(item, index)"
@@ -139,12 +139,12 @@
                     </div>
                 </div>
 
-                <div class="bg-black/5">
+                <div class="bg-gray-200">
                     <div class="mx-auto max-w-7xl px-0">
                         <div
                             class="ml-2 grid grid-cols-3 divide-y divide-gray-900/5 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
                             <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
-                                class="group button-animation flex items-center hover:text-white gap-x-2.5 p-3 px-6 text-xs font-bold leading-6 text-white sm:justify-center sm:px-0">
+                                class="group button-animation flex items-center hover:text-white gap-x-2.5 p-3 px-6 text-xs font-bold leading-6 text-black sm:justify-center sm:px-0">
                                 <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
                                 {{ item.name }} <i class="fas fa-arrow-right"></i>
                             </NuxtLink>
