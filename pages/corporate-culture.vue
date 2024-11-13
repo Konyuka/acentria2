@@ -66,7 +66,7 @@ const faqs = ref([
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Corporate Governance" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
-                            style="color: transparent; object-fit: contain;"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our Governance
                             Framework</label>
@@ -86,7 +86,7 @@ const faqs = ref([
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Board of Directors" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
-                            style="color: transparent; object-fit: contain;"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Board of
                             Directors</label>
@@ -106,7 +106,7 @@ const faqs = ref([
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
-                            style="color: transparent; object-fit: contain;"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Risk
                             Management</label>
@@ -127,7 +127,7 @@ const faqs = ref([
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Ethical Conduct" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
-                            style="color: transparent; object-fit: contain;"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Ethical
                             Conduct</label>
@@ -149,7 +149,7 @@ const faqs = ref([
         </div>
 
         <div>
-            
+
             <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
                 <div class="container">
                     <div

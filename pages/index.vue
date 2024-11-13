@@ -224,9 +224,9 @@ onMounted(() => {
                 <div class="container">
                   <h2
                     class="text-left font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-1">
-                    What drives us at <br>
+                    Things that <br>
                     <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
-                      Acentria Group?
+                      Inspire Us
                     </span>
                   </h2>
 

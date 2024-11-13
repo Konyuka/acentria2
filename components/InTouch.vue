@@ -98,26 +98,46 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-5 pt-2 lg:grid-cols-1 !mb-5">
-                    <div>
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+                <div
+                    class="container mt-10 max-w-6xl mx-auto font-sans grid grid-cols-2 gap-x-8 gap-y-1 py-5 lg:grid-cols-3">
+
+                    <div class="">
+                        <h2 class="text-2xl font-semibold tracking-tight text-gray-900">
                             Visit Us
                         </h2>
-                        <p class="mt-4 leading-7 text-black ">
-                            West Park Towers - 9th floor, Mpesi Lane <br />
-                            Muthithi Road - Westlands Nairobi Kenya
+                        <p class="mt-4 leading-5 text-black font-medium text-xs">
+                            <i class="fas fa-building text-brand-primary"></i> West Park Towers, 9th floor <br>
+                            <i class="fas fa-road text-brand-primary"></i> Muthithi Road, Mpesi Lane <br />
+                            <i class="fas fa-map-marker-alt text-brand-primary"></i> Westlands, Nairobi Kenya
+                        </p>
+                        <h2 class="mt-5 text-2xl font-semibold tracking-tight text-gray-900">
+                            Working Hours
+                        </h2>
+                        <p class="mt-4 leading-5 text-black font-medium text-xs">
+                            <i class="fas fa-calendar-day text-brand-primary"></i> Monday to Friday <br>
+                            <i class="fas fa-clock text-brand-primary"></i> 8:00 AM to 5:00 PM <br />
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 lg:col-span-1 lg:gap-8">
-                        <div class="relative w-full h-96 ">
-                            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl md:px-[5vw]"
+                    <div class="py-5 col-span-2">
+                        <div class="relative w-full h-64 ">
+                            <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl px-[5vw]"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.324532608933!2d36.805693017382765!3d-1.2745878698825375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f176afe68fe1b%3A0xf590c6d95ac4594f!2sWestpark%20Towers!5e0!3m2!1sen!2ske!4v1720091094209!5m2!1sen!2ske"
                                 frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0">
                             </iframe>
                         </div>
                     </div>
                 </div>
+
+                <div class="container mx-auto  mb-0 pl-20 font-sans">
+                    <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                        Follow <span class="text-brand-primary">us on</span>
+                    </p>
+                </div>
+
+                <Socials2 />
+
+                
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ const ReinsuranceBannerContent = ref({
 </script>
 
 <template>
-    <section class="font-sans">
+    <section class="font-sans bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
         <div>
@@ -38,7 +38,7 @@ const ReinsuranceBannerContent = ref({
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Customers" loading="lazy" width="500"
                             height="350" decoding="async" data-nimg="1" src="/img/call.jpg"
-                            style="color: transparent; object-fit: contain;"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
                             Customers</label>
@@ -58,7 +58,7 @@ const ReinsuranceBannerContent = ref({
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Partners" loading="lazy" width="500"
                             height="350" decoding="async" data-nimg="1" src="/img/call.jpg"
-                            style="color: transparent; object-fit: contain;"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
                             Partners</label>
@@ -79,7 +79,7 @@ const ReinsuranceBannerContent = ref({
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our People" loading="lazy" width="500"
                             height="350" decoding="async" data-nimg="1" src="/img/call.jpg"
-                            style="color: transparent; object-fit: contain;"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
                             People</label>
@@ -97,10 +97,10 @@ const ReinsuranceBannerContent = ref({
                         </div>
                     </div>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Communities" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/call.jpg"
-                            style="color: transparent; object-fit: contain;"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
                             Communities</label>

@@ -5,10 +5,10 @@
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
                     class="pr-2 border-0 ring-0 inline-flex items-center gap-x-1 text-md font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
-                    <div
+                    <!-- <div
                         class="border-0 ring-0 mr-0 flex h-5 w-5 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
                         <i :class="theMenu.icon" class="text-xs text-white"></i>
-                    </div>
+                    </div> -->
                     {{ theMenu.name }}
                 </PopoverButton>
             </div>
@@ -20,7 +20,7 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-64 w-[90vw] mt-14 mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg">
+                class="!-left-64 w-[90vw] mt-16 mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg">
 
                 <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-gray-600 bg-opacity-50 transition-opacity"
                     aria-hidden="true"></div>

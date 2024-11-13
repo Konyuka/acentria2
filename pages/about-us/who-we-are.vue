@@ -4,6 +4,12 @@ const ReinsuranceBannerContent = ref({
     image: 'https://img.freepik.com/free-vector/v915-red_53876-174930.jpg?t=st=1728266840~exp=1728270440~hmac=e94c9d586c21dc1e57888d5e3b499c5109a624670b07a4c6188be1f6b9a5686b&w=826',
 })
 
+const bannerContent = ref({
+    subtitle: 'About Us',
+    title: 'About Acentria Group',
+    image: 'https://images.pexels.com/photos/7413967/pexels-photo-7413967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+})
+
 const mission = ref(null)
 const selectedMenu = computed(() => {
     return mission.value?.currentMenu
@@ -39,8 +45,9 @@ onMounted(()=>{
 <template>
     <section class="bg-white">
         <!-- <ReinsuranceBanner :content="ReinsuranceBannerContent" /> -->
+        <BannerMain :content="bannerContent" />
 
-        <div class="bg-white px-6 py-1  font-sans mt-20">
+        <div class="bg-white px-6 py-1  font-sans mt-auto">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:8:9">
                 <div class="relative py-4 lg:basis-1/2 scale-90" data-v-inspector="components/Why.vue:9:13">

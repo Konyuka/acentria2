@@ -7,7 +7,7 @@ const ReinsuranceBannerContent = ref({
 </script>
 
 <template>
-    <section>
+    <section class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
         <div class="">

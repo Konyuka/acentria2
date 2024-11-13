@@ -40,7 +40,7 @@ const contactsContent = ref({
 
 
 
-        <div class="bg-white py-8 mt-24">
+        <div class="bg-white py-8 mt-14">
 
             <div class="isolate !mb-5 py-5 md:py-0 mt-5">
                 <div class="relative isolate -z-10">

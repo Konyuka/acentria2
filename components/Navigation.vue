@@ -1,7 +1,7 @@
 <script setup>
 const isScrolled = ref(false);
 const bottomBarClass = computed(() => {
-    return isScrolled.value ? 'sticky bg-white' : 'sticky';
+    return isScrolled.value ? 'sticky bg-white' : 'sticky bg-white';
 });
 
 
@@ -159,46 +159,7 @@ onBeforeUnmount(() => {
 
 
                 <div class="flex flex-col font-sans mb-0 mt-1">
-                    <!-- socials -->
-                    <div class="flex items-center justify-end md:justify-end md:col-span-1">
-                        <!-- <div class="flex gap-5">
-                            <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
-                                <div
-                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                    <i
-                                        class="!text-md fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
-                                </div>
-                            </a>
-                            <a href="https://x.com/acentriagroup?lang=en" target="_blank">
-                                <div
-                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                    <i
-                                        class="!text-md fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
-                                </div>
-                            </a>
-                            <a href="https://www.facebook.com/Acentriagroup" target="_blank">
-                                <div
-                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                    <i
-                                        class="!text-md fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
-                                </div>
-                            </a>
-                            <a href="https://www.instagram.com/acentriagroup/" target="_blank">
-                                <div
-                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                    <i
-                                        class="!text-md fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
-                                </div>
-                            </a>
-                            <a href="https://www.tiktok.com/@acentria.group" target="_blank">
-                                <div
-                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
-                                    <i
-                                        class="!text-md fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
-                                </div>
-                            </a>
-                        </div> -->
-                    </div>
+
 
                     <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="230" height="50" decoding="async"
                             data-nimg="1" class="mr-8" style="color: transparent" src="/img/LogoT.png" />
@@ -209,7 +170,29 @@ onBeforeUnmount(() => {
                 <div
                     class="top-0 z-50 mx-auto hidden w-1/2 bottom-0 justify-between px-1 py-0 transition-all duration-200 lg:flex relative">
                     <div class="mx-auto ">
-                        <div class="flex font-sans">
+                        <div class="flex justify-center text-md gap-2">
+                            <NuxtLink to="/"
+                                :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                                Home
+                            </NuxtLink>
+                            <NuxtLink to="/acentria-news-and-blogs"
+                                :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                                News
+                            </NuxtLink>
+                            <NuxtLink to="/acentria-group-careers"
+                                :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                                Careers
+                            </NuxtLink>
+                            <NuxtLink to="/contact-acentria-group"
+                                :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
+                                class=" relative px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                                Contacts
+                            </NuxtLink>
+                        </div>
+                        <div class="flex font-sans mt-1">
                             <div class="flex gap-1 my-1">
                                 <FlyoutMenu v-for="menu in menus" :theMenu="menu" />
                             </div>
@@ -218,30 +201,46 @@ onBeforeUnmount(() => {
                 </div>
 
                 <div class="flex flex-col gap-2 items-center justify-end text-xs text-black">
-
-                    <div class="">
-                        <NuxtLink to="/"
-                            :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
-                            Home
-                        </NuxtLink>
-                        <NuxtLink to="/acentria-news-and-blogs"
-                            :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
-                            News
-                        </NuxtLink>
-                        <NuxtLink to="/acentria-group-careers"
-                            :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative border-r border-brand-divider px-1 py-1 hover:text-brand-primary button-animation font-medium">
-                            Careers
-                        </NuxtLink>
-                        <NuxtLink to="/contact-acentria-group"
-                            :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative px-1 py-1 hover:text-brand-primary button-animation font-medium">
-                            Contacts
-                        </NuxtLink>
+                    <!-- socials -->
+                    <div class="flex items-center justify-end md:justify-end md:col-span-1">
+                        <div class="flex gap-5">
+                            <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-lg fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://x.com/acentriagroup?lang=en" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-lg fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/Acentriagroup" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-lg fab fa-facebook icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/acentriagroup/" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-lg fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.tiktok.com/@acentria.group" target="_blank">
+                                <div
+                                    class="bg-white w-5 h-5 rounded-full flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-lg fab fa-tiktok icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>

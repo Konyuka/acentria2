@@ -14,13 +14,15 @@ export default {
         secondary: "#4d4f51",
       },
       fontFamily: {
-        sans: ["Montserrat", "sans-serif"],
+        // sans: ["Nunito Sans", "sans-serif"],
+        // sans: ["Montserrat", "sans-serif"],
       },
       fontWeight: {
         semibold: 200,
       },
       fontSize: {
         base: "8px",
+        xs: "20px",
       },
     },
   },
