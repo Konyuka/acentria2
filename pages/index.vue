@@ -208,7 +208,7 @@ onMounted(() => {
                         and aligns perfectly with our corporate strategy. It encompasses our purpose, our vision, and
                         our approach to conducting business.
                       </p>
-                      <NuxtLink href="/corporate-culture"
+                      <NuxtLink href="/our-brand"
                         class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
                         Learn More
                         <i class="fas fa-arrow-right text-primary ml-2"></i>

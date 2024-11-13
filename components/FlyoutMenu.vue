@@ -4,7 +4,7 @@
             <div class="">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
-                    class="pr-2 border-0 ring-0 inline-flex items-center gap-x-1 text-md font-semibold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
+                    class="pr-2 border-0 ring-0 inline-flex items-center gap-x-1 text-md font-bold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
                     <!-- <div
                         class="border-0 ring-0 mr-0 flex h-5 w-5 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
                         <i :class="theMenu.icon" class="text-xs text-white"></i>
@@ -245,7 +245,7 @@ const AboutMenus = ref([
             {
                 name: 'Our Brand',
                 description: 'Understand our culture and the core values that guide our actions.',
-                link: '/corporate-culture',
+                link: '/our-brand',
             },
         ]
     },
@@ -780,6 +780,7 @@ const openFlyover = (menu) => {
             footerOptions.value = aboutFooterMenus.value
         }
         if (currentMenu.value === 'Insurance') {
+            router.push('/acentria-group-insurance');
             flyoverHeader.value = 'Insurance Solutions'
             currentMenuItems.value = InsuranceMenus.value
             currentSubmenu.value = 'Personal Cover'
@@ -789,6 +790,7 @@ const openFlyover = (menu) => {
             footerOptions.value = insuranceFooterMenus.value
         }
         if (currentMenu.value === 'Reinsurance') {
+            router.push('/acentria-group-reinsurance');
             flyoverHeader.value = 'Reinsurance Solutions'
             currentMenuItems.value = ReinsuranceMenus.value
             currentSubmenu.value = 'Reinsurance Services'
@@ -798,6 +800,7 @@ const openFlyover = (menu) => {
             footerOptions.value = reinsuranceFooterMenus.value
         }
         if (currentMenu.value === 'Actuarial') {
+            router.push('/acentria-group-actuarial');
             flyoverHeader.value = 'Actuarial Services'
             currentMenuItems.value = ActuarialMenus.value
             currentSubmenu.value = 'Actuarial Consulting'
@@ -828,7 +831,7 @@ const currentRoute = computed(() => {
     return route.path;
 })
 watch(currentRoute, (newValue) => {
-    closeFlyOver()
+    // closeFlyOver()
     // if (newValue) {
     // }
 })

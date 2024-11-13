@@ -193,7 +193,7 @@ onBeforeUnmount(() => {
                             </NuxtLink>
                         </div>
                         <div class="flex font-sans mt-1">
-                            <div class="flex gap-1 my-1">
+                            <div class="flex gap-5 my-1">
                                 <FlyoutMenu v-for="menu in menus" :theMenu="menu" />
                             </div>
                         </div>

@@ -16,7 +16,7 @@ const props = defineProps({
             <div class="absolute inset-0 bg-black opacity-20 h-[100vh]"></div>
         </div>
         <div>
-            <div class="absolute my-auto top-[30vh] left-0 container content-center align-middle justify-center">
+            <div class="absolute my-auto h-full left-0 container content-center align-middle justify-center">
                 <div
                     class="flex flex-col items-center bg-cover px-4 py-6 text-center lg:px-10 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                     <div class="max-w-2xl">

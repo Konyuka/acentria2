@@ -37,7 +37,8 @@ const incentives = [
 
                 <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                        style="color: transparent; object-fit: contain" class="w-full h-60 shadow-2xl rounded-lg !object-cover"
+                        style="color: transparent; object-fit: contain"
+                        class="w-full h-60 shadow-2xl rounded-lg !object-cover"
                         src="https://images.pexels.com/photos/669986/pexels-photo-669986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
@@ -81,7 +82,7 @@ const incentives = [
                     <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
 
                         <NuxtLink :to="incentive.link" v-for="incentive in incentives" :key="incentive.name"
-                            class="group button-animation -m-2 grid grid-cols-1 rounded-[2rem] shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
+                            class="font-sans group button-animation -m-2 grid grid-cols-1 rounded-[2rem] shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
                             <div class="grid grid-cols-1 rounded-[2rem] p-2 shadow-md shadow-black/5">
                                 <div class="rounded-3xl bg-white p-5 pb-1 shadow-2xl ring-1 ring-black/5">
                                     <i :class="incentive.icon" class="text-black text-2xl"></i>
@@ -89,9 +90,10 @@ const incentives = [
                                         {{ incentive.name }}
                                     </p>
                                     <div class="mt-2">
-                                        <h3 class="text-xs text-gray-950">
+                                        <p
+                                            class="text-xs leading-normal font-regular text-light-content !text-inherit">
                                             {{ incentive.description }}
-                                        </h3>
+                                        </p>
                                     </div>
                                     <div class="mt-2">
                                         <i

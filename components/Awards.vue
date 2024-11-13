@@ -1,5 +1,22 @@
 <script setup>
-
+const awards = ref([
+    {
+        name: 'Award 1',
+        img:'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    },
+    {
+        name: 'Award 2',
+        img:'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    },
+    {
+        name: 'Award 3',
+        img:'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    },
+    {
+        name: 'Award 4',
+        img:'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    },
+])
 
 </script>
 
@@ -19,7 +36,8 @@
                     </h2>
                 </div>
                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
-                    <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                    
+                    <a v-for="award in awards" class="button-animation cursor-pointer relative flex h-auto min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                         href="resources/blog/preparing-for-ai-regulations.html">
                         <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                             <div
@@ -58,11 +76,11 @@
                         <div
                             class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
                             <section class="grid items-start justify-start gap-y-0">
-                                <div class="relative flex min-h-[100px] flex-col gap-y-1">
+                                <div class="relative flex min-h-auto py-5 flex-col gap-y-1">
 
                                     <h6
                                         class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
-                                        Award 1
+                                        {{ award.name }}
                                     </h6>
                                 </div>
 
@@ -70,154 +88,8 @@
                         </div>
 
                     </a>
-                    <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
-                        href="resources/guides/elevating-grc-maturity.html">
-                        <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
-                            <div
-                                class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
-                                <div
-                                    class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
-                                    <figure
-                                        class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
-                                        <div class="h-0 w-full max-w-full pb-[25%]">
-                                            <div
-                                                class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
-                                                <picture class="flex h-[300px] w-full max-w-none">
-                                                    <img alt="Stronger consolidation: Elevating your GRC maturity for better risk management"
-                                                        loading="lazy" decoding="async" data-nimg="fill"
-                                                        class="object-center object-cover" style="
-                                        position: absolute;
-                                        height: 100%;
-                                        width: 100%;
-                                        left: 0;
-                                        top: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        color: transparent;
-                                      " sizes="240w 100vw"
-                                                        src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                                                </picture>
-                                            </div>
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div
-                                class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
-                            </div>
-                        </div>
-                        <div
-                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
-                            <section class="grid items-start justify-start gap-y-0">
-                                <div class="relative flex min-h-[100px] flex-col gap-y-1">
-                                    <h6
-                                        class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
-                                        Award 2
-                                    </h6>
-                                </div>
-                            </section>
-                        </div>
 
-                    </a>
-                    <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
-                        href="resources/guides/grc-vendor-consolidation-checklist.html">
-                        <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
-                            <div
-                                class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
-                                <div
-                                    class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
-                                    <figure
-                                        class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
-                                        <div class="h-0 w-full max-w-full pb-[25%]">
-                                            <div
-                                                class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
-                                                <picture class="flex h-[300px] w-full max-w-none">
-                                                    <img alt="Your guide to GRC vendor consolidation" loading="lazy"
-                                                        decoding="async" data-nimg="fill"
-                                                        class="object-center object-cover" style="
-                                        position: absolute;
-                                        height: 100%;
-                                        width: 100%;
-                                        left: 0;
-                                        top: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        color: transparent;
-                                      " sizes="240w 100vw"
-                                                        src="https://images.pexels.com/photos/12442888/pexels-photo-12442888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                                                </picture>
-                                            </div>
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div
-                                class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
-                            </div>
-                        </div>
-                        <div
-                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
-                            <section class="grid items-start justify-start gap-y-0">
-                                <div class="relative flex min-h-[100px] flex-col gap-y-1">
-                                    <h6
-                                        class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
-                                        Award 3
-                                    </h6>
-                                </div>
-                            </section>
-                        </div>
-                    </a>
-                    <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
-                        href="resources/blog/the-case-for-purpose-built-software.html">
-                        <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
-                            <div
-                                class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
-                                <div
-                                    class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
-                                    <figure
-                                        class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
-                                        <div class="h-0 w-full max-w-full pb-[25%]">
-                                            <div
-                                                class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
-                                                <picture class="flex h-[300px] w-full max-w-none">
-                                                    <img alt="The case for purpose-built software: Why tailored programming outperforms modified solutions"
-                                                        loading="lazy" decoding="async" data-nimg="fill"
-                                                        class="object-center object-cover" style="
-                                        position: absolute;
-                                        height: 100%;
-                                        width: 100%;
-                                        left: 0;
-                                        top: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        color: transparent;
-                                      " sizes="240w 100vw"
-                                                        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" />
-                                                </picture>
-                                            </div>
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div
-                                class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
-                                <div class="relative flex min-h-[100px] flex-col gap-y-1">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
-                            <section class="grid items-start justify-start gap-y-0">
-                                <div class="relative flex min-h-[100px] flex-col gap-y-1">
-                                    <h6
-                                        class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
-                                        Award 4
-                                    </h6>
-                                </div>
-                            </section>
-                        </div>
-                    </a>
+                    
                 </div>
             </div>
         </section>
