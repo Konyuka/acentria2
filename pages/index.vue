@@ -143,52 +143,9 @@ onMounted(() => {
                   </div>
                 </div>
 
-                <div class="container relative min-w-screen mt-14">
-                  <div class="bottom-0 absolute max-w-7xl mx-auto">
 
-                    <h2
-                      class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
-                      Corporate <span class="text-brand-primary">Culture</span>
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-20 lg:gap-16">
-                  <div class="flex flex-col justify-center lg:basis-1/2">
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                        Our mission is to exceed our stakeholders' expectations by delivering excellence in every aspect
-                        of our business, every day.
-                        Central to this mission is fostering a strong corporate culture - a business environment where
-                        everything we do is guided by our core values of Integrity, Innovation, and Excellence.
-                        "The Acentria Way" embodies our global culture, perfectly aligned with our corporate strategy.
-                        It encompasses our purpose, our vision, and our approach to conducting business.
-                        It is the foundation of our organization, ensuring that we operate as a responsible and
-                        forward-thinking company.
-                      </p>
-                      <NuxtLink href="/corporate-culture"
-                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
-                        Learn More
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                  <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain"
-                      class="w-full h-60 shadow-2xl rounded-lg !object-cover"
-                      src="https://images.pexels.com/photos/3869651/pexels-photo-3869651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      data-v-inspector="components/Why.vue:34:17" />
-                  </div>
-                </div>
 
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                  <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain"
-                      class="w-full h-60 shadow-2xl rounded-lg !object-cover" src="/img/award.jpg"
-                      data-v-inspector="components/Why.vue:34:17" />
-                  </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
 
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
@@ -215,7 +172,53 @@ onMounted(() => {
                       </NuxtLink>
                     </div>
                   </div>
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      style="color: transparent; object-fit: contain"
+                      class="w-full h-60 shadow-2xl rounded-lg !object-cover" src="/img/award.jpg"
+                      data-v-inspector="components/Why.vue:34:17" />
+                  </div>
                 </div>
+
+                <div class="container relative min-w-screen mt-20">
+                  <div class="bottom-0 absolute max-w-7xl mx-auto">
+                    <h2
+                      class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
+                      Corporate <span class="text-brand-primary">Culture</span>
+                    </h2>
+                  </div>
+                </div>
+
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-20 lg:gap-16">
+                  <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      style="color: transparent; object-fit: contain"
+                      class="w-full h-60 shadow-2xl rounded-lg !object-cover"
+                      src="https://images.pexels.com/photos/3869651/pexels-photo-3869651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      data-v-inspector="components/Why.vue:34:17" />
+                  </div>
+                  <div class="flex flex-col justify-center lg:basis-1/2">
+                    <div class="text-light-content pb-5 md:pb-6 py-auto">
+                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        Our mission is to exceed our stakeholders' expectations by delivering excellence in every aspect
+                        of our business, every day.
+                        Central to this mission is fostering a strong corporate culture - a business environment where
+                        everything we do is guided by our core values of Integrity, Innovation, and Excellence.
+                        "The Acentria Way" embodies our global culture, perfectly aligned with our corporate strategy.
+                        It encompasses our purpose, our vision, and our approach to conducting business.
+                        It is the foundation of our organization, ensuring that we operate as a responsible and
+                        forward-thinking company.
+                      </p>
+                      <NuxtLink href="/corporate-culture"
+                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        Learn More
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                      </NuxtLink>
+                    </div>
+                  </div>
+                </div>
+
+
 
 
               </div>
@@ -234,10 +237,8 @@ onMounted(() => {
               </div>
 
               <section id="" class="bg-white relative md:py-2  text-left">
-
-
                 <div class="container">
-                  
+
                   <div class=" !font-sans container my-1">
                     <div class="container mx-auto py-5">
                       <div class="mx-auto">
@@ -347,9 +348,7 @@ onMounted(() => {
 
               <Testimonials />
 
-              <div class="bg-white w-full h-full">
-                <Awards />
-              </div>
+
 
               <h1 class="text-black font-semibold text-3xl bg-white mx-auto">
                 <div class="container max-w-6xl mx-auto text-left py-5 bg-white">
@@ -361,25 +360,24 @@ onMounted(() => {
               </h1>
 
 
-              <div class="2xl:mx-auto bg-black/50 2xl:container md:px-20 px-4 md:py-12 py-9">
-                <div class="relative rounded-md">
+              <div class="mx-auto bg-white w-screen pt-10">
+                <div class="relative">
                   <img
                     src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="city view"
-                    class="w-full h-full rounded-md  object-center object-cover absolute sm:block hidden" />
+                    alt="city view" class="w-full h-full  object-center object-cover absolute sm:block hidden" />
                   <img src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
                     class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
                   <div
                     class="text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
                     <div>
-                      <p class="text-xs leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
+                      <p class="ml-20 text-xs leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
                         Our initiatives focus on reducing our environmental impact, promoting ethical business
                         practices, and contributing positively to the communities we serve. We believe in creating
                         long-term value for our stakeholders by integrating sustainable practices into our core
                         operations and fostering a culture of responsibility and transparency.
                       </p>
                     </div>
-                    <div class="mt-10 max-w-md">
+                    <div class="ml-20 mt-10 max-w-md">
                       <NuxtLink to="/csr"
                         class="text-white underline underline-offset-8 hover:button-animation font-semibold tracking-widest">
                         Learn More <i class="fas fa-caret-right"></i>
@@ -387,6 +385,10 @@ onMounted(() => {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div class="bg-white w-full h-full">
+                <Awards />
               </div>
 
               <div class=" w-full h-full container mx-auto max-w-6xl">
