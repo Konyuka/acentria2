@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div id="stats" class="py-2 text-white font-sans ">
+        <div id="stats" class="-mt-8 text-white font-sans ">
             <div class="">
                 <div class="mx-auto px-4">
                     <div class="mb-12 flex flex-col items-center"></div>
@@ -20,7 +20,7 @@
                         <div class="mb-12 flex items-center justify-center">
                             <div class="border-brand-divider border-l pl-6 text-dark-title">
                                 <span
-                                    class="flex undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
+                                    class="flex undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-2xl font-bold">
                                     <CountUp :end-val="13" />k+
 
                                 </span>
@@ -32,9 +32,9 @@
                         <div class="mb-12 flex items-center justify-center">
                             <div class="border-brand-divider border-l pl-6 text-dark-title">
                                 <span
-                                    class=" undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
+                                    class=" undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-2xl font-bold">
                                     <span
-                                        class="flex text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
+                                        class="flex text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-2xl font-bold">
                                         <CountUp :end-val="10" />+
                                     </span>
                                 </span>
@@ -46,7 +46,7 @@
                         <div class="mb-12 flex items-center justify-center">
                             <div class="border-brand-divider border-l pl-6 text-dark-title">
                                 <span
-                                    class="flex undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
+                                    class="flex undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-2xl font-bold">
                                     <CountUp :end-val="5" />+
                                 </span>
                                 <p class="undefined undefined text-base md:text-xl font-bold">
@@ -57,9 +57,9 @@
                         <div class="mb-12 flex items-center justify-center">
                             <div class="border-brand-divider border-l pl-6 text-dark-title">
                                 <span
-                                    class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
+                                    class="undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-2xl font-bold">
                                     <span
-                                        class="flex text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
+                                        class="flex text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-2xl font-bold">
                                         <CountUp :end-val="5" />+
                                     </span>
                                 </span>
@@ -71,7 +71,7 @@
                         <div class="mb-12 fex items-center justify-center">
                             <div class="border-brand-divider border-l pl-6 text-dark-title">
                                 <span
-                                    class="flex undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-xl md:text-4xl 2xl:text-4xl font-bold">
+                                    class="flex undefined pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-2xl font-bold">
                                     <CountUp :end-val="13" />h
                                 </span>
                                 <p class="undefined undefined text-base md:text-xl font-bold">

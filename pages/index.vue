@@ -135,7 +135,7 @@ onMounted(() => {
                         adapting to new challenges and opportunities.
                       </p>
                       <NuxtLink href="/meet-the-team"
-                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        class="!button-animation z-[10] relative bg-black !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
                         Meet the Team
                         <i class="fas fa-arrow-right text-primary ml-2"></i>
                       </NuxtLink>
@@ -220,16 +220,24 @@ onMounted(() => {
 
               </div>
 
-              <section id="" class="bg-white relative md:py-2  text-left">
-                <div class="container">
+              <div class="container relative min-h-[30vh] min-w-screen">
+                <div class="bottom-0 absolute max-w-7xl mx-auto">
+
                   <h2
-                    class="text-left font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-1">
+                    class="mb-5 text-left font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight py-1">
                     Things that <br>
                     <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
                       Inspire Us
                     </span>
                   </h2>
+                </div>
+              </div>
 
+              <section id="" class="bg-white relative md:py-2  text-left">
+
+
+                <div class="container">
+                  
                   <div class=" !font-sans container my-1">
                     <div class="container mx-auto py-5">
                       <div class="mx-auto">
@@ -314,7 +322,7 @@ onMounted(() => {
                   <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
 
                     <NuxtLink :to="item.link" v-for="item in commitments"
-                      class="shadow-2xl button-animation duration-700 group border-2 border-solid border-black shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-lg bg-black/10 p-5 w-full h-full">
+                      class="shadow-2xl button-animation duration-700 group border-0 border-solid border-black shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-lg bg-black/5 p-5 w-full h-full">
 
                       <div class="flex h-fit flex-col">
                         <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary"

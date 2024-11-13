@@ -76,7 +76,7 @@ const incentives = [
             </div>
             <div class="relative pt-5">
                 <div
-                    class="absolute inset-x-0 bottom-0 top-48 bg-[radial-gradient(circle_at_center_var(--gradient-position),#df2416,#ffffff00,#4d4f541f_70%)] [--gradient-position:center] lg:[--gradient-position:150%]">
+                    class="absolute inset-x-0 bottom-0 top-48 bg-white">
                 </div>
                 <div class="container relative mx-auto max-w-6xl px-6 lg:px-8 pb-10">
                     <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
