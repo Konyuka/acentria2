@@ -87,15 +87,15 @@
 
                                 <div>
                                     <div class="w-auto dark:border-gray-700">
-                                        <div class="w-full rounded h-48">
+                                        <div class="w-full rounded h-40">
                                             <img src="/img/call.jpg" alt="Display picture of Silene Tokyo" role="img"
                                                 class="object-cover h-full w-full overflow-hidden rounded shadow">
                                         </div>
                                         <div class="flex w-full items-center justify-between pt-6 pb-1">
                                             <p class="text-xl font-normal text-gray-800 dark:text-white ">
                                                 <button
-                                                    class="button-animation hover:bg-brand-primary px-2 py-1 bg-black text-white text-sm">
-                                                    Contact Us
+                                                    class="button-animation hover:bg-brand-primary px-3 py-0.5 bg-black text-white text-[10px]">
+                                                    Compare Quotes Instantly
                                                 </button>
                                             </p>
                                             <div class="flex justify-center">
@@ -110,13 +110,30 @@
 
                                             </div>
                                         </div>
-                                        <p class="mt-2 text-xs text-gray-600 font-normal">
-                                            Access all the ways you can reach us at your convenience. We have a
-                                            representative wherever you are.
+                                        <p class="mt-2 text-[12px] text-gray-600 leading-4">
+                                            Do it yourself or let us help you <br> <span
+                                                class="text-brand-primary underline underline-offset-2">Get a quote
+                                                now!</span>
                                         </p>
                                     </div>
                                 </div>
 
+                            </div>
+
+                            <div class="h-10 grid grid-cols-3 gap-2 font-bold">
+                                <div></div>
+                                <div class="text-brand-primary col-span-1 text-[16px]">
+                                    <i class="fas fa-award mr-2"></i> <span class="text-black">Get discounts</span> upto
+                                    3%
+                                </div>
+
+                                <div>
+                                    <button
+                                        class="button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[10px]">
+                                        Download our App on <i class="fab fa-google-play text-brand-primary"></i> & <i
+                                            class="fab fa-apple text-brand-primary"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -579,32 +596,32 @@ const InsuranceMenus = ref([
             },
         ]
     },
-    {
-        name: 'Schools & Institutions',
-        subMenu: 'Institutional Insurance',
-        description: 'Insurance solutions for schools and institutions to protect against various risks.',
-        icon: 'fas fa-school',
-        items: [
-            {
-                name: 'Student attachment',
-                description: 'Insurance coverage for students during their attachment or internship programs.',
-                link: '/insurance/biasahara-cover',
-            }
-        ]
-    },
-    {
-        name: 'Agricultural Insurance',
-        subMenu: 'Agricultural Insurance',
-        description: 'Comprehensive insurance solutions for agricultural activities.',
-        icon: 'fas fa-tractor',
-        items: [
-            {
-                name: 'Agro insurance',
-                description: 'Comprehensive coverage for agricultural activities, protecting against a variety of risks.',
-                link: '/insurance/biasahara-cover',
-            },
-        ]
-    },
+    // {
+    //     name: 'Schools & Institutions',
+    //     subMenu: 'Institutional Insurance',
+    //     description: 'Insurance solutions for schools and institutions to protect against various risks.',
+    //     icon: 'fas fa-school',
+    //     items: [
+    //         {
+    //             name: 'Student attachment',
+    //             description: 'Insurance coverage for students during their attachment or internship programs.',
+    //             link: '/insurance/biasahara-cover',
+    //         }
+    //     ]
+    // },
+    // {
+    //     name: 'Agricultural Insurance',
+    //     subMenu: 'Agricultural Insurance',
+    //     description: 'Comprehensive insurance solutions for agricultural activities.',
+    //     icon: 'fas fa-tractor',
+    //     items: [
+    //         {
+    //             name: 'Agro insurance',
+    //             description: 'Comprehensive coverage for agricultural activities, protecting against a variety of risks.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //     ]
+    // },
     {
         name: 'Claims & Filing',
         subMenu: 'Claims Process',
