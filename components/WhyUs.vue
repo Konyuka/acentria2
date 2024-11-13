@@ -32,7 +32,7 @@ const props = defineProps({
         <div class="bg-white">
             <div class="container mx-auto ">
                 <div class="md:py-10">
-                    <div class="mx-auto max-w-7xl px-2 lg:px-8">
+                    <div class="container mx-auto max-w-6xl px-2 lg:px-8">
                         <div
                             class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                             <div>

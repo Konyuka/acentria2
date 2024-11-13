@@ -14,9 +14,9 @@
         </div>
         <div id="stats" class="py-2 text-white font-sans ">
             <div class="">
-                <div class="container mx-auto px-4">
+                <div class="mx-auto px-4">
                     <div class="mb-12 flex flex-col items-center"></div>
-                    <div class="font-sans flex flex-wrap justify-center gap-x-16">
+                    <div class=" font-sans flex flex-wrap justify-center gap-x-16">
                         <div class="mb-12 flex items-center justify-center">
                             <div class="border-brand-divider border-l pl-6 text-dark-title">
                                 <span

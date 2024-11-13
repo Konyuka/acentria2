@@ -231,8 +231,8 @@ onMounted(() => {
                   </h2>
 
                   <div class=" !font-sans container my-1">
-                    <div class="mx-auto max-w-7xl py-5">
-                      <div class="mx-auto max-w-7xl px-4 lg:max-w-none">
+                    <div class="container mx-auto py-5">
+                      <div class="mx-auto">
                         <div class="grid grid-cols-3 gap-5">
 
                           <div

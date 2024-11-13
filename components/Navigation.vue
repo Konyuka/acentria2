@@ -170,30 +170,9 @@ onBeforeUnmount(() => {
                 <div
                     class="top-0 z-50 mx-auto hidden w-1/2 bottom-0 justify-between px-1 py-0 transition-all duration-200 lg:flex relative">
                     <div class="mx-auto ">
-                        <div class="flex justify-center text-md gap-2">
-                            <NuxtLink to="/"
-                                :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                                class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
-                                Home
-                            </NuxtLink>
-                            <NuxtLink to="/acentria-news-and-blogs"
-                                :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                                class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
-                                News
-                            </NuxtLink>
-                            <NuxtLink to="/acentria-group-careers"
-                                :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                                class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
-                                Careers
-                            </NuxtLink>
-                            <NuxtLink to="/contact-acentria-group"
-                                :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                                class=" relative px-3 py-1 hover:text-brand-primary button-animation font-bold">
-                                Contacts
-                            </NuxtLink>
-                        </div>
+
                         <div class="flex font-sans mt-1">
-                            <div class="flex gap-5 my-1">
+                            <div class="flex gap-4 my-1">
                                 <FlyoutMenu v-for="menu in menus" :theMenu="menu" />
                             </div>
                         </div>
@@ -201,6 +180,7 @@ onBeforeUnmount(() => {
                 </div>
 
                 <div class="flex flex-col gap-2 items-center justify-end text-xs text-black">
+
                     <!-- socials -->
                     <div class="flex items-center justify-end md:justify-end md:col-span-1">
                         <div class="flex gap-5">
@@ -241,6 +221,31 @@ onBeforeUnmount(() => {
                             </a>
                         </div>
                     </div>
+
+                    <div class="flex justify-center text-[12px] gap-1">
+                        <NuxtLink to="/"
+                            :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
+                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                            Home
+                        </NuxtLink>
+                        <NuxtLink to="/acentria-news-and-blogs"
+                            :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
+                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                            News
+                        </NuxtLink>
+                        <NuxtLink to="/acentria-group-careers"
+                            :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
+                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                            Careers
+                        </NuxtLink>
+                        <NuxtLink to="/contact-acentria-group"
+                            :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
+                            class=" relative px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                            Contacts
+                        </NuxtLink>
+                    </div>
+
+
                 </div>
             </div>
         </div>

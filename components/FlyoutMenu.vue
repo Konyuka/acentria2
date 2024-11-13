@@ -3,8 +3,8 @@
         <div class="justify-center">
             <div class="">
                 <PopoverButton @click="openFlyover(theMenu.name)"
-                    :class="[currentMenu === theMenu.name ? 'text-brand-primary' : 'text-black']"
-                    class="pr-2 border-0 ring-0 inline-flex items-center gap-x-1 text-md font-bold duration-700 hover:font-bold leading-6 hover:text-brand-primary">
+                    :class="[currentMenu === theMenu.name ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
+                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-2   ring-0 inline-flex items-center gap-x-1 text-[15.5px] font-semibold duration-200 hover:font-bold leading-6 hover:text-brand-primary">
                     <!-- <div
                         class="border-0 ring-0 mr-0 flex h-5 w-5 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
                         <i :class="theMenu.icon" class="text-xs text-white"></i>
@@ -20,9 +20,9 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-64 w-[90vw] mt-[72px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg">
+                class="!-left-[19vw] w-[87vw] h-20 mt-[71px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-lg">
 
-                <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-gray-600 bg-opacity-50 transition-opacity"
+                <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
                     aria-hidden="true"></div>
 
                 <div class="h-10 bg-white justify-center content-center mt-0">
@@ -33,7 +33,7 @@
 
                 <div class="h-auto bg-white">
                     <div class="grid grid-cols-3 h-full">
-                        <div class="bg-gray-50 col-span-1">
+                        <div class="bg-gray-50 col-span-1 relative">
                             <div class="relative pl-16 py-5 flex flex-col gap-3">
                                 <div v-for="(item, index) in currentMenuItems">
                                     <p @click="setSubmenu(item, index)"
@@ -46,11 +46,31 @@
                                     </p>
                                 </div>
                             </div>
+                            <div>
+                            </div>
+                            <div class="absolute px-8 font-bold bottom-3">
+                                <p class="text-[12px] mb-1">
+                                    We propel prosperity to infinite possibilities.
+                                </p>
+                                <div class="grid grid-cols-3 gap-1">
+                                    <div><span class="text-brand-primary text-[13px]">#</span> Empower <div
+                                            class="w-20 bg-black/10 h-1"></div>
+                                    </div>
+                                    <div class="text-brand-primary"><span
+                                            class="text-brand-primary text-[13px]">#</span>
+                                        Innovate
+                                        <div class="w-20 bg-black/10 h-1"></div>
+                                    </div>
+                                    <div><span class="text-brand-primary text-[13px]">#</span> Prosper <div
+                                            class="w-20 bg-black/10 h-1"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-span-2 ml-4">
                             <div class="py-5 grid grid-cols-3 gap-2 max-w-full px-2">
 
-                                <div class="flex flex-col gap-5 border-r-2 border-gray-600">
+                                <div class="flex flex-col gap-5 border-r-4 border-red-600 h-56">
                                     <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                         :key="submenuItem.name"
                                         class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-xs">
@@ -66,8 +86,8 @@
                                 </div>
 
                                 <div>
-                                    <div class=" w-auto border-b border-gray-300 dark:border-gray-700">
-                                        <div class="w-full rounded h-56">
+                                    <div class="w-auto dark:border-gray-700">
+                                        <div class="w-full rounded h-48">
                                             <img src="/img/call.jpg" alt="Display picture of Silene Tokyo" role="img"
                                                 class="object-cover h-full w-full overflow-hidden rounded shadow">
                                         </div>
@@ -102,7 +122,7 @@
                     </div>
                 </div>
 
-                <div class="bg-black/10">
+                <div class="bg-black/5">
                     <div class="mx-auto max-w-7xl px-0">
                         <div
                             class="ml-2 grid grid-cols-3 divide-y divide-gray-900/5 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">

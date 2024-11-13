@@ -399,10 +399,9 @@ const bannerTitle = ref('Acentria Insurance Brokers')
 
 
                 <div class="bg-white">
-                    <div class="py-3 text-white max-w-3xl mx-auto">
+                    <div class="py-3 text-white max-w-6xl mx-auto">
     
-                        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-    
+                        <div class="flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                             <div class="relative p-4 lg:basis-1/2">
                                 <div class="px-auto">
                                     <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"

@@ -14,7 +14,7 @@ const props = defineProps({
 
         <div class="absolute inset-0 bg-black opacity-30"></div>
 
-        <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">
+        <div class="container relative z-50 mx-auto max-w-6xl font-sans">
             <div class="grid grid-cols-10 -gap-10">
                 <div class="text-white col-span-1">
                     <div class="w-20 h-1 bg-white mt-3">

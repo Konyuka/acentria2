@@ -66,7 +66,7 @@ onMounted(async () => {
         <BannerMain :content="bannerContent" />
 
         <div class="bg-white w-full h-full">
-            <div class="py-10 max-w-6xl mx-auto font-sans text-black mt-10">
+            <div class="container py-10 max-w-6xl mx-auto font-sans text-black mt-10">
                 <div class="mx-auto  mb-5 font-sans">
                     <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
                         News & <span class="text-brand-primary">Updates</span>

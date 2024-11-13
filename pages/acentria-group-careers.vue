@@ -345,7 +345,7 @@ const products = [
 <!-- HI -->
                 <div class="bg-white font-sans">
 
-                    <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:max-w-6xl lg:px-8">
+                    <div class="container mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:max-w-6xl lg:px-8">
 
                         <div class="justify-between content-center my-5">
                             <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">

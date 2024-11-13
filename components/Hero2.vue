@@ -15,7 +15,7 @@ const props = defineProps({
                 <div class="grid grid-cols-4">
                     <div class="col-span-4 flex justify-center align-middle items-center">
                         <div
-                            class=" flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
+                            class="container flex flex-col gap-6 mx-auto items-center justify-center text-center max-w-6xl">
                             <div class="font-sans text-light-content">
                                 <p class="text-xs leading-normal font-regular text-light-content !text-inherit">
                                     Acentria Group of companies is a trusted global
