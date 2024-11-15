@@ -41,7 +41,7 @@ const benefits = ref([
 </script>
 
 <template>
-    <section>
+    <section class="bg-white">
 
         <BannerMain :content="bannerContent" />
 

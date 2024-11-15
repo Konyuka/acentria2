@@ -110,14 +110,10 @@ onMounted(() => {
 
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
 
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                  <div class="flex flex-col justify-center lg:basis-1/2">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+                  <div class="flex justify-center lg:basis-1/2">
 
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <!-- <h2
-                        class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
-                        Our <span class="text-brand-primary">Brand</span>
-                      </h2> -->
                       <p class="text-xs leading-normal mb-4 mt-4">
                         Our brand represents the essence of who we are and what we stand for. It is built on a
                         foundation of trust, integrity, and innovation. At Acentria Group, our brand is more than just a
@@ -145,7 +141,7 @@ onMounted(() => {
                   </div>
                 </div>
 
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
@@ -189,7 +185,7 @@ onMounted(() => {
                   </div>
                 </div>
 
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-20 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-20 lg:gap-16">
                   <div class="flex flex-col justify-center lg:basis-1/2">
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
