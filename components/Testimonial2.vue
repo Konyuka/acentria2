@@ -18,16 +18,17 @@
                     <div class="flex relative" style="transform: translateX(0%)">
                         <div class="mt-2 md:flex">
                             <div class="relative lg:w-1/2 h-72">
-                                <img src="https://media.istockphoto.com/id/1758823939/photo/african-american-customer-providing-five-satisfaction-ratings-customer-service-evaluation.jpg?s=1024x1024&w=is&k=20&c=x_gH2plemk2tH0r4jA1qSztdTlyykN7KcA0CBvSGVrU="
+                                <img src="https://www.shutterstock.com/shutterstock/photos/481596448/display_1500/stock-photo-african-american-businessman-on-the-phone-sitting-at-the-computer-in-his-startup-office-481596448.jpg"
                                     alt="image of profile"
-                                    class="w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded" />
+                                    class="w-full h-[320px] flex-shrink-0 object-fit object-cover shadow-lg rounded" />
                                 <div
                                     class="mt-20 w-28 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-28 bg-red-100 rounded-full">
                                     <i class="fas fa-quote-right text-black z-50 text-4xl text-brand-primary"></i>
                                 </div>
                             </div>
 
-                            <div class="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 flex flex-col justify-around !-mt-10">
+                            <div
+                                class="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 flex flex-col justify-around !-mt-10">
                                 <div>
                                     <h1 class="heading-class leading-normal text-black ">
                                         Reviews & <span class="text-brand-primary">Testimonials</span>
@@ -45,7 +46,7 @@
                                 <div class="mt-1">
                                     <NuxtLink to="/reviews-and-testimonials"
                                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm !mt-5">
-                                        Read Reviews 
+                                        Read Reviews
                                         <i class="fas fa-arrow-right text-primary ml-2"></i>
                                     </NuxtLink>
                                 </div>
