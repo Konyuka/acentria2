@@ -28,8 +28,15 @@
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
 
                     <div class="h-10  justify-center content-center mt-0">
-                        <div class="ml-10 text-lg font-semibold subheading-class text-black">
-                            {{ flyoverHeader }}
+                        <div class="ml-10 flex text-lg font-semibold subheading-class text-black">
+                            <div>
+                                {{ flyoverHeader }}
+                            </div>
+                            <div class="ml-[30vw] text-brand-primary col-span-1 text-[16px]">
+                                <i class="fas fa-award mr-2"></i> <span class="text-black">Get discounts</span>
+                                upto
+                                3%
+                            </div>
                         </div>
                     </div>
 
@@ -125,11 +132,11 @@
 
                                 <div class="h-10 grid grid-cols-3 gap-2 font-bold">
                                     <div></div>
-                                    <div class="text-brand-primary col-span-1 text-[16px]">
+                                    <!-- <div class="text-brand-primary col-span-1 text-[16px]">
                                         <i class="fas fa-award mr-2"></i> <span class="text-black">Get discounts</span>
                                         upto
                                         3%
-                                    </div>
+                                    </div> -->
 
                                     <div>
                                         <button
