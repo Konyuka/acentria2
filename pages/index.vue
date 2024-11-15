@@ -183,7 +183,7 @@ onMounted(() => {
                 <div class="container relative min-w-screen mt-20">
                   <div class="bottom-0 absolute max-w-7xl mx-auto">
                     <h2
-                      class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
+                      class="heading-class pb-4 md:pb-5 text-black">
                       Our Corporate <span class="text-brand-primary">Culture</span>
                     </h2>
                   </div>
@@ -225,9 +225,9 @@ onMounted(() => {
                 <div class="bottom-0 absolute max-w-7xl mx-auto">
 
                   <h2
-                    class="mb-5 text-left font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight py-1">
+                    class="mb-5 text-left heading-class text-white py-1">
                     Our
-                    <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                    <span class="text-brand-primary ">
                       Leadership
                     </span>
                   </h2>
@@ -247,7 +247,7 @@ onMounted(() => {
                     <div class="flex flex-col justify-center lg:basis-1/2">
 
                       <div class="text-light-content pb-5 md:pb-6 py-auto">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        <p class="text-xs leading-normal mb-4">
                           Our success is driven by a dynamic and dedicated
                           leadership team. Comprising individuals with diverse
                           expertise and a shared commitment to excellence, our
@@ -275,25 +275,25 @@ onMounted(() => {
 
               <section class="container max-w-6xl mx-auto relative py-5">
 
-                <div class="py-5 text-3xl font-semibold tracking-tight text-white text-left">
+                <div class="py-5 heading-class text-white text-left">
                   Our <span class="text-brand-primary">Commitments</span>
                 </div>
 
-                <div class=" px-4">
+                <div class="">
                   <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
 
                     <NuxtLink :to="item.link" v-for="item in commitments"
-                      class="shadow-2xl button-animation duration-700 group border-0 border-solid border-black shadow-card m-auto flex min-h-fit md:min-h-[250px] md:max-w-[30vw] max-w-[90vw] rounded-lg bg-black/5 p-5 w-full h-full">
+                      class="shadow-2xl button-animation duration-700 group border-0 border-solid border-black shadow-card m-auto flex rounded-lg bg-black/10 p-5 w-full h-full">
 
                       <div class="flex h-fit flex-col">
                         <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary"
                           translate="no"></i>
-                        <h3 class="text-lg text-brand-primary font-semibold flex justify-left group-hover:text-black">
-                          {{ item.name
-                          }}</h3>
-                        <p class="mt-1 text-xs text-white">{{ item.description }}</p>
+                        <h3 class="subheading-class text-brand-primary flex justify-left group-hover:text-black">
+                          {{ item.name }}
+                        </h3>
+                        <p class="text-[12px] text-white">{{ item.description }}</p>
                         <i
-                          class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                          class="fas fa-arrow-right mt-5 font-bold text-right text-lg group-hover:text-brand-primary text-gray-300 duration-700"></i>
                       </div>
 
                     </NuxtLink>
@@ -308,7 +308,7 @@ onMounted(() => {
 
               <Testimonials />
 
-              <h1 class="text-black font-semibold text-3xl mx-auto bg-white">
+              <h1 class="text-black heading-class mx-auto bg-white">
                 <div class="container max-w-6xl mx-auto text-left py-5">
                   Corporate Social Responsibility
                   <span class="text-brand-primary"><br> &
@@ -328,7 +328,7 @@ onMounted(() => {
                     class="text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
                     <div>
 
-                      <p class="ml-20 text-xs leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
+                      <p class="ml-20 text-xs leading-normal text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
                         Our initiatives focus on reducing our environmental impact, promoting ethical business
                         practices, and contributing positively to the communities we serve. We believe in creating
                         long-term value for our stakeholders by integrating sustainable practices into our core
@@ -337,8 +337,8 @@ onMounted(() => {
                     </div>
                     <div class="ml-20 mt-10 max-w-md">
                       <NuxtLink to="/csr"
-                        class="text-white underline underline-offset-8 hover:button-animation font-semibold tracking-widest">
-                        Learn More <i class="fas fa-caret-right"></i>
+                        class="subheading-class text-white underline underline-offset-8 hover:button-animation">
+                        Learn More <i class="fas fa-caret-right mt-1"></i>
                       </NuxtLink>
                     </div>
                   </div>
@@ -354,7 +354,7 @@ onMounted(() => {
                   <div class="py-10 sm:px-2 lg:px-4">
                     <div class="lg:max-w-none">
                       <div class="justify-between content-center">
-                        <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
+                        <h2 class="heading-class text-black text-left">
                           Join Our <span class="text-brand-primary">Team</span>
                         </h2>
                       </div>
@@ -365,11 +365,11 @@ onMounted(() => {
                             <i :class="member.icon" class="text-black text-2xl"></i>
                           </div>
                           <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                            <h3 class="text-lg text-brand-primary font-semibold flex justify-center">{{ member.name
+                            <h3 class="subheading-class text-brand-primary flex justify-center">{{ member.name
                               }}</h3>
-                            <p class="mt-2 text-xs text-gray-500">{{ member.description }}</p>
+                            <p class="mt-2 text-[12px] text-gray-500">{{ member.description }}</p>
                             <i
-                              class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                              class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
                           </div>
                         </div>
                       </div>

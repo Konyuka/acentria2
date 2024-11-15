@@ -5,7 +5,7 @@
 <template>
     <div class="max-w-6xl container">
         <div class="mt-5">
-            <div class="text-white text-3xl text-left py-5 font-sans font-semibold mx-auto">
+            <div class="text-white heading-class py-5 mx-auto">
                 <div class="mx-auto text-left">
                     Top Choice for Professional <span class="text-brand-primary"><br> Services and Client
                         Satisfaction</span>

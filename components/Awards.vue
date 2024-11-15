@@ -27,7 +27,7 @@ const awards = ref([
             <div class="font-sans container px-4">
                 <div class="text-left">
                     <h2 id=""
-                        class="pb-4 md:pb-5 font-semibold text-3xl leading-tight text-brand-primary">
+                        class="pb-4 md:pb-5 heading-class text-brand-primary">
                         <span
                             class="font-sans text-black pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0">
                             Awards
@@ -37,7 +37,7 @@ const awards = ref([
                 </div>
                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
                     
-                    <a v-for="award in awards" class="button-animation cursor-pointer relative flex h-auto min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                    <a v-for="award in awards" class="button-animation cursor-pointer relative flex h-auto  flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                         href="resources/blog/preparing-for-ai-regulations.html">
                         <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                             <div
@@ -79,7 +79,7 @@ const awards = ref([
                                 <div class="relative flex min-h-auto py-5 flex-col gap-y-1">
 
                                     <h6
-                                        class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                        class="subheading-class text-black">
                                         {{ award.name }}
                                     </h6>
                                 </div>

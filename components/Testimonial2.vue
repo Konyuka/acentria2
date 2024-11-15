@@ -10,29 +10,29 @@
             <div class="w-1/3 bg-white dark:bg-gray-900 h-auto"></div>
             <div class="w-4/6 ml-16 bg-gray-100 dark:bg-gray-800 h-auto"></div>
         </div>
-        <div class="xl:px-20 px-8 py-2 2xl:mx-auto 2xl:container relative z-40">
+        <div class="px-1 py-2 2xl:mx-auto container relative z-40">
 
             <div class="slider">
                 <div class="slide-ana">
 
                     <div class="flex relative" style="transform: translateX(0%)">
-                        <div class="mt-14 md:flex">
+                        <div class="mt-2 md:flex">
                             <div class="relative lg:w-1/2 h-72">
                                 <img src="https://media.istockphoto.com/id/1758823939/photo/african-american-customer-providing-five-satisfaction-ratings-customer-service-evaluation.jpg?s=1024x1024&w=is&k=20&c=x_gH2plemk2tH0r4jA1qSztdTlyykN7KcA0CBvSGVrU="
                                     alt="image of profile"
                                     class="w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded" />
                                 <div
-                                    class="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-red-100 rounded-full">
+                                    class="mt-20 w-28 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-28 bg-red-100 rounded-full">
                                     <i class="fas fa-quote-right text-black z-50 text-4xl text-brand-primary"></i>
                                 </div>
                             </div>
 
-                            <div class="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-4 flex flex-col justify-around">
+                            <div class="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-1 flex flex-col justify-around">
                                 <div>
-                                    <h1 class="text-xl font-semibold xl:leading-loose text-gray-800 dark:text-white ">
-                                        Reviews & Testimonials
+                                    <h1 class="heading-class leading-normal text-black ">
+                                        Reviews & <span class="text-brand-primary">Testimonials</span>
                                     </h1>
-                                    <p class="text-xs font-medium mt-4 text-gray-600 dark:text-gray-200  ">
+                                    <p class="text-xs leading-normal mt-4 text-black ">
                                         Clients’ positive experiences and continued trust reflect Acentria’s
                                         success in exceeding expectations and solidifying a reputation for reliability
                                         and excellence.

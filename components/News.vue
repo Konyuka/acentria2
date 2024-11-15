@@ -38,7 +38,7 @@ const news = ref([
                 <a 
                     v-for="news in news"
                     :key="news.title"
-                   class="button-animation cursor-pointer relative flex h-[388px] max-h-auto min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
+                   class="button-animation cursor-pointer relative flex  flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                     href="resources/blog/preparing-for-ai-regulations.html">
                     <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                         <div
