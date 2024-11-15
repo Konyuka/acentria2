@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
 
-    <div class="relative w-full bg-cover bg-center bg-no-repeat false py-4 bg-white"
+    <div class="relative w-full bg-cover bg-center bg-no-repeat false py-2 bg-white"
         style="background-image:url(''); transform: scaleX(-1);">
         <div class="container" style="transform: scaleX(-1);">
             <div
@@ -17,7 +17,7 @@ const props = defineProps({
                         <div
                             class="container flex flex-col gap-6 mx-auto items-center justify-center text-center max-w-6xl">
                             <div class="font-sans text-light-content">
-                                <p class="text-xs leading-normal font-regular text-light-content !text-inherit">
+                                <p class="text-xs leading-normal">
                                     Acentria Group of companies is a trusted global
                                     consultant in Risk and Insurance, Reinsurance,
                                     Actuarial, and Investment Advisory. With decades of

@@ -18,11 +18,11 @@ export default {
         // sans: ["Montserrat", "sans-serif"],
       },
       fontWeight: {
-        semibold: 200,
+        // semibold: 200,
       },
       fontSize: {
-        base: "8px",
-        xs: "20px",
+        // base: "8px",
+        // xs: "20px",
       },
     },
   },

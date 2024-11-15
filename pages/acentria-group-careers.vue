@@ -304,7 +304,7 @@ const products = [
                                     and lasting experience at Acentria.
                                 </p>
                                 <NuxtLink href="/acentria-benefits"
-                                    class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                                    class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                                     Learn how you benefit by joining us
                                     <i class="fas fa-arrow-right text-primary ml-2"></i>
                                 </NuxtLink>
@@ -324,9 +324,10 @@ const products = [
                                 </div>
 
                                 <div class="my-6">
-                                    <a href="/our-brand"
-                                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
-                                        Search for Open Positions <i class="fas fa-search text-primary ml-2"></i></a>
+                                    <NuxtLink href="/our-brand"
+                                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                                        Search for Open Positions <i class="fas fa-search text-primary ml-2"></i>
+                                    </NuxtLink>
                                 </div>
 
                                 <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-5">
@@ -484,17 +485,11 @@ const products = [
                                     </div>
                                 </div>
 
-                                <a href="#"
-                                    class="button-animation font-sans inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
-                                    Get Job Alerts
-                                    <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
-                                        fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                                        <g fill-rule="evenodd">
-                                            <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                            <path class="transition-all duration-75 translate-x-0 transform-none"
-                                                d="M1 1l4 4-4 4"></path>
-                                        </g>
-                                    </svg></a>
+                                <NuxtLink href="/meet-the-team"
+                                    class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                                    Subscribe for job alerts
+                                    <i class="fas fa-arrow-right text-primary ml-2"></i>
+                                </NuxtLink>
                             </div>
                         </div>
 

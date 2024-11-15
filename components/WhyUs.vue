@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
     <div>
 
-        <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black/60 font-sans"
+        <!-- <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black/60 font-sans"
             style="background-image:url('/img/bg.png');">
             <div class="container">
                 <div
@@ -27,7 +27,7 @@ const props = defineProps({
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="bg-white">
             <div class="container mx-auto ">
@@ -37,7 +37,7 @@ const props = defineProps({
                             class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                             <div>
                                 <h2 v-html="leftTitle"
-                                    class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight sm:pb-4 pt-6">
+                                    class="heading-class text-black sm:pb-4 pt-6">
                                 </h2>
                             </div>
 
@@ -49,10 +49,10 @@ const props = defineProps({
                                         translate="no">{{ why.icon }}</i>
                                     <div>
                                         <h5 id=""
-                                            class="font-sans text-sm pb-3 leading-tight text-light-title font-semibold md:!pb-3">
+                                            class="subheading-class pb-3 md:!pb-3">
                                             {{ why.title }}
                                         </h5>
-                                        <p class="text-xs leading-normal font-sans text-light-content">
+                                        <p class="text-xs leading-normal">
                                             {{ why.content }}
                                         </p>
                                     </div>

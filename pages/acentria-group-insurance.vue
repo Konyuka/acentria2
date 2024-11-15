@@ -202,6 +202,28 @@ const heroContent = ref({
 
 const bannerTitle = ref('Acentria Insurance Brokers')
 
+
+const helps = ref([
+    {
+        heading:'Do it yourself',
+        subheading:'Compare quotes, choose your policy, and get same-day coverage.',
+        cta:'Compare Quotes Online',
+        img:'https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600',
+    },
+    {
+        heading:'Live agent assistance',
+        subheading:'Review your quotes online, then get tailored advice from our agents.',
+        cta:'See my Quotes',
+        img:'https://images.pexels.com/photos/5453822/pexels-photo-5453822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    },
+    {
+        heading:'Full Service',
+        subheading:'Send us your current policy, and our agents will find a better fit for you.',
+        cta:'Connect with an Expert',
+        img:'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    },
+])
+
 </script>
 
 <template>
@@ -216,24 +238,22 @@ const bannerTitle = ref('Acentria Insurance Brokers')
                 <Hero2 :data="heroContent" />
 
                 <div class="pb-5 text-center bg-white">
-                    <h2
-                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
+                    <h2 class="heading-class text-black">
                         Pick a cover and, <span class="text-brand-primary">we'll take care of the rest</span>
                     </h2>
                 </div>
 
-                <div class="py-5 text-white bg-white">
-                    <section class="relative py-2">
+                <div class="py-2 text-white bg-white">
+                    <section class="relative">
                         <div class="container px-4">
                             <ServiceTabs :menus="menus" :data="data" />
                         </div>
                     </section>
                 </div>
 
-                <section id="" class="relative py-3 bg-white text-center">
+                <section id="" class="relative py-3 bg-white text-center pt-10">
                     <div class="container px-4">
-                        <h2
-                            class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
+                        <h2 class="heading-class text-gray-900">
                             <span class="text-brand-primary">Do it yourself</span>
                             or with expert help
                         </h2>
@@ -245,94 +265,28 @@ const bannerTitle = ref('Acentria Insurance Brokers')
 
                                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                                    <div
+                                    <div v-for="help in helps"
                                         class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                                         <a class="w-full" href="#">
-                                            <div class="relative w-full"><img alt="" loading="lazy" width="200"
+                                            <div class="relative w-full"><img alt="" loading="lazy" width="150"
                                                     height="100" decoding="async" data-nimg="1"
-                                                    class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                                                    class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/1]"
                                                     sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                                                    src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
-                                                    style="color: transparent;">
+                                                    :src="help.img" style="color: transparent;">
                                             </div>
                                             <div class="max-w-full">
                                                 <div class="!text-left font-sans group relative">
                                                     <h3
-                                                        class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
+                                                        class="mt-3 line-clamp-2 subheading-class transition-colors group-hover:text-brand-primary">
                                                         <span class="absolute inset-0"></span>
-                                                        Do it yourself
+                                                        {{ help.heading }}
                                                     </h3>
-                                                    <p class="mt-3 line-clamp-3 text-xs leading-6 text-gray-600">
-                                                        Compare quotes, choose your policy, and get same-day coverage in
-                                                        a few clicks.
+                                                    <p class="mt-3 line-clamp-3 text-xs">
+                                                        {{ help.subheading }}
                                                     </p>
                                                     <button type="button"
-                                                        class="mt-5 rounded-md bg-brand-primary px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                                                        Compare Quotes Online
-                                                    </button>
-
-                                                </div>
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div
-                                        class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
-                                        <a class="w-full" href="#">
-                                            <div class="relative w-full"><img alt="" loading="lazy" width="200"
-                                                    height="100" decoding="async" data-nimg="1"
-                                                    class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
-                                                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                                                    src="https://images.pexels.com/photos/5453822/pexels-photo-5453822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                    style="color: transparent;">
-                                            </div>
-                                            <div class="max-w-full">
-                                                <div class="!text-left font-sans group relative">
-                                                    <h3
-                                                        class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
-                                                        <span class="absolute inset-0"></span>
-                                                        Live agent assistance
-                                                    </h3>
-                                                    <p class="mt-3 line-clamp-3 text-xs leading-6 text-gray-600">
-                                                        Review your quotes online, then get tailored advice from a
-                                                        licensed insurance agent.
-                                                    </p>
-                                                    <button type="button"
-                                                        class="mt-5 rounded-md bg-brand-primary px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                                                        See my Quotes
-                                                    </button>
-
-                                                </div>
-                                            </div>
-
-                                        </a>
-                                    </div>
-
-                                    <div
-                                        class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
-                                        <a class="w-full" href="#">
-                                            <div class="relative w-full"><img alt="" loading="lazy" width="200"
-                                                    height="100" decoding="async" data-nimg="1"
-                                                    class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
-                                                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                                                    src="https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                    style="color: transparent;">
-                                            </div>
-                                            <div class="max-w-full">
-                                                <div class="!text-left font-sans group relative">
-                                                    <h3
-                                                        class="mt-3 line-clamp-2 text-lg font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
-                                                        <span class="absolute inset-0"></span>
-                                                        Full Service
-                                                    </h3>
-                                                    <p class="mt-3 line-clamp-3 text-xs leading-6 text-gray-600">
-                                                        Send us your current policy, and our agents will find a better
-                                                        fit for you.
-                                                    </p>
-                                                    <button type="button"
-                                                        class="mt-5 rounded-md bg-brand-primary px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                                                        Connect with an Expert
+                                                        class="mt-5 rounded-sm bg-brand-primary px-5 py-2 text-xs text-white shadow-sm hover:bg-black">
+                                                        {{ help.cta }}
                                                     </button>
 
                                                 </div>
@@ -354,19 +308,18 @@ const bannerTitle = ref('Acentria Insurance Brokers')
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:my-2 lg:gap-16">
                         <div class="relative py-4 lg:basis-1/2">
                             <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy"
-                                width="500" height="350" decoding="async" data-nimg="1"
-                                style="color: transparent; object-fit: contain" class="rounded-lg"
-                                src="/public/img/award.jpg" />
+                                decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                                class="w-full h-96 !rounded-lg" src="/public/img/award.jpg" />
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
-                            <label class="text-base leading-normal font-regular text-light-highlight font-semibold">
+                            <label class="subheading-class leading-normal text-brand-primary">
                                 We belive in innovation and simplicity
                             </label>
-                            <h2 class="pb-4 md:pb-5 font-semibold text-3xl leading-tight text-light-title">
+                            <h2 class="pb-4 md:pb-5 heading-class">
                                 Leader in Industry Standards
                             </h2>
                             <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                                <p class="text-xs leading-normal mb-4">
                                     Uncover the fantastic opportunity to team up with Acentria Group, where
                                     collaboration is not just a
                                     buzzword but a way of life. In the world of Acentria Group, success isn't just a
@@ -398,9 +351,9 @@ const bannerTitle = ref('Acentria Insurance Brokers')
                 </section>
 
 
-                <div class="bg-white">
+                <!-- <div class="bg-white">
                     <div class="py-3 text-white max-w-6xl mx-auto">
-    
+
                         <div class="flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                             <div class="relative p-4 lg:basis-1/2">
                                 <div class="px-auto">
@@ -413,24 +366,29 @@ const bannerTitle = ref('Acentria Insurance Brokers')
                             <div class="flex flex-col justify-center lg:basis-1/2">
                                 <div class="text-light-content pb-5 md:pb-6">
                                     <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
-                                        Acentria Group is your trusted friend in the world of insurance. We’re here to make
-                                        sure you and anything you care for is safe and sound. Insurance can be confusing,
+                                        Acentria Group is your trusted friend in the world of insurance. We’re here to
+                                        make
+                                        sure you and anything you care for is safe and sound. Insurance can be
+                                        confusing,
                                         but we’re experts at making it simple. We’ll take the time to understand exactly
                                         what you need and find the right insurance plan just for you.
-    
+
                                         So, why choose us? Because we genuinely care about keeping you and your things
-                                        protected. We’re not just about selling insurance; we’re about making sure you’re
+                                        protected. We’re not just about selling insurance; we’re about making sure
+                                        you’re
                                         worry-free and your wallet stays happy. Whether it’s your health, home, car, or
-                                        business, we’ve got the perfect insurance plan that won’t break the bank. Trust us
-                                        to be your friendly insurance guide, making sure you’re covered no matter what life
+                                        business, we’ve got the perfect insurance plan that won’t break the bank. Trust
+                                        us
+                                        to be your friendly insurance guide, making sure you’re covered no matter what
+                                        life
                                         throws your way.
                                     </p>
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
-                </div>
+                </div> -->
 
 
                 <ContactForm />

@@ -100,8 +100,7 @@ onMounted(() => {
               <div class="container relative min-h-[30vh] min-w-screen">
                 <div class="bottom-0 absolute max-w-7xl mx-auto">
 
-                  <h2
-                    class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-white">
+                  <h2 class="heading-class pb-5  text-white">
                     Our <span class="text-brand-primary">Brand</span>
                   </h2>
                 </div>
@@ -119,7 +118,7 @@ onMounted(() => {
                         class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
                         Our <span class="text-brand-primary">Brand</span>
                       </h2> -->
-                      <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                      <p class="text-xs leading-normal mb-4 mt-4">
                         Our brand represents the essence of who we are and what we stand for. It is built on a
                         foundation of trust, integrity, and innovation. At Acentria Group, our brand is more than just a
                         logo or a tagline; it is a reflection of our commitment to excellence and our dedication to our
@@ -132,9 +131,9 @@ onMounted(() => {
                         our approach to conducting business.
                       </p>
                       <NuxtLink href="/our-brand"
-                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                         Learn More
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                        <i class="fas fa-arrow-right text-primary ml-2 text-[12px]"></i>
                       </NuxtLink>
                     </div>
                   </div>
@@ -156,8 +155,7 @@ onMounted(() => {
                   <div class="flex flex-col justify-center lg:basis-1/2">
 
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <h2
-                        class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-black">
+                      <h2 class="heading-class pb-4 text-black">
                         Things that <span class="text-brand-primary">Inspire Us</span>
                       </h2>
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
@@ -173,7 +171,7 @@ onMounted(() => {
                         our approach to conducting business.
                       </p>
                       <NuxtLink href="/our-brand"
-                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                         Learn More
                         <i class="fas fa-arrow-right text-primary ml-2"></i>
                       </NuxtLink>
@@ -205,7 +203,7 @@ onMounted(() => {
                         forward-thinking company.
                       </p>
                       <NuxtLink href="/corporate-culture"
-                        class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                         Learn More
                         <i class="fas fa-arrow-right text-primary ml-2"></i>
                       </NuxtLink>
@@ -262,7 +260,7 @@ onMounted(() => {
                           adapting to new challenges and opportunities.
                         </p>
                         <NuxtLink href="/meet-the-team"
-                          class="!button-animation z-[10] relative bg-black !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
+                          class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                           Meet the Team
                           <i class="fas fa-arrow-right text-primary ml-2"></i>
                         </NuxtLink>

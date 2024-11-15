@@ -1,26 +1,21 @@
 <template>
     <div class=" relative isolate overflow-hidden bg-black py-5 font-sans">
-        <img src="/img/contact1.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+        <img src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
-        <div class="absolute inset-0 bg-black opacity-80"></div>
+        <div class="absolute inset-0 bg-black opacity-30"></div>
         <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
 
             <div>
-                <!-- <div class="container mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                    <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-white">
-                        Follow us on:
-                    </p>
-                </div> -->
                 <dl
                     class="pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-4 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-5">
                     <div v-for="(feature, index) in socials" :key="feature.name" class="flex flex-col">
-                        <dt class="text-base font-semibold leading-7 text-white">
+                        <dt class="subheading-class text-white">
                             <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
                                 <i :class="feature.icon" class=" text-white" aria-hidden="true" />
                             </div>
                             {{ feature.title }}
                         </dt>
-                        <dd class="mt-1 flex flex-auto flex-col text-xs leading-2 text-white font-bold tracking-widest">
+                        <dd class="mt-1 flex flex-auto flex-col text-xs  text-white">
                             <p class="flex-auto" v-html="feature.description"></p>
                         </dd>
                     </div>

@@ -19,29 +19,28 @@ const companyMail = computed(() => {
 </script>
 
 <template>
-    <div class="bg-white py-4">
+    <div class="bg-white py-10">
         <div class="mx-8 md:mx-[5vw] lg:px-8">
             <div class="mx-auto max-w-2xl space-y-8 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
                 <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
                     <div>
-                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">
-                            Get in touch
+                        <h2 class="heading-class">
+                            Get in <span class="text-brand-primary">touch</span>
                         </h2>
                         <p class="mt-2 leading-7 text-gray-600">
-                            Connect with our experts. Let's explore solutions together.
+                            Connect with our experts. <br> Let's explore solutions together.
                         </p>
                     </div>
                     <div class="font-sans grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
                         <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
-                            <h3 class="text-base font-semibold leading-7 text-gray-900">
+                            <h3 class="subheading-class">
                                 Email
                             </h3>
                             <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div>
                                     <dt class="sr-only">Email</dt>
                                     <dd>
-                                        <a class="font-semibold !text-brand-primary "
-                                            href="mailto:collaborate@example.com">
+                                        <a class="text-xs text-brand-primary" href="mailto:collaborate@example.com">
                                             {{ companyMail }}
                                         </a>
                                     </dd>
@@ -50,15 +49,14 @@ const companyMail = computed(() => {
                         </div>
 
                         <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
-                            <h3 class="text-base font-semibold leading-7 text-gray-900">
+                            <h3 class="subheading-class">
                                 Mobile
                             </h3>
                             <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div class="mt-1">
                                     <dt class="sr-only">Phone number</dt>
                                     <dd>
-                                        <a class="font-semibold !text-brand-primary  transform transition duration-700 hover:scale-125 "
-                                            href="tel:+254 705 200 222">
+                                        <a class="text-xs text-brand-primary" href="tel:+254 705 200 222">
                                             +254 705 200 222
                                         </a>
                                     </dd>
@@ -67,29 +65,29 @@ const companyMail = computed(() => {
                         </div>
 
                         <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
-                            <h3 class="text-base font-semibold leading-7 text-gray-900">
+                            <h3 class="subheading-class">
                                 WhatsApp
                             </h3>
                             <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div>
                                     <dt class="sr-only">Email</dt>
                                     <dd>
-                                        <a class="font-semibold !text-brand-primary" href="mailto:hello@example.com">Say
+                                        <a class="text-xs text-brand-primary" href="mailto:hello@example.com">Say
                                             Hi, on WhatsApp</a>
                                     </dd>
                                 </div>
                             </dl>
                         </div>
                         <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
-                            <h3 class="text-base font-semibold leading-7 text-gray-900">
+                            <h3 class="subheading-class">
                                 Box Office
                             </h3>
                             <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div>
                                     <dt class="sr-only">Email</dt>
                                     <dd>
-                                        <a class="font-semibold !text-brand-primary"
-                                            href="mailto:careers@example.com">P.O Box 5864-00100 Nairobi,
+                                        <a class="text-xs text-brand-primary" href="mailto:careers@example.com">P.O Box
+                                            5864-00100 Nairobi,
                                             Kenya</a>
                                     </dd>
                                 </div>
@@ -98,29 +96,28 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div
-                    class="container mt-10 max-w-6xl mx-auto font-sans grid grid-cols-2 gap-x-8 gap-y-1 py-5 lg:grid-cols-3">
+                <div class="container mt-10 max-w-full mx-auto font-sans grid grid-cols-3 gap-y-1 py-5 lg:grid-cols-5">
 
-                    <div class="">
-                        <h2 class="text-2xl font-semibold tracking-tight text-gray-900">
-                            Visit Us
+                    <div class="mt-5">
+                        <h2 class="heading-class">
+                            Visit <span class="text-brand-primary">Us</span>
                         </h2>
-                        <p class="mt-4 leading-5 text-black font-medium text-xs">
+                        <p class="mt-4 leading-6 text-black text-xs">
                             <i class="fas fa-building text-brand-primary"></i> West Park Towers, 9th floor <br>
                             <i class="fas fa-road text-brand-primary"></i> Muthithi Road, Mpesi Lane <br />
                             <i class="fas fa-map-marker-alt text-brand-primary"></i> Westlands, Nairobi Kenya
                         </p>
-                        <h2 class="mt-5 text-2xl font-semibold tracking-tight text-gray-900">
-                            Working Hours
+                        <h2 class="mt-10 heading-class">
+                            Working <span class="text-brand-primary">Hours</span>
                         </h2>
-                        <p class="mt-4 leading-5 text-black font-medium text-xs">
+                        <p class="mt-4 leading-6 text-black font-medium text-xs">
                             <i class="fas fa-calendar-day text-brand-primary"></i> Monday to Friday <br>
                             <i class="fas fa-clock text-brand-primary"></i> 8:00 AM to 5:00 PM <br />
                         </p>
                     </div>
 
-                    <div class="py-5 col-span-2">
-                        <div class="relative w-full h-64 ">
+                    <div class="py-5 col-span-4">
+                        <div class="relative w-full h-72 ml-24">
                             <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl px-[5vw]"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.324532608933!2d36.805693017382765!3d-1.2745878698825375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f176afe68fe1b%3A0xf590c6d95ac4594f!2sWestpark%20Towers!5e0!3m2!1sen!2ske!4v1720091094209!5m2!1sen!2ske"
                                 frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0">
@@ -129,15 +126,15 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class="container mx-auto  mb-0 pl-20 font-sans">
-                    <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                <div class=" mx-auto  mb-0 font-sans">
+                    <p class="mt-2 heading-class text-black">
                         Follow <span class="text-brand-primary">us on</span>
                     </p>
                 </div>
 
                 <Socials2 />
 
-                
+
             </div>
         </div>
     </div>

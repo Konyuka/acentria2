@@ -21,14 +21,14 @@ const company = computed(() => {
     <section class="relative py-5 mx-auto container">
         <div class="">
             <div class="pb-2 text-left">
-                <h2 id="" class="font-sans text-3xl  font-semibold lg:pb-4">
+                <h2 id="" class="heading-class lg:pb-4">
                     Let’s <span class="text-brand-primary">Talk</span>
                 </h2>
             </div>
-            <div class=" grid grid-cols-1 gap-5 lg:grid-cols-form-block">
+            <div class="my-5 grid grid-cols-1 gap-5 lg:grid-cols-form-block">
 
                 <div class="h-fit rounded-xl bg-brand-primary px-5 md:px-12 py-5 md:py-14 shadow-card">
-                    <h5 class="font-sans text-sm text-white leading-tight lg:leading-tight pb-2">
+                    <h5 class="text-xs text-white leading-normal pb-2">
                         Interested in learning more about how {{ company }} can support your business? Fill in your
                         details, and one of our experts will reach out to you with personalized information on our
                         comprehensive services. Let’s start a conversation.
@@ -37,10 +37,10 @@ const company = computed(() => {
 
                 <form
                     class="font-sans border-brand-gray-100 rounded-xl border bg-brand-white px-2 md:px-10 py-5 shadow-card">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-3">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         <div class="relative pb-2">
                             <label for="FirstName"
-                                class="text-light-title block pl-2 text-sm font-semibold leading-6">First
+                                class="subheading-class pl-2">First
                                 name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <input name="FirstName" id="FirstName" placeholder="First Name"
@@ -48,8 +48,7 @@ const company = computed(() => {
                             </div>
                         </div>
                         <div class="relative pb-2">
-                            <label for="LastName"
-                                class="text-light-title block pl-2 text-sm font-semibold leading-6">Last
+                            <label for="LastName" class="subheading-class pl-2">Last
                                 name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <input name="LastName" id="LastName" placeholder="Last Name"
@@ -57,9 +56,9 @@ const company = computed(() => {
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-3">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5">
                         <div class="relative pb-2">
-                            <label for="WorkEmail" class="text-light-title block pl-2 text-sm font-semibold leading-6">
+                            <label for="WorkEmail" class="subheading-class pl-2">
                                 Email address
                             </label>
                             <div class="relative mt-2 rounded-md shadow-sm">
@@ -72,8 +71,7 @@ const company = computed(() => {
                             </div>
                         </div>
                         <div class="relative pb-2">
-                            <label for="PhoneNumber"
-                                class="text-light-title block pl-2 text-sm font-semibold leading-6">Phone
+                            <label for="PhoneNumber" class="subheading-class pl-2">Phone
                                 number</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -85,10 +83,9 @@ const company = computed(() => {
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-1 false">
+                    <div class="grid grid-cols-1 false mt-5">
                         <div class="relative pb-2">
-                            <label for="CompanyName"
-                                class="text-light-title block pl-2 text-sm font-semibold leading-6">
+                            <label for="CompanyName" class="subheading-class pl-2 ">
                                 Company name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -101,27 +98,22 @@ const company = computed(() => {
                         </div>
                     </div>
 
-                    <p class="leading-normal font-sans text-light-content pl-4 text-xs">
+                    <p class="leading-tight mt-2 text-[12px] italic text-gray-400">
                         By submitting this form, you agree to receive the
                         information requested as well as sales and/or marketing
                         communication on resources, news, and events related to
                         Acentria Group.
                     </p>
-                    <button
-                        class="group rounded border-2 border-brand-primary duration-200 px-3 py-1 font-semibold whitespace-nowrap bg-brand-primary rounded text-brand-white hover:bg-brand-red-2 active:bg-brand-red-1 active:border-brand-red-1 hover:border-brand-red-2 mt-4 flex font-semibold"
-                        type="submit">
-                        <div class="flex items-center justify-center">
-                            <div class="px-2">Let’s talk.</div>
-                            <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
-                                fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
-                                <g fill-rule="evenodd">
-                                    <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                    <path class="transition-all duration-75 translate-x-0 transform-none"
-                                        d="M1 1l4 4-4 4"></path>
-                                </g>
-                            </svg>
-                        </div>
-                    </button>
+
+                    <div class="mt-5">
+                        <NuxtLink href="/meet-the-team"
+                            class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                            Lets Talk
+                            <i class="fas fa-arrow-right text-primary ml-2"></i>
+                        </NuxtLink>
+                    </div>
+
+
                 </form>
             </div>
         </div>

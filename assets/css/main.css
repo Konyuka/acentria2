@@ -2,8 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .hover\:bg-brand-primary:hover {
+    background-color: #ed1c24;
+  }
+}
+
 .button-animation {
     @apply transform transition hover:cursor-pointer hover:scale-90 duration-700 ease-in-out
+}
+
+
+
+.heading-class {
+    @apply text-[27px] font-medium tracking-tight text-black
+}
+
+.subheading-class {
+    @apply text-[17px] font-medium tracking-tight text-black
 }
 
 
