@@ -222,7 +222,7 @@ onBeforeUnmount(() => {
                         </div>
                     </div>
 
-                    <div class="flex justify-center text-[12px] gap-1">
+                    <div class="flex justify-center text-[14px] gap-1">
                         <NuxtLink to="/"
                             :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
                             class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">

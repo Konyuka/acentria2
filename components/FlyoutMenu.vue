@@ -4,7 +4,7 @@
             <div class="">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
-                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-2 subheading-class !text-[20px] ring-0 inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
+                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-2 subheading-class !text-[18px] ring-0 inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
                     {{ theMenu.name }}
                 </PopoverButton>
             </div>
@@ -22,10 +22,10 @@
                     aria-hidden="true"></div> -->
 
                 <div class="relative">
-                    <img src="https://img.freepik.com/premium-vector/abstract-white-shapes-background_79603-1360.jpg?semt=ais_hybrid"
+                    <img src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
                         alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
-                    <!-- <div class="absolute inset-0 bg-black opacity-5"></div> -->
+                    <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
 
                     <div class="h-10  justify-center content-center mt-0">
                         <div class="ml-10 text-lg font-semibold subheading-class text-black">
