@@ -33,7 +33,7 @@ const incentives = [
                 <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: contain"
-                        class="mt-8 w-full h-60 shadow-2xl rounded-lg !object-cover"
+                        class="mt-8 w-full h-[320px] shadow-2xl rounded-lg !object-cover"
                         src="https://media.istockphoto.com/id/1156638514/photo/i-dont-believe-in-limits.webp?s=1024x1024&w=is&k=20&c=xxWccVnzPivgSezXD0axkQ47sQp6OMqMu54yfTsK4yU="
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>

@@ -145,7 +145,7 @@ onMounted(() => {
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
-                      class="w-full h-[300px] shadow-2xl rounded-lg !object-cover"
+                      class="w-full h-[330px] shadow-2xl rounded-lg !object-cover"
                       src="https://media.istockphoto.com/id/617594994/photo/african-american-guy-and-shining-light-bulb-in-grid.jpg?s=1024x1024&w=is&k=20&c=SDW_pvZlLAsKg9kow6aAftdWa-gDA7mPxrb4LAWbjXY="
                       data-v-inspector="components/Why.vue:34:17" />
                   </div>
