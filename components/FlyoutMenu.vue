@@ -5,10 +5,6 @@
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
                     class="pr-2 hover:border-b-red-600 hover:border-b-4 py-2 subheading-class !text-[20px] ring-0 inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
-                    <!-- <div
-                        class="border-0 ring-0 mr-0 flex h-5 w-5 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
-                        <i :class="theMenu.icon" class="text-xs text-white"></i>
-                    </div> -->
                     {{ theMenu.name }}
                 </PopoverButton>
             </div>
@@ -20,141 +16,150 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-[19vw] w-[87vw] h-20 mt-[75px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
+                class="!-left-[19vw] w-[87vw] h-20 mt-[73px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
                 <!-- <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
                     aria-hidden="true"></div> -->
 
-                <div class="h-10 bg-gray-200 justify-center content-center mt-0">
-                    <div class="ml-10  font-bold text-xl text-black">
-                        {{ flyoverHeader }}
-                    </div>
-                </div>
+                <div class="relative">
+                    <img src="https://img.freepik.com/premium-vector/abstract-white-shapes-background_79603-1360.jpg?semt=ais_hybrid"
+                        alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
-                <div class="h-auto bg-white">
-                    <div class="grid grid-cols-3 h-full">
-                        <div class="bg-gray-200 col-span-1 relative">
-                            <div class="relative pl-16 py-5 flex flex-col gap-3">
-                                <div v-for="(item, index) in currentMenuItems">
-                                    <p @click="setSubmenu(item, index)"
-                                        :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
-                                        class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-md">
-                                        <i :class="item.icon" class="mr-2"></i>
-                                        {{ item.name }}
-                                        <i
-                                            class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="absolute px-8 font-bold bottom-3">
-                                <p class="text-[12px] mb-1">
-                                    We propel prosperity to infinite possibilities.
-                                </p>
-                                <div class="grid grid-cols-3 gap-1">
-                                    <div><span class="text-brand-primary text-[13px]">#</span> Empower <div
-                                            class="w-20 bg-black/10 h-1"></div>
-                                    </div>
-                                    <div class="text-brand-primary"><span
-                                            class="text-brand-primary text-[13px]">#</span>
-                                        Innovate
-                                        <div class="w-20 bg-black/10 h-1"></div>
-                                    </div>
-                                    <div><span class="text-brand-primary text-[13px]">#</span> Prosper <div
-                                            class="w-20 bg-black/10 h-1"></div>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- <div class="absolute inset-0 bg-black opacity-5"></div> -->
+
+                    <div class="h-10  justify-center content-center mt-0">
+                        <div class="ml-10 text-lg font-semibold subheading-class text-black">
+                            {{ flyoverHeader }}
                         </div>
-                        <div class="col-span-2 ml-4">
-                            <div class="py-5 grid grid-cols-3 gap-2 max-w-full px-2">
+                    </div>
 
-                                <div class="flex flex-col gap-5 border-r-4 border-red-600 h-56">
-                                    <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
-                                        :key="submenuItem.name"
-                                        class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-xs">
-                                        {{ submenuItem.name }}
-                                    </NuxtLink>
-                                </div>
-
-                                <div class="flex flex-col gap-5 mx-3">
-                                    <h2 class="text-lg font-bold">{{ currentMenuSubtitle }}</h2>
-                                    <p class="text-xs">
-                                        {{ currentMenuDescription }}
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <div class="w-auto dark:border-gray-700">
-                                        <div class="w-full rounded h-40">
-                                            <img src="/img/call.jpg" alt="Display picture of Silene Tokyo" role="img"
-                                                class="object-cover h-full w-full overflow-hidden rounded shadow">
-                                        </div>
-                                        <div class="flex w-full items-center justify-between pt-6 pb-1">
-                                            <p class="text-xl font-normal text-gray-800 dark:text-white ">
-                                                <button
-                                                    class="button-animation hover:bg-brand-primary px-3 py-0.5 bg-black text-white text-[10px]">
-                                                    Compare Quotes Instantly
-                                                </button>
-                                            </p>
-                                            <div class="flex justify-center">
-                                                <a aria-label="Open github" role="link" href="javascript:void(0)"
-                                                    class="button-animation mx-2">
-                                                    <i class="fas fa-paper-plane"></i>
-                                                </a>
-                                                <a aria-label="Open github" role="link" href="javascript:void(0)"
-                                                    class="button-animation mx-2">
-                                                    <i class="fas fa-mobile-alt"></i>
-                                                </a>
-
-                                            </div>
-                                        </div>
-                                        <p class="mt-2 text-[12px] text-gray-600 leading-4">
-                                            Do it yourself or let us help you <br> <span
-                                                class="text-brand-primary underline underline-offset-2">Get a quote
-                                                now!</span>
+                    <div class="h-auto ">
+                        <div class="grid grid-cols-3 h-full">
+                            <div class="col-span-1 relative">
+                                <div class="relative pl-16 py-5 flex flex-col gap-3">
+                                    <div v-for="(item, index) in currentMenuItems">
+                                        <p @click="setSubmenu(item, index)"
+                                            :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
+                                            class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-md">
+                                            <i :class="item.icon" class="mr-2"></i>
+                                            {{ item.name }}
+                                            <i
+                                                class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i>
                                         </p>
                                     </div>
                                 </div>
-
+                                <div>
+                                </div>
+                                <div class="absolute px-8 font-bold bottom-3">
+                                    <p class="text-[12px] mb-1">
+                                        We propel prosperity to infinite possibilities.
+                                    </p>
+                                    <div class="grid grid-cols-3 gap-1">
+                                        <div><span class="text-brand-primary text-[13px]">#</span> Empower <div
+                                                class="w-20 bg-black/10 h-1"></div>
+                                        </div>
+                                        <div class="text-brand-primary"><span
+                                                class="text-brand-primary text-[13px]">#</span>
+                                            Innovate
+                                            <div class="w-20 bg-black/10 h-1"></div>
+                                        </div>
+                                        <div><span class="text-brand-primary text-[13px]">#</span> Prosper <div
+                                                class="w-20 bg-black/10 h-1"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-span-2 ml-4">
+                                <div class="py-5 grid grid-cols-3 gap-2 max-w-full px-2">
 
-                            <div class="h-10 grid grid-cols-3 gap-2 font-bold">
-                                <div></div>
-                                <div class="text-brand-primary col-span-1 text-[16px]">
-                                    <i class="fas fa-award mr-2"></i> <span class="text-black">Get discounts</span> upto
-                                    3%
+                                    <div class="flex flex-col gap-5 border-r-4 border-red-600 h-56">
+                                        <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
+                                            :key="submenuItem.name"
+                                            class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-xs">
+                                            {{ submenuItem.name }}
+                                        </NuxtLink>
+                                    </div>
+
+                                    <div class="flex flex-col gap-3 mx-3">
+                                        <h2 class="text-md font-semibold">{{ currentMenuSubtitle }}</h2>
+                                        <p class="text-[13px] leading-normal">
+                                            {{ currentMenuDescription }}
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <div class="w-auto dark:border-gray-700">
+                                            <div class="w-full rounded h-40">
+                                                <img src="/img/call.jpg" alt="Display picture of Silene Tokyo"
+                                                    role="img"
+                                                    class="object-cover h-full w-full overflow-hidden rounded shadow">
+                                            </div>
+                                            <div class="flex w-full items-center justify-between pt-6 pb-1">
+                                                <p class="text-xl font-normal text-gray-800 dark:text-white ">
+                                                    <button
+                                                        class="button-animation hover:bg-brand-primary px-3 py-0.5 bg-black text-white text-[10px]">
+                                                        Compare Quotes Instantly
+                                                    </button>
+                                                </p>
+                                                <div class="flex justify-center">
+                                                    <a aria-label="Open github" role="link" href="javascript:void(0)"
+                                                        class="button-animation mx-2">
+                                                        <i class="fas fa-paper-plane"></i>
+                                                    </a>
+                                                    <a aria-label="Open github" role="link" href="javascript:void(0)"
+                                                        class="button-animation mx-2">
+                                                        <i class="fas fa-mobile-alt"></i>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <p class="mt-2 text-[12px] text-gray-600 leading-4">
+                                                Do it yourself or let us help you <br> <span
+                                                    class="text-brand-primary underline underline-offset-2">Get a quote
+                                                    now!</span>
+                                            </p>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                                <div>
-                                    <button
-                                        class="button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[10px]">
-                                        Download our App on <i class="fab fa-google-play text-brand-primary"></i> & <i
-                                            class="fab fa-apple text-brand-primary"></i>
-                                    </button>
+                                <div class="h-10 grid grid-cols-3 gap-2 font-bold">
+                                    <div></div>
+                                    <div class="text-brand-primary col-span-1 text-[16px]">
+                                        <i class="fas fa-award mr-2"></i> <span class="text-black">Get discounts</span>
+                                        upto
+                                        3%
+                                    </div>
+
+                                    <div>
+                                        <button
+                                            class="button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[10px]">
+                                            Download our App on <i class="fab fa-google-play text-brand-primary"></i> &
+                                            <i class="fab fa-apple text-brand-primary"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-gray-200">
-                    <div class="mx-auto max-w-7xl px-0">
-                        <div
-                            class="ml-2 grid grid-cols-3 divide-y divide-gray-900/5 sm:divide-x sm:divide-y-0 sm:border-x sm:border-gray-900/5">
-                            <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
-                                class="group button-animation flex items-center hover:text-white gap-x-2.5 p-3 px-6 text-xs font-bold leading-6 text-black sm:justify-center sm:px-0">
-                                <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
-                                {{ item.name }} <i class="fas fa-arrow-right"></i>
-                            </NuxtLink>
-
+                    <div class="">
+                        <div class="grid grid-cols-3">
                             <div>
 
                             </div>
+                            <div class="flex col-span-2 w-full justify-between !pr-5">
+                                <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
+                                    class=" group button-animation flex items-center hover:text-white gap-x-2.5 py-3 text-xs font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                                    <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
+                                    {{ item.name }} <i class="fas fa-arrow-right"></i>
+                                </NuxtLink>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
             </PopoverPanel>
 
