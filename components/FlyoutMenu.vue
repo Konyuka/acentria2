@@ -4,7 +4,7 @@
             <div class="">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
-                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-2   ring-0 inline-flex items-center gap-x-1 text-[15.5px] font-semibold duration-200 hover:font-bold leading-6 hover:text-brand-primary">
+                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-2 subheading-class !text-[20px] ring-0 inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
                     <!-- <div
                         class="border-0 ring-0 mr-0 flex h-5 w-5 flex-none items-center justify-center rounded-sm bg-brand-primary group-hover:bg-white">
                         <i :class="theMenu.icon" class="text-xs text-white"></i>
@@ -20,7 +20,7 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-[19vw] w-[87vw] h-20 mt-[71px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
+                class="!-left-[19vw] w-[87vw] h-20 mt-[75px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
                 <!-- <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
                     aria-hidden="true"></div> -->
@@ -596,32 +596,6 @@ const InsuranceMenus = ref([
             },
         ]
     },
-    // {
-    //     name: 'Schools & Institutions',
-    //     subMenu: 'Institutional Insurance',
-    //     description: 'Insurance solutions for schools and institutions to protect against various risks.',
-    //     icon: 'fas fa-school',
-    //     items: [
-    //         {
-    //             name: 'Student attachment',
-    //             description: 'Insurance coverage for students during their attachment or internship programs.',
-    //             link: '/insurance/biasahara-cover',
-    //         }
-    //     ]
-    // },
-    // {
-    //     name: 'Agricultural Insurance',
-    //     subMenu: 'Agricultural Insurance',
-    //     description: 'Comprehensive insurance solutions for agricultural activities.',
-    //     icon: 'fas fa-tractor',
-    //     items: [
-    //         {
-    //             name: 'Agro insurance',
-    //             description: 'Comprehensive coverage for agricultural activities, protecting against a variety of risks.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //     ]
-    // },
     {
         name: 'Claims & Filing',
         subMenu: 'Claims Process',
@@ -817,7 +791,7 @@ const openFlyover = (menu) => {
             footerOptions.value = aboutFooterMenus.value
         }
         if (currentMenu.value === 'Insurance') {
-            router.push('/acentria-group-insurance');
+            // router.push('/acentria-group-insurance');
             flyoverHeader.value = 'Insurance Solutions'
             currentMenuItems.value = InsuranceMenus.value
             currentSubmenu.value = 'Personal Cover'
@@ -827,7 +801,7 @@ const openFlyover = (menu) => {
             footerOptions.value = insuranceFooterMenus.value
         }
         if (currentMenu.value === 'Reinsurance') {
-            router.push('/acentria-group-reinsurance');
+            // router.push('/acentria-group-reinsurance');
             flyoverHeader.value = 'Reinsurance Solutions'
             currentMenuItems.value = ReinsuranceMenus.value
             currentSubmenu.value = 'Reinsurance Services'
@@ -837,7 +811,7 @@ const openFlyover = (menu) => {
             footerOptions.value = reinsuranceFooterMenus.value
         }
         if (currentMenu.value === 'Actuarial') {
-            router.push('/acentria-group-actuarial');
+            // router.push('/acentria-group-actuarial');
             flyoverHeader.value = 'Actuarial Services'
             currentMenuItems.value = ActuarialMenus.value
             currentSubmenu.value = 'Actuarial Consulting'
@@ -868,9 +842,9 @@ const currentRoute = computed(() => {
     return route.path;
 })
 watch(currentRoute, (newValue) => {
-    // closeFlyOver()
-    // if (newValue) {
-    // }
+    if (newValue) {
+        closeFlyOver()
+    }
 })
 
 const setSubmenu = (menu, index) => {
