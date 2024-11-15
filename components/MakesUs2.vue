@@ -34,7 +34,7 @@ const incentives = [
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: contain"
                         class="mt-8 w-full h-60 shadow-2xl rounded-lg !object-cover"
-                        src="https://images.pexels.com/photos/669986/pexels-photo-669986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://media.istockphoto.com/id/1156638514/photo/i-dont-believe-in-limits.webp?s=1024x1024&w=is&k=20&c=xxWccVnzPivgSezXD0axkQ47sQp6OMqMu54yfTsK4yU="
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="mt-2 flex flex-col justify-center items-center lg:basis-1/2">
@@ -77,16 +77,18 @@ const incentives = [
                 <div class="absolute inset-x-0 bottom-0 top-48 bg-white">
                 </div>
                 <div class="container relative mx-auto max-w-6xl px-6 lg:px-8 pb-10">
-                    <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+                    <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 px-20">
 
                         <NuxtLink :to="incentive.link" v-for="incentive in incentives" :key="incentive.name"
-                            class="font-sans group button-animation -m-2 grid grid-cols-1 rounded-[2rem] shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
-                            <div class="grid grid-cols-1 rounded-[1rem] p-2 shadow-md shadow-black/5">
-                                <div class="rounded-3xl bg-white p-5 pb-1 shadow-2xl ring-1 ring-black/5">
-                                    <i :class="incentive.icon" class="text-black text-2xl"></i>
-                                    <p class="mt-2 subheading-class text-brand-primary">
-                                        {{ incentive.name }}
-                                    </p>
+                            class="font-sans group button-animation -m-2 grid grid-cols-1  max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
+                            <div class="grid grid-cols-1  p-2 shadow-xs shadow-black/5">
+                                <div class="rounded-md bg-white p-5 pb-1 shadow-xl ring-1 ring-black/5">
+                                    <div class="flex justify-between">
+                                        <p class=" subheading-class text-brand-primary">
+                                            {{ incentive.name }}
+                                        </p>
+                                        <i :class="incentive.icon" class="text-black text-2xl"></i>
+                                    </div>
                                     <div class="mt-2">
                                         <p class="text-xs leading-normal font-regular">
                                             {{ incentive.description }}
@@ -94,7 +96,7 @@ const incentives = [
                                     </div>
                                     <div class="text-right mr-5">
                                         <i
-                                            class="fas fa-arrow-right mt-5 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                                            class="fas fa-arrow-right mt-1 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
                                     </div>
                                 </div>
                             </div>

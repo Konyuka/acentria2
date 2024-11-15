@@ -27,8 +27,15 @@ const company = computed(() => {
             </div>
             <div class="my-5 grid grid-cols-1 gap-5 lg:grid-cols-form-block">
 
-                <div class="h-fit rounded-xl bg-brand-primary px-5 md:px-12 py-5 md:py-14 shadow-card">
-                    <h5 class="text-xs text-white leading-normal pb-2">
+                <div class="h-fit rounded-xl bg-black px-5 md:px-12 py-5 md:py-14 shadow-card">
+
+                    <div>
+                        <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
+                            style="color: transparent; object-fit: cover"
+                            src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
+                            class="rounded-xl w-full h-[50vh]" />
+                    </div>
+                    <h5 class="mt-2 text-[13px] text-white leading-normal pb-2">
                         Interested in learning more about how {{ company }} can support your business? Fill in your
                         details, and one of our experts will reach out to you with personalized information on our
                         comprehensive services. Let’s start a conversation.
@@ -39,8 +46,7 @@ const company = computed(() => {
                     class="font-sans border-brand-gray-100 rounded-xl border bg-brand-white px-2 md:px-10 py-5 shadow-card">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         <div class="relative pb-2">
-                            <label for="FirstName"
-                                class="subheading-class pl-2">First
+                            <label for="FirstName" class="subheading-class pl-2">First
                                 name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <input name="FirstName" id="FirstName" placeholder="First Name"

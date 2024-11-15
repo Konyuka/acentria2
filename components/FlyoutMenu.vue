@@ -4,19 +4,19 @@
             <div class="">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
-                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-2 subheading-class !text-[18px] ring-0 inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
+                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-1 subheading-class !text-[15.5px] ring-0 inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
                     {{ theMenu.name }}
                 </PopoverButton>
             </div>
         </div>
 
-        <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 -translate-y-1"
-            enter-to-class="opacity-100 translate-y-1" leave-active-class="transition ease-in duration-150"
-            leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-1">
+        <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 -translate-y-0"
+            enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
+            leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-0">
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-[19vw] w-[87vw] h-20 mt-[73px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
+                class="!-left-[18vw] w-[87vw] h-20 mt-[67px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
                 <!-- <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
                     aria-hidden="true"></div> -->
@@ -72,10 +72,10 @@
                             <div class="col-span-2 ml-4">
                                 <div class="py-5 grid grid-cols-3 gap-2 max-w-full px-2">
 
-                                    <div class="flex flex-col gap-5 border-r-4 border-red-600 h-56">
+                                    <div class="flex flex-col gap-4 border-r-4 border-red-600 h-56">
                                         <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                             :key="submenuItem.name"
-                                            class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-xs">
+                                            class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-[13.2px]">
                                             {{ submenuItem.name }}
                                         </NuxtLink>
                                     </div>
@@ -144,14 +144,14 @@
                     </div>
 
                     <div class="">
-                        <div class="grid grid-cols-3">
-                            <div>
+                        <div class="flex px-10">
+                            <!-- <div>
 
-                            </div>
+                            </div> -->
                             <div class="flex col-span-2 w-full justify-between !pr-5">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
-                                    class=" group button-animation flex items-center hover:text-white gap-x-2.5 py-3 text-xs font-semibold leading-normal text-black sm:justify-center sm:px-0">
-                                    <i :class="item.icon" class="flex-none group-hover:text-white text-brand-primary" />
+                                    class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-xs font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                                    <i :class="item.icon" class="flex-none group-hover:text-black text-brand-primary" />
                                     {{ item.name }} <i class="fas fa-arrow-right"></i>
                                 </NuxtLink>
 

@@ -3,8 +3,8 @@
 const bannerContent = ref({
     subtitle: 'Contact Us',
     title: 'Reach Out to Us',
-    // image: '/img/contact1.jpg'
-    image: 'https://www.shutterstock.com/shutterstock/photos/2289080225/display_1500/stock-photo-call-center-black-woman-and-smile-in-contact-us-with-crm-headset-with-mic-and-mockup-space-2289080225.jpg'
+    image: '/img/headphones.jpeg'
+    // image: 'https://www.shutterstock.com/shutterstock/photos/2289080225/display_1500/stock-photo-call-center-black-woman-and-smile-in-contact-us-with-crm-headset-with-mic-and-mockup-space-2289080225.jpg'
 })
 
 const contactsContent = ref({
@@ -32,15 +32,16 @@ const contactsContent = ref({
         },
     ]
 })
+
 </script>
 
 <template>
     <div class="bg-white">
 
 
+        <BannerMain :content="bannerContent" />
 
-
-        <div class="bg-white py-8 mt-14">
+        <div class="bg-white py-8">
 
             <div class="isolate !mb-5 py-5 md:py-0">
                 <div class="relative isolate -z-10">
@@ -49,7 +50,7 @@ const contactsContent = ref({
                         <div class="max-w-full">
                             <div class=" gap-x-2 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
 
-                                <div class="flex w-full max-w-3xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
+                                <div class="flex w-full max-w-6xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
                                     <h1 id="" class="heading-class">
                                         <span class="text-brand-primary">Connect
                                             with</span> <br>
@@ -78,12 +79,12 @@ const contactsContent = ref({
 
                                 </div>
 
-                                <div class="relative py-4 mt-5 ml-5">
+                                <!-- <div class="relative py-4 mt-5 ml-5">
                                     <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
                                         style="color: transparent; object-fit: cover"
                                         src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
                                         class="rounded-xl w-full h-[50vh]" />
-                                </div>
+                                </div> -->
 
 
                             </div>
@@ -92,7 +93,7 @@ const contactsContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto  mb-5 pl-20 font-sans mt-5">
+            <div class="container mx-auto  mb-5 pl-20 font-sans mt-8">
                 <p class="mt-2 heading-class text-black">
                     Contact <span class="text-brand-primary">us on</span>
                 </p>

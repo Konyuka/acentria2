@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 <template>
 
-    <div class="!font-sans">
+    <div class="!font-sans !overflow-x-hidden">
         <Navigation />
 
         <div>
@@ -16,6 +16,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
                 src="/img/hd2.mp4" style="color: transparent">
                 Your browser does not support the video tag.
             </video>
+            
 
             <slot class="bg-white" />
         </div>
