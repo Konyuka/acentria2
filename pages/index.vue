@@ -99,7 +99,6 @@ onMounted(() => {
 
               <div class="container relative min-h-[30vh] min-w-screen">
                 <div class="bottom-0 absolute max-w-7xl mx-auto">
-
                   <h2 class="heading-class pb-5  text-white">
                     Our <span class="text-brand-primary">Brand</span>
                   </h2>
@@ -111,8 +110,9 @@ onMounted(() => {
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
 
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                  <div class="flex justify-center lg:basis-1/2">
 
+                  <div class=" flex text-left lg:basis-1/2">
+                    
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal mb-4 mt-4">
                         Our brand represents the essence of who we are and what we stand for. It is built on a
@@ -178,8 +178,7 @@ onMounted(() => {
 
                 <div class="container relative min-w-screen mt-20">
                   <div class="bottom-0 absolute max-w-7xl mx-auto">
-                    <h2
-                      class="heading-class pb-4 md:pb-5 text-black">
+                    <h2 class="heading-class pb-4 md:pb-5 text-black">
                       Our Corporate <span class="text-brand-primary">Culture</span>
                     </h2>
                   </div>
@@ -220,8 +219,7 @@ onMounted(() => {
               <div class="container relative min-h-[30vh] min-w-screen">
                 <div class="bottom-0 absolute max-w-7xl mx-auto">
 
-                  <h2
-                    class="mb-5 text-left heading-class text-white py-1">
+                  <h2 class="mb-5 text-left heading-class text-white py-1">
                     Our
                     <span class="text-brand-primary ">
                       Leadership
