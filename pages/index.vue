@@ -177,16 +177,21 @@ onMounted(() => {
                 </div>
 
 
-                <div class="container relative min-w-screen mt-20">
+                <!-- <div class="container relative min-w-screen mt-20">
                   <div class="bottom-0 absolute max-w-7xl mx-auto">
                     <h2 class="heading-class pb-4 md:pb-5 text-black">
                       Our Corporate <span class="text-brand-primary">Culture</span>
                     </h2>
                   </div>
-                </div>
+                </div> -->
 
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-20 lg:gap-16">
                   <div class="flex flex-col justify-center lg:basis-1/2">
+                    <div class="">
+                      <h2 class="heading-class pb-4 md:pb-5 text-black">
+                        Our Corporate <span class="text-brand-primary">Culture</span>
+                      </h2>
+                    </div>
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                         Our mission is to exceed our stakeholders' expectations by delivering excellence in every aspect
@@ -208,8 +213,8 @@ onMounted(() => {
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
-                      class="w-full h-60 shadow-2xl rounded-lg !object-cover"
-                      src="https://images.pexels.com/photos/3869651/pexels-photo-3869651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      class="w-full h-[320px] shadow-2xl rounded-lg !object-cover"
+                      src="https://www.shutterstock.com/shutterstock/photos/2029044266/display_1500/stock-photo-happy-excited-black-mixed-race-couple-celebrating-financial-success-at-laptop-getting-income-loan-2029044266.jpg"
                       data-v-inspector="components/Why.vue:34:17" />
                   </div>
                 </div>
