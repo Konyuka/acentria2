@@ -343,7 +343,7 @@ video {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    max-width: 87vw !important;
+    max-width: 85vw !important;
 }
 
 @media (min-width:100%) {

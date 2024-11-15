@@ -27,12 +27,12 @@
                                 </div>
                             </div>
 
-                            <div class="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 mt-1 flex flex-col justify-around">
+                            <div class="md:w-1/3 lg:w-1/3 xl:ml-32 md:ml-20 md:mt-0 flex flex-col justify-around !-mt-10">
                                 <div>
                                     <h1 class="heading-class leading-normal text-black ">
                                         Reviews & <span class="text-brand-primary">Testimonials</span>
                                     </h1>
-                                    <p class="text-xs leading-normal mt-4 text-black ">
+                                    <p class="text-xs leading-normal mt-2 text-black ">
                                         Clients’ positive experiences and continued trust reflect Acentria’s
                                         success in exceeding expectations and solidifying a reputation for reliability
                                         and excellence.
@@ -42,10 +42,10 @@
                                         effective solutions
                                     </p>
                                 </div>
-                                <div class="mt-2">
+                                <div class="mt-1">
                                     <NuxtLink to="/reviews-and-testimonials"
-                                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                                        Read Reviews & Watch Testimonials
+                                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm !mt-5">
+                                        Read Reviews 
                                         <i class="fas fa-arrow-right text-primary ml-2"></i>
                                     </NuxtLink>
                                 </div>

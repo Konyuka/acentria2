@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-black/40 py-5 font-sans">
+    <div class="bg-black/40 p-5 font-sans rounded-lg">
         <div class="container mx-auto max-w-6xl px-2">
-            <div class="mx-auto max-w-6xl lg:mx-0">
+            <!-- <div class="mx-auto max-w-6xl lg:mx-0">
                 <h2 class="heading-class text-white">
                     Our Lines <span class="text-brand-primary">of Business</span>
                 </h2>
-            </div>
+            </div> -->
             <div class="mx-auto mt-1 max-w-2xl lg:max-w-none">
                 <dl class="grid max-w-xl grid-cols-1 gap-10 lg:max-w-none lg:grid-cols-5">
                     <div v-for="feature in features" :key="feature.name" class="flex flex-col border-b-2 py-4 border-white">

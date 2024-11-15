@@ -236,7 +236,8 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2">
                       <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: contain"
-                        class="!object-cover w-full h-60 shadow-2xl rounded-lg" src="/img/careers.jpg"
+                        class="!object-cover w-full h-[300px] shadow-2xl rounded-lg"
+                        src="https://www.shutterstock.com/shutterstock/photos/2384875277/display_1500/stock-photo-startup-team-reading-data-results-in-boardroom-meeting-looking-at-official-documents-to-help-2384875277.jpg"
                         data-v-inspector="components/Why.vue:34:17" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
@@ -263,10 +264,16 @@ onMounted(() => {
                     </div>
                   </div>
 
+                  <div class="mx-auto max-w-6xl lg:mx-0 mb-2">
+                    <h2 class="heading-class text-black">
+                      Our Lines <span class="text-brand-primary">of Business</span>
+                    </h2>
+                  </div>
+
+                  <Services />
                 </div>
               </section>
 
-              <Services />
 
               <section class="container max-w-6xl mx-auto relative py-5">
 
