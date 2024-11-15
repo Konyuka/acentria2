@@ -156,19 +156,19 @@ const products = [
                     <div class="relative isolate -z-10">
                         <div class="container overflow-hidden">
 
-                            <div class="max-w-full">
+                            <div class="container max-w-6xl mx-auto">
                                 <div
-                                    class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
+                                    class="grid grid-cols-2 gap-20">
 
-                                    <div class="flex w-full max-w-xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
+                                    <div class="content-center flex w-full flex-col gap-2">
                                         <h1 id=""
-                                            class="font-sans text-3xl font-semibold leading-tight md:text-4xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0">
+                                            class="heading-class leading-normal">
                                             <span
-                                                class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-3xl">Grow
+                                                class="text-brand-primary">Grow
                                                 With a</span> <br>
                                             Pathfinder
                                         </h1>
-                                        <p class="font-sans text-xs leading-normal font-regular text-light-content">
+                                        <p class="text-xs leading-normal">
                                             Acentria Group has experienced tremendous growth over the last few years.
                                             Our journey has been characterized by diversification of business, immense
                                             learning experiences, changes in corporate culture and increased intensity
@@ -184,17 +184,15 @@ const products = [
                                             <b>Prosperity</b>. We offer careers in a variety of fields where talented
                                             people
                                             can learn, develop, grow professionally and personally.
-
-
                                         </p>
 
                                     </div>
 
-                                    <div class="relative py-4 lg:basis-1/2">
-                                        <img alt="Image of null" loading="lazy" width="500" height="350"
+                                    <div class="relative py-4">
+                                        <img alt="Image of null" loading="lazy"
                                             decoding="async" data-nimg="1"
-                                            style="color: transparent; object-fit: contain" src="/img/give.jpg"
-                                            class="rounded-xl" />
+                                            style="color: transparent; object-fit: cover" src="/img/give.jpg"
+                                            class="rounded-xl w-full h-[400px]" />
                                     </div>
 
 
@@ -206,16 +204,16 @@ const products = [
 
                 <div>
                     <div class="container mx-auto  mb-5 pl-20 font-sans">
-                        <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                        <p class="mt-2 heading-class text-black">
                             What Drives Us <span class="text-brand-primary"> <br> at Acentria Group</span>
                         </p>
                     </div>
 
                     <div class=" relative isolate overflow-hidden bg-black py-5 font-sans">
-                        <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
+                        <img src="/img/tornado.png"
                             alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
-                        <div class="absolute inset-0 bg-black opacity-70"></div>
+                        <div class="absolute inset-0 bg-black opacity-40"></div>
                         <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
 
                             <div>
@@ -223,7 +221,7 @@ const products = [
                                     class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-10 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                     <div v-for="(feature, index) in joinAsMembers" :key="feature.name"
                                         class="flex flex-col">
-                                        <dt class="text-base font-semibold leading-7 text-white">
+                                        <dt class="subheading-class text-white">
                                             <div
                                                 class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
                                                 <i :class="feature.icon" class=" text-white" aria-hidden="true" />
@@ -231,7 +229,7 @@ const products = [
                                             {{ feature.name }}
                                         </dt>
                                         <dd
-                                            class="mt-1 flex flex-auto flex-col text-xs leading-2 text-white font-bold tracking-widest">
+                                            class="mt-1 flex flex-auto flex-col text-xs text-white">
                                             <p class="flex-auto" v-html="feature.description"></p>
                                         </dd>
                                     </div>
@@ -248,7 +246,7 @@ const products = [
                             <div class="container px-4">
                                 <div class="pb-2 mt-2 text-left">
                                     <h2
-                                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight mb-4">
+                                        class="heading-class text-black mb-4">
                                         We are Devoted to <br><span class="text-brand-primary">Our Core
                                             Principles</span>
                                     </h2>
@@ -259,15 +257,15 @@ const products = [
                                     <div v-for="principle in principles"
                                         class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] max-w-[90vw] rounded-xs bg-white p-5 md:max-w-[90vw] w-full h-full">
                                         <div class="flex h-fit flex-col">
-                                            <i :class="[principle.icon]" class="text-black text-xl pb-1"></i>
+                                            <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
                                             <div>
                                                 <h4 id=""
-                                                    class="text-md pb-1 font-semibold leading-tight text-light-title">
+                                                    class="subheading-class pb-1 leading-normal">
                                                     {{ principle.name }}
                                                 </h4>
                                             </div>
                                             <p
-                                                class="text-xs leading-normal font-regular text-light-content text-sm font-normal not-italic">
+                                                class="text-[12px] leading-normal text-black">
                                                 {{ principle.description }}
                                             </p>
                                         </div>
@@ -282,20 +280,20 @@ const products = [
 
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                         <div class="relative py-4 lg:basis-1/2">
-                            <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                                data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                            <img alt="Image of Enable growth" loading="lazy" decoding="async"
+                                data-nimg="1" style="color: transparent; object-fit: contain" class="w-full h-[400px] rounded-lg"
                                 src="/img/what.jpg" data-v-inspector="components/Why.vue:34:17" />
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <h2
-                                class="font-sans tracking-normal text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight pb-4 pt-6">
-                                <span class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">
+                                class="heading-class pb-4 pt-6 text-brand-primary">
+                                <span class="text-black">
                                     Why would you <br>
                                 </span>
                                 work for Acentria
                             </h2>
                             <div class="font-sans text-light-content pb-5 md:pb-6">
-                                <p class="text-sm leading-normal font-regular text-light-content !text-inherit mb-4">
+                                <p class="text-xs leading-normal mb-4">
                                     Working at Acentria is an enriching journey to growth and prosperity. We have
                                     numerous engagement forums, propagate empowerment and job autonomy, nurture a
                                     supportive and inclusive environment and do not have a “Straight-jacket”
@@ -318,7 +316,7 @@ const products = [
                         <div class="py-10 sm:px-2 lg:px-4">
                             <div class="lg:max-w-none">
                                 <div class="justify-between content-center">
-                                    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
+                                    <h2 class="heading-class text-black text-left">
                                         Career Paths <span class="text-brand-primary">At Acentria</span>
                                     </h2>
                                 </div>
@@ -337,9 +335,10 @@ const products = [
                                             <i :class="member.icon" class="text-black text-2xl"></i>
                                         </div>
                                         <div class="mt-1 sm:ml-6 lg:ml-0">
-                                            <h3 class="text-md text-brand-primary font-semibold flex justify-center">{{
+                                            <h3 class="subheading-class text-brand-primary flex justify-center">{{
                                                 member.name
-                                                }}</h3>
+                                                }}
+                                            </h3>
                                             <!-- <p class="mt-0 text-xs text-gray-500">{{ member.description }}</p> -->
                                             <i
                                                 class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
@@ -356,7 +355,7 @@ const products = [
                     <div class="container mx-auto max-w-6xl px-4 py-0 sm:px-6 lg:max-w-6xl lg:px-8">
 
                         <div class="justify-between content-center my-5">
-                            <h2 class="text-3xl font-semibold tracking-tight text-gray-900 text-left">
+                            <h2 class="heading-class text-black text-left">
                                 Life at <span class="text-brand-primary">Acentria Group</span>
                             </h2>
                         </div>
@@ -368,69 +367,40 @@ const products = [
                                     <img :src="product.imageSrc" :alt="product.imageAlt"
                                         class="h-full w-full object-cover object-center group-hover:opacity-75" />
                                 </div>
-                                <div class="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
+                                <div class="mt-4 flex items-center justify-between subheading-class  text-black">
                                     <h3>{{ product.name }}</h3>
                                     <p>
                                         <i class="fas fa-play text-2xl text-brand-primary"></i>
                                     </p>
                                 </div>
-                                <p class="mt-1 text-sm italic text-gray-500">{{ product.description }}</p>
+                                <p class="mt-1 text-xs italic text-gray-500">{{ product.description }}</p>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- <Videos /> -->
 
-                <!-- 
-                <div class="relative w-full bg-cover bg-center bg-no-repeat bg-black mb-5"
-                    style="background-image:url('/img/bg.png');">
-                    <div class="container">
-                        <div
-                            class="flex items-center bg-cover px-4 py-4 text-center md:py-10 lg:px-0 lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                            <div
-                                class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
-                                <div class="w-full">
-                                    <p
-                                        class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
-                                        At our company, we specialize in providing comprehensive insurance and
-                                        reinsurance solutions,
-                                        backed by expert actuarial services and strategic investment management. Our
-                                        cutting-edge
-                                        technology ensures that we deliver innovative and efficient solutions tailored
-                                        to meet the
-                                        unique needs of our clients. Trust us to safeguard your future with precision
-                                        and excellence.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-
-                <div>
+                <div class="mt-10">
                     <div class="container mx-auto  mb-5 pl-20 font-sans">
-                        <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                        <p class="mt-2 heading-class text-black">
                             Our Shared <span class="text-brand-primary"><br>Company Values</span>
                         </p>
                     </div>
 
                     <div class=" relative isolate overflow-hidden bg-black py-14 font-sans">
-                        <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
+                        <img src="/img/tornado.png"
                             alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
-                        <div class="absolute inset-0 bg-black opacity-70"></div>
+                        <div class="absolute inset-0 bg-black opacity-30"></div>
                         <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
 
                             <div>
                                 <dl
                                     class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-2 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-6">
                                     <div v-for="(feature, index) in values" :key="feature.name" class="flex flex-col">
-                                        <dt class="text-sm font-semibold leading-7 text-white">
+                                        <dt class="subheading-class text-white">
                                             <div
-                                                class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                                                class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary text-xs">
                                                 <i :class="feature.icon" class=" text-white" aria-hidden="true" />
                                             </div>
                                             {{ feature.name }}
@@ -442,20 +412,20 @@ const products = [
                     </div>
                 </div>
 
-                <div class="text-white" style="background-color: #f6f8fc">
+                <div class="text-white py-10" style="background-color: #f6f8fc">
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
 
 
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <div class="text-light-content pb-5 md:pb-6">
-                                <h2 id="" class="pb-4 md:pb-5 font-semibold text-3xl  leading-tight text-brand-primary">
+                                <h2 id="" class="pb-4 md:pb-5 heading-class text-brand-primary">
                                     <span
                                         class="font-sans text-black pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-3xl">Join
                                         our</span> <br>
                                     Talent Community
                                 </h2>
                                 <p
-                                    class="font-sans text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                                    class="text-xs leading-normal mb-4">
                                     At Acentria Group, we are catalysts of transformation. We are redefining
                                     how businesses operate, reshaping the way industries function, and
                                     empowering decision-makers to drive impactful change—for their
@@ -472,7 +442,7 @@ const products = [
                             <div>
 
                                 <div class="font-sans mb-5">
-                                    <label for="email" class="block text-lg font-semibold leading-6 text-black">Your
+                                    <label for="email" class="block text-md font-semibold leading-6 text-black">Your
                                         Email Address</label>
                                     <div class="relative mt-2 rounded-md shadow-sm">
                                         <div
@@ -494,9 +464,9 @@ const products = [
                         </div>
 
                         <div class="relative py-4 lg:basis-1/2">
-                            <img alt="Image of null" loading="lazy" width="500" height="350" decoding="async"
-                                data-nimg="1" style="color: transparent; object-fit: contain" src="/img/join.jpg"
-                                class="rounded-xl" />
+                            <img alt="Image of null" loading="lazy"  decoding="async"
+                                data-nimg="1" style="color: transparent; object-fit: cover" src="/img/join.jpg"
+                                class="rounded-xl w-full h-[500px]" />
                         </div>
                     </div>
                 </div>

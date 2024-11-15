@@ -42,7 +42,7 @@ const contactsContent = ref({
 
         <div class="bg-white py-8 mt-14">
 
-            <div class="isolate !mb-5 py-5 md:py-0 mt-5">
+            <div class="isolate !mb-5 py-5 md:py-0">
                 <div class="relative isolate -z-10">
                     <div class="container overflow-hidden">
 
@@ -50,14 +50,12 @@ const contactsContent = ref({
                             <div class=" gap-x-2 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
 
                                 <div class="flex w-full max-w-3xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
-                                    <h1 id=""
-                                        class="font-sans text-3xl font-semibold leading-tight md:text-4xl xl:leading-tight text-light-title pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0">
-                                        <span
-                                            class="text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-3xl">Connect
+                                    <h1 id="" class="heading-class">
+                                        <span class="text-brand-primary">Connect
                                             with</span> <br>
                                         Our Experts
                                     </h1>
-                                    <p class="font-sans text-xs leading-normal font-regular text-light-content mr-10">
+                                    <p class="font-sans text-xs leading-normal">
                                         We value your trust and are committed to safeguarding your future with
                                         precision and excellence.
                                         If you have any questions or need assistance, please don't hesitate to
@@ -80,11 +78,11 @@ const contactsContent = ref({
 
                                 </div>
 
-                                <div class="relative py-4 mt-5">
+                                <div class="relative py-4 mt-5 ml-5">
                                     <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
-                                        style="color: transparent; object-fit: contain"
+                                        style="color: transparent; object-fit: cover"
                                         src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
-                                        class="rounded-xl w-auto h-[50vh]" />
+                                        class="rounded-xl w-full h-[50vh]" />
                                 </div>
 
 
@@ -94,37 +92,36 @@ const contactsContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto  mb-5 pl-20 font-sans">
-                <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+            <div class="container mx-auto  mb-5 pl-20 font-sans mt-5">
+                <p class="mt-2 heading-class text-black">
                     Contact <span class="text-brand-primary">us on</span>
                 </p>
             </div>
 
             <Socials />
 
-            <div
-                class="container mt-10 max-w-6xl mx-auto font-sans grid grid-cols-2 gap-x-8 gap-y-1 py-5 lg:grid-cols-3">
+            <div class="container mt-10 max-w-6xl mx-auto font-sans grid grid-cols-3 gap-y-1 py-5 lg:grid-cols-5">
 
-                <div class="">
-                    <h2 class="text-2xl font-semibold tracking-tight text-gray-900">
-                        Visit Us
+                <div class="mt-5">
+                    <h2 class="heading-class">
+                        Visit <span class="text-brand-primary">Us</span>
                     </h2>
-                    <p class="mt-4 leading-5 text-black font-medium text-xs">
+                    <p class="mt-4 leading-6 text-black text-xs">
                         <i class="fas fa-building text-brand-primary"></i> West Park Towers, 9th floor <br>
                         <i class="fas fa-road text-brand-primary"></i> Muthithi Road, Mpesi Lane <br />
                         <i class="fas fa-map-marker-alt text-brand-primary"></i> Westlands, Nairobi Kenya
                     </p>
-                    <h2 class="mt-5 text-2xl font-semibold tracking-tight text-gray-900">
-                        Working Hours
+                    <h2 class="mt-10 heading-class">
+                        Working <span class="text-brand-primary">Hours</span>
                     </h2>
-                    <p class="mt-4 leading-5 text-black font-medium text-xs">
+                    <p class="mt-4 leading-6 text-black font-medium text-xs">
                         <i class="fas fa-calendar-day text-brand-primary"></i> Monday to Friday <br>
                         <i class="fas fa-clock text-brand-primary"></i> 8:00 AM to 5:00 PM <br />
                     </p>
                 </div>
 
-                <div class="py-5 col-span-2">
-                    <div class="relative w-full h-64 ">
+                <div class="py-5 col-span-4">
+                    <div class="relative w-full h-72 ml-24">
                         <iframe class="absolute top-0 left-0 w-full h-full rounded-2xl px-[5vw]"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.324532608933!2d36.805693017382765!3d-1.2745878698825375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f176afe68fe1b%3A0xf590c6d95ac4594f!2sWestpark%20Towers!5e0!3m2!1sen!2ske!4v1720091094209!5m2!1sen!2ske"
                             frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0">
@@ -133,8 +130,8 @@ const contactsContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto  mb-0 pl-20 font-sans">
-                <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+            <div class="container mx-auto  mb-0 pl-20 font-sans my-5">
+                <p class="mt-2 heading-class text-black">
                     Follow <span class="text-brand-primary">us on</span>
                 </p>
             </div>

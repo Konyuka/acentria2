@@ -1,9 +1,9 @@
 <template>
     <div class=" relative isolate overflow-hidden bg-black/5 py-5 font-sans">
-        <img src="https://www.shutterstock.com/shutterstock/photos/2214765667/display_1500/stock-photo-website-page-contact-us-or-e-mail-marketing-concept-customer-support-hotline-contact-us-people-2214765667.jpg"
+        <img src="/img/tornado.png"
             alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
-        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="absolute inset-0 bg-black opacity-40"></div>
         <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
         
             <div>
@@ -15,13 +15,13 @@
                 <dl
                     class="pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-4 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-4">
                     <div v-for="(feature, index) in contacts" :key="feature.name" class="flex flex-col">
-                        <dt class="text-base font-semibold leading-7 text-white">
+                        <dt class="subheading-class text-white">
                             <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
                                 <i :class="feature.icon" class=" text-white" aria-hidden="true" />
                             </div>
                             {{ feature.title }}
                         </dt>
-                        <dd class="mt-1 flex flex-auto flex-col text-xs leading-2 text-white font-bold tracking-widest">
+                        <dd class="mt-1 flex flex-auto flex-col text-[14px] leading-normal text-white">
                             <p class="flex-auto" v-html="feature.description"></p>
                         </dd>
                     </div>

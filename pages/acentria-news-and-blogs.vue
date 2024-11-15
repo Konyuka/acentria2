@@ -66,13 +66,13 @@ onMounted(async () => {
         <BannerMain :content="bannerContent" />
 
         <div class="bg-white w-full h-full">
-            <div class="container py-10 max-w-6xl mx-auto font-sans text-black mt-10">
-                <div class="mx-auto  mb-5 font-sans">
-                    <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+            <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
+                <div class="mx-auto  mb-3 font-sans">
+                    <p class="mt-2 heading-class text-black">
                         News & <span class="text-brand-primary">Updates</span>
                     </p>
                 </div>
-                <p>
+                <p class="text-xs leading-normal">
                     Welcome to the Acentria Group News & Updates and Blogs page. Here, you will find the latest news,
                     insightful articles, and updates about our company, industry trends, and more. Our goal is to keep
                     you informed and engaged with valuable content that highlights our commitment to excellence,
@@ -108,17 +108,17 @@ onMounted(async () => {
                             <nav class="-mb-px flex font-sans" aria-label="Tabs">
                                 <button @click="setMenu('blogs')"
                                     :class="[currentMenu == 'blogs' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                    class="w-1/3 border-2  px-1 py-4 text-center text-md font-semibold   hover:text-brand-primary">
+                                    class="w-1/3 border-2  px-1 py-4 text-center subheading-class   hover:text-brand-primary">
                                     <i class="fas fa-blog mr-2"></i> Latest News
                                 </button>
                                 <button @click="setMenu('event')"
                                     :class="[currentMenu == 'event' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                    class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-brand-primary">
+                                    class="w-1/3 border-2 px-1 py-4 text-center subheading-class  hover:text-brand-primary">
                                     <i class="fas fa-calendar-alt mr-2"></i> News Feeds
                                 </button>
                                 <button @click="setMenu('media')"
                                     :class="[currentMenu == 'media' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                    class="w-1/3 border-2 px-1 py-4 text-center text-md font-semibold  hover:text-brand-primary">
+                                    class="w-1/3 border-2 px-1 py-4 text-center subheading-class  hover:text-brand-primary">
                                     <i class="fas fa-images mr-2"></i> Media Kit
                                 </button>
                             </nav>
@@ -149,21 +149,20 @@ onMounted(async () => {
                                     </div>
                                 </div>
                                 <div class="max-w-full">
-                                    <div class="font-sans mt-8 flex items-center gap-x-2 text-xs">
-                                        <time datetime="August 20, 2024" class="text-gray-500 font-semibold">
-                                            {{ formatDate(blog.created_at) }}
-                                        </time>
-                                        <div class="text-gray-500">•</div>
+                                    <div class="font-sans mt-8 flex justify-between gap-x-2 text-xs">
                                         <div class="text-brand-primary font-semibold">{{ blog.categories.name }}
                                         </div>
+                                        <time datetime="August 20, 2024" class="text-gray-500 text-[12px]">
+                                            {{ formatDate(blog.created_at) }}
+                                        </time>
                                     </div>
                                     <div class="font-sans group relative">
                                         <h3
-                                            class="mt-3 line-clamp-1 text-lg font-semibold leading-6 text-black transition-colors group-hover:text-brand-primary">
+                                            class="mt-3 line-clamp-1 subheading-class leading-normal text-black transition-colors group-hover:text-brand-primary">
                                             <span class="absolute inset-0"></span>
                                             {{ blog.title }}
                                         </h3>
-                                        <p class="mt-2 line-clamp-3 text-xs leading-6 text-gray-600">
+                                        <p class="mt-2 line-clamp-3 text-[12px] leading-normal text-black">
                                             {{ blog.excerpt }}
                                         </p>
                                     </div>

@@ -15,7 +15,7 @@
                             </div>
                             {{ feature.title }}
                         </dt>
-                        <dd class="mt-1 flex flex-auto flex-col text-xs  text-white">
+                        <dd class="mt-1 flex flex-auto flex-col text-[13px]  text-white">
                             <p class="flex-auto" v-html="feature.description"></p>
                         </dd>
                     </div>
