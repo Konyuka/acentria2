@@ -93,7 +93,7 @@ const contactsContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto  mb-5 pl-20 font-sans mt-8">
+            <div class="container mx-auto  mb-5 font-sans mt-8">
                 <p class="mt-2 heading-class text-black">
                     Contact <span class="text-brand-primary">us on</span>
                 </p>
@@ -131,7 +131,7 @@ const contactsContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto  mb-0 pl-20 font-sans my-5">
+            <div class="container mx-auto  mb-0 font-sans my-5">
                 <p class="mt-2 heading-class text-black">
                     Follow <span class="text-brand-primary">us on</span>
                 </p>
