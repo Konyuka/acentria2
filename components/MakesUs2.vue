@@ -28,6 +28,47 @@ const incentives = [
         <div class="bg-white pt-5 font-sans">
 
 
+
+
+            <div class="mt-5 container max-w-6xl mx-auto justify-between content-center">
+                <h2 class="heading-class text-left">
+                    About <span class="text-brand-primary">Us</span>
+                </h2>
+            </div>
+            <div class="relative pt-5">
+                <div class="absolute inset-x-0 bottom-0 top-48 bg-white">
+                </div>
+                <div class="container relative mx-auto max-w-6xl px-6 lg:px-8 pb-10">
+                    <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+
+                        <NuxtLink :to="incentive.link" v-for="incentive in incentives" :key="incentive.name"
+                            class="font-sans group button-animation -m-2 grid grid-cols-1  max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
+                            <div class="grid grid-cols-1  p-2 shadow-xs shadow-black/5">
+                                <div class="rounded-md bg-white p-5 pb-1 shadow-xl ring-1 ring-black/5">
+                                    <div class="flex justify-between">
+                                        <p class=" subheading-class text-brand-primary">
+                                            {{ incentive.name }}
+                                        </p>
+                                        <i :class="incentive.icon" class="text-black text-2xl"></i>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p class="text-xs leading-normal font-regular">
+                                            {{ incentive.description }}
+                                        </p>
+                                    </div>
+                                    <div class="text-right mr-5">
+                                        <i
+                                            class="fas fa-arrow-right mt-1 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </NuxtLink>
+
+                    </div>
+
+                </div>
+            </div>
+
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
 
                 <div class="relative py-4 lg:basis-1/2">
@@ -66,45 +107,6 @@ const incentives = [
                     </div>
                 </div>
 
-            </div>
-
-            <div class="mt-5 container max-w-6xl mx-auto justify-between content-center">
-                <h2 class="heading-class text-left">
-                    About <span class="text-brand-primary">Us</span>
-                </h2>
-            </div>
-            <div class="relative pt-5">
-                <div class="absolute inset-x-0 bottom-0 top-48 bg-white">
-                </div>
-                <div class="container relative mx-auto max-w-6xl px-6 lg:px-8 pb-10">
-                    <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 px-20">
-
-                        <NuxtLink :to="incentive.link" v-for="incentive in incentives" :key="incentive.name"
-                            class="font-sans group button-animation -m-2 grid grid-cols-1  max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
-                            <div class="grid grid-cols-1  p-2 shadow-xs shadow-black/5">
-                                <div class="rounded-md bg-white p-5 pb-1 shadow-xl ring-1 ring-black/5">
-                                    <div class="flex justify-between">
-                                        <p class=" subheading-class text-brand-primary">
-                                            {{ incentive.name }}
-                                        </p>
-                                        <i :class="incentive.icon" class="text-black text-2xl"></i>
-                                    </div>
-                                    <div class="mt-2">
-                                        <p class="text-xs leading-normal font-regular">
-                                            {{ incentive.description }}
-                                        </p>
-                                    </div>
-                                    <div class="text-right mr-5">
-                                        <i
-                                            class="fas fa-arrow-right mt-1 font-bold text-2xl group-hover:text-brand-primary text-gray-300 duration-700"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </NuxtLink>
-
-                    </div>
-
-                </div>
             </div>
 
         </div>

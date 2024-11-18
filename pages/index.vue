@@ -146,7 +146,7 @@ onMounted(() => {
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
                       class="w-full h-[330px] shadow-2xl rounded-lg !object-cover"
-                      src="https://media.istockphoto.com/id/617594994/photo/african-american-guy-and-shining-light-bulb-in-grid.jpg?s=1024x1024&w=is&k=20&c=SDW_pvZlLAsKg9kow6aAftdWa-gDA7mPxrb4LAWbjXY="
+                      src="https://media.istockphoto.com/id/1127521176/photo/sealing-deals-around-the-clock.jpg?s=1024x1024&w=is&k=20&c=v_jacB65NfrxmRK8-gIBBLqf6JTRDz7VQp_w54kDS8o="
                       data-v-inspector="components/Why.vue:34:17" />
                   </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
@@ -327,7 +327,7 @@ onMounted(() => {
               <div class="mx-auto bg-white w-screen">
                 <div class="relative">
                   <img
-                    src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    src="https://media.istockphoto.com/id/1373228637/photo/shot-of-a-young-woman-working-with-crops-on-a-farm.jpg?s=1024x1024&w=is&k=20&c=mm8qrVd-G14H6Qu1ZG1hclp5AaulaOs-Je5ZY23YmME="
                     alt="city view" class="w-full h-full  object-center object-cover absolute sm:block hidden" />
                   <img src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
                     class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />

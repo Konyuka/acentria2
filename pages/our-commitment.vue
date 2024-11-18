@@ -37,7 +37,8 @@ const ReinsuranceBannerContent = ref({
             <div class="text-white" style="background-color: rgb(246, 248, 252);">
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Customers" loading="lazy" width="500"
-                            height="350" decoding="async" data-nimg="1" src="/img/call.jpg"
+                            height="350" decoding="async" data-nimg="1"
+                            src="https://media.istockphoto.com/id/1266865934/photo/well-keep-on-winning-as-long-as-we-work-together.jpg?s=2048x2048&w=is&k=20&c=3kcJSyAHsYmLLQUsCdleqvpwyKGVCN1P89gDIW9fZQ4="
                             style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
@@ -57,7 +58,8 @@ const ReinsuranceBannerContent = ref({
                 </div>
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Partners" loading="lazy" width="500"
-                            height="350" decoding="async" data-nimg="1" src="/img/call.jpg"
+                            height="350" decoding="async" data-nimg="1"
+                            src="https://media.istockphoto.com/id/1152767904/photo/smiling-diverse-couple-listening-to-financial-advisor-or-real-estate-agent.jpg?s=1024x1024&w=is&k=20&c=N-u_uySZHnH-YsdzwmpFoYB_mnhGc8JS3wibufmHB4w="
                             style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
