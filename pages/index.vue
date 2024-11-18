@@ -297,6 +297,9 @@ onMounted(() => {
 
                 <div class="py-5 heading-class text-white text-left">
                   Our <span class="text-brand-primary">Commitments</span>
+                  <h3 class="font-semibold text-[21px] text-white">
+                    Our purpose is serving you
+                  </h3>
                 </div>
 
                 <div class="">
