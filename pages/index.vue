@@ -98,10 +98,13 @@ onMounted(() => {
               </div>
 
               <div class="container relative min-h-[30vh] min-w-screen">
-                <div class="bottom-0 absolute max-w-7xl mx-auto">
-                  <h2 class="heading-class pb-5  text-white">
+                <div class="pb-5 bottom-0 absolute max-w-7xl mx-auto">
+                  <h2 class="heading-class  text-white">
                     Our <span class="text-brand-primary">Brand</span>
                   </h2>
+                  <h3 class="font-semibold text-[21px] text-white">
+                    We build our lifestyle around our brand!
+                  </h3>
                 </div>
               </div>
 
@@ -187,10 +190,13 @@ onMounted(() => {
 
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-20 lg:gap-16">
                   <div class="flex flex-col justify-center lg:basis-1/2">
-                    <div class="">
-                      <h2 class="heading-class pb-4 md:pb-5 text-black">
+                    <div class="pb-4">
+                      <h2 class="heading-class text-black">
                         Our Corporate <span class="text-brand-primary">Culture</span>
                       </h2>
+                      <h3 class="font-semibold text-[21px]">
+                        The Acentria Way!
+                      </h3>
                     </div>
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
@@ -231,8 +237,8 @@ onMounted(() => {
                       Leadership
                     </span>
                   </h2>
-                  <h3 class="font-semibold text-lg">
-                    Sharing an ambitious spirit
+                  <h3 class="font-semibold text-[21px] text-white">
+                    The leaders who inspire us
                   </h3>
                 </div>
               </div>

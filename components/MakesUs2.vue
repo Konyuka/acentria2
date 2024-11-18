@@ -86,6 +86,9 @@ const incentives = [
                         <h2 class="heading-class text-left -ml-5">
                             Our <span class="text-brand-primary">Purpose</span>
                         </h2>
+                        <h3 class="font-semibold text-[21px] -ml-5 mb-3">
+                            Our purpose is serving you
+                        </h3>
                     </div>
                     <div class="text-light-content">
                         <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
