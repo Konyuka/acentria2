@@ -223,14 +223,17 @@ onMounted(() => {
               </div>
 
               <div class="container relative min-h-[30vh] min-w-screen">
-                <div class="bottom-0 absolute max-w-7xl mx-auto">
+                <div class="mb-5 bottom-0 absolute max-w-7xl mx-auto">
 
-                  <h2 class="mb-5 text-left heading-class text-white py-1">
+                  <h2 class="text-left heading-class text-white py-1">
                     Our
                     <span class="text-brand-primary ">
                       Leadership
                     </span>
                   </h2>
+                  <h3 class="font-semibold text-lg">
+                    Sharing an ambitious spirit
+                  </h3>
                 </div>
               </div>
 
