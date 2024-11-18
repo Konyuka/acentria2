@@ -4,7 +4,7 @@
             <div class="">
                 <PopoverButton @click="openFlyover(theMenu.name)"
                     :class="[currentMenu === theMenu.name ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
-                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-1 subheading-class !text-[15.5px] ring-0 inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
+                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-1 subheading-class !text-[15.5px] !ring-0 focus inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
                     {{ theMenu.name }}
                 </PopoverButton>
             </div>
