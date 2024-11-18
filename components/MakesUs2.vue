@@ -34,6 +34,9 @@ const incentives = [
                 <h2 class="heading-class text-left">
                     About <span class="text-brand-primary">Us</span>
                 </h2>
+                <h3 class="font-semibold text-lg">
+                    Sharing an ambitious spirit
+                </h3>
             </div>
             <div class="relative pt-5">
                 <div class="absolute inset-x-0 bottom-0 top-48 bg-white">
