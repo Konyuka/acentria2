@@ -155,9 +155,13 @@ onMounted(() => {
                   <div class="flex flex-col justify-center lg:basis-1/2">
 
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <h2 class="heading-class pb-4 text-black">
+                      <h2 class="heading-class text-black">
                         Things that <span class="text-brand-primary">Inspire Us</span>
                       </h2>
+                      <h3 class="font-semibold text-[21px] pb-4">
+                        # Empower # Innovate # Prosper
+                      </h3>
+
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                         Our brand represents the essence of who we are and what we stand for. It is built on a
                         foundation of trust, integrity, and innovation. At Acentria Group, our brand is more than just a
