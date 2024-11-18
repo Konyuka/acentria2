@@ -103,7 +103,7 @@ onMounted(() => {
                     Our <span class="text-brand-primary">Brand</span>
                   </h2>
                   <h3 class="font-semibold text-[21px] text-white">
-                    We build our lifestyle around our brand!
+                    We build our lifestyle <span class="text-brand-primary">around our brand!</span>
                   </h3>
                 </div>
               </div>
@@ -159,7 +159,8 @@ onMounted(() => {
                         Things that <span class="text-brand-primary">Inspire Us</span>
                       </h2>
                       <h3 class="font-semibold text-[21px] pb-4">
-                        # Empower # Innovate # Prosper
+                        <span class="text-brand-primary">#</span> Empower <span class="text-brand-primary">#</span>
+                        Innovate <span class="text-brand-primary">#</span> Prosper
                       </h3>
 
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
@@ -199,7 +200,7 @@ onMounted(() => {
                         Our Corporate <span class="text-brand-primary">Culture</span>
                       </h2>
                       <h3 class="font-semibold text-[21px]">
-                        The Acentria Way!
+                        The Acentria <span class="text-brand-primary">Way!</span>
                       </h3>
                     </div>
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
@@ -242,7 +243,7 @@ onMounted(() => {
                     </span>
                   </h2>
                   <h3 class="font-semibold text-[21px] text-white">
-                    The leaders who inspire us
+                    The leaders who <span class="text-brand-primary">inspire us</span>
                   </h3>
                 </div>
               </div>
@@ -298,7 +299,7 @@ onMounted(() => {
                 <div class="py-5 heading-class text-white text-left">
                   Our <span class="text-brand-primary">Commitments</span>
                   <h3 class="font-semibold text-[21px] text-white">
-                    Our Intention is Clear!
+                    Always looking for ways <span class="text-brand-primary">to do things better!</span>
                   </h3>
                 </div>
 

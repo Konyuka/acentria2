@@ -35,7 +35,7 @@ const incentives = [
                     About <span class="text-brand-primary">Us</span>
                 </h2>
                 <h3 class="font-semibold text-[21px]">
-                    Sharing an ambitious spirit
+                    Sharing an <span class="text-brand-primary">ambitious spirit!</span>
                 </h3>
             </div>
             <div class="relative pt-5">
@@ -87,7 +87,7 @@ const incentives = [
                             Our <span class="text-brand-primary">Purpose</span>
                         </h2>
                         <h3 class="font-semibold text-[21px] -ml-5 mb-3">
-                            Our purpose is serving you
+                            Our purpose is <span class="text-brand-primary">serving you!</span>
                         </h3>
                     </div>
                     <div class="text-light-content">
