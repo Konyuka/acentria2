@@ -367,7 +367,7 @@ onBeforeUnmount(() => {
                 </div>
             </div>
         </div>
-        <CovidBanner v-if="showBanner" />
+        <CovidBanner v-if="showBanner" @close="showBanner = !showBanner" />
 
 
 

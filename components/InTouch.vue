@@ -96,10 +96,10 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class="container mt-10 max-w-full mx-auto font-sans grid grid-cols-3 gap-y-1 py-5 lg:grid-cols-5">
+                <div class="container mt-10 max-w-6xl mx-auto font-sans grid grid-cols-3 gap-y-1 py-5 lg:grid-cols-5">
 
                     <div class="mt-5">
-                        <h2 class="heading-class">
+                        <h2 class="heading-class text-[20px]">
                             Visit <span class="text-brand-primary">Us</span>
                         </h2>
                         <p class="mt-4 leading-6 text-black text-xs">
@@ -107,7 +107,7 @@ const companyMail = computed(() => {
                             <i class="fas fa-road text-brand-primary"></i> Muthithi Road, Mpesi Lane <br />
                             <i class="fas fa-map-marker-alt text-brand-primary"></i> Westlands, Nairobi Kenya
                         </p>
-                        <h2 class="mt-10 heading-class">
+                        <h2 class="mt-10 heading-class text-[20px]">
                             Working <span class="text-brand-primary">Hours</span>
                         </h2>
                         <p class="mt-4 leading-6 text-black font-medium text-xs">

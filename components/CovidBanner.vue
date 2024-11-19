@@ -23,15 +23,14 @@
                 now <span aria-hidden="true">&rarr;</span></a>
         </div>
         <div class="flex flex-1 justify-end">
-            <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+            <button @click="$emit('close')" type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
                 <span class="sr-only">Dismiss</span>
                 <i class="fas fa-times text-xl"></i>
-                <!-- <XMarkIcon class="size-5 text-gray-900" aria-hidden="true" /> -->
             </button>
         </div>
     </div>
 </template>
 
 <script setup>
-// import { XMarkIcon } from '@heroicons/vue/20/solid'
+const emits = defineEmits(['close']);
 </script>

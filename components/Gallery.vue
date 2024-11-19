@@ -12,8 +12,11 @@
                         <img class="h-80 object-cover object-left" src="/img/team.jpeg" alt="" />
                         <div class="p-10 pt-4">
                             <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Team Building</p>
-                            <p class="mt-2 max-w-lg text-xs text-gray-600">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.
+                            <p class="mt-2 max-w-lg text-xs text-gray-600">
+                                Our team-building activities are designed to foster collaboration, enhance
+                                communication, and build trust among team members. These events help create a positive
+                                work environment and strengthen the bonds within our team, ensuring we work together
+                                effectively to achieve our goals.
                             </p>
                         </div>
                     </div>
@@ -26,9 +29,14 @@
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
                         <img class="h-80 object-cover object-left lg:object-right" src="/img/journey.jpg" alt="" />
                         <div class="p-10 pt-4">
-                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Acentria Cycle Challenge</p>
-                            <p class="mt-2 max-w-lg text-xs text-gray-600">Curabitur auctor, ex quis auctor venenatis,
-                                eros arcu rhoncus massa, laoreet dapibus ex elit vitae odio.</p>
+                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Acentria Cycle Challenge
+                            </p>
+                            <p class="mt-2 max-w-lg text-xs text-gray-600">
+                                The Acentria Cycle Challenge is an exciting event that promotes fitness, teamwork, and a
+                                spirit of adventure. Participants cycle through scenic routes, pushing their limits and
+                                enjoying the camaraderie of their colleagues. This challenge not only encourages a
+                                healthy lifestyle but also strengthens the bonds within our team.
+                            </p>
                         </div>
                     </div>
                     <div
@@ -41,8 +49,13 @@
                         <img class="h-80 object-cover object-left" src="/img/simo-office.jpg" alt="" />
                         <div class="p-10 pt-4">
                             <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Office Shoot</p>
-                            <p class="mt-2 max-w-lg text-xs text-gray-600">Sed congue eros non finibus molestie.
-                                Vestibulum euismod augue.</p>
+                            <p class="mt-2 max-w-lg text-xs text-gray-600">
+                                Our office shoot sessions capture the essence of our workplace culture and the dynamic
+                                environment at Acentria Group. These photos highlight our team's professionalism,
+                                collaboration, and the vibrant atmosphere that drives our success. They serve as a
+                                visual representation of our commitment to excellence and our dedication to fostering a
+                                positive work environment.
+                            </p>
                         </div>
                     </div>
                     <div
@@ -54,10 +67,14 @@
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                         <img class="h-80 object-cover object-center" src="/img/what.jpg" alt="" />
                         <div class="p-10 pt-4">
-                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Business Development
+                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Business Development</p>
+                            <p class="mt-2 max-w-lg text-xs text-gray-600">
+                                Our business development initiatives are focused on identifying new opportunities,
+                                building strategic partnerships, and driving growth. We leverage our expertise and
+                                market insights to expand our reach and deliver innovative solutions to our clients.
+                                These efforts are crucial in maintaining our competitive edge and achieving long-term
+                                success.
                             </p>
-                            <p class="mt-2 max-w-lg text-xs text-gray-600">Maecenas at augue sed elit dictum
-                                vulputate, in nisi aliquam maximus arcu.</p>
                         </div>
                     </div>
                     <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5" />
@@ -68,10 +85,13 @@
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
                         <img class="h-80 object-cover object-center" src="/img/award.jpg" alt="" />
                         <div class="p-10 pt-4">
-                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Awards
+                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Awards</p>
+                            <p class="mt-2 max-w-lg text-xs text-gray-600">
+                                Our awards and recognitions are a testament to our commitment to excellence and our
+                                dedication to delivering outstanding results. These accolades reflect the hard work and
+                                achievements of our team, and they inspire us to continue striving for greatness in
+                                everything we do.
                             </p>
-                            <p class="mt-2 max-w-lg text-xs text-gray-600">Aenean vulputate justo commodo auctor
-                                vehicula in malesuada semper.</p>
                         </div>
                     </div>
                     <div

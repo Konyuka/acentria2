@@ -7,7 +7,7 @@ const ReinsuranceBannerContent = ref({
 </script>
 
 <template>
-    <section>
+    <section class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
         <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
@@ -41,12 +41,12 @@ const ReinsuranceBannerContent = ref({
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
 
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="heading-class pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Client-Centric Approach
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Acentria places our clients at the center of everything we do. Our ethical business conduct
                             revolves around ensuring the best interests of our clients are paramount. From providing
@@ -54,12 +54,12 @@ const ReinsuranceBannerContent = ref({
                             transparency and fair dealing in every client interaction.
                         </p>
                     </div>
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="heading-class pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Avoidance of Conflicts of Interest
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             We are dedicated to identifying and mitigating conflicts of interest that may compromise the
                             trust our clients place in us. Acentria's policies and procedures are designed to prevent,
@@ -81,12 +81,12 @@ const ReinsuranceBannerContent = ref({
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="heading-class pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Stringent Regulatory Adherence
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             In the dynamic landscape of insurance and investment, compliance with regulations is not
                             just a requirement—it's a commitment. Acentria places a premium on staying abreast of
@@ -95,12 +95,12 @@ const ReinsuranceBannerContent = ref({
                             of their information.
                         </p>
                     </div>
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="heading-class pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Robust Compliance Framework
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Acentria has implemented a comprehensive compliance framework that guides our business
                             practices. From anti-money laundering measures to data protection protocols, we have
@@ -121,12 +121,12 @@ const ReinsuranceBannerContent = ref({
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="heading-class pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Strong Governance Structure
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Governance excellence is fundamental to Acentria's commitment to ethics and compliance. Our
                             board of directors provides strategic oversight, ensuring that our operations align with
@@ -134,12 +134,12 @@ const ReinsuranceBannerContent = ref({
                             each team member is committed to upholding our ethical principles.
                         </p>
                     </div>
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="heading-class pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Continuous Training and Development
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-base leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="text-xs leading-normal mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Acentria invests in the ongoing training and development of our employees to ensure a deep
                             understanding of ethical considerations and compliance requirements. By fostering a culture

@@ -66,12 +66,12 @@ const bannerContent = ref({
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
 
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="subheading-font pb-4 leading-normal text-black"
                         data-v-inspector="components/Why.vue:18:17">
                         Environmental Stewardship
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        <p class="textt-xs leading-normal text-black mb-4">
                             We recognize the importance of environmental sustainability in
                             preserving our planet for future generations. Acentria Group is dedicated to minimizing our
                             environmental footprint through initiatives such as:
@@ -102,12 +102,12 @@ const bannerContent = ref({
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="subheading-font pb-4 leading-normal text-black"
                         data-v-inspector="components/Why.vue:18:17">
                         Social Responsibility:
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="textt-xs leading-normal text-black mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Acentria Group is committed to making a positive impact on the communities
                             where we operate and beyond. Our social responsibility initiatives include: <br>
@@ -138,12 +138,12 @@ const bannerContent = ref({
                         data-v-inspector="components/Why.vue:56:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:60:13">
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="subheading-font pb-4 leading-normal text-black"
                         data-v-inspector="components/Why.vue:18:17">
                         Governance Excellence:
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="textt-xs leading-normal text-black mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             We uphold the highest standards of corporate governance to ensure
                             transparency, accountability, and ethical conduct in all our business practices. Our
@@ -178,12 +178,12 @@ const bannerContent = ref({
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="subheading-font pb-4 leading-normal text-black"
                         data-v-inspector="components/Why.vue:18:17">
                         Economic Responsibility
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
+                        <p class="textt-xs leading-normal text-black mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Acentria Group strives to contribute to economic development
                             by creating value for our stakeholders, promoting responsible growth, and providing

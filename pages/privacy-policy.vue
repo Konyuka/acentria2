@@ -7,19 +7,19 @@ const ReinsuranceBannerContent = ref({
 </script>
 
 <template>
-    <section>
+    <section class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
         <div class="bg-white px-6 py-10 lg:px-8 font-sans">
-            <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+            <div class="mx-auto max-w-6xl text-base leading-7 text-gray-700">
 
-                <p class="mt-6 text-xl leading-8">
+                <p class="mt-6 text-xs leading-normal">
                     Acentria Insurance (“we,” “us,” or “our”) is committed to protecting the privacy and security of
                     your personal information. This Privacy Policy explains how we collect, use, disclose, and protect
                     your information when you visit our website or use our services.
                 </p>
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">How We Use Your Information</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">How We Use Your Information</p>
                     <p class="mt-8">
                         We use your information for the following purposes:
                     </p>
@@ -92,8 +92,8 @@ const ReinsuranceBannerContent = ref({
                     </ul>
                 </div>
 
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">Information we collect</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">Information we collect</p>
                     <p class="mt-8">
                         We may collect personal information when you interact with us, including but not limited to:
                     </p>
@@ -167,8 +167,8 @@ const ReinsuranceBannerContent = ref({
                     </ul>
                 </div>
 
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">How We Use Your Information</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">How We Use Your Information</p>
                     <p class="mt-8">
                         We use your information for the following purposes:
                     </p>
@@ -203,8 +203,8 @@ const ReinsuranceBannerContent = ref({
                 </div>
 
                 <!-- New sections -->
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">4. Information Sharing</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">4. Information Sharing</p>
                     <p class="mt-8">
                         We may share your information with third parties, including:
                     </p>
@@ -251,8 +251,8 @@ const ReinsuranceBannerContent = ref({
                     </ul>
                 </div>
 
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">5. Your Rights</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">5. Your Rights</p>
                     <p class="mt-8">
                         You have the right to:
                     </p>
@@ -299,38 +299,37 @@ const ReinsuranceBannerContent = ref({
                     </ul>
                 </div>
 
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">6. Data Security</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">6. Data Security</p>
                     <p class="mt-8">
                         We implement reasonable security measures to protect your information from unauthorized access,
                         disclosure, alteration, and destruction.
                     </p>
                 </div>
 
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">7. Cookies and Similar Technologies</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">7. Cookies and Similar Technologies</p>
                     <p class="mt-8">
                         Our website may use cookies and similar technologies. You can control cookies through your
                         browser settings.
                     </p>
                 </div>
 
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">8. Children’s Privacy</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">8. Children’s Privacy</p>
                     <p class="mt-8">
                         Our services are not intended for individuals under the age of 18. We do not knowingly collect
                         personal information from children.
                     </p>
                 </div>
 
-                <div class="mt-10 max-w-2xl">
-                    <p class="font-bold text-2xl">9. Changes to This Privacy Policy</p>
+                <div class="mt-10 max-w-3xl mx-auto">
+                    <p class="heading-class">9. Changes to This Privacy Policy</p>
                     <p class="mt-8">
                         We may update this Privacy Policy from time to time. The latest version will be posted on our
                         website with the updated date.
                     </p>
                 </div>
-
 
 
             </div>
