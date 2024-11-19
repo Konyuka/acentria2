@@ -80,7 +80,8 @@ const ReinsuranceBannerContent = ref({
                 </div>
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our People" loading="lazy" width="500"
-                            height="350" decoding="async" data-nimg="1" src="/img/call.jpg"
+                            height="350" decoding="async" data-nimg="1"
+                            src="https://media.istockphoto.com/id/1383533772/photo/shot-of-a-businesswoman-holding-a-digital-tablet-while-standing-in-the-boardroom.jpg?s=1024x1024&w=is&k=20&c=rNq5TZWC7OoiOf2b0zAnj4zz6HwWXFRlIEHPCmco5SQ="
                             style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
@@ -101,7 +102,8 @@ const ReinsuranceBannerContent = ref({
                 </div>
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Communities" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1" src="/img/call.jpg"
+                            width="500" height="350" decoding="async" data-nimg="1"
+                            src="https://cdn.stocksnap.io/img-thumbs/960w/city-buildings_441BW5HSOU.jpg"
                             style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2"><label
                             class="text-xs leading-normal font-regular text-light-highlight font-bold">Our

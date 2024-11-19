@@ -2,7 +2,7 @@
 const bannerContent = ref({
     subtitle: 'What we do',
     title: 'Services that make a difference',
-    image: 'https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg'
+    image: 'https://www.shutterstock.com/shutterstock/photos/2508742035/display_1500/stock-photo-service-excellence-high-quality-service-concept-continuous-improvement-and-invest-in-training-and-2508742035.jpg'
 })
 
 const features = [
@@ -50,10 +50,10 @@ const features = [
 
             <div class="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
                 <div class="w-full lg:w-6/12">
-                    <h2 class="w-full font-bold lg:text-4xl text-3xl lg:leading-10 leading-9 text-left">
+                    <h2 class="w-full heading-class text-left">
                         Our Diverse <span class="text-brand-primary">Lines of Business</span>
                     </h2>
-                    <p class="font-normal text-xs leading-6 text-gray-600 mt-6 text-left">
+                    <p class="font-normal text-xs leading-normal text-black mt-6 text-left">
                         At Acentria Group, we offer a wide range of services designed to meet the diverse needs of our
                         clients. Our lines of business include Insurance, Reinsurance, Actuarial Services, Broking, and
                         Technology Solutions. Each of these areas is supported by a team of dedicated professionals who
@@ -81,20 +81,20 @@ const features = [
                 <div class="w-full">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-12 gap-10">
 
-                        <div v-for="feature in features" class="button-animation flex p-4 shadow-md">
+                        <NuxtLink :href="feature.url"  v-for="feature in features" class="button-animation flex p-4 shadow-md border-l-4 border-brand-primary">
                             <div class="mr-6">
-                                <i :class="feature.icon" class="text-brand-primary"></i>
+                                <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                             </div>
                             <div class="">
                                 <p
-                                    class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 text-left">
+                                    class="subheading-class text-left">
                                     {{ feature.title }}
                                 </p>
-                                <p class="mt-2 font-normal text-xs leading-6 text-gray-600 text-left">
+                                <p class="mt-2 font-normal text-xs leading-normal text-black text-left">
                                     {{ feature.description }}
                                 </p>
                             </div>
-                        </div>
+                        </NuxtLink>
 
                         
                     </div>

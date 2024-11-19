@@ -36,16 +36,19 @@ const joinAsMembers = ref([
   {
     name: 'New Customer',
     icon: 'fas fa-user-plus',
+    link: '/join-our-team',
     description: 'Join us as a new customer and experience our exceptional services tailored to meet your needs.',
   },
   {
     name: 'Supplier',
     icon: 'fas fa-truck',
+    link: '/join-our-team',
     description: 'Partner with us as a supplier and contribute to our supply chain with your quality products and services.',
   },
   {
     name: 'Career',
     icon: 'fas fa-briefcase',
+    link: '/acentria-group-careers',
     description: 'Explore career opportunities at Acentria Group and become a part of our dynamic and innovative team.',
   },
 ])
@@ -381,7 +384,7 @@ onMounted(() => {
                         </h2>
                       </div>
                       <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
-                        <div v-for="member in joinAsMembers" :key="member.name"
+                        <NuxtLink :href="member.link" v-for="member in joinAsMembers" :key="member.name"
                           class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
                           <div class="sm:flex-shrink-0 flex justify-center">
                             <i :class="member.icon" class="text-black text-2xl"></i>
@@ -393,7 +396,7 @@ onMounted(() => {
                             <i
                               class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
                           </div>
-                        </div>
+                        </NuxtLink>
                       </div>
                     </div>
                   </div>
