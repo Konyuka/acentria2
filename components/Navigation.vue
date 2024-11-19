@@ -18,6 +18,7 @@ const isActuarialDropdownVisible = ref(false);
 const isITDropdownVisible = ref(false);
 const isReinsuranceDropdownVisible = ref(false);
 const isAboutDropdownVisible = ref(false);
+const showBanner = ref(true);
 
 watch(currentRoute, (newValue) => {
     if (newValue) {
@@ -143,6 +144,10 @@ const handleScroll = () => {
 
 onMounted(() => {
     window.addEventListener('scroll', handleScroll);
+
+    setTimeout(() => {
+        showBanner.value = false;
+    }, 500);
 });
 
 onBeforeUnmount(() => {
@@ -152,8 +157,8 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-
     <div :class="bottomBarClass" class="z-50">
+        
         <div class="relative z-50 mx-auto hidden w-full px-2 my-2 lg:block">
             <div class="font-sans px-1 mx-auto flex flex-row items-center justify-between">
 
@@ -362,6 +367,7 @@ onBeforeUnmount(() => {
                 </div>
             </div>
         </div>
+        <CovidBanner v-if="showBanner" />
 
 
 

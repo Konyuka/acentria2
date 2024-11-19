@@ -108,14 +108,12 @@ onMounted(() => {
                 </div>
               </div>
 
-
-
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
 
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+                <div
+                  class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16 items-center ">
 
                   <div class=" flex text-left lg:basis-1/2">
-
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal mb-4 mt-4">
                         Our brand represents the essence of who we are and what we stand for. It is built on a
@@ -139,7 +137,7 @@ onMounted(() => {
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
-                      class="w-full h-[350px] shadow-2xl rounded-lg !object-cover" src="/img/join.jpg"
+                      class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/join.jpg"
                       data-v-inspector="components/Why.vue:34:17" />
                   </div>
                 </div>
