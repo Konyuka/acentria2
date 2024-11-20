@@ -12,7 +12,7 @@ const InsuranceBannerContent = ref({
 });
 
 const InsuranceCardsContent = ref({
-    title: "Who is this medical insurance for?",
+    title: `Who is this  <span class="text-brand-primary">medical insurance for?</span> `,
     users: [
         {
             name: "Myself",
@@ -111,9 +111,14 @@ const whys = ref([
 
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
+        <div class="container">
+            <h1 class="heading-class">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
+            <p class="text-[25px] text-light-content mt-2">We have all the answers to your questions.</p>
+        </div>
+
         <Accordion :faqs="faqs" />
 
-        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+        <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
 
         <ContactForm />
 

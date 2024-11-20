@@ -41,7 +41,7 @@ const props = defineProps({
 
         <div class="container max-w-6xl">
             <div class="mt-5">
-                <h1 class="heading-class">About Health Insurance</h1>
+                <h1 class="heading-class">Health Insurance</h1>
             </div>
             <div class="mt-5 mx-auto text-left">
                 <div class="">
