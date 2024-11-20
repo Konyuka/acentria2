@@ -225,14 +225,14 @@ const bannerTitle = ref('Acentria Reinsurance Brokers')
                 </section>
 
                 <div class="bg-white">
-                    <div class="py-6 text-white xl:py-5 max-w-3xl mx-auto" style="background-color: #f6f8fc">
+                    <div class="py-6 text-white xl:py-5 max-w-6xl mx-auto" style="background-color: #f6f8fc">
 
                         <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
                             <div class="relative p-4 lg:basis-1/2">
                                 <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="250" height="350" decoding="async" data-nimg="1"
-                                    style="color: transparent; object-fit: contain" class="ml-20 rounded-xl"
+                                    decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain" class="rounded-xl w-full h-[300px]"
                                     src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                             </div>
                             <div class="flex flex-col justify-center items-center lg:basis-1/2">
@@ -267,7 +267,7 @@ const bannerTitle = ref('Acentria Reinsurance Brokers')
                     <div class="container flex items-center justify-center">
                         <div class="relative p-4">
                             <img alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
-                                width="1000" height="350" decoding="async" data-nimg="1"
+                                width="1600" height="350" decoding="async" data-nimg="1"
                                 style="color:transparent;object-fit:contain" class="rounded-xl" src="/img/map.jpg">
                         </div>
                     </div>

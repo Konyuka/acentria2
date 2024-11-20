@@ -157,7 +157,7 @@ const heroContent = ref({
                 </section>
 
                 <div class="bg-white">
-                    <div class="py-4 text-white max-w-3xl mx-auto" style="background-color: #f6f8fc">
+                    <div class="py-4 text-white max-w-6xl mx-auto" style="background-color: #f6f8fc">
 
                         <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2  lg:gap-16">
 

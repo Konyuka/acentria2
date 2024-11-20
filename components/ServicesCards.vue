@@ -42,16 +42,16 @@ const services = ref([
                     <div
                         class="border-brand-light-content flex flex-row items-center justify-center gap-2 border-none py-2 md:border-r-2 md:border-solid md:py-6 md:pr-8">
                         <h1 id=""
-                            class="pb-5 text-3xl font-semibold leading-tight md:pb-6  xl:leading-tight text-brand-primary">
+                            class="pb-5 heading-class md:pb-6  leading-normal text-brand-primary">
                             Quality
                         </h1>
                         <h1 id=""
-                            class="pb-5 text-3xl font-semibold leading-tight md:pb-6  xl:leading-tight text-light-title">
+                            class="pb-5 heading-class md:pb-6  leading-normal text-light-title">
                             Services
                         </h1>
                     </div>
                     <div class="hidden flex-col py-4 pl-8 sm:flex md:py-6">
-                        <p class="text-xs leading-normal font-regular text-light-content">
+                        <p class="text-xs leading-normal text-light-content">
                             Stay ahead of the news and trends impacting GRC for leaders,
                             organizations and the public sector. Find resources and
                             insights covering everything from governance best practices
@@ -79,10 +79,10 @@ const services = ref([
 
                         <div class="font-sans group relative">
                             <h3 v-html="service.name"
-                                class="mt-3 line-clamp-2 text-md font-semibold leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
-                                
+                                class="mt-3 line-clamp-2 subheading-class leading-normal text-brand-dim transition-colors group-hover:text-brand-primary">
+
                             </h3>
-                            <p class="mt-5 text-xs leading-6 text-gray-600">
+                            <p class="mt-5 text-xs leading-normal text-gray-600">
                                 {{ service.content }}
                             </p>
                         </div>

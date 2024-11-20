@@ -11,7 +11,7 @@ const props = defineProps({
         <section id="" class="relative py-2 bg-white text-center">
             <div class="container px-4">
                 <h2
-                    class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight pb-4 pt-6">
+                    class="heading-class text-gray-900 pb-4 pt-6">
                     Why work with <span class="text-brand-primary">Acentria</span>
                 </h2>
             </div>
@@ -26,12 +26,12 @@ const props = defineProps({
                         }}</i>
                     <div>
                         <h4 id=""
-                            class="font-sans text-md pb-4 md:pb-5 font-semibold leading-tight text-light-title">
+                            class="subheading-class pb-4 leading-normal text-light-title">
                             {{ item.name }}
                         </h4>
                     </div>
                     <p
-                        class="font-sans text-base leading-normal font-regular text-light-content text-xs font-normal not-italic">
+                        class="leading-normal text-light-content text-xs">
                         {{ item.content }}
                     </p>
                 </div>

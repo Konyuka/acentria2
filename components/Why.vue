@@ -1,11 +1,10 @@
 <script setup>
 
-
 </script>
 
 <template>
     <div class="bg-white">
-        <div class="font-sans text-white py-2 max-w-5xl mx-auto" style="background-color: #f6f8fc">
+        <div class="font-sans text-white py-2 max-w-6xl mx-auto" style="background-color: #f6f8fc">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-1 lg:gap-20">
                 <div class="relative p-1 lg:basis-1/2 ">
                     <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
@@ -16,11 +15,11 @@
                     <label class="text-md leading-normal font-regular text-light-highlight font-bold">Build
                         organizational resilience
                     </label>
-                    <h2 class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
+                    <h2 class="subheading-class pb-1 leading-normal text-light-title">
                         Empower Your Business with Innovative Insurance and Investment Solutions.
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        <p class="text-xs leading-normal text-light-content mb-4">
                             Transform your operations with advanced risk management, precise actuarial analytics, and
                             cutting-edge technology to drive growth and resilience. Let us help you navigate complexities
                             and
@@ -42,11 +41,11 @@
                     <label class="text-md leading-normal font-regular text-light-highlight font-bold">Stay
                         ahead of the competition
                     </label>
-                    <h2 class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
+                    <h2 class="subheading-class pb-1 leading-normal text-light-title">
                         Elevate Your Strategies with Precision and Innovation
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        <p class="text-xs leading-normal text-light-content mb-4">
                             Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and
                             investment decisions, ensuring you stay ahead in a rapidly evolving market. Our solutions
                             provide
@@ -71,11 +70,11 @@
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <label class="text-md leading-normal font-regular text-light-highlight font-bold">Reinforce
                         investor confidence</label>
-                    <h2 class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title">
+                    <h2 class="subheading-class pb-1 leading-normal text-light-title">
                         Unlock Greater Efficiency and Insight with Our Expertise.
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                        <p class="text-xs leading-normal text-light-content mb-4">
                             Streamline your operations and enhance decision-making with our integrated solutions in risk
                             management, actuarial services, and tech advancements tailored for your industry needs. Our
                             comprehensive approach ensures that you have the tools and insights necessary to navigate

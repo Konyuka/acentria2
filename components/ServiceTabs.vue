@@ -56,7 +56,7 @@ onMounted(() => {
                         </h4>
                     </div>
                     <p
-                        class="text-xs leading-normal text-black">
+                        class="text-xs leading-normal text-light-content">
                         {{ item.content }}
                     </p>
                 </div>
