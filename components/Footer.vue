@@ -97,7 +97,7 @@ const menuItem = ref([
                 link: '/ethics-and-compliance',
             },
             {
-                name: 'Whistle Blowing',
+                name: 'Complaints',
                 icon: 'fas fa-bullhorn',
                 link: '/whistle-blowing',
             },

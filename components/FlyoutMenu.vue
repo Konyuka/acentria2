@@ -16,87 +16,114 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-[18vw] w-[87vw] h-20 mt-[67px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
+                class="!-left-[18vw] w-[87vw] h-20 mt-[65px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
                 <!-- <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
                     aria-hidden="true"></div> -->
 
-                <div class="relative">
+                <div class="relative border-b-4 border-brand-primary">
                     <img src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
                         alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
 
-                    <div class="h-10  justify-center content-center mt-0">
-                        <div class="ml-10 flex text-lg font-semibold subheading-class text-black">
+                    <div class="h-4  justify-center content-center mt-0">
+                        <div class="relative ml-4 flex font-semibold text-[15px] text-black">
                             <div>
-                                {{ flyoverHeader }}
+                                <!-- {{ flyoverHeader }} -->
                             </div>
-                            <div class="ml-[30vw] text-brand-primary col-span-1 text-[16px]">
-                                <i class="fas fa-award mr-2"></i> <span class="text-black">Get discounts</span>
-                                upto
-                                3%
+
+
+                            <div class="absolute px-8 font-bold ml-[300px]">
+                                <!-- <p class="text-[12px] mb-1">
+                                    We propel prosperity to infinite possibilities.
+                                </p> -->
+                                <div class="grid grid-cols-3 gap-1 text-[13px]">
+                                    <div><span class="text-brand-primary text-[11px]">#</span> Empower <div
+                                            class="w-20 bg-black/10 h-1"></div>
+                                    </div>
+                                    <div class="text-brand-primary"><span
+                                            class="text-brand-primary text-[13px]">#</span>
+                                        Innovate
+                                        <div class="w-20 bg-black/10 h-1"></div>
+                                    </div>
+                                    <div><span class="text-brand-primary text-[13px]">#</span> Prosper <div
+                                            class="w-20 bg-black/10 h-1"></div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
 
-                    <div class="h-auto ">
-                        <div class="grid grid-cols-3 h-full">
-                            <div class="col-span-1 relative">
-                                <div class="relative pl-16 py-5 flex flex-col gap-3">
-                                    <div v-for="(item, index) in currentMenuItems">
+                    <div class="h-auto mt-3">
+                        <div class="ml-4 flex font-semibold text-[15px] text-black">
+                            {{ flyoverHeader }}
+                        </div>
+                        <div class="grid grid-cols-7">
+
+
+                            <div class="col-span-2 relative border-r-4 border-red-600 h-52 mt-2">
+
+                                <div class="relative pl-10 pt-2 flex flex-col gap-2">
+                                    <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
                                         <p @click="setSubmenu(item, index)"
                                             :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
-                                            class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-md">
-                                            <i :class="item.icon" class="mr-2"></i>
+                                            class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-[14px]">
+                                            <!-- <i :class="item.icon" class="mr-2"></i> -->
                                             {{ item.name }}
-                                            <i
-                                                class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i>
+                                            <!-- <i
+                                                class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i> -->
                                         </p>
                                     </div>
-                                </div>
-                                <div>
-                                </div>
-                                <div class="absolute px-8 font-bold bottom-3">
-                                    <p class="text-[12px] mb-1">
-                                        We propel prosperity to infinite possibilities.
-                                    </p>
-                                    <div class="grid grid-cols-3 gap-1">
-                                        <div><span class="text-brand-primary text-[13px]">#</span> Empower <div
-                                                class="w-20 bg-black/10 h-1"></div>
+
+                                    <div v-show="currentMenu === 'Insurance'" >
+                                        <div class="-ml-6 my-4 font-semibold text-[15px] text-black">
+                                            Special Lines Insurance
                                         </div>
-                                        <div class="text-brand-primary"><span
-                                                class="text-brand-primary text-[13px]">#</span>
-                                            Innovate
-                                            <div class="w-20 bg-black/10 h-1"></div>
+
+                                        <div class="flex flex-col gap-2">
+                                            <div v-show="item.type" v-for="(item, index) in currentMenuItems">
+                                                <p @click="setSubmenu(item, index)"
+                                                    :class="[currentSubmenu === item.name ? 'text-brand-primary' : '']"
+                                                    class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-[14px]">
+                                                    <!-- <i :class="item.icon" class="mr-2"></i> -->
+                                                    {{ item.name }}
+                                                    <!-- <i
+                                                        class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i> -->
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div><span class="text-brand-primary text-[13px]">#</span> Prosper <div
-                                                class="w-20 bg-black/10 h-1"></div>
-                                        </div>
+
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="col-span-2 ml-4">
-                                <div class="py-5 grid grid-cols-3 gap-2 max-w-full px-2">
 
-                                    <div class="flex flex-col gap-4 border-r-4 border-red-600 h-56">
-                                        <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
-                                            :key="submenuItem.name"
-                                            class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-[13.2px]">
-                                            {{ submenuItem.name }}
-                                        </NuxtLink>
-                                    </div>
+                            <div class="col-span-5 ml-4">
+                                <div class="pt-2 grid grid-cols-3 gap-2 max-w-full px-2">
 
-                                    <div class="flex flex-col gap-3 mx-3">
+
+
+                                    <div class="flex flex-col gap-1 mx-3">
                                         <h2 class="text-md font-semibold">{{ currentMenuSubtitle }}</h2>
                                         <p class="text-[13px] leading-normal">
                                             {{ currentMenuDescription }}
                                         </p>
                                     </div>
 
+                                    <div class="flex flex-col gap-1 border-l-4 border-red-600 h-56 pl-5">
+                                        <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
+                                            :key="submenuItem.name"
+                                            class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-[13px]">
+                                            <i class="group-hover:text-brand-primary mr-2 fas fa-caret-right"></i>
+                                            {{ submenuItem.name }}
+                                        </NuxtLink>
+                                    </div>
+
                                     <div>
                                         <div class="w-auto dark:border-gray-700">
-                                            <div class="w-full rounded h-40">
+                                            <div class="w-full rounded h-32">
                                                 <img src="/img/call.jpg" alt="Display picture of Silene Tokyo"
                                                     role="img"
                                                     class="object-cover h-full w-full overflow-hidden rounded shadow">
@@ -125,26 +152,28 @@
                                                     class="text-brand-primary underline underline-offset-2">Get a quote
                                                     now!</span>
                                             </p>
+
+                                            <div class="mt-2 text-brand-primary col-span-1 text-[15px]">
+                                                <i class="fas fa-award mr-2"></i> <span class="text-black">Get
+                                                    discounts</span>
+                                                upto
+                                                3%
+                                            </div>
                                         </div>
                                     </div>
 
                                 </div>
 
                                 <div class="h-10 grid grid-cols-3 gap-2 font-bold">
-                                    <div></div>
-                                    <!-- <div class="text-brand-primary col-span-1 text-[16px]">
-                                        <i class="fas fa-award mr-2"></i> <span class="text-black">Get discounts</span>
-                                        upto
-                                        3%
-                                    </div> -->
-
-                                    <div>
+                                    <div v-show="currentMenu">
                                         <button
-                                            class="button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[10px]">
+                                            class="ml-8 button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[14px]">
                                             Download our App on <i class="fab fa-google-play text-brand-primary"></i> &
                                             <i class="fab fa-apple text-brand-primary"></i>
                                         </button>
                                     </div>
+                                    <div></div>
+                                    <div></div>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +186,7 @@
                             </div> -->
                             <div class="flex col-span-2 w-full justify-between !pr-5">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
-                                    class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-xs font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                                    class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-[13px] font-semibold leading-normal text-black sm:justify-center sm:px-0">
                                     <i :class="item.icon" class="flex-none group-hover:text-black text-brand-primary" />
                                     {{ item.name }} <i class="fas fa-arrow-right"></i>
                                 </NuxtLink>
@@ -557,7 +586,79 @@ const InsuranceMenus = ref([
             },
         ]
     },
+    // {
+    //     name: 'Claims & Filing',
+    //     subMenu: 'Claims Process',
+    //     description: 'Information and guidance on the claims process and how to file a claim.',
+    //     icon: 'fas fa-file-invoice-dollar',
+    //     items: [
+    //         {
+    //             name: 'Claims Overview',
+    //             description: 'Get a comprehensive overview of the claims process, including what to expect and how to get started.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //         {
+    //             name: 'Claims Process',
+    //             description: 'Learn about the step-by-step process for filing a claim and what documentation is required.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //         {
+    //             name: 'Claims FAQ',
+    //             description: 'Find answers to frequently asked questions about the claims process and how to resolve common issues.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //     ]
+    // },
     {
+        type:'special',
+        name: 'Aviation Cover',
+        subMenu: 'Professional Insurance',
+        description: 'Insurance solutions tailored for various professions to protect against professional risks.',
+        icon: 'fas fa-plane',
+        items: [
+            {
+                name: 'Doctors Professional Indemnity',
+                description: 'Protection for medical professionals against claims of malpractice or professional negligence.',
+                link: '/insurance/biasahara-cover',
+            },
+            {
+                name: 'Lawyers Professional Indemnity',
+                description: 'Coverage for legal professionals against claims of errors, omissions, or negligence in their practice.',
+                link: '/insurance/biasahara-cover',
+            },
+            {
+                name: 'Pilots Professional Indemnity',
+                description: 'Insurance for pilots, covering liabilities arising from professional errors or negligence.',
+                link: '/insurance/biasahara-cover',
+            },
+        ]
+    },
+    {
+        type:'special',
+        name: 'Marine Cover',
+        subMenu: 'Professional Insurance',
+        description: 'Insurance solutions tailored for various professions to protect against professional risks.',
+        icon: 'fas fa-ship',
+        items: [
+            {
+                name: 'Doctors Professional Indemnity',
+                description: 'Protection for medical professionals against claims of malpractice or professional negligence.',
+                link: '/insurance/biasahara-cover',
+            },
+            {
+                name: 'Lawyers Professional Indemnity',
+                description: 'Coverage for legal professionals against claims of errors, omissions, or negligence in their practice.',
+                link: '/insurance/biasahara-cover',
+            },
+            {
+                name: 'Pilots Professional Indemnity',
+                description: 'Insurance for pilots, covering liabilities arising from professional errors or negligence.',
+                link: '/insurance/biasahara-cover',
+            },
+        ]
+    },
+    {
+        type: 'special',
         name: 'Contractors & Developers',
         subMenu: 'Contractor Insurance',
         description: 'Comprehensive insurance solutions for contractors and developers.',
@@ -586,6 +687,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
+        type: 'special',
         name: 'Career & Profession',
         subMenu: 'Professional Insurance',
         description: 'Insurance solutions tailored for various professions to protect against professional risks.',
@@ -608,29 +710,6 @@ const InsuranceMenus = ref([
             },
         ]
     },
-    {
-        name: 'Claims & Filing',
-        subMenu: 'Claims Process',
-        description: 'Information and guidance on the claims process and how to file a claim.',
-        icon: 'fas fa-file-invoice-dollar',
-        items: [
-            {
-                name: 'Claims Overview',
-                description: 'Get a comprehensive overview of the claims process, including what to expect and how to get started.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Claims Process',
-                description: 'Learn about the step-by-step process for filing a claim and what documentation is required.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Claims FAQ',
-                description: 'Find answers to frequently asked questions about the claims process and how to resolve common issues.',
-                link: '/insurance/biasahara-cover',
-            },
-        ]
-    }
 ])
 const ReinsuranceMenus = ref([
     {
@@ -773,6 +852,7 @@ const ActuarialMenus = ref([
         ]
     },
 ])
+
 
 const selectedIndex = ref(null)
 const activeClick = ref(false)

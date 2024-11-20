@@ -23,7 +23,7 @@ const props = defineProps({
                         class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[100%] lg:justify-start lg:text-left">
                         <div class="w-full">
                             <h1 v-html="InsuranceBannerContent.title"
-                                class="font-sans tracking-normal text-4xl  text-white font-semibold leading-tight lg:leading-tight">
+                                class="font-sans tracking-normal text-5xl  text-white font-semibold leading-tight lg:leading-tight">
                             </h1>
                         </div>
                         <div>

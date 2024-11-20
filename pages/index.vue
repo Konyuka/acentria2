@@ -96,7 +96,7 @@ onMounted(() => {
             <div>
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-              <div class="w-full h-full bg-white">
+              <div class="w-full h-full bg-white border-t-4 border-brand-primary">
                 <MakesUs2 />
               </div>
 

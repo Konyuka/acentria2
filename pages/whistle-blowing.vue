@@ -8,9 +8,10 @@ const ReinsuranceBannerContent = ref({
 
 <template>
     <section class="bg-white">
+
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
-        <div class="">
+        <div class="bg-white">
             <ComplaintForm />
         </div>
 
