@@ -132,14 +132,14 @@ const specials = ref([
                 <div v-for="special in specials" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
 
                     <h2 id="tier-hobby"
-                        class=" text-center text-md font-semibold leading-8 text-white bg-brand-primary flex justify-center content-center p-1 rounded-md">
+                        class=" text-center subheading-class leading-normal text-white bg-brand-primary flex justify-center content-center p-1 rounded-md">
                         {{ special.name }}
                     </h2>
-                    <ul role="list" class="divide-y divide-gray-100">
+                    <ul role="list" class="divide-y divide-gray-100 py-3">
 
                         <li v-for="item in special.items" class="flex gap-x-4 py-1">
                             <div class="min-w-0">
-                                <p class="text-xs font-semibold leading-6 text-gray-900"><i
+                                <p class="text-xs leading-normal text-gray-900"><i
                                         class="fas fa-caret-right mr-2"></i> {{ item }}</p>
                             </div>
                         </li>

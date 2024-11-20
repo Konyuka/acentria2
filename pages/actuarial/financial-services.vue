@@ -108,11 +108,11 @@ const offers = ref([
                         class=" text-center text-md font-semibold leading-8 text-white bg-brand-primary flex justify-center content-center p-1 rounded-md">
                         {{ special.name }}
                     </h2>
-                    <ul role="list" class="divide-y divide-gray-100">
+                    <ul role="list" class="divide-y divide-gray-100 my-5">
 
                         <li class="flex gap-x-4 py-1">
                             <div class="min-w-0">
-                                <p class="text-xs leading-5 text-gray-900"><i class="fas fa-caret-right mr-2"></i> {{
+                                <p class="text-xs leading-normal text-gray-900"><i class="fas fa-caret-right mr-2"></i> {{
                                     special.content }}</p>
                             </div>
                         </li>

@@ -15,7 +15,7 @@ const props = defineProps({
                     <p class="font-sans mt-2 text-3xl font-semibold tracking-tight text-brand-primary">
                         Key Platform Features
                     </p>
-                    <p class="mt-6 text-md text-secondary">
+                    <p class="mt-6 text-xs leading-normal text-secondary">
                         {{ content.description }}
                     </p>
                 </div>
@@ -26,11 +26,11 @@ const props = defineProps({
                             <dt class="text-md font-semibold leading-7 text-white">
                                 <div
                                     class="mb-2 left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                                    <i :class="cont.icon" class="fas text-brand-primary text-xl"></i>
+                                    <i :class="cont.icon" class="fas text-brand-primary subheading-class"></i>
                                 </div>
                                 {{ cont.title }}
                             </dt>
-                            <dd class="mt-2 text-xs text-white">
+                            <dd class="mt-2 text-xs leading-normal text-white">
                                 {{ cont.content }}
                             </dd>
                         </div>
