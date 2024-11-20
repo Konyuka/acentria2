@@ -1,8 +1,8 @@
 <script setup>
-const ReinsuranceBannerContent = ref({
-    title: 'Our Staff',
-    description: 'We are proud to serve a wide range of customers, from individuals and families to businesses and organizations. Our customers are at the heart of everything we do, and we are committed to providing them with the best insurance products and services.',
-    image: 'https://img.freepik.com/free-vector/v915-red_53876-174930.jpg?t=st=1728266840~exp=1728270440~hmac=e94c9d586c21dc1e57888d5e3b499c5109a624670b07a4c6188be1f6b9a5686b&w=826',
+const bannerContent = ref({
+    subtitle: 'Our Commitment',
+    title: 'To Our Staff',
+    image: '/img/team.jpeg'
 })
 
 
@@ -10,11 +10,12 @@ const ReinsuranceBannerContent = ref({
 
 <template>
     <section>
-        <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+
+        <BannerMain :content="bannerContent" />
 
         <div class="bg-white px-6 py-10 lg:px-8 font-sans">
             <div class="mx-auto max-w-5xl text-base leading-7 text-gray-700">
-                <p class="mt-6 text-lg">
+                <p class="mt-6 text-xs leading-normal">
                     We’re committed to creating an environment where everyone can perform and be at their best.
 
                     We don’t just encourage our people to shape our culture, we depend on it. We know that it’s the
@@ -39,21 +40,21 @@ const ReinsuranceBannerContent = ref({
                     </figcaption>
                 </figure>
 
-                <h1 class="mt-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h1 class="mt-5 heading-class text-gray-900">
                     How we support our people
                 </h1>
 
                 <div class="mt-5 max-w-5xl">
 
                     <h4 class="font-bold text-brand-primary">Training and Development</h4>
-                    <p>
+                    <p class="text-xs leading-normal">
                         We have a range of different programs to support the development of our peoples' capabilities
                         with continuous delivery at it's core. Along with enterprise wide training, we've also partnered
                         with LinkedIn Learning to give all permanent TAL people access to on-demand courses
                     </p>
 
                     <h4 class="mt-5 font-bold text-brand-primary">Health and wellness</h4>
-                    <p>
+                    <p class="text-xs leading-normal">
                         We want to support everyone's health and wellbeing to create an environment where everyone can
                         perform and be at their best.
                         <br><br>
@@ -67,7 +68,7 @@ const ReinsuranceBannerContent = ref({
                     </p>
 
                     <h4 class="mt-5 font-bold text-brand-primary">Progressive employment practices</h4>
-                    <p>
+                    <p class="text-xs leading-normal">
                         Our Active employee action group helps ensure that we are an industry leader when it comes to
                         looking after our people. We offer a range of benefits including:
                     </p>
@@ -123,7 +124,7 @@ const ReinsuranceBannerContent = ref({
                     </ul>
 
                     <h4 class="mt-5 font-bold text-brand-primary">An inclusive workplace </h4>
-                    <p>
+                    <p class="text-xs leading-normal">
                         We're proud of the rich diversity amongst our people at Acentria. We believe that understanding
                         and
                         embracing diversity helps us create an inclusive culture that promotes fairness and equity,
@@ -144,10 +145,9 @@ const ReinsuranceBannerContent = ref({
         </div>
 
 
-        <Cta2 />
+        <ContactForm />
 
-
-        <Cta />
+        <InTouch />
 
     </section>
 </template>

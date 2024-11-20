@@ -57,17 +57,17 @@ const setMobileMenu = (event) => {
                 <div class="border-2 divide-x divide-gray-200 border-gray-200">
                     <nav class="-mb-px flex font-sans" aria-label="Tabs">
                         <button @click="setMenu('Board')"
-                            :class="[currentMenu == 'Board' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
+                            :class="[currentMenu == 'Board' ? 'bg-gray-500 text-white' : 'border-transparent text-black']"
                             class="w-1/3 border-2 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
                             <i class="fas fa-blog mr-2"></i> Board of Directors
                         </button>
                         <button @click="setMenu('Executive')"
-                            :class="[currentMenu == 'Executive' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
+                            :class="[currentMenu == 'Executive' ? 'bg-gray-500 text-white' : 'border-transparent text-black']"
                             class="w-1/3 border-2 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
                             <i class="fas fa-calendar-alt mr-2"></i> Executive Team
                         </button>
                         <button @click="setMenu('Governance')"
-                            :class="[currentMenu == 'Governance' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
+                            :class="[currentMenu == 'Governance' ? 'bg-gray-500 text-white' : 'border-transparent text-black']"
                             class="w-1/3 border-2 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
                             <i class="fas fa-images mr-2"></i> Corporate Governance
                         </button>

@@ -350,47 +350,6 @@ const helps = ref([
                     </div>
                 </section>
 
-
-                <!-- <div class="bg-white">
-                    <div class="py-3 text-white max-w-6xl mx-auto">
-
-                        <div class="flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                            <div class="relative p-4 lg:basis-1/2">
-                                <div class="px-auto">
-                                    <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                        width="400" height="350" decoding="async" data-nimg="1"
-                                        style="color: transparent; object-fit: contain" class="rounded-xl"
-                                        src="https://images.pexels.com/photos/7688374/pexels-photo-7688374.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                                </div>
-                            </div>
-                            <div class="flex flex-col justify-center lg:basis-1/2">
-                                <div class="text-light-content pb-5 md:pb-6">
-                                    <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
-                                        Acentria Group is your trusted friend in the world of insurance. We’re here to
-                                        make
-                                        sure you and anything you care for is safe and sound. Insurance can be
-                                        confusing,
-                                        but we’re experts at making it simple. We’ll take the time to understand exactly
-                                        what you need and find the right insurance plan just for you.
-
-                                        So, why choose us? Because we genuinely care about keeping you and your things
-                                        protected. We’re not just about selling insurance; we’re about making sure
-                                        you’re
-                                        worry-free and your wallet stays happy. Whether it’s your health, home, car, or
-                                        business, we’ve got the perfect insurance plan that won’t break the bank. Trust
-                                        us
-                                        to be your friendly insurance guide, making sure you’re covered no matter what
-                                        life
-                                        throws your way.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> -->
-
-
                 <ContactForm />
 
                 <InTouch />

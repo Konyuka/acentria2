@@ -1,8 +1,8 @@
 <script setup>
-const ReinsuranceBannerContent = ref({
-    title: 'Our Partners',
-    description: 'We\'re able to help more Australians through the strong partnerships we have with advisers, super funds and employers.',
-    image: 'https://img.freepik.com/free-vector/v915-red_53876-174930.jpg?t=st=1728266840~exp=1728270440~hmac=e94c9d586c21dc1e57888d5e3b499c5109a624670b07a4c6188be1f6b9a5686b&w=826',
+const bannerContent = ref({
+    subtitle: 'Our Commitment',
+    title: 'To Our Partners',
+    image: 'https://images.pexels.com/photos/3182784/pexels-photo-3182784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 })
 
 const partners = ref([
@@ -31,15 +31,16 @@ const partners = ref([
 
 <template>
     <section>
-        <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+
+        <BannerMain :content="bannerContent" />
 
         <div class="bg-white px-6 py-10 lg:px-8 font-sans">
             <div class="mx-auto max-w-5xl text-base leading-7 text-gray-700">
-                <h1 class="mt-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h1 class="mt-5 heading-class">
                     We're a business built on partnerships
                 </h1>
 
-                <p class="mt-6 text-lg">
+                <p class="mt-6 text-xs leading-normal">
                     Many of our proudest achievements come through our strong partnerships across the industry and
                     community. These partnerships help us to raise the standard of the protection we provide and allow
                     us to take a leading role in promoting the importance of life insurance across communities in
@@ -49,7 +50,7 @@ const partners = ref([
                     protection for more Australians.
                 </p>
 
-                <h1 class="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h1 class="mt-10 heading-class">
                     Our Partners
                 </h1>
 
@@ -60,9 +61,9 @@ const partners = ref([
                         </i>
                         <div>
                             <h5 v-html="partner.name"
-                                class="text-sm pb-3 md:pb-4 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title !text-base font-semibold md:!pb-3 md:!text-xl">
+                                class="subheading-class pb-3 leading-normal">
                             </h5>
-                            <p class="text-base leading-normal font-regular text-light-content">
+                            <p class="text-xs leading-normal text-light-content">
                                 {{ partner.description }}
                             </p>
                         </div>
@@ -79,10 +80,9 @@ const partners = ref([
         </div>
 
 
-        <Cta2 />
+        <ContactForm />
 
-
-        <Cta />
+        <InTouch />
 
     </section>
 </template>

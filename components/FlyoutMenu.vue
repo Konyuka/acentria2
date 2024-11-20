@@ -414,12 +414,12 @@ const AboutMenus = ref([
             {
                 name: 'New customer',
                 description: 'Join us as a new customer and experience our exceptional services.',
-                link: '/contact-acentria-group',
+                link: '/join-our-team',
             },
             {
                 name: 'Suppliers',
                 description: 'Partner with us as a supplier and grow your business.',
-                link: '/contact-acentria-group',
+                link: '/join-our-team',
             },
             {
                 name: 'Careers',

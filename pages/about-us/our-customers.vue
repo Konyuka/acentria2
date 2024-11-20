@@ -1,8 +1,8 @@
 <script setup>
-const ReinsuranceBannerContent = ref({
-    title: 'Our Customers',
-    description: 'We are proud to serve a wide range of customers, from individuals and families to businesses and organizations. Our customers are at the heart of everything we do, and we are committed to providing them with the best insurance products and services.',
-    image: 'https://img.freepik.com/free-vector/v915-red_53876-174930.jpg?t=st=1728266840~exp=1728270440~hmac=e94c9d586c21dc1e57888d5e3b499c5109a624670b07a4c6188be1f6b9a5686b&w=826',
+const bannerContent = ref({
+    subtitle: 'Our Commitment',
+    title: 'To Our Customers',
+    image: 'https://media.istockphoto.com/id/1705486868/photo/happy-insurance-agent-and-young-couple-using-digital-tablet-during-a-meeting.jpg?s=2048x2048&w=is&k=20&c=76iYG0-XmbIbdbHfPzM7pGAO-wH_pR_XZoEr99DWJY8='
 })
 
 const cardContent = ref([
@@ -52,16 +52,16 @@ const cardContent = ref([
 
 <template>
     <section>
-        <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
-        <div class="my-10">
+        <BannerMain :content="bannerContent" />
+
+        <div class="bg-white">
             <Cards2 :data="cardContent" />
         </div>
 
-        <Cta2 />
+        <ContactForm />
 
-
-        <Cta />
+        <InTouch />
 
     </section>
 </template>

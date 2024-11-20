@@ -4,7 +4,6 @@ const bannerContent = ref({
     subtitle: 'Contact Us',
     title: 'Reach Out to Us',
     image: '/img/headphones.jpeg'
-    // image: 'https://www.shutterstock.com/shutterstock/photos/2289080225/display_1500/stock-photo-call-center-black-woman-and-smile-in-contact-us-with-crm-headset-with-mic-and-mockup-space-2289080225.jpg'
 })
 
 const contactsContent = ref({

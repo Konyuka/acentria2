@@ -1,12 +1,4 @@
 <script setup>
-
-const content = ref({
-    pageTitle: 'Acentria Group Investment',
-    title: 'Grow Your Wealth with Expert Investment Solutions',
-    description: 'At Acentria Group, we provide comprehensive investment solutions tailored to your financial goals. Our expert team offers personalized strategies to help you grow and protect your wealth. Trust us to navigate the complexities of the investment landscape, ensuring your financial future is secure and prosperous.',
-})
-
-
 const whys = ref([
     {
         title: 'We save you money',
@@ -32,17 +24,20 @@ const whys = ref([
 const intro = ref('At Acentria, we’re not just about insurance – we understand your financial aspirations. Our comprehensive investment solutions are designed to help you grow and protect your wealth, offering personalized strategies that give you peace of mind. Let us handle your investment needs at Acentria.')
 const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Acentria</span>`)
 
+const content = ref({
+    vid: '/img/hd1.mp4',
+    pageTitle: 'Acentria Group Investment',
+    title: 'Grow Your Wealth with <br/> <span class="text-brand-primary">Expert Investment Solutions</span>',
+})
+
 </script>
 
 <template>
     <main>
-        <div class="bg-white">
-            <div>
+        <div class="">
+            <ServiceHero2 :content="content" />
 
-                <ServiceHero :content="content" />
-
-
-
+            <div class="bg-white">
                 <section id="" class="relative py-2 bg-white text-center">
                     <div class="container px-4">
                         <h2
@@ -52,12 +47,12 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
                         </h2>
                     </div>
                 </section>
-
-                <div class="container py-3 text-white mx-auto max-w-6xl align-center h-full"
+    
+                <div class=" container py-3 text-white mx-auto max-w-6xl align-center h-full"
                     style="background-color: #f6f8fc">
-
+    
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-
+    
                         <div class="relative py-4 lg:basis-1/2">
                             <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
                                 decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
@@ -93,21 +88,22 @@ const leftTitle = ref(`Why Invest with <br> <span class="text-brand-primary">Ace
                                     and provide you with the knowledge and tools needed to make the most of your
                                     financial journey. By staying educated and proactive, you can confidently navigate
                                     the ever-changing financial landscape and achieve your goals.
-
+    
                                 </p>
                             </div>
                         </div>
                     </div>
-
+    
                 </div>
-
+    
                 <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
-
+    
                 <ContactForm />
-
+    
                 <InTouch />
-
             </div>
+
+
         </div>
     </main>
 </template>

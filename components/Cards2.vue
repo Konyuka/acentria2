@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
     <div class="hidden md:block">
-        <section class="relative py-3">
+        <section class="relative py-10">
             <div class="container px-4">
                 <div class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
                     <div v-for="(item, index) in data" :key="index"
@@ -19,12 +19,12 @@ const props = defineProps({
                             <i :class="item.icon" class="text-brand-primary text-4xl pb-4" translate="no"></i>
                             <div>
                                 <h4
-                                    class="text-lg pb-4 md:pb-5 font-semibold md:text-xl xl:text-xl 2xl:text-2xl leading-tight text-light-title 3xl:!text-xl 2xl:!text-xl">
+                                    class="subheading-class pb-4 md:pb-5">
                                    {{ item.name }}
                                 </h4>
                             </div>
                             <p
-                                class="text-base leading-normal font-regular text-light-content text-sm font-normal not-italic leading-normal">
+                                class="text-light-content text-xs leading-normal">
                                 {{ item.description }}
                             </p>
                         </div>
