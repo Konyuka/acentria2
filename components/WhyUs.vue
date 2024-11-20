@@ -30,15 +30,21 @@ const props = defineProps({
         </div> -->
 
         <div class="bg-white">
-            <div class="container mx-auto ">
-                <div class="md:py-10">
-                    <div class="container mx-auto max-w-6xl px-2 lg:px-8">
+            <div class="container mx-auto pb-16">
+                <div class="">
+                    <div class="container mx-auto max-w-6xl">
+                        <h2 v-html="leftTitle" class="heading-class text-black sm:pb-4 pt-0">
+                        </h2>
                         <div
                             class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                            <div>
-                                <h2 v-html="leftTitle"
-                                    class="heading-class text-black sm:pb-4 pt-6">
-                                </h2>
+                            <div class="mr-5">
+
+
+                                <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                                    style="color: transparent; object-fit: contain"
+                                    class="w-full h-[320px] shadow-2xl rounded-lg !object-cover"
+                                    src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                                    data-v-inspector="components/Why.vue:34:17" />
                             </div>
 
                             <div
@@ -48,8 +54,7 @@ const props = defineProps({
                                     <i class="material-symbols-outlined text-brand-primary text-4xl undefined"
                                         translate="no">{{ why.icon }}</i>
                                     <div>
-                                        <h5 id=""
-                                            class="subheading-class pb-3 md:!pb-3">
+                                        <h5 id="" class="subheading-class pb-3 md:!pb-3">
                                             {{ why.title }}
                                         </h5>
                                         <p class="text-xs leading-normal">

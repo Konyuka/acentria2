@@ -3,7 +3,7 @@
 const content = ref({
     vid: '/img/hd1.mp4',
     pageTitle: 'Acentria Group Insurance',
-    title: 'Secure Your Future with <br/> <span class="text-brand-primary">Comprehensive Insurance Solutions</span>',
+    title: 'Get a better  <br/> <span class="text-brand-primary">Insurance for less</span>',
     // description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
 })
 
@@ -170,7 +170,7 @@ const whys = ref([
     },
 ])
 const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
-const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
+const leftTitle = ref(`Why Insure with <span class="text-brand-primary"> Acentria</span>`)
 
 const menus = ref([
     {
@@ -224,6 +224,24 @@ const helps = ref([
     },
 ])
 
+const exploreProducts = ref({
+    orientation: 'lg:flex-row flex-col',
+    heading: 'Explore <span class="text-brand-primary">Products</span>',
+    subheading: 'Get a  <span class="text-brand-primary">5% Discount</span>',
+    image: 'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    link: '/',
+    content: 'At Acentria we offers a wide variety of insurance options for peace of mind for your business, on the road, under your roof, and in your daily life.',
+})
+
+const exploreClaims = ref({
+    orientation: 'lg:flex-row-reverse flex-col',
+    heading: 'Learn More <span class="text-brand-primary">About Claims</span>',
+    subheading: '',
+    image: 'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    link: '/',
+    content: 'No matter which type of claim you have, our goal is to make sure everything goes smoothly. That means making your claims process as easy as possible and keeping you updated. Select a product to view the insurance claims process Get a breakdown of the claims process, what to do, and where to go from here.',
+})
+
 </script>
 
 <template>
@@ -233,47 +251,48 @@ const helps = ref([
 
                 <ServiceHero2 :content="content" />
 
-                <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
+                <ContentPic :content="exploreProducts" />
 
-                <Hero2 :data="heroContent" />
+                <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 
-                <div class="pb-5 text-center bg-white">
-                    <h2 class="heading-class text-black">
-                        Pick a cover and, <span class="text-brand-primary">we'll take care of the rest</span>
+
+                <div class="pb-5 text-left bg-white">
+                    <h2 class="heading-class text-black container">
+                        Pick a cover and, <span class="text-brand-primary"> <br/> we'll take care of the rest</span>
                     </h2>
                 </div>
 
-                <div class="py-2 text-white bg-white">
+                <div class="py-2 text-white">
                     <section class="relative">
-                        <div class="container px-4">
+                        <div class="container px-4 py-10">
                             <ServiceTabs :menus="menus" :data="data" />
                         </div>
                     </section>
                 </div>
 
-                <section id="" class="relative py-3 bg-white text-center pt-10">
-                    <div class="container px-4">
-                        <h2 class="heading-class text-gray-900">
+                <section id="" class="relative py-3 text-left pt-2">
+                    <div class="container">
+                        <h2 class="heading-class text-white">
                             <span class="text-brand-primary">Do it yourself</span>
                             or with expert help
                         </h2>
                     </div>
 
-                    <div class="bg-white px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
+                    <div class=" px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
                         <div class="container mx-auto pb-2">
                             <div class="mt-5 space-y-10">
 
                                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                                     <div v-for="help in helps"
-                                        class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                                        class="bg-white/40 button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                                         <a class="w-full" href="#">
-                                            <div class="relative w-full"><img alt="" loading="lazy" width="150"
+                                            <!-- <div class="relative w-full"><img alt="" loading="lazy" width="150"
                                                     height="100" decoding="async" data-nimg="1"
                                                     class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/1]"
                                                     sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
                                                     :src="help.img" style="color: transparent;">
-                                            </div>
+                                            </div> -->
                                             <div class="max-w-full">
                                                 <div class="!text-left font-sans group relative">
                                                     <h3
@@ -281,7 +300,7 @@ const helps = ref([
                                                         <span class="absolute inset-0"></span>
                                                         {{ help.heading }}
                                                     </h3>
-                                                    <p class="mt-3 line-clamp-3 text-xs">
+                                                    <p class="mt-3 line-clamp-3 text-xs text-black">
                                                         {{ help.subheading }}
                                                     </p>
                                                     <button type="button"
@@ -302,7 +321,7 @@ const helps = ref([
                     </div>
                 </section>
 
-                <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+                <ContentPic :content="exploreClaims" />
 
                 <div class=" font-sans text-white xl:py-1" style="background-color: #fff">
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:my-2 lg:gap-16">
