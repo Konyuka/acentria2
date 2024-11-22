@@ -229,7 +229,7 @@ const exploreProducts = ref({
     heading: 'Explore <span class="text-brand-primary">Products</span>',
     subheading: 'Get a  <span class="text-brand-primary">5% Discount</span>',
     image: 'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    link: '/',
+    link: '/insurance-products',
     content: 'At Acentria we offers a wide variety of insurance options for peace of mind for your business, on the road, under your roof, and in your daily life.',
 })
 
@@ -238,7 +238,7 @@ const exploreClaims = ref({
     heading: 'Learn More <span class="text-brand-primary">About Claims</span>',
     subheading: '',
     image: 'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    link: '/',
+    link: '/insurance-claims',
     content: 'No matter which type of claim you have, our goal is to make sure everything goes smoothly. That means making your claims process as easy as possible and keeping you updated. Select a product to view the insurance claims process Get a breakdown of the claims process, what to do, and where to go from here.',
 })
 

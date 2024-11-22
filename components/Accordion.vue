@@ -25,19 +25,19 @@ import { CheckIcon } from '@heroicons/vue/20/solid'
             <div class="mx-auto my-2 max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-6xl divide-y divide-gray-900/10">
                    
-                    <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
-                        <Disclosure as="div" v-for="faq in faqs" :key="faq.name" class="pt-6" v-slot="{ open }">
-                            <dt>
+                    <dl class="mt-10 space-y-4 divide-y divide-gray-900/10">
+                        <Disclosure as="div" v-for="faq in faqs" :key="faq.name" class="pt-0 bg-gray-100 p-0 " v-slot="{ open }">
+                            <dt :class="[open ? 'bg-brand-primary' :'bg-black']" class="py-3 px-10">
                                 <DisclosureButton
                                     class="flex w-full items-start justify-between text-left text-gray-900">
-                                    <span class="text-base font-semibold leading-7">{{ faq.name }}</span>
+                                    <span :class="[open?'text-white':'text-white']" class="text-base font-semibold leading-7">{{ faq.name }}</span>
                                     <span class="ml-6 flex h-7 items-center">
-                                        <PlusSmallIcon v-if="!open" class="h-6 w-6" aria-hidden="true" />
-                                        <MinusSmallIcon v-else class="!text-brand-primary h-6 w-6" aria-hidden="true" />
+                                        <PlusSmallIcon v-if="!open" class="text-white h-6 w-6" aria-hidden="true" />
+                                        <MinusSmallIcon v-else class="text-white h-6 w-6" aria-hidden="true" />
                                     </span>
                                 </DisclosureButton>
                             </dt>
-                            <DisclosurePanel as="dd" class="mt-2 pr-12">
+                            <DisclosurePanel as="dd" class="mt-2 pr-12 p-5 px-10">
                                 <p class="text-sm leading-7 text-gray-600" v-html="faq.content"></p>
                             </DisclosurePanel>
                         </Disclosure>

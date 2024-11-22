@@ -612,24 +612,14 @@ const InsuranceMenus = ref([
     {
         type:'special',
         name: 'Aviation Cover',
-        subMenu: 'Professional Insurance',
-        description: 'Insurance solutions tailored for various professions to protect against professional risks.',
+        subMenu: 'Aviation Insurance',
+        description: 'Comprehensive coverage for aircraft, pilots, and aviation operations, ensuring safety and financial protection in the aviation industry.',
         icon: 'fas fa-plane',
         items: [
             {
-                name: 'Doctors Professional Indemnity',
-                description: 'Protection for medical professionals against claims of malpractice or professional negligence.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Lawyers Professional Indemnity',
-                description: 'Coverage for legal professionals against claims of errors, omissions, or negligence in their practice.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Pilots Professional Indemnity',
-                description: 'Insurance for pilots, covering liabilities arising from professional errors or negligence.',
-                link: '/insurance/biasahara-cover',
+                name: 'Aviation Insurance',
+                description: 'Provides coverage for aircraft, pilots, and aviation operations, protecting against risks such as damage, liability, and loss.',
+                link: '/insurance/aviation-cover',
             },
         ]
     },

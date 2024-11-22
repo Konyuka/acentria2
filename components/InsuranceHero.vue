@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <div>
 
-        <div class="relative isolate overflow-hidden bg-white py-14 mt-20">
+        <div class="relative isolate overflow-hidden bg-white py-20 mt-20">
 
             <img :src="InsuranceBannerContent.image" alt="Success Team Hands Up"
                 class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
@@ -24,7 +24,7 @@ const props = defineProps({
                     </div>
                     <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
                         <h2
-                            class="text-left text-xl font-bold tracking-tight text-brand-primary sm:text-6xl font-sans mb-4">
+                            class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
                             {{ InsuranceBannerContent.subtitle }}
                         </h2>
                         <h2 v-html="InsuranceBannerContent.title"
@@ -41,7 +41,9 @@ const props = defineProps({
 
         <div class="container max-w-6xl">
             <div class="mt-5">
-                <h1 class="heading-class">Health Insurance</h1>
+                <h1 class="heading-class">
+                    {{ InsuranceBannerContent.title }}
+                </h1>
             </div>
             <div class="mt-5 mx-auto text-left">
                 <div class="">

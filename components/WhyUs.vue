@@ -42,7 +42,7 @@ const props = defineProps({
 
                                 <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                                     style="color: transparent; object-fit: contain"
-                                    class="w-full h-[320px] shadow-2xl rounded-lg !object-cover"
+                                    class="w-full h-[370px] shadow-2xl rounded-lg !object-cover"
                                     src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
                                     data-v-inspector="components/Why.vue:34:17" />
                             </div>

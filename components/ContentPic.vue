@@ -3,6 +3,16 @@ const props = defineProps({
     content: Object
 })
 
+const currentRoute = useRoute().fullPath
+
+const showButton = computed(() => {
+    if(currentRoute === '/insurance-products') {
+        return false
+    }else{
+        return true
+    }
+})
+
 </script>
 
 <template>
@@ -15,7 +25,7 @@ const props = defineProps({
                 </div>
                 <div class="text-light-content pb-5 md:pb-6 py-auto">
                     <p v-html="content.content" class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"></p>
-                    <NuxtLink :href="content.link"
+                    <NuxtLink v-if="showButton" :href="content.link"
                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                         Learn More
                         <i class="fas fa-arrow-right text-primary ml-2"></i>

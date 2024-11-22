@@ -113,7 +113,7 @@ const whys = ref([
 
         <div class="container">
             <h1 class="heading-class">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
-            <p class="text-[25px] text-light-content mt-2">We have all the answers to your questions.</p>
+            <p class="text-[25px] text-light-content">We have all the answers to your questions.</p>
         </div>
 
         <Accordion :faqs="faqs" />
