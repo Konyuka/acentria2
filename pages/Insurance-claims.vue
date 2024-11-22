@@ -1,11 +1,52 @@
 <script setup>
 
 const bannerContent = ref({
-    subtitle: 'Our Products',
-    title: 'Insurance Products Catalogue',
+    subtitle: 'Claims',
+    title: 'Acentria Claims Platform',
     image: 'https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 })
 
+const joinAsMembers = ref([
+    {
+        name: 'Car Insurance Claims',
+        icon: 'fas fa-car-crash',
+        description: 'File a claim for your car insurance to get assistance with repairs, replacements, and other related expenses.',
+    },
+    {
+        name: 'Property Insurance Claims',
+        icon: 'fas fa-home',
+        description: 'Submit a claim for property insurance to cover damages or losses to your home or property.',
+    },
+    {
+        name: 'Motorcycle Insurance Claims',
+        icon: 'fas fa-motorcycle',
+        description: 'Report a motorcycle insurance claim to get help with repairs, replacements, and other related costs.',
+    },
+    {
+        name: 'Boat Insurance Claims',
+        icon: 'fas fa-ship',
+        description: 'File a boat insurance claim to cover damages or losses to your boat or watercraft.',
+    },
+    {
+        name: 'RV Insurance Claims',
+        icon: 'fas fa-rv',
+        description: 'Submit an RV insurance claim to get assistance with repairs, replacements, and other related expenses for your recreational vehicle.',
+    },
+    {
+        name: 'Other Products Claims',
+        icon: 'fas fa-box-open',
+        description: 'File a claim for other insurance products to get assistance with damages, losses, or other related expenses.',
+    },
+])
+
+const exploreAviation = ref({
+    orientation: 'lg:flex-row-reverse flex-col',
+    heading: 'Our Footprints <span class="text-brand-primary">in Aviation</span>',
+    subheading: '',
+    image: 'https://images.pexels.com/photos/45230/aircraft-double-decker-airport-army-aviation-space-45230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    link: '/',
+    content: 'At Acentria, we leverage our deep understanding of the industry to bridge these gaps. We take a proactive approach to risk management and provide you with insights and expert advice you need to remain compliant and safe. We cover all potential risks and advise strategies to mitigate them, ensuring you’re always prepared and protected. Our commitment to fostering a long-lasting relationship means we’re here for you, from policy inception to claim resolution, offering ongoing support to keep your operations soaring smoothly.'
+})
 
 </script>
 
@@ -18,23 +59,58 @@ const bannerContent = ref({
             <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
                 <div class="mx-auto  mb-3 font-sans">
                     <p class="mt-2 heading-class text-black">
-                        Explore all <span class="text-brand-primary">Our Products</span>
+                        Welcome to an easy <span class="text-brand-primary">claim experience</span>
                     </p>
                 </div>
                 <p class="text-xs leading-normal">
-                    Welcome to the Acentria Group Insurance Products Catalogue. Here, you will find a comprehensive list
-                    of all the insurance products we offer. Our goal is to provide you with the information you need to
-                    make informed decisions about your insurance coverage. Whether you are looking for auto insurance,
-                    home insurance, life insurance, or any other type of insurance, we have you covered. Our team of
-                    insurance experts is here to help you find the right insurance products to meet your needs and
-                    budget. Explore our insurance products catalogue today and discover the peace of mind that comes with
-                    knowing you are protected.                    
+                    Acentria Insurance Claims is a platform that allows you to make claims on your insurance policy. You
+                    can make claims on your insurance policy by filling out the form below. You can also track the
+                    status of your claim by logging into your account. If you have any questions about your claim,
+                    please <span class="underline text-brand-primary">contact us</span>. We are here to help you with
+                    your insurance needs. Thank you for
+                    choosing Acentria Insurance. We look forward to serving you.
 
+                <div class="mt-5"><a href="/meet-the-team"
+                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                        Report or View a Claim <i class="fas fa-arrow-right text-primary ml-2"></i></a>
+                </div>
                 </p>
             </div>
         </div>
 
+        <div class="container">
+            <div class="mx-auto  pb-3 font-sans">
+                <p class="mt-2 subheading-class text-black">
+                    Select a product to view the insurance claims process
+                </p>
+                <p class="text-xs">Get a breakdown of the claims process, what to do, and where to go from here.</p>
+            </div>
+        </div>
 
+        <div class=" w-full h-full container mx-auto max-w-6xl">
+            <div class=" !font-sans  my-0">
+                <div class="py-10 sm:px-2 lg:px-4">
+                    <div class="lg:max-w-none">
+                        <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
+                            <div v-for="member in joinAsMembers" :key="member.name"
+                                class="relative group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
+                                <div class="sm:flex-shrink-0 flex justify-center">
+                                    <i :class="member.icon" class="text-black text-2xl"></i>
+                                </div>
+                                <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                    <h3 class="text-md text-brand-primary flex justify-center">{{ member.name
+                                        }}</h3>
+                                    <p class="mt-2 text-[12px] text-gray-500">{{ member.description }}</p>
+                                </div>
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ContentPic :content="exploreAviation" />
 
     </section>
 </template>
