@@ -27,6 +27,24 @@ const faqs = ref([
         content:"I feel free to raise any idea, ask any question or escalate any issues or risks, building an environment of respect and trust. I am comfortable sharing and receiving feedback.",
     },
 ]);
+
+const joinAsMembers = ref([
+    {
+        name: 'Trust as a Foundation',
+        icon: 'fas fa-handshake',
+        description: 'Trust is the cornerstone of our brand. We prioritize transparency, ethical practices, and accountability, ensuring that every engagement with Acentria inspires confidence.'
+    },
+    {
+        name: 'Commitment to Innovation',
+        icon: 'fas fa-lightbulb',
+        description: 'Our brand reflects our passion for innovation—creating solutions that address today’s challenges while preparing our clients and partners for the opportunities of tomorrow.'
+    },
+    {
+        name: 'Dedication to Excellence',
+        icon: 'fas fa-award',
+        description: 'Excellence isn’t just a goal; it’s a standard. From the way we strategize and execute to the outcomes we deliver, excellence is ingrained in everything we do.'
+    },
+])
 </script>
 
 <template>
@@ -44,27 +62,17 @@ const faqs = ref([
                                 <p
                                     class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
 
-                                    Our brand at Acentria Group represents the essence of who we are and what we stand
-                                    for. It is built on a foundation of trust, integrity, and innovation. Our brand is
-                                    more than just a logo or a tagline; it is a reflection of our commitment to
-                                    excellence and our dedication to our stakeholders.
-
-                                    "The Acentria Way" embodies our global culture and aligns perfectly with our
-                                    corporate strategy. It encompasses our purpose, “to empower dreams and ignite
-                                    imagination”, and our aim, “to be the leading provider of innovative solutions,
-                                    acting responsibly and earning the trust of our people, clients, partners, and
-                                    communities”. Our core values of “Integrity, Innovation, and Excellence” are at the
-                                    heart of everything we do, guiding our actions and decisions.
+                                    At Acentria Group, our brand is more than just a representation of our identity—it’s
+                                    a powerful testament to our values, vision, and the aspirations of those we serve.
+                                    It captures the very essence of who we are, what we stand for, and the impact we aim
+                                    to create in the lives of our clients, partners, employees, and communities.
                                     <br><br>
-                                    At Acentria Group, we believe in building lasting relationships with our clients,
-                                    grounded in trust and mutual respect. Our team of dedicated professionals is
-                                    committed to exceeding client expectations, ensuring that every interaction is
-                                    marked by integrity, innovation, and excellence.
+                                    Our brand is anchored in three fundamental pillars: Integrity, Innovation, and
+                                    Excellence. These core values define every aspect of our organization, from how we
+                                    conduct business to how we build relationships. They are not just words—they are
+                                    commitments that shape our decisions, inspire our actions, and drive us to deliver
+                                    solutions that are transformative and sustainable.
 
-                                    Our brand is the foundation of our organization, ensuring that we operate as a
-                                    responsible and forward-thinking company. It is a promise to our stakeholders that
-                                    we will continue to strive for excellence in every aspect of our business, every
-                                    day.
                                 </p>
                             </div>
                         </div>
@@ -75,40 +83,76 @@ const faqs = ref([
             <div class="text-white" style="background-color: rgb(246, 248, 252);">
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Corporate Governance" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
+                            width="500" height="350" decoding="async" data-nimg="1" src="/img/empower.jpg"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
-                    <div class="flex flex-col justify-center lg:basis-1/2"><label
-                            class="text-xs leading-normal font-regular text-light-highlight font-bold">Our Governance
-                            Framework</label>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
-                            Strong Governance for Sustainable Growth</h2>
+                            The <span class="text-brand-primary">Acentria Way!</span>
+                        </h2>
                         <div class="text-light-content pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                At Acentria Group, we believe that strong corporate governance is the foundation of
-                                sustainable growth and long-term success. Our governance framework is designed to ensure
-                                transparency, accountability, and ethical conduct in all our operations. We are
-                                committed to upholding the highest standards of governance to protect the interests of
-                                our stakeholders and build trust with our clients, partners, and communities.
+                                The Acentria Way embodies the culture and principles that unite us across our global
+                                footprint. It reflects our purpose, <span class="italic">“to empower dreams and ignite
+                                    imagination,”
+                                    and our
+                                    aim, “to lead as the trusted provider of innovative solutions, acting responsibly
+                                    while
+                                    earning the trust of our people, clients, partners, and communities.”</span> This
+                                ethos guides
+                                every interaction and initiative, ensuring that our goals align with those of our
+                                stakeholders and the broader society.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+
+                <div class="container">
+                    <div class="mx-auto  font-sans">
+                        <p class="mt-2 heading-class text-black">
+                            The heart <span class="text-brand-primary">of our brand</span>
+                        </p>
+                        <p class="text-xs">Get a breakdown of the claims process, what to do, and where to go from here.
+                        </p>
+                    </div>
+                </div>
+
+                <div class=" w-full h-full container mx-auto max-w-6xl">
+                    <div class=" !font-sans  my-0">
+                        <div class="sm:px-2 lg:px-4">
+                            <div class="lg:max-w-none">
+                                <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
+                                    <div v-for="member in joinAsMembers" :key="member.name"
+                                        class="relative group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
+                                        <div class="sm:flex-shrink-0 flex justify-center">
+                                            <i :class="member.icon" class="text-black text-2xl"></i>
+                                        </div>
+                                        <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
+                                            <h3 class="text-md text-brand-primary flex justify-center">{{ member.name
+                                                }}</h3>
+                                            <p class="mt-2 text-[12px] text-gray-500">{{ member.description }}</p>
+                                        </div>
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16 items-center">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Board of Directors" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
+                            width="500" height="350" decoding="async" data-nimg="1" src="/img/logo.png"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
-                    <div class="flex flex-col justify-center lg:basis-1/2"><label
-                            class="text-xs leading-normal font-regular text-light-highlight font-bold">Board of
-                            Directors</label>
+                    <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
                         <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
-                            Leadership and Oversight</h2>
+                            Beyond a Logo <span class="text-brand-primary">or Tagline</span>
+                        </h2>
                         <div class="text-light-content pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                Our Board of Directors plays a crucial role in providing leadership and oversight to the
-                                company. Comprising experienced professionals from diverse backgrounds, the Board
-                                ensures that Acentria Group adheres to its strategic objectives and operates with
-                                integrity and accountability. The Board is committed to fostering a culture of
-                                transparency and ethical conduct throughout the organization.
+                                Our brand is not confined to visual identity—it is a reflection of our culture and our
+                                promise. It’s visible in the way we engage with our clients, the quality of our
+                                solutions, and the relationships we nurture. It is reinforced through every interaction,
+                                from the smallest detail to our largest undertakings.
                             </p>
                         </div>
                     </div>
@@ -117,40 +161,47 @@ const faqs = ref([
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
-                    <div class="flex flex-col justify-center lg:basis-1/2"><label
-                            class="text-xs leading-normal font-regular text-light-highlight font-bold">Risk
-                            Management</label>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
-                            Proactive Risk Management</h2>
+                            A Brand <span class="text-brand-primary">That Empowers</span>
+                        </h2>
                         <div class="text-light-content pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                Effective risk management is integral to our corporate governance framework. At Acentria
-                                Group, we proactively identify, assess, and manage risks to ensure the stability and
-                                resilience of our operations. Our risk management practices are designed to protect our
-                                assets, safeguard our reputation, and ensure compliance with regulatory requirements. We
-                                believe that risk management is everyone's responsibility, and we foster a culture of
-                                risk awareness across the organization.
+                                We believe a strong brand isn’t just about delivering results—it’s about inspiring
+                                growth, fostering trust, and creating impact. Our brand stands for:
+                                <br><br>
+                                <span>
+                                    • <b>Empowering our clients</b> to overcome challenges, seize opportunities, and
+                                    achieve
+                                    their goals with confidence. <br>
+                                    • <b>Empowering our employees</b> by providing an inclusive and dynamic environment
+                                    where
+                                    they can thrive and contribute to our shared mission. <br>
+                                    • <b>Empowering communities</b> by driving initiatives that promote sustainability,
+                                    equity,
+                                    and shared prosperity.
+
+                                </span>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Ethical Conduct" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
+                            width="500" height="350" decoding="async" data-nimg="1"
+                            src="https://images.pexels.com/photos/7579201/pexels-photo-7579201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
-                    <div class="flex flex-col justify-center lg:basis-1/2"><label
-                            class="text-xs leading-normal font-regular text-light-highlight font-bold">Ethical
-                            Conduct</label>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
-                            Upholding the Highest Ethical Standards</h2>
+                            A Legacy <span class="text-brand-primary">of Responsibility</span>
+                        </h2>
                         <div class="text-light-content pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                At Acentria Group, we are committed to upholding the highest ethical standards in all
-                                our business practices. Our Code of Conduct outlines the principles and guidelines that
-                                govern our actions and decisions. We promote a culture of integrity, honesty, and
-                                accountability, ensuring that our employees, partners, and stakeholders adhere to these
-                                values. By fostering an ethical work environment, we build trust and credibility with
-                                our clients and communities.
+                                At Acentria, our brand is also a pledge to act responsibly. From ethical business
+                                practices to impactful community engagements, we ensure that our success contributes to
+                                the well-being of society and the environment. This commitment is visible in our efforts
+                                to maintain gender parity at senior leadership levels and to align our operations with
+                                sustainable development goals.
                             </p>
                         </div>
                     </div>
@@ -208,7 +259,7 @@ const faqs = ref([
                                     <p>Logo Files</p>
                                     <p><i class="fas fa-download text-brand-primary"></i></p>
                                 </div>
-                                
+
                             </dl>
                         </div>
                     </div>

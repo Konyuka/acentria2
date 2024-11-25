@@ -19,14 +19,9 @@ const ReinsuranceBannerContent = ref({
                             <div>
                                 <p
                                     class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    Our global culture, "The Acentria Way", encompasses our purpose “to empower dreams
-                                    and ignite imagination”, our aim, “to be the leading provider of innovative
-                                    solutions, acting responsibly and earning the trust of our people, clients,
-                                    partners, and communities”, our core values of “Integrity, Innovation, and
-                                    Excellence”, our risk culture, which emphasizes that risk management is everyone’s
-                                    responsibility, and lastly, our behaviours.
-                                    At Acentria Group, we are committed to making a positive impact on various groups of
-                                    people
+                                    At Acentria Group, our success is defined by the relationships we nurture with those
+                                    who share our journey—our staff, customers, partners, and the communities we serve.
+                                    This commitment is deeply embedded in our mantra: <b>Empower, Innovate, Prosper</b>.
                                 </p>
                             </div>
                         </div>
@@ -35,93 +30,123 @@ const ReinsuranceBannerContent = ref({
             </div>
 
             <div class="text-white" style="background-color: rgb(246, 248, 252);">
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Customers" loading="lazy" width="500"
-                            height="350" decoding="async" data-nimg="1"
-                            src="https://media.istockphoto.com/id/1266865934/photo/well-keep-on-winning-as-long-as-we-work-together.jpg?s=2048x2048&w=is&k=20&c=3kcJSyAHsYmLLQUsCdleqvpwyKGVCN1P89gDIW9fZQ4="
-                            style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
-                    <div class="flex flex-col justify-center lg:basis-1/2"><label
-                            class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
-                            Customers</label>
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title ">
-                            Commitment to Our Customers</h2>
+
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:my-4 lg:gap-16">
+                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
+                            width="500" height="350" decoding="async" data-nimg="1"
+                            src="https://images.pexels.com/photos/29462460/pexels-photo-29462460/free-photo-of-elegant-portrait-of-a-smiling-woman-in-lagos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
+                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                            To <span class="text-brand-primary">Our Staff</span>
+                        </h2>
                         <div class="text-light-content pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                At Acentria Group, our customers are at the heart of everything we do. We are dedicated
-                                to providing exceptional service and innovative solutions that meet their unique needs.
-                                Our commitment to our customers is reflected in our continuous efforts to enhance their
-                                experience, build trust, and deliver value. We listen to their feedback, understand
-                                their challenges, and work tirelessly to exceed their expectations.
+                                Our people are our greatest asset. At Acentria, we create an environment where ambition
+                                meets opportunity. We empower our employees by creating a supportive and inclusive
+                                workplace where talent is nurtured, ideas are valued, and careers are built.
+                                <br><br>
+                                <span>
+                                    • <b>Opportunities for Growth:</b> Continuous learning, training, and development
+                                    programs
+                                    to help our team thrive. <br>
+                                    • <b>Inclusive Culture:</b> A commitment to diversity, equity, and gender parity,
+                                    ensuring
+                                    every voice is heard. <br>
+                                    • <b>Well-Being & Balance:</b> Initiatives and policies designed to support
+                                    work-life
+                                    balance and holistic well-being.
+
+                                </span>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Partners" loading="lazy" width="500"
-                            height="350" decoding="async" data-nimg="1"
-                            src="https://media.istockphoto.com/id/1152767904/photo/smiling-diverse-couple-listening-to-financial-advisor-or-real-estate-agent.jpg?s=1024x1024&w=is&k=20&c=N-u_uySZHnH-YsdzwmpFoYB_mnhGc8JS3wibufmHB4w="
-                            style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
-                    <div class="flex flex-col justify-center lg:basis-1/2"><label
-                            class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
-                            Partners</label>
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title ">
-                            Commitment to Our Partners</h2>
-                        <div class="text-light-content pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                Our partners play a crucial role in our success. At Acentria Group, we are committed to
-                                building strong, collaborative relationships with our partners. We work together to
-                                create mutually beneficial opportunities, drive innovation, and achieve shared goals.
-                                Our commitment to our partners is grounded in trust, transparency, and a shared vision
-                                for success. We value their expertise and contributions, and we strive to foster
-                                long-term partnerships that deliver exceptional results.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our People" loading="lazy" width="500"
-                            height="350" decoding="async" data-nimg="1"
-                            src="https://media.istockphoto.com/id/1383533772/photo/shot-of-a-businesswoman-holding-a-digital-tablet-while-standing-in-the-boardroom.jpg?s=1024x1024&w=is&k=20&c=rNq5TZWC7OoiOf2b0zAnj4zz6HwWXFRlIEHPCmco5SQ="
-                            style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
-                    <div class="flex flex-col justify-center lg:basis-1/2"><label
-                            class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
-                            People</label>
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title ">
-                            Commitment to Our People</h2>
-                        <div class="text-light-content pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                Our people are our greatest asset. At Acentria Group, we are committed to creating a
-                                supportive and inclusive work environment where our employees can thrive. We invest in
-                                their professional development, provide opportunities for growth, and recognize their
-                                contributions. Our commitment to our people is reflected in our efforts to foster a
-                                culture of respect, collaboration, and continuous improvement. We believe that by
-                                empowering our employees, we can achieve greater success together.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Our Communities" loading="lazy"
+                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1"
-                            src="https://cdn.stocksnap.io/img-thumbs/960w/city-buildings_441BW5HSOU.jpg"
-                            style="color: transparent; object-fit: contain;" class="rounded-xl"></div>
-                    <div class="flex flex-col justify-center lg:basis-1/2"><label
-                            class="text-xs leading-normal font-regular text-light-highlight font-bold">Our
-                            Communities</label>
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title ">
-                            Commitment to Our Communities</h2>
+                            src="https://images.pexels.com/photos/1136465/pexels-photo-1136465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                    <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
+                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                            To <span class="text-brand-primary">Our Customers</span>
+                        </h2>
                         <div class="text-light-content pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                At Acentria Group, we are committed to making a positive impact on the communities we
-                                serve. We believe in giving back and supporting initiatives that promote social and
-                                economic development. Our commitment to our communities is demonstrated through our
-                                corporate social responsibility programs, volunteer efforts, and partnerships with local
-                                organizations. We strive to create lasting positive change and contribute to the
-                                well-being and prosperity of our communities.
+                                Our customers inspire us to continuously innovate. We are committed to delivering
+                                solutions that exceed expectations.
+                                <br><br>
+                                <span>
+                                    • <b>Personalized Excellence:</b> We take time to understand your needs, crafting
+                                    solutions
+                                    that are as unique as you are. <br>
+                                    • <b>Trustworthy Relationships:</b> Transparency and honesty are at the heart of
+                                    every
+                                    interaction. <br>
+                                    • <b>Long-Term Impact:</b> Your success is our success, and we are with you every
+                                    step of
+                                    the way.
+                                </span>
                             </p>
                         </div>
                     </div>
                 </div>
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:gap-16">
+                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
+                            width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
+                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
+                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                            To <span class="text-brand-primary">Our Partners</span>
+                        </h2>
+                        <div class="text-light-content pb-5 ">
+                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                                Collaboration powers our progress. At Acentria, we build partnerships grounded in trust
+                                and shared purpose.
+                                <br><br>
+                                <span>
+                                    • <b>Shared Vision:</b> Together, we co-create strategies that redefine industries
+                                    and
+                                    drive collective success. <br>
+                                    • <b>Ethical Collaboration:</b> We uphold the highest standards of fairness and
+                                    accountability in every partnership. <br>
+                                    • <b>Synergized Solutions:</b> Working together, we achieve more for our customers
+                                    and
+                                    stakeholders.
+
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:gap-16">
+                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
+                            width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
+                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
+                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                            To <span class="text-brand-primary">Our Communities</span>
+                        </h2>
+                        <div class="text-light-content pb-5 ">
+                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                                Giving back is a fundamental part of who we are. We are committed to building resilient
+                                and thriving communities.
+                                <br><br>
+                                <span>
+                                    • <b>Sustainable Initiatives:</b> We actively engage in projects that protect the
+                                    environment and promote green solutions. <br>
+                                    • <b>Empowering Society:</b> Through education, health, and economic programs, we
+                                    uplift
+                                    those around us. <br>
+                                    • <b>Purpose-Driven Leadership:</b> Our actions reflect our dedication to creating a
+                                    better
+                                    tomorrow.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 

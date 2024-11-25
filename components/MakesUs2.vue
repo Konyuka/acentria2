@@ -4,19 +4,19 @@ const incentives = [
         name: 'Who we are',
         icon: 'fas fa-users',
         link:'/about-us/who-we-are',
-        description: "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment Advisory",
+        description: "Acentria Group of companies is a trusted global consultant that seeks to empower, innovate and steer growth and prosperity in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment Advisory.",
     },
     {
         name: 'What We Do',
         icon: 'fas fa-briefcase',
         link: '/about-us/who-we-are',
-        description: "We offer the best solutions in Risk and Insurance, Reinsurance, Actuarial, and Investment Advisory. We consider the trust to be our most valuable resource.",
+        description: "At Acentria Group, we deliver transformative products and solutions in Risk and Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology. ",
     },
     {
         name: 'Our journey',
         icon: 'fas fa-road',
         link: '/about-us/who-we-are',
-        description: "Our journey is about Empowering dreams, igniting imagination, and propelling prosperity to infinite possibilities for the communities we serve.",
+        description: "At Acentria Group, our journey is a testament to resilience, vision, and the boundless possibilities that come with dedication. ",
     },
 ]
 
@@ -77,7 +77,7 @@ const incentives = [
                 <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: contain"
-                        class="mt-8 w-full h-[320px] shadow-2xl rounded-lg !object-cover"
+                        class="mt-8 w-full h-[360px] shadow-2xl rounded-lg !object-cover"
                         src="https://media.istockphoto.com/id/1156638514/photo/i-dont-believe-in-limits.webp?s=1024x1024&w=is&k=20&c=xxWccVnzPivgSezXD0axkQ47sQp6OMqMu54yfTsK4yU="
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
@@ -92,22 +92,26 @@ const incentives = [
                     </div>
                     <div class="text-light-content">
                         <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                            In our daily work, not only do we meet our legal and regulatory obligations, but we aspire
-                            to
-                            exceed people's expectations.
+                            At Acentria Group, our purpose is simple yet profound: <br>
+                            <span class="text-brand-primary">#</span>Empower <span
+                                class="text-brand-primary">#</span>Innovate <span
+                                class="text-brand-primary">#</span>Prosper
+                            Our purpose is to passionately remain at the forefront in <span
+                                class="text-brand-primary">EMPOWERING</span> the vison of our
+                            clients and the communities through <span class="text-brand-primary">INNOVATIVE</span>
+                            thinking and offering the best solutions to
+                            enhance <span class="text-brand-primary">PROSPERITY</span> and in doing so, we add value to
+                            an ever-changing global environment.
+                            Every day, we go beyond ticking boxes of compliance and regulations—we aim to surpass
+                            expectations. By focusing on areas where our expertise can make the greatest impact, we
+                            empower people and businesses to thrive inclusively and sustainably.
+                            Our commitment isn’t just about meeting standards; it’s about redefining them. Through
+                            integrity, transparency, and innovation, we build lasting trust with our clients, partners,
+                            and communities. We believe true success is shared success—when the communities we serve
+                            flourish, so do we.
+                            Together, let’s create solutions that not only solve today’s challenges but also shape a
+                            better tomorrow.
 
-                            We focus on the areas where, as a Group, our activity can have the greatest impact, helping
-                            more
-                            people and businesses prosper in an inclusive, sustainable way.
-                            <br><br>
-                            Our commitment goes beyond compliance; we strive to set new standards of excellence in
-                            everything we do.
-                            By prioritizing integrity and transparency, we build trust with our clients, partners, and
-                            communities.
-
-                            We believe that our success is intertwined with the well-being of the communities we serve.
-                            Through innovative solutions and responsible practices, we aim to create lasting positive
-                            change.
 
                         </p>
                     </div>

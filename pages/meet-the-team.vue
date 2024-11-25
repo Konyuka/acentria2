@@ -80,6 +80,60 @@ const setMobileMenu = (event) => {
 
         <Team v-if="currentMenu == 'Executive'" @openProfile="openProfileModal" ref="teamComponent" />
 
+        <div v-if="currentMenu == 'Governance'" class="container">
+            <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
+                <div class="container">
+                    <div
+                        class="flex items-center bg-cover px-4 pt-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center max-w-5xl">
+                            <div>
+                                <p class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
+
+                                    At Acentria Group, corporate governance is more than a policy—it’s a way of life. It
+                                    defines how we lead, operate, and serve. Built on a foundation of <b>Integrity,
+                                        Innovation, and Excellence,</b> our governance framework ensures we deliver
+                                    sustainable
+                                    value while upholding the trust placed in us by our stakeholders.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:gap-16">
+                <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy" width="500"
+                        height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
+                        style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                <div class="flex flex-col justify-center lg:basis-1/2">
+                    <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                        The Acentria Way <span class="text-brand-primary">in Governance</span>
+                    </h2>
+                    <div class="text-light-content pb-5 ">
+                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+
+                            <span>
+                                • <b>Leadership Rooted in Integrity:</b> Our leaders exemplify ethical conduct,
+                                inspiring
+                                confidence and setting the standard for decision-making across the organization. <br>
+                                • <b>Transparent and Accountable Practices:</b> We operate with openness, ensuring that
+                                our
+                                stakeholders have clear insights into our objectives, performance, and impact. <br>
+                                • <b>Sustainability at Our Core:</b> Corporate governance at Acentria integrates
+                                environmental,
+                                social, and governance (ESG) principles to create lasting impact for our communities,
+                                partners, and the planet.
+
+                            </span> <br><br>
+                            Through steadfast adherence to these principles, we reinforce our commitment to empowering
+                            dreams, driving innovation, and fostering prosperity for all.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div v-if="profileBoardModal" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"
             aria-modal="true">
             <div class="fixed inset-0 bg-black/20"></div>

@@ -57,7 +57,7 @@ const commitments = ref([
   {
     name: 'Our Customers',
     icon: 'fas fa-users', 
-    description: 'We\'re committed to helping Australians live a life that\'s as healthy and as full as possible.',
+    description: 'We\'re committed to helping live a life that\'s as healthy and as full as possible.',
     link: '/our-commitment'
   },
   {
@@ -113,22 +113,22 @@ onMounted(() => {
 
               <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
 
-                <div
-                  class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16 items-center ">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16 items-center ">
 
                   <div class=" flex text-left lg:basis-1/2">
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal mb-4 mt-4">
-                        Our brand represents the essence of who we are and what we stand for. It is built on a
-                        foundation of trust, integrity, and innovation. At Acentria Group, our brand is more than just a
-                        logo or a tagline; it is a reflection of our commitment to excellence and our dedication to our
-                        stakeholders.
-                        Central to our brand is a strong corporate identity that resonates with our clients, partners,
-                        and communities. Our core values of Integrity, Innovation, and Excellence are at the heart of
-                        everything we do, guiding our actions and decisions.
-                        "The Acentria Way" is not just a slogan; it is a way of life that embodies our global culture
-                        and aligns perfectly with our corporate strategy. It encompasses our purpose, our vision, and
-                        our approach to conducting business.
+                        At Acentria Group, our brand is a reflection of our identity, built on the core pillars of
+                        <b>Integrity, Innovation,</b> and <b>Excellence</b>. It represents our unwavering commitment to
+                        empowering
+                        dreams, igniting imagination, and creating meaningful impact for our clients, employees, and
+                        communities.
+                        Guided by The Acentria Way, we prioritize trust, transparency, and responsibility in every
+                        interaction. Our brand is not just a logo—it’s a promise to deliver transformative solutions,
+                        foster sustainable growth, and uphold the highest standards of excellence.
+                        Through empowerment, innovation, and a legacy of responsibility, we inspire confidence and build
+                        lasting partnerships that drive success for all.
+
                       </p>
                       <NuxtLink href="/our-brand"
                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
@@ -165,18 +165,15 @@ onMounted(() => {
                       </h3>
 
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                        Our brand represents the essence of who we are and what we stand for. It is built on a
-                        foundation of trust, integrity, and innovation. At Acentria Group, our brand is more than just a
-                        logo or a tagline; it is a reflection of our commitment to excellence and our dedication to our
-                        stakeholders.
-                        Central to our brand is a strong corporate identity that resonates with our clients, partners,
-                        and communities. Our core values of Integrity, Innovation, and Excellence are at the heart of
-                        everything we do, guiding our actions and decisions.
-                        "The Acentria Way" is not just a slogan; it is a way of life that embodies our global culture
-                        and aligns perfectly with our corporate strategy. It encompasses our purpose, our vision, and
-                        our approach to conducting business.
+                        At Acentria Group, we are driven by our mantra: <br> <b>Empower, Innovate, Prosper.</b> <br>
+                        We find inspiration in empowering individuals, businesses, and communities to achieve their
+                        dreams. Innovation fuels our creativity, helping us craft transformative solutions that tackle
+                        today’s challenges. Prosperity motivates us to create lasting impact—building success stories
+                        that uplift not just our clients but society as a whole.
+                        Together, we turn possibilities into progress, delivering excellence every step of the way.
+
                       </p>
-                      <NuxtLink href="/our-brand"
+                      <NuxtLink href="/things-that-inspire-us"
                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                         Learn More
                         <i class="fas fa-arrow-right text-primary ml-2"></i>

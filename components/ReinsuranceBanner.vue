@@ -31,7 +31,7 @@ const subtitle = computed(() => {
                     </div>
                 </div>
                 <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                    <h2 class="capitalize text-left text-xl font-bold tracking-tight text-brand-primary sm:text-6xl font-sans mb-4">
+                    <h2 class="capitalize text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
                         {{ subtitle }}
                     </h2>
                     <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">

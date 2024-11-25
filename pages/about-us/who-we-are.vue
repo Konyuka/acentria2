@@ -10,6 +10,7 @@ const bannerContent = ref({
     image: 'https://images.pexels.com/photos/7413967/pexels-photo-7413967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 })
 
+
 const mission = ref(null)
 const selectedMenu = computed(() => {
     return mission.value?.currentMenu
@@ -66,19 +67,17 @@ onMounted(()=>{
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
                         <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
-                            Acentria Group of companies is a trusted global
-                            consultant in Risk and Insurance, Reinsurance,
-                            Actuarial, and Investment Advisory. With decades of
-                            experience and a commitment to excellence, we provide
-                            comprehensive solutions tailored to meet the unique
-                            needs of our clients. Our team of experts works
-                            diligently to deliver innovative strategies that enhance
-                            risk management, optimize insurance and reinsurance
-                            programs, and provide insightful actuarial and
-                            investment advice. By partnering with Acentria Group,
-                            you gain access to a wealth of knowledge and resources
-                            that empower you to make informed decisions, mitigate
-                            risks, and achieve your financial goals.
+                            Acentria Group of companies is a trusted global consultant that seeks to empower, innovate
+                            and steer growth and prosperity in Risk and Insurance, Reinsurance, Actuarial, Technology
+                            and Investment Advisory.
+                            With a decade of expertise and an unwavering commitment to excellence, we craft tailored
+                            solutions that empower our clients to thrive. Our innovative approach to risk management,
+                            insurance optimization, and investment advisory ensures you’re always ahead of the curve.
+                            When you partner with Acentria Group, you’re not just accessing solutions—you’re unlocking a
+                            world of knowledge and resources designed to mitigate risks, maximize opportunities, and
+                            achieve your financial goals. Trust us to turn challenges into opportunities and ambition
+                            into achievement.
+
                         </p>
                     </div>
                 </div>
@@ -103,20 +102,16 @@ onMounted(()=>{
                         <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:46:17">
                             <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                                 data-v-inspector="components/Why.vue:47:21">
-                                We offer the best solutions in Risk and Insurance,
-                                Reinsurance, Actuarial, and Investment Advisory. We
-                                consider the trust of our stakeholders and communities
-                                to be our most valuable resource. To us, success is not
-                                only measured by the products and services we offer, but
-                                more importantly, by providing innovative solutions that
-                                ensure sustainable development, and serve our
-                                environment and societies in the best way possible.
-                                Accordingly, we make sure that we are in compliance with
-                                laws and regulations and that we are investing in the
-                                public good in terms of the projects we take on, the
-                                partners we choose, and the way we do business We are
-                                committed to equal gender representation at all levels
-                                having archived a 50:50 senior management gender parity.
+                                At Acentria Group, we deliver transformative products and solutions in Risk and
+                                Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology. We believe our
+                                greatest asset is the trust of our clients and communities. Success, for us, isn’t just
+                                about delivering exceptional services—it’s about creating sustainable, impactful
+                                solutions that benefit society and protect the environment.
+                                Every project we undertake, every partner we collaborate with, and every decision we
+                                make reflects our commitment to compliance, ethical practices, and the public good. With
+                                an unwavering focus on equality, we’re proud to have achieved a 50:50 gender parity in
+                                senior management, setting a benchmark for inclusivity across industries.
+
                             </p>
                         </div>
                     </div>
@@ -141,16 +136,18 @@ onMounted(()=>{
                         <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:67:17">
                             <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
                                 data-v-inspector="components/Why.vue:68:21">
-                                Our journey is about Empowering dreams, igniting
-                                imagination, and propelling prosperity to infinite
-                                possibilities for all our partners and the communities
-                                we serve. Internally we give a fair platform to all our
-                                employees to achieve their dreams. Our journey is a
-                                testament to humble beginnings, resilience,
-                                adaptability, and trust; it involves building a
-                                resilient and prosperous community. Through partnerships
-                                and collaborations, we have fostered resilience in
-                                individuals, businesses, and society as a whole.
+                                At Acentria Group, our journey is a testament to resilience, vision, and the boundless
+                                possibilities that come with dedication. From our humble beginnings, we have evolved,
+                                adapting to the changing times while staying true to our mission of empowering
+                                individuals, businesses, and communities.
+                                Our growth is deeply rooted in the dreams we nurture—both for our clients and for our
+                                team. By championing equal opportunities, we’ve built a culture where everyone can
+                                contribute and thrive, laying the foundation for shared success.
+                                Through strategic partnerships and impactful collaborations, we’ve worked hand in hand
+                                with our stakeholders to strengthen foundations and achieve sustainable progress.
+                                Together, we are shaping a future defined by resilience and shared prosperity. Be part
+                                of our extraordinary journey as we continue to reimagine what’s possible.
+
                             </p>
                         </div>
                     </div>
@@ -349,7 +346,7 @@ onMounted(()=>{
                         </dl>
                     </div>
                 </div>
-            </section>        
+            </section>
 
             <Awards />
         </div>

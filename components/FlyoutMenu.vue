@@ -359,22 +359,22 @@ const AboutMenus = ref([
             {
                 name: 'Our Customers',
                 description: 'Our dedication to providing exceptional service to our customers.',
-                link: '/about-us/our-customers',
+                link: '/our-commitment',
             },
             {
                 name: 'Our Partners',
                 description: 'Building strong and lasting relationships with our partners.',
-                link: '/about-us/our-partners',
+                link: '/our-commitment',
             },
             {
                 name: 'Our Staff',
                 description: 'Investing in our staff to foster growth and development.',
-                link: '/about-us/our-staff',
+                link: '/our-commitment',
             },
             {
                 name: 'Our communities',
                 description: 'Contributing positively to the communities we serve.',
-                link: '/about-us/our-communities',
+                link: '/our-commitment',
             },
         ]
     },
