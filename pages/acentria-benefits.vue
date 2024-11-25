@@ -30,13 +30,8 @@ const benefits = ref([
     {
         name: '<span class="text-brand-primary"> Diversity, Equity & </span> Inclusion',
         icon: 'fas fa-dumbbell',
-        description: 'Our workforce represents the face of the jurisdictions we dwell in and appreciate contributions from all generations as a means of improving our products, services and corporate culture.'
+        description:'Our workforce represents the face of the jurisdictions we dwell in and appreciate contributions from all generations as a means of improving our products, services and corporate culture. Each of us is unique and our employees represent a diverse team of industry veterans, seasoned professionals and new team members with fresh ideas and different perspectives.'
     },
-    {
-        name: 'Supportive <span class="text-brand-primary"> parental leave </span>',
-        icon: 'fas fa-baby',
-        description: 'Raising the next generation takes time. We support parents in taking time to bond with their newest family member.'
-    }
 ]);
 </script>
 
@@ -45,7 +40,7 @@ const benefits = ref([
 
         <BannerMain :content="bannerContent" />
 
-        
+
 
         <div>
 
@@ -67,10 +62,11 @@ const benefits = ref([
                                     class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
                                     Working at Acentria is an enriching journey to growth and prosperity. We have
                                     numerous engagement forums, propagate empowerment and job autonomy, nurture a
-                                    supportive and inclusive environment and do not have a “Straight-jacket”
-                                    approach towards learning and development.
-                                    Your contributions will be recognized and rewarded, ensuring a fulfilling, warm
-                                    and lasting experience at Acentria.
+                                    supportive and inclusive environment and do not have a “Straight-jacket” approach
+                                    towards learning and development.
+                                    Your contributions will be recognized and rewarded, ensuring a fulfilling, warm and
+                                    lasting experience at Acentria.
+
 
                                     <br><br>
                                     Here is how you benefit by joining our Team:

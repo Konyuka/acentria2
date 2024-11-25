@@ -203,14 +203,18 @@ onMounted(() => {
                     </div>
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                        Our mission is to exceed our stakeholders' expectations by delivering excellence in every aspect
-                        of our business, every day.
-                        Central to this mission is fostering a strong corporate culture - a business environment where
-                        everything we do is guided by our core values of Integrity, Innovation, and Excellence.
-                        "The Acentria Way" embodies our global culture, perfectly aligned with our corporate strategy.
-                        It encompasses our purpose, our vision, and our approach to conducting business.
-                        It is the foundation of our organization, ensuring that we operate as a responsible and
-                        forward-thinking company.
+                        At Acentria Group, our corporate culture is the driving force behind everything we do. It the
+                        soil within which the seeds of promise mature to prosperity. It is shaped by a clear sense of
+                        purpose and guided by our commitment to fostering a supportive, innovative, and dynamic
+                        environment where every employee thrives.
+                        <br><br>
+                        Our culture isn't just about the work we do—it’s about how we do it and the values that drive
+                        our engagements. We call this <b>The Acentria Way!</b>
+                        <br><br>
+                        Our culture encompasses corporate behaviors that determine development and positive
+                        reinforcements through reward and recognition initiatives.
+
+
                       </p>
                       <NuxtLink href="/corporate-culture"
                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
