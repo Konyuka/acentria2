@@ -358,7 +358,7 @@ const products = ref([
 
         <div v-for="product in products" class="container py-5 bg-white">
             <div class="mx-auto  mb-3 font-sans">
-                <p v-html="product.heading" class="mt-2 subheading-class text-black"></p>
+                <p v-html="product.heading" class="mt-2 heading-class text-black"></p>
             </div>
             <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                 style="color: transparent; object-fit: contain"

@@ -253,12 +253,12 @@ const exploreClaims = ref({
 
                 <ContentPic :content="exploreProducts" />
 
-                <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
 
 
                 <div class="pb-5 text-left bg-white">
                     <h2 class="heading-class text-black container">
-                        Pick a cover and, <span class="text-brand-primary"> <br/> we'll take care of the rest</span>
+                        Pick a cover and, <span class="text-brand-primary"> <br /> we'll take care of the rest</span>
                     </h2>
                 </div>
 
@@ -320,6 +320,8 @@ const exploreClaims = ref({
                         </div>
                     </div>
                 </section>
+
+                <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 
                 <ContentPic :content="exploreClaims" />
 
