@@ -72,7 +72,9 @@ onMounted(()=>{
                 <div class="relative py-4 lg:basis-1/2 scale-90" data-v-inspector="components/Why.vue:9:13">
                     <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="/img/innovate.png" data-v-inspector="components/Why.vue:10:17" />
+                        class="rounded-lg"
+                        src="https://media.istockphoto.com/id/2175823135/photo/confident-black-public-speaker-in-front-of-her-colleagues-in-the-office.jpg?s=2048x2048&w=is&k=20&c=k9hnnUgDJ0XQllvWNVwuQUcX2etx1x0bgSCjhSD58_g="
+                        data-v-inspector="components/Why.vue:10:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
                     <label class="text-base leading-normal font-regular text-light-highlight font-bold"

@@ -1,6 +1,6 @@
 <script setup>
 const bannerContent = ref({
-    subtitle: 'What we do',
+    subtitle: 'Lines of Business',
     title: 'Services that make a difference',
     image: 'https://www.shutterstock.com/shutterstock/photos/2508742035/display_1500/stock-photo-service-excellence-high-quality-service-concept-continuous-improvement-and-invest-in-training-and-2508742035.jpg'
 })

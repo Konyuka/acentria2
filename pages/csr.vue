@@ -47,9 +47,9 @@ const bannerContent = ref({
         </div>
 
 
-        <div data-v-02281a80="" class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+        <div data-v-02281a80="" class="font-sans py-2 text-white">
 
-            <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col my-2 lg:gap-16"
                 data-v-inspector="components/Why.vue:8:9">
                 <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
                     <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
@@ -59,12 +59,11 @@ const bannerContent = ref({
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
 
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                        data-v-inspector="components/Why.vue:18:17">
-                        Environmental Responsibility
+                    <h2 class="heading-class pb-4" data-v-inspector="components/Why.vue:18:17">
+                        Environmental <span class="text-brand-primary">Responsibility</span>
                     </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
+                    <div class="text-black pb-5 md:pb-6">
+                        <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
                             Acentria Group is dedicated to minimizing our
                             environmental footprint and promoting sustainable practices within the industries we serve.
                             Our Initiatives include:
@@ -89,7 +88,7 @@ const bannerContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2 lg:gap-16"
                 data-v-inspector="components/Why.vue:32:9">
                 <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:33:13">
                     <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
@@ -98,12 +97,11 @@ const bannerContent = ref({
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                        data-v-inspector="components/Why.vue:18:17">
-                        Philanthropic Responsibility
+                    <h2 class="heading-class pb-4" data-v-inspector="components/Why.vue:18:17">
+                        Philanthropic <span class="text-brand-primary">Responsibility</span>
                     </h2>
-                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
+                    <div class="text-black pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             We are committed to giving back to the communities in
                             which we operate by supporting initiatives that empower individuals and improve livelihoods.
@@ -130,7 +128,7 @@ const bannerContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col my-2 lg:gap-16"
                 data-v-inspector="components/Why.vue:54:9">
                 <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:55:13">
                     <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
@@ -140,12 +138,11 @@ const bannerContent = ref({
                         data-v-inspector="components/Why.vue:56:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:60:13">
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                        data-v-inspector="components/Why.vue:18:17">
-                        Ethical Responsibility
+                    <h2 class="heading-class pb-4" data-v-inspector="components/Why.vue:18:17">
+                        Ethical <span class="text-brand-primary">Responsibility</span>
                     </h2>
-                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
+                    <div class="text-black pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             At the heart of Acentria Group’s business practices is a commitment
                             to integrity, fairness, and ethical governance. These are the core values that guide our
@@ -183,7 +180,7 @@ const bannerContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2 lg:gap-16"
                 data-v-inspector="components/Why.vue:32:9">
                 <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:33:13">
                     <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
@@ -192,12 +189,11 @@ const bannerContent = ref({
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
-                        data-v-inspector="components/Why.vue:18:17">
-                        Economic Responsibility
+                    <h2 class="heading-class pb-4" data-v-inspector="components/Why.vue:18:17">
+                        Economic <span class="text-brand-primary">Responsibility</span>
                     </h2>
-                    <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4"
+                    <div class="text-black pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
+                        <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4"
                             data-v-inspector="components/Why.vue:23:21">
                             Acentria Group strives to contribute to economic development
                             by creating value for our stakeholders, promoting responsible growth, and providing
@@ -227,13 +223,13 @@ const bannerContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto max-w-6xl">
+            <!-- <div class="container mx-auto max-w-6xl">
                 <video src="/img/esg.mp4" alt="Success Team Hands Up"
                     class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted
                     loop>
                     Your browser does not support the video tag.
                 </video>
-            </div>
+            </div> -->
         </div>
 
     </section>

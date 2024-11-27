@@ -14,11 +14,14 @@ const ReinsuranceBannerContent = ref({
             <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
                 <div class="container">
                     <div
-                        class="flex items-center bg-cover px-4 py-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center max-w-5xl">
+                        class="flex items-center bg-cover py-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
                             <div>
+                                <p class="my-5 heading-class text-black text-left">
+                                    Our <span class="text-brand-primary">Commitment</span>
+                                </p>
                                 <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
                                     At Acentria Group, our success is defined by the relationships we nurture with those
                                     who share our journey—our staff, customers, partners, and the communities we serve.
                                     This commitment is deeply embedded in our mantra: <b>Empower, Innovate, Prosper</b>.
@@ -29,19 +32,18 @@ const ReinsuranceBannerContent = ref({
                 </div>
             </div>
 
-            <div class="text-white" style="background-color: rgb(246, 248, 252);">
+            <div class="text-white">
 
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:my-4 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1"
-                            src="https://images.pexels.com/photos/29462460/pexels-photo-29462460/free-photo-of-elegant-portrait-of-a-smiling-woman-in-lagos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            width="500" height="350" decoding="async" data-nimg="1" src="/img/team.jpeg"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                        <h2 id="" class="heading-class pb-4 text-black ">
                             To <span class="text-brand-primary">Our Staff</span>
                         </h2>
                         <div class="text-light-content pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            <p class="text-xs leading-normal font-regular text-light-content !text-inherit">
                                 Our people are our greatest asset. At Acentria, we create an environment where ambition
                                 meets opportunity. We empower our employees by creating a supportive and inclusive
                                 workplace where talent is nurtured, ideas are valued, and careers are built.
@@ -68,11 +70,11 @@ const ReinsuranceBannerContent = ref({
                             src="https://images.pexels.com/photos/1136465/pexels-photo-1136465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                        <h2 id="" class="heading-class pb-4 text-black ">
                             To <span class="text-brand-primary">Our Customers</span>
                         </h2>
                         <div class="text-light-content pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            <p class="text-xs leading-normal font-regular text-light-content !text-inherit">
                                 Our customers inspire us to continuously innovate. We are committed to delivering
                                 solutions that exceed expectations.
                                 <br><br>
@@ -91,16 +93,17 @@ const ReinsuranceBannerContent = ref({
                         </div>
                     </div>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
+                            width="500" height="350" decoding="async" data-nimg="1"
+                            src="https://media.istockphoto.com/id/2174452723/photo/an-african-american-programmer-tackles-challenges-in-a-modern-office-environment.jpg?s=2048x2048&w=is&k=20&c=tvrDC-gpxbIusfVqB03by26V3vD4yFruekdM9wXLEmk="
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                        <h2 id="" class="heading-class pb-4 text-black ">
                             To <span class="text-brand-primary">Our Partners</span>
                         </h2>
                         <div class="text-light-content pb-5 ">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            <p class="text-xs leading-normal font-regular text-light-content !text-inherit">
                                 Collaboration powers our progress. At Acentria, we build partnerships grounded in trust
                                 and shared purpose.
                                 <br><br>
@@ -119,16 +122,17 @@ const ReinsuranceBannerContent = ref({
                         </div>
                     </div>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col py-2 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
+                            width="500" height="350" decoding="async" data-nimg="1"
+                            src="https://media.istockphoto.com/id/537311780/photo/unity-of-indian-children-asia.webp?s=1024x1024&w=is&k=20&c=J-ieaHhBhiAiuZliJNBwymxYBcYKvwUXTiUzu3Jwzik="
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                        <h2 id="" class="heading-class pb-4 text-black ">
                             To <span class="text-brand-primary">Our Communities</span>
                         </h2>
                         <div class="text-light-content pb-5 ">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            <p class="text-xs leading-normal font-regular text-light-content !text-inherit">
                                 Giving back is a fundamental part of who we are. We are committed to building resilient
                                 and thriving communities.
                                 <br><br>
