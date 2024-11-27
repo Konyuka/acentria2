@@ -111,7 +111,7 @@ const setMobileMenu = (event) => {
                         height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
                         style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                    <h2 id="" class="heading-class pb-4 ">
                         <span class="text-brand-primary">Governance</span>
                     </h2>
                     <div class="text-light-content pb-5 ">
@@ -136,6 +136,12 @@ const setMobileMenu = (event) => {
                         </p>
                     </div>
                 </div>
+            </div>
+
+            <div class="container">
+                <h2 id="" class="heading-class pb-4 ">
+                    <span class="text-brand-primary">Our Governance Policies</span>
+                </h2>
             </div>
         </div>
 
