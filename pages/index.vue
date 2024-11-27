@@ -210,11 +210,6 @@ onMounted(() => {
                         <br><br>
                         Our culture isn't just about the work we do—it’s about how we do it and the values that drive
                         our engagements. We call this <b>The Acentria Way!</b>
-                        <br><br>
-                        Our culture encompasses corporate behaviors that determine development and positive
-                        reinforcements through reward and recognition initiatives.
-
-
                       </p>
                       <NuxtLink href="/corporate-culture"
                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
@@ -317,7 +312,7 @@ onMounted(() => {
                         <h3 class="subheading-class text-brand-primary flex justify-left group-hover:text-black">
                           {{ item.name }}
                         </h3>
-                        <p class="text-[12px] text-white">{{ item.description }}</p>
+                        <p class="text-[13px] text-white">{{ item.description }}</p>
                         <i
                           class="fas fa-arrow-right mt-5 font-bold text-right text-lg group-hover:text-brand-primary text-gray-300 duration-700"></i>
                       </div>
@@ -393,7 +388,7 @@ onMounted(() => {
                           <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
                             <h3 class="subheading-class text-brand-primary flex justify-center">{{ member.name
                               }}</h3>
-                            <p class="mt-2 text-[12px] text-gray-500">{{ member.description }}</p>
+                            <p class="mt-2 text-[13px] text-gray-500">{{ member.description }}</p>
                             <i
                               class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
                           </div>

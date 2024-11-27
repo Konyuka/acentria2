@@ -117,7 +117,7 @@ const whys = ref([
 
 const exploreAviation = ref({
     orientation: 'lg:flex-row-reverse flex-col',
-    heading: 'Our Footprints <span class="text-brand-primary">in Aviation</span>',
+    heading: '<span class="text-brand-primary"> Aviation</span>',
     subheading: '',
     image: '/img/63.jpg',
     link: '/',

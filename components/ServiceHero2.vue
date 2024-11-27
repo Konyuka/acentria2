@@ -21,7 +21,7 @@ const props = defineProps({
                     class="flex flex-col items-center bg-cover px-4 py-6 text-center lg:px-10 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
                     <div class="max-w-2xl">
                         <h1 v-html="content.title"
-                            class="font-sans tracking-normal text-6xl  text-white font-semibold leading-tight lg:leading-tight">
+                            class="font-sans tracking-normal text-[42px]  text-white font-semibold leading-tight lg:leading-tight">
                         </h1>
                     </div>
                 </div>

@@ -74,7 +74,7 @@ const joinAsMembers = ref([
                 </div>
             </div>
 
-            <div class="text-white" style="background-color: rgb(246, 248, 252);">
+            <div class="text-white">
 
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
@@ -82,7 +82,7 @@ const joinAsMembers = ref([
                             src="https://images.pexels.com/photos/29462460/pexels-photo-29462460/free-photo-of-elegant-portrait-of-a-smiling-woman-in-lagos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                        <h2 id="" class="heading-class pb-4 md:pb-5 ">
                             <span class="text-brand-primary">Empower</span>
                         </h2>
                         <div class="text-light-content pb-5 md:pb-6">
@@ -91,12 +91,12 @@ const joinAsMembers = ref([
                                 greatness. Empowerment is at the heart of our mission:
                                 <br><br>
                                 <span>
-                                    • <b>For our clients:</b> Providing the tools, insights, and solutions they need to
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our clients:</b> Providing the tools, insights, and solutions they need to
                                     overcome challenges and unlock new opportunities. <br>
-                                    • <b>For our employees:</b> Fostering an environment where ideas flourish, ambitions
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our employees:</b> Fostering an environment where ideas flourish, ambitions
                                     are
                                     realized, and diverse talents shine. <br>
-                                    • <b>For our communities:</b> Creating a positive impact by driving initiatives that
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our communities:</b> Creating a positive impact by driving initiatives that
                                     promote equality, inclusion, and sustainability.
                                 </span> <br><br>
                                 Every success story we help write inspires us to continue empowering others to achieve
@@ -111,7 +111,7 @@ const joinAsMembers = ref([
                             src="https://images.pexels.com/photos/1136465/pexels-photo-1136465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                        <h2 id="" class="heading-class">
                             <span class="text-brand-primary">Innovate</span>
                         </h2>
                         <div class="text-light-content pb-5 md:pb-6">
@@ -120,12 +120,12 @@ const joinAsMembers = ref([
                                 ever-changing world around us.
                                 <br><br>
                                 <span>
-                                    • We are inspired by <b>challenges</b> that push us to think differently and create
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are inspired by <b>challenges</b> that push us to think differently and create
                                     transformative solutions. <br>
-                                    • We embrace <b>technology and creativity</b> to redefine possibilities and deliver
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We embrace <b>technology and creativity</b> to redefine possibilities and deliver
                                     value
                                     in bold, unexpected ways. <br>
-                                    • We celebrate the <b>resilience of our stakeholders</b>, whose evolving needs drive
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We celebrate the <b>resilience of our stakeholders</b>, whose evolving needs drive
                                     us to
                                     stay ahead of the curve.
                                 </span> <br><br>
@@ -140,7 +140,7 @@ const joinAsMembers = ref([
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
                             style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
+                        <h2 id="" class="heading-class">
                             <span class="text-brand-primary">Prosper</span>
                         </h2>
                         <div class="text-light-content pb-5 ">
@@ -149,12 +149,12 @@ const joinAsMembers = ref([
                                 businesses, and communities, its about winning together!
                                 <br><br>
                                 <span>
-                                    • We are inspired by the <b>positive impact</b> we create in the lives of our
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are inspired by the <b>positive impact</b> we create in the lives of our
                                     clients and
                                     their stakeholders. <br>
-                                    • We measure prosperity through <b>lasting relationships</b>, ethical practices, and
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We measure prosperity through <b>lasting relationships</b>, ethical practices, and
                                     contributions to a sustainable future. <br>
-                                    • We are motivated by the <b>shared growth</b> we experience when we succeed
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are motivated by the <b>shared growth</b> we experience when we succeed
                                     together with
                                     our clients and partners.
                                 </span> <br><br>

@@ -15,11 +15,11 @@
 
 
 .heading-class {
-    @apply text-[34px] font-medium tracking-tight text-black
+    @apply text-[30px] font-medium tracking-tight text-black
 }
 
 .subheading-class {
-    @apply text-[25px] font-medium tracking-tight text-black
+    @apply text-[18px] font-medium tracking-tight text-black
 }
 
 

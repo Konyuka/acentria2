@@ -38,18 +38,23 @@ const faqs = ref([
             <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
                 <div class="container">
                     <div
-                        class="flex items-center bg-cover px-4 py-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center max-w-5xl">
+                        class="flex items-center bg-cover py-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
                             <div>
+                                <p class="my-5 heading-class text-black text-left">
+                                    The <span class="text-brand-primary">Acentria Way</span>
+                                </p>
                                 <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
 
                                     At Acentria Group, our corporate culture is the driving force behind everything we
                                     do. It is shaped by a clear sense of purpose and guided by our commitment to
                                     fostering a supportive, innovative, and dynamic environment where every employee
-                                    thrives. <br><br>
+                                    thrives.
                                     Our culture isn't just about the work we do—it’s about how we do it and the values
-                                    that shape our interactions. We call this <b>The Acentria Way!</b>
+                                    that shape our interactions. We call this <b>The Acentria Way!
+
+                                    </b>
 
                                 </p>
                             </div>
@@ -58,20 +63,20 @@ const faqs = ref([
                 </div>
             </div>
 
-            <div class="text-white" style="background-color: rgb(246, 248, 252);">
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+            <div class="text-white">
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col">
                     <!-- <div class="relative p-4 lg:basis-1/2"><img alt="Image of Corporate Governance" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
                             style="color: transparent; object-fit: contain;" class="rounded-lg">
                     </div> -->
                     <div class="flex flex-col justify-center">
-                        <label class="text-xs leading-normal font-regular text-light-highlight font-bold">
-                            Culture (The Acentria Way)
+                        <label class="heading-class">
+                            Our <span class="text-brand-primary">Culture</span>
                         </label>
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title ">
+                        <h2 id="" class="subheading-class leading-normal mb-3 ">
                             Creating the Best Employee Experience and Driving Business with Purpose
                         </h2>
-                        <div class="text-light-content pb-5 md:pb-6">
+                        <div class="text-light-content pb-2">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
                                 The Acentria Way is more than a set of principles—it’s a culture that unites us across
                                 borders, disciplines, and functions. It defines how we collaborate, innovate, and
@@ -95,20 +100,20 @@ const faqs = ref([
                         </div>
                     </div>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
                     <!-- <div class="relative p-4 lg:basis-1/2"><img alt="Image of Corporate Governance" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
                             style="color: transparent; object-fit: contain;" class="rounded-lg">
                     </div> -->
                     <div class="flex flex-col justify-center">
-                        <label class="text-xs leading-normal font-regular text-light-highlight font-bold">
-                            Less is more
+                        <label class="heading-class">
+                            Less <span class="text-brand-primary">is more</span>
                         </label>
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title ">
+                        <h2 id="" class="subheading-class leading-normal mb-3 ">
                             Leveraging Technological Advancements to Respond Faster to Market Needs and Innovation to
                             Improve Our Processes
                         </h2>
-                        <div class="text-light-content pb-5 md:pb-6">
+                        <div class="text-light-content pb-2">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
                                 In an ever-evolving business landscape, less is more means leveraging the power of
                                 technology to streamline operations and drive smarter, faster, and more effective
@@ -134,20 +139,20 @@ const faqs = ref([
                         </div>
                     </div>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
                     <!-- <div class="relative p-4 lg:basis-1/2"><img alt="Image of Corporate Governance" loading="lazy"
                             width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
                             style="color: transparent; object-fit: contain;" class="rounded-lg">
                     </div> -->
                     <div class="flex flex-col justify-center ">
-                        <label class="text-xs leading-normal font-regular text-light-highlight font-bold">
-                            Create Balance
+                        <label class="heading-class">
+                            Create <span class="text-brand-primary">Balance</span>
                         </label>
-                        <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-light-title ">
+                        <h2 id="" class="subheading-class leading-normal mb-3 ">
                             Shifting from Labor Force to Talent, Building Capabilities, Maximizing Potential in a
                             Holistic Manner, and Driving Productivity through Empathic Leadership
                         </h2>
-                        <div class="text-light-content pb-5 md:pb-6">
+                        <div class="text-light-content pb-2">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
                                 Creating a balanced and inclusive environment is essential for driving sustainable
                                 growth. At Acentria, we understand that success isn’t just about the work—it’s about how
@@ -186,10 +191,11 @@ const faqs = ref([
 
             <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
                 <div class="container">
-                    <h1 class="mb-3 heading-class text-left">Our Commitment <span class="text-brand-primary">to Culture</span></h1>
+                    <h1 class="mb-3 heading-class text-left">Our Commitment <span class="text-brand-primary">to
+                            Culture</span></h1>
                     <div
-                        class="flex items-center bg-cover px-4 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-left max-w-5xl">
+                        class="flex items-center bg-cover  text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-left">
                             <div>
                                 <p
                                     class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">

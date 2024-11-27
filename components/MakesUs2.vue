@@ -32,7 +32,7 @@ const incentives = [
 
             <div class="mt-5 container max-w-6xl mx-auto justify-between content-center">
                 <h2 class="heading-class text-left">
-                    About <span class="text-brand-primary">Us</span>
+                    About - <span class="text-brand-primary"> Acentria Group</span>
                 </h2>
                 <h3 class="font-semibold text-[21px]">
                     Sharing an <span class="text-brand-primary">ambitious spirit!</span>
@@ -87,32 +87,21 @@ const incentives = [
                             Our <span class="text-brand-primary">Purpose</span>
                         </h2>
                         <h3 class="font-semibold text-[21px] -ml-5 mb-3">
-                            Our purpose is <span class="text-brand-primary">serving you!</span>
+                            Our True North<span class="text-brand-primary"> that Guides Us!</span>
                         </h3>
                     </div>
                     <div class="text-light-content">
-                        <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
-                            At Acentria Group, our purpose is simple yet profound: <br>
-                            <span class="text-brand-primary">#</span>Empower <span
-                                class="text-brand-primary">#</span>Innovate <span
-                                class="text-brand-primary">#</span>Prosper
+                        <p class="mt-2 text-xs leading-normal font-regular text-light-content !text-inherit mb-4">
                             Our purpose is to passionately remain at the forefront in <span
                                 class="text-brand-primary">EMPOWERING</span> the vison of our
                             clients and the communities through <span class="text-brand-primary">INNOVATIVE</span>
                             thinking and offering the best solutions to
                             enhance <span class="text-brand-primary">PROSPERITY</span> and in doing so, we add value to
                             an ever-changing global environment.
-                            Every day, we go beyond ticking boxes of compliance and regulations—we aim to surpass
+                            <br><br>
+                            Every day, we go beyond ticking boxes of compliance and regulations. We aim to surpass
                             expectations. By focusing on areas where our expertise can make the greatest impact, we
                             empower people and businesses to thrive inclusively and sustainably.
-                            Our commitment isn’t just about meeting standards; it’s about redefining them. Through
-                            integrity, transparency, and innovation, we build lasting trust with our clients, partners,
-                            and communities. We believe true success is shared success—when the communities we serve
-                            flourish, so do we.
-                            Together, let’s create solutions that not only solve today’s challenges but also shape a
-                            better tomorrow.
-
-
                         </p>
                     </div>
                 </div>
