@@ -27,44 +27,20 @@
 
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
 
-                    <div class="h-4  justify-center content-center mt-0">
-                        <div class="relative ml-4 flex font-semibold text-[15px] text-black">
-                            <div>
-                                <!-- {{ flyoverHeader }} -->
-                            </div>
-
-
-                            <div class="absolute px-8 font-bold ml-[300px]">
-                                <!-- <p class="text-[12px] mb-1">
-                                    We propel prosperity to infinite possibilities.
-                                </p> -->
-                                <div class="grid grid-cols-3 gap-1 text-[13px]">
-                                    <div><span class="text-brand-primary text-[11px]">#</span> Empower <div
-                                            class="w-20 bg-black/10 h-1"></div>
-                                    </div>
-                                    <div class="text-brand-primary"><span
-                                            class="text-brand-primary text-[13px]">#</span>
-                                        Innovate
-                                        <div class="w-20 bg-black/10 h-1"></div>
-                                    </div>
-                                    <div><span class="text-brand-primary text-[13px]">#</span> Prosper <div
-                                            class="w-20 bg-black/10 h-1"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="h-auto mt-3">
+                    <div class="h-auto mt-8">
                         <div class="ml-4 flex font-semibold text-[15px] text-black">
-                            {{ flyoverHeader }}
+                            <!-- {{ flyoverHeader }} -->
                         </div>
                         <div class="grid grid-cols-7">
 
 
-                            <div class="col-span-2 relative border-r-4 border-red-600 h-52 mt-2">
+                            <div class="col-span-2 relative border-r-4 border-red-600 h-56 mt-2">
 
+                                <h1 class="ml-5 font-semibold">Insurance
+                                    <span class="text-brand-primary">
+                                        Solutions
+                                    </span>
+                                </h1>
                                 <div class="relative pl-10 pt-2 flex flex-col gap-2">
                                     <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
                                         <p @click="setSubmenu(item, index)"
@@ -77,9 +53,9 @@
                                         </p>
                                     </div>
 
-                                    <div v-show="currentMenu === 'Insurance'" >
-                                        <div class="-ml-6 my-4 font-semibold text-[15px] text-black">
-                                            Special Lines Insurance
+                                    <div v-show="currentMenu === 'Insurance'">
+                                        <div class="-ml-6 my-2 font-semibold text-[15px] text-black">
+                                            Special <span class="text-brand-primary">Lines Insurance</span>
                                         </div>
 
                                         <div class="flex flex-col gap-2">
@@ -106,27 +82,36 @@
 
 
                                     <div class="flex flex-col gap-1 mx-3">
-                                        <h2 class="text-md font-semibold">{{ currentMenuSubtitle }}</h2>
+                                        <h2 class="text-md font-semibold" v-html="currentMenuSubtitle"></h2>
                                         <p class="text-[13px] leading-normal">
                                             {{ currentMenuDescription }}
                                         </p>
                                     </div>
 
-                                    <div class="flex flex-col gap-1 border-l-4 border-red-600 h-56 pl-5">
+                                    <div class="relative flex flex-col gap-1 border-l-4 border-red-600 h-56 pl-5">
+                                        <h1 class="font-semibold">My Personal <span class="text-brand-primary">Insurance
+                                                Covers</span></h1>
                                         <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                             :key="submenuItem.name"
                                             class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-[13px]">
                                             <i class="group-hover:text-brand-primary mr-2 fas fa-caret-right"></i>
                                             {{ submenuItem.name }}
                                         </NuxtLink>
+
+                                        <div class="absolute bottom-5 mt-2 text-brand-primary col-span-1 text-[15px]">
+                                            <i class="fas fa-award mr-2"></i> <span class="text-black">Get
+                                                discounts</span>
+                                            upto
+                                            3%
+                                        </div>
                                     </div>
 
                                     <div>
                                         <div class="w-auto dark:border-gray-700">
-                                            <div class="w-full rounded h-32">
-                                                <img src="/img/call.jpg" alt="Display picture of Silene Tokyo"
+                                            <div class="w-full rounded h-28">
+                                                <img src="/img/contact1.jpg" alt="Display picture of Silene Tokyo"
                                                     role="img"
-                                                    class="object-cover h-full w-full overflow-hidden rounded shadow">
+                                                    class="object-cover h-full w-full overflow-hidden rounded shadow-xl">
                                             </div>
                                             <div class="flex w-full items-center justify-between pt-6 pb-1">
                                                 <p class="text-xl font-normal text-gray-800 dark:text-white ">
@@ -153,12 +138,7 @@
                                                     now!</span>
                                             </p>
 
-                                            <div class="mt-2 text-brand-primary col-span-1 text-[15px]">
-                                                <i class="fas fa-award mr-2"></i> <span class="text-black">Get
-                                                    discounts</span>
-                                                upto
-                                                3%
-                                            </div>
+
                                         </div>
                                     </div>
 
@@ -166,11 +146,11 @@
 
                                 <div class="h-10 grid grid-cols-3 gap-2 font-bold">
                                     <div v-show="currentMenu">
-                                        <button
+                                        <!-- <button
                                             class="ml-8 button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[14px]">
                                             Download our App on <i class="fab fa-google-play text-brand-primary"></i> &
                                             <i class="fab fa-apple text-brand-primary"></i>
-                                        </button>
+                                        </button> -->
                                     </div>
                                     <div></div>
                                     <div></div>
@@ -291,7 +271,7 @@ const actuarialFooterMenus = ref([
 const AboutMenus = ref([
     {
         name: 'About Us',
-        subMenu: 'About Acentria',
+        subMenu: 'About <span class="text-brand-primary">Acentria Group<span/>',
         description: 'At Acentria Group, we propel prosperity to infinite possibilities.',
         icon: 'fas fa-info-circle',
         items: [
@@ -460,40 +440,40 @@ const AboutMenus = ref([
 ])
 const InsuranceMenus = ref([
     {
-        name: 'Personal Cover',
-        subMenu: 'Personal Insurance',
+        name: 'Insurance Personal Covers',
+        subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
         description: 'Comprehensive personal insurance solutions tailored to your individual needs.',
         icon: 'fas fa-user',
         items: [
             {
-                name: 'My Health',
+                name: 'My Health Insurance',
                 description: 'Comprehensive health coverage tailored to your needs, ensuring peace of mind and access to quality healthcare services.',
                 link: '/insurance/health-insurance',
             },
             {
-                name: 'My Life',
+                name: 'My Life Insurance',
                 description: 'Secure your family\'s future with our flexible life insurance plans, providing financial stability and peace of mind.',
                 link: '/insurance/life-insurance',
             },
             {
-                name: 'My Home',
+                name: 'My Home Insurance',
                 description: 'Protect your home and belongings with our comprehensive home insurance plans, offering peace of mind and financial security.',
                 link: '/insurance/home-insurance',
             },
             {
-                name: 'My Car',
+                name: 'My Car Insurance',
                 description: 'Drive with confidence knowing your vehicle is protected with our comprehensive car insurance plans.',
                 link: '/insurance/motor-insurance',
             },
             {
-                name: 'My Travel',
+                name: 'My Travel Insurance',
                 description: 'Explore the world worry-free with our travel insurance, offering coverage for unexpected events and emergencies.',
                 link: '/insurance/travel-insurance',
             },
         ]
     },
     {
-        name: 'Corporate Cover',
+        name: 'Insurance Corporate Covers',
         subMenu: 'Corporate Insurance',
         description: 'Tailored corporate insurance solutions to protect your business and employees.',
         icon: 'fas fa-building',
@@ -526,7 +506,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Business Cover',
+        name: 'Insurance Business Covers',
         subMenu: 'Business Insurance',
         description: 'Comprehensive business insurance solutions to protect your enterprise from various risks.',
         icon: 'fas fa-money-bill-wave',
@@ -559,7 +539,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Industrial Covers',
+        name: 'Insurance Industrial Covers',
         subMenu: 'Industrial Insurance',
         description: 'Comprehensive industrial insurance solutions to protect your business operations.',
         icon: 'fas fa-industry',
@@ -586,32 +566,9 @@ const InsuranceMenus = ref([
             },
         ]
     },
-    // {
-    //     name: 'Claims & Filing',
-    //     subMenu: 'Claims Process',
-    //     description: 'Information and guidance on the claims process and how to file a claim.',
-    //     icon: 'fas fa-file-invoice-dollar',
-    //     items: [
-    //         {
-    //             name: 'Claims Overview',
-    //             description: 'Get a comprehensive overview of the claims process, including what to expect and how to get started.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //         {
-    //             name: 'Claims Process',
-    //             description: 'Learn about the step-by-step process for filing a claim and what documentation is required.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //         {
-    //             name: 'Claims FAQ',
-    //             description: 'Find answers to frequently asked questions about the claims process and how to resolve common issues.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //     ]
-    // },
     {
-        type:'special',
-        name: 'Aviation Cover',
+        type: 'special',
+        name: 'Insurance Aviation Covers',
         subMenu: 'Aviation Insurance',
         description: 'Comprehensive coverage for aircraft, pilots, and aviation operations, ensuring safety and financial protection in the aviation industry.',
         icon: 'fas fa-plane',
@@ -624,64 +581,11 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        type:'special',
-        name: 'Marine Cover',
+        type: 'special',
+        name: 'Insurance Marine Covers',
         subMenu: 'Professional Insurance',
         description: 'Insurance solutions tailored for various professions to protect against professional risks.',
         icon: 'fas fa-ship',
-        items: [
-            {
-                name: 'Doctors Professional Indemnity',
-                description: 'Protection for medical professionals against claims of malpractice or professional negligence.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Lawyers Professional Indemnity',
-                description: 'Coverage for legal professionals against claims of errors, omissions, or negligence in their practice.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Pilots Professional Indemnity',
-                description: 'Insurance for pilots, covering liabilities arising from professional errors or negligence.',
-                link: '/insurance/biasahara-cover',
-            },
-        ]
-    },
-    {
-        type: 'special',
-        name: 'Contractors & Developers',
-        subMenu: 'Contractor Insurance',
-        description: 'Comprehensive insurance solutions for contractors and developers.',
-        icon: 'fas fa-hard-hat',
-        items: [
-            {
-                name: 'Contractors all Risk',
-                description: 'Comprehensive insurance for contractors, covering a wide range of risks associated with construction projects.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Public Liability',
-                description: 'Protection against legal liabilities arising from third-party injuries or property damage.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Staff Personal accident',
-                description: 'Insurance coverage for personal accidents that may occur to your staff on the job.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Staff Work Benefit Injury Act (WIBA)',
-                description: 'Ensuring compliance with WIBA, providing benefits for work-related injuries to your staff.',
-                link: '/insurance/biasahara-cover',
-            },
-        ]
-    },
-    {
-        type: 'special',
-        name: 'Career & Profession',
-        subMenu: 'Professional Insurance',
-        description: 'Insurance solutions tailored for various professions to protect against professional risks.',
-        icon: 'fas fa-user-tie',
         items: [
             {
                 name: 'Doctors Professional Indemnity',
