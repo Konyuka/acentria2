@@ -10,31 +10,37 @@ const joinAsMembers = ref([
     {
         name: 'Car Insurance Claims',
         icon: 'fas fa-car-crash',
+        link:'/claims/car-claims',
         description: 'File a claim for your car insurance to get assistance with repairs, replacements, and other related expenses.',
     },
     {
         name: 'Property Insurance Claims',
         icon: 'fas fa-home',
+        link: '/claims/car-claims',
         description: 'Submit a claim for property insurance to cover damages or losses to your home or property.',
     },
     {
         name: 'Motorcycle Insurance Claims',
         icon: 'fas fa-motorcycle',
+        link: '/claims/car-claims',
         description: 'Report a motorcycle insurance claim to get help with repairs, replacements, and other related costs.',
     },
     {
         name: 'Boat Insurance Claims',
         icon: 'fas fa-ship',
+        link: '/claims/car-claims',
         description: 'File a boat insurance claim to cover damages or losses to your boat or watercraft.',
     },
     {
         name: 'RV Insurance Claims',
         icon: 'fas fa-rv',
+        link: '/claims/car-claims',
         description: 'Submit an RV insurance claim to get assistance with repairs, replacements, and other related expenses for your recreational vehicle.',
     },
     {
         name: 'Other Products Claims',
         icon: 'fas fa-box-open',
+        link: '/claims/car-claims',
         description: 'File a claim for other insurance products to get assistance with damages, losses, or other related expenses.',
     },
 ])
@@ -92,7 +98,7 @@ const exploreAviation = ref({
                 <div class="py-10 sm:px-2 lg:px-4">
                     <div class="lg:max-w-none">
                         <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
-                            <div v-for="member in joinAsMembers" :key="member.name"
+                            <NuxtLink :href="member.link" v-for="member in joinAsMembers" :key="member.name"
                                 class="relative group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
                                 <div class="sm:flex-shrink-0 flex justify-center">
                                     <i :class="member.icon" class="text-black text-2xl"></i>
@@ -103,7 +109,7 @@ const exploreAviation = ref({
                                     <p class="mt-2 text-[12px] text-gray-500">{{ member.description }}</p>
                                 </div>
                                 <i class="absolute fas fa-angle-right right-5"></i>
-                            </div>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>

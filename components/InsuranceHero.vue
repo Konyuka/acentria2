@@ -3,6 +3,14 @@ const props = defineProps({
     InsuranceBannerContent: Object,
 })
 
+const currentRoute = useRoute().fullPath
+const showButton = computed(() => {
+    if (currentRoute === '/claims/car-claims') {
+        return false
+    } else {
+        return true
+    }
+})
 </script>
 
 <template>
@@ -41,8 +49,7 @@ const props = defineProps({
 
         <div class="container max-w-6xl">
             <div class="mt-5">
-                <h1 class="heading-class">
-                    {{ InsuranceBannerContent.title }}
+                <h1 class="heading-class" v-html="InsuranceBannerContent.title">
                 </h1>
             </div>
             <div class="mt-5 mx-auto text-left">
@@ -64,7 +71,7 @@ const props = defineProps({
                         </g>
                     </svg>
                 </a>
-                <a href="#"
+                <a v-if="showButton" href="#"
                     class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-md">
                     Get a Quote<svg
                         class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
