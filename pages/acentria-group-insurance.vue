@@ -3,7 +3,7 @@
 const content = ref({
     vid: '/img/hd1.mp4',
     pageTitle: 'Acentria Group Insurance',
-    title: 'Get a better  <br/> <span class="text-brand-primary">Insurance for less</span>',
+    title: 'Your Insurance, Your Way.   <br/> <span class="text-brand-primary">Let Acentria Tailor Your Coverage To Your Needs</span>',
     // description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
 })
 
@@ -250,6 +250,36 @@ const exploreClaims = ref({
             <div>
 
                 <ServiceHero2 :content="content" />
+
+                <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat false"
+                    style="background-image: none;">
+
+                    <div class="container">
+                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center ">
+                            <div>
+                                <p class="my-5 heading-class text-black text-left">
+                                    Acentria Group - <span class="text-brand-primary">Insurance & Risk Management</span>
+                                </p>
+                                <p
+                                    class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+
+                                    Acentria Group is your trusted friend in the world of insurance. We’re here to make
+                                    sure you and anything you care for is safe and sound. Insurance can be confusing,
+                                    but we’re experts at making it simple. We’ll take the time to understand exactly
+                                    what you need and find the right insurance plan just for you.
+                                    <br>
+                                    So, why choose us? Because we genuinely care about keeping you and your things
+                                    protected. We’re not just about selling insurance; we’re about making sure you’re
+                                    worry-free and your wallet stays happy. Whether it’s your health, home, car, or
+                                    business, we’ve got the perfect insurance plan that won’t break the bank. Trust us
+                                    to be your friendly insurance guide, making sure you’re covered no matter what life
+                                    throws your way.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <ContentPic :content="exploreProducts" />
 
