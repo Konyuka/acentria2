@@ -42,7 +42,7 @@ const setMobileMenu = (event) => {
 
         <BannerMain :content="bannerContent" />
 
-        <div class="max-w-full mx-auto mt-0">
+        <div class="max-w-4xl mx-auto mt-10">
             <div class="sm:hidden px-4">
                 <label for="tabs" class="sr-only">Select a tab</label>
                 <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
@@ -54,23 +54,24 @@ const setMobileMenu = (event) => {
                 </select>
             </div>
             <div class="hidden sm:block font-sans">
-                <div class="border-2 divide-x divide-gray-200 border-gray-200">
-                    <nav class="-mb-px flex font-sans" aria-label="Tabs">
+                <div class="divide-x divide-gray-200 ">
+                    <nav class="-mb-px flex font-sans gap-20" aria-label="Tabs">
+                        <button @click="setMenu('Governance')"
+                            :class="[currentMenu == 'Governance' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            class="w-1/4  px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
+                            <i class="fas fa-images mr-2"></i> Corporate Governance
+                        </button>
                         <button @click="setMenu('Board')"
-                            :class="[currentMenu == 'Board' ? 'bg-gray-500 text-white' : 'border-transparent text-black']"
-                            class="w-1/3 border-2 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
+                            :class="[currentMenu == 'Board' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            class="w-1/4 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
                             <i class="fas fa-blog mr-2"></i> Board of Directors
                         </button>
                         <button @click="setMenu('Executive')"
-                            :class="[currentMenu == 'Executive' ? 'bg-gray-500 text-white' : 'border-transparent text-black']"
-                            class="w-1/3 border-2 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
-                            <i class="fas fa-calendar-alt mr-2"></i> Executive Team
+                            :class="[currentMenu == 'Executive' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            class="w-1/4 px-1 py- text-center text-md subheading-class   hover:text-brand-primary">
+                            <i class="fas fa-calendar-alt mr-2"></i> Management Team
                         </button>
-                        <button @click="setMenu('Governance')"
-                            :class="[currentMenu == 'Governance' ? 'bg-gray-500 text-white' : 'border-transparent text-black']"
-                            class="w-1/3 border-2 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
-                            <i class="fas fa-images mr-2"></i> Corporate Governance
-                        </button>
+
                     </nav>
                 </div>
             </div>
@@ -84,9 +85,13 @@ const setMobileMenu = (event) => {
             <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
                 <div class="container">
                     <div
-                        class="flex items-center bg-cover px-4 pt-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center max-w-5xl">
+                        class="flex items-center bg-cover pt-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
                             <div>
+                                <h2 id="" class="heading-class text-brand-primary mb-2">
+                                    <span class="text-black">Corporate</span>
+                                    Governance
+                                </h2>
                                 <p class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
 
                                     At Acentria Group, corporate governance is more than a policy—it’s a way of life. It
@@ -107,7 +112,7 @@ const setMobileMenu = (event) => {
                         style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 id="" class="text-xl pb-4 md:pb-5 font-semibold leading-tight text-black ">
-                        The Acentria Way <span class="text-brand-primary">in Governance</span>
+                        <span class="text-brand-primary">Governance</span>
                     </h2>
                     <div class="text-light-content pb-5 ">
                         <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">

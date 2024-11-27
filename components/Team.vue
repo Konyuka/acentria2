@@ -114,11 +114,9 @@ const openPofile = (member) => {
 <template>
     <div class="container px-4 py-10">
         <div class="text-center">
-            <h2 id=""
-                class="font-sans text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-brand-primary pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 xl:!text-4xl 2xl:!text-4xl">
-                <span class="text-light-title pb-4 sm:pb-4 md:!pb-4 lg:!pb-6 text-3xl">Acentria's
-                    Management</span>
-                Leadership
+            <h2 id="" class="heading-class text-brand-primary mb-2">
+                <span class="text-black">Management</span>
+                Team
             </h2>
             <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
                 data-v-inspector="components/Why.vue:47:21">
