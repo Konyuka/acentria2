@@ -42,19 +42,19 @@ const props = defineProps({
 
                                 <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                                     style="color: transparent; object-fit: contain"
-                                    class="w-full h-[370px] shadow-2xl rounded-lg !object-cover"
+                                    class="w-full h-[300px] shadow-2xl rounded-lg !object-cover"
                                     src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
                                     data-v-inspector="components/Why.vue:34:17" />
                             </div>
 
                             <div
-                                class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-5 text-base leading-7 text-gray-600 sm:grid-cols-2">
+                                class="col-span-2 grid grid-cols-1 gap-x-8 text-base leading-7 text-gray-600 sm:grid-cols-2">
 
-                                <div v-for="why in whys" class="flex flex-row gap-2">
+                                <div v-for="why in whys" class="flex flex-row">
                                     <i class="material-symbols-outlined text-brand-primary text-4xl undefined"
                                         translate="no">{{ why.icon }}</i>
-                                    <div>
-                                        <h5 id="" class="subheading-class pb-3 md:!pb-3">
+                                    <div class="ml-3">
+                                        <h5 id="" class="text-[16px] font-semibold pb-1">
                                             {{ why.title }}
                                         </h5>
                                         <p class="text-xs leading-normal">

@@ -41,11 +41,11 @@ const joinAsMembers = ref([
 
 const exploreAviation = ref({
     orientation: 'lg:flex-row-reverse flex-col',
-    heading: 'Our Footprints <span class="text-brand-primary">in Aviation</span>',
+    heading: 'We offer multiple auto <span class="text-brand-primary">inspection and repair options</span>',
     subheading: '',
-    image: 'https://images.pexels.com/photos/45230/aircraft-double-decker-airport-army-aviation-space-45230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image:'https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg?auto=compress&cs=tinysrgb&w=600',
     link: '/',
-    content: 'At Acentria, we leverage our deep understanding of the industry to bridge these gaps. We take a proactive approach to risk management and provide you with insights and expert advice you need to remain compliant and safe. We cover all potential risks and advise strategies to mitigate them, ensuring you’re always prepared and protected. Our commitment to fostering a long-lasting relationship means we’re here for you, from policy inception to claim resolution, offering ongoing support to keep your operations soaring smoothly.'
+    content:'Keep in mind, you don’t have to actually get repairs. Instead, you can simply get an inspection to see what your damages are, and we’ll send you payment for that amount (minus your applicable deductible). However, if you have a loan or lease, you should check with your lender to see if they require repairs.'
 })
 
 </script>
@@ -102,7 +102,7 @@ const exploreAviation = ref({
                                         }}</h3>
                                     <p class="mt-2 text-[12px] text-gray-500">{{ member.description }}</p>
                                 </div>
-                                <i class="fas fa-angle-right"></i>
+                                <i class="absolute fas fa-angle-right right-5"></i>
                             </div>
                         </div>
                     </div>
