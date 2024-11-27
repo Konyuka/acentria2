@@ -153,9 +153,9 @@ const windscreenClaims = ref([
         </div>
 
 
-        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+        <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
         
-        <Accordion :faqs="faqs" />
+        <!-- <Accordion :faqs="faqs" /> -->
 
         <ContactForm />
     </div>
