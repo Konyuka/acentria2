@@ -257,8 +257,8 @@ const exploreClaims = ref({
                     <div class="container">
                         <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center ">
                             <div>
-                                <p class="my-5 heading-class text-black text-left">
-                                    Acentria Group - <span class="text-brand-primary">Insurance & Risk Management</span>
+                                <p class="my-5 heading-class text-black text-left font-normal">
+                                    Insurance &<span class="text-brand-primary"> <br> Risk Management</span>
                                 </p>
                                 <p
                                     class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
@@ -281,15 +281,13 @@ const exploreClaims = ref({
                     </div>
                 </div>
 
-                <ContentPic :content="exploreProducts" />
-
-
-
-
-                <div class="pb-5 text-left bg-white">
-                    <h2 class="heading-class text-black container">
-                        Pick a cover and, <span class="text-brand-primary"> <br /> we'll take care of the rest</span>
-                    </h2>
+                <div class="bg-white">
+                    <div class="py-5 text-left  container">
+                        <h2 class="heading-class text-black ">
+                            Pick a cover and, <span class="text-brand-primary"> <br /> we'll take care of the
+                                rest</span>
+                        </h2>
+                    </div>
                 </div>
 
                 <div class="py-2 text-white">
@@ -350,6 +348,9 @@ const exploreClaims = ref({
                         </div>
                     </div>
                 </section>
+
+
+                <ContentPic :content="exploreProducts" />
 
                 <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 
