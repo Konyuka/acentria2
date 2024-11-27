@@ -251,14 +251,14 @@ const content = ref({
                                 Our Aviation <span class="text-brand-primary">Insurance & Solutions</span>
                             </h2>
                         </div>
-                        <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
+                        <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-4">
                             <div v-for="member in joinAsMembers" :key="member.name"
-                                class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8  border-brand-primary">
-                                <div class="sm:flex-shrink-0 flex justify-center">
+                                class="group button-animation sm:flex lg:block bg-gray-50 py-2 rounded-xs border-t-8  border-brand-primary">
+                                <!-- <div class="sm:flex-shrink-0 flex justify-center">
                                     <i :class="member.icon" class="text-black text-2xl"></i>
-                                </div>
-                                <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                    <h3 class="text-[16px] font-semibold text-brand-primary flex justify-center">{{
+                                </div> -->
+                                <div class="mt-1 sm:ml-6 sm:mt-0 lg:ml-0">
+                                    <h3 class="text-left text-[14px] font-semibold text-brand-primary flex ">{{
                                         member.name
                                         }}</h3>
                                     <p class="mt-2 text-[14px] text-black" v-html="member.description"></p>
