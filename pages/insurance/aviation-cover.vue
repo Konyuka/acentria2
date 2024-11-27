@@ -119,7 +119,7 @@ const exploreAviation = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Our Footprints <span class="text-brand-primary">in Aviation</span>',
     subheading: '',
-    image: 'https://images.pexels.com/photos/45230/aircraft-double-decker-airport-army-aviation-space-45230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/63.jpg',
     link: '/',
     content:'At Acentria, we provide aviation professionals with insurance policies tailored to their unique needs. Our dedicated team of aviation insurance brokers combines in-depth industry knowledge and exceptional service to offer you strategic advice, comprehensive coverage, and competitive pricing. Regardless of your flying experience or the type of aircraft you operate, we’re here to ensure your peace of mind with coverage that lets you fly confidently.'
 })
@@ -127,7 +127,7 @@ const whatWeDo = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'What <span class="text-brand-primary">We Do</span>',
     subheading: '',
-    image: 'https://images.pexels.com/photos/45230/aircraft-double-decker-airport-army-aviation-space-45230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/59.jpg',
     link: '/',
     content:'Our mission extends beyond offering general insurance coverage; we aim to build long-term relationships with our clients to ensure their aviation ventures remain safe with tailored insurance solutions and comprehensive risk management. We specialise in creating custom policies for small aircraft, UAVs (unmanned aerial vehicles), and helicopters, as well as hangarkeepers’ liability and additional insurance catered to the needs of the aviation industry, its assets, and associated businesses. At Acentria, we leverage our deep understanding of the industry to bridge these gaps. We take a proactive approach to risk management and provide you with insights and expert advice you need to remain compliant and safe. We cover all potential risks and advise strategies to mitigate them, ensuring you’re always prepared and protected. Our commitment to fostering a long-lasting relationship means we’re here for you, from policy inception to claim resolution, offering ongoing support to keep your operations soaring smoothly.'
 })
@@ -135,7 +135,7 @@ const whyAviation = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Why might you need an <span class="text-brand-primary">aviation insurance broker?</span>',
     subheading: '',
-    image: 'https://images.pexels.com/photos/45230/aircraft-double-decker-airport-army-aviation-space-45230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/53.jpg',
     link: '/',
     content:'Navigating the complexities of aviation insurance requires specialized expertise and a deep understanding of industry-specific risks. We serve as your trusted advisor, providing tailored solutions and expert guidance to safeguard your operations. We specialize in addressing unique aviation risks, including aircraft hull damage, third-party liabilities, pilot loss of license (PLOL), and war-related exposures, while offering access to A-rated insurance markets for competitive pricing and extensive coverage.'
 })
@@ -227,7 +227,7 @@ const content = ref({
         <ContentPic :content="whyAviation" />
 
 
-        <div class="!bg-white/5">
+        <div class="bg-white">
             <div class="container py-5">
                 <h4 class="heading-class">Why might you need an <span class="text-brand-primary">aviation insurance
                         broker?</span></h4>
@@ -271,13 +271,14 @@ const content = ref({
         </div>
 
 
-
-        <div class="container mt-10">
-            <h1 class="heading-class">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
-            <p class="text-[25px] text-light-content">We have all the answers to your questions.</p>
+        <div class="bg-white py-5">
+            <div class="container mt-10 ">
+                <h1 class="heading-class">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
+                <p class="text-[25px] text-light-content">We have all the answers to your questions.</p>
+            </div>
+            <Accordion :faqs="faqs" />
         </div>
 
-        <Accordion :faqs="faqs" />
 
         <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 
@@ -288,7 +289,7 @@ const content = ref({
                 our expert
                 brokers today.
             </p>
-            <p class="text-[15px] italic mt-5">
+            <p class="text-[15px] italic mt-5 text-white">
                 At Acentria Group, we’re committed to protecting your aviation operations, ensuring peace of mind for
                 you and your stakeholders. Contact us today to discuss the right coverage for your needs.
             </p>
