@@ -17,7 +17,7 @@ const showButton = computed(() => {
 
 <template>
     <div class="bg-white">
-        <div class="container mx-auto flex px-4  py-10 lg:gap-16" :class="orientation">
+        <div class="container mx-auto flex px-4  py-2" :class="orientation">
             <div class="flex flex-col justify-center lg:basis-1/2">
                 <div class="pb-4">
                     <h2 v-html="content.heading" class="heading-class text-black"></h2>

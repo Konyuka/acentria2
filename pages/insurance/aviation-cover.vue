@@ -117,7 +117,7 @@ const whys = ref([
 
 const exploreAviation = ref({
     orientation: 'lg:flex-row-reverse flex-col',
-    heading: '<span class="text-brand-primary"> Aviation</span>',
+    heading: 'Aviation<span class="text-brand-primary"> Insurance</span>',
     subheading: '',
     image: '/img/63.jpg',
     link: '/',
@@ -226,22 +226,6 @@ const content = ref({
         <ContentPic :content="whatWeDo" />
         <ContentPic :content="whyAviation" />
 
-
-        <div class="bg-white">
-            <div class="container py-5">
-                <h4 class="heading-class">Why might you need an <span class="text-brand-primary">aviation insurance
-                        broker?</span></h4>
-                <p class="text-xs leading-normal text-content-light py-3">
-                    As brokers, we advocate for you from the initial policy setup, through renewals, to handling claims.
-                    We eliminate the time-consuming hassle of comparing policies as we tailor coverage to suit your
-                    aircraft’s operational requirements and identify essential policy extensions.
-                    <br /><br />
-                    In the event of a claim, we oversee the process, addressing all relevant details and liaising with
-                    the insurer on your behalf, ensuring a stress-free and seamless resolution process.
-                </p>
-            </div>
-        </div>
-
         <div class=" w-full h-full container mx-auto max-w-6xl">
             <div class=" !font-sans  my-0">
                 <div class="py-10 sm:px-2 lg:px-4">
@@ -270,6 +254,21 @@ const content = ref({
             </div>
         </div>
 
+        <div class="bg-white">
+            <div class="container py-5">
+                <h4 class="heading-class">Why might you need an <span class="text-brand-primary">aviation insurance
+                        broker?</span></h4>
+                <p class="text-xs leading-normal text-content-light py-3">
+                    As brokers, we advocate for you from the initial policy setup, through renewals, to handling claims.
+                    We eliminate the time-consuming hassle of comparing policies as we tailor coverage to suit your
+                    aircraft’s operational requirements and identify essential policy extensions.
+                    <br /><br />
+                    In the event of a claim, we oversee the process, addressing all relevant details and liaising with
+                    the insurer on your behalf, ensuring a stress-free and seamless resolution process.
+                </p>
+            </div>
+        </div>
+
 
         <div class="bg-white py-5">
             <div class="container mt-10 ">
@@ -289,7 +288,7 @@ const content = ref({
                 our expert
                 brokers today.
             </p>
-            <p class="text-[15px] italic mt-5 text-white">
+            <p class="text-[17px] italic mt-5 text-white">
                 At Acentria Group, we’re committed to protecting your aviation operations, ensuring peace of mind for
                 you and your stakeholders. Contact us today to discuss the right coverage for your needs.
             </p>
