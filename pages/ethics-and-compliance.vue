@@ -1,6 +1,7 @@
 <script setup>
 const ReinsuranceBannerContent = ref({
     title: ' Ethics and Compliance',
+    subTitle: 'High Standards of Integrity',
     image: 'https://images.pexels.com/photos/39584/censorship-limitations-freedom-of-expression-restricted-39584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 

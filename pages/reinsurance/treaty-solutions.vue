@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
     title: 'Treaty Reinsurance',
+    subTitle: 'Comprehensive Treaty Solutions',
     image: 'https://images.pexels.com/photos/1264438/pexels-photo-1264438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref({

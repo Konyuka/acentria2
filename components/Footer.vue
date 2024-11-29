@@ -253,21 +253,7 @@ const showDropdown = (menu) => {
                     <!-- socials -->
                     <div class="flex items-center justify-end md:justify-end md:col-span-1">
                         <div class="flex gap-6">
-                            <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
-                                <div
-                                    class="bg-white w-6 h-6 rounded-xs flex justify-center items-center button-animation">
-                                    <i
-                                        class="!text-md fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
-                                </div>
-                            </a>
-                            <a href="https://x.com/acentriagroup?lang=en" target="_blank">
-                                <div
-                                    class="bg-white w-6 h-6 rounded-xs flex justify-center items-center button-animation">
-                                    <i
-                                        class="!text-md fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
-                                </div>
-                            </a>
-                            <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                            <a href="https://www.facebook.com/Acentriagroup" target="_blank">
                                 <div
                                     class="bg-white w-6 h-6 rounded-xs flex justify-center items-center button-animation">
                                     <i
@@ -279,6 +265,20 @@ const showDropdown = (menu) => {
                                     class="bg-white w-6 h-6 rounded-xs flex justify-center items-center button-animation">
                                     <i
                                         class="!text-md fab fa-instagram icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://x.com/acentriagroup?lang=en" target="_blank">
+                                <div
+                                    class="bg-white w-6 h-6 rounded-xs flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-md fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
+                                <div
+                                    class="bg-white w-6 h-6 rounded-xs flex justify-center items-center button-animation">
+                                    <i
+                                        class="!text-md fab fa-linkedin icon-style text-black hover:text-brand-primary"></i>
                                 </div>
                             </a>
                             <a href="https://www.tiktok.com/@acentria.group" target="_blank">

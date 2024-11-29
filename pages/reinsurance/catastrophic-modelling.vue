@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
     title: 'Catastrophic Modeling For Risk Mitigation',
+    subTitle: 'Advanced Data Analytics',
     image: 'https://images.pexels.com/photos/3122812/pexels-photo-3122812.jpeg?auto=compress&cs=tinysrgb&w=600',
 })
 const ReinsuranceFeatureContent = ref(

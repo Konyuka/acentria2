@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
     title: 'Reinsurance Consulting',
+    subTitle: 'Optimizing risk management',
     image: 'https://images.pexels.com/photos/3122812/pexels-photo-3122812.jpeg?auto=compress&cs=tinysrgb&w=600',
 })
 const ReinsuranceFeatureContent2 = ref({

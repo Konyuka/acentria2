@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
     title: 'Acent-Re Reinsurance System',
+    subTitle: 'Transforming the Industry',
     image: 'https://images.pexels.com/photos/3803517/pexels-photo-3803517.jpeg?auto=compress&cs=tinysrgb&w=600',
 })
 const ReinsuranceFeatureContent = ref(
@@ -87,9 +88,8 @@ const usage = ref([
         <div class="bg-white">
             <div class="font-sans mx-auto max-w-7xl px-6 py-5 lg:flex lg:items-center lg:justify-between lg:px-8">
                 <h2 class="font-sans text-3xl font-semibold tracking-tight text-black">
-                    Adopt a deliberate data strategy with <br> <span class="text-brand-primary">Acentria's Data
-                        Analytics
-                        tool</span>
+                    Adopt a deliberate data strategy with <br> <span class="text-brand-primary">Acentria's
+                        Reinsurance System</span>
                 </h2>
                 <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
                     <a href="#"

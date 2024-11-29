@@ -346,21 +346,22 @@ onMounted(() => {
                   <img src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
                     class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
                   <div
-                    class="text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
+                    class=" text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
                     <div>
 
-                      <p class="ml-20 text-xs leading-normal text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
+                      <p
+                        class="container ml-20 text-xs leading-normal text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
                         Our initiatives focus on reducing our environmental impact, promoting ethical business
                         practices, and contributing positively to the communities we serve. We believe in creating
                         long-term value for our stakeholders by integrating sustainable practices into our core
                         operations and fostering a culture of responsibility and transparency.
                       </p>
-                    </div>
-                    <div class="ml-20 mt-10 max-w-md">
-                      <NuxtLink to="/csr"
-                        class="subheading-class text-white underline underline-offset-8 hover:button-animation">
-                        Learn More <i class="fas fa-caret-right mt-1"></i>
-                      </NuxtLink>
+                      <div class="ml-20 mt-10 max-w-md">
+                        <NuxtLink to="/csr"
+                          class="subheading-class text-white underline underline-offset-8 hover:button-animation">
+                          Learn More <i class="fas fa-caret-right mt-1"></i>
+                        </NuxtLink>
+                      </div>
                     </div>
                   </div>
                 </div>

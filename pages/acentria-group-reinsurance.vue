@@ -195,16 +195,16 @@ const bannerTitle = ref('Acentria Reinsurance Brokers')
 
                 <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
 
-                <Hero2 :data="heroContent" />
+                <!-- <Hero2 :data="heroContent" /> -->
 
-                <div class="pb-5 text-center bg-white">
+                <div class="py-5 text-center  ">
                     <h2
                         class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
                         Delivering Reinsurance <span class="text-brand-primary">Solutions & Services</span>
                     </h2>
                 </div>
 
-                <div class="py-5 text-white bg-white">
+                <div class="py-5 text-white ">
                     <section class="relative py-2">
                         <div class="container px-4">
                             <ServiceTabs :menus="menus" :data="data" />

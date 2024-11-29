@@ -126,10 +126,9 @@ const heroContent = ref({
 
                 <ServiceHero2 :content="content" />
 
-                <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
+                <BannerVid :bannerTitle="bannerTitle" />
 
-
-                <Hero2 :data="heroContent" />
+                <!-- <Hero2 :data="heroContent" /> -->
 
                 <div class="pb-5 text-center bg-white">
                     <h2

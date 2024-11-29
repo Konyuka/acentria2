@@ -33,7 +33,7 @@ const company = computed(() => {
                         <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
                             style="color: transparent; object-fit: cover"
                             src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
-                            class="rounded-xl w-full h-[50vh]" />
+                            class="rounded-xl w-full h-[30vh]" />
                     </div>
                     <h5 class="mt-2 text-[13px] text-white leading-normal pb-2">
                         Interested in learning more about how {{ company }} can support your business? Fill in your
@@ -49,16 +49,16 @@ const company = computed(() => {
                             <label for="FirstName" class="subheading-class pl-2">First
                                 name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
-                                <input name="FirstName" id="FirstName" placeholder="First Name"
-                                    class="block w-full rounded-md border-0 py-1 pl-4 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
+                                <input name="FirstName" id="FirstName" names="First Name"
+                                    class="block w-full rounded-md border-0 py-1 pl-4 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 names:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
                             </div>
                         </div>
                         <div class="relative pb-2">
                             <label for="LastName" class="subheading-class pl-2">Last
                                 name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
-                                <input name="LastName" id="LastName" placeholder="Last Name"
-                                    class="block w-full rounded-md border-0 py-1 pl-4 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
+                                <input name="LastName" id="LastName" names="Last Name"
+                                    class="block w-full rounded-md border-0 py-1 pl-4 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 names:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
                             </div>
                         </div>
                     </div>
@@ -69,11 +69,11 @@ const company = computed(() => {
                             </label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                    <i class="material-symbols-outlined text-2xl text-light-icon"
+                                    <i class="material-symbols-outlined text-2xl text-brand-primary"
                                         translate="no">mail</i>
                                 </div>
-                                <input name="WorkEmail" id="WorkEmail" placeholder="Email Address"
-                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
+                                <input name="WorkEmail" id="WorkEmail" names="Email Address"
+                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 names:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
                             </div>
                         </div>
                         <div class="relative pb-2">
@@ -81,11 +81,11 @@ const company = computed(() => {
                                 number</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                    <i class="material-symbols-outlined text-2xl text-light-icon"
+                                    <i class="material-symbols-outlined text-2xl text-brand-primary"
                                         translate="no">phone</i>
                                 </div>
-                                <input name="PhoneNumber" id="PhoneNumber" placeholder="+254 712 123 123"
-                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
+                                <input name="PhoneNumber" id="PhoneNumber" names="+254 712 123 123"
+                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 names:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
                             </div>
                         </div>
                     </div>
@@ -95,11 +95,11 @@ const company = computed(() => {
                                 Company name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                    <i class="material-symbols-outlined text-2xl text-light-icon"
+                                    <i class="material-symbols-outlined text-2xl text-brand-primary"
                                         translate="no">business</i>
                                 </div>
-                                <input name="CompanyName" id="CompanyName" placeholder="Your company"
-                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
+                                <input name="CompanyName" id="CompanyName" names="Your company"
+                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 names:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 undefined" />
                             </div>
                         </div>
                     </div>

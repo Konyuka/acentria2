@@ -51,11 +51,11 @@ const awards = ref([
                         class=" button-animation cursor-pointer relative flex h-auto  flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                         href="resources/blog/preparing-for-ai-regulations.html">
 
-                        <div class=" relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
+                        <div class=" relative mx-1 mt-1 aspect-[1] origin-top overflow-hidden rounded">
                             <div
-                                class="bg-white ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
+                                class="bg-white ease relative z-[3] aspect-[1] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
                                 <div
-                                    class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
+                                    class="ease absolute left-0 top-0 aspect-[1] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
                                     <figure
                                         class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
                                         <div class=" w-full max-w-full pb-[25%]">

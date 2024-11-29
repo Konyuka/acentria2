@@ -1,6 +1,7 @@
 <script setup>
 const ReinsuranceBannerContent = ref({
     title: 'Join Our Team',
+    subTitle:"Be part of us",
     image: 'https://images.pexels.com/photos/955388/pexels-photo-955388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 

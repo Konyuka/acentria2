@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
     title: 'Insurance Consulting',
+    subTitle: 'Tailored consulting',
     image: 'https://images.pexels.com/photos/5699447/pexels-photo-5699447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref({
@@ -45,7 +46,17 @@ const faqs = ref([
     <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-        <ActuarialFeature :content="ReinsuranceFeatureContent" />
+        <!-- <ActuarialFeature :content="ReinsuranceFeatureContent" /> -->
+
+        <div class="container">
+            <div>
+                We provide tailored consulting services for insurance companies
+                specializing
+                in risk management, compliance, and strategic planning. Our customized strategies enhance
+                efficiency, ensure compliance, and empower clients to achieve growth and sustainable success.
+            </div>
+        </div>
+        
         <div class="text-center">
             <h2
                 class="font-sans tracking-normal text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">

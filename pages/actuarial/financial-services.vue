@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
     title: 'Financial Services',
+    subTitle: 'Expert Guidance',
     image: 'https://images.pexels.com/photos/210679/pexels-photo-210679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref(
@@ -63,31 +64,30 @@ const faqs = ref([
 
 const offers = ref([
     {
-        name: 'Asset liability matching (ALM)',
-        content:'We perform detailed analysis of the maturity profile, cash flows, and interest rate sensitivity of both assets and liabilities, enabling you to make informed decisions to achieve financial stability and maximize returns while considering the organization’s risk appetite.'
+        name: 'Asset Liability Matching (ALM)',
+        content: 'We analyze cash flows, interest rate sensitivity, and maturity profiles of assets and liabilities to support informed decisions, achieving financial stability, maximizing returns, and aligning with your organization\'s risk appetite.'
     },
     {
         name: 'Financial Modelling and Business Planning',
-        content:'Our financial modeling services assist in strategic business planning, including growth projections, mergers, acquisitions, and capital raising initiatives. These models provide a basis for informed decision-making and optimizing financial performance.'
+        content: 'We create financial models for strategic planning, including growth, mergers, and capital raising, enabling data-driven decisions to optimize performance and achieve business goals efficiently.'
     },
     {
         name: 'Enterprise Risk Management (ERM)',
-        content:'We conduct in-depth risk assessments, utilizing sophisticated modeling techniques to quantify and manage various financial risks, including credit risk, market risk, and operational risk. Our expertise helps optimize capital allocation, ensuring compliance with regulatory requirements.'
+        content: 'We assess and model credit, market, and operational risks, optimizing capital allocation and ensuring regulatory compliance through advanced risk management techniques.'
     },
     {
         name: 'Valuation and Fair Value Assessment',
-        content:'Our actuarial experts assist in the valuation of financial instruments, including complex derivatives and structured products, ensuring accurate and compliant financial reporting under accounting standards like IFRS and GAAP.'
+        content: 'We value financial instruments, including derivatives and structured products, ensuring compliance with IFRS and GAAP standards for accurate financial reporting.'
     },
     {
-        name: 'IFRS9 Implementation',
-        content:'With a team of experienced accountants, risk analysts, and compliance experts, we assist in designing and implementing robust IFRS 9-compliant financial instruments accounting frameworks. Our services encompass classification and measurement of financial assets and liabilities, impairment modeling, and hedge accounting strategies.'
+        name: 'IFRS 9 Implementation',
+        content: 'Our team designs IFRS 9-compliant frameworks, covering asset and liability classification, impairment modeling, and hedge accounting, ensuring accurate and effective financial reporting.'
     },
     {
-        name: 'Investment portfolio optimization',
-        content: 'Our services cater to institutions seeking to achieve optimal risk-adjusted returns while aligning their investment strategies with clients\' risk tolerance.Through sophisticated modeling techniques and a deep understanding of financial markets, we assist in designing well- diversified and efficient investment portfolios.Our approach combines quantitative analysis with qualitative insights to identify suitable investment opportunities, manage portfolio risk, and enhance long - term performance.we empower you to deliver value and meet your clients\' financial objectives.'
+        name: 'Investment Portfolio Optimization',
+        content: 'We design diversified investment portfolios, combining advanced modeling with market insights to enhance performance, manage risk, and achieve optimal risk-adjusted returns aligned with your financial objectives.'
     },
 ])
-
 
 </script>
 
@@ -96,33 +96,43 @@ const offers = ref([
     <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-        <ActuarialFeature :content="ReinsuranceFeatureContent2" />
+
+        <!-- <ActuarialFeature :content="ReinsuranceFeatureContent2" /> -->
+
+        <div class="container pt-5">
+            <p class="text-xs">
+                Acentria offers actuarial expertise to assess risks, guide financial decisions, and provide solutions in
+                insurance, pensions, and finance, helping businesses manage uncertainty and make informed choices
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="font-sans mx-auto sm:mt-10 my-10">
+                <div class="!mb-10 isolate mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <div v-for="special in offers" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
+
+                        <h2 id="tier-hobby"
+                            class=" text-center text-md font-semibold leading-8 text-white bg-brand-primary flex justify-center content-center p-1 rounded-md">
+                            {{ special.name }}
+                        </h2>
+                        <ul role="list" class="divide-y divide-gray-100 my-5">
+
+                            <li class="flex gap-x-4 py-1">
+                                <div class="min-w-0">
+                                    <p class="text-xs leading-normal text-gray-900"><i
+                                            class="fas fa-caret-right mr-2"></i> {{
+                                        special.content }}</p>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
 
 
-        <div class="font-sans mx-auto max-w-7xl px-6 sm:mt-10 lg:px-8 my-10">
-            <div class="!mb-10 isolate mx-auto mt-10 grid max-w-7xl grid-cols-1 md:grid-cols-3 gap-8">
-
-                <div v-for="special in offers" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
-
-                    <h2 id="tier-hobby"
-                        class=" text-center text-md font-semibold leading-8 text-white bg-brand-primary flex justify-center content-center p-1 rounded-md">
-                        {{ special.name }}
-                    </h2>
-                    <ul role="list" class="divide-y divide-gray-100 my-5">
-
-                        <li class="flex gap-x-4 py-1">
-                            <div class="min-w-0">
-                                <p class="text-xs leading-normal text-gray-900"><i class="fas fa-caret-right mr-2"></i> {{
-                                    special.content }}</p>
-                            </div>
-                        </li>
-
-                    </ul>
 
                 </div>
-
-
-
             </div>
         </div>
 

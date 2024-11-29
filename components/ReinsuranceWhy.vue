@@ -4,83 +4,73 @@ const props = defineProps({
     content: Object
 })
 
+const reinsuranceFeatures = [
+    {
+        icon: 'fas fa-lightbulb',
+        title: 'Innovation',
+        description: 'We are passionate about innovation because we believe it is a driving force that fuels creativity, curiosity, and the pursuit of novel ideas and solutions.'
+    },
+    {
+        icon: 'fas fa-calculator',
+        title: 'Data Analytics',
+        description: 'Our ability to use data, advanced analytics, and technology to extract valuable insights helps us guide businesses to make informed decisions.'
+    },
+    {
+        icon: 'fas fa-eye',
+        title: 'Distinctive Insight',
+        description: 'We offer distinctive consumer insight capabilities to help our clients understand the needs and preferences of their clients.'
+    },
+    {
+        icon: 'fas fa-chart-line',
+        title: 'Better Results',
+        description: 'Achieving better results and long-term prosperity is a shared goal for Acentria Group, individuals, organizations, and societies alike.'
+    }
+];
+
 </script>
 
 <template>
 
     <div>
         <div class="bg-white">
-            <main>
-                <!-- Pricing section -->
-                <div class="font-sans mx-5 md:mx-auto max-w-6xl">
-                    <div class="mx-auto max-w-4xl text-center">
+            <div class="container">
+                <div class="font-sans mx-5 md:mx-auto">
+                    <div class="mx-auto text-left">
                         <p class="mt-2 heading-class text-gray-900">
-                            Why work with <span class="text-brand-primary">Acentria</span>
+                            Why Partner <span class="text-brand-primary">With Acentria</span>
                         </p>
                     </div>
-                    <p class="font-sans mx-auto mt-6 max-w-7xl text-center text-xs leading-normal text-secondary">
+                    <p class="font-sans mx-auto mt-6 text-left text-xs leading-normal text-secondary">
                         At Acentria, we’re not just offering reinsurance; we’re delivering peace of mind wrapped in a
                         tailored experience. Our streamlined process isn’t just easy – it’s your shortcut to worry-free
                         coverage. We’re not just about coverage; we’re about your confidence, your security, and a
                         reinsurance experience that goes beyond expectations.
                     </p>
 
-                    <div class="isolate mx-5 md:mx-auto mt-10 grid gap-8 max-w-7xl md:grid-cols-4 mb-10">
+                    <div class="isolate mx-5 md:mx-auto mt-10 grid gap-8 md:grid-cols-4 mb-10">
 
-                        <div class="rounded-xl p-4 ring-1 ring-brand-primary shadow-xl">
-                            <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
-                                <i class="fas fa-lightbulb text-4xl text-brand-primary"></i>
-                            </h2>
-                            <h2 id="tier-hobby" class="mt-3 text-center subheading-class leading-normal text-gray-900">
-                                Innovation
-                            </h2>
-                            <p class="text-center mt-2 text-xs leading-normal">
-                                We are Passionate about innovation because we believe its a driving force that fuels
-                                creativity, curiosity, and the pursuit of novel ideas and solutions
+                        <div v-for="feature in reinsuranceFeatures"
+                            class="rounded-md p-4 ring-1 ring-brand-primary shadow-xl">
+                            <div class="flex justify-between">
+                                <h2 id="tier-hobby"
+                                    class="mt-3 text-center subheading-class leading-normal text-gray-900">
+                                    {{ feature.title }}
+                                </h2>
+                                <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
+                                    <i :class="feature.icon" class="text-xl text-brand-primary"></i>
+                                </h2>
+                            </div>
+                            <p class="text-left mt-2 text-xs leading-normal">
+                                {{ feature.description }}
                             </p>
                         </div>
-                        <div class="rounded-xl p-4 ring-1 ring-brand-primary shadow-xl">
-                            <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
-                                <i class="fas fa-calculator text-4xl text-brand-primary"></i>
-                            </h2>
-                            <h2 id="tier-hobby" class="mt-3 text-center subheading-class leading-normal text-gray-900">
-                                Data Analytics
-                            </h2>
-                            <p class="text-center mt-2 text-xs leading-normal">
-                                Our ability to use data, advanced analytics, and technology to extract valuable
-                                insights, help us to guide business to make informed decisions
-                            </p>
-                        </div>
-                        <div class="rounded-xl p-4 ring-1 ring-brand-primary shadow-xl">
-                            <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
-                                <i class="fas fa-eye text-4xl text-brand-primary"></i>
-                            </h2>
-                            <h2 id="tier-hobby" class="mt-3 text-center subheading-class leading-normal text-gray-900">
-                                Distinctive Insight
 
-                            </h2>
-                            <p class="text-center mt-2 text-xs leading-normal">
-                                We offer distinctive consumer insight capabilities to help our clients understand the
-                                needs, and preferences of their clients.
-                            </p>
-                        </div>
-                        <div class="rounded-xl p-4 ring-1 ring-brand-primary shadow-xl">
-                            <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
-                                <i class="fas fa-chart-line text-4xl text-brand-primary"></i>
-                            </h2>
-                            <h2 id="tier-hobby" class="mt-3 text-center subheading-class leading-normal text-gray-900">
-                                Better results
-                            </h2>
-                            <p class="text-center mt-2 text-xs leading-normal">
-                                Achieving better results and long term prosperity is a shared long term goal for
-                                Acentria group, individuals, organizations, and societies alike.
-                            </p>
-                        </div>
+
 
                     </div>
 
                 </div>
-            </main>
+            </div>
         </div>
 
     </div>
