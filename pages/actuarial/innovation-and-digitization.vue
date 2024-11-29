@@ -69,40 +69,21 @@ const offers = ref([
     <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-        <ActuarialFeature :content="ReinsuranceFeatureContent2" />
-
-        <div class="pb-2 text-center">
-            <h2
-                class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
-                Services We Offer
-            </h2>
-        </div>
-        <div class="font-sans mx-auto max-w-7xl px-6 sm:mt-1 lg:px-8 my-2">
-            <div class="!mb-10 isolate mx-auto mt-3 grid max-w-7xl grid-cols-1 md:grid-cols-3 gap-8">
-
-                <div v-for="special in offers" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
-
-                    <h2 id="tier-hobby"
-                        class=" text-center text-md font-semibold leading-8 text-white bg-brand-primary flex justify-center content-center p-1 rounded-md">
-                        {{ special.name }}
-                    </h2>
-                    <ul role="list" class="divide-y divide-gray-100">
-
-                        <li class="flex gap-x-4 py-1">
-                            <div class="min-w-0">
-                                <p class="text-xs font-semibold leading-6 text-gray-900"><i
-                                        class="fas fa-caret-right mr-2"></i> {{ special.content }}</p>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-
+        <div class="container">
+            <div>
+                At Acentria, we combine innovation and digitization to deliver agile, data-driven solutions. Our
+                actuaries leverage advanced technology to tackle challenges, drive strategic decisions, and create
+                transformative changes, empowering businesses to thrive, innovate, and enhance customer interactions.
             </div>
         </div>
+
+        <div class="container">
+            <h2
+                class="text-left font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight my-3">
+                Services <span class="text-brand-primary">We Offer</span>
+            </h2>
+        </div>
+        <AccordionActuarial :faqs="offers" />
 
         <ReinsuranceWhy />
         <ContactForm />

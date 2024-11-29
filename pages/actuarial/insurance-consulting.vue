@@ -56,14 +56,14 @@ const faqs = ref([
                 efficiency, ensure compliance, and empower clients to achieve growth and sustainable success.
             </div>
         </div>
-        
-        <div class="text-center">
+
+        <div class="container">
             <h2
-                class="font-sans tracking-normal text-3xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
-                Services We Offer
+                class="text-left font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight my-3">
+                Services <span class="text-brand-primary">We Offer</span>
             </h2>
         </div>
-        <Accordion :faqs="faqs" />
+        <AccordionActuarial :faqs="faqs" />
         <ReinsuranceWhy />
         <ContactForm />
     </div>

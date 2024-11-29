@@ -734,7 +734,7 @@ const ActuarialMenus = ref([
         icon: 'fas fa-box',
         items: [
             {
-                name: 'Data Cleaning',
+                name: 'AcentRe Reinsurance Software',
                 description: 'Optimize your reinsurance strategy with AcentRe\'s comprehensive solutions, designed for maximum efficiency and effectiveness.',
                 link: '/reinsurance/acentre-reinsurance-solution',
             },

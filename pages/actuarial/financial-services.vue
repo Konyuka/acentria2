@@ -108,30 +108,8 @@ const offers = ref([
 
         <div class="container">
             <div class="font-sans mx-auto sm:mt-10 my-10">
-                <div class="!mb-10 isolate mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                    <div v-for="special in offers" class="p-3 ring-1 ring-brand-primary shadow-xl rounded-md">
-
-                        <h2 id="tier-hobby"
-                            class=" text-center text-md font-semibold leading-8 text-white bg-brand-primary flex justify-center content-center p-1 rounded-md">
-                            {{ special.name }}
-                        </h2>
-                        <ul role="list" class="divide-y divide-gray-100 my-5">
-
-                            <li class="flex gap-x-4 py-1">
-                                <div class="min-w-0">
-                                    <p class="text-xs leading-normal text-gray-900"><i
-                                            class="fas fa-caret-right mr-2"></i> {{
-                                        special.content }}</p>
-                                </div>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-
-
+                <div class="!mb-10 isolate mx-auto mt-10">
+                    <AccordionActuarial :faqs="offers" />
                 </div>
             </div>
         </div>

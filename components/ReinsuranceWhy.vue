@@ -47,10 +47,10 @@ const reinsuranceFeatures = [
                         reinsurance experience that goes beyond expectations.
                     </p>
 
-                    <div class="isolate mx-5 md:mx-auto mt-10 grid gap-8 md:grid-cols-4 mb-10">
+                    <div class="isolate mx-5 md:mx-auto mt-10 grid gap-2 md:grid-cols-4 mb-10">
 
                         <div v-for="feature in reinsuranceFeatures"
-                            class="rounded-md p-4 ring-1 ring-brand-primary shadow-xl">
+                            class="rounded-md px-4 py-1 ring-1 ring-brand-primary shadow-xl">
                             <div class="flex justify-between">
                                 <h2 id="tier-hobby"
                                     class="mt-3 text-center subheading-class leading-normal text-gray-900">

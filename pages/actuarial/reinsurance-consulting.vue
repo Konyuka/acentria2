@@ -35,14 +35,20 @@ const faqs = ref([
     <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-        <ActuarialFeature :content="ReinsuranceFeatureContent2" />
-        <div class="pb-2 text-center">
+        <div class="container">
+            <div>
+                We offer reinsurance consulting to optimize risk management, designing tailored structures with
+                top-rated reinsurers. Our services connect reinsurance decisions to financial performance, assess
+                catastrophe exposure, and ensure treaties provide robust protection and operational efficiency
+            </div>
+        </div>
+        <div class="container">
             <h2
-                class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
-                Services We Offer
+                class="text-left font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight my-3">
+                Services <span class="text-brand-primary">We Offer</span>
             </h2>
         </div>
-        <Accordion :faqs="faqs" />
+        <AccordionActuarial :faqs="faqs" />
         <ReinsuranceWhy />
         <ContactForm />
     </div>

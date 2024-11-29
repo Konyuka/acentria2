@@ -56,14 +56,20 @@ const faqs = ref([
 
     <div class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-        <ActuarialFeature :content="ReinsuranceFeatureContent2" />
-        <div class="pb-2 text-center">
+        <div class="container">
+            <div>
+                We simplify IFRS 17 implementation, providing expert guidance in accounting, actuarial science, and
+                compliance. Our comprehensive solutions help insurance companies transition smoothly, ensuring financial
+                clarity, regulatory adherence, and strategic advantages under the new standard
+            </div>
+        </div>
+        <div class="container">
             <h2
-                class="font-sans tracking-normal text-3xl lg:text-4xl text-brand-primary font-semibold leading-tight lg:leading-tight my-5">
-                Services We Offer
+                class="text-left font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight my-3">
+                Services <span class="text-brand-primary">We Offer</span>
             </h2>
         </div>
-        <Accordion :faqs="faqs" />
+        <AccordionActuarial :faqs="faqs" />
         <ReinsuranceWhy />
         <ContactForm />
     </div>
