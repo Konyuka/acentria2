@@ -30,13 +30,13 @@ const reinsuranceFeatures = [
 </script>
 
 <template>
-    <div class="bg-white">
-        <div class="container">
+    <div class="bg-white py-10">
+        <div class="container mx-auto">
             <div class="font-sans mx-5 md:mx-auto">
                 <div class="mx-auto text-left">
-                    <p class="mt-2 heading-class text-gray-900">
+                    <h2 class="text-2xl font-bold text-gray-900">
                         Why Partner <span class="text-brand-primary">With Acentria</span>
-                    </p>
+                    </h2>
                 </div>
                 <p class="font-sans mx-auto mt-6 text-left text-xs leading-normal text-secondary">
                     At Acentria, we’re not just offering reinsurance; we’re delivering peace of mind wrapped in a
@@ -45,20 +45,19 @@ const reinsuranceFeatures = [
                     reinsurance experience that goes beyond expectations.
                 </p>
 
-                <div class="isolate mx-5 md:mx-auto mt-10 grid gap-2 md:grid-cols-4 mb-10">
+                <div class="isolate mx-5 md:mx-auto mt-10 grid gap-6 md:grid-cols-4 mb-10">
 
                     <div v-for="feature in reinsuranceFeatures"
-                        class="rounded-md px-4 py-1 ring-1 ring-brand-primary shadow-xl">
+                        class="rounded-md px-4 py-6 ring-1 ring-brand-primary shadow-xl">
                         <div class="flex justify-between">
-                            <h2 id="tier-hobby"
-                                class="mt-3 text-center subheading-class leading-normal text-gray-900">
+                            <h2 class="mt-3 text-center text-lg font-semibold text-gray-900">
                                 {{ feature.title }}
                             </h2>
-                            <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
+                            <h2 class="text-center text-lg font-semibold text-gray-900">
                                 <i :class="feature.icon" class="text-xl text-brand-primary"></i>
                             </h2>
                         </div>
-                        <p class="text-left mt-2 text-xs leading-normal">
+                        <p class="text-left mt-2 text-sm leading-relaxed">
                             {{ feature.description }}
                         </p>
                     </div>

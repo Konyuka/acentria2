@@ -56,8 +56,7 @@ const faqs = ref([
         </div>
 
         <div class="container">
-            <h2
-                class="text-left font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight my-3">
+            <h2 class="text-left text-2xl font-bold text-gray-900 my-3">
                 Services <span class="text-brand-primary">We Offer</span>
             </h2>
         </div>

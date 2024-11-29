@@ -98,16 +98,15 @@ const offers = ref([
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <!-- <ActuarialFeature :content="ReinsuranceFeatureContent2" /> -->
 
-        <div class="container pt-5">
-            <p class="text-xs">
+        <div class="container py-5">
+            <p class="text-sm leading-relaxed">
                 Acentria offers actuarial expertise to assess risks, guide financial decisions, and provide solutions in
-                insurance, pensions, and finance, helping businesses manage uncertainty and make informed choices
+                insurance, pensions, and finance, helping businesses manage uncertainty and make informed choices.
             </p>
         </div>
 
         <div class="container">
-            <h2
-                class="text-left font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight my-3">
+            <h2 class="text-2xl font-bold text-gray-900">
                 Services <span class="text-brand-primary">We Offer</span>
             </h2>
         </div>
