@@ -36,18 +36,18 @@ const showFirstLabel = computed(() => {
 
         <div class="absolute inset-0 bg-black opacity-40"></div>
 
-        <div class="relative z-50 mx-auto px-6 lg:px-8 font-sans">
+        <div class="relative z-50 mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-12 gap-10">
                 <div class="col-span-1">
                     <div class="w-20 h-1 bg-white mt-3">
 
                     </div>
                 </div>
-                <div class="col-span-11 lg:mx-0 text-center lg:text-left">
-                    <h2 v-show="showFirstLabel" class="capitalize text-xl lg:text-4xl font-bold tracking-tight text-white mb-4">
+                <div class="col-span-11 text-center lg:text-left">
+                    <h2 v-show="showFirstLabel" class="text-lg lg:text-xl font-semibold text-white mb-4">
                         {{ content.subTitle }}
                     </h2>
-                    <h1 class="capitalize text-2xl lg:text-6xl font-bold tracking-tight text-white">
+                    <h1 class="text-xl lg:text-2xl font-semibold text-white">
                         {{ content.title }}
                     </h1>
                 </div>
@@ -61,17 +61,14 @@ const showFirstLabel = computed(() => {
 
 <style scoped>
 @media (max-width: 768px) {
+    .text-lg {
+        font-size: 1.125rem;
+    }
     .text-xl {
         font-size: 1.25rem;
     }
     .text-2xl {
         font-size: 1.5rem;
-    }
-    .text-4xl {
-        font-size: 2.25rem;
-    }
-    .text-6xl {
-        font-size: 3.75rem;
     }
 }
 </style>

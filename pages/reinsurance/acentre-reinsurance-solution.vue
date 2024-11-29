@@ -100,7 +100,6 @@ const reinsuranceFeatures = [
     },
     {
         icon: 'fas fa-dollar-sign',
-        title: 'Cost-Effective',
         description: 'Reduce operational costs through powerful automation and real-time data. Our cost-effective solutions help you achieve financial efficiency and sustainability.'
     },
     {
@@ -113,72 +112,52 @@ const reinsuranceFeatures = [
 </script>
 
 <template>
-
     <div class="bg-white">
-
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-        <div class="bg-white">
-            <div class="container font-sans mx-auto py-5 lg:flex lg:items-center lg:justify-between">
-                <h2 class="font-sans heading-class text-black">
-                    Adopt a deliberate data strategy with <br> <span class="text-brand-primary">Acentria's
-                        Reinsurance System</span>
+
+        <div class="bg-white py-5">
+            <div class="container mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                <h2 class="text-xl lg:text-2xl font-semibold text-black leading-tight">
+                    Adopt a deliberate data strategy with <br> 
+                    <span class="text-brand-primary">Acentria's Reinsurance System</span>
                 </h2>
-                <div class="mt-10 flex items-center gap-x-6 lg:mt-0 lg:flex-shrink-0">
-                    <a href="#"
-                        class="rounded-md bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <div class="mt-5 lg:mt-0">
+                    <a href="#" class="rounded-md bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600">
                         Book a demo
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="container pt-5">
-            <p class="text-xs">
-                AcentRe is an innovative online software solution that transforms how insurers understand and manage
-                risk, optimize returns, and plan reinsurance strategies. Our platform combines powerful data analytics
-                with advanced actuarial tools, empowering businesses to make strategic, data-driven decisions.
+        <div class="container py-5">
+            <p class="text-sm leading-relaxed">
+                AcentRe is an innovative online software solution that transforms how insurers understand and manage risk, optimize returns, and plan reinsurance strategies. Our platform combines powerful data analytics with advanced actuarial tools, empowering businesses to make strategic, data-driven decisions.
             </p>
         </div>
 
         <AccordionActuarial :faqs="faqs" />
-        <div class="bg-white">
-            <div class="container">
-                <div class="font-sans mx-5 md:mx-auto">
-                    <div class="mx-auto text-left">
-                        <p class="mt-2 heading-class text-gray-900">
-                            Why Work <span class="text-brand-primary">With AcentRe</span>
-                        </p>
-                    </div>
 
-                    <div class="isolate mx-5 md:mx-auto mt-10 grid gap-2 md:grid-cols-5 mb-10">
+        <div class="bg-white py-10">
+            <div class="container mx-auto">
+                <div class="text-left">
+                    <h2 class="text-xl lg:text-2xl font-semibold text-gray-900">
+                        Why Work <span class="text-brand-primary">With AcentRe</span>
+                    </h2>
+                </div>
 
-                        <div v-for="feature in reinsuranceFeatures"
-                            class="rounded-md px-4 py-1 ring-1 ring-brand-primary shadow-xl">
-                            <div class="flex justify-between">
-                                <h2 id="tier-hobby"
-                                    class="mt-3 text-center subheading-class leading-normal text-gray-900">
-                                    {{ feature.title }}
-                                </h2>
-                                <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
-                                    <i :class="feature.icon" class="text-xl text-brand-primary"></i>
-                                </h2>
-                            </div>
-                            <p class="text-left mt-2 text-xs leading-normal">
-                                {{ feature.description }}
-                            </p>
+                <div class="mt-10 grid gap-6 md:grid-cols-5">
+                    <div v-for="feature in reinsuranceFeatures" class="rounded-md p-4 ring-1 ring-brand-primary shadow-xl">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">{{ feature.title }}</h3>
+                            <i :class="feature.icon" class="text-xl text-brand-primary"></i>
                         </div>
-
-
-
+                        <p class="mt-2 text-sm leading-relaxed">{{ feature.description }}</p>
                     </div>
-
                 </div>
             </div>
         </div>
+
         <ReinsuranceWhy />
         <ContactForm />
     </div>
-
-
-
 </template>
