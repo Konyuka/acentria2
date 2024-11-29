@@ -96,7 +96,6 @@ const offers = ref([
     <div class="bg-white">
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
-
         <!-- <ActuarialFeature :content="ReinsuranceFeatureContent2" /> -->
 
         <div class="container pt-5">
@@ -107,13 +106,12 @@ const offers = ref([
         </div>
 
         <div class="container">
-            <div class="font-sans mx-auto sm:mt-10 my-10">
-                <div class="!mb-10 isolate mx-auto mt-10">
-                    <AccordionActuarial :faqs="offers" />
-                </div>
-            </div>
+            <h2
+                class="text-left font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight my-3">
+                Services <span class="text-brand-primary">We Offer</span>
+            </h2>
         </div>
-
+        <AccordionActuarial :faqs="offers" />
         <ReinsuranceWhy />
         <ContactForm />
     </div>

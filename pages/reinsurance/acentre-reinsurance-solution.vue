@@ -37,46 +37,78 @@ const ReinsuranceFeatureContent = ref(
 const ReinsuranceFeatureContent2 = ref({
     title: 'Measurable Metrics for Informed Decisions',
     image: 'https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content:'AcentRe empowers insurers to transform their understanding of risk and return transfer while planning and negotiating reinsurance and retrocession treaties. Granting cedants the power of faster data analytics and deliberate transformative decision making, is at the core of the platform’s design. AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our platform equips you with the metrics and analytics you need to make decisions with confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers you to make strategic choices based on real-time data and deep insights.'
+    content: 'AcentRe empowers insurers to transform their understanding of risk and return transfer while planning and negotiating reinsurance and retrocession treaties. Granting cedants the power of faster data analytics and deliberate transformative decision making, is at the core of the platform’s design. AcentRe redefines how you approach reinsurance by offering a data-driven approach. Our platform equips you with the metrics and analytics you need to make decisions with confidence. Gone are the days of relying on outdated industry norms. AcentRe empowers you to make strategic choices based on real-time data and deep insights.'
 })
 
 const faqs = ref([
     {
-        name: 'Gross Revenue and Profits',
-        content:'Understand how your reinsurance decisions can influence your top-line revenue and profitability. AcentRe provides you with the tools to optimize your financial performance..'
+        name: 'Data Cleaning',
+        content: 'Ensure your actuarial datasets are accurate and ready for analysis, removing inconsistencies and preparing your data for reliable decision-making.'
     },
     {
-        name: 'Net Revenue and Profit Margins',
-        content: 'AcentRe\'s metrics help you navigate the intricacies of reinsurance with an eye on your net revenue and profit margins.This results in a more financially secure and prosperous path for your business.'
+        name: 'Reinsurance Pricing',
+        content: 'Optimize reinsurance pricing with data-driven insights, ensuring fair and accurate premiums based on risk profiles, enabling competitive and sustainable pricing.'
     },
     {
-        name: 'Volatility Transfer',
-        content:'Manage risk volatility efficiently. AcentRe enables you to transfer volatility in a manner that aligns with your risk tolerance and business goals.'
+        name: 'Reinsurance Optimization',
+        content: 'Design optimal reinsurance structures by balancing risk and cost, tailored to your organization\'s needs, improving financial resilience and risk management.'
     },
     {
-        name: 'Impact of Worst-Case Scenarios',
-        content: 'Prepare for the unexpected with AcentRe\'s comprehensive analysis of worst-case scenarios.Our platform equips you with the insights to mitigate potential risks and safeguard your financial stability.'
+        name: 'Accumulation Management',
+        content: 'Monitor and manage aggregated risk exposures in real-time, proactively mitigating risks to stay within desired tolerance levels and improve portfolio stability.'
+    },
+    {
+        name: 'Catastrophe (Cat) Modeling',
+        content: 'Simulate disaster scenarios and assess the financial impact of extreme events, optimizing risk strategies to enhance preparedness and financial resilience.'
     }
-])
+]);
 
 const usage = ref([
     {
-        name:'Reinsurance Pricing',
+        name: 'Reinsurance Pricing',
         content: 'Experience precision and confidence in reinsurance pricing. AcentRe\'s advanced tools provide you with the data- driven insights needed to set pricing that\'s not just competitive but perfectly aligned with risk assessment.'
     },
     {
-        name:'Retrosession Pricing',
+        name: 'Retrosession Pricing',
         content: 'Retrocession is no longer a guessing game. AcentRe\'s robust capabilities help you accurately evaluate retrocession pricing, ensuring that you make the most informed decisions for your organization.'
     },
     {
-        name:'Reinsurance Optimization',
-        content:'Optimize your reinsurance strategies like never before. AcentRe allows you to explore countless scenarios, so you can make choices that enhance your financial performance and mitigate risk effectively.'
+        name: 'Reinsurance Optimization',
+        content: 'Optimize your reinsurance strategies like never before. AcentRe allows you to explore countless scenarios, so you can make choices that enhance your financial performance and mitigate risk effectively.'
     },
     {
-        name:'Accumulation Analysis',
+        name: 'Accumulation Analysis',
         content: 'Gain clarity and control over risk accumulation. AcentRe\'s analytical prowess empowers you to identify and address potential accumulation concerns before they become problems.'
     },
 ])
+
+const reinsuranceFeatures = [
+    {
+        icon: 'fas fa-cogs',
+        title: 'Efficiency',
+        description: 'Automate complex tasks, saving time and reducing errors. Our solutions streamline processes, allowing you to focus on strategic decision-making.'
+    },
+    {
+        icon: 'fas fa-bullseye',
+        title: 'Accuracy',
+        description: 'Leverage data-driven insights for pricing, optimization, accumulation, and catastrophe modeling. Ensure precise and reliable outcomes with our advanced analytics.'
+    },
+    {
+        icon: 'fas fa-puzzle-piece',
+        title: 'Customization',
+        description: 'Tailored solutions to meet your specific actuarial and reinsurance needs. We work closely with you to develop customized strategies that align with your goals.'
+    },
+    {
+        icon: 'fas fa-dollar-sign',
+        title: 'Cost-Effective',
+        description: 'Reduce operational costs through powerful automation and real-time data. Our cost-effective solutions help you achieve financial efficiency and sustainability.'
+    },
+    {
+        icon: 'fas fa-plug',
+        title: 'Seamless Integration',
+        description: 'Easily integrate with existing systems for a smooth workflow. Our solutions are designed to fit seamlessly into your current operations, enhancing productivity and efficiency.'
+    }
+];
 
 </script>
 
@@ -86,8 +118,8 @@ const usage = ref([
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <div class="bg-white">
-            <div class="font-sans mx-auto max-w-7xl px-6 py-5 lg:flex lg:items-center lg:justify-between lg:px-8">
-                <h2 class="font-sans text-3xl font-semibold tracking-tight text-black">
+            <div class="container font-sans mx-auto py-5 lg:flex lg:items-center lg:justify-between">
+                <h2 class="font-sans heading-class text-black">
                     Adopt a deliberate data strategy with <br> <span class="text-brand-primary">Acentria's
                         Reinsurance System</span>
                 </h2>
@@ -99,37 +131,50 @@ const usage = ref([
                 </div>
             </div>
         </div>
-        <ReinsuranceFeature :content="ReinsuranceFeatureContent2" />
 
-        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-10">
-
-            <article v-for="service in usage"
-                class="shadow-2xl p-4 border-2 border-brand-primary rounded-lg group flex flex-col items-start justify-between">
-                <a class="w-full" href="#">
-
-                    <!-- <i class="fas fa-caret-down text-brand-primary text-3xl"></i> -->
-                    <div class="max-w-full">
-
-                        <div class="font-sans group relative">
-                            <h3
-                                class="mt-3 line-clamp-2 subheading-class text-center leading-6 text-brand-dim transition-colors group-hover:text-brand-primary">
-                                <span class="absolute inset-0"></span>
-                                {{ service.name }}
-                            </h3>
-                            <p class="mt-2 text-xs leading-normal text-gray-600">
-                                {{ service.content }}
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </article>
-
+        <div class="container pt-5">
+            <p class="text-xs">
+                AcentRe is an innovative online software solution that transforms how insurers understand and manage
+                risk, optimize returns, and plan reinsurance strategies. Our platform combines powerful data analytics
+                with advanced actuarial tools, empowering businesses to make strategic, data-driven decisions.
+            </p>
         </div>
 
+        <AccordionActuarial :faqs="faqs" />
+        <div class="bg-white">
+            <div class="container">
+                <div class="font-sans mx-5 md:mx-auto">
+                    <div class="mx-auto text-left">
+                        <p class="mt-2 heading-class text-gray-900">
+                            Why Work <span class="text-brand-primary">With AcentRe</span>
+                        </p>
+                    </div>
 
-        <ReFeatures :content="ReinsuranceFeatureContent" />
+                    <div class="isolate mx-5 md:mx-auto mt-10 grid gap-2 md:grid-cols-5 mb-10">
 
-        <Accordion :faqs="faqs" />
+                        <div v-for="feature in reinsuranceFeatures"
+                            class="rounded-md px-4 py-1 ring-1 ring-brand-primary shadow-xl">
+                            <div class="flex justify-between">
+                                <h2 id="tier-hobby"
+                                    class="mt-3 text-center subheading-class leading-normal text-gray-900">
+                                    {{ feature.title }}
+                                </h2>
+                                <h2 id="tier-hobby" class="text-center text-lg font-semibold leading-8 text-gray-900">
+                                    <i :class="feature.icon" class="text-xl text-brand-primary"></i>
+                                </h2>
+                            </div>
+                            <p class="text-left mt-2 text-xs leading-normal">
+                                {{ feature.description }}
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <ReinsuranceWhy />
         <ContactForm />
     </div>
