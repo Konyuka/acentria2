@@ -62,12 +62,11 @@ onMounted(async () => {
 
 <template>
     <div class="font-sans mt-5 bg-white">
-
         <BannerMain :content="bannerContent" />
 
         <div class="bg-white w-full h-full">
             <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
-                <div class="mx-auto  mb-3 font-sans">
+                <div class="mx-auto mb-3 font-sans">
                     <p class="mt-2 text-2xl font-semibold text-black">
                         News & <span class="text-brand-primary">Updates</span>
                     </p>
@@ -80,11 +79,9 @@ onMounted(async () => {
                     expert opinions, or in-depth analyses, our blogs and news sections are designed to provide you with
                     the information you need. Stay connected with Acentria Group and explore the wealth of knowledge and
                     insights we have to offer.
-
                 </p>
             </div>
         </div>
-
 
         <div class="container bg-white max-w-screen mx-auto">
             <div class="sm:hidden px-4">
@@ -97,11 +94,11 @@ onMounted(async () => {
                 </select>
             </div>
             <div class="hidden sm:block font-sans">
-                <div class="divide-x divide-gray-200 ">
+                <div class="divide-x divide-gray-200">
                     <nav class="-mb-px flex font-sans gap-20" aria-label="Tabs">
                         <button @click="setMenu('blogs')"
                             :class="[currentMenu == 'blogs' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
-                            class="w-1/4  px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
+                            class="w-1/4 px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
                             <i class="fas fa-images mr-2"></i> Latest News
                         </button>
                         <button @click="setMenu('event')"
@@ -111,28 +108,24 @@ onMounted(async () => {
                         </button>
                         <button @click="setMenu('media')"
                             :class="[currentMenu == 'media' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py- text-center text-xl font-semibold hover:text-brand-primary">
+                            class="w-1/4 px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
                             <i class="fas fa-calendar-alt mr-2"></i> Media Kit
                         </button>
-
                     </nav>
                 </div>
             </div>
         </div>
 
-
         <div class="bg-white px-4 py-1 md:px-16 md:pt-0">
             <div class="container mx-auto pb-4 lg:pb-16">
                 <div class="mt-5 space-y-5">
-
                     <div v-if="currentMenu == 'blogs'"
                         class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-3">
-
                         <NuxtLink :to="getUrl(blog.title, blog.id)" v-for="blog in blogs"
                             class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                             <a class="w-full" href="#">
-                                <div class="relative w-full"><img alt="" loading="lazy" width="300" height="200"
-                                        decoding="async" data-nimg="1"
+                                <div class="relative w-full">
+                                    <img alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
                                         class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                                         sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
                                         :src="blog.cover" style="color: transparent;">
@@ -142,8 +135,7 @@ onMounted(async () => {
                                 </div>
                                 <div class="max-w-full">
                                     <div class="font-sans mt-8 flex justify-between gap-x-2 text-xs">
-                                        <div class="text-brand-primary font-semibold">{{ blog.categories.name }}
-                                        </div>
+                                        <div class="text-brand-primary font-semibold">{{ blog.categories.name }}</div>
                                         <time datetime="August 20, 2024" class="text-gray-500 text-[12px]">
                                             {{ formatDate(blog.created_at) }}
                                         </time>
@@ -163,8 +155,8 @@ onMounted(async () => {
                         </NuxtLink>
                     </div>
 
-                    <div v-if="currentMenu == 'event'" class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-3">
-
+                    <div v-if="currentMenu == 'event'"
+                        class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-3">
                         <div class="h-[50vh]">
                             <h2 class="text-lg font-semibold leading-6 text-gray-900" id="slide-over-title">
                                 <i class="fab fa-instagram"></i> Instagram Feeds
@@ -190,7 +182,6 @@ onMounted(async () => {
                             </h2>
                             <iframe src="https://twitter.com/acentriagroup?ref_src=twsrc%5Etfw" class="flex-1 w-full"
                                 height="100%" frameborder="0" allowfullscreen="true" title="Twitter Post"></iframe>
-
                         </div>
 
                         <div class="h-[50vh]">
@@ -216,8 +207,6 @@ onMounted(async () => {
                             <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed" class="flex-1 w-full"
                                 height="100%" frameborder="0" allowfullscreen="true" title="LinkedIn Post"></iframe>
                         </div>
-
-
                     </div>
 
                     <div v-if="currentMenu == 'media'">
@@ -251,13 +240,14 @@ onMounted(async () => {
                     <div class="-mt-px flex w-0 flex-1 justify-end">
                         <a
                             class="inline-flex cursor-pointer items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-semibold text-gray-500 hover:border-gray-300 hover:text-gray-700">Next<i
-                                class="material-symbols-outlined text-dark-icon text-2xl" translate="no">chevron_right</i></a>
+                                class="material-symbols-outlined text-dark-icon text-2xl"
+                                translate="no">chevron_right</i></a>
                     </div>
                 </nav>
             </div>
         </div>
-
     </div>
 </template>
+
 
 <style scoped></style>
