@@ -30,8 +30,8 @@ const company = computed(() => {
                     <div>
                         <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
                             style="color: transparent; object-fit: cover"
-                            src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
-                            class="rounded-xl w-full h-[30vh]" />
+                            src="/img/contact.jpg"
+                            class="rounded-xl w-full h-[45vh]" />
                     </div>
                     <h5 class="mt-2 text-sm lg:text-md text-white leading-relaxed pb-2">
                         Interested in learning more about how {{ company }} can support your business? Fill in your

@@ -362,7 +362,7 @@ const products = [
                 </div>
 
                 <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of community" loading="lazy" decoding="async" src="/img/join.jpg" class="rounded-xl w-full h-[500px]" />
+                    <img alt="Image of community" loading="lazy" decoding="async" src="/img/join2.jpg" class="rounded-xl w-full h-[500px]" />
                 </div>
             </div>
         </div>
