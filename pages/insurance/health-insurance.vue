@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
     subtitle: "Health Insurance",
-    title: `Your health is, <span class="font-sans tracking-normal text-white leading-tight lg:leading-tight"> Your greatest wealth </span>`,
+    title: `Your health is, <span class="text-white"> Your greatest wealth </span>`,
     image:
         "https://images.pexels.com/photos/3845129/pexels-photo-3845129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     content:
@@ -111,8 +111,9 @@ const whys = ref([
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
         <div class="container mx-auto px-4 py-2">
-            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
-            <p class="text-lg text-light-content mb-8">We have all the answers to your questions.</p>
+            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            </h1>
+            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
         </div>
 
         <Accordion :faqs="faqs" />

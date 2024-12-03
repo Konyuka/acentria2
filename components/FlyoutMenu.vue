@@ -583,20 +583,11 @@ const InsuranceMenus = ref([
         icon: 'fas fa-ship',
         items: [
             {
-                name: 'Doctors Professional Indemnity',
-                description: 'Professional insurance for doctors is crucial as it provides protection for medical professionals against claims of malpractice or professional negligence. It covers legal fees, settlements, and compensation costs, ensuring that doctors can practice with confidence and financial security, even in the face of legal challenges.',
+                name: 'Marine Insurance',
+                description: ' Marine insurance is crucial as it provides comprehensive coverage for vessels, cargo, and marine operations, protecting against risks such as damage, loss, and liability. It ensures financial protection for marine businesses, covering repair costs, legal fees, and compensation for third-party damages, ensuring safe and secure operations.',
                 link: '/insurance/biasahara-cover',
             },
-            {
-                name: 'Lawyers Professional Indemnity',
-                description: 'Professional insurance for lawyers is important because it provides coverage for legal professionals against claims of errors, omissions, or negligence in their practice. It covers legal defense costs, settlements, and compensation, ensuring that lawyers can focus on their practice without the fear of significant financial losses.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Pilots Professional Indemnity',
-                description: 'Professional insurance for pilots is essential as it provides coverage for pilots, covering liabilities arising from professional errors or negligence. It ensures financial protection for pilots, covering legal fees, settlements, and compensation for third-party damages, allowing them to operate with confidence and security.',
-                link: '/insurance/biasahara-cover',
-            },
+            
         ]
     },
 ])

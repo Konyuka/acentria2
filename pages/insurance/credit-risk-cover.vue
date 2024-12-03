@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: '',
+    subtitle: 'Credit Risk Insurance',
     title: 'Secure your business\'s financial future.',
     image: 'https://images.pexels.com/photos/7821685/pexels-photo-7821685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content:'At Acentria, we understand that business is about trust, and Credit Risk Insurance helps protect that trust. Think of it as your financial safety net – it steps in to secure your accounts receivable and ensure you get paid even if your customers can’t. With Acentria, you’re not just getting insurance; you’re getting a partner dedicated to your financial stability and your business’s future.'
@@ -77,6 +77,12 @@ const whys = ref([
     <div class="bg-white">
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
+
+        <div class="container mx-auto px-4 py-2 mt-5">
+            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            </h1>
+            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+        </div>
 
         <Accordion :faqs="faqs" />
 

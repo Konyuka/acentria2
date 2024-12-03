@@ -9,7 +9,7 @@ const InsuranceBannerContent = ref({
 })
 
 const InsuranceCardsContent = ref({
-    title:'Which plan is right for you & your family?',
+    title:'Which plan is right <span class="text-brand-primary">for you & your family?</span>',
     users: [
         {
             name:'Personal Accident Cover',
@@ -115,9 +115,15 @@ const whys = ref([
 
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
+        <div class="container mx-auto px-4 py-2 mt-5">
+            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            </h1>
+            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+        </div>
+
         <Accordion :faqs="faqs" />
 
-        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+        <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
 
         <ContactForm />
     </div>

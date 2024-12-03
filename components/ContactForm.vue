@@ -18,7 +18,7 @@ const company = computed(() => {
 </script>
 
 <template>
-    <section class="relative py-10 mx-auto container">
+    <section class="relative py-5 mx-auto container">
         <div>
             <div class="pb-4 text-left">
                 <h2 class="text-2xl font-semibold text-gray-900">

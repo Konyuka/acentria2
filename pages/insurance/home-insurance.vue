@@ -40,7 +40,7 @@ const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Ace
 const whys = ref([
     {
         title: 'We save you money',
-        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products & reduce your loss ratios',
         icon: 'savings',
     },
     {
@@ -76,6 +76,12 @@ const whys = ref([
 
     <div class="bg-white">
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
+
+        <div class="container mx-auto px-4 py-2 mt-5">
+            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            </h1>
+            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+        </div>
 
         <Accordion :faqs="faqs" />
 

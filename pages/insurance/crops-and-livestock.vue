@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: '',
+    subtitle: 'Crops and Livestock Insurance',
     title: 'Cultivate your dreams with confidence',
     image: 'https://images.pexels.com/photos/1276235/pexels-photo-1276235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content:'At Acentria, we’re not just insuring crops and livestock; we’re insuring your dreams, your hard work, and your future. Don’t let unforeseen challenges erode your passion for agriculture. Choose Acentria, and cultivate success with confidence.'
@@ -76,6 +76,11 @@ const whys = ref([
     <div class="bg-white">
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
+        <div class="container mx-auto px-4 py-2 mt-5">
+            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            </h1>
+            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+        </div>
 
         <Accordion :faqs="faqs" />
 
