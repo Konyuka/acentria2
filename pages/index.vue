@@ -56,25 +56,25 @@ const joinAsMembers = ref([
 const commitments = ref([
   {
     name: 'Our Customers',
-    icon: 'fas fa-users', 
+    icon: 'fas fa-users',
     description: 'We\'re committed to helping live a life that\'s as healthy and as full as possible.',
     link: '/our-commitment'
   },
   {
     name: 'Our Partners',
-    icon: 'fas fa-handshake', 
+    icon: 'fas fa-handshake',
     description: 'Our partnerships with advisers, super funds and employer funds help us protect more Australians.',
     link: '/our-commitment'
   },
   {
     name: 'Our People',
-    icon: 'fas fa-user-friends', 
+    icon: 'fas fa-user-friends',
     description: 'We\'ve built a culture that lets our people make the most of every opportunity.',
     link: '/our-commitment'
   },
   {
     name: 'Our Communities',
-    icon: 'fas fa-globe', 
+    icon: 'fas fa-globe',
     description: 'Improving lives through active involvement and raising standards for the industry as a whole.',
     link: '/our-commitment'
   },

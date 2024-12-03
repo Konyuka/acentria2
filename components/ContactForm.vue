@@ -18,46 +18,55 @@ const company = computed(() => {
 </script>
 
 <template>
-    <section class="relative py-10 container mx-auto">
+    <section class="relative py-10 mx-auto container">
         <div>
             <div class="pb-4 text-left">
-                <h2 class="text-xl lg:text-2xl font-semibold text-gray-900">
+                <h2 class="text-2xl font-semibold text-gray-900">
                     Let’s <span class="text-brand-primary">Talk</span>
                 </h2>
             </div>
-            <div class="my-5 grid gap-5 lg:grid-cols-2">
+            <div class="my-5 grid grid-cols-1 gap-5 lg:grid-cols-2">
                 <div class="h-fit rounded-xl bg-black px-5 md:px-12 py-5 md:py-14 shadow-card">
                     <div>
-                        <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1" style="color: transparent; object-fit: cover" src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg" class="rounded-xl w-full h-[30vh]" />
+                        <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
+                            style="color: transparent; object-fit: cover"
+                            src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
+                            class="rounded-xl w-full h-[30vh]" />
                     </div>
-                    <h5 class="mt-2 text-sm lg:text-base text-white leading-relaxed pb-2">
-                        Interested in learning more about how {{ company }} can support your business? Fill in your details, and one of our experts will reach out to you with personalized information on our comprehensive services. Let’s start a conversation.
+                    <h5 class="mt-2 text-sm lg:text-md text-white leading-relaxed pb-2">
+                        Interested in learning more about how {{ company }} can support your business? Fill in your
+                        details, and one of our experts will reach out to you with personalized information on our
+                        comprehensive services. Let’s start a conversation.
                     </h5>
                 </div>
 
-                <form class="contact-form border rounded-xl bg-white px-2 md:px-10 py-5 shadow-card">
-                    <div class="grid gap-10 lg:grid-cols-2">
+                <form
+                    class="font-sans border-brand-gray-100 rounded-xl border bg-brand-white px-2 md:px-10 py-5 shadow-card">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                         <div class="relative pb-2">
                             <label for="FirstName" class="text-sm font-semibold pl-2">First name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
-                                <input name="FirstName" id="FirstName" class="block w-full rounded-md border-0 py-1 pl-4 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                                <input name="FirstName" id="FirstName"
+                                    class="block w-full rounded-md border-0 py-1 pl-4 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
                             </div>
                         </div>
                         <div class="relative pb-2">
                             <label for="LastName" class="text-sm font-semibold pl-2">Last name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
-                                <input name="LastName" id="LastName" class="block w-full rounded-md border-0 py-1 pl-4 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                                <input name="LastName" id="LastName"
+                                    class="block w-full rounded-md border-0 py-1 pl-4 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
                             </div>
                         </div>
                     </div>
-                    <div class="grid gap-10 lg:grid-cols-2 mt-5">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-5">
                         <div class="relative pb-2">
                             <label for="WorkEmail" class="text-sm font-semibold pl-2">Email address</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                     <i class="material-symbols-outlined text-2xl text-brand-primary">mail</i>
                                 </div>
-                                <input name="WorkEmail" id="WorkEmail" class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                                <input name="WorkEmail" id="WorkEmail"
+                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
                             </div>
                         </div>
                         <div class="relative pb-2">
@@ -66,28 +75,32 @@ const company = computed(() => {
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                     <i class="material-symbols-outlined text-2xl text-brand-primary">phone</i>
                                 </div>
-                                <input name="PhoneNumber" id="PhoneNumber" class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                                <input name="PhoneNumber" id="PhoneNumber"
+                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5">
+                    <div class="grid grid-cols-1 mt-5">
                         <div class="relative pb-2">
                             <label for="CompanyName" class="text-sm font-semibold pl-2">Company name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                     <i class="material-symbols-outlined text-2xl text-brand-primary">business</i>
                                 </div>
-                                <input name="CompanyName" id="CompanyName" class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
+                                <input name="CompanyName" id="CompanyName"
+                                    class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
                             </div>
                         </div>
                     </div>
 
-                    <p class="mt-2 text-xs italic text-gray-400 leading-tight">
-                        By submitting this form, you agree to receive the information requested as well as sales and/or marketing communication on resources, news, and events related to Acentria Group.
+                    <p class="leading-tight mt-2 text-xs italic text-gray-400">
+                        By submitting this form, you agree to receive the information requested as well as sales and/or
+                        marketing communication on resources, news, and events related to Acentria Group.
                     </p>
 
                     <div class="mt-5">
-                        <NuxtLink href="/meet-the-team" class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
+                        <NuxtLink href="/meet-the-team"
+                            class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                             Lets Talk
                             <i class="fas fa-arrow-right text-primary ml-2"></i>
                         </NuxtLink>
@@ -100,19 +113,16 @@ const company = computed(() => {
 
 <style scoped>
 @media (max-width: 768px) {
-    .text-xl {
-        font-size: 1.25rem;
-    }
     .text-2xl {
         font-size: 1.5rem;
     }
+
+    .text-4xl {
+        font-size: 2.25rem;
+    }
+
     .text-base {
         font-size: 1rem;
     }
-}
-
-.contact-form {
-    padding: 2rem;
-    text-align: center;
 }
 </style>
