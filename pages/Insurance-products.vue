@@ -333,9 +333,9 @@ const products = ref([
         <div class="bg-white w-full h-full">
             <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
                 <div class="mx-auto mb-3 font-sans">
-                    <p class="mt-2 heading-class text-black">
+                    <h1 class="mt-2 heading-class text-black">
                         Explore All <span class="text-brand-primary">Our Products</span>
-                    </p>
+                    </h1>
                 </div>
                 <p class="text-xs leading-normal">
                     Welcome to the Acentria Group Insurance Products Catalogue. Here, you will find a comprehensive list
@@ -351,7 +351,7 @@ const products = ref([
 
         <div v-for="product in products" class="container py-5 bg-white">
             <div class="mx-auto mb-3 font-sans">
-                <p v-html="product.heading" class="mt-2 heading-class text-black"></p>
+                <h2 v-html="product.heading" class="mt-2 heading-class text-black"></h2>
             </div>
             <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                 style="color: transparent; object-fit: contain"
