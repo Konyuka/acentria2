@@ -124,7 +124,7 @@ const exploreAviation = ref({
     content:'At Acentria, we provide aviation professionals with insurance policies tailored to their unique needs. Our dedicated team of aviation insurance brokers combines in-depth industry knowledge and exceptional service to offer you strategic advice, comprehensive coverage, and competitive pricing. Regardless of your flying experience or the type of aircraft you operate, we’re here to ensure your peace of mind with coverage that lets you fly confidently.'
 })
 const whatWeDo = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
+    orientation: 'lg:flex-row flex-col',
     heading: 'What <span class="text-brand-primary">We Do</span>',
     subheading: '',
     image: '/img/59.jpg',
@@ -218,7 +218,6 @@ const content = ref({
 <template>
 
     <div class="">
-        <!-- <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" /> -->
 
         <ServiceHero2 :content="content" />
 
@@ -226,25 +225,22 @@ const content = ref({
         <ContentPic :content="whatWeDo" />
         <ContentPic :content="whyAviation" />
 
-        <div class=" w-full h-full container mx-auto max-w-6xl">
-            <div class=" !font-sans  my-0">
+        <div class="w-full h-full container mx-auto max-w-6xl">
+            <div class="font-sans my-0">
                 <div class="py-10 sm:px-2 lg:px-4">
                     <div class="lg:max-w-none">
                         <div class="justify-between content-center">
-                            <h2 class="heading-class text-black text-left">
+                            <h2 class="text-2xl font-semibold text-black text-left">
                                 Our Aviation <span class="text-brand-primary">Insurance & Solutions</span>
                             </h2>
                         </div>
                         <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-4">
                             <div v-for="member in joinAsMembers" :key="member.name"
-                                class="group button-animation sm:flex lg:block bg-gray-50 py-2 rounded-xs border-t-8  border-brand-primary">
-                                <!-- <div class="sm:flex-shrink-0 flex justify-center">
-                                    <i :class="member.icon" class="text-black text-2xl"></i>
-                                </div> -->
+                                class="group button-animation sm:flex lg:block bg-gray-50 py-2 rounded-xs border-t-8 border-brand-primary">
                                 <div class="mt-1 sm:ml-6 sm:mt-0 lg:ml-0">
-                                    <h3 class="text-left text-[14px] font-semibold text-brand-primary flex ">{{
-                                        member.name
-                                        }}</h3>
+                                    <h3 class="text-left text-[14px] font-semibold text-brand-primary flex">
+                                        {{ member.name }}
+                                    </h3>
                                     <p class="mt-2 text-[14px] text-black" v-html="member.description"></p>
                                 </div>
                             </div>
@@ -256,9 +252,9 @@ const content = ref({
 
         <div class="bg-white">
             <div class="container py-5">
-                <h4 class="heading-class">Why might you need an <span class="text-brand-primary">aviation insurance
-                        broker?</span></h4>
-                <p class="text-xs leading-normal text-content-light py-3">
+                <h4 class="text-2xl font-semibold">Why might you need an <span class="text-brand-primary">aviation
+                        insurance broker?</span></h4>
+                <p class="text-sm leading-normal text-gray-700 py-3">
                     As brokers, we advocate for you from the initial policy setup, through renewals, to handling claims.
                     We eliminate the time-consuming hassle of comparing policies as we tailor coverage to suit your
                     aircraft’s operational requirements and identify essential policy extensions.
@@ -269,32 +265,29 @@ const content = ref({
             </div>
         </div>
 
-
         <div class="bg-white py-5">
-            <div class="container mt-10 ">
-                <h1 class="heading-class">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
-                <p class="text-[25px] text-light-content">We have all the answers to your questions.</p>
+            <div class="container">
+                <h1 class="text-2xl font-semibold">Frequently <span class="text-brand-primary">Asked Questions</span>
+                </h1>
+                <p class="text-sm text-gray-700">We have all the answers to your questions.</p>
             </div>
             <Accordion :faqs="faqs" />
         </div>
 
-
         <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 
-        <div class="container py-10">
-            <p class="subheading-class leading-normal">
-                For tailored advice or more questions, contact <span class="text-brand-primary">Acentria Aviation
-                    Insurance</span> to speak with
-                our expert
-                brokers today.
-            </p>
-            <p class="text-[17px] italic mt-5 text-white">
-                At Acentria Group, we’re committed to protecting your aviation operations, ensuring peace of mind for
-                you and your stakeholders. Contact us today to discuss the right coverage for your needs.
-            </p>
+        <div class="bg-white">
+            <div class="container py-7">
+                <p class="text-xl font-semibold leading-normal">
+                    For tailored advice or more questions, contact <span class="text-brand-primary">Acentria Aviation
+                        Insurance</span> to speak with our expert brokers today.
+                </p>
+                <p class="text-sm italic mt-5 text-black">
+                    At Acentria Group, we’re committed to protecting your aviation operations, ensuring peace of mind
+                    for you and your stakeholders. <br> Contact us today to discuss the right coverage for your needs.
+                </p>
+            </div>
         </div>
-
-
 
         <ContactForm />
     </div>
