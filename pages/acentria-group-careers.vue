@@ -275,7 +275,7 @@ const products = [
 
         <div class="bg-white font-sans">
             <div class="container mx-auto max-w-6xl px-4 py-0 sm:px-6 lg:max-w-6xl lg:px-8">
-                <h2 class="text-2xl font-semibold text-black text-left">
+                <h2 class="text-2xl font-semibold text-black text-left mb-5">
                     Life at <span class="text-brand-primary">Acentria Group</span>
                 </h2>
                 <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
