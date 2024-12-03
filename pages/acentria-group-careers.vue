@@ -36,7 +36,7 @@ const principles = ref([
 const bannerContent = ref({
     subtitle: 'Careers',
     title: 'Acentria Group Careers',
-    image: '/img/team.jpeg'
+    image: '/img/team4.jpg'
 })
 
 const joinAsMembers = ref([
