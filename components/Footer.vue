@@ -169,16 +169,12 @@ const showDropdown = (menu) => {
 
 <template>
     <div>
-
-
         <div class="font-sans w-full border-t-8 border-black bg-black/70 px-4 py-3">
             <div class="container mx-auto">
                 <!-- Links -->
-                <div class="grid grid-cols-4 gap-2 text-sm lg:gap-2 px-auto my-2">
-
-                    <div v-for="item in menuItem"
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm lg:gap-6 px-auto my-4">
+                    <div v-for="item in menuItem" :key="item.name"
                         class="pointer-events-auto relative z-10 overflow-hidden border-b-[1px] border-brand-gray-6 lg:border-0">
-
                         <h3 class="mb-1 flex items-center justify-between text-base font-bold lg:text-xl">
                             <span class="hidden">{{ item.name }}</span>
                             <button @click="showItem(item.name)"
@@ -217,25 +213,20 @@ const showDropdown = (menu) => {
                             </button>
                         </h3>
 
-                        <ul
+                        <ul v-if="chosenItem?.name === item.name"
                             class="lg:hidden left-0 top-full -z-10 flex w-full list-none flex-col gap-5 overflow-hidden pb-2 will-change-transform lg:mb-0 visible static transform-none opacity-100 transition-all duration-300">
-
-                            <li v-if="showDropdown(chosenItem)" v-for="item in chosenItem?.items"
-                                class="my-1 text-dark-content">
-                                <NuxtLink :to="item.link"
+                            <li v-for="link in item.items" :key="link.name" class="my-1 text-dark-content">
+                                <NuxtLink :to="link.link"
                                     class="cursor-pointer font-bold text-dark-title hover:text-dark-title hover:underline text-xs relative flex items-center">
-                                    {{ item.name }}
-                                    <!-- <span class="absolute border-b-2 h-full w-full bg-white">
-        check
-                                    </span> -->
+                                    {{ link.name }}
                                 </NuxtLink>
                             </li>
-
                         </ul>
 
                         <ul
                             class="left-0 top-full -z-10 flex w-full list-none flex-col gap-0 overflow-hidden will-change-transform lg:mb-0 invisible absolute -translate-y-24 opacity-0 lg:visible lg:static lg:transform-none lg:opacity-100 lg:transition-none">
-                            <li v-for="link in item.items" class="button-animation mb-0 text-dark-content">
+                            <li v-for="link in item.items" :key="link.name"
+                                class="button-animation mb-0 text-dark-content">
                                 <NuxtLink :to="link.link"
                                     class="text-[13px] cursor-pointer font-normal text-dark-title hover:text-gray-100 relative flex items-center">
                                     <i :class="link.icon" class="text-brand-primary mr-2"></i> {{ link.name }}
@@ -243,8 +234,6 @@ const showDropdown = (menu) => {
                             </li>
                         </ul>
                     </div>
-
-
                 </div>
 
                 <hr class="h-0.25 bg-brand-divider mb-2" />
@@ -293,22 +282,18 @@ const showDropdown = (menu) => {
 
                     <div class="flex flex-col items-center gap-y-2 md:flex-row md:gap-x-2 md:gap-y-0">
                         <div class="text-sm text-dark-content">
-                            ©
-                            {{ currentYear }}
-                            Acentria Group. All rights reserved.
+                            © {{ currentYear }} Acentria Group. All rights reserved.
                         </div>
                     </div>
                     <div class="flex flex-col items-center gap-y-2 md:flex-row md:gap-x-2 md:gap-y-0">
                         <div class="text-sm text-dark-content">
-                            Developed by <a href="tech.acentriagroup.com" target="_blank"
+                            Developed by <a href="https://tech.acentriagroup.com" target="_blank"
                                 class="underline !button-animation">Acentria Technologies</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
 </template>
 

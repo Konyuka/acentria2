@@ -20,11 +20,11 @@ const companyMail = computed(() => {
 
 <template>
     <div class="bg-white py-10">
-        <div class="mx-8 md:mx-[5vw] lg:px-8">
+        <div class="container mx-auto md:mx-[5vw] lg:px-8">
             <div class="mx-auto max-w-2xl space-y-8 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
-                <div class="font-sans grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
+                <div class="font-sans grid grid-cols-1 gap-y-10 lg:grid-cols-3">
                     <div>
-                        <h2 class="heading-class">
+                        <h2 class="heading-class text-2xl font-semibold">
                             Get in <span class="text-brand-primary">touch</span>
                         </h2>
                         <p class="mt-2 leading-7 text-gray-600">
@@ -33,7 +33,7 @@ const companyMail = computed(() => {
                     </div>
                     <div class="font-sans grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
                         <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
-                            <h3 class="subheading-class">
+                            <h3 class="subheading-class text-xl font-semibold">
                                 Email
                             </h3>
                             <dl class="space-y-1 text-sm leading-6 text-gray-600">
@@ -49,7 +49,7 @@ const companyMail = computed(() => {
                         </div>
 
                         <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
-                            <h3 class="subheading-class">
+                            <h3 class="subheading-class text-xl font-semibold">
                                 Mobile
                             </h3>
                             <dl class="space-y-1 text-sm leading-6 text-gray-600">
@@ -65,21 +65,21 @@ const companyMail = computed(() => {
                         </div>
 
                         <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
-                            <h3 class="subheading-class">
+                            <h3 class="subheading-class text-xl font-semibold">
                                 WhatsApp
                             </h3>
                             <dl class="space-y-1 text-sm leading-6 text-gray-600">
                                 <div>
                                     <dt class="sr-only">Email</dt>
                                     <dd>
-                                        <a class="text-xs text-brand-primary" href="mailto:hello@example.com">Say
-                                            Hi, on WhatsApp</a>
+                                        <a class="text-xs text-brand-primary" href="mailto:hello@example.com">Say Hi, on
+                                            WhatsApp</a>
                                     </dd>
                                 </div>
                             </dl>
                         </div>
                         <div class="button-animation rounded-2xl bg-gray-50 p-5 shadow-md">
-                            <h3 class="subheading-class">
+                            <h3 class="subheading-class text-xl font-semibold">
                                 Box Office
                             </h3>
                             <dl class="space-y-1 text-sm leading-6 text-gray-600">
@@ -87,8 +87,7 @@ const companyMail = computed(() => {
                                     <dt class="sr-only">Email</dt>
                                     <dd>
                                         <a class="text-xs text-brand-primary" href="mailto:careers@example.com">P.O Box
-                                            5864-00100 Nairobi,
-                                            Kenya</a>
+                                            5864-00100 Nairobi, Kenya</a>
                                     </dd>
                                 </div>
                             </dl>
@@ -96,10 +95,9 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class="container mt-10 max-w-6xl mx-auto font-sans grid grid-cols-3 gap-y-1 py-5 lg:grid-cols-5">
-
-                    <div class="mt-5">
-                        <h2 class="heading-class text-[20px]">
+                <div class="container mt-10 mx-auto font-sans grid grid-cols-3 gap-y-1 py-5 lg:grid-cols-6">
+                    <div class="mt-5 col-span-2">
+                        <h2 class="heading-class text-[20px] font-semibold">
                             Visit <span class="text-brand-primary">Us</span>
                         </h2>
                         <p class="mt-4 leading-6 text-black text-xs">
@@ -107,7 +105,7 @@ const companyMail = computed(() => {
                             <i class="fas fa-road text-brand-primary"></i> Muthithi Road, Mpesi Lane <br />
                             <i class="fas fa-map-marker-alt text-brand-primary"></i> Westlands, Nairobi Kenya
                         </p>
-                        <h2 class="mt-10 heading-class text-[20px]">
+                        <h2 class="mt-10 heading-class text-[20px] font-semibold">
                             Working <span class="text-brand-primary">Hours</span>
                         </h2>
                         <p class="mt-4 leading-6 text-black font-medium text-xs">
@@ -126,15 +124,13 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class=" mx-auto  mb-0 font-sans">
-                    <p class="mt-2 heading-class text-black">
+                <div class="mx-auto mb-0 font-sans">
+                    <p class="mt-2 heading-class text-black text-2xl font-semibold">
                         Follow <span class="text-brand-primary">us on</span>
                     </p>
                 </div>
 
                 <Socials2 />
-
-
             </div>
         </div>
     </div>
