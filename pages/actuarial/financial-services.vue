@@ -106,7 +106,7 @@ const offers = ref([
         </div>
 
         <div class="container">
-            <h2 class="text-2xl font-bold text-gray-900">
+            <h2 class="text-2xl font-semibold text-gray-900">
                 Services <span class="text-brand-primary">We Offer</span>
             </h2>
         </div>

@@ -149,371 +149,225 @@ const products = [
 <template>
     <main>
         <div class="bg-white">
-            <div>
+    <div>
+        <BannerMain :content="bannerContent" />
 
-                <BannerMain :content="bannerContent" />
-
-                <div class="isolate !mb-5 py-5 md:py-0 mt-5 bg-white">
-                    <div class="relative isolate -z-10">
-                        <div class="container overflow-hidden">
-
-                            <div class="container max-w-6xl mx-auto">
-                                <div class="grid grid-cols-2 gap-20">
-
-                                    <div class="content-center flex w-full flex-col gap-2">
-                                        <h1 id="" class="heading-class leading-normal">
-                                            <span class="text-brand-primary">Grow
-                                                With a</span> <br>
-                                            Pathfinder
-                                        </h1>
-                                        <p class="text-xs leading-normal">
-                                            Acentria Group has experienced tremendous growth over the last few years.
-                                            Our journey has been characterized by diversification of business, immense
-                                            learning experiences, changes in corporate culture and increased intensity
-                                            in the relationships with our partners. We have evolved from brokerage
-                                            services and ventured into other complimentary lines of business that
-                                            separate us from the pack and evoke trust and confidence from our partners.
-                                            We focus on doing business the right way, in a sustainable manner and
-                                            providing incremental value to our customers and employees.
-                                            At Acentria Group, we work collaboratively to achieve team success. Our
-                                            culture is underpinned by the principles of <b>Empowerment, Innovation</b>
-                                            and
-                                            <b>Prosperity.</b> We offer careers in a variety of fields where talented
-                                            people
-                                            can learn, develop, grow professionally and personally.
-
-                                        </p>
-
-                                    </div>
-
-                                    <div class="relative py-4">
-                                        <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
-                                            style="color: transparent; object-fit: cover" src="/img/give.jpg"
-                                            class="rounded-xl w-full h-[400px]" />
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="container mx-auto  mb-5 pl-20 font-sans">
-                        <p class="mt-2 heading-class text-black">
-                            What Drives Us <span class="text-brand-primary"> <br> at Acentria Group</span>
-                        </p>
-                    </div>
-
-                    <div class=" relative isolate overflow-hidden bg-black py-5 font-sans">
-                        <img src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
-
-                        <div class="absolute inset-0 bg-black opacity-40"></div>
-                        <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
-
-                            <div>
-                                <dl
-                                    class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-10 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                                    <div v-for="(feature, index) in joinAsMembers" :key="feature.name"
-                                        class="flex flex-col">
-                                        <dt class="subheading-class text-white">
-                                            <div
-                                                class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
-                                                <i :class="feature.icon" class=" text-white" aria-hidden="true" />
-                                            </div>
-                                            {{ feature.name }}
-                                        </dt>
-                                        <dd class="mt-1 flex flex-auto flex-col text-xs text-white">
-                                            <p class="flex-auto" v-html="feature.description"></p>
-                                        </dd>
-                                    </div>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="py-2 text-white" style="background-color: #f6f8fc">
-                    <div class="undefined">
-                        <section id="" class="relative py-1">
-                            <div class="container px-4">
-                                <div class="pb-2 mt-2 text-left">
-                                    <h2 class="heading-class text-black mb-4">
-                                        We are Devoted to <br><span class="text-brand-primary">Our Core
-                                            Principles</span>
-                                    </h2>
-                                </div>
-                                <div
-                                    class="font-sans container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 py-0">
-
-                                    <div v-for="principle in principles"
-                                        class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] max-w-[90vw] rounded-xs bg-white p-5 md:max-w-[90vw] w-full h-full">
-                                        <div class="flex h-fit flex-col">
-                                            <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
-                                            <div>
-                                                <h4 id="" class="subheading-class pb-1 leading-normal">
-                                                    {{ principle.name }}
-                                                </h4>
-                                            </div>
-                                            <p class="text-[12px] leading-normal text-black">
-                                                {{ principle.description }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="font-sans py-0 text-white" style="background-color: rgb(246, 248, 252)">
-
-                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                        <div class="relative py-4 lg:basis-1/2">
-                            <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                                style="color: transparent; object-fit: contain" class="w-full h-[400px] rounded-lg"
-                                src="/img/what.jpg" data-v-inspector="components/Why.vue:34:17" />
-                        </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                            <h2 class="heading-class pb-4 pt-6 text-brand-primary">
-                                <span class="text-black">
-                                    Why would you <br>
-                                </span>
-                                work for Acentria
-                            </h2>
-                            <div class="font-sans text-light-content pb-5 md:pb-6">
-                                <p class="text-xs leading-normal mb-4">
-                                    Working at Acentria is an enriching journey to growth and prosperity. We have
-                                    numerous engagement forums, propagate empowerment and job autonomy, nurture a
-                                    supportive and inclusive environment and do not have a “Straight-jacket” approach
-                                    towards learning and development.
-                                    Your contributions will be recognized and rewarded, ensuring a fulfilling, warm and
-                                    lasting experience at Acentria.
-
+        <div class="isolate !mb-5 py-5 md:py-0 mt-5 bg-white">
+            <div class="relative isolate -z-10">
+                <div class="container overflow-hidden">
+                    <div class="container max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <div class="flex flex-col gap-2">
+                                <h1 class="text-2xl font-semibold leading-normal">
+                                    <span class="text-brand-primary">Grow With a</span> <br>
+                                    Pathfinder
+                                </h1>
+                                <p class="text-sm leading-normal">
+                                    Acentria Group has experienced tremendous growth over the last few years.
+                                    Our journey has been characterized by diversification of business, immense
+                                    learning experiences, changes in corporate culture, and increased intensity
+                                    in the relationships with our partners. We focus on doing business the right
+                                    way, in a sustainable manner, providing incremental value to our customers
+                                    and employees. Our culture is underpinned by the principles of <b>Empowerment, Innovation</b>, and <b>Prosperity.</b>
                                 </p>
-                                <NuxtLink href="/acentria-benefits"
-                                    class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                                    Learn how you benefit by joining us
-                                    <i class="fas fa-arrow-right text-primary ml-2"></i>
-                                </NuxtLink>
+                            </div>
+
+                            <div class="relative py-4">
+                                <img alt="Image of growth" loading="lazy" decoding="async" src="/img/give.jpg"
+                                    class="rounded-xl w-full h-[250px] object-cover" />
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class=" w-full h-full container mx-auto max-w-6xl">
-                    <div class=" !font-sans  my-0">
-                        <div class="py-10 sm:px-2 lg:px-4">
-                            <div class="lg:max-w-none">
-                                <div class="justify-between content-center">
-                                    <h2 class="heading-class text-black text-left">
-                                        Career Paths <span class="text-brand-primary">At Acentria</span>
-                                    </h2>
-                                </div>
+        <section class="container mx-auto mb-5 pl-20 font-sans">
+            <h2 class="text-2xl font-semibold text-black">
+                What Drives Us <span class="text-brand-primary"> at Acentria Group</span>
+            </h2>
+        </section>
 
-                                <div class="my-6">
-                                    <NuxtLink href="/our-brand"
-                                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                                        Search for Open Positions <i class="fas fa-search text-primary ml-2"></i>
-                                    </NuxtLink>
-                                </div>
+        <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
+            <img src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
+                <dl class="font-sans grid grid-cols-1 gap-10 text-white sm:grid-cols-2 lg:grid-cols-3">
+                    <div v-for="(feature, index) in joinAsMembers" :key="feature.name" class="flex flex-col">
+                        <dt class="text-white flex items-center">
+                            <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                                <i :class="feature.icon" class="text-white" aria-hidden="true"></i>
+                            </div>
+                            <span class="ml-2">{{ feature.name }}</span>
+                        </dt>
+                        <dd class="mt-1 text-xs text-white">
+                            <p v-html="feature.description"></p>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
 
-                                <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-5">
-                                    <div v-for="member in careerPath" :key="member.name"
-                                        class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-l-2  border-brand-primary">
-                                        <div class="sm:flex-shrink-0 flex justify-center">
-                                            <i :class="member.icon" class="text-black text-2xl"></i>
-                                        </div>
-                                        <div class="mt-1 sm:ml-6 lg:ml-0">
-                                            <h3 class="subheading-class text-brand-primary flex justify-center">{{
-                                                member.name
-                                                }}
-                                            </h3>
-                                            <!-- <p class="mt-0 text-xs text-gray-500">{{ member.description }}</p> -->
-                                            <i
-                                                class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
-                                        </div>
-                                    </div>
-                                </div>
+        <div class="py-2" style="background-color: #f6f8fc">
+            <section class="relative py-1">
+                <div class="container px-4">
+                    <h2 class="text-2xl font-semibold text-black mb-4">
+                        We are Devoted to <br><span class="text-brand-primary">Our Core Principles</span>
+                    </h2>
+                    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div v-for="principle in principles" class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
+                            <div class="flex flex-col">
+                                <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
+                                <h4 class="font-semibold pb-1 leading-normal">{{ principle.name }}</h4>
+                                <p class="text-sm leading-normal text-black">{{ principle.description }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- HI -->
-                <div class="bg-white font-sans">
+            </section>
+        </div>
 
-                    <div class="container mx-auto max-w-6xl px-4 py-0 sm:px-6 lg:max-w-6xl lg:px-8">
+        <div class="font-sans py-0" style="background-color: rgb(246, 248, 252)">
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of Enable growth" loading="lazy" decoding="async" class="w-full h-[300px] rounded-lg" src="/img/what.jpg" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2">
+                    <h2 class="text-2xl font-semibold pb-4 pt-6 text-brand-primary">
+                        <span class="text-black">Why would you <br></span> work for Acentria
+                    </h2>
+                    <p class="text-sm leading-normal mb-4">
+                        Working at Acentria is an enriching journey to growth and prosperity. We have numerous engagement forums, propagate empowerment and job autonomy, and nurture a supportive and inclusive environment.
+                    </p>
+                    <NuxtLink href="/acentria-benefits" class="text-center !button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                        Learn how you benefit by joining us
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                    </NuxtLink>
+                </div>
+            </div>
+        </div>
 
-                        <div class="justify-between content-center my-5">
-                            <h2 class="heading-class text-black text-left">
-                                Life at <span class="text-brand-primary">Acentria Group</span>
-                            </h2>
+        <div class="container mx-auto max-w-6xl">
+            <div class="my-0">
+                <div class="py-10 sm:px-2 lg:px-4">
+                    <h2 class="text-2xl font-semibold text-black text-left">
+                        Career Paths <span class="text-brand-primary">At Acentria</span>
+                    </h2>
+                    <div class="my-6">
+                        <NuxtLink href="/our-brand" class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                            Search for Open Positions <i class="fas fa-search text-primary ml-2"></i>
+                        </NuxtLink>
+                    </div>
+                    <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-5">
+                        <div v-for="member in careerPath" :key="member.name" class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-b-2 border-brand-primary">
+                            <div class="sm:flex-shrink-0 flex justify-center">
+                                <i :class="member.icon" class="text-black text-2xl"></i>
+                            </div>
+                            <div class="mt-1 sm:ml-6 lg:ml-0">
+                                <h3 class="text-brand-primary flex justify-center font-semibold">{{ member.name }}</h3>
+                                <i class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                            <a v-for="product in products" :key="product.id" :href="product.href" class="group">
-                                <div
-                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                                    <img :src="product.imageSrc" :alt="product.imageAlt"
-                                        class="h-full w-full object-cover object-center group-hover:opacity-75" />
+        <div class="bg-white font-sans">
+            <div class="container mx-auto max-w-6xl px-4 py-0 sm:px-6 lg:max-w-6xl lg:px-8">
+                <h2 class="text-2xl font-semibold text-black text-left">
+                    Life at <span class="text-brand-primary">Acentria Group</span>
+                </h2>
+                <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                    <a v-for="product in products" :key="product.id" :href="product.href" class="group">
+                        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
+                            <img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
+                        </div>
+                        <div class="mt-4 flex items-center justify-between subheading-class text-black">
+                            <h3>{{ product.name }}</h3>
+                            <p>
+                                <i class="fas fa-play text-2xl text-brand-primary"></i>
+                            </p>
+                        </div>
+                        <p class="mt-1 text-xs italic text-gray-500">{{ product.description }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <div class="container mx-auto mb-5 pl-20 font-sans">
+                <h2 class="text-2xl font-semibold text-black">
+                    Our Shared <span class="text-brand-primary"><br>Company Values</span>
+                </h2>
+            </div>
+
+            <div class="relative isolate overflow-hidden bg-black py-14 font-sans">
+                <img src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                <div class="absolute inset-0 bg-black opacity-30"></div>
+
+                <section class="mb-5 container">
+                    <div class="font-sans">
+                        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 py-0">
+                            <a v-for="news in values" :key="news.title" class="relative flex flex-col overflow-hidden rounded-lg bg-brand-white shadow-card" href="resources/blog/preparing-for-ai-regulations.html">
+                                <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
+                                    <img :src="news.image" alt="Image" class="object-center object-cover h-full w-full" />
                                 </div>
-                                <div class="mt-4 flex items-center justify-between subheading-class  text-black">
-                                    <h3>{{ product.name }}</h3>
-                                    <p>
-                                        <i class="fas fa-play text-2xl text-brand-primary"></i>
-                                    </p>
+                                <div class="relative z-10 grid gap-2 bg-brand-white px-4 py-2">
+                                    <section class="grid items-start justify-start gap-y-3">
+                                        <div class="relative flex flex-col gap-y-1">
+                                            <label class="text-xs text-brand-primary capitalize">{{ news.tag }}</label>
+                                            <h6 class="text-[15px] font-semibold text-black line-clamp-1">{{ news.name }}</h6>
+                                            <p class="text-xs leading-normal">{{ news.description }}</p>
+                                        </div>
+                                    </section>
                                 </div>
-                                <p class="mt-1 text-xs italic text-gray-500">{{ product.description }}</p>
                             </a>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="mt-10">
-                    <div class="container mx-auto  mb-5 pl-20 font-sans">
-                        <p class="mt-2 heading-class text-black">
-                            Our Shared <span class="text-brand-primary"><br>Company Values</span>
-                        </p>
-                    </div>
-
-                    <div class=" relative isolate overflow-hidden bg-black py-14 font-sans">
-                        <img src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
-
-                        <div class="absolute inset-0 bg-black opacity-30"></div>
-
-                        <section class=" mb-5 container">
-                            <div class="font-sans ">
-
-                                <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 py-0">
-
-                                    <a v-for="news in values" :key="news.title"
-                                        class="relative flex  flex-col  overflow-hidden rounded-lg bg-brand-white shadow-card"
-                                        href="resources/blog/preparing-for-ai-regulations.html">
-                                        <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
-                                            <div
-                                                class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
-                                                <div
-                                                    class="ease absolute left-0 top-0 aspect-[1.5] w-full origin-top overflow-hidden transition-transform duration-500 will-change-transform">
-                                                    <figure
-                                                        class="ease absolute h-full w-full max-w-sm origin-top rounded transition-transform duration-500 will-change-transform">
-                                                        <div class="h-0 w-full max-w-full pb-[75%]">
-                                                            <div
-                                                                class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
-                                                                <picture class="flex h-[300px] w-full max-w-none"><img
-                                                                        alt="AI is here. AI regulations are on the way. Is your board ready?"
-                                                                        loading="lazy" decoding="async" data-nimg="fill"
-                                                                        class="object-center object-cover" style="
-                                        position: absolute;
-                                        height: 100%;
-                                        width: 100%;
-                                        left: 0;
-                                        top: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        color: transparent;
-                                      " sizes="240w 100vw" :src="news.image" />
-                                                                </picture>
-                                                            </div>
-                                                        </div>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="ease absolute left-0 top-0 z-[2] aspect-[1.5] w-full rounded-b bg-brand-primary transition-transform duration-500 will-change-transform">
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
-                                            <section class="grid items-start justify-start gap-y-3">
-                                                <div class="relative flex flex-col gap-y-1">
-                                                    <label class="text-xs text-brand-primary capitalize">
-                                                        {{ news.tag }}
-                                                    </label>
-                                                    <h6 class="text-[15px] font-semibold text-black line-clamp-1">
-                                                        {{ news.name }}
-                                                    </h6>
-                                                    <p class="text-xs leading-normal">
-                                                        {{ news.description }}
-                                                    </p>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-                <div class="text-white py-10" style="background-color: #f6f8fc">
-                    <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
-
-
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                            <div class="text-light-content pb-5 md:pb-6">
-                                <h2 id="" class="pb-4 md:pb-5 heading-class text-brand-primary">
-                                    <span
-                                        class="font-sans text-black pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 text-3xl">Join
-                                        our</span> <br>
-                                    Talent Community
-                                </h2>
-                                <p class="text-xs leading-normal mb-4">
-                                    At Acentria Group, we are catalysts of transformation. Please join our talent
-                                    community to get job alerts and share your career details with us for future
-                                    considerations.
-                                </p>
-                            </div>
-                            <div class="my-5">
-                                <NuxtLink href="/meet-the-team"
-                                    class="!button-animation !hover:bg-black bg-brand-primary text-white font-medium py-3 px-12 text-sm rounded-md mt-10">
-                                    Join Now
-                                    <i class="fas fa-award text-primary ml-2"></i>
-                                </NuxtLink>
-                            </div>
-                            <div>
-                                <div class="font-sans my-5">
-                                    <label for="email" class="block text-md font-semibold leading-6 text-black">Your
-                                        Email Address</label>
-                                    <div class="relative mt-2 rounded-md shadow-sm">
-                                        <div
-                                            class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                            <i class="fas fa-paper-plane text-black"></i>
-                                        </div>
-                                        <input type="email" name="email" id="email"
-                                            class="tracking-widest font-semibold block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-black placeholder:text-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6"
-                                            placeholder="you@example.com">
-                                    </div>
-                                </div>
-
-                                <NuxtLink href="/meet-the-team"
-                                    class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                                    Subscribe for job alerts
-                                    <i class="fas fa-arrow-right text-primary ml-2"></i>
-                                </NuxtLink>
-
-                                <p class="text-gray-500 italic mt-3">
-                                    By submitting this form, you agree to receive the information requested as well
-                                    as sales and/or marketing communication on resources, news, and events related
-                                    to Acentria Group.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="relative py-4 lg:basis-1/2">
-                            <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
-                                style="color: transparent; object-fit: cover" src="/img/join.jpg"
-                                class="rounded-xl w-full h-[500px]" />
-                        </div>
-                    </div>
-                </div>
-
-
+                </section>
             </div>
         </div>
+
+        <div class="text-white py-10" style="background-color: #f6f8fc">
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
+                <div class="flex flex-col justify-center lg:basis-1/2">
+                    <h2 class="pb-4 md:pb-5 text-2xl font-semibold text-brand-primary">
+                        <span class="font-sans text-black">Join our</span> <br>
+                        Talent Community
+                    </h2>
+                    <p class="text-xs leading-normal mb-4 text-black">
+                        At Acentria Group, we are catalysts of transformation. Please join our talent community to get job alerts and share your career details with us for future considerations.
+                    </p>
+                    <NuxtLink href="/meet-the-team" class="text-center !button-animation !hover:bg-black bg-brand-primary text-white font-medium py-3 px-12 text-sm rounded-md mt-10">
+                        Join Now
+                        <i class="fas fa-award text-primary ml-2"></i>
+                    </NuxtLink>
+                    <div class="font-sans my-5">
+                        <label for="email" class="block text-md font-semibold leading-6 text-black">Your Email Address</label>
+                        <div class="relative mt-2 rounded-md shadow-sm">
+                            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                <i class="fas fa-paper-plane text-black"></i>
+                            </div>
+                            <input type="email" name="email" id="email" class="tracking-widest font-semibold block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-black placeholder:text-gray-300 focus:ring-2 focus:ring-inset focus:ring-brand-primary sm:text-sm sm:leading-6" placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <NuxtLink href="/meet-the-team" class="text-center !button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                        Subscribe for job alerts
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                    </NuxtLink>
+                    <p class="text-gray-500 italic mt-3">
+                        By submitting this form, you agree to receive the information requested as well as sales and/or marketing communication on resources, news, and events related to Acentria Group.
+                    </p>
+                </div>
+
+                <div class="relative py-4 lg:basis-1/2">
+                    <img alt="Image of community" loading="lazy" decoding="async" src="/img/join.jpg" class="rounded-xl w-full h-[500px]" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </main>
 </template>
 

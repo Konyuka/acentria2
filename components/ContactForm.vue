@@ -35,7 +35,7 @@ const company = computed(() => {
                     </h5>
                 </div>
 
-                <form class="border rounded-xl bg-white px-2 md:px-10 py-5 shadow-card">
+                <form class="contact-form border rounded-xl bg-white px-2 md:px-10 py-5 shadow-card">
                     <div class="grid gap-10 lg:grid-cols-2">
                         <div class="relative pb-2">
                             <label for="FirstName" class="text-sm font-semibold pl-2">First name</label>
@@ -109,5 +109,10 @@ const company = computed(() => {
     .text-base {
         font-size: 1rem;
     }
+}
+
+.contact-form {
+    padding: 2rem;
+    text-align: center;
 }
 </style>

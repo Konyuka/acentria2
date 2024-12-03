@@ -68,11 +68,11 @@ onMounted(async () => {
         <div class="bg-white w-full h-full">
             <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
                 <div class="mx-auto  mb-3 font-sans">
-                    <p class="mt-2 heading-class text-black">
+                    <p class="mt-2 text-2xl font-semibold text-black">
                         News & <span class="text-brand-primary">Updates</span>
                     </p>
                 </div>
-                <p class="text-xs leading-normal">
+                <p class="text-sm leading-normal">
                     Welcome to the Acentria Group News & Updates and Blogs page. Here, you will find the latest news,
                     insightful articles, and updates about our company, industry trends, and more. Our goal is to keep
                     you informed and engaged with valuable content that highlights our commitment to excellence,
@@ -90,7 +90,7 @@ onMounted(async () => {
             <div class="sm:hidden px-4">
                 <label for="tabs" class="sr-only">Select a tab</label>
                 <select @change="setMobileMenu($event)" id="tabs" name="tabs"
-                    class="block w-full rounded-md border-gray-300 focus:border-brand-primary focus:ring-brand-primary py-2 font-bold">
+                    class="block w-full rounded-md border-gray-300 focus:border-brand-primary focus:ring-brand-primary py-2 font-semibold">
                     <option selected value="blogs">Blogs</option>
                     <option value="event">Events</option>
                     <option value="media">Media</option>
@@ -101,17 +101,17 @@ onMounted(async () => {
                     <nav class="-mb-px flex font-sans gap-20" aria-label="Tabs">
                         <button @click="setMenu('blogs')"
                             :class="[currentMenu == 'blogs' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
-                            class="w-1/4  px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
+                            class="w-1/4  px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
                             <i class="fas fa-images mr-2"></i> Latest News
                         </button>
                         <button @click="setMenu('event')"
                             :class="[currentMenu == 'event' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
+                            class="w-1/4 px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
                             <i class="fas fa-blog mr-2"></i> News Feeds
                         </button>
                         <button @click="setMenu('media')"
                             :class="[currentMenu == 'media' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py- text-center text-md subheading-class   hover:text-brand-primary">
+                            class="w-1/4 px-1 py- text-center text-xl font-semibold hover:text-brand-primary">
                             <i class="fas fa-calendar-alt mr-2"></i> Media Kit
                         </button>
 
@@ -133,11 +133,11 @@ onMounted(async () => {
                             <a class="w-full" href="#">
                                 <div class="relative w-full"><img alt="" loading="lazy" width="300" height="200"
                                         decoding="async" data-nimg="1"
-                                        class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                                        class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                                         sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
                                         :src="blog.cover" style="color: transparent;">
                                     <div
-                                        class="className='flex absolute inset-0 flex-col items-start justify-between  rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
+                                        class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
                                     </div>
                                 </div>
                                 <div class="max-w-full">
@@ -150,7 +150,7 @@ onMounted(async () => {
                                     </div>
                                     <div class="font-sans group relative">
                                         <h3
-                                            class="mt-3 line-clamp-1 subheading-class leading-normal text-black transition-colors group-hover:text-brand-primary">
+                                            class="mt-3 line-clamp-1 text-lg font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
                                             <span class="absolute inset-0"></span>
                                             {{ blog.title }}
                                         </h3>
@@ -163,10 +163,10 @@ onMounted(async () => {
                         </NuxtLink>
                     </div>
 
-                    <div v-if="currentMenu == 'event'" class="container grid grid-cols-3 md:grid-cols-3 gap-8 py-3">
+                    <div v-if="currentMenu == 'event'" class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-3">
 
                         <div class="h-[50vh]">
-                            <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                            <h2 class="text-lg font-semibold leading-6 text-gray-900" id="slide-over-title">
                                 <i class="fab fa-instagram"></i> Instagram Feeds
                             </h2>
                             <iframe src="https://www.instagram.com/p/DBViY-to-Ea/embed" class="flex-1 w-full"
@@ -175,7 +175,7 @@ onMounted(async () => {
                         </div>
 
                         <div class="h-[50vh]">
-                            <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                            <h2 class="text-lg font-semibold leading-6 text-gray-900" id="slide-over-title">
                                 <i class="fab fa-facebook"></i> Facebook Feeds
                             </h2>
                             <iframe
@@ -185,7 +185,7 @@ onMounted(async () => {
                         </div>
 
                         <div class="h-[50vh]">
-                            <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                            <h2 class="text-lg font-semibold leading-6 text-gray-900" id="slide-over-title">
                                 <i class="fab fa-x-twitter"></i> Twitter/X Feeds
                             </h2>
                             <iframe src="https://twitter.com/acentriagroup?ref_src=twsrc%5Etfw" class="flex-1 w-full"
@@ -194,7 +194,7 @@ onMounted(async () => {
                         </div>
 
                         <div class="h-[50vh]">
-                            <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                            <h2 class="text-lg font-semibold leading-6 text-gray-900" id="slide-over-title">
                                 <i class="fab fa-linkedin"></i> LinkedIn Feeds
                             </h2>
                             <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed" class="flex-1 w-full"
@@ -202,7 +202,7 @@ onMounted(async () => {
                         </div>
 
                         <div class="h-[50vh]">
-                            <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                            <h2 class="text-lg font-semibold leading-6 text-gray-900" id="slide-over-title">
                                 <i class="fab fa-tiktok"></i> Tiktok Feeds
                             </h2>
                             <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed" class="flex-1 w-full"
@@ -210,7 +210,7 @@ onMounted(async () => {
                         </div>
 
                         <div class="h-[50vh]">
-                            <h2 class="text-md font-semibold leading-6 text-gray-900" id="slide-over-title">
+                            <h2 class="text-lg font-semibold leading-6 text-gray-900" id="slide-over-title">
                                 <i class="fab fa-youtube"></i> Youtube Feeds
                             </h2>
                             <iframe src="https://www.linkedin.com/company/acentria-groupltd/embed" class="flex-1 w-full"
@@ -223,7 +223,6 @@ onMounted(async () => {
                     <div v-if="currentMenu == 'media'">
                         <Gallery />
                     </div>
-
                 </div>
             </div>
         </div>
@@ -234,26 +233,25 @@ onMounted(async () => {
                     <div class="-mt-px flex w-0 flex-1"></div>
                     <div class="hidden lg:-mt-px lg:flex">
                         <button
-                            class="border-brand-primary text-brand-primary inline-flex items-center border-t-2 px-4 pt-4 text-sm font-medium">
+                            class="border-brand-primary text-brand-primary inline-flex items-center border-t-2 px-4 pt-4 text-sm font-semibold">
                             1</button><button
-                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-semibold text-gray-500 hover:border-gray-300 hover:text-gray-700">
                             2</button><button
-                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-semibold text-gray-500 hover:border-gray-300 hover:text-gray-700">
                             3</button><span
-                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">...</span><button
-                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-semibold text-gray-500">...</span><button
+                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-semibold text-gray-500 hover:border-gray-300 hover:text-gray-700">
                             42</button><button
-                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-semibold text-gray-500 hover:border-gray-300 hover:text-gray-700">
                             43</button><button
-                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">
+                            class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-semibold text-gray-500 hover:border-gray-300 hover:text-gray-700">
                             44
                         </button>
                     </div>
                     <div class="-mt-px flex w-0 flex-1 justify-end">
                         <a
-                            class="inline-flex cursor-pointer items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Next<i
-                                class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                translate="no">chevron_right</i></a>
+                            class="inline-flex cursor-pointer items-center border-t-2 border-transparent pl-1 pt-4 text-sm font-semibold text-gray-500 hover:border-gray-300 hover:text-gray-700">Next<i
+                                class="material-symbols-outlined text-dark-icon text-2xl" translate="no">chevron_right</i></a>
                     </div>
                 </nav>
             </div>

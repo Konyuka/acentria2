@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white py-5 font-sans">
         <div class="mx-auto px-6 max-w-7xl lg:px-8">
-            <p class="mt-2 max-w-lg text-pretty text-2xl font-semibold tracking-tight text-gray-950">
+            <p class="mt-2 max-w-lg text-2xl font-semibold tracking-tight text-gray-950">
                 Photos & Videos
             </p>
             <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
@@ -11,7 +11,7 @@
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
                         <img class="h-80 object-cover object-left" src="/img/team.jpeg" alt="" />
                         <div class="p-10 pt-4">
-                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Team Building</p>
+                            <p class="mt-2 text-sm font-semibold tracking-tight text-gray-950">Team Building</p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600">
                                 Our team-building activities are designed to foster collaboration, enhance
                                 communication, and build trust among team members. These events help create a positive
@@ -29,7 +29,7 @@
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
                         <img class="h-80 object-cover object-left lg:object-right" src="/img/journey.jpg" alt="" />
                         <div class="p-10 pt-4">
-                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Acentria Cycle Challenge
+                            <p class="mt-2 text-sm font-semibold tracking-tight text-gray-950">Acentria Cycle Challenge
                             </p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600">
                                 The Acentria Cycle Challenge is an exciting event that promotes fitness, teamwork, and a
@@ -48,7 +48,7 @@
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
                         <img class="h-80 object-cover object-left" src="/img/simo-office.jpg" alt="" />
                         <div class="p-10 pt-4">
-                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Office Shoot</p>
+                            <p class="mt-2 text-sm font-semibold tracking-tight text-gray-950">Office Shoot</p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600">
                                 Our office shoot sessions capture the essence of our workplace culture and the dynamic
                                 environment at Acentria Group. These photos highlight our team's professionalism,
@@ -67,7 +67,7 @@
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                         <img class="h-80 object-cover object-center" src="/img/what.jpg" alt="" />
                         <div class="p-10 pt-4">
-                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Business Development</p>
+                            <p class="mt-2 text-sm font-semibold tracking-tight text-gray-950">Business Development</p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600">
                                 Our business development initiatives are focused on identifying new opportunities,
                                 building strategic partnerships, and driving growth. We leverage our expertise and
@@ -85,7 +85,7 @@
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
                         <img class="h-80 object-cover object-center" src="/img/award.jpg" alt="" />
                         <div class="p-10 pt-4">
-                            <p class="mt-2 text-sm font-medium tracking-tight text-gray-950">Awards</p>
+                            <p class="mt-2 text-sm font-semibold tracking-tight text-gray-950">Awards</p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600">
                                 Our awards and recognitions are a testament to our commitment to excellence and our
                                 dedication to delivering outstanding results. These accolades reflect the hard work and

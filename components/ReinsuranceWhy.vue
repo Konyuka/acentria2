@@ -30,7 +30,7 @@ const reinsuranceFeatures = [
 </script>
 
 <template>
-    <div class="bg-white py-10">
+    <div class="bg-white py-10 why-section">
         <div class="container mx-auto">
             <div class="text-left">
                 <h2 class="text-xl lg:text-2xl font-semibold text-gray-900">
@@ -54,4 +54,9 @@ const reinsuranceFeatures = [
     </div>
 </template>
 
-<style></style>
+<style scoped>
+.why-section {
+    padding: 2rem;
+    text-align: center;
+}
+</style>

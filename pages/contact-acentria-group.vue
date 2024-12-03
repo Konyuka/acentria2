@@ -50,12 +50,12 @@ const contactsContent = ref({
                             <div class=" gap-x-2 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
 
                                 <div class="flex w-full max-w-6xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
-                                    <h1 id="" class="heading-class">
+                                    <h1 id="" class="text-2xl font-semibold">
                                         <span class="text-brand-primary">Connect
                                             with</span> <br>
                                         Our Experts
                                     </h1>
-                                    <p class="font-sans text-xs leading-normal">
+                                    <p class="font-sans text-sm leading-normal">
                                         We value your trust and are committed to safeguarding your future with
                                         precision and excellence.
                                         If you have any questions or need assistance, please don't hesitate to
@@ -93,7 +93,7 @@ const contactsContent = ref({
             </div>
 
             <div class="container mx-auto  mb-5 font-sans mt-8">
-                <p class="mt-2 heading-class text-black">
+                <p class="mt-2 text-2xl font-semibold text-black">
                     Contact <span class="text-brand-primary">us on</span>
                 </p>
             </div>
@@ -103,18 +103,18 @@ const contactsContent = ref({
             <div class="container mt-10 max-w-6xl mx-auto font-sans grid grid-cols-3 gap-y-1 py-5 lg:grid-cols-5">
 
                 <div class="mt-5">
-                    <h2 class="heading-class text-[20px]">
+                    <h2 class="text-xl font-semibold">
                         Visit <span class="text-brand-primary">Us</span>
                     </h2>
-                    <p class="mt-4 leading-6 text-black text-xs">
+                    <p class="mt-4 leading-6 text-black text-sm">
                         <i class="fas fa-building text-brand-primary"></i> West Park Towers, 9th floor <br>
                         <i class="fas fa-road text-brand-primary"></i> Muthithi Road, Mpesi Lane <br />
                         <i class="fas fa-map-marker-alt text-brand-primary"></i> Westlands, Nairobi Kenya
                     </p>
-                    <h2 class="mt-10 heading-class text-[20px]">
+                    <h2 class="mt-10 text-xl font-semibold">
                         Working <span class="text-brand-primary">Hours</span>
                     </h2>
-                    <p class="mt-4 leading-6 text-black font-medium text-xs">
+                    <p class="mt-4 leading-6 text-black font-medium text-sm">
                         <i class="fas fa-calendar-day text-brand-primary"></i> Monday to Friday <br>
                         <i class="fas fa-clock text-brand-primary"></i> 8:00 AM to 5:00 PM <br />
                     </p>
@@ -131,7 +131,7 @@ const contactsContent = ref({
             </div>
 
             <div class="container mx-auto  mb-0 font-sans my-5">
-                <p class="mt-2 heading-class text-black">
+                <p class="mt-2 text-2xl font-semibold text-black">
                     Follow <span class="text-brand-primary">us on</span>
                 </p>
             </div>
