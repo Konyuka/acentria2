@@ -328,14 +328,11 @@ const products = ref([
 
 <template>
     <section class="bg-white">
-
-
-
         <BannerMain :content="bannerContent" />
 
         <div class="bg-white w-full h-full">
             <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
-                <div class="mx-auto  mb-3 font-sans">
+                <div class="mx-auto mb-3 font-sans">
                     <p class="mt-2 heading-class text-black">
                         Explore All <span class="text-brand-primary">Our Products</span>
                     </p>
@@ -347,33 +344,27 @@ const products = ref([
                     home insurance, life insurance, or any other type of insurance, we have you covered. Our team of
                     insurance experts is here to help you find the right insurance products to meet your needs and
                     budget. Explore our insurance products catalogue today and discover the peace of mind that comes
-                    with
-                    knowing you are protected.
-
+                    with knowing you are protected.
                 </p>
             </div>
         </div>
 
-
-
         <div v-for="product in products" class="container py-5 bg-white">
-            <div class="mx-auto  mb-3 font-sans">
+            <div class="mx-auto mb-3 font-sans">
                 <p v-html="product.heading" class="mt-2 heading-class text-black"></p>
             </div>
             <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                 style="color: transparent; object-fit: contain"
-                class="w-full h-[220px] shadow-2xl rounded-md !object-cover" :src="product.image"
-                data-v-inspector="components/Why.vue:34:17" />
+                class="w-full h-[220px] shadow-2xl rounded-md !object-cover" :src="product.image" />
 
             <div
-                class="font-sans grid grid-cols-3 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-3 py-10">
-
-                <NuxtLink :href="item.link" v-for="item in product.items" class="button-animation relative flex flex-row gap-2 border-2 border-gray-200 p-5 rounded-lg">
+                class="font-sans grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 py-10">
+                <NuxtLink :href="item.link" v-for="item in product.items"
+                    class="button-animation relative flex flex-row gap-2 border-2 border-gray-200 p-5 rounded-lg">
                     <i :class="item.icon" class="text-4xl text-brand-primary mr-2"></i>
                     <div class="relative">
                         <div class="flex justify-between w-full">
                             <h5 v-html="item.name" class="text-md pb-1 font-semibold leading-tight text-black"></h5>
-
                         </div>
                         <p class="leading-normal font-regular text-light-content text-[14px]">
                             {{ item.description }}
@@ -381,13 +372,8 @@ const products = ref([
                         <i class="absolute fas fa-arrow-right text-md right-0 top-1"></i>
                     </div>
                 </NuxtLink>
-
             </div>
         </div>
-
-
-
-
     </section>
 </template>
 

@@ -228,7 +228,7 @@ const exploreProducts = ref({
     orientation: 'lg:flex-row flex-col',
     heading: 'Explore <span class="text-brand-primary">Products</span>',
     subheading: 'Get a  <span class="text-brand-primary">5% Discount</span>',
-    image: 'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/handhouse.jpg',
     link: '/insurance-products',
     content: 'At Acentria we offers a wide variety of insurance options for peace of mind for your business, on the road, under your roof, and in your daily life.',
 })
@@ -237,7 +237,7 @@ const exploreClaims = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Learn More <span class="text-brand-primary">About Claims</span>',
     subheading: '',
-    image: 'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/safehouse.jpg',
     link: '/insurance-claims',
     content: 'No matter which type of claim you have, our goal is to make sure everything goes smoothly. That means making your claims process as easy as possible and keeping you updated. Select a product to view the insurance claims process Get a breakdown of the claims process, what to do, and where to go from here.',
 })
@@ -251,18 +251,15 @@ const exploreClaims = ref({
 
                 <ServiceHero2 :content="content" />
 
-                <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat false"
-                    style="background-image: none;">
-
+                <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
                     <div class="container">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center ">
+                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
                             <div>
-                                <p class="my-5 heading-class text-black text-left font-normal">
+                                <h1 class="my-5 heading-class text-left">
                                     Insurance &<span class="text-brand-primary"> <br> Risk Management</span>
-                                </p>
+                                </h1>
                                 <p
                                     class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-
                                     Acentria Group is your trusted friend in the world of insurance. We’re here to make
                                     sure you and anything you care for is safe and sound. Insurance can be confusing,
                                     but we’re experts at making it simple. We’ll take the time to understand exactly
@@ -274,7 +271,6 @@ const exploreClaims = ref({
                                     business, we’ve got the perfect insurance plan that won’t break the bank. Trust us
                                     to be your friendly insurance guide, making sure you’re covered no matter what life
                                     throws your way.
-
                                 </p>
                             </div>
                         </div>
@@ -282,8 +278,8 @@ const exploreClaims = ref({
                 </div>
 
                 <div class="bg-white">
-                    <div class="py-5 text-left  container">
-                        <h2 class="heading-class text-black ">
+                    <div class="py-5 text-left container">
+                        <h2 class="heading-class text-black">
                             Pick a cover and, <span class="text-brand-primary"> <br /> we'll take care of the
                                 rest</span>
                         </h2>
@@ -306,21 +302,13 @@ const exploreClaims = ref({
                         </h2>
                     </div>
 
-                    <div class=" px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
+                    <div class="px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
                         <div class="container mx-auto pb-2">
                             <div class="mt-5 space-y-10">
-
                                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
                                     <div v-for="help in helps"
                                         class="bg-white/40 button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                                         <a class="w-full" href="#">
-                                            <!-- <div class="relative w-full"><img alt="" loading="lazy" width="150"
-                                                    height="100" decoding="async" data-nimg="1"
-                                                    class="false undefined aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/1]"
-                                                    sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                                                    :src="help.img" style="color: transparent;">
-                                            </div> -->
                                             <div class="max-w-full">
                                                 <div class="!text-left font-sans group relative">
                                                     <h3
@@ -335,15 +323,11 @@ const exploreClaims = ref({
                                                         class="mt-5 rounded-sm bg-brand-primary px-5 py-2 text-xs text-white shadow-sm hover:bg-black">
                                                         {{ help.cta }}
                                                     </button>
-
                                                 </div>
                                             </div>
-
                                         </a>
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -356,7 +340,7 @@ const exploreClaims = ref({
 
                 <ContentPic :content="exploreClaims" />
 
-                <div class=" font-sans text-white xl:py-1" style="background-color: #fff">
+                <!-- <div class=" font-sans text-white xl:py-1" style="background-color: #fff">
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:my-2 lg:gap-16">
                         <div class="relative py-4 lg:basis-1/2">
                             <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy"
@@ -390,7 +374,7 @@ const exploreClaims = ref({
 
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <section id="" class="relative py-8 bg-black/60 text-center">
                     <div class="container px-4">

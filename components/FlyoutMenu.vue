@@ -625,6 +625,7 @@ const ReinsuranceMenus = ref([
     },
     {
         name: 'Reinsurance Solutions',
+        linksHeading: 'Reinsurance<span class="text-brand-primary"> Solutions<span/>',
         subMenu: 'Our <span class="text-brand-primary">Solutions<span/>',
         description: 'Discover our tailored reinsurance solutions designed to meet specific risk requirements and provide financial security.',
         icon: 'fas fa-cogs',
@@ -648,6 +649,7 @@ const ReinsuranceMenus = ref([
     },
     {
         name: 'Data & Modelling',
+        linksHeading: 'Data<span class="text-brand-primary"> & Modeling<span/>',
         subMenu: 'Data <span class="text-brand-primary">& Modelling<span/>',
         description: 'Leverage data-driven insights and advanced modelling techniques to enhance your reinsurance strategy.',
         icon: 'fas fa-database',
