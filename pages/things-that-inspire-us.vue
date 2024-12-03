@@ -49,11 +49,10 @@ const joinAsMembers = ref([
 
 <template>
     <section class="min-h-screen font-sans bg-white">
-
         <BannerMain :content="bannerContent" />
 
         <div>
-            <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
+            <div class="relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
                 <div class="container">
                     <div
                         class="flex items-center bg-cover px-4 py-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
@@ -61,12 +60,9 @@ const joinAsMembers = ref([
                             <div>
                                 <p
                                     class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-
                                     At Acentria Group, inspiration fuels our purpose and drives everything we do. Guided
                                     by our mantra— <b>Empower, Innovate, and Prosper</b> —we find motivation in the
-                                    possibilities
-                                    we create for our clients, partners, communities, and employees.
-
+                                    possibilities we create for our clients, partners, communities, and employees.
                                 </p>
                             </div>
                         </div>
@@ -75,14 +71,15 @@ const joinAsMembers = ref([
             </div>
 
             <div class="text-white">
-
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:my-4 lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1"
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
+                    <div class="relative p-4 lg:basis-1/2">
+                        <img alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
+                            data-nimg="1"
                             src="https://images.pexels.com/photos/29462460/pexels-photo-29462460/free-photo-of-elegant-portrait-of-a-smiling-woman-in-lagos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-lg">
+                    </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="heading-class pb-4 md:pb-5 ">
+                        <h2 id="" class="heading-class pb-4 md:pb-5">
                             <span class="text-brand-primary">Empower</span>
                         </h2>
                         <div class="text-light-content pb-5 md:pb-6">
@@ -91,13 +88,15 @@ const joinAsMembers = ref([
                                 greatness. Empowerment is at the heart of our mission:
                                 <br><br>
                                 <span>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our clients:</b> Providing the tools, insights, and solutions they need to
-                                    overcome challenges and unlock new opportunities. <br>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our employees:</b> Fostering an environment where ideas flourish, ambitions
-                                    are
-                                    realized, and diverse talents shine. <br>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our communities:</b> Creating a positive impact by driving initiatives that
-                                    promote equality, inclusion, and sustainability.
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our clients:</b>
+                                    Providing the tools, insights, and solutions they need to overcome challenges and
+                                    unlock new opportunities. <br>
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our employees:</b>
+                                    Fostering an environment where ideas flourish, ambitions are realized, and diverse
+                                    talents shine. <br>
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>For our
+                                        communities:</b> Creating a positive impact by driving initiatives that promote
+                                    equality, inclusion, and sustainability.
                                 </span> <br><br>
                                 Every success story we help write inspires us to continue empowering others to achieve
                                 their dreams.
@@ -105,11 +104,13 @@ const joinAsMembers = ref([
                         </div>
                     </div>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1"
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
+                    <div class="relative p-4 lg:basis-1/2">
+                        <img alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
+                            data-nimg="1"
                             src="https://images.pexels.com/photos/1136465/pexels-photo-1136465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                            style="color: transparent; object-fit: contain;" class="rounded-lg">
+                    </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
                         <h2 id="" class="heading-class">
                             <span class="text-brand-primary">Innovate</span>
@@ -120,14 +121,15 @@ const joinAsMembers = ref([
                                 ever-changing world around us.
                                 <br><br>
                                 <span>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are inspired by <b>challenges</b> that push us to think differently and create
-                                    transformative solutions. <br>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We embrace <b>technology and creativity</b> to redefine possibilities and deliver
-                                    value
-                                    in bold, unexpected ways. <br>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We celebrate the <b>resilience of our stakeholders</b>, whose evolving needs drive
-                                    us to
-                                    stay ahead of the curve.
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are inspired by
+                                    <b>challenges</b> that push us to think differently and create transformative
+                                    solutions. <br>
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We embrace <b>technology
+                                        and creativity</b> to redefine possibilities and deliver value in bold,
+                                    unexpected ways. <br>
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We celebrate the
+                                    <b>resilience of our stakeholders</b>, whose evolving needs drive us to stay ahead
+                                    of the curve.
                                 </span> <br><br>
                                 Innovation inspires us to keep pushing boundaries, unlocking new potential for those we
                                 serve.
@@ -135,45 +137,43 @@ const joinAsMembers = ref([
                         </div>
                     </div>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy"
-                            width="500" height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
-                            style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
+                    <div class="relative p-4 lg:basis-1/2">
+                        <img alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
+                            data-nimg="1" src="/img/award.jpg" style="color: transparent; object-fit: contain;"
+                            class="rounded-lg">
+                    </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 id="" class="heading-class">
                             <span class="text-brand-primary">Prosper</span>
                         </h2>
-                        <div class="text-light-content pb-5 ">
+                        <div class="text-light-content pb-5">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
                                 Prosperity is more than financial success—it’s the flourishing of individuals,
                                 businesses, and communities, its about winning together!
                                 <br><br>
                                 <span>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are inspired by the <b>positive impact</b> we create in the lives of our
-                                    clients and
-                                    their stakeholders. <br>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We measure prosperity through <b>lasting relationships</b>, ethical practices, and
-                                    contributions to a sustainable future. <br>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are motivated by the <b>shared growth</b> we experience when we succeed
-                                    together with
-                                    our clients and partners.
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are inspired by the
+                                    <b>positive impact</b> we create in the lives of our clients and their stakeholders.
+                                    <br>
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We measure prosperity
+                                    through <b>lasting relationships</b>, ethical practices, and contributions to a
+                                    sustainable future. <br>
+                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> We are motivated by the
+                                    <b>shared growth</b> we experience when we succeed together with our clients and
+                                    partners.
                                 </span> <br><br>
                                 The pursuit of prosperity inspires us to act responsibly and strive for a better,
                                 brighter future for all.
                                 At Acentria Group, we are inspired by the power of possibility and the promise of
                                 progress. Through <b>Empower, Innovate, and Prosper,</b> we remain committed to turning
                                 inspiration into action—every day, in everything we do.
-
                             </p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-
-
     </section>
 </template>
 
