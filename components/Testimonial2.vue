@@ -18,8 +18,7 @@
                     <div class="flex relative" style="transform: translateX(0%)">
                         <div class="mt-2 md:flex">
                             <div class="relative lg:w-1/2 h-72">
-                                <img src="https://www.shutterstock.com/shutterstock/photos/481596448/display_1500/stock-photo-african-american-businessman-on-the-phone-sitting-at-the-computer-in-his-startup-office-481596448.jpg"
-                                    alt="image of profile"
+                                <img src="/img/testimonials.jpg" alt="image of profile"
                                     class="w-full h-[320px] flex-shrink-0 object-fit object-cover shadow-lg rounded" />
                                 <div
                                     class="mt-20 w-28 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-28 bg-red-100 rounded-full">

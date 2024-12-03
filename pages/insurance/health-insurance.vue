@@ -110,7 +110,7 @@ const whys = ref([
 
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
-        <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto px-4 py-2">
             <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
             <p class="text-lg text-light-content mb-8">We have all the answers to your questions.</p>
         </div>

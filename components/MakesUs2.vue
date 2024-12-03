@@ -78,8 +78,7 @@ const incentives = [
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: contain"
                         class="mt-8 w-full h-[360px] shadow-2xl rounded-lg !object-cover"
-                        src="https://media.istockphoto.com/id/1156638514/photo/i-dont-believe-in-limits.webp?s=1024x1024&w=is&k=20&c=xxWccVnzPivgSezXD0axkQ47sQp6OMqMu54yfTsK4yU="
-                        data-v-inspector="components/Why.vue:34:17" />
+                        src="/img/inspire.jpg" data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="mt-2 flex flex-col justify-center items-center lg:basis-1/2">
                     <div class="container">

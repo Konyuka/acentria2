@@ -149,8 +149,7 @@ onMounted(() => {
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
-                      class="w-full h-[330px] shadow-2xl rounded-lg !object-cover"
-                      src="https://media.istockphoto.com/id/1127521176/photo/sealing-deals-around-the-clock.jpg?s=1024x1024&w=is&k=20&c=v_jacB65NfrxmRK8-gIBBLqf6JTRDz7VQp_w54kDS8o="
+                      class="w-full h-[330px] shadow-2xl rounded-lg !object-cover" src="/img/handshake.jpg"
                       data-v-inspector="components/Why.vue:34:17" />
                   </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
@@ -221,8 +220,7 @@ onMounted(() => {
                   <div class="relative py-4 lg:basis-1/2">
                     <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
-                      class="w-full h-[320px] shadow-2xl rounded-lg !object-cover"
-                      src="https://www.shutterstock.com/shutterstock/photos/2029044266/display_1500/stock-photo-happy-excited-black-mixed-race-couple-celebrating-financial-success-at-laptop-getting-income-loan-2029044266.jpg"
+                      class="w-full h-[320px] shadow-2xl rounded-lg !object-cover" src="/img/hi5.jpg"
                       data-v-inspector="components/Why.vue:34:17" />
                   </div>
                 </div>
@@ -252,8 +250,7 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2">
                       <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: contain"
-                        class="!object-cover w-full h-[300px] shadow-2xl rounded-lg"
-                        src="https://www.shutterstock.com/shutterstock/photos/2384875277/display_1500/stock-photo-startup-team-reading-data-results-in-boardroom-meeting-looking-at-official-documents-to-help-2384875277.jpg"
+                        class="!object-cover w-full h-[300px] shadow-2xl rounded-lg" src="/img/leadership.jpg"
                         data-v-inspector="components/Why.vue:34:17" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
