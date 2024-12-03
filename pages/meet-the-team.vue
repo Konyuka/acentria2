@@ -42,7 +42,7 @@ const setMobileMenu = (event) => {
 
         <BannerMain :content="bannerContent" />
 
-        <div class="max-w-4xl mx-auto mt-10">
+        <div class="max-w-6xl justify-center mx-auto mt-10">
             <div class="sm:hidden px-4">
                 <label for="tabs" class="sr-only">Select a tab</label>
                 <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
@@ -55,7 +55,7 @@ const setMobileMenu = (event) => {
             </div>
             <div class="hidden sm:block font-sans">
                 <div class="divide-x divide-gray-200 ">
-                    <nav class="-mb-px flex font-sans gap-20" aria-label="Tabs">
+                    <nav class="-mb-px flex font-sans gap-40" aria-label="Tabs">
                         <button @click="setMenu('Governance')"
                             :class="[currentMenu == 'Governance' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
                             class="w-1/4  px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">

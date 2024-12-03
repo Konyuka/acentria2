@@ -93,10 +93,10 @@ const openProfile = (member) => {
                         class="p-5 min-h-[150px] w-full rounded-t-xl object-cover md:min-h-[200px]"
                         style="color: transparent" :src="member.image" />
                     <div class="font-sans flex max-h-[200px] flex-col items-center p-4">
-                        <span class="text-xl font-bold text-light-title">
+                        <span class="text-md font-bold text-light-title">
                             {{ member.name }}
                         </span>
-                        <span class="mb-4 flex-grow text-base text-light-content">
+                        <span class="mb-4 flex-grow text-sm text-light-content">
                             {{ member.title }}
                         </span>
                         <span class="font-bold text-brand-primary">
