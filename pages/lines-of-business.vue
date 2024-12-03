@@ -43,16 +43,14 @@ const features = [
 <template>
 
     <div class="overflow-y-hidden bg-white">
-
         <BannerMain :content="bannerContent" />
 
         <div class="2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-
             <div class="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
                 <div class="w-full lg:w-6/12">
-                    <h2 class="w-full heading-class text-left">
+                    <h1 class="w-full heading-class text-left">
                         Our Diverse <span class="text-brand-primary">Lines of Business</span>
-                    </h2>
+                    </h1>
                     <p class="font-normal text-xs leading-normal text-black mt-6 text-left">
                         At Acentria Group, we offer a wide range of services designed to meet the diverse needs of our
                         clients. Our lines of business include Insurance, Reinsurance, Actuarial Services, Broking, and
@@ -80,14 +78,13 @@ const features = [
             <div class="flex lg:flex-row flex-col md:gap-14 gap-16 justify-between lg:mt-20 mt-16">
                 <div class="w-full">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-12 gap-10">
-
-                        <NuxtLink :href="feature.url"  v-for="feature in features" class="button-animation flex p-4 shadow-md border-l-4 border-brand-primary">
+                        <NuxtLink :href="feature.url" v-for="feature in features"
+                            class="button-animation flex p-4 shadow-md border-l-4 border-brand-primary">
                             <div class="mr-6">
                                 <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                             </div>
-                            <div class="">
-                                <p
-                                    class="subheading-class text-left">
+                            <div>
+                                <p class="subheading-class text-left">
                                     {{ feature.title }}
                                 </p>
                                 <p class="mt-2 font-normal text-xs leading-normal text-black text-left">
@@ -95,15 +92,9 @@ const features = [
                                 </p>
                             </div>
                         </NuxtLink>
-
-                        
                     </div>
-                </div>          
+                </div>
             </div>
-
-
-
-
         </div>
     </div>
 </template>
