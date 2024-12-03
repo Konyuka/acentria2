@@ -81,7 +81,7 @@ const awards = ref([
                         <div
                             class="ease relative z-10 grid gap-2 bg-brand-white px-4 transition-transform duration-500 will-change-transform translate-y-0">
                             <section class="relative grid items-start justify-start gap-y-0">
-                                <div class="flex min-h-auto py-5 flex-col gap-y-1">
+                                <div class="flex h-auto py-2 flex-col">
                                     <h6 class="font-medium text-[12px] text-black">
                                         {{ award.name }}
                                     </h6>

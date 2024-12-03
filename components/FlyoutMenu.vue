@@ -604,7 +604,7 @@ const ReinsuranceMenus = ref([
     {
         name: 'Reinsurance Services',
         linksHeading: 'Reinsurance<span class="text-brand-primary"> Services<span/>',
-        mainMenu: 'Company <span class="text-brand-primary">Profile<span/>',
+        mainMenu: 'Reinsurance <span class="text-brand-primary">Products<span/>',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Explore our comprehensive reinsurance services designed to optimize your risk management strategies.',
@@ -688,7 +688,7 @@ const ActuarialMenus = ref([
     {
         name: 'Actuarial Services',
         linksHeading: 'Actuarial<span class="text-brand-primary"> Services<span/>',
-        mainMenu: 'Company <span class="text-brand-primary">Profile<span/>',
+        mainMenu: 'Actuarial <span class="text-brand-primary">Products<span/>',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Explore our comprehensive actuarial consulting services designed to optimize your financial strategies and enhance your business operations.',
