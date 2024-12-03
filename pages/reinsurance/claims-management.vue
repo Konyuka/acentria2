@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
     title: 'Claims Management',
+    subTitle: 'Expertise and Efficiency',
     image: 'https://images.pexels.com/photos/1264438/pexels-photo-1264438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref({
@@ -45,38 +46,41 @@ const faqs = ref([
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ReinsuranceFeature :content="ReinsuranceFeatureContent" />
-       
 
-        <div class="mt-5 isolate mx-5 mb-10 grid gap-2 max-w-6xl mx-auto grid-cols-3 font-sans">
 
-            <div class="rounded-xl p-8 ring-1 ring-brand-primary shadow-xl">
-                <h2 id="tier-hobby" class="mt-5 text-center subheading-class leading-normal text-gray-900">
-                    Data-Driven Claims Processing
-                </h2>
-                <p class="text-center mt-2 text-content-light text-xs leading-normal">
-                    We utilize cutting-edge technology and experienced claims experts to carefully evaluate and expedite
-                    claims, prioritizing accuracy and efficiency at every stage of the process.
-                </p>
-            </div>
-            <div class="rounded-xl p-8 ring-1 ring-brand-primary shadow-xl">
-                <h2 id="tier-hobby" class="mt-5 text-center subheading-class leading-normal text-gray-900">
-                    Profitability and Sustainability
-                </h2>
-                <p class="text-center mt-2 text-content-light text-xs leading-normal">
-                    We aim to deliver claims management that not only meets immediate needs but also contributes to
-                    long-term profitability and sustainability for our clients.
-                </p>
-            </div>
-            <div class="rounded-xl p-8 ring-1 ring-brand-primary shadow-xl">
-                <h2 id="tier-hobby" class="mt-5 text-center subheading-class leading-normal text-gray-900">
-                    Client-Centric Approach
-                </h2>
-                <p class="text-center mt-2 text-content-light text-xs leading-normal">
-                    Your satisfaction is paramount to us. We place clients at the heart of our claims management
-                    strategy, ensuring personalized attention, clear communication, and a seamless claims experience.
-                </p>
+        <div class="container mx-auto px-4 py-10">
+            <div class="grid gap-6 md:grid-cols-3">
+                <div class="rounded-xl p-6 ring-1 ring-brand-primary shadow-xl">
+                    <h2 class="text-center text-lg font-semibold text-gray-900">
+                        Data-Driven Claims Processing
+                    </h2>
+                    <p class="text-center mt-2 text-sm leading-relaxed text-gray-700">
+                        We utilize cutting-edge technology and experienced claims experts to carefully evaluate and
+                        expedite claims, prioritizing accuracy and efficiency at every stage of the process.
+                    </p>
+                </div>
+                <div class="rounded-xl p-6 ring-1 ring-brand-primary shadow-xl">
+                    <h2 class="text-center text-lg font-semibold text-gray-900">
+                        Profitability and Sustainability
+                    </h2>
+                    <p class="text-center mt-2 text-sm leading-relaxed text-gray-700">
+                        We aim to deliver claims management that not only meets immediate needs but also contributes to
+                        long-term profitability and sustainability for our clients.
+                    </p>
+                </div>
+                <div class="rounded-xl p-6 ring-1 ring-brand-primary shadow-xl">
+                    <h2 class="text-center text-lg font-semibold text-gray-900">
+                        Client-Centric Approach
+                    </h2>
+                    <p class="text-center mt-2 text-sm leading-relaxed text-gray-700">
+                        Your satisfaction is paramount to us. We place clients at the heart of our claims management
+                        strategy, ensuring personalized attention, clear communication, and a seamless claims
+                        experience.
+                    </p>
+                </div>
             </div>
         </div>
+
         <ReinsuranceWhy />
         <ContactForm />
     </div>
