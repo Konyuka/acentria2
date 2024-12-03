@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from "vue";
 
-
 const InsuranceBannerContent = ref({
     subtitle: "Health Insurance",
     title: `Your health is, <span class="font-sans tracking-normal text-white leading-tight lg:leading-tight"> Your greatest wealth </span>`,
@@ -111,9 +110,9 @@ const whys = ref([
 
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
-        <div class="container">
-            <h1 class="heading-class">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
-            <p class="text-[25px] text-light-content">We have all the answers to your questions.</p>
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span></h1>
+            <p class="text-lg text-light-content mb-8">We have all the answers to your questions.</p>
         </div>
 
         <Accordion :faqs="faqs" />
@@ -126,6 +125,22 @@ const whys = ref([
 </template>
 
 <style scoped>
-
-
+.container {
+    max-width: 1200px;
+}
+.heading-class {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.text-light-content {
+    color: #6b7280;
+}
+@media (min-width: 768px) {
+    .heading-class {
+        font-size: 2rem;
+    }
+    .text-light-content {
+        font-size: 1.25rem;
+    }
+}
 </style>

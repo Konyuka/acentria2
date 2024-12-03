@@ -86,7 +86,7 @@ onMounted(async () => {
         </div>
 
 
-        <div class="bg-white max-w-screen mx-auto">
+        <div class="container bg-white max-w-screen mx-auto">
             <div class="sm:hidden px-4">
                 <label for="tabs" class="sr-only">Select a tab</label>
                 <select @change="setMobileMenu($event)" id="tabs" name="tabs"
@@ -97,33 +97,25 @@ onMounted(async () => {
                 </select>
             </div>
             <div class="hidden sm:block font-sans">
-                <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
-                    <img src="https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                <div class="divide-x divide-gray-200 ">
+                    <nav class="-mb-px flex font-sans gap-20" aria-label="Tabs">
+                        <button @click="setMenu('blogs')"
+                            :class="[currentMenu == 'blogs' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            class="w-1/4  px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
+                            <i class="fas fa-images mr-2"></i> Latest News
+                        </button>
+                        <button @click="setMenu('event')"
+                            :class="[currentMenu == 'event' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            class="w-1/4 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
+                            <i class="fas fa-blog mr-2"></i> News Feeds
+                        </button>
+                        <button @click="setMenu('media')"
+                            :class="[currentMenu == 'media' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            class="w-1/4 px-1 py- text-center text-md subheading-class   hover:text-brand-primary">
+                            <i class="fas fa-calendar-alt mr-2"></i> Media Kit
+                        </button>
 
-                    <div class="absolute inset-0 bg-black opacity-70"></div>
-                    <div class="container relative mx-auto max-w-6xl h-32 px-6 lg:px-8">
-
-                        <div class="mt-10 border-2 divide-x divide-gray-200 border-gray-200">
-                            <nav class="-mb-px flex font-sans" aria-label="Tabs">
-                                <button @click="setMenu('blogs')"
-                                    :class="[currentMenu == 'blogs' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                    class="w-1/3 border-2  px-1 py-4 text-center subheading-class   hover:text-brand-primary">
-                                    <i class="fas fa-blog mr-2"></i> Latest News
-                                </button>
-                                <button @click="setMenu('event')"
-                                    :class="[currentMenu == 'event' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                    class="w-1/3 border-2 px-1 py-4 text-center subheading-class  hover:text-brand-primary">
-                                    <i class="fas fa-calendar-alt mr-2"></i> News Feeds
-                                </button>
-                                <button @click="setMenu('media')"
-                                    :class="[currentMenu == 'media' ? 'bg-gray-500 text-white' : 'border-transparent text-white']"
-                                    class="w-1/3 border-2 px-1 py-4 text-center subheading-class  hover:text-brand-primary">
-                                    <i class="fas fa-images mr-2"></i> Media Kit
-                                </button>
-                            </nav>
-                        </div>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
