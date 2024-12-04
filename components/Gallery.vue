@@ -1,12 +1,12 @@
 <template>
     <div class="bg-white py-2 font-sans">
         <div class="mx-auto px-6 max-w-7xl lg:px-8">
-            <div class="mt-2 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+            <div class="mt-2 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
                 <div class="relative lg:col-span-3">
                     <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]" />
                     <div
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
-                        <img class="h-80 object-cover object-left" src="/img/team.jpeg" alt="" />
+                        <NuxtImg class="h-80 object-cover object-left" src="/img/team.jpeg" alt="" />
                         <div class="p-10 pt-4">
                             <p class="mt-2 text-lg font-semibold tracking-tight text-gray-950">Team Building</p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600 leading-normal">
