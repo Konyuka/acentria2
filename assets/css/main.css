@@ -12,8 +12,6 @@
     @apply transform transition hover:cursor-pointer hover:scale-90 duration-700 ease-in-out
 }
 
-
-
 .heading-class {
     @apply text-[24px] font-semibold text-gray-900
 }
@@ -35,22 +33,16 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    /* border-radius: 100vh; */
     background: #000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    /* background: rgb(56, 178, 172); */
-    background: #ed1c24;
-    /* background: #4d4f51; */
-    /* border-radius: 100vh; */
-    /* border: 0.5px solid #ffffff; */
+    background: #ed1c24;   
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    /* background: #4d4f51; */
     background: #4d4f51;
 }
 

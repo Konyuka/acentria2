@@ -440,8 +440,7 @@ onBeforeUnmount(() => {
                             <div class="text-base font-semibold">
                                 Insurance
                             </div>
-                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                translate="no">chevron_right</i>
+                            <i class="fas fa-chevron-right text-dark-icon text-md"></i>
                         </NuxtLink>
                     </div>
                     <div class="border-b border-brand-divider">
@@ -451,8 +450,7 @@ onBeforeUnmount(() => {
                             <div class="text-base font-semibold">
                                 Reinsurance
                             </div>
-                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                translate="no">chevron_right</i>
+                            <i class="fas fa-chevron-right text-dark-icon text-md"></i>
                         </NuxtLink>
                     </div>
                     <div class="border-b border-brand-divider">
@@ -462,8 +460,7 @@ onBeforeUnmount(() => {
                             <div class="text-base font-semibold">
                                 Actuarial
                             </div>
-                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                translate="no">chevron_right</i>
+                            <i class="fas fa-chevron-right text-dark-icon text-md"></i>
                         </NuxtLink>
                     </div>
                     <div class="border-b border-brand-divider">
@@ -472,8 +469,7 @@ onBeforeUnmount(() => {
                             <div class="text-base font-semibold text-light-title">
                                 Technologies
                             </div>
-                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                translate="no">chevron_right</i>
+                            <i class="fas fa-chevron-right text-dark-icon text-md"></i>
                         </a>
                     </div>
                     <div class="border-b border-brand-divider">
@@ -483,8 +479,7 @@ onBeforeUnmount(() => {
                             <div class="text-base font-semibold">
                                 Investments
                             </div>
-                            <i class="material-symbols-outlined text-dark-icon text-2xl undefined"
-                                translate="no">chevron_right</i>
+                            <i class="fas fa-chevron-right text-dark-icon text-md"></i>
                         </NuxtLink>
                     </div>
 

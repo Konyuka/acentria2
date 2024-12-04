@@ -23,8 +23,8 @@ const props = defineProps({
                                     <h4 id="" class="font-sans subheading-class font-semibold">
                                         {{ user.name }}
                                     </h4>
-                                    <i class="material-symbols-outlined text-brand-primary text-4xl pb-2"
-                                        translate="no">health_and_safety</i>
+                                    <i class="fas fa-arrow-right text-brand-primary text-md pb-2"
+                                        translate="no"></i>
                                 </div>
                                 <p class="font-sans text-sm text-gray-700 leading-tight">
                                     {{ user.description }}

@@ -24,8 +24,7 @@ const props = defineProps({
                         <div
                             class="col-span-2 grid grid-cols-1 gap-x-8 text-base leading-7 text-gray-600 sm:grid-cols-2">
                             <div v-for="why in whys" :key="why.title" class="flex flex-row">
-                                <i class="material-symbols-outlined text-brand-primary text-4xl" translate="no">{{
-                                    why.icon }}</i>
+                                <i :class="[why.icon]" class="text-brand-primary text-xl" translate="no"></i>
                                 <div class="ml-3">
                                     <h5 class="text-[16px] font-semibold pb-1">{{ why.title }}</h5>
                                     <p class="text-xs leading-normal">{{ why.content }}</p>

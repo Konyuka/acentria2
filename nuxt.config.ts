@@ -162,9 +162,8 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css',
     '@/assets/css/fonts.css',
-    '@/assets/css/variables.css',
     '@/assets/css/8184c082007826aa.css',
-    '@/assets/css/ee102810659ef561.css',
+    // '@/assets/css/ee102810659ef561.css',
   ],
   postcss: {
     plugins: {

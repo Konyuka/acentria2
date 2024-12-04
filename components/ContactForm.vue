@@ -63,7 +63,7 @@ const company = computed(() => {
                             <label for="WorkEmail" class="text-sm font-semibold pl-2">Email address</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                    <i class="material-symbols-outlined text-2xl text-brand-primary">mail</i>
+                                    <i class="fas fa-envelope text-md text-brand-primary"></i>
                                 </div>
                                 <input name="WorkEmail" id="WorkEmail"
                                     class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
@@ -73,7 +73,7 @@ const company = computed(() => {
                             <label for="PhoneNumber" class="text-sm font-semibold pl-2">Phone number</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                    <i class="material-symbols-outlined text-2xl text-brand-primary">phone</i>
+                                    <i class="fas fa-phone text-md text-brand-primary"></i>
                                 </div>
                                 <input name="PhoneNumber" id="PhoneNumber"
                                     class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
@@ -85,7 +85,7 @@ const company = computed(() => {
                             <label for="CompanyName" class="text-sm font-semibold pl-2">Company name</label>
                             <div class="relative mt-2 rounded-md shadow-sm">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                                    <i class="material-symbols-outlined text-2xl text-brand-primary">business</i>
+                                    <i class="fas fa-building text-md text-brand-primary"></i>
                                 </div>
                                 <input name="CompanyName" id="CompanyName"
                                     class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />

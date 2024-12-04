@@ -22,8 +22,7 @@ const props = defineProps({
                 class="button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit md:min-h-[200px] max-w-[340px] rounded-xl bg-white p-5 md:max-w-[300px] w-full h-full">
                 <div class="font-sans flex h-fit flex-col">
 
-                    <i class="material-symbols-outlined text-brand-primary text-4xl pb-4" translate="no">{{ item.icon
-                        }}</i>
+                    <i class="fas fa-circle-dot text-brand-primary text-md pb-4" translate="no"></i>
                     <div>
                         <h4 id=""
                             class="subheading-class pb-4 leading-normal text-light-title">

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000');
 
-@font-face {
+/* @font-face {
   font-family: "Material Symbols Outlined";
   font-style: normal;
   font-weight: 400;
@@ -20,7 +20,7 @@
   word-wrap: normal;
   direction: ltr;
   font-feature-settings: "liga";
-}
+} */
 
 html {
   line-height: 1.5;
@@ -65,7 +65,7 @@ blockquote {
   color: #555;
 }
 
-code {
+/* code {
   font-family: "Courier New", Courier, monospace;
   background-color: #f4f4f4;
   padding: 0.2em 0.4em;
@@ -78,7 +78,7 @@ pre {
   padding: 1em;
   border-radius: 4px;
   overflow-x: auto;
-}
+} */
 
 .container {
   max-width: 1200px;

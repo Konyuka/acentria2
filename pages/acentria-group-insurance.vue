@@ -141,32 +141,32 @@ const whys = ref([
     {
         title: 'We save you money',
         content: 'We provide unique offerings that enable you to combine your insurance products.',
-        icon: 'savings',
+        icon: 'fas fa-piggy-bank',
     },
     {
         title: 'We are there for you',
         content: 'We will take care of your insurance needs through our versatile scope',
-        icon: 'support_agent',
+        icon: 'fas fa-headset',
     },
     {
         title: 'Easy claim process',
         content: 'Our claims process is hassle-free, and we are proud of our service',
-        icon: 'assignment_turned_in',
+        icon: 'fas fa-check-circle',
     },
     {
         title: 'Prompt Quotations',
         content: 'Let us help you with the best timely quotations for your needs',
-        icon: 'query_builder',
+        icon: 'fas fa-clock',
     },
     {
         title: 'Convenience',
         content: 'Our services and solutions are simplified for clients\' use.',
-        icon: 'thumb_up',
+        icon: 'fas fa-thumbs-up',
     },
     {
         title: 'Peace of Mind',
         content: 'Our team of experts shall offer professional advice for your needs.',
-        icon: 'sentiment_satisfied',
+        icon: 'fas fa-smile',
     },
 ])
 const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
