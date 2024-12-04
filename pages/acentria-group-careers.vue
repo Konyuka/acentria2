@@ -173,7 +173,7 @@ const products = [
                             </div>
 
                             <div class="relative py-4">
-                                <img alt="Image of growth" loading="lazy" decoding="async" src="/img/give.jpg"
+                                <NuxtImg alt="Image of growth" loading="lazy" decoding="async" src="/img/give.jpg"
                                     class="rounded-xl w-full h-[250px] object-cover" />
                             </div>
                         </div>
@@ -189,7 +189,7 @@ const products = [
         </section>
 
         <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
-            <img src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+            <NuxtImg src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
             <div class="absolute inset-0 bg-black opacity-40"></div>
             <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
                 <dl class="font-sans grid grid-cols-1 gap-10 text-white sm:grid-cols-2 lg:grid-cols-3">
@@ -230,7 +230,7 @@ const products = [
         <div class="font-sans py-0" style="background-color: rgb(246, 248, 252)">
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                 <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" decoding="async" class="w-full h-[300px] rounded-lg" src="/img/what.jpg" />
+                    <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" class="w-full h-[300px] rounded-lg" src="/img/what.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="text-2xl font-semibold pb-4 pt-6 text-brand-primary">
@@ -281,7 +281,7 @@ const products = [
                 <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                     <a v-for="product in products" :key="product.id" :href="product.href" class="group">
                         <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                            <img :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
+                            <NuxtImg :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
                         </div>
                         <div class="mt-4 flex items-center justify-between subheading-class text-black">
                             <h3>{{ product.name }}</h3>
@@ -296,14 +296,14 @@ const products = [
         </div>
 
         <div class="mt-10">
-            <div class="container mx-auto mb-5 pl-20 font-sans">
+            <div class="container mx-auto mb-5 font-sans">
                 <h2 class="text-2xl font-semibold text-black">
                     Our Shared <span class="text-brand-primary"><br>Company Values</span>
                 </h2>
             </div>
 
             <div class="relative isolate overflow-hidden bg-black py-14 font-sans">
-                <img src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                <NuxtImg src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
                 <div class="absolute inset-0 bg-black opacity-30"></div>
 
                 <section class="mb-5 container">
@@ -311,7 +311,7 @@ const products = [
                         <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 py-0">
                             <a v-for="news in values" :key="news.title" class="relative flex flex-col overflow-hidden rounded-lg bg-brand-white shadow-card" href="resources/blog/preparing-for-ai-regulations.html">
                                 <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
-                                    <img :src="news.image" alt="Image" class="object-center object-cover h-full w-full" />
+                                    <NuxtImg :src="news.image" alt="Image" class="object-center object-cover h-full w-full" />
                                 </div>
                                 <div class="relative z-10 grid gap-2 bg-brand-white px-4 py-2">
                                     <section class="grid items-start justify-start gap-y-3">
@@ -331,7 +331,7 @@ const products = [
 
         <div class="text-white py-10" style="background-color: #f6f8fc">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
-                <div class="flex flex-col justify-center lg:basis-1/2">
+                <div class="flex flex-col justify-center lg:basis-2/5">
                     <h2 class="pb-4 md:pb-5 text-2xl font-semibold text-brand-primary">
                         <span class="font-sans text-black">Join our</span> <br>
                         Talent Community
@@ -361,8 +361,8 @@ const products = [
                     </p>
                 </div>
 
-                <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of community" loading="lazy" decoding="async" src="/img/join2.jpg" class="rounded-xl w-full h-[500px]" />
+                <div class="relative py-4 lg:basis-3/5">
+                    <NuxtImg alt="Image of community" loading="lazy" decoding="async" src="/img/join2.jpg" class="rounded-xl w-full h-[500px]" />
                 </div>
             </div>
         </div>

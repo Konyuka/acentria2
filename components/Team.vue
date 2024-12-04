@@ -130,7 +130,7 @@ const openPofile = (member) => {
         <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-5">
             <div v-for="member in teams" @click="openProfile(member)" class="flex shadow-xl button-animation">
                 <div class="w-full cursor-pointer rounded-xl bg-white">
-                    <img alt="Brian Stafford" loading="lazy" width="400" height="400" decoding="async" data-nimg="1"
+                    <NuxtImg alt="Brian Stafford" loading="lazy" width="400" height="400" decoding="async" data-nimg="1"
                         class="p-5 min-h-[150px] w-full rounded-t-xl object-cover md:min-h-[200px]"
                         style="color: transparent" :src="member.image" />
                     <div class="font-sans flex max-h-[200px] flex-col items-center p-4">

@@ -129,13 +129,13 @@ const products = [
                         </blockquote>
                         <figcaption
                             class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                            <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
+                            <NuxtImg class="h-10 w-10 flex-none rounded-full bg-gray-50"
                                 :src="featuredTestimonial.author.imageUrl" alt="" />
                             <div class="flex-auto">
                                 <div class="font-semibold">{{ featuredTestimonial.author.name }}</div>
                                 <div class="text-gray-600">{{ `@${featuredTestimonial.author.handle}` }}</div>
                             </div>
-                            <img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
+                            <NuxtImg class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
                         </figcaption>
                     </figure>
                     <div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx"
@@ -148,7 +148,7 @@ const products = [
                                     <p>{{ `“${testimonial.body}”` }}</p>
                                 </blockquote>
                                 <figcaption class="mt-6 flex items-center gap-x-4">
-                                    <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl"
+                                    <NuxtImg class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl"
                                         alt="" />
                                     <div>
                                         <div class="font-semibold">{{ testimonial.author.name }}</div>
@@ -176,7 +176,7 @@ const products = [
                     <a v-for="product in products" :key="product.id" :href="product.href" class="group">
                         <div
                             class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                            <img :src="product.imageSrc" :alt="product.imageAlt"
+                            <NuxtImg :src="product.imageSrc" :alt="product.imageAlt"
                                 class="h-full w-full object-cover object-center group-hover:opacity-75" />
                         </div>
                         <div class="mt-4 flex items-center justify-between text-base font-medium text-gray-900">

@@ -11,7 +11,7 @@ const ReinsuranceBannerContent = ref({
 
         <div class="relative isolate overflow-hidden bg-white py-20 mt-40">
 
-            <img :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
+            <NuxtImg :src="ReinsuranceBannerContent.image" alt="Success Team Hands Up"
                 class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
 
             <div class="absolute inset-0 bg-black opacity-40"></div>

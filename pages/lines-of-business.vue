@@ -66,11 +66,11 @@ const features = [
                     </p>
                 </div>
                 <div class="w-full lg:w-6/12">
-                    <img class="lg:block hidden w-full" src="https://i.ibb.co/RjNH7QB/Rectangle-122-1.png"
+                    <NuxtImg class="lg:block hidden w-full" src="https://i.ibb.co/RjNH7QB/Rectangle-122-1.png"
                         alt="people discussing on board" />
-                    <img class="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png"
+                    <NuxtImg class="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png"
                         alt="people discussing on board" />
-                    <img class="sm:hidden block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png"
+                    <NuxtImg class="sm:hidden block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png"
                         alt="people discussing on board" />
                 </div>
             </div>

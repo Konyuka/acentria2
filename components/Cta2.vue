@@ -1,7 +1,7 @@
 <template>
     <div class="relative bg-brand-dim grid grid-cols-2 font-sans h-[85vh]">
         <div class="relative h-60 overflow-hidden bg-brand-primary md:absolute md:left-0 md:h-3/4 w-full">
-            <img class="h-full w-full object-cover" src="/img/join.jpg" alt="" />
+            <NuxtImg class="h-full w-full object-cover" src="/img/join.jpg" alt="" />
             <svg viewBox="0 0 926 676" aria-hidden="true"
                 class="absolute -bottom-24 left-24 w-[57.875rem] transform-gpu blur-[118px]">
                 <path fill="url(#60c3c621-93e0-4a09-a0e6-4c228a0116d8)" fill-opacity=".4"

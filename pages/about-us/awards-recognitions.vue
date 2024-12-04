@@ -38,7 +38,7 @@ const ReinsuranceBannerContent = ref({
                                                 <div
                                                     class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                     <picture class="flex h-[300px] w-full max-w-none">
-                                                        <img alt="AI is here. AI regulations are on the way. Is your board ready?"
+                                                        <NuxtImg alt="AI is here. AI regulations are on the way. Is your board ready?"
                                                             loading="lazy" decoding="async" data-nimg="fill"
                                                             class="object-center object-cover" style="
                                         position: absolute;
@@ -89,7 +89,7 @@ const ReinsuranceBannerContent = ref({
                                                 <div
                                                     class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                     <picture class="flex h-[300px] w-full max-w-none">
-                                                        <img alt="Stronger consolidation: Elevating your GRC maturity for better risk management"
+                                                        <NuxtImg alt="Stronger consolidation: Elevating your GRC maturity for better risk management"
                                                             loading="lazy" decoding="async" data-nimg="fill"
                                                             class="object-center object-cover" style="
                                         position: absolute;
@@ -138,7 +138,7 @@ const ReinsuranceBannerContent = ref({
                                                 <div
                                                     class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                     <picture class="flex h-[300px] w-full max-w-none">
-                                                        <img alt="Your guide to GRC vendor consolidation" loading="lazy"
+                                                        <NuxtImg alt="Your guide to GRC vendor consolidation" loading="lazy"
                                                             decoding="async" data-nimg="fill"
                                                             class="object-center object-cover" style="
                                         position: absolute;
@@ -186,7 +186,7 @@ const ReinsuranceBannerContent = ref({
                                                 <div
                                                     class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                     <picture class="flex h-[300px] w-full max-w-none">
-                                                        <img alt="The case for purpose-built software: Why tailored programming outperforms modified solutions"
+                                                        <NuxtImg alt="The case for purpose-built software: Why tailored programming outperforms modified solutions"
                                                             loading="lazy" decoding="async" data-nimg="fill"
                                                             class="object-center object-cover" style="
                                         position: absolute;

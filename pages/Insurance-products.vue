@@ -353,7 +353,7 @@ const products = ref([
             <div class="mx-auto mb-3 font-sans">
                 <h2 v-html="product.heading" class="mt-2 heading-class text-black"></h2>
             </div>
-            <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+            <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                 style="color: transparent; object-fit: contain"
                 class="w-full h-[220px] shadow-2xl rounded-md !object-cover" :src="product.image" />
 

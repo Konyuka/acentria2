@@ -2,15 +2,15 @@
 const awards = ref([
     {
         name: '2021 Sanlam Awards 1st Runners Up Most Improved Broker GLA',
-        img:'/img/sanlam.png',
+        img: '/img/sanlam.png',
     },
     {
         name: '2023 Think Business Awards 2nd Runners Up Most Customer Centric',
-        img:'img/think.png',
+        img: 'img/think.png',
     },
     {
         name: '2024 Capex Life Assurance Award for Valued Broker',
-        img:'img/capex.png',
+        img: 'img/capex.png',
     },
     // {
     //     name: '2024 Kenya-Re Award 2nd Runners Up on Profitability',
@@ -18,15 +18,15 @@ const awards = ref([
     // },
     {
         name: '2024 Kenya-Re Award 2nd Runners Up on Timely Premium Remitance',
-        img:'img/kenyare2.png',
+        img: 'img/kenyare2.png',
     },
     {
         name: '2024 Think Business Awards 2nd Runners Up Best Broker in Technology Application',
-        img:'img/think2.png',
+        img: 'img/think2.png',
     },
     {
         name: '2024 Think Business Awards 2nd Runners Up Most Customer Centric Broker',
-        img:'img/think3.png',
+        img: 'img/think3.png',
     },
 ])
 
@@ -59,7 +59,8 @@ const awards = ref([
                                             <div
                                                 class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                 <picture class="flex h-full w-full max-w-none">
-                                                    <img alt="AI is here. AI regulations are on the way. Is your board ready?"
+                                                    <NuxtImg
+                                                        alt="AI is here. AI regulations are on the way. Is your board ready?"
                                                         loading="lazy" decoding="async" data-nimg="fill"
                                                         class="object-center object-fit" style="
                               position: absolute;

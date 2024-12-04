@@ -18,7 +18,7 @@ const subtitle = computed(() => {
 
     <div class="relative isolate overflow-hidden bg-white py-20 mt-20 mb-5">
 
-        <img :src="content.image" alt="Success Team Hands Up"
+        <NuxtImg :src="content.image" alt="Success Team Hands Up"
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
 
         <div class="absolute inset-0 bg-black opacity-40"></div>

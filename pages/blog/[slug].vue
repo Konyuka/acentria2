@@ -25,7 +25,7 @@ onMounted(async () => {
 
             <div class="bg-white">
                 <div aria-hidden="true" class="relative">
-                    <img :src="blog.cover" alt="" class="h-[50vh] w-full object-cover object-center">
+                    <NuxtImg :src="blog.cover" alt="" class="h-[50vh] w-full object-cover object-center" />
                     <div class="absolute inset-0 bg-gradient-to-t from-white"></div>
                 </div>
 

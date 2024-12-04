@@ -22,7 +22,7 @@
                     aria-hidden="true"></div> -->
 
                 <div class="relative border-b-4 border-brand-primary">
-                    <img src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
+                    <NuxtImg src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
                         alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
@@ -105,9 +105,7 @@
                                     <div>
                                         <div class="w-auto dark:border-gray-700">
                                             <div class="w-full rounded h-38">
-                                                <img :src="popoverImage" alt="Display picture of Silene Tokyo"
-                                                    role="img"
-                                                    class="object-cover h-full w-full overflow-hidden rounded shadow-xl">
+                                                <NuxtImg :src="popoverImage" alt="Display picture of Silene Tokyo" role="img" class="object-cover h-full w-full overflow-hidden rounded shadow-xl" />
                                             </div>
                                             <div class="flex w-full items-center justify-between pt-6 pb-1">
                                                 <p class="text-xl font-normal text-gray-800 dark:text-white ">

@@ -166,7 +166,7 @@ onBeforeUnmount(() => {
                 <div class="flex flex-col font-sans mb-0 mt-1">
 
 
-                    <NuxtLink to="/"><img alt="Acentria" fetchPriority="high" width="230" height="50" decoding="async"
+                    <NuxtLink to="/"><NuxtImg alt="Acentria" fetchPriority="high" width="230" height="50" decoding="async"
                             data-nimg="1" class="mr-8" style="color: transparent" src="/img/LogoT.png" />
                     </NuxtLink>
 
@@ -377,7 +377,7 @@ onBeforeUnmount(() => {
         <div class="flex w-full flex-row justify-between bg-white lg:hidden">
 
             <div class="flex w-full justify-between px-4 py-4 shadow">
-                <a href="#"><img alt="Acentria Group" loading="lazy" width="180" height="29" decoding="async"
+                <a href="#"><NuxtImg alt="Acentria Group" loading="lazy" width="180" height="29" decoding="async"
                         data-nimg="1" style="color: transparent" src="/img/logo.png" />
                 </a>
                 <div @click="toggleMenu()" class="translate-y-2.5 cursor-pointer">
@@ -390,7 +390,7 @@ onBeforeUnmount(() => {
             <div :class="[openMobileMenu ? 'translate-x-0' : '']"
                 class="fixed left-0 top-0 z-[100] h-screen w-screen overflow-y-scroll bg-white transition-all null -translate-x-full">
                 <div class="mb-4 flex w-full justify-between px-4 py-4 shadow">
-                    <a href="#"><img alt="Diligent" loading="lazy" width="180" height="29" decoding="async"
+                    <a href="#"><NuxtImg alt="Diligent" loading="lazy" width="180" height="29" decoding="async"
                             data-nimg="1" style="color: transparent" src="/img/logo.png" /></a>
                     <div @click="closeMenu()"
                         class="w-8 h-0.5 bg-light-icon rotate-45 before:content-[&quot;&quot;] before:absolute before:rotate-90 before:w-8 before:h-0.5 before:bg-light-icon translate-y-3">

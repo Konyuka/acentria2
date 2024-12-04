@@ -40,7 +40,7 @@
                           <swiper-slide>
                             <div class="swiper-slide">
                               <div class="testimonials-one__image">
-                                <img
+                                <NuxtImg
                                   src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                   alt="Awesome Image" />
                               </div>
@@ -49,7 +49,7 @@
                           <swiper-slide>
                             <div class="swiper-slide">
                               <div class="testimonials-one__image">
-                                <img
+                                <NuxtImg
                                   src="https://images.pexels.com/photos/208512/pexels-photo-208512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                   alt="Awesome Image" />
                               </div>
@@ -58,7 +58,7 @@
                           <swiper-slide>
                             <div class="swiper-slide">
                               <div class="testimonials-one__image">
-                                <img
+                                <NuxtImg
                                   src="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                   alt="Awesome Image" />
                               </div>
@@ -67,7 +67,7 @@
                           <swiper-slide>
                             <div class="swiper-slide">
                               <div class="testimonials-one__image">
-                                <img
+                                <NuxtImg
                                   src="https://images.unsplash.com/photo-1520442027413-7bf6c51517da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                   alt="Awesome Image" />
                               </div>
@@ -76,7 +76,7 @@
                           <swiper-slide>
                             <div class="swiper-slide">
                               <div class="testimonials-one__image">
-                                <img
+                                <NuxtImg
                                   src="https://images.pexels.com/photos/1105379/pexels-photo-1105379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                   alt="Awesome Image" />
                               </div>

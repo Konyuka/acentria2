@@ -79,7 +79,7 @@ const contactsContent = ref({
                                 </div>
 
                                 <!-- <div class="relative py-4 mt-5 ml-5">
-                                    <img alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
+                                    <NuxtImg alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
                                         style="color: transparent; object-fit: cover"
                                         src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
                                         class="rounded-xl w-full h-[50vh]" />

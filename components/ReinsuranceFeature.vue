@@ -25,7 +25,7 @@ const props = defineProps({
                         </div>
                     </div>
                     <div class="flex justify-center lg:justify-end">
-                        <img :src="content.image" alt="Product screenshot"
+                        <NuxtImg :src="content.image" alt="Product screenshot"
                             class="w-full h-auto max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover lg:h-1/4">
                     </div>
                 </div>

@@ -68,7 +68,7 @@ onMounted(()=>{
         <div class="bg-white px-6 py-1 font-sans mt-auto">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                 <div class="relative py-4 lg:basis-1/2 scale-90">
-                    <img alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="400"
+                    <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="400"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="/img/cover.jpg" />
                 </div>
@@ -98,7 +98,7 @@ onMounted(()=>{
             <div class="bg-white px-6 py-1 font-sans">
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative py-4 lg:basis-1/2 content-center">
-                        <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                             src="/img/what.jpg" />
                     </div>
@@ -134,7 +134,7 @@ onMounted(()=>{
                 </h2>
 
                 <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
-                    <img src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                    <NuxtImg src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
                     <div class="absolute inset-0 bg-black opacity-40"></div>
                     <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
                         <div>
@@ -162,7 +162,7 @@ onMounted(()=>{
             <div class="bg-white px-6 py-1 font-sans">
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative py-4 lg:basis-1/2 content-center">
-                        <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                        <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                             decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                             class="rounded-lg" src="/img/bill.jpg" />
                     </div>

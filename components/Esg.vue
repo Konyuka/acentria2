@@ -83,7 +83,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <img class="aspect-square w-60 flex-none rounded-md object-cover lg:w-44"
+                                    <NuxtImg class="aspect-square w-60 flex-none rounded-md object-cover lg:w-44"
                                         src="../../cdn.sanity.io/images/33u1mixi/production/54d55424dd8d612fe80b58b225fb78746765fe0f-2120x1414.jpg"
                                         alt="people brainstorming" />
                                 </div>
@@ -115,7 +115,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <img class="aspect-square w-60 flex-none rounded-md object-cover lg:w-44"
+                                    <NuxtImg class="aspect-square w-60 flex-none rounded-md object-cover lg:w-44"
                                         src="../../cdn.sanity.io/images/33u1mixi/production/d9e46328bd67654c52c4e5b8af869bf6acf36db0-2251x1332.jpg"
                                         alt="electricity wind farm" />
                                 </div>
@@ -147,7 +147,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <img class="aspect-square w-60 flex-none rounded-md object-cover lg:w-44"
+                                    <NuxtImg class="aspect-square w-60 flex-none rounded-md object-cover lg:w-44"
                                         src="../../cdn.sanity.io/images/33u1mixi/production/ebf508c7e736c1609547f3da9aedab5e2ca06e27-2070x1449.jpg"
                                         alt="providing purpose" />
                                 </div>

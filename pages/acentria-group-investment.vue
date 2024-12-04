@@ -51,7 +51,7 @@ const content = ref({
                 style="background-color: white">
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative py-4 lg:basis-1/2">
-                        <img alt="Image of Streamline evaluations and questionnaires" loading="lazy" decoding="async"
+                        <NuxtImg alt="Image of Streamline evaluations and questionnaires" loading="lazy" decoding="async"
                             data-nimg="1" style="color: transparent; object-fit: contain"
                             class="rounded-xl w-full h-auto"
                             src="https://images.pexels.com/photos/6802048/pexels-photo-6802048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />

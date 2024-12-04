@@ -7,7 +7,7 @@
         <div class="font-sans text-white py-2 max-w-6xl mx-auto" style="background-color: #f6f8fc">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-1 lg:gap-20">
                 <div class="relative p-1 lg:basis-1/2 ">
-                    <img alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
+                    <NuxtImg alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="/img/innovate.jpg" />
                 </div>
@@ -33,7 +33,7 @@
             </div>
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-1 lg:gap-20">
                 <div class="relative p-1 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
+                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                 </div>
@@ -63,7 +63,7 @@
             </div>
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-1">
                 <div class="relative p-1 lg:basis-1/2">
-                    <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                    <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="/img/boat.jpg" />
                 </div>

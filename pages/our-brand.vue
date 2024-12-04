@@ -79,9 +79,9 @@ const joinAsMembers = ref([
             <div class="bg-white">
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:py-4 lg:gap-16 items-center">
                     <div class="relative p-4 lg:basis-1/2">
-                        <img alt="Image of Board of Directors" loading="lazy" width="500" height="350" decoding="async"
+                        <NuxtImg alt="Image of Board of Directors" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1" src="/img/logo.png" style="color: transparent; object-fit: contain;"
-                            class="rounded-lg">
+                            class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
                         <h2 id="" class="heading-class pb-4 md:pb-5">
@@ -133,9 +133,9 @@ const joinAsMembers = ref([
             <div class="bg-white">
                 <div class="!pt-5 container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
-                        <img alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
+                        <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1" src="/img/award.jpg" style="color: transparent; object-fit: contain;"
-                            class="rounded-lg">
+                            class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 id="" class="heading-class pb-4 md:pb-5">
@@ -163,9 +163,9 @@ const joinAsMembers = ref([
                 </div>
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:py-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
-                        <img alt="Image of Ethical Conduct" loading="lazy" decoding="async" data-nimg="1"
+                        <NuxtImg alt="Image of Ethical Conduct" loading="lazy" decoding="async" data-nimg="1"
                             src="https://images.pexels.com/photos/7579201/pexels-photo-7579201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            style="color: transparent; object-fit: contain;" class="w-full h-[250px] rounded-lg">
+                            style="color: transparent; object-fit: contain;" class="w-full h-[250px] rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 id="" class="heading-class pb-4 md:pb-5">
@@ -186,7 +186,7 @@ const joinAsMembers = ref([
 
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <!-- <img alt="Image of Corporate Governance" loading="lazy" width="500" height="350"
+                    <!-- <NuxtImg alt="Image of Corporate Governance" loading="lazy" width="500" height="350"
             decoding="async" data-nimg="1" src="/img/empower.jpg"
             style="color: transparent; object-fit: contain;" class="rounded-lg"> -->
                 </div>

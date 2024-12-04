@@ -33,7 +33,7 @@ const bannerContent = ref({
         <div class="font-sans py-2 text-white">
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <img alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="350"
+                    <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="https://acentriagroup.com/wp-content/uploads/2023/12/12-1024x625.jpg" />
                 </div>
@@ -66,7 +66,7 @@ const bannerContent = ref({
 
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2 content-center">
-                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="https://acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
                 </div>
@@ -102,7 +102,7 @@ const bannerContent = ref({
 
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2 content-center">
-                    <img alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                    <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg"
                         src="https://images.pexels.com/photos/761297/pexels-photo-761297.jpeg?auto=compress&cs=tinysrgb&w=600" />
@@ -145,7 +145,7 @@ const bannerContent = ref({
 
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2 content-center">
-                    <img alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="https://acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
                 </div>

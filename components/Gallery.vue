@@ -24,7 +24,7 @@
                     <div class="absolute inset-px rounded-lg bg-white lg:rounded-tr-[2rem]" />
                     <div
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
-                        <img class="h-80 object-cover object-left lg:object-right" src="/img/journey.jpg" alt="" />
+                        <NuxtImg class="h-80 object-cover object-left lg:object-right" src="/img/journey.jpg" alt="" />
                         <div class="p-10 pt-4">
                             <p class="mt-2 text-lg font-semibold tracking-tight text-gray-950">Acentria Cycle Challenge
                             </p>
@@ -43,7 +43,7 @@
                     <div class="absolute inset-px rounded-lg bg-white lg:rounded-bl-[2rem]" />
                     <div
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
-                        <img class="h-80 object-cover object-left" src="/img/simo-office.jpg" alt="" />
+                        <NuxtImg class="h-80 object-cover object-left" src="/img/simo-office.jpg" alt="" />
                         <div class="p-10 pt-4">
                             <p class="mt-2 text-lg font-semibold tracking-tight text-gray-950">Office Shoot</p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600 leading-normal">
@@ -62,7 +62,7 @@
                     <div class="absolute inset-px rounded-lg bg-white" />
                     <div
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                        <img class="h-80 object-cover object-center" src="/img/what.jpg" alt="" />
+                        <NuxtImg class="h-80 object-cover object-center" src="/img/what.jpg" alt="" />
                         <div class="p-10 pt-4">
                             <p class="mt-2 text-lg font-semibold tracking-tight text-gray-950">Business Development</p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600 leading-normal">
@@ -80,7 +80,7 @@
                     <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]" />
                     <div
                         class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
-                        <img class="h-80 object-cover object-center" src="/img/award.jpg" alt="" />
+                        <NuxtImg class="h-80 object-cover object-center" src="/img/award.jpg" alt="" />
                         <div class="p-10 pt-4">
                             <p class="mt-2 text-lg font-semibold tracking-tight text-gray-950">Awards</p>
                             <p class="mt-2 max-w-lg text-xs text-gray-600 leading-normal">

@@ -136,7 +136,7 @@ onMounted(() => {
                     </div>
                   </div>
                   <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                    <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
                       class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/join.jpg" />
                   </div>
@@ -144,7 +144,7 @@ onMounted(() => {
 
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                    <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
                       class="w-full h-[330px] shadow-2xl rounded-lg !object-cover" src="/img/handshake.jpg" />
                   </div>
@@ -202,7 +202,7 @@ onMounted(() => {
                     </div>
                   </div>
                   <div class="relative py-4 lg:basis-1/2">
-                    <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                    <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                       style="color: transparent; object-fit: contain"
                       class="w-full h-[320px] shadow-2xl rounded-lg !object-cover" src="/img/hi5.jpg" />
                   </div>
@@ -224,7 +224,7 @@ onMounted(() => {
                 <div class="container">
                   <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative py-4 lg:basis-1/2">
-                      <img alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                      <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: contain"
                         class="!object-cover w-full h-[300px] shadow-2xl rounded-lg" src="/img/leadership.jpg" />
                     </div>
@@ -301,10 +301,10 @@ onMounted(() => {
 
               <div class="mx-auto bg-white w-screen">
                 <div class="relative">
-                  <img
+                  <NuxtImg
                     src="https://media.istockphoto.com/id/1373228637/photo/shot-of-a-young-woman-working-with-crops-on-a-farm.jpg?s=1024x1024&w=is&k=20&c=mm8qrVd-G14H6Qu1ZG1hclp5AaulaOs-Je5ZY23YmME="
                     alt="city view" class="w-full h-full object-center object-cover absolute sm:block hidden" />
-                  <img src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
+                  <NuxtImg src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
                     class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
                   <div
                     class="text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full top-0 md:p-16 p-6 flex flex-col justify-between rounded-md">

@@ -161,7 +161,7 @@ const heroContent = ref({
                         <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2  lg:gap-16">
 
                             <div class="relative py-4 lg:basis-1/2">
-                                <img alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                                <NuxtImg alt="Image of Streamline evaluations and questionnaires " loading="lazy"
                                     width="500" height="350" decoding="async" data-nimg="1"
                                     style="color: transparent; object-fit: contain" class="rounded-xl"
                                     src="https://acentriagroup.com/wp-content/uploads/2023/10/8.jpeg" />

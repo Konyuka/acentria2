@@ -107,9 +107,9 @@ const setMobileMenu = (event) => {
                 </div>
             </div>
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:gap-16">
-                <div class="relative p-4 lg:basis-1/2"><img alt="Image of Risk Management" loading="lazy" width="500"
+                <div class="relative p-4 lg:basis-1/2"><NuxtImg alt="Image of Risk Management" loading="lazy" width="500"
                         height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
-                        style="color: transparent; object-fit: contain;" class="rounded-lg"></div>
+                        style="color: transparent; object-fit: contain;" class="rounded-lg" /></div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 id="" class="heading-class pb-4 ">
                         <span class="text-brand-primary">Governance</span>
@@ -202,8 +202,8 @@ const setMobileMenu = (event) => {
                                                     <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                         <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                                                             <div class="flex">
-                                                                <img class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
-                                                                    :src="profileBoardData.image" alt="">
+                                                                <NuxtImg class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
+                                                                    :src="profileBoardData.image" alt="" />
                                                                 <div class="mt-14 sm:ml-6 sm:flex-1">
                                                                     <div>
                                                                         <div class="flex items-center">
@@ -331,8 +331,8 @@ const setMobileMenu = (event) => {
                                                     <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                         <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                                                             <div class="flex">
-                                                                <img class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
-                                                                    :src="profileData.image" alt="">
+                                                                <NuxtImg class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
+                                                                    :src="profileData.image" alt="" />
                                                                 <div class="mt-14 sm:ml-6 sm:flex-1">
                                                                     <div>
                                                                         <div class="flex items-center">

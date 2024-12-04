@@ -16,7 +16,7 @@ const showButton = computed(() => {
 <template>
     <div>
         <div class="relative isolate overflow-hidden bg-white py-20 mt-20">
-            <img :src="InsuranceBannerContent.image" alt="Success Team Hands Up"
+            <NuxtImg :src="InsuranceBannerContent.image" alt="Success Team Hands Up"
                 class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
             <div class="absolute inset-0 bg-black opacity-40"></div>
             <div class="relative z-50 mx-auto max-w-6xl px-6 lg:px-8 font-sans">

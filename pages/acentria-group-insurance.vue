@@ -343,7 +343,7 @@ const exploreClaims = ref({
                 <!-- <div class=" font-sans text-white xl:py-1" style="background-color: #fff">
                     <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:my-2 lg:gap-16">
                         <div class="relative py-4 lg:basis-1/2">
-                            <img alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy"
+                            <NuxtImg alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy"
                                 decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                                 class="w-full h-96 !rounded-lg" src="/public/img/award.jpg" />
                         </div>

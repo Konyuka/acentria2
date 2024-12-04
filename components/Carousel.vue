@@ -2,7 +2,7 @@
     <div class="!overflow-x-hidden font-sans">
         <Carousel :autoplay="2000" :wrap-around="true">
             <Slide v-for="slide in slides" :key="slide" class="h-[50vh]">
-                <img :src="slide.imageUrl" class="w-full h-full object-cover" />
+                <NuxtImg :src="slide.imageUrl" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-gradient-to-t from-gray-700 to-transparent"></div>
                 <div
                     class="absolute top-1/2 mx-10 md:mx-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 sm:px-3 text-white">
