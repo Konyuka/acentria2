@@ -227,7 +227,7 @@ const products = [
             </section>
         </div>
 
-        <div class="font-sans py-0" style="background-color: rgb(246, 248, 252)">
+        <div class="font-sans py-0" style="background-color: white">
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                 <div class="relative py-4 lg:basis-1/2">
                     <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" class="w-full h-[300px] rounded-lg" src="/img/what.jpg" />
@@ -249,7 +249,7 @@ const products = [
 
         <div class="container mx-auto max-w-6xl">
             <div class="my-0">
-                <div class="py-10 sm:px-2 lg:px-4">
+                <div class="py-10">
                     <h2 class="text-2xl font-semibold text-black text-left">
                         Career Paths <span class="text-brand-primary">At Acentria</span>
                     </h2>
@@ -274,7 +274,7 @@ const products = [
         </div>
 
         <div class="bg-white font-sans">
-            <div class="container mx-auto max-w-6xl px-4 py-0 sm:px-6 lg:max-w-6xl lg:px-8">
+            <div class="container mx-auto max-w-6xl px-4 py-0 lg:max-w-6xl">
                 <h2 class="text-2xl font-semibold text-black text-left mb-5">
                     Life at <span class="text-brand-primary">Acentria Group</span>
                 </h2>

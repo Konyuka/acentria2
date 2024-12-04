@@ -16,23 +16,20 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-[18vw] w-[93vw] h-20 mt-[65px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
+                class="!-left-[18vw] w-[93vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
                 <!-- <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
                     aria-hidden="true"></div> -->
 
                 <div class="relative border-b-4 border-brand-primary">
                     <NuxtImg src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
-                        alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                        alt="" class="absolute inset-0 -z-10 h-full w-full object-fit" />
 
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
 
-                    <div class="h-auto mt-8">
-                        <div class="ml-4 flex font-semibold text-[15px] text-black">
-                            <!-- {{ flyoverHeader }} -->
-                        </div>
+                    <div class="h-auto">
+                       
                         <div class="grid grid-cols-7">
-
 
                             <div class="col-span-2 relative border-r-4 border-red-600 h-56 mt-2">
 
@@ -104,7 +101,7 @@
 
                                     <div>
                                         <div class="w-auto dark:border-gray-700">
-                                            <div class="w-full rounded h-38">
+                                            <div class="w-full rounded h-56 ">
                                                 <NuxtImg :src="popoverImage" alt="Display picture of Silene Tokyo" role="img" class="object-cover h-full w-full overflow-hidden rounded shadow-xl" />
                                             </div>
                                             <div class="flex w-full items-center justify-between pt-6 pb-1">

@@ -36,8 +36,8 @@ const props = defineProps({
                     </div>
                     <div class="flex justify-center">
 
-                        <video width="1000" height="300" autoplay muted loop class="drop-shadow-md rounded-2xl"
-                            src="/img/vid.webm" style="color: transparent">
+                        <video preload="metadata" loading="lazy" width="1000" height="300" autoplay muted loop
+                            class="drop-shadow-md rounded-2xl" src="/img/vid.webm" style="color: transparent">
                             Your browser does not support the video tag.
                         </video>
 

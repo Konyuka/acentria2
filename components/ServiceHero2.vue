@@ -6,10 +6,11 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative h-[95vh] border-b-4 border-brand-primary">
+    <div class="relative h-[95vh] ">
         <div>
-            <video autoplay muted loop class="drop-shadow-md w-full h-[95vh] object-cover fixed top-0 left-0 z-[-1]"
-                :src="content.vid" style="color: transparent">
+            <video preload="metadata" loading="lazy" autoplay muted loop
+                class="drop-shadow-md w-full h-[95vh] object-cover fixed top-0 left-0 z-[-1]" :src="content.vid"
+                style="color: transparent">
                 Your browser does not support the video tag.
             </video>
             <!-- Overlay div -->

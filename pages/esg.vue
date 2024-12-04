@@ -107,8 +107,7 @@ const bannerContent = ref({
                         Social Responsibility:
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="textt-xs leading-normal text-black mb-4"
-                            data-v-inspector="components/Why.vue:23:21">
+                        <p class="textt-xs leading-normal text-black mb-4" data-v-inspector="components/Why.vue:23:21">
                             Acentria Group is committed to making a positive impact on the communities
                             where we operate and beyond. Our social responsibility initiatives include: <br>
 
@@ -143,8 +142,7 @@ const bannerContent = ref({
                         Governance Excellence:
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="textt-xs leading-normal text-black mb-4"
-                            data-v-inspector="components/Why.vue:23:21">
+                        <p class="textt-xs leading-normal text-black mb-4" data-v-inspector="components/Why.vue:23:21">
                             We uphold the highest standards of corporate governance to ensure
                             transparency, accountability, and ethical conduct in all our business practices. Our
                             governance
@@ -163,7 +161,7 @@ const bannerContent = ref({
                             <span class="font-semibold mr-2 text-4xl pb-2">.</span>
                             Promoting a culture of integrity and ethical behavior among our employees and partners.
                             <br>
-                            
+
                         </p>
                     </div>
                 </div>
@@ -183,8 +181,7 @@ const bannerContent = ref({
                         Economic Responsibility
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6" data-v-inspector="components/Why.vue:22:17">
-                        <p class="textt-xs leading-normal text-black mb-4"
-                            data-v-inspector="components/Why.vue:23:21">
+                        <p class="textt-xs leading-normal text-black mb-4" data-v-inspector="components/Why.vue:23:21">
                             Acentria Group strives to contribute to economic development
                             by creating value for our stakeholders, promoting responsible growth, and providing
                             innovative solutions that support financial stability and prosperity. These are some of our
@@ -214,7 +211,7 @@ const bannerContent = ref({
             </div>
 
             <div class="container mx-auto max-w-6xl">
-                <video src="/img/esg.mp4" alt="Success Team Hands Up"
+                <video preload="metadata" loading="lazy" src="/img/esg.mp4" alt="Success Team Hands Up"
                     class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted
                     loop>
                     Your browser does not support the video tag.
