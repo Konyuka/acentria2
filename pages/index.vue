@@ -1,4 +1,30 @@
-<script setup>
+<script setup> 
+useSeoMeta({
+  title: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
+  description: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
+  ogTitle: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
+  ogDescription: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
+  ogImage: '/img/LogoT.png',
+  ogUrl: 'https://www.acentriagroup.com/insurance',
+  twitterTitle: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
+  twitterDescription: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
+  twitterImage: '/img/LogoT.png',
+  twitterCard: 'summary_large_image'
+});
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/img/favicon.png'
+    }
+  ]
+})
+
 const InsuranceBannerContent = ref({
   subtitle: "Acentria Group",
   title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
