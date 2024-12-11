@@ -250,7 +250,7 @@ const content = ref({
             </div>
         </div>
 
-        <div class="bg-white">
+        <!-- <div class="bg-white">
             <div class="container py-5">
                 <h4 class="text-2xl font-semibold">Why might you need an <span class="text-brand-primary">aviation
                         insurance broker?</span></h4>
@@ -263,7 +263,7 @@ const content = ref({
                     the insurer on your behalf, ensuring a stress-free and seamless resolution process.
                 </p>
             </div>
-        </div>
+        </div> -->
 
         <div class="bg-white py-5">
             <div class="container">

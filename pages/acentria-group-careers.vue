@@ -208,7 +208,7 @@ const products = [
             </div>
         </div>
 
-        <div class="py-2" style="background-color: #f6f8fc">
+        <div class="py-2" >
             <section class="relative py-1">
                 <div class="container px-4">
                     <h2 class="text-2xl font-semibold text-black mb-4">
@@ -273,7 +273,7 @@ const products = [
             </div>
         </div>
 
-        <div class="bg-white font-sans">
+        <!-- <div class="bg-white font-sans">
             <div class="container mx-auto max-w-6xl px-4 py-0 lg:max-w-6xl">
                 <h2 class="text-2xl font-semibold text-black text-left mb-5">
                     Life at <span class="text-brand-primary">Acentria Group</span>
@@ -293,7 +293,7 @@ const products = [
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="mt-10">
             <div class="container mx-auto mb-5 font-sans">
@@ -329,7 +329,7 @@ const products = [
             </div>
         </div>
 
-        <div class="text-white py-10" style="background-color: #f6f8fc">
+        <div class="text-white py-10" >
             <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
                 <div class="flex flex-col justify-center lg:basis-2/5">
                     <h2 class="pb-4 md:pb-5 text-2xl font-semibold text-brand-primary">

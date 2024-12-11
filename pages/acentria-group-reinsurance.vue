@@ -189,96 +189,77 @@ const bannerTitle = ref('Acentria Reinsurance Brokers')
 <template>
     <main>
         <div>
-            <div>
+            <ServiceHero2 :content="content" />
 
-                <ServiceHero2 :content="content" />
+            <div class="py-5 text-center bg-white">
+                <h2 class="font-sans tracking-normal text-2xl text-black font-semibold leading-tight lg:leading-tight">
+                    Delivering Reinsurance <span class="text-brand-primary">Solutions & Services</span>
+                </h2>
+            </div>
 
-                <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
-
-                <!-- <Hero2 :data="heroContent" /> -->
-
-                <div class="py-5 text-center  ">
-                    <h2
-                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
-                        Delivering Reinsurance <span class="text-brand-primary">Solutions & Services</span>
-                    </h2>
-                </div>
-
-                <div class="py-5 text-white ">
-                    <section class="relative py-2">
-                        <div class="container px-4">
-                            <ServiceTabs :menus="menus" :data="data" />
-                        </div>
-                    </section>
-                </div>
-
-
-
-                <section id="" class="relative py-8 bg-black/60 text-center">
+            <div class="text-white bg-white">
+                <section class="relative py-2">
                     <div class="container px-4">
-                        <h2
-                            class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
-                            <span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br>
-                            Let Acentria Tailor Your Coverage To Your Needs
-                        </h2>
+                        <ServiceTabs :menus="menus" :data="data" />
                     </div>
                 </section>
-
-                <div class="bg-white">
-                    <div class="py-6 text-white xl:py-5 max-w-6xl mx-auto" style="background-color: #f6f8fc">
-
-                        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-
-                            <div class="relative p-4 lg:basis-1/2">
-                                <NuxtImg alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    decoding="async" data-nimg="1"
-                                    style="color: transparent; object-fit: contain" class="rounded-xl w-full h-[300px]"
-                                    src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                            </div>
-                            <div class="flex flex-col justify-center items-center lg:basis-1/2">
-                                <div class="text-light-content pb-5 md:pb-6">
-                                    <p
-                                        class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
-                                        We specialize in addressing underwriting and capital management challenges,
-                                        showcasing a deep understanding of the complexities involved in managing risk
-                                        and
-                                        financial resources within the insurance industry.
-                                        <br><br>
-                                        Our comprehensive range of
-                                        services supports insurance companies, encompassing risk analysis, designing and
-                                        placing reinsurance programs, providing claims support, developing alternative
-                                        risk
-                                        strategies, and offering various risk management consulting services.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <Why />
-
-
-                <WhyRe :whys="whys" />
-
-                <div>
-                    <div class="container flex items-center justify-center">
-                        <div class="relative p-4">
-                            <NuxtImg alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
-                                width="1600" height="350" decoding="async" data-nimg="1"
-                                style="color:transparent;object-fit:contain" class="rounded-xl" src="/img/map.jpg" />
-                        </div>
-                    </div>
-                </div>
-
-
-                <ContactForm />
-
-                <InTouch />
-
             </div>
+
+            <section id="" class="relative py-8 bg-black/60 text-center">
+                <div class="container px-4">
+                    <h2
+                        class="font-sans tracking-normal text-2xl text-white font-semibold leading-tight lg:leading-tight">
+                        <span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br>
+                        Let Acentria Tailor Your Coverage To Your Needs
+                    </h2>
+                </div>
+            </section>
+
+            <!-- <div class="bg-white">
+                <div class="py-6 text-white xl:py-5 max-w-6xl mx-auto">
+                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                        <div class="relative p-4 lg:basis-1/2">
+                            <NuxtImg alt="Image of Streamline evaluations and questionnaires" loading="lazy"
+                                decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                                class="rounded-xl w-full h-[300px]"
+                                src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                        </div>
+                        <div class="flex flex-col justify-center items-center lg:basis-1/2">
+                            <div class="text-light-content pb-5 md:pb-6">
+                                <p
+                                    class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
+                                    We specialize in addressing underwriting and capital management challenges,
+                                    showcasing a deep understanding of the complexities involved in managing risk and
+                                    financial resources within the insurance industry.
+                                    <br><br>
+                                    Our comprehensive range of services supports insurance companies, encompassing risk
+                                    analysis, designing and placing reinsurance programs, providing claims support,
+                                    developing alternative risk strategies, and offering various risk management
+                                    consulting services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <Why />
+
+            <WhyRe :whys="whys" />
+
+            <div>
+                <div class="container flex items-center justify-center">
+                    <div class="relative p-4">
+                        <NuxtImg alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
+                            width="1600" height="1150" decoding="async" data-nimg="1"
+                            style="color:transparent;object-fit:contain" class="rounded-xl" src="/img/map.jpg" />
+                    </div>
+                </div>
+            </div>
+
+            <ContactForm />
+
+            <InTouch />
         </div>
     </main>
 </template>

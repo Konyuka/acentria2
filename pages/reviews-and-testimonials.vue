@@ -6,61 +6,63 @@ const bannerContent = ref({
 })
 
 const featuredTestimonial = {
-    body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
-    author: {
-        name: 'Brenna Goyette',
-        handle: 'brennagoyette',
-        imageUrl:
-            'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-        logoUrl: 'https://tailwindui.com/plus/img/logos/savvycal-logo-gray-900.svg',
-    },
+    body: 'Good customer relations and prompt response from the team, including the Managing Director',
 }
+
+const featuredTestimonial2 = {
+    body: 'The options were well explained and the customer experience was excellent.',
+}
+
 const testimonials = [
-    [
+    [   
         [
             {
-                body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-                author: {
-                    name: 'Leslie Alexander',
-                    handle: 'lesliealexander',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-                },
+                body: 'The proficient and readily available team at Acentria is easy to work with and they go out of their way in providing fantastic solutions',
             },
         ],
         [
             {
-                body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
-                author: {
-                    name: 'Lindsay Walton',
-                    handle: 'lindsaywalton',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-                },
+                body: 'Willingness to offer solutions tirelessly',
             },
         ],
     ],
     [
         [
             {
-                body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
-                author: {
-                    name: 'Tom Cook',
-                    handle: 'tomcook',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-                },
+                body: 'Excellent customer service and very informative',
             },
         ],
         [
             {
-                body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
-                author: {
-                    name: 'Leonard Krasner',
-                    handle: 'leonardkrasner',
-                    imageUrl:
-                        'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-                },
+                body: 'Timely response and generally incredible service',
+            },
+        ],
+    ],
+]
+
+const testimonials2 = [
+    [
+        [
+            {
+                body: 'Wonderful experience with timely notification for policy renewals and fair premium rates',
+            },
+        ],
+        [
+            {
+                body: 'Very energetic team, always ready to listen and share solutions',
+            },
+        ],
+        
+    ],
+    [
+        [
+            {
+                body: 'Follow up to ensure all risks are adequately placed and on time',
+            },
+        ],
+        [
+            {
+                body: 'Phone call follow ups, facilitation of vehicle valuation, and timely delivery of documents',
             },
         ],
     ],
@@ -120,24 +122,17 @@ const products = [
                         We have worked with thousands of amazing people
                     </p>
                 </div>
+
                 <div
                     class="mx-auto mt-5 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-xs/6 text-gray-900 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+                    
                     <figure
-                        class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+                        class="rounded-2xl p-6 bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
                         <blockquote class="p-6 text-xs font-semibold tracking-tight text-gray-900 sm:p-12 ">
                             <p>{{ `“${featuredTestimonial.body}”` }}</p>
                         </blockquote>
-                        <figcaption
-                            class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                            <NuxtImg class="h-10 w-10 flex-none rounded-full bg-gray-50"
-                                :src="featuredTestimonial.author.imageUrl" alt="" />
-                            <div class="flex-auto">
-                                <div class="font-semibold">{{ featuredTestimonial.author.name }}</div>
-                                <div class="text-gray-600">{{ `@${featuredTestimonial.author.handle}` }}</div>
-                            </div>
-                            <NuxtImg class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
-                        </figcaption>
                     </figure>
+
                     <div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx"
                         class="space-y-8 xl:contents xl:space-y-0">
                         <div v-for="(column, columnIdx) in columnGroup" :key="columnIdx"
@@ -147,23 +142,38 @@ const products = [
                                 <blockquote class="text-gray-900">
                                     <p>{{ `“${testimonial.body}”` }}</p>
                                 </blockquote>
-                                <figcaption class="mt-6 flex items-center gap-x-4">
-                                    <NuxtImg class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl"
-                                        alt="" />
-                                    <div>
-                                        <div class="font-semibold">{{ testimonial.author.name }}</div>
-                                        <div class="text-gray-600">{{ `@${testimonial.author.handle}` }}</div>
-                                    </div>
-                                </figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
+
+                <div
+                    class="mx-auto mt-5 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-xs/6 text-gray-900 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+                    <figure
+                        class="rounded-2xl p-6 bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+                        <blockquote class="p-6 text-xs font-semibold tracking-tight text-gray-900 sm:p-12 ">
+                            <p>{{ `“${featuredTestimonial2.body}”` }}</p>
+                        </blockquote>
+                    </figure>
+                    
+                    <div v-for="(columnGroup, columnGroupIdx) in testimonials2" :key="columnGroupIdx"
+                        class="space-y-8 xl:contents xl:space-y-0">
+                        <div v-for="(column, columnIdx) in columnGroup" :key="columnIdx"
+                            :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
+                            <figure v-for="testimonial in column" :key="testimonial.author.handle"
+                                class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+                                <blockquote class="text-gray-900">
+                                    <p>{{ `“${testimonial.body}”` }}</p>
+                                </blockquote>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <div class="bg-white">
-
+        <!-- <div class="bg-white">
             <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:max-w-7xl lg:px-8">
 
                 <div class="mx-auto max-w-6xl text-center mb-5">
@@ -189,7 +199,7 @@ const products = [
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </section>
 </template> 

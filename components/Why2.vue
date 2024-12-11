@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div style="background-color: #f6f8fc">
+    <div >
         <div class=" font-sans text-white py-2 max-w-6xl mx-auto">
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-1 lg:gap-20">
                 <div class="relative p-1 lg:basis-1/2">

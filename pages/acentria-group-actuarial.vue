@@ -14,19 +14,19 @@ const data = ref({
         {
             name: 'Financial Services',
             content: 'Comprehensive financial services to support your actuarial needs, ensuring stability and growth.',
-            icon: 'account_balance',
+            icon: 'fas fa-university',
             link: '/actuarial/financial-services'
         },
         {
             name: 'Insurance Consulting',
             content: 'Expert insurance consulting to help you navigate complex actuarial challenges and optimize your strategies.',
-            icon: 'lightbulb',
+            icon: 'fas fa-lightbulb',
             link: '/actuarial/insurance-consulting'
         },
         {
             name: 'Reinsurance Consulting',
             content: 'Specialized reinsurance consulting to streamline your processes and enhance risk management.',
-            icon: 'policy',
+            icon: 'fas fa-shield-alt',
             link: '/actuarial/reinsurance-consulting'
         },
     ],
@@ -34,19 +34,19 @@ const data = ref({
         {
             name: 'IFRS 17 Implementation',
             content: 'Expert guidance on implementing IFRS 17, ensuring compliance and accurate financial reporting.',
-            icon: 'account_balance',
+            icon: 'fas fa-file-invoice-dollar',
             link: '/actuarial/ifrs-17-implementation'
         },
         {
             name: 'Innovation and Digitization',
             content: 'Leverage cutting-edge technology to enhance actuarial processes and drive innovation.',
-            icon: 'lightbulb',
+            icon: 'fas fa-robot',
             link: '/actuarial/innovation-and-digitization'
         },
         {
             name: 'Retirement and Employee Benefits',
             content: 'Comprehensive actuarial services for retirement plans and employee benefits, ensuring financial security.',
-            icon: 'group',
+            icon: 'fas fa-users',
             link: '/actuarial/retirement-and-employee-benefits'
         },
     ],
@@ -54,18 +54,17 @@ const data = ref({
         {
             name: 'AcentRe',
             content: 'AcentRe is an online reinsurance platform that specializes in data cleaning, pricing, and optimization to enhance your reinsurance strategies.',
-            icon: 'cloud',
+            icon: 'fas fa-cloud',
             link: '/reinsurance/acentre-reinsurance-solution'
         },
         {
             name: 'Data Analysis Tool',
             content: 'Utilize our Data Analysis Tool for comprehensive insights and tailored reinsurance solutions to meet your unique business needs.',
-            icon: 'insights',
+            icon: 'fas fa-chart-line',
             link: '/reinsurance/reinsurance-data-analytics-tool'
         },
     ]
-})
-
+});
 
 const menus = ref([
     {
@@ -126,7 +125,7 @@ const heroContent = ref({
 
                 <ServiceHero2 :content="content" />
 
-                <BannerVid :bannerTitle="bannerTitle" />
+                <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
 
                 <!-- <Hero2 :data="heroContent" /> -->
 
@@ -156,7 +155,7 @@ const heroContent = ref({
                 </section>
 
                 <div class="bg-white">
-                    <div class="py-4 text-white max-w-6xl mx-auto" style="background-color: #f6f8fc">
+                    <div class="py-4 text-white max-w-6xl mx-auto" >
 
                         <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2  lg:gap-16">
 

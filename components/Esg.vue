@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="py-6 text-white" style="background-color: #f6f8fc">
+    <div class="py-6 text-white" >
         <div class="container mx-auto px-4">
             <div class="py-10 md:py-16 text-light-content">
                 <div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-[2fr_3fr]">
