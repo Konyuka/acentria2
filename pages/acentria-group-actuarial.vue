@@ -129,7 +129,7 @@ const heroContent = ref({
 
                 <!-- <Hero2 :data="heroContent" /> -->
 
-                <div class="pb-5 text-center bg-white">
+                <div class="py-5 text-center bg-white">
                     <h2
                         class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
                         Best of Actuarial Consulting, <span class="text-brand-primary">Products & Services</span>

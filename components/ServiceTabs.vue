@@ -44,13 +44,13 @@ onMounted(() => {
                 class="button-animation border-t-8 border-solid border-black shadow-2xl m-auto flex min-h-fit md:min-h-auto rounded-md bg-white/30 px-5 py-2 w-full h-full">
                 <div class="font-sans flex h-fit flex-col w-full">
                     <div class="flex flex-row justify-between">
-                        <h4 id="" class="text-md font-semibold">
+                        <h4 id="" class="text-lg font-semibold">
                             {{ item.name }}
                         </h4>
                         <i :class="item.icon" class="text-brand-primary text-md pb-0"></i>
                     </div>
                     <div class="mt-4">
-                        <p class="text-[12px] leading-4 text-gray-600">
+                        <p class="text-md leading-4 text-gray-600">
                             {{ item.content }}
                         </p>
                     </div>

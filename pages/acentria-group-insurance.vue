@@ -12,37 +12,37 @@ const data = ref({
         {
             name: 'Health Insurance',
             content: 'Secure Your Wellness Today',
-            icon: 'health_and_safety',
-            link:'/insurance/health-insurance'
+            icon: 'fas fa-heartbeat',
+            link: '/insurance/health-insurance'
         },
         {
             name: 'Life Insurance',
             content: 'Protecting Your Loved Ones is Priceless.',
-            icon: 'favorite',
+            icon: 'fas fa-heart',
             link: '/insurance/life-insurance'
         },
         {
             name: 'Car Insurance',
             content: 'Drive Confidently. Your Safety, Our Priority',
-            icon: 'directions_car',
+            icon: 'fas fa-car',
             link: '/insurance/home-insurance'
         },
         {
             name: 'Domestic Cover',
             content: 'Protect your home sweet home with reliable insurance for your peace of mind.',
-            icon: 'home',
+            icon: 'fas fa-home',
             link: '/insurance/motor-insurance'
         },
         {
             name: 'Travel Insurance',
             content: 'Adventure Awaits – Secure Your Travel Plans. Explore with Confidence.',
-            icon: 'flight',
+            icon: 'fas fa-plane',
             link: '/insurance/travel-insurance'
         },
         {
             name: 'Golfers Insurance',
             content: 'Don\'t let the unexpected ruin your game – Protect your swing with golfer\'s insurance.',
-            icon: 'sports_golf',
+            icon: 'fas fa-golf-ball',
             link: '/insurance/'
         },
     ],
@@ -50,91 +50,91 @@ const data = ref({
         {
             name: 'Staff Health Cover',
             content: 'Elevate Employee Well-being Today',
-            icon: 'medical_services',
+            icon: 'fas fa-user-md',
             link: '/insurance/staff-health-cover'
         },
         {
             name: 'Staff Travel Cover',
             content: 'Empower Your Team\'s Journeys Today',
-            icon: 'luggage',
+            icon: 'fas fa-suitcase-rolling',
             link: '/insurance/staff-travel-cover'
         },
         {
             name: 'Professional Indemnity',
-            content: 'Secure Your Professional Reputation Today ',
-            icon: 'verified',
+            content: 'Secure Your Professional Reputation Today',
+            icon: 'fas fa-shield-alt',
             link: '/insurance/'
         },
         {
             name: 'Office Content Cover',
             content: 'Safeguard Your Business Assets with Acentria\'s Office Content Coverage.',
-            icon: 'verified',
+            icon: 'fas fa-briefcase',
             link: '/insurance/office-content-cover'
         },
         {
             name: 'Credit Risk Cover',
-            content: 'Boost Financial Confidence with Acentria\'s Credit Risk Coverage.Safeguard Your Business\'s Financial Stability Today.',
-            icon: 'verified',
+            content: 'Boost Financial Confidence with Acentria\'s Credit Risk Coverage. Safeguard Your Business\'s Financial Stability Today.',
+            icon: 'fas fa-credit-card',
             link: '/insurance/credit-risk-cover'
         },
         {
             name: 'Cyber Liability Cover',
-            content: 'Protect Your Digital Fortresses with Acentria\'s Cyber Liability Insurance.Defend Your Business Against Online Threats Today',
-            icon: 'security',
+            content: 'Protect Your Digital Fortresses with Acentria\'s Cyber Liability Insurance. Defend Your Business Against Online Threats Today.',
+            icon: 'fas fa-shield-virus',
             link: '/insurance/cyber-liability-cover'
         },
         {
             name: 'Marine Cover',
-            content: 'Sail Securely with Acentria\'s Marine Insurance.Protect Your Maritime Ventures with Confidence.',
-            icon: 'sailing',
+            content: 'Sail Securely with Acentria\'s Marine Insurance. Protect Your Maritime Ventures with Confidence.',
+            icon: 'fas fa-ship',
             link: '/insurance/'
         },
         {
             name: 'Aviation Cover',
-            content: 'Reach New Heights with Acentria\'s Aviation Insurance.Fly Safely and Confidently with Our Coverage.',
-            icon: 'local_airport',
+            content: 'Reach New Heights with Acentria\'s Aviation Insurance. Fly Safely and Confidently with Our Coverage.',
+            icon: 'fas fa-plane-departure',
             link: '/insurance/'
         },
     ],
     business: [
         {
-            name: 'All-in -One Package',
-            content: 'Simplify and Secure with Acentria\'s All-in-One Insurance Package.Comprehensive Protection for All Your Needs.',
-            icon: 'all_inclusive',
+            name: 'All-in-One Package',
+            content: 'Simplify and Secure with Acentria\'s All-in-One Insurance Package. Comprehensive Protection for All Your Needs.',
+            icon: 'fas fa-box',
             link: '/insurance/'
         },
         {
             name: 'Biashara Cover',
             content: 'Empower your SME with comprehensive business coverage – fortify your enterprise for a resilient future.',
-            icon: 'storefront',
+            icon: 'fas fa-store',
             link: '/insurance/biasahara-cover'
         },
         {
             name: 'General Liability Cover',
-            content: 'Protect your business with Acentria\'s General Liability Insurance – your shield against unexpected challenges and legal uncertainties',
-            icon: 'gavel',
+            content: 'Protect your business with Acentria\'s General Liability Insurance – your shield against unexpected challenges and legal uncertainties.',
+            icon: 'fas fa-balance-scale',
             link: '/insurance/general-liability-insurance'
         },
         {
             name: 'Commercial Vehicle Cover',
-            content: 'Drive with Confidence - Choose Acentria\'s Commercial Vehicle Coverage.Protect Your Business on the Road.',
-            icon: 'local_shipping',
+            content: 'Drive with Confidence - Choose Acentria\'s Commercial Vehicle Coverage. Protect Your Business on the Road.',
+            icon: 'fas fa-truck',
             link: '/insurance/'
         },
         {
             name: 'Commercial Property Cover',
-            content: 'Secure Your Business Space - Choose Acentria\'s Commercial Property Coverage.Protect Your Business Assets and Premises.',
-            icon: 'store',
+            content: 'Secure Your Business Space - Choose Acentria\'s Commercial Property Coverage. Protect Your Business Assets and Premises.',
+            icon: 'fas fa-building',
             link: '/insurance/commercial-property-insurance'
         },
         {
             name: 'Crop & Livestock Cover',
             content: 'Guard your crops and livestock with comprehensive insurance coverage for a secure farming future.',
-            icon: 'agriculture',
+            icon: 'fas fa-seedling',
             link: '/insurance/crops-and-livestock'
         },
     ]
-})
+});
 
 
 const whys = ref([
@@ -247,152 +247,110 @@ const exploreClaims = ref({
 <template>
     <main>
         <div>
-            <div>
+            <ServiceHero2 :content="content" />
 
-                <ServiceHero2 :content="content" />
-
-                <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
-                    <div class="container">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
-                            <div>
-                                <h1 class="my-5 heading-class text-left">
-                                    Insurance &<span class="text-brand-primary"> <br> Risk Management</span>
-                                </h1>
-                                <p
-                                    class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
-                                    Acentria Group is your trusted friend in the world of insurance. We’re here to make
-                                    sure you and anything you care for is safe and sound. Insurance can be confusing,
-                                    but we’re experts at making it simple. We’ll take the time to understand exactly
-                                    what you need and find the right insurance plan just for you.
-                                    <br>
-                                    So, why choose us? Because we genuinely care about keeping you and your things
-                                    protected. We’re not just about selling insurance; we’re about making sure you’re
-                                    worry-free and your wallet stays happy. Whether it’s your health, home, car, or
-                                    business, we’ve got the perfect insurance plan that won’t break the bank. Trust us
-                                    to be your friendly insurance guide, making sure you’re covered no matter what life
-                                    throws your way.
-                                </p>
-                            </div>
+            <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
+                <div class="container">
+                    <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
+                        <div>
+                            <h1 class="my-5 heading-class text-left">
+                                Insurance &<span class="text-brand-primary"> <br> Risk Management</span>
+                            </h1>
+                            <p
+                                class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                                Acentria Group is your trusted friend in the world of insurance. We’re here to make sure
+                                you and anything you care for is safe and sound. Insurance can be confusing, but we’re
+                                experts at making it simple. We’ll take the time to understand exactly what you need and
+                                find the right insurance plan just for you.
+                                <br>
+                                So, why choose us? Because we genuinely care about keeping you and your things
+                                protected. We’re not just about selling insurance; we’re about making sure you’re
+                                worry-free and your wallet stays happy. Whether it’s your health, home, car, or
+                                business, we’ve got the perfect insurance plan that won’t break the bank. Trust us to be
+                                your friendly insurance guide, making sure you’re covered no matter what life throws
+                                your way.
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="bg-white">
-                    <div class="py-5 text-left container">
-                        <h2 class="heading-class text-black">
-                            Pick a cover and, <span class="text-brand-primary"> <br /> we'll take care of the
-                                rest</span>
-                        </h2>
+            <div class="bg-white">
+                <div class="py-5 text-left container">
+                    <h2 class="heading-class text-black">
+                        Pick a cover and, <span class="text-brand-primary"> <br /> we'll take care of the rest</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="py-2 text-white bg-white">
+                <section class="relative">
+                    <div class="container px-4 py-5">
+                        <ServiceTabs :menus="menus" :data="data" />
                     </div>
+                </section>
+            </div>
+
+            <section id="" class="relative py-3 text-left pt-2">
+                <div class="container">
+                    <h2 class="heading-class text-white">
+                        <span class="text-brand-primary">Do it yourself</span>
+                        or with expert help
+                    </h2>
                 </div>
 
-                <div class="py-2 text-white">
-                    <section class="relative">
-                        <div class="container px-4 py-10">
-                            <ServiceTabs :menus="menus" :data="data" />
-                        </div>
-                    </section>
-                </div>
-
-                <section id="" class="relative py-3 text-left pt-2">
-                    <div class="container">
-                        <h2 class="heading-class text-white">
-                            <span class="text-brand-primary">Do it yourself</span>
-                            or with expert help
-                        </h2>
-                    </div>
-
-                    <div class="px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
-                        <div class="container mx-auto pb-2">
-                            <div class="mt-5 space-y-10">
-                                <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    <div v-for="help in helps"
-                                        class="bg-white/40 button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
-                                        <a class="w-full" href="#">
-                                            <div class="max-w-full">
-                                                <div class="!text-left font-sans group relative">
-                                                    <h3
-                                                        class="mt-3 line-clamp-2 subheading-class transition-colors group-hover:text-brand-primary">
-                                                        <span class="absolute inset-0"></span>
-                                                        {{ help.heading }}
-                                                    </h3>
-                                                    <p class="mt-3 line-clamp-3 text-xs text-black">
-                                                        {{ help.subheading }}
-                                                    </p>
-                                                    <button type="button"
-                                                        class="mt-5 rounded-sm bg-brand-primary px-5 py-2 text-xs text-white shadow-sm hover:bg-black">
-                                                        {{ help.cta }}
-                                                    </button>
-                                                </div>
+                <div class="px-4 py-3 md:px-16 md:pb-4 md:pt-0 lg:pb-6">
+                    <div class="container mx-auto pb-2">
+                        <div class="mt-5 space-y-10">
+                            <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div v-for="help in helps" :key="help.heading"
+                                    class="bg-white/40 button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                                    <a class="w-full" href="#">
+                                        <div class="max-w-full">
+                                            <div class="!text-left font-sans group relative">
+                                                <h3
+                                                    class="mt-3 line-clamp-2 subheading-class transition-colors group-hover:text-brand-primary">
+                                                    <span class="absolute inset-0"></span>
+                                                    {{ help.heading }}
+                                                </h3>
+                                                <p class="mt-3 line-clamp-3 text-xs text-black">
+                                                    {{ help.subheading }}
+                                                </p>
+                                                <button type="button"
+                                                    class="mt-5 rounded-sm bg-brand-primary px-5 py-2 text-xs text-white shadow-sm hover:bg-black">
+                                                    {{ help.cta }}
+                                                </button>
                                             </div>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
+            <ContentPic :content="exploreProducts" />
 
-                <ContentPic :content="exploreProducts" />
+            <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 
-                <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+            <ContentPic :content="exploreClaims" />
 
-                <ContentPic :content="exploreClaims" />
+            <section id="" class="relative py-8 bg-black/60 text-center">
+                <div class="container px-4">
+                    <h2
+                        class="font-sans tracking-normal text-2xl text-white font-semibold leading-tight lg:leading-tight">
+                        <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
+                        Let Acentria Tailor Your Coverage To Your Needs
+                    </h2>
+                </div>
+            </section>
 
-                <!-- <div class=" font-sans text-white xl:py-1" style="background-color: #fff">
-                    <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:my-2 lg:gap-16">
-                        <div class="relative py-4 lg:basis-1/2">
-                            <NuxtImg alt="Image of Forrester recognizes Diligent as a Leader in GRC software" loading="lazy"
-                                decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                                class="w-full h-96 !rounded-lg" src="/public/img/award.jpg" />
-                        </div>
-                        <div class="flex flex-col justify-center lg:basis-1/2">
-                            <label class="subheading-class leading-normal text-brand-primary">
-                                We belive in innovation and simplicity
-                            </label>
-                            <h2 class="pb-4 md:pb-5 heading-class">
-                                Leader in Industry Standards
-                            </h2>
-                            <div class="text-light-content pb-5 md:pb-6">
-                                <p class="text-xs leading-normal mb-4">
-                                    Uncover the fantastic opportunity to team up with Acentria Group, where
-                                    collaboration is not just a
-                                    buzzword but a way of life. In the world of Acentria Group, success isn't just a
-                                    destination, it's a
-                                    shared experience. With our innovative approach, award-winning culture, and
-                                    unwavering focus on
-                                    community, we stand as the epitome of what an ideal partnership should be. Welcome
-                                    to a realm where
-                                    simplicity meets professionalism, and your aspirations find a home.
+            <ContactForm />
 
-                                    Experience the genuine difference that Acentria Group offers in a journey tailored
-                                    for success,
-                                    where your potential unfolds in every collaborative moment.
-                                </p>
-                            </div>
+            <InTouch />
 
-                        </div>
-                    </div>
-                </div> -->
-
-                <section id="" class="relative py-8 bg-black/60 text-center">
-                    <div class="container px-4">
-                        <h2
-                            class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
-                            <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
-                            Let Acentria Tailor Your Coverage To Your Needs
-                        </h2>
-                    </div>
-                </section>
-
-                <ContactForm />
-
-                <InTouch />
-
-                <News />
-
-            </div>
+            <News />
         </div>
     </main>
 </template>
