@@ -89,26 +89,31 @@ const careerPath = ref([
     {
         name: 'Insurance',
         icon: 'fas fa-shield-alt',
+        link:'/acentria-group-insurance',
         description: 'Join our insurance team and help provide comprehensive coverage solutions to protect our clients\' assets and well-being.',
     },
     {
         name: 'Reinsurance',
         icon: 'fas fa-sync-alt',
+        link: '/acentria-group-reinsurance',
         description: 'Be a part of our reinsurance team and work on innovative solutions to manage and mitigate risk for our clients.',
     },
     {
         name: 'Actuarial',
         icon: 'fas fa-chart-line',
+        link:'/acentria-group-actuarial',
         description: 'Join our actuarial team and use your analytical skills to assess risk and help design insurance policies that meet our clients\' needs.',
     },
     {
         name: 'Technology',
         icon: 'fas fa-laptop-code',
+        link: '/',
         description: 'Join our technology team and drive innovation by developing cutting-edge solutions to enhance our services and operations.',
     },
     {
         name: 'Investment',
         icon: 'fas fa-handshake',
+        link: '/acentria-group-investment',
         description: 'Become a part of our broking team and facilitate the best insurance deals for our clients through strong relationships with insurers.',
     },
 ])
@@ -259,7 +264,7 @@ const products = [
                         </NuxtLink>
                     </div>
                     <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-5">
-                        <div v-for="member in careerPath" :key="member.name" class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-b-2 border-brand-primary">
+                        <NuxtLink :to="member.link" v-for="member in careerPath" :key="member.name" class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-b-2 border-brand-primary">
                             <div class="sm:flex-shrink-0 flex justify-center">
                                 <i :class="member.icon" class="text-black text-2xl"></i>
                             </div>
@@ -267,7 +272,7 @@ const products = [
                                 <h3 class="text-brand-primary flex justify-center font-semibold">{{ member.name }}</h3>
                                 <i class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
                             </div>
-                        </div>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>

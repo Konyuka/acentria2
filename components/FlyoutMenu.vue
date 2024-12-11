@@ -178,7 +178,7 @@
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 const props = defineProps({
-    theMenu: String,
+    theMenu: Object,
 })
 
 const currentMenu = ref(null)

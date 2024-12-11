@@ -59,7 +59,7 @@ const incentives = [
             <div class="relative py-4 lg:basis-1/2">
                 <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                     style="color: transparent; object-fit: contain"
-                    class="mt-8 w-full h-[310px] shadow-2xl rounded-lg !object-cover" src="/img/inspire.jpg" />
+                    class="mt-8 w-full h-[310px] shadow-2xl rounded-lg !object-cover" src="/img/inspire.webp" />
             </div>
             <div class="mt-2 flex flex-col justify-center items-center lg:basis-1/2">
                 <div class="container">

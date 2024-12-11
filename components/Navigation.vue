@@ -10,8 +10,6 @@ const currentRoute = computed(() => {
     return route.path;
 })
 
-
-
 const openMobileMenu = ref(false);
 const isInsuranceDropdownVisible = ref(false);
 const isActuarialDropdownVisible = ref(false);
@@ -176,10 +174,9 @@ onBeforeUnmount(() => {
                 <div
                     class="top-0 z-50 mx-auto hidden w-1/2 bottom-0 justify-between px-1 py-0 transition-all duration-200 lg:flex relative">
                     <div class="mx-auto ">
-
                         <div class="flex font-sans mt-1">
                             <div class="flex gap-4 my-1">
-                                <FlyoutMenu v-for="menu in menus" :theMenu="menu" :key="menu" />
+                                <FlyoutMenu v-for="(menu, index) in menus" :theMenu="menu" :key="index" />
                             </div>
                         </div>
                     </div>
