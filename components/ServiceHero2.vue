@@ -39,11 +39,6 @@ const props = defineProps({
                                 class="font-sans tracking-normal text-[42px]  text-white font-semibold leading-tight lg:leading-tight">
                             </h1>
                         </div>
-                        <div>
-                            <p class="font-semibold font-sans tracking-wide text-base text-white leading-7 pb-2">
-                                {{ InsuranceBannerContent.content }}
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
