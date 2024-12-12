@@ -237,7 +237,7 @@ const exploreClaims = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Learn More <span class="text-brand-primary">About Claims</span>',
     subheading: '',
-    image: '/img/safehouse.webp',
+    image: '/img/safehouse.jpg',
     link: '/insurance-claims',
     content: 'No matter which type of claim you have, our goal is to make sure everything goes smoothly. That means making your claims process as easy as possible and keeping you updated. Select a product to view the insurance claims process Get a breakdown of the claims process, what to do, and where to go from here.',
 })

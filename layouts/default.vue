@@ -18,7 +18,6 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
                 Your browser does not support the video tag.
             </video>
 
-
             <slot class="bg-white" />
         </div>
 
