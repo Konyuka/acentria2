@@ -8,10 +8,10 @@ const ReinsuranceBannerContent = ref({
 </script>
 
 <template>
-    <section>
+    <section class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
-        <div class="bg-white px-6 py-10 lg:px-8 font-sans">
+        <div class="bg-white px-6 lg:px-8 font-sans">
             <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
 
                 <p class="mt-6 text-xl leading-8">
