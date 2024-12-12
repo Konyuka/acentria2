@@ -16,7 +16,7 @@
 
 
             <PopoverPanel v-if="activeClick"
-                class="!-left-[18vw] w-[93vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
+                class="!-left-[18vw] w-[93.5vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
                 <!-- <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
                     aria-hidden="true"></div> -->

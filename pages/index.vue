@@ -1,13 +1,13 @@
 <script setup> 
 useSeoMeta({
-  title: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
-  description: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
+  title: 'Acentria Group - Comprehensive Coverage Solutions',
+  description: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
   ogTitle: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
   ogDescription: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
   ogImage: '/img/LogoT.png',
-  ogUrl: 'https://www.acentriagroup.com/insurance',
-  twitterTitle: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
-  twitterDescription: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
+  ogUrl: 'https://www.acentriagroup.com',
+  twitterTitle: 'Acentria Group - Comprehensive Coverage Solutions',
+  twitterDescription: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
   twitterImage: '/img/LogoT.png',
   twitterCard: 'summary_large_image'
 });
@@ -137,7 +137,7 @@ onMounted(() => {
                 </div>
               </div>
 
-              <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+              <div class="font-sans py-2 text-white" >
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16 items-center">
                   <div class="flex text-left lg:basis-1/2">
                     <div class="text-light-content pb-5 md:pb-6 py-auto">

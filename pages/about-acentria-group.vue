@@ -141,7 +141,7 @@ onMounted(() => {
                             </div>
 
 
-                            <div class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+                            <div class="font-sans py-2 text-white" >
 
                                 <div
                                     class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
@@ -288,7 +288,7 @@ onMounted(() => {
                                 </div>
                             </div>
 
-                            <div class=" py-10" style="background-color: rgb(246, 248, 252)">
+                            <div class=" py-10" >
                                 <h2
                                     class="text-center font-sans tracking-normal text-2xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
                                     We Firmly Believe That What Makes Us <br>

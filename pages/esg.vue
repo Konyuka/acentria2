@@ -3,7 +3,7 @@
 const bannerContent = ref({
     subtitle: 'ESG',
     title: 'Environmental, Social & Governance',
-    image: 'https://images.pexels.com/photos/19891034/pexels-photo-19891034/free-photo-of-scrabble-tiles-on-a-wooden-table-with-the-word-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    image: '/img/held.jpg'
 })
 
 
@@ -14,47 +14,33 @@ const bannerContent = ref({
 
         <BannerMain :content="bannerContent" />
 
-        <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17">
+        <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17"></div>
 
-            <!-- <p class="font-sans mx-auto mt-6 max-w-7xl text-center text-md text-secondary"
-                data-v-inspector="components/ReinsuranceWhy.vue:21:21">
-                At Acentria, we are dedicated to social responsibility, ethical practices, and community well-being. Our
-                initiatives include community engagement, education and awareness, diversity and inclusion, financial
-                literacy programs, and employee volunteering, reflecting our commitment to positive change. We
-                prioritize diversity and inclusion, implement sustainable practices, and uphold transparent, ethical
-                business standards. Our CSR efforts exemplify our values, making a meaningful impact on both our
-                workforce and the communities we serve
-            </p> -->
-
-        </div>
-
-        <div class=" bg-white max-w-6xl mx-auto h-full">
+        <div class="bg-white max-w-6xl mx-auto h-full">
             <div class="container max-w-6xl mx-auto font-sans text-black mt-10">
-                <div class="mx-auto  mb-5 font-sans">
-                    <p class="mt-2 text-pretty text-3xl font-semibold tracking-tight text-black">
+                <div class="mx-auto mb-5 font-sans">
+                    <p class="mt-2 text-2xl font-semibold tracking-tight text-black">
                         Our <span class="text-brand-primary">ESG Mission</span>
                     </p>
                 </div>
-                <p class="text-xs">
+                <p class="text-xs leading-normal">
                     At Acentria Group, our vision is to be a global leader empowering prosperity. Central to this vision
-                    is
-                    our commitment to Environmental, Social, and Governance (ESG) principles, which guide our efforts
+                    is our commitment to Environmental, Social, and Governance (ESG) principles, which guide our efforts
                     to create sustainable value for all stakeholders. Our ESG mission is rooted in integrating
-                    responsible
-                    practices across our operations, fostering positive social impact, and upholding strong governance
-                    standards. <br> <br>
+                    responsible practices across our operations, fostering positive social impact, and upholding strong
+                    governance standards.
+                    <br><br>
                     Our ESG mission is intricately linked to our vision of empowering prosperity. By embedding ESG
                     principles into our core business strategy, we aim to create sustainable value for our shareholders,
-                    employees, customers, and communities worldwide. Through continuous innovation and
-                    collaboration, Acentria Group strives to lead by example in driving positive change and contributing
-                    to
-                    a more sustainable and inclusive future.
+                    employees, customers, and communities worldwide. Through continuous innovation and collaboration,
+                    Acentria Group strives to lead by example in driving positive change and contributing to a more
+                    sustainable and inclusive future.
                 </p>
             </div>
         </div>
 
 
-        <div data-v-02281a80="" class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+        <div data-v-02281a80="" class="font-sans py-2 text-white" >
 
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:8:9">
@@ -66,8 +52,7 @@ const bannerContent = ref({
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
 
-                    <h2 class="subheading-font pb-4 leading-normal text-black"
-                        data-v-inspector="components/Why.vue:18:17">
+                    <h2 class="subheading-font pb-4 leading-normal text-black">
                         Environmental Stewardship
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">
@@ -211,7 +196,7 @@ const bannerContent = ref({
             </div>
 
             <div class="container mx-auto max-w-6xl">
-                <video preload="metadata" loading="lazy" src="/img/esg.mp4" alt="Success Team Hands Up"
+                <video preload="metadata" loading="lazy" src="/img/beach.mp4" alt="Success Team Hands Up"
                     class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted
                     loop>
                     Your browser does not support the video tag.

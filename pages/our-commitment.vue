@@ -93,9 +93,8 @@ const ReinsuranceBannerContent = ref({
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1"
-                            src="https://media.istockphoto.com/id/2174452723/photo/an-african-american-programmer-tackles-challenges-in-a-modern-office-environment.jpg?s=2048x2048&w=is&k=20&c=tvrDC-gpxbIusfVqB03by26V3vD4yFruekdM9wXLEmk="
-                            style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                            data-nimg="1" src="/img/glasses.jpg" style="color: transparent; object-fit: contain;"
+                            class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h1 id="" class="heading-class pb-4 text-black">
@@ -121,9 +120,8 @@ const ReinsuranceBannerContent = ref({
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col py-2 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1"
-                            src="https://media.istockphoto.com/id/537311780/photo/unity-of-indian-children-asia.webp?s=1024x1024&w=is&k=20&c=J-ieaHhBhiAiuZliJNBwymxYBcYKvwUXTiUzu3Jwzik="
-                            style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                            data-nimg="1" src="/img/leadership.jpg" style="color: transparent; object-fit: contain;"
+                            class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h1 id="" class="heading-class pb-4 text-black">

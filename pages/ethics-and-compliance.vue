@@ -31,7 +31,7 @@ const ReinsuranceBannerContent = ref({
 
         </div>
 
-        <div data-v-02281a80="" class="font-sans py-2 text-white" style="background-color: rgb(246, 248, 252)">
+        <div data-v-02281a80="" class="font-sans py-2 text-white" >
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:8:9">
                 <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
