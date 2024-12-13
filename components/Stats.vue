@@ -14,7 +14,7 @@
                 <div class="flex items-center justify-center mb-12">
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                         <span class="flex text-2xl font-semibold">
-                            <CountUp :end-val="13" />k+
+                            13k+
                         </span>
                         <p class="text-base md:text-xl font-semibold">
                             Customers
@@ -24,7 +24,7 @@
                 <div class="flex items-center justify-center mb-12">
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                         <span class="flex text-2xl font-semibold">
-                            <CountUp :end-val="10" />+
+                            10+
                         </span>
                         <p class="text-base md:text-xl font-semibold">
                             Years
@@ -34,7 +34,7 @@
                 <div class="flex items-center justify-center mb-12">
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                         <span class="flex text-2xl font-semibold">
-                            <CountUp :end-val="5" />+
+                            5+
                         </span>
                         <p class="text-base md:text-xl font-semibold">
                             Awards
@@ -44,7 +44,7 @@
                 <div class="flex items-center justify-center mb-12">
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                         <span class="flex text-2xl font-semibold">
-                            <CountUp :end-val="5" />+
+                            5+
                         </span>
                         <p class="text-base md:text-xl font-semibold">
                             Countries
@@ -54,7 +54,7 @@
                 <div class="flex items-center justify-center mb-12">
                     <div class="border-brand-divider border-l pl-6 text-dark-title">
                         <span class="flex text-2xl font-semibold">
-                            <CountUp :end-val="13" />h
+                            24h
                         </span>
                         <p class="text-base md:text-xl font-semibold">
                             Support

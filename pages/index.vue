@@ -137,7 +137,7 @@ onMounted(() => {
                 </div>
               </div>
 
-              <div class="font-sans py-2 text-white" >
+              <div class="font-sans py-2 text-white bg-white">
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16 items-center">
                   <div class="flex text-left lg:basis-1/2">
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
@@ -297,7 +297,7 @@ onMounted(() => {
 
                 <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
                   <NuxtLink :to="item.link" v-for="item in commitments"
-                    class="shadow-2xl button-animation duration-700 group border-0 border-solid border-black shadow-card m-auto flex rounded-lg bg-black/10 p-5 w-full h-full">
+                    class="shadow-2xl button-animation duration-700 group border-0 border-solid border-black shadow-card m-auto flex rounded-lg bg-black/40 p-5 w-full h-full">
                     <div class="flex h-fit flex-col">
                       <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary"
                         translate="no"></i>
