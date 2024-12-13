@@ -162,16 +162,16 @@ onMounted(() => {
                     </div>
                   </div>
                   <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain"
+                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
+                      data-nimg="1" style="color: transparent; object-fit: contain"
                       class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/join.jpg" />
                   </div>
                 </div>
 
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                   <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain"
+                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
+                      data-nimg="1" style="color: transparent; object-fit: contain"
                       class="w-full h-[330px] shadow-2xl rounded-lg !object-cover" src="/img/handshake.jpg" />
                   </div>
                   <div class="flex flex-col justify-center lg:basis-1/2">
@@ -228,8 +228,8 @@ onMounted(() => {
                     </div>
                   </div>
                   <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                      style="color: transparent; object-fit: contain"
+                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
+                      data-nimg="1" style="color: transparent; object-fit: contain"
                       class="w-full h-[320px] shadow-2xl rounded-lg !object-cover" src="/img/hi5.jpg" />
                   </div>
                 </div>
@@ -250,8 +250,8 @@ onMounted(() => {
                 <div class="container">
                   <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative py-4 lg:basis-1/2">
-                      <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                        style="color: transparent; object-fit: contain"
+                      <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
+                        data-nimg="1" style="color: transparent; object-fit: contain"
                         class="!object-cover w-full h-[300px] shadow-2xl rounded-lg" src="/img/leadership.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
@@ -296,7 +296,7 @@ onMounted(() => {
                 </div>
 
                 <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
-                  <NuxtLink :to="item.link" v-for="item in commitments"
+                  <NuxtLink v-motion-fade-visible :to="item.link" v-for="item in commitments"
                     class="shadow-2xl button-animation duration-700 group border-0 border-solid border-black shadow-card m-auto flex rounded-lg bg-black/40 p-5 w-full h-full">
                     <div class="flex h-fit flex-col">
                       <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary"
@@ -367,7 +367,8 @@ onMounted(() => {
                         </h2>
                       </div>
                       <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
-                        <NuxtLink :href="member.link" v-for="member in joinAsMembers" :key="member.name"
+                        <NuxtLink v-motion-fade-visible :href="member.link" v-for="member in joinAsMembers"
+                          :key="member.name"
                           class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8 border-brand-primary">
                           <div class="sm:flex-shrink-0 flex justify-center">
                             <i :class="member.icon" class="text-black text-2xl"></i>

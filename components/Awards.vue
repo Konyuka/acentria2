@@ -45,7 +45,7 @@ const awards = ref([
                     </h2>
                 </div>
                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 py-0">
-                    <a v-for="award in awards" :key="award.name"
+                    <a v-motion-fade-visible v-for="award in awards" :key="award.name"
                         class="button-animation cursor-pointer relative flex h-auto flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
                         href="resources/blog/preparing-for-ai-regulations.html">
                         <div class="relative mx-1 mt-1 aspect-[1] origin-top overflow-hidden rounded">

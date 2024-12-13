@@ -46,6 +46,22 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       API_BASE_URL: process.env.API_BASE_URL,
+      motion: {
+        directives: {
+          'pop-bottom': {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            }
+          }
+        }
+      }
     },
   },
   devServer: {
@@ -55,5 +71,7 @@ export default defineNuxtConfig({
   modules: [
     "vue3-carousel-nuxt", 
     "@nuxt/image-edge", 
-    "@nuxt/image"],
+    "@nuxt/image",
+    "@vueuse/motion/nuxt",
+  ],
 })
