@@ -24,7 +24,7 @@ const incentives = [
 <template>
     <div class="bg-white pt-5 font-sans">
 
-        <div class="container grid grid-cols-6 gap-5">
+        <div class="container grid grid-cols-7 gap-2">
             <div class="col-span-3 mt-5 container max-w-6xl mx-auto justify-between content-center">
                 <h2 class="text-2xl font-semibold text-left">
                     About - <span class="text-brand-primary"> Acentria Group</span>
@@ -32,7 +32,7 @@ const incentives = [
                 <h3 class="font-semibold text-xl mt-2">
                     Sharing an <span class="text-brand-primary">ambitious spirit!</span>
                 </h3>
-                <h1 class="mt-2 text-[23rem] text-transparent bg-clip-text bg-contain  bg-center leading-none font-extrabold tracking-tighter"
+                <h1 class="mt-2 text-[15rem] text-transparent bg-clip-text bg-contain  bg-center leading-none font-extrabold tracking-tighter"
                     style="background-image: url('/img/sun-tornado.png');">
                     <div class="-ml-5">
                         US
@@ -40,15 +40,15 @@ const incentives = [
                 </h1>
             </div>
 
-            <div class="col-span-3 relative">
+            <div class="col-span-4 relative">
                 <div class="absolute inset-x-0 bottom-0 top-48 bg-white"></div>
                 <div class="relative mx-auto px-2">
 
                     <div
-                        class="font-sans grid  grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600">
+                        class="font-sans grid  grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-x-1 gap-y-2 text-base leading-normal text-gray-600">
                         <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
                             :key="incentive.name"
-                            class="shadow-2xl button-animation relative flex flex-row gap-2 border-2 border-black p-5 rounded-lg">
+                            class="shadow-2xl button-animation relative flex flex-row gap-1 border-2 border-black py-5 px-5 rounded-lg">
                             <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
                             <div class="relative">
                                 <div class="flex justify-between w-full">
