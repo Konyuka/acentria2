@@ -187,7 +187,7 @@ const products = [
             </div>
         </div>
 
-        <section class="container mx-auto mb-5 pl-20 font-sans">
+        <section class="container mx-auto mb-5 font-sans">
             <h2 class="text-2xl font-semibold text-black">
                 What Drives Us <span class="text-brand-primary"> at Acentria Group</span>
             </h2>
