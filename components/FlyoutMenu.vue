@@ -18,9 +18,9 @@
             enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-0">
 
-            <PopoverPanel static v-motion-fade-visible v-if="activeClick || activeHover"
+            <PopoverPanel v-slot="{ close }" static v-motion-fade-visible v-if="activeClick || activeHover"
                 class="!-left-[18vw] w-[93.5vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl"
-                @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver()">
+                @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver(close)">
 
                 <div class="relative border-b-4 border-brand-primary">
                     <NuxtImg
@@ -189,7 +189,7 @@ const props = defineProps({
 })
 
 const currentMenu = ref(null)
-watch(() => currentMenu, (value) => {
+watch(() => currentMenu.value, (value) => {
     console.log(value)
 })
 const currentMenuItems = ref(null)
@@ -796,7 +796,7 @@ const openFlyover = (menu) => {
         activeHover.value = true
         currentMenu.value = menu
         if (currentMenu.value === 'About') {
-            console.log(currentMenu)
+            // console.log(currentMenu)
             flyoverHeader.value = 'Acentria Group'
             currentMenuItems.value = AboutMenus.value
             currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
@@ -855,7 +855,9 @@ const keepOpen = (theMenuName) => {
 };
 
 let hideTimeout = null;
-const closeFlyOver = () => {
+
+const closeFlyOver = (close) => {
+    // close()
     if (hideTimeout){
         clearTimeout(hideTimeout);
     }
