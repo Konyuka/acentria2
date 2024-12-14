@@ -8,11 +8,18 @@ const props = defineProps({
 <template>
     <div class="relative h-[95vh]">
         <div class="relative">
-            <video preload="metadata" loading="lazy" autoplay muted loop
+            <!-- <video preload="metadata" loading="lazy" autoplay muted loop
                 class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]" :src="content.vid">
-            </video>
-            <div class="absolute inset-0 bg-black opacity-20 h-[95vh]"></div>
+            </video> -->
+
+            <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
+            class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
+            style="color: transparent; transform: scaleX(-1);">
+
+            <!-- <div class="absolute inset-0 bg-black opacity-20 h-[95vh]"></div> -->
         </div>
+
+        
 
         <!-- <div>
             <div class="absolute my-auto h-full left-0 container content-center align-middle justify-center">

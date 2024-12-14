@@ -32,9 +32,9 @@ const incentives = [
                 <h3 class="font-semibold text-xl mt-2">
                     Sharing an <span class="text-brand-primary">ambitious spirit!</span>
                 </h3>
-                <h1 class="mt-2 text-[15rem] text-transparent bg-clip-text bg-contain  bg-center leading-none font-extrabold tracking-tighter"
+                <h1 class="mt-2 text-[15rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
                     style="background-image: url('/img/sun-tornado.png');">
-                    <div class="-ml-5">
+                    <div class="-ml-3">
                         US
                     </div>
                 </h1>

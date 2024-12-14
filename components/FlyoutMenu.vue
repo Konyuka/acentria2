@@ -1,9 +1,13 @@
 <template>
-    <Popover class="isolate z-50 shadow-3xl w-auto font-sans bg-transparent">
+    <Popover v-slot="{ open }" class="isolate z-50 shadow-3xl w-auto font-sans bg-transparent">
+
         <div class="justify-center">
             <div class="">
-                <PopoverButton @click="openFlyover(theMenu.name)"
-                    :class="[currentMenu === theMenu.name && activeClick ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
+                <!-- <PopoverButton @click="openFlyover(theMenu.name)" -->
+                <!-- @mouseleave="activeClick = false" -->
+                <!-- @mouseleave="closeFlyOver()" -->
+                <PopoverButton @click="openFlyover(theMenu.name)" @mouseenter="openFlyover(theMenu.name)"
+                    :class="[currentMenu === theMenu.name && (activeClick || activeHover) ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
                     class="pr-2 hover:border-b-red-600 hover:border-b-4 py-1 subheading-class !text-[15.5px] !ring-0 focus inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
                     {{ theMenu.name }}
                 </PopoverButton>
@@ -14,27 +18,25 @@
             enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-0">
 
-
-            <PopoverPanel v-if="activeClick"
-                class="!-left-[18vw] w-[93.5vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
-
-                <!-- <div @click="closeFlyOver()" class="-z-50 fixed inset-0 bg-black/15 transition-opacity"
-                    aria-hidden="true"></div> -->
+            <PopoverPanel static v-motion-fade-visible v-if="activeClick || activeHover"
+                class="!-left-[18vw] w-[93.5vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl"
+                @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver()">
 
                 <div class="relative border-b-4 border-brand-primary">
-                    <NuxtImg src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
+                    <NuxtImg
+                        src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
                         alt="" class="absolute inset-0 -z-10 h-full w-full object-fit" />
 
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
 
                     <div class="h-auto">
-                       
+
                         <div class="grid grid-cols-7">
 
                             <div class="col-span-2 relative border-r-4 border-red-600 h-56 mt-2">
 
                                 <h1 class="ml-5 font-semibold" v-html="currentMainMenu"></h1>
-                                
+
                                 <div class="relative pl-10 pt-2 flex flex-col gap-2">
                                     <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
                                         <p @click="setSubmenu(item, index)"
@@ -43,7 +45,7 @@
                                             <!-- <i :class="item.icon" class="mr-2"></i> -->
                                             {{ item.name }}
                                             <!-- <i
-                                                class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i> -->
+                                                   class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i> -->
                                         </p>
                                     </div>
 
@@ -60,7 +62,7 @@
                                                     <!-- <i :class="item.icon" class="mr-2"></i> -->
                                                     {{ item.name }}
                                                     <!-- <i
-                                                        class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i> -->
+                                                           class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i> -->
                                                 </p>
                                             </div>
                                         </div>
@@ -91,7 +93,8 @@
                                             {{ submenuItem.name }}
                                         </NuxtLink>
 
-                                        <div v-show="currentMenu === 'Insurance'" class="absolute bottom-5 mt-2 text-brand-primary col-span-1 text-[15px]">
+                                        <div v-show="currentMenu === 'Insurance'"
+                                            class="absolute bottom-5 mt-2 text-brand-primary col-span-1 text-[15px]">
                                             <i class="fas fa-award mr-2"></i> <span class="text-black">Get
                                                 discounts</span>
                                             upto
@@ -102,7 +105,9 @@
                                     <div>
                                         <div class="w-auto dark:border-gray-700">
                                             <div class="w-full rounded h-56 ">
-                                                <NuxtImg :src="popoverImage" alt="Display picture of Silene Tokyo" role="img" class="object-cover h-full w-full overflow-hidden rounded shadow-xl" />
+                                                <NuxtImg :src="popoverImage" alt="Display picture of Silene Tokyo"
+                                                    role="img"
+                                                    class="object-cover h-full w-full overflow-hidden rounded shadow-xl" />
                                             </div>
                                             <div class="flex w-full items-center justify-between pt-6 pb-1">
                                                 <p class="text-xl font-normal text-gray-800 dark:text-white ">
@@ -113,19 +118,21 @@
                                                 </p>
                                                 <div class="flex justify-center">
                                                     <!-- <a aria-label="Open github" role="link" href="javascript:void(0)"
-                                                        class="button-animation mx-2">
-                                                        <i class="fas fa-paper-plane"></i>
-                                                    </a>
-                                                    <a aria-label="Open github" role="link" href="javascript:void(0)"
-                                                        class="button-animation mx-2">
-                                                        <i class="fas fa-mobile-alt"></i>
-                                                    </a> -->
+                                                           class="button-animation mx-2">
+                                                           <i class="fas fa-paper-plane"></i>
+                                                       </a>
+                                                       <a aria-label="Open github" role="link" href="javascript:void(0)"
+                                                           class="button-animation mx-2">
+                                                           <i class="fas fa-mobile-alt"></i>
+                                                       </a> -->
 
                                                 </div>
                                             </div>
-                                            <p v-show="currentMenu === 'Insurance'" class="mt-2 text-[12px] text-gray-600 leading-4">
+                                            <p v-show="currentMenu === 'Insurance'"
+                                                class="mt-2 text-[12px] text-gray-600 leading-4">
                                                 Do it yourself or let us help you <br> <span
-                                                    class="text-brand-primary underline underline-offset-2">Get a quote
+                                                    class="text-brand-primary underline underline-offset-2">Get a
+                                                    quote
                                                     now!</span>
                                             </p>
 
@@ -138,10 +145,10 @@
                                 <div class="h-10 grid grid-cols-3 gap-2 font-bold">
                                     <div v-show="currentMenu">
                                         <!-- <button
-                                            class="ml-8 button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[14px]">
-                                            Download our App on <i class="fab fa-google-play text-brand-primary"></i> &
-                                            <i class="fab fa-apple text-brand-primary"></i>
-                                        </button> -->
+                                               class="ml-8 button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[14px]">
+                                               Download our App on <i class="fab fa-google-play text-brand-primary"></i> &
+                                               <i class="fab fa-apple text-brand-primary"></i>
+                                           </button> -->
                                     </div>
                                     <div></div>
                                     <div></div>
@@ -153,10 +160,11 @@
                     <div class="">
                         <div class="flex px-10">
                             <!-- <div>
-
-                            </div> -->
+   
+                               </div> -->
                             <div class="flex col-span-2 w-full justify-between !pr-5">
-                                <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"  @click="closeFlyOver()"
+                                <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
+                                    @click="closeFlyOver()"
                                     class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-[13px] font-semibold leading-normal text-black sm:justify-center sm:px-0">
                                     <i :class="item.icon" class="flex-none group-hover:text-black text-brand-primary" />
                                     {{ item.name }} <i class="fas fa-arrow-right"></i>
@@ -167,11 +175,10 @@
                     </div>
                 </div>
 
-
             </PopoverPanel>
 
-
         </transition>
+
     </Popover>
 </template>
 
@@ -182,6 +189,9 @@ const props = defineProps({
 })
 
 const currentMenu = ref(null)
+watch(() => currentMenu, (value) => {
+    console.log(value)
+})
 const currentMenuItems = ref(null)
 const currentMainMenu = ref(null)
 const currentSubmenu = ref(null)
@@ -730,10 +740,11 @@ const ActuarialMenus = ref([
     },
 ])
 
-
 const selectedIndex = ref(null)
 const activeClick = ref(false)
+const activeHover = ref(false)
 const router = useRouter()
+
 
 const ctaButton = computed(()=>{
     if(currentMenu.value=='Insurance'){
@@ -767,6 +778,7 @@ const popoverImage = computed(()=>{
 
 const openFlyover = (menu) => {
     // console.log(currentMenu.value)
+    // closeFlyOver()
     if (menu == 'Investment') {
         router.push('/acentria-group-investment');
         return;
@@ -779,9 +791,12 @@ const openFlyover = (menu) => {
         // currentMenu.value = null
         return
     } else {
+        
         activeClick.value = true
+        activeHover.value = true
         currentMenu.value = menu
         if (currentMenu.value === 'About') {
+            console.log(currentMenu)
             flyoverHeader.value = 'Acentria Group'
             currentMenuItems.value = AboutMenus.value
             currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
@@ -834,19 +849,34 @@ const openFlyover = (menu) => {
     // console.log(currentMenu.value)
 }
 
+const keepOpen = (theMenuName) => {
+  openFlyover(theMenuName)
+  activeHover.value = true;
+};
+
+let hideTimeout = null;
 const closeFlyOver = () => {
-    currentMenu.value = null
-    activeClick.value = false
-    currentMenuItems.value = null
-    currentSubmenu.value = null
-    currentSubmenuItems.value = null
-    selectedIndex.value = null
-    footerOptions.value = null
-    currentMenuSubtitle.value = null
-    currentMenuDescription.value = null
-    footerOptions.value = null
-    flyoverHeader.value = null
+    if (hideTimeout){
+        clearTimeout(hideTimeout);
+    }
+    hideTimeout= setTimeout(() => {
+        currentMenu.value = null
+        activeClick.value = false
+        activeHover.value = false
+        currentMenuItems.value = null
+        currentSubmenu.value = null
+        currentSubmenuItems.value = null
+        selectedIndex.value = null
+        footerOptions.value = null
+        currentMenuSubtitle.value = null
+        currentMenuDescription.value = null
+        footerOptions.value = null
+        flyoverHeader.value = null
+    }, 200);
+
+    
 }
+
 const currentRoute = computed(() => {
     const route = useRoute();
     return route.path;
