@@ -38,7 +38,7 @@
 
                                 <div class="flex flex-col gap-1 mx-3 mt-7">
                                     <h2 class="text-2xl font-semibold" v-html="currentMainHeading"></h2>
-                                    <p class="text-[12px] leading-normal">
+                                    <p class="text-[13px] leading-normal">
                                         {{ currentMainDescription }}
                                     </p>
                                     <!-- <h2 class="text-2xl font-semibold" v-html="currentMenuSubtitle"></h2>
@@ -204,6 +204,13 @@ const actuarialFooterMenus = ref([
         link: '/acentria-group-actuarial',
     },
 ]);
+const insightsFooterMenus = ref([
+    {
+        name: 'Insights Home Page',
+        icon: 'fas fa-home',
+        link: '/acentria-group-actuarial',
+    },
+]);
 
 const AboutMenus = ref([
     {
@@ -211,7 +218,7 @@ const AboutMenus = ref([
         linksHeading: 'About Us<span class="text-brand-primary"> Links<span/>',
         mainMenu: 'Company <span class="text-brand-primary">Profile<span/>',
         mainHeading: 'Acentria <span class="text-brand-primary"> Group<span/>',
-        mainDescription: 'We drive the future of our partners through our, expertise, solutions by EMPOWERING the vision of our clients and the communities through INNOVATIVE thinking and offering the best solutions to enhance PROSPERITY! We always seek better ways to manage risk and guide effective pathways to achieve the smart outcomes. We go beyond risk to rewards for our clients, our company, our colleagues, and the communities in which we serve.',
+        mainDescription: 'We drive the future of our partners through our, expertise, solutions by EMPOWERING the vision of our clients and the communities through INNOVATIVE thinking and offering the best solutions to enhance PROSPERITY! We always seek better ways to manage risk and guide effective pathways to achieve the smart outcomes.',
         subMenu: 'Acentria <span class="text-brand-primary">Profile Details<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'At Acentria Group, we propel prosperity to infinite possibilities. Our expert team is dedicated to providing innovative & comprehensive insurance, reinsurance & actuarial solutions to help you achieve your financial goals. ',
@@ -387,7 +394,7 @@ const AboutMenus = ref([
 ])
 const InsuranceMenus = ref([
     {
-        name: 'Insurance Personal Covers',
+        name: 'Personal Covers',
         linksHeading: 'My Personal <span class="text-brand-primary">Insurance Covers<span/>',
         mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
         mainHeading: 'Insurance & <span class="text-brand-primary">Risk Management<span/>',
@@ -425,7 +432,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Insurance Corporate Covers',
+        name: 'Corporate Covers',
         linksHeading: 'My Corporate <span class="text-brand-primary">Insurance Covers<span/>',
         subMenu: 'Why Corporate <span class="text-brand-primary">Insurance?<span/>',
         description: 'Corporate insurance is crucial as it provides tailored solutions to protect your business and employees from various risks and uncertainties.',
@@ -459,7 +466,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Insurance Business Covers',
+        name: 'Business Covers',
         linksHeading: 'My Business <span class="text-brand-primary">Insurance Covers<span/>',
         subMenu: 'Why Business <span class="text-brand-primary">Insurance?<span/>',
         description: 'Business insurance is essential as it provides comprehensive solutions to protect your enterprise from various risks and uncertainties. ',
@@ -493,7 +500,7 @@ const InsuranceMenus = ref([
         ]
     },
     {
-        name: 'Insurance Industrial Covers',
+        name: 'Industrial Covers',
         linksHeading: 'My Industrial <span class="text-brand-primary">Insurance Covers<span/>',
         subMenu: 'Why Industrial <span class="text-brand-primary">Insurance?<span/>',
         description: 'Industrial insurance is vital as it provides comprehensive coverage for all industrial risks, ensuring your business operations are protected. ',
@@ -523,7 +530,7 @@ const InsuranceMenus = ref([
     },
     {
         type: 'special',
-        name: 'Insurance Aviation Covers',
+        name: 'Aviation Covers',
         linksHeading: 'My Aviation <span class="text-brand-primary">Insurance Covers<span/>',
         subMenu: 'Why Aviation <span class="text-brand-primary">Insurance?<span/>',
         description: 'Comprehensive coverage for aircraft, pilots, and aviation operations.',
@@ -538,7 +545,7 @@ const InsuranceMenus = ref([
     },
     {
         type: 'special',
-        name: 'Insurance Marine Covers',
+        name: 'Marine Covers',
         linksHeading: 'My Marine <span class="text-brand-primary">Insurance Covers<span/>',
         subMenu: 'Why Marine <span class="text-brand-primary">Insurance?<span/>',
         description: 'Comprehensive coverage for vessels, cargo, and marine operations.',
@@ -557,7 +564,7 @@ const ReinsuranceMenus = ref([
         name: 'Reinsurance Services',
         linksHeading: 'Reinsurance<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Reinsurance <span class="text-brand-primary">Products<span/>',
-        mainHeading: 'Acentria <span class="text-brand-primary">Reinsurance<span/>',
+        mainHeading: '<span class="text-brand-primary">Reinsurance<span/>',
         mainDescription: 'Acentria re is one of the leading independent specialists (re)insurance broking firms operating in Kenya, and international markets. Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage services and analytical expertise for our clients worldwide.Our unique ability to navigate an ever- changing market with overwhelming force while steadily executing the most valuable solutions sets us apart and demonstrates our overarching commitment to helping our clients succeed.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
@@ -699,6 +706,40 @@ const ActuarialMenus = ref([
         ]
     },
 ])
+const InsightsMenus = ref([
+    {
+        name: 'Our Insights',
+        linksHeading: 'Actuarial<span class="text-brand-primary"> Services<span/>',
+        mainMenu: 'Actuarial <span class="text-brand-primary">Products<span/>',
+        mainHeading: 'Acentria\'s <span class="text-brand-primary">Insights<span/>',
+        mainDescription: 'Our Actuarial & financial is one of the leading Actuarial independent specialists’ firms operating in Kenya, and international markets. Our Actuarial team lead by a signing Actuary has expertise in using financial, risk, and capital modelling to help clients manage the complexities that are inherent in business. We use a blend of technical and commercial expertise to provide insight, assurance and enable effective insightful decision-making by business leaders.',
+        subMenu: 'Our <span class="text-brand-primary">Services<span/>',
+        menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
+        description: 'Explore our comprehensive actuarial consulting services for financial strategies.',
+        icon: 'fas fa-chart-line',
+        items: [
+            {
+                name: 'Insurance',
+                description: 'Stay updated with the latest trends in insurance.',
+                link: '/insights/insurance',
+            },
+            {
+                name: 'Reinsurance',
+                description: 'Gain insights into the reinsurance industry and practices.',
+                link: '/insights/reinsurance',
+            },
+            {
+                name: 'Actuarial',
+                description: 'Explore actuarial insights and financial strategies.',
+                link: '/insights/actuarial',
+            },
+            {
+                name: 'Technology',
+                description: 'Discover technological advancements in the insurance sector.',
+                link: '/insights/technology',
+            },
+        ]    },
+])
 
 const selectedIndex = ref(null)
 const activeClick = ref(false)
@@ -754,6 +795,7 @@ const openFlyover = (menu) => {
         activeClick.value = true
         activeHover.value = true
         currentMenu.value = menu
+
         if (currentMenu.value === 'About') {
             flyoverHeader.value = 'Acentria Group'
             currentMenuItems.value = AboutMenus.value
@@ -809,6 +851,20 @@ const openFlyover = (menu) => {
             currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
             currentMenuDescription.value = currentMenuItems.value[0]?.description
             footerOptions.value = actuarialFooterMenus.value
+        }
+        if (currentMenu.value === 'Insights') {
+            flyoverHeader.value = 'Acentria Insights'
+            currentMenuItems.value = InsightsMenus.value
+            currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
+            currentSubmenu.value = 'Our Insights'
+            currentSubmenuItems.value = currentMenuItems.value[0]?.items
+            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+            currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
+            currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
+            currentMenuDescription.value = currentMenuItems.value[0]?.description
+            footerOptions.value = insightsFooterMenus.value
         }
 
     }
