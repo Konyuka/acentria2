@@ -38,7 +38,7 @@
 
                                 <div class="flex flex-col gap-1 mx-3">
                                     <h2 class="text-2xl font-semibold" v-html="currentMainHeading"></h2>
-                                    <p class="text-md leading-normal">
+                                    <p class="text-[12px] leading-normal">
                                         {{ currentMainDescription }}
                                     </p>
                                     <!-- <h2 class="text-2xl font-semibold" v-html="currentMenuSubtitle"></h2>
@@ -86,14 +86,14 @@
                                     <div
                                         class="col-span-7 relative flex flex-col gap-1 border-l-2 border-red-600 h-full pl-5">
                                         <!-- <h1 class="font-semibold text-lg" v-html=currentLinksHeading></h1> -->
-                                        <div class="grid grid-cols-2 gap-5 mt-6">
+                                        <div class="grid grid-cols-2 gap-3 mt-6">
                                             <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                                 :key="submenuItem.name"
                                                 class="group hover:cursor-pointer hover:text-white hover:bg-black transition duration-700 rounded-md p-2 font-semibold text-[15px]">
                                                 <div class="flex justify-between">
                                                     {{ submenuItem.name }}
                                                     <i
-                                                        class="text-brand-primary mr-2 fas fa-angle-right text-[10px]"></i>
+                                                        class="text-brand-primary mr-2 fas fa-angle-right text-[10px] mt-1.5"></i>
                                                 </div>
                                                 <p class="text-[10px]">
                                                     {{ submenuItem.description }}
@@ -391,7 +391,7 @@ const InsuranceMenus = ref([
         linksHeading: 'My Personal <span class="text-brand-primary">Insurance Covers<span/>',
         mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
         mainHeading: 'Insurance & <span class="text-brand-primary">Risk Management<span/>',
-        mainDescription: 'Acentria re is one of the leading independent specialists (re)insurance broking firms operating in Kenya, and international markets. Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage services and analytical expertise for our clients worldwide.Our unique ability to navigate an ever- changing market with overwhelming force while steadily executing the most valuable solutions sets us apart and demonstrates our overarching commitment to helping our clients succeed.',
+        mainDescription: 'Acentria is one of the leading independent specialists insurance broking firms operating in Kenya, and international markets. Acentria’s dedicated risk teams provide a combination of specialized insurance brokerage services and analytical expertise for our clients worldwide. Our unique ability to navigate an ever- changing market with overwhelming force while steadily executing the most valuable solutions sets us apart and demonstrates our overarching commitment to helping our clients succeed.',
         subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security. ',
