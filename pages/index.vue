@@ -1,4 +1,4 @@
-<script setup> 
+<script setup>
 useSeoMeta({
   title: 'Acentria Group - Comprehensive Coverage Solutions',
   description: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
@@ -89,7 +89,7 @@ const commitments = ref([
   {
     name: 'Our Partners',
     icon: 'fas fa-handshake',
-    description: 'Our partnerships with advisers, super funds and employer funds help us protect more Australians.',
+    description: 'Our partnerships with advisers, super funds and employer funds help us protect more people.',
     link: '/our-commitment'
   },
   {
@@ -124,115 +124,6 @@ onMounted(() => {
 
               <div class="w-full h-full bg-white border-t-4 border-brand-primary">
                 <MakesUs2 />
-              </div>
-
-              <div class="container relative min-h-[30vh] min-w-screen">
-                <div class="pb-5 bottom-0 absolute max-w-7xl mx-auto">
-                  <h2 class="text-2xl font-semibold text-white">
-                    Our <span class="text-brand-primary">Brand</span>
-                  </h2>
-                  <h3 class="text-xl font-semibold text-white">
-                    We build our lifestyle <span class="text-brand-primary">around our brand!</span>
-                  </h3>
-                </div>
-              </div>
-
-              <div class="font-sans py-2 text-white bg-white">
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16 items-center">
-                  <div class="flex text-left lg:basis-1/2">
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <p class="text-sm leading-normal mb-4 mt-4">
-                        At Acentria Group, our brand is a reflection of our identity, built on the core pillars of
-                        <b>Integrity, Innovation,</b> and <b>Excellence</b>. It represents our unwavering commitment to
-                        empowering dreams, igniting imagination, and creating meaningful impact for our clients,
-                        employees, and
-                        communities. Guided by The Acentria Way, we prioritize trust, transparency, and responsibility
-                        in every
-                        interaction. Our brand is not just a logo—it’s a promise to deliver transformative solutions,
-                        foster sustainable growth, and uphold the highest standards of excellence. Through empowerment,
-                        innovation,
-                        and a legacy of responsibility, we inspire confidence and build lasting partnerships that drive
-                        success for all.
-                      </p>
-                      <NuxtLink href="/our-brand"
-                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        Learn More
-                        <i class="fas fa-arrow-right text-primary ml-2 text-[12px]"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                  <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain"
-                      class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/join.jpg" />
-                  </div>
-                </div>
-
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                  <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain"
-                      class="w-full h-[330px] shadow-2xl rounded-lg !object-cover" src="/img/handshake.jpg" />
-                  </div>
-                  <div class="flex flex-col justify-center lg:basis-1/2">
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <h2 class="text-2xl font-semibold text-black">
-                        Things that <span class="text-brand-primary">Inspire Us</span>
-                      </h2>
-                      <h3 class="text-xl font-semibold pb-4">
-                        <span class="text-brand-primary">#</span> Empower <span class="text-brand-primary">#</span>
-                        Innovate <span class="text-brand-primary">#</span> Prosper
-                      </h3>
-                      <p class="text-sm leading-normal text-light-content !text-inherit mb-4">
-                        At Acentria Group, we are driven by our mantra: <br> <b>Empower, Innovate, Prosper.</b> <br>
-                        We find inspiration in empowering individuals, businesses, and communities to achieve their
-                        dreams. Innovation fuels our creativity, helping us craft transformative solutions that tackle
-                        today’s challenges. Prosperity motivates us to create lasting impact—building success stories
-                        that uplift not just our clients but society as a whole. Together, we turn possibilities into
-                        progress,
-                        delivering excellence every step of the way.
-                      </p>
-                      <NuxtLink href="/things-that-inspire-us"
-                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        Learn More
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-20 lg:gap-16">
-                  <div class="flex flex-col justify-center lg:basis-1/2">
-                    <div class="pb-4">
-                      <h2 class="text-2xl font-semibold text-black">
-                        Our Corporate <span class="text-brand-primary">Culture</span>
-                      </h2>
-                      <h3 class="text-xl font-semibold">
-                        The Acentria <span class="text-brand-primary">Way!</span>
-                      </h3>
-                    </div>
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <p class="text-sm leading-normal text-light-content !text-inherit mb-4">
-                        At Acentria Group, our corporate culture is the driving force behind everything we do. It the
-                        soil within which the seeds of promise mature to prosperity. It is shaped by a clear sense of
-                        purpose and guided by our commitment to fostering a supportive, innovative, and dynamic
-                        environment where every employee thrives. <br><br>
-                        Our culture isn't just about the work we do—it’s about how we do it and the values that drive
-                        our engagements. We call this <b>The Acentria Way!</b>
-                      </p>
-                      <NuxtLink href="/corporate-culture"
-                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        Learn More
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                  <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain"
-                      class="w-full h-[320px] shadow-2xl rounded-lg !object-cover" src="/img/hi5.jpg" />
-                  </div>
-                </div>
               </div>
 
               <div class="container relative min-h-[30vh] min-w-screen">
@@ -286,6 +177,88 @@ onMounted(() => {
                   <Services />
                 </div>
               </section>
+
+              <div class="font-sans py-2 text-white bg-white">
+
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-10 lg:gap-16">
+                  <div class="flex flex-col justify-center lg:basis-1/2">
+                    <div class="pb-4">
+                      <h2 class="text-2xl font-semibold text-black">
+                        Our Corporate <span class="text-brand-primary">Culture</span>
+                      </h2>
+                      <h3 class="text-xl font-semibold">
+                        The Acentria <span class="text-brand-primary">Way!</span>
+                      </h3>
+                    </div>
+                    <div class="text-light-content pb-5 md:pb-6 py-auto">
+                      <p class="text-sm leading-normal text-light-content !text-inherit mb-4">
+                        At Acentria Group, our corporate culture is the driving force behind everything we do. It the
+                        soil within which the seeds of promise mature to prosperity. It is shaped by a clear sense of
+                        purpose and guided by our commitment to fostering a supportive, innovative, and dynamic
+                        environment where every employee thrives. <br><br>
+                        Our culture isn't just about the work we do—it’s about how we do it and the values that drive
+                        our engagements. We call this <b>The Acentria Way!</b>
+                      </p>
+                      <NuxtLink href="/corporate-culture"
+                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                        Learn More
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                      </NuxtLink>
+                    </div>
+                  </div>
+                  <div class="relative py-4 lg:basis-1/2">
+                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
+                      data-nimg="1" style="color: transparent; object-fit: contain"
+                      class="w-full h-[320px] shadow-2xl rounded-lg !object-cover" src="/img/hi5.jpg" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white py-10">
+                <div class="container relative min-w-screen">
+                  <div class=" bottom-0 absolute max-w-7xl mx-auto">
+                    <h2 class="text-2xl font-semibold text-black">
+                      Our <span class="text-brand-primary">Brand</span>
+                    </h2>
+                    <h3 class="text-xl font-semibold text-black">
+                      We build our lifestyle <span class="text-brand-primary">around our brand!</span>
+                    </h3>
+                  </div>
+                </div>
+  
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16 items-center">
+                  <div class="flex text-left lg:basis-1/2">
+                    <div class="text-light-content pb-5 md:pb-6 py-auto">
+                      <p class="text-sm leading-normal mb-4 mt-4">
+                        At Acentria Group, our brand is a reflection of our identity, built on the core pillars of
+                        <b>Integrity, Innovation,</b> and <b>Excellence</b>. It represents our unwavering commitment to
+                        empowering dreams, igniting imagination, and creating meaningful impact for our clients,
+                        employees, and
+                        communities. Guided by The Acentria Way, we prioritize trust, transparency, and responsibility
+                        in every
+                        interaction. Our brand is not just a logo—it’s a promise to deliver transformative solutions,
+                        foster sustainable growth, and uphold the highest standards of excellence. Through empowerment,
+                        innovation,
+                        and a legacy of responsibility, we inspire confidence and build lasting partnerships that drive
+                        success for all.
+                      </p>
+                      <NuxtLink href="/our-brand"
+                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                        Learn More
+                        <i class="fas fa-arrow-right text-primary ml-2 text-[12px]"></i>
+                      </NuxtLink>
+                    </div>
+                  </div>
+                  <div class="relative py-4 lg:basis-1/2">
+                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
+                      data-nimg="1" style="color: transparent; object-fit: contain"
+                      class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/join.jpg" />
+                  </div>
+                </div>
+              </div>
+
+
+
 
               <section class="container max-w-6xl mx-auto relative py-5">
                 <div class="py-5 text-2xl font-semibold text-white text-left">

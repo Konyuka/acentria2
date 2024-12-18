@@ -75,7 +75,11 @@ const features = [
                 </div>
             </div>
 
-            <div class="flex lg:flex-row flex-col md:gap-14 gap-16 justify-between lg:mt-20 mt-16">
+            <div class="py-10 text-2xl font-semibold text-black text-left">
+                Our <span class="text-brand-primary">Capabilities</span>
+            </div>
+
+            <div class="flex lg:flex-row flex-col md:gap-14 gap-16 justify-between my-5">
                 <div class="w-full">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-12 gap-10">
                         <NuxtLink :href="feature.url" v-for="feature in features"

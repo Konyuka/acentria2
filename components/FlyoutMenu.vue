@@ -36,7 +36,7 @@
 
                             <div class="col-span-4 relative border-r-2 border-red-600 h-full mt-2">
 
-                                <div class="flex flex-col gap-1 mx-3">
+                                <div class="flex flex-col gap-1 mx-3 mt-7">
                                     <h2 class="text-2xl font-semibold" v-html="currentMainHeading"></h2>
                                     <p class="text-[12px] leading-normal">
                                         {{ currentMainDescription }}
@@ -53,28 +53,28 @@
                             <div class="col-span-8 ml-4">
                                 <div class="pt-2 grid grid-cols-12 gap-2 max-w-full px-2">
                                     <div class="col-span-5">
-                                        <h1 class="ml-2 font-semibold text-lg" v-html="currentMainMenu"></h1>
-                                        <div class="relative pl-5 pt-2 flex flex-col gap-3">
+                                        <!-- <h1 class="ml-2 font-semibold text-lg" v-html="currentMainMenu"></h1> -->
+                                        <div class="relative pt-2 flex flex-col gap-2 mt-7">
                                             <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
                                                 <p @click="setSubmenu(item, index)"
-                                                    :class="[currentSubmenu === item.name ? 'text-brand-primary !underline underline-offset-4 ml-2' : '']"
-                                                    class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
+                                                    :class="[currentSubmenu === item.name ? 'text-brand-primary bg-red-100' : '']"
+                                                    class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
                                                     {{ item.name }} <i v-if="currentSubmenu === item.name"
-                                                        class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-arrow-right"></i>
+                                                        class="absolute right-4 text-brand-primary ml-8 fas fa-arrow-right mt-1"></i>
                                                 </p>
                                             </div>
                                             <div v-show="currentMenu === 'Insurance'">
-                                                <div class="-ml-6 my-2 font-semibold text-lg text-black">
+                                                <!-- <div class="-ml-6 my-2 font-semibold text-lg text-black">
                                                     Special <span class="text-brand-primary">Lines Insurance</span>
-                                                </div>
+                                                </div> -->
 
                                                 <div class="flex flex-col gap-2">
                                                     <div v-show="item.type" v-for="(item, index) in currentMenuItems">
                                                         <p @click="setSubmenu(item, index)"
-                                                            :class="[currentSubmenu === item.name ? 'text-brand-primary !underline underline-offset-4 ml-2' : '']"
-                                                            class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
+                                                            :class="[currentSubmenu === item.name ? 'text-black bg-red-100' : '']"
+                                                            class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
                                                             {{ item.name }} <i v-if="currentSubmenu === item.name"
-                                                                class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-arrow-right"></i>
+                                                                class="absolute right-4 text-brand-primary ml-8 fas fa-arrow-right mt-1"></i>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -89,7 +89,7 @@
                                         <div class="grid grid-cols-2 gap-3 mt-6">
                                             <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                                 :key="submenuItem.name"
-                                                class="group hover:cursor-pointer hover:text-white hover:bg-black transition duration-700 rounded-md p-2 font-semibold text-[15px]">
+                                                class="group hover:cursor-pointer hover:text-black hover:bg-red-100 transition duration-700 rounded-md p-2 font-semibold text-[15px]">
                                                 <div class="flex justify-between">
                                                     {{ submenuItem.name }}
                                                     <i
@@ -210,7 +210,7 @@ const AboutMenus = ref([
         name: 'About Us',
         linksHeading: 'About Us<span class="text-brand-primary"> Links<span/>',
         mainMenu: 'Company <span class="text-brand-primary">Profile<span/>',
-        mainHeading: 'About <span class="text-brand-primary">Acentria Group<span/>',
+        mainHeading: 'Acentria <span class="text-brand-primary"> Group<span/>',
         mainDescription: 'We drive the future of our partners through our, expertise, solutions by EMPOWERING the vision of our clients and the communities through INNOVATIVE thinking and offering the best solutions to enhance PROSPERITY! We always seek better ways to manage risk and guide effective pathways to achieve the smart outcomes. We go beyond risk to rewards for our clients, our company, our colleagues, and the communities in which we serve.',
         subMenu: 'Acentria <span class="text-brand-primary">Profile Details<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
