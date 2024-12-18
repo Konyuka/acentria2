@@ -184,12 +184,82 @@ const heroContent = ref({
 
 const bannerTitle = ref('Acentria Reinsurance Brokers')
 
+const slides = ref([
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Reinsurance Optimization',
+        description: 'Optimize your reinsurance strategy with Acentria. We help you maximize efficiency and minimize risk.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Treaty Administration',
+        description: 'Efficiently manage your reinsurance treaties with our comprehensive administration services.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Claims Management',
+        description: 'Streamline your claims process with our expert management services, ensuring quick and fair settlements.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Value Addition',
+        description: 'Enhance your reinsurance portfolio with our value-added services, tailored to meet your unique needs.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Facultative Solutions',
+        description: 'Tailored reinsurance solutions for specific risks, providing flexibility and targeted coverage.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Treaty Solutions',
+        description: 'Comprehensive reinsurance agreements that cover a portfolio of risks, ensuring stability and predictability.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Special Lines Solutions',
+        description: 'Customized reinsurance for niche markets and unique risks, offering specialized protection.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Reinsurance Data Analytics Tool',
+        description: 'Leverage advanced analytics to optimize your reinsurance strategies and make informed decisions.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Acentria Reinsurance Solution',
+        description: 'Comprehensive reinsurance solutions tailored to meet the unique needs of your business.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Catastrophic Modelling',
+        description: 'Utilize sophisticated models to assess and mitigate the impact of catastrophic events on your portfolio.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Return On Risk Adjusted Capital',
+        description: 'Maximize your returns by effectively managing risk-adjusted capital in your reinsurance operations.',
+        url: '/contact-acentria-group',
+    },
+])
+
 </script>
 
 <template>
     <main>
         <div>
-            <ServiceHero2 :content="content" />
+            <Carousel :slides="slides" />
+            <!-- <ServiceHero2 :content="content" /> -->
 
             <div class="py-5 text-center bg-white">
                 <h2 class="font-sans tracking-normal text-2xl text-black font-semibold leading-tight lg:leading-tight">

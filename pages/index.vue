@@ -279,7 +279,7 @@ onMounted(() => {
 
                   <div class="mx-auto max-w-6xl lg:mx-0 mb-2">
                     <h2 class="text-2xl font-semibold text-black">
-                      Our Lines <span class="text-brand-primary">of Business</span>
+                      Our <span class="text-brand-primary">Capabilities</span>
                     </h2>
                   </div>
 

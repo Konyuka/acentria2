@@ -205,22 +205,22 @@ const bannerTitle = ref('Acentria Insurance Brokers')
 
 const helps = ref([
     {
-        heading:'Do it yourself',
-        subheading:'Compare quotes, choose your policy, and get same-day coverage.',
-        cta:'Compare Quotes Online',
-        img:'https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600',
+        heading: 'Do it yourself',
+        subheading: 'Compare quotes, choose your policy, and get same-day coverage.',
+        cta: 'Compare Quotes Online',
+        img: 'https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600',
     },
     {
-        heading:'Live agent assistance',
-        subheading:'Review your quotes online, then get tailored advice from our agents.',
-        cta:'See my Quotes',
-        img:'https://images.pexels.com/photos/5453822/pexels-photo-5453822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        heading: 'Live agent assistance',
+        subheading: 'Review your quotes online, then get tailored advice from our agents.',
+        cta: 'See my Quotes',
+        img: 'https://images.pexels.com/photos/5453822/pexels-photo-5453822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
-        heading:'Full Service',
-        subheading:'Send us your current policy, and our agents will find a better fit for you.',
-        cta:'Connect with an Expert',
-        img:'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        heading: 'Full Service',
+        subheading: 'Send us your current policy, and our agents will find a better fit for you.',
+        cta: 'Connect with an Expert',
+        img: 'https://images.pexels.com/photos/3727469/pexels-photo-3727469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
 ])
 
@@ -242,12 +242,88 @@ const exploreClaims = ref({
     content: 'No matter which type of claim you have, our goal is to make sure everything goes smoothly. That means making your claims process as easy as possible and keeping you updated. Select a product to view the insurance claims process Get a breakdown of the claims process, what to do, and where to go from here.',
 })
 
+const slides = ref([
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Health Insurance',
+        description: 'Secure your wellness with our comprehensive health insurance plans.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Life Insurance',
+        description: 'Protect your loved ones with our reliable life insurance policies.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Car Insurance',
+        description: 'Drive confidently with our extensive car insurance coverage.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Home Insurance',
+        description: 'Keep your home safe with our comprehensive home insurance plans.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Travel Insurance',
+        description: 'Explore the world with peace of mind with our travel insurance.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Business Insurance',
+        description: 'Protect your business with our tailored business insurance solutions.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Pet Insurance',
+        description: 'Ensure your pets are covered with our comprehensive pet insurance plans.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Marine Insurance',
+        description: 'Secure your maritime ventures with our reliable marine insurance.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Aviation Insurance',
+        description: 'Fly safely with our comprehensive aviation insurance coverage.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Cyber Insurance',
+        description: 'Protect your digital assets with our robust cyber insurance plans.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Liability Insurance',
+        description: 'Safeguard your business with our comprehensive liability insurance.',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Property Insurance',
+        description: 'Protect your property with our extensive property insurance plans.',
+        url: '/contact-acentria-group',
+    },
+])
+
 </script>
 
 <template>
     <main>
         <div>
-            <ServiceHero2 :content="content" />
+            <Carousel :slides="slides" />
+            <!-- <ServiceHero2 :content="content" /> -->
 
             <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
                 <div class="container">

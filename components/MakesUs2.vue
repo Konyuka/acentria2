@@ -26,13 +26,14 @@ const incentives = [
 
         <div class="container grid grid-cols-7 gap-2">
             <div class="col-span-3 mt-5 container max-w-6xl mx-auto justify-between content-center">
-                <h2 class="text-2xl font-semibold text-left">
-                    About - <span class="text-brand-primary"> Acentria Group</span>
-                </h2>
-                <h3 class="font-semibold text-xl mt-2">
+
+                <!-- <h3 class="font-semibold text-xl mt-2">
                     Sharing an <span class="text-brand-primary">ambitious spirit!</span>
-                </h3>
-                <h1 class="mt-2 text-[15rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
+                </h3> -->
+                <h2 class="text-5xl font-semibold text-left">
+                    About
+                </h2>
+                <h1 class="text-[10rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
                     style="background-image: url('/img/sun-tornado.png');">
                     <div class="-ml-3">
                         US
@@ -40,31 +41,42 @@ const incentives = [
                 </h1>
             </div>
 
-            <div class="col-span-4 relative">
-                <div class="absolute inset-x-0 bottom-0 top-48 bg-white"></div>
+            <div class="col-span-4 relative mt-5">
+                <h2 class="text-2xl font-semibold text-left">
+                    <span class="text-brand-primary"> Acentria Group</span>
+                </h2>
                 <div class="relative mx-auto px-2">
-
-                    <div
-                        class="font-sans grid  grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-x-1 gap-y-2 text-base leading-normal text-gray-600">
-                        <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
-                            :key="incentive.name"
-                            class="shadow-2xl button-animation relative flex flex-row gap-1 border-2 border-black py-5 px-5 rounded-lg">
-                            <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
-                            <div class="relative">
-                                <div class="flex justify-between w-full">
-                                    <h5 v-html="incentive.name"
-                                        class="text-md pb-1 font-semibold leading-tight text-black">
-                                    </h5>
-                                </div>
-                                <p class="leading-normal font-regular text-light-content text-[14px]">
-                                    {{ incentive.description }}
-                                </p>
-                                <i class="absolute fas fa-arrow-right text-md right-0 top-1"></i>
-                            </div>
-                        </NuxtLink>
-                    </div>
+                    We drive the future of our partners through our, expertise, solutions by EMPOWERING the vision of
+                    our clients and the communities through INNOVATIVE thinking and offering the best solutions to
+                    enhance PROSPERITY!
+                    <br />
+                    <br />
+                    We always seek better ways to manage risk and guide effective pathways to achieve the smart
+                    outcomes. We go beyond risk to rewards for our clients, our company, our colleagues, and the
+                    communities in which we serve.
 
                 </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div
+                class="font-sans grid  grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-1 gap-y-2 text-base leading-normal text-gray-600">
+                <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
+                    :key="incentive.name"
+                    class="shadow-2xl button-animation relative flex flex-row gap-1 border-2 border-black/10 py-5 px-5 rounded-lg">
+                    <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
+                    <div class="relative">
+                        <div class="flex justify-between w-full">
+                            <h5 v-html="incentive.name" class="text-md pb-1 font-semibold leading-tight text-black">
+                            </h5>
+                        </div>
+                        <p class="leading-normal font-regular text-light-content text-[14px]">
+                            {{ incentive.description }}
+                        </p>
+                        <i class="absolute fas fa-arrow-right text-md right-0 top-1"></i>
+                    </div>
+                </NuxtLink>
             </div>
         </div>
 

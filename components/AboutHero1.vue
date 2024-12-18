@@ -7,15 +7,15 @@ const props = defineProps({
 
 <template>
     <div class="relative h-[95vh] mt-2">
-        <!-- <video preload="metadata" loading="lazy" autoplay muted loop
+        <video preload="metadata" loading="lazy" autoplay muted loop
             class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]" src="/img/hd2.mp4"
             style="color: transparent">
             Your browser does not support the video tag.
-        </video> -->
+        </video>
 
-        <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
+        <!-- <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
             class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
-            style="color: transparent; transform: scaleX(-1);">
+            style="color: transparent; transform: scaleX(-1);"> -->
 
         <div
             class="absolute top-1/2 pl-10 mx-10 md:mx-0 md:left-1/3 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 sm:px-3 text-white min-w-[60vw]">

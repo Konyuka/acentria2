@@ -116,6 +116,70 @@ const heroContent = ref({
                                 </h1>`,
 })
 
+const slides = ref([
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Actuarial Audits',
+        description: 'Empowering your decisions with data precision and strategic insights',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Risk Assessment',
+        description: 'Utilizing advanced models to evaluate and mitigate potential risks',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Financial Forecasting',
+        description: 'Providing accurate financial projections to guide strategic planning',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Data Analytics',
+        description: 'Leveraging big data to uncover trends and inform decision-making',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Regulatory Compliance',
+        description: 'Ensuring adherence to industry regulations and standards',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Pension Consulting',
+        description: 'Offering expert advice on pension plan design and management',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Investment Analysis',
+        description: 'Evaluating investment opportunities to maximize returns',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Claims Reserving',
+        description: 'Accurately estimating reserves for future claims liabilities',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Product Development',
+        description: 'Designing innovative insurance products to meet market needs',
+        url: '/contact-acentria-group',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1498354136128-58f790194fa7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        title: 'Actuarial Audits',
+        description: 'Conducting thorough audits to ensure accuracy and reliability',
+        url: '/contact-acentria-group',
+    },
+])
+
+
 </script>
 
 <template>
@@ -123,7 +187,9 @@ const heroContent = ref({
         <div>
             <div>
 
-                <ServiceHero2 :content="content" />
+                <Carousel :slides="slides" />
+
+                <!-- <ServiceHero2 :content="content" /> -->
 
                 <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
 
@@ -155,7 +221,7 @@ const heroContent = ref({
                 </section>
 
                 <div class="bg-white">
-                    <div class="py-4 text-white max-w-6xl mx-auto" >
+                    <div class="py-4 text-white max-w-6xl mx-auto">
 
                         <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2  lg:gap-16">
 

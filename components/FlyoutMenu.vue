@@ -1,13 +1,14 @@
 <template>
-    <Popover v-slot="{ open }" class="isolate z-50 shadow-3xl w-auto font-sans bg-transparent">
+    <Popover class="isolate z-50 shadow-3xl w-auto font-sans bg-transparent">
 
         <div class="justify-center">
             <div class="">
                 <!-- <PopoverButton @click="openFlyover(theMenu.name)" -->
                 <!-- @mouseleave="activeClick = false" -->
                 <!-- @mouseleave="closeFlyOver()" -->
-                <PopoverButton @click="openFlyover(theMenu.name)" @mouseenter="openFlyover(theMenu.name)"
-                    :class="[currentMenu === theMenu.name && (activeClick || activeHover) ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
+                <!-- @mouseenter="openFlyover(theMenu.name)" -->
+                <PopoverButton @click="openFlyover(theMenu.name)"
+                    :class="[currentMenu === theMenu.name && (activeClick) ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
                     class="pr-2 hover:border-b-red-600 hover:border-b-4 py-1 subheading-class !text-[15.5px] !ring-0 focus inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
                     {{ theMenu.name }}
                 </PopoverButton>
@@ -18,11 +19,11 @@
             enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-0">
 
-            <PopoverPanel v-slot="{ close }" static v-motion-fade-visible v-if="activeClick || activeHover"
-                class="!-left-[18vw] w-[93.5vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl"
-                @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver(close)">
+            <!-- @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver(close)" -->
+            <PopoverPanel v-motion-fade-visible v-if="activeClick"
+                class="!-left-[18vw] w-[93.5vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
-                <div class="relative border-b-4 border-brand-primary">
+                <div class="relative border-b-4 border-brand-primary px-5 my-2">
                     <NuxtImg
                         src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
                         alt="" class="absolute inset-0 -z-10 h-full w-full object-fit" />
@@ -31,133 +32,83 @@
 
                     <div class="h-auto">
 
-                        <div class="grid grid-cols-7">
+                        <div class="grid grid-cols-12">
 
-                            <div class="col-span-2 relative border-r-4 border-red-600 h-56 mt-2">
+                            <div class="col-span-4 relative border-r-2 border-red-600 h-full mt-2">
 
-                                <h1 class="ml-5 font-semibold" v-html="currentMainMenu"></h1>
-
-                                <div class="relative pl-10 pt-2 flex flex-col gap-2">
-                                    <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
-                                        <p @click="setSubmenu(item, index)"
-                                            :class="[currentSubmenu === item.name ? 'text-brand-primary !underline underline-offset-4 ml-2' : '']"
-                                            class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-[14px]">
-                                            <!-- <i :class="item.icon" class="mr-2"></i> -->
-                                            {{ item.name }}
-                                            <!-- <i
-                                                   class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i> -->
-                                        </p>
-                                    </div>
-
-                                    <div v-show="currentMenu === 'Insurance'">
-                                        <div class="-ml-6 my-2 font-semibold text-[15px] text-black">
-                                            Special <span class="text-brand-primary">Lines Insurance</span>
-                                        </div>
-
-                                        <div class="flex flex-col gap-2">
-                                            <div v-show="item.type" v-for="(item, index) in currentMenuItems">
-                                                <p @click="setSubmenu(item, index)"
-                                                    :class="[currentSubmenu === item.name ? 'text-brand-primary !underline underline-offset-4 ml-2' : '']"
-                                                    class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-[14px]">
-                                                    <!-- <i :class="item.icon" class="mr-2"></i> -->
-                                                    {{ item.name }}
-                                                    <!-- <i
-                                                           class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-caret-right"></i> -->
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                                <div class="flex flex-col gap-1 mx-3">
+                                    <h2 class="text-2xl font-semibold" v-html="currentMainHeading"></h2>
+                                    <p class="text-md leading-normal">
+                                        {{ currentMainDescription }}
+                                    </p>
+                                    <!-- <h2 class="text-2xl font-semibold" v-html="currentMenuSubtitle"></h2>
+                                    <p class="text-md leading-normal">
+                                        {{ currentMenuDescription }}
+                                    </p> -->
                                 </div>
+
 
                             </div>
 
-                            <div class="col-span-5 ml-4">
-                                <div class="pt-2 grid grid-cols-3 gap-2 max-w-full px-2">
-
-
-
-                                    <div class="flex flex-col gap-1 mx-3">
-                                        <h2 class="text-md font-semibold" v-html="currentMenuSubtitle"></h2>
-                                        <p class="text-[13px] leading-normal">
-                                            {{ currentMenuDescription }}
-                                        </p>
-                                    </div>
-
-                                    <div class="relative flex flex-col gap-1 border-l-4 border-red-600 h-56 pl-5">
-                                        <h1 class="font-semibold" v-html=currentLinksHeading></h1>
-                                        <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
-                                            :key="submenuItem.name"
-                                            class="group hover:underline hover:cursor-pointer hover:text-brand-primary font-semibold text-[13px]">
-                                            <i class="group-hover:text-brand-primary mr-2 fas fa-caret-right"></i>
-                                            {{ submenuItem.name }}
-                                        </NuxtLink>
-
-                                        <div v-show="currentMenu === 'Insurance'"
-                                            class="absolute bottom-5 mt-2 text-brand-primary col-span-1 text-[15px]">
-                                            <i class="fas fa-award mr-2"></i> <span class="text-black">Get
-                                                discounts</span>
-                                            upto
-                                            3%
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <div class="w-auto dark:border-gray-700">
-                                            <div class="w-full rounded h-56 ">
-                                                <NuxtImg :src="popoverImage" alt="Display picture of Silene Tokyo"
-                                                    role="img"
-                                                    class="object-cover h-full w-full overflow-hidden rounded shadow-xl" />
-                                            </div>
-                                            <div class="flex w-full items-center justify-between pt-6 pb-1">
-                                                <p class="text-xl font-normal text-gray-800 dark:text-white ">
-                                                    <button
-                                                        class="button-animation hover:bg-brand-primary px-3 py-0.5 bg-black text-white text-[10px]">
-                                                        {{ ctaButton }}
-                                                    </button>
+                            <div class="col-span-8 ml-4">
+                                <div class="pt-2 grid grid-cols-12 gap-2 max-w-full px-2">
+                                    <div class="col-span-5">
+                                        <h1 class="ml-2 font-semibold text-lg" v-html="currentMainMenu"></h1>
+                                        <div class="relative pl-5 pt-2 flex flex-col gap-3">
+                                            <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
+                                                <p @click="setSubmenu(item, index)"
+                                                    :class="[currentSubmenu === item.name ? 'text-brand-primary !underline underline-offset-4 ml-2' : '']"
+                                                    class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
+                                                    {{ item.name }} <i v-if="currentSubmenu === item.name"
+                                                        class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-arrow-right"></i>
                                                 </p>
-                                                <div class="flex justify-center">
-                                                    <!-- <a aria-label="Open github" role="link" href="javascript:void(0)"
-                                                           class="button-animation mx-2">
-                                                           <i class="fas fa-paper-plane"></i>
-                                                       </a>
-                                                       <a aria-label="Open github" role="link" href="javascript:void(0)"
-                                                           class="button-animation mx-2">
-                                                           <i class="fas fa-mobile-alt"></i>
-                                                       </a> -->
-
-                                                </div>
                                             </div>
-                                            <p v-show="currentMenu === 'Insurance'"
-                                                class="mt-2 text-[12px] text-gray-600 leading-4">
-                                                Do it yourself or let us help you <br> <span
-                                                    class="text-brand-primary underline underline-offset-2">Get a
-                                                    quote
-                                                    now!</span>
-                                            </p>
+                                            <div v-show="currentMenu === 'Insurance'">
+                                                <div class="-ml-6 my-2 font-semibold text-lg text-black">
+                                                    Special <span class="text-brand-primary">Lines Insurance</span>
+                                                </div>
 
+                                                <div class="flex flex-col gap-2">
+                                                    <div v-show="item.type" v-for="(item, index) in currentMenuItems">
+                                                        <p @click="setSubmenu(item, index)"
+                                                            :class="[currentSubmenu === item.name ? 'text-brand-primary !underline underline-offset-4 ml-2' : '']"
+                                                            class="group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
+                                                            {{ item.name }} <i v-if="currentSubmenu === item.name"
+                                                                class="absolute right-4 group-hover:text-brand-primary ml-8 fas fa-arrow-right"></i>
+                                                        </p>
+                                                    </div>
+                                                </div>
 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="col-span-7 relative flex flex-col gap-1 border-l-2 border-red-600 h-full pl-5">
+                                        <!-- <h1 class="font-semibold text-lg" v-html=currentLinksHeading></h1> -->
+                                        <div class="grid grid-cols-2 gap-5 mt-6">
+                                            <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
+                                                :key="submenuItem.name"
+                                                class="group hover:cursor-pointer hover:text-white hover:bg-black transition duration-700 rounded-md p-2 font-semibold text-[15px]">
+                                                <div class="flex justify-between">
+                                                    {{ submenuItem.name }}
+                                                    <i
+                                                        class="text-brand-primary mr-2 fas fa-angle-right text-[10px]"></i>
+                                                </div>
+                                                <p class="text-[10px]">
+                                                    {{ submenuItem.description }}
+                                                </p>
+                                            </NuxtLink>
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <div class="h-10 grid grid-cols-3 gap-2 font-bold">
-                                    <div v-show="currentMenu">
-                                        <!-- <button
-                                               class="ml-8 button-animation !hover:bg-brand-primary px-3 py-1 bg-black/15 text-black text-[14px]">
-                                               Download our App on <i class="fab fa-google-play text-brand-primary"></i> &
-                                               <i class="fab fa-apple text-brand-primary"></i>
-                                           </button> -->
-                                    </div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="">
+                    <div class=" mt-8">
                         <div class="flex px-10">
                             <!-- <div>
    
@@ -194,6 +145,8 @@ watch(() => currentMenu.value, (value) => {
 })
 const currentMenuItems = ref(null)
 const currentMainMenu = ref(null)
+const currentMainHeading = ref(null)
+const currentMainDescription = ref(null)
 const currentSubmenu = ref(null)
 const currentMenuSubtitle = ref(null)
 const currentMenuHeading = ref(null)
@@ -257,6 +210,8 @@ const AboutMenus = ref([
         name: 'About Us',
         linksHeading: 'About Us<span class="text-brand-primary"> Links<span/>',
         mainMenu: 'Company <span class="text-brand-primary">Profile<span/>',
+        mainHeading: 'About <span class="text-brand-primary">Acentria Group<span/>',
+        mainDescription: 'We drive the future of our partners through our, expertise, solutions by EMPOWERING the vision of our clients and the communities through INNOVATIVE thinking and offering the best solutions to enhance PROSPERITY! We always seek better ways to manage risk and guide effective pathways to achieve the smart outcomes. We go beyond risk to rewards for our clients, our company, our colleagues, and the communities in which we serve.',
         subMenu: 'Acentria <span class="text-brand-primary">Profile Details<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'At Acentria Group, we propel prosperity to infinite possibilities. Our expert team is dedicated to providing innovative & comprehensive insurance, reinsurance & actuarial solutions to help you achieve your financial goals. ',
@@ -264,32 +219,32 @@ const AboutMenus = ref([
         items: [
             {
                 name: 'Who we are',
-                description: 'Learn about our history, mission, and the values that drive us. Discover how we have grown over the years and the milestones we have achieved. Our commitment to excellence and integrity has been the cornerstone of our success.',
+                description: 'Learn about our history, mission, and values.',
                 link: '/about-us/who-we-are',
             },
             {
                 name: 'What we do',
-                description: 'Discover the range of services and solutions we offer to our clients. From insurance and reinsurance to actuarial consulting, we provide comprehensive solutions tailored to meet your needs. Our innovative approach ensures that we stay ahead of industry trends.',
+                description: 'Discover the range of services and solutions we offer.',
                 link: '/about-us/what-we-do',
             },
             {
                 name: 'Our Journey',
-                description: 'Explore our journey from inception to becoming a market leader. Learn about the challenges we have overcome and the successes we have celebrated. Our journey is a testament to our resilience and dedication to our mission.',
+                description: 'Explore our journey from inception to market leader.',
                 link: '/about-us/our-journey',
             },
             {
-                name: 'Our Vision, Mission & Values',
-                description: 'Understand our vision, mission, and the core values that guide our actions. Our vision is to be a global leader in providing innovative solutions. Our mission is to deliver exceptional value to our clients, and our values are rooted in integrity, excellence, and collaboration.',
+                name: 'Vision, Mission & Values',
+                description: 'Understand our vision, mission, and core values.',
                 link: '/about-us/vision-mission-values',
             },
             {
                 name: 'Corporate Culture',
-                description: 'Understand our culture and the core values that guide our actions. Our corporate culture fosters innovation, collaboration, and a commitment to excellence. We believe in empowering our employees and creating a positive work environment.',
+                description: 'Our culture fosters innovation, collaboration, and excellence.',
                 link: '/corporate-culture',
             },
             {
                 name: 'Our Brand',
-                description: 'Understand our culture and the core values that guide our actions. Our brand represents our commitment to quality and excellence. We strive to build a brand that is synonymous with trust, reliability, and innovation.',
+                description: 'Our brand represents trust, reliability, and innovation.',
                 link: '/our-brand',
             },
         ]
@@ -303,17 +258,17 @@ const AboutMenus = ref([
         items: [
             {
                 name: 'Our Governance',
-                description: 'Discover our governance structure and meet the leaders who guide Acentria Group towards success. Our governance framework ensures transparency, accountability, and ethical conduct in all our operations. We are committed to upholding the highest standards of corporate governance.',
+                description: 'Discover our governance structure and meet our leaders.',
                 link: '/meet-the-team',
             },
             {
                 name: 'Board',
-                description: 'Meet the members of our board of directors. Our board provides strategic direction and oversight, ensuring that we achieve our goals and objectives. The diverse expertise and experience of our board members contribute to our success.',
+                description: 'Meet our board of directors providing strategic direction.',
                 link: '/meet-the-team',
             },
             {
                 name: 'Management Team',
-                description: 'Learn about our experienced management team. Our management team is responsible for the day-to-day operations of the company, driving performance and ensuring that we deliver value to our clients. Their leadership and dedication are key to our success.',
+                description: 'Learn about our experienced and dedicated management team.',
                 link: '/meet-the-team',
             },
         ]
@@ -327,22 +282,22 @@ const AboutMenus = ref([
         items: [
             {
                 name: 'Our Customers',
-                description: 'Our dedication to providing exceptional service to our customers. We prioritize our customers\' needs and work tirelessly to ensure their satisfaction. Our customer-centric approach drives our success and builds lasting relationships.',
+                description: 'Providing exceptional service and prioritizing customer satisfaction.',
                 link: '/our-commitment',
             },
             {
                 name: 'Our Partners',
-                description: 'Building strong and lasting relationships with our partners. We collaborate with our partners to deliver innovative solutions and achieve mutual success. Our partnerships are built on trust, respect, and shared goals.',
+                description: 'Building strong, lasting relationships with our trusted partners.',
                 link: '/our-commitment',
             },
             {
                 name: 'Our Staff',
-                description: 'Investing in our staff to foster growth and development. We believe that our employees are our greatest asset, and we are committed to their professional growth and well-being. Our supportive work environment encourages continuous learning and development.',
+                description: 'Investing in our staff to foster growth and development.',
                 link: '/our-commitment',
             },
             {
                 name: 'Our Communities',
-                description: 'Contributing positively to the communities we serve. We are dedicated to making a positive impact through our corporate social responsibility initiatives. Our community engagement efforts focus on sustainability, education, and social welfare.',
+                description: 'Contributing positively to the communities we serve.',
                 link: '/our-commitment',
             },
         ]
@@ -356,22 +311,22 @@ const AboutMenus = ref([
         items: [
             {
                 name: 'Insurance',
-                description: 'Providing comprehensive insurance solutions to protect your assets. Our insurance products are designed to offer maximum protection and peace of mind. We work closely with our clients to understand their needs and provide tailored insurance solutions.',
+                description: 'Providing comprehensive insurance solutions to protect your assets.',
                 link: '/acentria-group-insurance',
             },
             {
                 name: 'Reinsurance',
-                description: 'Offering reinsurance services to help manage risk effectively. Our reinsurance solutions provide financial stability and risk management support to our clients. We leverage our expertise and industry knowledge to deliver effective reinsurance solutions.',
+                description: 'Offering reinsurance services to help manage risk effectively.',
                 link: '/acentria-group-reinsurance',
             },
             {
                 name: 'Actuarial & Finance Services',
-                description: 'Delivering expert actuarial and financial consulting services. Our actuarial and finance services are designed to provide valuable insights and support to our clients. We help our clients make informed decisions and achieve their financial objectives.',
+                description: 'Delivering expert actuarial and financial consulting services.',
                 link: '/acentria-group-actuarial',
             },
             {
                 name: 'Technology',
-                description: 'Innovating with cutting-edge technology solutions for various industries. Our technology solutions are designed to drive efficiency, innovation, and growth. We work with our clients to implement technology solutions that meet their specific needs and challenges.',
+                description: 'Innovating with cutting-edge technology solutions for various industries.',
                 link: '/acentria-group-technology',
             },
         ]
@@ -385,22 +340,22 @@ const AboutMenus = ref([
         items: [
             {
                 name: 'Our Purpose',
-                description: 'Our commitment to sustainability and responsible business practices. We strive to integrate sustainability into all aspects of our operations. Our purpose is to create long-term value for our stakeholders while contributing to a sustainable future.',
+                description: 'Our commitment to sustainability and responsible business practices.',
                 link: '/esg',
             },
             {
                 name: 'Goals & Commitments',
-                description: 'Our sustainability goals and the commitments we have made. We have set ambitious sustainability goals and are committed to achieving them. Our goals include reducing greenhouse gas emissions, promoting renewable energy, and supporting sustainable development.',
+                description: 'Our sustainability goals and the commitments we have made.',
                 link: '/esg',
             },
             {
                 name: 'Commitments',
-                description: 'Detailed information about our sustainability commitments. We are committed to transparency and accountability in our sustainability efforts. Our commitments include regular reporting on our progress and engaging with stakeholders to drive continuous improvement.',
+                description: 'Detailed information about our sustainability commitments.',
                 link: '/esg',
             },
             {
                 name: 'Sustainability Policies',
-                description: 'Our policies and guidelines for sustainable business operations. Our sustainability policies provide a framework for our actions and decisions. We are committed to implementing best practices and continuously improving our sustainability performance.',
+                description: 'Our policies and guidelines for sustainable business operations.',
                 link: '/esg',
             },
         ]
@@ -414,17 +369,17 @@ const AboutMenus = ref([
         items: [
             {
                 name: 'New Customer',
-                description: 'Join us as a new customer and experience our exceptional services. We are committed to providing our customers with the highest level of service and support. Our customer-centric approach ensures that we meet your needs and exceed your expectations.',
+                description: 'Join us and experience our exceptional customer services.',
                 link: '/join-our-team',
             },
             {
                 name: 'Suppliers',
-                description: 'Partner with us as a supplier and grow your business. We value our relationships with our suppliers and work collaboratively to achieve mutual success. Our supplier partnerships are built on trust, respect, and shared goals.',
+                description: 'Partner with us and grow your business together.',
                 link: '/join-our-team',
             },
             {
                 name: 'Careers',
-                description: 'Explore career opportunities and join our dynamic team. We offer a range of career opportunities for talented individuals who are passionate about making a difference. Our supportive work environment and commitment to employee development make Acentria Group a great place to build your career.',
+                description: 'Explore career opportunities and join our dynamic team.',
                 link: '/acentria-group-careers',
             },
         ]
@@ -435,34 +390,36 @@ const InsuranceMenus = ref([
         name: 'Insurance Personal Covers',
         linksHeading: 'My Personal <span class="text-brand-primary">Insurance Covers<span/>',
         mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
+        mainHeading: 'Insurance & <span class="text-brand-primary">Risk Management<span/>',
+        mainDescription: 'Acentria re is one of the leading independent specialists (re)insurance broking firms operating in Kenya, and international markets. Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage services and analytical expertise for our clients worldwide.Our unique ability to navigate an ever- changing market with overwhelming force while steadily executing the most valuable solutions sets us apart and demonstrates our overarching commitment to helping our clients succeed.',
         subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security. ',
         icon: 'fas fa-user',
         items: [
             {
-                name: 'My Health Insurance',
-                description: 'Personal health insurance is essential because it provides comprehensive health coverage tailored to your needs, ensuring peace of mind and access to quality healthcare services. It helps cover medical expenses, including doctor visits, hospital stays, and prescription medications, protecting you from high out-of-pocket costs.',
+                name: 'My Health',
+                description: 'Comprehensive health coverage for peace of mind.',
                 link: '/insurance/health-insurance',
             },
             {
-                name: 'My Life Insurance',
-                description: 'Personal life insurance is crucial as it secures your family\'s future with our flexible life insurance plans, providing financial stability and peace of mind. It ensures that your loved ones are financially protected in the event of your untimely death, covering expenses such as mortgage payments, education costs, and daily living expenses.',
+                name: 'My Life',
+                description: 'Secure your family\'s future with flexible life insurance.',
                 link: '/insurance/life-insurance',
             },
             {
-                name: 'My Home Insurance',
-                description: 'Personal home insurance is vital because it protects your home and belongings with our comprehensive home insurance plans, offering peace of mind and financial security. It covers damages caused by events like fire, theft, and natural disasters, ensuring that you can repair or replace your property without significant financial burden.',
+                name: 'My Home',
+                description: 'Protect your home and belongings with comprehensive coverage.',
                 link: '/insurance/home-insurance',
             },
             {
-                name: 'My Car Insurance',
-                description: 'Personal car insurance is important as it allows you to drive with confidence knowing your vehicle is protected with our comprehensive car insurance plans. It covers damages to your car, liability for injuries and property damage to others, and medical expenses resulting from accidents, ensuring financial protection on the road.',
+                name: 'My Car',
+                description: 'Drive confidently with our comprehensive car insurance plans.',
                 link: '/insurance/motor-insurance',
             },
             {
-                name: 'My Travel Insurance',
-                description: 'Personal travel insurance is necessary because it lets you explore the world worry-free with our travel insurance, offering coverage for unexpected events and emergencies. It covers trip cancellations, medical emergencies, lost luggage, and other travel-related issues, providing financial protection and assistance during your travels.',
+                name: 'My Travel',
+                description: 'Explore the world worry-free with our travel insurance.',
                 link: '/insurance/travel-insurance',
             },
         ]
@@ -476,27 +433,27 @@ const InsuranceMenus = ref([
         items: [
             {
                 name: 'Staff Health Cover',
-                description: 'Corporate staff health cover is essential as it ensures the well-being of your employees with our comprehensive health cover, providing access to quality healthcare services. It helps attract and retain top talent, reduces absenteeism, and enhances productivity by ensuring employees are healthy and well-cared for.',
+                description: 'Ensure employee well-being with comprehensive health coverage.',
                 link: '/insurance/staff-health-cover',
             },
             {
                 name: 'Staff Travel Cover',
-                description: 'Corporate staff travel cover is important because it protects your staff during business trips with our travel cover, offering coverage for unexpected events and emergencies. It ensures that employees are safe and supported while traveling for work, covering medical emergencies, trip cancellations, and lost luggage.',
+                description: 'Protect employees during business trips with travel coverage.',
                 link: '/insurance/staff-travel-cover',
             },
             {
                 name: 'Office Content Cover',
-                description: 'Corporate office content cover is crucial as it safeguards your office assets with our office content cover, providing protection against damage or loss. It covers office equipment, furniture, and other valuable items from risks such as fire, theft, and natural disasters, ensuring business continuity and financial protection.',
+                description: 'Safeguard office assets against damage or loss.',
                 link: '/insurance/office-content-cover',
             },
             {
                 name: 'Cyber Liability Cover',
-                description: 'Corporate cyber liability cover is vital because it protects your business from cyber threats with our cyber liability cover, offering financial protection against data breaches and cyber attacks. It covers costs related to data recovery, legal fees, and customer notification, ensuring your business can recover quickly from cyber incidents.',
+                description: 'Protect your business from cyber threats and data breaches.',
                 link: '/insurance/cyber-liability-cover',
             },
             {
                 name: 'Credit Risk Cover',
-                description: 'Corporate credit risk cover is necessary as it mitigates financial risks with our credit risk cover, ensuring your business is protected against customer defaults and insolvencies. It helps maintain cash flow and financial stability by covering losses from unpaid invoices and bad debts, allowing your business to grow confidently.',
+                description: 'Mitigate financial risks from customer defaults and insolvencies.',
                 link: '/insurance/credit-risk-cover',
             },
         ]
@@ -510,27 +467,27 @@ const InsuranceMenus = ref([
         items: [
             {
                 name: 'Biashara Cover',
-                description: 'Business insurance is essential as it provides comprehensive business insurance solutions tailored to protect your enterprise from various risks and uncertainties. It covers property damage, liability claims, and business interruptions, ensuring your business can recover and continue operations smoothly after unexpected events.',
+                description: 'Comprehensive business insurance to protect your enterprise from risks.',
                 link: '/insurance/biasahara-cover',
             },
             {
                 name: 'General Liability Insurance',
-                description: 'Business general liability insurance is crucial as it shields your business from legal claims with our general liability insurance, covering bodily injury, property damage, and more. It protects your business from financial losses due to lawsuits and claims, ensuring you can operate without the fear of significant legal expenses.',
+                description: 'Shield your business from legal claims and financial losses.',
                 link: '/insurance/general-liability-insurance',
             },
             {
                 name: 'Product Liability Insurance',
-                description: 'Business product liability insurance is important because it protects your business against claims related to product defects with our product liability insurance, ensuring financial security. It covers legal fees, settlements, and medical costs arising from defective products, safeguarding your business reputation and finances.',
+                description: 'Protect against claims related to product defects and liabilities.',
                 link: '/insurance/product-liability-insurance',
             },
             {
                 name: 'Commercial Property Insurance',
-                description: 'Business commercial property insurance is vital as it safeguards your commercial property with our insurance plans, offering coverage against damage, theft, and other risks. It ensures that your business premises, equipment, and inventory are protected, allowing you to focus on growth and operations without financial worries.',
+                description: 'Safeguard your commercial property against damage, theft, and risks.',
                 link: '/insurance/commercial-property-insurance',
             },
             {
                 name: 'Crops and Livestock',
-                description: 'Business crops and livestock insurance is necessary because it ensures the protection of your agricultural investments with our crops and livestock insurance, covering a range of farming risks. It protects against losses due to natural disasters, diseases, and other perils, ensuring the financial stability and sustainability of your farming operations.',
+                description: 'Protect your agricultural investments from a range of farming risks.',
                 link: '/insurance/crops-and-livestock',
             },
         ]
@@ -543,23 +500,23 @@ const InsuranceMenus = ref([
         icon: 'fas fa-industry',
         items: [
             {
-                name: 'Industrial all risk cover',
-                description: 'Industrial insurance is essential as it provides comprehensive coverage for all industrial risks, ensuring your business operations are protected. It covers property damage, machinery breakdown, and business interruptions, allowing your industrial operations to recover quickly and continue without significant financial losses.',
+                name: 'Industrial All Risk Cover',
+                description: 'Comprehensive coverage for all industrial risks and operations.',
                 link: '/insurance/biasahara-cover',
             },
             {
                 name: 'Public Liability',
-                description: 'Industrial public liability insurance is crucial as it provides protection against claims of personal injury or property damage caused by your business activities. It covers legal fees, settlements, and medical costs, ensuring your business can operate without the fear of significant financial burdens from liability claims.',
+                description: 'Protection against claims of injury or property damage.',
                 link: '/insurance/biasahara-cover',
             },
             {
-                name: 'Staff Personal accident',
-                description: 'Industrial staff personal accident insurance is important because it provides coverage for accidents that occur to your staff during the course of their employment. It covers medical expenses, lost wages, and rehabilitation costs, ensuring your employees are supported and your business can maintain productivity.',
+                name: 'Staff Personal Accident',
+                description: 'Coverage for accidents occurring to staff during employment.',
                 link: '/insurance/biasahara-cover',
             },
             {
                 name: 'Staff Work Benefit Injury Act (WIBA)',
-                description: 'Industrial WIBA insurance is vital as it ensures compliance with the Work Injury Benefits Act, providing compensation for work-related injuries. It covers medical expenses, disability benefits, and death benefits, ensuring your employees are protected and your business meets legal requirements.',
+                description: 'Compensation for work-related injuries under WIBA regulations.',
                 link: '/insurance/biasahara-cover',
             },
         ]
@@ -569,12 +526,12 @@ const InsuranceMenus = ref([
         name: 'Insurance Aviation Covers',
         linksHeading: 'My Aviation <span class="text-brand-primary">Insurance Covers<span/>',
         subMenu: 'Why Aviation <span class="text-brand-primary">Insurance?<span/>',
-        description: 'Aviation insurance is essential as it provides comprehensive coverage for aircraft, pilots, and aviation operations, protecting against risks such as damage, liability, and loss. ',
+        description: 'Comprehensive coverage for aircraft, pilots, and aviation operations.',
         icon: 'fas fa-plane',
         items: [
             {
                 name: 'Aviation Insurance',
-                description: 'Aviation insurance is essential as it provides coverage for aircraft, pilots, and aviation operations, protecting against risks such as damage, liability, and loss. It ensures financial protection for aviation businesses, covering repair costs, legal fees, and compensation for third-party damages, ensuring safe and secure operations.',
+                description: 'Coverage for aircraft, pilots, and aviation operations.',
                 link: '/insurance/aviation-cover',
             },
         ]
@@ -584,15 +541,14 @@ const InsuranceMenus = ref([
         name: 'Insurance Marine Covers',
         linksHeading: 'My Marine <span class="text-brand-primary">Insurance Covers<span/>',
         subMenu: 'Why Marine <span class="text-brand-primary">Insurance?<span/>',
-        description: 'Marine insurance is crucial as it provides comprehensive coverage for vessels, cargo, and marine operations, protecting against risks such as damage, loss, and liability. ',
+        description: 'Comprehensive coverage for vessels, cargo, and marine operations.',
         icon: 'fas fa-ship',
         items: [
             {
                 name: 'Marine Insurance',
-                description: ' Marine insurance is crucial as it provides comprehensive coverage for vessels, cargo, and marine operations, protecting against risks such as damage, loss, and liability. It ensures financial protection for marine businesses, covering repair costs, legal fees, and compensation for third-party damages, ensuring safe and secure operations.',
+                description: 'Coverage for vessels, cargo, and marine operations.',
                 link: '/insurance/biasahara-cover',
             },
-            
         ]
     },
 ])
@@ -601,29 +557,31 @@ const ReinsuranceMenus = ref([
         name: 'Reinsurance Services',
         linksHeading: 'Reinsurance<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Reinsurance <span class="text-brand-primary">Products<span/>',
+        mainHeading: 'Acentria <span class="text-brand-primary">Reinsurance<span/>',
+        mainDescription: 'Acentria re is one of the leading independent specialists (re)insurance broking firms operating in Kenya, and international markets. Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage services and analytical expertise for our clients worldwide.Our unique ability to navigate an ever- changing market with overwhelming force while steadily executing the most valuable solutions sets us apart and demonstrates our overarching commitment to helping our clients succeed.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
-        description: 'Explore our comprehensive reinsurance services designed to optimize your risk management strategies.',
+        description: 'Explore our comprehensive reinsurance services for risk management.',
         icon: 'fas fa-sync-alt',
         items: [
             {
                 name: 'Reinsurance Optimization',
-                description: 'Maximize your reinsurance efficiency with our optimization services, tailored to enhance your risk management strategies.',
+                description: 'Maximize reinsurance efficiency with our optimization services.',
                 link: '/reinsurance/reinsurance-optimization',
             },
             {
                 name: 'Treaty Administration',
-                description: 'Streamline your reinsurance agreements with our comprehensive treaty administration services, ensuring smooth operations.',
+                description: 'Streamline reinsurance agreements with our treaty administration.',
                 link: '/reinsurance/treaty-administration',
             },
             {
                 name: 'Claims Management',
-                description: 'Efficiently handle reinsurance claims with our expert management services, providing timely and accurate claim resolutions.',
+                description: 'Efficiently handle reinsurance claims with our management services.',
                 link: '/reinsurance/claims-management',
             },
             {
                 name: 'Value Addition',
-                description: 'Enhance your reinsurance portfolio with our value addition services, offering innovative solutions and expert insights.',
+                description: 'Enhance your reinsurance portfolio with our value addition services.',
                 link: '/reinsurance/value-addition',
             },
         ]
@@ -632,22 +590,22 @@ const ReinsuranceMenus = ref([
         name: 'Reinsurance Solutions',
         linksHeading: 'Reinsurance<span class="text-brand-primary"> Solutions<span/>',
         subMenu: 'Our <span class="text-brand-primary">Solutions<span/>',
-        description: 'Discover our tailored reinsurance solutions designed to meet specific risk requirements and provide financial security.',
+        description: 'Discover tailored reinsurance solutions for specific risk requirements.',
         icon: 'fas fa-cogs',
         items: [
             {
                 name: 'Facultative Solutions',
-                description: 'Access tailored reinsurance coverage with our facultative solutions, designed to meet specific risk requirements.',
+                description: 'Access tailored reinsurance coverage with our facultative solutions.',
                 link: '/reinsurance/facultative-solution',
             },
             {
                 name: 'Treaty Solutions',
-                description: 'Secure comprehensive reinsurance protection with our treaty solutions, offering stability and financial security.',
+                description: 'Secure comprehensive reinsurance protection with our treaty solutions.',
                 link: '/reinsurance/treaty-solutions',
             },
             {
                 name: 'Special Lines Solutions',
-                description: 'Protect unique and high-risk exposures with our special lines solutions, providing specialized reinsurance coverage.',
+                description: 'Protect unique exposures with our special lines reinsurance solutions.',
                 link: '/reinsurance/special-lines',
             },
         ]
@@ -656,27 +614,27 @@ const ReinsuranceMenus = ref([
         name: 'Data & Modelling',
         linksHeading: 'Data<span class="text-brand-primary"> & Modeling<span/>',
         subMenu: 'Data <span class="text-brand-primary">& Modelling<span/>',
-        description: 'Leverage data-driven insights and advanced modelling techniques to enhance your reinsurance strategy.',
+        description: 'Leverage data-driven insights and advanced modelling techniques.',
         icon: 'fas fa-database',
         items: [
             {
                 name: 'Reinsurance Data Analytics Tool',
-                description: 'Leverage data-driven insights with our reinsurance data analytics tool, enhancing decision-making and risk assessment.',
+                description: 'Enhance decision-making with our reinsurance data analytics tool.',
                 link: '/reinsurance/reinsurance-data-analytics-tool',
             },
             {
                 name: 'Acentre Reinsurance Solution',
-                description: 'Optimize your reinsurance strategy with Acentre\'s comprehensive solutions, designed for maximum efficiency and effectiveness.',
+                description: 'Optimize reinsurance strategy with Acentre\'s comprehensive solutions.',
                 link: '/reinsurance/acentre-reinsurance-solution',
             },
             {
                 name: 'Catastrophic Modelling',
-                description: 'Prepare for extreme events with our catastrophic modelling services, providing accurate risk assessments and mitigation strategies.',
+                description: 'Prepare for extreme events with our catastrophic modelling services.',
                 link: '/reinsurance/catastrophic-modelling',
             },
             {
                 name: 'Return On Risk Adjusted Capital',
-                description: 'Maximize your financial performance with our return on risk-adjusted capital services, ensuring optimal capital allocation.',
+                description: 'Maximize financial performance with risk-adjusted capital services.',
                 link: '/reinsurance/return-on-risk-adjusted-capital',
             },
         ]
@@ -687,39 +645,41 @@ const ActuarialMenus = ref([
         name: 'Actuarial Services',
         linksHeading: 'Actuarial<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Actuarial <span class="text-brand-primary">Products<span/>',
+        mainHeading: 'Actuarial & <span class="text-brand-primary">Financial Services<span/>',
+        mainDescription: 'Our Actuarial & financial is one of the leading Actuarial independent specialists’ firms operating in Kenya, and international markets. Our Actuarial team lead by a signing Actuary has expertise in using financial, risk, and capital modelling to help clients manage the complexities that are inherent in business. We use a blend of technical and commercial expertise to provide insight, assurance and enable effective insightful decision-making by business leaders.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
-        description: 'Explore our comprehensive actuarial consulting services designed to optimize your financial strategies and enhance your business operations.',
+        description: 'Explore our comprehensive actuarial consulting services for financial strategies.',
         icon: 'fas fa-chart-line',
         items: [
             {
                 name: 'Financial Services',
-                description: 'Enhance your financial strategies with our expert actuarial services, providing insights and solutions for optimal financial management.',
+                description: 'Enhance financial strategies with our expert actuarial services.',
                 link: '/actuarial/financial-services',
             },
             {
                 name: 'Insurance Consulting',
-                description: 'Optimize your insurance operations with our consulting services, offering expert advice and innovative solutions.',
+                description: 'Optimize insurance operations with our expert consulting services.',
                 link: '/actuarial/insurance-consulting',
             },
             {
                 name: 'Reinsurance Consulting',
-                description: 'Strengthen your reinsurance strategies with our consulting services, providing tailored solutions and expert insights.',
+                description: 'Strengthen reinsurance strategies with our tailored consulting services.',
                 link: '/actuarial/reinsurance-consulting',
             },
             {
                 name: 'IFRS17 Implementation',
-                description: 'Ensure compliance with IFRS 17 standards with our implementation services, offering expert guidance and support.',
+                description: 'Ensure compliance with IFRS 17 standards with our services.',
                 link: '/actuarial/ifrs-17-implementation',
             },
             {
                 name: 'Innovation and Digitization',
-                description: 'Transform your business with our innovation and digitization services, leveraging cutting-edge technology and expertise.',
+                description: 'Transform your business with our innovation and digitization services.',
                 link: '/actuarial/innovation-and-digitization',
             },
             {
                 name: 'Retirement and Employee Benefits',
-                description: 'Optimize your retirement and employee benefits programs with our actuarial services, ensuring financial security and employee satisfaction.',
+                description: 'Optimize retirement and employee benefits programs with our services.',
                 link: '/actuarial/retirement-and-employee-benefits',
             },
         ]
@@ -728,12 +688,12 @@ const ActuarialMenus = ref([
         name: 'AcentRe',
         linksHeading: 'Actuarial<span class="text-brand-primary"> Systems<span/>',
         subMenu: 'Acentria <span class="text-brand-primary">Reinsurance Softwares<span/>',
-        description: ' Our software provides advanced analytics, risk management tools, and seamless integration capabilities to help you manage your reinsurance portfolio efficiently. ',
+        description: 'Advanced analytics and risk management tools for reinsurance portfolio.',
         icon: 'fas fa-box',
         items: [
             {
                 name: 'AcentRe Reinsurance Software',
-                description: 'Optimize your reinsurance strategy with AcentRe\'s comprehensive solutions, designed for maximum efficiency and effectiveness.',
+                description: 'Optimize reinsurance strategy with AcentRe\'s comprehensive solutions.',
                 link: '/reinsurance/acentre-reinsurance-solution',
             },
         ]
@@ -745,33 +705,32 @@ const activeClick = ref(false)
 const activeHover = ref(false)
 const router = useRouter()
 
-
-const ctaButton = computed(()=>{
-    if(currentMenu.value=='Insurance'){
+const ctaButton = computed(() => {
+    if (currentMenu.value == 'Insurance') {
         return 'Compare Quotes Instantly'
     }
-    if(currentMenu.value=='Reinsurance' ){
+    if (currentMenu.value == 'Reinsurance') {
         return 'Book a Consultation'
     }
-    if (currentMenu.value == 'Actuarial'){
+    if (currentMenu.value == 'Actuarial') {
         return 'Book a Demo'
     }
-    if(currentMenu.value=='About'){
+    if (currentMenu.value == 'About') {
         return 'Learn More'
     }
 })
 
-const popoverImage = computed(()=>{
-    if(currentMenu.value=='Insurance'){
+const popoverImage = computed(() => {
+    if (currentMenu.value == 'Insurance') {
         return '/img/tracy.jpg'
     }
-    if(currentMenu.value=='Reinsurance'){
+    if (currentMenu.value == 'Reinsurance') {
         return '/img/simo3.jpg'
     }
-    if(currentMenu.value=='Actuarial'){
+    if (currentMenu.value == 'Actuarial') {
         return '/img/what.jpg'
     }
-    if(currentMenu.value=='About'){
+    if (currentMenu.value == 'About') {
         return '/img/cover.jpg'
     }
 })
@@ -791,15 +750,16 @@ const openFlyover = (menu) => {
         // currentMenu.value = null
         return
     } else {
-        
+
         activeClick.value = true
         activeHover.value = true
         currentMenu.value = menu
         if (currentMenu.value === 'About') {
-            // console.log(currentMenu)
             flyoverHeader.value = 'Acentria Group'
             currentMenuItems.value = AboutMenus.value
             currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
             currentSubmenu.value = 'About Us'
             currentSubmenuItems.value = currentMenuItems.value[0]?.items
             currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
@@ -812,6 +772,8 @@ const openFlyover = (menu) => {
             flyoverHeader.value = 'Insurance Solutions'
             currentMenuItems.value = InsuranceMenus.value
             currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
             currentSubmenu.value = 'Insurance Personal Covers'
             currentSubmenuItems.value = currentMenuItems.value[0]?.items
             currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
@@ -824,6 +786,8 @@ const openFlyover = (menu) => {
             flyoverHeader.value = 'Reinsurance Solutions'
             currentMenuItems.value = ReinsuranceMenus.value
             currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
             currentSubmenu.value = 'Reinsurance Services'
             currentSubmenuItems.value = currentMenuItems.value[0]?.items
             currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
@@ -836,6 +800,8 @@ const openFlyover = (menu) => {
             flyoverHeader.value = 'Actuarial Services'
             currentMenuItems.value = ActuarialMenus.value
             currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
             currentSubmenu.value = 'Actuarial Services'
             currentSubmenuItems.value = currentMenuItems.value[0]?.items
             currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
@@ -850,18 +816,18 @@ const openFlyover = (menu) => {
 }
 
 const keepOpen = (theMenuName) => {
-  openFlyover(theMenuName)
-  activeHover.value = true;
+    openFlyover(theMenuName)
+    activeHover.value = true;
 };
 
 let hideTimeout = null;
 
 const closeFlyOver = (close) => {
     // close()
-    if (hideTimeout){
+    if (hideTimeout) {
         clearTimeout(hideTimeout);
     }
-    hideTimeout= setTimeout(() => {
+    hideTimeout = setTimeout(() => {
         currentMenu.value = null
         activeClick.value = false
         activeHover.value = false
@@ -876,7 +842,7 @@ const closeFlyOver = (close) => {
         flyoverHeader.value = null
     }, 200);
 
-    
+
 }
 
 const currentRoute = computed(() => {
