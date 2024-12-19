@@ -69,7 +69,7 @@ const faqs = ref([
             </h2>
         </div>
         <AccordionActuarial :faqs="faqs" />
-        <ReinsuranceWhy />
+        <!-- <ReinsuranceWhy /> -->
         <ContactForm />
     </div>
 

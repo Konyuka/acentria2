@@ -111,7 +111,7 @@ const offers = ref([
             </h2>
         </div>
         <AccordionActuarial :faqs="offers" />
-        <ReinsuranceWhy />
+        <!-- <ReinsuranceWhy /> -->
         <ContactForm />
     </div>
 

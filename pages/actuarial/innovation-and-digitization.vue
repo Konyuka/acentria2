@@ -84,7 +84,7 @@ const offers = ref([
         </div>
         <AccordionActuarial :faqs="offers" />
 
-        <ReinsuranceWhy />
+        <!-- <ReinsuranceWhy /> -->
         <ContactForm />
     </div>
 

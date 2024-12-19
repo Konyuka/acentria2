@@ -374,7 +374,7 @@ const exploreHelp = ref({
                                     <div class="font-sans group relative">
                                         <div class="flex">
                                             <h3 v-html="service.name"
-                                                class="text-xl font-semibold mt-3 line-clamp-2 subheading-class leading-normal text-black transition-colors group-hover:text-brand-primary">
+                                                class="text-lg font-semibold mt-3 line-clamp-2 subheading-class leading-normal text-black transition-colors group-hover:text-brand-primary">
                                             </h3>
                                             <i class="fas fa-trademark"></i>
                                         </div>
@@ -407,7 +407,7 @@ const exploreHelp = ref({
                 <Why2 class="bg-white" />
 
                 <WhyRe :whys="whys" class="bg-white" />
-                
+
                 <News />
 
                 <ContactForm />
