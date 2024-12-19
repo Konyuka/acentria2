@@ -364,7 +364,7 @@ const products = ref([
                     <i :class="item.icon" class="text-4xl text-brand-primary mr-2"></i>
                     <div class="relative">
                         <div class="flex justify-between w-full">
-                            <h5 v-html="item.name" class="text-md pb-1 font-semibold leading-tight text-black"></h5>
+                            <h5 v-html="item.name" class="text-md pb-1 font-semibold leading-normal text-black"></h5>
                         </div>
                         <p class="leading-normal font-regular text-light-content text-[14px]">
                             {{ item.description }}

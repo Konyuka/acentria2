@@ -1,7 +1,7 @@
 <script setup>
 const InsuranceBannerContent = ref({
     subtitle: "Acentria Group",
-    title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
+    title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-normal lg:leading-normal"> Igniting Imagination </span>`,
     image: "/img/empower.jpeg",
     content:
         "At Acentria Group, we propel prosperity to infinite possibilities.",
@@ -123,7 +123,7 @@ onMounted(() => {
                                             class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
                                             <div class="w-full">
                                                 <p
-                                                    class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-tight lg:leading-tight">
+                                                    class="text-left font-sans tracking-normal text-2xl lg:text-sm text-white font-semibold leading-normal lg:leading-normal">
                                                     At our company, we specialize in providing comprehensive insurance
                                                     and reinsurance solutions,
                                                     backed by expert actuarial services and strategic investment
@@ -158,7 +158,7 @@ onMounted(() => {
                                             The team
                                         </label>
                                         <h2
-                                            class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                                            class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-normal text-light-title">
                                             Our Leadership
                                         </h2>
                                         <div class="text-light-content pb-5 md:pb-6">
@@ -192,7 +192,7 @@ onMounted(() => {
                                             The Roadmap
                                         </label>
                                         <h2
-                                            class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                                            class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-normal text-light-title">
                                             Our <span class="text-brand-primary">Purpose</span>
                                         </h2>
                                         <div class="text-light-content pb-5 md:pb-6">
@@ -290,10 +290,10 @@ onMounted(() => {
 
                             <div class=" py-10" >
                                 <h2
-                                    class="text-center font-sans tracking-normal text-2xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-2">
+                                    class="text-center font-sans tracking-normal text-2xl lg:text-3xl text-gray-900 font-semibold leading-normal lg:leading-normal py-2">
                                     We Firmly Believe That What Makes Us <br>
                                     <span
-                                        class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                                        class="font-sans tracking-normal text-brand-primary leading-normal lg:leading-normal">
                                         Different Also Makes us Stronger
                                     </span>
                                 </h2>
@@ -340,10 +340,10 @@ onMounted(() => {
                             <div class="bg-white font-sans">
                                 <div>
                                     <h2
-                                        class="text-center font-sans tracking-normal text-3xl lg:text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight py-5">
+                                        class="text-center font-sans tracking-normal text-3xl lg:text-3xl text-gray-900 font-semibold leading-normal lg:leading-normal py-5">
                                         Our Lines
                                         <span
-                                            class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight">
+                                            class="font-sans tracking-normal text-brand-primary leading-normal lg:leading-normal">
                                             of Business
                                         </span>
                                     </h2>

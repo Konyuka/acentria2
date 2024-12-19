@@ -172,7 +172,7 @@ const faqs = ref([
                         <div class="flex flex-col gap-6 mx-auto items-center justify-center text-left">
                             <div>
                                 <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
                                     At Acentria, our corporate culture is what makes us unique. It drives the way we
                                     work, collaborate, and innovate. We’re committed to a culture that empowers our
                                     people, embraces technology, and encourages holistic growth. As we continue to

@@ -58,7 +58,7 @@ const joinAsMembers = ref([
                         <h1 class="my-5 heading-class text-black text-left">
                             Our <span class="text-brand-primary">Brand</span>
                         </h1>
-                        <p class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                        <p class="font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
                             At Acentria Group, our brand is more than just a representation of our identity—it’s a
                             powerful testament to our values, vision, and the aspirations of those we serve. It captures
                             the very essence of who we are, what we stand for, and the impact we aim to create in the
@@ -222,7 +222,7 @@ const joinAsMembers = ref([
                         <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center max-w-5xl">
                             <div>
                                 <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
                                     For your convenience, we have made available all essential documents related to our
                                     brand. You can download our company profile, logo, brand guidelines, and other
                                     important materials. These resources are designed to help you understand and

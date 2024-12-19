@@ -27,7 +27,7 @@ useHead({
 
 const InsuranceBannerContent = ref({
   subtitle: "Acentria Group",
-  title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-tight lg:leading-tight"> Igniting Imagination </span>`,
+  title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-normal lg:leading-normal"> Igniting Imagination </span>`,
   image: "/img/empower.jpeg",
   content:
     "At Acentria Group, we propel prosperity to infinite possibilities.",

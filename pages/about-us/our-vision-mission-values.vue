@@ -38,7 +38,7 @@ const selectedMenu = computed(() => {
                                 </div>
                                 <div class="flex flex-col justify-center lg:basis-1/2"
                                     data-v-inspector="components/Why.vue:60:13">
-                                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-normal text-light-title"
                                         data-v-inspector="components/Why.vue:63:17">
                                         Our <span class="text-brand-primary">Vision</span>
                                     </h2>
@@ -67,7 +67,7 @@ const selectedMenu = computed(() => {
                                 </div>
                                 <div class="flex flex-col justify-center lg:basis-1/2"
                                     data-v-inspector="components/Why.vue:60:13">
-                                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-normal text-light-title"
                                         data-v-inspector="components/Why.vue:63:17">
                                         Our <span class="text-brand-primary">Mission</span>
                                     </h2>

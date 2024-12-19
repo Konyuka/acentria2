@@ -68,7 +68,7 @@ const services = ref(
                     </span>
                 </h1>
                 <p
-                    class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                    class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
                     Automatic and semiautomatic reinsurance structures for property and casualty help you make the most
                     of opportunities, improve capital management and advance underwriting strategies. These programs
                     deliver more cost-effective risk transfer solutions than some treaty risk transfer products, while
@@ -92,7 +92,7 @@ const services = ref(
                     <i :class="item.icon" class="text-4xl text-brand-primary mr-2"></i>
                     <div class="relative">
                         <div class="flex justify-between w-full">
-                            <h5 v-html="item.name" class="text-lg pb-1 font-semibold leading-tight text-black"></h5>
+                            <h5 v-html="item.name" class="text-lg pb-1 font-semibold leading-normal text-black"></h5>
                         </div>
                         <p class="mt-3 leading-normal font-regular text-black text-[14px]">
                             {{ item.content }}

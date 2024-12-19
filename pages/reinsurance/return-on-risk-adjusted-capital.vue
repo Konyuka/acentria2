@@ -68,6 +68,31 @@ const faqs = ref([
 
     <div class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
+
+        <div class="bg-white">
+            <div class="container">
+                <h1 class="my-5 heading-class text-left">
+                    Return on Risk-Adjusted Capital
+                    <span class="text-brand-primary"> (RORAC)
+                    </span>
+                </h1>
+                <p
+                    class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
+                    The risk on adjusted capital ratio measures the resilience of a financial institution's balance
+                    sheet, with an emphasis on capital resources, to endure a given economic risk or recession. The
+                    greater the institution's capital, the higher its capital ratio, which stranslate to a higher
+                    probability that the entity will remain stable in the event of a severe economic downturn.
+                    <br> <br>
+                    At Acentria we assit Insurers & Reinsurers too evaluate the profitability of businesses and help
+                    them make capital allocation decisions taking into account the capital at risk, whether it be
+                    related to a project or company division.
+                    We also look at the Allocated risk capital in the firm's capital, adjusted for a maximum potential
+                    loss based on estimated future earnings distributions or the volatility of earnings.
+                </p>
+            </div>
+
+        </div>
+
         <ReinsuranceFeature :content="ReinsuranceFeatureContent2" />
         <Accordion :faqs="faqs" />
         <!-- <ReinsuranceWhy /> -->

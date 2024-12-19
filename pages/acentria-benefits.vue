@@ -51,15 +51,15 @@ const benefits = ref([
                             class="font-sans mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                             <div>
                                 <h2
-                                    class="font-sans tracking-normal text-2xl text-brand-primary font-semibold leading-tight pb-4 pt-6">
+                                    class="font-sans tracking-normal text-2xl text-brand-primary font-semibold leading-normal pb-4 pt-6">
                                     <span
-                                        class="font-sans tracking-normal text-gray-900 leading-tight">
+                                        class="font-sans tracking-normal text-gray-900 leading-normal">
                                         Why would you <br>
                                     </span>
                                     work for Acentria
                                 </h2>
                                 <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
                                     Working at Acentria is an enriching journey to growth and prosperity. We have
                                     numerous engagement forums, propagate empowerment and job autonomy, nurture a
                                     supportive and inclusive environment and do not have a “Straight-jacket” approach
@@ -79,7 +79,7 @@ const benefits = ref([
                                     <i :class="benefit.icon" class="text-xl text-brand-primary mr-4"></i>
                                     <div>
                                         <h5 v-html="benefit.name"
-                                            class="text-sm pb-3 md:pb-4 font-semibold leading-tight text-light-title">
+                                            class="text-sm pb-3 md:pb-4 font-semibold leading-normal text-light-title">
 
                                         </h5>
                                         <p class="leading-normal font-regular text-light-content text-xs">
@@ -98,15 +98,15 @@ const benefits = ref([
             <section id="" class="relative py-5 bg-white text-left">
                 <div class="container px-4">
                     <h2
-                        class="text-center font-sans tracking-normal text-2xl text-gray-900 font-semibold leading-tight py-2">
+                        class="text-center font-sans tracking-normal text-2xl text-gray-900 font-semibold leading-normal py-2">
                         Our commitment to
                         <span
-                            class="font-sans tracking-normal text-brand-primary leading-tight">diversity</span>,
+                            class="font-sans tracking-normal text-brand-primary leading-normal">diversity</span>,
                         <span
-                            class="font-sans tracking-normal text-brand-primary leading-tight">equity</span>
+                            class="font-sans tracking-normal text-brand-primary leading-normal">equity</span>
                         and
                         <span
-                            class="font-sans tracking-normal text-brand-primary leading-tight">inclusion</span>
+                            class="font-sans tracking-normal text-brand-primary leading-normal">inclusion</span>
                     </h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 mx-auto max-w-5xl">
                         <div class="mx-auto">
@@ -117,7 +117,7 @@ const benefits = ref([
                         </div>
                         <div class="content-center items-center">
                             <p
-                                class="font-sans tracking-normal text-xs text-gray-900 leading-tight pb-2">
+                                class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
                                 Acentria is committed to fostering, cultivating and
                                 preserving a culture that celebrates and values diversity,
                                 equity and inclusion. Our DEI&amp;I plan accelerates
@@ -132,7 +132,7 @@ const benefits = ref([
                             </p>
                             <br>
                             <p
-                                class="font-sans tracking-normal text-xs text-gray-900 leading-tight pb-2">
+                                class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
                                 Acentria also supports several Employee Resource Groups
                                 (ERGs) including Generational,
                                 Multicultural, Parenting &amp; Care Giving, Mental Health and Women in Tech. These
@@ -142,7 +142,7 @@ const benefits = ref([
                             </p>
                             <br>
                             <p
-                                class="font-sans tracking-normal text-xs text-gray-900 leading-tight pb-2">
+                                class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
                                 We believe that diverse leadership is an essential part of
                                 modern governance and remain committed to exploring new
                                 opportunities to diversify our C-suite.

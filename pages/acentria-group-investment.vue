@@ -40,7 +40,7 @@ const content = ref({
             <section id="" class="relative py-2 bg-white text-center">
                 <div class="container px-4">
                     <h2
-                        class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-tight lg:leading-tight">
+                        class="font-sans tracking-normal text-3xl text-gray-900 font-semibold leading-normal lg:leading-normal">
                         <span class="text-brand-primary">Acentria Investment Services</span> <br>
                         Unlock Your Financial Potential
                     </h2>

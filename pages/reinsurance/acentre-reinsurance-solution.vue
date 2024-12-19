@@ -117,7 +117,7 @@ const reinsuranceFeatures = [
 
         <div class="bg-white py-5">
             <div class="container mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between">
-                <h2 class="text-xl lg:text-2xl font-semibold text-black leading-tight">
+                <h2 class="text-xl lg:text-2xl font-semibold text-black leading-normal">
                     Adopt a deliberate data strategy with <br> 
                     <span class="text-brand-primary">Acentria's Reinsurance System</span>
                 </h2>

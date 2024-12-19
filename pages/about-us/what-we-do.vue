@@ -22,7 +22,7 @@ const ReinsuranceBannerContent = ref({
                     <label class="text-base leading-normal font-regular text-light-highlight font-bold"
                         data-v-inspector="components/Why.vue:39:17">Our Services
                     </label>
-                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title"
+                    <h2 class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-normal text-light-title"
                         data-v-inspector="components/Why.vue:42:17">
                         What We Do
                     </h2>

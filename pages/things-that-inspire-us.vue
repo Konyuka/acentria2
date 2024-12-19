@@ -59,7 +59,7 @@ const joinAsMembers = ref([
                         <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center max-w-5xl">
                             <div>
                                 <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                                    class="font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
                                     At Acentria Group, inspiration fuels our purpose and drives everything we do. Guided
                                     by our mantra— <b>Empower, Innovate, and Prosper</b> —we find motivation in the
                                     possibilities we create for our clients, partners, communities, and employees.

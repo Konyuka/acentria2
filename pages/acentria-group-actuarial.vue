@@ -109,9 +109,9 @@ const whys = ref([
 
 const heroContent = ref({
     name: `<h1
-                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-tight lg:leading-tight">
+                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-normal lg:leading-normal">
                                     <span
-                                        class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">Acentria</span>
+                                        class="font-sans tracking-normal text-gray-900 leading-normal lg:leading-normal">Acentria</span>
                                     Actuarial & Financial Services
                                 </h1>`,
 })
@@ -201,8 +201,6 @@ const systems = ref([
     },
 ])
 
-
-
 const exploreHelp2 = ref({
     orientation: 'lg:flex-row flex-col',
     heading: 'Data Driven & <span class="text-brand-primary"> Analytical Capabilities</span>',
@@ -245,7 +243,7 @@ const exploreHelp = ref({
                             Overview <br> <span class="text-brand-primary"> Actuarial & Financial Services </span>
                         </h1>
                         <p
-                            class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                            class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
                             Acentria Actuarial & financial services is one of the leading Actuarial independent
                             specialists’ firms operating in Kenya, and international markets.
                             Our Actuarial team lead by a signing Actuary having expertise in using financial, risk, and
@@ -299,7 +297,7 @@ const exploreHelp = ref({
 
                 <div class="py-5 text-center bg-white">
                     <h2
-                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-tight lg:leading-tight">
+                        class="font-sans tracking-normal text-3xl text-black font-semibold leading-normal lg:leading-normal">
                         Best of Actuarial Consulting, <span class="text-brand-primary">Products & Services</span>
                     </h2>
                 </div>
@@ -395,7 +393,7 @@ const exploreHelp = ref({
                 <section id="" class="relative py-8 bg-black text-center">
                     <div class="container px-4">
                         <h2
-                            class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">
+                            class="font-sans tracking-normal text-3xl text-white font-semibold leading-normal lg:leading-normal">
                             <span class="text-brand-primary">Your Actuarial Services, Your Way.</span> <br>
                             Let Acentria Tailor Your Solutions To Your Needs
                         </h2>

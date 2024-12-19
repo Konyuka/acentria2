@@ -174,9 +174,9 @@ const whys = ref([
 
 const heroContent = ref({
     name: `<h1
-                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-tight lg:leading-tight">
+                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-normal lg:leading-normal">
                                     <span
-                                        class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">Acentria</span>
+                                        class="font-sans tracking-normal text-gray-900 leading-normal lg:leading-normal">Acentria</span>
                                     Reinsurance Brokers
                                 </h1>`,
 })
@@ -294,7 +294,7 @@ const exploreHelp3 = ref({
                         Overview <br> <span class="text-brand-primary"> Reinsurance </span>
                     </h1>
                     <p
-                        class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                        class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
                         Acentria re is one of the leading independent specialists (re)insurance broking firms operating
                         in Kenya, and international markets.
                         Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage
@@ -348,7 +348,7 @@ const exploreHelp3 = ref({
             <ContentPic :content="exploreHelp3" class="my-5" />
 
             <div class="py-5 text-center bg-white">
-                <h2 class="font-sans tracking-normal text-2xl text-black font-semibold leading-tight lg:leading-tight">
+                <h2 class="font-sans tracking-normal text-2xl text-black font-semibold leading-normal lg:leading-normal">
                     Delivering Reinsurance <span class="text-brand-primary">Solutions & Services</span>
                 </h2>
             </div>
@@ -364,7 +364,7 @@ const exploreHelp3 = ref({
             <section id="" class="relative py-8 bg-black text-center">
                 <div class="container px-4">
                     <h2
-                        class="font-sans tracking-normal text-2xl text-white font-semibold leading-tight lg:leading-tight">
+                        class="font-sans tracking-normal text-2xl text-white font-semibold leading-normal lg:leading-normal">
                         <span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br>
                         Let Acentria Tailor Your Coverage To Your Needs
                     </h2>

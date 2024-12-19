@@ -208,7 +208,7 @@ const setMobileMenu = (event) => {
                                                                     <div>
                                                                         <div class="flex items-center">
                                                                             <h3 id=""
-                                                                                class="text-xl pb-2 md:text-2xl xl:text-2xl 2xl:text-3xl leading-tight text-black font-bold">
+                                                                                class="text-xl pb-2 md:text-2xl xl:text-2xl 2xl:text-3xl leading-normal text-black font-bold">
                                                                                 {{ profileBoardData.name }}
                                                                             </h3>
                                                                         </div>
@@ -337,7 +337,7 @@ const setMobileMenu = (event) => {
                                                                     <div>
                                                                         <div class="flex items-center">
                                                                             <h3 id=""
-                                                                                class="text-xl pb-2 md:text-2xl xl:text-2xl 2xl:text-3xl leading-tight text-black font-bold">
+                                                                                class="text-xl pb-2 md:text-2xl xl:text-2xl 2xl:text-3xl leading-normal text-black font-bold">
                                                                                 {{ profileData.name }}
                                                                             </h3>
                                                                         </div>

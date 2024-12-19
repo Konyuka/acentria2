@@ -16,7 +16,7 @@ const ReinsuranceBannerContent = ref({
                 <div class="font-sans container px-4">
                     <div class="pb-7 text-center">
                         <h2 id=""
-                            class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-tight text-light-title">
+                            class="text-2xl pb-4 md:pb-5 font-semibold md:text-3xl xl:text-3xl 2xl:text-4xl leading-normal text-light-title">
                             <span
                                 class="font-sans text-brand-primary pb-0 sm:pb-0 md:!pb-0 lg:pb-0 xl:pb-0 xl:text-4xl 2xl:text-4xl">
                                 Awards
@@ -67,7 +67,7 @@ const ReinsuranceBannerContent = ref({
                                     <div class="relative flex min-h-[100px] flex-col gap-y-1">
 
                                         <h6
-                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-normal lg:leading-normal">
                                             Award 1
                                         </h6>
                                     </div>
@@ -117,7 +117,7 @@ const ReinsuranceBannerContent = ref({
                                 <section class="grid items-start justify-start gap-y-3">
                                     <div class="relative flex min-h-[100px] flex-col gap-y-1">
                                         <h6
-                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-normal lg:leading-normal">
                                             Award 2
                                         </h6>
                                     </div>
@@ -166,7 +166,7 @@ const ReinsuranceBannerContent = ref({
                                 <section class="grid items-start justify-start gap-y-3">
                                     <div class="relative flex min-h-[100px] flex-col gap-y-1">
                                         <h6
-                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-normal lg:leading-normal">
                                             Award 3
                                         </h6>
                                     </div>
@@ -217,7 +217,7 @@ const ReinsuranceBannerContent = ref({
                                 <section class="grid items-start justify-start gap-y-3">
                                     <div class="relative flex min-h-[100px] flex-col gap-y-1">
                                         <h6
-                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-tight lg:leading-tight">
+                                            class="font-sans tracking-normal text-base lg:text-lg text-gray-900 font-semibold leading-normal lg:leading-normal">
                                             Award 4
                                         </h6>
                                     </div>

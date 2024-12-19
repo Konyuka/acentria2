@@ -193,9 +193,9 @@ const menus = ref([
 
 const heroContent = ref({
     name: `<h1
-                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-tight lg:leading-tight">
+                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-normal lg:leading-normal">
                                     <span
-                                        class="font-sans tracking-normal text-gray-900 leading-tight lg:leading-tight">Acentria</span>
+                                        class="font-sans tracking-normal text-gray-900 leading-normal lg:leading-normal">Acentria</span>
                                     Insurance Brokers
                                 </h1>`,
 })
@@ -342,7 +342,7 @@ const slides = ref([
                                 Overview <br> <span class="text-brand-primary"> Insurance & Risk </span>
                             </h1>
                             <p
-                                class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                                class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
                                 Acentria Group is your trusted friend in the world of insurance. We’re here to make sure
                                 you and anything you care for is safe and sound. Insurance can be confusing, but we’re
                                 experts at making it simple. We’ll take the time to understand exactly what you need and
@@ -429,7 +429,7 @@ const slides = ref([
             <section id="" class="relative py-8 bg-black/60 text-center">
                 <div class="container px-4">
                     <h2
-                        class="font-sans tracking-normal text-2xl text-white font-semibold leading-tight lg:leading-tight">
+                        class="font-sans tracking-normal text-2xl text-white font-semibold leading-normal lg:leading-normal">
                         <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
                         Let Acentria Tailor Your Coverage To Your Needs
                     </h2>
