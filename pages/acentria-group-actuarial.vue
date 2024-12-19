@@ -202,6 +202,28 @@ const systems = ref([
 ])
 
 
+
+const exploreHelp2 = ref({
+    orientation: 'lg:flex-row-reverse flex-col',
+    heading: 'Data Driven & <span class="text-brand-primary"> Analytical Capabilities</span>',
+    subheading: '',
+    image: '/img/glasses.jpg',
+    link: '/insurance-claims',
+    content: 'Accurate risk quantification is an essential part of an effective risk management program. To design a sustainable and successful risk management strategy, an organization must identify, measure, analyze and understand the existing and emerging risks they face.',
+})
+
+const exploreHelp = ref({
+    orientation: 'lg:flex-row flex-col',
+    heading: 'How Acentria Actuaries <span class="text-brand-primary">Can Help</span>',
+    subheading: '',
+    image: '/img/handshake.jpg',
+    link: '/insurance-claims',
+    content: 'At Acentria, our actuarial and analytic specialists help organizations to gain insightful knowledge. We leverage advanced analytics, modeling and quantification expertise for clients and service our clients Our ability to use data, advanced analytics, and technology to extract valuable insights, help us to guide business to make informed decisions',
+})
+
+
+
+
 </script>
 
 <template>
@@ -216,7 +238,6 @@ const systems = ref([
                 <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
 
                 <!-- <Hero2 :data="heroContent" /> -->
-
 
                 <div class="bg-white">
                     <div class="container">
@@ -233,7 +254,48 @@ const systems = ref([
                             effective insightful decision-making by business leaders.
                         </p>
                     </div>
+
                 </div>
+
+                <div class="bg-white">
+                    <div class="container">
+                        <div class="grid grid-cols-3 gap-5 py-10">
+                            <div class="flex flex-col items-center">
+                                <div class="bg-red-500 rounded-full p-4 mb-4">
+                                    <i class="fas fa-chart-line text-white h-8 w-8 text-center text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Elevate Your Risk Assessment</h3>
+                                <p class="text-black text-center">Are you tired of uncertainty when assessing risks?
+                                    With our experts by your side, you'll gain a new level of precision in risk
+                                    assessment
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col items-center">
+                                <div class="bg-red-500 rounded-full p-4 mb-4">
+                                    <i class="fas fa-balance-scale text-white h-8 w-8 text-center text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Unlock Precision in Risk Pricing</h3>
+                                <p class="text-black text-center">With our specialized knowledge, you can ensure that
+                                    your risk pricing aligns perfectly with the true cost</p>
+                            </div>
+
+                            <div class="flex flex-col items-center">
+                                <div class="bg-red-500 rounded-full p-4 mb-4">
+                                    <i class="fas fa-lightbulb text-white h-8 w-8 text-center text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Enhance Your Decision-Making</h3>
+                                <p class="text-black text-center">The art of making sound decisions starts with
+                                    reliable data and expert insights. Our Actuarial Support provides just that.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <ContentPic :content="exploreHelp2" class="my-5" />
+
+                <ContentPic :content="exploreHelp" class="my-5" />
 
                 <div class="py-5 text-center bg-white">
                     <h2
@@ -253,7 +315,7 @@ const systems = ref([
                 <div class="bg-white pb-6">
                     <div class="container">
                         <h1 class="my-3 heading-class text-left">
-                            Overview <br> <span class="text-brand-primary"> Actuarial Systems</span>
+                            Elite Tech Tools <br> <span class="text-brand-primary">for Optimal Solutions</span>
                         </h1>
                     </div>
 
@@ -333,7 +395,6 @@ const systems = ref([
 
                     </div>
                 </div>
-
 
                 <ServicesCards class="bg-white" />
 
