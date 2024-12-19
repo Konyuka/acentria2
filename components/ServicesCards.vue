@@ -1,10 +1,11 @@
 <script setup>
 const services = ref([
     {
-        name: 'Insurance <span class="text-brand-primary">Consulting</span>',
-        icon: 'fas fa-handshake',
-        content: 'We specialize in providing top-notch consulting services tailored to the insurance industry.',
+        name: 'Financial <span class="text-brand-primary">Services</span>',
+        icon: 'fas fa-chart-line',
+        content: 'Financial services in actuarial science encompass a wide range of areas where actuarial expertise is utilized to assess and manage risk, make financial decisions, and provide valuable insights.',
     },
+    
     {
         name: 'IFRS17 <span class="text-brand-primary">Implementation</span>',
         icon: 'fas fa-file-invoice-dollar',
@@ -16,15 +17,16 @@ const services = ref([
         content: 'In the realm of actuarial science, retirement and employee benefits are critical components that demand meticulous analysis and precise calculations.',
     },
     {
+        name: 'Insurance <span class="text-brand-primary">Consulting</span>',
+        icon: 'fas fa-handshake',
+        content: 'We specialize in providing top-notch consulting services tailored to the insurance industry.',
+    },
+    {
         name: 'Reinsurance <span class="text-brand-primary">Consulting</span>',
         icon: 'fas fa-sync-alt',
         content: 'Our team works with clients to design reinsurance structures that fit their risk management framework.',
     },
-    {
-        name: 'Financial <span class="text-brand-primary">Services</span>',
-        icon: 'fas fa-chart-line',
-        content: 'Financial services in actuarial science encompass a wide range of areas where actuarial expertise is utilized to assess and manage risk, make financial decisions, and provide valuable insights.',
-    },
+    
     {
         name: 'Innovation &<span class="text-brand-primary"> Digitization</span>',
         icon: 'fas fa-lightbulb',
@@ -63,16 +65,16 @@ const services = ref([
         <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
 
             <a href="#" v-for="item in services"
-                class="button-animation relative flex flex-row gap-2 border-2 border-gray-200 p-5 rounded-lg">
+                class="relative flex flex-row gap-2 border-2 border-gray-200 p-5 rounded-lg">
                 <i :class="item.icon" class="text-4xl text-brand-primary mr-2"></i>
                 <div class="relative">
                     <div class="flex justify-between w-full">
                         <h5 v-html="item.name" class="text-md pb-1 font-semibold leading-tight text-black"></h5>
                     </div>
-                    <p class="leading-normal font-regular text-light-content text-[14px]">
+                    <p class="leading-normal font-regular text-black text-[14px]">
                         {{ item.content }}
                     </p>
-                    <!-- <i class="absolute fas fa-arrow-right text-md right-0 top-1"></i> -->
+                    <i class="absolute fas fa-arrow-right text-md right-0 top-1"></i>
                 </div>
             </a>
 

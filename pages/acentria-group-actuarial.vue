@@ -407,6 +407,8 @@ const exploreHelp = ref({
                 <Why2 class="bg-white" />
 
                 <WhyRe :whys="whys" class="bg-white" />
+                
+                <News />
 
                 <ContactForm />
 
