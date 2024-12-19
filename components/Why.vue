@@ -12,13 +12,15 @@
                         class="rounded-lg" src="/img/innovate.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <label class="text-md leading-normal font-bold text-light-highlight">Build organizational
-                        resilience</label>
-                    <h2 class="text-xl font-semibold pb-1 leading-normal text-light-title">
-                        Empower Your Business with Innovative Insurance and Investment Solutions.
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal text-light-content mb-4">
+
+                    <h1 class="my-3 heading-class text-left">
+                        Empower Your Business with Innovative <br>
+                        <span class="text-brand-primary">
+                            Insurance and Investment Solutions.
+                        </span>
+                    </h1>
+                    <div class="text-black pb-5 md:pb-6">
+                        <p class="text-xs leading-normal text-black mb-4">
                             Transform your operations with advanced risk management, precise actuarial analytics, and
                             cutting-edge technology to drive growth and resilience. Let us help you navigate
                             complexities and seize opportunities with confidence. Our team of experts is dedicated to
@@ -36,13 +38,14 @@
                         src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <label class="text-md leading-normal font-bold text-light-highlight">Stay ahead of the
-                        competition</label>
-                    <h2 class="text-xl font-semibold pb-1 leading-normal text-light-title">
-                        Elevate Your Strategies with Precision and Innovation
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal text-light-content mb-4">
+                    <h1 class="my-3 heading-class text-left">
+                        Elevate Your Strategies <br>
+                        <span class="text-brand-primary">
+                            with Precision and Innovation
+                        </span>
+                    </h1>
+                    <div class="text-black pb-5 md:pb-6">
+                        <p class="text-xs leading-normal text-black mb-4">
                             Harness the power of advanced analytics and technology to optimize insurance, reinsurance,
                             and investment decisions, ensuring you stay ahead in a rapidly evolving market. Our
                             solutions provide you with the insights needed to make data-driven decisions, reduce risks,
@@ -61,13 +64,14 @@
                         class="rounded-lg" src="/img/boat.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <label class="text-md leading-normal font-bold text-light-highlight">Reinforce investor
-                        confidence</label>
-                    <h2 class="text-xl font-semibold pb-1 leading-normal text-light-title">
-                        Unlock Greater Efficiency and Insight with Our Expertise.
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal text-light-content mb-4">
+                    <h1 class="my-3 heading-class text-left">
+                        Unlock Greater Efficiency and <br>
+                        <span class="text-brand-primary">
+                            Insight with Our Expertise.
+                        </span>
+                    </h1>
+                    <div class="text-black pb-5 md:pb-6">
+                        <p class="text-xs leading-normal text-black mb-4">
                             Streamline your operations and enhance decision-making with our integrated solutions in risk
                             management, actuarial services, and tech advancements tailored for your industry needs. Our
                             comprehensive approach ensures that you have the tools and insights necessary to navigate

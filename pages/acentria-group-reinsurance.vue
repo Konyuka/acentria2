@@ -253,6 +253,33 @@ const slides = ref([
     },
 ])
 
+const exploreHelp = ref({
+    orientation: 'lg:flex-row-reverse flex-col',
+    heading: 'Stabilizing the Company\'s  <br/> <span class="text-brand-primary">Overall Operating Results.</span>',
+    subheading:'',
+    image: 'https://images.pexels.com/photos/1051449/pexels-photo-1051449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    link: '/insurance-claims',
+    content: 'To navigate volatility ranging from climate to economic factors, insurers need to delve deep into understanding and mitigating the risks by enhancing their view of risk. Data, tools and analytics must complement broking and advisory capabilities to help protect and grow insurers’ businesses. Insurers often seek to reduce the wide swings in profit and loss margins inherent to the insurance business. These fluctuations result, in part, from the unique nature of insurance, which involves pricing a product whose actual cost will not be known until sometime in the future. Through reinsurance, insurers can reduce these fluctuations in loss experience, and stabilize the company\'s overall operating results.',
+})
+
+const exploreHelp2 = ref({
+    orientation: 'lg:flex-row flex-col',
+    heading: 'Protecting <br/><span class="text-brand-primary">Against Catastrophes</span>',
+    subheading: '',
+    image: 'https://images.pexels.com/photos/11836813/pexels-photo-11836813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    link: '/insurance-claims',
+    content: 'In an increasingly risky world, insurers and reinsurers need more sophisticated tools to quantify and manage the risks facing their businesses. Acentria catastrophe model analytics helps, Impact Forecasting to enable firms to analyze the financial impacts of catastrophic events to develop effective reinsurance, underwriting and exposure managemen to stabilize an insurer\'s loss experience and reduce the disruptive effects of catastrophes have on an insurer\'s loss experience can be reduced dramatically'
+})
+
+const exploreHelp3 = ref({
+    orientation: 'lg:flex-row-reverse flex-col',
+    heading: 'Limiting Liability &  <br/><span class="text-brand-primary">Increasing Capacities</span>',
+    subheading: '',
+    image: 'https://images.pexels.com/photos/50634/pexels-photo-50634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    link: '/insurance-claims',
+    content: 'In a predictable world where re/insurers look to bring new solutions to customers, capital can provide a bridge between innovation and investment. However, finding the right balance to optimize capital requires strategic decisions to supporting growth and enhance a stable balance sheet. We assist Insurers with mechanism through which they limit their loss exposure to levels commensurate with their net assets, we structure reinsurance solutions to enables insurance to stabilize loss experience on individual risks, as well as on accumulated losses under many policies occurring during a specified period.',
+})
+
 </script>
 
 <template>
@@ -279,6 +306,10 @@ const slides = ref([
                 </div>
             </div>
 
+            <ContentPic :content="exploreHelp" class="my-5" />
+            <ContentPic :content="exploreHelp2" class="my-5" />
+            <ContentPic :content="exploreHelp3" class="my-5" />
+
             <div class="py-5 text-center bg-white">
                 <h2 class="font-sans tracking-normal text-2xl text-black font-semibold leading-tight lg:leading-tight">
                     Delivering Reinsurance <span class="text-brand-primary">Solutions & Services</span>
@@ -302,34 +333,6 @@ const slides = ref([
                     </h2>
                 </div>
             </section>
-
-            <!-- <div class="bg-white">
-                <div class="py-6 text-white xl:py-5 max-w-6xl mx-auto">
-                    <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                        <div class="relative p-4 lg:basis-1/2">
-                            <NuxtImg alt="Image of Streamline evaluations and questionnaires" loading="lazy"
-                                decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                                class="rounded-xl w-full h-[300px]"
-                                src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                        </div>
-                        <div class="flex flex-col justify-center items-center lg:basis-1/2">
-                            <div class="text-light-content pb-5 md:pb-6">
-                                <p
-                                    class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4 flex items-center align-middle justify-center content-center">
-                                    We specialize in addressing underwriting and capital management challenges,
-                                    showcasing a deep understanding of the complexities involved in managing risk and
-                                    financial resources within the insurance industry.
-                                    <br><br>
-                                    Our comprehensive range of services supports insurance companies, encompassing risk
-                                    analysis, designing and placing reinsurance programs, providing claims support,
-                                    developing alternative risk strategies, and offering various risk management
-                                    consulting services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
             <Why />
 
