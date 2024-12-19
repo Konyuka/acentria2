@@ -59,7 +59,7 @@ const ReinsuranceFeatureContent = ref(
 
         <ReFeatures :content="ReinsuranceFeatureContent" />
 
-        <ReinsuranceWhy />
+        <!-- <ReinsuranceWhy /> -->
         <ContactForm />
     </div>
 

@@ -72,7 +72,7 @@ const faqs = ref([
         <ReinsuranceFeature :content="ReinsuranceFeatureContent2" />
 
         <Accordion :faqs="faqs" />
-        <ReinsuranceWhy />
+        <!-- <ReinsuranceWhy /> -->
         <ContactForm />
     </div>
 

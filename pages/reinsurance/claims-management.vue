@@ -81,7 +81,7 @@ const faqs = ref([
             </div>
         </div>
 
-        <ReinsuranceWhy />
+        <!-- <ReinsuranceWhy /> -->
         <ContactForm />
     </div>
 

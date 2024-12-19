@@ -174,7 +174,7 @@ const setLineData = (line) => {
             </div>
         </div>
 
-        <ReinsuranceWhy />
+        <!-- <ReinsuranceWhy /> -->
         <ContactForm />
 
         <div v-if="openPopover" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"

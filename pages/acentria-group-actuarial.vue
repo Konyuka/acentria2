@@ -257,9 +257,11 @@ const exploreHelp = ref({
 
                 </div>
 
+                <ContentPic :content="exploreHelp2" class="my-5" />
+
                 <div class="bg-white">
                     <div class="container">
-                        <div class="grid grid-cols-3 gap-5 py-10">
+                        <div class="grid grid-cols-3 gap-5 py-5">
                             <div class="flex flex-col items-center">
                                 <div class="bg-red-500 rounded-full p-4 mb-4">
                                     <i class="fas fa-chart-line text-white h-8 w-8 text-center text-xl"></i>
@@ -292,8 +294,6 @@ const exploreHelp = ref({
 
                     </div>
                 </div>
-
-                <ContentPic :content="exploreHelp2" class="my-5" />
 
                 <ContentPic :content="exploreHelp" class="my-5" />
 

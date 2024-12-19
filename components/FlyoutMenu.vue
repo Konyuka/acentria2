@@ -648,11 +648,6 @@ const ReinsuranceMenus = ref([
                 description: 'Prepare for extreme events with our catastrophic modelling services.',
                 link: '/reinsurance/catastrophic-modelling',
             },
-            {
-                name: 'Return On Risk Adjusted Capital',
-                description: 'Maximize financial performance with risk-adjusted capital services.',
-                link: '/reinsurance/return-on-risk-adjusted-capital',
-            },
         ]
     },
 ])

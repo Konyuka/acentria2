@@ -256,7 +256,7 @@ const slides = ref([
 const exploreHelp = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Stabilizing the Company\'s  <br/> <span class="text-brand-primary">Overall Operating Results.</span>',
-    subheading:'',
+    subheading: '',
     image: 'https://images.pexels.com/photos/1051449/pexels-photo-1051449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     link: '/insurance-claims',
     content: 'To navigate volatility ranging from climate to economic factors, insurers need to delve deep into understanding and mitigating the risks by enhancing their view of risk. Data, tools and analytics must complement broking and advisory capabilities to help protect and grow insurers’ businesses. Insurers often seek to reduce the wide swings in profit and loss margins inherent to the insurance business. These fluctuations result, in part, from the unique nature of insurance, which involves pricing a product whose actual cost will not be known until sometime in the future. Through reinsurance, insurers can reduce these fluctuations in loss experience, and stabilize the company\'s overall operating results.',
@@ -307,6 +307,43 @@ const exploreHelp3 = ref({
             </div>
 
             <ContentPic :content="exploreHelp" class="my-5" />
+
+            <div class="bg-white">
+                <div class="container">
+                    <div class="grid grid-cols-3 gap-5 py-5">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-red-500 rounded-full p-4 mb-4">
+                                <i class="fas fa-chart-line text-white h-8 w-8 text-center text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Elevate Your Risk Assessment</h3>
+                            <p class="text-black text-center">Are you tired of uncertainty when assessing risks?
+                                With our experts by your side, you'll gain a new level of precision in risk
+                                assessment
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="bg-red-500 rounded-full p-4 mb-4">
+                                <i class="fas fa-balance-scale text-white h-8 w-8 text-center text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Unlock Precision in Risk Pricing</h3>
+                            <p class="text-black text-center">With our specialized knowledge, you can ensure that
+                                your risk pricing aligns perfectly with the true cost</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="bg-red-500 rounded-full p-4 mb-4">
+                                <i class="fas fa-lightbulb text-white h-8 w-8 text-center text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Enhance Your Decision-Making</h3>
+                            <p class="text-black text-center">The art of making sound decisions starts with
+                                reliable data and expert insights. Our Actuarial Support provides just that.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <ContentPic :content="exploreHelp2" class="my-5" />
             <ContentPic :content="exploreHelp3" class="my-5" />
 
@@ -338,7 +375,7 @@ const exploreHelp3 = ref({
 
             <WhyRe :whys="whys" />
 
-            <div>
+            <!-- <div>
                 <div class="container flex items-center justify-center">
                     <div class="relative p-4">
                         <NuxtImg alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
@@ -346,7 +383,7 @@ const exploreHelp3 = ref({
                             style="color:transparent;object-fit:contain" class="rounded-xl" src="/img/map.jpg" />
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <ContactForm />
 
