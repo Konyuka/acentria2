@@ -204,7 +204,7 @@ const systems = ref([
 
 
 const exploreHelp2 = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
+    orientation: 'lg:flex-row flex-col',
     heading: 'Data Driven & <span class="text-brand-primary"> Analytical Capabilities</span>',
     subheading: '',
     image: '/img/glasses.jpg',
@@ -213,7 +213,7 @@ const exploreHelp2 = ref({
 })
 
 const exploreHelp = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'lg:flex-row-reverse flex-col',
     heading: 'How Acentria Actuaries <span class="text-brand-primary">Can Help</span>',
     subheading: '',
     image: '/img/handshake.jpg',
@@ -312,6 +312,51 @@ const exploreHelp = ref({
                     </section>
                 </div>
 
+
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-1 lg:gap-20">
+                    <div class="relative p-1 lg:basis-1/2">
+                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                            data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
+                            src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </div>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
+
+                        <h1 class="my-3 heading-class text-left">
+                            Elevate Your Strategies with <br> 
+                            <span class="text-brand-primary">
+                            Precision and Innovation
+                            </span>
+                        </h1>
+
+                        <!-- <label class="text-md leading-normal font-regular text-light-highlight font-semibold">Stay
+                            ahead of the competition
+                        </label> -->
+                        <div class="text-black pb-5 md:pb-6">
+                            <p class="text-xs leading-normal text-black mb-4">
+                                Harness the power of advanced analytics and technology to optimize insurance,
+                                reinsurance,
+                                and
+                                investment decisions, ensuring you stay ahead in a rapidly evolving market. Our
+                                solutions
+                                provide
+                                you with the insights needed to make data-driven decisions, reduce risks, and enhance
+                                profitability.
+                                By leveraging state-of-the-art tools and methodologies, we help you navigate the
+                                complexities of
+                                the
+                                financial landscape, adapt to changing conditions, and seize new opportunities for
+                                growth.
+                                Stay
+                                competitive and resilient with our comprehensive suite of services designed to meet the
+                                unique
+                                needs
+                                of your business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="bg-white pb-6">
                     <div class="container">
                         <h1 class="my-3 heading-class text-left">
@@ -356,45 +401,6 @@ const exploreHelp = ref({
                         </h2>
                     </div>
                 </section>
-
-                <div class="bg-white">
-                    <div class="py-4 text-white max-w-6xl mx-auto">
-
-                        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2  lg:gap-16">
-
-                            <div class="relative py-4 lg:basis-1/2">
-                                <NuxtImg alt="Image of Streamline evaluations and questionnaires " loading="lazy"
-                                    width="500" height="350" decoding="async" data-nimg="1"
-                                    style="color: transparent; object-fit: contain" class="rounded-xl"
-                                    src="https://acentriagroup.com/wp-content/uploads/2023/10/8.jpeg" />
-                            </div>
-                            <div class="flex flex-col justify-center lg:basis-1/2">
-                                <div class="text-light-content pb-5 md:pb-6">
-                                    <p class="text-xs leading-normal font-sans text-light-content !text-inherit mb-4">
-                                        Acentria Actuarial & Financial Services has been a trusted provider of Actuarial
-                                        Services to Life, Non-Life Companies, and Pension Schemes in East & Central
-                                        Africa
-                                        for many years. Our dedicated expertise extends to advising various Health
-                                        Insurance
-                                        Schemes and actively participating in the development and design of insurance
-                                        products. Rooted in our deep understanding of regional markets and their
-                                        ever-changing dynamics, we offer a comprehensive range of services tailored to
-                                        meet
-                                        your needs.
-
-                                        <br><br>
-
-                                        With Acentria, you gain access to a partner who not only comprehends the
-                                        intricacies
-                                        of the insurance landscape but also helps you navigate it with precision and
-                                        insight. Allow us to empower your financial strategies and shape your success.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
 
                 <ServicesCards class="bg-white" />
 

@@ -36,7 +36,7 @@ const showButton = computed(() => {
             <div class="relative py-4 lg:basis-1/2">
                 <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                     style="color: transparent; object-fit: contain"
-                    class="w-full max-h-[280px] h-full shadow-2xl rounded-lg !object-cover" :src="content.image" />
+                    class="w-full max-h-[250px] h-full shadow-2xl rounded-lg !object-cover" :src="content.image" />
             </div>
         </div>
     </div>

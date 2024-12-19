@@ -4,42 +4,10 @@
 </script>
 
 <template>
-    <div >
+    <div>
         <div class=" font-sans text-white py-2 max-w-6xl mx-auto">
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-1 lg:gap-20">
-                <div class="relative p-1 lg:basis-1/2">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                        data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                        src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <label class="text-md leading-normal font-regular text-light-highlight font-bold">Stay
-                        ahead of the competition
-                    </label>
-                    <h2 class="subheading-class pb-4 leading-normal text-light-title">
-                        Elevate Your Strategies with Precision and Innovation
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal text-light-content mb-4">
-                            Harness the power of advanced analytics and technology to optimize insurance, reinsurance,
-                            and
-                            investment decisions, ensuring you stay ahead in a rapidly evolving market. Our solutions
-                            provide
-                            you with the insights needed to make data-driven decisions, reduce risks, and enhance
-                            profitability.
-                            By leveraging state-of-the-art tools and methodologies, we help you navigate the
-                            complexities of
-                            the
-                            financial landscape, adapt to changing conditions, and seize new opportunities for growth.
-                            Stay
-                            competitive and resilient with our comprehensive suite of services designed to meet the
-                            unique
-                            needs
-                            of your business.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
+
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-20">
                 <div class="relative p-1 lg:basis-1/2">
                     <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
@@ -47,13 +15,14 @@
                         class="rounded-lg" src="/img/boat.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <label class="text-md leading-normal font-regular text-light-highlight font-bold">Reinforce
-                        investor confidence</label>
-                    <h2 class="subheading-class pb-4 leading-normal text-light-title">
-                        Unlock Greater Efficiency and Insight with Our Expertise.
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal text-light-content mb-4">
+                    <h1 class="my-3 heading-class text-left">
+                        Unlock Greater Efficiency & <br>
+                        <span class="text-brand-primary">
+                            Insight with Our Expertise.
+                        </span>
+                    </h1>
+                    <div class="text-black pb-5 md:pb-6">
+                        <p class="text-xs leading-normal text-black mb-4">
                             Streamline your operations and enhance decision-making with our integrated solutions in risk
                             management, actuarial services, and tech advancements tailored for your industry needs. Our
                             comprehensive approach ensures that you have the tools and insights necessary to navigate
