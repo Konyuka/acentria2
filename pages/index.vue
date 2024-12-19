@@ -184,7 +184,7 @@ onMounted(() => {
                   <div class="flex flex-col justify-center lg:basis-1/2">
                     <div class="pb-4">
                       <h2 class="text-2xl font-semibold text-black">
-                        Our Corporate <span class="text-brand-primary">Culture</span>
+                        Our <span class="text-brand-primary">Culture</span>
                       </h2>
                       <h3 class="text-xl font-semibold">
                         The Acentria <span class="text-brand-primary">Way!</span>

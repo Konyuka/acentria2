@@ -1,8 +1,8 @@
 <script setup>
 
 const bannerContent = ref({
-    subtitle: 'Our Products',
-    title: 'Insurance Products Catalogue',
+    subtitle: 'Risk',
+    title: 'Explore Risk Areas',
     image: 'https://images.pexels.com/photos/2265634/pexels-photo-2265634.jpeg?auto=compress&cs=tinysrgb&w=600'
 })
 
@@ -17,7 +17,7 @@ const exploreProducts = ref({
 
 const products = ref([
     {
-        heading: 'Personal <span class="text-brand-primary">Insurance</span>',
+        heading: 'Personal <span class="text-brand-primary">Risk</span>',
         image: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         items: [
             {
@@ -89,7 +89,7 @@ const products = ref([
         ]
     },
     {
-        heading: 'Vehicle <span class="text-brand-primary">Insurance</span>',
+        heading: 'Vehicle <span class="text-brand-primary">Risk</span>',
         image: 'https://images.pexels.com/photos/1397751/pexels-photo-1397751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         items: [
             {
@@ -191,7 +191,7 @@ const products = ref([
         ]
     },
     {
-        heading: 'Property <span class="text-brand-primary">Insurance</span>',
+        heading: 'Property <span class="text-brand-primary">Risk</span>',
         image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600',
         items: [
             {
@@ -239,7 +239,7 @@ const products = ref([
         ]
     },
     {
-        heading: 'Business <span class="text-brand-primary">Insurance</span>',
+        heading: 'Business <span class="text-brand-primary">Risk</span>',
         image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         items: [
             {
@@ -275,7 +275,7 @@ const products = ref([
         ]
     },
     {
-        heading: 'Financial <span class="text-brand-primary">Insurance</span>',
+        heading: 'Financial <span class="text-brand-primary">Risk</span>',
         image: 'https://images.pexels.com/photos/210990/pexels-photo-210990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         items: [
             {
@@ -330,7 +330,7 @@ const products = ref([
     <section class="bg-white">
         <BannerMain :content="bannerContent" />
 
-        <div class="bg-white w-full h-full">
+        <!-- <div class="bg-white w-full h-full">
             <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
                 <div class="mx-auto mb-3 font-sans">
                     <h1 class="mt-2 heading-class text-black">
@@ -347,7 +347,7 @@ const products = ref([
                     with knowing you are protected.
                 </p>
             </div>
-        </div>
+        </div> -->
 
         <div v-for="product in products" class="container py-5 bg-white">
             <div class="mx-auto mb-3 font-sans">

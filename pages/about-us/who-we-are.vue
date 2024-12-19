@@ -54,35 +54,72 @@ const features = [
         title: 'Insurance',
         description: 'Mitigating Risks, Maximizing Opportunities',
         url: '/acentria-group-insurance',
+        items: [
+            'Acentria Risk Advisory',
+            'Broking and Risk Transfer',
+            'Risk & Insurance Management advisory',
+            'Claims Management & Advisory',
+            'Risk Surveys & Advisory'
+        ]
     },
     {
         icon: 'fas fa-shield-virus',
         title: 'Reinsurance',
         description: 'Protecting Your Assets, Empowering Your Future',
         url: '/acentria-group-reinsurance',
+        items: [
+            'Reinsurance & Risk Retention',
+            'Treaty & Facultative',
+            'Optimisation',
+            'Risk Analytics',
+            'Claims Management & Advisory',
+            'Return on Risk Capital Adjustment'
+        ]
     },
     {
         icon: 'fas fa-calculator',
         title: 'Actuarial',
         description: 'Empowering Decisions, Simplifying Complexity',
         url: '/acentria-group-actuarial',
+        items: [
+            'Actuarial Services',
+            'Data, Analytics & Benchmarking',
+            'Enterprise Risk Management',
+            'Catastrophic Modelling',
+            'Financial analysis',
+            'Insurance consulting'
+        ]
     },
     {
         icon: 'fas fa-laptop-code',
         title: 'Technology',
         description: 'Building prosperity, Securing Futures',
         url: '/contact-acentria-group',
+        items: [
+            'Network Security Services',
+            'Vulnerability assessment & Penetration testing services',
+            'Client and Market Technologies',
+            'Cloud to cloud solutions',
+            'AI-Driven Software development',
+            'IT consultancy'
+        ]
     },
     {
         icon: 'fas fa-dollar-sign',
         title: 'Investment',
         description: 'Protecting Your Assets, Empowering Your Future',
         url: '/acentria-group-investment',
+        items: [
+            'Investment Advisory',
+            'Portfolio Management',
+            'Wealth Management',
+            'Financial Planning',
+            'Asset Allocation'
+        ]
     },
-
 ]
 
-onMounted(()=>{
+onMounted(() => {
     // scrollToSetScroll();
     // const element = document.getElementById('mission-tabs')
     // const scrollTo = (element) => {
@@ -126,15 +163,17 @@ onMounted(()=>{
         </div>
 
         <div class="bg-white py-1 font-sans mt-auto">
-            <div class="container mx-auto flex lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+
+            <div class="container mx-auto flex lg:flex-row flex-col my-8 lg:my-4 lg:gap-2">
                 <div class="relative py-4 lg:basis-1/2 scale-90">
-                    <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="400"
+                    <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="300"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="/img/cover.jpg" />
                 </div>
+
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <label class="text-base leading-normal font-regular text-light-highlight font-bold">Acentria
-                        Group</label>
+                    <!-- <label class="text-base leading-normal font-regular text-light-highlight font-bold">Acentria
+                        Group</label> -->
                     <h2 class="heading-class mb-4">
                         Who <span class="text-brand-primary">We Are</span>
                     </h2>
@@ -148,23 +187,57 @@ onMounted(()=>{
                             insurance optimization, and investment advisory ensures you’re always ahead of the curve.
                             When you partner with Acentria Group, you’re not just accessing solutions—you’re unlocking a
                             world of knowledge and resources designed to mitigate risks, maximize opportunities, and
-                            achieve your financial goals. Trust us to turn challenges into opportunities and ambition
-                            into achievement.
+                            achieve your financial goals.
                         </p>
                     </div>
                 </div>
             </div>
 
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                <div class="relative py-4 lg:basis-1/2">
+                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
+                        data-nimg="1" style="color: transparent; object-fit: contain"
+                        class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/handshake.jpg" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2">
+                    <div class="text-light-content pb-5 md:pb-6 py-auto">
+                        <h2 class="text-2xl font-semibold text-black">
+                            Things that <span class="text-brand-primary">Inspire Us</span>
+                        </h2>
+                        <h3 class="text-xl font-semibold pb-4">
+                            <span class="text-brand-primary">#</span> Empower <span class="text-brand-primary">#</span>
+                            Innovate <span class="text-brand-primary">#</span> Prosper
+                        </h3>
+                        <p class="text-sm leading-normal text-light-content !text-inherit mb-4">
+                            At Acentria Group, we are driven by our mantra: <br> <b>Empower, Innovate, Prosper.</b> <br>
+                            We find inspiration in empowering individuals, businesses, and communities to achieve their
+                            dreams. Innovation fuels our creativity, helping us craft transformative solutions that
+                            tackle
+                            today’s challenges. Prosperity motivates us to create lasting impact—building success
+                            stories
+                            that uplift not just our clients but society as a whole. Together, we turn possibilities
+                            into
+                            progress,
+                            delivering excellence every step of the way.
+                        </p>
+                        <NuxtLink href="/things-that-inspire-us"
+                            class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                            Learn More
+                            <i class="fas fa-arrow-right text-primary ml-2"></i>
+                        </NuxtLink>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="bg-white px-6 py-1 font-sans">
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative py-4 lg:basis-1/2 content-center">
-                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="250" decoding="async"
                             data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                             src="/img/what.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <label class="text-base leading-normal font-regular text-light-highlight font-bold">Our
-                            Services</label>
                         <h2 class="heading-class mb-4">
                             What <span class="text-brand-primary">We Do</span>
                         </h2>
@@ -183,21 +256,43 @@ onMounted(()=>{
                 </div>
             </div>
 
+            <div class="container">
+
+                <h2 class="heading-class mb-4">
+                    Our <span class="text-brand-primary">Capabilities</span>
+                </h2>
+            </div>
+
             <div class="container flex lg:flex-row flex-col md:gap-14 gap-16 justify-between my-5 pb-5">
+
                 <div class="w-full">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-12 gap-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
                         <NuxtLink :href="feature.url" v-for="feature in features"
-                            class="button-animation flex p-4 shadow-md border-l-4 border-brand-primary">
+                            class="button-animation flex px-3 py-2 shadow-md border-l-4 border-brand-primary">
                             <div class="mr-6">
                                 <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                             </div>
                             <div>
-                                <p class="subheading-class text-left">
-                                    {{ feature.title }}
-                                </p>
-                                <p class="mt-2 font-normal text-xs leading-normal text-black text-left">
-                                    {{ feature.description }}
-                                </p>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="subheading-class text-left">
+                                        {{ feature.title }}
+                                    </p>
+
+                                </div>
+
+                                <!-- <div class="grid grid-cols-2 gap-1 mt-2">
+                                    <span v-for="item in feature.items" class="text-[12px] text-black font-regular">
+                                        <i class="fas fa-check text-brand-primary mr-1 text-[10px]"></i> {{ item }}
+                                    </span>
+                                </div> -->
+
+                                <div class="mt-1 text-black">
+                                    <p>
+                                        {{ feature.description }}
+                                    </p>
+                                    <!-- Learn more <i class="ml-2 fas fa-arrow-right text-brand-primary"></i> -->
+                                </div>
+
                             </div>
                         </NuxtLink>
                     </div>
@@ -268,43 +363,6 @@ onMounted(()=>{
                     </div>
                 </div>
             </div>
-
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                        data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="w-full h-[330px] shadow-2xl rounded-lg !object-cover" src="/img/handshake.jpg" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                        <h2 class="text-2xl font-semibold text-black">
-                            Things that <span class="text-brand-primary">Inspire Us</span>
-                        </h2>
-                        <h3 class="text-xl font-semibold pb-4">
-                            <span class="text-brand-primary">#</span> Empower <span class="text-brand-primary">#</span>
-                            Innovate <span class="text-brand-primary">#</span> Prosper
-                        </h3>
-                        <p class="text-sm leading-normal text-light-content !text-inherit mb-4">
-                            At Acentria Group, we are driven by our mantra: <br> <b>Empower, Innovate, Prosper.</b> <br>
-                            We find inspiration in empowering individuals, businesses, and communities to achieve their
-                            dreams. Innovation fuels our creativity, helping us craft transformative solutions that
-                            tackle
-                            today’s challenges. Prosperity motivates us to create lasting impact—building success
-                            stories
-                            that uplift not just our clients but society as a whole. Together, we turn possibilities
-                            into
-                            progress,
-                            delivering excellence every step of the way.
-                        </p>
-                        <NuxtLink href="/things-that-inspire-us"
-                            class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                            Learn More
-                            <i class="fas fa-arrow-right text-primary ml-2"></i>
-                        </NuxtLink>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
     </section>

@@ -257,9 +257,27 @@ const slides = ref([
 
 <template>
     <main>
-        <div>
+        <div class="bg-white">
             <Carousel :slides="slides" />
             <!-- <ServiceHero2 :content="content" /> -->
+
+            <div class="bg-white">
+                <div class="container">
+                    <h1 class="my-5 heading-class text-left">
+                        Overview <br> <span class="text-brand-primary"> Reinsurance </span>
+                    </h1>
+                    <p
+                        class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                        Acentria re is one of the leading independent specialists (re)insurance broking firms operating
+                        in Kenya, and international markets.
+                        Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage
+                        services and analytical expertise for our clients worldwide. Our unique ability to navigate an
+                        ever-changing market with overwhelming force while steadily executing the most valuable
+                        solutions sets us apart and demonstrates our overarching commitment to helping our clients
+                        succeed.
+                    </p>
+                </div>
+            </div>
 
             <div class="py-5 text-center bg-white">
                 <h2 class="font-sans tracking-normal text-2xl text-black font-semibold leading-tight lg:leading-tight">
@@ -275,7 +293,7 @@ const slides = ref([
                 </section>
             </div>
 
-            <section id="" class="relative py-8 bg-black/60 text-center">
+            <section id="" class="relative py-8 bg-black text-center">
                 <div class="container px-4">
                     <h2
                         class="font-sans tracking-normal text-2xl text-white font-semibold leading-tight lg:leading-tight">

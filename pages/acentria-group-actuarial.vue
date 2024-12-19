@@ -180,11 +180,33 @@ const slides = ref([
 ])
 
 
+const systems = ref([
+    {
+        name: 'Acent<span class="text-brand-primary">Re </span>',
+        link: '/reinsurance/acentre-reinsurance-solution',
+        image: 'https://images.pexels.com/photos/5699447/pexels-photo-5699447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        content: 'AcentRe is an innovative online software solution that transforms how insurers understand and manage risk, optimize returns, and plan reinsurance strategies.',
+    },
+    {
+        name: 'Data Analytics<span class="text-brand-primary"> Tool</span>',
+        link: '/reinsurance/reinsurance-data-analytics-tool',
+        image: 'https://images.pexels.com/photos/210679/pexels-photo-210679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        content: 'Our data analytics platform offers features to help the organizations leverage data-driven insights for improved risk management & decision-making',
+    },
+    {
+        name: 'Acent-<span class="text-brand-primary">IFRS17</span>',
+        link: '/reinsurance/reinsurance-data-analytics-tool',
+        image: 'https://images.pexels.com/photos/210679/pexels-photo-210679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        content: 'Our IFRS 17 solution ensures compliance with standards, providing comprehensive tools for financial reporting and risk management',
+    },
+])
+
+
 </script>
 
 <template>
     <main>
-        <div>
+        <div class="bg-white">
             <div>
 
                 <Carousel :slides="slides" />
@@ -194,6 +216,24 @@ const slides = ref([
                 <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
 
                 <!-- <Hero2 :data="heroContent" /> -->
+
+
+                <div class="bg-white">
+                    <div class="container">
+                        <h1 class="my-5 heading-class text-left">
+                            Overview <br> <span class="text-brand-primary"> Actuarial & Financial Services </span>
+                        </h1>
+                        <p
+                            class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
+                            Acentria Actuarial & financial services is one of the leading Actuarial independent
+                            specialists’ firms operating in Kenya, and international markets.
+                            Our Actuarial team lead by a signing Actuary having expertise in using financial, risk, and
+                            capital modelling to help clients manage the complexities that are inherent in business. We
+                            use a blend of technical and commercial expertise to provide insight, assurance and enable
+                            effective insightful decision-making by business leaders.
+                        </p>
+                    </div>
+                </div>
 
                 <div class="py-5 text-center bg-white">
                     <h2
@@ -210,7 +250,42 @@ const slides = ref([
                     </section>
                 </div>
 
-                <section id="" class="relative py-8 bg-black/60 text-center">
+                <div class="bg-white pb-6">
+                    <div class="container">
+                        <h1 class="my-3 heading-class text-left">
+                            Overview <br> <span class="text-brand-primary"> Actuarial Systems</span>
+                        </h1>
+                    </div>
+
+                    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-4">
+
+                        <article v-for="service in systems"
+                            class="button-animation shadow-2xl border-l-2 px-4 py-2 border-brand-primary group flex flex-col items-start justify-between">
+                            <NuxtLink class="w-full" :to="service.link">
+                                <div class="max-w-full">
+
+                                    <div class="font-sans group relative">
+                                        <div class="flex">
+                                            <h3 v-html="service.name"
+                                                class="text-xl font-semibold mt-3 line-clamp-2 subheading-class leading-normal text-black transition-colors group-hover:text-brand-primary">
+                                            </h3>
+                                            <i class="fas fa-trademark"></i>
+                                        </div>
+                                        <p class="mt-2 text-xs leading-normal text-black">
+                                            {{ service.content }}
+                                        </p>
+                                    </div>
+
+                                    <span class="text-black">Learn More <i
+                                            class="mt-2 fas fa-arrow-right ml-3"></i></span>
+                                </div>
+                            </NuxtLink>
+                        </article>
+
+                    </div>
+                </div>
+
+                <section id="" class="relative py-8 bg-black text-center">
                     <div class="container px-4">
                         <h2
                             class="font-sans tracking-normal text-3xl text-white font-semibold leading-tight lg:leading-tight">

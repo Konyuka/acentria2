@@ -47,7 +47,7 @@ const features = [
 
         <div class="2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
             <div class="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
-                <div class="w-full lg:w-6/12">
+                <div class="w-full lg:w-6/12 items-center">
                     <h1 class="w-full heading-class text-left">
                         Our Diverse <span class="text-brand-primary">Lines of Business</span>
                     </h1>
@@ -57,12 +57,12 @@ const features = [
                         Technology Solutions. Each of these areas is supported by a team of dedicated professionals who
                         are committed to delivering innovative solutions and exceptional service.
                         <br><br>
-                        Our Insurance division provides comprehensive coverage options to protect our clients' assets
+                        <!-- Our Insurance division provides comprehensive coverage options to protect our clients' assets
                         and well-being. Our Reinsurance services help manage and mitigate risk effectively. The
                         Actuarial Services team uses advanced analytics to assess risk and design tailored solutions.
                         Our Broking services facilitate the best deals through strong relationships with insurers.
                         Finally, our Technology Solutions drive innovation and enhance our service offerings through
-                        cutting-edge technology.
+                        cutting-edge technology. -->
                     </p>
                 </div>
                 <div class="w-full lg:w-6/12">

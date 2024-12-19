@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
     <div>
         <div class="bg-white">
-            <div class="container mx-auto pb-16">
+            <div class="container mx-auto pb-16 pt-5">
                 <div class="container mx-auto max-w-6xl">
                     <h2 v-html="leftTitle" class="text-2xl font-semibold text-black sm:pb-4 pt-0"></h2>
                     <div

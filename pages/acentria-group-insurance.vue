@@ -233,6 +233,15 @@ const exploreProducts = ref({
     content: 'At Acentria we offers a wide variety of insurance options for peace of mind for your business, on the road, under your roof, and in your daily life.',
 })
 
+const exploreRisks = ref({
+    orientation: 'lg:flex-row flex-col',
+    heading: 'Explore <span class="text-brand-primary">Risk Areas</span>',
+    subheading: '',
+    image: '/img/carinsurance.jpg',
+    link: '/insurance-products',
+    content: 'At Acentria we help clients to identify, mitigate and transfer an evolving range of risks and deliver solutions that safegueard people and businesses to recover from financial losses due to accidents, illnesses, natural disasters, and other unforeseen events giving you a financial security.',
+})
+
 const exploreClaims = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Learn More <span class="text-brand-primary">About Claims</span>',
@@ -321,7 +330,7 @@ const slides = ref([
 
 <template>
     <main>
-        <div>
+        <div class="">
             <Carousel :slides="slides" />
             <!-- <ServiceHero2 :content="content" /> -->
 
@@ -330,7 +339,7 @@ const slides = ref([
                     <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
                         <div>
                             <h1 class="my-5 heading-class text-left">
-                                Insurance &<span class="text-brand-primary"> <br> Risk Management</span>
+                                Overview <br> <span class="text-brand-primary"> Insurance & Risk </span>
                             </h1>
                             <p
                                 class="text-left font-sans tracking-normal text-xs text-gray-900 leading-tight lg:leading-tight pb-2">
@@ -347,9 +356,14 @@ const slides = ref([
                                 your way.
                             </p>
                         </div>
+
+                        
+                        
                     </div>
                 </div>
             </div>
+            
+            <ContentPic :content="exploreRisks" />
 
             <div class="bg-white">
                 <div class="py-5 text-left container">
@@ -380,7 +394,7 @@ const slides = ref([
                         <div class="mt-5 space-y-10">
                             <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 <div v-for="help in helps" :key="help.heading"
-                                    class="bg-white/40 button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                                    class="bg-white button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                                     <a class="w-full" href="#">
                                         <div class="max-w-full">
                                             <div class="!text-left font-sans group relative">
@@ -406,7 +420,7 @@ const slides = ref([
                 </div>
             </section>
 
-            <ContentPic :content="exploreProducts" />
+            <!-- <ContentPic :content="exploreProducts" /> -->
 
             <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
 

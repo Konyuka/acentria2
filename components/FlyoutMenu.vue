@@ -54,7 +54,7 @@
                                 <div class="pt-2 grid grid-cols-12 gap-2 max-w-full px-2">
                                     <div class="col-span-5">
                                         <!-- <h1 class="ml-2 font-semibold text-lg" v-html="currentMainMenu"></h1> -->
-                                        <div class="relative pt-2 flex flex-col gap-2 mt-7">
+                                        <div class="relative pt-2 flex flex-col gap-1 mt-7">
                                             <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
                                                 <p @click="setSubmenu(item, index)"
                                                     :class="[currentSubmenu === item.name ? 'text-brand-primary bg-red-100' : '']"
@@ -64,11 +64,7 @@
                                                 </p>
                                             </div>
                                             <div v-show="currentMenu === 'Insurance'">
-                                                <!-- <div class="-ml-6 my-2 font-semibold text-lg text-black">
-                                                    Special <span class="text-brand-primary">Lines Insurance</span>
-                                                </div> -->
-
-                                                <div class="flex flex-col gap-2">
+                                                <div class="flex flex-col gap-1">
                                                     <div v-show="item.type" v-for="(item, index) in currentMenuItems">
                                                         <p @click="setSubmenu(item, index)"
                                                             :class="[currentSubmenu === item.name ? 'text-black bg-red-100' : '']"
@@ -86,14 +82,13 @@
                                     <div
                                         class="col-span-7 relative flex flex-col gap-1 border-l-2 border-red-600 h-full pl-5">
                                         <!-- <h1 class="font-semibold text-lg" v-html=currentLinksHeading></h1> -->
-                                        <div class="grid grid-cols-2 gap-3 mt-6">
+                                        <div class="grid grid-cols-2 mt-6">
                                             <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
                                                 :key="submenuItem.name"
                                                 class="group hover:cursor-pointer hover:text-black hover:bg-red-100 transition duration-700 rounded-md p-2 font-semibold text-[15px]">
                                                 <div class="flex justify-between">
                                                     {{ submenuItem.name }}
-                                                    <i
-                                                        class="text-brand-primary mr-2 fas fa-angle-right text-[10px] mt-1.5"></i>
+                                                    <i class="text-brand-primary mr-2 fas fa-angle-right text-[10px] mt-1.5"></i>
                                                 </div>
                                                 <p class="text-[10px]">
                                                     {{ submenuItem.description }}
@@ -398,7 +393,7 @@ const InsuranceMenus = ref([
         linksHeading: 'My Personal <span class="text-brand-primary">Insurance Covers<span/>',
         mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
         mainHeading: 'Insurance & <span class="text-brand-primary">Risk Management<span/>',
-        mainDescription: 'Acentria is one of the leading independent specialists insurance broking firms operating in Kenya, and international markets. Acentria’s dedicated risk teams provide a combination of specialized insurance brokerage services and analytical expertise for our clients worldwide. Our unique ability to navigate an ever- changing market with overwhelming force while steadily executing the most valuable solutions sets us apart and demonstrates our overarching commitment to helping our clients succeed.',
+        mainDescription: 'Acentria is one of the leading independent specialists insurance broking firms operating in Kenya, and international markets. Acentria’s dedicated risk teams provide a combination of specialized insurance brokerage services and analytical expertise for our clients worldwide.',
         subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security. ',
@@ -478,17 +473,17 @@ const InsuranceMenus = ref([
                 link: '/insurance/biasahara-cover',
             },
             {
-                name: 'General Liability Insurance',
+                name: 'General Liability',
                 description: 'Shield your business from legal claims and financial losses.',
                 link: '/insurance/general-liability-insurance',
             },
             {
-                name: 'Product Liability Insurance',
+                name: 'Product Liability',
                 description: 'Protect against claims related to product defects and liabilities.',
                 link: '/insurance/product-liability-insurance',
             },
             {
-                name: 'Commercial Property Insurance',
+                name: 'Commercial Property',
                 description: 'Safeguard your commercial property against damage, theft, and risks.',
                 link: '/insurance/commercial-property-insurance',
             },
@@ -543,21 +538,21 @@ const InsuranceMenus = ref([
             },
         ]
     },
-    {
-        type: 'special',
-        name: 'Marine Covers',
-        linksHeading: 'My Marine <span class="text-brand-primary">Insurance Covers<span/>',
-        subMenu: 'Why Marine <span class="text-brand-primary">Insurance?<span/>',
-        description: 'Comprehensive coverage for vessels, cargo, and marine operations.',
-        icon: 'fas fa-ship',
-        items: [
-            {
-                name: 'Marine Insurance',
-                description: 'Coverage for vessels, cargo, and marine operations.',
-                link: '/insurance/biasahara-cover',
-            },
-        ]
-    },
+    // {
+    //     type: 'special',
+    //     name: 'Marine Covers',
+    //     linksHeading: 'My Marine <span class="text-brand-primary">Insurance Covers<span/>',
+    //     subMenu: 'Why Marine <span class="text-brand-primary">Insurance?<span/>',
+    //     description: 'Comprehensive coverage for vessels, cargo, and marine operations.',
+    //     icon: 'fas fa-ship',
+    //     items: [
+    //         {
+    //             name: 'Marine Insurance',
+    //             description: 'Coverage for vessels, cargo, and marine operations.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //     ]
+    // },
 ])
 const ReinsuranceMenus = ref([
     {
@@ -565,7 +560,7 @@ const ReinsuranceMenus = ref([
         linksHeading: 'Reinsurance<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Reinsurance <span class="text-brand-primary">Products<span/>',
         mainHeading: '<span class="text-brand-primary">Reinsurance<span/>',
-        mainDescription: 'Acentria re is one of the leading independent specialists (re)insurance broking firms operating in Kenya, and international markets. Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage services and analytical expertise for our clients worldwide.Our unique ability to navigate an ever- changing market with overwhelming force while steadily executing the most valuable solutions sets us apart and demonstrates our overarching commitment to helping our clients succeed.',
+        mainDescription: 'Acentria re is one of the leading independent specialists (re)insurance broking firms operating in Kenya, and international markets. Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage services and analytical expertise for our clients worldwide.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Explore our comprehensive reinsurance services for risk management.',
@@ -618,7 +613,7 @@ const ReinsuranceMenus = ref([
         ]
     },
     {
-        name: 'Data & Modelling',
+        name: 'Data  Analytics',
         linksHeading: 'Data<span class="text-brand-primary"> & Modeling<span/>',
         subMenu: 'Data <span class="text-brand-primary">& Modelling<span/>',
         description: 'Leverage data-driven insights and advanced modelling techniques.',
@@ -634,6 +629,20 @@ const ReinsuranceMenus = ref([
                 description: 'Optimize reinsurance strategy with Acentre\'s comprehensive solutions.',
                 link: '/reinsurance/acentre-reinsurance-solution',
             },
+            {
+                name: 'Return On Risk Adjusted Capital',
+                description: 'Maximize financial performance with risk-adjusted capital services.',
+                link: '/reinsurance/return-on-risk-adjusted-capital',
+            },
+        ]
+    },
+    {
+        name: 'Modelling',
+        linksHeading: 'Data<span class="text-brand-primary"> & Modeling<span/>',
+        subMenu: 'Data <span class="text-brand-primary">& Modelling<span/>',
+        description: 'Leverage data-driven insights and advanced modelling techniques.',
+        icon: 'fas fa-database',
+        items: [
             {
                 name: 'Catastrophic Modelling',
                 description: 'Prepare for extreme events with our catastrophic modelling services.',
@@ -653,7 +662,7 @@ const ActuarialMenus = ref([
         linksHeading: 'Actuarial<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Actuarial <span class="text-brand-primary">Products<span/>',
         mainHeading: 'Actuarial & <span class="text-brand-primary">Financial Services<span/>',
-        mainDescription: 'Our Actuarial & financial is one of the leading Actuarial independent specialists’ firms operating in Kenya, and international markets. Our Actuarial team lead by a signing Actuary has expertise in using financial, risk, and capital modelling to help clients manage the complexities that are inherent in business. We use a blend of technical and commercial expertise to provide insight, assurance and enable effective insightful decision-making by business leaders.',
+        mainDescription: 'Our Actuarial & financial is one of the leading Actuarial independent specialists’ firms operating in Kenya, and international markets. Our Actuarial team lead by a signing Actuary has expertise in using financial, risk, and capital modelling to help clients manage the complexities that are inherent in business.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Explore our comprehensive actuarial consulting services for financial strategies.',
@@ -712,7 +721,7 @@ const InsightsMenus = ref([
         linksHeading: 'Actuarial<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Actuarial <span class="text-brand-primary">Products<span/>',
         mainHeading: 'Acentria\'s <span class="text-brand-primary">Insights<span/>',
-        mainDescription: 'Our Actuarial & financial is one of the leading Actuarial independent specialists’ firms operating in Kenya, and international markets. Our Actuarial team lead by a signing Actuary has expertise in using financial, risk, and capital modelling to help clients manage the complexities that are inherent in business. We use a blend of technical and commercial expertise to provide insight, assurance and enable effective insightful decision-making by business leaders.',
+        mainDescription: 'Acentria\'s Insights provide expert analysis and updates on the latest trends in insurance, reinsurance, actuarial, and technology sectors.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Explore our comprehensive actuarial consulting services for financial strategies.',
@@ -738,7 +747,23 @@ const InsightsMenus = ref([
                 description: 'Discover technological advancements in the insurance sector.',
                 link: '/insights/technology',
             },
-        ]    },
+            {
+                name: 'Events',
+                description: 'Stay informed about upcoming industry events and conferences.',
+                link: '/insights/events',
+            },
+            {
+                name: 'Case Studies',
+                description: 'Read detailed case studies on successful projects and solutions.',
+                link: '/insights/case-studies',
+            },
+            {
+                name: 'Reports',
+                description: 'Access comprehensive reports on industry trends and analysis.',
+                link: '/insights/reports',
+            },
+        ]
+    },
 ])
 
 const selectedIndex = ref(null)

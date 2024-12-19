@@ -45,7 +45,7 @@ const incentives = [
                 <h2 class="text-2xl font-semibold text-left">
                     <span class="text-brand-primary"> Acentria Group</span>
                 </h2>
-                <div class="relative mx-auto px-2">
+                <div class="relative mx-auto">
                     We drive the future of our partners through our, expertise, solutions by EMPOWERING the vision of
                     our clients and the communities through INNOVATIVE thinking and offering the best solutions to
                     enhance PROSPERITY!
@@ -56,6 +56,14 @@ const incentives = [
                     communities in which we serve.
 
                 </div>
+
+                <div class="my-3">
+                    <NuxtLink to="/about-us/who-we-are"
+                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
+                        Learn More <i data-v-02281a80="" class="fas fa-arrow-right text-primary ml-2"></i>
+                    </NuxtLink>
+                </div>
+
             </div>
         </div>
 
@@ -92,9 +100,9 @@ const incentives = [
                     <h2 class="text-2xl font-semibold text-left -ml-5">
                         Our <span class="text-brand-primary">Purpose</span>
                     </h2>
-                    <h3 class="font-semibold text-xl -ml-5 mb-3">
+                    <!-- <h3 class="font-semibold text-xl -ml-5 mb-3">
                         Our True North<span class="text-brand-primary"> that Guides Us!</span>
-                    </h3>
+                    </h3> -->
                 </div>
                 <div class="text-light-content">
                     <p class="mt-2 text-sm leading-normal text-gray-700 !text-inherit mb-4">

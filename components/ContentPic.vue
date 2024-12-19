@@ -23,9 +23,9 @@ const showButton = computed(() => {
                     <h2 v-html="content.heading" class="heading-class text-2xl font-semibold text-black"></h2>
                     <h3 v-html="content.subheading" class="font-semibold text-xl"></h3>
                 </div>
-                <div class="text-light-content pb-5 md:pb-6 py-auto">
+                <div class="text-black pb-5 md:pb-6 py-auto">
                     <p v-html="content.content"
-                        class="text-sm leading-normal font-regular text-light-content !text-inherit mb-4"></p>
+                        class="text-xs leading-normal font-regular text-black !text-inherit mb-4"></p>
                     <NuxtLink v-if="showButton" :to="content.link"
                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                         Learn More
