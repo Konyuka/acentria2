@@ -119,12 +119,14 @@ const openPofile = (member) => {
                 Team
             </h2>
             <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5">
-                This team is responsible for executing the company's vision, aligning day-to-day operations with
-                long-term goals, and fostering a culture of innovation and growth. By effectively managing resources and
-                ensuring the well-being of employees and clients alike, Acentria's Management Leadership continues to
-                enhance the company's reputation as a trusted partner in the insurance and financial industries. Their
-                commitment to operational excellence and customer satisfaction sets the foundation for Acentria's
-                continued success.
+                Acentria's Management Team is responsible for executing the company's vision and aligning day-to-day
+                operations with long-term strategic goals. They play a pivotal role in fostering a culture of
+                innovation, growth, and operational excellence.
+                By effectively managing resources and prioritizing the well-being of both employees and clients, the
+                Management Team ensures Acentria’s continued success and strengthens its reputation as a trusted partner
+                in the insurance and financial industries. Their commitment to delivering exceptional customer
+                satisfaction forms the cornerstone of Acentria's ongoing growth and achievement.
+
             </p>
         </div>
         <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-5">

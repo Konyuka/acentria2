@@ -69,20 +69,19 @@ const openProfile = (member) => {
 <template>
     <div class="container px-4 py-10">
         <div class="text-center">
-            <h2 id=""
-                class="heading-class text-brand-primary mb-2">
-                <span class="text-black">Board of</span>
-                Directors
+            <h2 id="" class="heading-class text-brand-primary mb-2">
+                <span class="text-black">Acentria's Board</span>
+                of Directors
             </h2>
             <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
                 data-v-inspector="components/Why.vue:47:21">
-                Acentria's Board of Directors is a team of highly experienced and accomplished professionals, dedicated
-                to steering the company towards sustainable growth and success.
-                The board oversees strategic decisions,
-                risk management, and corporate governance, ensuring that Acentria consistently meets the needs of its
-                clients while maintaining the highest standards of service and ethical conduct. Through strong
-                leadership and a commitment to fostering innovation, the board plays a crucial role in shaping the
-                company's vision and driving long-term success.
+                Acentria’s Board of Directors is composed of highly experienced and accomplished professionals, all
+                committed to guiding the company toward sustainable growth and long-term success. The board oversees
+                strategic decisions, risk management, and corporate governance, ensuring Acentria consistently meets
+                client needs while upholding the highest standards of service and ethical conduct.
+                With strong leadership and a focus on fostering innovation, the board plays a critical role in shaping
+                the company’s vision and driving its continued success.
+
             </p>
         </div>
         <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-4">

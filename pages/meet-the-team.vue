@@ -19,7 +19,7 @@ const profileBoardData = computed(() => {
 })
 
 const bannerContent = ref({
-    subtitle:'Meet the Team',
+    subtitle: 'Meet the Team',
     title: 'Governance & Leadership',
     image: 'https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg'
 })
@@ -86,12 +86,16 @@ const setMobileMenu = (event) => {
                 <div class="container">
                     <div
                         class="flex items-center bg-cover pt-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
+                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-left">
                             <div>
-                                <h2 id="" class="heading-class text-brand-primary mb-2">
-                                    <span class="text-black">Corporate</span>
-                                    Governance
-                                </h2>
+                                <h1 id="" class="heading-class text-brand-primary">
+                                    <span class="text-black">Leadership & </span>
+                                    Corporate Governance
+                                </h1>
+                                <h5 class="!capitalize text-lg mb-2 font-semibold">
+                                    Transforming to <span class="text-brand-primary">become more responsible</span>
+                                </h5>
+
                                 <p class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
 
                                     At Acentria Group, corporate governance is more than a policy—it’s a way of life. It
@@ -106,43 +110,180 @@ const setMobileMenu = (event) => {
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-8 lg:gap-16">
-                <div class="relative p-4 lg:basis-1/2"><NuxtImg alt="Image of Risk Management" loading="lazy" width="500"
-                        height="350" decoding="async" data-nimg="1" src="/img/award.jpg"
-                        style="color: transparent; object-fit: contain;" class="rounded-lg" /></div>
+
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
+                <div class="relative p-4 lg:basis-1/2">
+                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="800" decoding="async"
+                        data-nimg="1"
+                        src="https://images.pexels.com/photos/3832684/pexels-photo-3832684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 id="" class="heading-class pb-4 ">
-                        <span class="text-brand-primary">Governance</span>
+                        Corporate <span class="text-brand-primary">Governance</span>
                     </h2>
                     <div class="text-light-content pb-5 ">
                         <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
 
-                            <span>
-                                • <b>Leadership Rooted in Integrity:</b> Our leaders exemplify ethical conduct,
-                                inspiring
-                                confidence and setting the standard for decision-making across the organization. <br>
-                                • <b>Transparent and Accountable Practices:</b> We operate with openness, ensuring that
-                                our
-                                stakeholders have clear insights into our objectives, performance, and impact. <br>
-                                • <b>Sustainability at Our Core:</b> Corporate governance at Acentria integrates
-                                environmental,
-                                social, and governance (ESG) principles to create lasting impact for our communities,
-                                partners, and the planet.
-
-                            </span> <br><br>
-                            Through steadfast adherence to these principles, we reinforce our commitment to empowering
-                            dreams, driving innovation, and fostering prosperity for all.
-
+                            At Acentria Group, we are committed to upholding the highest standards of corporate
+                            governance, ensuring accountability, transparency, and ethical conduct in every aspect of
+                            our operations. Our governance framework is designed to support long-term value creation,
+                            foster trust with stakeholders, and ensure that we act responsibly in all our business
+                            dealings.
+                            <br><br>
+                            We adhere to robust policies and practices that promote integrity, manage risks effectively,
+                            and safeguard the interests of our clients, employees, shareholders, and the communities we
+                            serve. Our leadership team, alongside the Board of Directors, plays a vital role in steering
+                            the company toward sustainable growth while maintaining compliance with all regulatory
+                            requirements and industry standards.
+                            <br><br>
+                            Through effective corporate governance, we strive to maintain a culture of excellence,
+                            responsibility, and transparency—empowering us to build lasting relationships and deliver
+                            consistent, high-quality results.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="container">
-                <h2 id="" class="heading-class pb-4 ">
-                    <span class="text-brand-primary">Our Governance Policies</span>
-                </h2>
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col py-2 lg:gap-16">
+                <div class="relative p-4 lg:basis-1/2">
+                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="200" decoding="async"
+                        data-nimg="1"
+                        src="https://images.pexels.com/photos/66100/pexels-photo-66100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2">
+                    <h2 id="" class="heading-class pb-4 ">
+                        Corporate Governance <span class="text-brand-primary">Philosophy</span>
+                    </h2>
+                    <div class="text-light-content pb-5 ">
+                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            Our business strategy is powered by our strong commitment to good governance, which goes
+                            beyond compliance and statutory norms. We believe that purpose-led corporate governance and
+                            ethics-led corporate behaviour are essential to our success.
+                            <br><br>
+                            Our business strategy is pillared around the twin approach of being structured as a group of
+                            entities, each with its own individual management and systems, while also concurrently
+                            functioning as a single unit oriented towards our collective purpose.
+                            <br><br>
+                            We draw from the insights and expertise of our illustrious and proficient directors and are
+                            able to continuously predict and proactively manage our opportunities and risks to protect
+                            and enhance our business value.
+                        </p>
+                    </div>
+                </div>
             </div>
+
+
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
+                <div class="relative p-4 lg:basis-1/2">
+                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="700" decoding="async"
+                        data-nimg="1"
+                        src="https://images.pexels.com/photos/885880/pexels-photo-885880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2">
+                    <h2 id="" class="heading-class pb-4 ">
+                        Our Governance <span class="text-brand-primary">Policies</span>
+                    </h2>
+                    <div class="text-light-content pb-5 ">
+                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            At Acentria Group, our governance policies are the cornerstone of our commitment to
+                            integrity, accountability, and transparency. We have established a robust framework to
+                            ensure that all operations are conducted with the highest ethical standards, in full
+                            compliance with legal and regulatory requirements.
+                            Our policies cover key areas, including:
+                            <br><br>
+                            <span>
+                                • <b>Board Oversight:</b> Clear guidelines for the roles and responsibilities of our
+                                Board of
+                                Directors, ensuring effective decision-making and strategic direction. <br>
+                                • <b>Risk Management:</b> Comprehensive strategies to identify, assess, and mitigate
+                                risks,
+                                safeguarding the interests of our clients, employees, and shareholders. <br>
+                                • <b>Compliance and Ethics:</b> A strong focus on maintaining compliance with laws and
+                                regulations, as well as promoting ethical conduct and corporate social responsibility.
+                                <br>
+                                • <b>Transparency and Accountability:</b> Practices that foster open communication,
+                                regular
+                                reporting, and accountability at every level of the organization. <br>
+                                • <b>Sustainability and Social Responsibility:</b> A commitment to responsible business
+                                practices that contribute to the well-being of our communities and the environment.
+                            </span>
+                            <br><br>
+                            These policies provide a framework that guides our operations, ensuring that we remain
+                            aligned with our values and consistently deliver on our promise of excellence and integrity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col py-2 lg:gap-16">
+                <div class="relative p-4 lg:basis-1/2">
+                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="400" decoding="async"
+                        data-nimg="1"
+                        src="https://images.pexels.com/photos/2801126/pexels-photo-2801126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2">
+                    <h2 id="" class="heading-class pb-4 ">
+                        Board <span class="text-brand-primary">Governance</span>
+                    </h2>
+                    <div class="text-light-content pb-5 ">
+                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            As we grow from strength to strength, we continue to raise the bar of performance across our
+                            governance practices. These practices range from our ground-breaking ESG commitments to
+                            best-in-class disclosure practices, Board independence, diversity and inclusion, alignment
+                            to globally accepted norms and policies, as well as our emphasis on running a
+                            digitally-enabled, technology-led business.
+                            <br><br>
+                            Our strong governance practices manifest our future transformation journey, with
+                            ‘responsible change’ as a core mandate. It is our constant endeavour to not only stretch
+                            ourselves more to ensure enhanced growth and value creation but also set newer benchmarks
+                            for the industry and peers. We continue to be change-makers in everything we do, with good
+                            governance as the cornerstone that empowers us in our transformational efforts.
+                            <br><br>
+                            Our Board ensures the implementation of the strategic objectives of the Company. It guides
+                            the management to fulfil the commitments made to various stakeholders while upholding the
+                            principles of ethical business conduct and responsible growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
+                <div class="relative p-4 lg:basis-1/2">
+                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="400" decoding="async"
+                        data-nimg="1"
+                        src="https://images.pexels.com/photos/1578750/pexels-photo-1578750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                </div>
+                <div class="flex flex-col justify-center lg:basis-1/2">
+                    <h2 id="" class="heading-class pb-4 ">
+                        ESG <span class="text-brand-primary">Governance</span>
+                    </h2>
+                    <div class="text-light-content pb-5 ">
+                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            As part of our strong and sustained commitment to ESG, we have implemented a uniform ESG
+                            governance structure across the organization. The ESG Committee, together with our Group
+                            Sustainability and ESG function, is mandated with the responsibility to activate, mainstream
+                            and monitor initiatives under the ‘Transforming for Good’. We have also established
+                            dedicated forums for regular management and oversight at all levels.
+                            In conducting its business, the Board is supported by:
+                            <br><br>
+                            <span>
+                                • Established Committees <br>
+                                • Risk Management Framework <br>
+                                • Acentria Group Sustainability Framework <br>
+                                • Code of Business Conduct and Ethics, and various other policies and practices adopted
+                                by the Group
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
         <div v-if="profileBoardModal" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"
@@ -202,7 +343,8 @@ const setMobileMenu = (event) => {
                                                     <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                         <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                                                             <div class="flex">
-                                                                <NuxtImg class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
+                                                                <NuxtImg
+                                                                    class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
                                                                     :src="profileBoardData.image" alt="" />
                                                                 <div class="mt-14 sm:ml-6 sm:flex-1">
                                                                     <div>
@@ -331,7 +473,8 @@ const setMobileMenu = (event) => {
                                                     <div class="font-sans mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                                                         <div class="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
                                                             <div class="flex">
-                                                                <NuxtImg class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
+                                                                <NuxtImg
+                                                                    class="h-48 w-48 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
                                                                     :src="profileData.image" alt="" />
                                                                 <div class="mt-14 sm:ml-6 sm:flex-1">
                                                                     <div>

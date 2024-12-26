@@ -119,6 +119,52 @@ const features = [
     },
 ]
 
+const empower = ref([
+    {
+        title: 'For our clients',
+        description: 'We provide the tools, insights, and solutions they need to overcome challenges, seize opportunities, and achieve their goals.',
+    },
+    {
+        title: 'For our employees',
+        description: 'We cultivate an environment where ideas flourish, ambitions are realized, and diverse talents shine.',
+    },
+    {
+        title: 'For our communities',
+        description: 'We strive to create a lasting impact through initiatives that champion equality, inclusion, and sustainability.',
+    }
+])
+
+const innovate = ref([
+    {
+        title: 'Inspired by challenges',
+        description: 'We thrive on solving complex problems, thinking differently, and creating transformative solutions.',
+    },
+    {
+        title: 'Embracing technology and creativity',
+        description: 'We leverage cutting-edge tools and imaginative approaches to redefine possibilities and deliver value in bold, unexpected ways.',
+    },
+    {
+        title: 'Driven by resilience',
+        description: 'The evolving needs of our stakeholders motivate us to stay ahead of the curve and continuously innovate.',
+    }
+]);
+
+const prosper = ref([
+    {
+        title: 'Inspired by impact',
+        description: 'We are driven by the positive difference we make in the lives of our clients and their stakeholders.',
+    },
+    {
+        title: 'Measuring prosperity',
+        description: 'We evaluate success through lasting relationships, ethical practices, and our contributions to a sustainable future.',
+    },
+    {
+        title: 'Motivated by shared growth',
+        description: 'We are inspired by the collective success we achieve alongside our clients and partners.',
+    }
+]);
+
+
 onMounted(() => {
     // scrollToSetScroll();
     // const element = document.getElementById('mission-tabs')
@@ -136,7 +182,7 @@ onMounted(() => {
     <section class="bg-white">
         <BannerMain :content="bannerContent" />
 
-        <div class="container py-5">
+        <div class="container py-2">
             <div class="mt-5">
                 <h1 class="text-4xl font-semibold text-center">Welcome to <span class="text-brand-primary">Acentria
                         Group</span>
@@ -145,20 +191,98 @@ onMounted(() => {
                     Trust us to turn challenges into opportunities and ambition into achievement.
                 </h2>
                 <p class="mt-2 text-xs leading-normal text-center">
-                    Welcome to Acentria Group, a trusted global consultant that seeks to empower, innovate and steer
-                    growth and prosperity in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment
-                    Advisory. With a decade of expertise and an unwavering commitment to excellence, we craft tailored
-                    solutions that empower our clients to thrive. Our innovative approach to risk management, insurance
-                    optimization, and investment advisory ensures you’re always ahead of the curve. When you partner
-                    with Acentria Group, you’re not just accessing solutions—you’re unlocking a world of knowledge and
-                    resources designed to mitigate risks, maximize opportunities, and achieve your financial goals.
+                    At Acentria Group, we are a trusted global consultancy dedicated to empowering, innovating, and
+                    driving growth and prosperity. With expertise spanning Risk and Insurance, Reinsurance, Actuarial
+                    Services, Technology, and Investment Advisory, we bring over a decade of excellence to crafting
+                    tailored solutions that help our clients thrive.
+                    <br><br>
+                    Our innovative approach to risk management, insurance optimization, and investment advisory ensures
+                    you stay ahead of the curve. When you partner with Acentria Group, you gain access to a wealth of
+                    knowledge and resources designed to mitigate risks, maximize opportunities, and achieve your
+                    financial goals.
+                    <br><br>
+                    Let us help you navigate the complexities of today’s world and unlock your true potential.
                 </p>
-                <!-- <div class="mt-5"><a href="/meet-the-team"
-                        class="align-center button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        Download Our Company Profile 
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                    </a>
-                </div> -->
+            </div>
+        </div>
+
+        <div class="container py-2">
+            <div class="mt-5">
+                <h1 class="heading-class text-left"> <span class="text-brand-primary">Empower</span>
+                </h1>
+                <p class="mt-2 text-xs leading-normal text-left">
+                    At the core of our mission lies a profound belief in the potential of every individual and
+                    organization to achieve greatness. Empowerment is our driving force:
+                </p>
+                <div class="grid grid-cols-3 gap-5 my-5">
+                    <div v-for="item in empower" :key="item.title"
+                        class="bg-white p-5 shadow-md rounded-md text-left border-2 border-gray-200 !border-r-4 !border-r-red-600">
+                        <h3 class="subheading-class text-lg font-semibold">
+                            {{ item.title }}
+                        </h3>
+                        <p class="mt-2 text-sm leading-normal">
+                            {{ item.description }} </p>
+
+                    </div>
+                </div>
+                <p class="mt-2 text-xs leading-normal text-left">
+                    Every success story we help create fuels our passion to empower others in reaching their dreams.
+                    Together, we turn potential into progress and aspirations into achievements.
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-2">
+            <div class="mt-5">
+                <h1 class="heading-class text-left"> <span class="text-brand-primary">Innovate</span>
+                </h1>
+                <p class="mt-2 text-xs leading-normal text-left">
+                    Innovation is the spark that fuels progress, and we draw inspiration from the dynamic, ever-changing
+                    world around us.
+                </p>
+                <div class="grid grid-cols-3 gap-5 my-5">
+                    <div v-for="item in innovate" :key="item.title"
+                        class="bg-white p-5 shadow-md rounded-md text-left border-2 border-gray-200 !border-r-4 !border-r-red-600">
+                        <h3 class="subheading-class text-lg font-semibold">
+                            {{ item.title }}
+                        </h3>
+                        <p class="mt-2 text-sm leading-normal">
+                            {{ item.description }} </p>
+
+                    </div>
+                </div>
+                <p class="mt-2 text-xs leading-normal text-left">
+                    At Acentria Group, innovation drives us to push boundaries and unlock new potential for those we
+                    serve, transforming ideas into impactful realities.
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <div class="mt-5">
+                <h1 class="heading-class text-left"> <span class="text-brand-primary">Prosper</span>
+                </h1>
+                <p class="mt-2 text-xs leading-normal text-left">
+                    Prosperity is more than financial success—it is the flourishing of individuals, businesses, and
+                    communities. It is about winning together.
+                </p>
+                <div class="grid grid-cols-3 gap-5 my-5">
+                    <div v-for="item in prosper" :key="item.title"
+                        class="bg-white p-5 shadow-md rounded-md text-left border-2 border-gray-200 !border-r-4 !border-r-red-600">
+                        <h3 class="subheading-class text-lg font-semibold">
+                            {{ item.title }}
+                        </h3>
+                        <p class="mt-2 text-sm leading-normal">
+                            {{ item.description }} </p>
+
+                    </div>
+                </div>
+                <p class="mt-2 text-xs leading-normal text-left">
+                    The pursuit of prosperity inspires us to act responsibly and work toward a brighter, better future
+                    for all. At Acentria Group, we are fueled by the power of possibility and the promise of progress.
+                    Through Empower, Innovate, and Prosper, we remain dedicated to turning inspiration into action—every
+                    day, in everything we do.
+                </p>
             </div>
         </div>
 
@@ -348,16 +472,112 @@ onMounted(() => {
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                At Acentria Group, our journey is a testament to resilience, vision, and the boundless
-                                possibilities that come with dedication. From our humble beginnings, we have evolved,
-                                adapting to the changing times while staying true to our mission of empowering
-                                individuals, businesses, and communities.
-                                Our growth is deeply rooted in the dreams we nurture—both for our clients and for our
-                                team. By championing equal opportunities, we’ve built a culture where everyone can
-                                contribute and thrive, laying the foundation for shared success.
-                                Through strategic partnerships and impactful collaborations, we’ve worked hand in hand
-                                with our stakeholders to strengthen foundations and achieve sustainable progress.
-                                Together, we are shaping a future defined by resilience and shared prosperity.
+                                At Acentria Group, our journey is a testament to resilience, vision, and the limitless
+                                possibilities that come with dedication. From humble beginnings, we have evolved,
+                                continuously adapting to the changing times while remaining true to our mission of
+                                empowering individuals, businesses, and communities.
+                                <br><br>
+                                Our growth is rooted in the dreams we nurture—for our clients and our team. By
+                                championing equal opportunities, we’ve fostered a culture where everyone has the chance
+                                to contribute and thrive, laying the groundwork for shared success.
+                                Through strategic partnerships and impactful collaborations, we’ve worked closely with
+                                our stakeholders to strengthen foundations and achieve sustainable progress. Together,
+                                we are shaping a future defined by resilience, shared prosperity, and collective
+                                achievement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white px-6 py-1 font-sans">
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                    <div class="relative py-4 lg:basis-1/2 content-center">
+                        <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                            decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                            class="rounded-lg"
+                            src="https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+                    </div>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
+                        <label
+                            class="text-base leading-normal font-regular text-light-highlight font-bold">Management</label>
+                        <h2 class="heading-class mb-4">
+                            Our <span class="text-brand-primary">Leadership</span>
+                        </h2>
+                        <div class="text-black pb-5 md:pb-6">
+                            <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
+                                Our success is powered by a dynamic and dedicated leadership team. With diverse
+                                expertise and a shared commitment to excellence, our leaders play a crucial role in
+                                shaping our organization's vision, strategy, and culture.
+                                <br><br>
+                                Meet the visionaries and strategists driving innovation, growth, and success. Their
+                                unwavering dedication and forward-thinking approach ensure we remain at the forefront of
+                                our industry, consistently adapting to new challenges and seizing opportunities.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white px-6 py-1 font-sans">
+                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
+                    <div class="relative py-4 lg:basis-1/2 content-center">
+                        <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                            decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                            class="rounded-lg" src="/img/leadership.jpg" />
+                    </div>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
+                        <label
+                            class="text-base leading-normal font-regular text-light-highlight font-bold">Ethics</label>
+                        <h2 class="heading-class mb-4">
+                            Our <span class="text-brand-primary">Culture</span>
+                        </h2>
+                        <div class="text-black pb-5 md:pb-6">
+                            <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
+                                At Acentria Group, our corporate culture is the foundation of everything we do. It is
+                                the fertile soil where seeds of promise grow into prosperity. Guided by a clear purpose,
+                                our culture fosters a supportive, innovative, and dynamic environment where every
+                                employee has the opportunity to thrive.
+                                <br><br>
+                                The Acentria Way is more than just about the work we do—it’s about how we do it. Our
+                                values and principles shape every engagement, driving us to deliver excellence while
+                                empowering our people and the communities we serve.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white px-6 py-1 font-sans">
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+                    <div class="relative py-4 lg:basis-1/2 content-center">
+                        <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                            decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
+                            class="rounded-lg" src="/img/Acentria Logo-01.jpg" />
+                    </div>
+                    <div class="flex flex-col justify-center lg:basis-1/2">
+                        <label
+                            class="text-base leading-normal font-regular text-light-highlight font-bold">Acentria</label>
+                        <h2 class="heading-class mb-4">
+                            Our <span class="text-brand-primary">Brand</span>
+                        </h2>
+                        <div class="text-black pb-5 md:pb-6">
+                            <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
+                                At Acentria Group, our brand reflects who we are and what we stand for. Built on the
+                                core pillars of Integrity, Innovation, and Excellence, it embodies our unwavering
+                                commitment to empowering dreams, sparking imagination, and making a meaningful impact on
+                                our clients, employees, and communities.
+                                <br><br>
+                                Guided by The Acentria Way, we prioritize trust, transparency, and accountability in
+                                every interaction. Our brand is more than a logo—it’s a promise. A promise to deliver
+                                transformative solutions, champion sustainable growth, and uphold the highest standards
+                                of excellence.
+                                <br><br>
+                                Through empowerment, innovation, and a legacy of responsibility, our brand inspires
+                                confidence and fosters enduring partnerships that drive success for all.
+
                             </p>
                         </div>
                     </div>

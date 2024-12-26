@@ -30,7 +30,7 @@ const InsuranceBannerContent = ref({
   title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-normal lg:leading-normal"> Igniting Imagination </span>`,
   image: "/img/empower.jpeg",
   content:
-    "At Acentria Group, we propel prosperity to infinite possibilities.",
+    "At Acentria Group, we drive prosperity by unlocking infinite possibilities, empowering dreams, and igniting imagination to shape a brighter future.",
 });
 
 const mission = ref(null)
@@ -148,16 +148,14 @@ onMounted(() => {
                     <div class="flex flex-col justify-center lg:basis-1/2">
                       <div class="text-light-content pb-5 md:pb-6 py-auto">
                         <p class="text-sm leading-normal mb-4">
-                          Our success is driven by a dynamic and dedicated leadership team. Comprising individuals with
-                          diverse
-                          expertise and a shared commitment to excellence, our leaders play a pivotal role in shaping
-                          the vision,
-                          strategy, and culture of our organization. Meet the visionaries and strategists who lead us
-                          toward
-                          innovation, growth, and success. Their unwavering dedication and forward-thinking approach
-                          ensure that we
-                          remain at the forefront of our industry, continuously adapting to new challenges and
-                          opportunities.
+                          Our success is powered by a dynamic and dedicated leadership team. With diverse expertise and
+                          a shared commitment to excellence, our leaders play a crucial role in shaping our
+                          organization's vision, strategy, and culture.
+                          <br><br>
+                          Meet the visionaries and strategists driving innovation, growth, and success. Their unwavering
+                          dedication and forward-thinking approach ensure we remain at the forefront of our industry,
+                          consistently adapting to new challenges and seizing opportunities.
+
                         </p>
                         <NuxtLink href="/meet-the-team"
                           class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
@@ -172,6 +170,23 @@ onMounted(() => {
                     <h2 class="text-2xl font-semibold text-black">
                       Our <span class="text-brand-primary">Capabilities</span>
                     </h2>
+                  </div>
+
+                  <div>
+                    <p class="my-5 text-sm leading-normal">
+                      At Acentria Group, we offer a comprehensive suite of services tailored to meet the evolving needs
+                      of our clients. Through innovation, expertise, and unwavering dedication, we empower businesses
+                      and individuals to thrive across key areas.
+                      <br><br>
+                      We provide expert insights and innovative solutions designed to address complex challenges and
+                      unlock new opportunities. Our capabilities span a diverse range of fields, enabling us to deliver
+                      customized strategies that drive growth, mitigate risks, and enhance prosperity in an
+                      ever-changing global landscape.
+                      <br><br>
+                      With a focus on inclusivity, sustainability, and impactful results, we leverage our expertise to
+                      ensure success for our clients, colleagues, and the communities we serve.
+
+                    </p>
                   </div>
 
                   <Services />
@@ -192,12 +207,15 @@ onMounted(() => {
                     </div>
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-sm leading-normal text-light-content !text-inherit mb-4">
-                        At Acentria Group, our corporate culture is the driving force behind everything we do. It the
-                        soil within which the seeds of promise mature to prosperity. It is shaped by a clear sense of
-                        purpose and guided by our commitment to fostering a supportive, innovative, and dynamic
-                        environment where every employee thrives. <br><br>
-                        Our culture isn't just about the work we do—it’s about how we do it and the values that drive
-                        our engagements. We call this <b>The Acentria Way!</b>
+                        At Acentria Group, our corporate culture is the foundation of everything we do. It is the
+                        fertile soil where seeds of promise grow into prosperity. Guided by a clear purpose, our culture
+                        fosters a supportive, innovative, and dynamic environment where every employee has the
+                        opportunity to thrive.
+                        <br><br>
+                        The Acentria Way is more than just about the work we do—it’s about how we do it. Our values and
+                        principles shape every engagement, driving us to deliver excellence while empowering our people
+                        and the communities we serve.
+
                       </p>
                       <NuxtLink href="/corporate-culture"
                         class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
@@ -221,26 +239,27 @@ onMounted(() => {
                       Our <span class="text-brand-primary">Brand</span>
                     </h2>
                     <h3 class="text-xl font-semibold text-black">
-                      We build our lifestyle <span class="text-brand-primary">around our brand!</span>
+                      A Lifestyle Built <span class="text-brand-primary"> Around Excellence</span>
                     </h3>
                   </div>
                 </div>
-  
+
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16 items-center">
                   <div class="flex text-left lg:basis-1/2">
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
                       <p class="text-sm leading-normal mb-4 mt-4">
-                        At Acentria Group, our brand is a reflection of our identity, built on the core pillars of
-                        <b>Integrity, Innovation,</b> and <b>Excellence</b>. It represents our unwavering commitment to
-                        empowering dreams, igniting imagination, and creating meaningful impact for our clients,
-                        employees, and
-                        communities. Guided by The Acentria Way, we prioritize trust, transparency, and responsibility
-                        in every
-                        interaction. Our brand is not just a logo—it’s a promise to deliver transformative solutions,
-                        foster sustainable growth, and uphold the highest standards of excellence. Through empowerment,
-                        innovation,
-                        and a legacy of responsibility, we inspire confidence and build lasting partnerships that drive
-                        success for all.
+                        At Acentria Group, our brand reflects who we are and what we stand for. Built on the core
+                        pillars of Integrity, Innovation, and Excellence, it embodies our unwavering commitment to
+                        empowering dreams, sparking imagination, and making a meaningful impact on our clients,
+                        employees, and communities.
+                        <br><br>
+                        Guided by The <b>Acentria Way</b> , we prioritize trust, transparency, and accountability in
+                        every
+                        interaction. Our brand is more than a logo—it’s a promise. A promise to deliver transformative
+                        solutions, champion sustainable growth, and uphold the highest standards of excellence.
+                        Through empowerment, innovation, and a legacy of responsibility, our brand inspires confidence
+                        and fosters enduring partnerships that drive success for all.
+
                       </p>
                       <NuxtLink href="/our-brand"
                         class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">

@@ -46,18 +46,16 @@ const incentives = [
                     <span class="text-brand-primary"> Acentria Group</span>
                 </h2>
                 <div class="relative mx-auto">
-                    We drive the future of our partners through our, expertise, solutions by EMPOWERING the vision of
-                    our clients and the communities through INNOVATIVE thinking and offering the best solutions to
-                    enhance PROSPERITY!
-                    <br />
-                    <br />
-                    We always seek better ways to manage risk and guide effective pathways to achieve the smart
-                    outcomes. We go beyond risk to rewards for our clients, our company, our colleagues, and the
-                    communities in which we serve.
-
+                    We drive the future for our partners through expertise and innovative solutions, empowering the
+                    visions of our clients and the communities we serve. By fostering innovation, we deliver the best
+                    strategies to enhance prosperity and success.
+                    <br><br>
+                    Our mission is to continuously seek better ways to manage risks and guide effective pathways toward
+                    achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our clients, our
+                    company, our colleagues, and the communities we proudly serve.
                 </div>
 
-                <div class="my-3">
+                <div class="my-5">
                     <NuxtLink to="/about-us/who-we-are"
                         class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
                         Learn More <i data-v-02281a80="" class="fas fa-arrow-right text-primary ml-2"></i>
@@ -67,7 +65,7 @@ const incentives = [
             </div>
         </div>
 
-        <div class="container">
+        <div class="container mt-5">
             <div
                 class="font-sans grid  grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-1 gap-y-2 text-base leading-normal text-gray-600">
                 <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
@@ -106,15 +104,14 @@ const incentives = [
                 </div>
                 <div class="text-light-content">
                     <p class="mt-2 text-sm leading-normal text-gray-700 !text-inherit mb-4">
-                        Our purpose is to passionately remain at the forefront in <span
-                            class="text-brand-primary">EMPOWERING</span> the vision of our clients and the communities
-                        through <span class="text-brand-primary">INNOVATIVE</span> thinking and offering the best
-                        solutions to enhance <span class="text-brand-primary">PROSPERITY</span> and in doing so, we add
-                        value to an ever-changing global environment.
+                        Our purpose is to passionately lead the way in empowering the vision of our clients and
+                        communities through innovative thinking. By delivering the best solutions to enhance prosperity,
+                        we create value in an ever-evolving global environment.
                         <br><br>
-                        Every day, we go beyond ticking boxes of compliance and regulations. We aim to surpass
-                        expectations. By focusing on areas where our expertise can make the greatest impact, we empower
+                        Every day, we go beyond merely meeting compliance and regulatory standards—we strive to exceed
+                        expectations. By concentrating on areas where our expertise has the greatest impact, we empower
                         people and businesses to thrive inclusively and sustainably.
+
                     </p>
                 </div>
             </div>
