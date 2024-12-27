@@ -176,7 +176,7 @@ onMounted(() => {
                         <div class="font-sans group relative">
                           <h1
                             v-html="blog.name"
-                            class="mt-3 line-clamp-1 text-[27px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
+                            class="mt-3 line-clamp-1 text-[20px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
                           </h1>
                           <p v-html="blog.description" class="line-clamp-3 text-[15px] leading-normal text-black">
                           </p>

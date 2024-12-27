@@ -151,6 +151,41 @@ const specials = ref([
         description: 'Life insurance plays a pivotal role in providing financial security and peace of mind to individuals and families. As a reinsurance broker, we specialize in supporting life insurers by designing reinsurance solutions that help them manage risks, improve capital efficiency, and ensure long-term sustainability. From traditional life insurance to innovative products like critical illness and annuities, our tailored programs address the evolving needs of the life insurance market.'
     },
 ]);
+
+const whys = ref([
+    {
+        name: 'We create innovative, future-ready solutions that stay ahead of industry trends.',
+        icon: 'fas fa-lightbulb',
+    },
+    {
+        name: 'We provide real-time, adaptive service delivery that flexes with your needs.',
+        icon: 'fas fa-sync-alt',
+    },
+    {
+        name: 'We design intelligent solutions that are both user-centric and future-focused.',
+        icon: 'fas fa-user-cog',
+    },
+    {
+        name: 'We deliver data-driven customer experiences tailored to evolving market demands.',
+        icon: 'fas fa-chart-line',
+    },
+    {
+        name: 'We implement smart processes and methodologies backed by competitive, value-based pricing.',
+        icon: 'fas fa-cogs',
+    },
+    {
+        name: 'We attract and retain forward-thinking talent skilled in blending artificial and human intelligence.',
+        icon: 'fas fa-users',
+    },
+    {
+        name: 'We develop and integrate seamless smart systems, platforms, and automated workflows that boost efficiency and agility.',
+        icon: 'fas fa-network-wired',
+    },
+    {
+        name: 'We communicate transformative insights, demonstrating how intelligence, innovation, and implementation converge into truly “smart” solutions.',
+        icon: 'fas fa-comments',
+    },
+]);
 </script>
 
 <template>
@@ -279,17 +314,18 @@ const specials = ref([
                             The <span class="text-brand-primary">Industries</span>
                         </h2>
                     </div>
-    
+
                     <div class=" mx-auto text-black">
                         <p>
-                            Every industry faces similar global challenges and opportunities, yet each has its own unique
+                            Every industry faces similar global challenges and opportunities, yet each has its own
+                            unique
                             dynamics that call for specialized support.
                             At Acentria Group, We bring an unparalleled blend of industry-specific expertise, tap into
                             extensive
                             industry-specific data, analytics, technology and insights to craft solutions tailored
                             precisely to your needs.
                         </p>
-    
+
                         <div class="py-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                             <a v-for="product in specials" :key="product.id" @click="setLineData(product)"
                                 class="button-animation group">
@@ -298,7 +334,8 @@ const specials = ref([
                                     <NuxtImg :src="product.img" :alt="product.img"
                                         class="h-full w-full object-cover object-center group-hover:opacity-75" />
                                 </div>
-                                <div class=" mt-4 flex flex-col items-center justify-between subheading-class text-black">
+                                <div
+                                    class=" mt-4 flex flex-col items-center justify-between subheading-class text-black">
                                     <h3 class="text-xs">{{ product.name }}</h3>
                                     <p class="text-xs italic mt-3">
                                         Learn More <i class="ml-2 fas fa-arrow-right text-brand-primary"></i>
@@ -313,7 +350,35 @@ const specials = ref([
 
             </div>
 
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
+            <div class="container mx-auto py-10">
+                <div class="mx-auto max-w-6xl lg:mx-0 mb-2">
+                    <h2 class="text-2xl font-semibold text-black">
+                        Why Acentria <span class="text-brand-primary">Group?</span>
+                    </h2>
+                    <h3 class="font-semibold text-xl mt-2">
+                        We Ensure<span class="text-brand-primary"> Smart!</span>
+                    </h3>
+                </div>
+
+                <div class="py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
+                    <div v-for="feature in whys" class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
+                        <div class="mr-6">
+                            <i :class="feature.icon" class="text-brand-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center w-full">
+                                <p class="text-[14px] text-black font-medium text-left">
+                                    {{ feature.name }}
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
                 <div class="relative py-4 lg:basis-1/2">
                     <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain"
@@ -324,9 +389,6 @@ const specials = ref([
                         <h2 class="text-2xl font-semibold text-left -ml-5">
                             Our <span class="text-brand-primary">Purpose</span>
                         </h2>
-                        <!-- <h3 class="font-semibold text-xl -ml-5 mb-3">
-                            Our True North<span class="text-brand-primary"> that Guides Us!</span>
-                        </h3> -->
                     </div>
                     <div class="text-light-content">
                         <p class="mt-2 text-sm leading-normal text-gray-700 !text-inherit mb-4">
@@ -344,7 +406,7 @@ const specials = ref([
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
