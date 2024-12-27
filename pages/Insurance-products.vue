@@ -20,36 +20,15 @@ const products = ref([
         heading: 'Personal <span class="text-brand-primary">Risk</span>',
         image: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         items: [
-            {
-                name: 'Dental <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-tooth',
-                link: '/',
-                description: 'Find an affordable dental plan for you and your family'
-            },
-            {
-                name: 'Electronic <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-mobile-alt',
-                link: '/',
-                description: 'Covers theft, water damage, and cracked smartphone screens'
-            },
+            
             {
                 name: 'Health <span class="text-brand-primary">Insurance</span>',
                 icon: 'fas fa-heartbeat',
                 link: '/',
                 description: 'Compare plans and get trusted coverage for you and your family'
             },
-            {
-                name: 'Identity theft <span class="text-brand-primary">Protection</span>',
-                icon: 'fas fa-user-shield',
-                link: '/',
-                description: 'Protect your credit with 24/7 credit monitoring and instant alerts'
-            },
-            {
-                name: 'Jewelry <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-gem',
-                link: '/',
-                description: 'Protect your valuable pieces from loss, damage, theft, and more with an affordable jewelry policy'
-            },
+            
+            
             {
                 name: 'Life <span class="text-brand-primary">Insurance</span>',
                 icon: 'fas fa-life-ring',
@@ -74,12 +53,7 @@ const products = ref([
                 link: '/',
                 description: 'Protect your assets and savings with extra liability coverage'
             },
-            {
-                name: 'Vision <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-eye',
-                link: '/',
-                description: 'A vision insurance plan can lower your out-of-pocket costs'
-            },
+            
             {
                 name: 'Events <span class="text-brand-primary">Insurance</span>',
                 icon: 'fas fa-ring',
@@ -92,14 +66,9 @@ const products = ref([
         heading: 'Vehicle <span class="text-brand-primary">Risk</span>',
         image: 'https://images.pexels.com/photos/1397751/pexels-photo-1397751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         items: [
+            
             {
-                name: 'ATV/UTV <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-motorcycle',
-                link: '/',
-                description: 'Ride protected even when you’re off property'
-            },
-            {
-                name: 'Autocycle <span class="text-brand-primary">Insurance</span>',
+                name: 'AutoCycle <span class="text-brand-primary">Insurance</span>',
                 icon: 'fas fa-car',
                 link: '/',
                 description: 'Customized protection for your adventures on three wheels'
@@ -109,18 +78,6 @@ const products = ref([
                 icon: 'fas fa-car-side',
                 link: '/',
                 description: 'Nearly three out of four new Auto customers recommend Progressive'
-            },
-            {
-                name: 'Boat <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-ship',
-                link: '/',
-                description: 'Get specialized coverage for all your boating needs'
-            },
-            {
-                name: 'Classic Car <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-car-alt',
-                link: '/',
-                description: 'Protect your investment with insurance for collector cars'
             },
             {
                 name: 'Compact Tractor <span class="text-brand-primary">Insurance</span>',
@@ -140,53 +97,12 @@ const products = ref([
                 link: '/',
                 description: 'Drive protected around your community or on the greens'
             },
-            {
-                name: 'Mechanical Breakdown <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-tools',
-                link: '/',
-                description: 'Protect your car, truck, or RV from unexpected repairs'
-            },
-            {
-                name: 'Mexico Auto <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-car-crash',
-                link: '/',
-                description: 'Get coverage through a specialized broker if you drive in Mexico'
-            },
-            {
-                name: 'Mexico Boat & Watercraft <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-ship',
-                link: '/',
-                description: 'Get the coverage you need to take your boat or PWC to Mexico'
-            },
+        
             {
                 name: 'Motorcycle <span class="text-brand-primary">Insurance</span>',
                 icon: 'fas fa-motorcycle',
                 link: '/',
                 description: 'Ride with the #1 bike insurer for as little as $75 per year'
-            },
-            {
-                name: 'PWC <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-water',
-                link: '/',
-                description: 'Affordable coverage for your Jet Ski, Sea-Doo, WaveRunner, and more'
-            },
-            {
-                name: 'RV <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-rv',
-                link: '/',
-                description: 'Protect your motorhome or travel trailer if you’re seasonal or full-time'
-            },
-            {
-                name: 'Segway <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-balance-scale',
-                link: '/',
-                description: 'Glide care-free and get protection for your personal transport'
-            },
-            {
-                name: 'Snowmobile <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-snowflake',
-                link: '/',
-                description: 'Sled protected on and off the slopes with the right coverages'
             },
         ]
     },
@@ -194,12 +110,6 @@ const products = ref([
         heading: 'Property <span class="text-brand-primary">Risk</span>',
         image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=600',
         items: [
-            {
-                name: 'Condo <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-building',
-                link: '/',
-                description: 'Protect your interior structure and personal belongings'
-            },
             {
                 name: 'Flood <span class="text-brand-primary">Insurance</span>',
                 icon: 'fas fa-water',
@@ -219,22 +129,10 @@ const products = ref([
                 description: 'Protect your home from break-ins with state-of-the-art security'
             },
             {
-                name: 'Home <span class="text-brand-primary">Warranty</span>',
-                icon: 'fas fa-tools',
-                link: '/',
-                description: 'Safeguard your budget from appliance repairs'
-            },
-            {
                 name: 'Mobile Home <span class="text-brand-primary">Insurance</span>',
                 icon: 'fas fa-home',
                 link: '/',
                 description: 'Coverage for manufactured homes, including singlewides and park models'
-            },
-            {
-                name: 'Renters <span class="text-brand-primary">Insurance</span>',
-                icon: 'fas fa-key',
-                link: '/',
-                description: 'Get liability coverage and protect your belongings for less than $1 per day'
             },
         ]
     },
@@ -297,12 +195,6 @@ const products = ref([
                 description: 'Use your subscriptions to easily build your credit'
             },
             {
-                name: 'Debit cards for <span class="text-brand-primary">kids</span>',
-                icon: 'fas fa-child',
-                link: '/',
-                description: 'Discover an easier way to teach your child smart spending habits'
-            },
-            {
                 name: 'Home <span class="text-brand-primary">loans</span>',
                 icon: 'fas fa-home',
                 link: '/',
@@ -350,15 +242,15 @@ const products = ref([
         </div> -->
 
         <div v-for="product in products" class="container py-5 bg-white">
-            <div class="mx-auto mb-3 font-sans">
+            <div class="mx-auto font-sans">
                 <h2 v-html="product.heading" class="mt-2 heading-class text-black"></h2>
             </div>
-            <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+            <!-- <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                 style="color: transparent; object-fit: contain"
-                class="w-full h-[220px] shadow-2xl rounded-md !object-cover" :src="product.image" />
+                class="w-full h-[220px] shadow-2xl rounded-md !object-cover" :src="product.image" /> -->
 
             <div
-                class="font-sans grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 py-10">
+                class="font-sans grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 text-base leading-7 text-gray-600 py-10">
                 <NuxtLink :href="item.link" v-for="item in product.items"
                     class="button-animation relative flex flex-row gap-2 border-2 border-gray-200 p-5 rounded-lg">
                     <i :class="item.icon" class="text-4xl text-brand-primary mr-2"></i>

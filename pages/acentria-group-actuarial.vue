@@ -358,7 +358,7 @@ const exploreHelp = ref({
                 <div class="bg-white pb-6">
                     <div class="container">
                         <h1 class="my-3 heading-class text-left">
-                            Elite Tech Tools <br> <span class="text-brand-primary">for Optimal Solutions</span>
+                            Elite Actuarial Tech Tools <br> <span class="text-brand-primary">for Optimal Solutions</span>
                         </h1>
                     </div>
 
