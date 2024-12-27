@@ -285,6 +285,35 @@ const AboutMenus = ref([
         ]
     },
     {
+        name: 'Our Business Capability',
+        linksHeading: 'Lines of <span class="text-brand-primary">Business<span/>',
+        subMenu: 'Business <span class="text-brand-primary">Solutions<span/>',
+        description: 'Explore the diverse range of business solutions we offer. Our comprehensive suite of services is designed to meet the unique needs of our clients. ',
+        icon: 'fas fa-briefcase',
+        items: [
+            {
+                name: 'Insurance',
+                description: 'Providing comprehensive insurance solutions to protect your assets.',
+                link: '/acentria-group-insurance',
+            },
+            {
+                name: 'Reinsurance',
+                description: 'Offering reinsurance services to help manage risk effectively.',
+                link: '/acentria-group-reinsurance',
+            },
+            {
+                name: 'Actuarial & Finance Services',
+                description: 'Delivering expert actuarial and financial consulting services.',
+                link: '/acentria-group-actuarial',
+            },
+            {
+                name: 'Technology',
+                description: 'Innovating with cutting-edge technology solutions for various industries.',
+                link: '/acentria-group-technology',
+            },
+        ]
+    },
+    {
         name: 'Our Commitment',
         linksHeading: 'Our <span class="text-brand-primary">Commitment<span/>',
         subMenu: 'Commitment <span class="text-brand-primary">to Excellence<span/>',
@@ -310,35 +339,6 @@ const AboutMenus = ref([
                 name: 'Our Communities',
                 description: 'Contributing positively to the communities we serve.',
                 link: '/our-commitment',
-            },
-        ]
-    },
-    {
-        name: 'Our Lines of Business',
-        linksHeading: 'Lines of <span class="text-brand-primary">Business<span/>',
-        subMenu: 'Business <span class="text-brand-primary">Solutions<span/>',
-        description: 'Explore the diverse range of business solutions we offer. Our comprehensive suite of services is designed to meet the unique needs of our clients. ',
-        icon: 'fas fa-briefcase',
-        items: [
-            {
-                name: 'Insurance',
-                description: 'Providing comprehensive insurance solutions to protect your assets.',
-                link: '/acentria-group-insurance',
-            },
-            {
-                name: 'Reinsurance',
-                description: 'Offering reinsurance services to help manage risk effectively.',
-                link: '/acentria-group-reinsurance',
-            },
-            {
-                name: 'Actuarial & Finance Services',
-                description: 'Delivering expert actuarial and financial consulting services.',
-                link: '/acentria-group-actuarial',
-            },
-            {
-                name: 'Technology',
-                description: 'Innovating with cutting-edge technology solutions for various industries.',
-                link: '/acentria-group-technology',
             },
         ]
     },
@@ -372,7 +372,7 @@ const AboutMenus = ref([
         ]
     },
     {
-        name: 'Join Us',
+        name: 'Let\'s Grow Together',
         linksHeading: 'Join <span class="text-brand-primary">Us<span/>',
         subMenu: 'Get <span class="text-brand-primary">Involved<span/>',
         description: 'Join us and become a part of the Acentria Group family. We offer a range of opportunities for individuals and organizations to get involved with our company. ',

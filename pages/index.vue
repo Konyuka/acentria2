@@ -391,8 +391,8 @@ onMounted(() => {
                   <div class="py-10 sm:px-2 lg:px-4">
                     <div class="lg:max-w-none">
                       <div class="justify-between content-center">
-                        <h2 class="text-2xl font-semibold text-black text-left">
-                          Join Our <span class="text-brand-primary">Team</span>
+                        <h2 class="text-2xl font-semibold text-white text-left">
+                          Lets Grow <span class="text-brand-primary">Together</span>
                         </h2>
                       </div>
                       <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
