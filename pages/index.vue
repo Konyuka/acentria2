@@ -108,6 +108,12 @@ const commitments = ref([
 
 const others = ref([
   {
+    name: 'Vision <span class="text-brand-primary">& Mission</span>',
+    description: 'A Lifestyle Built <span class="text-brand-primary"> Around Excellence</span>',
+    image: '/img/join.jpg',
+    link: '/our-brand',
+  },
+  {
     name: 'Our <span class="text-brand-primary">Leadership</span>',
     description: 'The leaders who <span class="text-brand-primary">inspire us</span>',
     image: '/img/leadership.jpg',
@@ -125,6 +131,7 @@ const others = ref([
     image: '/img/join.jpg',
     link: '/our-brand',
   },
+  
 ])
 
 onMounted(() => {
@@ -159,7 +166,7 @@ onMounted(() => {
               </div>
 
               <div class="bg-white">
-                <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10 bg-white">
+                <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 bg-white">
 
                   <NuxtLink :to="blog.link" v-for="blog in others"
                     class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
@@ -176,9 +183,9 @@ onMounted(() => {
                         <div class="font-sans group relative">
                           <h1
                             v-html="blog.name"
-                            class="mt-3 line-clamp-1 text-[20px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
+                            class="mt-3 text-[16px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
                           </h1>
-                          <p v-html="blog.description" class="line-clamp-3 text-[15px] leading-normal text-black">
+                          <p v-html="blog.description" class="line-clamp-3 text-[13px] leading-normal text-black">
                           </p>
                         </div>
                         <div class="font-semibold mt-5 text-xs">

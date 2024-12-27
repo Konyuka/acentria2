@@ -13,7 +13,7 @@
 }
 
 .heading-class {
-    @apply text-[35px] font-semibold text-gray-900
+    @apply text-[27px] font-semibold text-gray-900
 }
 
 .subheading-class {
@@ -21,7 +21,7 @@
 }
 
 .text-2xl {
-    @apply text-[35px] !important
+    @apply text-[27px] !important
 }
 
 

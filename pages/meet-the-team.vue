@@ -33,6 +33,34 @@ const setMobileMenu = (event) => {
     currentMenu.value = selectedValue
 }
 
+const governance = ref([
+    {
+        title: 'Board Oversight',
+        description: 'Clear guidelines for the roles and responsibilities of our Board of Directors, ensuring effective decision-making and strategic direction.',
+        icon: 'fas fa-chalkboard-teacher'
+    },
+    {
+        title: 'Risk Management',
+        description: 'Comprehensive strategies to identify, assess, and mitigate risks, safeguarding the interests of our clients, employees, and shareholders.',
+        icon: 'fas fa-shield-alt'
+    },
+    {
+        title: 'Compliance and Ethics',
+        description: 'A strong focus on maintaining compliance with laws and regulations, as well as promoting ethical conduct and corporate social responsibility.',
+        icon: 'fas fa-balance-scale'
+    },
+    {
+        title: 'Transparency and Accountability',
+        description: 'Practices that foster open communication, regular reporting, and accountability at every level of the organization.',
+        icon: 'fas fa-eye'
+    },
+    {
+        title: 'Sustainability and Social Responsibility',
+        description: 'A commitment to responsible business practices that contribute to the well-being of our communities and the environment.',
+        icon: 'fas fa-leaf'
+    }
+]);
+
 </script>
 
 <template>
@@ -89,12 +117,9 @@ const setMobileMenu = (event) => {
                         <div class="flex flex-col gap-6 mx-auto items-center justify-center text-left">
                             <div>
                                 <h1 id="" class="heading-class text-brand-primary">
-                                    <span class="text-black">Leadership & </span>
-                                    Corporate Governance
+                                    <span class="text-black">Transforming to </span>
+                                    become more responsible
                                 </h1>
-                                <h5 class="!capitalize text-lg mb-2 font-semibold">
-                                    Transforming to <span class="text-brand-primary">become more responsible</span>
-                                </h5>
 
                                 <p class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
 
@@ -136,10 +161,6 @@ const setMobileMenu = (event) => {
                             serve. Our leadership team, alongside the Board of Directors, plays a vital role in steering
                             the company toward sustainable growth while maintaining compliance with all regulatory
                             requirements and industry standards.
-                            <br><br>
-                            Through effective corporate governance, we strive to maintain a culture of excellence,
-                            responsibility, and transparency—empowering us to build lasting relationships and deliver
-                            consistent, high-quality results.
                         </p>
                     </div>
                 </div>
@@ -176,13 +197,13 @@ const setMobileMenu = (event) => {
 
 
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
-                <div class="relative p-4 lg:basis-1/2">
+                <!-- <div class="relative p-4 lg:basis-1/2">
                     <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="700" decoding="async"
                         data-nimg="1"
                         src="https://images.pexels.com/photos/885880/pexels-photo-885880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         style="color: transparent; object-fit: contain;" class="rounded-lg" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
+                </div> -->
+                <div class="flex flex-col justify-center lg:basis-full">
                     <h2 id="" class="heading-class pb-4 ">
                         Our Governance <span class="text-brand-primary">Policies</span>
                     </h2>
@@ -192,27 +213,32 @@ const setMobileMenu = (event) => {
                             integrity, accountability, and transparency. We have established a robust framework to
                             ensure that all operations are conducted with the highest ethical standards, in full
                             compliance with legal and regulatory requirements.
+                            <br><br>
                             Our policies cover key areas, including:
                             <br><br>
-                            <span>
-                                • <b>Board Oversight:</b> Clear guidelines for the roles and responsibilities of our
-                                Board of
-                                Directors, ensuring effective decision-making and strategic direction. <br>
-                                • <b>Risk Management:</b> Comprehensive strategies to identify, assess, and mitigate
-                                risks,
-                                safeguarding the interests of our clients, employees, and shareholders. <br>
-                                • <b>Compliance and Ethics:</b> A strong focus on maintaining compliance with laws and
-                                regulations, as well as promoting ethical conduct and corporate social responsibility.
-                                <br>
-                                • <b>Transparency and Accountability:</b> Practices that foster open communication,
-                                regular
-                                reporting, and accountability at every level of the organization. <br>
-                                • <b>Sustainability and Social Responsibility:</b> A commitment to responsible business
-                                practices that contribute to the well-being of our communities and the environment.
-                            </span>
-                            <br><br>
-                            These policies provide a framework that guides our operations, ensuring that we remain
-                            aligned with our values and consistently deliver on our promise of excellence and integrity.
+
+                        <div class="px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
+                            <div v-for="feature in governance"
+                                class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
+                                <div class="mr-6">
+                                    <i :class="feature.icon" class="text-brand-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class=" items-center w-full">
+                                        <p class="text-[14px] text-black font-medium text-left">
+                                            {{ feature.title }}
+                                        </p>
+                                        <p>
+                                            {{ feature.description }}
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        These policies provide a framework that guides our operations, ensuring that we remain
+                        aligned with our values and consistently deliver on our promise of excellence and integrity.
                         </p>
                     </div>
                 </div>
@@ -220,9 +246,9 @@ const setMobileMenu = (event) => {
 
             <div class="container mx-auto flex px-4 lg:flex-row flex-col py-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="400" decoding="async"
+                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="400" height="200" decoding="async"
                         data-nimg="1"
-                        src="https://images.pexels.com/photos/2801126/pexels-photo-2801126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        src="https://images.pexels.com/photos/17184739/pexels-photo-17184739/free-photo-of-compass-on-the-background-of-the-map-travel-concept-route-planning-find-your-direction-in-life.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         style="color: transparent; object-fit: contain;" class="rounded-lg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
@@ -236,12 +262,6 @@ const setMobileMenu = (event) => {
                             best-in-class disclosure practices, Board independence, diversity and inclusion, alignment
                             to globally accepted norms and policies, as well as our emphasis on running a
                             digitally-enabled, technology-led business.
-                            <br><br>
-                            Our strong governance practices manifest our future transformation journey, with
-                            ‘responsible change’ as a core mandate. It is our constant endeavour to not only stretch
-                            ourselves more to ensure enhanced growth and value creation but also set newer benchmarks
-                            for the industry and peers. We continue to be change-makers in everything we do, with good
-                            governance as the cornerstone that empowers us in our transformational efforts.
                             <br><br>
                             Our Board ensures the implementation of the strategic objectives of the Company. It guides
                             the management to fulfil the commitments made to various stakeholders while upholding the

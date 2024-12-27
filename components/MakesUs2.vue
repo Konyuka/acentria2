@@ -212,19 +212,22 @@ const whys = ref([
 
                 <div class="col-span-4 relative mt-5">
                     <h2 class="text-2xl font-semibold text-left">
-                        <span class="text-brand-primary"> Acentria Group</span>
+                        Acentria <span class="text-brand-primary"> Group</span>
                     </h2>
-                    <div class="relative mx-auto pt-4">
-                        We drive the future for our partners through expertise and innovative solutions, empowering the
-                        visions of our clients and the communities we serve. By fostering innovation, we deliver the
-                        best
-                        strategies to enhance prosperity and success.
-                        <br><br>
-                        Our mission is to continuously seek better ways to manage risks and guide effective pathways
-                        toward
-                        achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our clients,
-                        our
-                        company, our colleagues, and the communities we proudly serve.
+                    <div class="relative mx-auto pt-4 flex">
+                        <span class="text-brand-primary font-semibold text-4xl border-2 border-brand-primary h-[60px]"></span>
+                        <span class="ml-4">
+                            We drive the future for our partners through expertise and innovative solutions, empowering the
+                            visions of our clients and the communities we serve. By fostering innovation, we deliver the
+                            best
+                            strategies to enhance prosperity and success.
+                            <br><br>
+                            Our mission is to continuously seek better ways to manage risks and guide effective pathways
+                            toward
+                            achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our clients,
+                            our
+                            company, our colleagues, and the communities we proudly serve.
+                        </span>
                     </div>
 
                     <div class="my-5">
@@ -271,8 +274,8 @@ const whys = ref([
 
         <div class="container relative min-h-[60vh] ">
             <div class="mb-24 bottom-0 absolute max-w-7xl mx-auto !py-auto ]">
-                <h2 class="text-[46px] font-semibold text-white py-1">
-                    “SMART people, SMART solutions, SMART technology, SMART organization, SMART clients“
+                <h2 class="text-[40px] font-semibold text-white py-1">
+                    “SMART people, SMART solutions, <br> SMART technology, SMART organization, SMART clients“
                 </h2>
 
             </div>
@@ -360,7 +363,7 @@ const whys = ref([
                     </h3>
                 </div>
 
-                <div class="py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
+                <div class="px-20 py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
                     <div v-for="feature in whys" class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
                         <div class="mr-6">
                             <i :class="feature.icon" class="text-brand-primary text-xl"></i>
