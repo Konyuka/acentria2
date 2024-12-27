@@ -183,30 +183,34 @@ onMounted(() => {
         <BannerMain :content="bannerContent" />
 
         <div class="container py-2">
-            <div class="mt-5">
+            <div class="mt-10">
                 <h1 class="text-4xl font-semibold text-center">Welcome to <span class="text-brand-primary">Acentria
                         Group</span>
                 </h1>
-                <h2 class="text-lg font-semibold mt-2 text-center">
-                    Trust us to turn challenges into opportunities and ambition into achievement.
-                </h2>
-                <p class="mt-2 text-xs leading-normal text-center">
-                    At Acentria Group, we are a trusted global consultancy dedicated to empowering, innovating, and
+                <p class="mt-5 text-xs leading-normal text-center">
+                    <!-- At Acentria Group, we are a trusted global consultancy dedicated to empowering, innovating, and
                     driving growth and prosperity. With expertise spanning Risk and Insurance, Reinsurance, Actuarial
                     Services, Technology, and Investment Advisory, we bring over a decade of excellence to crafting
-                    tailored solutions that help our clients thrive.
-                    <br><br>
+                    tailored solutions that help our clients thrive. -->
+
+                    At Acentria Group, we shape the future of our partners through our expertise and solutions by
+                    EMPOWERING the vision of our clients and communities. Through INNOVATIVE thinking, we deliver the
+                    best solutions that enhance PROSPERITY. We are constantly seeking better ways to manage risk,
+                    guiding effective pathways to achieve SMART and sustainable outcomes.
+                    <!-- <br><br>
                     Our innovative approach to risk management, insurance optimization, and investment advisory ensures
                     you stay ahead of the curve. When you partner with Acentria Group, you gain access to a wealth of
                     knowledge and resources designed to mitigate risks, maximize opportunities, and achieve your
-                    financial goals.
-                    <br><br>
-                    Let us help you navigate the complexities of today’s world and unlock your true potential.
+                    financial goals. -->
+                    <br><br><br>
+                    <span class="tracking-widest font-semibold italic text-[20px] text-gray-600 tm-10">
+                        Let us help you navigate the complexities of today’s world and unlock your true potential.
+                    </span>
                 </p>
             </div>
         </div>
 
-        <div class="container py-2">
+        <!-- <div class="container py-2">
             <div class="mt-5">
                 <h1 class="heading-class text-left"> <span class="text-brand-primary">Empower</span>
                 </h1>
@@ -284,9 +288,9 @@ onMounted(() => {
                     day, in everything we do.
                 </p>
             </div>
-        </div>
+        </div> -->
 
-        <div class="bg-white py-1 font-sans mt-auto">
+        <div class="bg-white py-1 font-sans mt-5">
 
             <div class="container mx-auto flex lg:flex-row flex-col my-8 lg:my-4 lg:gap-2">
                 <div class="relative py-4 lg:basis-1/2 scale-90">
@@ -298,7 +302,7 @@ onMounted(() => {
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <!-- <label class="text-base leading-normal font-regular text-light-highlight font-bold">Acentria
                         Group</label> -->
-                    <h2 class="heading-class mb-4">
+                    <h2 class="text-2xl font-semibold text- mb-4">
                         Who <span class="text-brand-primary">We Are</span>
                     </h2>
                     <div class="text-black pb-5 md:pb-6">
@@ -362,7 +366,7 @@ onMounted(() => {
                             src="/img/what.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="heading-class mb-4">
+                        <h2 class="text-2xl font-semibold text- mb-4">
                             What <span class="text-brand-primary">We Do</span>
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
@@ -382,14 +386,36 @@ onMounted(() => {
 
             <div class="container">
 
-                <h2 class="heading-class mb-4">
+                <h2 class="text-2xl font-semibold text- mb-4">
                     Our <span class="text-brand-primary">Capabilities</span>
                 </h2>
             </div>
 
-            <div class="container flex lg:flex-row flex-col md:gap-14 gap-16 justify-between my-5 pb-5">
+            <div class="container mx-auto text-black">
+                <p>At Acentria Group, we offer a comprehensive suite of services tailored to meet the evolving
+                    needs
+                    of our clients. Through innovation, expertise, and unwavering dedication, we empower businesses
+                    and individuals to thrive across the following areas.
+                    <br><br>
+                </p>
+            </div>
 
-                <div class="w-full">
+            <div class="container grid grid-cols-3 gap-5 justify-between my-5 pb-10">
+
+                <div class="">
+                    <p class="text-start text-black">
+                        We provide expert insights and innovative solutions designed to address complex challenges and
+                        unlock new opportunities. Our capabilities span a diverse range of fields, enabling us to
+                        deliver
+                        customized strategies that drive growth, mitigate risks, and enhance prosperity in an
+                        ever-changing global landscape.
+                        <br><br>
+                        With a focus on inclusivity, sustainability, and impactful results, we leverage our expertise to
+                        ensure success for our clients, colleagues, and the communities we serve.
+                    </p>
+                </div>
+
+                <div class="col-span-2">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
                         <NuxtLink :href="feature.url" v-for="feature in features"
                             class="button-animation flex px-3 py-2 shadow-md border-l-4 border-brand-primary">
@@ -421,6 +447,7 @@ onMounted(() => {
                         </NuxtLink>
                     </div>
                 </div>
+
             </div>
 
             <div class="container mb-5">
@@ -465,8 +492,6 @@ onMounted(() => {
                             class="rounded-lg" src="/img/bill.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <label
-                            class="text-base leading-normal font-regular text-light-highlight font-bold">Experience</label>
                         <h2 class="heading-class mb-4">
                             Our <span class="text-brand-primary">Journey</span>
                         </h2>
@@ -495,12 +520,9 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                             decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg"
-                            src="https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+                            class="rounded-lg" src="/img/leadership.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <label
-                            class="text-base leading-normal font-regular text-light-highlight font-bold">Management</label>
                         <h2 class="heading-class mb-4">
                             Our <span class="text-brand-primary">Leadership</span>
                         </h2>
@@ -513,8 +535,12 @@ onMounted(() => {
                                 Meet the visionaries and strategists driving innovation, growth, and success. Their
                                 unwavering dedication and forward-thinking approach ensure we remain at the forefront of
                                 our industry, consistently adapting to new challenges and seizing opportunities.
-
                             </p>
+                            <NuxtLink href="/meet-the-team"
+                                class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                                Meet the Team
+                                <i class="fas fa-arrow-right text-primary ml-2"></i>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -525,11 +551,9 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                             decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/leadership.jpg" />
+                            class="rounded-lg" src="/img/hi5.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <label
-                            class="text-base leading-normal font-regular text-light-highlight font-bold">Ethics</label>
                         <h2 class="heading-class mb-4">
                             Our <span class="text-brand-primary">Culture</span>
                         </h2>
@@ -545,6 +569,11 @@ onMounted(() => {
                                 empowering our people and the communities we serve.
 
                             </p>
+                            <NuxtLink href="/corporate-culture"
+                                class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                                Learn More
+                                <i class="fas fa-arrow-right text-primary ml-2"></i>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -555,11 +584,9 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                             decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/Acentria Logo-01.jpg" />
+                            class="rounded-lg" src="/img/join.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <label
-                            class="text-base leading-normal font-regular text-light-highlight font-bold">Acentria</label>
                         <h2 class="heading-class mb-4">
                             Our <span class="text-brand-primary">Brand</span>
                         </h2>
@@ -577,8 +604,12 @@ onMounted(() => {
                                 <br><br>
                                 Through empowerment, innovation, and a legacy of responsibility, our brand inspires
                                 confidence and fosters enduring partnerships that drive success for all.
-
                             </p>
+                            <NuxtLink href="/our-brand"
+                                class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                                Learn More
+                                <i class="fas fa-arrow-right text-primary ml-2 text-[12px]"></i>
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>

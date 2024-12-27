@@ -13,7 +13,7 @@
 }
 
 .heading-class {
-    @apply text-[24px] font-semibold text-gray-900
+    @apply text-[35px] font-semibold text-gray-900
 }
 
 .subheading-class {

@@ -106,6 +106,27 @@ const commitments = ref([
   },
 ])
 
+const others = ref([
+  {
+    name: 'Our <span class="text-brand-primary">Leadership</span>',
+    description: 'The leaders who <span class="text-brand-primary">inspire us</span>',
+    image: '/img/leadership.jpg',
+    link: '/meet-the-team',
+  },
+  {
+    name: 'Our <span class="text-brand-primary">Culture</span>',
+    description: 'The Acentria <span class="text-brand-primary">Way!</span>',
+    image: '/img/hi5.jpg',
+    link: '/corporate-culture',
+  },
+  {
+    name: 'Our <span class="text-brand-primary">Brand</span>',
+    description: 'A Lifestyle Built <span class="text-brand-primary"> Around Excellence</span>',
+    image: '/img/join.jpg',
+    link: '/our-brand',
+  },
+])
+
 onMounted(() => {
   // if (mission.value) {
   //     selectedMenu.value = mission.value.currentMenu;
@@ -129,15 +150,49 @@ onMounted(() => {
               <div class="container relative min-h-[30vh] ">
                 <div class="mb-5 bottom-0 absolute max-w-7xl mx-auto">
                   <h2 class="text-2xl font-semibold text-white py-1">
-                    Our <span class="text-brand-primary">Leadership</span>
+                    Your might also <span class="text-brand-primary">be interested in</span>
                   </h2>
                   <h3 class="text-xl font-semibold text-white">
-                    The leaders who <span class="text-brand-primary">inspire us</span>
+                    More about <span class="text-brand-primary"> Acentria</span>
                   </h3>
                 </div>
               </div>
 
-              <section id="" class="bg-white relative md:py-2 text-left">
+              <div class="bg-white">
+                <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10 bg-white">
+
+                  <NuxtLink :to="blog.link" v-for="blog in others"
+                    class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                      <div class="relative w-full">
+                        <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
+                          class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                          sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px" :src="blog.image"
+                          style="color: transparent;" />
+                        <div
+                          class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
+                        </div>
+                      </div>
+                      <div class="max-w-full">
+                        <div class="font-sans group relative">
+                          <h1
+                            v-html="blog.name"
+                            class="mt-3 line-clamp-1 text-[27px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
+                          </h1>
+                          <p v-html="blog.description" class="line-clamp-3 text-[15px] leading-normal text-black">
+                          </p>
+                        </div>
+                        <div class="font-semibold mt-5 text-xs">
+                          Learn More <i class="ml-2 fas fa-arrow-right"></i> 
+                        </div>
+                      </div>
+                  </NuxtLink>
+
+
+                </div>
+              </div>
+
+
+              <!-- <section id="" class="bg-white relative md:py-2 text-left">
                 <div class="container">
                   <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative py-4 lg:basis-1/2">
@@ -171,7 +226,7 @@ onMounted(() => {
 
               <div class="font-sans py-2 text-white bg-white">
 
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-10 lg:gap-16">
+                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-5 pb-5 lg:gap-16">
                   <div class="flex flex-col justify-center lg:basis-1/2">
                     <div class="pb-4">
                       <h2 class="text-2xl font-semibold text-black">
@@ -250,8 +305,7 @@ onMounted(() => {
                       class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/join.jpg" />
                   </div>
                 </div>
-              </div>
-
+              </div> -->
 
 
 
