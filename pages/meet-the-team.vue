@@ -121,7 +121,7 @@ const governance = ref([
                                     become more responsible
                                 </h1>
 
-                                <p class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
+                                <p class="mt-5 font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
 
                                     At Acentria Group, corporate governance is more than a policy—it’s a way of life. It
                                     defines how we lead, operate, and serve. Built on a foundation of <b>Integrity,
@@ -244,7 +244,7 @@ const governance = ref([
                 </div>
             </div>
 
-            <div class="container mx-auto flex px-4 lg:flex-row flex-col py-2 lg:gap-16">
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
                     <NuxtImg alt="Image of Risk Management" loading="lazy" width="400" height="200" decoding="async"
                         data-nimg="1"
@@ -286,8 +286,11 @@ const governance = ref([
                         <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
                             As part of our strong and sustained commitment to ESG, we have implemented a uniform ESG
                             governance structure across the organization. The ESG Committee, together with our Group
-                            Sustainability and ESG function, is mandated with the responsibility to activate, mainstream
-                            and monitor initiatives under the ‘Transforming for Good’. We have also established
+                            Sustainability and ESG function, is mandated with the responsibility to drive positive,
+                            sustainable change that benefits businesses, communities, and the world at large.
+                            <br>
+                            We have
+                            also established
                             dedicated forums for regular management and oversight at all levels.
                             In conducting its business, the Board is supported by:
                             <br><br>
