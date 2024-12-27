@@ -122,11 +122,11 @@ onMounted(() => {
             <div>
               <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
 
-              <div class="w-full h-full bg-white border-t-4 border-brand-primary">
+              <div class="w-full h-full border-t-4 border-brand-primary">
                 <MakesUs2 />
               </div>
 
-              <div class="container relative min-h-[30vh] min-w-screen">
+              <div class="container relative min-h-[30vh] ">
                 <div class="mb-5 bottom-0 absolute max-w-7xl mx-auto">
                   <h2 class="text-2xl font-semibold text-white py-1">
                     Our <span class="text-brand-primary">Leadership</span>
@@ -166,30 +166,6 @@ onMounted(() => {
                     </div>
                   </div>
 
-                  <div class="mx-auto max-w-6xl lg:mx-0 mb-2">
-                    <h2 class="text-2xl font-semibold text-black">
-                      Our <span class="text-brand-primary">Capabilities</span>
-                    </h2>
-                  </div>
-
-                  <div>
-                    <p class="my-5 text-sm leading-normal">
-                      At Acentria Group, we offer a comprehensive suite of services tailored to meet the evolving needs
-                      of our clients. Through innovation, expertise, and unwavering dedication, we empower businesses
-                      and individuals to thrive across key areas.
-                      <br><br>
-                      We provide expert insights and innovative solutions designed to address complex challenges and
-                      unlock new opportunities. Our capabilities span a diverse range of fields, enabling us to deliver
-                      customized strategies that drive growth, mitigate risks, and enhance prosperity in an
-                      ever-changing global landscape.
-                      <br><br>
-                      With a focus on inclusivity, sustainability, and impactful results, we leverage our expertise to
-                      ensure success for our clients, colleagues, and the communities we serve.
-
-                    </p>
-                  </div>
-
-                  <Services />
                 </div>
               </section>
 
@@ -320,15 +296,15 @@ onMounted(() => {
               <div class="mx-auto bg-white w-screen">
                 <div class="relative">
                   <NuxtImg
-                    src="https://media.istockphoto.com/id/1373228637/photo/shot-of-a-young-woman-working-with-crops-on-a-farm.jpg?s=1024x1024&w=is&k=20&c=mm8qrVd-G14H6Qu1ZG1hclp5AaulaOs-Je5ZY23YmME="
+                    src="https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="city view" class="w-full h-full object-center object-cover absolute sm:block hidden" />
                   <NuxtImg src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
                     class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
                   <div
-                    class="text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full top-0 md:p-16 p-6 flex flex-col justify-between rounded-md">
+                    class="!py-28 text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full top-0 md:p-16 p-6 flex flex-col justify-between rounded-md">
                     <div>
                       <p
-                        class="container ml-20 text-xs leading-normal text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4">
+                        class="container ml-20 text-xs leading-loose   text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4">
                         Our initiatives focus on reducing our environmental impact, promoting ethical business
                         practices, and contributing positively to the communities we serve. We believe in creating
                         long-term value for our stakeholders by integrating sustainable practices into our core

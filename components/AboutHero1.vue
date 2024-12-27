@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative h-[95vh] mt-2">
+    <div class="relative h-screen mt-2">
         <video preload="metadata" loading="lazy" autoplay muted loop
             class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]" src="/img/hd2.mp4"
             style="color: transparent">
@@ -26,7 +26,7 @@ const props = defineProps({
                         class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[100%] lg:justify-start lg:text-left">
                         <div class="w-full">
                             <h1 v-html="InsuranceBannerContent.title"
-                                class="font-sans tracking-normal text-[42px]  text-white font-semibold leading-tight lg:leading-tight">
+                                class="font-sans tracking-normal text-[48px]  text-white font-semibold leading-tight lg:leading-tight">
                             </h1>
                         </div>
                         <div>

@@ -20,6 +20,10 @@
     @apply text-[18px] font-semibold text-gray-900
 }
 
+.text-2xl {
+    @apply text-[35px] !important
+}
+
 
 [x-cloak] {
     display: none;

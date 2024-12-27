@@ -21,7 +21,7 @@
 
             <!-- @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver(close)" -->
             <PopoverPanel v-motion-fade-visible v-if="activeClick"
-                class="!-left-[18vw] w-[93.5vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
+                class="!-left-[16vw] w-[91vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
                 <div class="relative border-b-4 border-brand-primary px-5 my-2">
                     <NuxtImg
@@ -41,10 +41,18 @@
                                     <p class="text-[13px] leading-normal">
                                         {{ currentMainDescription }}
                                     </p>
-                                    <!-- <h2 class="text-2xl font-semibold" v-html="currentMenuSubtitle"></h2>
-                                    <p class="text-md leading-normal">
-                                        {{ currentMenuDescription }}
-                                    </p> -->
+                                    <div class="mt-5">
+                                        <NuxtLink to="/about-us/who-we-are" class="button-animation leading-normal font-semibold flex text-gray-600">
+                                            Read More About our History
+                                            <!-- <span class="h-5 w-5 rounded-full border-2 border-brand-primary center">
+                                                <i class="ml-3 fas fa-arrow-right"></i>
+                                            </span> -->
+                                            <span
+                                                class="ml-2 h-6 w-6 rounded-full border-[1px]  border-gray-400 flex items-center justify-center">
+                                                <i class="text-[10px] fas fa-arrow-right"></i>
+                                            </span>
+                                        </NuxtLink>
+                                    </div>
                                 </div>
 
 
@@ -88,7 +96,8 @@
                                                 class="group hover:cursor-pointer hover:text-black hover:bg-red-100 transition duration-700 rounded-md p-2 font-semibold text-[15px]">
                                                 <div class="flex justify-between">
                                                     {{ submenuItem.name }}
-                                                    <i class="text-brand-primary mr-2 fas fa-angle-right text-[10px] mt-1.5"></i>
+                                                    <i
+                                                        class="text-brand-primary mr-2 fas fa-angle-right text-[10px] mt-1.5"></i>
                                                 </div>
                                                 <p class="text-[10px]">
                                                     {{ submenuItem.description }}

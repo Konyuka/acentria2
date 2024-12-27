@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white">
-        <div class="container mx-auto max-w-6xl font-sans relative isolate py-3">
+        <div class="pt-10 container mx-auto max-w-6xl font-sans relative isolate py-3">
 
 
             <div class="text-left my-2">

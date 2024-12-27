@@ -22,100 +22,163 @@ const incentives = [
 </script>
 
 <template>
-    <div class="bg-white pt-5 font-sans">
+    <div class="font-sans">
 
-        <div class="container grid grid-cols-7 gap-2">
-            <div class="col-span-3 mt-5 container max-w-6xl mx-auto justify-between content-center">
+        <div class="bg-white py-5">
 
-                <!-- <h3 class="font-semibold text-xl mt-2">
-                    Sharing an <span class="text-brand-primary">ambitious spirit!</span>
-                </h3> -->
-                <h2 class="text-5xl font-semibold text-left">
-                    About
-                </h2>
-                <h1 class="text-[10rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
-                    style="background-image: url('/img/sun-tornado.png');">
-                    <div class="-ml-3">
-                        US
+            <div class=" container grid grid-cols-7 gap-2">
+                <div class="col-span-3 mt-5 container max-w-6xl mx-auto justify-between content-center">
+
+                    <!-- <h3 class="font-semibold text-xl mt-2">
+                                Sharing an <span class="text-brand-primary">ambitious spirit!</span>
+                            </h3> -->
+                    <h2 class="text-5xl font-semibold text-left">
+                        About
+                    </h2>
+                    <h1 class="text-[10rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
+                        style="background-image: url('/img/sun-tornado.png');">
+                        <div class="-ml-3">
+                            US
+                        </div>
+                    </h1>
+                </div>
+
+                <div class="col-span-4 relative mt-5">
+                    <h2 class="text-2xl font-semibold text-left">
+                        <span class="text-brand-primary"> Acentria Group</span>
+                    </h2>
+                    <div class="relative mx-auto pt-4">
+                        We drive the future for our partners through expertise and innovative solutions, empowering the
+                        visions of our clients and the communities we serve. By fostering innovation, we deliver the
+                        best
+                        strategies to enhance prosperity and success.
+                        <br><br>
+                        Our mission is to continuously seek better ways to manage risks and guide effective pathways
+                        toward
+                        achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our clients,
+                        our
+                        company, our colleagues, and the communities we proudly serve.
                     </div>
+
+                    <div class="my-5">
+                        <NuxtLink to="/about-us/who-we-are"
+                            class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
+                            Learn More <i data-v-02281a80="" class="fas fa-arrow-right text-primary ml-2"></i>
+                        </NuxtLink>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container my-10">
+                <h1 class="text-semibold text-2xl text-center leading-none">
+                    “At Acentria, we reject the notion that "better" is enough, We go beyond normal thinking to ensure
+                    that
+                    we deliver the smartest and most optimal solution possible”
                 </h1>
             </div>
 
-            <div class="col-span-4 relative mt-5">
-                <h2 class="text-2xl font-semibold text-left">
-                    <span class="text-brand-primary"> Acentria Group</span>
-                </h2>
-                <div class="relative mx-auto">
-                    We drive the future for our partners through expertise and innovative solutions, empowering the
-                    visions of our clients and the communities we serve. By fostering innovation, we deliver the best
-                    strategies to enhance prosperity and success.
-                    <br><br>
-                    Our mission is to continuously seek better ways to manage risks and guide effective pathways toward
-                    achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our clients, our
-                    company, our colleagues, and the communities we proudly serve.
-                </div>
-
-                <div class="my-5">
-                    <NuxtLink to="/about-us/who-we-are"
-                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
-                        Learn More <i data-v-02281a80="" class="fas fa-arrow-right text-primary ml-2"></i>
+            <div class="container mt-5">
+                <div
+                    class="font-sans grid  grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-1 gap-y-2 text-base leading-normal text-gray-600">
+                    <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
+                        :key="incentive.name"
+                        class="shadow-2xl button-animation relative flex flex-row gap-1 border-2 border-black/10 py-5 px-5 rounded-lg">
+                        <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
+                        <div class="relative">
+                            <div class="flex justify-between w-full">
+                                <h5 v-html="incentive.name" class="text-md pb-1 font-semibold leading-tight text-black">
+                                </h5>
+                            </div>
+                            <p class="leading-normal font-regular text-light-content text-[14px]">
+                                {{ incentive.description }}
+                            </p>
+                            <i class="absolute fas fa-arrow-right text-md right-0 top-1"></i>
+                        </div>
                     </NuxtLink>
                 </div>
-
-            </div>
-        </div>
-
-        <div class="container mt-5">
-            <div
-                class="font-sans grid  grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-1 gap-y-2 text-base leading-normal text-gray-600">
-                <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
-                    :key="incentive.name"
-                    class="shadow-2xl button-animation relative flex flex-row gap-1 border-2 border-black/10 py-5 px-5 rounded-lg">
-                    <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
-                    <div class="relative">
-                        <div class="flex justify-between w-full">
-                            <h5 v-html="incentive.name" class="text-md pb-1 font-semibold leading-tight text-black">
-                            </h5>
-                        </div>
-                        <p class="leading-normal font-regular text-light-content text-[14px]">
-                            {{ incentive.description }}
-                        </p>
-                        <i class="absolute fas fa-arrow-right text-md right-0 top-1"></i>
-                    </div>
-                </NuxtLink>
             </div>
         </div>
 
 
-        <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
-            <div class="relative py-4 lg:basis-1/2">
-                <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                    data-nimg="1" style="color: transparent; object-fit: contain"
-                    class="mt-8 w-full h-[310px] shadow-2xl rounded-lg !object-cover" src="/img/inspire.webp" />
+
+        <div class="container relative min-h-[60vh] ">
+            <div class="mb-24 bottom-0 absolute max-w-7xl mx-auto !py-auto ]">
+                <h2 class="text-[46px] font-semibold text-white py-1">
+                    “SMART people, SMART solutions, SMART technology, SMART organization, SMART clients“
+                </h2>
+
             </div>
-            <div class="mt-2 flex flex-col justify-center items-center lg:basis-1/2">
-                <div class="container">
-                    <h2 class="text-2xl font-semibold text-left -ml-5">
-                        Our <span class="text-brand-primary">Purpose</span>
+        </div>
+
+        <div class="bg-white">
+
+            <div class="container mx-auto pt-10 ">
+                <div class="mx-auto max-w-6xl lg:mx-0 mb-2">
+                    <h2 class="text-2xl font-semibold text-black">
+                        Our <span class="text-brand-primary">Capabilities</span>
                     </h2>
-                    <!-- <h3 class="font-semibold text-xl -ml-5 mb-3">
-                        Our True North<span class="text-brand-primary"> that Guides Us!</span>
-                    </h3> -->
                 </div>
-                <div class="text-light-content">
-                    <p class="mt-2 text-sm leading-normal text-gray-700 !text-inherit mb-4">
-                        Our purpose is to passionately lead the way in empowering the vision of our clients and
-                        communities through innovative thinking. By delivering the best solutions to enhance prosperity,
-                        we create value in an ever-evolving global environment.
+
+                <div>
+                    <p class="my-5 text-sm leading-normal">
+                        At Acentria Group, we offer a comprehensive suite of services tailored to meet the evolving
+                        needs
+                        of our clients. Through innovation, expertise, and unwavering dedication, we empower businesses
+                        and individuals to thrive across the following areas.
                         <br><br>
-                        Every day, we go beyond merely meeting compliance and regulatory standards—we strive to exceed
-                        expectations. By concentrating on areas where our expertise has the greatest impact, we empower
-                        people and businesses to thrive inclusively and sustainably.
+                        <Services />
+                        <br>
+                        We provide expert insights and innovative solutions designed to address complex challenges and
+                        unlock new opportunities. Our capabilities span a diverse range of fields, enabling us to
+                        deliver
+                        customized strategies that drive growth, mitigate risks, and enhance prosperity in an
+                        ever-changing global landscape.
+                        <br><br>
+                        With a focus on inclusivity, sustainability, and impactful results, we leverage our expertise to
+                        ensure success for our clients, colleagues, and the communities we serve.
 
                     </p>
                 </div>
+
             </div>
+
+            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
+                <div class="relative py-4 lg:basis-1/2">
+                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
+                        data-nimg="1" style="color: transparent; object-fit: contain"
+                        class="mt-8 w-full h-[310px] shadow-2xl rounded-lg !object-cover" src="/img/inspire.webp" />
+                </div>
+                <div class="mt-2 flex flex-col justify-center items-center lg:basis-1/2">
+                    <div class="container">
+                        <h2 class="text-2xl font-semibold text-left -ml-5">
+                            Our <span class="text-brand-primary">Purpose</span>
+                        </h2>
+                        <!-- <h3 class="font-semibold text-xl -ml-5 mb-3">
+                            Our True North<span class="text-brand-primary"> that Guides Us!</span>
+                        </h3> -->
+                    </div>
+                    <div class="text-light-content">
+                        <p class="mt-2 text-sm leading-normal text-gray-700 !text-inherit mb-4">
+                            Our purpose is to passionately lead the way in empowering the vision of our clients and
+                            communities through innovative thinking. By delivering the best solutions to enhance
+                            prosperity,
+                            we create value in an ever-evolving global environment.
+                            <br><br>
+                            Every day, we go beyond merely meeting compliance and regulatory standards—we strive to
+                            exceed
+                            expectations. By concentrating on areas where our expertise has the greatest impact, we
+                            empower
+                            people and businesses to thrive inclusively and sustainably.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+
     </div>
 </template>
 
