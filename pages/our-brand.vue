@@ -48,7 +48,7 @@ const joinAsMembers = ref([
 </script>
 
 <template>
-    <section class="min-h-screen font-sans">
+    <section class="min-h-screen font-sans bg-white">
         <BannerMain :content="bannerContent" />
 
         <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
@@ -58,7 +58,8 @@ const joinAsMembers = ref([
                         <h1 class="my-5 heading-class text-black text-left">
                             Our <span class="text-brand-primary">Brand</span>
                         </h1>
-                        <p class="font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
+                        <p
+                            class="font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
                             At Acentria Group, our brand is more than just a representation of our identity—it’s a
                             powerful testament to our values, vision, and the aspirations of those we serve. It captures
                             the very essence of who we are, what we stand for, and the impact we aim to create in the
@@ -79,9 +80,9 @@ const joinAsMembers = ref([
             <div class="bg-white">
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:py-4 lg:gap-16 items-center">
                     <div class="relative p-4 lg:basis-1/2">
-                        <NuxtImg alt="Image of Board of Directors" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/logo.png" style="color: transparent; object-fit: contain;"
-                            class="rounded-lg" />
+                        <NuxtImg alt="Image of Board of Directors" loading="lazy" width="500" height="350"
+                            decoding="async" data-nimg="1" src="/img/Acentria Logo-01.jpg"
+                            style="color: transparent; object-fit: contain;" class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
                         <h2 id="" class="heading-class pb-4 md:pb-5">
@@ -101,8 +102,8 @@ const joinAsMembers = ref([
 
             <div class="container pt-5">
                 <div class="mx-auto font-sans">
-                    <h1 class="mt-2 heading-class text-white">
-                        The heart <span class="text-brand-primary">of our brand</span>
+                    <h1 class="mt-2 heading-class text-black">
+                        The heart <span class="text-brand-primary">of Our Brand</span>
                     </h1>
                 </div>
             </div>
@@ -191,7 +192,7 @@ const joinAsMembers = ref([
             style="color: transparent; object-fit: contain;" class="rounded-lg"> -->
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 id="" class="heading-class pb-4 md:pb-5 text-white mt-4">
+                    <h2 id="" class="heading-class pb-4 md:pb-5 text-black mt-4">
                         The <span class="text-brand-primary">Acentria Way!</span>
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">

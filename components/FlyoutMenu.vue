@@ -7,11 +7,12 @@
                 <!-- @mouseleave="activeClick = false" -->
                 <!-- @mouseleave="closeFlyOver()" -->
                 <!-- @mouseenter="openFlyover(theMenu.name)" -->
-                <PopoverButton @click="openFlyover(theMenu.name)"
+                <button @click="openFlyover(theMenu.name, 'click')" @mouseenter="openFlyover(theMenu.name, 'hover')"
+                    @mouseleave="closeFlyOver('button')"
                     :class="[currentMenu === theMenu.name && (activeClick) ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
                     class="pr-2 hover:border-b-red-600 hover:border-b-4 py-1 subheading-class !text-[15.5px] !ring-0 focus inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
                     {{ theMenu.name }}
-                </PopoverButton>
+                </button>
             </div>
         </div>
 
@@ -20,7 +21,8 @@
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-0">
 
             <!-- @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver(close)" -->
-            <PopoverPanel v-motion-fade-visible v-if="activeClick"
+            <div v-motion-fade-visible v-if="activeClick" @mouseenter="keepOpen(theMenu.name)"
+                @mouseleave="closeFlyOver(close)"
                 class="!-left-[16vw] w-[91vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
 
                 <div class="relative border-b-4 border-brand-primary px-5 my-2">
@@ -42,11 +44,9 @@
                                         {{ currentMainDescription }}
                                     </p>
                                     <div class="mt-5">
-                                        <NuxtLink to="/about-us/who-we-are" class="button-animation leading-normal font-semibold flex text-gray-600">
-                                            Read More About our History
-                                            <!-- <span class="h-5 w-5 rounded-full border-2 border-brand-primary center">
-                                                <i class="ml-3 fas fa-arrow-right"></i>
-                                            </span> -->
+                                        <NuxtLink to="/about-us/who-we-are"
+                                            class="button-animation leading-normal font-semibold flex text-gray-600">
+                                            Read More About {{ ctaWording }}
                                             <span
                                                 class="ml-2 h-6 w-6 rounded-full border-[1px]  border-gray-400 flex items-center justify-center">
                                                 <i class="text-[10px] fas fa-arrow-right"></i>
@@ -91,8 +91,8 @@
                                         class="col-span-7 relative flex flex-col gap-1 border-l-2 border-red-600 h-full pl-5">
                                         <!-- <h1 class="font-semibold text-lg" v-html=currentLinksHeading></h1> -->
                                         <div class="grid grid-cols-2 mt-6">
-                                            <NuxtLink :to="submenuItem.link" v-for="submenuItem in currentSubmenuItems"
-                                                :key="submenuItem.name"
+                                            <NuxtLink @click="goToSection(submenuItem.name)" :to="submenuItem.link"
+                                                v-for="submenuItem in currentSubmenuItems" :key="submenuItem.name"
                                                 class="group hover:cursor-pointer hover:text-black hover:bg-red-100 transition duration-700 rounded-md p-2 font-semibold text-[15px]">
                                                 <div class="flex justify-between">
                                                     {{ submenuItem.name }}
@@ -130,7 +130,7 @@
                     </div>
                 </div>
 
-            </PopoverPanel>
+            </div>
 
         </transition>
 
@@ -144,9 +144,7 @@ const props = defineProps({
 })
 
 const currentMenu = ref(null)
-watch(() => currentMenu.value, (value) => {
-    console.log(value)
-})
+
 const currentMenuItems = ref(null)
 const currentMainMenu = ref(null)
 const currentMainHeading = ref(null)
@@ -159,6 +157,19 @@ const currentMenuDescription = ref(null)
 const currentSubmenuItems = ref(null)
 const footerOptions = ref(null)
 const flyoverHeader = ref(null)
+
+const ctaWording = computed(()=>{
+    if(currentMenu.value == 'Insurance'){
+        return 'Insurance'
+    }else if(currentMenu.value == 'Reinsurance'){
+        return 'Reinsurance'
+    }else if(currentMenu.value == 'Actuarial'){
+        return 'Actuarial'
+    }else if(currentMenu.value == 'About'){
+        return 'Our History'
+    }
+})
+
 
 const aboutFooterMenus = ref([
     {
@@ -236,17 +247,17 @@ const AboutMenus = ref([
             {
                 name: 'What we do',
                 description: 'Discover the range of services and solutions we offer.',
-                link: '/about-us/what-we-do',
+                link: '/about-us/who-we-are',
             },
             {
                 name: 'Our Journey',
                 description: 'Explore our journey from inception to market leader.',
-                link: '/about-us/our-journey',
+                link: '/about-us/who-we-are',
             },
             {
                 name: 'Vision, Mission & Values',
                 description: 'Understand our vision, mission, and core values.',
-                link: '/about-us/vision-mission-values',
+                link: '/about-us/who-we-are',
             },
             {
                 name: 'Corporate Culture',
@@ -805,8 +816,8 @@ const popoverImage = computed(() => {
     }
 })
 
-const openFlyover = (menu) => {
-    // console.log(currentMenu.value)
+const openFlyover = (menu, type) => {
+    console.log(type)
     // closeFlyOver()
     if (menu == 'Investment') {
         router.push('/acentria-group-investment');
@@ -901,12 +912,12 @@ const openFlyover = (menu) => {
 }
 
 const keepOpen = (theMenuName) => {
-    openFlyover(theMenuName)
+    openFlyover(theMenuName, 'flyout')
     activeHover.value = true;
+    activeClick.value = true;
 };
 
 let hideTimeout = null;
-
 const closeFlyOver = (close) => {
     // close()
     if (hideTimeout) {
@@ -925,9 +936,7 @@ const closeFlyOver = (close) => {
         currentMenuDescription.value = null
         footerOptions.value = null
         flyoverHeader.value = null
-    }, 200);
-
-
+    }, 500);
 }
 
 const currentRoute = computed(() => {
@@ -939,6 +948,18 @@ watch(currentRoute, (newValue) => {
         closeFlyOver()
     }
 })
+watch(() => currentMenu.value, (value) => {
+    // console.log(value)
+    if(value==null){
+        closeFlyOver()
+    }
+})
+
+const goToSection = (section) => {
+    // activeClick.value=false
+    closeFlyOver()
+    localStorage.setItem('targetSection', section);
+}
 
 const setSubmenu = (menu, index) => {
     if (currentSubmenu.value === menu.name) {

@@ -273,7 +273,8 @@ const products = [
                                     class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
                                     <div class="flex flex-col">
                                         <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
-                                        <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{ principle.name }}</h4>
+                                        <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
+                                            principle.name }}</h4>
                                         <p class="text-sm leading-normal text-black">{{ principle.description }}</p>
                                     </div>
                                 </div>
@@ -438,7 +439,7 @@ const products = [
                         </div>
 
                         <div class="relative py-4 lg:basis-3/5">
-                            <NuxtImg alt="Image of community" loading="lazy" decoding="async" src="/img/join2.jpg"
+                            <NuxtImg alt="Image of community" loading="lazy" decoding="async" src="/img/heart.jpg"
                                 class="rounded-xl w-full h-[500px]" />
                         </div>
                     </div>

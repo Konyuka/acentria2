@@ -68,16 +68,16 @@ const menus = ref([
         icon: 'fas fa-laptop-code',
         link: '/technology',
     },
-    {
-        name: 'Insights',
-        icon: 'fas fa-chart-line',
-        link: '/investment',
-    },
     // {
-    //     name: 'Investment',
+    //     name: 'Insights',
     //     icon: 'fas fa-chart-line',
     //     link: '/investment',
     // },
+    {
+        name: 'Investment',
+        icon: 'fas fa-chart-line',
+        link: '/investment',
+    },
 ]);
 
 const showDropdown = (menu) => {

@@ -30,8 +30,8 @@ const props = defineProps({
                             </h1>
                         </div>
                         <div>
-                            <p class="font-semibold font-sans tracking-wide text-base text-white leading-7 pb-2">
-                                {{ InsuranceBannerContent.content }}
+                            <p v-html="InsuranceBannerContent.content"
+                                class="font-semibold font-sans tracking-wide text-base text-white leading-7 pb-2">
                             </p>
                         </div>
                     </div>

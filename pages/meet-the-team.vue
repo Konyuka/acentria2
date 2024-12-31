@@ -61,6 +61,19 @@ const governance = ref([
     }
 ]);
 
+
+onMounted(() => {
+    const targetSection = localStorage.getItem('targetSection');
+
+    if (targetSection =='Our Governance') {
+        setMenu('Governance')
+    }else if (targetSection == 'Board') {
+        setMenu('Board')
+    } else if (targetSection == 'Management Team') {
+        setMenu('Executive')
+    }
+})
+
 </script>
 
 <template>

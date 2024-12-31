@@ -164,17 +164,20 @@ const prosper = ref([
     }
 ]);
 
+const scrollToSection = () => {
+    const targetSection = localStorage.getItem('targetSection');
+    console.log(targetSection);
+    if (targetSection) {
+        const element = document.getElementById(targetSection);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        localStorage.removeItem('targetSection');
+    }
+}
 
 onMounted(() => {
-    // scrollToSetScroll();
-    // const element = document.getElementById('mission-tabs')
-    // const scrollTo = (element) => {
-    //     window.scroll({
-    //         behavior: 'smooth',
-    //         left: 0,
-    //         top: element.offsetTop
-    //     });
-    // }
+    scrollToSection();
 })
 </script>
 
@@ -188,20 +191,10 @@ onMounted(() => {
                         Group</span>
                 </h1>
                 <p class="mt-5 text-xs leading-normal text-center">
-                    <!-- At Acentria Group, we are a trusted global consultancy dedicated to empowering, innovating, and
-                    driving growth and prosperity. With expertise spanning Risk and Insurance, Reinsurance, Actuarial
-                    Services, Technology, and Investment Advisory, we bring over a decade of excellence to crafting
-                    tailored solutions that help our clients thrive. -->
-
                     At Acentria Group, we shape the future of our partners through our expertise and solutions by
                     EMPOWERING the vision of our clients and communities. Through INNOVATIVE thinking, we deliver the
                     best solutions that enhance PROSPERITY. We are constantly seeking better ways to manage risk,
                     guiding effective pathways to achieve SMART and sustainable outcomes.
-                    <!-- <br><br>
-                    Our innovative approach to risk management, insurance optimization, and investment advisory ensures
-                    you stay ahead of the curve. When you partner with Acentria Group, you gain access to a wealth of
-                    knowledge and resources designed to mitigate risks, maximize opportunities, and achieve your
-                    financial goals. -->
                     <br><br><br>
                     <span class="tracking-widest font-semibold italic text-[20px] text-gray-600 tm-10">
                         Let us help you navigate the complexities of today’s world and unlock your true potential.
@@ -210,89 +203,9 @@ onMounted(() => {
             </div>
         </div>
 
-        <!-- <div class="container py-2">
-            <div class="mt-5">
-                <h1 class="heading-class text-left"> <span class="text-brand-primary">Empower</span>
-                </h1>
-                <p class="mt-2 text-xs leading-normal text-left">
-                    At the core of our mission lies a profound belief in the potential of every individual and
-                    organization to achieve greatness. Empowerment is our driving force:
-                </p>
-                <div class="grid grid-cols-3 gap-5 my-5">
-                    <div v-for="item in empower" :key="item.title"
-                        class="bg-white p-5 shadow-md rounded-md text-left border-2 border-gray-200 !border-r-4 !border-r-red-600">
-                        <h3 class="subheading-class text-lg font-semibold">
-                            {{ item.title }}
-                        </h3>
-                        <p class="mt-2 text-sm leading-normal">
-                            {{ item.description }} </p>
-
-                    </div>
-                </div>
-                <p class="mt-2 text-xs leading-normal text-left">
-                    Every success story we help create fuels our passion to empower others in reaching their dreams.
-                    Together, we turn potential into progress and aspirations into achievements.
-                </p>
-            </div>
-        </div>
-
-        <div class="container py-2">
-            <div class="mt-5">
-                <h1 class="heading-class text-left"> <span class="text-brand-primary">Innovate</span>
-                </h1>
-                <p class="mt-2 text-xs leading-normal text-left">
-                    Innovation is the spark that fuels progress, and we draw inspiration from the dynamic, ever-changing
-                    world around us.
-                </p>
-                <div class="grid grid-cols-3 gap-5 my-5">
-                    <div v-for="item in innovate" :key="item.title"
-                        class="bg-white p-5 shadow-md rounded-md text-left border-2 border-gray-200 !border-r-4 !border-r-red-600">
-                        <h3 class="subheading-class text-lg font-semibold">
-                            {{ item.title }}
-                        </h3>
-                        <p class="mt-2 text-sm leading-normal">
-                            {{ item.description }} </p>
-
-                    </div>
-                </div>
-                <p class="mt-2 text-xs leading-normal text-left">
-                    At Acentria Group, innovation drives us to push boundaries and unlock new potential for those we
-                    serve, transforming ideas into impactful realities.
-                </p>
-            </div>
-        </div>
-
-        <div class="container py-5">
-            <div class="mt-5">
-                <h1 class="heading-class text-left"> <span class="text-brand-primary">Prosper</span>
-                </h1>
-                <p class="mt-2 text-xs leading-normal text-left">
-                    Prosperity is more than financial success—it is the flourishing of individuals, businesses, and
-                    communities. It is about winning together.
-                </p>
-                <div class="grid grid-cols-3 gap-5 my-5">
-                    <div v-for="item in prosper" :key="item.title"
-                        class="bg-white p-5 shadow-md rounded-md text-left border-2 border-gray-200 !border-r-4 !border-r-red-600">
-                        <h3 class="subheading-class text-lg font-semibold">
-                            {{ item.title }}
-                        </h3>
-                        <p class="mt-2 text-sm leading-normal">
-                            {{ item.description }} </p>
-
-                    </div>
-                </div>
-                <p class="mt-2 text-xs leading-normal text-left">
-                    The pursuit of prosperity inspires us to act responsibly and work toward a brighter, better future
-                    for all. At Acentria Group, we are fueled by the power of possibility and the promise of progress.
-                    Through Empower, Innovate, and Prosper, we remain dedicated to turning inspiration into action—every
-                    day, in everything we do.
-                </p>
-            </div>
-        </div> -->
-
         <div class="bg-white py-1 font-sans mt-5">
 
-            <div class="container mx-auto flex lg:flex-row flex-col my-8 lg:my-4 lg:gap-2">
+            <div id="Who we are" class="container mx-auto flex lg:flex-row flex-col my-8 lg:my-4 lg:gap-2">
                 <div class="relative py-4 lg:basis-1/2 scale-90">
                     <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="300"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
@@ -300,8 +213,6 @@ onMounted(() => {
                 </div>
 
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <!-- <label class="text-base leading-normal font-regular text-light-highlight font-bold">Acentria
-                        Group</label> -->
                     <h2 class="text-2xl font-semibold text- mb-4">
                         Who <span class="text-brand-primary">We Are</span>
                     </h2>
@@ -385,7 +296,6 @@ onMounted(() => {
             </div>
 
             <div class="container">
-
                 <h2 class="text-2xl font-semibold text- mb-4">
                     Our <span class="text-brand-primary">Capabilities</span>
                 </h2>
@@ -430,17 +340,10 @@ onMounted(() => {
 
                                 </div>
 
-                                <!-- <div class="grid grid-cols-2 gap-1 mt-2">
-                                    <span v-for="item in feature.items" class="text-[12px] text-black font-regular">
-                                        <i class="fas fa-check text-brand-primary mr-1 text-[10px]"></i> {{ item }}
-                                    </span>
-                                </div> -->
-
                                 <div class="mt-1 text-black">
                                     <p>
                                         {{ feature.description }}
                                     </p>
-                                    <!-- Learn more <i class="ml-2 fas fa-arrow-right text-brand-primary"></i> -->
                                 </div>
 
                             </div>
@@ -567,7 +470,6 @@ onMounted(() => {
                                 The Acentria Way is more than just about the work we do—it’s about how we do it. Our
                                 values and principles shape every engagement, driving us to deliver excellence while
                                 empowering our people and the communities we serve.
-
                             </p>
                             <NuxtLink href="/corporate-culture"
                                 class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
