@@ -8,9 +8,13 @@
                 <!-- @mouseleave="closeFlyOver()" -->
                 <!-- @mouseenter="openFlyover(theMenu.name)" -->
                 <button @click="openFlyover(theMenu.name, 'click')" @mouseenter="openFlyover(theMenu.name, 'hover')"
-                    @mouseleave="closeFlyOver('button')"
-                    :class="[currentMenu === theMenu.name && (activeClick) ? 'text-brand-primary border-b-red-600 border-b-4' : 'text-black']"
-                    class="pr-2 hover:border-b-red-600 hover:border-b-4 py-1 subheading-class !text-[15.5px] !ring-0 focus inline-flex items-center gap-x-1 font-semibold duration-200 hover:text-brand-primary">
+                    @mouseleave="closeFlyOver()" :class="[
+                        openMenu === theMenu.name ?
+                            'text-brand-primary border-b-red-600 border-b-4' :
+                            'text-black'
+                    ]" class="pr-2 hover:border-b-red-600 hover:border-b-4 py-1 subheading-class 
+             !text-[15.5px] !ring-0 focus inline-flex items-center gap-x-1 
+             font-semibold duration-200 hover:text-brand-primary">
                     {{ theMenu.name }}
                 </button>
             </div>
@@ -21,9 +25,9 @@
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-0">
 
             <!-- @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver(close)" -->
-            <div v-motion-fade-visible v-if="activeClick" @mouseenter="keepOpen(theMenu.name)"
-                @mouseleave="closeFlyOver(close)"
-                class="!-left-[16vw] w-[91vw] h-20 mt-[60px] mx-auto absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl">
+            <div v-if="openMenu === theMenu.name" v-motion-fade-visible class="!-left-[16vw] w-[91vw] h-20 mt-[60px] mx-auto 
+               absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl" @mouseenter="keepOpen()"
+                @mouseleave="closeFlyOver()">
 
                 <div class="relative border-b-4 border-brand-primary px-5 my-2">
                     <NuxtImg
@@ -44,7 +48,7 @@
                                         {{ currentMainDescription }}
                                     </p>
                                     <div class="mt-5">
-                                        <NuxtLink to="/about-us/who-we-are"
+                                        <NuxtLink :to="ctaLink"
                                             class="button-animation leading-normal font-semibold flex text-gray-600">
                                             Read More About {{ ctaWording }}
                                             <span
@@ -65,6 +69,7 @@
                                         <div class="relative pt-2 flex flex-col gap-1 mt-7">
                                             <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
                                                 <p @click="setSubmenu(item, index)"
+                                                    @mouseenter="setSubmenu(item, index)"
                                                     :class="[currentSubmenu === item.name ? 'text-brand-primary bg-red-100' : '']"
                                                     class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
                                                     {{ item.name }} <i v-if="currentSubmenu === item.name"
@@ -75,6 +80,7 @@
                                                 <div class="flex flex-col gap-1">
                                                     <div v-show="item.type" v-for="(item, index) in currentMenuItems">
                                                         <p @click="setSubmenu(item, index)"
+                                                            @mouseenter="setSubmenu(item, index)"
                                                             :class="[currentSubmenu === item.name ? 'text-black bg-red-100' : '']"
                                                             class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
                                                             {{ item.name }} <i v-if="currentSubmenu === item.name"
@@ -143,6 +149,8 @@ const props = defineProps({
     theMenu: Object,
 })
 
+const openMenu = ref(null)
+
 const currentMenu = ref(null)
 
 const currentMenuItems = ref(null)
@@ -167,6 +175,18 @@ const ctaWording = computed(()=>{
         return 'Actuarial'
     }else if(currentMenu.value == 'About'){
         return 'Our History'
+    }
+})
+
+const ctaLink = computed(()=>{
+    if(currentMenu.value == 'Insurance'){
+        return '/acentria-group-insurance'
+    }else if(currentMenu.value == 'Reinsurance'){
+        return '/acentria-group-reinsurance'
+    }else if(currentMenu.value == 'Actuarial'){
+        return '/acentria-group-actuarial'
+    }else if(currentMenu.value == 'About'){
+        return '/about-us/who-we-are'
     }
 })
 
@@ -816,114 +836,152 @@ const popoverImage = computed(() => {
     }
 })
 
+
+let hideTimeout = null;
 const openFlyover = (menu, type) => {
-    console.log(type)
-    // closeFlyOver()
+    if (hideTimeout) {
+        clearTimeout(hideTimeout)
+        hideTimeout = null
+    }
+
+    // if (openMenu.value === menu && type === 'click') {
+    //     openMenu.value = null
+    //     return
+    // }
+
     if (menu == 'Investment') {
-        router.push('/acentria-group-investment');
-        return;
+        if(type=='hover'){
+            return;
+        }else{
+            router.push('/acentria-group-investment');
+            return;
+        }
     }
     if (menu == 'Technology') {
-        window.open('https://tech.acentriagroup.com/', '_blank');
-        return;
+        if (type == 'hover') {
+            return;
+        } else {
+            window.open('https://tech.acentriagroup.com/', '_blank');
+            return;
+        }
     }
     if (currentMenu.value === menu) {
         // currentMenu.value = null
         return
     } else {
 
-        activeClick.value = true
-        activeHover.value = true
+        // activeClick.value = true
+        // activeHover.value = true
         currentMenu.value = menu
+        openMenu.value = menu
 
-        if (currentMenu.value === 'About') {
-            flyoverHeader.value = 'Acentria Group'
-            currentMenuItems.value = AboutMenus.value
-            currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
-            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
-            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
-            currentSubmenu.value = 'About Us'
-            currentSubmenuItems.value = currentMenuItems.value[0]?.items
-            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
-            currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
-            currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
-            currentMenuDescription.value = currentMenuItems.value[0]?.description
-            footerOptions.value = aboutFooterMenus.value
-        }
-        if (currentMenu.value === 'Insurance') {
-            flyoverHeader.value = 'Insurance Solutions'
-            currentMenuItems.value = InsuranceMenus.value
-            currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
-            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
-            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
-            currentSubmenu.value = 'Insurance Personal Covers'
-            currentSubmenuItems.value = currentMenuItems.value[0]?.items
-            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
-            currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
-            currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
-            currentMenuDescription.value = currentMenuItems.value[0]?.description
-            footerOptions.value = insuranceFooterMenus.value
-        }
-        if (currentMenu.value === 'Reinsurance') {
-            flyoverHeader.value = 'Reinsurance Solutions'
-            currentMenuItems.value = ReinsuranceMenus.value
-            currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
-            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
-            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
-            currentSubmenu.value = 'Reinsurance Services'
-            currentSubmenuItems.value = currentMenuItems.value[0]?.items
-            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
-            currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
-            currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
-            currentMenuDescription.value = currentMenuItems.value[0]?.description
-            footerOptions.value = reinsuranceFooterMenus.value
-        }
-        if (currentMenu.value === 'Actuarial') {
-            flyoverHeader.value = 'Actuarial Services'
-            currentMenuItems.value = ActuarialMenus.value
-            currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
-            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
-            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
-            currentSubmenu.value = 'Actuarial Services'
-            currentSubmenuItems.value = currentMenuItems.value[0]?.items
-            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
-            currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
-            currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
-            currentMenuDescription.value = currentMenuItems.value[0]?.description
-            footerOptions.value = actuarialFooterMenus.value
-        }
-        if (currentMenu.value === 'Insights') {
-            flyoverHeader.value = 'Acentria Insights'
-            currentMenuItems.value = InsightsMenus.value
-            currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
-            currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
-            currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
-            currentSubmenu.value = 'Our Insights'
-            currentSubmenuItems.value = currentMenuItems.value[0]?.items
-            currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
-            currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
-            currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
-            currentMenuDescription.value = currentMenuItems.value[0]?.description
-            footerOptions.value = insightsFooterMenus.value
+
+        if (type === 'click'){
+            if (currentMainMenu.value === 'About') {
+                router.push('/about-us/who-we-are');
+            }
+            if (currentMainMenu.value === 'Insurance') {
+                router.push('/acentria-group-insurance');
+            }
+            if (currentMainMenu.value === 'Reinsurance') {
+                router.push('/acentria-group-reinsurance');
+            }
+            if (currentMainMenu.value === 'Actuarial') {
+                router.push('/acentria-group-actuarial');
+            }
+            // return;
+        }else{
+            if (currentMenu.value === 'About') {
+                flyoverHeader.value = 'Acentria Group'
+                currentMenuItems.value = AboutMenus.value
+                currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+                currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+                currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
+                currentSubmenu.value = 'About Us'
+                currentSubmenuItems.value = currentMenuItems.value[0]?.items
+                currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+                currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
+                currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
+                currentMenuDescription.value = currentMenuItems.value[0]?.description
+                footerOptions.value = aboutFooterMenus.value
+            }
+            if (currentMenu.value === 'Insurance') {
+                flyoverHeader.value = 'Insurance Solutions'
+                currentMenuItems.value = InsuranceMenus.value
+                currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+                currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+                currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
+                currentSubmenu.value = 'Insurance Personal Covers'
+                currentSubmenuItems.value = currentMenuItems.value[0]?.items
+                currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+                currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
+                currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
+                currentMenuDescription.value = currentMenuItems.value[0]?.description
+                footerOptions.value = insuranceFooterMenus.value
+            }
+            if (currentMenu.value === 'Reinsurance') {
+                flyoverHeader.value = 'Reinsurance Solutions'
+                currentMenuItems.value = ReinsuranceMenus.value
+                currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+                currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+                currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
+                currentSubmenu.value = 'Reinsurance Services'
+                currentSubmenuItems.value = currentMenuItems.value[0]?.items
+                currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+                currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
+                currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
+                currentMenuDescription.value = currentMenuItems.value[0]?.description
+                footerOptions.value = reinsuranceFooterMenus.value
+            }
+            if (currentMenu.value === 'Actuarial') {
+                flyoverHeader.value = 'Actuarial Services'
+                currentMenuItems.value = ActuarialMenus.value
+                currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+                currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+                currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
+                currentSubmenu.value = 'Actuarial Services'
+                currentSubmenuItems.value = currentMenuItems.value[0]?.items
+                currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+                currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
+                currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
+                currentMenuDescription.value = currentMenuItems.value[0]?.description
+                footerOptions.value = actuarialFooterMenus.value
+            }
+            if (currentMenu.value === 'Insights') {
+                flyoverHeader.value = 'Acentria Insights'
+                currentMenuItems.value = InsightsMenus.value
+                currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
+                currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
+                currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
+                currentSubmenu.value = 'Our Insights'
+                currentSubmenuItems.value = currentMenuItems.value[0]?.items
+                currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
+                currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
+                currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
+                currentMenuDescription.value = currentMenuItems.value[0]?.description
+                footerOptions.value = insightsFooterMenus.value
+            }
         }
 
     }
-    // console.log(currentMenu.value)
 }
 
 const keepOpen = (theMenuName) => {
-    openFlyover(theMenuName, 'flyout')
-    activeHover.value = true;
-    activeClick.value = true;
+    if (hideTimeout) {
+        clearTimeout(hideTimeout)
+        hideTimeout = null
+    }
 };
 
-let hideTimeout = null;
 const closeFlyOver = (close) => {
     // close()
     if (hideTimeout) {
         clearTimeout(hideTimeout);
     }
     hideTimeout = setTimeout(() => {
+        openMenu.value = null
+        hideTimeout = null
+
         currentMenu.value = null
         activeClick.value = false
         activeHover.value = false
@@ -936,7 +994,7 @@ const closeFlyOver = (close) => {
         currentMenuDescription.value = null
         footerOptions.value = null
         flyoverHeader.value = null
-    }, 500);
+    }, 100);
 }
 
 const currentRoute = computed(() => {
