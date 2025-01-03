@@ -240,13 +240,13 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/11836813/pexels-photo-11836813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Catastrophic Modelling',
         description: 'Utilize sophisticated models to assess and mitigate the impact of catastrophic events on your portfolio.',
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/5716052/pexels-photo-5716052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Return On Risk Adjusted Capital',
         description: 'Maximize your returns by effectively managing risk-adjusted capital in your reinsurance operations.',
         url: '/contact-acentria-group',

@@ -124,7 +124,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Risk Assessment',
         description: 'Utilizing advanced models to evaluate and mitigate potential risks',
         url: '/contact-acentria-group',
@@ -148,7 +148,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Pension Consulting',
         description: 'Offering expert advice on pension plan design and management',
         url: '/contact-acentria-group',
@@ -166,7 +166,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Product Development',
         description: 'Designing innovative insurance products to meet market needs',
         url: '/contact-acentria-group',
