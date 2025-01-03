@@ -142,7 +142,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/7821574/pexels-photo-7821574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Regulatory Compliance',
         description: 'Ensuring adherence to industry regulations and standards',
         url: '/contact-acentria-group',

@@ -234,7 +234,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: '/img/ballon.jpg',
         title: 'Acentria Reinsurance Solution',
         description: 'Comprehensive reinsurance solutions tailored to meet the unique needs of your business.',
         url: '/contact-acentria-group',
