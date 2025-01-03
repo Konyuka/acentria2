@@ -198,7 +198,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/7821684/pexels-photo-7821684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Claims Management',
         description: 'Streamline your claims process with our expert management services, ensuring quick and fair settlements.',
         url: '/contact-acentria-group',
@@ -210,7 +210,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Facultative Solutions',
         description: 'Tailored reinsurance solutions for specific risks, providing flexibility and targeted coverage.',
         url: '/contact-acentria-group',
@@ -222,13 +222,13 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Special Lines Solutions',
         description: 'Customized reinsurance for niche markets and unique risks, offering specialized protection.',
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Reinsurance Data Analytics Tool',
         description: 'Leverage advanced analytics to optimize your reinsurance strategies and make informed decisions.',
         url: '/contact-acentria-group',

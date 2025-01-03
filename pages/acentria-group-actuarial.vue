@@ -118,7 +118,7 @@ const heroContent = ref({
 
 const slides = ref([
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=600',
         title: 'Actuarial Audits',
         description: 'Empowering your decisions with data precision and strategic insights',
         url: '/contact-acentria-group',
@@ -154,7 +154,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Investment Analysis',
         description: 'Evaluating investment opportunities to maximize returns',
         url: '/contact-acentria-group',
@@ -172,7 +172,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Actuarial Audits',
         description: 'Conducting thorough audits to ensure accuracy and reliability',
         url: '/contact-acentria-group',
