@@ -1,4 +1,7 @@
 <script setup>
+import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
+
 useSeoMeta({
   title: 'Acentria Group - Comprehensive Coverage Solutions',
   description: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
@@ -131,8 +134,17 @@ const others = ref([
     image: '/img/join.jpg',
     link: '/our-brand',
   },
-  
+
 ])
+
+const chunkedBlogs = computed(() => {
+  const chunkSize = 3
+  const result = []
+  for (let i = 0; i < others.value.length; i += chunkSize) {
+    result.push(others.value.slice(i, i + chunkSize))
+  }
+  return result
+})
 
 onMounted(() => {
   // if (mission.value) {
@@ -165,156 +177,78 @@ onMounted(() => {
                 </div>
               </div>
 
-              <div class="bg-white">
+              <!-- <div class="bg-white">
                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 bg-white">
-
                   <NuxtLink :to="blog.link" v-for="blog in others"
                     class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
-                      <div class="relative w-full">
-                        <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
-                          class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
-                          sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px" :src="blog.image"
-                          style="color: transparent;" />
-                        <div
-                          class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
-                        </div>
+                    <div class="relative w-full">
+                      <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
+                        class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                        sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px" :src="blog.image"
+                        style="color: transparent;" />
+                      <div
+                        class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
                       </div>
-                      <div class="max-w-full">
-                        <div class="font-sans group relative">
-                          <h1
-                            v-html="blog.name"
-                            class="mt-3 text-[16px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
-                          </h1>
-                          <p v-html="blog.description" class="line-clamp-3 text-[13px] leading-normal text-black">
-                          </p>
-                        </div>
-                        <div class="font-semibold mt-5 text-xs">
-                          Learn More <i class="ml-2 fas fa-arrow-right"></i> 
-                        </div>
-                      </div>
-                  </NuxtLink>
-
-
-                </div>
-              </div>
-
-
-              <!-- <section id="" class="bg-white relative md:py-2 text-left">
-                <div class="container">
-                  <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative py-4 lg:basis-1/2">
-                      <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                        data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="!object-cover w-full h-[300px] shadow-2xl rounded-lg" src="/img/leadership.jpg" />
                     </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2">
-                      <div class="text-light-content pb-5 md:pb-6 py-auto">
-                        <p class="text-sm leading-normal mb-4">
-                          Our success is powered by a dynamic and dedicated leadership team. With diverse expertise and
-                          a shared commitment to excellence, our leaders play a crucial role in shaping our
-                          organization's vision, strategy, and culture.
-                          <br><br>
-                          Meet the visionaries and strategists driving innovation, growth, and success. Their unwavering
-                          dedication and forward-thinking approach ensure we remain at the forefront of our industry,
-                          consistently adapting to new challenges and seizing opportunities.
-
+                    <div class="max-w-full">
+                      <div class="font-sans group relative">
+                        <h1 v-html="blog.name"
+                          class="mt-3 text-[16px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
+                        </h1>
+                        <p v-html="blog.description" class="line-clamp-3 text-[13px] leading-normal text-black">
                         </p>
-                        <NuxtLink href="/meet-the-team"
-                          class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                          Meet the Team
-                          <i class="fas fa-arrow-right text-primary ml-2"></i>
-                        </NuxtLink>
+                      </div>
+                      <div class="font-semibold mt-5 text-xs">
+                        Learn More <i class="ml-2 fas fa-arrow-right"></i>
                       </div>
                     </div>
-                  </div>
-
-                </div>
-              </section>
-
-              <div class="font-sans py-2 text-white bg-white">
-
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-5 pb-5 lg:gap-16">
-                  <div class="flex flex-col justify-center lg:basis-1/2">
-                    <div class="pb-4">
-                      <h2 class="text-2xl font-semibold text-black">
-                        Our <span class="text-brand-primary">Culture</span>
-                      </h2>
-                      <h3 class="text-xl font-semibold">
-                        The Acentria <span class="text-brand-primary">Way!</span>
-                      </h3>
-                    </div>
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <p class="text-sm leading-normal text-light-content !text-inherit mb-4">
-                        At Acentria Group, our corporate culture is the foundation of everything we do. It is the
-                        fertile soil where seeds of promise grow into prosperity. Guided by a clear purpose, our culture
-                        fosters a supportive, innovative, and dynamic environment where every employee has the
-                        opportunity to thrive.
-                        <br><br>
-                        The Acentria Way is more than just about the work we do—it’s about how we do it. Our values and
-                        principles shape every engagement, driving us to deliver excellence while empowering our people
-                        and the communities we serve.
-
-                      </p>
-                      <NuxtLink href="/corporate-culture"
-                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        Learn More
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                  <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain"
-                      class="w-full h-[320px] shadow-2xl rounded-lg !object-cover" src="/img/hi5.jpg" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="bg-white py-10">
-                <div class="container relative min-w-screen">
-                  <div class=" bottom-0 absolute max-w-7xl mx-auto">
-                    <h2 class="text-2xl font-semibold text-black">
-                      Our <span class="text-brand-primary">Brand</span>
-                    </h2>
-                    <h3 class="text-xl font-semibold text-black">
-                      A Lifestyle Built <span class="text-brand-primary"> Around Excellence</span>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16 items-center">
-                  <div class="flex text-left lg:basis-1/2">
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                      <p class="text-sm leading-normal mb-4 mt-4">
-                        At Acentria Group, our brand reflects who we are and what we stand for. Built on the core
-                        pillars of Integrity, Innovation, and Excellence, it embodies our unwavering commitment to
-                        empowering dreams, sparking imagination, and making a meaningful impact on our clients,
-                        employees, and communities.
-                        <br><br>
-                        Guided by The <b>Acentria Way</b> , we prioritize trust, transparency, and accountability in
-                        every
-                        interaction. Our brand is more than a logo—it’s a promise. A promise to deliver transformative
-                        solutions, champion sustainable growth, and uphold the highest standards of excellence.
-                        Through empowerment, innovation, and a legacy of responsibility, our brand inspires confidence
-                        and fosters enduring partnerships that drive success for all.
-
-                      </p>
-                      <NuxtLink href="/our-brand"
-                        class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        Learn More
-                        <i class="fas fa-arrow-right text-primary ml-2 text-[12px]"></i>
-                      </NuxtLink>
-                    </div>
-                  </div>
-                  <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                      data-nimg="1" style="color: transparent; object-fit: contain"
-                      class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/join.jpg" />
-                  </div>
+                  </NuxtLink>
                 </div>
               </div> -->
 
+              <div class="!overflow-x-hidden !font-sans bg-white">
+                <!-- Carousel Wrapper -->
+                <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1" 
+                  >
+                  <!-- Each Slide -->
+                  <Slide v-for="(chunk, cIndex) in chunkedBlogs" :key="cIndex" class="relative">
+                    <!-- Grid of Cards Inside One Slide -->
+                    <div class="bg-white">
+                      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">
+                        <NuxtLink v-for="(blog, index) in chunk" :key="index" :to="blog.link"
+                          class="button-animation rounded-xl p-3 shadow-md group flex flex-col items-start justify-between">
+                          <div class="relative w-full">
+                            <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
+                              class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                              :src="blog.image" style="color: transparent;" />
+                            <div
+                              class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
+                            </div>
+                          </div>
+                          <div class="max-w-full">
+                            <div class="font-sans group relative">
+                              <h1 v-html="blog.name"
+                                class="mt-3 text-[16px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
+                              </h1>
+                              <p v-html="blog.description" class="line-clamp-3 text-[13px] leading-normal text-black">
+                              </p>
+                            </div>
+                            <div class="font-semibold mt-5 text-xs">
+                              Learn More <i class="ml-2 fas fa-arrow-right"></i>
+                            </div>
+                          </div>
+                        </NuxtLink>
+                      </div>
+                    </div>
+                  </Slide>
 
+                  <!-- Carousel Controls (Pagination & Navigation) -->
+                  <template #addons>
+                    <Pagination />
+                    <Navigation class="text-black px-10" />
+                  </template>
+                </Carousel>
+              </div>
 
               <section class="container max-w-6xl mx-auto relative py-5">
                 <div class="py-5 text-2xl font-semibold text-white text-left">

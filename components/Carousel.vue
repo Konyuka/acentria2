@@ -39,31 +39,6 @@ const props = defineProps({
 //         description: 'Empowering your decisions with data precision and strategic insights',
 //         url: '/acentria-group-insurance',
 //     },
-//     {
-//         imageUrl: 'https://acentriagroup.com/wp-content/uploads/2023/11/shutterstock_1697703976-1.jpg',
-//         title: 'Reinsurance',
-//         description: 'Protecting Your Assets, Empowering Your Future',
-//         url: '/acentria-group-reinsurance',
-//     },
-
-//     {
-//         imageUrl: 'https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-adventure-night-road-trip-in-the-forest-aerial-view-of-a-car-headlights-on-deep-jungle-road-on-1932802550-transformed.jpeg',
-//         title: 'Actuarial',
-//         description: 'Empowering Decisions, Simplifying Complexity',
-//         url: '/acentria-group-actuarial',
-//     },
-//     {
-//         imageUrl: 'https://acentriagroup.com/wp-content/uploads/2023/11/shutterstock_1482718226-WAVE-PAID.jpg',
-//         title: 'Technology',
-//         description: 'Building prosperity, Securing Futures',
-//         url: '/contact-acentria-group',
-//     },
-//     {
-//         imageUrl: 'https://acentriagroup.com/wp-content/uploads/2023/11/shutterstock_1697703976-1.jpg',
-//         title: 'Investment',
-//         description: 'Protecting Your Assets, Empowering Your Future',
-//         url: '/acentria-group-investment',
-//     },
 // ])
 
 </script>

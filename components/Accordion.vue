@@ -32,21 +32,6 @@ const toggle = (index) => {
                 <div class="divide-y divide-gray-200">
 
                     <dl class="mt-6 space-y-4 divide-y divide-gray-200">
-                        <!-- <Disclosure as="div" v-for="faq in faqs" :key="faq.name" class="bg-gray-100" v-slot="{ open }">
-                            <dt :class="[open ? 'bg-brand-primary' :'bg-gray-500']" class="py-2 px-6">
-                                <DisclosureButton
-                                    class="flex w-full items-start justify-between text-left text-gray-900">
-                                    <span :class="[open ? 'text-white' : 'text-white']" class="text-lg font-semibold leading-7">{{ faq.name }}</span>
-                                    <span class="ml-4 flex h-7 items-center">
-                                        <PlusSmallIcon v-if="!open" class="text-white h-6 w-6" aria-hidden="true" />
-                                        <MinusSmallIcon v-else class="text-white h-6 w-6" aria-hidden="true" />
-                                    </span>
-                                </DisclosureButton>
-                            </dt>
-                            <DisclosurePanel as="dd" class="mt-2 px-6">
-                                <p class="text-base leading-normal text-gray-600" v-html="faq.content"></p>
-                            </DisclosurePanel>
-                        </Disclosure> -->
 
                         <Disclosure as="div" v-for="(faq, index) in faqs" :key="faq.name" class="bg-gray-100"
                             v-slot="{ open }">
