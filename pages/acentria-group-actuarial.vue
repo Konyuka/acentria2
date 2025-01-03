@@ -160,7 +160,7 @@ const slides = ref([
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: '/img/',
+        imageUrl: 'https://www.pexels.com/photo/person-in-white-hand-gloves-writing-on-white-paper-207601/',
         title: 'Claims Reserving',
         description: 'Accurately estimating reserves for future claims liabilities',
         url: '/contact-acentria-group',
