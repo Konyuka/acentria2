@@ -544,6 +544,8 @@ const specials = ref([
 
             <Why />
 
+            <News />
+
             <WhyRe :whys="whys" />
 
             <!-- <div>

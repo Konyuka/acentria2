@@ -60,7 +60,6 @@ const openProfileBoardModal = () => {
   profileBoardModal.value = true;
 };
 
-
 const joinAsMembers = ref([
   {
     name: 'New Customer',
@@ -147,9 +146,6 @@ const chunkedBlogs = computed(() => {
 })
 
 onMounted(() => {
-  // if (mission.value) {
-  //     selectedMenu.value = mission.value.currentMenu;
-  // }
 });
 </script>
 
@@ -206,7 +202,7 @@ onMounted(() => {
                 </div>
               </div> -->
 
-              <div class="!overflow-x-hidden !font-sans bg-white">
+              <div class="!overflow-x-hidden !font-sans bg-white pb-5">
                 <!-- Carousel Wrapper -->
                 <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1" 
                   >

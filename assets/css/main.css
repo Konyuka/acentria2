@@ -37,11 +37,6 @@
   @apply text-base leading-relaxed text-gray-700;
 }
 
-
-.button-animation {
-    @apply transform transition hover:cursor-pointer hover:scale-90 duration-700 ease-in-out
-}
-
 .heading-class {
     @apply text-[27px] font-semibold text-gray-900
 }
