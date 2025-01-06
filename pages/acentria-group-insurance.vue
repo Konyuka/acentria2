@@ -48,13 +48,13 @@ const data = ref({
     ],
     corporate: [
         {
-            name: 'Staff Health Cover',
+            name: 'Staff Health',
             content: 'Elevate Employee Well-being Today',
             icon: 'fas fa-user-md',
             link: '/insurance/staff-health-cover'
         },
         {
-            name: 'Staff Travel Cover',
+            name: 'Staff Travel',
             content: 'Empower Your Team\'s Journeys Today',
             icon: 'fas fa-suitcase-rolling',
             link: '/insurance/staff-travel-cover'
@@ -66,19 +66,19 @@ const data = ref({
             link: '/insurance/'
         },
         {
-            name: 'Office Content Cover',
+            name: 'Office Content',
             content: 'Safeguard Your Business Assets with Acentria\'s Office Content Coverage.',
             icon: 'fas fa-briefcase',
             link: '/insurance/office-content-cover'
         },
         {
-            name: 'Credit Risk Cover',
+            name: 'Credit Risk',
             content: 'Boost Financial Confidence with Acentria\'s Credit Risk Coverage. Safeguard Your Business\'s Financial Stability Today.',
             icon: 'fas fa-credit-card',
             link: '/insurance/credit-risk-cover'
         },
         {
-            name: 'Cyber Liability Cover',
+            name: 'Cyber Liability',
             content: 'Protect Your Digital Fortresses with Acentria\'s Cyber Liability Insurance. Defend Your Business Against Online Threats Today.',
             icon: 'fas fa-shield-virus',
             link: '/insurance/cyber-liability-cover'
@@ -110,25 +110,25 @@ const data = ref({
             link: '/insurance/biasahara-cover'
         },
         {
-            name: 'General Liability Cover',
+            name: 'General Liability',
             content: 'Protect your business with Acentria\'s General Liability Insurance – your shield against unexpected challenges and legal uncertainties.',
             icon: 'fas fa-balance-scale',
             link: '/insurance/general-liability-insurance'
         },
         {
-            name: 'Commercial Vehicle Cover',
+            name: 'Commercial Vehicle',
             content: 'Drive with Confidence - Choose Acentria\'s Commercial Vehicle Coverage. Protect Your Business on the Road.',
             icon: 'fas fa-truck',
             link: '/insurance/'
         },
         {
-            name: 'Commercial Property Cover',
+            name: 'Commercial Property',
             content: 'Secure Your Business Space - Choose Acentria\'s Commercial Property Coverage. Protect Your Business Assets and Premises.',
             icon: 'fas fa-building',
             link: '/insurance/commercial-property-insurance'
         },
         {
-            name: 'Crop & Livestock Cover',
+            name: 'Crop & Livestock',
             content: 'Guard your crops and livestock with comprehensive insurance coverage for a secure farming future.',
             icon: 'fas fa-seedling',
             link: '/insurance/crops-and-livestock'
@@ -335,7 +335,7 @@ const slides = ref([
         <div class="">
             <Carousel :slides="slides" />
             <!-- <ServiceHero2 :content="content" /> -->
-<!-- 
+            <!-- 
             <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
                 <div class="container">
                     <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
@@ -368,7 +368,7 @@ const slides = ref([
             <div class="bg-white py-5">
                 <ContentPic :content="introContent" />
             </div>
-            
+
             <ContentPic :content="exploreRisks" />
 
             <div class="bg-white">
@@ -382,7 +382,8 @@ const slides = ref([
             <div class="py-2 text-white bg-white">
                 <section class="relative">
                     <div class="container px-4 py-5">
-                        <ServiceTabs :menus="menus" :data="data" />
+                        <!-- <ServiceTabs :menus="menus" :data="data" /> -->
+                        <Solutions :menus="menus" :data="data" />
                     </div>
                 </section>
             </div>
@@ -429,9 +430,9 @@ const slides = ref([
             <!-- <ContentPic :content="exploreProducts" /> -->
 
             <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
-            <WhyUs2  />
+            <WhyUs2 />
 
-            <ContentPic :content="exploreClaims" />
+            <!-- <ContentPic :content="exploreClaims" /> -->
 
             <section id="" class="relative py-8 bg-black/60 text-center">
                 <div class="container px-4">
