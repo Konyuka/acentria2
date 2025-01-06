@@ -124,14 +124,16 @@ const openFormModal = (type) => {
                                         </div>
 
                                         <div class="max-w-2xl mx-auto">
-                                            <div class="py-5 text-left container">
+                                            <div class="py-2 text-left container">
                                                 <h2 v-html="activeContent.heading" class="heading-class text-black">
                                                 </h2>
                                                 <p class="text-xs mt-2 text-black leading-normal">
-                                                    We understand that choosing the right insurance provider is a
-                                                    crucial decision. Here are some
-                                                    compelling reasons why you should partner with us:
+                                                    {{  activeContent.description }}
                                                 </p>
+                                            </div>
+
+                                            <div class="my-2">
+                                                <SupportForm />
                                             </div>
                                         </div>
 
