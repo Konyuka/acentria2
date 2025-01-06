@@ -47,15 +47,16 @@ const menuItem = ref([
         name: 'Services',
         items: [
             {
-                name: 'Reinsurance',
-                icon: 'fas fa-sync-alt',
-                link: '/acentria-group-reinsurance',
-            },
-            {
                 name: 'Insurance',
                 icon: 'fas fa-shield-alt',
                 link: '/acentria-group-insurance',
             },
+            {
+                name: 'Reinsurance',
+                icon: 'fas fa-sync-alt',
+                link: '/acentria-group-reinsurance',
+            },
+            
             {
                 name: 'Actuarial',
                 icon: 'fas fa-calculator',

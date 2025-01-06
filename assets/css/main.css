@@ -8,6 +8,38 @@
   }
 }
 
+.font-sans {
+    /* font-family: "Nunito Sans", sans-serif !important; */
+    font-family: "Montserrat", sans-serif !important;
+}
+
+/* .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 85vw !important;
+}
+
+.\!text-brand-primary {
+    --tw-text-opacity: 1 !important;
+    color: rgb(var(--red-700)/var(--tw-text-opacity)) !important
+}
+
+.text-brand-primary {
+    --tw-text-opacity: 1;
+    color: rgb(var(--red-700)/var(--tw-text-opacity))
+}
+
+.ring-brand-primary {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(var(--red-700)/var(--tw-ring-opacity))
+}
+
+.after\:bg-brand-primary:after {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(var(--red-700)/var(--tw-bg-opacity))
+} */
 
 .h1-class {
   @apply text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900;

@@ -147,6 +147,7 @@ const chunkedBlogs = computed(() => {
 
 onMounted(() => {
 });
+
 </script>
 
 <template>

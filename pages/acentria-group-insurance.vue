@@ -444,11 +444,11 @@ const slides = ref([
                 </div>
             </section>
 
-            <ContactForm />
+            <!-- <ContactForm /> -->
 
             <InTouch />
 
-            <News />
+            <!-- <News /> -->
         </div>
     </main>
 </template>
