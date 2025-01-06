@@ -81,6 +81,10 @@
     @apply text-[27px] !important
 }
 
+.button-animation {
+  @apply transform transition hover:cursor-pointer hover:scale-90 duration-700 ease-in-out
+}
+
 
 [x-cloak] {
     display: none;
