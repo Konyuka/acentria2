@@ -171,7 +171,7 @@ onBeforeUnmount(() => {
 
                     <NuxtLink to="/">
                         <NuxtImg alt="Acentria" fetchPriority="high"  decoding="async"
-                            data-nimg="1" class="mr-8 w-full h-14" style="color: transparent; object-fit: contain;"
+                            data-nimg="1" class="mr-8 w-full h-16" style="color: transparent; object-fit: contain;"
                             src="/img/Logo2.png" />
 
                         <!-- <NuxtImg alt="Acentria" fetchPriority="high" decoding="async"
