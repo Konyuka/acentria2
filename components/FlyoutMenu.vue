@@ -7,7 +7,7 @@
                 <!-- @mouseleave="activeClick = false" -->
                 <!-- @mouseleave="closeFlyOver()" -->
                 <!-- @mouseenter="openFlyover(theMenu.name)" -->
-                <button @click="openFlyover(theMenu.name, 'click')" @mouseenter="openFlyover(theMenu.name, 'hover')"
+                <NuxtLink :to="theMenu.link" @click="openFlyover(theMenu.name, 'click')" @mouseenter="openFlyover(theMenu.name, 'hover')"
                     @mouseleave="closeFlyOver()" :class="[
                         openMenu === theMenu.name ?
                             'text-brand-primary border-b-red-600 border-b-4' :
@@ -16,7 +16,7 @@
              !text-[15.5px] !ring-0 focus inline-flex items-center gap-x-1 
              font-semibold duration-200 hover:text-brand-primary">
                     {{ theMenu.name }}
-                </button>
+                </NuxtLink>
             </div>
         </div>
 
@@ -861,7 +861,7 @@ const openFlyover = (menu, type) => {
         if (type == 'hover') {
             return;
         } else {
-            window.open('https://tech.acentriagroup.com/', '_blank');
+            window.open('https://acentria-tech.vercel.app/', '_blank');
             return;
         }
     }

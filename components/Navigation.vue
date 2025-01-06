@@ -46,27 +46,27 @@ const menus = ref([
     {
         name: 'About',
         icon: 'fas fa-info-circle',
-        link: '/about-us',
+        link: '/about-us/who-we-are',
     },
     {
         name: 'Insurance',
         icon: 'fas fa-shield-alt',
-        link: '/insurance',
+        link: '/acentria-group-insurance',
     },
     {
         name: 'Reinsurance',
         icon: 'fas fa-sync-alt',
-        link: '/reinsurance',
+        link: '/acentria-group-reinsurance',
     },
     {
         name: 'Actuarial',
         icon: 'fas fa-calculator',
-        link: '/actuarial',
+        link: '/acentria-group-actuarial',
     },
     {
         name: 'Technology',
         icon: 'fas fa-laptop-code',
-        link: '/technology',
+        link: '/',
     },
     // {
     //     name: 'Insights',
@@ -76,7 +76,7 @@ const menus = ref([
     {
         name: 'Investment',
         icon: 'fas fa-chart-line',
-        link: '/investment',
+        link: '/acentria-group-investment',
     },
 ]);
 

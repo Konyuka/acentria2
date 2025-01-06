@@ -13,6 +13,14 @@ const showButton = computed(() => {
     }
 })
 
+const theButtonTitle = computed(()=>{
+    if (props.content.link === '/insurance-products') {
+        return 'Pick your Industry'
+    }else{
+        return 'Learn More'
+    }
+})
+
 </script>
 
 <template>
@@ -28,7 +36,7 @@ const showButton = computed(() => {
                         class="text-xs leading-normal font-regular text-black !text-inherit mb-4"></p>
                     <NuxtLink v-if="showButton" :to="content.link"
                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        Learn More
+                        {{ theButtonTitle }}
                         <i class="fas fa-arrow-right text-primary ml-2"></i>
                     </NuxtLink>
                 </div>
