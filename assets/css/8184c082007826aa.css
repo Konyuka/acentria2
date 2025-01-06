@@ -4182,7 +4182,7 @@ video {
 
 .font-sans {
     /* font-family: "Nunito Sans", sans-serif !important; */
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 .\!text-\[24px\] {
