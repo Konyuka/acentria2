@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="container py-10">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-20 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-10 text-center">
                 <div v-for="(item, index) in benefits" :key="index">
                     <div class="text-red-600 text-5xl mb-4">
                         <i :class="item.icon"></i>

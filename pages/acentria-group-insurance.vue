@@ -328,45 +328,85 @@ const slides = ref([
     },
 ])
 
+const specials = ref([
+    {
+        name: 'Financial <br/> <span class="text-brand-primary">Wellness</span>',
+        img: 'https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        description: 'Comprehensive financial planning and advisory services to help you achieve your long-term financial goals and secure your future.'
+    },
+    {
+        name: 'Risk  <br/> <span class="text-brand-primary">Management</span>',
+        img: 'https://images.pexels.com/photos/266403/pexels-photo-266403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        description: 'Strategic risk assessment and mitigation strategies to protect your assets and minimize potential exposures.'
+    },
+    {
+        name: 'Cyber Risk <br/> <span class="text-brand-primary">Management</span>',
+        img: 'https://images.pexels.com/photos/38275/anonymous-studio-figure-photography-facial-mask-38275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        description: 'Advanced cybersecurity solutions and insurance coverage to protect your digital assets and maintain business continuity.'
+    },
+    {
+        name: 'Claims  <br/> <span class="text-brand-primary">Management</span>',
+        img: 'https://images.pexels.com/photos/5699480/pexels-photo-5699480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        description: 'Efficient and streamlined claims processing with dedicated support throughout the entire claims lifecycle.'
+    },
+    {
+        name: 'Insurance Policy <br/> <span class="text-brand-primary">Management</span>',
+        img: 'https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        description: 'Comprehensive policy administration and review services to ensure optimal coverage and cost-effectiveness.'
+    }
+]);
+
 </script>
 
 <template>
     <main>
         <div class="">
             <Carousel :slides="slides" />
-            <!-- <ServiceHero2 :content="content" /> -->
-            <!-- 
-            <div class="bg-white relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
-                <div class="container">
-                    <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
-                        <div>
-                            <h1 class="my-5 heading-class text-left">
-                                Overview <br> <span class="text-brand-primary"> Insurance & Risk </span>
-                            </h1>
-                            <p
-                                class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
-                                Acentria Group is your trusted friend in the world of insurance. We’re here to make sure
-                                you and anything you care for is safe and sound. Insurance can be confusing, but we’re
-                                experts at making it simple. We’ll take the time to understand exactly what you need and
-                                find the right insurance plan just for you.
-                                <br>
-                                So, why choose us? Because we genuinely care about keeping you and your things
-                                protected. We’re not just about selling insurance; we’re about making sure you’re
-                                worry-free and your wallet stays happy. Whether it’s your health, home, car, or
-                                business, we’ve got the perfect insurance plan that won’t break the bank. Trust us to be
-                                your friendly insurance guide, making sure you’re covered no matter what life throws
-                                your way.
-                            </p>
-                        </div>
-
-                        
-                        
-                    </div>
-                </div>
-            </div> -->
 
             <div class="bg-white py-5">
                 <ContentPic :content="introContent" />
+            </div>
+
+            <div class="bg-white">
+                <div class="container pt-5">
+                    <div class="">
+                        <h2 class="text-2xl font-semibold text- mb-4">
+                            Expert <span class="text-brand-primary">Insurance Services</span>
+                        </h2>
+                    </div>
+
+                    <div class=" mx-auto text-black">
+                        <p>
+                            Our expert insurance services combine deep industry knowledge with cutting-edge solutions to
+                            protect what matters most. With decades of experience, our team of specialists understands
+                            the complex risks facing businesses and individuals today.
+                            We pride ourselves on delivering customized insurance solutions that go beyond standard
+                            coverage. Our approach integrates comprehensive risk assessment, strategic planning, and
+                            proactive risk management to ensure you have the protection you need when you need it most.
+
+
+                        </p>
+
+                        <div class="py-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
+                            <a v-for="product in specials" :key="product.id" @click="setLineData(product)"
+                                class="button-animation group shadow-md p-3 rounded-md">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
+                                    <NuxtImg :src="product.img" :alt="product.img"
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75" />
+                                </div>
+                                <div
+                                    class=" mt-4 flex flex-col items-start justify-between subheading-class text-black">
+                                    <h6 class="text-sm" v-html="product.name "></h6>
+                                    <!-- <p class="text-xs italic mt-3">
+                                        Learn More <i class="ml-2 fas fa-arrow-right text-brand-primary"></i>
+                                    </p> -->
+                                </div>
+                                <!-- <p class="mt-1 text-xs text-gray-500">{{ product.description }}</p> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <ContentPic :content="exploreRisks" />
@@ -429,26 +469,29 @@ const slides = ref([
 
             <!-- <ContentPic :content="exploreProducts" /> -->
 
-            <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
+
             <WhyUs2 />
 
-            <!-- <ContentPic :content="exploreClaims" /> -->
+            <HowHelp />
 
-            <section id="" class="relative py-8 bg-black/60 text-center">
-                <div class="container px-4">
-                    <h2
-                        class="font-sans tracking-normal text-2xl text-white font-semibold leading-normal lg:leading-normal">
-                        <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
-                        Let Acentria Tailor Your Coverage To Your Needs
-                    </h2>
-                </div>
-            </section>
 
-            <!-- <ContactForm /> -->
+                <!-- <ContentPic :content="exploreClaims" /> -->
 
-            <InTouch />
+                <section id="" class="relative py-8 bg-black/60 text-center">
+                    <div class="container px-4">
+                        <h2
+                            class="font-sans tracking-normal text-2xl text-white font-semibold leading-normal lg:leading-normal">
+                            <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
+                            Let Acentria Tailor Your Coverage To Your Needs
+                        </h2>
+                    </div>
+                </section>
 
-            <!-- <News /> -->
+                <!-- <ContactForm /> -->
+
+                <InTouch />
+
+                <!-- <News /> -->
         </div>
     </main>
 </template>

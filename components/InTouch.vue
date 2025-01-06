@@ -72,7 +72,7 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class="mx-auto mb-0 font-sans">
+                <div class="mx-auto mb-5 font-sans">
                     <p class="mt-2 heading-class text-black text-2xl font-semibold">
                         Follow <span class="text-brand-primary">us on</span>
                     </p>
