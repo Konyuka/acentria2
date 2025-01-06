@@ -78,7 +78,7 @@
 }
 
 .text-2xl {
-    @apply text-[27px] !important
+    @apply text-[30px] font-medium !important
 }
 
 .button-animation {

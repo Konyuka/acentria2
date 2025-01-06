@@ -211,7 +211,7 @@ const whys = ref([
                 </div>
 
                 <div class="col-span-4 relative mt-5">
-                    <h2 class="text-2xl font-semibold text-left">
+                    <h2 class="text-2xl font-medium text-left">
                         Acentria <span class="text-brand-primary"> Group</span>
                     </h2>
                     <div class="relative mx-auto pt-4 flex">
