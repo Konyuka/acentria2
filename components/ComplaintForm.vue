@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="relative my-5 mx-auto container bg-white">
+        <section class="relative py-5 mx-auto container bg-white">
             <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
                 <div class="container">
                     <div

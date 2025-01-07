@@ -238,13 +238,6 @@ const setStage = (number) => {
 
             </div>
 
-
-
-
-
-
-
-
         </div>
     </div>
 </template>

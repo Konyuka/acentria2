@@ -77,7 +77,7 @@ const openFormModal = (type) => {
                                 </div>
                             </div>
 
-                            <div @click="openFormModal('feedback')"
+                            <NuxtLink to="/whistle-blowing"
                                 class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md">
                                 <div class="flex items-center mb-4">
                                     <i class="fas fa-comment-dots text-brand-primary text-2xl"></i>
@@ -85,7 +85,7 @@ const openFormModal = (type) => {
                                         Feedback or Complaints <i class="fas fa-arrow-right ml-4"></i>
                                     </h3>
                                 </div>
-                            </div>
+                            </NuxtLink>
 
                         </div>
                     </div>
@@ -133,7 +133,8 @@ const openFormModal = (type) => {
                                             </div>
 
                                             <div class="my-2">
-                                                <SupportForm />
+                                                <SupportForm v-if="activeContent.type=='support'" />
+                                                <SupportForm v-if="activeContent.type =='business'" />
                                             </div>
                                         </div>
 
