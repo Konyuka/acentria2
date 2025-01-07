@@ -439,20 +439,16 @@ const InsuranceMenus = ref([
         description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security. ',
         icon: 'fas fa-user',
         items: [
-            {
-                name: 'My Health',
-                description: 'Comprehensive health coverage for peace of mind.',
-                link: '/insurance/health-insurance',
-            },
+            
             {
                 name: 'My Life',
                 description: 'Secure your family\'s future with flexible life insurance.',
                 link: '/insurance/life-insurance',
             },
             {
-                name: 'My Home',
-                description: 'Protect your home and belongings with comprehensive coverage.',
-                link: '/insurance/home-insurance',
+                name: 'My Health',
+                description: 'Comprehensive health coverage for peace of mind.',
+                link: '/insurance/health-insurance',
             },
             {
                 name: 'My Car',
@@ -460,8 +456,23 @@ const InsuranceMenus = ref([
                 link: '/insurance/motor-insurance',
             },
             {
+                name: 'My Home',
+                description: 'Protect your home and belongings with comprehensive coverage.',
+                link: '/insurance/home-insurance',
+            },
+            {
                 name: 'My Travel',
                 description: 'Explore the world worry-free with our travel insurance.',
+                link: '/insurance/travel-insurance',
+            },
+            {
+                name: 'International Medical Insurance',
+                description: 'Get comprehensive medical coverage while traveling internationally.',
+                link: '/insurance/travel-insurance',
+            },
+            {
+                name: 'Golfer’s Insurance',
+                description: 'Protect yourself and your equipment on the golf course with our specialized insurance.',
                 link: '/insurance/travel-insurance',
             },
         ]
@@ -474,30 +485,50 @@ const InsuranceMenus = ref([
         icon: 'fas fa-building',
         items: [
             {
-                name: 'Staff Health Cover',
+                name: 'Staff Health Covers',
                 description: 'Ensure employee well-being with comprehensive health coverage.',
                 link: '/insurance/staff-health-cover',
             },
             {
-                name: 'Staff Travel Cover',
-                description: 'Protect employees during business trips with travel coverage.',
-                link: '/insurance/staff-travel-cover',
+                name: 'Staff Life Covers',
+                description: 'Provide financial security for employees’ families with life insurance.',
+                link: '/insurance/staff-health-cover',
             },
             {
-                name: 'Office Content Cover',
-                description: 'Safeguard office assets against damage or loss.',
-                link: '/insurance/office-content-cover',
+                name: 'Staff Combined Cover',
+                description: 'Comprehensive coverage for staff including travel, domestic, and motor insurance.',
+                link: '/insurance/staff-health-cover',
             },
             {
-                name: 'Cyber Liability Cover',
-                description: 'Protect your business from cyber threats and data breaches.',
-                link: '/insurance/cyber-liability-cover',
+                name: 'General Asset Covers',
+                description: 'Protect your business assets against damage or loss.',
+                link: '/insurance/staff-health-cover',
             },
             {
-                name: 'Credit Risk Cover',
-                description: 'Mitigate financial risks from customer defaults and insolvencies.',
-                link: '/insurance/credit-risk-cover',
+                name: 'Stock Shipping Covers',
+                description: 'Safeguard your stock during shipping against potential risks.',
+                link: '/insurance/staff-health-cover',
             },
+            {
+                name: 'Financial Losses & Money Covers',
+                description: 'Mitigate financial risks and protect against monetary losses.',
+                link: '/insurance/staff-health-cover',
+            },
+            {
+                name: 'Customer Covers',
+                description: 'Ensure your customers are protected with tailored insurance solutions.',
+                link: '/insurance/staff-health-cover',
+            },
+            {
+                name: 'Special & Emerging Risks',
+                description: 'Stay ahead with coverage for special and emerging risks.',
+                link: '/insurance/staff-health-cover',
+            },
+            {
+                name: 'Craft your own',
+                description: 'Customize your insurance coverage to meet your unique needs.',
+                link: '/insurance/staff-health-cover',
+            }
         ]
     },
     {
@@ -513,25 +544,35 @@ const InsuranceMenus = ref([
                 link: '/insurance/biasahara-cover',
             },
             {
-                name: 'General Liability',
-                description: 'Shield your business from legal claims and financial losses.',
-                link: '/insurance/general-liability-insurance',
+                name: 'Employee Covers',
+                description: 'Ensure your employees are protected with comprehensive insurance solutions.',
+                link: '/insurance/employee-covers',
             },
             {
-                name: 'Product Liability',
-                description: 'Protect against claims related to product defects and liabilities.',
-                link: '/insurance/product-liability-insurance',
+                name: 'Asset & Stock Covers',
+                description: 'Protect your business assets and stock against damage or loss.',
+                link: '/insurance/asset-stock-covers',
             },
             {
-                name: 'Commercial Property',
-                description: 'Safeguard your commercial property against damage, theft, and risks.',
-                link: '/insurance/commercial-property-insurance',
+                name: 'Financial Losses & Money Covers',
+                description: 'Mitigate financial risks and protect against monetary losses.',
+                link: '/insurance/financial-losses-money-covers',
             },
             {
-                name: 'Crops and Livestock',
-                description: 'Protect your agricultural investments from a range of farming risks.',
-                link: '/insurance/crops-and-livestock',
+                name: 'Stock Shipping Covers',
+                description: 'Safeguard your stock during shipping against potential risks.',
+                link: '/insurance/stock-shipping-covers',
             },
+            {
+                name: 'Customer Covers',
+                description: 'Ensure your customers are protected with tailored insurance solutions.',
+                link: '/insurance/customer-covers',
+            },
+            {
+                name: 'Craft your own',
+                description: 'Customize your insurance coverage to meet your unique needs.',
+                link: '/insurance/craft-your-own',
+            }
         ]
     },
     {
@@ -542,13 +583,18 @@ const InsuranceMenus = ref([
         icon: 'fas fa-industry',
         items: [
             {
-                name: 'Industrial All Risk Cover',
+                name: 'Industrial All Risks Covers',
                 description: 'Comprehensive coverage for all industrial risks and operations.',
                 link: '/insurance/biasahara-cover',
             },
             {
-                name: 'Public Liability',
-                description: 'Protection against claims of injury or property damage.',
+                name: 'Contractors All Risks Covers',
+                description: 'Comprehensive coverage for contractors against all risks during construction.',
+                link: '/insurance/biasahara-cover',
+            },
+            {
+                name: 'Staff Work Injury Benefits Act (WIBA) Covers',
+                description: 'Compensation for work-related injuries under WIBA regulations.',
                 link: '/insurance/biasahara-cover',
             },
             {
@@ -557,10 +603,15 @@ const InsuranceMenus = ref([
                 link: '/insurance/biasahara-cover',
             },
             {
-                name: 'Staff Work Benefit Injury Act (WIBA)',
-                description: 'Compensation for work-related injuries under WIBA regulations.',
+                name: 'Casualty and Liability Covers',
+                description: 'Protection against claims of injury or property damage.',
                 link: '/insurance/biasahara-cover',
             },
+            {
+                name: 'Craft your own',
+                description: 'Customize your insurance coverage to meet your unique needs.',
+                link: '/insurance/craft-your-own',
+            }
         ]
     },
     {
@@ -572,7 +623,7 @@ const InsuranceMenus = ref([
         icon: 'fas fa-plane',
         items: [
             {
-                name: 'Aviation Insurance',
+                name: 'Aviation Covers',
                 description: 'Coverage for aircraft, pilots, and aviation operations.',
                 link: '/insurance/aviation-cover',
             },
