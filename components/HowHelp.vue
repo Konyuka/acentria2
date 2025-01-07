@@ -144,7 +144,8 @@ const openFormModal = (type) => {
 
                                             <div class="my-2">
                                                 <SupportForm v-if="activeContent.type=='support'" />
-                                                <FeedbackForm v-if="activeContent.type =='business'" />
+                                                <BusinessForm v-if="activeContent.type =='business'" />
+                                                <FeedbackForm v-if="activeContent.type =='feedback'" />
                                             </div>
                                         </div>
 
