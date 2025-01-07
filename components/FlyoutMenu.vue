@@ -3,12 +3,8 @@
 
         <div class="justify-center">
             <div class="">
-                <!-- <PopoverButton @click="openFlyover(theMenu.name)" -->
-                <!-- @mouseleave="activeClick = false" -->
-                <!-- @mouseleave="closeFlyOver()" -->
-                <!-- @mouseenter="openFlyover(theMenu.name)" -->
-                <NuxtLink :to="theMenu.link" @click="openFlyover(theMenu.name, 'click')" @mouseenter="openFlyover(theMenu.name, 'hover')"
-                    @mouseleave="closeFlyOver()" :class="[
+                <NuxtLink :to="theMenu.link" @click="openFlyover(theMenu.name, 'click')"
+                    @mouseenter="openFlyover(theMenu.name, 'hover')" @mouseleave="closeFlyOver()" :class="[
                         openMenu === theMenu.name ?
                             'text-brand-primary border-b-red-600 border-b-4' :
                             'text-black'
@@ -24,19 +20,23 @@
             enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
             leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 -translate-y-0">
 
-            <!-- @mouseenter="keepOpen(theMenu.name)" @mouseleave="closeFlyOver(close)" -->
             <div v-if="openMenu === theMenu.name" v-motion-fade-visible class="!-left-[16vw] w-[91vw] h-20 mt-[60px] mx-auto 
                absolute inset-x-0 top-0 -z-20 bg-white shadow-2xl" @mouseenter="keepOpen()"
                 @mouseleave="closeFlyOver()">
 
                 <div class="relative border-b-4 border-brand-primary px-5 my-2">
+                    <!-- Background Image -->
                     <NuxtImg
                         src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
                         alt="" class="absolute inset-0 -z-10 h-full w-full object-fit" />
-
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
 
-                    <div class="h-auto">
+
+                    
+                    <div class="h-auto w-full">
+                        <div v-if="currentMenu === 'Insurance'" class="px-10">
+                            <InsuranceTopMenu />
+                        </div>
 
                         <div class="grid grid-cols-12">
 
@@ -65,7 +65,6 @@
                             <div class="col-span-8 ml-4">
                                 <div class="pt-2 grid grid-cols-12 gap-2 max-w-full px-2">
                                     <div class="col-span-5">
-                                        <!-- <h1 class="ml-2 font-semibold text-lg" v-html="currentMainMenu"></h1> -->
                                         <div class="relative pt-2 flex flex-col gap-1 mt-7">
                                             <div v-show="!item.type" v-for="(item, index) in currentMenuItems">
                                                 <p @click="setSubmenu(item, index)"
@@ -95,7 +94,6 @@
 
                                     <div
                                         class="col-span-7 relative flex flex-col gap-1 border-l-2 border-red-600 h-full pl-5">
-                                        <!-- <h1 class="font-semibold text-lg" v-html=currentLinksHeading></h1> -->
                                         <div class="grid grid-cols-2 mt-6">
                                             <NuxtLink @click="goToSection(submenuItem.name)" :to="submenuItem.link"
                                                 v-for="submenuItem in currentSubmenuItems" :key="submenuItem.name"
@@ -118,11 +116,8 @@
                         </div>
                     </div>
 
-                    <div class=" mt-8">
-                        <div class="flex px-10">
-                            <!-- <div>
-   
-                               </div> -->
+                    <div  class=" mt-8">
+                        <div v-if="currentMenu !== 'Insurance'" class="flex px-10">
                             <div class="flex col-span-2 w-full justify-between !pr-5">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
                                     @click="closeFlyOver()"
@@ -130,7 +125,6 @@
                                     <i :class="item.icon" class="flex-none group-hover:text-black text-brand-primary" />
                                     {{ item.name }} <i class="fas fa-arrow-right"></i>
                                 </NuxtLink>
-
                             </div>
                         </div>
                     </div>
@@ -166,26 +160,26 @@ const currentSubmenuItems = ref(null)
 const footerOptions = ref(null)
 const flyoverHeader = ref(null)
 
-const ctaWording = computed(()=>{
-    if(currentMenu.value == 'Insurance'){
+const ctaWording = computed(() => {
+    if (currentMenu.value == 'Insurance') {
         return 'Insurance'
-    }else if(currentMenu.value == 'Reinsurance'){
+    } else if (currentMenu.value == 'Reinsurance') {
         return 'Reinsurance'
-    }else if(currentMenu.value == 'Actuarial'){
+    } else if (currentMenu.value == 'Actuarial') {
         return 'Actuarial'
-    }else if(currentMenu.value == 'About'){
+    } else if (currentMenu.value == 'About') {
         return 'Our History'
     }
 })
 
-const ctaLink = computed(()=>{
-    if(currentMenu.value == 'Insurance'){
+const ctaLink = computed(() => {
+    if (currentMenu.value == 'Insurance') {
         return '/acentria-group-insurance'
-    }else if(currentMenu.value == 'Reinsurance'){
+    } else if (currentMenu.value == 'Reinsurance') {
         return '/acentria-group-reinsurance'
-    }else if(currentMenu.value == 'Actuarial'){
+    } else if (currentMenu.value == 'Actuarial') {
         return '/acentria-group-actuarial'
-    }else if(currentMenu.value == 'About'){
+    } else if (currentMenu.value == 'About') {
         return '/about-us/who-we-are'
     }
 })
@@ -439,7 +433,7 @@ const InsuranceMenus = ref([
         description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security. ',
         icon: 'fas fa-user',
         items: [
-            
+
             {
                 name: 'My Life',
                 description: 'Secure your family\'s future with flexible life insurance.',
@@ -901,9 +895,9 @@ const openFlyover = (menu, type) => {
     // }
 
     if (menu == 'Investment') {
-        if(type=='hover'){
+        if (type == 'hover') {
             return;
-        }else{
+        } else {
             router.push('/acentria-group-investment');
             return;
         }
@@ -927,7 +921,7 @@ const openFlyover = (menu, type) => {
         openMenu.value = menu
 
 
-        if (type === 'click'){
+        if (type === 'click') {
             if (currentMainMenu.value === 'About') {
                 router.push('/about-us/who-we-are');
             }
@@ -941,7 +935,7 @@ const openFlyover = (menu, type) => {
                 router.push('/acentria-group-actuarial');
             }
             // return;
-        }else{
+        } else {
             if (currentMenu.value === 'About') {
                 flyoverHeader.value = 'Acentria Group'
                 currentMenuItems.value = AboutMenus.value
@@ -1059,7 +1053,7 @@ watch(currentRoute, (newValue) => {
 })
 watch(() => currentMenu.value, (value) => {
     // console.log(value)
-    if(value==null){
+    if (value == null) {
         closeFlyOver()
     }
 })
