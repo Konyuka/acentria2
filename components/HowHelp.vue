@@ -19,7 +19,7 @@ const businessContent = ref(
 )
 const feedbackContent = ref(
     {
-        heading: 'Give Feeback or Launch a Complaint <br/><span class="text-brand-primary"> We Value Your Feedback!</span> ',
+        heading: 'Give us Feebacks & Reviews <br/><span class="text-brand-primary"> We Value Your Feedback!</span> ',
         description: 'At Acentria, we are committed to providing the best possible service to our clients. Your feedback is invaluable to us as it helps us improve and serve you better. We would love to hear about your experience with our services.',
         type: 'feedback',
     }
@@ -54,8 +54,8 @@ const openFormModal = (type) => {
                 </h2>
 
                 <div>
-                    <div class="max-w-6xl mx-auto py-10">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class=" py-10">
+                        <div class="grid grid-cols-4 gap-2">
 
                             <div @click="openFormModal('support')"
                                 class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md ">
@@ -70,9 +70,19 @@ const openFormModal = (type) => {
                             <div @click="openFormModal('business')"
                                 class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md">
                                 <div class="flex items-center mb-4">
-                                    <i class="fas fa-briefcase text-brand-primary text-2xl"></i>
+                                    <i class="fas fa-building text-brand-primary text-2xl"></i>
                                     <h3 class="ml-4 text-lg font-semibold text-gray-900">
                                         Business Inquiry <i class="fas fa-arrow-right ml-4"></i>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div @click="openFormModal('feedback')"
+                                class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-comment-dots text-brand-primary text-2xl"></i>
+                                    <h3 class="ml-4 text-lg font-semibold text-gray-900">
+                                        Give Feedback <i class="fas fa-arrow-right ml-4"></i>
                                     </h3>
                                 </div>
                             </div>
@@ -80,9 +90,9 @@ const openFormModal = (type) => {
                             <NuxtLink to="/whistle-blowing"
                                 class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md">
                                 <div class="flex items-center mb-4">
-                                    <i class="fas fa-comment-dots text-brand-primary text-2xl"></i>
+                                    <i class="fas fa-frown text-brand-primary text-2xl"></i>
                                     <h3 class="ml-4 text-lg font-semibold text-gray-900">
-                                        Feedback or Complaints <i class="fas fa-arrow-right ml-4"></i>
+                                        Complaints <i class="fas fa-arrow-right ml-4"></i>
                                     </h3>
                                 </div>
                             </NuxtLink>
@@ -128,13 +138,13 @@ const openFormModal = (type) => {
                                                 <h2 v-html="activeContent.heading" class="heading-class text-black">
                                                 </h2>
                                                 <p class="text-xs mt-2 text-black leading-normal">
-                                                    {{  activeContent.description }}
+                                                    {{ activeContent.description }}
                                                 </p>
                                             </div>
 
                                             <div class="my-2">
                                                 <SupportForm v-if="activeContent.type=='support'" />
-                                                <SupportForm v-if="activeContent.type =='business'" />
+                                                <FeedbackForm v-if="activeContent.type =='business'" />
                                             </div>
                                         </div>
 
