@@ -11,9 +11,9 @@
         <div class="paste-button">
             <!-- <button class="button">Manage Your Policy</button> -->
             <button
-                class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-[15px] font-semibold leading-normal text-black sm:justify-center sm:px-0">
-                <i class="fas fa-user flex-none group-hover:text-black text-brand-primary" />
-                Expertise Services <i class="fas fa-angle-down"></i>
+                class="button group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                <!-- <i class="fas fa-user flex-none text-white text-brand-primary" /> -->
+                Expertise Services <i class="fas fa-user-tie"></i>
             </button>
             <div class="dropdown-content">
                 <a id="renew-policy" href="#">Financial Wellness</a>
@@ -29,9 +29,9 @@
         <div class="paste-button">
             <!-- <button class="button">Manage Your Policy</button> -->
             <button
-                class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-[15px] font-semibold leading-normal text-black sm:justify-center sm:px-0">
-                <i class="fas fa-user flex-none group-hover:text-black text-brand-primary" />
-                Manage Your Policy <i class="fas fa-angle-down"></i>
+                class="button group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                <!-- <i class="fas fa-user flex-none text-white text-brand-primary" /> -->
+                Manage Your Policy <i class="fas fa-file-alt"></i>
             </button>
             <div class="dropdown-content">
                 <a id="renew-policy" href="#">Renew Your Policy</a>
@@ -43,9 +43,9 @@
         <!-- Buy Insurance -->
         <div class="paste-button">
             <button
-                class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-[15px] font-semibold leading-normal text-black sm:justify-center sm:px-0">
-                <i class="fas fa-user flex-none group-hover:text-black text-brand-primary" />
-                Buy Insurance <i class="fas fa-angle-down"></i>
+                class="button group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                <!-- <i class="fas fa-user flex-none text-white text-brand-primary" /> -->
+                Buy Insurance <i class="fas fa-shopping-cart"></i>
             </button>
             <div class="dropdown-content">
                 <a id="diy" href="#">Do it Yourself</a>
@@ -57,9 +57,9 @@
         <!-- Insights -->
         <div class="paste-button">
             <button
-                class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-[15px] font-semibold leading-normal text-black sm:justify-center sm:px-0">
-                <i class="fas fa-user flex-none group-hover:text-black text-brand-primary" />
-                Insights <i class="fas fa-angle-down"></i>
+                class="button group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                <!-- <i class="fas fa-user flex-none text-white text-brand-primary" /> -->
+                Insights <i class="fas fa-lightbulb"></i>
             </button>
             <div class="dropdown-content">
                 <a id="blog" href="#">Blog</a>
@@ -78,23 +78,22 @@
 .paste-button {
     position: relative;
     display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .button {
-    background-color: #ed1c24;
-    color: #212121;
-    padding: 10px 15px;
-    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 25px;
+    font-size: 12px;
     font-weight: bold;
     border: 2px solid transparent;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .dropdown-content {
     display: none;
-    font-size: 13px;
+    font-size: 11px;
     position: absolute;
     z-index: 1;
     min-width: 200px;
@@ -131,7 +130,7 @@
 }
 
 .paste-button:hover button {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 .paste-button:hover .dropdown-content {
