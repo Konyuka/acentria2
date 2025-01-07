@@ -168,7 +168,7 @@ const setStage = (number) => {
 
 
                 <div class="mt-20 flex flex-col justify-center items-center">
-                    <h1 class="text-lg font-semibold">
+                    <h1 class="text-lg font-semibold text-center">
                         We look forward to hearing from you and <br> <span class="text-brand-primary">discussing how we
                             can
                             support your business.</span>

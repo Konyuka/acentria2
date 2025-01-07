@@ -226,7 +226,7 @@ const setStage = (number) => {
 
 
                 <div class="mt-20 flex flex-col justify-center items-center">
-                    <h1 class="text-lg font-semibold">
+                    <h1 class="text-lg font-semibold text-center">
                         We are committed to resolving your issues <span class="text-brand-primary">as quickly and
                             efficiently as possible.</span>
                     </h1>

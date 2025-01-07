@@ -36,100 +36,40 @@ const setStage = (number) => {
                 </div>
             </div>
 
+
             <div v-show="stage == 2" class="flex flex-col gap-2">
+
+
+                <div class="mat-input ">
+                    <label for="description">Overall Satisfaction</label>
+                    <textarea id="description" type="textarea" placeholder="I need assitance on..." />
+                </div>
                 <div class="my-3">
                     <p class="text-md italic text-gray-600">
-                        Please input your target department
-                        <br />
-                        Helps channel your issue to the right support
+                        How satisfied are you with our services?
                     </p>
                 </div>
-                <div class="flex gap-20 ">
 
 
-                    <div class="select">
-                        <div class="selected" data-default="All" data-finance="Finance" data-claims="Claims"
-                            data-client-relations="Client Relations" data-media-relations="Media Relations"
-                            data-actuarial="Actuarial" data-reinsurance="Reinsurance" data-technology="Technology"
-                            data-investment="Investment" data-other="Other" data-three="option-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="arrow">
-                                <path
-                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="options">
-                            <div title="all">
-                                <input id="all" name="option" type="radio" checked="" />
-                                <label class="option" for="all" data-txt="All"></label>
-                            </div>
-                            <div title="finance">
-                                <input id="finance" name="option" type="radio" />
-                                <label class="option" for="finance" data-txt="Finance"></label>
-                            </div>
-                            <div title="claims">
-                                <input id="claims" name="option" type="radio" />
-                                <label class="option" for="claims" data-txt="Claims"></label>
-                            </div>
-                            <div title="client-relations">
-                                <input id="client-relations" name="option" type="radio" />
-                                <label class="option" for="client-relations" data-txt="Client Relations"></label>
-                            </div>
-                            <div title="media-relations">
-                                <input id="media-relations" name="option" type="radio" />
-                                <label class="option" for="media-relations" data-txt="Media Relations"></label>
-                            </div>
-                            <div title="actuarial">
-                                <input id="actuarial" name="option" type="radio" />
-                                <label class="option" for="actuarial" data-txt="Actuarial"></label>
-                            </div>
-                            <div title="reinsurance">
-                                <input id="reinsurance" name="option" type="radio" />
-                                <label class="option" for="reinsurance" data-txt="Reinsurance"></label>
-                            </div>
-                            <div title="technology">
-                                <input id="technology" name="option" type="radio" />
-                                <label class="option" for="technology" data-txt="Technology"></label>
-                            </div>
-                            <div title="investment">
-                                <input id="investment" name="option" type="radio" />
-                                <label class="option" for="investment" data-txt="Investment"></label>
-                            </div>
-                            <div title="other">
-                                <input id="other" name="option" type="radio" />
-                                <label class="option" for="other" data-txt="Other"></label>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div>
-                        <h1 @click="setStage(3)"
-                            class="mt-2 button-animation text-brand-primary group text-xl font-semibold">
-                            Proceed
-                            <i
-                                class="ml-3 text-[20px] group-hover:text-brand-primary fas fa-arrow-right text-gray-500"></i>
-                        </h1>
-                    </div>
-
+                <div>
+                    <button @click="setStage(3)"
+                        class="mt-2 button-animation text-brand-primary group text-xl font-semibold">
+                        Proceed
+                        <i class="ml-3 text-[20px] group-hover:text-brand-primary fas fa-arrow-right text-gray-500"></i>
+                    </button>
                 </div>
-
-
-
-
-
             </div>
 
             <div v-show="stage == 3" class="flex flex-col gap-2">
 
 
                 <div class="mat-input ">
-                    <label for="description">Description of the Issue</label>
-                    <textarea id="description" type="textarea" placeholder="I need assitance on..." />
+                    <label for="food">Service Quality</label>
+                    <textarea id="food" type="textarea" placeholder="You can paste links too..." />
                 </div>
                 <div class="my-3">
                     <p class="text-md italic text-gray-600">
-                        Please describe the problem or assistance you need.
+                        Did our services meet your expectations? If not, how can we improve?
                     </p>
                 </div>
 
@@ -144,94 +84,80 @@ const setStage = (number) => {
             </div>
 
             <div v-show="stage == 4" class="flex flex-col gap-2">
-
-
                 <div class="mat-input ">
-                    <label for="food">Relevant Details</label>
+                    <label for="food">Communication</label>
                     <textarea id="food" type="textarea" placeholder="You can paste links too..." />
                 </div>
                 <div class="my-3">
                     <p class="text-md italic text-gray-600">
-                        Any specific information that might help us understand your situation better.
+                        How would you rate our communication and responsiveness?
                     </p>
                 </div>
 
-
                 <div>
-                    <button @click="setStage(5)"
+                    <h1 @click="setStage(5)"
                         class="mt-2 button-animation text-brand-primary group text-xl font-semibold">
                         Proceed
                         <i class="ml-3 text-[20px] group-hover:text-brand-primary fas fa-arrow-right text-gray-500"></i>
-                    </button>
+                    </h1>
                 </div>
+
             </div>
 
             <div v-show="stage == 5" class="flex flex-col gap-2">
+                <div class="mat-input ">
+                    <label for="food">Suggestions</label>
+                    <textarea id="food" type="textarea" placeholder="You can paste links too..." />
+                </div>
                 <div class="my-3">
                     <p class="text-md italic text-gray-600">
-                        Let us know how you would like us to reach you
+                        Do you have any suggestions for us to enhance our services?
                     </p>
-                </div>
-                <div class="flex gap-20 ">
-
-                    <div class="checkbox-wrapper">
-                        <input checked="" type="checkbox" class="check" id="check1-61">
-                        <label for="check1-61" class="label">
-                            <svg width="45" height="45" viewBox="0 0 95 95">
-                                <rect x="30" y="20" width="50" height="50" stroke="black" fill="none"></rect>
-                                <g transform="translate(0,-952.36222)">
-                                    <path
-                                        d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4"
-                                        stroke="black" stroke-width="3" fill="none" class="path1"></path>
-                                </g>
-                            </svg>
-                            <span class="text-black font-medium">Mobile Phone</span>
-                        </label>
-                    </div>
-
-                    <div class="checkbox-wrapper">
-                        <input checked="" type="checkbox" class="check" id="check1-62">
-                        <label for="check1-62" class="label">
-                            <svg width="45" height="45" viewBox="0 0 95 95">
-                                <rect x="30" y="20" width="50" height="50" stroke="black" fill="none"></rect>
-                                <g transform="translate(0,-952.36222)">
-                                    <path
-                                        d="m 56,963 c -102,122 6,9 7,9 17,-5 -66,69 -38,52 122,-77 -7,14 18,4 29,-11 45,-43 23,-4"
-                                        stroke="black" stroke-width="3" fill="none" class="path2"></path>
-                                </g>
-                            </svg>
-                            <span class="text-black font-medium">Email Address</span>
-                        </label>
-                    </div>
-
-
-
                 </div>
 
                 <div>
                     <h1 @click="setStage(6)"
-                        class="mt-10 button-animation text-brand-primary group text-3xl font-semibold">
-                        Submit
-                        <i class="ml-3 text-3xl text-brand-primary fas fa-paper-plane"></i>
+                        class="mt-2 button-animation text-brand-primary group text-xl font-semibold">
+                        Proceed
+                        <i class="ml-3 text-[20px] group-hover:text-brand-primary fas fa-arrow-right text-gray-500"></i>
                     </h1>
                 </div>
-
-
-
 
             </div>
 
             <div v-show="stage == 6" class="flex flex-col gap-2">
+                <div class="mat-input ">
+                    <label for="food">Complaints</label>
+                    <textarea id="food" type="textarea" placeholder="You can paste links too..." />
+                </div>
+                <div class="my-3">
+                    <p class="text-md italic text-gray-600">
+                        If you have any complaints, please let us know so we can address them promptly.
+                    </p>
+                </div>
+
+                <div>
+                    <h1 @click="setStage(7)"
+                        class="mt-2 button-animation text-brand-primary group text-xl font-semibold">
+                        Proceed
+                        <i class="ml-3 text-[20px] group-hover:text-brand-primary fas fa-arrow-right text-gray-500"></i>
+                    </h1>
+                </div>
+
+            </div>
+
+            <div v-show="stage == 7" class="flex flex-col gap-2">
 
 
 
                 <div class="mt-20 flex flex-col justify-center items-center">
-                    <h1 class="text-lg font-semibold">
-                        We are committed to resolving your issues <span class="text-brand-primary">as quickly and
-                            efficiently as possible.</span>
+                    <h1 class="text-lg font-semibold text-center">
+                        Your feedback is important to us, and we appreciate <br> <span class="text-brand-primary">
+                            your time and effort in helping us improve.
+                        </span>
                     </h1>
                     <p class="text-md italic text-gray-600">
-                        Thank you for choosing Acentria. We look forward to assisting you.
+                        Thank you for choosing Acentria.
                     </p>
                 </div>
 
