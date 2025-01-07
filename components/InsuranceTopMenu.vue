@@ -16,12 +16,12 @@
                 Expertise Services <i class="fas fa-user-tie"></i>
             </button>
             <div class="dropdown-content">
-                <a id="renew-policy" href="#">Financial Wellness</a>
-                <a id="report-claim" href="#">Risk Management</a>
-                <a id="online-portal" href="#">Cyber Risk Management</a>
-                <a id="online-portal" href="#">Cyber Risk Management</a>
-                <a id="online-portal" href="#">Claims Management</a>
-                <a id="online-portal" href="#">Insurance Policy Management</a>
+                <NuxtLink to="/financial-wellness" id="financial-wellness">Financial Wellness</NuxtLink>
+                <NuxtLink to="/risk-management" id="risk-management">Risk Management</NuxtLink>
+                <NuxtLink to="/cyber-risk-management" id="cyber-risk-management">Cyber Risk Management</NuxtLink>
+                <NuxtLink to="/claims-management" id="claims-management">Claims Management</NuxtLink>
+                <NuxtLink to="/insurance-policy-management" id="insurance-policy-management">Insurance Policy Management
+                </NuxtLink>
             </div>
 
         </div>
@@ -34,9 +34,9 @@
                 Manage Your Policy <i class="fas fa-file-alt"></i>
             </button>
             <div class="dropdown-content">
-                <a id="renew-policy" href="#">Renew Your Policy</a>
-                <a id="report-claim" href="#">Report a Claim</a>
-                <a id="online-portal" href="#">Online Service Portal</a>
+                <NuxtLink to="/renew-policy">Renew Your Policy</NuxtLink>
+                <NuxtLink to="/report-claim" id="report-claim">Report a Claim</NuxtLink>
+                <NuxtLink to="/online-portal" id="online-portal">Online Service Portal</NuxtLink>
             </div>
         </div>
 
@@ -48,9 +48,9 @@
                 Buy Insurance <i class="fas fa-shopping-cart"></i>
             </button>
             <div class="dropdown-content">
-                <a id="diy" href="#">Do it Yourself</a>
-                <a id="agent-assistance" href="#">Live Agent Assistance</a>
-                <a id="full-service" href="#">Full Service</a>
+                <NuxtLink to="/diy" id="diy">Do it Yourself</NuxtLink>
+                <NuxtLink to="/agent-assistance" id="agent-assistance">Live Agent Assistance</NuxtLink>
+                <NuxtLink to="/full-service" id="full-service">Full Service</NuxtLink>
             </div>
         </div>
 
@@ -62,10 +62,10 @@
                 Insights <i class="fas fa-lightbulb"></i>
             </button>
             <div class="dropdown-content">
-                <a id="blog" href="#">Blog</a>
-                <a id="news" href="#">News</a>
-                <a id="learn" href="#">Learn</a>
-                <a id="guide" href="#">Guide</a>
+                <NuxtLink to="/acentria-news-and-blogs" id="blog">Blog</NuxtLink>
+                <NuxtLink to="/acentria-news-and-blogs" id="news">News</NuxtLink>
+                <NuxtLink to="/acentria-news-and-blogs" id="learn">Learn</NuxtLink>
+                <NuxtLink to="/acentria-news-and-blogs" id="guide">Guide</NuxtLink>
             </div>
         </div>
     </div>
