@@ -35,7 +35,7 @@
                     
                     <div class="h-auto w-full">
                         <div v-if="currentMenu === 'Insurance'" class="px-10">
-                            <InsuranceTopMenu />
+                            <!-- <InsuranceTopMenu /> -->
                         </div>
 
                         <div class="grid grid-cols-12">
@@ -117,7 +117,8 @@
                     </div>
 
                     <div  class=" mt-8">
-                        <div v-if="currentMenu !== 'Insurance'" class="flex px-10">
+                        <!-- <div v-if="currentMenu !== 'Insurance'" class="flex px-10"> -->
+                        <div class="flex px-10">
                             <div class="flex col-span-2 w-full justify-between !pr-5">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
                                     @click="closeFlyOver()"
