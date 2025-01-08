@@ -215,7 +215,7 @@ const currentActionMenu = ref(null)
 const currentActionMenuItems = ref(null)
 const actionMenus = ref([
     {
-        name: 'Expertise Services',
+        name: 'Expert Services',
         items: [
             {
                 name: 'Financial Wellness',
@@ -1076,7 +1076,7 @@ const openFlyover = (menu, type) => {
                 currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
                 currentSubmenu.value = 'Personal Covers'
                 currentSubmenuItems.value = currentMenuItems.value[0]?.items
-                currentActionMenu.value = 'Expertise Services'
+                currentActionMenu.value = 'Expert Services'
                 currentActionMenuItems.value = actionMenus.value[0]?.items
                 currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
                 currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading

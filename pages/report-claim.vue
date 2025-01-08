@@ -8,31 +8,39 @@ const ReinsuranceBannerContent = ref({
 const onlineClaimSteps = ref([
     {
         name: 'Log In to Your Account',
-        content: 'Access your online account using your username and password. If you don\'t have an account, you can easily create one on our website.',
+        content: 'Access your online account using your username and password. If you don\'t have an account, you can create one on our website.',
     },
     {
-        name: 'Review Your Policy',
-        content: 'Once logged in, navigate to the "My Policies" section to review the details of your current policy. Take a moment to ensure that all information is accurate and up-to-date.',
+        name: 'Navigate to Claims',
+        content: 'Go to the "Claims" section in your account dashboard to start the claims process.',
     },
     {
-        name: 'Make Necessary Updates',
-        content: 'If there are any changes in your personal information, coverage needs, or preferences, you can update them before renewing. This ensures that your policy continues to meet your requirements.',
+        name: 'Select Claim Type',
+        content: 'Choose the type of claim you want to report (e.g., motor, home, health, travel). This helps us route your claim to the appropriate department for quicker processing.',
     },
     {
-        name: 'Choose Your Renewal Option',
-        content: 'Select the renewal option that suits you best. You can choose to renew for the same coverage or explore additional coverage options that may be beneficial.',
+        name: 'Provide Incident Details',
+        content: 'Fill out the claim form with details of the incident, including the date, time, location, and a brief description of what happened. Be as accurate and detailed as possible to help us assess your claim.',
     },
     {
-        name: 'Review and Confirm',
-        content: 'Carefully review the terms and conditions of your renewed policy. Once satisfied, click the "Confirm Renewal" button to proceed.',
+        name: 'Upload Supporting Documents',
+        content: 'Attach any relevant documents, such as photos of the damage, police reports, medical bills, or receipts. This will help expedite the review process.',
     },
     {
-        name: 'Payment',
-        content: 'Complete the payment process using our secure payment gateway. We offer various payment methods for your convenience, including credit/debit cards, bank transfers, and online payment platforms.',
+        name: 'Review and Submit',
+        content: 'Review the information you provided to ensure accuracy. Once you\'re satisfied, click the "Submit Claim" button.',
     },
     {
         name: 'Receive Confirmation',
-        content: 'After successful payment, you will receive a confirmation email with your renewed policy documents. Keep these documents for your records.',
+        content: 'After submitting your claim, you will receive a confirmation email with a reference number. Keep this reference number handy for future correspondence.',
+    },
+    {
+        name: 'Claims Review',
+        content: 'Our claims team will review your submission and may contact you for additional information or clarification. We aim to process all claims promptly and keep you informed throughout the process.',
+    },
+    {
+        name: 'Claim Resolution',
+        content: 'Once your claim is approved, you will receive information on the next steps, including any payouts or repairs. Our goal is to resolve your claim as quickly and efficiently as possible.',
     },
 ])
 
@@ -59,6 +67,16 @@ const benefits = ref([
     },
 ])
 
+
+const currentMenu = ref('online')
+const setMenu = (menu) => {
+    currentMenu.value = menu
+}
+const setMobileMenu = (event) => {
+    const selectedValue = event.target.value;
+    currentMenu.value = selectedValue
+}
+
 </script>
 
 <template>
@@ -77,36 +95,34 @@ const benefits = ref([
                     efficient claims process.
                 </p>
 
-                <Accordion :faqs="faqs" />
-
-
-                <div class="py-2 px-6">
-                    <section class="relative py-1">
-                        <div class="container px-4">
-                            <h2 class="text-2xl !font-semibold text-black mb-4">
-                                Benefits of Renewing <span class="text-brand-primary"> Your Policy Online</span>
-                            </h2>
-                            <div class="my-5">
-                                <p class="text-sm leading-normal">
-                                    At Acentria Group, we are guided by a set of core principles that shape everything
-                                    we do. These principles ensure we build strong relationships, foster innovation, and
-                                    achieve success together.
-                                </p>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                                <div v-for="principle in benefits"
-                                    class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
-                                    <div class="flex flex-col">
-                                        <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
-                                        <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
-                                            principle.name }}</h4>
-                                        <p class="text-sm leading-normal text-black">{{ principle.description }}</p>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="container bg-white mx-auto px-6">
+                    <!-- <div class="sm:hidden px-4">
+                        <label for="tabs" class="sr-only">Select a tab</label>
+                        <select @change="setMobileMenu($event)" id="tabs" name="tabs"
+                            class="block w-full rounded-md border-gray-300 focus:border-brand-primary focus:ring-brand-primary py-2 font-semibold">
+                            <option selected value="blogs">Blogs</option>
+                            <option value="event">Events</option>
+                        </select>
+                    </div> -->
+                    <div class="hidden sm:block font-sans">
+                        <div class="divide-x divide-gray-200">
+                            <nav class="flex !w-screen font-sans gap-20" aria-label="Tabs">
+                                <button @click="setMenu('online')"
+                                    :class="[currentMenu == 'online' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                                    class="w-1/4 px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
+                                    <i class="fas fa-images mr-2"></i> Access Your Online Account
+                                </button>
+                                <button @click="setMenu('file')"
+                                    :class="[currentMenu == 'file' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                                    class="w-1/4 px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
+                                    <i class="fas fa-blog mr-2"></i> File a Claim From Here
+                                </button>
+                            </nav>
                         </div>
-                    </section>
+                    </div>
                 </div>
+
+                <Accordion :faqs="onlineClaimSteps" />
 
                 <div class="py-5 px-10 mt-10">
                     <h2 class="text-2xl !font-semibold text-black mb-4">
@@ -114,7 +130,7 @@ const benefits = ref([
                     </h2>
                     <div class="my-5">
                         <p class="text-sm leading-normal">
-                            If you encounter any issues or have questions about renewing your policy, our dedicated
+                            If you encounter any issues or have questions about reporting a claim, our dedicated
                             <NuxtLink to="/contact-acentria-group" class="font-semibold italic underline">Customer
                                 Support Team
                             </NuxtLink> is here to help. <br>
@@ -127,13 +143,13 @@ const benefits = ref([
 
                 <div class="py-3 px-10">
                     <h2 class="text-2xl !font-semibold text-black mb-4">
-                        Stay <span class="text-brand-primary"> Protected?</span>
+                        Stay <span class="text-brand-primary"> Informed</span>
                     </h2>
                     <div class="my-5">
                         <p class="text-sm leading-normal">
-                            Don't let your coverage lapse! <br>
-                            Renew your policy today and continue enjoying the peace of
-                            mind that comes with comprehensive protection.
+                            Keep track of your claim status by logging into your account and visiting the "Claims"
+                            section. We are committed to providing timely updates and support throughout the claims
+                            process.
                         </p>
                     </div>
                     <div class="my-6">
