@@ -1,41 +1,10 @@
 <script setup>
-const whatsCovered = ref([
-    {
-        name: 'Financial Protection and affordable retirement plans',
-        icon: 'fas fa-piggy-bank'
-    },
-    {
-        name: 'Critical Illness',
-        icon: 'fas fa-heartbeat'
-    },
-    {
-        name: 'Death as a result of accidents, illnesses or natural causes',
-        icon: 'fas fa-cross'
-    },
-    {
-        name: 'Permanent Total Disability as a result of accidents or illnesses',
-        icon: 'fas fa-wheelchair'
-    },
-    {
-        name: 'Permanent Partial Disability as a result of accidents or illnesses',
-        icon: 'fas fa-user-injured'
-    },
-    {
-        name: 'Funeral Expenses',
-        icon: 'fas fa-church'
-    }
-]);
- 
-const whyTheInsurance = ref({
-    title: 'Why <span class="text-brand-primary">Life Insurance</span>',
-    description: 'Life is unpredictable, and it\'s essential to ensure that your loved ones are protected financially in case of an unexpected event.Life insurance provides peace of mind, knowing that your family will have financial support to cover expenses such as mortgage payments, education, and daily living costs.',
-})
 
-const getStarted = ref({
-    title: 'Get <span class="text-brand-primary">Started</span>',
-    description: 'Take the first step towards securing your family\'s future with our comprehensive life insurance plans. Compare Quotes today and provide your loved ones with the financial protection they deserve.',
+const props = defineProps({
+    whyTheInsurance: Object,
+    whatsCovered: Array,
+    getStarted: Object,
 })
-
 
 </script>
 
@@ -51,14 +20,14 @@ const getStarted = ref({
         <div class="container">
             <h1 class="text-2xl text-black !font-semibold mb-6">What's <span class="text-brand-primary"> Covered</span>
             </h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 <NuxtLink :href="feature.url" v-for="feature in whatsCovered"
-                    class="flex p-5 shadow-md border-t-4 border-black">
+                    class="flex p-5 shadow-md">
                     <div class="mr-6">
                         <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                     </div>
                     <div>
-                        <div class="mt-1 text-gray-600 text-md font-semibold">
+                        <div class="mt-1 text-gray-600 text-xs leading-normal font-semibold">
                             <p>
                                 {{ feature.name }}
                             </p>

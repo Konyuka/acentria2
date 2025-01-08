@@ -147,6 +147,44 @@ const benefits = ref([
     
 ])
 
+
+const whatsCovered = ref([
+    {
+        name: 'Financial Protection and affordable retirement plans',
+        icon: 'fas fa-piggy-bank'
+    },
+    {
+        name: 'Critical Illness',
+        icon: 'fas fa-heartbeat'
+    },
+    {
+        name: 'Death as a result of accidents, illnesses or natural causes',
+        icon: 'fas fa-cross'
+    },
+    {
+        name: 'Permanent Total Disability as a result of accidents or illnesses',
+        icon: 'fas fa-wheelchair'
+    },
+    {
+        name: 'Permanent Partial Disability as a result of accidents or illnesses',
+        icon: 'fas fa-user-injured'
+    },
+    {
+        name: 'Funeral Expenses',
+        icon: 'fas fa-church'
+    }
+]);
+
+const whyTheInsurance = ref({
+    title: 'Why <span class="text-brand-primary">Life Insurance</span>',
+    description: 'Life is unpredictable, and it\'s essential to ensure that your loved ones are protected financially in case of an unexpected event.Life insurance provides peace of mind, knowing that your family will have financial support to cover expenses such as mortgage payments, education, and daily living costs.',
+})
+
+const getStarted = ref({
+    title: 'Get <span class="text-brand-primary">Started</span>',
+    description: 'Take the first step towards securing your family\'s future with our comprehensive life insurance plans. Compare Quotes today and provide your loved ones with the financial protection they deserve.',
+})
+
 </script>
 
 <template>
@@ -154,7 +192,7 @@ const benefits = ref([
     <div class="bg-white">
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
-        <InsuranceComponents />
+        <InsuranceComponents :whatsCovered="whatsCovered" :whyTheInsurance="whyTheInsurance" :getStarted="getStarted" />
 
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
@@ -185,7 +223,7 @@ const benefits = ref([
         </div>
 
 
-        <div class="container py-10">
+        <!-- <div class="container py-10">
             <h1 class="text-2xl text-black !font-semibold mb-6">How Can I <span class="text-brand-primary">Get
                     Started</span></h1>
             <p class="mt-6 text-xs leading-normal">
@@ -198,7 +236,7 @@ const benefits = ref([
                 Our customer service team is available to assist you with any questions or concerns.
 
             </p>
-        </div>
+        </div> -->
 
 
         <div class="container py-5">
@@ -206,11 +244,11 @@ const benefits = ref([
             </h1>
             <div
                 class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
-                <div v-for="benefit in benefits" class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
+                <div v-for="benefit in benefits"
+                    class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
                     <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
                     <div>
-                        <h5 v-html="benefit.name"
-                            class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
 
                         </h5>
                         <p class="leading-normal font-regular text-light-content text-xs">
