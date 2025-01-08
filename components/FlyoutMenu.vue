@@ -578,14 +578,14 @@ const InsuranceMenus = ref([
                 link: '/insurance/travel-insurance',
             },
             {
-                name: 'International Medical Insurance',
+                name: 'International Medical',
                 description: 'Get comprehensive medical coverage while traveling internationally.',
                 link: '/insurance/travel-insurance',
             },
             {
                 name: 'Golfer’s Insurance',
-                description: 'Protect yourself and your equipment on the golf course with our specialized insurance.',
-                link: '/insurance/travel-insurance',
+                description: 'Don’t let the unexpected ruin your game protect your swing with golfer’s insurance.',
+                link: '/insurance/golfers-insurance',
             },
         ]
     },

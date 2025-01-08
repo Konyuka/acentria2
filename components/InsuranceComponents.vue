@@ -27,9 +27,14 @@ const props = defineProps({
                         <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                     </div>
                     <div>
-                        <div class="mt-1 text-gray-600 text-sm leading-normal font-semibold">
+                        <div class=" mt-1 text-gray-600 text-sm leading-normal font-bold">
                             <p>
                                 {{ feature.name }}
+                            </p>
+                        </div>
+                        <div class="mt-1 text-gray-600 text-[13px] leading-normal font-semibold">
+                            <p>
+                                {{ feature.description }}
                             </p>
                         </div>
                     </div>
