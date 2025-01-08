@@ -14,43 +14,52 @@ const InsuranceCardsContent = ref({
         {
             name: 'Individual Life Assurance',
             icon: 'fas fa-user-shield',
+            link: '/insurance/life-plans/individual-life-assurance',
             description: 'Create a legacy of protection and support for those you care about the most with our Individual Life Plans.',
         },
         {
             name: 'Term Life Insurance',
             icon: 'fas fa-hourglass-half',
+            link: '/insurance/life-plans/term-life-insurance',
             description: 'Affordable coverage for a specific period, providing financial protection when you need it most.',
         },
         {
             name: 'Whole Life Insurance',
             icon: 'fas fa-life-ring',
+            link: '/insurance/life-plans/whole-life-insurance',
             description: 'Lifetime coverage with a savings component, offering both protection and an opportunity to build cash value.',
         },
         {
             name: 'Critical Illness',
             icon: 'fas fa-heartbeat',
+            link: '/insurance/life-plans/critical-illness',
             description: 'Offering financial assistance if you face a severe illness such as cancer, heart attack, stroke, organ transplant, kidney failure, and major organ surgeries or a significant accident, this plan stands by you, even if you don\'t pass away. It\'s an extra layer of protection that demonstrates our commitment to your well-being.',
         },
         {
             name: 'Acentria Last Expense',
             icon: 'fas fa-church',
+            link: '/insurance/life-plans/acentria-last-expense',
             description: 'The ultimate solution for providing financial reprieve to the insured loved ones for funeral related expenses.',
         },
         {
             name: 'Personal Accident',
             icon: 'fas fa-car-crash',
-            description: 'It’s the safety net you and your family can rely on during difficult moments incase of death and disability arising out of an accident. Your well-being is our priority, and this plan is our way of ensuring you\'re insured.',
+            link: '/insurance/life-plans/personal-accident',
+            description: 'It’s the safety net you and your family can rely on during difficult moments in case of death and disability arising out of an accident. Your well-being is our priority, and this plan is our way of ensuring you\'re insured.',
         },
         {
             name: 'Education Protection Plan',
             icon: 'fas fa-graduation-cap',
+            link: '/insurance/life-plans/education-protection-plan',
             description: 'This plan guarantees funds for your children education if something unexpected happens to you. Give your child the gift of a bright future with our Education Protection.',
         },
         {
             name: 'Annuities & Income Draw Down',
             icon: 'fas fa-piggy-bank',
+            link: '/insurance/life-plans/annuities-income-draw-down',
             description: 'In a world of financial uncertainty, planning for a secure and comfortable retirement is of paramount importance. Annuities and Income Draw Down are two powerful tools to help you achieve your retirement goals, each with its unique advantages.',
         },
+
     ],
 })
 
