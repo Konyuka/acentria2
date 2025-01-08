@@ -252,11 +252,11 @@ const exploreClaims = ref({
 
 const introContent = ref({
     orientation: 'lg:flex-row flex-col',
-    heading: 'Welcome to <span class="text-brand-primary">Acentria Group</span>',
+    heading: 'Insurance <span class="text-brand-primary"> & Risk</span>',
     subheading: 'A reliable partner you can trust.',
     image: 'https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-business-woman-handshake-and-agreement-for-partnership-in-office-for-collaboration-promotion-or-2311431727-transformed-1024x767.jpeg',
     link: '/insurance-claims',
-    content: 'Acentria Group is your trusted friend in the world of insurance. We’re here to make sure you and anything you care for is safe and sound. Insurance can be confusing, but we’re experts at making it simple. We’ll take the time to understand exactly what you need and find the right insurance plan just for you. So, why choose us? Because we genuinely care about keeping you and your things protected. We’re not just about selling insurance; we’re about making sure you’re worry-free and your wallet stays happy. Whether it’s your health, home, car, or business, we’ve got the perfect insurance plan that won’t break the bank. Trust us to be your friendly insurance guide, making sure you’re covered no matter what life throws your way.',
+    content: 'Acentria Group is your trusted friend in the world of insurance. We’re here to make sure you and anything you care for is safe and sound. Insurance can be confusing, but we’re experts at making it simple. We’ll take the time to understand exactly what you need and find the right insurance plan just for you. <br> So, why choose us? Because we genuinely care about keeping you and your things protected. We’re not just about selling insurance; we’re about making sure you’re worry-free and your wallet stays happy. Whether it’s your health, home, car, or business, we’ve got the perfect insurance plan that won’t break the bank. Trust us to be your friendly insurance guide, making sure you’re covered no matter what life throws your way.',
 })
 
 const slides = ref([

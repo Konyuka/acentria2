@@ -589,60 +589,60 @@ const InsuranceMenus = ref([
             },
         ]
     },
-    {
-        name: 'Corporate Covers',
-        linksHeading: 'My Corporate <span class="text-brand-primary">Insurance Covers<span/>',
-        subMenu: 'Why Corporate <span class="text-brand-primary">Insurance?<span/>',
-        description: 'Corporate insurance is crucial as it provides tailored solutions to protect your business and employees from various risks and uncertainties.',
-        icon: 'fas fa-building',
-        items: [
-            {
-                name: 'Staff Health Covers',
-                description: 'Ensure employee well-being with comprehensive health coverage.',
-                link: '/insurance/staff-health-cover',
-            },
-            {
-                name: 'Staff Life Covers',
-                description: 'Provide financial security for employees’ families with life insurance.',
-                link: '/insurance/staff-health-cover',
-            },
-            {
-                name: 'Staff Combined Cover',
-                description: 'Comprehensive coverage for staff including travel, domestic, and motor insurance.',
-                link: '/insurance/staff-health-cover',
-            },
-            {
-                name: 'General Asset Covers',
-                description: 'Protect your business assets against damage or loss.',
-                link: '/insurance/staff-health-cover',
-            },
-            {
-                name: 'Stock Shipping Covers',
-                description: 'Safeguard your stock during shipping against potential risks.',
-                link: '/insurance/staff-health-cover',
-            },
-            {
-                name: 'Financial Losses & Money Covers',
-                description: 'Mitigate financial risks and protect against monetary losses.',
-                link: '/insurance/staff-health-cover',
-            },
-            {
-                name: 'Customer Covers',
-                description: 'Ensure your customers are protected with tailored insurance solutions.',
-                link: '/insurance/staff-health-cover',
-            },
-            {
-                name: 'Special & Emerging Risks',
-                description: 'Stay ahead with coverage for special and emerging risks.',
-                link: '/insurance/staff-health-cover',
-            },
-            {
-                name: 'Craft your own',
-                description: 'Customize your insurance coverage to meet your unique needs.',
-                link: '/insurance/staff-health-cover',
-            }
-        ]
-    },
+    // {
+    //     name: 'Corporate Covers',
+    //     linksHeading: 'My Corporate <span class="text-brand-primary">Insurance Covers<span/>',
+    //     subMenu: 'Why Corporate <span class="text-brand-primary">Insurance?<span/>',
+    //     description: 'Corporate insurance is crucial as it provides tailored solutions to protect your business and employees from various risks and uncertainties.',
+    //     icon: 'fas fa-building',
+    //     items: [
+    //         {
+    //             name: 'Staff Health Covers',
+    //             description: 'Ensure employee well-being with comprehensive health coverage.',
+    //             link: '/insurance/staff-health-cover',
+    //         },
+    //         {
+    //             name: 'Staff Life Covers',
+    //             description: 'Provide financial security for employees’ families with life insurance.',
+    //             link: '/insurance/staff-health-cover',
+    //         },
+    //         {
+    //             name: 'Staff Combined Cover',
+    //             description: 'Comprehensive coverage for staff including travel, domestic, and motor insurance.',
+    //             link: '/insurance/staff-health-cover',
+    //         },
+    //         {
+    //             name: 'General Asset Covers',
+    //             description: 'Protect your business assets against damage or loss.',
+    //             link: '/insurance/staff-health-cover',
+    //         },
+    //         {
+    //             name: 'Stock Shipping Covers',
+    //             description: 'Safeguard your stock during shipping against potential risks.',
+    //             link: '/insurance/staff-health-cover',
+    //         },
+    //         {
+    //             name: 'Financial Losses & Money Covers',
+    //             description: 'Mitigate financial risks and protect against monetary losses.',
+    //             link: '/insurance/staff-health-cover',
+    //         },
+    //         {
+    //             name: 'Customer Covers',
+    //             description: 'Ensure your customers are protected with tailored insurance solutions.',
+    //             link: '/insurance/staff-health-cover',
+    //         },
+    //         {
+    //             name: 'Special & Emerging Risks',
+    //             description: 'Stay ahead with coverage for special and emerging risks.',
+    //             link: '/insurance/staff-health-cover',
+    //         },
+    //         {
+    //             name: 'Craft your own',
+    //             description: 'Customize your insurance coverage to meet your unique needs.',
+    //             link: '/insurance/staff-health-cover',
+    //         }
+    //     ]
+    // },
     {
         name: 'Business Covers',
         linksHeading: 'My Business <span class="text-brand-primary">Insurance Covers<span/>',
@@ -687,45 +687,45 @@ const InsuranceMenus = ref([
             }
         ]
     },
-    {
-        name: 'Industrial Covers',
-        linksHeading: 'My Industrial <span class="text-brand-primary">Insurance Covers<span/>',
-        subMenu: 'Why Industrial <span class="text-brand-primary">Insurance?<span/>',
-        description: 'Industrial insurance is vital as it provides comprehensive coverage for all industrial risks, ensuring your business operations are protected. ',
-        icon: 'fas fa-industry',
-        items: [
-            {
-                name: 'Industrial All Risks Covers',
-                description: 'Comprehensive coverage for all industrial risks and operations.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Contractors All Risks Covers',
-                description: 'Comprehensive coverage for contractors against all risks during construction.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Staff Work Injury Benefits Act (WIBA) Covers',
-                description: 'Compensation for work-related injuries under WIBA regulations.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Staff Personal Accident',
-                description: 'Coverage for accidents occurring to staff during employment.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Casualty and Liability Covers',
-                description: 'Protection against claims of injury or property damage.',
-                link: '/insurance/biasahara-cover',
-            },
-            {
-                name: 'Craft your own',
-                description: 'Customize your insurance coverage to meet your unique needs.',
-                link: '/insurance/craft-your-own',
-            }
-        ]
-    },
+    // {
+    //     name: 'Industrial Covers',
+    //     linksHeading: 'My Industrial <span class="text-brand-primary">Insurance Covers<span/>',
+    //     subMenu: 'Why Industrial <span class="text-brand-primary">Insurance?<span/>',
+    //     description: 'Industrial insurance is vital as it provides comprehensive coverage for all industrial risks, ensuring your business operations are protected. ',
+    //     icon: 'fas fa-industry',
+    //     items: [
+    //         {
+    //             name: 'Industrial All Risks Covers',
+    //             description: 'Comprehensive coverage for all industrial risks and operations.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //         {
+    //             name: 'Contractors All Risks Covers',
+    //             description: 'Comprehensive coverage for contractors against all risks during construction.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //         {
+    //             name: 'Staff Work Injury Benefits Act (WIBA) Covers',
+    //             description: 'Compensation for work-related injuries under WIBA regulations.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //         {
+    //             name: 'Staff Personal Accident',
+    //             description: 'Coverage for accidents occurring to staff during employment.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //         {
+    //             name: 'Casualty and Liability Covers',
+    //             description: 'Protection against claims of injury or property damage.',
+    //             link: '/insurance/biasahara-cover',
+    //         },
+    //         {
+    //             name: 'Craft your own',
+    //             description: 'Customize your insurance coverage to meet your unique needs.',
+    //             link: '/insurance/craft-your-own',
+    //         }
+    //     ]
+    // },
     {
         type: 'special',
         name: 'Aviation Covers',
