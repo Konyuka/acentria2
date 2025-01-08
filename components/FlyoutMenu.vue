@@ -579,8 +579,8 @@ const InsuranceMenus = ref([
             },
             {
                 name: 'International Medical',
-                description: 'Get comprehensive medical coverage while traveling internationally.',
-                link: '/insurance/travel-insurance',
+                description: 'We got your health covered wherever you are in the world.',
+                link: '/insurance/international-medical',
             },
             {
                 name: 'Golfer’s Insurance',
