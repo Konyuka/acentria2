@@ -25,6 +25,16 @@ const whatsCovered = ref([
         icon: 'fas fa-church'
     }
 ]);
+ 
+const whyTheInsurance = ref({
+    title: 'Why <span class="text-brand-primary">Life Insurance</span>',
+    description: 'Life is unpredictable, and it\'s essential to ensure that your loved ones are protected financially in case of an unexpected event.Life insurance provides peace of mind, knowing that your family will have financial support to cover expenses such as mortgage payments, education, and daily living costs.',
+})
+
+const getStarted = ref({
+    title: 'Get <span class="text-brand-primary">Started</span>',
+    description: 'Take the first step towards securing your family\'s future with our comprehensive life insurance plans. Get a quote today and provide your loved ones with the financial protection they deserve.',
+})
 
 
 </script>
@@ -34,13 +44,8 @@ const whatsCovered = ref([
     <div class="bg-white">
 
         <div class="container py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Why <span class="text-brand-primary">Life
-                    Insurance</span></h1>
-            <p class="mt-6 text-xs leading-normal">
-                Life is unpredictable, and it's essential to ensure that your loved ones are protected financially in
-                case of an unexpected event. Life insurance provides peace of mind, knowing that your family will have
-                financial support to cover expenses such as mortgage payments, education, and daily living costs.
-            </p>
+            <h1 class="text-2xl text-black !font-semibold mb-6" v-html="whyTheInsurance.title"></h1>
+            <p class="mt-6 text-xs leading-normal" v-html="whyTheInsurance.description"></p>
         </div>
 
         <div class="container">
@@ -64,11 +69,8 @@ const whatsCovered = ref([
         </div>
 
         <div class="container py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Get <span class="text-brand-primary">Started</span></h1>
-            <p class="mt-6 text-xs leading-normal">
-                Take the first step towards securing your family's future with our comprehensive life insurance plans.
-                Get a quote today and provide your loved ones with the financial protection they deserve.
-            </p>
+            <h1 class="text-2xl text-black !font-semibold mb-6" v-html="getStarted.title"></h1>
+            <p class="mt-6 text-xs leading-normal" v-html="getStarted.description"></p>
 
             <div class="my-5 flex gap-5">
                 <NuxtLink to="/"
