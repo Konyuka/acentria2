@@ -2,44 +2,44 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Life Insurance',
+    subtitle: 'Ensure Smart Life!',
     title: 'Protect your family\'s tomorrow, today',
     image: 'https://images.pexels.com/photos/5727734/pexels-photo-5727734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content: 'Discover our life insurance & make sure your loved ones are safe and sound, no matter what happens. Let’s talk about securing your loved ones’ future. Explore our life insurance options and ensure their financial well-being, no matter what life brings.',
 })
 
 const InsuranceCardsContent = ref({
-    title:'Which plan is right <span class="text-brand-primary">for you & your family?</span>',
+    title: 'Which plan is right <span class="text-brand-primary">for you & your family?</span>',
     users: [
         {
-            name:'Personal Accident Cover',
-            icon:'fas fa-user',
+            name: 'Personal Accident Cover',
+            icon: 'fas fa-user',
             description: 'Unforeseen accidents can leave a lasting impact not only on our lives, but also on our loved ones too. With our accident insurance plan, you’re secured of a payout in case of accidental death or disability. It’s the safety net you and your family can rely on during difficult moments. Your well-being is our priority, and this plan is our way of ensuring you\'re insured.',
         },
         {
-            name:'Critical Illness Cover',
+            name: 'Critical Illness Cover',
             icon: 'fas fa-users',
             description: 'Life\'s challenges can strike at any time, and our Extra for Serious Illness plan is here to provide vital support.Offering financial assistance if you face a severe illness or a significant accident, this plan stands by you, even if you don\'t pass away. It\'s an extra layer of protection that demonstrates our commitment to your well- being.',
         },
         {
-            name:'Last Expense Policy',
+            name: 'Last Expense Policy',
             icon: 'fas fa-users',
             description: 'Are you worried about the financial impact your final expenses might have on your loved ones when you\'re no longer here? Let us put your mind at ease with our Last Expense Policy – the ultimate solution for providing financial reprieve to the insured loved ones for funeral related expenses.',
         },
         {
-            name:'Education Protection Plan',
+            name: 'Education Protection Plan',
             icon: 'fas fa-users',
             description: 'You\'ve always dreamed big for your child, and we\'re here to make those dreams come true no matter what. Our Education Protection Plan ensures that your child\'s educational journey remains uninterrupted, even if you\'re no longer there to guide them. This plan guarantees funds for their education if something unexpected happens to you. Give your child the gift of a bright future with our Education Protection',
         },
         {
-            name:'Individual life Assurance',
+            name: 'Individual life Assurance',
             icon: 'fas fa-users',
-            description:'Your life is a precious gift, and ensuring the financial security of your loved ones should be a top priority. With our Individual Life Assurance policy, you can create a legacy of protection and support for those you care about the most',
+            description: 'Your life is a precious gift, and ensuring the financial security of your loved ones should be a top priority. With our Individual Life Assurance policy, you can create a legacy of protection and support for those you care about the most',
         },
         {
-            name:'Annuities & Income Draw Down',
+            name: 'Annuities & Income Draw Down',
             icon: 'fas fa-users',
-            description:'In a world of financial uncertainty, planning for a secure and comfortable retirement is of paramount importance. Annuities and Income Draw Down are two powerful tools to help you achieve your retirement goals, each with its unique advantages.',
+            description: 'In a world of financial uncertainty, planning for a secure and comfortable retirement is of paramount importance. Annuities and Income Draw Down are two powerful tools to help you achieve your retirement goals, each with its unique advantages.',
         },
     ],
 })
@@ -106,6 +106,31 @@ const whys = ref([
         icon: 'sentiment_satisfied',
     },
 ])
+
+const benefits = ref([
+    {
+        name: 'Trusted Provider',
+        icon: 'fas fa-shield-alt',
+        description: 'With a long history of reliability and trust, we are a leading name in the life insurance industry.',
+    },
+    {
+        name: 'Customer Satisfaction',
+        icon: 'fas fa-smile',
+        description: 'We prioritize our customers\' well-being, offering personalized service and prompt claims processing.',
+    },
+    {
+        name: 'Easy and Hassle-Free',
+        icon: 'fas fa-check-circle',
+        description: 'Purchasing life insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and file claims on the go.',
+    },
+    {
+        name: 'Customized Plans',
+        icon: 'fas fa-cogs',
+        description: 'Tailor your coverage to fit your unique needs and financial goals.',
+    },
+    
+])
+
 </script>
 
 <template>
@@ -113,18 +138,74 @@ const whys = ref([
     <div class="bg-white">
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
+        <InsuranceComponents />
+
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
-        <div class="container mx-auto px-4 py-2 mt-5">
-            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
-            </h1>
-            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+        <div class="container py-10">
+            <h1 class="text-2xl text-black !font-semibold mb-6">Easy <span class="text-brand-primary">Claim
+                    Process</span></h1>
+            <p class="mt-6 text-xs leading-normal">
+                Our claims process is hassle free.
+                <br>
+                It is important to familiarize yourself with your policy coverage and necessary <span
+                    class="text-brand-primary italic font-semibold">claims
+                    documents</span> when
+                purchasing cover. <br> Our team of experts are readily available to guide you through the process.
+            </p>
+            <div class="mt-5">
+                <NuxtLink href="/"
+                    class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                    Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i>
+                </NuxtLink>
+            </div>
         </div>
 
-        <Accordion :faqs="faqs" />
+        <div class="container mx-auto py-5">
+            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            </h1>
+            <p class="text-xs leading-normal text-gray-700 font-semibold">We have all the answers to your questions.</p>
+            <Accordion :faqs="faqs" />
+        </div>
+
+
+        <div class="container py-10">
+            <h1 class="text-2xl text-black !font-semibold mb-6">How Can I <span class="text-brand-primary">Get
+                    Started</span></h1>
+            <p class="mt-6 text-xs leading-normal">
+                Our streamlined enrollment process makes it simple to get the coverage you need.
+                You can compare plans, get quotes, and enroll online within minutes - <span
+                    class="text-brand-primary italic font-semibold">Do It Yourself</span>
+                or review your
+                quotes online, then get tailored advice from our agents - <span
+                    class="text-brand-primary italic font-semibold">Engage our expert </span>.
+                Our customer service team is available to assist you with any questions or concerns.
+
+            </p>
+        </div>
+
+
+        <div class="container py-5">
+            <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
+            </h1>
+            <div
+                class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
+                <div v-for="benefit in benefits" class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
+                    <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
+                    <div>
+                        <h5 v-html="benefit.name"
+                            class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+
+                        </h5>
+                        <p class="leading-normal font-regular text-light-content text-xs">
+                            {{ benefit.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
-
         <ContactForm />
     </div>
 

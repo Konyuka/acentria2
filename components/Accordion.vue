@@ -24,8 +24,8 @@ const toggle = (index) => {
 </script>
 
 <template>
-    <div class="bg-white px-4 py-2 md:px-8 lg:px-16 font-sans">
-        <div class="container max-w-7xl mx-auto pb-6">
+    <div class="bg-white px-4 pb-5 md:px-8 lg:px-16 font-sans">
+        <div class="container max-w-7xl mx-auto ">
 
             <!-- FAQ section -->
             <div class="mx-auto my-4 max-w-5xl">

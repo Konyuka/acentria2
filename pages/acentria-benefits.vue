@@ -40,8 +40,6 @@ const benefits = ref([
 
         <BannerMain :content="bannerContent" />
 
-
-
         <div>
 
             <div class="container mx-auto">

@@ -36,7 +36,7 @@ const showButton = computed(() => {
             </div>
         </div>
 
-        <div class="container max-w-6xl">
+        <!-- <div class="container max-w-6xl">
             <div class="mt-5 mx-auto text-left">
                 <div>
                     <p class="font-sans tracking-normal text-sm text-black leading-tight lg:leading-tight">
@@ -70,7 +70,8 @@ const showButton = computed(() => {
                     </svg>
                 </a>
             </div>
-        </div>
+        </div> -->
+        
     </div>
 </template>
 
