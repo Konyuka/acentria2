@@ -32,7 +32,7 @@
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
 
 
-                    
+
                     <div class="h-auto w-full">
                         <div v-if="currentMenu === 'Insurance'" class="px-10">
                             <!-- <InsuranceTopMenu /> -->
@@ -48,14 +48,40 @@
                                         {{ currentMainDescription }}
                                     </p>
                                     <div class="mt-5">
-                                        <NuxtLink :to="ctaLink"
-                                            class="button-animation leading-normal font-semibold flex text-gray-600">
-                                            Read More About {{ ctaWording }}
-                                            <span
-                                                class="ml-2 h-6 w-6 rounded-full border-[1px]  border-gray-400 flex items-center justify-center">
+                                        <NuxtLink :to="ctaLink" class="leading-normal font-semibold flex text-black">
+                                            {{ ctaWording }}
+                                            <span class=" ml-2 h-6 w-6 rounded-full border-[1px] border-gray-400 flex
+                                                items-center justify-center">
                                                 <i class="text-[10px] fas fa-arrow-right"></i>
                                             </span>
                                         </NuxtLink>
+                                    </div>
+
+                                    <!-- <InsuranceTopMenu /> -->
+                                    <div v-if="currentMenu=='Insurance'" class="grid grid-cols-2 gap-2 w-full my-5 mb-5">
+                                        <div class="relative">
+                                            <div  v-for="(item, index) in actionMenus">
+                                                <p @click="setActionSubmenu(item, index)" @mouseenter="setActionSubmenu(item, index)"
+                                                    :class="[currentActionMenu === item.name ? 'text-brand-primary bg-red-100' : '']"
+                                                    class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary font-semibold text-[13px]">
+                                                    {{ item.name }} <i v-if="currentActionMenu === item.name"
+                                                        class="absolute right-1 text-brand-primary ml-1 fas fa-arrow-right mt-1"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="border-l-2 border-red-600">
+                                            <div class="px-2 flex flex-col gap-1">
+                                                <NuxtLink :to="submenuItem.link"
+                                                    v-for="submenuItem in currentActionMenuItems" :key="submenuItem.name"
+                                                    class="px-2 py-1 group hover:cursor-pointer hover:text-black hover:bg-red-100 transition duration-700 rounded-md font-semibold text-[13px]">
+                                                    <div class="flex justify-between">
+                                                        {{ submenuItem.name }}
+                                                        <i
+                                                            class="text-brand-primary mr-1 fas fa-angle-right text-[10px] mt-1.5"></i>
+                                                    </div>
+                                                </NuxtLink>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -114,11 +140,11 @@
 
                             </div>
                         </div>
+
                     </div>
 
-                    <div  class=" mt-8">
-                        <!-- <div v-if="currentMenu !== 'Insurance'" class="flex px-10"> -->
-                        <div class="flex px-10">
+                    <div v-if="currentMenu !== 'Insurance'" class=" mt-8">
+                        <div v-if="currentMenu !== 'Insurance'" class="flex px-10">
                             <div class="flex col-span-2 w-full justify-between !pr-5">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
                                     @click="closeFlyOver()"
@@ -163,13 +189,13 @@ const flyoverHeader = ref(null)
 
 const ctaWording = computed(() => {
     if (currentMenu.value == 'Insurance') {
-        return 'Insurance'
+        return 'Insurance Home Page'
     } else if (currentMenu.value == 'Reinsurance') {
-        return 'Reinsurance'
+        return 'Reinsurance Home Page'
     } else if (currentMenu.value == 'Actuarial') {
-        return 'Actuarial'
+        return 'Actuarial Home Page'
     } else if (currentMenu.value == 'About') {
-        return 'Our History'
+        return 'Read About Our History '
     }
 })
 
@@ -184,6 +210,97 @@ const ctaLink = computed(() => {
         return '/about-us/who-we-are'
     }
 })
+
+const currentActionMenu = ref(null)
+const currentActionMenuItems = ref(null)
+const actionMenus = ref([
+    {
+        name: 'Expertise Services',
+        items: [
+            {
+                name: 'Financial Wellness',
+                link: '/financial-wellness',
+            },
+            {
+                name: 'Risk Management',
+                link: '/risk-management',
+            },
+            {
+                name: 'Cyber Risk',
+                link: '/cyber-risk-management',
+            },
+            {
+                name: 'Claims Management',
+                link: '/claims-management',
+            },
+            {
+                name: 'Insurance Policy Management',
+                link: '/insurance-policy-management',
+            },
+        ]
+    },
+    {
+        name: 'Manage Your Policy',
+        items: [
+            {
+                name: 'Renew Your Policy',
+                link: '/renew-policy',
+            },
+            {
+                name: 'Report a Claim',
+                link: '/report-claim',
+            },
+            {
+                name: 'Online Service Portal',
+                link: '/online-portal',
+            },
+        ]
+    },
+    {
+        name: 'Buy Insurance',
+        items: [
+            {
+                name: 'Do it Yourself',
+                link: '/diy',
+            },
+            {
+                name: 'Live Agent Assistance',
+                link: '/agent-assistance',
+            },
+            {
+                name: 'Full Service',
+                link: '/full-service',
+            },
+        ]
+    },
+    {
+        name: 'Insights',
+        items: [
+            {
+                name: 'Blog',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'News',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Learn',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Guide',
+                link: '/acentria-news-and-blogs',
+            },
+        ]
+    }
+])
+const setActionSubmenu = (item, index) => {
+    currentActionMenu.value = item.name
+    currentActionMenuItems.value = item.items
+}
+
+
 
 
 const aboutFooterMenus = ref([
@@ -957,8 +1074,10 @@ const openFlyover = (menu, type) => {
                 currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
                 currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
                 currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
-                currentSubmenu.value = 'Insurance Personal Covers'
+                currentSubmenu.value = 'Personal Covers'
                 currentSubmenuItems.value = currentMenuItems.value[0]?.items
+                currentActionMenu.value = 'Expertise Services'
+                currentActionMenuItems.value = actionMenus.value[0]?.items
                 currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
                 currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
                 currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading

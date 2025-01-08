@@ -4,14 +4,14 @@
 
 <template>
 
-    <div class="flex justify-between ">
+    <div class="grid grid-cols-1 justify-between w-full">
         <!-- Manage Your Policy -->
 
 
         <div class="paste-button">
             <!-- <button class="button">Manage Your Policy</button> -->
             <button
-                class="button group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                class=" group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
                 <!-- <i class="fas fa-user flex-none text-white text-brand-primary" /> -->
                 Expertise Services <i class="fas fa-user-tie"></i>
             </button>
@@ -29,7 +29,7 @@
         <div class="paste-button">
             <!-- <button class="button">Manage Your Policy</button> -->
             <button
-                class="button group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                class=" group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
                 <!-- <i class="fas fa-user flex-none text-white text-brand-primary" /> -->
                 Manage Your Policy <i class="fas fa-file-alt"></i>
             </button>
@@ -43,7 +43,7 @@
         <!-- Buy Insurance -->
         <div class="paste-button">
             <button
-                class="button group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                class=" group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
                 <!-- <i class="fas fa-user flex-none text-white text-brand-primary" /> -->
                 Buy Insurance <i class="fas fa-shopping-cart"></i>
             </button>
@@ -57,7 +57,7 @@
         <!-- Insights -->
         <div class="paste-button">
             <button
-                class="button group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                class=" group  flex items-center hover:text-gray-600 gap-x-2.5 py-3  font-semibold leading-normal text-black sm:justify-center sm:px-0">
                 <!-- <i class="fas fa-user flex-none text-white text-brand-primary" /> -->
                 Insights <i class="fas fa-lightbulb"></i>
             </button>
@@ -68,6 +68,7 @@
                 <NuxtLink to="/acentria-news-and-blogs" id="guide">Guide</NuxtLink>
             </div>
         </div>
+
     </div>
 
 
@@ -91,16 +92,32 @@
     cursor: pointer;
 }
 
+/* .dropdown-content {
+    display: none;
+    font-size: 11px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    background-color: #fff;
+    border: 2px solid #ed1c24;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+} */
+
 .dropdown-content {
     display: none;
     font-size: 11px;
     position: absolute;
     z-index: 1;
     min-width: 200px;
-    background-color: #212121;
+    background-color: #000;
     border: 2px solid #ed1c24;
     border-radius: 0px 5px 5px 5px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* Aligns with the button vertically */
+    top: 20px;
+    left: 50%;
+    /* Positions the dropdown to the right of the button */
 }
 
 .dropdown-content a {
