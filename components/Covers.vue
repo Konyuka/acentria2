@@ -42,7 +42,7 @@
                         </p>
                         <a :href="tier.href" :aria-describedby="tier.id"
                             :class="[tier.mostPopular ? 'bg-brand-primary text-white shadow-sm hover:bg-black' : 'text-brand-primary ring-1 ring-inset ring-gray-200 hover:ring-black', 'mt-6 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary']">
-                            Get a Quote <i class="fas fa-arrow-right ml-2"></i>
+                            Compare Quotes <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                         <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600">
                             <li v-for="feature in tier.features" :key="feature" class="flex gap-x-3">

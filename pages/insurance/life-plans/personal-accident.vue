@@ -68,11 +68,7 @@ const benefits = ref([
                     <h2 class="text-2xl !font-semibold text-black mb-4">
                         Key <span class="text-brand-primary"> Benefits</span>
                     </h2>
-                    <div class="my-5">
-                        <p class="text-sm leading-normal">
-                            At Acentria Group, we are guided by a set of core principles that shape everything we do. These principles ensure we build strong relationships, foster innovation, and achieve success together.
-                        </p>
-                    </div>
+                   
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div v-for="principle in benefits"
                             class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
@@ -92,7 +88,7 @@ const benefits = ref([
                     </h2>
                     <div class="my-5">
                         <p class="text-sm leading-normal">
-                            Protect yourself and your loved ones with our comprehensive personal accident insurance. Get a quote today and take the first step towards financial security and peace of mind.
+                            Protect yourself and your loved ones with our comprehensive personal accident insurance. Compare Quotes today and take the first step towards financial security and peace of mind.
                         </p>
                     </div>
 
