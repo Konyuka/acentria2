@@ -123,7 +123,7 @@ const menuItem = ref([
                 link: '',
             },
             {
-                name: 'West Park Towers, Westlands, Nairobi',
+                name: 'West Park Towers, Westlands',
                 icon: 'fas fa-building',
                 link: '',
             },
@@ -173,7 +173,15 @@ const showDropdown = (menu) => {
         <div class="font-sans w-full border-t-8 border-black bg-black/70 px-4 py-3">
             <div class="container mx-auto">
                 <!-- Links -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm lg:gap-6 px-auto my-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 text-sm px-auto my-4">
+
+                    <div class="flex items-center justify-center pr-10">
+                        <NuxtLink to="/">
+                        <NuxtImg alt="Acentria" fetchPriority="high"  decoding="async"
+                            data-nimg="1" class="mr-8 w-full h-16" style="color: transparent; object-fit: contain;"
+                            src="/img/logo/png33.png" />
+                    </NuxtLink>
+                    </div> 
                     <div v-for="item in menuItem" :key="item.name"
                         class="pointer-events-auto relative z-10 overflow-hidden border-b-[1px] border-brand-gray-6 lg:border-0">
                         <h3 class="mb-1 flex items-center justify-between text-base font-bold lg:text-xl">
