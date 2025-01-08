@@ -78,6 +78,30 @@ const whys = ref([
     },
 ])
 
+const benefits = ref([
+    {
+        name: 'Trusted Provider',
+        icon: 'fas fa-shield-alt',
+        description: 'With years of experience and a strong reputation, we are a trusted name in the insurance industry.',
+    },
+    {
+        name: 'Customer Satisfaction',
+        icon: 'fas fa-smile',
+        description: 'We prioritize our customers\' well-being, offering personalized service and prompt claims processing.',
+    },
+    {
+        name: 'Easy and Hassle-Free',
+        icon: 'fas fa-check-circle',
+        description: 'Purchasing home insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and file claims on the go.',
+    },
+    {
+        name: 'Customized Plans',
+        icon: 'fas fa-cogs',
+        description: 'Tailor your coverage to fit your unique needs and financial goals.',
+    },
+    
+])
+
 
 const whyTheInsurance = ref({
     title: 'Why <span class="text-brand-primary">Home Insurance</span>',
@@ -121,7 +145,7 @@ const getStarted = ref({
 
         <InsuranceComponents :whatsCovered="whatsCovered" :whyTheInsurance="whyTheInsurance" :getStarted="getStarted" />
 
-        <div class="container py-10">
+        <div class="container py-5">
             <h1 class="text-2xl text-black !font-semibold mb-6">Easy <span class="text-brand-primary">Claim
                     Process</span></h1>
             <p class="mt-6 text-xs leading-normal">
@@ -144,11 +168,28 @@ const getStarted = ref({
             <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
             </h1>
             <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+            <Accordion :faqs="faqs" />
         </div>
 
-        <Accordion :faqs="faqs" />
+        <div class="container py-5">
+            <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
+            </h1>
+            <div
+                class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
+                <div v-for="benefit in benefits"
+                    class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
+                    <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
+                    <div>
+                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
 
-        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+                        </h5>
+                        <p class="leading-normal font-regular text-light-content text-xs">
+                            {{ benefit.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <ContactForm />
     </div>
