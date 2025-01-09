@@ -2,9 +2,9 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Motor Insurance!',
-    title: 'Hit the Road with Confidence',
-    image: 'https://images.pexels.com/photos/159293/car-engine-motor-clean-customized-159293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    subtitle: 'Ensure Smart Health!',
+    title: 'Comprehensive Health Insurance Plans for Every Stage of Life',
+    image: '/img/nurse.jpg',
     content: 'Discover our life insurance & make sure your loved ones are safe and sound, no matter what happens. Let’s talk about securing your loved ones’ future. Explore our life insurance options and ensure their financial well-being, no matter what life brings.',
 })
 
@@ -12,61 +12,75 @@ const InsuranceCardsContent = ref({
     title: 'Which cover is right <span class="text-brand-primary">for you?</span>',
     users: [
         {
-            name: 'Comprehensive Motor Insurance',
-            icon: 'fas fa-car',
-            link: '/insurance/motor-plans/comprehensive-motor-insurance',
-            description: 'Provides robust protection for your vehicle, ensuring that you are covered in various scenarios that could lead to significant financial loss such as third-party liability and damage to the vehicle arising out of fire, theft, or accidents.',
+            name: 'Family/Individual Health Covers',
+            icon: 'fas fa-users',
+            link: '/insurance/health-plans/family-individual-health-covers',
+            description: 'The cover is purchased by an individual to cover themselves and their dependents (spouse and children). In most cases, this is an off-the-shelf product with various options.',
         },
         {
-            name: 'Third Party Insurance',
-            icon: 'fas fa-user-friends',
-            link: '/insurance/motor-plans/third-party-insurance',
-            description: 'Provides coverage for damages or injuries that you cause to another person or their property while operating a vehicle.',
+            name: 'Junior Medical Covers',
+            icon: 'fas fa-child',
+            link: '/insurance/health-plans/junior-medical-covers',
+            description: 'This is a cover designed for children 2 years and above without having the parent as a main member.',
+        },
+        {
+            name: 'Senior’s Medical Covers',
+            icon: 'fas fa-user-clock',
+            link: '/insurance/health-plans/seniors-medical-covers',
+            description: 'With most covers having an upper age limit of 65 years, this product is designed to ensure that those above 65 years are covered for the rest of their life.',
+        },
+        {
+            name: 'Corporate Covers',
+            icon: 'fas fa-building',
+            link: '/insurance/health-plans/corporate-covers',
+            description: 'This is a health plan purchased by an employer for the employees only, or with their families (spouses and children). This cover is flexible and can be customized to the employer’s needs. The plan can be fully insured or partly funded (Hybrid).',
+        },
+        {
+            name: 'Micro Covers (SME)',
+            icon: 'fas fa-briefcase',
+            link: '/insurance/health-plans/micro-covers-sme',
+            description: 'This is a cover for small and micro enterprise companies and those corporates looking for an off-the-shelf product specifically designed to suit their coverage needs. The cover is designed for companies with populations of between 3-10 employees. The plans have been negotiated to waive waiting periods and co-pays.',
+        },
+        {
+            name: 'International Medical Cover',
+            icon: 'fas fa-globe',
+            link: '/insurance/health-plans/international-medical-cover',
+            description: 'This cover is designed to assist access to private healthcare in your country of residence and abroad. It is ideal for people who plan to spend more than a year abroad or are frequent travelers.',
         },
     ],
-
-})
+});
 
 
 const faqs = ref([
     {
-        name: 'Can I transfer my motor insurance to a new vehicle?',
-        content: 'Yes, you can transfer your motor insurance to a new vehicle. You will need to inform your insurance provider about the change and provide details of the new vehicle. The premium may be adjusted based on the new vehicle\'s specifications.',
+        name: 'What benefits do I get with a comprehensive health plan?',
+        content: 'These plans typically include coverage for hospitalization, doctors’ visits, prescription drugs, preventive care, emergency services, diagnostic tests, mental health services, maternity, and newborn care, and more. Our comprehensive plan also provides optional dental and optical coverage, wellness programs, and access to network providers.',
     },
     {
-        name: 'What benefits do I get with a comprehensive plan?',
-        content: 'A comprehensive car insurance plan offers extensive protection, including coverage for accidents, theft, vandalism, natural disasters, animal collisions, falling objects, fire damage, and more. Additional benefits may include roadside assistance, rental car reimbursement, and coverage for custom parts. To learn more about the benefits of a comprehensive plan and how it can meet your specific needs, call us today.',
+        name: 'Special terms in Health Insurance you need to know:',
+        content: '<ul class="ml-5"><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Premium: The premium is the amount a consumer pays for a health insurance plan, usually made bi-weekly, monthly, quarterly, or yearly.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Pre-authorizations: A decision by your health insurer or plan that a service, treatment, or drug is medically necessary.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Covered Benefits: Services or items included in the health insurance plan, defined in the plan\'s documents.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Exclusions: Services not covered by the plan, such as cosmetic surgeries or experimental treatments.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Co-payment: A fixed amount paid out-of-pocket for services. Not all plans have co-payment.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Coordination of Benefits (COB): Determines which plan pays first when multiple plans cover the same person.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Waiting Period: The time you must wait before you can file a claim.</li></ul>',
     },
     {
-        name: 'What factors affect the cost of motor insurance premiums?',
-        content: '<ul class="ml-5"><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Vehicle Type and Model: More expensive or high-performance vehicles may have higher premiums.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Driver\'s Age and Experience: Younger and less experienced drivers may face higher premiums.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Driving Record: A clean driving record can result in lower premiums, while a history of accidents or violations may increase costs.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Usage: Vehicles used for business or long commutes may have higher premiums than those used for personal or occasional use.</li></ul>',
+        name: 'Which health facilities is the cover accepted?',
+        content: 'Our health insurance covers are accepted at major private hospitals, community hospitals, clinics, physicians and specialists, diagnostic and imaging centers, emergency evacuation providers, and pharmacies. The panel of providers is available on the self-help portal or from our customer care team.',
     },
     {
-        name: 'What is a deductible?',
-        content: 'A deductible is the amount you must pay out of pocket before your insurance coverage kicks in. Choosing a higher deductible can lower your premium, but it means you will pay more in the event of a claim.',
+        name: 'How do I claim & how fast is the claims process?',
+        content: '<p>Our claims process is hassle-free.</p><p>To file a claim, follow these steps:</p><ol class="ml-5 list-decimal"><li>Review Your Policy: Understand the coverage and procedures for filing a claim.</li><li>Gather Documentation: Collect necessary documents, such as medical bills, receipts, and claim forms.</li><li>Submit the Claim: Submit the completed claim form and documentation to your insurance provider as instructed.</li></ol><p>It is important to familiarize yourself with your policy coverage and necessary claims documents in the event of a claim.</p><NuxtLink href="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
     },
     {
-        name: 'How do I file a claim?',
-        content: '<p>To file a motor insurance claim, follow these steps:</p><ol class="ml-5 list-decimal"><li>Report the Incident: Notify your provider as soon as possible after the incident occurs.</li><li>Provide Documentation: Submit necessary documents, such as a police report, photos of the damage, and any other relevant information.</li><li>Assessment: The insurance company will assess the damage and determine the coverage amount.</li><li>Repair or Compensation: Depending on the policy, the insurance company will either arrange for repairs or provide a compensation payout.</li></ol><p>Our claims process is hassle free. The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary claims documents in the event of a claims.</p><NuxtLink href="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
+        name: 'How do I access Cover?',
+        content: '<ul class="ml-5"><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Use Network Providers: Access services through the included healthcare provider network for maximum benefits.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Present your medical card or member number to access cover.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Pay out-of-pocket if accessing services outside the network and file a claim later.</li></ul>',
     },
     {
-        name: 'What should I do if my vehicle is stolen?',
-        content: '<ol class="ml-5 list-decimal"><li>Report the Theft: Immediately report the theft to the police and obtain a police report.</li><li>Notify Your Insurer: Inform your insurance provider about the theft and provide the police report and any other required documents.</li><li>Claims Process: The insurance company will investigate the claim and, if approved, provide compensation based on your policy\'s terms.</li></ol>',
-    },
-    {
-        name: 'Is valuation of my car important to insurance?',
-        content: 'Proper valuation is essential for ensuring fair premiums, adequate coverage, efficient claims processing, and overall financial security in car insurance.',
-    },
-    {
-        name: 'What are the exclusions in motor insurance?',
-        content: '<p>Some of the exclusions in Motor Insurance include:</p><ul class="ml-5"><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Wear and tear: Normal wear and tear, depreciation, and mechanical or electrical breakdowns.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Insured engaging in illegal activities, e.g., drunk driving, unlicensed driver.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Unauthorized Use: Using the vehicle for purposes not specified in the policy, such as commercial use if it is insured for personal use.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Acts of God such as earthquake & flood damage unless their special extensions.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> War, including nuclear, biological, or chemical attacks. Passive war and terrorism coverage can be extended.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Intentionally caused by the policyholder or anyone acting on behalf.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Damages incurred during racing, speed testing, or any competitive events.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Consequential Loss: Indirect losses resulting from an accident, such as loss of earnings or the cost of renting a replacement vehicle, are generally not covered unless specifically included in the policy.</li></ul><p>It is important to read the policy document carefully to understand the exclusions that apply. In case of any concerns, feel free to engage our team of experts for advice.</p>',
+        name: 'What is the best plan for me?',
+        content: '<p>Consider the following factors when choosing a health insurance plan:</p><ul class="ml-5"><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Coverage Needs: Assess the medical services and treatments you require.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Costs: Compare premiums, deductibles, co-payments, and coinsurance.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Network: Ensure your preferred doctors and hospitals are in-network.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Benefits: Look for additional benefits like prescription drug coverage, wellness programs, and preventive care.</li></ul><p>We guide you through the health plan that is likely to be most cost-effective and maximizes coverage while staying within your budget.</p>',
     },
     {
         name: 'How can I get started?',
-        content: '<p>Our streamlined enrollment process makes it simple to get the coverage you need.</p><p>You can compare plans, get quotes, and enroll online within minutes - <a href="#" class="font-bold italic text-brand-primary">Do it Yourself</a> or Review your quotes online, then get tailored advice from our agents - <a href="#" class="font-bold italic text-brand-primary">Engage our expert</a>.</p><p>Our customer service team is available to assist you with any questions or concerns.</p>',
+        content: '<p>Our streamlined enrollment process makes it simple to get the coverage you need.</p><p>You can compare plans, get quotes, and enroll online within minutes - <a href="#" class="font-bold italic text-brand-primary">Do it Yourself</a> or review your quotes online, then get tailored advice from our agents - <a href="#" class="font-bold italic text-brand-primary">Engage our expert</a>.</p><p>Our customer service team is available to assist you with any questions or concerns.</p>',
     },
 ]);
-
 
 
 const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
@@ -106,82 +120,104 @@ const whys = ref([
 
 const benefits = ref([
     {
-        name: 'Trusted Provider',
-        icon: 'fas fa-shield-alt',
-        description: 'With years of experience and a strong reputation, we are a trusted name in the insurance industry.',
+        name: 'Affordable Plans',
+        icon: 'fas fa-dollar-sign',
+        description: '<p>We offer a range of plans to fit different budgets and healthcare needs.</p>',
     },
     {
-        name: 'Customized Plans',
-        icon: 'fas fa-cogs',
-        description: 'Tailor your coverage to fit your unique needs and financial goals.',
+        name: 'Network of Providers',
+        icon: 'fas fa-network-wired',
+        description: '<p>Access to an extensive network of healthcare providers, ensuring you receive the best care possible.</p>',
+    },
+    {
+        name: '24/7 Assistance',
+        icon: 'fas fa-headset',
+        description: '<p>Our dedicated support team is available around the clock to assist you with any health-related issues.</p>',
+    },
+    {
+        name: 'Trusted Provider',
+        icon: 'fas fa-shield-alt',
+        description: '<p>With years of experience and a strong reputation, we are a trusted name in the health insurance industry.</p>',
     },
     {
         name: 'Customer Satisfaction',
         icon: 'fas fa-smile',
-        description: 'We prioritize our customers\' well-being, offering personalized service and prompt claims processing.',
+        description: '<p>We prioritize our customers\' well-being, offering personalized service and prompt claims processing.</p>',
     },
     {
         name: 'Easy and Hassle-Free',
         icon: 'fas fa-check-circle',
-        description: 'Purchasing motor insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and file claims on the go.',
+        description: `<p>Purchasing health insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks.</p>
+        <p>Plus, our mobile app makes it convenient to access your policy information and file reimbursement claims on the go.</p>`,
     },
+    
 ]);
+
+const benefits2 = ref([
+    {
+        name: 'Comprehensive Coverage',
+        icon: 'fas fa-heartbeat',
+        items: [
+            '<i class="fas fa-caret-right text-brand-primary mr-1"></i> Family/Individual Health Covers',
+            '<i class="fas fa-caret-right text-brand-primary mr-1"></i> Junior Medical Covers',
+            '<i class="fas fa-caret-right text-brand-primary mr-1"></i> Senior’s Medical Covers',
+            '<i class="fas fa-caret-right text-brand-primary mr-1"></i> Corporate Covers',
+            '<i class="fas fa-caret-right text-brand-primary mr-1"></i> Micro Covers (SME)',
+            '<i class="fas fa-caret-right text-brand-primary mr-1"></i> International Medical Cover',
+        ]
+    },
+])
 
 
 
 const whatsCovered = ref([
     {
-        name: 'Accidental Damage',
-        icon: 'fas fa-car-crash',
+        name: 'Hospitalization Benefits',
+        icon: 'fas fa-hospital',
+        description: 'Coverage for inpatient hospital stays, surgeries, and treatments.',
     },
     {
-        name: 'Theft and Vandalism',
-        icon: 'fas fa-user-secret',
+        name: 'Outpatient Care',
+        icon: 'fas fa-user-md',
+        description: 'Access to outpatient services, including doctor visits, specialist consultations, and diagnostic tests.',
     },
     {
-        name: 'Natural Disasters',
-        icon: 'fas fa-cloud-showers-heavy',
+        name: 'Preventive Care',
+        icon: 'fas fa-syringe',
+        description: 'Coverage for vaccinations, screenings, and wellness programs to keep you healthy.',
     },
     {
-        name: 'Third-Party Liability',
-        icon: 'fas fa-people-arrows',
+        name: 'Prescription Drugs',
+        icon: 'fas fa-pills',
+        description: 'Benefits for prescribed medications, both generic and brand-name.',
     },
     {
-        name: 'Fire Damage',
-        icon: 'fas fa-fire',
+        name: 'Maternity and Newborn Care',
+        icon: 'fas fa-baby',
+        description: 'Comprehensive coverage for maternity care, childbirth, and newborn health services.',
     },
     {
-        name: 'Glass Damage',
-        icon: 'fas fa-wind',
-        description: 'Windows and windshield',
+        name: 'Chronic Disease Management',
+        icon: 'fas fa-heartbeat',
+        description: 'Support and coverage for managing chronic conditions such as diabetes, hypertension, and asthma.',
     },
     {
-        name: 'Personal Belongings',
-        icon: 'fas fa-box-open',
-    },
-    {
-        name: 'Medical Expenses',
-        icon: 'fas fa-briefcase-medical',
-    },
-    {
-        name: 'Roadside Assistance',
-        icon: 'fas fa-truck-pickup',
-    },
-    {
-        name: 'Rental / Courtesy Car Coverage',
-        icon: 'fas fa-car',
+        name: 'Mental Health Services',
+        icon: 'fas fa-brain',
+        description: 'Access to mental health professionals and coverage for therapy and counseling services.',
     },
 ]);
 
 const whyTheInsurance = ref({
-    title: 'Why <span class="text-brand-primary">Motor Insurance</span>',
-    description: 'Driving comes with its share of risks, and it\'s essential to have reliable motor insurance to protect you, your vehicle, and others on the road. Our comprehensive motor insurance provides the coverage you need to drive with confidence, knowing that you\'re protected against a wide range of incidents.',
+    title: 'Why <span class="text-brand-primary">Health Insurance</span>',
+    description: 'Your health is your most valuable asset. With rising medical costs, having health insurance ensures that you and your loved ones are protected against unexpected medical expenses. Our health insurance plans offer the coverage you need to stay healthy and financially secure.',
 });
 
 const getStarted = ref({
     title: 'Get <span class="text-brand-primary">Started</span>',
-    description: 'Protect your vehicle and drive with confidence with our comprehensive motor insurance. Get a quote today and take the first step towards peace of mind and financial security.',
+    description: 'Invest in your health and well-being with our reliable health insurance plans. Get a quote today and take the first step towards a healthier future.',
 });
+
 
 
 </script>
@@ -222,27 +258,34 @@ const getStarted = ref({
         </div>
 
 
-        <!-- <div class="container py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">How Can I <span class="text-brand-primary">Get
-                    Started</span></h1>
-            <p class="mt-6 text-xs leading-normal">
-                Our streamlined enrollment process makes it simple to get the coverage you need.
-                You can compare plans, get quotes, and enroll online within minutes - <span
-                    class="text-brand-primary italic font-semibold">Do It Yourself</span>
-                or review your
-                quotes online, then get tailored advice from our agents - <span
-                    class="text-brand-primary italic font-semibold">Engage our expert </span>.
-                Our customer service team is available to assist you with any questions or concerns.
-
-            </p>
-        </div> -->
-
-
         <div class="container py-5">
             <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
             </h1>
+
+            <div class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 mb-2 text-base text-gray-600">
+                <div v-for="benefit in benefits2"
+                    class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
+                    <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
+                    <div>
+                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+
+                        </h5>
+                        <p class="leading-normal font-regular text-light-content text-xs">We offer a range of plans
+                            tailored to meet your needs. Our health plans include:</p>
+                        <div class="grid grid-cols-3 gap-5 p-5">
+                            <div v-for="item in benefit.items" v-html="item">
+                            </div>
+                        </div>    
+                        <p class="leading-normal font-regular text-light-content text-xs" v-html="benefit.description">
+                        </p>
+                        <p class="leading-normal font-regular text-light-content text-xs">Each plan is designed to
+                            provide comprehensive coverage tailored to your specific needs.</p>
+                    </div>
+                </div>
+            </div>
             <div
                 class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
+
                 <div v-for="benefit in benefits"
                     class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
                     <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
@@ -250,8 +293,7 @@ const getStarted = ref({
                         <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
 
                         </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs">
-                            {{ benefit.description }}
+                        <p class="leading-normal font-regular text-light-content text-xs" v-html="benefit.description">
                         </p>
                     </div>
                 </div>
