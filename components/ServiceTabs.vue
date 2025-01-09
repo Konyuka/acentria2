@@ -55,7 +55,7 @@ onMounted(() => {
 
         <div :class="[gridClass]" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
             <NuxtLink :href="item.link" v-for="item in menuOptions"
-                class="button-animation border-t-8 border-solid border-black shadow-2xl m-auto flex min-h-fit md:min-h-auto rounded-md bg-white/30 px-5 py-2 w-full h-full">
+                class="button-animation border-t-2 border-solid border-gray-200 shadow-2xl m-auto flex min-h-fit md:min-h-auto rounded-md bg-white/30 px-5 py-2 w-full h-full">
                 <div class="font-sans flex h-fit flex-col w-full">
                     <div class="flex flex-row justify-between">
                         <h4 id="" class="text-black text-lg font-semibold">

@@ -50,7 +50,7 @@ const openFormModal = (type) => {
 
             <div class="py-5 text-left container">
                 <h2 class="heading-class text-black">
-                    How Can<span class="text-brand-primary"> We Help?</span>
+                    Need<span class="text-brand-primary"> Assitance?</span>
                 </h2>
 
                 <div>

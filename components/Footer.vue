@@ -22,7 +22,7 @@ const menuItem = ref([
             //     link: '/about-acentria-group',
             // },
             {
-                name: 'Blogs',
+                name: 'Insights',
                 icon: 'fas fa-blog',
                 link: '/acentria-news-and-blogs',
             },
