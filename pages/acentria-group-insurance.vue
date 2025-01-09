@@ -10,128 +10,84 @@ const content = ref({
 const data = ref({
     personal: [
         {
-            name: 'Health Insurance',
-            content: 'Secure Your Wellness Today',
-            icon: 'fas fa-heartbeat',
-            link: '/insurance/health-insurance'
-        },
-        {
-            name: 'Life Insurance',
-            content: 'Protecting Your Loved Ones is Priceless.',
+            name: 'My Life',
             icon: 'fas fa-heart',
-            link: '/insurance/life-insurance'
+            description: 'Secure your family\'s future with flexible life insurance.',
+            link: '/insurance/life-insurance',
         },
         {
-            name: 'Car Insurance',
-            content: 'Drive Confidently. Your Safety, Our Priority',
+            name: 'My Health',
+            icon: 'fas fa-stethoscope',
+            description: 'Comprehensive health coverage for peace of mind.',
+            link: '/insurance/health-insurance',
+        },
+        {
+            name: 'My Car',
             icon: 'fas fa-car',
-            link: '/insurance/home-insurance'
+            description: 'Drive confidently with our comprehensive car insurance plans.',
+            link: '/insurance/motor-insurance',
         },
         {
-            name: 'Domestic Cover',
-            content: 'Protect your home sweet home with reliable insurance for your peace of mind.',
+            name: 'My Home',
             icon: 'fas fa-home',
-            link: '/insurance/motor-insurance'
+            description: 'Protect your home and belongings with comprehensive coverage.',
+            link: '/insurance/home-insurance',
         },
         {
-            name: 'Travel Insurance',
-            content: 'Adventure Awaits – Secure Your Travel Plans. Explore with Confidence.',
+            name: 'My Travel',
             icon: 'fas fa-plane',
-            link: '/insurance/travel-insurance'
+            description: 'Explore the world worry-free with our travel insurance.',
+            link: '/insurance/travel-insurance',
         },
         {
-            name: 'Golfers Insurance',
-            content: 'Don\'t let the unexpected ruin your game – Protect your swing with golfer\'s insurance.',
+            name: 'International Medical',
+            icon: 'fas fa-globe',
+            description: 'We got your health covered wherever you are in the world.',
+            link: '/insurance/international-medical',
+        },
+        {
+            name: 'Golfer’s Insurance',
             icon: 'fas fa-golf-ball',
-            link: '/insurance/'
-        },
-    ],
-    corporate: [
-        {
-            name: 'Staff Health',
-            content: 'Elevate Employee Well-being Today',
-            icon: 'fas fa-user-md',
-            link: '/insurance/staff-health-cover'
-        },
-        {
-            name: 'Staff Travel',
-            content: 'Empower Your Team\'s Journeys Today',
-            icon: 'fas fa-suitcase-rolling',
-            link: '/insurance/staff-travel-cover'
-        },
-        {
-            name: 'Professional Indemnity',
-            content: 'Secure Your Professional Reputation Today',
-            icon: 'fas fa-shield-alt',
-            link: '/insurance/'
-        },
-        {
-            name: 'Office Content',
-            content: 'Safeguard Your Business Assets with Acentria\'s Office Content Coverage.',
-            icon: 'fas fa-briefcase',
-            link: '/insurance/office-content-cover'
-        },
-        {
-            name: 'Credit Risk',
-            content: 'Boost Financial Confidence with Acentria\'s Credit Risk Coverage. Safeguard Your Business\'s Financial Stability Today.',
-            icon: 'fas fa-credit-card',
-            link: '/insurance/credit-risk-cover'
-        },
-        {
-            name: 'Cyber Liability',
-            content: 'Protect Your Digital Fortresses with Acentria\'s Cyber Liability Insurance. Defend Your Business Against Online Threats Today.',
-            icon: 'fas fa-shield-virus',
-            link: '/insurance/cyber-liability-cover'
-        },
-        {
-            name: 'Marine Cover',
-            content: 'Sail Securely with Acentria\'s Marine Insurance. Protect Your Maritime Ventures with Confidence.',
-            icon: 'fas fa-ship',
-            link: '/insurance/'
-        },
-        {
-            name: 'Aviation Cover',
-            content: 'Reach New Heights with Acentria\'s Aviation Insurance. Fly Safely and Confidently with Our Coverage.',
-            icon: 'fas fa-plane-departure',
-            link: '/insurance/'
+            description: 'Don’t let the unexpected ruin your game protect your swing with golfer’s insurance.',
+            link: '/insurance/golfers-insurance',
         },
     ],
     business: [
         {
-            name: 'All-in-One Package',
-            content: 'Simplify and Secure with Acentria\'s All-in-One Insurance Package. Comprehensive Protection for All Your Needs.',
-            icon: 'fas fa-box',
-            link: '/insurance/'
+            name: 'Staff Health Covers',
+            icon: 'fas fa-user-md',
+            description: 'Ensure employee well-being with comprehensive health coverage.',
+            link: '/insurance/staff-health-cover',
+        },
+        {
+            name: 'Staff Life Covers',
+            icon: 'fas fa-heartbeat',
+            description: 'Provide financial security for employees’ families with life insurance.',
+            link: '/insurance/staff-health-cover',
+        },
+        {
+            name: 'Asset & Stock Covers',
+            icon: 'fas fa-warehouse',
+            description: 'Protect your business assets and stock against damage or loss.',
+            link: '/insurance/asset-stock-covers',
+        },
+        {
+            name: 'Financial Losses Covers',
+            icon: 'fas fa-money-bill-wave',
+            description: 'Mitigate financial risks and protect against monetary losses.',
+            link: '/insurance/financial-losses-money-covers',
         },
         {
             name: 'Biashara Cover',
-            content: 'Empower your SME with comprehensive business coverage – fortify your enterprise for a resilient future.',
-            icon: 'fas fa-store',
-            link: '/insurance/biasahara-cover'
+            icon: 'fas fa-briefcase',
+            description: 'Comprehensive business insurance to protect your enterprise from risks.',
+            link: '/insurance/biasahara-cover',
         },
         {
-            name: 'General Liability',
-            content: 'Protect your business with Acentria\'s General Liability Insurance – your shield against unexpected challenges and legal uncertainties.',
-            icon: 'fas fa-balance-scale',
-            link: '/insurance/general-liability-insurance'
-        },
-        {
-            name: 'Commercial Vehicle',
-            content: 'Drive with Confidence - Choose Acentria\'s Commercial Vehicle Coverage. Protect Your Business on the Road.',
-            icon: 'fas fa-truck',
-            link: '/insurance/'
-        },
-        {
-            name: 'Commercial Property',
-            content: 'Secure Your Business Space - Choose Acentria\'s Commercial Property Coverage. Protect Your Business Assets and Premises.',
-            icon: 'fas fa-building',
-            link: '/insurance/commercial-property-insurance'
-        },
-        {
-            name: 'Crop & Livestock',
-            content: 'Guard your crops and livestock with comprehensive insurance coverage for a secure farming future.',
-            icon: 'fas fa-seedling',
-            link: '/insurance/crops-and-livestock'
+            name: 'Marine Insurance Covers',
+            icon: 'fas fa-ship',
+            description: 'Comprehensive coverage for your marine vessels and cargo, protecting against risks such as damage, theft, and loss during transit.',
+            link: '/insurance/marine-covers',
         },
     ]
 });
@@ -178,11 +134,11 @@ const menus = ref([
         tag: 'personal',
         icon: 'fas fa-user-shield',
     },
-    {
-        name: 'Corporate Insurance Cover',
-        tag: 'corporate',
-        icon: 'fas fa-shield-alt',
-    },
+    // {
+    //     name: 'Corporate Insurance Cover',
+    //     tag: 'corporate',
+    //     icon: 'fas fa-shield-alt',
+    // },
     {
         name: 'Business Insurance Cover',
         tag: 'business',
@@ -256,7 +212,7 @@ const introContent = ref({
     subheading: 'A reliable partner you can trust.',
     image: 'https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-business-woman-handshake-and-agreement-for-partnership-in-office-for-collaboration-promotion-or-2311431727-transformed-1024x767.jpeg',
     link: '/insurance-claims',
-    content: 'Acentria Group is your trusted friend in the world of insurance. We’re here to make sure you and anything you care for is safe and sound. Insurance can be confusing, but we’re experts at making it simple. We’ll take the time to understand exactly what you need and find the right insurance plan just for you. <br> So, why choose us? Because we genuinely care about keeping you and your things protected. We’re not just about selling insurance; we’re about making sure you’re worry-free and your wallet stays happy. Whether it’s your health, home, car, or business, we’ve got the perfect insurance plan that won’t break the bank. Trust us to be your friendly insurance guide, making sure you’re covered no matter what life throws your way.',
+    content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
 })
 
 const slides = ref([

@@ -44,12 +44,12 @@ onMounted(() => {
             </div>
 
             <div class="col-span-2">
-                <div class="p-5 bg-black min-h-[150px] h-auto rounded-md shadow-xl">
+                <div class=" h-auto rounded-md shadow-xl p-5">
 
                     <div class="grid grid-cols-3 gap-x-5 gap-y-10">
-                        <NuxtLink :href="item.link" v-for="item in menuOptions" class="flex p-2 bg-white shadow-2xl rounded-md justify-center !text-center hover:scale-90 duration-700 ease-in-out">
+                        <NuxtLink :href="item.link" v-for="item in menuOptions" class="flex p-2 bg-black shadow-2xl rounded-md justify-center !text-center hover:scale-90 duration-700 ease-in-out">
                             <i :class="item.icon" class="text-brand-primary text-md pb-0 pr-2"></i>
-                            <span class="text-black text-sm -mt-1">{{ item.name }}</span>
+                            <span class="text-white text-sm -mt-1">{{ item.name }}</span>
                         </NuxtLink>
                     </div>
 
