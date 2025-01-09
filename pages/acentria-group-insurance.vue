@@ -428,26 +428,28 @@ const specials = ref([
 
             <WhyUs2 />
 
+            <News />
+
             <HowHelp />
 
 
-                <!-- <ContentPic :content="exploreClaims" /> -->
+            <!-- <ContentPic :content="exploreClaims" /> -->
 
-                <section id="" class="relative py-8 bg-black/60 text-center">
-                    <div class="container px-4">
-                        <h2
-                            class="font-sans tracking-normal text-2xl text-white font-semibold leading-normal lg:leading-normal">
-                            <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
-                            Let Acentria Tailor Your Coverage To Your Needs
-                        </h2>
-                    </div>
-                </section>
+            <section id="" class="relative py-8 bg-black/60 text-center">
+                <div class="container px-4">
+                    <h2
+                        class="font-sans tracking-normal text-2xl text-white font-semibold leading-normal lg:leading-normal">
+                        <span class="text-brand-primary">Your Insurance, Your Way.</span> <br>
+                        Let Acentria Tailor Your Coverage To Your Needs
+                    </h2>
+                </div>
+            </section>
 
-                <!-- <ContactForm /> -->
+            <!-- <ContactForm /> -->
 
-                <InTouch />
+            <InTouch />
 
-                <!-- <News /> -->
+            <!-- <News /> -->
         </div>
     </main>
 </template>
