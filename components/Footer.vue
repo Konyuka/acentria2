@@ -177,11 +177,11 @@ const showDropdown = (menu) => {
 
                     <div class="flex items-center justify-center pr-10">
                         <NuxtLink to="/">
-                        <NuxtImg alt="Acentria" fetchPriority="high"  decoding="async"
-                            data-nimg="1" class="mr-8 w-full h-16" style="color: transparent; object-fit: contain;"
-                            src="/img/logo/png33.png" />
-                    </NuxtLink>
-                    </div> 
+                            <NuxtImg alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
+                                class="mr-8 w-full h-16" style="color: transparent; object-fit: contain;"
+                                src="/img/LogoW.png" />
+                        </NuxtLink>
+                    </div>
                     <div v-for="item in menuItem" :key="item.name"
                         class="pointer-events-auto relative z-10 overflow-hidden border-b-[1px] border-brand-gray-6 lg:border-0">
                         <h3 class="mb-1 flex items-center justify-between text-base font-bold lg:text-xl">

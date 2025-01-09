@@ -2,70 +2,72 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: "Health Insurance",
-    title: `Your health is, <span class="text-white"> Your greatest wealth </span>`,
-    image:
-        "https://images.pexels.com/photos/3845129/pexels-photo-3845129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    content:
-        "With comprehensive coverage and personalized care, we’re here to protect you & your family’s health without breaking bank.Embrace a healthier future with Acentria by your side.Get covered today.",
-});
+    subtitle: 'Ensure Smart Motor Insurance!',
+    title: 'Hit the Road with Confidence',
+    image: 'https://images.pexels.com/photos/159293/car-engine-motor-clean-customized-159293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    content: 'Discover our life insurance & make sure your loved ones are safe and sound, no matter what happens. Let’s talk about securing your loved ones’ future. Explore our life insurance options and ensure their financial well-being, no matter what life brings.',
+})
 
 const InsuranceCardsContent = ref({
-    title: `Who is this  <span class="text-brand-primary">medical insurance for?</span> `,
+    title: 'Which cover is right <span class="text-brand-primary">for you?</span>',
     users: [
         {
-            name: "Myself",
-            icon: "fas fa-user",
-            description:
-                "Stay healthy without the stress. Get medical insurance that's got your back",
+            name: 'Comprehensive Motor Insurance',
+            icon: 'fas fa-car',
+            link: '/insurance/motor-plans/comprehensive-motor-insurance',
+            description: 'Provides robust protection for your vehicle, ensuring that you are covered in various scenarios that could lead to significant financial loss such as third-party liability and damage to the vehicle arising out of fire, theft, or accidents.',
         },
         {
-            name: "My family",
-            icon: "fas fa-users",
-            description:
-                "Safeguard your family's health & wellbeing because their smiles mean everything.",
-        },
-        {
-            name: "My Parents",
-            icon: "fas fa-users",
-            description:
-                "Give your parents the gift of protection and care. Safeguard their future together.",
+            name: 'Third Party Insurance',
+            icon: 'fas fa-user-friends',
+            link: '/insurance/motor-plans/third-party-insurance',
+            description: 'Provides coverage for damages or injuries that you cause to another person or their property while operating a vehicle.',
         },
     ],
-});
+
+})
+
 
 const faqs = ref([
     {
-        name: "What does health insurance cover?",
-        content:
-            "Health insurance plans generally cover a wide range of medical expenses including doctor visits, hospital stays, prescription medications, preventive care, emergency evacuation and more. Coverage can vary based on the specific plan you choose, so its essential to review the details of each plan carefully.Contact us to get a full list of what we cover in this package.",
+        name: 'Can I transfer my motor insurance to a new vehicle?',
+        content: 'Yes, you can transfer your motor insurance to a new vehicle. You will need to inform your insurance provider about the change and provide details of the new vehicle. The premium may be adjusted based on the new vehicle\'s specifications.',
     },
     {
-        name: "What benefits do I get with a comprehensive plan?",
-        content:
-            "These plans typically include coverage for hospitalization, doctors visits, prescription drugs, preventive care, emergency services, diagnostic tests, mental health services, maternity, and newborn care, and more. Our comprehensive plan also provides optional dental and optical coverage, wellness programs, and access to network providers.",
+        name: 'What benefits do I get with a comprehensive plan?',
+        content: 'A comprehensive car insurance plan offers extensive protection, including coverage for accidents, theft, vandalism, natural disasters, animal collisions, falling objects, fire damage, and more. Additional benefits may include roadside assistance, rental car reimbursement, and coverage for custom parts. To learn more about the benefits of a comprehensive plan and how it can meet your specific needs, call us today.',
     },
     {
-        name: "Which healthcare facilities is the cover accepted?",
-        content:
-            "This cover is accepted at a range of healthcare facilities, including major private hospitals, community hospitals, clinics, physicians and specialists, diagnostic and imaging centers, emergency evacuation providers and pharmacies. We ensure you receive maximum benefits and minimize out-of-pocket expenses.",
+        name: 'What factors affect the cost of motor insurance premiums?',
+        content: '<ul class="ml-5"><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Vehicle Type and Model: More expensive or high-performance vehicles may have higher premiums.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Driver\'s Age and Experience: Younger and less experienced drivers may face higher premiums.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Driving Record: A clean driving record can result in lower premiums, while a history of accidents or violations may increase costs.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Usage: Vehicles used for business or long commutes may have higher premiums than those used for personal or occasional use.</li></ul>',
     },
     {
-        name: "How do I claim & How fast is the claim process ?",
-        content:
-            "We advise on the necessary documentation and assistance needed. Claims reimbursement takes 7-10 working days. To claim, email your request to claims@acentriagroup.com.",
+        name: 'What is a deductible?',
+        content: 'A deductible is the amount you must pay out of pocket before your insurance coverage kicks in. Choosing a higher deductible can lower your premium, but it means you will pay more in the event of a claim.',
     },
     {
-        name: "Which is the best plan for me?",
-        content:
-            "Our plans are comprehensively designed to give your family extensive coverage, both local and international. We guide you through the health plan, which is likely to be most cost effective based on your needs and also maximizing coverage while staying on a budget. We give you the ability to choose your doctor, and preferred medical facility, giving you control over your healthcare.",
+        name: 'How do I file a claim?',
+        content: '<p>To file a motor insurance claim, follow these steps:</p><ol class="ml-5 list-decimal"><li>Report the Incident: Notify your provider as soon as possible after the incident occurs.</li><li>Provide Documentation: Submit necessary documents, such as a police report, photos of the damage, and any other relevant information.</li><li>Assessment: The insurance company will assess the damage and determine the coverage amount.</li><li>Repair or Compensation: Depending on the policy, the insurance company will either arrange for repairs or provide a compensation payout.</li></ol><p>Our claims process is hassle free. The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary claims documents in the event of a claims.</p><NuxtLink href="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
     },
     {
-        name: "How can I get started?",
-        content:
-            "<b>1.Compare and Choose:</b> Compare insurance quotes, select a plan that suits your needs, and make the purchase. <br> <b>2.Register and Get Insured:</b> Register for your chosen plan, and you'll be insured. <br><br> Our agent will reach out and follow up with you to ensure you have been insured and provide you with all the necessary information, including an insurance card, access to the self- help portal, your insurance certificate, and any other requirements you may need.",
+        name: 'What should I do if my vehicle is stolen?',
+        content: '<ol class="ml-5 list-decimal"><li>Report the Theft: Immediately report the theft to the police and obtain a police report.</li><li>Notify Your Insurer: Inform your insurance provider about the theft and provide the police report and any other required documents.</li><li>Claims Process: The insurance company will investigate the claim and, if approved, provide compensation based on your policy\'s terms.</li></ol>',
+    },
+    {
+        name: 'Is valuation of my car important to insurance?',
+        content: 'Proper valuation is essential for ensuring fair premiums, adequate coverage, efficient claims processing, and overall financial security in car insurance.',
+    },
+    {
+        name: 'What are the exclusions in motor insurance?',
+        content: '<p>Some of the exclusions in Motor Insurance include:</p><ul class="ml-5"><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Wear and tear: Normal wear and tear, depreciation, and mechanical or electrical breakdowns.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Insured engaging in illegal activities, e.g., drunk driving, unlicensed driver.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Unauthorized Use: Using the vehicle for purposes not specified in the policy, such as commercial use if it is insured for personal use.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Acts of God such as earthquake & flood damage unless their special extensions.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> War, including nuclear, biological, or chemical attacks. Passive war and terrorism coverage can be extended.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Intentionally caused by the policyholder or anyone acting on behalf.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Damages incurred during racing, speed testing, or any competitive events.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Consequential Loss: Indirect losses resulting from an accident, such as loss of earnings or the cost of renting a replacement vehicle, are generally not covered unless specifically included in the policy.</li></ul><p>It is important to read the policy document carefully to understand the exclusions that apply. In case of any concerns, feel free to engage our team of experts for advice.</p>',
+    },
+    {
+        name: 'How can I get started?',
+        content: '<p>Our streamlined enrollment process makes it simple to get the coverage you need.</p><p>You can compare plans, get quotes, and enroll online within minutes - <a href="#" class="font-bold italic text-brand-primary">Do it Yourself</a> or Review your quotes online, then get tailored advice from our agents - <a href="#" class="font-bold italic text-brand-primary">Engage our expert</a>.</p><p>Our customer service team is available to assist you with any questions or concerns.</p>',
     },
 ]);
+
+
 
 const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
 const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
@@ -101,47 +103,165 @@ const whys = ref([
         icon: 'sentiment_satisfied',
     },
 ])
+
+const benefits = ref([
+    {
+        name: 'Trusted Provider',
+        icon: 'fas fa-shield-alt',
+        description: 'With years of experience and a strong reputation, we are a trusted name in the insurance industry.',
+    },
+    {
+        name: 'Customized Plans',
+        icon: 'fas fa-cogs',
+        description: 'Tailor your coverage to fit your unique needs and financial goals.',
+    },
+    {
+        name: 'Customer Satisfaction',
+        icon: 'fas fa-smile',
+        description: 'We prioritize our customers\' well-being, offering personalized service and prompt claims processing.',
+    },
+    {
+        name: 'Easy and Hassle-Free',
+        icon: 'fas fa-check-circle',
+        description: 'Purchasing motor insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and file claims on the go.',
+    },
+]);
+
+
+
+const whatsCovered = ref([
+    {
+        name: 'Accidental Damage',
+        icon: 'fas fa-car-crash',
+    },
+    {
+        name: 'Theft and Vandalism',
+        icon: 'fas fa-user-secret',
+    },
+    {
+        name: 'Natural Disasters',
+        icon: 'fas fa-cloud-showers-heavy',
+    },
+    {
+        name: 'Third-Party Liability',
+        icon: 'fas fa-people-arrows',
+    },
+    {
+        name: 'Fire Damage',
+        icon: 'fas fa-fire',
+    },
+    {
+        name: 'Glass Damage',
+        icon: 'fas fa-wind',
+        description: 'Windows and windshield',
+    },
+    {
+        name: 'Personal Belongings',
+        icon: 'fas fa-box-open',
+    },
+    {
+        name: 'Medical Expenses',
+        icon: 'fas fa-briefcase-medical',
+    },
+    {
+        name: 'Roadside Assistance',
+        icon: 'fas fa-truck-pickup',
+    },
+    {
+        name: 'Rental / Courtesy Car Coverage',
+        icon: 'fas fa-car',
+    },
+]);
+
+const whyTheInsurance = ref({
+    title: 'Why <span class="text-brand-primary">Motor Insurance</span>',
+    description: 'Driving comes with its share of risks, and it\'s essential to have reliable motor insurance to protect you, your vehicle, and others on the road. Our comprehensive motor insurance provides the coverage you need to drive with confidence, knowing that you\'re protected against a wide range of incidents.',
+});
+
+const getStarted = ref({
+    title: 'Get <span class="text-brand-primary">Started</span>',
+    description: 'Protect your vehicle and drive with confidence with our comprehensive motor insurance. Get a quote today and take the first step towards peace of mind and financial security.',
+});
+
+
 </script>
 
 <template>
-    <div class="bg-white">
 
+    <div class="bg-white">
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
+
+        <InsuranceComponents :whatsCovered="whatsCovered" :whyTheInsurance="whyTheInsurance" :getStarted="getStarted" />
 
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
-        <div class="container mx-auto px-4 py-2">
-            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
-            </h1>
-            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+        <div class="container py-10">
+            <h1 class="text-2xl text-black !font-semibold mb-6">Easy <span class="text-brand-primary">Claim
+                    Process</span></h1>
+            <p class="mt-6 text-xs leading-normal">
+                Our claims process is hassle free.
+                <br>
+                It is important to familiarize yourself with your policy coverage and necessary <span
+                    class="text-brand-primary italic font-semibold">claims
+                    documents</span> when
+                purchasing cover. <br> Our team of experts are readily available to guide you through the process.
+            </p>
+            <div class="mt-5">
+                <NuxtLink href="/"
+                    class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                    Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i>
+                </NuxtLink>
+            </div>
         </div>
 
-        <Accordion :faqs="faqs" />
+        <div class="container mx-auto py-5">
+            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            </h1>
+            <p class="text-xs leading-normal text-gray-700 font-semibold">We have all the answers to your questions.</p>
+            <Accordion :faqs="faqs" />
+        </div>
+
+
+        <!-- <div class="container py-10">
+            <h1 class="text-2xl text-black !font-semibold mb-6">How Can I <span class="text-brand-primary">Get
+                    Started</span></h1>
+            <p class="mt-6 text-xs leading-normal">
+                Our streamlined enrollment process makes it simple to get the coverage you need.
+                You can compare plans, get quotes, and enroll online within minutes - <span
+                    class="text-brand-primary italic font-semibold">Do It Yourself</span>
+                or review your
+                quotes online, then get tailored advice from our agents - <span
+                    class="text-brand-primary italic font-semibold">Engage our expert </span>.
+                Our customer service team is available to assist you with any questions or concerns.
+
+            </p>
+        </div> -->
+
+
+        <div class="container py-5">
+            <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
+            </h1>
+            <div
+                class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
+                <div v-for="benefit in benefits"
+                    class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
+                    <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
+                    <div>
+                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+
+                        </h5>
+                        <p class="leading-normal font-regular text-light-content text-xs">
+                            {{ benefit.description }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
-
         <ContactForm />
-
     </div>
-</template>
 
-<style scoped>
-.container {
-    max-width: 1200px;
-}
-.heading-class {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.text-light-content {
-    color: #6b7280;
-}
-@media (min-width: 768px) {
-    .heading-class {
-        font-size: 2rem;
-    }
-    .text-light-content {
-        font-size: 1.25rem;
-    }
-}
-</style>
+
+
+</template>

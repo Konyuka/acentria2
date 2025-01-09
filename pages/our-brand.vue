@@ -81,7 +81,7 @@ const joinAsMembers = ref([
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:py-4 lg:gap-16 items-center">
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Board of Directors" loading="lazy" decoding="async" data-nimg="1"
-                            src="/img/logo/png1.png" style="color: transparent; object-fit: contain;"
+                            src="/img/LogoT.png" style="color: transparent; object-fit: contain;"
                             class="rounded-lg w-full" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
