@@ -12,43 +12,43 @@ const data = ref({
         {
             name: 'My Life',
             icon: 'fas fa-heart',
-            description: 'Secure your family\'s future with flexible life insurance.',
+            content: 'Secure your family\'s future with flexible life insurance.',
             link: '/insurance/life-insurance',
         },
         {
             name: 'My Health',
             icon: 'fas fa-stethoscope',
-            description: 'Comprehensive health coverage for peace of mind.',
+            content: 'Comprehensive health coverage for peace of mind.',
             link: '/insurance/health-insurance',
         },
         {
             name: 'My Car',
             icon: 'fas fa-car',
-            description: 'Drive confidently with our comprehensive car insurance plans.',
+            content: 'Drive confidently with our comprehensive car insurance plans.',
             link: '/insurance/motor-insurance',
         },
         {
             name: 'My Home',
             icon: 'fas fa-home',
-            description: 'Protect your home and belongings with comprehensive coverage.',
+            content: 'Protect your home and belongings with comprehensive coverage.',
             link: '/insurance/home-insurance',
         },
         {
             name: 'My Travel',
             icon: 'fas fa-plane',
-            description: 'Explore the world worry-free with our travel insurance.',
+            content: 'Explore the world worry-free with our travel insurance.',
             link: '/insurance/travel-insurance',
         },
         {
             name: 'International Medical',
             icon: 'fas fa-globe',
-            description: 'We got your health covered wherever you are in the world.',
+            content: 'We got your health covered wherever you are in the world.',
             link: '/insurance/international-medical',
         },
         {
             name: 'Golfer’s Insurance',
             icon: 'fas fa-golf-ball',
-            description: 'Don’t let the unexpected ruin your game protect your swing with golfer’s insurance.',
+            content: 'Don’t let the unexpected ruin your game protect your swing with golfer’s insurance.',
             link: '/insurance/golfers-insurance',
         },
     ],
@@ -56,37 +56,37 @@ const data = ref({
         {
             name: 'Staff Health Covers',
             icon: 'fas fa-user-md',
-            description: 'Ensure employee well-being with comprehensive health coverage.',
+            content: 'Ensure employee well-being with comprehensive health coverage.',
             link: '/insurance/staff-health-cover',
         },
         {
             name: 'Staff Life Covers',
             icon: 'fas fa-heartbeat',
-            description: 'Provide financial security for employees’ families with life insurance.',
+            content: 'Provide financial security for employees’ families with life insurance.',
             link: '/insurance/staff-health-cover',
         },
         {
             name: 'Asset & Stock Covers',
             icon: 'fas fa-warehouse',
-            description: 'Protect your business assets and stock against damage or loss.',
+            content: 'Protect your business assets and stock against damage or loss.',
             link: '/insurance/asset-stock-covers',
         },
         {
             name: 'Financial Losses Covers',
             icon: 'fas fa-money-bill-wave',
-            description: 'Mitigate financial risks and protect against monetary losses.',
+            content: 'Mitigate financial risks and protect against monetary losses.',
             link: '/insurance/financial-losses-money-covers',
         },
         {
             name: 'Biashara Cover',
             icon: 'fas fa-briefcase',
-            description: 'Comprehensive business insurance to protect your enterprise from risks.',
+            content: 'Comprehensive business insurance to protect your enterprise from risks.',
             link: '/insurance/biasahara-cover',
         },
         {
             name: 'Marine Insurance Covers',
             icon: 'fas fa-ship',
-            description: 'Comprehensive coverage for your marine vessels and cargo, protecting against risks such as damage, theft, and loss during transit.',
+            content: 'Comprehensive coverage for your marine vessels and cargo, protecting against risks such as damage, theft, and loss during transit.',
             link: '/insurance/marine-covers',
         },
     ]
@@ -378,8 +378,8 @@ const specials = ref([
             <div class="py-2 text-white bg-white">
                 <section class="relative">
                     <div class="container px-4 py-5">
-                        <!-- <ServiceTabs :menus="menus" :data="data" /> -->
-                        <Solutions :menus="menus" :data="data" />
+                        <ServiceTabs :menus="menus" :data="data" />
+                        <!-- <Solutions :menus="menus" :data="data" /> -->
                     </div>
                 </section>
             </div>

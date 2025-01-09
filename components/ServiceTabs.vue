@@ -7,6 +7,20 @@ const props = defineProps({
 const selectedMenu = ref(props.menus[0].tag)
 const menuOptions = ref(null)
 
+const currentRoute = computed(() => {
+    const route = useRoute();
+    return route.path;
+})
+
+const gridCols =  computed(() => {
+  
+    if (currentRoute.value === '/acentria-group-reinsurance') {
+        return 'grid-cols-3'
+    }else{
+        return 'grid-cols-2'
+    }
+})
+
 const gridClass = computed(()=>{
     const length = menuOptions.value?.length;
     let columns;
@@ -31,7 +45,7 @@ onMounted(() => {
 
 <template>
     <div>
-        <div class="grid md:grid-cols-3 gap-4 mb-5">
+        <div :class="gridCols" class="grid gap-4 mb-5">
             <button v-for="menu in menus" @click="setMenu(menu.tag)"
                 :class="selectedMenu === menu.tag ? 'bg-brand-primary text-white' : 'bg-black text-white'"
                 class="text-md shadow-2xl button-animation inline-flex items-center justify-center rounded-sm transition-colors duration-300 focus:outline-none hover:bg-black hover:text-white focus:ring-brand-primary-dark px-4 py-2">
@@ -44,13 +58,13 @@ onMounted(() => {
                 class="button-animation border-t-8 border-solid border-black shadow-2xl m-auto flex min-h-fit md:min-h-auto rounded-md bg-white/30 px-5 py-2 w-full h-full">
                 <div class="font-sans flex h-fit flex-col w-full">
                     <div class="flex flex-row justify-between">
-                        <h4 id="" class="text-lg font-semibold">
+                        <h4 id="" class="text-black text-lg font-semibold">
                             {{ item.name }}
                         </h4>
                         <i :class="item.icon" class="text-brand-primary text-md pb-0"></i>
                     </div>
                     <div class="mt-4">
-                        <p class="text-md leading-4 text-gray-600">
+                        <p class="text-sm leading-normal !text-black">
                             {{ item.content }}
                         </p>
                     </div>
