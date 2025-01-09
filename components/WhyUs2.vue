@@ -12,13 +12,13 @@
             </div>
         </div>
         <div class="container py-10">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-10 text-center">
-                <div v-for="(item, index) in benefits" :key="index">
-                    <div class="text-red-600 text-5xl mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-center">
+                <div v-for="(item, index) in benefits" :key="index" class="shadow-md py-2 px-4 rounded-md">
+                    <div class="text-red-600 text-3xl mb-4 flex items-center justify-between">
+                        <h3 class=" text-black text-xl font-semibold">{{ item.title }}</h3>
                         <i :class="item.icon"></i>
                     </div>
-                    <h3 class="text-xl font-semibold">{{ item.title }}</h3>
-                    <p class="text-black mt-2 text-sm">{{ item.description }}</p>
+                    <p class="text-black mt-2 text-sm text-left">{{ item.description }}</p>
                 </div>
             </div>
         </div>
