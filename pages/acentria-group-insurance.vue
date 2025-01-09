@@ -354,11 +354,10 @@ const specials = ref([
                                 <div
                                     class=" mt-4 flex flex-col items-start justify-between subheading-class text-black">
                                     <h6 class="text-sm" v-html="product.name "></h6>
-                                    <!-- <p class="text-xs italic mt-3">
+                                    <p class="text-xs italic mt-3">
                                         Learn More <i class="ml-2 fas fa-arrow-right text-brand-primary"></i>
-                                    </p> -->
+                                    </p>
                                 </div>
-                                <!-- <p class="mt-1 text-xs text-gray-500">{{ product.description }}</p> -->
                             </a>
                         </div>
                     </div>
