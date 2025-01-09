@@ -25,7 +25,7 @@ const companyMail = computed(() => {
             <div class="">
               
                 <div class="font-sans flex flex-col">
-                    <div class="grid grid-cols-3 gap-5 w-full">
+                    <div class="grid grid-cols-4 gap-5 w-full">
 
                         <div>
                             <h2 class="heading-class text-[20px] font-semibold">
@@ -52,6 +52,30 @@ const companyMail = computed(() => {
 
                         <div>
                             <h2 class="heading-class text-[20px] font-semibold">
+                                Follow <span class="text-brand-primary">Us On</span>
+                            </h2>
+                            <p class="leading-6 text-black font-medium text-xs grid grid-cols-2">
+                                
+                                <span>
+                                    <i class="fab fa-linkedin text-brand-primary"></i> Linkedin <br>
+                                </span>
+                                <span>
+                                    <i class="fab fa-x-twitter text-brand-primary"></i> Twitter <br>
+                                </span>
+                                <span>
+                                    <i class="fab fa-facebook text-brand-primary"></i> Facebook <br>
+                                </span>
+                                <span>
+                                    <i class="fab fa-instagram text-brand-primary"></i>  Instagram <br>
+                                </span>
+                                <span>
+                                    <i class="fab fa-tiktok text-brand-primary"></i> Tiktok <br>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="heading-class text-[20px] font-semibold">
                                 Working <span class="text-brand-primary">Hours</span>
                             </h2>
                             <p class="leading-6 text-black font-medium text-xs">
@@ -72,13 +96,13 @@ const companyMail = computed(() => {
                     </div>
                 </div>
 
-                <div class="mx-auto mb-5 font-sans">
+                <!-- <div class="mx-auto mb-5 font-sans">
                     <p class="mt-2 heading-class text-black text-2xl font-semibold">
                         Follow <span class="text-brand-primary">us on</span>
                     </p>
                 </div>
 
-                <Socials2 />
+                <Socials2 /> -->
             </div>
         </div>
     </div>

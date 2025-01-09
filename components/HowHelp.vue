@@ -65,6 +65,11 @@ const openFormModal = (type) => {
                                         Request Support <i class="fas fa-arrow-right ml-4"></i>
                                     </h3>
                                 </div>
+                                <p>
+                                    If you need assistance in
+                                    claims, policy administration, accounts or other support services, please don&#39;t
+                                    hesitate to reach out to us.
+                                </p>
                             </div>
 
                             <div @click="openFormModal('business')"
@@ -75,6 +80,11 @@ const openFormModal = (type) => {
                                         Business Inquiry <i class="fas fa-arrow-right ml-4"></i>
                                     </h3>
                                 </div>
+                                <p>
+                                    We are excited to assist you with your business needs. Our commitment to excellence
+                                    ensures that you receive personalized and professional service every step of the
+                                    way.
+                                </p>
                             </div>
 
                             <div @click="openFormModal('feedback')"
@@ -85,6 +95,11 @@ const openFormModal = (type) => {
                                         Give Feedback <i class="fas fa-arrow-right ml-4"></i>
                                     </h3>
                                 </div>
+                                <p>
+                                    Your feedback is invaluable to us & helps us serve you better. We
+                                    appreciate your input and are committed to making improvements based on
+                                    your suggestions.
+                                </p>
                             </div>
 
                             <NuxtLink to="/whistle-blowing"
@@ -95,6 +110,10 @@ const openFormModal = (type) => {
                                         Complaints <i class="fas fa-arrow-right ml-4"></i>
                                     </h3>
                                 </div>
+                                <p>
+                                    If you have any complaints or concerns, please let us know. We are committed to
+                                    addressing your issues promptly and ensuring your satisfaction.
+                                </p>
                             </NuxtLink>
 
                         </div>
