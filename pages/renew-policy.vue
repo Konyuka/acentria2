@@ -154,4 +154,3 @@ const benefits = ref([
     </section>
 </template>
 
-<style scoped></style>

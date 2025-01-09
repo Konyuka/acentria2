@@ -180,4 +180,3 @@ const setMobileMenu = (event) => {
     </section>
 </template>
 
-<style scoped></style>

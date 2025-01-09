@@ -32,7 +32,6 @@ const getUrl = (title, id) => {
 const setMenu = (menu) => {
     currentMenu.value = menu
 }
-
 const setMobileMenu = (event) => {
     const selectedValue = event.target.value;
     currentMenu.value = selectedValue
