@@ -3,23 +3,23 @@
 const news = ref([
     {
         tag:'blog',
-        title:'The Future of Insurance: How Acentria Group is Leading the Way',
-        img:'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+        title:'Workshops & Webinars',
+        img:'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
     {
         tag:'guide',
-        title:'Navigating Reinsurance: Strategies for Success',
-        img:'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+        title:'Learn',
+        img:'https://images.pexels.com/photos/5905443/pexels-photo-5905443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
     {
         tag:'news',
-        title:'Actuarial Insights: Enhancing Decision-Making with tech',
-        img:'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+        title:'Guides',
+        img:'https://images.pexels.com/photos/29452731/pexels-photo-29452731/free-photo-of-display-of-various-travel-and-tourism-brochures.jpeg?auto=compress&cs=tinysrgb&w=600',
     },
     {
         tag:'blog',
-        title:'The case for purpose-built software',
-        img:'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+        title:'Online Tools',
+        img:'https://images.pexels.com/photos/38519/macbook-laptop-ipad-apple-38519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
 ])
 
@@ -34,6 +34,7 @@ const news = ref([
                         Insights &<span class="text-brand-primary"> Resources</span>
                     </h2>
                 </div>
+
                 <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
                     <a v-for="news in news" :key="news.title"
                         class="button-animation cursor-pointer relative flex flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
@@ -51,16 +52,7 @@ const news = ref([
                                                 <picture class="flex h-[300px] w-full max-w-none">
                                                     <NuxtImg alt="AI is here. AI regulations are on the way. Is your board ready?"
                                                         loading="lazy" decoding="async" data-nimg="fill"
-                                                        class="object-center object-cover" style="
-                                position: absolute;
-                                height: 100%;
-                                width: 100%;
-                                left: 0;
-                                top: 0;
-                                right: 0;
-                                bottom: 0;
-                                color: transparent;
-                              " sizes="240w 100vw" :src="news.img" />
+                                                        class="object-center object-cover image-style"  sizes="240w 100vw" :src="news.img" />
                                                 </picture>
                                             </div>
                                         </div>
@@ -75,18 +67,18 @@ const news = ref([
                             class="ease relative z-10 grid gap-2 bg-brand-white px-4 py-2 transition-transform duration-500 will-change-transform translate-y-0">
                             <section class="grid items-start justify-start gap-y-3">
                                 <div class="relative flex min-h-[30px] flex-col gap-y-1">
-                                    <label class="text-xs text-brand-primary capitalize">
+                                    <!-- <label class="text-xs text-brand-primary capitalize">
                                         {{ news.tag }}
-                                    </label>
-                                    <h6 class="subheading-class text-black line-clamp-1">
+                                    </label> -->
+                                    <h6 class="text-md text-black font-bold">
                                         {{ news.title }}
                                     </h6>
                                 </div>
                             </section>
                         </div>
                         <button
-                            class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-2 text-base self-start">
-                            Read more
+                            class="inline-flex items-center justify-center rounded-md font-medium transition-colors duration-300 focus:outline-none text-brand-primary hover:text-brand-primary-dark focus:ring-brand-primary-dark px-4 py-2 text-base self-start">
+                            Learn more
                             <svg class="relative top-[1px] flex h-3 w-3 fill-none stroke-current stroke-[1.5] transition-transform duration-150 ml-[6px] undefined"
                                 fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                                 <g fill-rule="evenodd">
@@ -103,4 +95,16 @@ const news = ref([
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+.image-style{
+    position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                left: 0;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                color: transparent;
+}
+</style>

@@ -428,7 +428,7 @@ const specials = ref([
 
             <WhyUs2 />
 
-            <News />
+            <InsuranceInsights />
 
             <HowHelp />
 
