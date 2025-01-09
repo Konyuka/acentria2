@@ -1,47 +1,99 @@
 <script setup>
 const ReinsuranceBannerContent = ref({
-    title: 'Safeguard Your Health with Our Critical Illness Insurance',
-    subTitle: 'Critical Illness Insurance',
-    image: '/img/nurse.jpg',
+    title: 'Drive with Confidence with Our Comprehensive Motor Insurance',
+    subTitle: 'Comprehensive Motor Insurance',
+    image: 'https://images.pexels.com/photos/2265634/pexels-photo-2265634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
 })
 
 const benefits = ref([
     {
-        name: 'Affordable Cost',
-        icon: 'fas fa-dollar-sign',
-        description: 'Pay premiums as low as Kes 1,000.',
+        name: 'Peace of Mind',
+        icon: 'fas fa-smile',
+        description: 'Comprehensive coverage ensures that you are protected against a wide range of risks, providing peace of mind while driving.',
     },
     {
-        name: 'Lump Sum Payout',
+        name: 'Financial Security',
         icon: 'fas fa-money-bill-wave',
-        description: 'Receive a lump sum payment upon diagnosis of a covered critical illness. This payout can be used to cover medical expenses, rehabilitation costs, or any other financial needs during your recovery.',
+        description: 'Helps to mitigate the financial impact of unexpected events, such as accidents, theft, or natural disasters.',
     },
     {
-        name: 'Comprehensive Coverage',
-        icon: 'fas fa-heartbeat',
-        description: 'Our policy covers a wide range of critical illnesses, including cancer, heart attack, stroke, and more. With comprehensive coverage, you can have peace of mind knowing you\'re protected against major health risks.',
-    },
-    {
-        name: 'Financial Flexibility',
-        icon: 'fas fa-exchange-alt',
-        description: 'Use the lump sum payment as you see fit. Whether it\'s for medical treatments, home modifications, or replacing lost income, you have the financial flexibility to manage your situation in the best way possible.',
-    },
-    {
-        name: 'Support for Recovery',
-        icon: 'fas fa-hands-helping',
-        description: 'Focus on getting better without worrying about financial strain. Our critical illness insurance provides the support you need to access the best care and treatment options available.',
-    },
-    {
-        name: 'Easy Application Process',
-        icon: 'fas fa-check-circle',
-        description: 'Applying for our critical illness insurance is simple and straightforward. You can Compare Quotes, compare plans, and apply online in just a few minutes.',
-    },
-    {
-        name: 'Tax-Free Benefits',
-        icon: 'fas fa-balance-scale',
-        description: 'In most cases, the lump sum payment is tax-free, providing you with the full financial support you need without additional tax burdens.',
+        name: 'Customizable',
+        icon: 'fas fa-cogs',
+        description: 'You can often tailor your comprehensive motor insurance policy to include additional coverage options and add-ons based on your specific needs.',
     },
 ])
+
+const considerations = ref([
+    {
+        name: 'Cost',
+        icon: 'fas fa-dollar-sign',
+        description: 'Comprehensive motor insurance tends to be more expensive than basic third-party liability insurance due to the broader range of coverage it offers.',
+    },
+    {
+        name: 'Deductibles',
+        icon: 'fas fa-exchange-alt',
+        description: 'Be aware of any deductibles that apply to the coverage. A deductible is the amount you must pay out of pocket before the insurance coverage kicks in.',
+    },
+]);
+
+const coverages = ref([
+    {
+        name: 'Accidental Damage',
+        icon: 'fas fa-car-crash',
+        description: 'Covers the cost of repairs or replacement if your vehicle is damaged in an accident, regardless of who is at fault.',
+    },
+    
+    {
+        name: 'Third-Party Liability',
+        icon: 'fas fa-people-arrows',
+        description: 'Includes coverage for any legal liability if you cause damage to someone else\'s property or injure another person while driving.',
+    },
+    {
+        name: 'Natural Disasters',
+        icon: 'fas fa-cloud-showers-heavy',
+        description: 'Protects against damage caused by natural events such as floods, storms, earthquakes, and fires.',
+    },
+    
+    {
+        name: 'Theft and Vandalism',
+        icon: 'fas fa-user-secret',
+        description: 'Provides coverage if your vehicle is stolen or damaged due to vandalism.',
+    },
+    {
+        name: 'Glass Damage',
+        icon: 'fas fa-wind',
+        description: 'Often includes coverage for damage to your vehicle\'s windows and windshield.',
+    },
+    {
+        name: 'Personal Belongings',
+        icon: 'fas fa-box-open',
+        description: 'Some policies may cover personal belongings inside the vehicle that are damaged or stolen.',
+    },
+    {
+        name: 'Medical Expenses',
+        icon: 'fas fa-briefcase-medical',
+        description: 'May cover medical expenses for the driver and passengers resulting from an accident.',
+    },
+    {
+        name: 'Roadside Assistance',
+        icon: 'fas fa-truck-pickup',
+        description: 'Access to our 24/7 roadside assistance services for help with breakdowns, flat tires, towing, and more, ensuring you\'re never left stranded.',
+    },
+    {
+        name: 'Rental Car Coverage',
+        icon: 'fas fa-car',
+        description: 'Provides coverage for rental car expenses if your car is being repaired after an accident, keeping you on the move without interruption.',
+    },
+    {
+        name: 'Fire Damage',
+        icon: 'fas fa-fire',
+        description: 'Covers damage to your vehicle resulting from fire.',
+    },
+    
+    
+]);
+
+
 </script>
 
 <template>
@@ -50,17 +102,41 @@ const benefits = ref([
 
         <div class="container mx-auto py-10">
             <h1 class="text-2xl text-black !font-semibold mb-6">
-                Why <span class="text-brand-primary">Critical Illness Insurance</span>
+                Why <span class="text-brand-primary">Comprehensive Motor Insurance</span>
             </h1>
             <p class="mt-6 text-xs leading-normal">
-                A critical illness diagnosis can be emotionally and financially overwhelming. Our critical illness
-                insurance provides a safety net to help you manage the financial impact of severe health conditions,
-                allowing you to focus on your recovery without added stress.
+                Accidents and unexpected events can happen at any time. Our comprehensive motor insurance provides
+                extensive coverage beyond the basic third-party liability to ensure that you, your vehicle, and others
+                on the road are protected against a wide range of incidents. Drive with confidence, knowing that you
+                have the best protection available.
             </p>
         </div>
 
         <div class="py-2">
             <section class="relative py-1">
+
+                <div class="container mx-auto">
+                    <h2 class="text-2xl !font-semibold text-black mb-10">
+                        Key <span class="text-brand-primary"> Benefits</span>
+                    </h2>
+
+                    <div
+                        class="mb-10 font-sans grid grid-cols-3 gap-5 text-base leading-normal text-gray-600">
+                        <div v-for="benefit in coverages" class="flex flex-row gap-2">
+                            <i :class="benefit.icon" class="text-xl text-brand-primary mr-4"></i>
+                            <div>
+                                <h5 v-html="benefit.name"
+                                    class="text-sm pb-3 md:pb-4 font-semibold leading-normal text-light-title">
+
+                                </h5>
+                                <p class="leading-normal font-regular text-light-content text-xs">
+                                    {{ benefit.description }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="container">
                     <h2 class="text-2xl !font-semibold text-black mb-4">
                         Key <span class="text-brand-primary"> Benefits</span>
@@ -68,6 +144,24 @@ const benefits = ref([
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div v-for="principle in benefits"
+                            class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
+                            <div class="flex flex-col">
+                                <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
+                                <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
+                                    principle.name }}</h4>
+                                <p class="text-sm leading-normal text-black">{{ principle.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container my-10">
+                    <h2 class="text-2xl !font-semibold text-black mb-4">
+                        Key <span class="text-brand-primary"> Considerations</span>
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div v-for="principle in considerations"
                             class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
                             <div class="flex flex-col">
                                 <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
