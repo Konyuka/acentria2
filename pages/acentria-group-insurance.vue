@@ -208,7 +208,7 @@ const exploreClaims = ref({
 
 const introContent = ref({
     orientation: 'lg:flex-row flex-col',
-    heading: 'Insurance <span class="text-brand-primary"> & Risk</span>',
+    heading: 'Insurance &<span class="text-brand-primary">  Risk Management</span>',
     subheading: 'A reliable partner you can trust.',
     image: 'https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-business-woman-handshake-and-agreement-for-partnership-in-office-for-collaboration-promotion-or-2311431727-transformed-1024x767.jpeg',
     link: '/insurance-claims',
@@ -369,7 +369,7 @@ const specials = ref([
             <div class="bg-white">
                 <div class="py-5 text-left container">
                     <h2 class="heading-class text-black">
-                        Pick a cover and, <span class="text-brand-primary"> <br /> we'll take care of the rest</span>
+                        Pick a cover and, <span class="text-brand-primary"> <br /> we'll take care of the risks</span>
                     </h2>
                 </div>
             </div>

@@ -34,9 +34,6 @@
 
 
                     <div class="h-auto w-full">
-                        <div v-if="currentMenu === 'Insurance'" class="px-10">
-                            <!-- <InsuranceTopMenu /> -->
-                        </div>
 
                         <div class="grid grid-cols-12">
 
@@ -58,7 +55,7 @@
                                     </div>
 
                                     <!-- <InsuranceTopMenu /> -->
-                                    <div v-if="currentMenu == 'Insurance'"
+                                    <!-- <div v-if="currentMenu == 'Insurance'"
                                         class="grid grid-cols-2 gap-2 w-full my-5 mb-5">
                                         <div class="relative">
                                             <div v-for="(item, index) in actionMenus">
@@ -85,7 +82,8 @@
                                                 </NuxtLink>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
+
                                 </div>
 
 
@@ -146,8 +144,8 @@
 
                     </div>
 
-                    <div v-if="currentMenu !== 'Insurance'" class=" mt-8">
-                        <div v-if="currentMenu !== 'Insurance'" class="flex px-10">
+                    <div  class=" mt-8">
+                        <div  class="flex px-10">
                             <div class="flex col-span-2 w-full justify-between !pr-5">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
                                     @click="closeFlyOver()"
@@ -192,13 +190,13 @@ const flyoverHeader = ref(null)
 
 const ctaWording = computed(() => {
     if (currentMenu.value == 'Insurance') {
-        return 'Insurance Home Page'
+        return 'Learn More About Insurance'
     } else if (currentMenu.value == 'Reinsurance') {
-        return 'Reinsurance Home Page'
+        return 'Learn More About Reinsurance'
     } else if (currentMenu.value == 'Actuarial') {
-        return 'Actuarial Home Page'
+        return 'Learn More About Actuarial'
     } else if (currentMenu.value == 'About') {
-        return 'Read About Our History '
+        return 'Learn More About Our History'
     }
 })
 
@@ -331,16 +329,16 @@ const insuranceFooterMenus = ref([
         icon: 'fas fa-home',
         link: '/acentria-group-insurance',
     },
-    {
-        name: 'Renew your Policy',
-        icon: 'fas fa-redo',
-        link: '/contact-acentria-group',
-    },
-    {
-        name: 'Report a Claim',
-        icon: 'fas fa-file-alt',
-        link: '/contact-acentria-group',
-    },
+    // {
+    //     name: 'Renew your Policy',
+    //     icon: 'fas fa-redo',
+    //     link: '/contact-acentria-group',
+    // },
+    // {
+    //     name: 'Report a Claim',
+    //     icon: 'fas fa-file-alt',
+    //     link: '/contact-acentria-group',
+    // },
 ]);
 const reinsuranceFooterMenus = ref([
     {
@@ -546,6 +544,96 @@ const AboutMenus = ref([
 ])
 const InsuranceMenus = ref([
     {
+        name: 'Expert Services',
+        linksHeading: 'Expert <span class="text-brand-primary">Assistance<span/>',
+        mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
+        mainHeading: 'Insurance & <span class="text-brand-primary">Risk Management<span/>',
+        mainDescription: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
+        subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
+        menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
+        description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security.',
+        icon: 'fas fa-user-tie',
+        items: [
+            {
+                name: 'Financial Wellness',
+                description: 'Enhance your financial health with personalized insurance solutions.',
+                link: '/financial-wellness',
+            },
+            {
+                name: 'Risk Management',
+                description: 'Identify, assess, and mitigate risks with our expert risk management services.',
+                link: '/risk-management',
+            },
+            {
+                name: 'Cyber Risk',
+                description: 'Protect your digital assets with our comprehensive cyber risk insurance solutions.',
+                link: '/cyber-risk-management',
+            },
+            {
+                name: 'Claims Management',
+                description: 'Simplify and expedite the claims process with our dedicated management services.',
+                link: '/claims-management',
+            },
+            {
+                name: 'Insurance Policy Management',
+                description: 'Streamline your policy administration and ensure compliance with expert guidance.',
+                link: '/insurance-policy-management',
+            },
+        ]
+    },
+    {
+        name: 'Buy Insurance',
+        linksHeading: 'Purchase <span class="text-brand-primary">Insurance<span/>',
+        description: 'Choose from a variety of flexible options to purchase insurance that suits your needs.',
+        icon: 'fas fa-cart-plus',
+        items: [
+            {
+                name: 'Do it Yourself',
+                description: 'Purchase your insurance policy online at your convenience with our self-service portal.',
+                link: '/diy',
+            },
+            {
+                name: 'Live Agent Assistance',
+                description: 'Get expert advice and assistance from our agents to select the best insurance plan.',
+                link: '/agent-assistance',
+            },
+            {
+                name: 'Full Service',
+                description: 'Enjoy a comprehensive service package that simplifies the insurance buying process.',
+                link: '/full-service',
+            },
+        ]
+    },
+    {
+        name: 'Manage Your Policy',
+        linksHeading: 'Policy <span class="text-brand-primary">Management<span/>',
+        mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
+        mainHeading: 'Insurance & <span class="text-brand-primary">Risk Management<span/>',
+        mainDescription: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
+        subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
+        menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
+        description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security.',
+        icon: 'fas fa-cogs',
+        items: [
+            {
+                name: 'Renew Your Policy',
+                description: 'Easily renew your existing policy to maintain continuous coverage and peace of mind.',
+                link: '/renew-policy',
+            },
+            {
+                name: 'Report a Claim',
+                description: 'Quickly file a claim and get assistance to resolve your insurance-related issues.',
+                link: '/report-claim',
+            },
+            {
+                name: 'Online Service Portal',
+                description: 'Access all your insurance documents and manage your policies online in one convenient place.',
+                link: '/online-portal',
+            },
+        ]
+    },
+    
+    {
         name: 'Personal Covers',
         linksHeading: 'My Personal <span class="text-brand-primary">Insurance Covers<span/>',
         mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
@@ -553,10 +641,9 @@ const InsuranceMenus = ref([
         mainDescription: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
         subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
-        description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security. ',
+        description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security.',
         icon: 'fas fa-user',
         items: [
-
             {
                 name: 'My Life',
                 description: 'Secure your family\'s future with flexible life insurance.',
@@ -594,61 +681,11 @@ const InsuranceMenus = ref([
             },
         ]
     },
-    // {
-    //     name: 'Corporate Covers',
-    //     linksHeading: 'My Corporate <span class="text-brand-primary">Insurance Covers<span/>',
-    //     subMenu: 'Why Corporate <span class="text-brand-primary">Insurance?<span/>',
-    //     description: 'Corporate insurance is crucial as it provides tailored solutions to protect your business and employees from various risks and uncertainties.',
-    //     icon: 'fas fa-building',
-    //     items: [
-    //         {
-    //             name: 'Staff Health Covers',
-    //             description: 'Ensure employee well-being with comprehensive health coverage.',
-    //             link: '/insurance/staff-health-cover',
-    //         },
-
-    //         {
-    //             name: 'Staff Combined Cover',
-    //             description: 'Comprehensive coverage for staff including travel, domestic, and motor insurance.',
-    //             link: '/insurance/staff-health-cover',
-    //         },
-    //         {
-    //             name: 'General Asset Covers',
-    //             description: 'Protect your business assets against damage or loss.',
-    //             link: '/insurance/staff-health-cover',
-    //         },
-    //         {
-    //             name: 'Stock Shipping Covers',
-    //             description: 'Safeguard your stock during shipping against potential risks.',
-    //             link: '/insurance/staff-health-cover',
-    //         },
-    //         {
-    //             name: 'Financial Losses & Money Covers',
-    //             description: 'Mitigate financial risks and protect against monetary losses.',
-    //             link: '/insurance/staff-health-cover',
-    //         },
-    //         {
-    //             name: 'Customer Covers',
-    //             description: 'Ensure your customers are protected with tailored insurance solutions.',
-    //             link: '/insurance/staff-health-cover',
-    //         },
-    //         {
-    //             name: 'Special & Emerging Risks',
-    //             description: 'Stay ahead with coverage for special and emerging risks.',
-    //             link: '/insurance/staff-health-cover',
-    //         },
-    //         {
-    //             name: 'Craft your own',
-    //             description: 'Customize your insurance coverage to meet your unique needs.',
-    //             link: '/insurance/staff-health-cover',
-    //         }
-    //     ]
-    // },
     {
         name: 'Business Covers',
         linksHeading: 'My Business <span class="text-brand-primary">Insurance Covers<span/>',
         subMenu: 'Why Business <span class="text-brand-primary">Insurance?<span/>',
-        description: 'Business insurance is essential as it provides comprehensive solutions to protect your enterprise from various risks and uncertainties. ',
+        description: 'Business insurance is essential as it provides comprehensive solutions to protect your enterprise from various risks and uncertainties.',
         icon: 'fas fa-money-bill-wave',
         items: [
             {
@@ -677,82 +714,63 @@ const InsuranceMenus = ref([
                 link: '/insurance/biasahara-cover',
             },
             {
-                name: 'Marine Insurance Covers',
-                description: 'Comprehensive coverage for your marine vessels and cargo, protecting against risks such as damage, theft, and loss during transit.',
-                link: '/insurance/marine-covers',
-            },
-        ]
-    },
-    // {
-    //     name: 'Industrial Covers',
-    //     linksHeading: 'My Industrial <span class="text-brand-primary">Insurance Covers<span/>',
-    //     subMenu: 'Why Industrial <span class="text-brand-primary">Insurance?<span/>',
-    //     description: 'Industrial insurance is vital as it provides comprehensive coverage for all industrial risks, ensuring your business operations are protected. ',
-    //     icon: 'fas fa-industry',
-    //     items: [
-    //         {
-    //             name: 'Industrial All Risks Covers',
-    //             description: 'Comprehensive coverage for all industrial risks and operations.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //         {
-    //             name: 'Contractors All Risks Covers',
-    //             description: 'Comprehensive coverage for contractors against all risks during construction.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //         {
-    //             name: 'Staff Work Injury Benefits Act (WIBA) Covers',
-    //             description: 'Compensation for work-related injuries under WIBA regulations.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //         {
-    //             name: 'Staff Personal Accident',
-    //             description: 'Coverage for accidents occurring to staff during employment.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //         {
-    //             name: 'Casualty and Liability Covers',
-    //             description: 'Protection against claims of injury or property damage.',
-    //             link: '/insurance/biasahara-cover',
-    //         },
-    //         {
-    //             name: 'Craft your own',
-    //             description: 'Customize your insurance coverage to meet your unique needs.',
-    //             link: '/insurance/craft-your-own',
-    //         }
-    //     ]
-    // },
-    {
-        type: 'special',
-        name: 'Aviation Covers',
-        linksHeading: 'My Aviation <span class="text-brand-primary">Insurance Covers<span/>',
-        subMenu: 'Why Aviation <span class="text-brand-primary">Insurance?<span/>',
-        description: 'Comprehensive coverage for aircraft, pilots, and aviation operations.',
-        icon: 'fas fa-plane',
-        items: [
-            {
                 name: 'Aviation Covers',
                 description: 'Coverage for aircraft, pilots, and aviation operations.',
                 link: '/insurance/aviation-cover',
             },
+            {
+                name: 'Marine Insurance Covers',
+                description: 'Comprehensive coverage for your marine vessels and cargo, protecting against risks such as damage, theft, and loss during transit.',
+                link: '/insurance/marine-covers',
+            },
+            
         ]
     },
     // {
     //     type: 'special',
-    //     name: 'Marine Covers',
-    //     linksHeading: 'My Marine <span class="text-brand-primary">Insurance Covers<span/>',
-    //     subMenu: 'Why Marine <span class="text-brand-primary">Insurance?<span/>',
-    //     description: 'Comprehensive coverage for vessels, cargo, and marine operations.',
-    //     icon: 'fas fa-ship',
+    //     name: 'Aviation Covers',
+    //     linksHeading: 'My Aviation <span class="text-brand-primary">Insurance Covers<span/>',
+    //     subMenu: 'Why Aviation <span class="text-brand-primary">Insurance?<span/>',
+    //     description: 'Comprehensive coverage for aircraft, pilots, and aviation operations.',
+    //     icon: 'fas fa-plane',
     //     items: [
     //         {
-    //             name: 'Marine Insurance',
-    //             description: 'Coverage for vessels, cargo, and marine operations.',
-    //             link: '/insurance/biasahara-cover',
+    //             name: 'Aviation Covers',
+    //             description: 'Coverage for aircraft, pilots, and aviation operations.',
+    //             link: '/insurance/aviation-cover',
     //         },
     //     ]
     // },
-])
+    {
+        name: 'Insights',
+        linksHeading: 'Stay <span class="text-brand-primary">Informed<span/>',
+        description: 'Access tools, guides, and resources to make informed insurance decisions.',
+        icon: 'fas fa-lightbulb',
+        items: [
+            {
+                name: 'Workshops & Webinars',
+                description: 'Learn about the latest insurance trends and solutions through expert-led workshops and webinars.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Online Tools',
+                description: 'Utilize our innovative tools to calculate premiums, compare plans, and make better decisions.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Learn',
+                description: 'Access educational resources to deepen your understanding of insurance and risk management.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Guide',
+                description: 'Explore step-by-step guides to navigate the complexities of insurance and claims processes.',
+                link: '/acentria-news-and-blogs',
+            },
+        ]
+    },
+]);
+
 const ReinsuranceMenus = ref([
     {
         name: 'Reinsurance Services',
@@ -849,6 +867,34 @@ const ReinsuranceMenus = ref([
             },
         ]
     },
+    {
+        name: 'Insights',
+        linksHeading: 'Stay <span class="text-brand-primary">Informed<span/>',
+        description: 'Access tools, guides, and resources to make informed insurance decisions.',
+        icon: 'fas fa-lightbulb',
+        items: [
+            {
+                name: 'Workshops & Webinars',
+                description: 'Learn about the latest insurance trends and solutions through expert-led workshops and webinars.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Online Tools',
+                description: 'Utilize our innovative tools to calculate premiums, compare plans, and make better decisions.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Learn',
+                description: 'Access educational resources to deepen your understanding of insurance and risk management.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Guide',
+                description: 'Explore step-by-step guides to navigate the complexities of insurance and claims processes.',
+                link: '/acentria-news-and-blogs',
+            },
+        ]
+    },
 ])
 const ActuarialMenus = ref([
     {
@@ -905,6 +951,34 @@ const ActuarialMenus = ref([
                 name: 'AcentRe Reinsurance Software',
                 description: 'Optimize reinsurance strategy with AcentRe\'s comprehensive solutions.',
                 link: '/reinsurance/acentre-reinsurance-solution',
+            },
+        ]
+    },
+    {
+        name: 'Insights',
+        linksHeading: 'Stay <span class="text-brand-primary">Informed<span/>',
+        description: 'Access tools, guides, and resources to make informed insurance decisions.',
+        icon: 'fas fa-lightbulb',
+        items: [
+            {
+                name: 'Workshops & Webinars',
+                description: 'Learn about the latest insurance trends and solutions through expert-led workshops and webinars.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Online Tools',
+                description: 'Utilize our innovative tools to calculate premiums, compare plans, and make better decisions.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Learn',
+                description: 'Access educational resources to deepen your understanding of insurance and risk management.',
+                link: '/acentria-news-and-blogs',
+            },
+            {
+                name: 'Guide',
+                description: 'Explore step-by-step guides to navigate the complexities of insurance and claims processes.',
+                link: '/acentria-news-and-blogs',
             },
         ]
     },
@@ -1070,7 +1144,7 @@ const openFlyover = (menu, type) => {
                 currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
                 currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
                 currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
-                currentSubmenu.value = 'Personal Covers'
+                currentSubmenu.value = 'Expert Services'
                 currentSubmenuItems.value = currentMenuItems.value[0]?.items
                 currentActionMenu.value = 'Expert Services'
                 currentActionMenuItems.value = actionMenus.value[0]?.items
