@@ -58,10 +58,12 @@
                                     </div>
 
                                     <!-- <InsuranceTopMenu /> -->
-                                    <div v-if="currentMenu=='Insurance'" class="grid grid-cols-2 gap-2 w-full my-5 mb-5">
+                                    <div v-if="currentMenu == 'Insurance'"
+                                        class="grid grid-cols-2 gap-2 w-full my-5 mb-5">
                                         <div class="relative">
-                                            <div  v-for="(item, index) in actionMenus">
-                                                <p @click="setActionSubmenu(item, index)" @mouseenter="setActionSubmenu(item, index)"
+                                            <div v-for="(item, index) in actionMenus">
+                                                <p @click="setActionSubmenu(item, index)"
+                                                    @mouseenter="setActionSubmenu(item, index)"
                                                     :class="[currentActionMenu === item.name ? 'text-brand-primary bg-red-100' : '']"
                                                     class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary font-semibold text-[13px]">
                                                     {{ item.name }} <i v-if="currentActionMenu === item.name"
@@ -72,7 +74,8 @@
                                         <div class="border-l-2 border-red-600">
                                             <div class="px-2 flex flex-col gap-1">
                                                 <NuxtLink :to="submenuItem.link"
-                                                    v-for="submenuItem in currentActionMenuItems" :key="submenuItem.name"
+                                                    v-for="submenuItem in currentActionMenuItems"
+                                                    :key="submenuItem.name"
                                                     class="px-2 py-1 group hover:cursor-pointer hover:text-black hover:bg-red-100 transition duration-700 rounded-md font-semibold text-[13px]">
                                                     <div class="flex justify-between">
                                                         {{ submenuItem.name }}
@@ -215,31 +218,6 @@ const currentActionMenu = ref(null)
 const currentActionMenuItems = ref(null)
 const actionMenus = ref([
     {
-        name: 'Expert Services',
-        items: [
-            {
-                name: 'Financial Wellness',
-                link: '/financial-wellness',
-            },
-            {
-                name: 'Risk Management',
-                link: '/risk-management',
-            },
-            {
-                name: 'Cyber Risk',
-                link: '/cyber-risk-management',
-            },
-            {
-                name: 'Claims Management',
-                link: '/claims-management',
-            },
-            {
-                name: 'Insurance Policy Management',
-                link: '/insurance-policy-management',
-            },
-        ]
-    },
-    {
         name: 'Manage Your Policy',
         items: [
             {
@@ -274,14 +252,41 @@ const actionMenus = ref([
         ]
     },
     {
+        name: 'Expert Services',
+        items: [
+            {
+                name: 'Financial Wellness',
+                link: '/financial-wellness',
+            },
+            {
+                name: 'Risk Management',
+                link: '/risk-management',
+            },
+            {
+                name: 'Cyber Risk',
+                link: '/cyber-risk-management',
+            },
+            {
+                name: 'Claims Management',
+                link: '/claims-management',
+            },
+            {
+                name: 'Insurance Policy Management',
+                link: '/insurance-policy-management',
+            },
+        ]
+    },
+
+
+    {
         name: 'Insights',
         items: [
             {
-                name: 'Blog',
+                name: 'Workshops & Webinars',
                 link: '/acentria-news-and-blogs',
             },
             {
-                name: 'News',
+                name: 'Online Tools',
                 link: '/acentria-news-and-blogs',
             },
             {
@@ -545,7 +550,7 @@ const InsuranceMenus = ref([
         linksHeading: 'My Personal <span class="text-brand-primary">Insurance Covers<span/>',
         mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
         mainHeading: 'Insurance & <span class="text-brand-primary">Risk Management<span/>',
-        mainDescription: 'Acentria is one of the leading independent specialist insurance broking firms, operating both in Kenya and international markets. Our dedicated risk teams combine specialized insurance brokerage services with deep analytical expertise to provide tailored solutions that meet the unique needs of our clients worldwide.',
+        mainDescription: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
         subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Personal insurance is essential because it provides comprehensive coverage tailored to your individual needs, ensuring peace of mind and financial security. ',
@@ -601,11 +606,7 @@ const InsuranceMenus = ref([
     //             description: 'Ensure employee well-being with comprehensive health coverage.',
     //             link: '/insurance/staff-health-cover',
     //         },
-    //         {
-    //             name: 'Staff Life Covers',
-    //             description: 'Provide financial security for employees’ families with life insurance.',
-    //             link: '/insurance/staff-health-cover',
-    //         },
+
     //         {
     //             name: 'Staff Combined Cover',
     //             description: 'Comprehensive coverage for staff including travel, domestic, and motor insurance.',
@@ -651,17 +652,17 @@ const InsuranceMenus = ref([
         icon: 'fas fa-money-bill-wave',
         items: [
             {
-                name: 'Biashara Cover',
-                description: 'Comprehensive business insurance to protect your enterprise from risks.',
-                link: '/insurance/biasahara-cover',
+                name: 'Staff Health Covers',
+                description: 'Ensure employee well-being with comprehensive health coverage.',
+                link: '/insurance/staff-health-cover',
             },
             {
-                name: 'Employee Covers',
-                description: 'Ensure your employees are protected with comprehensive insurance solutions.',
-                link: '/insurance/employee-covers',
+                name: 'Staff Life Covers',
+                description: 'Provide financial security for employees’ families with life insurance.',
+                link: '/insurance/staff-health-cover',
             },
             {
-                name: 'Asset & Stock Covers',
+                name: 'General Asset & Stock Covers',
                 description: 'Protect your business assets and stock against damage or loss.',
                 link: '/insurance/asset-stock-covers',
             },
@@ -671,20 +672,15 @@ const InsuranceMenus = ref([
                 link: '/insurance/financial-losses-money-covers',
             },
             {
-                name: 'Stock Shipping Covers',
-                description: 'Safeguard your stock during shipping against potential risks.',
-                link: '/insurance/stock-shipping-covers',
+                name: 'Biashara Cover',
+                description: 'Comprehensive business insurance to protect your enterprise from risks.',
+                link: '/insurance/biasahara-cover',
             },
             {
-                name: 'Customer Covers',
-                description: 'Ensure your customers are protected with tailored insurance solutions.',
-                link: '/insurance/customer-covers',
+                name: 'Marine Insurance Covers',
+                description: 'Comprehensive coverage for your marine vessels and cargo, protecting against risks such as damage, theft, and loss during transit.',
+                link: '/insurance/marine-covers',
             },
-            {
-                name: 'Craft your own',
-                description: 'Customize your insurance coverage to meet your unique needs.',
-                link: '/insurance/craft-your-own',
-            }
         ]
     },
     // {
