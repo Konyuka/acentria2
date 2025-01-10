@@ -3,7 +3,7 @@
 const ReinsuranceBannerContent = ref({
     title: 'Robust Protection and Peace of Mind',
     subTitle: 'Cyber Security Risk Management',
-    image: '/img/nurse.jpg',
+    image: 'https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595831.jpg?t=st=1736503573~exp=1736507173~hmac=35a5433b65767b99ee815d71682a82cf603658b5de47880a171da9d8320ae9ad&w=900',
 })
 
 const benefits = ref([
@@ -152,9 +152,8 @@ const benefits = ref([
                         on your path to
                         comprehensive protection.
                     </p>
-
-
                 </div>
+
             </section>
         </div>
     </section>

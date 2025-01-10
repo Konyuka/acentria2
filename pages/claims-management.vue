@@ -1,48 +1,109 @@
 
 <script setup>
 const ReinsuranceBannerContent = ref({
-    title: 'Explore the Benefits of Our Whole Life Insurance Product',
-    subTitle: 'Whole Life Insurance',
-    image: '/img/nurse.jpg',
+    title: 'Expertise and Efficiency',
+    subTitle: 'Claims Management',
+    image: 'https://img.freepik.com/free-photo/doctor-helping-patient-signing-paperwork-medical-insurance-document-form-illness-healthcare-treatment-clinical-consultation-hospital-policy-bill-medication-prescription-close-up_482257-68537.jpg?t=st=1736503576~exp=1736507176~hmac=4a94e7f2ba907337b0319df36453ae764d3110db694bbe70e1ea0bad42b516ee&w=900',
 })
 
 const benefits = ref([
     {
-        name: 'Lifelong Coverage',
-        icon: 'fas fa-infinity',
-        description: 'Whole life insurance offers permanent protection, ensuring that your beneficiaries receive a death benefit regardless of when you pass away. This lifelong coverage provides peace of mind and financial stability for your loved ones.',
+        name: 'Comprehensive Claims Processing',
+        icon: 'fas fa-file-alt',
+        description: 'At Acentria, we understand that filing a claim can be stressful. Our comprehensive claims processing services are designed to simplify the process and provide you with the support you need.',
+        items: [
+            {
+                name: 'Swift Claims Filing',
+                description: 'Easy and efficient claims filing process to get you started without delays.',
+            },
+            {
+                name: 'Accurate Documentation',
+                description: 'Thorough documentation and record-keeping to ensure all necessary information is collected and processed.',
+            },
+            {
+                name: 'Fair Assessment',
+                description: 'Objective and fair assessment of claims to determine accurate payouts.',
+            },
+        ],
     },
     {
-        name: 'Cash Value Accumulation',
-        icon: 'fas fa-piggy-bank',
-        description: 'Our whole life insurance policies build cash value over time, which grows tax-deferred. You can access this cash value through policy loans or withdrawals, providing a valuable financial resource for emergencies, education, retirement, or other needs.',
+        name: 'Personalized Support',
+        icon: 'fas fa-hands-helping',
+        description: 'We believe in providing personalized support to our clients during challenging times. Our dedicated team is here to guide you through every step of the claims process.',
+        items: [
+            {
+                name: 'Claims Assistance',
+                description: 'Expert assistance to help you understand your coverage and the claims process.',
+            },
+            {
+                name: 'Communication and Updates',
+                description: 'Regular updates on the status of your claim and open lines of communication to address your concerns.',
+            },
+            {
+                name: 'Advocacy',
+                description: 'Dedicated advocates working on your behalf to ensure fair and timely settlements.',
+            },
+        ],
     },
     {
-        name: 'Guaranteed Premiums',
-        icon: 'fas fa-lock',
-        description: 'With our whole life insurance, your premiums are guaranteed to remain level throughout the life of the policy. This means no unexpected increases, making it easier to budget and plan for the future.',
-    },
-    {
-        name: 'Dividend Opportunities',
-        icon: 'fas fa-coins',
-        description: 'Many of our whole life insurance policies offer the potential to earn dividends. While not guaranteed, these dividends can be used to increase your policy\'s cash value, reduce premiums, or purchase additional coverage.',
-    },
-    {
-        name: 'Estate Planning',
-        icon: 'fas fa-gavel',
-        description: 'Whole life insurance can play a crucial role in estate planning. It provides a death benefit that can help cover estate taxes, ensuring that your legacy is preserved for your heirs.',
-    },
-    {
-        name: 'Tax Advantages',
+        name: 'Efficient Dispute Resolution',
         icon: 'fas fa-balance-scale',
-        description: 'The death benefit paid to your beneficiaries is generally tax-free, providing them with the full financial support they need without additional tax burdens. Additionally, the cash value growth within the policy is tax-deferred.',
+        description: 'Disputes can arise during the claims process. Our efficient dispute resolution services are designed to address issues promptly and fairly.',
+        items: [
+            {
+                name: 'Mediation Services',
+                description: 'Professional mediation to resolve disputes amicably.',
+            },
+            {
+                name: 'Expert Review',
+                description: 'In-depth review of disputed claims to ensure accurate and fair outcomes.',
+            },
+            {
+                name: 'Appeals Support',
+                description: 'Assistance with filing appeals and navigating the appeals process.',
+            },
+        ],
     },
     {
-        name: 'Policy Riders',
-        icon: 'fas fa-cogs',
-        description: 'Customize your whole life insurance policy with a variety of riders, such as critical illness coverage, waiver of premium, and accidental death benefit. These riders enhance your coverage, providing additional protection to meet your specific needs.',
+        name: 'Fraud Prevention and Detection',
+        icon: 'fas fa-shield-alt',
+        description: 'Protecting our clients from fraudulent claims is a top priority. Our fraud prevention and detection services help maintain the integrity of the claims process.',
+        items: [
+            {
+                name: 'Advanced Detection Techniques',
+                description: 'Utilization of advanced techniques and technology to detect potential fraud.',
+            },
+            {
+                name: 'Investigative Services',
+                description: 'Thorough investigation of suspicious claims to prevent fraudulent activity.',
+            },
+            {
+                name: 'Education and Awareness',
+                description: 'Educating clients on how to recognize and prevent insurance fraud.',
+            },
+        ],
     },
-])
+    {
+        name: 'Post-Claim Support',
+        icon: 'fas fa-life-ring',
+        description: 'Our commitment to your well-being extends beyond the initial claims process. We provide ongoing support to help you recover and rebuild.',
+        items: [
+            {
+                name: 'Rehabilitation Services',
+                description: 'Access to services that support recovery and rehabilitation.',
+            },
+            {
+                name: 'Financial Guidance',
+                description: 'Expert advice on managing the financial impact of a claim.',
+            },
+            {
+                name: 'Customer Feedback',
+                description: 'Gathering feedback to continually improve our claims management services. <br> <a href="/feedback" class="text-brand-primary underline">Link to give feedback</a>',
+            },
+        ],
+    },
+]);
+
 </script>
 
 <template>
@@ -51,47 +112,90 @@ const benefits = ref([
 
         <div class="container mx-auto py-10">
             <h1 class="text-2xl text-black !font-semibold mb-6">
-                Why <span class="text-brand-primary">Whole Life Insurance</span>
+                Easy <span class="text-brand-primary">Claim Process</span>
             </h1>
             <p class="mt-6 text-xs leading-normal">
-                Whole life insurance provides lifelong coverage and financial security for your loved ones. It combines the benefits of a death benefit with a savings component, ensuring that you have comprehensive protection and a valuable financial resource over time.
+                Welcome to Acentria, where we are dedicated to providing exceptional claims management services. Our
+                goal is to ensure a smooth and efficient claims process, so you can focus on recovery and rebuilding
+                while we handle the details.
             </p>
         </div>
 
         <div class="py-2">
             <section class="relative py-1">
+
+
                 <div class="container">
                     <h2 class="text-2xl !font-semibold text-black mb-4">
-                        Key <span class="text-brand-primary"> Benefits</span>
+                        Claim <span class="text-brand-primary"> Management Service</span>
                     </h2>
-                   
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                    <div class="pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                         <div v-for="principle in benefits"
                             class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
                             <div class="flex flex-col">
                                 <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
-                                <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
+                                <h4 class="font-bold text-black !text-[18px] pb-1 leading-normal">{{
                                     principle.name }}</h4>
                                 <p class="text-sm leading-normal text-black">{{ principle.description }}</p>
+                                <div class="pt-5 grid grid-cols-1 gap-5">
+                                    <div v-for="item in principle.items" class="flex flex-col gap-2">
+                                        <h1 class="!font-semibold text-[14px]"> <i
+                                                class="fas fa-caret-right text-brand-primary mr-2"></i> {{
+                                            item.name }}</h1>
+                                        <p class="text-[12px]" v-html="item.description"></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="container py-10 mt-5">
-                    <h2 class="text-2xl !font-semibold text-black mb-4">
-                        Get a <span class="text-brand-primary"> Quote Today</span>
-                    </h2>
-                    <div class="my-5">
-                        <p class="text-sm leading-normal">
-                            Secure your financial future and provide lifelong protection for your loved ones with our whole life insurance product. Compare Quotes today and take the first step towards peace of mind and financial security.
+                <div class="container mx-auto pb-10">
+                    <h1 class="text-2xl text-black !font-semibold mb-6">
+                        Why <span class="text-brand-primary">Choose Us</span>
+                    </h1>
+                    <p class="mt-6 text-xs leading-normal">
+                        At Acentria, we are committed to delivering exceptional claims management services that
+                        prioritize your needs and ensure a fair and efficient process. Our experienced team of
+                        professionals is dedicated to providing personalized support, maintaining transparency, and
+                        advocating on your behalf. With our comprehensive services, you can trust us to handle your
+                        claims with care and professionalism.
+                        Discover how our claims management services can make a difference.
+                        <NuxtLink class="text-brand-primary underline italic">Contact us today</NuxtLink>
+                        to learn
+                        more and get started on the path to efficient and effective claims resolution.
+                    </p>
+                </div>
+
+                <div class="container mx-auto pb-10">
+                    <h1 class="text-2xl text-black !font-semibold mb-6">
+                        Report a Claim <span class="text-brand-primary">Quickly and Easily</span>
+                    </h1>
+
+                    <div class="pb-5">
+                        <h1 class="font-semibold text-xl text-black">Need to Report a Claim?</h1>
+                        <p class="text-xs ">
+                            How would you wish to register your claim?
                         </p>
+
+                    </div>
+                    <div class="relative gap-10 lg:basis-1/2 flex items-center">
+                        <NuxtLink to="/contact-acentria-group"
+                            class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
+                            Access Your Online Account
+                            <i class="fas fa-arrow-right text-primary ml-2"></i>
+                        </NuxtLink>
+                        <NuxtLink to="/contact-acentria-group"
+                            class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
+                            File A Claim Here
+                            <i class="fas fa-arrow-right text-primary ml-2"></i>
+                        </NuxtLink>
                     </div>
 
-                    <div class="pt-5">
-                        <ContactFormInsurance />
-                    </div>
+
                 </div>
+
             </section>
         </div>
     </section>
