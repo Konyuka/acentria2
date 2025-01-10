@@ -3,8 +3,8 @@
 
         <div class="justify-center">
             <div class="">
-                <NuxtLink :to="theMenu.link" @click="openFlyover(theMenu.name, 'click')"
-                    @mouseenter="openFlyover(theMenu.name, 'hover')" @mouseleave="closeFlyOver()" :class="[
+                <NuxtLink :to="theMenu.link" @click="closeFlyOver()" @mouseenter="openFlyover(theMenu.name, 'hover')"
+                    @mouseleave="closeFlyOver()" :class="[
                         openMenu === theMenu.name ?
                             'text-brand-primary border-b-red-600 border-b-4' :
                             'text-black'
@@ -144,8 +144,8 @@
 
                     </div>
 
-                    <div  class=" mt-8">
-                        <div  class="flex px-10">
+                    <div class=" mt-8">
+                        <div class="flex px-10">
                             <div class="flex col-span-2 w-full justify-between !pr-5">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
                                     @click="closeFlyOver()"
