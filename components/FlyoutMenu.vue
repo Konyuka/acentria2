@@ -700,8 +700,8 @@ const InsuranceMenus = ref([
             },
             {
                 name: 'General Asset & Stock Covers',
-                description: 'Protect your business assets and stock against damage or loss.',
-                link: '/insurance/asset-stock-covers',
+                description: 'Protect your company’s assets against damage or loss.',
+                link: '/insurance/general-asset-covers',
             },
             {
                 name: 'Financial Losses & Money Covers',
