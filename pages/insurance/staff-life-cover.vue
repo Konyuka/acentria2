@@ -2,9 +2,9 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Health!',
-    title: 'Prioritize Employee Well-being with Our Staff Health Insurance',
-    image: 'https://img.freepik.com/free-photo/smiling-black-male-doctor-holding-pointing-red-apple_1262-12499.jpg?t=st=1736527509~exp=1736531109~hmac=9b5bedc2e3fab0c1a24379e5d01602afdd414d215081cde1cca6c585f4400392&w=900',
+    subtitle: 'Ensure Smart Life!',
+    title: 'Providing peace of mind for your employees',
+    image: 'https://img.freepik.com/free-photo/relax-woman-looking-sea-beach_1249-611.jpg?t=st=1736531397~exp=1736534997~hmac=951e45cb932a04b418c35910b6d760c91c19f24cd4c7af1d7b2fdaae7e58149b&w=900',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
 
@@ -84,34 +84,29 @@ const whys = ref([
 
 const benefits3 = ref([
     {
-        name: 'Affordable Plans',
-        icon: 'fas fa-dollar-sign',
-        description: 'We offer a range of plans to fit different budgets and healthcare needs, ensuring everyone has access to quality health insurance.',
-    },
-    {
-        name: 'Network of Providers',
-        icon: 'fas fa-hospital',
-        description: 'Access to an extensive network of healthcare providers, ensuring your employees receive the best care possible.',
-    },
-    {
-        name: 'Employee Focus',
-        icon: 'fas fa-user-check',
-        description: 'We prioritize the well-being of your employees, offering personalized service and prompt claims processing.',
-    },
-    {
-        name: 'Easy and Hassle-Free',
-        icon: 'fas fa-check-circle',
-        description: 'Purchasing health insurance should be quick and easy. Our <span class="text-brand-primary">online platform</span> allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and <a href="/report-claim" class="text-brand-primary underline">file reimbursement claims</a> on the go.',
-    },
-    {
-        name: '24/7 Assistance',
-        icon: 'fas fa-clock',
-        description: 'Our dedicated support team is available around the clock to assist you with any health-related issues.',
-    },
-    {
-        name: 'Trusted Provider',
+        name: 'Comprehensive Protection',
         icon: 'fas fa-shield-alt',
-        description: 'With years of experience and a strong reputation, we are a trusted name in the health insurance industry.',
+        description: 'Our policies offer extensive coverage options to meet the diverse needs of your workforce.',
+    },
+    {
+        name: 'Affordable Rates',
+        icon: 'fas fa-dollar-sign',
+        description: 'We provide competitive group rates, making it cost-effective for both employers and employees.',
+    },
+    {
+        name: 'Flexible Options',
+        icon: 'fas fa-cogs',
+        description: 'Employees can customize their coverage to suit their personal and family needs.',
+    },
+    {
+        name: 'Expert Support',
+        icon: 'fas fa-user-tie',
+        description: 'Our team of experienced professionals is here to help you navigate the complexities of life assurance and find the best solutions for your organization.',
+    },
+    {
+        name: 'Easy Claims Process',
+        icon: 'fas fa-check-circle',
+        description: 'Our claims process is hassle free. It is important to familiarize yourself with your policy coverage and necessary claims documents when purchasing cover. Our team of experts are readily available to guide you through the process. <a href="/launch-claim" class="text-brand-primary underline">Launch a claim</a>.',
     },
 ]);
 
@@ -208,46 +203,43 @@ const whyTheInsurance = ref({
 
 const whatsCovered = ref([
     {
-        name: 'Equipment Protection',
-        icon: 'fas fa-golf-club',
-        description: 'Covers loss, theft, or damage to your golf clubs, bags, and other equipment, ensuring that you\'re always ready to play with confidence.',
+        name: 'Group Life Assurance',
+        icon: 'fas fa-users',
+        coverage: 'Provides a lump sum payment to the beneficiaries of an employee in the event of their death.',
+        benefits: 'Offers financial support to the employee\'s family, helping to cover funeral costs, outstanding debts, and living expenses.',
     },
     {
-        name: 'Personal Liability',
-        icon: 'fas fa-user-shield',
-        description: 'Provides coverage for any accidental damage or injury you may cause to others while on the golf course, protecting you from potential legal and financial liabilities.',
+        name: 'Voluntary Life Assurance',
+        icon: 'fas fa-hand-holding-heart',
+        coverage: 'Allows employees to purchase additional life assurance coverage at discounted group rates.',
+        benefits: 'Provides employees with the flexibility to enhance their coverage based on their individual needs and circumstances.',
     },
     {
-        name: 'Accident Coverage',
-        icon: 'fas fa-ambulance',
-        description: 'Includes coverage for accidental injuries sustained while playing golf, such as broken bones or other medical emergencies.',
+        name: 'Dependent Life Assurance',
+        icon: 'fas fa-child',
+        coverage: 'Provides coverage for the dependents of employees, ensuring financial support in the event of their death.',
+        benefits: 'Offers peace of mind to employees, knowing their loved ones are protected.',
     },
     {
-        name: 'Hole-In-One Coverage',
-        icon: 'fas fa-trophy',
-        description: 'Celebrate your achievement without financial worry. Our policy covers the cost of traditional hole-in-one celebrations, ensuring you can enjoy the moment.',
+        name: 'Acentria Last Expense',
+        icon: 'fas fa-cross',
+        coverage: 'Provides a simple and affordable way to cover costs such as funeral services, burial or cremation, and other end-of-life expenses, ensuring your family can focus on celebrating your life and legacy. Get a cover for premiums as low as KES 1,500 Per Annum.',
+        benefits: 'Alleviate the cost and hustle of funeral expense contributions by employees.',
     },
     {
-        name: 'Trolley and Buggy Cover',
-        icon: 'fas fa-car',
-        description: 'Protects your golf trolley and buggy against theft or damage, keeping your game running smoothly.',
+        name: 'Critical Illness',
+        icon: 'fas fa-heartbeat',
+        coverage: 'Provides coverage for the employees and dependents against financial burden as a result of severe health conditions. Our policy covers a wide range of critical illnesses, including cancer, heart attack, stroke, and more.',
+        benefits: 'Our critical illness insurance provides a safety net to help you manage the financial impact of severe health conditions, allowing you to focus on your recovery without added stress.',
     },
-    {
-        name: 'Worldwide Coverage',
-        icon: 'fas fa-globe',
-        description: 'Whether you\'re playing locally or internationally, our insurance provides coverage wherever you go, ensuring that you\'re protected no matter where your game takes you.',
-    },
-    {
-        name: 'Personal Possessions',
-        icon: 'fas fa-briefcase',
-        description: 'Coverage for personal possessions that you bring to the golf course, such as watches, phones, or other valuable items.',
-    },
-])
+]);
+
 
 const getStarted = ref({
     title: 'Get <span class="text-brand-primary">Started!</span>',
     description: 'Protect yourself and your equipment with our comprehensive golfer\'s insurance. Get a quote today and take the first step towards peace of mind and an enjoyable golfing experience.',
 })
+
 
 </script>
 
@@ -258,75 +250,47 @@ const getStarted = ref({
 
         <div class="container mx-auto py-10">
             <h1 class="text-2xl text-black !font-semibold mb-6">
-                Staff <span class="text-brand-primary">Health Insurance</span>
+                Staff <span class="text-brand-primary">Life Assurance</span>
             </h1>
             <p class="mt-6 text-xs leading-normal">
-                Investing in your employees' health and well-being is crucial for fostering a productive and motivated
-                workforce. Our staff health insurance provides extensive coverage to ensure your team has access to
-                quality healthcare, promoting a healthier and happier work environment.
+                Offering life assurance as part of your employee benefits package is a valuable way to show your
+                commitment to your staff's well-being. Our staff life assurance covers are designed to provide financial
+                security and peace of mind for your employees and their families.
             </p>
         </div>
 
-        <div class="container mx-auto pb-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">
-                What’s Health <span class="text-brand-primary">Insurance Plans?</span>
+        <div class="container">
+            <h1 class="text-2xl text-black !font-semibold mb-6">Types of Life <span class="text-brand-primary">
+                    Assurance Covers</span>
             </h1>
-            <p class="my-6 text-xs leading-normal">
-                We provide a variety of health insurance plans tailored to meet the diverse needs of
-                individuals,
-                families, and businesses. Our plans are designed to cover, individuals, families, seniors
-                and children.
-            </p>
-
-            <div class="mb-5">
-                <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-5">
-                    <NuxtLink :href="feature.url" v-for="feature in benefits2"
-                        class="button-animation flex px-3 py-2 shadow-md border-l-4 border-brand-primary">
-                        <div class="mr-6">
-                            <i :class="feature.icon" class="text-brand-primary text-xl"></i>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+                <NuxtLink :href="feature.url" v-for="feature in whatsCovered" class="flex p-5 shadow-md">
+                    <div class="mr-6">
+                        <i :class="feature.icon" class="text-brand-primary text-xl"></i>
+                    </div>
+                    <div>
+                        <div class=" mt-1 text-black text-md leading-normal font-bold">
+                            <p>
+                                {{ feature.name }}
+                            </p>
                         </div>
-                        <div>
-                            <div class="flex justify-between items-center w-full">
-                                <p class="subheading-class text-left">
-                                    {{ feature.name }}
-                                </p>
-
-                            </div>
-
-                            <div class="mt-1 text-black text-xs leading-normal">
-                                <p v-html="feature.description"></p>
-                            </div>
-
+                        <div class="flex flex-col gap-5 text-brand-primary font-semibold">
+                            <p class="mt-5">
+                                Coverage: <span class="text-black !font-normal">{{ feature.coverage }}</span>
+                            </p>
+                            <p>
+                                Benefits: <span class="text-black !font-normal">{{ feature.benefits }}</span>
+                            </p>
                         </div>
-                    </NuxtLink>
-                </div>
+
+                    </div>
+                </NuxtLink>
             </div>
         </div>
 
-        <div class="py-2">
-            <section class="relative py-1">
-                <div class="container">
-                    <h1 class="text-2xl !font-semibold text-black mb-5">
-                        What are the <span class="text-brand-primary">Key benefits?</span>
-                    </h1>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <div v-for="principle in benefits"
-                            class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
-                            <div class="flex flex-col">
-                                <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
-                                <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
-                                    principle.name }}</h4>
-                                <p class="text-sm leading-normal text-black" v-html="principle.description"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-
         <div class="container py-5">
-            <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
+            <h1 class="text-2xl font-semibold pb-10">Why Choose Our <span class="text-brand-primary">Life Assurance
+                    Covers?</span>
             </h1>
             <div
                 class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
@@ -342,6 +306,11 @@ const getStarted = ref({
                     </div>
                 </div>
             </div>
+            <p class="mt-6 text-xs leading-normal">
+                Our claims process is hassle free. It is important to familiarize yourself with your policy coverage and
+                necessary claims documents when purchasing cover. Our team of experts are readily available to guide you
+                through the process. <span class="text-brand-primary italic underline">Launch a claim</span>
+            </p>
         </div>
 
         <div class="container mx-auto py-10">
@@ -349,10 +318,10 @@ const getStarted = ref({
                 Get <span class="text-brand-primary">Started Today</span>
             </h1>
             <p class="mt-6 text-xs leading-normal">
-                Prioritize the health and well-being of your employees. <span
-                    class="text-brand-primary italic underline">Contact us today</span> to learn more about our
-                policies and how we can help you provide the best care and support, ensuring your employees and their
-                families stay healthy and protected.
+                Show your employees that you care about their future with our reliable and comprehensive life assurance
+                covers. <span class="text-brand-primary italic underline">Contact us today</span> to learn more about
+                our policies and how we can help you provide peace of mind
+                for your staff.
             </p>
         </div>
 

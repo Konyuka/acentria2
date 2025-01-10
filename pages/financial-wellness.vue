@@ -263,8 +263,6 @@ const features = [
                     </NuxtLink>
                 </div>
             </div>
-
-
         </div>
 
         <div class="container mx-auto pb-10">

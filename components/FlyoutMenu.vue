@@ -690,13 +690,13 @@ const InsuranceMenus = ref([
         items: [
             {
                 name: 'Staff Health Covers',
-                description: 'Ensure employee well-being with comprehensive health coverage.',
+                description: 'Elevate your employee’s wellbeing today.',
                 link: '/insurance/staff-health-cover',
             },
             {
                 name: 'Staff Life Covers',
-                description: 'Provide financial security for employees’ families with life insurance.',
-                link: '/insurance/staff-health-cover',
+                description: 'Provide financial security for employee’s families.',
+                link: '/insurance/staff-life-cover',
             },
             {
                 name: 'General Asset & Stock Covers',
