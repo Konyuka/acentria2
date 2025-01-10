@@ -261,7 +261,7 @@ const actionMenus = ref([
                 link: '/risk-management',
             },
             {
-                name: 'Cyber Risk',
+                name: 'Cyber Risk Management',
                 link: '/cyber-risk-management',
             },
             {
@@ -565,7 +565,7 @@ const InsuranceMenus = ref([
                 link: '/risk-management',
             },
             {
-                name: 'Cyber Risk',
+                name: 'Cyber Risk Management',
                 description: 'Protect your digital assets with our comprehensive cyber risk insurance solutions.',
                 link: '/cyber-risk-management',
             },

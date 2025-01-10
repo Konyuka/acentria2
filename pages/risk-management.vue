@@ -139,7 +139,7 @@ const benefits = ref([
                         develop personalized solutions that align with your unique needs and goals. With our proactive
                         approach, comprehensive coverage options, and unwavering support, you can trust us to keep you
                         safe and secure.
-                        Discover how our risk management services can safeguard your future. Contact us <NuxtLink
+                        Discover how our risk management services can safeguard your future. <NuxtLink
                             class="text-brand-primary underline italic">Contact us</NuxtLink> today
                         to learn
                         more and get started on your path to financial security.
