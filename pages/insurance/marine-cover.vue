@@ -2,9 +2,9 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Life!',
-    title: 'Providing peace of mind for your employees',
-    image: 'https://img.freepik.com/free-photo/relax-woman-looking-sea-beach_1249-611.jpg?t=st=1736531397~exp=1736534997~hmac=951e45cb932a04b418c35910b6d760c91c19f24cd4c7af1d7b2fdaae7e58149b&w=900',
+    subtitle: 'Ensure Smart Shipping!',
+    title: 'Protect Your Marine Operations',
+    image: 'https://img.freepik.com/free-photo/investigative-boats-sailing-turquoise-ocean-cloudy-sky_181624-6929.jpg?t=st=1736534018~exp=1736537618~hmac=d5cc08d81b51b0eada4258e914f6c37a57b16bbce944776496bdc21883bc5fde&w=900',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
 
@@ -84,24 +84,19 @@ const whys = ref([
 
 const benefits3 = ref([
     {
-        name: 'Comprehensive Protection',
-        icon: 'fas fa-shield-alt',
-        description: 'Our policies offer extensive coverage options to meet the diverse needs of your workforce.',
-    },
-    {
-        name: 'Affordable Rates',
-        icon: 'fas fa-dollar-sign',
-        description: 'We provide competitive group rates, making it cost-effective for both employers and employees.',
-    },
-    {
-        name: 'Flexible Options',
+        name: 'Tailored Solutions',
         icon: 'fas fa-cogs',
-        description: 'Employees can customize their coverage to suit their personal and family needs.',
+        description: 'Our policies are customized to meet the specific needs of your marine operations.',
+    },
+    {
+        name: 'Comprehensive Coverage',
+        icon: 'fas fa-shield-alt',
+        description: 'We offer a wide range of insurance options to protect every aspect of your business.',
     },
     {
         name: 'Expert Support',
         icon: 'fas fa-user-tie',
-        description: 'Our team of experienced professionals is here to help you navigate the complexities of life assurance and find the best solutions for your organization.',
+        description: 'Our team of experienced professionals is here to help you navigate the complexities of marine insurance and find the best solutions for your needs.',
     },
     {
         name: 'Easy Claims Process',
@@ -109,6 +104,7 @@ const benefits3 = ref([
         description: 'Our claims process is hassle free. It is important to familiarize yourself with your policy coverage and necessary claims documents when purchasing cover. Our team of experts are readily available to guide you through the process. <a href="/launch-claim" class="text-brand-primary underline">Launch a claim</a>.',
     },
 ]);
+
 
 
 const benefits2 = ref([
@@ -130,7 +126,7 @@ const benefits2 = ref([
 ]);
 
 const benefits = ref([
-    
+
     {
         name: 'Outpatient Care',
         icon: 'fas fa-stethoscope',
@@ -203,36 +199,55 @@ const whyTheInsurance = ref({
 
 const whatsCovered = ref([
     {
-        name: 'Group Life Assurance',
-        icon: 'fas fa-users',
-        coverage: 'Provides a lump sum payment to the beneficiaries of an employee in the event of their death.',
-        benefits: 'Offers financial support to the employee\'s family, helping to cover funeral costs, outstanding debts, and living expenses.',
+        name: 'Marine Cargo Insurance',
+        icon: 'fas fa-ship',
+        coverage: 'Protects goods in transit against loss or damage from various risks, including theft, fire, and natural disasters.',
+        benefits: 'Ensures that your cargo is covered throughout the entire supply chain, minimizing financial loss and disruption.',
     },
     {
-        name: 'Voluntary Life Assurance',
-        icon: 'fas fa-hand-holding-heart',
-        coverage: 'Allows employees to purchase additional life assurance coverage at discounted group rates.',
-        benefits: 'Provides employees with the flexibility to enhance their coverage based on their individual needs and circumstances.',
+        name: 'Marine Hull Insurance',
+        icon: 'fas fa-anchor',
+        coverage: 'Covers physical damage to the vessel, including machinery and equipment, whether on the water or in dry dock.',
+        benefits: 'Provides financial protection for your vessels, ensuring quick recovery and minimal downtime in case of damage.',
     },
     {
-        name: 'Dependent Life Assurance',
-        icon: 'fas fa-child',
-        coverage: 'Provides coverage for the dependents of employees, ensuring financial support in the event of their death.',
-        benefits: 'Offers peace of mind to employees, knowing their loved ones are protected.',
+        name: 'Marine Liability Insurance',
+        icon: 'fas fa-balance-scale',
+        coverage: 'Protects against third-party claims for bodily injury, property damage, and pollution caused by your marine operations.',
+        benefits: 'Covers legal fees, medical expenses, and damages, safeguarding your business assets and reputation.',
     },
     {
-        name: 'Acentria Last Expense',
-        icon: 'fas fa-cross',
-        coverage: 'Provides a simple and affordable way to cover costs such as funeral services, burial or cremation, and other end-of-life expenses, ensuring your family can focus on celebrating your life and legacy. Get a cover for premiums as low as KES 1,500 Per Annum.',
-        benefits: 'Alleviate the cost and hustle of funeral expense contributions by employees.',
+        name: 'Protection and Indemnity (P&I) Insurance',
+        icon: 'fas fa-shield-alt',
+        coverage: 'Provides comprehensive liability coverage for shipowners, including crew injuries, collision liabilities, and environmental damage.',
+        benefits: 'Ensures that your liabilities are covered, maintaining financial stability and compliance with international regulations.',
     },
     {
-        name: 'Critical Illness',
-        icon: 'fas fa-heartbeat',
-        coverage: 'Provides coverage for the employees and dependents against financial burden as a result of severe health conditions. Our policy covers a wide range of critical illnesses, including cancer, heart attack, stroke, and more.',
-        benefits: 'Our critical illness insurance provides a safety net to help you manage the financial impact of severe health conditions, allowing you to focus on your recovery without added stress.',
+        name: 'Freight Forwarders Liability Insurance',
+        icon: 'fas fa-box',
+        coverage: 'Protects freight forwarders against claims for loss or damage to goods in their care, custody, or control.',
+        benefits: 'Enhances trust and reliability by ensuring that your clients\' goods are protected during transit.',
+    },
+    {
+        name: 'Port and Terminal Operators Insurance',
+        icon: 'fas fa-warehouse',
+        coverage: 'Covers liabilities and property damage specific to port and terminal operations, including cargo handling and storage.',
+        benefits: 'Provides comprehensive protection for your port and terminal operations, ensuring smooth and uninterrupted services.',
+    },
+    {
+        name: 'Ship Repairers Liability Insurance',
+        icon: 'fas fa-wrench',
+        coverage: 'Protects ship repairers against claims for damage to vessels in their care, custody, or control.',
+        benefits: 'Ensures that your ship repair operations are covered, maintaining trust and reliability with your clients.',
+    },
+    {
+        name: 'War and Terrorism Insurance',
+        icon: 'fas fa-bomb',
+        coverage: 'Protects against losses due to acts of war, terrorism, and other politically motivated events.',
+        benefits: 'Provides peace of mind in an increasingly uncertain global environment.',
     },
 ]);
+
 
 
 const getStarted = ref({
@@ -250,18 +265,18 @@ const getStarted = ref({
 
         <div class="container mx-auto py-10">
             <h1 class="text-2xl text-black !font-semibold mb-6">
-                Staff <span class="text-brand-primary">Life Assurance</span>
+                Marine <span class="text-brand-primary"> Insurance</span>
             </h1>
             <p class="mt-6 text-xs leading-normal">
-                Offering life assurance as part of your employee benefits package is a valuable way to show your
-                commitment to your staff's well-being. Our staff life assurance covers are designed to provide financial
-                security and peace of mind for your employees and their families.
+                The marine industry is vital to global trade and commerce, but it also faces unique risks and
+                challenges. Our comprehensive marine insurance solutions are designed to protect your corporate shipping
+                operations, ensuring financial stability and peace of mind.
             </p>
         </div>
 
         <div class="container">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Types of Life <span class="text-brand-primary">
-                    Assurance Covers</span>
+            <h1 class="text-2xl text-black !font-semibold mb-6">Types of <span class="text-brand-primary"> Marine
+                    Insurance</span>
             </h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <NuxtLink :href="feature.url" v-for="feature in whatsCovered" class="flex p-5 shadow-md">
@@ -289,8 +304,7 @@ const getStarted = ref({
         </div>
 
         <div class="container py-5">
-            <h1 class="text-2xl font-semibold pb-10">Why Choose Our <span class="text-brand-primary">Life Assurance
-                    Covers?</span>
+            <h1 class="text-2xl font-semibold pb-10">Why Choose <span class="text-brand-primary">Our Insurance</span>
             </h1>
             <div
                 class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
@@ -306,6 +320,7 @@ const getStarted = ref({
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="container mx-auto py-10">
@@ -313,10 +328,10 @@ const getStarted = ref({
                 Get <span class="text-brand-primary">Started Today</span>
             </h1>
             <p class="mt-6 text-xs leading-normal">
-                Show your employees that you care about their future with our reliable and comprehensive life assurance
-                covers. <span class="text-brand-primary italic underline">Contact us today</span> to learn more about
-                our policies and how we can help you provide peace of mind
-                for your staff.
+
+                Protect your marine operations with our reliable and comprehensive insurance solutions. <span
+                    class="text-brand-primary italic underline">Contact us today</span>
+                to learn more about our policies and how we can help you secure your future in the marine industry.
             </p>
         </div>
 

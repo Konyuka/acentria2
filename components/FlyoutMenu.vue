@@ -720,8 +720,8 @@ const InsuranceMenus = ref([
             },
             {
                 name: 'Marine Insurance Covers',
-                description: 'Comprehensive coverage for your marine vessels and cargo, protecting against risks such as damage, theft, and loss during transit.',
-                link: '/insurance/marine-covers',
+                description: 'Protect your goods while shipping with our marine insurance covers',
+                link: '/insurance/marine-cover',
             },
             
         ]
