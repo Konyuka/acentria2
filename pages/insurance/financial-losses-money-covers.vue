@@ -2,9 +2,9 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Business!',
-    title: 'Protect Your Business.',
-    image: 'https://img.freepik.com/free-photo/shallow-focus-woman-with-facemask-holding-pos-machine-market_181624-39373.jpg?t=st=1736577997~exp=1736581597~hmac=6f92de8f6a2c46bcb98f4ac77b345e8a733e5acb0addea1371a2c12d385b9d25&w=900',
+    subtitle: 'Ensure Smart Finances!',
+    title: 'Safeguarding Your Financial Stability',
+    image: 'https://img.freepik.com/free-photo/close-up-business-people-working-with-business-document-discussion-meeting_1150-1469.jpg?t=st=1736579313~exp=1736582913~hmac=b20458f82d9cd708082bb798ac38f97e7eae8fad0d3dd0042ac00fd69d798449&w=900',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
 
@@ -86,7 +86,7 @@ const benefits3 = ref([
     {
         name: 'Tailored Solutions',
         icon: 'fas fa-cogs',
-        description: 'Our policies are customized to meet the specific needs of your business operations.',
+        description: 'Our policies are customized to meet the specific needs of your corporate operations.',
     },
     {
         name: 'Comprehensive Coverage',
@@ -96,7 +96,7 @@ const benefits3 = ref([
     {
         name: 'Expert Support',
         icon: 'fas fa-user-tie',
-        description: 'Our team of experienced professionals is here to help you navigate the complexities of business insurance and find the best solutions for your needs.',
+        description: 'Our team of experienced professionals is here to help you navigate the complexities of corporate insurance and find the best solutions for your needs.',
     },
     {
         name: 'Easy Claims Process',
@@ -126,17 +126,69 @@ const benefits2 = ref([
 ]);
 
 const benefits = ref([
+
     {
-        name: 'Integrated Risk Management',
-        icon: 'fas fa-layer-group',
-        description: 'Offers a holistic approach to risk management, making it easier for businesses to manage their insurance needs under one policy.',
+        name: 'Outpatient Care',
+        icon: 'fas fa-stethoscope',
+        description: 'Access to outpatient services, including doctor visits, specialist consultations, and diagnostic tests.',
     },
     {
-        name: 'Budget-Friendly Premiums',
-        icon: 'fas fa-dollar-sign',
-        description: 'We provide affordable premiums, ensuring businesses of all sizes can access quality insurance solutions without financial strain.',
+        name: 'Maternity and Newborn Care',
+        icon: 'fas fa-baby',
+        description: 'Comprehensive coverage for maternity care, childbirth, and newborn health services.',
+    },
+    {
+        name: 'Chronic Disease Management',
+        icon: 'fas fa-heartbeat',
+        description: 'Support and coverage for managing chronic conditions such as diabetes, hypertension, and asthma.',
+    },
+    {
+        name: 'Preventive Care',
+        icon: 'fas fa-shield-virus',
+        description: 'Coverage for routine check-ups, vaccinations, and preventive screenings to help employees maintain their health and catch potential issues early.',
+    },
+    {
+        name: 'Dental and Vision Care',
+        icon: 'fas fa-teeth',
+        description: 'Includes coverage for dental and vision care, supporting overall health and well-being.',
+    },
+    {
+        name: 'Mental Health Support',
+        icon: 'fas fa-brain',
+        description: 'Access to mental health services, including counseling and therapy, to support employees\' emotional and psychological well-being.',
+    },
+    {
+        name: 'Prescription Drug Coverage',
+        icon: 'fas fa-pills',
+        description: 'Coverage for prescription medications, ensuring employees can access necessary treatments without financial strain.',
+    },
+    {
+        name: 'Wellness Programs',
+        icon: 'fas fa-dumbbell',
+        description: 'Access to wellness programs, including fitness memberships, nutrition counseling, and health education, promoting a healthy lifestyle for employees.',
+    },
+    {
+        name: 'Family Coverage',
+        icon: 'fas fa-users',
+        description: 'Options to include coverage for employees\' families, ensuring their loved ones are protected and cared for.',
+    },
+    {
+        name: '24/7 Assistance',
+        icon: 'fas fa-clock',
+        description: 'Access to 24/7 assistance services for medical advice and support, providing peace of mind for employees and their families.',
+    },
+    {
+        name: 'Customizable Plans',
+        icon: 'fas fa-cogs',
+        description: 'Tailor your health insurance plan to meet the specific needs of your workforce, ensuring comprehensive and relevant coverage.',
+    },
+    {
+        name: 'Comprehensive Medical Coverage',
+        icon: 'fas fa-notes-medical',
+        description: 'Access to a wide range of medical services, including hospitalization, specialist consultations, surgeries, and emergency care, ensuring your employees receive the best care possible. The panel of providers shall be readily available on the <span class="text-brand-primary italic">self-help portal</span> or availed to you by our <span class="text-brand-primary italic">customer care.</span>',
     },
 ]);
+
 
 
 
@@ -147,42 +199,80 @@ const whyTheInsurance = ref({
 
 const whatsCovered = ref([
     {
-        name: 'Commercial General Liability (CGL)',
-        icon: 'fas fa-balance-scale',
-        description: 'Covers legal liabilities for bodily injury or property damage to third parties, as well as product liability to protect against claims related to products that cause harm or injury.',
+        name: 'Group Life Assurance',
+        icon: 'fas fa-users',
+        coverage: 'Provides a lump sum payment to the beneficiaries of an employee in the event of their death.',
+        benefits: 'Offers financial support to the employee\'s family, helping to cover funeral costs, outstanding debts, and living expenses.',
     },
     {
-        name: 'Property Damage',
-        icon: 'fas fa-building',
-        description: 'Covers damage to business property due to events like fire, theft, or natural disasters.',
+        name: 'Voluntary Life Assurance',
+        icon: 'fas fa-hand-holding-heart',
+        coverage: 'Allows employees to purchase additional life assurance coverage at discounted group rates.',
+        benefits: 'Provides employees with the flexibility to enhance their coverage based on their individual needs and circumstances.',
     },
     {
-        name: 'Business Interruption',
+        name: 'Dependent Life Assurance',
+        icon: 'fas fa-child',
+        coverage: 'Provides coverage for the dependents of employees, ensuring financial support in the event of their death.',
+        benefits: 'Offers peace of mind to employees, knowing their loved ones are protected.',
+    },
+    {
+        name: 'Acentria Last Expense',
+        icon: 'fas fa-cross',
+        coverage: 'Provides a simple and affordable way to cover costs such as funeral services, burial or cremation, and other end-of-life expenses, ensuring your family can focus on celebrating your life and legacy. Get a cover for premiums as low as KES 1,500 Per Annum.',
+        benefits: 'Alleviate the cost and hustle of funeral expense contributions by employees.',
+    },
+    {
+        name: 'Critical Illness',
+        icon: 'fas fa-heartbeat',
+        coverage: 'Provides coverage for the employees and dependents against financial burden as a result of severe health conditions. Our policy covers a wide range of critical illnesses, including cancer, heart attack, stroke, and more.',
+        benefits: 'Our critical illness insurance provides a safety net to help you manage the financial impact of severe health conditions, allowing you to focus on your recovery without added stress.',
+    },
+    {
+        name: 'Financial Loss Insurance',
+        icon: 'fas fa-piggy-bank',
+        coverage: 'Protects against financial losses resulting from various hazards, including fraud, embezzlement, and other criminal activities.',
+        benefits: 'Ensures that your business can recover from financial setbacks, maintaining stability and continuity.',
+    },
+    {
+        name: 'Money Insurance',
+        icon: 'fas fa-money-bill-wave',
+        coverage: 'Protects cash, cheques, and other financial instruments against loss or theft while on your premises or in transit.',
+        benefits: 'Provides financial protection for your liquid assets, ensuring that your business operations are not disrupted by unexpected losses.',
+    },
+    {
+        name: 'Fidelity Guarantee Insurance',
+        icon: 'fas fa-user-lock',
+        coverage: 'Protects against losses due to employee dishonesty, including theft, fraud, and embezzlement.',
+        benefits: 'Maintains trust and integrity within your organization by ensuring financial protection against internal risks.',
+    },
+    {
+        name: 'Cyber Liability Insurance',
+        icon: 'fas fa-laptop-code',
+        coverage: 'Protects against financial losses resulting from cyberattacks, data breaches, and other cyber incidents.',
+        benefits: 'Covers costs related to data recovery, legal fees, notification expenses, and potential fines, helping you manage the financial impact of cyber threats.',
+    },
+    {
+        name: 'Business Interruption Insurance',
         icon: 'fas fa-business-time',
-        description: 'Provides financial support if business operations are halted due to a covered event.',
+        coverage: 'Compensates for lost income and additional expenses incurred due to disruptions in your operations.',
+        benefits: 'Helps maintain financial stability and continuity of operations during unexpected interruptions.',
     },
     {
-        name: 'Employer’s Liability',
+        name: 'Directors and Officers (D&O) Insurance',
         icon: 'fas fa-user-tie',
-        description: 'Protects against claims from employees who suffer work-related injuries or illnesses.',
-    },
-    {
-        name: 'Personal Accident & Workers’ Compensation Cover',
-        icon: 'fas fa-user-injured',
-        description: 'Offers benefits for accidents resulting in injury or death of employees.',
-    },
-    {
-        name: 'Money and Goods in Transit',
-        icon: 'fas fa-truck',
-        description: 'Covers loss or damage to money and goods while being transported.',
+        coverage: 'Provides protection for the personal assets of directors and officers in the event of claims made against them for wrongful acts in their capacity as company leaders.',
+        benefits: 'Ensures that your leadership team can make decisions confidently, knowing they are protected against personal liability.',
     },
 ]);
+
 
 
 const getStarted = ref({
     title: 'Get <span class="text-brand-primary">Started!</span>',
     description: 'Protect yourself and your equipment with our comprehensive golfer\'s insurance. Get a quote today and take the first step towards peace of mind and an enjoyable golfing experience.',
 })
+
 
 </script>
 
@@ -193,59 +283,42 @@ const getStarted = ref({
 
         <div class="container mx-auto py-10">
             <h1 class="text-2xl text-black !font-semibold mb-6">
-                Biashara <span class="text-brand-primary"> Cover</span>
+                Financial Losses <span class="text-brand-primary">& Money Covers</span>
             </h1>
             <p class="mt-6 text-xs leading-normal">
-                This cover is designed for Small and Medium Enterprises SMEs. It typically bundles multiple types of
-                insurance coverage into a single policy offering comprehensive protection for businesses.
+                In the corporate world, financial losses can arise from various unforeseen events, impacting your
+                business's stability and growth. Our comprehensive financial losses and money insurance covers are
+                designed to protect your business from these risks, ensuring financial security and peace of mind.
             </p>
         </div>
 
-        <div class="container mb-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">What's <span class="text-brand-primary"> Covered</span>
+        <div class="container">
+            <h1 class="text-2xl text-black !font-semibold mb-6">Types of Life <span class="text-brand-primary">
+                    Assurance Covers</span>
             </h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
                 <NuxtLink :href="feature.url" v-for="feature in whatsCovered" class="flex p-5 shadow-md">
                     <div class="mr-6">
                         <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                     </div>
                     <div>
-                        <div class=" mt-1 text-gray-600 text-sm leading-normal font-bold">
+                        <div class=" mt-1 text-black text-md leading-normal font-bold">
                             <p>
                                 {{ feature.name }}
                             </p>
                         </div>
-                        <div class="mt-1 text-gray-600 text-[13px] leading-normal font-semibold">
+                        <div class="flex flex-col gap-5 text-brand-primary font-semibold">
+                            <p class="mt-5">
+                                Coverage: <span class="text-black !font-normal">{{ feature.coverage }}</span>
+                            </p>
                             <p>
-                                {{ feature.description }}
+                                Benefits: <span class="text-black !font-normal">{{ feature.benefits }}</span>
                             </p>
                         </div>
+
                     </div>
                 </NuxtLink>
             </div>
-        </div>
-
-
-
-        <div class="pb-10">
-            <section class="relative py-1">
-                <div class="container">
-                    <h1 class="text-2xl !font-semibold text-black mb-5">
-                        What are the <span class="text-brand-primary">Key benefits?</span>
-                    </h1>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <div v-for="principle in benefits"
-                            class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
-                            <div class="flex flex-col">
-                                <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
-                                <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
-                                    principle.name }}</h4>
-                                <p class="text-sm leading-normal text-black" v-html="principle.description"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
 
         <div class="container py-5">
@@ -272,10 +345,10 @@ const getStarted = ref({
                 Get <span class="text-brand-primary">Started Today</span>
             </h1>
             <p class="mt-6 text-xs leading-normal">
-
-                Protect your business with our reliable and comprehensive insurance solutions. <span
-                    class="text-brand-primary italic underline">Contact us today</span> to learn
-                more about our policies and how we can help you secure your future in the corporate world.
+                Protect your corporate assets with our reliable and comprehensive financial losses and money insurance
+                solutions. <span class="text-brand-primary italic underline">Contact us today</span> to learn more about
+                our policies and how we can help you secure your future
+                in the corporate world.
             </p>
         </div>
 

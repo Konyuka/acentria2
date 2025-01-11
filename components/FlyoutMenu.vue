@@ -705,7 +705,7 @@ const InsuranceMenus = ref([
             },
             {
                 name: 'Financial Losses & Money Covers',
-                description: 'Mitigate financial risks and protect against monetary losses.',
+                description: 'Safeguarding Your Financial Stability',
                 link: '/insurance/financial-losses-money-covers',
             },
             {
