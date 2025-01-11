@@ -2,39 +2,49 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Biashara Insurance',
-    title: 'SME Business Insurance',
-    image: 'https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content:'Acentria is here to make insurance work for small businesses like yours, keeping things simple and supportive. We get that running a small business is a mix of challenges and aspirations, which is why we’re excited to offer flexible insurance solutions designed just for you. With Acentria, you’re not just getting insurance; you’re getting a helping hand that’s there to support your business journey. We know you’re busy, so we’ve made getting the coverage you need straightforward.'
+    subtitle: 'Ensure Smart Business!',
+    title: 'Protect Your Business.',
+    image: 'https://img.freepik.com/free-photo/shallow-focus-woman-with-facemask-holding-pos-machine-market_181624-39373.jpg?t=st=1736577997~exp=1736581597~hmac=6f92de8f6a2c46bcb98f4ac77b345e8a733e5acb0addea1371a2c12d385b9d25&w=900',
+    content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
-
 
 const faqs = ref([
     {
-        name: 'What does SME business cover typically include?',
-        content: 'SME business cover includes coverage options such as general liability insurance, property insurance, workers\' compensation, commercial auto insurance, cyber liability insurance, and business interruption insurance, among others.'
+        name: 'What is golfer\'s insurance?',
+        content: 'Golfer\'s insurance is a specialized insurance policy that provides coverage for golfers, protecting them against various risks such as loss or damage to golf equipment, personal liability, accidental injuries, and more while on the golf course.',
     },
     {
-        name: 'Can this cover be customized to match specific needs?',
-        content:'Yes, SME business cover is often customizable. Businesses can tailor their coverage by selecting the types and amounts of insurance that best address their unique risks and requirements.'
+        name: 'Why do I need golfer\'s insurance?',
+        content: 'Golfer\'s insurance provides financial protection and peace of mind, ensuring that you are covered for unexpected events such as equipment theft, accidental injuries, or liability for damage to others while playing golf.',
     },
     {
-        name: 'How are premiums determined?',
-        content: 'Premiums for SME business cover are determined based on factors like the industry, the size of the business, the location, the type and amount of coverage needed, and the business\'s claims history.'
+        name: 'How much does golfer\'s insurance cost?',
+        content: 'The cost of golfer\'s insurance varies depending on factors such as the coverage limits, the value of your equipment, and any additional coverage options you choose. It\'s best to get a quote to determine the exact cost based on your specific needs.',
     },
     {
-        name: 'Can this cover help protect against legal claims and lawsuits from customers or employees?',
-        content:'Yes, SME business cover often includes general liability insurance, which provides coverage for legal claims and lawsuits stemming from bodily injury, property damage, or other liabilities associated with the business.'
+        name: 'Is golfer\'s insurance only for professional golfers?',
+        content: 'No, golfer\'s insurance is available for both amateur and professional golfers. It is designed to provide coverage for anyone who enjoys playing golf, regardless of skill level.',
     },
     {
-        name: 'How do I make a claim & How fast is the claim process?',
-        content:'Acentria Insurance typically takes between 10 to 14 working days to thoroughly verify and investigate your claim. To claim, email your request to claims@acentriagroup.com, or call us direct. Once the investigation is complete, we will personally get in touch with you either by phone or through one of our agents to provide you with the next steps in the claims process. Your prompt cooperation and timely submission of required documentation can help expedite this process.'
+        name: 'How do I file a claim with golfer\'s insurance?',
+        content: '<p>Our claims process is hassle free.</p><p>To file a claim, follow these steps:</p><ol class="ml-5"><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Report the Incident: Notify us as soon as possible.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Gather Documentation: Collect necessary documents, such as receipts, photos of the damage, and any relevant reports.</li><li><i class="fas fa-caret-right text-brand-primary mr-1"></i> Submit the Claim: Submit the completed claim form and documentation to your insurance provider.</li></ol><p>The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary claims documents in the event of a claims.</p><NuxtLink href="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
+    },
+    {
+        name: 'Does golfer\'s insurance cover injuries sustained off the golf course?',
+        content: 'Golfer\'s insurance typically covers injuries sustained while playing golf or participating in golf-related activities. Injuries sustained off the golf course may not be covered, depending on the policy terms.',
+    },
+    {
+        name: 'Can I customize my golfer\'s insurance policy?',
+        content: 'Yes, many golfer\'s insurance policies offer customizable options, allowing you to add coverage for specific needs such as higher equipment values, additional personal liability, or enhanced accident coverage.',
+    },
+    {
+        name: 'What is hole-in-one coverage?',
+        content: 'Hole-in-one coverage is a unique benefit of golfer\'s insurance that covers the costs associated with traditional hole-in-one celebrations. This may include expenses for drinks, meals, or other celebratory events that are customary in the golfing community.',
     },
     {
         name: 'How can I get started?',
-        content: '<b>1.Compare and Choose:</b> Compare insurance quotes, select a plan that suits your needs, and make the purchase. <br> <b>2.Register and Get Insured:</b> Register for your chosen plan, and you\'ll be insured. <br><br> Our agent will reach out and follow up with you to ensure you have been insured and provide you with all the necessary information, including an insurance card, access to the self- help portal, your insurance certificate, and any other requirements you may need.',
+        content: '<p>Our streamlined enrollment process makes it simple to get the coverage you need.</p><p>You can compare plans, get quotes, and enroll online within minutes - <a href="#" class="font-bold italic text-brand-primary">Do it Yourself</a> or Review your quotes online, then get tailored advice from our agents - <a href="#" class="font-bold italic text-brand-primary">Engage our expert</a>.</p><p>Our customer service team is available to assist you with any questions or concerns.</p>',
     },
-
 ])
 
 const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
@@ -42,7 +52,7 @@ const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Ace
 const whys = ref([
     {
         title: 'We save you money',
-        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products, ensure prudent risk management, reduce your loss ratios, and hence save you on cost',
+        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products & reduce your loss ratios',
         icon: 'savings',
     },
     {
@@ -71,6 +81,109 @@ const whys = ref([
         icon: 'sentiment_satisfied',
     },
 ])
+
+const benefits3 = ref([
+    {
+        name: 'Tailored Solutions',
+        icon: 'fas fa-cogs',
+        description: 'Our policies are customized to meet the specific needs of your business operations.',
+    },
+    {
+        name: 'Comprehensive Coverage',
+        icon: 'fas fa-shield-alt',
+        description: 'We offer a wide range of insurance options to protect every aspect of your business.',
+    },
+    {
+        name: 'Expert Support',
+        icon: 'fas fa-user-tie',
+        description: 'Our team of experienced professionals is here to help you navigate the complexities of business insurance and find the best solutions for your needs.',
+    },
+    {
+        name: 'Easy Claims Process',
+        icon: 'fas fa-check-circle',
+        description: 'Our claims process is hassle free. It is important to familiarize yourself with your policy coverage and necessary claims documents when purchasing cover. Our team of experts are readily available to guide you through the process. <a href="/launch-claim" class="text-brand-primary underline">Launch a claim</a>.',
+    },
+]);
+
+
+
+const benefits2 = ref([
+    {
+        name: 'Corporate Covers',
+        icon: 'fas fa-users',
+        description: 'Purchased by an employer for employees only, or with their families (spouses and children). This cover is flexible and can be customized to the employer’s needs. The plan can be fully insured or partly funded (Hybrid).',
+    },
+    {
+        name: 'Micro Covers (SME)',
+        icon: 'fas fa-briefcase',
+        description: 'Designed for small and micro enterprises with populations of 3-10 employees. These plans waive waiting periods and co-pays, offering a tailored solution for businesses seeking off-the-shelf products.',
+    },
+    {
+        name: 'International Medical Cover',
+        icon: 'fas fa-plane',
+        description: 'Ideal for individuals planning to spend more than a year abroad or frequent travelers. This cover provides access to private healthcare in your country of residence and internationally.',
+    },
+]);
+
+const benefits = ref([
+    {
+        name: 'Integrated Risk Management',
+        icon: 'fas fa-layer-group',
+        description: 'Offers a holistic approach to risk management, making it easier for businesses to manage their insurance needs under one policy.',
+    },
+    {
+        name: 'Budget-Friendly Premiums',
+        icon: 'fas fa-dollar-sign',
+        description: 'We provide affordable premiums, ensuring businesses of all sizes can access quality insurance solutions without financial strain.',
+    },
+]);
+
+
+
+const whyTheInsurance = ref({
+    title: 'Why Choose <span class="text-brand-primary">Golfer’s Insurance</span>',
+    description: 'Golfing is a wonderful sport, but it comes with its share of risks. Our golfer\'s insurance provides specialized coverage to protect you, your equipment, and your liabilities on the course. Ensure you can enjoy your game with peace of mind, knowing that you\'re covered for any unexpected events.',
+})
+
+const whatsCovered = ref([
+    {
+        name: 'Commercial General Liability (CGL)',
+        icon: 'fas fa-balance-scale',
+        description: 'Covers legal liabilities for bodily injury or property damage to third parties, as well as product liability to protect against claims related to products that cause harm or injury.',
+    },
+    {
+        name: 'Property Damage',
+        icon: 'fas fa-building',
+        description: 'Covers damage to business property due to events like fire, theft, or natural disasters.',
+    },
+    {
+        name: 'Business Interruption',
+        icon: 'fas fa-business-time',
+        description: 'Provides financial support if business operations are halted due to a covered event.',
+    },
+    {
+        name: 'Employer’s Liability',
+        icon: 'fas fa-user-tie',
+        description: 'Protects against claims from employees who suffer work-related injuries or illnesses.',
+    },
+    {
+        name: 'Personal Accident & Workers’ Compensation Cover',
+        icon: 'fas fa-user-injured',
+        description: 'Offers benefits for accidents resulting in injury or death of employees.',
+    },
+    {
+        name: 'Money and Goods in Transit',
+        icon: 'fas fa-truck',
+        description: 'Covers loss or damage to money and goods while being transported.',
+    },
+]);
+
+
+const getStarted = ref({
+    title: 'Get <span class="text-brand-primary">Started!</span>',
+    description: 'Protect yourself and your equipment with our comprehensive golfer\'s insurance. Get a quote today and take the first step towards peace of mind and an enjoyable golfing experience.',
+})
+
 </script>
 
 <template>
@@ -78,15 +191,94 @@ const whys = ref([
     <div class="bg-white">
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
-        <div class="container mx-auto px-4 py-2 mt-5">
-            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+        <div class="container mx-auto py-10">
+            <h1 class="text-2xl text-black !font-semibold mb-6">
+                Biashara <span class="text-brand-primary"> Cover</span>
             </h1>
-            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+            <p class="mt-6 text-xs leading-normal">
+                This cover is designed for Small and Medium Enterprises SMEs. It typically bundles multiple types of
+                insurance coverage into a single policy offering comprehensive protection for businesses.
+            </p>
         </div>
 
-        <Accordion :faqs="faqs" />
+        <div class="container mb-10">
+            <h1 class="text-2xl text-black !font-semibold mb-6">What's <span class="text-brand-primary"> Covered</span>
+            </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <NuxtLink :href="feature.url" v-for="feature in whatsCovered" class="flex p-5 shadow-md">
+                    <div class="mr-6">
+                        <i :class="feature.icon" class="text-brand-primary text-xl"></i>
+                    </div>
+                    <div>
+                        <div class=" mt-1 text-gray-600 text-sm leading-normal font-bold">
+                            <p>
+                                {{ feature.name }}
+                            </p>
+                        </div>
+                        <div class="mt-1 text-gray-600 text-[13px] leading-normal font-semibold">
+                            <p>
+                                {{ feature.description }}
+                            </p>
+                        </div>
+                    </div>
+                </NuxtLink>
+            </div>
+        </div>
 
-        <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" />
+
+
+        <div class="pb-10">
+            <section class="relative py-1">
+                <div class="container">
+                    <h1 class="text-2xl !font-semibold text-black mb-5">
+                        What are the <span class="text-brand-primary">Key benefits?</span>
+                    </h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div v-for="principle in benefits"
+                            class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
+                            <div class="flex flex-col">
+                                <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
+                                <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
+                                    principle.name }}</h4>
+                                <p class="text-sm leading-normal text-black" v-html="principle.description"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container py-5">
+            <h1 class="text-2xl font-semibold pb-10">Why Choose Our <span class="text-brand-primary">Life Assurance
+                    Covers?</span>
+            </h1>
+            <div
+                class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
+                <div v-for="benefit in benefits3"
+                    class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
+                    <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
+                    <div>
+                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+
+                        </h5>
+                        <p class="leading-normal font-regular text-light-content text-xs" v-html="benefit.description">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto py-10">
+            <h1 class="text-2xl text-black !font-semibold mb-6">
+                Get <span class="text-brand-primary">Started Today</span>
+            </h1>
+            <p class="mt-6 text-xs leading-normal">
+
+                Protect your business with our reliable and comprehensive insurance solutions. <span
+                    class="text-brand-primary italic underline">Contact us today</span> to learn
+                more about our policies and how we can help you secure your future in the corporate world.
+            </p>
+        </div>
 
         <ContactForm />
     </div>
