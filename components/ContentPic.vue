@@ -6,7 +6,7 @@ const props = defineProps({
 const currentRoute = useRoute().fullPath
 
 const showButton = computed(() => {
-    if (currentRoute === '/insurance-products' || currentRoute === '/insurance/aviation-cover' || currentRoute === '/acentria-group-reinsurance' || props.content.subheading === 'A reliable partner you can trust.') {
+    if (currentRoute === '/insurance-products' || currentRoute === '/insurance/aviation-cover' || currentRoute === '/acentria-group-reinsurance' || props.content.subheading === 'A reliable partner you can trust in <br>  Insurance & Risk Management') {
         return false
     }else{
         return true
