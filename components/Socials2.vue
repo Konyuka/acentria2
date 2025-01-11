@@ -1,28 +1,24 @@
 <template>
-    <div class=" relative isolate overflow-hidden bg-black py-5 font-sans">
-        <!-- <NuxtImg src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" /> -->
+    <div class="container relative mx-auto max-w-6xl">
 
-        <div class="absolute inset-0 bg-black opacity-30 rounded-md"></div>
-        <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
-
-            <div>
-                <dl
-                    class="pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-4 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                    <div v-for="(feature, index) in socials" :key="feature.name" class="flex flex-col">
-                        <dt class="subheading-class text-white">
-                            <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
-                                <i :class="feature.icon" class=" text-white" aria-hidden="true" />
-                            </div>
+        <div>
+            <dl
+                class="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-2 text-black sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                <a href="#" v-for="(feature, index) in socials" :key="feature.name" class="hover:shadow-2xl rounded-md p-3 button-primary flex flex-col">
+                    <dt class="subheading-class text-black flex gap-3">
+                        <div class="mb-2 flex h-14 w-14 items-center justify-center rounded-lg bg-brand-primary">
+                            <i :class="feature.icon" class=" text-white" aria-hidden="true" />
+                        </div>
+                        <div>
                             {{ feature.title }}
-                        </dt>
-                        <dd class="mt-1 flex flex-auto flex-col text-[13px]  text-white">
-                            <p class="flex-auto" v-html="feature.description"></p>
-                        </dd>
-                    </div>
-                </dl>
-            </div>
+                            <dd class="mt-1 flex flex-auto flex-col text-[13px]  text-black">
+                                <p class="flex-auto" v-html="feature.description"></p>
+                            </dd>
+                        </div>
+                    </dt>
+                </a>
+            </dl>
         </div>
-       
     </div>
 </template>
 
