@@ -19,7 +19,7 @@ const props = defineProps({
             style="color: transparent; transform: scaleX(-1);" />
 
         <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-80 z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-white/40 opacity-100 z-0"></div>
 
 
         <div
