@@ -13,10 +13,10 @@ const props = defineProps({
             Your browser does not support the video tag.
         </video> -->
 
+
         <!-- Background Image -->
-        <img loading="lazy" src="/img/hires.jpg" alt="Background Image"
-            class="drop-shadow-md w-full h-auto object-cover fixed top-0 left-0 z-[-1]"
-            style="color: transparent; " />
+        <img loading="lazy" src="/img/xxl.jpg" alt="Background Image"
+            class="drop-shadow-md w-screen h-screen object-fill fixed top-0 left-0 z-[-1]" style="color: transparent; " />
 
         <!-- Gradient Overlay -->
         <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-white/40 opacity-100 z-0"></div>
