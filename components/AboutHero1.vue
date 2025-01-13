@@ -13,14 +13,14 @@ const props = defineProps({
             Your browser does not support the video tag.
         </video> -->
 
-        <img loading="lazy" src="/img/building3.jpg" alt="Background Image"
+        <img loading="lazy" src="/img/building5.png" alt="Background Image"
             class=" drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
             style="color: transparent; transform: scaleX(-1);">
         <!-- <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
             class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
             style="color: transparent; transform: scaleX(-1);"> -->
 
-        <div class="absolute inset-0 bg-black opacity-0"></div>
+        <!-- <div class="absolute inset-0 bg-black opacity-0"></div> -->
 
         <div
             class="absolute top-1/2 pl-10 mx-10 md:mx-0 md:left-1/3 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 sm:px-3 text-white min-w-[60vw]">
