@@ -291,7 +291,7 @@ onMounted(() => {
                   <NuxtImg src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
                     class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
                   <div
-                    class="!py-28 text-xl relative z-20 bg-gradient-to-r from-gray-700 to-transparent w-full h-full top-0 md:p-16 p-6 flex flex-col justify-between rounded-md">
+                    class="!py-28 text-xl relative z-20  to-transparent w-full h-full top-0 md:p-16 p-6 flex flex-col justify-between rounded-md">
                     <div>
                       <p
                         class="container ml-20 text-xs leading-loose   text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4">
