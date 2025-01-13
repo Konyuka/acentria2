@@ -9,131 +9,88 @@ const content = ref({
 const data = ref({
     services: [
         {
-            name: 'Reinsurance Optimization',
-            content: 'Optimize your reinsurance strategy with Acentria. We help you maximize efficiency and minimize risk.',
-            icon: 'fas fa-chart-line',
-            link: '/reinsurance/reinsurance-optimization'
+            name: 'Treaty Administration',
+            content: 'Unlock the full potential of your reinsurance program with our comprehensive Treaty Administration services.',
+            icon: 'fas fa-file-contract',
+            link: '/reinsurance/treaty-administration',
         },
         {
-            name: 'Treaty Administration',
-            content: 'Efficiently manage your reinsurance treaties with our comprehensive administration services.',
-            icon: 'fas fa-file-contract',
-            link: '/reinsurance/treaty-administration'
+            name: 'Reinsurance Optimization',
+            content: 'Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance.',
+            icon: 'fas fa-chart-line',
+            link: '/reinsurance/reinsurance-optimization',
         },
         {
             name: 'Claims Management',
-            content: 'Streamline your claims process with our expert management services, ensuring quick and fair settlements.',
+            content: 'Empower your business with our comprehensive claims management solutions and see the difference in your bottom line.',
             icon: 'fas fa-tasks',
-            link: '/reinsurance/claims-management'
+            link: '/reinsurance/claims-management',
         },
         {
-            name: 'Value Addition',
-            content: 'Enhance your reinsurance portfolio with our value-added services, tailored to meet your unique needs.',
-            icon: 'fas fa-plus-circle',
-            link: '/reinsurance/value-addition'
+            name: 'Catastrophic Modelling',
+            content: 'Harness advanced catastrophe modeling to assess and manage exposure to natural disasters, ensuring robust risk management strategies.',
+            icon: 'fas fa-cloud-showers-heavy',
+            link: '/reinsurance/catastrophic-modelling',
+        },
+        {
+            name: 'Return on Risk Adjusted Capital',
+            content: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
+            icon: 'fas fa-coins',
+            link: '/reinsurance/return-on-risk-adjusted-capital',
+        },
+        {
+            name: 'Rating Agency Advisory',
+            content: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
+            icon: 'fas fa-star',
+            link: '/reinsurance/rating-agency-advisory',
+        },
+        {
+            name: 'Risk Based Capital Regulation',
+            content: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
+            icon: 'fas fa-balance-scale',
+            link: '/reinsurance/risk-based-capital-regulation',
         },
     ],
     solutions: [
         {
-            name: 'Facultative Solutions',
-            content: 'Tailored reinsurance solutions for specific risks, providing flexibility and targeted coverage.',
-            icon: 'fas fa-tools',
-            link: '/reinsurance/facultative-solution'
-        },
-        {
             name: 'Treaty Solutions',
-            content: 'Comprehensive reinsurance agreements that cover a portfolio of risks, ensuring stability and predictability.',
+            content: 'Unlock the potential of your insurance portfolio with our comprehensive Treaty Solutions.',
             icon: 'fas fa-file-alt',
-            link: '/reinsurance/treaty-solutions'
+            link: '/reinsurance/treaty-solutions',
         },
         {
-            name: 'Special Lines Solutions',
-            content: 'Customized reinsurance for niche markets and unique risks, offering specialized protection.',
+            name: 'Facultative Solutions',
+            content: 'Customized solutions for specific risks on both traditional lines and special lines of business.',
+            icon: 'fas fa-tools',
+            link: '/reinsurance/facultative-solutions',
+        },
+        {
+            name: 'Structured Solutions',
+            content: 'Unlock the power of tailored financial strategies with our Structured Solutions.',
             icon: 'fas fa-th-list',
-            link: '/reinsurance/special-lines'
+            link: '/reinsurance/structured-solutions',
         },
     ],
     data: [
         {
             name: 'Reinsurance Data Analytics Tool',
-            content: 'Leverage advanced analytics to optimize your reinsurance strategies and make informed decisions.',
+            content: 'Enhance decision making with our reinsurance data analytics tools.',
             icon: 'fas fa-chart-bar',
-            link: '/reinsurance/reinsurance-data-analytics-tool'
+            link: '/reinsurance/data-analytics-tool',
         },
         {
-            name: 'Acentria Reinsurance Solution',
-            content: 'Comprehensive reinsurance solutions tailored to meet the unique needs of your business.',
+            name: 'AcenRe Solution',
+            content: 'Optimize reinsurance strategies with our comprehensive reinsurance solutions.',
             icon: 'fas fa-briefcase',
-            link: '/reinsurance/acentre-reinsurance-solution'
-        },
-        {
-            name: 'Catastrophic Modelling',
-            content: 'Utilize sophisticated models to assess and mitigate the impact of catastrophic events on your portfolio.',
-            icon: 'fas fa-chart-area',
-            link: '/reinsurance/catastrophic-modelling'
-        },
-        {
-            name: 'Return On Risk Adjusted Capital',
-            content: 'Maximize your returns by effectively managing risk-adjusted capital in your reinsurance operations.',
-            icon: 'fas fa-chart-line',
-            link: '/reinsurance/return-on-risk-adjusted-capital'
+            link: '/reinsurance/acenre-solution',
         },
     ]
 });
 
-const data2 = ref({
-    services: [
-        {
-            name: 'Financial Services',
-            content: 'Comprehensive financial services to support your actuarial needs, ensuring stability and growth.',
-            icon: 'account_balance',
-        },
-        {
-            name: 'Insurance Consulting',
-            content: 'Expert insurance consulting to help you navigate complex actuarial challenges and optimize your strategies.',
-            icon: 'lightbulb',
-        },
-        {
-            name: 'Reinsurance Consulting',
-            content: 'Specialized reinsurance consulting to streamline your processes and enhance risk management.',
-            icon: 'policy',
-        },
-    ],
-    other: [
-        {
-            name: 'IFRS 17 Implementation',
-            content: 'Expert guidance on implementing IFRS 17, ensuring compliance and accurate financial reporting.',
-            icon: 'account_balance',
-        },
-        {
-            name: 'Innovation and Digitization',
-            content: 'Leverage cutting-edge technology to enhance actuarial processes and drive innovation.',
-            icon: 'lightbulb',
-        },
-        {
-            name: 'Retirement and Employee Benefits',
-            content: 'Comprehensive actuarial services for retirement plans and employee benefits, ensuring financial security.',
-            icon: 'group',
-        },
-    ],
-    products: [
-        {
-            name: 'AcentRe',
-            content: 'AcentRe is an online reinsurance platform that specializes in data cleaning, pricing, and optimization to enhance your reinsurance strategies.',
-            icon: 'cloud',
-        },
-        {
-            name: 'Data Analysis Tool',
-            content: 'Utilize our Data Analysis Tool for comprehensive insights and tailored reinsurance solutions to meet your unique business needs.',
-            icon: 'insights',
-        },
-    ]
-})
-
 
 const menus = ref([
     {
-        name: 'Reinsurance Services',
+        name: 'Expert Services',
         tag: 'services',
         icon: 'fas fa-handshake',
     },
@@ -143,141 +100,96 @@ const menus = ref([
         icon: 'fas fa-cogs',
     },
     {
-        name: 'Data and Modelling',
+        name: 'Innovation and Digitization',
         tag: 'data',
         icon: 'fas fa-chart-line',
     },
 ])
 
-const whys = ref([
-    {
-        name: 'Innovation',
-        content: 'We are Passionate about innovation because we believe its a driving force that fuels creativity, curiosity, and the pursuit of novel ideas and solutions',
-        icon: '',
-    },
-    {
-        name: 'Data driven analytical capabilities',
-        content: 'Our ability to use data, advanced analytics, and technology to extract valuable insights, help us to guide business to make informed decisions',
-        icon: '',
-    },
-    {
-        name: 'Distinctive consumer insight capabilities',
-        content: 'We offer distinctive consumer insight capabilities to help our clients understand the needs, and preferences of their clients.',
-        icon: '',
-    },
-    {
-        name: 'Better results',
-        content: 'Achieving better results and long term prosperity is a shared long term goal for Acentria group, individuals, organizations, and societies alike',
-        icon: '',
-    },
-])
-
-const heroContent = ref({
-    name: `<h1
-                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-normal lg:leading-normal">
-                                    <span
-                                        class="font-sans tracking-normal text-gray-900 leading-normal lg:leading-normal">Acentria</span>
-                                    Reinsurance Brokers
-                                </h1>`,
-})
-
-
-const bannerTitle = ref('Acentria Reinsurance Brokers')
-
 const slides = ref([
     {
-        imageUrl: 'https://images.pexels.com/photos/3729557/pexels-photo-3729557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Reinsurance Optimization',
-        description: 'Optimize your reinsurance strategy with Acentria. We help you maximize efficiency and minimize risk.',
+        imageUrl: '/img/resilience.jpg',
+        title: 'Empowering Resilience Through Tailored Reinsurance Solutions ',
+        description:'',
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: 'https://images.pexels.com/photos/189476/pexels-photo-189476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Treaty Administration',
-        description: 'Efficiently manage your reinsurance treaties with our comprehensive administration services.',
+        imageUrl: '/img/futures.jpg',
+        title: 'Navigating Risks, Securing Futures, and Empowering Growth ',
+        description: '',
         url: '/contact-acentria-group',
     },
     {
-        imageUrl: 'https://images.pexels.com/photos/7821684/pexels-photo-7821684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Claims Management',
-        description: 'Streamline your claims process with our expert management services, ensuring quick and fair settlements.',
-        url: '/contact-acentria-group',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Value Addition',
-        description: 'Enhance your reinsurance portfolio with our value-added services, tailored to meet your unique needs.',
-        url: '/contact-acentria-group',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Facultative Solutions',
-        description: 'Tailored reinsurance solutions for specific risks, providing flexibility and targeted coverage.',
-        url: '/contact-acentria-group',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/9068372/pexels-photo-9068372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Treaty Solutions',
-        description: 'Comprehensive reinsurance agreements that cover a portfolio of risks, ensuring stability and predictability.',
-        url: '/contact-acentria-group',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Special Lines Solutions',
-        description: 'Customized reinsurance for niche markets and unique risks, offering specialized protection.',
-        url: '/contact-acentria-group',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Reinsurance Data Analytics Tool',
-        description: 'Leverage advanced analytics to optimize your reinsurance strategies and make informed decisions.',
-        url: '/contact-acentria-group',
-    },
-    {
-        imageUrl: '/img/ballon.jpg',
-        title: 'Acentria Reinsurance Solution',
-        description: 'Comprehensive reinsurance solutions tailored to meet the unique needs of your business.',
-        url: '/contact-acentria-group',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/11836813/pexels-photo-11836813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Catastrophic Modelling',
-        description: 'Utilize sophisticated models to assess and mitigate the impact of catastrophic events on your portfolio.',
-        url: '/contact-acentria-group',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/5716052/pexels-photo-5716052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Return On Risk Adjusted Capital',
-        description: 'Maximize your returns by effectively managing risk-adjusted capital in your reinsurance operations.',
+        imageUrl: '/img/plan.jpg',
+        title: 'Discover Our Services',
+        description: '',
         url: '/contact-acentria-group',
     },
 ])
 
-const exploreHelp = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
-    heading: 'Stabilizing the Company\'s  <br/> <span class="text-brand-primary">Overall Operating Results.</span>',
-    subheading: '',
-    image: 'https://images.pexels.com/photos/1051449/pexels-photo-1051449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    link: '/insurance-claims',
-    content: 'To navigate volatility ranging from climate to economic factors, insurers need to delve deep into understanding and mitigating the risks by enhancing their view of risk. Data, tools and analytics must complement broking and advisory capabilities to help protect and grow insurers’ businesses. Insurers often seek to reduce the wide swings in profit and loss margins inherent to the insurance business. These fluctuations result, in part, from the unique nature of insurance, which involves pricing a product whose actual cost will not be known until sometime in the future. Through reinsurance, insurers can reduce these fluctuations in loss experience, and stabilize the company\'s overall operating results.',
-})
-
-const exploreHelp2 = ref({
+const content1 = ref({
     orientation: 'lg:flex-row flex-col',
-    heading: 'Protecting <br/><span class="text-brand-primary">Against Catastrophes</span>',
+    heading: '<h1 class="heading-class text-left"> Welcome to <span class="text-brand-primary"> Acentria </span> </h1> <h4 class="text-xl font-semibold text-left"> Your Trusted <span class="text-brand-primary">Reinsurance Partner</span> </h4>',
     subheading: '',
-    image: 'https://images.pexels.com/photos/11836813/pexels-photo-11836813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image:'/img/Re1.jpg',
     link: '/insurance-claims',
-    content: 'In an increasingly risky world, insurers and reinsurers need more sophisticated tools to quantify and manage the risks facing their businesses. Acentria catastrophe model analytics helps, Impact Forecasting to enable firms to analyze the financial impacts of catastrophic events to develop effective reinsurance, underwriting and exposure managemen to stabilize an insurer\'s loss experience and reduce the disruptive effects of catastrophes have on an insurer\'s loss experience can be reduced dramatically'
+    content:'Acentria is your trusted partner in risk management, boasting a team of seasoned professionals dedicated to protecting your business. With our unrivaled market insights and innovative strategies, we provide bespoke reinsurance solutions that align perfectly with your unique needs. <br> At Acentria, we specialize in transforming complex risks into manageable solutions. As a leading reinsurance broker, we are your go-to experts for navigating the intricate world of reinsurance with ease and confidence.'
 })
-
-const exploreHelp3 = ref({
+const content2 = ref({
+    orientation: 'lg:flex-row-reverse flex-col',
+    heading: 'Stabilizing the Company\'s  <br/><span class="text-brand-primary">Overall Operating Results</span>',
+    subheading: '',
+    image: '/img/Re2.jpg',
+    link: '/insurance-claims',
+    content: 'Achieve a new level of financial stability with our expert services aimed at stabilizing your company\'s overall operating results.By implementing strategic risk management, optimizing capital allocation, and enhancing operational efficiency, we help you navigate uncertainties and ensure consistent performance.Our tailored approach is designed to protect your bottom line, drive sustainable growth, and secure your business\'s future in a dynamic market. Transform volatility into predictability and resilience with our comprehensive solutions, and watch your business thrive with confidence.'
+})
+const content3 = ref({
+    orientation: 'lg:flex-row flex-col',
+    heading: 'Protecting  <br/><span class="text-brand-primary">Against Catastrophes</span>',
+    subheading: '',
+    image: '/img/Re3.jpg',
+    link: '/insurance-claims',
+    content:'Shield your business from the unexpected with our comprehensive Catastrophe Protection solutions. By leveraging advanced modeling, strategic risk transfer, and proactive mitigation measures, we help you safeguard your assets and ensure business continuity. Our tailored approach empowers you to face potential catastrophic events with confidence, transforming uncertainty into resilience. Embrace the future with a fortified defense against the unpredictable, and secure your company’s legacy with our expert guidance.'
+})
+const content4 = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Limiting Liability &  <br/><span class="text-brand-primary">Increasing Capacities</span>',
     subheading: '',
-    image: 'https://images.pexels.com/photos/50634/pexels-photo-50634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: '/img/Re4.jpg',
     link: '/insurance-claims',
-    content: 'In a predictable world where re/insurers look to bring new solutions to customers, capital can provide a bridge between innovation and investment. However, finding the right balance to optimize capital requires strategic decisions to supporting growth and enhance a stable balance sheet. We assist Insurers with mechanism through which they limit their loss exposure to levels commensurate with their net assets, we structure reinsurance solutions to enables insurance to stabilize loss experience on individual risks, as well as on accumulated losses under many policies occurring during a specified period.',
+    content: 'In a predictable world where re/insurers seek to introduce new solutions to customers, capital can serve as a bridge between innovation and investment. However, optimizing capital requires strategic decisions to support growth and maintain a stable balance sheet. At Acentria we assist insurers in limiting their loss exposure to levels commensurate with their net assets. We structure reinsurance solutions that stabilize loss experiences on individual risks and accumulated losses under multiple policies over a specified period.'
+})
+const content5 = ref({
+    orientation: 'lg:flex-row flex-col',
+    heading: 'Elavate your Strategies <br/><span class="text-brand-primary">with Precision & Innovation</span>',
+    subheading: '',
+    image: '/img/Re5.jpg',
+    link: '/insurance-claims',
+    content: 'Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and investment decisions. Our solutions provide you with the insights needed to make data-driven decisions, reduce risks, and enhance profitability. By leveraging state-of-the-art tools and methodologies, we help you navigate the complexities of the financial landscape, adapt to changing conditions, and seize new opportunities for growth. Stay competitive and resilient with our comprehensive suite of services designed to meet the unique needs of your business.'
+})
+const content6 = ref({
+    orientation: 'lg:flex-row-reverse flex-col',
+    heading: 'Stabilizing the Company\'s <br/><span class="text-brand-primary">Overall Operating Results</span>',
+    subheading: '',
+    image: '/img/Re6.jpg',
+    link: '/insurance-claims',
+    content:'Streamline your operations and enhance decision-making with our integrated solutions in risk management, actuarial services, and technological advancements tailored to your industry needs. Our comprehensive approach ensures you have the tools and insights necessary to navigate complex challenges and seize emerging opportunities. By leveraging our expertise, you can improve efficiency, reduce risks, and drive sustainable growth. Partner with us to stay ahead in a rapidly evolving market and achieve your strategic objectives with confidence.'
+})
+const content7 = ref({
+    orientation: 'lg:flex-row flex-col',
+    heading: 'Explore Risk <br/><span class="text-brand-primary">Areas</span>',
+    subheading: '',
+    image: '/img/Re7.jpg',
+    link: '/insurance-claims',
+    content:'Every industry faces similar global challenges and opportunities, yet each has its own unique dynamics that call for specialized support. At Acentria Group, We bring an unparalleled blend of industry-specific expertise, tap into extensive industry-specific data, analytics, technology and insights to craft solutions tailored precisely to your needs.'
+})
+const content8 = ref({
+    orientation: 'lg:flex-row flex-col',
+    heading: 'Partner with Us for <br/><span class="text-brand-primary">a Resilient Future</span>',
+    subheading: '',
+    image: '/img/Re8.jpg',
+    link: '/insurance-claims',
+    content: 'In the dynamic world of insurance and reinsurance, having a reliable partner can make all the difference. At Acentria we stand out as your ideal reinsurance broker, offering unparalleled expertise, tailored solutions, and a commitment to excellence. Here\'s why partnering with us is a smart choice for your business: '
 })
 
 const specials = ref([
@@ -412,87 +324,83 @@ const specials = ref([
     },
 ]);
 
+const faqs = ref([
+    {
+        name: 'Expertise and Experience',
+        content: 'With years of industry experience, our team of seasoned professionals brings a wealth of knowledge and expertise to the table. We understand the complexities of the reinsurance market and provide tailored solutions to meet your specific needs.',
+    },
+    {
+        name: 'Comprehensive Solutions',
+        content: 'We provide a full suite of services, including risk management, actuarial services, and advanced technological solutions. Our integrated approach ensures you have all the tools and insights necessary to navigate challenges, reduce risks, and seize opportunities.',
+    },
+    {
+        name: 'Customized Reinsurance Strategies',
+        content: 'Every business is unique, and so are its risk management needs. We craft bespoke reinsurance solutions that align with your business objectives, helping you stabilize loss experience, optimize capital, and enhance profitability.',
+    },
+    {
+        name: 'Advanced Analytics and Technology',
+        content: 'We leverage advanced analytics and state-of-the-art technology to empower data-driven decisions. Our catastrophe models and impact forecasting tools help analyze financial impacts, develop effective strategies, and adapt to the evolving market.',
+    },
+    {
+        name: 'Reliable Claims Management',
+        content: 'Our seamless claims management ensures a smooth process from filing to settlement. We help maintain business continuity and accelerate recovery, minimizing disruption during significant events.',
+    },
+    {
+        name: 'Commitment to Excellence',
+        content: 'We are dedicated to delivering exceptional service and building long-lasting relationships based on trust and reliability. Our commitment to excellence ensures that you can count on us as your steadfast partner in risk management and reinsurance.',
+    },
+    {
+        name: 'Strategic Guidance and Support',
+        content: 'We offer proactive advice and strategic support to help you adapt to changing financial conditions, navigate challenges, and seize growth opportunities. Our goal is to empower you to make informed decisions with confidence and achieve your objectives.',
+    },
+]);
+
+
 </script>
 
 <template>
     <main>
         <div class="bg-white">
             <Carousel :slides="slides" />
-            <!-- <ServiceHero2 :content="content" /> -->
 
-            <div class="bg-white">
-                <div class="container">
-                    <h1 class="my-5 heading-class text-left">
-                        Overview <br> <span class="text-brand-primary"> Reinsurance </span>
-                    </h1>
-                    <p
-                        class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
-                        Acentria re is one of the leading independent specialists (re)insurance broking firms operating
-                        in Kenya, and international markets.
-                        Acentria Re’s dedicated risk teams provide a combination of specialized reinsurance brokerage
-                        services and analytical expertise for our clients worldwide. Our unique ability to navigate an
-                        ever-changing market with overwhelming force while steadily executing the most valuable
-                        solutions sets us apart and demonstrates our overarching commitment to helping our clients
-                        succeed.
-                    </p>
+            <ContentPic :content="content1" class="my-5" />
+            <ContentPic :content="content2" class="my-5" />
+            <ContentPic :content="content3" class="my-5" />
+            <ContentPic :content="content4" class="my-5" />
+            <ContentPic :content="content5" class="my-5" />
+            <ContentPic :content="content6" class="my-5" />
+            <ContentPic :content="content7" class="my-5" />
+
+
+            <div>
+                <div class="py-5 text-center bg-white">
+                    <h2
+                        class="font-sans tracking-normal text-2xl text-black font-semibold leading-normal lg:leading-normal">
+                        Empowering Resilience Through Tailored<span class="text-brand-primary"> Reinsurance Solutions &
+                            Services.</span>
+                    </h2>
+                </div>
+
+                <div class="text-white bg-white">
+                    <section class="relative py-2">
+                        <div class="container px-4">
+                            <ServiceTabs :menus="menus" :data="data" />
+                        </div>
+                    </section>
                 </div>
             </div>
 
-            <ContentPic :content="exploreHelp" class="my-5" />
+            <ContentPic :content="content8" class="my-5" />
 
-            <div class="bg-white">
+            <div class="bg-white pb-5">
                 <div class="container">
-                    <div class="grid grid-cols-3 gap-5 py-5">
-                        <div class="flex flex-col items-center">
-                            <div class="bg-red-500 rounded-full p-4 mb-4">
-                                <i class="fas fa-chart-line text-white h-8 w-8 text-center text-xl"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Elevate Your Risk Assessment</h3>
-                            <p class="text-black text-center">Are you tired of uncertainty when assessing risks?
-                                With our experts by your side, you'll gain a new level of precision in risk
-                                assessment
-                            </p>
-                        </div>
-
-                        <div class="flex flex-col items-center">
-                            <div class="bg-red-500 rounded-full p-4 mb-4">
-                                <i class="fas fa-balance-scale text-white h-8 w-8 text-center text-xl"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Unlock Precision in Risk Pricing</h3>
-                            <p class="text-black text-center">With our specialized knowledge, you can ensure that
-                                your risk pricing aligns perfectly with the true cost</p>
-                        </div>
-
-                        <div class="flex flex-col items-center">
-                            <div class="bg-red-500 rounded-full p-4 mb-4">
-                                <i class="fas fa-lightbulb text-white h-8 w-8 text-center text-xl"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold mb-2">Enhance Your Decision-Making</h3>
-                            <p class="text-black text-center">The art of making sound decisions starts with
-                                reliable data and expert insights. Our Actuarial Support provides just that.</p>
-                        </div>
-                    </div>
-
+                    <Accordion :faqs="faqs" />
                 </div>
             </div>
 
-            <ContentPic :content="exploreHelp2" class="my-5" />
-            <ContentPic :content="exploreHelp3" class="my-5" />
 
-            <div class="py-5 text-center bg-white">
-                <h2
-                    class="font-sans tracking-normal text-2xl text-black font-semibold leading-normal lg:leading-normal">
-                    Delivering Reinsurance <span class="text-brand-primary">Solutions & Services</span>
-                </h2>
-            </div>
 
-            <div class="text-white bg-white">
-                <section class="relative py-2">
-                    <div class="container px-4">
-                        <ServiceTabs :menus="menus" :data="data" />
-                    </div>
-                </section>
-            </div>
+
 
             <section id="" class="relative py-8 bg-black text-center">
                 <div class="container px-4">
@@ -504,61 +412,9 @@ const specials = ref([
                 </div>
             </section>
 
-            <div class="container pt-5">
-                <div class="">
-                    <h2 class="text-2xl font-semibold text- mb-4">
-                        The <span class="text-brand-primary">Industries</span>
-                    </h2>
-                </div>
+            <ReinsuranceInsights />
 
-                <div class=" mx-auto text-black">
-                    <p>
-                        Every industry faces similar global challenges and opportunities, yet each has its own
-                        unique
-                        dynamics that call for specialized support.
-                        At Acentria Group, We bring an unparalleled blend of industry-specific expertise, tap into
-                        extensive
-                        industry-specific data, analytics, technology and insights to craft solutions tailored
-                        precisely to your needs.
-                    </p>
-
-                    <div class="py-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                        <a v-for="product in specials" :key="product.id" @click="setLineData(product)"
-                            class="button-animation group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                                <NuxtImg :src="product.img" :alt="product.img"
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75" />
-                            </div>
-                            <div class=" mt-4 flex flex-col items-center justify-between subheading-class text-black">
-                                <h3 class="text-xs">{{ product.name }}</h3>
-                                <p class="text-xs italic mt-3">
-                                    Learn More <i class="ml-2 fas fa-arrow-right text-brand-primary"></i>
-                                </p>
-                            </div>
-                            <!-- <p class="mt-1 text-xs italic text-gray-500">{{ product.description }}</p> -->
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <Why />
-
-            <News />
-
-            <WhyRe :whys="whys" />
-
-            <!-- <div>
-                <div class="container flex items-center justify-center">
-                    <div class="relative p-4">
-                        <NuxtImg alt="Image of Mobilize an integrated risk management strategy" loading="lazy"
-                            width="1600" height="1150" decoding="async" data-nimg="1"
-                            style="color:transparent;object-fit:contain" class="rounded-xl" src="/img/map.jpg" />
-                    </div>
-                </div>
-            </div> -->
-
-            <ContactForm />
+            <HowHelp />
 
             <InTouch />
         </div>

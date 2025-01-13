@@ -53,40 +53,7 @@
                                             </span>
                                         </NuxtLink>
                                     </div>
-
-                                    <!-- <InsuranceTopMenu /> -->
-                                    <!-- <div v-if="currentMenu == 'Insurance'"
-                                        class="grid grid-cols-2 gap-2 w-full my-5 mb-5">
-                                        <div class="relative">
-                                            <div v-for="(item, index) in actionMenus">
-                                                <p @click="setActionSubmenu(item, index)"
-                                                    @mouseenter="setActionSubmenu(item, index)"
-                                                    :class="[currentActionMenu === item.name ? 'text-brand-primary bg-red-100' : '']"
-                                                    class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary font-semibold text-[13px]">
-                                                    {{ item.name }} <i v-if="currentActionMenu === item.name"
-                                                        class="absolute right-1 text-brand-primary ml-1 fas fa-arrow-right mt-1"></i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="border-l-2 border-red-600">
-                                            <div class="px-2 flex flex-col gap-1">
-                                                <NuxtLink :to="submenuItem.link"
-                                                    v-for="submenuItem in currentActionMenuItems"
-                                                    :key="submenuItem.name"
-                                                    class="px-2 py-1 group hover:cursor-pointer hover:text-black hover:bg-red-100 transition duration-700 rounded-md font-semibold text-[13px]">
-                                                    <div class="flex justify-between">
-                                                        {{ submenuItem.name }}
-                                                        <i
-                                                            class="text-brand-primary mr-1 fas fa-angle-right text-[10px] mt-1.5"></i>
-                                                    </div>
-                                                </NuxtLink>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
                                 </div>
-
-
                             </div>
 
                             <div class="col-span-8 ml-4">
@@ -620,7 +587,7 @@ const InsuranceMenus = ref([
             },
         ]
     },
-    
+
     {
         name: 'Personal Covers',
         linksHeading: 'My Personal <span class="text-brand-primary">Insurance Covers<span/>',
@@ -711,7 +678,7 @@ const InsuranceMenus = ref([
                 description: 'Protect your goods while shipping with our marine insurance covers',
                 link: '/insurance/marine-cover',
             },
-            
+
         ]
     },
     // {
@@ -761,35 +728,50 @@ const InsuranceMenus = ref([
 
 const ReinsuranceMenus = ref([
     {
-        name: 'Reinsurance Services',
-        linksHeading: 'Reinsurance<span class="text-brand-primary"> Services<span/>',
+        name: 'Expert Services',
+        linksHeading: 'Expert<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Reinsurance <span class="text-brand-primary">Products<span/>',
         mainHeading: '<span class="text-brand-primary">Reinsurance<span/>',
-        mainDescription: 'Acentria Re is one of the leading independent specialist (re)insurance broking firms, serving both the Kenyan and international markets. Our dedicated risk teams combine specialized reinsurance brokerage services with in-depth analytical expertise to provide tailored solutions for our clients worldwide.',
+        mainDescription: 'Acentria Re is a leading reinsurance brokerage firm dedicated to helping insurance and reinsurance companies navigate the complex world of reinsurance. With our global presence, extensive market knowledge and industry expertise, we are committed to delivering bespoke reinsurance solutions tailored to meet your unique risk management needs, optimize your capital and to ensure long-term stability.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Explore our comprehensive reinsurance services for risk management.',
         icon: 'fas fa-sync-alt',
         items: [
             {
-                name: 'Reinsurance Optimization',
-                description: 'Maximize reinsurance efficiency with our optimization services.',
-                link: '/reinsurance/reinsurance-optimization',
-            },
-            {
                 name: 'Treaty Administration',
-                description: 'Streamline reinsurance agreements with our treaty administration.',
+                description: 'Unlock the full potential of your reinsurance program with our comprehensive Treaty Administration services.',
                 link: '/reinsurance/treaty-administration',
             },
             {
+                name: 'Reinsurance Optimization',
+                description: 'Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance.',
+                link: '/reinsurance/reinsurance-optimization',
+            },
+            {
                 name: 'Claims Management',
-                description: 'Efficiently handle reinsurance claims with our management services.',
+                description: 'Empower your business with our comprehensive claims management solutions and see the difference in your bottom line.',
                 link: '/reinsurance/claims-management',
             },
             {
-                name: 'Value Addition',
-                description: 'Enhance your reinsurance portfolio with our value addition services.',
-                link: '/reinsurance/value-addition',
+                name: 'Catastrophic Modelling',
+                description: 'Harness advanced catastrophe modeling to assess and manage exposure to natural disasters, ensuring robust risk management strategies.',
+                link: '/reinsurance/catastrophic-modelling',
+            },
+            {
+                name: 'Return on Risk Adjusted Capital',
+                description: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
+                link: '/reinsurance/return-on-risk-adjusted-capital',
+            },
+            {
+                name: 'Rating Agency Advisory',
+                description: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
+                link: '/reinsurance/rating-agency-advisory',
+            },
+            {
+                name: 'Risk Based Capital Regulation',
+                description: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
+                link: '/reinsurance/risk-based-capital-regulation',
             },
         ]
     },
@@ -801,24 +783,24 @@ const ReinsuranceMenus = ref([
         icon: 'fas fa-cogs',
         items: [
             {
-                name: 'Facultative Solutions',
-                description: 'Access tailored reinsurance coverage with our facultative solutions.',
-                link: '/reinsurance/facultative-solution',
-            },
-            {
                 name: 'Treaty Solutions',
-                description: 'Secure comprehensive reinsurance protection with our treaty solutions.',
+                description: 'Unlock the potential of your insurance portfolio with our comprehensive Treaty Solutions.',
                 link: '/reinsurance/treaty-solutions',
             },
             {
-                name: 'Special Lines Solutions',
-                description: 'Protect unique exposures with our special lines reinsurance solutions.',
-                link: '/reinsurance/special-lines',
+                name: 'Facultative Solutions',
+                description: 'Customized solutions for specific risks on both traditional lines and special lines of business.',
+                link: '/reinsurance/facultative-solutions',
+            },
+            {
+                name: 'Structured Solutions',
+                description: 'Unlock the power of tailored financial strategies with our Structured Solutions.',
+                link: '/reinsurance/structured-solutions',
             },
         ]
     },
     {
-        name: 'Data  Analytics',
+        name: 'Innovation & Digitization',
         linksHeading: 'Data<span class="text-brand-primary"> & Modeling<span/>',
         subMenu: 'Data <span class="text-brand-primary">& Modelling<span/>',
         description: 'Leverage data-driven insights and advanced modelling techniques.',
@@ -826,32 +808,13 @@ const ReinsuranceMenus = ref([
         items: [
             {
                 name: 'Reinsurance Data Analytics Tool',
-                description: 'Enhance decision-making with our reinsurance data analytics tool.',
-                link: '/reinsurance/reinsurance-data-analytics-tool',
+                description: 'Enhance decision making with our reinsurance data analytics tools.',
+                link: '/reinsurance/data-analytics-tool',
             },
             {
-                name: 'Acentre Reinsurance Solution',
-                description: 'Optimize reinsurance strategy with Acentre\'s comprehensive solutions.',
-                link: '/reinsurance/acentre-reinsurance-solution',
-            },
-            {
-                name: 'Return On Risk Adjusted Capital',
-                description: 'Maximize financial performance with risk-adjusted capital services.',
-                link: '/reinsurance/return-on-risk-adjusted-capital',
-            },
-        ]
-    },
-    {
-        name: 'Modelling',
-        linksHeading: 'Data<span class="text-brand-primary"> & Modeling<span/>',
-        subMenu: 'Data <span class="text-brand-primary">& Modelling<span/>',
-        description: 'Leverage data-driven insights and advanced modelling techniques.',
-        icon: 'fas fa-database',
-        items: [
-            {
-                name: 'Catastrophic Modelling',
-                description: 'Prepare for extreme events with our catastrophic modelling services.',
-                link: '/reinsurance/catastrophic-modelling',
+                name: 'AcenRe Solution',
+                description: 'Optimize reinsurance strategies with our comprehensive reinsurance solutions.',
+                link: '/reinsurance/acenre-solution',
             },
         ]
     },
@@ -862,24 +825,24 @@ const ReinsuranceMenus = ref([
         icon: 'fas fa-lightbulb',
         items: [
             {
-                name: 'Workshops & Webinars',
-                description: 'Learn about the latest insurance trends and solutions through expert-led workshops and webinars.',
-                link: '/acentria-news-and-blogs',
+                name: 'Blog and Articles',
+                description: 'Stay informed with expert insights and in-depth articles covering key topics in the insurance and reinsurance industry.',
+                link: '/resources/blog-and-articles',
             },
             {
-                name: 'Online Tools',
-                description: 'Utilize our innovative tools to calculate premiums, compare plans, and make better decisions.',
-                link: '/acentria-news-and-blogs',
+                name: 'News and Trends',
+                description: 'Keep up with the latest industry developments, market trends, and breaking news to stay ahead in the field.',
+                link: '/resources/news-and-trends',
             },
             {
                 name: 'Learn',
-                description: 'Access educational resources to deepen your understanding of insurance and risk management.',
-                link: '/acentria-news-and-blogs',
+                description: 'Expand your knowledge with educational resources, guides, and tools designed to help you master insurance and reinsurance concepts.',
+                link: '/resources/learn',
             },
             {
-                name: 'Guide',
-                description: 'Explore step-by-step guides to navigate the complexities of insurance and claims processes.',
-                link: '/acentria-news-and-blogs',
+                name: 'Workshops and Webinars',
+                description: 'Participate in interactive workshops and webinars led by industry experts to gain practical insights and actionable strategies.',
+                link: '/resources/workshops-and-webinars',
             },
         ]
     },

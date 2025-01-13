@@ -28,7 +28,7 @@ const theButtonTitle = computed(()=>{
         <div class="container mx-auto flex gap-10 px-4 py-2" :class="content.orientation">
             <div class="flex flex-col justify-center lg:basis-1/2">
                 <div class="pb-4">
-                    <h2 v-html="content.heading" class="heading-class text-2xl font-semibold text-black"></h2>
+                    <h2 v-html="content.heading" class="heading-class text-black"></h2>
                     <h3 v-html="content.subheading" class="font-semibold text-xl"></h3>
                 </div>
                 <div class="text-black pb-5 md:pb-6 py-auto">
