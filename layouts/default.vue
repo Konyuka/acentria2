@@ -9,9 +9,6 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
         <Navigation />
 
         <div>
-            <!-- <img src="/img/random.png" alt="Success Team Hands Up"
-                class="drop-shadow-md w-full object-cover fixed top-32 left-0 z-[-1] inset-0 h-full  object-right md:object-center" /> -->
-
             <!-- <video preload="metadata" loading="lazy" autoplay muted loop
                 class="drop-shadow-md w-full h-screen object-cover fixed top-32 left-0 z-[-1]" src="/img/hd2.mp4"
                 style="color: transparent">
@@ -21,7 +18,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
             <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
                 class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
                 style="color: transparent; transform: scaleX(-1);">
-
+                 <!-- <div class="absolute inset-0 bg-black opacity-60"></div> -->
             <slot class="bg-white" />
         </div>
 
