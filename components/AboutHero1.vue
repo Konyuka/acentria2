@@ -14,8 +14,8 @@ const props = defineProps({
         </video> -->
 
         <!-- Background Image -->
-        <img loading="lazy" src="/img/building5.png" alt="Background Image"
-            class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
+        <img loading="lazy" src="/img/hires.jpg" alt="Background Image"
+            class="drop-shadow-md w-full h-auto object-cover fixed top-0 left-0 z-[-1]"
             style="color: transparent; transform: scaleX(-1);" />
 
         <!-- Gradient Overlay -->
