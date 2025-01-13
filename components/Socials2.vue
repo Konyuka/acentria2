@@ -4,7 +4,7 @@
         <div>
             <dl
                 class="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-2 text-black sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                <a href="#" v-for="(feature, index) in socials" :key="feature.name" class="hover:shadow-2xl rounded-md p-3 button-primary flex flex-col">
+                <a :href="feature.link" target="_blank" v-for="(feature, index) in socials" :key="feature.name" class="hover:shadow-2xl rounded-md p-3 button-primary flex flex-col">
                     <dt class="subheading-class text-black flex gap-3">
                         <div class="mb-2 flex h-14 w-14 items-center justify-center rounded-lg bg-brand-primary">
                             <i :class="feature.icon" class=" text-white" aria-hidden="true" />
@@ -28,26 +28,31 @@ const socials = ref([
         icon: 'fab fa-linkedin',
         title: 'Linkedin',
         description: '@acentria-groupltd',
+        link:'https://www.linkedin.com/company/acentria-groupltd',
     },
     {
         icon: 'fab fa-x-twitter',
         title: 'X / Twitter',
         description: '@acentriagroup',
+        link:'https://x.com/acentriagroup?lang=en'
     },
     {
         icon: 'fab fa-facebook',
         title: 'Facebook',
         description: '@acentriagroup',
+        link:'https://www.facebook.com/Acentriagroup'
     },
     {
         icon: 'fab fa-instagram',
         title: 'Instagram',
         description: '@acentriagroup',
+        link:'https://www.instagram.com/acentriagroup/'
     },
     {
         icon: 'fab fa-tiktok',
         title: 'Tiktok',
         description: '@acentria.group',
+        link:'https://www.tiktok.com/@acentria.group'
     },
 ]
 )

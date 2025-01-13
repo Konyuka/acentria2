@@ -312,6 +312,14 @@ const specials = ref([
     }
 ]);
 
+
+onMounted(() => {
+    const targetSection = localStorage.getItem('targetSection');
+    if (targetSection == 'Full Service') {
+        setMenu('Governance')
+    } 
+})
+
 </script>
 
 <template>

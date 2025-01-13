@@ -245,7 +245,7 @@ const actionMenus = ref([
             },
             {
                 name: 'Full Service',
-                link: '/full-service',
+                link: '/acentria-group-insurance',
             },
         ]
     },
@@ -304,8 +304,6 @@ const setActionSubmenu = (item, index) => {
 }
 
 
-
-
 const aboutFooterMenus = ref([
     {
         name: 'About Acentria Group',
@@ -329,16 +327,6 @@ const insuranceFooterMenus = ref([
         icon: 'fas fa-home',
         link: '/acentria-group-insurance',
     },
-    // {
-    //     name: 'Renew your Policy',
-    //     icon: 'fas fa-redo',
-    //     link: '/contact-acentria-group',
-    // },
-    // {
-    //     name: 'Report a Claim',
-    //     icon: 'fas fa-file-alt',
-    //     link: '/contact-acentria-group',
-    // },
 ]);
 const reinsuranceFooterMenus = ref([
     {
@@ -600,7 +588,7 @@ const InsuranceMenus = ref([
             {
                 name: 'Full Service',
                 description: 'Enjoy a comprehensive service package that simplifies the insurance buying process.',
-                link: '/full-service',
+                link: '/acentria-group-insurance',
             },
         ]
     },
@@ -1077,11 +1065,6 @@ const openFlyover = (menu, type) => {
         hideTimeout = null
     }
 
-    // if (openMenu.value === menu && type === 'click') {
-    //     openMenu.value = null
-    //     return
-    // }
-
     if (menu == 'Investment') {
         if (type == 'hover') {
             return;
@@ -1099,12 +1082,9 @@ const openFlyover = (menu, type) => {
         }
     }
     if (currentMenu.value === menu) {
-        // currentMenu.value = null
         return
     } else {
 
-        // activeClick.value = true
-        // activeHover.value = true
         currentMenu.value = menu
         openMenu.value = menu
 
@@ -1122,7 +1102,6 @@ const openFlyover = (menu, type) => {
             if (currentMainMenu.value === 'Actuarial') {
                 router.push('/acentria-group-actuarial');
             }
-            // return;
         } else {
             if (currentMenu.value === 'About') {
                 flyoverHeader.value = 'Acentria Group'
@@ -1242,14 +1221,12 @@ watch(currentRoute, (newValue) => {
     }
 })
 watch(() => currentMenu.value, (value) => {
-    // console.log(value)
     if (value == null) {
         closeFlyOver()
     }
 })
 
 const goToSection = (section) => {
-    // activeClick.value=false
     closeFlyOver()
     localStorage.setItem('targetSection', section);
 }
