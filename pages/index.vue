@@ -205,8 +205,7 @@ onMounted(() => {
 
               <div class="!overflow-x-hidden !font-sans bg-white pb-5">
                 <!-- Carousel Wrapper -->
-                <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1" 
-                  >
+                <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1">
                   <!-- Each Slide -->
                   <Slide v-for="(chunk, cIndex) in chunkedBlogs" :key="cIndex" class="relative">
                     <!-- Grid of Cards Inside One Slide -->
@@ -287,9 +286,8 @@ onMounted(() => {
 
               <div class="mx-auto bg-white w-screen">
                 <div class="relative">
-                  <NuxtImg
-                    src="https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="city view" class="w-full h-full object-center object-cover absolute sm:block hidden" />
+                  <NuxtImg src="/img/esggreen.jpg" alt="city view"
+                    class="w-full h-full object-center object-cover absolute sm:block hidden" />
                   <NuxtImg src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
                     class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
                   <div
