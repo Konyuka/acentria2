@@ -19,7 +19,8 @@ const props = defineProps({
             class="drop-shadow-md w-screen h-screen object-fill fixed top-0 left-0 z-[-1]" style="color: transparent; " />
 
         <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-white/40 opacity-100 z-0"></div>
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+        <!-- <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-white/40 opacity-100 z-0"></div> -->
 
 
         <div
