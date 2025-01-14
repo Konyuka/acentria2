@@ -790,7 +790,7 @@ const ReinsuranceMenus = ref([
             {
                 name: 'Facultative Solutions',
                 description: 'Customized solutions for specific risks on both traditional lines and special lines of business.',
-                link: '/reinsurance/facultative-solutions',
+                link: '/reinsurance/facultative-solution',
             },
             {
                 name: 'Structured Solutions',
