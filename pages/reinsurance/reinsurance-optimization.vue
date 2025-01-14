@@ -1,15 +1,13 @@
 <script setup>
-import { ref } from "vue";
-
 const ReinsuranceBannerContent = ref({
-    title: 'Reinsurance Optimization',
-    subTitle: 'Enhanced Risk Management',
+    title: 'Unlock unparalleled financial stability and efficiency',
+    subTitle: 'Reinsurance Optimization',
     image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref({
     title: 'Reinsurance Optimization for Enhanced Risk Management',
     image: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content: 'At Acentria, our commitment to reinsurance optimization is more than a service; it\'s a strategic partnership grounded in expertise, data- driven insights, and an unwavering dedication to delivering unparalleled value.By Leveraging cutting - edge technology, Acentria transforms raw data into actionable insights, providing you with strategies finely tuned to the dynamic landscape of the insurance and reinsurance industry.We prioritize your goals, aligning seamlessly with your specific needs and adapting to the ever - changing dynamics of the market.',
+    content: 'Unlock unparalleled financial stability and efficiency with our Reinsurance Optimization services. By strategically structuring your reinsurance program, we help you achieve the perfect balance between risk transfer, cost efficiency, and capital management. Experience the power of enhanced profitability and reduced volatility, tailored to fit your unique business needs. Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance. Key benefits of reinsurance optimization include maximizing returns by optimizing reinsurance costs and coverage, stabilizing financial performance by effectively managing risk exposure, efficiently utilizing capital to meet regulatory requirements and support business growth, and aligning reinsurance strategies with your company\'s risk appetite and financial goals.We specialize in providing comprehensive reinsurance optimization services tailored to your unique needs.'
 })
 
 const faqs = ref([
@@ -43,15 +41,23 @@ const faqs = ref([
 </script>
 
 <template>
-
     <div class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ReinsuranceFeature :content="ReinsuranceFeatureContent" />
         <Accordion :faqs="faqs" />
-        <!-- <ReinsuranceWhy /> -->
+        <div class="py-5 container">
+            <h2 class="text-2xl !font-semibold text-black mb-4">
+                Enagage <span class="text-brand-primary"> An Expert?</span>
+            </h2>
+            <div class="my-5">
+                <p class="text-sm leading-normal">
+                    Let's transform your reinsurance program into a finely-tuned engine of success. <NuxtLink
+                        to="/contact-acentria-group" class="font-semibold italic underline">Contact us today </NuxtLink>
+                    to learn more about our
+                    services and how we can help you achieve your reinsurance goals.
+                </p>
+            </div>
+        </div>
         <ContactForm />
     </div>
-
-
-
 </template>
