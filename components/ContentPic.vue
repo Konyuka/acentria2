@@ -6,15 +6,21 @@ const props = defineProps({
 const currentRoute = useRoute().fullPath
 
 const showButton = computed(() => {
-    if (currentRoute === '/insurance-products' || currentRoute === '/insurance/aviation-cover' || currentRoute === '/acentria-group-reinsurance' || props.content.subheading === 'A reliable partner you can trust in <br>  Insurance & Risk Management') {
+    if (props.content.link === '/operating-results' || currentRoute === '/insurance-products' || currentRoute === '/insurance/aviation-cover' || currentRoute === '/acentria-group-reinsurance' || props.content.subheading === 'A reliable partner you can trust in <br>  Insurance & Risk Management') {
         return false
     }else{
         return true
     }
 })
 
+const showButton2 = computed(() => {
+    if (props.content.link === '/operating-results' || props.content.link === '/catastrophes' || props.content.link === '/reinsurance-products' ) {
+        return true
+    }
+})
+
 const theButtonTitle = computed(()=>{
-    if (props.content.link === '/insurance-products') {
+    if (props.content.link === '/insurance-products' || props.content.link === '/reinsurance-products') {
         return 'Pick your Industry'
     }else{
         return 'Learn More'
@@ -35,6 +41,11 @@ const theButtonTitle = computed(()=>{
                     <p v-html="content.content"
                         class="text-xs leading-normal font-regular text-black !text-inherit mb-4"></p>
                     <NuxtLink v-if="showButton" :to="content.link"
+                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
+                        {{ theButtonTitle }}
+                        <i class="fas fa-arrow-right text-primary ml-2"></i>
+                    </NuxtLink>
+                    <NuxtLink v-if="showButton2" :to="content.link"
                         class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                         {{ theButtonTitle }}
                         <i class="fas fa-arrow-right text-primary ml-2"></i>

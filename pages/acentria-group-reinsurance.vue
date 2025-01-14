@@ -140,7 +140,7 @@ const content2 = ref({
     heading: 'Stabilizing the Company\'s  <br/><span class="text-brand-primary">Overall Operating Results</span>',
     subheading: '',
     image: '/img/Re2.jpg',
-    link: '/insurance-claims',
+    link: '/operating-results',
     content: 'Achieve a new level of financial stability with our expert services aimed at stabilizing your company\'s overall operating results.By implementing strategic risk management, optimizing capital allocation, and enhancing operational efficiency, we help you navigate uncertainties and ensure consistent performance.Our tailored approach is designed to protect your bottom line, drive sustainable growth, and secure your business\'s future in a dynamic market. Transform volatility into predictability and resilience with our comprehensive solutions, and watch your business thrive with confidence.'
 })
 const content3 = ref({
@@ -148,7 +148,7 @@ const content3 = ref({
     heading: 'Protecting  <br/><span class="text-brand-primary">Against Catastrophes</span>',
     subheading: '',
     image: '/img/Re3.jpg',
-    link: '/insurance-claims',
+    link: '/catastrophes',
     content:'Shield your business from the unexpected with our comprehensive Catastrophe Protection solutions. By leveraging advanced modeling, strategic risk transfer, and proactive mitigation measures, we help you safeguard your assets and ensure business continuity. Our tailored approach empowers you to face potential catastrophic events with confidence, transforming uncertainty into resilience. Embrace the future with a fortified defense against the unpredictable, and secure your company’s legacy with our expert guidance.'
 })
 const content4 = ref({
@@ -156,7 +156,7 @@ const content4 = ref({
     heading: 'Limiting Liability &  <br/><span class="text-brand-primary">Increasing Capacities</span>',
     subheading: '',
     image: '/img/Re4.jpg',
-    link: '/insurance-claims',
+    link: '/reinsurance/treaty-solutions',
     content: 'In a predictable world where re/insurers seek to introduce new solutions to customers, capital can serve as a bridge between innovation and investment. However, optimizing capital requires strategic decisions to support growth and maintain a stable balance sheet. At Acentria we assist insurers in limiting their loss exposure to levels commensurate with their net assets. We structure reinsurance solutions that stabilize loss experiences on individual risks and accumulated losses under multiple policies over a specified period.'
 })
 const content5 = ref({
@@ -164,15 +164,15 @@ const content5 = ref({
     heading: 'Elavate your Strategies <br/><span class="text-brand-primary">with Precision & Innovation</span>',
     subheading: '',
     image: '/img/Re5.jpg',
-    link: '/insurance-claims',
+    link: '/reinsurance/acentre-solution',
     content: 'Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and investment decisions. Our solutions provide you with the insights needed to make data-driven decisions, reduce risks, and enhance profitability. By leveraging state-of-the-art tools and methodologies, we help you navigate the complexities of the financial landscape, adapt to changing conditions, and seize new opportunities for growth. Stay competitive and resilient with our comprehensive suite of services designed to meet the unique needs of your business.'
 })
 const content6 = ref({
     orientation: 'lg:flex-row-reverse flex-col',
-    heading: 'Stabilizing the Company\'s <br/><span class="text-brand-primary">Overall Operating Results</span>',
+    heading: 'Unlock Greater Efficiency <br/><span class="text-brand-primary">& Insight with Our Expertise.</span>',
     subheading: '',
     image: '/img/Re6.jpg',
-    link: '/insurance-claims',
+    link: '/financial-wellness',
     content:'Streamline your operations and enhance decision-making with our integrated solutions in risk management, actuarial services, and technological advancements tailored to your industry needs. Our comprehensive approach ensures you have the tools and insights necessary to navigate complex challenges and seize emerging opportunities. By leveraging our expertise, you can improve efficiency, reduce risks, and drive sustainable growth. Partner with us to stay ahead in a rapidly evolving market and achieve your strategic objectives with confidence.'
 })
 const content7 = ref({
@@ -180,7 +180,7 @@ const content7 = ref({
     heading: 'Explore Risk <br/><span class="text-brand-primary">Areas</span>',
     subheading: '',
     image: '/img/Re7.jpg',
-    link: '/insurance-claims',
+    link: '/reinsurance-products',
     content:'Every industry faces similar global challenges and opportunities, yet each has its own unique dynamics that call for specialized support. At Acentria Group, We bring an unparalleled blend of industry-specific expertise, tap into extensive industry-specific data, analytics, technology and insights to craft solutions tailored precisely to your needs.'
 })
 const content8 = ref({
@@ -370,7 +370,6 @@ const faqs = ref([
             <ContentPic :content="content5" class="my-5" />
             <ContentPic :content="content6" class="my-5" />
             <ContentPic :content="content7" class="my-5" />
-
 
             <div>
                 <div class="py-5 text-center bg-white">

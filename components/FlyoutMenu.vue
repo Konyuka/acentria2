@@ -814,7 +814,7 @@ const ReinsuranceMenus = ref([
             {
                 name: 'AcenRe Solution',
                 description: 'Optimize reinsurance strategies with our comprehensive reinsurance solutions.',
-                link: '/reinsurance/acenre-solution',
+                link: '/reinsurance/acentre-reinsurance-solution',
             },
         ]
     },
