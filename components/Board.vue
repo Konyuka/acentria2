@@ -27,13 +27,13 @@ const teams = ref([
     {
         name: "Carolyne Wambu",
         title: "Executive Director",
-        profile: "Carolyne Wanjiku Wambu is one the pioneers of Acentria Group and focuses on Innovation and strategy in developing business solutions that strengthen Acentria’s presence in the market and its commitment to client-relationships and exceptional service. With over 15 years of industry experience, she specializes in the overall growth of Acentria in digitisation, and optimization of information technology for Prosperity. Carolyne holds an MBA in strategic Planning, Bachelor of Science in Computer Science from Catholic University She also has certification in Cisco Certified Network Associate (CCNA).",
+        profile:'Carolyne Wanjiku Wambu is one of the pioneers of Acentria Group, focusing on innovation and strategy in developing business solutions that strengthen Acentria’s market presence and reinforce its commitment to exceptional client relationships. With over 15 years of industry experience, she specializes in driving overall growth through digitization and optimizing information technology for prosperity. Carolyne is also passionate about cybersecurity, technological advancements, and leveraging technology to increase productivity and efficiency. Carolyne holds an MBA in Strategic Planning from Daystar University and a Bachelor of Science in Computer Science from the Catholic University. In addition, she is a Cisco Certified Network Associate (CCNA).',
         image: "img/caro.jpg",
     },
     {
         name: "Isabella Mwende",
         title: "Executive Director",
-        profile: "Carolyne Wanjiku Wambu is one the pioneers of Acentria Group and focuses on Innovation and strategy in developing business solutions that strengthen Acentria’s presence in the market and its commitment to client-relationships and exceptional service. With over 15 years of industry experience, she specializes in the overall growth of Acentria in digitisation, and optimization of information technology for Prosperity. Carolyne holds an MBA in strategic Planning, Bachelor of Science in Computer Science from Catholic University She also has certification in Cisco Certified Network Associate (CCNA).",
+        profile:"Isabella Mwende Kamau is one of the pioneers of Acentria Group, driving innovation and strategic business development to strengthen the company’s market presence and uphold its commitment to exceptional client relationships. With over 20 years of experience in risk management, she is passionate about effective risk strategies that safeguard against financial losses, preserve reputation, and foster business resilience in a dynamic financial landscape. Isabella holds a Bachelor of Commerce degree in Marketing from Kenya Methodist University, and she is also an Associate of the Insurance Institute of Kenya (AIIK), where she earned her diploma.",
         image: "img/isa.jpg",
     },
     {

@@ -270,15 +270,16 @@ onMounted(() => {
                     </h2>
                     <div class="text-light-content pb-5 ">
                         <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                            As we grow from strength to strength, we continue to raise the bar of performance across our
-                            governance practices. These practices range from our ground-breaking ESG commitments to
-                            best-in-class disclosure practices, Board independence, diversity and inclusion, alignment
-                            to globally accepted norms and policies, as well as our emphasis on running a
-                            digitally-enabled, technology-led business.
-                            <br><br>
-                            Our Board ensures the implementation of the strategic objectives of the Company. It guides
-                            the management to fulfil the commitments made to various stakeholders while upholding the
-                            principles of ethical business conduct and responsible growth.
+                            As we grow, we continue to elevate our governance practices, encompassing groundbreaking ESG
+                            commitments, best-in-class disclosures, Board independence, diversity and inclusion,
+                            alignment with
+                            globally accepted norms, and a focus on technology-driven, digitally enabled operations.
+
+                            Our Board ensures the implementation of the company&#39;s strategic objectives, guiding
+                            management to
+                            fulfill commitments made to stakeholders while upholding ethical business practices and
+                            promoting
+                            responsible growth.
                         </p>
                     </div>
                 </div>
@@ -397,11 +398,11 @@ onMounted(() => {
                                                                     <div
                                                                         class="mt-2 flex flex-wrap space-y-3 sm:space-x-3 sm:space-y-0">
                                                                         <div>
-                                                                            <a href="https://www.linkedin.com/company/acentria-groupltd/"
+                                                                            <!-- <a href="https://www.linkedin.com/company/acentria-groupltd/"
                                                                                 target="_blank">
                                                                                 <i
                                                                                     class="fab fa-linkedin text-xl font-brand-primary"></i>
-                                                                            </a>
+                                                                            </a> -->
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -527,7 +528,7 @@ onMounted(() => {
                                                                     <div
                                                                         class="mt-2 flex flex-wrap space-y-3 sm:space-x-3 sm:space-y-0">
                                                                         <div>
-                                                                            <a href="https://www.linkedin.com/company/acentria-groupltd/"
+                                                                            <a :href="profileData.linkedin"
                                                                                 target="_blank">
                                                                                 <i
                                                                                     class="fab fa-linkedin text-xl font-brand-primary"></i>

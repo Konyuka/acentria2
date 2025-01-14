@@ -218,15 +218,20 @@ onMounted(() => {
                     </h2>
                     <div class="text-black pb-5 md:pb-6">
                         <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                            Acentria Group of companies is a trusted global consultant that seeks to empower, innovate
-                            and steer growth and prosperity in Risk and Insurance, Reinsurance, Actuarial, Technology
-                            and Investment Advisory.
-                            With a decade of expertise and an unwavering commitment to excellence, we craft tailored
+                            Acentria Group of Companies is a trusted global consultant dedicated to empowering growth
+                            and
+                            prosperity in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment
+                            Advisory.
+                            With over a decade of expertise and an unwavering commitment to excellence, we craft
+                            tailored
                             solutions that empower our clients to thrive. Our innovative approach to risk management,
-                            insurance optimization, and investment advisory ensures you’re always ahead of the curve.
+                            insurance
+                            optimization, and investment advisory ensures you’re always ahead of the curve.
                             When you partner with Acentria Group, you’re not just accessing solutions—you’re unlocking a
-                            world of knowledge and resources designed to mitigate risks, maximize opportunities, and
-                            achieve your financial goals.
+                            world
+                            of knowledge and resources designed to mitigate risks, maximize opportunities, and achieve
+                            your
+                            financial goals.
                         </p>
                     </div>
                 </div>
@@ -494,18 +499,14 @@ onMounted(() => {
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                At Acentria Group, our brand reflects who we are and what we stand for. Built on the
-                                core pillars of Integrity, Innovation, and Excellence, it embodies our unwavering
-                                commitment to empowering dreams, sparking imagination, and making a meaningful impact on
-                                our clients, employees, and communities.
-                                <br><br>
-                                Guided by The Acentria Way, we prioritize trust, transparency, and accountability in
-                                every interaction. Our brand is more than a logo—it’s a promise. A promise to deliver
-                                transformative solutions, champion sustainable growth, and uphold the highest standards
-                                of excellence.
-                                <br><br>
-                                Through empowerment, innovation, and a legacy of responsibility, our brand inspires
-                                confidence and fosters enduring partnerships that drive success for all.
+                                At Acentria, our brand promise is simple yet powerful: &quot;Done Smart.&quot; Every
+                                strategy, every service,
+                                and every solution we deliver is designed with intelligence and innovation in mind. We
+                                commit to
+                                providing our clients with the smartest solutions, empowering them to thrive in an
+                                ever-evolving
+                                world. Our promise reflects the precision, thoughtfulness, and expertise we bring to
+                                every project.
                             </p>
                             <NuxtLink href="/our-brand"
                                 class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">

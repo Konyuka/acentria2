@@ -35,19 +35,19 @@ const features = [
         icon: 'fas fa-shield-alt', 
         title: 'Insurance',
         description: 'Mitigating Risks, Maximizing Opportunities',
-        url: '/lines-of-business',
+        url: '/acentria-group-insurance',
     },
     {
         icon: 'fas fa-shield-virus', 
         title: 'Reinsurance',
         description: 'Protecting Your Assets, Empowering Your Future',
-        url: '/lines-of-business',
+        url: '/acentria-group-reinsurance',
     },
     {
         icon: 'fas fa-calculator', 
         title: 'Actuarial',
         description: 'Empowering Decisions, Simplifying Complexity',
-        url: '/lines-of-business',
+        url: '/acentria-group-actuarial',
     },
     {
         icon: 'fas fa-laptop-code', 
@@ -59,7 +59,7 @@ const features = [
         icon: 'fas fa-dollar-sign', 
         title: 'Investment',
         description: 'Protecting Your Assets, Empowering Your Future',
-        url: '/lines-of-business',
+        url: '/acentria-group-investment',
     },
 
 ]

@@ -4,7 +4,7 @@ const teams = ref([
         name: "Moses Musau",
         title: "CEO / Managing Director",
         email:"mmusau@acentriagroup.com",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/moses-musau-a84b1968/",
         profile:'Moses Musau Is a Corporate Leader in the Insurance and Reinsurance field, his focus is on developing solutions that strengthen Acentria’s presence as experts in the industry with commitment to exemplary client-relationships and service delivery for the overall growth of Acentria Group. His experience spans over 19 years of corporate exposure, where he has gained extensive experience in leading organizational transformations backed by a record of developing executable people strategy that motivates teams individually and financially to exceed the corporate objectives through various economic cycles. Mr. Moses very passionate about Empowering dreams, igniting imagination and propelling prosperity to infinite possibilities with a solid work ethic often resulting in the setting of high-performance standards in by himself and the others who work or interact with him. He is a logical, analytical and ingenious thinker and long-range planner good at anything that requires rapid and innovative reasoning. He holds a master’s degree in strategic management from Daystar University and a Bachelor of commerce Degree in Finance from Jomo Kenyatta University of Technology- JKUAT, he is also a Fellow of the chartered Insurance Institute of Kenya –(FIIK) and holds a diploma in Insurance institute of Kenya (AIIK).',
         image:
             "https://acentriagroup.com/wp-content/uploads/2024/02/mose-1.jpg",
@@ -12,7 +12,7 @@ const teams = ref([
     {
         name: "Evelyne Wanjohi",
         title: "General Manager",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/evelyne-wanjohi-59715691/",
         email: "ewanjohi@acentriagroup.com",
         profile:"Evelyne is an accomplished insurance professional with over twelve years of experience in risk management, pensions, insurance, and reinsurance broking. She is passionate about improving insurance penetration through developing insurance solutions, implementing strategies, and stakeholder management. At Acentria Group, she provided strategic guidance to the Insurance and reinsurance Broking, Actuarial and Financial Services, and Investments teams to ensure growth and sustainability, operational efficiency, excellent customer experience, and a better working environment for employees through coordination of the available resources for maximum output. She holds a Master’s Degree in Finance Management from Daystar University and a Bachelor of commerce Degree in Finance from Jomo Kenyatta University of Technology- JKUAT, she is also a Certified Public accountant (CPAK)",
         image:
@@ -21,7 +21,7 @@ const teams = ref([
     {
         name: "Winnie Chitai CPA",
         title: "Head of Finance",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/cpa-winnie-chitai-31853aa6/",
         email: "chitaw@acentriagroup.com",
         profile: "Winnie Chitai is a dynamic and visionary financial leader, spearheading the helm of Financial Management firms with finesse and strategic acumen. As a seasoned professional, she exerts her expertise in orchestrating financing, investment, and liquidity decisions, ensuring astute fiscal governance for optimal organizational success. With over seven years of distinguished experience, Winnie has honed her skills in both internal and external audit across diverse industries, including financial services, stock brokerage, hospitality, nonprofit entities, manufacturing, and agriculture. Her prowess extends to monitoring capital expenditure projects, executing tax planning initiatives, and playing a pivotal role in board-level decision-making processes. Winnie’s academic journey is a testament to her commitment to excellence. Armed with a Bachelor of Commerce Degree in Finance and Accounting from Strathmore University, she has further fortified her credentials as a Certified Public Accountant of Kenya (CPA-K). Currently pursuing an MBA in Strategic Management at Daystar University, Winnie is dedicated to continuous learning and staying at the forefront of industry trends. As a distinguished member of the Institute of Certified Public Accountants of Kenya (ICPAK), Winnie embodies the intersection of academic brilliance and practical acumen, ensuring a holistic approach to financial leadership. Her multifaceted expertise positions her as a trailblazer in the field, consistently contributing to the success and growth of the organizations she serves. In every role she undertakes, Winnie’s commitment to excellence, strategic insight, and unwavering dedication make her a standout professional in financial management services.",
         image:
@@ -30,7 +30,7 @@ const teams = ref([
     {
         name: "Maureen Wakini",
         title: "Head of People & Culture",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/maureen-wakini-59035064/",
         email: "mwakini@acentriagroup.com",
         profile: "Maureen has over fifteen (15) years of corporate and consulting experience in Human Resources and Professional coaching. She started her career as a Graduate Trainee at Industrial Promotion Services Limited (IPS Kenya), where she established a solid foundation in industrial relations within the manufacturing and agricultural sectors. Thereafter she joined Westcon-Comstor Sub-Saharan Africa as the Human Resources Manager, overseeing HR operations and Organizational Development in twenty pan-African and two european countries. Subsequently she served as a trusted advisor to senior c-suite leaders on strategic HR initiatives such as talent management, performance development and change management as a Human Resource Business Partner at Janus Continental Group (JCG). While at JCG, she supported the energy, real estate, hospitality sectors and enabling functions. She enjoys reading fictional books and is pursuing creative writing to inspire others. Further, she is Board Secretary at RCLN who is passionate about impacting the community positively and partners with tertiary institutions in training and mentorship programs in order to prepare them for the world of work.",
         image:
@@ -39,7 +39,7 @@ const teams = ref([
     {
         name: "Symon Gatimu",
         title: "Head of Reinsurance Business",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/symon-gatimu-28b8a7143/",
         email: "sgatimu@acentriagroup.com",
         profile: "Symon Gatimu is a dedicated professional with extensive experience and a deep understanding of the insurance and reinsurance industry. He is committed to driving innovation and empowering both internal teams and external partners at Acentria Group. With a strong track record of leadership, Symon has been pivotal in executing strategic plans that enhance market share, profitability, and client retention. He excels in developing tailored insurance solutions, particularly in specialized lines with limited underwriting capacities, and nurturing relationships with clients and partners across African and international markets. His focus on profitable underwriting and identifying new business opportunities continues to contribute to Acentria's success in the reinsurance sector. Currently pursuing an MBA in Strategic Management at Daystar University, Symon holds a Bachelor's degree in Mathematics and Computer Science from Meru University of Science and Technology, where he graduated with a 2nd Class Upper Division. He is also working toward a Diploma in CII. His professional training includes distinctions such as the Proficiency in Short-Term Reinsurance Practice course, where he was recognized as the best candidate by the College of Insurance in collaboration with ZEP RE Academy. Additionally, he has completed certifications in Upstream Oil & Gas Insurance, Engineering Insurance, Risk Assessment, Advanced Fire & Business Interruption Underwriting, and other key areas of reinsurance. Symon's commitment to continuous professional development, combined with his strategic mindset and innovative approach, positions him as a key leader in the reinsurance field at Acentria Group.",
         image:
@@ -48,7 +48,7 @@ const teams = ref([
     {
         name: "Donald Were, FIA",
         title: "Actuarial & Financial Services",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/donaldwere/",
         email: "dwere@acentriagroup.com",
         profile: "Donald is the Head of Actuarial and Financial Services at Acentria Group. He is a qualified actuary and a Fellow of the Institute and Faculty of Actuaries in United Kingdom. He holds an MSc in Actuarial Management from Bayes Business School in London, and a Bachelor’s degree in Actuarial Science with Information Technology. He is an expert in actuarial techniques and risk management, with great interest in innovation and how tech and finance can be merged to deliver sustainable financial solutions. He has worked on numerous innovative projects, including development of a reinsurance pricing and optimization tool, to guide (re)insurance companies in impact assessment of reinsurance and retro structures. He is also an expert in the IFRS17 reporting standard and the current secretary to the TASK IFRS Working Party. Before joining Acentria, Donald was responsible for guiding Jubilee Holding Limited in transitioning to the IFRS17 reporting standard across 4 countries in East Africa, namely Kenya, Uganda, Tanzania and Burundi. He also worked for the Insurance Regulatory Authority in Kenya, where he was responsible for actuarial analytics and driving innovation.",
         image:
@@ -57,7 +57,7 @@ const teams = ref([
     {
         name: "Kelvin Mwangi",
         title: "Head of Direct Broking Business",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/kelvin-m-njoroge-bcom-aiik-anziif-81a120114/",
         email: "kmwangi@acentriagroup.com",
         profile: "Kelvin is a dedicated and adaptable insurance professional, boasting more than 12 years of industry experience. With a Bachelor of Commerce degree, specializing in insurance from the University of Nairobi, Kelvin has honed his insurance expertise over the years. He’s not just academically qualified; he also holds a professional diploma in insurance from the College of Insurance (AIIK) and an international insurance diploma (ANZIIF) from the Australia and New Zealand Insurance Institute of Finance, as well as credentials from the Cambridge International College in the UK, among various other professional certifications. He has worked in various capacities, including Underwriting, Business Development, Broking, Claims & Recoveries, and Reinsurance Management. His career reflects a commitment to excellence and showcases his leadership qualities, strong work ethic, and exceptional organizational skills. Among his core competencies are Risk Management, Client Relationship Management, Underwriting Pricing, Claims Verification, Legal and Recovery expertise in both Marine and Motor claims, Business Development, and Client Retention. Kelvin is a driving force behind Acentria Group’s mission to provide top-tier insurance services.",
         image:
@@ -66,7 +66,7 @@ const teams = ref([
     {
         name: "Fiona Kinyanjui, ACIM",
         title: "Marketing & Branding Manager",
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/fiona-kinyanjui-acim/",
         email: "fkinyanjui@acentriagroup.com",
         profile: "Fiona is an accomplished marketing and brand strategist with a robust professional background spanning nearly half a decade within the banking industry. Her diverse experience has honed her skills in developing and executing effective marketing strategies, strategic communications, brand management, and digital marketing solutions. Having earned a Bachelor’s Degree in Marketing from Daystar University, Fiona’s commitment to professional growth is evident through her certifications from the Chartered Institute of Marketing (CIM-UK). Her certifications in Managing Brands, Planning Campaigns, and Innovation in Marketing exemplify her dedication to staying at the forefront of the industry. Additionally, as an Affiliate member of the Chartered Institute of Marketing (CIM-UK), she remains actively engaged in the latest advancements and best practices within the marketing domain.",
         image:
@@ -104,7 +104,7 @@ defineExpose({
     profileContent
 })
 
-const openPofile = (member) => {
+const openProfile = (member) => {
     profileContent.value = member
     emits('openProfile')
     

@@ -60,16 +60,13 @@ const joinAsMembers = ref([
                         </h1>
                         <p
                             class="font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
-                            At Acentria Group, our brand is more than just a representation of our identity—it’s a
-                            powerful testament to our values, vision, and the aspirations of those we serve. It captures
-                            the very essence of who we are, what we stand for, and the impact we aim to create in the
-                            lives of our clients, partners, employees, and communities.
-                            <br><br>
-                            Our brand is anchored in three fundamental pillars: Integrity, Innovation, and Excellence.
-                            These core values define every aspect of our organization, from how we conduct business to
-                            how we build relationships. They are not just words—they are commitments that shape our
-                            decisions, inspire our actions, and drive us to deliver solutions that are transformative
-                            and sustainable.
+                            At Acentria Group, we reject the notion that &quot;better&quot; is enough. We are driven by
+                            a relentless pursuit
+                            of what&#39;s best, what&#39;s brightest, and what&#39;s smartest. In every action, in every
+                            decision, and in every
+                            innovation, we choose the smartest path forward. This is who we are. This is what we do.
+                            This is how
+                            we lead.
                         </p>
                     </div>
                 </div>
@@ -87,13 +84,24 @@ const joinAsMembers = ref([
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
                         <h2 id="" class="heading-class pb-4 md:pb-5">
                             Beyond a Logo <span class="text-brand-primary">or Tagline</span>
+                            <br>
+                            <span class="text-brand-primary">
+                                Empower |
+                            </span>
+                            Innovate |
+                            <span class="text-brand-primary">
+                                Prosper
+                            </span>
                         </h2>
                         <div class="text-light-content pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                Our brand is not confined to visual identity—it is a reflection of our culture and our
-                                promise. It’s visible in the way we engage with our clients, the quality of our
-                                solutions, and the relationships we nurture. It is reinforced through every interaction,
-                                from the smallest detail to our largest undertakings.
+                                Our logo and tagline, &quot;Empower, Innovate, Prosper&quot;, capture the essence of
+                                what we stand for. We
+                                believe in empowering our clients, partners, and communities to innovate and drive
+                                meaningful
+                                change. Through innovation, we push the boundaries of what’s possible, and by prospering
+                                together,
+                                we create sustainable success for everyone involved.
                             </p>
                         </div>
                     </div>

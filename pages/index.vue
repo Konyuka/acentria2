@@ -133,6 +133,18 @@ const others = ref([
     image: '/img/join.jpg',
     link: '/our-brand',
   },
+  {
+    name: 'News &<span class="text-brand-primary">Updates</span>',
+    description: 'Stay informed with the latest news, trends, and updates from our company and industry.',
+    image: '/img/join.jpg',
+    link: '/our-brand',
+  },
+  {
+    name: 'Acentria <span class="text-brand-primary">Careers</span>',
+    description: 'Explore exciting career opportunities and join our team to build a future of excellence.',
+    image: '/img/join.jpg',
+    link: '/our-brand',
+  },
 
 ])
 
@@ -174,39 +186,8 @@ onMounted(() => {
                 </div>
               </div>
 
-              <!-- <div class="bg-white">
-                <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-10 bg-white">
-                  <NuxtLink :to="blog.link" v-for="blog in others"
-                    class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
-                    <div class="relative w-full">
-                      <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
-                        class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
-                        sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px" :src="blog.image"
-                        style="color: transparent;" />
-                      <div
-                        class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
-                      </div>
-                    </div>
-                    <div class="max-w-full">
-                      <div class="font-sans group relative">
-                        <h1 v-html="blog.name"
-                          class="mt-3 text-[16px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
-                        </h1>
-                        <p v-html="blog.description" class="line-clamp-3 text-[13px] leading-normal text-black">
-                        </p>
-                      </div>
-                      <div class="font-semibold mt-5 text-xs">
-                        Learn More <i class="ml-2 fas fa-arrow-right"></i>
-                      </div>
-                    </div>
-                  </NuxtLink>
-                </div>
-              </div> -->
-
               <div class="!overflow-x-hidden !font-sans bg-white pb-5">
-                <!-- Carousel Wrapper -->
                 <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1">
-                  <!-- Each Slide -->
                   <Slide v-for="(chunk, cIndex) in chunkedBlogs" :key="cIndex" class="relative">
                     <!-- Grid of Cards Inside One Slide -->
                     <div class="bg-white">

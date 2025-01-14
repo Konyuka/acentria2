@@ -196,9 +196,6 @@ const whys = ref([
             <div class=" container grid grid-cols-7 gap-2">
                 <div class="col-span-3 mt-5 container max-w-6xl mx-auto justify-between content-center">
 
-                    <!-- <h3 class="font-semibold text-xl mt-2">
-                                Sharing an <span class="text-brand-primary">ambitious spirit!</span>
-                            </h3> -->
                     <h2 class="text-5xl font-semibold text-left">
                         About
                     </h2>
@@ -215,16 +212,19 @@ const whys = ref([
                         Acentria <span class="text-brand-primary"> Group</span>
                     </h2>
                     <div class="relative mx-auto pt-4 flex">
-                        <span class="text-brand-primary font-semibold text-4xl border-2 border-brand-primary h-[60px]"></span>
+                        <span
+                            class="text-brand-primary font-semibold text-4xl border-2 border-brand-primary h-[60px]"></span>
                         <span class="ml-4">
-                            We drive the future for our partners through expertise and innovative solutions, empowering the
+                            We drive the future for our partners through expertise and innovative solutions, empowering
+                            the
                             visions of our clients and the communities we serve. By fostering innovation, we deliver the
                             best
                             strategies to enhance prosperity and success.
                             <br><br>
                             Our mission is to continuously seek better ways to manage risks and guide effective pathways
                             toward
-                            achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our clients,
+                            achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our
+                            clients,
                             our
                             company, our colleagues, and the communities we proudly serve.
                         </span>
@@ -242,9 +242,8 @@ const whys = ref([
 
             <div class="container my-10">
                 <h1 class="text-semibold text-2xl text-center leading-none">
-                    “At Acentria, we reject the notion that "better" is enough, We go beyond normal thinking to ensure
-                    that
-                    we deliver the smartest and most optimal solution possible”
+                    “At Acentria, we reject the notion that ‘better’ is enough. We go beyond conventional thinking to
+                    deliver the smartest and most effective solutions possible.”
                 </h1>
             </div>
 
