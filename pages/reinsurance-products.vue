@@ -75,7 +75,7 @@ const riskAreas = ref([
            
             <div 
                 class="font-sans grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-base leading-7 text-gray-600 py-10">
-                <NuxtLink :href="product.link" v-for="product in riskAreas" 
+                <NuxtLink to="/" v-for="product in riskAreas" 
                     class="button-animation relative flex flex-row gap-2 border-2 border-gray-200 p-5 rounded-lg">
                     <i :class="product.icon" class="text-4xl text-brand-primary mr-2"></i>
                     <div class="relative">
