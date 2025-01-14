@@ -30,35 +30,49 @@ const systems = ref([
 
 const benefits = ref([
     {
-        name: 'Comprehensive Risk Assessment',
-        icon: 'fas fa-search',
-        description: 'Understanding your unique risk profile is the first step toward effective risk management. Our comprehensive risk assessment services help you identify potential vulnerabilities and develop strategies to address them.',
+        name: 'Innovation and Technology',
+        icon: 'fas fa-cogs',
         items: [
             {
-                name: 'Risk Identification',
-                description: 'Thorough analysis to uncover potential risks that could impact your financial well-being.',
+                name: 'Automated Processes',
+                description: 'Our state-of-the-art software automates over 90% of manual processes, improving efficiency and reducing operational risks.',
             },
             {
-                name: 'Risk Evaluation',
-                description: 'Assessment of the likelihood and potential impact of identified risks.',
-            },
-            {
-                name: 'Risk Prioritization',
-                description: 'Ranking of risks based on their severity and the urgency of mitigation efforts.',
+                name: 'Digital Treaty Library',
+                description: 'Capture and store treaty data in a structured, searchable format for easy access and management.',
             },
         ],
     },
     {
-        name: 'Innovation and Technology',
-        icon: 'fas fa-user-shield',
+        name: 'Expertise and Support',
+        icon: 'fas fa-user-tie',
         items: [
             {
-                name: 'Automated Processes',
-                description: 'Our state-of-the-art software automates over 90% of manual processes, improving efficiency and reducing operational risks',
+                name: 'Specialized Knowledge',
+                description: 'Our team of seasoned professionals brings a wealth of experience and industry knowledge to support your reinsurance operations.',
+            },
+            {
+                name: 'Client-Centric Approach',
+                description: 'We prioritize your satisfaction and success, offering personalized support and solutions that align with your business goals.',
+            },
+        ],
+    },
+    {
+        name: 'Operational Efficiency',
+        icon: 'fas fa-chart-line',
+        items: [
+            {
+                name: 'Seamless Integration',
+                description: 'Our modular software architecture fits seamlessly into your existing IT infrastructure, minimizing disruption during implementation.',
+            },
+            {
+                name: 'Real-Time Data',
+                description: 'Collect and analyze real-time data to enhance decision-making and ensure treaty compliance.',
             },
         ],
     },
 ]);
+
 
 
 </script>
@@ -93,7 +107,7 @@ const benefits = ref([
         </div>
 
 
-        <div class="bg-white pb-6">
+        <div class="bg-white !pb-10">
             <div class="container">
                 <h1 class="my-3 heading-class text-left">
                     Elite Tech Tools for<br> <span class="text-brand-primary"> Optimal Reinsurance Solutions</span>
@@ -128,18 +142,18 @@ const benefits = ref([
         </div>
 
         <div class="container">
-            <h2 class="text-2xl !font-semibold text-black mb-4">
+            <h2 class="text-2xl !font-semibold text-black pb-5">
                 Why Choose <span class="text-brand-primary"> Acentria</span>
             </h2>
 
-            <div class="pb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <div class="pb-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
                 <div v-for="principle in benefits"
                     class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
                     <div class="flex flex-col">
                         <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
                         <h4 class="font-bold text-black !text-[18px] pb-1 leading-normal">{{
                             principle.name }}</h4>
-                        <p class="text-sm leading-normal text-black">{{ principle.description }}</p>
+                        <!-- <p class="text-sm leading-normal text-black">{{ principle.description }}</p> -->
                         <div class="pt-5 grid grid-cols-1 gap-5">
                             <div v-for="item in principle.items" class="flex flex-col gap-2">
                                 <h1 class="!font-semibold text-[14px]"> <i
@@ -151,9 +165,20 @@ const benefits = ref([
                     </div>
                 </div>
             </div>
+
+            <div class="py-5 mt">
+                <h2 class="text-2xl !font-semibold text-black mb-4">
+                    Enagage <span class="text-brand-primary"> An Expert?</span>
+                </h2>
+                <div class="my-5">
+                    <p class="text-sm leading-normal">
+                        Ready to streamline your treaty administration? <NuxtLink to="/contact-acentria-group"
+                            class="font-semibold italic underline">Contact us today </NuxtLink> to learn more about our
+                        services and how we can help you achieve your reinsurance goals.
+                    </p>
+                </div>
+            </div>
         </div>
-
-
 
 
         <!-- <ReinsuranceWhy /> -->

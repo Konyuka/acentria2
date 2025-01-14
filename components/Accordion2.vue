@@ -1,7 +1,7 @@
 <template>
     <div class="accordion-container container font-sanst-sans ">
         <h1 class="m-5 heading-class text-left">
-            Treaty <span class="text-brand-primary"> Administration
+            Treaty <span class="text-brand-primary"> Review Process
             </span>
         </h1>
         <div class="grid grid-cols-2 gap-5">
