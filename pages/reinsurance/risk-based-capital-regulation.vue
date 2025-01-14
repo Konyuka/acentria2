@@ -113,6 +113,7 @@ const faqs = ref([
                 </p>
             </div>
         </div>
+        
         <ContactForm />
     </div>
 </template>

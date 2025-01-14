@@ -2,14 +2,14 @@
 import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
-    title: 'Treaty Reinsurance',
+    title: 'Unlock the potential of your insurance portfolio',
     subTitle: 'Comprehensive Treaty Solutions',
     image: 'https://images.pexels.com/photos/1264438/pexels-photo-1264438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref({
     title: 'Comprehensive Treaty Solutions',
     image: 'https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content:'Our tailored treaty reinsurance programs provide clients with comprehensive coverage for their portfolio of risk. The programs aim to assist clients in preserving their capital by ensuring proper risk management structures that enable the identification, mitigation, and transfer of risks. We adopt a 360-degree approach to treaty analysis with an objective of giving clients well-balanced programs aimed at achieving optimum treaty structure that help reduce exposure, smooth earnings, supplement capital, and create surplus capital. This is achieved through advice from our team of experts, which includes technical reinsurance analysts, data analysts, and actuaries. Our clientele includes; insurance and reinsurance companies.'
+    content:'Unlock the potential of your insurance portfolio with our comprehensive Treaty Solutions. By offering tailored reinsurance agreements, we help you manage risk more effectively, optimize capital, and enhance financial stability. Our expertise in treaty solutions ensures that you benefit from robust protection, strategic alignment, and operational efficiency, giving you a distinct edge in the competitive insurance landscape.'
 })
 
 const faqs = ref([
@@ -23,15 +23,19 @@ const faqs = ref([
     },
     {
         name: 'Non Proportional Treaties',
-        content:'Excess of Loss (XOL) - Stop Loss Excess - Catastrophe Excess of Loss - Net Account XL'
+        content:'Excess of Loss (XOL) <br> Stop Loss Excess <br> Catastrophe Excess of Loss <br> Net Account XL'
     },
     {
         name: 'Propotional Treaties',
-        content:'Quota Share - Surplus - Quota Share and Surplus'
+        content:'Quota Share <br> Surplus <br> Quota Share <br> Surplus'
     },
     {
         name: 'Facultative Obligatory Treaty',
         content: 'Facultative obligatory treaties are a vital component of reinsurance, offering insurers a flexible and tailored approach to managing specific and unique risks. In these agreements, insurers have the discretion to cede or retain specific risks, allowing for individualized underwriting and risk management. This flexibility is particularly useful for addressing high-value, complex, or non-standard risks that may not fit within standard reinsurance treaties. Facultative obligatory treaties provide insurers with the ability to customize coverage on a case-by-case basis, aligning with their risk appetite and business goals, ultimately enhancing risk management and contributing to the insurance industry\'s stability and success.'
+    },
+    {
+        name: 'Treaty Classes',
+        content:'<ul> <li><strong>General:</strong> Property and Engineering; Marine; Motor; Liability; Miscellaneous; Aviation; Agriculture; Bonds; PVT; Micro Insurance; Casualty</li> <li><strong>Life:</strong> Group Life; Group Credit; Individual Life; Critical Illness</li> <li><strong>Health:</strong> Medical; International Health Covers</li> </ul>'
     },
 ])
 
@@ -43,8 +47,37 @@ const faqs = ref([
 
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ReinsuranceFeature :content="ReinsuranceFeatureContent" />
-        <Accordion :faqs="faqs" />
-        <!-- <ReinsuranceWhy /> -->
+        <div class="container mx-auto py-10">
+            <h2 class="text-2xl !font-semibold text-black pb-5">
+                Our <span class="text-brand-primary"> Approach</span>
+            </h2>
+            <p>
+                We are keen to apply our expertise on financial analysis, retention and the components of capital enable
+                us assist our insurers and reinsurers in ensuring adherence to regulatory requirements to avoid
+                potential penalties, identifying and mitigating financial risks to maintain stability, optimizing
+                capital allocation to maximize returns on investments, and making informed decisions based on
+                comprehensive risk assessments are all integral aspects of our approach.
+                <br><br>
+                Our Risk-Based Capital Advisory services are designed to help insurance companies navigate the
+                complexities of RBC requirements.
+            </p>
+            <Accordion :faqs="faqs" />
+        </div>
+
+        <div class="py-5 container">
+            <h2 class="text-2xl !font-semibold text-black mb-4">
+                Enagage <span class="text-brand-primary"> An Expert?</span>
+            </h2>
+            <div class="my-5">
+                <p class="text-sm leading-normal">
+                    Let us transform your risk management approach and pave the way for sContact us today to learn more on our treaty solutions.
+                    <NuxtLink to="/contact-acentria-group" class="font-semibold italic underline">Contact us today
+                    </NuxtLink>
+                    to learn more about our treaty solutions.
+                </p>
+            </div>
+        </div>
+
         <ContactForm />
     </div>
 
