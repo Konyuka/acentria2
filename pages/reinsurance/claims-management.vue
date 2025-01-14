@@ -9,34 +9,28 @@ const ReinsuranceBannerContent = ref({
 const ReinsuranceFeatureContent = ref({
     title: 'Claims Management Expertise',
     image: 'https://images.pexels.com/photos/2265634/pexels-photo-2265634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    content: 'At Acentria Re, we understand that timely claims recovery plays an integral role in enhancing the financial stability, operational efficiency, and reputation of cedants. It not only aligns with regulatory standards but also enhances customer satisfaction and provides a competitive edge in the dynamic insurance market. Our seasoned team of experts brings a wealth of experience in claims management, processing, and dispute resolution. We leverage on technology, robust systems, and experienced claims experts to carefully evaluate and expedite claims, prioritizing accuracy, and efficiency at every stage of the process',
+    content:'At Acentria Re, we understand that timely claims recovery plays an integral role in enhancing the financial stability, operational efficiency, and reputation of cedants. It not only aligns with regulatory standards but also enhances customer satisfaction and provides a competitive edge in the dynamic insurance market. Our seasoned team of experts brings a wealth of experience in claims management, processing, and dispute resolution. We leverage on technology, robust systems, and experienced claims experts to carefully evaluate and expedite claims, prioritizing accuracy, and efficiency at every stage of the process.'
 })
 
 const faqs = ref([
     {
-        name: 'Resources',
-        content: 'Well established claims department with experience personnel Designated Account handler and claims personnel State of art system that has an all-rounded claims management capability Regular training of claims personnel to horn capacity.'
+        name: 'Initial Assessment',
+        content: 'We conduct a thorough initial assessment of each claim to determine its validity and scope.',
     },
     {
-        name: 'Administration',
-        content: 'Facilitate and sign SLAs with reinsurers in line with insurer claims strategy Prompt response to claims guided by a strict Service Level Agreement Tri patriates SLA with cedant and reinsurers Standard claims checklist'
+        name: 'Documentation Support',
+        content: 'Our team assists in gathering and organizing all necessary documentation to support your claim.',
     },
     {
-        name: 'Communication',
-        content: 'Designated account handler and claims personnel general claims email for ease of communication and continuity Clear escalation matrix  incorporated on the SLA.'
+        name: 'Negotiation & Settlement',
+        content: 'We leverage our strong relationships with reinsurers to negotiate favorable settlements on your behalf.',
     },
     {
-        name: 'Reporting and Meetings',
-        content: 'Monthly claims reports outlining claim status, incurred losses, reserves, and recovery efforts Quarterly meetings to discuss claim developments and align on strategies Review of  Bordeaux on a quarterly basis.'
+        name: 'Post-Settlement Support',
+        content: 'Even after the claim is settled, we provide ongoing support to address any remaining issues or concerns.',
     },
-    {
-        name: 'Value Addition',
-        content: 'Advanced Risk management advisory – Virtual ITake on: Outstanding  Recoveries Strategic negotiation on ex gratia and complex claims.'
-    },
+]);
 
-
-
-])
 
 </script>
 
@@ -47,8 +41,18 @@ const faqs = ref([
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ReinsuranceFeature :content="ReinsuranceFeatureContent" />
 
+        <div class="container mx-auto py-10">
+            <h2 class="text-2xl !font-semibold text-black pb-5">
+                Our <span class="text-brand-primary"> Approach</span>
+            </h2>
+            <Accordion :faqs="faqs" />
+        </div>
+
 
         <div class="container mx-auto px-4 py-10">
+            <h2 class="text-2xl !font-semibold text-black pb-5">
+                Why Choose Us <span class="text-brand-primary"> For Claims Management</span>
+            </h2>
             <div class="grid gap-6 md:grid-cols-3">
                 <div class="rounded-xl p-6 ring-1 ring-brand-primary shadow-xl">
                     <h2 class="text-center text-lg font-semibold text-gray-900">
@@ -78,6 +82,20 @@ const faqs = ref([
                         experience.
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <div class="py-5 container">
+            <h2 class="text-2xl !font-semibold text-black mb-4">
+                Enagage <span class="text-brand-primary"> An Expert?</span>
+            </h2>
+            <div class="my-5">
+                <p class="text-sm leading-normal">
+                    Let us handle the complexities of claims management so you can focus on what matters most – running
+                    your business. <NuxtLink to="/contact-acentria-group" class="font-semibold italic underline">Contact
+                        us today </NuxtLink> to learn more about our
+                    services and how we can help you achieve your reinsurance goals.
+                </p>
             </div>
         </div>
 

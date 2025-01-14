@@ -197,7 +197,7 @@ const faqs = ref([
                 </div>
             </div>
 
-            <div class="py-5 mt">
+            <div class="py-5 container">
                 <h2 class="text-2xl !font-semibold text-black mb-4">
                     Enagage <span class="text-brand-primary"> An Expert?</span>
                 </h2>
