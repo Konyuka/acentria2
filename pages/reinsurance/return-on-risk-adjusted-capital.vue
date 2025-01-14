@@ -2,38 +2,11 @@
 import { ref } from "vue";
 
 const ReinsuranceBannerContent = ref({
-    title: 'Managing Risk On Adjusted Capital',
-    subTitle: 'Acentria\'s Approach to Risk Management',
+    title: 'Ensure Smart Risk Management',
+    subTitle: 'Risk On Adjusted Capital',
     image: 'https://images.pexels.com/photos/210679/pexels-photo-210679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
-const ReinsuranceFeatureContent = ref(
-    {
-        description: 'With AcentRe\'s Key Platform Features, you\'re not just purchasing a tool; you\'re investing in a transformative solution that puts you at the forefront of the reinsurance industry.These features are designed to provide the insights and flexibility required to make informed, data - driven decisions, ultimately enhancing your profitability, reducing risk, and ensuring the long - term success of your insurance business.',
-        items: [
-            {
-                title: 'Powerfull Pricing Engines For Treaty Structures',
-                icon: 'fa-calculator',
-                content: 'AcentRe boasts cutting-edge pricing engines capable of handling a wide spectrum of treaty structures. Say goodbye to the days of guesswork and reliance on outdated rules of thumb. With AcentRe, you can now set reinsurance and retrocession pricing with confidence, leveraging advanced data analytics and risk assessment tools.'
-            },
-            {
-                title: 'Compare Unlimited Scenarios for Optimization',
-                icon: 'fa-shield-alt',
-                content: 'In the fast-paced world of insurance, adaptability is key to success. AcentRe enables you to explore an unlimited number of scenarios, helping you optimize your reinsurance strategy effortlessly. Whether you\'re fine- tuning your approach to minimize risk or maximize profitability, our platform provides the flexibility you need.'
-            },
-            {
-                title: 'Accessible at your comfort',
-                icon: 'fa-sync-alt',
-                content: 'We understand the value of timely decision-making. AcentRe is accessible whenever and wherever you need it. The platform is designed to ensure that you have the data and insights at your fingertips, making it convenient for you to stay ahead of industry trends and respond to changing market conditions.'
-            },
-            {
-                title: 'Customizable to Reflect Client Needs',
-                icon: 'fa-chart-pie',
-                content: 'Every client is unique, and AcentRe recognizes that. Our platform is fully customizable to reflect the specific needs of your clients. This level of tailored service allows you to offer personalized solutions, setting you apart from the competition and strengthening client relationships.'
-            }
 
-        ]
-    }
-)
 const ReinsuranceFeatureContent2 = ref({
     title: 'Best of Our ROAC Services',
     image: 'https://images.pexels.com/photos/4386325/pexels-photo-4386325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -57,8 +30,6 @@ const faqs = ref([
         name: 'Sustainable Growth',
         content:'Managing risk on adjusted capital is not only about protection but also about facilitating growth. We aim to strike a balance between preserving capital and enabling long-term financial success.'
     },
-    
-
 ])
 
 
@@ -78,16 +49,12 @@ const faqs = ref([
                 </h1>
                 <p
                     class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
-                    The risk on adjusted capital ratio measures the resilience of a financial institution's balance
-                    sheet, with an emphasis on capital resources, to endure a given economic risk or recession. The
-                    greater the institution's capital, the higher its capital ratio, which stranslate to a higher
-                    probability that the entity will remain stable in the event of a severe economic downturn.
-                    <br> <br>
-                    At Acentria we assit Insurers & Reinsurers too evaluate the profitability of businesses and help
-                    them make capital allocation decisions taking into account the capital at risk, whether it be
-                    related to a project or company division.
-                    We also look at the Allocated risk capital in the firm's capital, adjusted for a maximum potential
-                    loss based on estimated future earnings distributions or the volatility of earnings.
+                    Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC)
+                    solutions. By evaluating profitability through the lens of risk, we help you make smarter, more
+                    informed decisions that drive sustainable growth. Our expert analysis ensures that every investment
+                    and project is optimized for the best possible return, balancing reward with risk in a way that
+                    enhances overall stability. Unlock the potential of your capital and achieve unparalleled financial
+                    success with our RORAC expertise. Let's turn your financial goals into reality.
                 </p>
             </div>
 
@@ -95,7 +62,22 @@ const faqs = ref([
 
         <ReinsuranceFeature :content="ReinsuranceFeatureContent2" />
         <Accordion :faqs="faqs" />
-        <!-- <ReinsuranceWhy /> -->
+
+        <div class="py-5 container">
+            <h2 class="text-2xl !font-semibold text-black mb-4">
+                Enagage <span class="text-brand-primary"> An Expert?</span>
+            </h2>
+            <div class="my-5">
+                <p class="text-sm leading-normal">
+                    Ready to optimize your financial performance using RORAC? Engage our expert to learn how we can help
+                    you achieve your financial goals <NuxtLink to="/contact-acentria-group"
+                        class="font-semibold italic underline">Contact
+                        us today </NuxtLink> to learn more about our
+                    services and how we can help you achieve your reinsurance goals.
+                </p>
+            </div>
+        </div>
+
         <ContactForm />
     </div>
 
