@@ -22,7 +22,7 @@
             </template>
 </Carousel> -->
 
-        <div class="relative isolate overflow-hidden bg-white py-40 mt-20">
+        <div class="relative isolate overflow-hidden bg-white py-32 mt-20">
             
             <NuxtImg :src="content.image" alt="Success Team Hands Up"
                 class="absolute inset-0 -z-10 h-full w-full !object-cover" />

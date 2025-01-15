@@ -361,7 +361,9 @@ const faqs = ref([
 <template>
     <main>
         <div class="bg-white">
-            <Carousel :slides="slides" />
+            <!-- <Carousel :slides="slides" /> -->
+
+            
 
             <ContentPic :content="content1" class="my-5" />
             <ContentPic :content="content2" class="my-5" />
