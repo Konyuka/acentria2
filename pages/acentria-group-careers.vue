@@ -287,7 +287,7 @@ const products = [
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                         <div class="relative py-4 lg:basis-1/2">
                             <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async"
-                                class="w-full h-[300px] rounded-lg" src="/img/what.jpg" />
+                                class="w-full h-[300px] rounded-lg" src="/img/Why would you.JPG" />
                         </div>
                         <div class="flex flex-col justify-center lg:basis-1/2">
                             <h2 class="text-2xl font-semibold pb-4 pt-6 text-brand-primary">
@@ -336,28 +336,6 @@ const products = [
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="bg-white font-sans">
-            <div class="container mx-auto max-w-6xl px-4 py-0 lg:max-w-6xl">
-                <h2 class="text-2xl font-semibold text-black text-left mb-5">
-                    Life at <span class="text-brand-primary">Acentria Group</span>
-                </h2>
-                <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                    <a v-for="product in products" :key="product.id" :href="product.href" class="group">
-                        <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                            <NuxtImg :src="product.imageSrc" :alt="product.imageAlt" class="h-full w-full object-cover object-center group-hover:opacity-75" />
-                        </div>
-                        <div class="mt-4 flex items-center justify-between subheading-class text-black">
-                            <h3>{{ product.name }}</h3>
-                            <p>
-                                <i class="fas fa-play text-2xl text-brand-primary"></i>
-                            </p>
-                        </div>
-                        <p class="mt-1 text-xs italic text-gray-500">{{ product.description }}</p>
-                    </a>
-                </div>
-            </div>
-        </div> -->
 
                 <div class="mt-10">
                     <div class="container mx-auto mb-5 font-sans">
@@ -439,7 +417,7 @@ const products = [
                         </div>
 
                         <div class="relative py-4 lg:basis-3/5">
-                            <NuxtImg alt="Image of community" loading="lazy" decoding="async" src="/img/heart.jpg"
+                            <NuxtImg alt="Image of community" loading="lazy" decoding="async" src="/img/Join our.JPG"
                                 class="rounded-xl w-full h-[500px]" />
                         </div>
                     </div>
