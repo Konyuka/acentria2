@@ -1,13 +1,8 @@
 <script setup>
-const ReinsuranceBannerContent = ref({
-    title: 'Who We Are',
-    image: 'https://img.freepik.com/free-vector/v915-red_53876-174930.jpg?t=st=1728266840~exp=1728270440~hmac=e94c9d586c21dc1e57888d5e3b499c5109a624670b07a4c6188be1f6b9a5686b&w=826',
-})
-
 const bannerContent = ref({
     subtitle: 'About Us',
     title: 'About Acentria Group',
-    image: 'https://images.pexels.com/photos/7413967/pexels-photo-7413967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    image: '/img/About Acentria Group- Cover photo-2472155125.jpg'
 })
 
 
@@ -209,7 +204,7 @@ onMounted(() => {
                 <div class="relative py-4 lg:basis-1/2 scale-90">
                     <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="300"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="/img/cover.jpg" />
+                        class="rounded-lg" src="/img/Who we are.JPG" />
                 </div>
 
                 <div class="flex flex-col justify-center lg:basis-1/2">
@@ -241,7 +236,8 @@ onMounted(() => {
                 <div class="relative py-4 lg:basis-1/2">
                     <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/inspire.webp" />
+                        class="w-full h-[300px] shadow-2xl rounded-lg !object-cover"
+                        src="/img/Things that Inspire Us.JPG" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <div class="text-light-content pb-5 md:pb-6 py-auto">
@@ -279,7 +275,7 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="250" decoding="async"
                             data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                            src="/img/what.jpg" />
+                            src="/img/What we do.JPG" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 class="text-2xl font-semibold text- mb-4">
@@ -428,7 +424,7 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                             decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/leadership.jpg" />
+                            class="rounded-lg" src="/img/Our leadership-2388444915.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 class="heading-class mb-4">
@@ -459,7 +455,7 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                             decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/hi5.jpg" />
+                            class="rounded-lg" src="/img/Our Culture.JPG" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 class="heading-class mb-4">
