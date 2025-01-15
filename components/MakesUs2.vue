@@ -53,74 +53,10 @@ const specials = ref([
                 content: 'Our actuarial and financial services team stays updated on regulations to guide compliance.',
             },
         ],
-        img:'/img/Insurance & Reinsurance 2488572607.jpg'
+        img:'/img/rope-gray.jpeg'
     },
-    {
-        name: 'Financial Institutions',
-        overview: 'Financial institutions operate in a dynamic environment where stability, security, and compliance are paramount. From banks to microfinance institutions, we understand the intricacies of financial risk and operational challenges.',
-        expertise: [
-            'Financial risk management strategies supported by actuarial insights.',
-            'Credit risk insurance and financial guarantee solutions.',
-            'Fraud prevention and advanced cybersecurity measures.',
-            'Advisory services for compliance with global standards.',
-        ],
-        faqs: [
-            {
-                name: 'What services do you offer for microfinance institutions?',
-                content: 'We provide credit risk analysis, operational risk management, and compliance frameworks.',
-            },
-            {
-                name: 'How do you address cybersecurity threats?',
-                content: 'Our technology division offers robust cybersecurity policies and risk mitigation tools.',
-            },
-            {
-                name: 'What is credit risk insurance?',
-                content: 'It protects lenders from losses due to borrower default.',
-            },
-            {
-                name: 'How do you help with regulatory compliance?',
-                content: 'We offer advisory services and tools to meet local and international standards.',
-            },
-            {
-                name: 'Do you provide risk assessment for digital banking platforms?',
-                content: 'Yes, we conduct comprehensive assessments using smart tools to mitigate digital banking risks.',
-            },
-        ],
-        img:'/img/finance.jpg'
-    },
-    {
-        name: 'Industrial & Manufacturing',
-        overview: 'The industrial and manufacturing sector faces challenges ranging from supply chain disruptions to workplace safety and environmental regulations. Our solutions are designed to mitigate these risks effectively.',
-        expertise: [
-            'Machinery breakdown insurance tailored to industrial needs.',
-            'Supply chain risk coverage enhanced by smart tracking tools.',
-            'Environmental liability assessments and compliance strategies.',
-            'Workplace safety advisory backed by data-driven insights.',
-        ],
-        faqs: [
-            {
-                name: 'Do you provide solutions for environmental risks?',
-                content: 'Yes, we offer liability insurance and compliance advisory for environmental challenges.',
-            },
-            {
-                name: 'How do you support supply chain resilience?',
-                content: 'Our tailored insurance and technology solutions address logistical challenges.',
-            },
-            {
-                name: 'What is machinery breakdown insurance?',
-                content: 'It covers losses arising from unexpected equipment failures.',
-            },
-            {
-                name: 'How do you ensure workplace safety compliance?',
-                content: 'We conduct risk assessments using advanced tools and provide actionable recommendations.',
-            },
-            {
-                name: 'Do you offer product liability coverage?',
-                content: 'Yes, we provide comprehensive coverage for manufacturing defects and related risks.',
-            },
-        ],
-        img: '/img/industries.jpeg'
-    },
+   
+   
     {
         name: 'Professionals & Business Services',
         overview: 'From legal firms to consultancy businesses, professional service providers require protection against errors, omissions, and operational risks. We help safeguard your reputation and assets.',
@@ -152,7 +88,8 @@ const specials = ref([
                 content: 'Yes, we provide tailored liability insurance for legal and other professional services.',
             },
         ],
-        img: '/img/Professionals& Business Service.JPG'
+        img: '/img/discussion.jpg'
+        // img: '/img/Professionals& Business Service.JPG'
     },
     {
         name: 'Technology',
@@ -185,7 +122,41 @@ const specials = ref([
                 content: 'Yes, we offer solutions to address risks related to software failures and liabilities.',
             },
         ],
-        img: '/img/industry-tech.jpg'
+        img: '/img/tech2.jpg'
+        // img: '/img/industry-tech.jpg'
+    },
+    {
+        name: 'Financial Institutions',
+        overview: 'Financial institutions operate in a dynamic environment where stability, security, and compliance are paramount. From banks to microfinance institutions, we understand the intricacies of financial risk and operational challenges.',
+        expertise: [
+            'Financial risk management strategies supported by actuarial insights.',
+            'Credit risk insurance and financial guarantee solutions.',
+            'Fraud prevention and advanced cybersecurity measures.',
+            'Advisory services for compliance with global standards.',
+        ],
+        faqs: [
+            {
+                name: 'What services do you offer for microfinance institutions?',
+                content: 'We provide credit risk analysis, operational risk management, and compliance frameworks.',
+            },
+            {
+                name: 'How do you address cybersecurity threats?',
+                content: 'Our technology division offers robust cybersecurity policies and risk mitigation tools.',
+            },
+            {
+                name: 'What is credit risk insurance?',
+                content: 'It protects lenders from losses due to borrower default.',
+            },
+            {
+                name: 'How do you help with regulatory compliance?',
+                content: 'We offer advisory services and tools to meet local and international standards.',
+            },
+            {
+                name: 'Do you provide risk assessment for digital banking platforms?',
+                content: 'Yes, we conduct comprehensive assessments using smart tools to mitigate digital banking risks.',
+            },
+        ],
+        img: '/img/risk-areas.jpg'
     },
     {
         name: 'Transport & Logistics',
@@ -285,6 +256,39 @@ const specials = ref([
             },
         ],
         img: '/img/construction.jpg'
+    },
+    {
+        name: 'Industrial & Manufacturing',
+        overview: 'The industrial and manufacturing sector faces challenges ranging from supply chain disruptions to workplace safety and environmental regulations. Our solutions are designed to mitigate these risks effectively.',
+        expertise: [
+            'Machinery breakdown insurance tailored to industrial needs.',
+            'Supply chain risk coverage enhanced by smart tracking tools.',
+            'Environmental liability assessments and compliance strategies.',
+            'Workplace safety advisory backed by data-driven insights.',
+        ],
+        faqs: [
+            {
+                name: 'Do you provide solutions for environmental risks?',
+                content: 'Yes, we offer liability insurance and compliance advisory for environmental challenges.',
+            },
+            {
+                name: 'How do you support supply chain resilience?',
+                content: 'Our tailored insurance and technology solutions address logistical challenges.',
+            },
+            {
+                name: 'What is machinery breakdown insurance?',
+                content: 'It covers losses arising from unexpected equipment failures.',
+            },
+            {
+                name: 'How do you ensure workplace safety compliance?',
+                content: 'We conduct risk assessments using advanced tools and provide actionable recommendations.',
+            },
+            {
+                name: 'Do you offer product liability coverage?',
+                content: 'Yes, we provide comprehensive coverage for manufacturing defects and related risks.',
+            },
+        ],
+        img: '/img/industries.jpeg'
     },
     {
         name: 'Mining & Natural Resources',
