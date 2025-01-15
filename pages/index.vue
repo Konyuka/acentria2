@@ -112,38 +112,38 @@ const others = ref([
   {
     name: 'Vision <span class="text-brand-primary">& Mission</span>',
     description: 'A Lifestyle Built <span class="text-brand-primary"> Around Excellence</span>',
-    image: '/img/join.jpg',
+    image: '/img/vision-mission.jpg',
     link: '/our-brand',
   },
   {
     name: 'Our <span class="text-brand-primary">Leadership</span>',
-    description: 'The leaders who <span class="text-brand-primary">inspire us</span>',
+    description: 'The leaders who inspire us',
     image: '/img/leadership.jpg',
     link: '/meet-the-team',
   },
   {
     name: 'Our <span class="text-brand-primary">Culture</span>',
-    description: 'The Acentria <span class="text-brand-primary">Way!</span>',
+    description: 'The Acentria Way!',
     image: '/img/hi5.jpg',
     link: '/corporate-culture',
   },
   {
     name: 'Our <span class="text-brand-primary">Brand</span>',
-    description: 'A Lifestyle Built <span class="text-brand-primary"> Around Excellence</span>',
-    image: '/img/join.jpg',
+    description: 'A Lifestyle Built Around Excellence',
+    image: '/img/Acentria Logo-01.jpg',
     link: '/our-brand',
   },
   {
-    name: 'News &<span class="text-brand-primary">Updates</span>',
+    name: 'News &<span class="text-brand-primary"> Updates</span>',
     description: 'Stay informed with the latest news, trends, and updates from our company and industry.',
     image: '/img/join.jpg',
-    link: '/our-brand',
+    link: '/contact-acentria-group',
   },
   {
     name: 'Acentria <span class="text-brand-primary">Careers</span>',
     description: 'Explore exciting career opportunities and join our team to build a future of excellence.',
     image: '/img/join.jpg',
-    link: '/our-brand',
+    link: '/acentria-group-careers',
   },
 
 ])
@@ -194,6 +194,7 @@ onMounted(() => {
                       <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">
                         <NuxtLink v-for="(blog, index) in chunk" :key="index" :to="blog.link"
                           class="button-animation rounded-xl p-3 shadow-md group flex flex-col items-start justify-between">
+
                           <div class="relative w-full">
                             <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
                               class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
@@ -202,12 +203,13 @@ onMounted(() => {
                               class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
                             </div>
                           </div>
-                          <div class="max-w-full">
-                            <div class="font-sans group relative">
+
+                          <div class="">
+                            <div class="text-center font-sans group">
                               <h1 v-html="blog.name"
-                                class="mt-3 text-[16px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
+                                class="text-center mt-3 text-[16px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
                               </h1>
-                              <p v-html="blog.description" class="line-clamp-3 text-[13px] leading-normal text-black">
+                              <p v-html="blog.description" class="text-center text-[13px] leading-normal text-black">
                               </p>
                             </div>
                             <div class="font-semibold mt-5 text-xs">

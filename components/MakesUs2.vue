@@ -251,7 +251,7 @@ const specials = ref([
                 content: 'Yes, we provide travel insurance and advisory services to manage unexpected interruptions.',
             },
         ],
-        img: '/img/Hospitality, travel & Leisure-2464444683.jpg'
+        img: '/img/travel3.jpg'
     },
     {
         name: 'Construction & Real Estate',
