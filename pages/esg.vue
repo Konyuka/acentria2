@@ -3,7 +3,7 @@
 const bannerContent = ref({
     subtitle: 'ESG',
     title: 'Environmental, Social & Governance',
-    image: '/img/held.jpg'
+    image: '/img/esggreen.jpg'
 })
 
 
@@ -77,7 +77,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2 content-center">
                     <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                        src="https://acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
+                        src="/img/social.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="text-xl font-semibold pb-4 leading-normal text-black">
@@ -108,7 +108,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2 content-center">
                     <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="/img/leadership.jpg" />
+                        class="rounded-lg" src="/img/governance.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="text-xl font-semibold pb-4 leading-normal text-black">
@@ -140,7 +140,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2 content-center">
                     <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                        src="/img/handshake.jpg" />
+                        src="/img/economic.jpeg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="text-xl font-semibold pb-4 leading-normal text-black">
@@ -173,13 +173,6 @@ const bannerContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto max-w-6xl">
-                <video preload="metadata" loading="lazy" src="/img/beach.mp4" alt="Success Team Hands Up"
-                    class="my-5 h-full w-full object-cover object-right md:object-center rounded-lg" autoplay muted
-                    loop>
-                    Your browser does not support the video tag.
-                </video>
-            </div>
         </div>
 
     </section>

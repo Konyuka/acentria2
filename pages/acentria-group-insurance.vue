@@ -122,7 +122,7 @@ const exploreRisks = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Explore <span class="text-brand-primary">Risk Areas</span>',
     subheading: '',
-    image: '/img/carinsurance.jpg',
+    image: '/img/risk-areas.jpg',
     link: '/insurance-products',
     content: 'At Acentria we help clients to identify, mitigate and transfer an evolving range of risks and deliver solutions that safegueard people and businesses to recover from financial losses due to accidents, illnesses, natural disasters, and other unforeseen events giving you a financial security.',
 })
@@ -130,8 +130,8 @@ const exploreRisks = ref({
 const introContent = ref({
     orientation: 'lg:flex-row flex-col',
     heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
-    subheading: 'A reliable partner you can trust in <br>  Insurance & Risk Management',
-    image: '/img/Welcome to Acentria.JPG',
+    subheading: 'A reliable partner <span class="text-brand-primary">  you can trust</span>',
+    image: '/img/reliable.jpg',
     link: '/insurance-claims',
     content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
 })
