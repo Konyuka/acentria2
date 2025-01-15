@@ -46,7 +46,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2">
                     <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="https://acentriagroup.com/wp-content/uploads/2023/12/12-1024x625.jpg" />
+                        class="rounded-lg" src="/img/forest.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="text-xl font-semibold pb-4 leading-normal text-black">
@@ -77,7 +77,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2 content-center">
                     <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                        src="/img/social.jpg" />
+                        src="/img/socialres.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="text-xl font-semibold pb-4 leading-normal text-black">
