@@ -23,134 +23,304 @@ const incentives = [
 const specials = ref([
     {
         name: 'Insurance & Reinsurance',
-        items: [
-            '• Bankers Blanket Bond',
-            '• Cyber Insurance',
-            '• Commercial Crime',
-            '• Trade Credit',
-            '• Directors & Officers Liability',
-            '• Professional Indemnity'
+        overview: 'The insurance and reinsurance sector is the backbone of risk management, ensuring businesses and individuals are safeguarded against unforeseen events. This industry requires strategic solutions that address complex risk portfolios while complying with ever-changing regulatory requirements.',
+        expertise: [
+            'Comprehensive insurance and reinsurance programs tailored to unique needs.',
+            'Advanced risk modeling and actuarial analysis.',
+            'Claims management powered by technology for faster resolutions.',
+            'Cyber risk solutions for emerging threats.',
+            'Advisory services for regulatory compliance.',
         ],
-        img: 'https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        description: 'Financial Lines Insurance provides essential coverage for businesses and professionals against the unique risks they face in their financial and managerial operations. This includes protection for directors and officers, professional indemnity, cyber incidents, fidelity fraud, and specialized risks within financial institutions. “In a world of evolving financial risks and regulated business environment, financial lines insurance is your safeguard for sound decision-making and business continuity.”'
+        faqs: [
+            {
+                name: 'What types of insurance products do you specialize in?',
+                content: 'We specialize in property, liability, health, and specialty insurance solutions.',
+            },
+            {
+                name: 'How do you manage claims effectively?',
+                content: 'Our team leverages smart technologies and deep expertise to streamline claims processes.',
+            },
+            {
+                name: 'What is reinsurance, and how does it benefit insurers?',
+                content: 'Reinsurance helps insurers manage risk portfolios and improve financial stability.',
+            },
+            {
+                name: 'Do you offer solutions for emerging risks like cyber threats?',
+                content: 'Yes, we provide tailored policies for new and evolving risks, including cyber insurance.',
+            },
+            {
+                name: 'How do you ensure compliance with regulatory requirements?',
+                content: 'Our actuarial and financial services team stays updated on regulations to guide compliance.',
+            },
+        ],
+        img:'/img/Insurance & Reinsurance 2488572607.jpg'
     },
     {
         name: 'Financial Institutions',
-        items: [
-            '• Advance Payment Bonds',
-            '• Performance Bonds',
-            '• Bid Bonds',
-            '• Customs and Warehousing Bonds',
-            '• Retention and Maintenance Bonds'
+        overview: 'Financial institutions operate in a dynamic environment where stability, security, and compliance are paramount. From banks to microfinance institutions, we understand the intricacies of financial risk and operational challenges.',
+        expertise: [
+            'Financial risk management strategies supported by actuarial insights.',
+            'Credit risk insurance and financial guarantee solutions.',
+            'Fraud prevention and advanced cybersecurity measures.',
+            'Advisory services for compliance with global standards.',
         ],
-        img: 'https://images.pexels.com/photos/935979/pexels-photo-935979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        description: 'Bonds and guarantees are specialized financial instruments used to provide assurance and security in business transactions.'
+        faqs: [
+            {
+                name: 'What services do you offer for microfinance institutions?',
+                content: 'We provide credit risk analysis, operational risk management, and compliance frameworks.',
+            },
+            {
+                name: 'How do you address cybersecurity threats?',
+                content: 'Our technology division offers robust cybersecurity policies and risk mitigation tools.',
+            },
+            {
+                name: 'What is credit risk insurance?',
+                content: 'It protects lenders from losses due to borrower default.',
+            },
+            {
+                name: 'How do you help with regulatory compliance?',
+                content: 'We offer advisory services and tools to meet local and international standards.',
+            },
+            {
+                name: 'Do you provide risk assessment for digital banking platforms?',
+                content: 'Yes, we conduct comprehensive assessments using smart tools to mitigate digital banking risks.',
+            },
+        ],
+        img:'https://img.freepik.com/free-photo/workplace-team-cooperation-businesswoman-laptop-office_1418-44.jpg?t=st=1736925893~exp=1736929493~hmac=51c4b137fc5dfa0b1f63d0bdc2858422c9ec98ddf721d2b0e75ef7184fef2e26&w=900'
     },
     {
-        name: 'Industrials & Manufacturing',
-        items: [
-            '• Political Violence including Riot, Strike and Civil Commotion',
-            '• Terrorism and Sabotage',
-            '• Business interruption'
+        name: 'Industrial & Manufacturing',
+        overview: 'The industrial and manufacturing sector faces challenges ranging from supply chain disruptions to workplace safety and environmental regulations. Our solutions are designed to mitigate these risks effectively.',
+        expertise: [
+            'Machinery breakdown insurance tailored to industrial needs.',
+            'Supply chain risk coverage enhanced by smart tracking tools.',
+            'Environmental liability assessments and compliance strategies.',
+            'Workplace safety advisory backed by data-driven insights.',
         ],
-        img: 'https://images.pexels.com/photos/2698473/pexels-photo-2698473.jpeg?auto=compress&cs=tinysrgb&w=600',
-        description: 'In uncertain times, having the right coverage in place ensures your business is shielded from the impact of political unrest and terrorism. At Acentria, we help our clients identify the exposures to such risks and provide tailored reinsurance solutions that offer protection against a wide range of threats, including war, civil commotion, insurrection, and terrorist attacks.'
+        faqs: [
+            {
+                name: 'Do you provide solutions for environmental risks?',
+                content: 'Yes, we offer liability insurance and compliance advisory for environmental challenges.',
+            },
+            {
+                name: 'How do you support supply chain resilience?',
+                content: 'Our tailored insurance and technology solutions address logistical challenges.',
+            },
+            {
+                name: 'What is machinery breakdown insurance?',
+                content: 'It covers losses arising from unexpected equipment failures.',
+            },
+            {
+                name: 'How do you ensure workplace safety compliance?',
+                content: 'We conduct risk assessments using advanced tools and provide actionable recommendations.',
+            },
+            {
+                name: 'Do you offer product liability coverage?',
+                content: 'Yes, we provide comprehensive coverage for manufacturing defects and related risks.',
+            },
+        ],
+        img: '/img/Industrial & Manufacturing 2119130636.jpg'
     },
     {
-        name: 'Professionals & Business Service',
-        items: [
-            '• Marine Hull',
-            '• Marine Cargo',
-            '• Marine Hull and Machinery',
-            '• Protection and Indemnity',
-            '• Goods in Transit',
-            '• Aquaculture'
+        name: 'Professionals & Business Services',
+        overview: 'From legal firms to consultancy businesses, professional service providers require protection against errors, omissions, and operational risks. We help safeguard your reputation and assets.',
+        expertise: [
+            'Professional indemnity insurance tailored to industry-specific needs.',
+            'Data protection and cybersecurity advisory.',
+            'Employee benefits solutions to attract and retain talent.',
+            'Business interruption coverage supported by predictive analytics.',
         ],
-        img: 'https://images.pexels.com/photos/799091/pexels-photo-799091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        description: 'Marine insurance is a cornerstone of global trade, offering protection against the risks associated with the transportation of goods and vessels across seas, rivers, and other waterways. We specialize in designing comprehensive marine reinsurance solutions tailored to the unique needs of shipping companies, logistics providers, and businesses engaged in international trade. Our expertise and global market access enable us to secure competitive terms and innovative reinsurance arrangements that ensure seamless risk transfer.'
+        faqs: [
+            {
+                name: 'What is professional indemnity insurance?',
+                content: 'It covers legal costs and damages arising from claims of negligence or mistakes in your services.',
+            },
+            {
+                name: 'Do you offer cyber risk solutions for service providers?',
+                content: 'Yes, we provide comprehensive cybersecurity insurance and advisory services.',
+            },
+            {
+                name: 'What is business interruption insurance?',
+                content: 'It compensates for lost income during disruptions to your operations.',
+            },
+            {
+                name: 'Can you help design employee benefits packages?',
+                content: 'Yes, our actuarial and financial services division creates customized benefits plans.',
+            },
+            {
+                name: 'Do you offer liability coverage for legal firms?',
+                content: 'Yes, we provide tailored liability insurance for legal and other professional services.',
+            },
+        ],
+        img: '/img/Professionals& Business Service.JPG'
     },
     {
         name: 'Technology',
-        items: [
-            '• Geothermal plants',
-            '• Renewable energy',
-            '• Power plants',
-            '• Utilities',
-            '• Offshore Energy',
-            '• Onshore Energy',
-            '• Onshore Energy construction Business'
+        overview: 'In a world driven by technology, companies face unique challenges such as data breaches, intellectual property risks, and rapid innovation cycles. We provide customized solutions to help tech companies stay resilient.',
+        expertise: [
+            'Cyber liability insurance for advanced threat protection.',
+            'Intellectual property risk coverage supported by smart analytics.',
+            'Business continuity planning tailored to the tech ecosystem.',
+            'Risk mitigation for software and hardware failures.',
         ],
-        img: 'https://images.pexels.com/photos/459728/pexels-photo-459728.jpeg?auto=compress&cs=tinysrgb&w=600',
-        description: 'With access to global markets and expertise in energy risk assessment, we design programs that deliver comprehensive protection for upstream, midstream, and downstream operations. Our solutions are customized to support both traditional and renewable energy projects, ensuring clients stay resilient in a rapidly evolving industry.'
+        faqs: [
+            {
+                name: 'What is cyber liability insurance?',
+                content: 'It protects against losses resulting from data breaches and cyber-attacks.',
+            },
+            {
+                name: 'Do you assist with intellectual property disputes?',
+                content: 'Yes, we provide risk coverage and advisory for intellectual property-related claims.',
+            },
+            {
+                name: 'What solutions do you offer for business continuity?',
+                content: 'We design strategies to minimize downtime and ensure operational resilience.',
+            },
+            {
+                name: 'How do you address hardware failures?',
+                content: 'We offer insurance and risk management strategies for critical IT equipment.',
+            },
+            {
+                name: 'Do you provide coverage for software liabilities?',
+                content: 'Yes, we offer solutions to address risks related to software failures and liabilities.',
+            },
+        ],
+        img: '/img/Technology-2253228203 (1).jpg'
     },
     {
         name: 'Transport & Logistics',
-        items: [
-            '• Hull All Risk Hull War Aviation',
-            '• Product & Premises Liability Airport',
-            '• Terminal Liability Ground Handling',
-            '• Liability Hangar Keepers Liability',
-            '• Third Party Liability Passenger Legal',
-            '• Liability Combined Single Liability',
-            '• Aviation Refuelers Liability'
+        overview: 'The transport and logistics industry is vital to global trade but is exposed to risks such as cargo damage, regulatory compliance, and geopolitical issues. Our services are designed to keep your operations running smoothly.',
+        expertise: [
+            'Marine and cargo insurance.',
+            'Fleet management insurance for operational efficiency.',
+            'Risk coverage for supply chain disruptions.',
+            'Advisory on international regulatory compliance.',
         ],
-        img: '/img/63.jpg',
-        description: 'Aviation insurance provides essential protection for the complex and high-stakes risks faced by the aviation industry, covering everything from aircraft hull and liability to passenger and cargo exposures. Whether for commercial airlines, private operators, or airport facilities, our specialized coverage ensures financial resilience in the face of accidents, mechanical failures, natural disasters, or third-party claims. "Empowering the aviation industry to thrive, even in turbulent times.”'
+        faqs: [
+            {
+                name: 'Do you offer marine insurance?',
+                content: 'Yes, we provide comprehensive coverage for marine cargo and vessels.',
+            },
+            {
+                name: 'How do you handle claims for cargo damage?',
+                content: 'We ensure prompt claim processing supported by advanced technology.',
+            },
+            {
+                name: 'What is fleet management insurance?',
+                content: 'It covers risks associated with the operation of vehicle fleets.',
+            },
+            {
+                name: 'How do you mitigate supply chain risks?',
+                content: 'We offer tailored insurance and risk management solutions for logistical challenges.',
+            },
+            {
+                name: 'Do you address cross-border transport risks?',
+                content: 'Yes, we provide comprehensive coverage for international transport operations.',
+            },
+        ],
+        img: '/img/Transport -2142977819.jpg'
     },
     {
         name: 'Hospitality, Travel & Leisure',
-        items: [
-            '• Professional Indemnity',
-            '• Public & Products Liability',
-            '• Employers Liability',
-            '• Trustee Liability',
-            '• Directors and Officers Liability',
-            '• Product Recall',
-            '• Environmental Liability'
+        overview: 'The hospitality and travel sector must manage risks related to customer safety, property damage, and unforeseen disruptions. We help businesses in this industry thrive by offering customized solutions.',
+        expertise: [
+            'Public liability and property insurance.',
+            'Cybersecurity solutions for customer data protection.',
+            'Risk management for events and large gatherings.',
+            'Business interruption coverage for operational continuity.',
         ],
-        img: 'https://images.pexels.com/photos/163016/crash-test-collision-60-km-h-distraction-163016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        description: 'Casualty and liability insurance provides essential protection for businesses against third-party claims arising from injuries, property damage, or legal liabilities. This class of insurance covers a wide range of exposures, including general liability, employer’s liability, product liability, professional liability, and environmental liability.'
+        faqs: [
+            {
+                name: 'What does business interruption insurance cover?',
+                content: 'It compensates for lost income due to disruptions like natural disasters or pandemics.',
+            },
+            {
+                name: 'Do you provide event-specific insurance?',
+                content: 'Yes, we tailor coverage for events and large gatherings.',
+            },
+            {
+                name: 'What is public liability insurance?',
+                content: 'It covers legal claims due to injuries or damages to third parties on your premises.',
+            },
+            {
+                name: 'How do you protect customer data?',
+                content: 'We offer comprehensive cybersecurity insurance and advisory services.',
+            },
+            {
+                name: 'Do you offer solutions for travel disruptions?',
+                content: 'Yes, we provide travel insurance and advisory services to manage unexpected interruptions.',
+            },
+        ],
+        img: '/img/Hospitality, travel & Leisure-2464444683.jpg'
     },
     {
         name: 'Construction & Real Estate',
-        items: [
-            '• Fire and Allied Perils',
-            '• Fire loss of profit Industrial All Risk',
-            '• Asset All Risk Deterioration of Stock',
-            '• Advance Loss of Profits',
-            '• Machinery Breakdown',
-            '• Contractors Plant and Machinery',
-            '• Electronic Equipment Insurance',
-            '• Erection All Risks',
-            '• Contractors All Risks',
-            '• Delay in start-up Insurance'
+        overview: 'Construction and real estate projects are fraught with risks, from project delays to property damage and compliance issues. Our solutions are designed to address these challenges head-on.',
+        expertise: [
+            'Contractors’ all-risk insurance for comprehensive coverage.',
+            'Real estate liability coverage tailored to industry demands.',
+            'Risk assessments for project financing supported by actuarial insights.',
+            'Advisory on regulatory and safety compliance.',
         ],
-        img: 'https://images.pexels.com/photos/942560/pexels-photo-942560.jpeg?auto=compress&cs=tinysrgb&w=600',
-        description: 'Property and engineering insurance is designed to protect businesses and assets against physical damage, financial loss, and risks associated with construction and operational activities. This includes coverage for commercial properties, industrial facilities, construction projects, and specialized engineering risks such as machinery breakdown and project delays. From safeguarding infrastructure investments to mitigating the risks of natural disasters and technical failures, we help our clients protect what matters most.'
+        faqs: [
+            {
+                name: 'What is contractors’ all-risk insurance?',
+                content: 'It provides coverage for property damage and third-party injury claims during construction.',
+            },
+            {
+                name: 'Do you offer solutions for real estate developers?',
+                content: 'Yes, we provide tailored risk management and liability insurance for developers.',
+            },
+            {
+                name: 'How do you manage project delays?',
+                content: 'We offer delay-in-startup coverage and other solutions to mitigate financial impacts.',
+            },
+            {
+                name: 'What is real estate liability insurance?',
+                content: 'It protects property owners and developers against legal claims related to the use of their property.',
+            },
+            {
+                name: 'Do you provide coverage for equipment and machinery?',
+                content: 'Yes, we offer tailored insurance solutions for construction equipment and machinery.',
+            },
+        ],
+        img: '/img/stock-pConstruction & Real estate-2198905429.jpg'
     },
     {
         name: 'Mining & Natural Resources',
-        items: [
-            '• Individual Life',
-            '• Group Life',
-            '• Group Credit & Mortgage',
-            '• Keyman Insurance'
+        overview: 'Mining and natural resources are critical to global economies but face unique risks such as operational hazards, environmental impact, and regulatory compliance. Our solutions are designed to help clients manage these challenges effectively.',
+        expertise: [
+            'Environmental liability coverage and compliance advisory.',
+            'Equipment and operational risk insurance.',
+            'Business interruption solutions tailored to mining operations.',
+            'Risk assessment for exploration and extraction activities.',
         ],
-        img: 'https://images.pexels.com/photos/208189/pexels-photo-208189.jpeg?auto=compress&cs=tinysrgb&w=600',
-        description: 'Life insurance plays a pivotal role in providing financial security and peace of mind to individuals and families. As a reinsurance broker, we specialize in supporting life insurers by designing reinsurance solutions that help them manage risks, improve capital efficiency, and ensure long-term sustainability. From traditional life insurance to innovative products like critical illness and annuities, our tailored programs address the evolving needs of the life insurance market.'
-    },
-    {
-        name: 'Energy & Power',
-        items: [
-            '• Individual Life',
-            '• Group Life',
-            '• Group Credit & Mortgage',
-            '• Keyman Insurance'
+        faqs: [
+            {
+                name: 'What is environmental liability coverage?',
+                content: 'It protects against costs related to environmental damage and cleanup efforts.',
+            },
+            {
+                name: 'Do you provide risk coverage for mining equipment?',
+                content: 'Yes, we offer tailored insurance for operational equipment and machinery.',
+            },
+            {
+                name: 'How do you address business interruptions in mining operations?',
+                content: 'We provide insurance to cover losses due to operational halts.',
+            },
+            {
+                name: 'What solutions do you offer for exploration risks?',
+                content: 'We provide coverage for geological and operational risks during exploration.',
+            },
+            {
+                name: 'How do you ensure compliance with environmental regulations?',
+                content: 'Our actuarial and advisory teams help clients align operations with regulatory requirements.',
+            },
         ],
-        img: 'https://images.pexels.com/photos/208189/pexels-photo-208189.jpeg?auto=compress&cs=tinysrgb&w=600',
-        description: 'Life insurance plays a pivotal role in providing financial security and peace of mind to individuals and families. As a reinsurance broker, we specialize in supporting life insurers by designing reinsurance solutions that help them manage risks, improve capital efficiency, and ensure long-term sustainability. From traditional life insurance to innovative products like critical illness and annuities, our tailored programs address the evolving needs of the life insurance market.'
+        img: '/img/Mining-2479854273.jpg'
     },
 ]);
+
 
 const whys = ref([
     {
@@ -186,6 +356,15 @@ const whys = ref([
         icon: 'fas fa-comments',
     },
 ]);
+
+const profileModal = ref(false);
+const currentIndustry = ref(null);
+
+const openProfileModal = (product) => {
+    currentIndustry.value = product;
+    profileModal.value = true
+}
+
 </script>
 
 <template>
@@ -319,18 +498,16 @@ const whys = ref([
 
                     <div class=" mx-auto text-black">
                         <p>
-                            Every industry faces similar global challenges and opportunities, yet each has its own
-                            unique
-                            dynamics that call for specialized support.
-                            At Acentria Group, We bring an unparalleled blend of industry-specific expertise, tap into
-                            extensive
-                            industry-specific data, analytics, technology and insights to craft solutions tailored
-                            precisely to your needs.
+                            At Acentria Group, our divisions in Insurance Broking, Reinsurance Broking, Actuarial and
+                            Financial Services, and Technology enable us to offer cutting-edge, industry-specific
+                            solutions. Guided by our brand promise, "Done Smart," we combine innovation, expertise, and
+                            a deep understanding of industry challenges to help our clients achieve their goals
+                            efficiently and effectively.
                         </p>
 
                         <div class="py-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                            <a v-for="product in specials" :key="product.id" @click="setLineData(product)"
-                                class="button-animation group">
+                            <button @click="openProfileModal(product)" v-for="product in specials" :key="product.id" "
+                                class=" button-animation group">
                                 <div
                                     class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
                                     <NuxtImg :src="product.img" :alt="product.img"
@@ -344,7 +521,86 @@ const whys = ref([
                                     </p>
                                 </div>
                                 <!-- <p class="mt-1 text-xs italic text-gray-500">{{ product.description }}</p> -->
-                            </a>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div v-if="profileModal" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"
+                        aria-modal="true">
+                        <div class="fixed inset-0 bg-black/20"></div>
+
+                        <div class="fixed inset-0 overflow-hidden">
+                            <div class="absolute inset-0 overflow-hidden">
+                                <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-3xl pl-10">
+
+                                    <div class="pointer-events-auto w-screen max-w-3xl">
+                                        <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                                            <div class="px-4 sm:px-6">
+                                                <div class="flex items-start justify-between">
+                                                    <h2 class="text-base font-semibold leading-6 text-gray-900"
+                                                        id="slide-over-title">
+
+                                                    </h2>
+                                                    <div class="ml-3 flex h-7 items-center">
+                                                        <button @click="profileModal = false" type="button"
+                                                            class="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2">
+                                                            <span class="absolute -inset-2.5"></span>
+                                                            <span class="sr-only">Close panel</span>
+                                                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                                stroke-width="1.5" stroke="currentColor"
+                                                                aria-hidden="true" data-slot="icon">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M6 18 18 6M6 6l12 12" />
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="relative mt-6 flex-1 px-4 sm:px-6">
+                                                <div class="relative z-0 flex flex-1 overflow-hidden">
+                                                    <main
+                                                        class="relative z-0 flex-1 overflow-y-auto focus:outline-none xl:order-last">
+
+
+                                                        <article>
+                                                            <div class="bg-white rounded-lg shadow-lg">
+                                                                <h2 class="text-2xl font-bold text-brand-primary">{{
+                                                                    currentIndustry.name }} <span class="text-black">Industry</span></h2>
+                                                                <p class="mt-4 text-gray-700">{{
+                                                                    currentIndustry.overview }}</p>
+                                                                <h3 class="mt-6 text-xl font-semibold">Expertise:
+                                                                </h3>
+                                                                <ul class="list-disc ml-6 mt-2">
+                                                                    <li v-for="(item, index) in currentIndustry.expertise"
+                                                                        :key="index" class="text-gray-600">
+                                                                        {{ item }}
+                                                                    </li>
+                                                                </ul>
+                                                                <h3 class="mt-6 text-xl font-semibold">FAQs:</h3>
+                                                                <div class="mt-2">
+
+                                                                    <Accordion :faqs="currentIndustry.faqs" />
+
+                                                                </div>
+                                                                <button
+                                                                    class="mt-6 px-4 py-2 bg-gray-700 text-white rounded-md"
+                                                                    @click="profileModal = false">
+                                                                    Close
+                                                                </button>
+                                                            </div>
+
+                                                        </article>
+                                                    </main>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -380,35 +636,6 @@ const whys = ref([
 
             </div>
 
-            <!-- <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
-                <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                        data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="mt-8 w-full h-[310px] shadow-2xl rounded-lg !object-cover" src="/img/inspire.webp" />
-                </div>
-                <div class="mt-2 flex flex-col justify-center items-center lg:basis-1/2">
-                    <div class="container">
-                        <h2 class="text-2xl font-semibold text-left -ml-5">
-                            Our <span class="text-brand-primary">Purpose</span>
-                        </h2>
-                    </div>
-                    <div class="text-light-content">
-                        <p class="mt-2 text-sm leading-normal text-gray-700 !text-inherit mb-4">
-                            Our purpose is to passionately lead the way in empowering the vision of our clients and
-                            communities through innovative thinking. By delivering the best solutions to enhance
-                            prosperity,
-                            we create value in an ever-evolving global environment.
-                            <br><br>
-                            Every day, we go beyond merely meeting compliance and regulatory standards—we strive to
-                            exceed
-                            expectations. By concentrating on areas where our expertise has the greatest impact, we
-                            empower
-                            people and businesses to thrive inclusively and sustainably.
-
-                        </p>
-                    </div>
-                </div>
-            </div> -->
 
         </div>
 
