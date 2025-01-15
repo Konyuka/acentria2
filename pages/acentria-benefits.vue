@@ -131,16 +131,6 @@ const benefits = ref([
                             <br>
                             <p
                                 class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
-                                Acentria also supports several Employee Resource Groups
-                                (ERGs) including Generational,
-                                Multicultural, Parenting &amp; Care Giving, Mental Health and Women in Tech. These
-                                groups
-                                fast-track DEI&amp;I education and create a safe place for
-                                growth, understanding, compassion and empathy.
-                            </p>
-                            <br>
-                            <p
-                                class="font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
                                 We believe that diverse leadership is an essential part of
                                 modern governance and remain committed to exploring new
                                 opportunities to diversify our C-suite.

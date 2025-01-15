@@ -73,151 +73,120 @@ const joinAsMembers = ref([
             </div>
         </div>
 
-        <div class="text-white">
-            <div class="bg-white">
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:py-4 lg:gap-16 items-center">
-                    <div class="relative p-4 lg:basis-1/2">
-                        <NuxtImg alt="Image of Board of Directors" loading="lazy" decoding="async" data-nimg="1"
-                            src="/img/LogoT.png" style="color: transparent; object-fit: contain;"
-                            class="rounded-lg w-full" />
-                    </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
-                        <h2 id="" class="heading-class pb-4 md:pb-5">
-                            Beyond a Logo <span class="text-brand-primary">or Tagline</span>
-                            <br>
-                            <span class="text-brand-primary">
-                                Empower |
-                            </span>
-                            Innovate |
-                            <span class="text-brand-primary">
-                                Prosper
-                            </span>
-                        </h2>
-                        <div class="text-light-content pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                Our logo and tagline, &quot;Empower, Innovate, Prosper&quot;, capture the essence of
-                                what we stand for. We
-                                believe in empowering our clients, partners, and communities to innovate and drive
-                                meaningful
-                                change. Through innovation, we push the boundaries of what’s possible, and by prospering
-                                together,
-                                we create sustainable success for everyone involved.
-                            </p>
-                        </div>
-                    </div>
+        <div class="!pt-5 container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+            <div class="relative p-4 lg:basis-1/2">
+                <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
+                    data-nimg="1" src="/img/award.jpg" style="color: transparent; object-fit: contain;"
+                    class="rounded-lg" />
+            </div>
+            <div class="flex flex-col justify-center lg:basis-1/2">
+                <h2 id="" class="heading-class pb-4 md:pb-5">
+                    Our Commitment <span class="text-brand-primary">To Excellence</span>
+                </h2>
+                <div class="text-light-content pb-5 md:pb-6">
+                    <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                        We believe that excellence is a journey, not a destination. It’s about consistently raising the
+                        bar and continuously evolving. At Acentria, we ensure that everything we do—and how we do it—is
+                        executed in the smartest way possible. We are not just looking to meet expectations; we aim to
+                        exceed them. Our actions reflect our commitment to providing the highest standards in every
+                        aspect of our work.
+                    </p>
                 </div>
             </div>
+        </div>
 
-            <div class="container pt-5">
-                <div class="mx-auto font-sans">
-                    <h1 class="mt-2 heading-class text-black">
-                        The heart <span class="text-brand-primary">of Our Brand</span>
-                    </h1>
+        <div class="!pt-5 container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
+
+            <div class="flex flex-col justify-center lg:basis-1/2">
+                <h2 id="" class="heading-class pb-4 md:pb-5">
+                    The Heart of <span class="text-brand-primary">Our Brand</span>
+                </h2>
+                <div class="text-light-content pb-5 md:pb-6">
+                    <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                        At the core of Acentria lies a deep belief in innovation, integrity, and intelligence. These
+                        principles guide our every move. The heart of our brand is not just about doing things well;
+                        it’s about doing them in the smartest, most thoughtful way to create lasting value. We strive
+                        for brilliance in all that we do, nurturing meaningful relationships and driving progress that
+                        inspires.
+                    </p>
                 </div>
             </div>
-
-            <div class="pb-5 !bg-transparent w-full h-full container mx-auto max-w-6xl">
-                <div class="b !font-sans my-0">
-                    <div class="sm:px-2 lg:px-4">
-                        <div class="lg:max-w-none">
-                            <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
-                                <div v-for="member in joinAsMembers" :key="member.name"
-                                    class="relative group button-animation sm:flex lg:block bg-white/20 px-5 py-2 rounded-xs border-t-8 border-brand-primary">
-                                    <div class="sm:flex-shrink-0 flex justify-center">
-                                        <i :class="member.icon" class="text-black text-2xl"></i>
-                                    </div>
-                                    <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                                        <h3 class="text-md text-brand-primary flex justify-center">{{ member.name }}
-                                        </h3>
-                                        <p class="mt-2 text-[12px] text-black">{{ member.description }}</p>
-                                    </div>
-                                    <i class="absolute !right-5 fas fa-angle-right !bottom-2"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="relative p-4 lg:basis-1/2">
+                <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
+                    data-nimg="1" src="/img/award.jpg" style="color: transparent; object-fit: contain;"
+                    class="rounded-lg" />
             </div>
+        </div>
 
-            <div class="bg-white">
-                <div class="!pt-5 container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2">
-                        <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/award.jpg" style="color: transparent; object-fit: contain;"
-                            class="rounded-lg" />
-                    </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="heading-class pb-4 md:pb-5">
-                            A Brand <span class="text-brand-primary">That Empowers</span>
-                        </h2>
-                        <div class="text-light-content pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                We believe a strong brand isn’t just about delivering results—it’s about inspiring
-                                growth, fostering trust, and creating impact. Our brand stands for:
-                                <br>
-                                <span>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>Empowering our
-                                        clients</b> to overcome challenges, seize opportunities, and achieve their goals
-                                    with confidence. <br>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>Empowering our
-                                        employees</b> by providing an inclusive and dynamic environment where they can
-                                    thrive and contribute to our shared mission. <br>
-                                    <i class="fas fa-caret-right text-brand-primary mr-2"></i> <b>Empowering
-                                        communities</b> by driving initiatives that promote sustainability, equity, and
-                                    shared prosperity.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:py-4 lg:gap-16">
-                    <div class="relative p-4 lg:basis-1/2">
-                        <NuxtImg alt="Image of Ethical Conduct" loading="lazy" decoding="async" data-nimg="1"
-                            src="https://images.pexels.com/photos/7579201/pexels-photo-7579201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            style="color: transparent; object-fit: contain;" class="w-full h-[250px] rounded-lg" />
-                    </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="heading-class pb-4 md:pb-5">
-                            A Legacy <span class="text-brand-primary">of Responsibility</span>
-                        </h2>
-                        <div class="text-light-content pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                At Acentria, our brand is also a pledge to act responsibly. From ethical business
-                                practices to impactful community engagements, we ensure that our success contributes to
-                                the well-being of society and the environment. This commitment is visible in our efforts
-                                to maintain gender parity at senior leadership levels and to align our operations with
-                                sustainable development goals.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
+        <div class="bg-white">
+            <div class="container mx-auto flex px-4 lg:flex-row flex-col py-8 lg:py-4 lg:gap-16 items-center">
                 <div class="relative p-4 lg:basis-1/2">
-                    <!-- <NuxtImg alt="Image of Corporate Governance" loading="lazy" width="500" height="350"
-            decoding="async" data-nimg="1" src="/img/empower.jpg"
-            style="color: transparent; object-fit: contain;" class="rounded-lg"> -->
+                    <NuxtImg alt="Image of Board of Directors" loading="lazy" decoding="async" data-nimg="1"
+                        src="/img/LogoT.png" style="color: transparent; object-fit: contain;"
+                        class="rounded-lg w-full" />
                 </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 id="" class="heading-class pb-4 md:pb-5 text-black mt-4">
-                        The <span class="text-brand-primary">Acentria Way!</span>
+                <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
+                    <h2 id="" class="heading-class pb-4 md:pb-5">
+                        Beyond a Logo <span class="text-brand-primary">or Tagline</span>
+                        <br>
+                        <span class="text-brand-primary">
+                            Empower |
+                        </span>
+                        Innovate |
+                        <span class="text-brand-primary">
+                            Prosper
+                        </span>
                     </h2>
                     <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal font-regular !text-black mb-4">
-                            The Acentria Way embodies the culture and principles that unite us across our global
-                            footprint. It reflects our purpose, <span class="italic">“to empower dreams and ignite
-                                imagination,” and our aim, “to lead as the trusted provider of innovative solutions,
-                                acting responsibly while earning the trust of our people, clients, partners, and
-                                communities.”</span> This ethos guides every interaction and initiative, ensuring that
-                            our goals align with those of our stakeholders and the broader society.
+                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                            Our logo and tagline, &quot;Empower, Innovate, Prosper&quot;, capture the essence of
+                            what we stand for. We
+                            believe in empowering our clients, partners, and communities to innovate and drive
+                            meaningful
+                            change. Through innovation, we push the boundaries of what’s possible, and by prospering
+                            together,
+                            we create sustainable success for everyone involved.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white">
+        <div class="!pt-5 container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16 pb-10">
+            <div class="relative p-4 lg:basis-1/2">
+                <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
+                    data-nimg="1" src="/img/award.jpg" style="color: transparent; object-fit: contain;"
+                    class="rounded-lg" />
+            </div>
+            <div class="flex flex-col justify-center lg:basis-1/2 ">
+                <h2 id="" class="heading-class">
+                    Our Brand <span class="text-brand-primary">Promise</span>
+                </h2>
+                <h5 class="text-brand-primary text-lg font-semibold pb-2">
+                    Done Smart
+                </h5>
+                <div class="text-light-content pb-5 md:pb-6">
+                    <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                        At Acentria, our brand promise is simple yet powerful: "Done Smart." Every strategy, every
+                        service, and every solution we deliver is designed with intelligence and innovation in mind. We
+                        commit to providing our clients with the smartest solutions, empowering them to thrive in an
+                        ever-evolving world. Our promise reflects the precision, thoughtfulness, and expertise we bring
+                        to every project.
+                        At Acentria, we don’t settle for the status quo. Our approach goes beyond traditional methods.
+                        We lead by embracing fresh ideas, challenging norms, and applying cutting-edge strategies. With
+                        a focus on innovation and creativity, we empower our teams to think smarter, collaborate more
+                        effectively, and deliver exceptional results. It’s not just about being good; it’s about being
+                        intelligent in every decision and every step we take. Through forward-thinking leadership, we
+                        stay ahead of the curve and set new standards for excellence.
+                    </p>
+                </div>
+                <h2 id="" class="heading-class">
+                    We are Acentria. <span class="text-brand-primary">We Ensure Smart Solutions.</span>
+                </h2>
+            </div>
+        </div>
+
+        <!-- <div class="bg-white">
             <div class="container pt-20 text-left pt-5">
                 <h2 id="" class="heading-class pb-4 md:pb-5">
                     Document <span class="text-brand-primary">Downloads</span>
@@ -267,7 +236,7 @@ const joinAsMembers = ref([
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 </template>
 
