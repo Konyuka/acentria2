@@ -55,7 +55,7 @@ const theButtonTitle = computed(()=>{
             <div class="relative py-4  flex items-center">
                 <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-img="1"
                     style="color: transparent;"
-                    class="w-full min-w-[450px] max-h-[250px] h-full shadow-2xl rounded-lg !object-cover" :src="content.image" />
+                    class="w-full min-w-[450px] max-h-[270px] h-full shadow-2xl rounded-lg !object-cover" :src="content.image" />
             </div>
         </div>
     </div>

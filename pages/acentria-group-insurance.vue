@@ -122,7 +122,7 @@ const exploreRisks = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Explore <span class="text-brand-primary">Risk Areas</span>',
     subheading: '',
-    image: '/img/risk-areas.jpg',
+    image: '/img/risky.jpeg',
     link: '/insurance-products',
     content: 'At Acentria we help clients to identify, mitigate and transfer an evolving range of risks and deliver solutions that safegueard people and businesses to recover from financial losses due to accidents, illnesses, natural disasters, and other unforeseen events giving you a financial security.',
 })
@@ -131,7 +131,7 @@ const introContent = ref({
     orientation: 'lg:flex-row flex-col',
     heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
     subheading: 'A Reliable Partner <span class="text-brand-primary">  You Can Trust</span>',
-    image: '/img/woman-shake.jpg',
+    image: '/img/lady-shake.jpg',
     link: '/insurance-claims',
     content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
 })
@@ -205,6 +205,12 @@ const slides = ref([
     },
 ])
 
+const bannerMainContent = ref({
+    title: 'Insurance & Risk Management',
+    subtitle: 'Protecting Your World with Precision',
+    image: '/img/shadow.jpg',
+})
+
 const specials = ref([
     {
         name: 'Cyber Risk <br/> <span class="text-brand-primary">Management</span>',
@@ -246,7 +252,8 @@ onMounted(() => {
 <template>
     <main>
         <div class="">
-            <Carousel :slides="slides" />
+            <Carousel :content="bannerMainContent" />
+            <!-- <Carousel :slides="slides" /> -->
 
             <div class="bg-white py-5">
                 <ContentPic :content="introContent" />
@@ -275,8 +282,7 @@ onMounted(() => {
                         <div class="py-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
                             <a v-for="product in specials" :key="product.id" @click="setLineData(product)"
                                 class="button-animation group shadow-md p-3 rounded-md">
-                                <div
-                                    class="aspect-h-1 aspect-w-0 w-full overflow-hidden rounded-lg ">
+                                <div class="aspect-h-1 aspect-w-0 w-full overflow-hidden rounded-lg ">
                                     <NuxtImg :src="product.img" :alt="product.img"
                                         class="h-full w-full object-cover object-center group-hover:opacity-75" />
                                 </div>

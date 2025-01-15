@@ -1,9 +1,9 @@
 <template>
     <div class="!overflow-x-hidden !font-sans bg-white">
-        <Carousel :autoplay="2000" :wrap-around="true">
+        <!-- <Carousel :autoplay="2000" :wrap-around="true">
             <Slide v-for="slide in slides" :key="slide" class="h-[85vh]">
                 <NuxtImg :src="slide.imageUrl" class="w-full h-full object-cover" />
-                <div class="absolute inset-0 bg-black opacity-60"></div>
+                <div class="absolute inset-0 bg-black opacity-20"></div>
                 <div
                     class="mt-14 absolute top-1/2 mx-10 md:mx-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 text-white">
                     <h2 class="text-5xl font-semibold mb-4 tracking-widest text-brand-primary" v-html="slide.title">
@@ -20,7 +20,30 @@
                 <Pagination />
                 <Navigation class="mt-10 mx-[2vw] md:mx-[20vw] text-white" />
             </template>
-        </Carousel>
+</Carousel> -->
+
+        <div class="relative isolate overflow-hidden bg-white py-40 mt-20">
+            
+            <NuxtImg :src="content.image" alt="Success Team Hands Up"
+                class="absolute inset-0 -z-10 h-full w-full !object-cover" />
+
+            <!-- <div class="absolute inset-0 bg-black opacity-30"></div> -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent opacity-100 z-0">
+            </div>
+
+            <div class="container relative z-50 mx-auto max-w-6xl font-sans">
+                <div class="text-center">
+                    <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
+                        {{ content.title }}
+                    </h2>
+                    <h2 v-html="content.subtitle" class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans">
+                    </h2>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 </template>
@@ -31,6 +54,7 @@ import 'vue3-carousel/dist/carousel.css'
 
 const props = defineProps({
     slides: Array,
+    content: Object
 })
 
 // const slides = ref([
@@ -44,6 +68,4 @@ const props = defineProps({
 
 </script>
 
-<style scoped>
-</style>
-
+<style scoped></style>
