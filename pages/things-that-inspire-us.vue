@@ -106,8 +106,9 @@ const joinAsMembers = ref([
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/bulbs.jpg" style="color: transparent; object-fit: contain;"
-                            class="rounded-lg" />
+                            data-nimg="1"
+                            src="https://img.freepik.com/free-vector/illustration-light-bulb-ideas_53876-18148.jpg?t=st=1736961876~exp=1736965476~hmac=8278c223d0420225e10dea6cd3d54126e6e2613f106b36f587a0af3eb1ca04a6&w=2000"
+                            style="color: transparent; object-fit: contain;" class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
                         <h2 id="" class="heading-class">
