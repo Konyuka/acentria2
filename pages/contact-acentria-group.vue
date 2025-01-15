@@ -137,9 +137,9 @@ const contactsContent = ref({
             </div>
 
             <Socials2 />
+            <ContactForm />
         </div>
 
-        <ContactForm />
 
     </div>
 </template>

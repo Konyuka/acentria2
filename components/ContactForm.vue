@@ -22,7 +22,7 @@ const company = computed(() => {
         <div>
             <div class="pb-4 text-left">
                 <h2 class="text-2xl font-semibold text-gray-900">
-                    Let’s <span class="text-brand-primary">Talk</span>
+                    Engage <span class="text-brand-primary">an Expert</span>
                 </h2>
             </div>
             <div class="my-5 grid grid-cols-1 gap-5 lg:grid-cols-2">
