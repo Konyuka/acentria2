@@ -272,7 +272,7 @@ onMounted(() => {
             <div class="bg-white px-6 py-1 font-sans">
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative py-4 lg:basis-1/2 content-center">
-                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="250" decoding="async"
+                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="290" decoding="async"
                             data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                             src="/img/dreads.jpg" />
                     </div>
@@ -423,7 +423,7 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                             decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/Our leadership-2388444915.jpg" />
+                            class="rounded-lg" src="/img/suits.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 class="heading-class mb-4">

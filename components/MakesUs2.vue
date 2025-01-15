@@ -224,6 +224,40 @@ const specials = ref([
         ],
         img: '/img/travel3.jpg'
     },
+    
+    {
+        name: 'Industrial & Manufacturing',
+        overview: 'The industrial and manufacturing sector faces challenges ranging from supply chain disruptions to workplace safety and environmental regulations. Our solutions are designed to mitigate these risks effectively.',
+        expertise: [
+            'Machinery breakdown insurance tailored to industrial needs.',
+            'Supply chain risk coverage enhanced by smart tracking tools.',
+            'Environmental liability assessments and compliance strategies.',
+            'Workplace safety advisory backed by data-driven insights.',
+        ],
+        faqs: [
+            {
+                name: 'Do you provide solutions for environmental risks?',
+                content: 'Yes, we offer liability insurance and compliance advisory for environmental challenges.',
+            },
+            {
+                name: 'How do you support supply chain resilience?',
+                content: 'Our tailored insurance and technology solutions address logistical challenges.',
+            },
+            {
+                name: 'What is machinery breakdown insurance?',
+                content: 'It covers losses arising from unexpected equipment failures.',
+            },
+            {
+                name: 'How do you ensure workplace safety compliance?',
+                content: 'We conduct risk assessments using advanced tools and provide actionable recommendations.',
+            },
+            {
+                name: 'Do you offer product liability coverage?',
+                content: 'Yes, we provide comprehensive coverage for manufacturing defects and related risks.',
+            },
+        ],
+        img: '/img/inda.png'
+    },
     {
         name: 'Construction & Real Estate',
         overview: 'Construction and real estate projects are fraught with risks, from project delays to property damage and compliance issues. Our solutions are designed to address these challenges head-on.',
@@ -256,39 +290,6 @@ const specials = ref([
             },
         ],
         img: '/img/construction.jpg'
-    },
-    {
-        name: 'Industrial & Manufacturing',
-        overview: 'The industrial and manufacturing sector faces challenges ranging from supply chain disruptions to workplace safety and environmental regulations. Our solutions are designed to mitigate these risks effectively.',
-        expertise: [
-            'Machinery breakdown insurance tailored to industrial needs.',
-            'Supply chain risk coverage enhanced by smart tracking tools.',
-            'Environmental liability assessments and compliance strategies.',
-            'Workplace safety advisory backed by data-driven insights.',
-        ],
-        faqs: [
-            {
-                name: 'Do you provide solutions for environmental risks?',
-                content: 'Yes, we offer liability insurance and compliance advisory for environmental challenges.',
-            },
-            {
-                name: 'How do you support supply chain resilience?',
-                content: 'Our tailored insurance and technology solutions address logistical challenges.',
-            },
-            {
-                name: 'What is machinery breakdown insurance?',
-                content: 'It covers losses arising from unexpected equipment failures.',
-            },
-            {
-                name: 'How do you ensure workplace safety compliance?',
-                content: 'We conduct risk assessments using advanced tools and provide actionable recommendations.',
-            },
-            {
-                name: 'Do you offer product liability coverage?',
-                content: 'Yes, we provide comprehensive coverage for manufacturing defects and related risks.',
-            },
-        ],
-        img: '/img/industries.jpeg'
     },
     {
         name: 'Mining & Natural Resources',
