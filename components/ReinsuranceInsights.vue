@@ -19,7 +19,7 @@ const news = ref([
     {
         tag: 'blog',
         title: 'Workshops & Webinars',
-        img: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        img: '/img/Workshops & Webinars.JPG',
     },
 ])
 

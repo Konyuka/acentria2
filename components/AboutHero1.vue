@@ -7,19 +7,19 @@ const props = defineProps({
 
 <template>
     <div class="relative h-screen mt-2">
-        <!-- <video preload="metadata" loading="lazy" autoplay muted loop
+        <video preload="metadata" loading="lazy" autoplay muted loop
             class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]" src="/img/hd2.mp4"
             style="color: transparent">
             Your browser does not support the video tag.
-        </video> -->
+        </video>
 
 
         <!-- Background Image -->
-        <img loading="lazy" src="/img/xxl.jpg" alt="Background Image"
-            class="drop-shadow-md w-screen h-screen object-fill fixed top-0 left-0 z-[-1]" style="color: transparent; " />
+        <!-- <img loading="lazy" src="/img/xxl.jpg" alt="Background Image"
+            class="drop-shadow-md w-screen h-screen object-fill fixed top-0 left-0 z-[-1]" style="color: transparent; " /> -->
 
         <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-black opacity-30 z-0"></div>
+        <!-- <div class="absolute inset-0 bg-black opacity-50 z-0"></div> -->
         <!-- <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-white/40 opacity-100 z-0"></div> -->
 
 

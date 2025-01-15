@@ -29,8 +29,7 @@ const company = computed(() => {
                 <div class="h-fit rounded-xl bg-black px-5 md:px-12 py-5 md:py-14 shadow-card">
                     <div>
                         <NuxtImg alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
-                            style="color: transparent; object-fit: cover"
-                            src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            style="color: transparent; object-fit: cover" src="/img/Talk to Us.JPG"
                             class="rounded-xl w-full h-[45vh]" />
                     </div>
                     <h5 class="mt-2 text-sm lg:text-md text-white leading-relaxed pb-2">

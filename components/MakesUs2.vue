@@ -86,7 +86,7 @@ const specials = ref([
                 content: 'Yes, we conduct comprehensive assessments using smart tools to mitigate digital banking risks.',
             },
         ],
-        img:'https://img.freepik.com/free-photo/workplace-team-cooperation-businesswoman-laptop-office_1418-44.jpg?t=st=1736925893~exp=1736929493~hmac=51c4b137fc5dfa0b1f63d0bdc2858422c9ec98ddf721d2b0e75ef7184fef2e26&w=900'
+        img:'/img/finance.jpg'
     },
     {
         name: 'Industrial & Manufacturing',
@@ -119,7 +119,7 @@ const specials = ref([
                 content: 'Yes, we provide comprehensive coverage for manufacturing defects and related risks.',
             },
         ],
-        img: '/img/Industrial & Manufacturing 2119130636.jpg'
+        img: '/img/industries.jpeg'
     },
     {
         name: 'Professionals & Business Services',
@@ -185,7 +185,7 @@ const specials = ref([
                 content: 'Yes, we offer solutions to address risks related to software failures and liabilities.',
             },
         ],
-        img: '/img/Technology-2253228203 (1).jpg'
+        img: '/img/industry-tech.jpg'
     },
     {
         name: 'Transport & Logistics',
@@ -218,7 +218,7 @@ const specials = ref([
                 content: 'Yes, we provide comprehensive coverage for international transport operations.',
             },
         ],
-        img: '/img/Transport -2142977819.jpg'
+        img: '/img/logistics.jpeg'
     },
     {
         name: 'Hospitality, Travel & Leisure',
@@ -284,7 +284,7 @@ const specials = ref([
                 content: 'Yes, we offer tailored insurance solutions for construction equipment and machinery.',
             },
         ],
-        img: '/img/stock-pConstruction & Real estate-2198905429.jpg'
+        img: '/img/construction.jpg'
     },
     {
         name: 'Mining & Natural Resources',
@@ -317,7 +317,7 @@ const specials = ref([
                 content: 'Our actuarial and advisory teams help clients align operations with regulatory requirements.',
             },
         ],
-        img: '/img/Mining-2479854273.jpg'
+        img: '/img/mining.jpg'
     },
 ]);
 

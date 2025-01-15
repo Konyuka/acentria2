@@ -29,8 +29,7 @@ const company = computed(() => {
                 <div class="h-fit rounded-xl bg-black px-5 md:px-12 py-5 md:py-14 shadow-card">
                     <div>
                         <NuxtImg alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
-                            style="color: transparent; object-fit: cover"
-                            src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            style="color: transparent; object-fit: cover" src="/img/Talk to Us.JPG"
                             class="rounded-xl w-full h-[45vh]" />
                     </div>
                     <h5 class="mt-2 text-sm lg:text-md text-white leading-relaxed pb-2">
@@ -105,7 +104,7 @@ const company = computed(() => {
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                     <i class="fas fa-building text-md text-brand-primary"></i>
                                 </div>
-                                
+
                                 <textarea name="CompanyName" id="CompanyName" rows="3"
                                     class="block w-full rounded-md border-0 py-1 pl-10 focus:ring-brand-primary text-gray-900 ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
                             </div>

@@ -2,29 +2,29 @@
 const bannerContent = ref({
     subtitle: 'Acentria Group',
     title: 'Things That Inspire Us',
-    image:'https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    image: 'https://img.freepik.com/free-vector/illustration-light-bulb-ideas_53876-18150.jpg?t=st=1736940696~exp=1736944296~hmac=0aa459f06202624661843cf8965815496b30607258bc135ab65108ea150e1b6d&w=996'
 })
 
 const faqs = ref([
     {
         name: "Think Customer",
-        content:"I care about our customers so I go the extra mile to earn their trust and loyalty.",
+        content: "I care about our customers so I go the extra mile to earn their trust and loyalty.",
     },
     {
         name: "Embrace Change",
-        content:"I embrace new challenges and I see new ways of doing things as an opportunity to grow.",
+        content: "I embrace new challenges and I see new ways of doing things as an opportunity to grow.",
     },
     {
         name: "Act Now",
-        content:"I take accountability and manage risks accordingly, always keeping things simple.",
+        content: "I take accountability and manage risks accordingly, always keeping things simple.",
     },
     {
         name: "Move Together",
-        content:"I seek opportunities to promote collaboration and work together to achieve common goals.",
+        content: "I seek opportunities to promote collaboration and work together to achieve common goals.",
     },
     {
         name: "Speak Up",
-        content:"I feel free to raise any idea, ask any question or escalate any issues or risks, building an environment of respect and trust. I am comfortable sharing and receiving feedback.",
+        content: "I feel free to raise any idea, ask any question or escalate any issues or risks, building an environment of respect and trust. I am comfortable sharing and receiving feedback.",
     },
 ]);
 
@@ -74,9 +74,8 @@ const joinAsMembers = ref([
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1"
-                            src="https://images.pexels.com/photos/29462460/pexels-photo-29462460/free-photo-of-elegant-portrait-of-a-smiling-woman-in-lagos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                            data-nimg="1" src="/img/empowerment.jpg" style="color: transparent; object-fit: contain;"
+                            class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 id="" class="heading-class pb-4 md:pb-5">
@@ -108,7 +107,7 @@ const joinAsMembers = ref([
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1"
-                            src="https://images.pexels.com/photos/1136465/pexels-photo-1136465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            src="https://img.freepik.com/free-vector/illustration-light-bulb-ideas_53876-18148.jpg?t=st=1736940809~exp=1736944409~hmac=2e051a25cb82ce561432cd64803811393f33f0fec7ccd12aac08e698f44c6515&w=996"
                             style="color: transparent; object-fit: contain;" class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
@@ -140,7 +139,7 @@ const joinAsMembers = ref([
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/award.jpg" style="color: transparent; object-fit: contain;"
+                            data-nimg="1" src="/img/prosper.jpg" style="color: transparent; object-fit: contain;"
                             class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">

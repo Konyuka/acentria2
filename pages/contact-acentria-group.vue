@@ -3,7 +3,7 @@
 const bannerContent = ref({
     subtitle: 'Contact Us',
     title: 'Reach Out to Us',
-    image: 'https://images.pexels.com/photos/577769/pexels-photo-577769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    image: '/img/tele.jpeg'
 })
 
 const contactsContent = ref({
@@ -139,7 +139,7 @@ const contactsContent = ref({
             <Socials2 />
         </div>
 
-        <ContactForm class="" />
+        <ContactForm />
 
     </div>
 </template>
