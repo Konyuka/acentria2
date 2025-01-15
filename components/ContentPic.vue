@@ -52,10 +52,10 @@ const theButtonTitle = computed(()=>{
                     </NuxtLink>
                 </div>
             </div>
-            <div class="relative py-4 lg:basis-1/2 flex items-center">
-                <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
-                    style="color: transparent; object-fit: contain"
-                    class="w-full max-h-[250px] h-full shadow-2xl rounded-lg !object-cover" :src="content.image" />
+            <div class="relative py-4  flex items-center">
+                <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-img="1"
+                    style="color: transparent;"
+                    class="w-full min-w-[450px] max-h-[250px] h-full shadow-2xl rounded-lg !object-cover" :src="content.image" />
             </div>
         </div>
     </div>

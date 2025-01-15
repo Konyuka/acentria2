@@ -1,7 +1,7 @@
 <template>
     <div class="!overflow-x-hidden !font-sans bg-white">
         <Carousel :autoplay="2000" :wrap-around="true">
-            <Slide v-for="slide in slides" :key="slide" class="h-[70vh]">
+            <Slide v-for="slide in slides" :key="slide" class="h-[85vh]">
                 <NuxtImg :src="slide.imageUrl" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-black opacity-60"></div>
                 <div

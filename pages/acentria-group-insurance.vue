@@ -130,8 +130,8 @@ const exploreRisks = ref({
 const introContent = ref({
     orientation: 'lg:flex-row flex-col',
     heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
-    subheading: 'A reliable partner <span class="text-brand-primary">  you can trust</span>',
-    image: '/img/reliable.jpg',
+    subheading: 'A Reliable Partner <span class="text-brand-primary">  You Can Trust</span>',
+    image: '/img/woman-shake.jpg',
     link: '/insurance-claims',
     content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
 })
@@ -207,28 +207,28 @@ const slides = ref([
 
 const specials = ref([
     {
-        name: 'Financial <br/> <span class="text-brand-primary">Wellness</span>',
-        img: 'https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        description: 'Comprehensive financial planning and advisory services to help you achieve your long-term financial goals and secure your future.'
-    },
-    {
-        name: 'Risk  <br/> <span class="text-brand-primary">Management</span>',
-        img: 'https://images.pexels.com/photos/266403/pexels-photo-266403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        description: 'Strategic risk assessment and mitigation strategies to protect your assets and minimize potential exposures.'
-    },
-    {
         name: 'Cyber Risk <br/> <span class="text-brand-primary">Management</span>',
-        img: 'https://images.pexels.com/photos/38275/anonymous-studio-figure-photography-facial-mask-38275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        img: '/img/tech2.jpg',
         description: 'Advanced cybersecurity solutions and insurance coverage to protect your digital assets and maintain business continuity.'
     },
     {
+        name: 'Financial <br/> <span class="text-brand-primary">Wellness</span>',
+        img: '/img/risk-areas.jpg',
+        description: 'Comprehensive financial planning and advisory services to help you achieve your long-term financial goals and secure your future.'
+    },
+    {
         name: 'Claims  <br/> <span class="text-brand-primary">Management</span>',
-        img: 'https://images.pexels.com/photos/5699480/pexels-photo-5699480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        img: '/img/claims.jpg',
         description: 'Efficient and streamlined claims processing with dedicated support throughout the entire claims lifecycle.'
     },
     {
+        name: 'Risk  <br/> <span class="text-brand-primary">Management</span>',
+        img: '/img/risky2.jpg',
+        description: 'Strategic risk assessment and mitigation strategies to protect your assets and minimize potential exposures.'
+    },
+    {
         name: 'Insurance Policy <br/> <span class="text-brand-primary">Management</span>',
-        img: 'https://images.pexels.com/photos/5699475/pexels-photo-5699475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        img: '/img/policy.png',
         description: 'Comprehensive policy administration and review services to ensure optimal coverage and cost-effectiveness.'
     }
 ]);
@@ -276,7 +276,7 @@ onMounted(() => {
                             <a v-for="product in specials" :key="product.id" @click="setLineData(product)"
                                 class="button-animation group shadow-md p-3 rounded-md">
                                 <div
-                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
+                                    class="aspect-h-1 aspect-w-0 w-full overflow-hidden rounded-lg ">
                                     <NuxtImg :src="product.img" :alt="product.img"
                                         class="h-full w-full object-cover object-center group-hover:opacity-75" />
                                 </div>
@@ -373,11 +373,9 @@ onMounted(() => {
                 </div>
             </section>
 
-            <!-- <ContactForm /> -->
 
             <InTouch />
 
-            <!-- <News /> -->
         </div>
     </main>
 </template>
