@@ -142,7 +142,7 @@ const others = ref([
   {
     name: 'Acentria <span class="text-brand-primary">Careers</span>',
     description: 'Explore exciting career opportunities and join our team to build a future of excellence.',
-    image: '/img/join.jpg',
+    image: '/img/careers-shake.jpg',
     link: '/acentria-group-careers',
   },
 
