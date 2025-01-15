@@ -13,13 +13,13 @@
                     <div class="flex relative" style="transform: translateX(0%)">
                         <div class="mt-2 md:flex">
                             <div class="relative lg:w-1/2 h-72">
-                                <NuxtImg v-motion-fade-visible src="/img/mama-mboga.jpg" alt="image of profile"
+                                <NuxtImg v-motion-fade-visible src="/img/testi.jpg" alt="image of profile"
                                     class="w-full h-[320px] flex-shrink-0 object-fit object-cover shadow-lg rounded" />
                                 <div
                                     class="mt-20 w-28 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-28 bg-red-100 rounded-full">
                                     <i class="fas fa-quote-right text-black z-50 text-4xl text-brand-primary"></i>
                                 </div>
-                            
+
                                 <!-- <div class="absolute inset-0 bg-black opacity-5 z-0"></div> -->
                             </div>
                             <div
