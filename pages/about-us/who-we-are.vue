@@ -275,7 +275,7 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="250" decoding="async"
                             data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                            src="/img/What we do.JPG" />
+                            src="/img/what-we-do.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 class="text-2xl font-semibold text- mb-4">
