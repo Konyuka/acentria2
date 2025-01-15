@@ -1,12 +1,4 @@
 <script setup>
-
-const content = ref({
-    vid: '/img/hd1.mp4',
-    pageTitle: 'Acentria Group Insurance',
-    title: 'Your Insurance, Your Way.   <br/> <span class="text-brand-primary">Let Acentria Tailor Your Coverage To Your Needs</span>',
-    // description: 'Protect what matters most with our tailored insurance plans. At Acentria Group, we offer a wide range of coverage options designed to safeguard your assets, your business, and your peace of mind. Trust us to help you navigate the complexities of insurance, ensuring you’re prepared for whatever life may bring.',
-})
-
 const data = ref({
     personal: [
         {
@@ -92,71 +84,18 @@ const data = ref({
     ]
 });
 
-
-const whys = ref([
-    {
-        title: 'We save you money',
-        content: 'We provide unique offerings that enable you to combine your insurance products.',
-        icon: 'fas fa-piggy-bank',
-    },
-    {
-        title: 'We are there for you',
-        content: 'We will take care of your insurance needs through our versatile scope',
-        icon: 'fas fa-headset',
-    },
-    {
-        title: 'Easy claim process',
-        content: 'Our claims process is hassle-free, and we are proud of our service',
-        icon: 'fas fa-check-circle',
-    },
-    {
-        title: 'Prompt Quotations',
-        content: 'Let us help you with the best timely quotations for your needs',
-        icon: 'fas fa-clock',
-    },
-    {
-        title: 'Convenience',
-        content: 'Our services and solutions are simplified for clients\' use.',
-        icon: 'fas fa-thumbs-up',
-    },
-    {
-        title: 'Peace of Mind',
-        content: 'Our team of experts shall offer professional advice for your needs.',
-        icon: 'fas fa-smile',
-    },
-])
-const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
-const leftTitle = ref(`Why Insure with <span class="text-brand-primary"> Acentria</span>`)
-
 const menus = ref([
     {
         name: 'Personal Insurance Cover',
         tag: 'personal',
         icon: 'fas fa-user-shield',
     },
-    // {
-    //     name: 'Corporate Insurance Cover',
-    //     tag: 'corporate',
-    //     icon: 'fas fa-shield-alt',
-    // },
     {
         name: 'Business Insurance Cover',
         tag: 'business',
         icon: 'fas fa-briefcase',
     },
 ])
-
-
-const heroContent = ref({
-    name: `<h1
-                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-normal lg:leading-normal">
-                                    <span
-                                        class="font-sans tracking-normal text-gray-900 leading-normal lg:leading-normal">Acentria</span>
-                                    Insurance Brokers
-                                </h1>`,
-})
-const bannerTitle = ref('Acentria Insurance Brokers')
-
 
 const helps = ref([
     {
@@ -179,15 +118,6 @@ const helps = ref([
     },
 ])
 
-const exploreProducts = ref({
-    orientation: 'lg:flex-row flex-col',
-    heading: 'Explore <span class="text-brand-primary">Products</span>',
-    subheading: 'Get a  <span class="text-brand-primary">5% Discount</span>',
-    image: '/img/handhouse.jpg',
-    link: '/insurance-products',
-    content: 'At Acentria we offers a wide variety of insurance options for peace of mind for your business, on the road, under your roof, and in your daily life.',
-})
-
 const exploreRisks = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Explore <span class="text-brand-primary">Risk Areas</span>',
@@ -195,15 +125,6 @@ const exploreRisks = ref({
     image: '/img/carinsurance.jpg',
     link: '/insurance-products',
     content: 'At Acentria we help clients to identify, mitigate and transfer an evolving range of risks and deliver solutions that safegueard people and businesses to recover from financial losses due to accidents, illnesses, natural disasters, and other unforeseen events giving you a financial security.',
-})
-
-const exploreClaims = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
-    heading: 'Learn More <span class="text-brand-primary">About Claims</span>',
-    subheading: '',
-    image: '/img/safehouse.jpg',
-    link: '/insurance-claims',
-    content: 'No matter which type of claim you have, our goal is to make sure everything goes smoothly. That means making your claims process as easy as possible and keeping you updated. Select a product to view the insurance claims process Get a breakdown of the claims process, what to do, and where to go from here.',
 })
 
 const introContent = ref({

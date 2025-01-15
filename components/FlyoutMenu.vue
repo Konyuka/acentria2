@@ -244,7 +244,7 @@ const actionMenus = ref([
 
 
     {
-        name: 'Insights',
+        name: 'Market Insights',
         items: [
             {
                 name: 'Workshops & Webinars',
@@ -502,7 +502,7 @@ const InsuranceMenus = ref([
         name: 'Expert Services',
         linksHeading: 'Expert <span class="text-brand-primary">Assistance<span/>',
         mainMenu: 'Insurance <span class="text-brand-primary">Solutions<span/>',
-        mainHeading: 'Insurance & <span class="text-brand-primary">Risk Management<span/>',
+        mainHeading: 'Insurance & <br><span class="text-brand-primary">Risk Management<span/>',
         mainDescription: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
         subMenu: 'Why Personal <span class="text-brand-primary">Insurance?<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
@@ -697,7 +697,7 @@ const InsuranceMenus = ref([
     //     ]
     // },
     {
-        name: 'Insights',
+        name: 'Market Insights',
         linksHeading: 'Stay <span class="text-brand-primary">Informed<span/>',
         description: 'Access tools, guides, and resources to make informed insurance decisions.',
         icon: 'fas fa-lightbulb',
@@ -725,53 +725,53 @@ const InsuranceMenus = ref([
         ]
     },
 ]);
-
 const ReinsuranceMenus = ref([
     {
-        name: 'Expert Services',
+        name: 'Strategic Advisory',
         linksHeading: 'Expert<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Reinsurance <span class="text-brand-primary">Products<span/>',
-        mainHeading: '<span class="text-brand-primary">Reinsurance<span/>',
+        mainHeading: 'Reinsurance & <br> <span class="text-brand-primary"> Strategic Advisory<span/>',
         mainDescription: 'Acentria Re is a leading reinsurance brokerage firm dedicated to helping insurance and reinsurance companies navigate the complex world of reinsurance. With our global presence, extensive market knowledge and industry expertise, we are committed to delivering bespoke reinsurance solutions tailored to meet your unique risk management needs, optimize your capital and to ensure long-term stability.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
         description: 'Explore our comprehensive reinsurance services for risk management.',
         icon: 'fas fa-sync-alt',
         items: [
-            {
-                name: 'Treaty Administration',
-                description: 'Unlock the full potential of your reinsurance program with our comprehensive Treaty Administration services.',
-                link: '/reinsurance/treaty-administration',
-            },
-            {
-                name: 'Reinsurance Optimization',
-                description: 'Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance.',
-                link: '/reinsurance/reinsurance-optimization',
-            },
-            {
-                name: 'Claims Management',
-                description: 'Empower your business with our comprehensive claims management solutions and see the difference in your bottom line.',
-                link: '/reinsurance/claims-management',
-            },
-            {
-                name: 'Catastrophic Modelling',
-                description: 'Harness advanced catastrophe modeling to assess and manage exposure to natural disasters, ensuring robust risk management strategies.',
-                link: '/reinsurance/catastrophic-modelling',
-            },
-            {
-                name: 'Return on Risk Adjusted Capital',
-                description: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
-                link: '/reinsurance/return-on-risk-adjusted-capital',
-            },
+            // {
+            //     name: 'Reinsurance Optimization',
+            //     description: 'Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance.',
+            //     link: '/reinsurance/reinsurance-optimization',
+            // },
             {
                 name: 'Rating Agency Advisory',
                 description: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
                 link: '/reinsurance/rating-agency-advisory',
             },
+           
             {
-                name: 'Risk Based Capital Regulation',
-                description: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
-                link: '/reinsurance/risk-based-capital-regulation',
+                name: 'Risk Assessment & Modeling',
+                description: 'In-depth analysis of potential exposures and loss scenarios, using quantitative and qualitative methods to forecast financial impacts.',
+                link: '/reinsurance/risk-assessment-modeling',
+            },
+            {
+                name: 'Program Design & Optimization',
+                description: 'Structuring reinsurance solutions aligned with a client’s risk tolerance and balance sheet objectives to optimize capital usage and minimize volatility.',
+                link: '/reinsurance/reinsurance-optimization',
+            },
+            {
+                name: 'Financial Planning & Structuring',
+                description: 'Crafting strategies that balance liquidity, solvency, and growth targets, ensuring optimal capital allocation.',
+                link: '/reinsurance/financial-planning-structuring',
+            },
+            {
+                name: 'Market Insights & Negotiation',
+                description: 'Advising on emerging market trends, regulatory environments, and pricing to optimize placements and financing terms.',
+                link: '/reinsurance/market-insights-negotiation',
+            },
+            {
+                name: 'Regulatory Compliance & Governance',
+                description: 'Implementing best practices in corporate governance, financial reporting, and solvency management to ensure adherence to regulatory standards.',
+                link: '/reinsurance/regulatory-compliance-governance',
             },
         ]
     },
@@ -800,6 +800,40 @@ const ReinsuranceMenus = ref([
         ]
     },
     {
+        name: 'Reinsurance Services',
+        linksHeading: 'Reinsurance<span class="text-brand-primary"> Solutions<span/>',
+        subMenu: 'Our <span class="text-brand-primary">Solutions<span/>',
+        description: 'Discover tailored reinsurance solutions for specific risk requirements.',
+        icon: 'fas fa-cogs',
+        items: [
+            {
+                name: 'Treaty Administration',
+                description: 'Unlock the full potential of your reinsurance program with our comprehensive Treaty Administration services.',
+                link: '/reinsurance/treaty-administration',
+            },
+            {
+                name: 'Claims Management',
+                description: 'Empower your business with our comprehensive claims management solutions and see the difference in your bottom line.',
+                link: '/reinsurance/claims-management',
+            },
+            {
+                name: 'Catastrophic Modelling',
+                description: 'Harness advanced catastrophe modeling to assess and manage exposure to natural disasters, ensuring robust risk management strategies.',
+                link: '/reinsurance/catastrophic-modelling',
+            },
+            {
+                name: 'Return on Risk Adjusted Capital',
+                description: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
+                link: '/reinsurance/return-on-risk-adjusted-capital',
+            },
+            {
+                name: 'Risk Based Capital Regulation',
+                description: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
+                link: '/reinsurance/risk-based-capital-regulation',
+            },
+        ]
+    },
+    {
         name: 'Innovation & Digitization',
         linksHeading: 'Data<span class="text-brand-primary"> & Modeling<span/>',
         subMenu: 'Data <span class="text-brand-primary">& Modelling<span/>',
@@ -819,7 +853,7 @@ const ReinsuranceMenus = ref([
         ]
     },
     {
-        name: 'Insights',
+        name: 'Market Insights',
         linksHeading: 'Stay <span class="text-brand-primary">Informed<span/>',
         description: 'Access tools, guides, and resources to make informed insurance decisions.',
         icon: 'fas fa-lightbulb',
@@ -906,7 +940,7 @@ const ActuarialMenus = ref([
         ]
     },
     {
-        name: 'Insights',
+        name: 'Market Insights',
         linksHeading: 'Stay <span class="text-brand-primary">Informed<span/>',
         description: 'Access tools, guides, and resources to make informed insurance decisions.',
         icon: 'fas fa-lightbulb',
