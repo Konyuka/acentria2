@@ -4,7 +4,7 @@ import { ref } from "vue";
 const InsuranceBannerContent = ref({
     subtitle: 'Ensure Smart Business!',
     title: 'Protect Your Business.',
-    image: 'https://img.freepik.com/free-photo/shallow-focus-woman-with-facemask-holding-pos-machine-market_181624-39373.jpg?t=st=1736577997~exp=1736581597~hmac=6f92de8f6a2c46bcb98f4ac77b345e8a733e5acb0addea1371a2c12d385b9d25&w=900',
+    image: '/img/in-business.jpg',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
 

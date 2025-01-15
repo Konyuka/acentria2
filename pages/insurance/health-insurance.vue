@@ -4,7 +4,7 @@ import { ref } from "vue";
 const InsuranceBannerContent = ref({
     subtitle: 'Ensure Smart Health!',
     title: 'Comprehensive Health Insurance Plans for Every Stage of Life',
-    image: '/img/nurse.jpg',
+    image: '/img/in-health.jpg',
     content: 'Discover our life insurance & make sure your loved ones are safe and sound, no matter what happens. Let’s talk about securing your loved ones’ future. Explore our life insurance options and ensure their financial well-being, no matter what life brings.',
 })
 

@@ -4,7 +4,7 @@ import { ref } from "vue";
 const InsuranceBannerContent = ref({
     subtitle: 'Ensure Smart Home!',
     title: 'Protect your home and belongings with our comprehensive home insurance.',
-    image: '/img/safehouse.jpg',
+    image: '/img/in-home.jpg',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
 

@@ -3,7 +3,7 @@
 const InsuranceBannerContent = ref({
     subtitle: 'Ensure Smart Shipping!',
     title: 'Protect Your Marine Operations',
-    image: 'https://img.freepik.com/free-photo/investigative-boats-sailing-turquoise-ocean-cloudy-sky_181624-6929.jpg?t=st=1736534018~exp=1736537618~hmac=d5cc08d81b51b0eada4258e914f6c37a57b16bbce944776496bdc21883bc5fde&w=900',
+    image: '/img/in-marine.jpg',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
 

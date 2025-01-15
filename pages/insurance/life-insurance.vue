@@ -4,7 +4,7 @@ import { ref } from "vue";
 const InsuranceBannerContent = ref({
     subtitle: 'Ensure Smart Life!',
     title: 'Protect your family\'s tomorrow, today',
-    image: 'https://images.pexels.com/photos/5727734/pexels-photo-5727734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/in-life.jpg',
     content: 'Discover our life insurance & make sure your loved ones are safe and sound, no matter what happens. Let’s talk about securing your loved ones’ future. Explore our life insurance options and ensure their financial well-being, no matter what life brings.',
 })
 

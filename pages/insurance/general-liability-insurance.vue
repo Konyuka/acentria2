@@ -4,7 +4,7 @@ import { ref } from "vue";
 const InsuranceBannerContent = ref({
     subtitle: '',
     title: 'Secure your business\'s future.',
-    image: 'https://images.pexels.com/photos/39584/censorship-limitations-freedom-of-expression-restricted-39584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/in-liability.jpg',
     content:'At Acentria, we understand that business success goes hand-in-hand with managing risk effectively. That’s why our General Liability Insurance is designed to be your first line of defense. With our tailored coverage, you can shield your business from unexpected accidents, lawsuits, and mishaps, allowing you to focus on what matters most – growing your enterprise. Let us be your partner in securing your business’s future with peace of mind.'
 })
 

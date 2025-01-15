@@ -774,7 +774,7 @@ const ReinsuranceMenus = ref([
                 link: '/reinsurance/regulatory-compliance-governance',
             },
         ]
-    },
+    }, 
     {
         name: 'Reinsurance Solutions',
         linksHeading: 'Reinsurance<span class="text-brand-primary"> Solutions<span/>',

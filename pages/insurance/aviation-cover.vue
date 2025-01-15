@@ -5,7 +5,7 @@ const InsuranceBannerContent = ref({
     subtitle: 'Aviation Insurance',
     title: 'Expert Aviation Insurance',
     heading: 'Specialist aviation insurance brokers',
-    image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/in-aviation.jpg',
     content: 'We provide aviation professionals with insurance policies tailored to their unique needs. Our dedicated team of aviation insurance brokers combines in-depth industry knowledge and exceptional service to offer you strategic advice, comprehensive coverage, and competitive pricing. Regardless of your flying experience or the type of aircraft you operate, we’re here to ensure your peace of mind with coverage that lets you fly confidently.'
 })
 
