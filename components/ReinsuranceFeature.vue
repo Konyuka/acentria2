@@ -30,7 +30,7 @@ const splitAndStyle = (text) => {
                         <div class="lg:max-w-lg">
                             <!-- <h2 class="text-base font-semibold leading-7 text-brand-primary">Acentria Reinsurance Brokers</h2> -->
                             <p v-html="styledTitle"
-                                class="mt-2 text-2xl sm:text-2xl font-semibold leading-normal text-gray-900">
+                                class="mt-2 heading-class">
                             </p>
                             <p class="mt-4 sm:mt-6 text-xs text-black leading-normal">
                                 {{ content.content }}
