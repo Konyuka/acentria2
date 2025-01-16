@@ -85,21 +85,6 @@ const faqs = ref([
             </div>
         </div>
 
-        <!-- <div class="py-5 container">
-            <h2 class="text-2xl !font-semibold text-black mb-4">
-                Enagage <span class="text-brand-primary"> An Expert?</span>
-            </h2>
-            <div class="my-5">
-                <p class="text-sm leading-normal">
-                    Let us handle the complexities of claims management so you can focus on what matters most – running
-                    your business. <NuxtLink to="/contact-acentria-group" class="font-semibold italic underline">Contact
-                        us today </NuxtLink> to learn more about our
-                    services and how we can help you achieve your reinsurance goals.
-                </p>
-            </div>
-        </div> -->
-
-        <!-- <ReinsuranceWhy /> -->
         <ContactForm />
     </div>
 

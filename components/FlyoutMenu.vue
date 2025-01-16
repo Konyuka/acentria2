@@ -3,7 +3,7 @@
 
         <div class="justify-center">
             <div class="">
-                <NuxtLink :to="theMenu.link" @click="closeFlyOver()" @mouseenter="openFlyover(theMenu.name, 'hover')"
+                <NuxtLink :to="theMenu.link" @click="closeFlyOver(theMenu.name)" @mouseenter="openFlyover(theMenu.name, 'hover')"
                     @mouseleave="closeFlyOver()" :class="[
                         openMenu === theMenu.name ?
                             'text-brand-primary border-b-red-600 border-b-4' :
@@ -817,20 +817,25 @@ const ReinsuranceMenus = ref([
                 link: '/reinsurance/claims-management',
             },
             {
+                name: 'Market Insights and Negotiations',
+                description: 'Leverage market insights to refine coverage terms, mitigate volatility, and enhance risk placement through strategic negotiations',
+                link: '/reinsurance/market-insights',
+            },
+            {
                 name: 'Catastrophic Modelling',
                 description: 'Harness advanced catastrophe modeling to assess and manage exposure to natural disasters, ensuring robust risk management strategies.',
                 link: '/reinsurance/catastrophic-modelling',
             },
-            {
-                name: 'Return on Risk Adjusted Capital',
-                description: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
-                link: '/reinsurance/return-on-risk-adjusted-capital',
-            },
-            {
-                name: 'Risk Based Capital Regulation',
-                description: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
-                link: '/reinsurance/risk-based-capital-regulation',
-            },
+            // {
+            //     name: 'Return on Risk Adjusted Capital',
+            //     description: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
+            //     link: '/reinsurance/return-on-risk-adjusted-capital',
+            // },
+            // {
+            //     name: 'Risk Based Capital Regulation',
+            //     description: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
+            //     link: '/reinsurance/risk-based-capital-regulation',
+            // },
         ]
     },
     {
@@ -1024,36 +1029,6 @@ const activeClick = ref(false)
 const activeHover = ref(false)
 const router = useRouter()
 
-const ctaButton = computed(() => {
-    if (currentMenu.value == 'Insurance') {
-        return 'Compare Quotes Instantly'
-    }
-    if (currentMenu.value == 'Reinsurance') {
-        return 'Book a Consultation'
-    }
-    if (currentMenu.value == 'Actuarial') {
-        return 'Book a Demo'
-    }
-    if (currentMenu.value == 'About') {
-        return 'Learn More'
-    }
-})
-
-const popoverImage = computed(() => {
-    if (currentMenu.value == 'Insurance') {
-        return '/img/tracy.jpg'
-    }
-    if (currentMenu.value == 'Reinsurance') {
-        return '/img/simo3.jpg'
-    }
-    if (currentMenu.value == 'Actuarial') {
-        return '/img/what.jpg'
-    }
-    if (currentMenu.value == 'About') {
-        return '/img/cover.jpg'
-    }
-})
-
 
 let hideTimeout = null;
 const openFlyover = (menu, type) => {
@@ -1071,6 +1046,9 @@ const openFlyover = (menu, type) => {
         }
     }
     if (menu == 'Technology') {
+        
+        // alert('hi')
+        console.log(type)
         if (type == 'hover') {
             return;
         } else {
@@ -1184,8 +1162,14 @@ const keepOpen = (theMenuName) => {
     }
 };
 
-const closeFlyOver = (close) => {
-    // close()
+const closeFlyOver = (type) => {
+    
+    if (type =='Technology'){
+        // alert('hi')
+         window.open('https://acentria-tech.vercel.app/', '_blank');
+            return;
+    }
+
     if (hideTimeout) {
         clearTimeout(hideTimeout);
     }
