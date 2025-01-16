@@ -843,10 +843,10 @@ const ReinsuranceMenus = ref([
             {
                 name: 'Reinsurance Data Analytics Tool',
                 description: 'Enhance decision making with our reinsurance data analytics tools.',
-                link: '/reinsurance/data-analytics-tool',
+                link: '/reinsurance/reinsurance-data-analytics-tool',
             },
             {
-                name: 'AcenRe Solution',
+                name: 'Acent-Re Solution',
                 description: 'Optimize reinsurance strategies with our comprehensive reinsurance solutions.',
                 link: '/reinsurance/acentre-reinsurance-solution',
             },

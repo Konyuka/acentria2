@@ -46,7 +46,7 @@ const faqs = ref([
 
         <Accordion :faqs="faqs" />
 
-        <div class="py-5 container">
+        <!-- <div class="py-5 container">
             <h2 class="text-2xl !font-semibold text-black mb-4">
                 Enagage <span class="text-brand-primary"> An Expert?</span>
             </h2>
@@ -58,7 +58,7 @@ const faqs = ref([
                     learn how we can help you predict, manage, and mitigate the impact of catastrophic events.
                 </p>
             </div>
-        </div>
+        </div> -->
 
         <ContactForm />
     </div>

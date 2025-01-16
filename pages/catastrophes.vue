@@ -5,7 +5,7 @@ const ReinsuranceBannerContent = ref({
     image: 'https://images.pexels.com/photos/1264438/pexels-photo-1264438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 })
 const ReinsuranceFeatureContent = ref({
-    title: 'Smart Catastrophe Management',
+    title: 'Catastrophe Management',
     image: 'https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     content: 'In an increasingly risky world, insurers and reinsurers require sophisticated tools to quantify and manage the risks they face. At, Acentria, our analytics professionals have developed specialized catastrophe models that assist in impact forecasting, enabling firms to analyze the financial impacts of catastrophic events. This allows for the development of effective reinsurance, underwriting, and exposure management strategies to stabilize an insurer\'s loss experience and reduce the disruptive effects of catastrophes.Our reinsurance solutions provide a vital safety net, helping you: '
 })

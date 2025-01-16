@@ -45,7 +45,7 @@ const faqs = ref([
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
         <ReinsuranceFeature :content="ReinsuranceFeatureContent" />
         <Accordion :faqs="faqs" />
-        <div class="py-5 container">
+        <!-- <div class="py-5 container">
             <h2 class="text-2xl !font-semibold text-black mb-4">
                 Enagage <span class="text-brand-primary"> An Expert?</span>
             </h2>
@@ -57,7 +57,7 @@ const faqs = ref([
                     services and how we can help you achieve your reinsurance goals.
                 </p>
             </div>
-        </div>
+        </div> -->
         <ContactForm />
     </div>
 </template>

@@ -161,7 +161,7 @@ const content4 = ref({
 })
 const content5 = ref({
     orientation: 'lg:flex-row flex-col',
-    heading: 'Elavate your Strategies <br/><span class="text-brand-primary">with Precision & Innovation</span>',
+    heading: 'Elevate your Strategies <br/><span class="text-brand-primary">with Precision & Innovation</span>',
     subheading: '',
     image: '/img/Re5.jpg',
     link: '/reinsurance/acentre-solution',
@@ -357,8 +357,8 @@ const faqs = ref([
 
 
 const bannerMainContent = ref({
-    title: 'Acentria Reinsurance',
-    subtitle: 'Secure Your Future with Comprehensive Reinsurance',
+    title: 'Acentria <span class="text-brand-primary"> Reinsurance</span>',
+    subtitle: 'Navigating Risks, Securing Futures, and Empowering Growth',
     image: '/img/reinsure.jpeg',
 })
 
@@ -412,6 +412,12 @@ const bannerMainContent = ref({
 
 
 
+
+
+            <ReinsuranceInsights />
+
+            <HowHelp />
+
             <section id="" class="relative py-8 bg-black text-center">
                 <div class="container px-4">
                     <h2
@@ -421,10 +427,6 @@ const bannerMainContent = ref({
                     </h2>
                 </div>
             </section>
-
-            <ReinsuranceInsights />
-
-            <HowHelp />
 
             <InTouch />
         </div>

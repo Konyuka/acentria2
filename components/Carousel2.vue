@@ -18,11 +18,9 @@
                         </div>
                     </div>
                     <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                        <h2 class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
-                            {{ content.subtitle }}
+                        <h2 v-html="content.subtitle" class="text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
                         </h2>
-                        <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
-                            {{ content.title }}
+                        <h2 v-html="content.title" class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
                         </h2>
 
                     </div>

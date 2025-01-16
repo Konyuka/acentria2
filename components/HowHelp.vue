@@ -57,7 +57,7 @@ onMounted(() => {
 
             <div class="py-5 text-left container">
                 <h2 class="heading-class text-black">
-                    Need<span class="text-brand-primary"> Assitance?</span>
+                    Need<span class="text-brand-primary"> Assistance?</span>
                 </h2>
 
                 <div>

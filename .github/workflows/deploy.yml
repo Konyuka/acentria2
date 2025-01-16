@@ -1,0 +1,51 @@
+name: Deploy to Ubuntu Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.DEPLOY_KEY }}  # your private key
+          known_hosts: github.com
+
+      - name: Build Nuxt for Production
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to Ubuntu via SSH
+        run: |
+          # 1) SSH into your server
+          # 2) Navigate to your existing app folder
+          # 3) Pull latest changes from GitHub
+          # 4) Install dependencies
+          # 5) Rebuild if necessary
+          # 6) Restart PM2
+
+          ssh -o StrictHostKeyChecking=no user@your_server_ip_or_hostname << 'ENDSSH'
+            cd /var/www/YourNuxt3Repo
+
+            # Pull the latest changes from main
+            git checkout main
+            git pull
+
+            # Install & build
+            npm install
+            npm run build
+
+            # Restart PM2
+            pm2 restart nuxt3-app || pm2 start npm --name "nuxt3-app" -- start
+
+            pm2 save
+          ENDSSH

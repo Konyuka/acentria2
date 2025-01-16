@@ -24,11 +24,11 @@ const toggle = (index) => {
 </script>
 
 <template>
-    <div class="bg-white px-4 pb-5 md:px-8 lg:px-16 font-sans">
+    <div class="bg-white pb-5 font-sans">
         <div class="container max-w-7xl mx-auto ">
 
             <!-- FAQ section -->
-            <div class="mx-auto my-4 max-w-5xl">
+            <div class=" my-4">
                 <div class="divide-y divide-gray-200">
 
                     <dl class="mt-6 space-y-4 divide-y divide-gray-200">
