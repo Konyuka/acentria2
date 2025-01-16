@@ -1,37 +1,9 @@
 <script setup>
-
 const bannerContent = ref({
     subtitle: 'Contact Us',
     title: 'Reach Out to Us',
     image: '/img/tele.jpeg'
 })
-
-const contactsContent = ref({
-    title: 'Reach us through the following',
-    contacts: [
-        {
-            icon: 'fas fa-shield-alt',
-            title: 'Email Address',
-            description: 'info@acentriagroup.com <br> support@acentriagroup.com',
-        },
-        {
-            icon: 'fas fa-shield-virus',
-            title: 'Phone number',
-            description: '+254 705 200 222 <br> +254 705 200 222',
-        },
-        {
-            icon: 'fas fa-laptop-code',
-            title: 'WhatsApp',
-            description: '+254 705 200 222 <br> +254 705 200 222',
-        },
-        {
-            icon: 'fas fa-calculator',
-            title: 'Box Office',
-            description: 'P.O Box 5864-00100 <br> Nairobi, Kenya',
-        },
-    ]
-})
-
 </script>
 
 <template>
@@ -77,15 +49,6 @@ const contactsContent = ref({
                                     </p>
 
                                 </div>
-
-                                <!-- <div class="relative py-4 mt-5 ml-5">
-                                    <NuxtImg alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
-                                        style="color: transparent; object-fit: cover"
-                                        src="https://www.shutterstock.com/shutterstock/photos/2312975601/display_1500/stock-photo-portrait-black-woman-and-smile-in-call-center-for-telemarketing-customer-service-or-business-in-2312975601.jpg"
-                                        class="rounded-xl w-full h-[50vh]" />
-                                </div> -->
-
-
                             </div>
                         </div>
                     </div>
