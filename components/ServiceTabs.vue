@@ -1,4 +1,4 @@
-<script setup>
+m<script setup>
 const props = defineProps({
     menus: Array,
     data: Array,
