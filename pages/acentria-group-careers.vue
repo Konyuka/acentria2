@@ -202,7 +202,7 @@ const products = [
 
                                     <div class="relative py-4">
                                         <NuxtImg alt="Image of growth" loading="lazy" decoding="async"
-                                            src="/img/Professionals& Business Service.JPG"
+                                            src="/img/Professionals and Business Service.JPG"
                                             class="rounded-xl w-full h-[250px] object-cover" />
                                     </div>
 
