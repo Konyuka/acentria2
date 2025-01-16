@@ -369,7 +369,7 @@ const bannerMainContent = ref({
     <main>
         <div class="bg-white">
 
-            <Carousel :content="bannerMainContent" />
+            <Carousel2 :content="bannerMainContent" />
             <!-- <Carousel :slides="slides" /> -->
 
 

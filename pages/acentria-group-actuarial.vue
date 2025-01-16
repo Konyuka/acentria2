@@ -233,7 +233,7 @@ const bannerMainContent = ref({
         <div class="bg-white">
             <div>
 
-                <Carousel :content="bannerMainContent" />
+                <Carousel2 :content="bannerMainContent" />
                 <!-- <Carousel :slides="slides" /> -->
 
 

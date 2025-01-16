@@ -252,7 +252,7 @@ onMounted(() => {
 <template>
     <main>
         <div class="">
-            <Carousel :content="bannerMainContent" />
+            <Carousel2 :content="bannerMainContent" />
             <!-- <Carousel :slides="slides" /> -->
 
             <div class="bg-white py-5">
