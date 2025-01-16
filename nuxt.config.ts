@@ -82,4 +82,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@vueuse/motion/nuxt",
   ],
+  image: {
+    domains: ['cdn.sanity.io']
+  }
 })

@@ -19,7 +19,7 @@ const teams = ref([
             "https://acentriagroup.com/wp-content/uploads/2024/02/evelyne-1.jpg",
     },
     {
-        name: "Winnie Chitai CPA",
+        name: "CPA Winnie Chitai",
         title: "Head of Finance",
         linkedin: "https://www.linkedin.com/in/cpa-winnie-chitai-31853aa6/",
         email: "chitaw@acentriagroup.com",
