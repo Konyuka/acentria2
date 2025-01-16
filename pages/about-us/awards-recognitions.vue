@@ -26,7 +26,7 @@ const ReinsuranceBannerContent = ref({
                     </div>
                     <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-0">
                         <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
-                            href="resources/blog/preparing-for-ai-regulations.html">
+                            href="/">
                             <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                                 <div
                                     class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
@@ -38,7 +38,8 @@ const ReinsuranceBannerContent = ref({
                                                 <div
                                                     class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                     <picture class="flex h-[300px] w-full max-w-none">
-                                                        <NuxtImg alt="AI is here. AI regulations are on the way. Is your board ready?"
+                                                        <NuxtImg
+                                                            alt="AI is here. AI regulations are on the way. Is your board ready?"
                                                             loading="lazy" decoding="async" data-nimg="fill"
                                                             class="object-center object-cover" style="
                                         position: absolute;
@@ -50,7 +51,7 @@ const ReinsuranceBannerContent = ref({
                                         bottom: 0;
                                         color: transparent;
                                       " sizes="240w 100vw"
-                                                            src="../cdn.sanity.io/images/33u1mixi/production/7ef13321754c150f46ae8370675e14d1efce6c2e-1080x72097c5.jpg?w=3840&amp;q=90&amp;fit=clip&amp;auto=format" />
+                                                            src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                                                     </picture>
                                                 </div>
                                             </div>
@@ -77,7 +78,7 @@ const ReinsuranceBannerContent = ref({
 
                         </a>
                         <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
-                            href="resources/guides/elevating-grc-maturity.html">
+                            href="/">
                             <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                                 <div
                                     class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
@@ -89,7 +90,8 @@ const ReinsuranceBannerContent = ref({
                                                 <div
                                                     class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                     <picture class="flex h-[300px] w-full max-w-none">
-                                                        <NuxtImg alt="Stronger consolidation: Elevating your GRC maturity for better risk management"
+                                                        <NuxtImg
+                                                            alt="Stronger consolidation: Elevating your GRC maturity for better risk management"
                                                             loading="lazy" decoding="async" data-nimg="fill"
                                                             class="object-center object-cover" style="
                                         position: absolute;
@@ -126,7 +128,7 @@ const ReinsuranceBannerContent = ref({
 
                         </a>
                         <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
-                            href="resources/guides/grc-vendor-consolidation-checklist.html">
+                            href="/">
                             <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                                 <div
                                     class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
@@ -138,8 +140,8 @@ const ReinsuranceBannerContent = ref({
                                                 <div
                                                     class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                     <picture class="flex h-[300px] w-full max-w-none">
-                                                        <NuxtImg alt="Your guide to GRC vendor consolidation" loading="lazy"
-                                                            decoding="async" data-nimg="fill"
+                                                        <NuxtImg alt="Your guide to GRC vendor consolidation"
+                                                            loading="lazy" decoding="async" data-nimg="fill"
                                                             class="object-center object-cover" style="
                                         position: absolute;
                                         height: 100%;
@@ -174,7 +176,7 @@ const ReinsuranceBannerContent = ref({
                             </div>
                         </a>
                         <a class="button-animation cursor-pointer relative flex h-[388px] max-h-[388px] min-h-[72px] min-w-[100px] flex-col justify-between overflow-hidden rounded-lg bg-brand-white shadow-card"
-                            href="resources/blog/the-case-for-purpose-built-software.html">
+                            href="/">
                             <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
                                 <div
                                     class="ease relative z-[3] aspect-[1.5] w-full origin-top overflow-hidden rounded transition-transform duration-500 will-change-transform">
@@ -186,7 +188,8 @@ const ReinsuranceBannerContent = ref({
                                                 <div
                                                     class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                     <picture class="flex h-[300px] w-full max-w-none">
-                                                        <NuxtImg alt="The case for purpose-built software: Why tailored programming outperforms modified solutions"
+                                                        <NuxtImg
+                                                            alt="The case for purpose-built software: Why tailored programming outperforms modified solutions"
                                                             loading="lazy" decoding="async" data-nimg="fill"
                                                             class="object-center object-cover" style="
                                         position: absolute;
