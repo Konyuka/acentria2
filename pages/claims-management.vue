@@ -186,7 +186,7 @@ const benefits = ref([
                             Access Your Online Account
                             <i class="fas fa-arrow-right text-primary ml-2"></i>
                         </NuxtLink>
-                        <NuxtLink to="/contact-acentria-group"
+                        <NuxtLink to="/report-claim"
                             class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
                             File A Claim Here
                             <i class="fas fa-arrow-right text-primary ml-2"></i>

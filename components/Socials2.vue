@@ -1,10 +1,9 @@
 <template>
-    <div class="container relative mx-auto max-w-6xl">
-
+    <div class="container relative mx-auto">
         <div>
             <dl
-                class="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-2 text-black sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                <a :href="feature.link" target="_blank" v-for="(feature, index) in socials" :key="feature.name" class="hover:shadow-2xl rounded-md p-3 button-primary flex flex-col">
+                class="mx-auto mt-5 grid gap-2 text-black grid-cols-5">
+                <a :href="feature.link" target="_blank" v-for="(feature, index) in socials" :key="index" class="hover:shadow-2xl rounded-md p-3 button-primary flex flex-col">
                     <dt class="subheading-class text-black flex gap-3">
                         <div class="mb-2 flex h-14 w-14 items-center justify-center rounded-lg bg-brand-primary">
                             <i :class="feature.icon" class=" text-white" aria-hidden="true" />
@@ -57,27 +56,5 @@ const socials = ref([
 ]
 )
 
-const contacts = ref([
-    {
-        icon: 'fas fa-shield-alt',
-        title: 'Email Address',
-        description: 'info@acentriagroup.com <br> support@acentriagroup.com',
-    },
-    {
-        icon: 'fas fa-shield-virus',
-        title: 'Phone number',
-        description: '+254 705 200 222 <br> +254 705 200 222',
-    },
-    {
-        icon: 'fas fa-laptop-code',
-        title: 'WhatsApp',
-        description: '+254 705 200 222 <br> +254 705 200 222',
-    },
-    {
-        icon: 'fas fa-calculator',
-        title: 'Box Office',
-        description: 'P.O Box 5864-00100 <br> Nairobi, Kenya',
-    },
-]
-)
+
 </script>
