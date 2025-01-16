@@ -10,40 +10,51 @@ const ReinsuranceFeatureContent = ref({
     content:'At Acentria, we understand that risk assessment and modelling is a cornerstone of effective reinsurance broking. Our service is designed to provide a comprehensive understanding of the risks your insurance company faces, allowing you to make informed decisions and develop robust risk management strategies.'
 })
 
+// Replace your existing faqs = ref([...]) with the following:
 const faqs = ref([
     {
-        name: 'Our Key Focus in Regulatory Compliance and Governance',
+        name: 'Catastrophe Modelling',
         content: `
-      <p><strong>Regulatory Advisory:</strong> We offer specialized expertise to help you navigate the intricate regulatory environments, including frameworks such as Solvency II, IFRS 17, and other pertinent regulations and frameworks.</p>
-      <p><strong>Risk Management:</strong> Our experts assist you in crafting and executing robust risk management strategies that meet regulatory standards and adhere to industry best practices.</p>
-      <p><strong>Governance Frameworks:</strong> We help you create strong governance frameworks that promote accountability, transparency, and regulatory compliance throughout your organization.</p>
-    `
+      <p>
+        We employ cutting-edge catastrophe models to assess the risks linked to
+        natural disasters, including hurricanes, earthquakes, and floods. These
+        models play a crucial role in pricing, underwriting, and making
+        informed reinsurance purchase decisions.
+      </p>
+      <p class="mt-3">
+        <NuxtLink
+          to="/catastrophic-modelling"
+          class="!button-animation bg-black !hover:bg-brand-primary
+                 text-white font-medium py-1 px-12 text-sm rounded-sm"
+        >
+          Learn More
+          <i class="fas fa-arrow-right text-primary ml-2"></i>
+        </NuxtLink>
+      </p>
+    `,
     },
     {
-        name: 'Why Regulatory Compliance Matters',
+        name: 'Risk Aggregation Analysis',
         content: `
-      <p><strong>Risk Mitigation:</strong> Ensuring compliance with regulatory requirements helps mitigate risks and protects your business from potential legal and financial repercussions.</p>
-      <p><strong>Enhanced Credibility:</strong> Adhering to regulatory standards enhances your credibility with stakeholders, including clients, investors, and regulators.</p>
-      <p><strong>Operational Efficiency:</strong> A well-structured compliance framework streamlines operations and supports sustainable business practices.</p>
-    `
+      <p>
+        Our risk aggregation analysis pinpoints and assesses the concentration
+        of risk within your portfolio, ensuring that you are effectively
+        equipped to handle potential large-scale events.
+      </p>
+    `,
     },
     {
-        name: 'Key Considerations to be made by the client',
+        name: 'Scenario Analysis',
         content: `
-      <p><strong>Timely Engagement:</strong> Initiating discussions with regulators early is essential for securing approval for reinsurance deals, particularly those that are highly customized.</p>
-      <p><strong>Counterparty Risk:</strong> Grasping and mitigating counterparty risk is crucial for adhering to regulatory requirements and ensuring the success of your reinsurance strategy.</p>
-      <p><strong>Jurisdiction:</strong> Ensuring that assets involved in reinsurance transactions are maintained in local custodian accounts is often a critical regulatory mandate.</p>
-    `
-    },
-    {
-        name: 'Our commitment to clients',
-        content: `
-      <p><strong>Regulatory Advisory:</strong> Stay ahead of regulatory changes with our proactive advisory services.</p>
-      <p><strong>Risk Management:</strong> Implement effective risk management strategies that align with industry best practices.</p>
-      <p><strong>Governance Excellence:</strong> Establish strong governance structures that ensure accountability and transparency across your organization.</p>
-    `
+      <p>
+        We perform scenario analysis to evaluate the effects of different
+        hypothetical events on your portfolio, aiding in the creation of strong
+        risk management strategies.
+      </p>
+    `,
     },
 ])
+
 
 
 
@@ -59,12 +70,10 @@ const faqs = ref([
                 Our <span class="text-brand-primary"> Approach</span>
             </h2>
             <p>
-                We review the terms and conditions of the treaty agreements to ensure they are legally binding and
-                enforceable by analyzing the obligations of both the reinsurer and the primary insurer to avoid any
-                potential breaches.
-                <br><br>
-                Our Key Focus in Financial Planning and Structuring
-
+                By harnessing advanced analytics and state-of-the-art modeling techniques, we provide you with
+                unparalleled insights into your risk landscape. Our expert team meticulously evaluates your risk
+                exposure, ensuring that you have a robust strategy to safeguard your business. Dive into a future of
+                informed decision-making and secure reinsurance solutions designed to protect and propel your growth.
             </p>
             <Accordion :faqs="faqs" />
         </div>
@@ -73,74 +82,42 @@ const faqs = ref([
             <h2 class="text-2xl !font-semibold text-black pb-5">
                 Why Choose Us?
             </h2>
-            <!-- Update the grid to accommodate four items (e.g., md:grid-cols-4) -->
-            <div class="grid gap-6 md:grid-cols-4">
-                <!-- Experienced Professionals -->
+            <div class="grid gap-6 md:grid-cols-3">
+                <!-- Advanced Technology -->
                 <div class="rounded-xl p-6 ring-1 ring-brand-primary shadow-xl">
                     <h2 class="text-center text-lg font-semibold text-gray-900">
-                        Experienced Professionals
+                        Advanced Technology
                     </h2>
                     <p class="text-center mt-2 text-sm leading-relaxed text-gray-700">
-                        Our team consists of seasoned experts with deep knowledge of Risk Based
-                        Capital standards and regulatory frameworks.
+                        We employ cutting-edge technology and sophisticated models to provide
+                        accurate and reliable risk assessments.
                     </p>
                 </div>
 
-                <!-- Tailored Solutions -->
+                <!-- Expert Insights -->
                 <div class="rounded-xl p-6 ring-1 ring-brand-primary shadow-xl">
                     <h2 class="text-center text-lg font-semibold text-gray-900">
-                        Tailored Solutions
+                        Expert Insights
                     </h2>
                     <p class="text-center mt-2 text-sm leading-relaxed text-gray-700">
-                        We provide customized advisory services that align with your unique
-                        business needs and risk profile.
+                        Our team of experienced professionals offers deep insights into risk
+                        factors and mitigation strategies, ensuring your reinsurance program is
+                        resilient and effective.
                     </p>
                 </div>
 
-                <!-- Proven Track Record -->
+                <!-- Customized Solutions -->
                 <div class="rounded-xl p-6 ring-1 ring-brand-primary shadow-xl">
                     <h2 class="text-center text-lg font-semibold text-gray-900">
-                        Proven Track Record
+                        Customized Solutions
                     </h2>
                     <p class="text-center mt-2 text-sm leading-relaxed text-gray-700">
-                        A history of successfully helping clients achieve their RBC goals and
-                        enhance their financial stability.
-                    </p>
-                </div>
-
-                <!-- Client-Centric Approach -->
-                <div class="rounded-xl p-6 ring-1 ring-brand-primary shadow-xl">
-                    <h2 class="text-center text-lg font-semibold text-gray-900">
-                        Client-Centric Approach
-                    </h2>
-                    <p class="text-center mt-2 text-sm leading-relaxed text-gray-700">
-                        We prioritize your specific needs and objectives, ensuring personalized
-                        and effective solutions.
+                        We tailor our risk assessment and modelling services to meet your
+                        specific needs, providing you with actionable insights and strategic
+                        recommendations.
                     </p>
                 </div>
             </div>
-        </div>
-
-        <div class="container mx-auto py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">
-                Risk Based <span class="text-brand-primary">Capital Standards </span>
-            </h1>
-
-            <div class="pb-5">
-                <p class="text-xs ">
-                    Navigate the complexities of financial stability with our expertise Services
-                </p>
-
-            </div>
-            <div class="relative gap-10 lg:basis-1/2 flex items-center">
-                <NuxtLink to="/reinsurance/risk-based-capital-regulation"
-                    class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
-                    Risk Based Capital Standards
-                    <i class="fas fa-arrow-right text-primary ml-2"></i>
-                </NuxtLink>
-            </div>
-
-
         </div>
 
         <ContactForm />
