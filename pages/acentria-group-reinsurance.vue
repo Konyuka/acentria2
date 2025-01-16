@@ -357,7 +357,7 @@ const faqs = ref([
 
 
 const bannerMainContent = ref({
-    title: 'Acentria <span class="text-brand-primary"> Reinsurance</span>',
+    title: 'Acentria Group <span class="text-brand-primary"> Reinsurance & Strategic Advisory</span>',
     subtitle: 'Navigating Risks, Securing Futures, and Empowering Growth',
     image: '/img/reinsure.jpeg',
 })

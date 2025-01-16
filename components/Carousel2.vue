@@ -22,7 +22,6 @@
                         </h2>
                         <h2 v-html="content.title" class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
                         </h2>
-
                     </div>
                 </div>
             </div>

@@ -220,7 +220,7 @@ const exploreHelp = ref({
 })
 
 const bannerMainContent = ref({
-    title: 'Acentria Actuarial & Financial Services',
+    title: 'Acentria Group  <span class="text-brand-primary">Actuarial & Financial Services</span>',
     subtitle: ' Expert Actuarial & Financial Services for Your Business',
     image: '/img/data.jpg',
 })
