@@ -356,14 +356,23 @@ const faqs = ref([
 ]);
 
 
+const bannerMainContent = ref({
+    title: 'Acentria Reinsurance',
+    subtitle: 'Secure Your Future with Comprehensive Reinsurance',
+    image: '/img/reinsure.jpeg',
+})
+
+
 </script>
 
 <template>
     <main>
         <div class="bg-white">
+
+            <Carousel :content="bannerMainContent" />
             <!-- <Carousel :slides="slides" /> -->
 
-            
+
 
             <ContentPic :content="content1" class="my-5" />
             <ContentPic :content="content2" class="my-5" />

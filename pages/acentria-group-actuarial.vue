@@ -219,7 +219,11 @@ const exploreHelp = ref({
     content: 'At Acentria, our actuarial and analytic specialists help organizations to gain insightful knowledge. We leverage advanced analytics, modeling and quantification expertise for clients and service our clients Our ability to use data, advanced analytics, and technology to extract valuable insights, help us to guide business to make informed decisions',
 })
 
-
+const bannerMainContent = ref({
+    title: 'Acentria Actuarial & Financial Services',
+    subtitle: ' Expert Actuarial & Financial Services for Your Business',
+    image: '/img/data.jpg',
+})
 
 
 </script>
@@ -229,21 +233,16 @@ const exploreHelp = ref({
         <div class="bg-white">
             <div>
 
-                <Carousel :slides="slides" />
+                <Carousel :content="bannerMainContent" />
+                <!-- <Carousel :slides="slides" /> -->
 
-                <!-- <ServiceHero2 :content="content" /> -->
-
-                <!-- <BannerVid :bannerTitle="bannerTitle" /> -->
-
-                <!-- <Hero2 :data="heroContent" /> -->
 
                 <div class="bg-white">
                     <div class="container">
                         <h1 class="my-5 heading-class text-left">
                             Overview <br> <span class="text-brand-primary"> Actuarial & Financial Services </span>
                         </h1>
-                        <p
-                            class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
+                        <p class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
                             Acentria Actuarial & financial services is one of the leading Actuarial independent
                             specialists’ firms operating in Kenya, and international markets.
                             Our Actuarial team lead by a signing Actuary having expertise in using financial, risk, and
@@ -320,9 +319,9 @@ const exploreHelp = ref({
                     <div class="flex flex-col justify-center lg:basis-1/2">
 
                         <h1 class="my-3 heading-class text-left">
-                            Elevate Your Strategies with <br> 
+                            Elevate Your Strategies with <br>
                             <span class="text-brand-primary">
-                            Precision and Innovation
+                                Precision and Innovation
                             </span>
                         </h1>
 
@@ -358,7 +357,8 @@ const exploreHelp = ref({
                 <div class="bg-white pb-6">
                     <div class="container">
                         <h1 class="my-3 heading-class text-left">
-                            Elite Actuarial Tech Tools <br> <span class="text-brand-primary">for Optimal Solutions</span>
+                            Elite Actuarial Tech Tools <br> <span class="text-brand-primary">for Optimal
+                                Solutions</span>
                         </h1>
                     </div>
 
