@@ -208,7 +208,7 @@ const slides = ref([
 const bannerMainContent = ref({
     title: 'Acentria Group  <span class="text-brand-primary"> Insurance & Risk Management</span>',
     subtitle: 'Protecting Your World with Precision',
-    image: '/img/shadow.jpg',
+    image: '/img/rope-gray.jpeg',
 })
 
 const specials = ref([
