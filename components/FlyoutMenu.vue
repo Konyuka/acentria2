@@ -322,7 +322,7 @@ const AboutMenus = ref([
         name: 'About Us',
         linksHeading: 'About Us<span class="text-brand-primary"> Links<span/>',
         mainMenu: 'Company <span class="text-brand-primary">Profile<span/>',
-        mainHeading: 'Acentria <span class="text-brand-primary"> Group<span/>',
+        mainHeading: 'Acentria <br><span class="text-brand-primary"> Group<span/>',
         mainDescription: 'At Acentria Group, we shape the future of our partners through our expertise and solutions by EMPOWERING the vision of our clients and communities. Through INNOVATIVE thinking, we deliver the best solutions that enhance PROSPERITY. We are constantly seeking better ways to manage risk, guiding effective pathways to achieve SMART and sustainable outcomes.',
         subMenu: 'Acentria <span class="text-brand-primary">Profile Details<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',

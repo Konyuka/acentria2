@@ -220,9 +220,9 @@ const exploreHelp = ref({
 })
 
 const bannerMainContent = ref({
-    title: 'Acentria Group  <span class="text-brand-primary">Actuarial & Financial Services</span>',
+    title: 'Acentria Group  <br> <span class="text-brand-primary">Actuarial & Financial Services</span>',
     subtitle: ' Expert Actuarial & Financial Services for Your Business',
-    image: '/img/shutterstock_1864751998 Actuarial.jpg',
+    image: '/img/istockphoto-1306957177-Actuarial.jpg',
 })
 
 
@@ -314,7 +314,7 @@ const bannerMainContent = ref({
                     <div class="relative p-1 lg:basis-1/2">
                         <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                            src="/img/Precision and innovation.jpg" />
+                            src="/img/Actuarial.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
 
