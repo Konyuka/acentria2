@@ -1,7 +1,7 @@
 <script setup>
 const bannerContent = ref({
     subtitle: 'About Us',
-    title: 'About Acentria Group',
+    title: 'About <span class="text-brand-primary">Acentria Group</span>',
     image: '/img/Cover page- Acentria Who we are.jpg'
 })
 
@@ -204,7 +204,7 @@ onMounted(() => {
                 <div class="relative py-4 lg:basis-1/2 scale-90">
                     <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="300"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="/img/social.jpg" />
+                        class="rounded-lg" src="/img/Who we are.jpg" />
                 </div>
 
                 <div class="flex flex-col justify-center lg:basis-1/2">
