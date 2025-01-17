@@ -156,7 +156,7 @@ const specials = ref([
                 content: 'Yes, we conduct comprehensive assessments using smart tools to mitigate digital banking risks.',
             },
         ],
-        img: '/img/risk-areas.jpg'
+        img: '/img/iStock-483918009.jpg'
     },
     {
         name: 'Transport & Logistics',
