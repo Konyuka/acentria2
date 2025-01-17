@@ -12,7 +12,7 @@
                 <div class="relative p-1 lg:basis-1/2">
                     <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="/img/boat.jpg" />
+                        class="rounded-lg" src="/img/iStock-483918009.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h1 class="my-3 heading-class text-left">

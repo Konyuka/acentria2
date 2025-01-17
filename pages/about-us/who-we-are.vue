@@ -2,7 +2,7 @@
 const bannerContent = ref({
     subtitle: 'About Us',
     title: 'About Acentria Group',
-    image: '/img/About Acentria Group- Cover photo-2472155125.jpg'
+    image: '/img/Cover page- Acentria Who we are.jpg'
 })
 
 
@@ -423,7 +423,7 @@ onMounted(() => {
                     <div class="relative py-4 lg:basis-1/2 content-center">
                         <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                             decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/suits.jpg" />
+                            class="rounded-lg" src="/img/iStock-2148737980 Leadership.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
                         <h2 class="heading-class mb-4">

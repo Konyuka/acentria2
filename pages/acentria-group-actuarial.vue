@@ -205,7 +205,7 @@ const exploreHelp2 = ref({
     orientation: 'lg:flex-row flex-col',
     heading: 'Data Driven & <span class="text-brand-primary"> Analytical Capabilities</span>',
     subheading: '',
-    image: '/img/glasses.jpg',
+    image: '/img/Data Analytics.jpg',
     link: '/insurance-claims',
     content: 'Accurate risk quantification is an essential part of an effective risk management program. To design a sustainable and successful risk management strategy, an organization must identify, measure, analyze and understand the existing and emerging risks they face.',
 })
@@ -222,7 +222,7 @@ const exploreHelp = ref({
 const bannerMainContent = ref({
     title: 'Acentria Group  <span class="text-brand-primary">Actuarial & Financial Services</span>',
     subtitle: ' Expert Actuarial & Financial Services for Your Business',
-    image: '/img/data.jpg',
+    image: '/img/shutterstock_1864751998 Actuarial.jpg',
 })
 
 
@@ -314,7 +314,7 @@ const bannerMainContent = ref({
                     <div class="relative p-1 lg:basis-1/2">
                         <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                            src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                            src="/img/Precision and innovation.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
 
