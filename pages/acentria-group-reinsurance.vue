@@ -164,7 +164,7 @@ const content5 = ref({
     heading: 'Elevate your Strategies <br/><span class="text-brand-primary">with Precision & Innovation</span>',
     subheading: '',
     image: '/img/Re5.jpg',
-    link: '/reinsurance/acentre-solution',
+    link: '/img/Precision and innovation.jpg',
     content: 'Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and investment decisions. Our solutions provide you with the insights needed to make data-driven decisions, reduce risks, and enhance profitability. By leveraging state-of-the-art tools and methodologies, we help you navigate the complexities of the financial landscape, adapt to changing conditions, and seize new opportunities for growth. Stay competitive and resilient with our comprehensive suite of services designed to meet the unique needs of your business.'
 })
 const content6 = ref({
