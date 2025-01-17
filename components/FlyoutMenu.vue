@@ -745,7 +745,7 @@ const ReinsuranceMenus = ref([
             {
                 name: 'Market Insights & Negotiation',
                 description: 'Advising on emerging market trends, regulatory environments, and pricing to optimize placements and financing terms.',
-                link: '/reinsurance/market-insights-negotiation',
+                link: '/reinsurance/market-insights',
             },
             {
                 name: 'Financial Planning & Structuring',
