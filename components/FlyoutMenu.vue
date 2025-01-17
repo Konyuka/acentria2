@@ -3,8 +3,8 @@
 
         <div class="justify-center">
             <div class="">
-                <NuxtLink :to="theMenu.link" @click="closeFlyOver(theMenu.name)" @mouseenter="openFlyover(theMenu.name, 'hover')"
-                    @mouseleave="closeFlyOver()" :class="[
+                <NuxtLink :to="theMenu.link" @click="closeFlyOver(theMenu.name)"
+                    @mouseenter="openFlyover(theMenu.name, 'hover')" @mouseleave="closeFlyOver()" :class="[
                         openMenu === theMenu.name ?
                             'text-brand-primary border-b-red-600 border-b-4' :
                             'text-black'
@@ -743,11 +743,15 @@ const ReinsuranceMenus = ref([
             //     link: '/reinsurance/reinsurance-optimization',
             // },
             {
-                name: 'Rating Agency Advisory',
-                description: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
-                link: '/reinsurance/rating-agency-advisory',
+                name: 'Market Insights & Negotiation',
+                description: 'Advising on emerging market trends, regulatory environments, and pricing to optimize placements and financing terms.',
+                link: '/reinsurance/market-insights-negotiation',
             },
-           
+            {
+                name: 'Financial Planning & Structuring',
+                description: 'Crafting strategies that balance liquidity, solvency, and growth targets, ensuring optimal capital allocation.',
+                link: '/reinsurance/financial-planning-structuring',
+            },
             {
                 name: 'Risk Assessment & Modeling',
                 description: 'In-depth analysis of potential exposures and loss scenarios, using quantitative and qualitative methods to forecast financial impacts.',
@@ -758,23 +762,20 @@ const ReinsuranceMenus = ref([
                 description: 'Structuring reinsurance solutions aligned with a client’s risk tolerance and balance sheet objectives to optimize capital usage and minimize volatility.',
                 link: '/reinsurance/reinsurance-optimization',
             },
-            {
-                name: 'Financial Planning & Structuring',
-                description: 'Crafting strategies that balance liquidity, solvency, and growth targets, ensuring optimal capital allocation.',
-                link: '/reinsurance/financial-planning-structuring',
-            },
-            {
-                name: 'Market Insights & Negotiation',
-                description: 'Advising on emerging market trends, regulatory environments, and pricing to optimize placements and financing terms.',
-                link: '/reinsurance/market-insights-negotiation',
-            },
+
+
             {
                 name: 'Regulatory Compliance & Governance',
                 description: 'Implementing best practices in corporate governance, financial reporting, and solvency management to ensure adherence to regulatory standards.',
                 link: '/reinsurance/regulatory-compliance-governance',
             },
+            {
+                name: 'Rating Agency Advisory',
+                description: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
+                link: '/reinsurance/rating-agency-advisory',
+            },
         ]
-    }, 
+    },
     {
         name: 'Reinsurance Solutions',
         linksHeading: 'Reinsurance<span class="text-brand-primary"> Solutions<span/>',
@@ -874,14 +875,14 @@ const ReinsuranceMenus = ref([
                 link: '/resources/news-and-trends',
             },
             {
-                name: 'Learn',
-                description: 'Expand your knowledge with educational resources, guides, and tools designed to help you master insurance and reinsurance concepts.',
-                link: '/resources/learn',
-            },
-            {
                 name: 'Workshops and Webinars',
                 description: 'Participate in interactive workshops and webinars led by industry experts to gain practical insights and actionable strategies.',
                 link: '/resources/workshops-and-webinars',
+            },
+            {
+                name: 'Learn',
+                description: 'Expand your knowledge with educational resources, guides, and tools designed to help you master insurance and reinsurance concepts.',
+                link: '/resources/learn',
             },
         ]
     },
@@ -1046,7 +1047,7 @@ const openFlyover = (menu, type) => {
         }
     }
     if (menu == 'Technology') {
-        
+
         // alert('hi')
         console.log(type)
         if (type == 'hover') {
@@ -1163,11 +1164,11 @@ const keepOpen = (theMenuName) => {
 };
 
 const closeFlyOver = (type) => {
-    
-    if (type =='Technology'){
+
+    if (type == 'Technology') {
         // alert('hi')
-         window.open('https://acentria-tech.vercel.app/', '_blank');
-            return;
+        window.open('https://acentria-tech.vercel.app/', '_blank');
+        return;
     }
 
     if (hideTimeout) {
