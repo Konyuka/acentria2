@@ -103,7 +103,7 @@ const data = ref({
 
 
 const content1 = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'image-left',
     heading: '<h1 class="heading-class text-left"> Welcome to <span class="text-brand-primary"> Acentria </span> </h1> <h4 class="text-xl font-semibold text-left"> Your Trusted <span class="text-brand-primary">Reinsurance Partner</span> </h4>',
     subheading: '',
     image:'/img/Re1.jpg',
@@ -111,7 +111,7 @@ const content1 = ref({
     content:'Acentria is your trusted partner in risk management, boasting a team of seasoned professionals dedicated to protecting your business. With our unrivaled market insights and innovative strategies, we provide bespoke reinsurance solutions that align perfectly with your unique needs. <br> At Acentria, we specialize in transforming complex risks into manageable solutions. As a leading reinsurance broker, we are your go-to experts for navigating the intricate world of reinsurance with ease and confidence.'
 })
 const content2 = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
+    orientation: 'image-right',
     heading: 'Stabilizing the Company\'s  <br/><span class="text-brand-primary">Overall Operating Results</span>',
     subheading: '',
     image: '/img/Re2.jpg',
@@ -119,7 +119,7 @@ const content2 = ref({
     content: 'Achieve a new level of financial stability with our expert services aimed at stabilizing your company\'s overall operating results.By implementing strategic risk management, optimizing capital allocation, and enhancing operational efficiency, we help you navigate uncertainties and ensure consistent performance.Our tailored approach is designed to protect your bottom line, drive sustainable growth, and secure your business\'s future in a dynamic market. Transform volatility into predictability and resilience with our comprehensive solutions, and watch your business thrive with confidence.'
 })
 const content3 = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'image-left',
     heading: 'Protecting  <br/><span class="text-brand-primary">Against Catastrophes</span>',
     subheading: '',
     image: '/img/Re3.jpg',
@@ -127,7 +127,7 @@ const content3 = ref({
     content:'Shield your business from the unexpected with our comprehensive Catastrophe Protection solutions. By leveraging advanced modeling, strategic risk transfer, and proactive mitigation measures, we help you safeguard your assets and ensure business continuity. Our tailored approach empowers you to face potential catastrophic events with confidence, transforming uncertainty into resilience. Embrace the future with a fortified defense against the unpredictable, and secure your company’s legacy with our expert guidance.'
 })
 const content4 = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
+    orientation: 'image-right',
     heading: 'Limiting Liability &  <br/><span class="text-brand-primary">Increasing Capacities</span>',
     subheading: '',
     image: '/img/Re4.jpg',
@@ -135,7 +135,7 @@ const content4 = ref({
     content: 'In a predictable world where re/insurers seek to introduce new solutions to customers, capital can serve as a bridge between innovation and investment. However, optimizing capital requires strategic decisions to support growth and maintain a stable balance sheet. At Acentria we assist insurers in limiting their loss exposure to levels commensurate with their net assets. We structure reinsurance solutions that stabilize loss experiences on individual risks and accumulated losses under multiple policies over a specified period.'
 })
 const content5 = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'image-left',
     heading: 'Elevate your Strategies <br/><span class="text-brand-primary">with Precision & Innovation</span>',
     subheading: '',
     image: '/img/Re5.jpg',
@@ -143,7 +143,7 @@ const content5 = ref({
     content: 'Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and investment decisions. Our solutions provide you with the insights needed to make data-driven decisions, reduce risks, and enhance profitability. By leveraging state-of-the-art tools and methodologies, we help you navigate the complexities of the financial landscape, adapt to changing conditions, and seize new opportunities for growth. Stay competitive and resilient with our comprehensive suite of services designed to meet the unique needs of your business.'
 })
 const content6 = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
+    orientation: 'image-right',
     heading: 'Unlock Greater Efficiency <br/><span class="text-brand-primary">& Insight with Our Expertise.</span>',
     subheading: '',
     image: '/img/Re6.jpg',
@@ -151,7 +151,7 @@ const content6 = ref({
     content:'Streamline your operations and enhance decision-making with our integrated solutions in risk management, actuarial services, and technological advancements tailored to your industry needs. Our comprehensive approach ensures you have the tools and insights necessary to navigate complex challenges and seize emerging opportunities. By leveraging our expertise, you can improve efficiency, reduce risks, and drive sustainable growth. Partner with us to stay ahead in a rapidly evolving market and achieve your strategic objectives with confidence.'
 })
 const content7 = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'image-left',
     heading: 'Explore Risk <br/><span class="text-brand-primary">Areas</span>',
     subheading: '',
     image: '/img/Re7.jpg',
@@ -159,7 +159,7 @@ const content7 = ref({
     content:'Every industry faces similar global challenges and opportunities, yet each has its own unique dynamics that call for specialized support. At Acentria Group, We bring an unparalleled blend of industry-specific expertise, tap into extensive industry-specific data, analytics, technology and insights to craft solutions tailored precisely to your needs.'
 })
 const content8 = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'image-right',
     heading: 'Partner with Us for <br/><span class="text-brand-primary">a Resilient Future</span>',
     subheading: '',
     image: '/img/Re8.jpg',
