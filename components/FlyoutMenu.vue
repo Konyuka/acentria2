@@ -892,7 +892,7 @@ const ActuarialMenus = ref([
         name: 'Actuarial Services',
         linksHeading: 'Actuarial<span class="text-brand-primary"> Services<span/>',
         mainMenu: 'Actuarial <span class="text-brand-primary">Products<span/>',
-        mainHeading: 'Actuarial & <span class="text-brand-primary">Financial Services<span/>',
+        mainHeading: 'Actuarial & <br><span class="text-brand-primary">Financial Services<span/>',
         mainDescription: 'Our Actuarial & Financial Services team is one of the leading independent specialist firms, operating in Kenya and international markets. Led by a signing actuary, our team excels in utilizing financial, risk, and capital modeling to help clients navigate and manage the complexities inherent in business.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',

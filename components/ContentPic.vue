@@ -6,7 +6,7 @@ const props = defineProps({
 const currentRoute = useRoute().fullPath
 
 const showButton = computed(() => {
-    if (props.content.link === '/operating-results' || currentRoute === '/insurance-products' || currentRoute === '/insurance/aviation-cover' || currentRoute === '/acentria-group-reinsurance' || props.content.subheading === 'A reliable partner you can trust in <br>  Insurance & Risk Management') {
+    if (props.content.link === '/' || props.content.link === '/operating-results' || currentRoute === '/insurance-products' || currentRoute === '/insurance/aviation-cover' || currentRoute === '/acentria-group-reinsurance' || props.content.subheading === 'A reliable partner you can trust in <br>  Insurance & Risk Management') {
         return false
     }else{
         return true
@@ -31,31 +31,27 @@ const theButtonTitle = computed(()=>{
 
 <template>
     <div class="bg-white">
-        <div class="container mx-auto flex gap-10 px-4 py-2" :class="content.orientation">
-            <div class="flex flex-col justify-center lg:basis-1/2">
-                <div class="pb-4">
-                    <h2 v-html="content.heading" class="heading-class text-black"></h2>
-                    <h3 v-html="content.subheading" class="font-semibold text-xl"></h3>
+        <div class="container mx-auto flex gap-10 py-5" :class="content.orientation">
+            <div class="grid grid-cols-12 gap-10">
+                <div class="col-span-7 flex flex-col justify-center">
+                    <div class="pb-3">
+                        <h1 v-html="content.heading" class="section-heading"></h1>
+                        <h4 v-html="content.subheading" class="card-heading"></h4>
+                    </div>
+                    <div class="">
+                        <p v-html="content.content" class="content !font-sans pb-5"></p>
+                        <NuxtLink v-if="showButton" :to="content.link">
+                            <AppButton :title="theButtonTitle" />
+                        </NuxtLink>
+                        <NuxtLink v-if="showButton2" :to="content.link">
+                            <AppButton :title="theButtonTitle" />
+                        </NuxtLink>
+                    </div>
                 </div>
-                <div class="text-black pb-5 md:pb-6 py-auto">
-                    <p v-html="content.content"
-                        class="text-xs leading-normal font-regular text-black !text-inherit mb-4"></p>
-                    <NuxtLink v-if="showButton" :to="content.link"
-                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        {{ theButtonTitle }}
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                    </NuxtLink>
-                    <NuxtLink v-if="showButton2" :to="content.link"
-                        class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                        {{ theButtonTitle }}
-                        <i class="fas fa-arrow-right text-primary ml-2"></i>
-                    </NuxtLink>
+                <div class="col-span-5 relative flex items-center">
+                    <NuxtImg :alt="content.heading" loading="lazy" decoding="async"
+                        class="w-full h-auto shadow-2xl rounded-lg !object-cover" :src="content.image" />
                 </div>
-            </div>
-            <div class="relative py-4  flex items-center">
-                <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-img="1"
-                    style="color: transparent;"
-                    class="w-full min-w-[450px] max-h-[270px] h-full shadow-2xl rounded-lg !object-cover" :src="content.image" />
             </div>
         </div>
     </div>

@@ -1,24 +1,20 @@
 <template>
-    <div class="bg-white py-5 px-6 font-sans">
-        <div class="bg-white">
-            <div class="py-5 text-left container">
-                <h2 class="heading-class text-black">
-                    Why Partner <span class="text-brand-primary"> with Acentria</span>
-                </h2>
-                <p class="text-xs mt-3 text-black">
-                    We understand that choosing the right insurance provider is a crucial decision. Here are some
-                    compelling reasons why you should partner with us:
-                </p>
-            </div>
-        </div>
-        <div class="container py-10">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-center">
+    <div class="bg-white">
+        <div class="container font-sans py-5">
+            <h1 class="section-heading pb-3">
+                Why Partner <span class="text-brand-primary"> with Acentria</span>
+            </h1>
+            <p class="!content pb-5">
+                We understand that choosing the right insurance provider is a crucial decision. Here are some
+                compelling reasons why you should partner with us:
+            </p>
+            <div class="grid grid-cols-3 gap-5 text-left ">
                 <div v-for="(item, index) in benefits" :key="index" class="shadow-md py-2 px-4 rounded-md">
-                    <div class="text-red-600 text-3xl mb-4 flex items-center justify-between">
-                        <h3 class=" text-black text-xl font-semibold">{{ item.title }}</h3>
+                    <div class="text-red-600 text-3xl mb-3 flex items-center justify-between">
+                        <h3 class=" card-heading">{{ item.title }}</h3>
                         <i :class="item.icon"></i>
                     </div>
-                    <p class="text-black mt-2 text-sm text-left">{{ item.description }}</p>
+                    <p class="!content !text-left">{{ item.description }}</p>
                 </div>
             </div>
         </div>

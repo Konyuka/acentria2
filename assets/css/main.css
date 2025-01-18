@@ -8,10 +8,47 @@
   }
 }
 
-.font-sans {
-    /* font-family: "Nunito Sans", sans-serif !important; */
-    font-family: "Montserrat", sans-serif !important;
+.image-style {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
 }
+
+
+.section-heading {
+  @apply tracking-normal text-3xl text-black font-semibold leading-normal capitalize
+}
+
+.card-heading {
+  @apply tracking-normal text-lg text-black  font-semibold leading-normal capitalize
+}
+
+.content{
+  @apply tracking-normal text-[15px] text-gray-800 font-normal leading-normal  
+}
+
+.small-text {
+  @apply tracking-normal text-xs text-black font-normal leading-normal
+}
+
+.bannerHeading{
+  @apply tracking-normal text-4xl text-black font-semibold leading-normal capitalize
+}
+
+.bannerDescription{
+  @apply tracking-normal text-3xl text-black font-semibold leading-normal capitalize
+}
+
+
+
+
+
+
 
 .h1-class {
   @apply text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900;

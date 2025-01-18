@@ -5,6 +5,12 @@ const bannerContent = ref({
     image: '/img/Cover page- Acentria Who we are.jpg'
 })
 
+const bannerMainContent = ref({
+    title: 'About <br><span class="text-brand-primary">Acentria Group</span>',
+    subtitle: '<span class="text-brand-primary">#</span>Empower | <span class="text-brand-primary">#</span>Innovate | <span class="text-brand-primary">#</span>Prosper',
+    image: '/img/Cover page- Acentria Who we are.jpg',
+})
+
 
 const mission = ref(null)
 const selectedMenu = computed(() => {
@@ -171,6 +177,8 @@ const scrollToSection = () => {
     }
 }
 
+
+
 onMounted(() => {
     scrollToSection();
 })
@@ -178,7 +186,8 @@ onMounted(() => {
 
 <template>
     <section class="bg-white">
-        <BannerMain :content="bannerContent" />
+        <Carousel2 :content="bannerMainContent" />
+        <!-- <BannerMain :content="bannerContent" /> -->
 
         <div class="container py-2">
             <div class="mt-10">

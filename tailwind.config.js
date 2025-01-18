@@ -11,6 +11,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        "brand-primary": "#ed1c24",
         secondary: "#4d4f51",
       },
       fontFamily: {
