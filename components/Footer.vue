@@ -173,7 +173,7 @@ const showDropdown = (menu) => {
 
 
         <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
-            class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 -z-50"
+            class="w-full h-screen object-cover fixed top-0 left-0 -z-50"
             style="color: transparent; transform: scaleX(-1);">
 
 

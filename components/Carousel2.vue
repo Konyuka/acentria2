@@ -7,7 +7,7 @@
                 class="absolute inset-0 -z-10 h-full w-full !object-cover" />
 
             <!-- <div class="absolute inset-0 bg-black opacity-30"></div> -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent opacity-100 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent opacity-100 z-0">
             </div>
 
             <div class="container relative z-50 mx-auto max-w-6xl font-sans">

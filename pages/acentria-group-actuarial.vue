@@ -124,17 +124,8 @@ const systems = ref([
     },
 ])
 
-const exploreHelp2 = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
-    heading: 'Data Driven & <span class="text-brand-primary"> Analytical Capabilities</span>',
-    subheading: '',
-    image: '/img/Data Analytics.jpg',
-    link: '/insurance-claims',
-    content: 'Accurate risk quantification is an essential part of an effective risk management program. To design a sustainable and successful risk management strategy, an organization must identify, measure, analyze and understand the existing and emerging risks they face.',
-})
-
 const exploreHelp = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
+    orientation: 'image-right',
     heading: 'How Acentria Actuaries <span class="text-brand-primary">Can Help</span>',
     subheading: '',
     image: '/img/handshake.jpg',
@@ -149,7 +140,7 @@ const bannerMainContent = ref({
 })
 
 const introContent = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'image-left',
     heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
     subheading: 'Your Trusted <span class="text-brand-primary"> Actuarial & Financial Services Partner</span>',
     image: '/img/lady-shake.jpg',

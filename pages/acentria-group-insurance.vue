@@ -130,7 +130,7 @@ const exploreRisks = ref({
 })
 
 const introContent = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'image-left',
     heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
     subheading: 'A Reliable Partner <span class="text-brand-primary">  You Can Trust</span>',
     image: '/img/lady-shake.jpg',
