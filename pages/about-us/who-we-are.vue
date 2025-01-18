@@ -177,6 +177,32 @@ const scrollToSection = () => {
     }
 }
 
+const whoWeAre = ref({
+    orientation: 'image-left',
+    heading: 'Who <span class="text-brand-primary">We Are</span>',
+    subheading: '',
+    image: '/img/Who we are.jpg',
+    link: '/',
+    content:'Acentria Group of Companies is a trusted global consultant dedicated to empowering growth and prosperity in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. With over a decade of expertise and an unwavering commitment to excellence, we craft tailored solutions that empower our clients to thrive. Our innovative approach to risk management, insurance optimization, and investment advisory ensures you’re always ahead of the curve. When you partner with Acentria Group, you’re not just accessing solutions—you’re unlocking a world of knowledge and resources designed to mitigate risks, maximize opportunities, and achieve your financial goals.'
+})
+
+const thingsThatInspireUs = ref({
+    orientation: 'image-right',
+    heading: 'Things that <span class="text-brand-primary">Inspire Us</span>',
+    subheading: '<span class="text-brand-primary">#</span> Empower <span class="text-brand-primary">#</span> Innovate <span class="text-brand-primary">#</span> Prosper',
+    image: '/img/inspire.jpg',
+    link: '/things-that-inspire-us',
+    content: 'We find inspiration in empowering individuals, businesses, and communities to achieve their dreams. Innovation fuels our creativity, helping us craft transformative solutions that tackle today’s challenges. Prosperity motivates us to create lasting impact—building success stories that uplift not just our clients but society as a whole. Together, we turn possibilities into progress, delivering excellence every step of the way.'
+});
+
+const whatWeDo = ref({
+    orientation: 'image-left',
+    heading: 'What <span class="text-brand-primary">We Do</span>',
+    subheading: '',
+    image: '/img/dreads.jpg',
+    link: '/',
+    content: 'At Acentria Group, we deliver transformative products and solutions in Risk and Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology. We believe our greatest asset is the trust of our clients and communities. Success, for us, isn’t just about delivering exceptional services—it’s about creating sustainable, impactful solutions that benefit society and protect the environment. Every project we undertake, every partner we collaborate with, and every decision we make reflects our commitment to compliance, ethical practices, and the public good.'
+});
 
 
 onMounted(() => {
@@ -187,122 +213,29 @@ onMounted(() => {
 <template>
     <section class="bg-white">
         <Carousel2 :content="bannerMainContent" />
-        <!-- <BannerMain :content="bannerContent" /> -->
 
-        <div class="container py-2">
-            <div class="mt-10">
-                <h1 class="text-4xl font-semibold text-center">Welcome to <span class="text-brand-primary">Acentria
-                        Group</span>
-                </h1>
-                <p class="mt-5 text-xs leading-normal text-center">
-                    At Acentria Group, we shape the future of our partners through our expertise and solutions by
-                    EMPOWERING the vision of our clients and communities. Through INNOVATIVE thinking, we deliver the
-                    best solutions that enhance PROSPERITY. We are constantly seeking better ways to manage risk,
-                    guiding effective pathways to achieve SMART and sustainable outcomes.
-                    <br><br><br>
-                    <span class="tracking-widest font-semibold italic text-[20px] text-gray-600 tm-10">
-                        Let us help you navigate the complexities of today’s world and unlock your true potential.
-                    </span>
-                </p>
-            </div>
+        <div class="container py-5">
+            <h1 class="section-heading pb-3">Welcome to <span class="text-brand-primary">Acentria Group</span>
+            </h1>
+            <p class="!content">
+                At Acentria Group, we shape the future of our partners through our expertise and solutions by
+                EMPOWERING the vision of our clients and communities. Through INNOVATIVE thinking, we deliver the
+                best solutions that enhance PROSPERITY. We are constantly seeking better ways to manage risk,
+                guiding effective pathways to achieve SMART and sustainable outcomes.
+                <br><br>
+                <span class="tracking-widest font-semibold text-[20px] text-black tm-10">
+                    Let us help you navigate the complexities of today’s world and unlock your true potential.
+                </span>
+            </p>
         </div>
+
+        <ContentPic :content="whoWeAre" />
+        <ContentPic :content="thingsThatInspireUs" />
+        <ContentPic :content="whatWeDo" />
 
         <div class="bg-white py-1 font-sans mt-5">
 
-            <div id="Who we are" class="container mx-auto flex lg:flex-row flex-col my-8 lg:my-4 lg:gap-2">
-                <div class="relative py-4 lg:basis-1/2 scale-90">
-                    <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="300"
-                        decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="/img/Who we are.jpg" />
-                </div>
-
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 class="text-2xl font-semibold text- mb-4">
-                        Who <span class="text-brand-primary">We Are</span>
-                    </h2>
-                    <div class="text-black pb-5 md:pb-6">
-                        <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                            Acentria Group of Companies is a trusted global consultant dedicated to empowering growth
-                            and
-                            prosperity in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment
-                            Advisory.
-                            With over a decade of expertise and an unwavering commitment to excellence, we craft
-                            tailored
-                            solutions that empower our clients to thrive. Our innovative approach to risk management,
-                            insurance
-                            optimization, and investment advisory ensures you’re always ahead of the curve.
-                            When you partner with Acentria Group, you’re not just accessing solutions—you’re unlocking a
-                            world
-                            of knowledge and resources designed to mitigate risks, maximize opportunities, and achieve
-                            your
-                            financial goals.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                <div class="relative py-4 lg:basis-1/2">
-                    <NuxtImg v-motion-fade-visible alt="Image of Enable growth" loading="lazy" decoding="async"
-                        data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="w-full h-[300px] shadow-2xl rounded-lg !object-cover" src="/img/inspire.jpg" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <div class="text-light-content pb-5 md:pb-6 py-auto">
-                        <h2 class="text-2xl font-semibold text-black">
-                            Things that <span class="text-brand-primary">Inspire Us</span>
-                        </h2>
-                        <h3 class="text-xl font-semibold pb-4">
-                            <span class="text-brand-primary">#</span> Empower <span class="text-brand-primary">#</span>
-                            Innovate <span class="text-brand-primary">#</span> Prosper
-                        </h3>
-                        <p class="text-sm leading-normal text-light-content !text-inherit mb-4">
-                            At Acentria Group, we are driven by our mantra: <br> <b>Empower, Innovate, Prosper.</b> <br>
-                            We find inspiration in empowering individuals, businesses, and communities to achieve their
-                            dreams. Innovation fuels our creativity, helping us craft transformative solutions that
-                            tackle
-                            today’s challenges. Prosperity motivates us to create lasting impact—building success
-                            stories
-                            that uplift not just our clients but society as a whole. Together, we turn possibilities
-                            into
-                            progress,
-                            delivering excellence every step of the way.
-                        </p>
-                        <NuxtLink href="/things-that-inspire-us"
-                            class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                            Learn More
-                            <i class="fas fa-arrow-right text-primary ml-2"></i>
-                        </NuxtLink>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="bg-white px-6 py-1 font-sans">
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative py-4 lg:basis-1/2 content-center">
-                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="290" decoding="async"
-                            data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                            src="/img/dreads.jpg" />
-                    </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="text-2xl font-semibold text- mb-4">
-                            What <span class="text-brand-primary">We Do</span>
-                        </h2>
-                        <div class="text-black pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                At Acentria Group, we deliver transformative products and solutions in Risk and
-                                Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology. We believe our
-                                greatest asset is the trust of our clients and communities. Success, for us, isn’t just
-                                about delivering exceptional services—it’s about creating sustainable, impactful
-                                solutions that benefit society and protect the environment.
-                                Every project we undertake, every partner we collaborate with, and every decision we
-                                make reflects our commitment to compliance, ethical practices, and the public good.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
             <div class="container">
                 <h2 class="text-2xl font-semibold text- mb-4">
