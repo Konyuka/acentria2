@@ -193,9 +193,7 @@ onMounted(() => {
 <template>
     <main>
         <div class="bg-white ">
-
             <Carousel2 :content="bannerMainContent" />
-            
             <ContentPic :content="introContent" />
             <div class="container py-5">
                 <h1 class="section-heading pb-3">
@@ -257,10 +255,8 @@ onMounted(() => {
             <WhyUs2 />
             <InsuranceInsights />
             <HowHelp />
-            
             <BlackBanner :content="blackBannerContent" />
             <InTouch />
-
         </div>
     </main>
 </template>
