@@ -33,7 +33,7 @@
 }
 
 .small-text {
-  @apply tracking-normal text-xs text-black font-medium leading-normal
+  @apply tracking-normal text-xs text-black font-normal leading-normal
 }
 
 .bannerHeading{
