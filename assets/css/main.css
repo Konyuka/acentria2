@@ -21,7 +21,7 @@
 
 
 .section-heading {
-  @apply tracking-normal text-3xl text-black font-semibold leading-normal capitalize
+  @apply tracking-normal text-3xl text-black font-semibold leading-tight capitalize
 }
 
 .card-heading {
