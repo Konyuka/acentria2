@@ -169,10 +169,9 @@ const showDropdown = (menu) => {
 </script>
 
 <template>
-    <div>
-        <div class="font-sans w-full border-t-8 border-black bg-black/70 px-4 py-3">
+    <div class="!font-sans">
+        <div class="font-sans w-full border-t-8 border-black bg-black/70 py-5">
             <div class="container mx-auto">
-                <!-- Links -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 text-sm px-auto my-4">
 
                     <div class="flex items-center justify-center pr-10">
@@ -182,7 +181,7 @@ const showDropdown = (menu) => {
                                 src="/img/LogoW.png" />
                         </NuxtLink>
                     </div>
-                    
+
                     <div v-for="item in menuItem" :key="item.name"
                         class="pointer-events-auto relative z-10 overflow-hidden border-b-[1px] border-brand-gray-6 lg:border-0">
                         <h3 class="mb-1 flex items-center justify-between text-base font-bold lg:text-xl">
@@ -225,9 +224,9 @@ const showDropdown = (menu) => {
 
                         <ul v-if="chosenItem?.name === item.name"
                             class="lg:hidden left-0 top-full -z-10 flex w-full list-none flex-col gap-5 overflow-hidden pb-2 will-change-transform lg:mb-0 visible static transform-none opacity-100 transition-all duration-300">
-                            <li v-for="link in item.items" :key="link.name" class="my-1 text-dark-content">
+                            <li v-for="link in item.items" :key="link.name" class="my-1 card-heading">
                                 <NuxtLink :to="link.link"
-                                    class="cursor-pointer font-bold text-dark-title hover:text-dark-title hover:underline text-xs relative flex items-center">
+                                    class="hover:underline relative flex items-center">
                                     {{ link.name }}
                                 </NuxtLink>
                             </li>
@@ -236,9 +235,9 @@ const showDropdown = (menu) => {
                         <ul
                             class="left-0 top-full -z-10 flex w-full list-none flex-col gap-0 overflow-hidden will-change-transform lg:mb-0 invisible absolute -translate-y-24 opacity-0 lg:visible lg:static lg:transform-none lg:opacity-100 lg:transition-none">
                             <li v-for="link in item.items" :key="link.name"
-                                class="button-animation mb-0 text-dark-content">
+                                class="button-animation mb-2 text-dark-content">
                                 <NuxtLink :to="link.link"
-                                    class="text-[13px] cursor-pointer font-normal text-dark-title hover:text-gray-100 relative flex items-center">
+                                    class="small-text relative flex items-center">
                                     <i :class="link.icon" class="text-brand-primary mr-2"></i> {{ link.name }}
                                 </NuxtLink>
                             </li>
@@ -246,8 +245,8 @@ const showDropdown = (menu) => {
                     </div>
                 </div>
 
-                <hr class="h-0.25 bg-brand-divider mb-2" />
-                <h2 class="text-white mb-2 text-center md:text-left">Connect with us</h2>
+                <hr class="h-0.25 bg-brand-divider my-5" />
+                <h2 class="card-heading text-white mb-3 ">Connect with us</h2>
                 <div class="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0">
                     <!-- socials -->
                     <div class="flex items-center justify-end md:justify-end md:col-span-1">
@@ -291,14 +290,14 @@ const showDropdown = (menu) => {
                     </div>
 
                     <div class="flex flex-col items-center gap-y-2 md:flex-row md:gap-x-2 md:gap-y-0">
-                        <div class="text-sm text-dark-content">
+                        <div class="content text-white">
                             © {{ currentYear }} Acentria Group. All rights reserved.
                         </div>
                     </div>
                     <div class="flex flex-col items-center gap-y-2 md:flex-row md:gap-x-2 md:gap-y-0">
-                        <div class="text-sm text-dark-content">
+                        <div class="content text-white">
                             Developed by <a href="https://tech.acentriagroup.com" target="_blank"
-                                class="underline !button-animation">Acentria Technologies</a>
+                                class="underline button-animation">Acentria Technologies</a>
                         </div>
                     </div>
                 </div>
