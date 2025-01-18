@@ -169,7 +169,14 @@ const showDropdown = (menu) => {
 </script>
 
 <template>
-    <div class="!font-sans">
+    <div>
+
+
+        <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
+            class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 -z-50"
+            style="color: transparent; transform: scaleX(-1);">
+
+
         <div class="font-sans w-full border-t-8 border-black bg-black/70 py-5">
             <div class="container mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 text-sm px-auto my-4">
@@ -225,8 +232,7 @@ const showDropdown = (menu) => {
                         <ul v-if="chosenItem?.name === item.name"
                             class="lg:hidden left-0 top-full -z-10 flex w-full list-none flex-col gap-5 overflow-hidden pb-2 will-change-transform lg:mb-0 visible static transform-none opacity-100 transition-all duration-300">
                             <li v-for="link in item.items" :key="link.name" class="my-1 card-heading">
-                                <NuxtLink :to="link.link"
-                                    class="hover:underline relative flex items-center">
+                                <NuxtLink :to="link.link" class="hover:underline relative flex items-center">
                                     {{ link.name }}
                                 </NuxtLink>
                             </li>
@@ -234,8 +240,7 @@ const showDropdown = (menu) => {
 
                         <ul
                             class="left-0 top-full -z-10 flex w-full list-none flex-col gap-0 overflow-hidden will-change-transform lg:mb-0 invisible absolute -translate-y-24 opacity-0 lg:visible lg:static lg:transform-none lg:opacity-100 lg:transition-none">
-                            <li v-for="link in item.items" :key="link.name"
-                                class="button-animation mb-2">
+                            <li v-for="link in item.items" :key="link.name" class="button-animation mb-2">
                                 <NuxtLink :to="link.link"
                                     class="small-text relative flex items-center text-white !font-sans">
                                     <i :class="link.icon" class="text-brand-primary mr-2"></i> {{ link.name }}
