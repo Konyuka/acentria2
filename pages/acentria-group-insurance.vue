@@ -226,11 +226,12 @@ onMounted(() => {
             <ContentPic :content="exploreRisks" />
             <ServiceTabs :serviceHeading="serviceHeading" :menus="menus" :data="data" />
             <div class="container py-5">
-                <h2 class="section-heading pb-3">
-                    <span class="text-brand-primary">Do it yourself</span> or with expert help
+                <h2 class="section-heading pb-3 text-brand-primary">
+                    <span class="text-black">Do it yourself</span> or with expert help
                 </h2>
                 <div class="grid grid-cols-3 gap-5">
-                    <div v-for="help in helps" :key="help.heading" class="bg-white button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                    <div v-for="help in helps" :key="help.heading"
+                        class="bg-white button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                         <NuxtLink class="w-full" to="/">
                             <div class="!text-left font-sans group relative">
                                 <div class="card-heading pb-3">
