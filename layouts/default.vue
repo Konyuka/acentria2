@@ -7,14 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
     <div class="!font-sans !overflow-x-hidden">
         <Navigation />
-
-        <div>
-           
-           
-            <slot class="bg-white" />
-        </div>
-
-
+        <slot class="bg-white" />
         <Footer />
         <SpeedInsights />
     </div>
