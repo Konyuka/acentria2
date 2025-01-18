@@ -213,7 +213,6 @@ onMounted(() => {
 <template>
     <section class="bg-white">
         <Carousel2 :content="bannerMainContent" />
-
         <div class="container py-5">
             <h1 class="section-heading pb-3">Welcome to <span class="text-brand-primary">Acentria Group</span>
             </h1>
@@ -228,66 +227,56 @@ onMounted(() => {
                 </span>
             </p>
         </div>
-
         <ContentPic :content="whoWeAre" />
         <ContentPic :content="thingsThatInspireUs" />
         <ContentPic :content="whatWeDo" />
 
-        <div class="bg-white py-1 font-sans mt-5">
+        <div class="bg-white py-5">
 
-            
+
 
             <div class="container">
-                <h2 class="text-2xl font-semibold text- mb-4">
+                <h2 class="section-heading pb-3">
                     Our <span class="text-brand-primary">Capabilities</span>
                 </h2>
-            </div>
-
-            <div class="container mx-auto text-black">
-                <p>At Acentria Group, we offer a comprehensive suite of services tailored to meet the evolving
+                <p class="content">
+                    At Acentria Group, we offer a comprehensive suite of services tailored to meet the evolving
                     needs
                     of our clients. Through innovation, expertise, and unwavering dedication, we empower businesses
                     and individuals to thrive across the following areas.
-                    <br><br>
                 </p>
             </div>
+            =
 
-            <div class="container grid grid-cols-3 gap-5 justify-between my-5 pb-10">
+            <div class="container grid grid-cols-3 gap-5 justify-between py-5">
 
-                <div class="">
-                    <p class="text-start text-black">
-                        We provide expert insights and innovative solutions designed to address complex challenges and
-                        unlock new opportunities. Our capabilities span a diverse range of fields, enabling us to
-                        deliver
-                        customized strategies that drive growth, mitigate risks, and enhance prosperity in an
-                        ever-changing global landscape.
-                        <br><br>
-                        With a focus on inclusivity, sustainability, and impactful results, we leverage our expertise to
-                        ensure success for our clients, colleagues, and the communities we serve.
-                    </p>
-                </div>
+                <p class="content">
+                    We provide expert insights and innovative solutions designed to address complex challenges and
+                    unlock new opportunities.
+                    <br><br>
+                    Our capabilities span a diverse range of fields, enabling us to
+                    deliver
+                    customized strategies that drive growth, mitigate risks, and enhance prosperity in an
+                    ever-changing global landscape.
+                    <br><br>
+                    With a focus on inclusivity, sustainability, and impactful results, we leverage our expertise to
+                    ensure success for our clients, colleagues, and the communities we serve.
+                </p>
 
                 <div class="col-span-2">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
                         <NuxtLink :href="feature.url" v-for="feature in features"
-                            class="button-animation flex px-3 py-2 shadow-md border-l-4 border-brand-primary">
-                            <div class="mr-6">
+                            class="button-animation flex p-3 shadow-md border-l-4 border-brand-primary">
+                            <div class="pr-3">
                                 <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                             </div>
                             <div>
-                                <div class="flex justify-between items-center w-full">
-                                    <p class="subheading-class text-left">
-                                        {{ feature.title }}
-                                    </p>
-
-                                </div>
-
-                                <div class="mt-1 text-black">
-                                    <p>
-                                        {{ feature.description }}
-                                    </p>
-                                </div>
-
+                                <h4 class="card-heading text-left">
+                                    {{ feature.title }}
+                                </h4>
+                                <p class="content">
+                                    {{ feature.description }}
+                                </p>
                             </div>
                         </NuxtLink>
                     </div>
@@ -295,12 +284,12 @@ onMounted(() => {
 
             </div>
 
-            <div class="container mb-5">
-                <h2 id="" class="pb-4 md:pb-5 heading-class text-brand-primary">
-                    <span class="heading-class">
-                        Our Vision,
+            <div class="container my-5">
+                <h2 id="" class="section-heading pb-3  text-brand-primary">
+                    <span class="text-black">
+                        Our Vision |
                     </span>
-                    Mission & Values
+                    Mission | <span class="text-black">Values</span>
                 </h2>
 
                 <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
