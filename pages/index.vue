@@ -65,25 +65,25 @@ const joinAsMembers = ref([
 
 const commitments = ref([
   {
-    name: 'Our <span class="text-brand-primary"> Customers</span>',
+    name: 'Our <span class="text-brand-primary ml-2"> Customers</span>',
     icon: 'fas fa-users',
     description: 'We\'re committed to helping live a life that\'s as healthy and as full as possible.',
     link: '/our-commitment'
   },
   {
-    name: 'Our <span class="text-brand-primary"> Partners</span>',
+    name: 'Our <span class="text-brand-primary ml-2"> Partners</span>',
     icon: 'fas fa-handshake',
     description: 'Our partnerships with advisers, super funds and employer funds help us protect more people.',
     link: '/our-commitment'
   },
   {
-    name: 'Our <span class="text-brand-primary"> People</span>',
+    name: 'Our <span class="text-brand-primary ml-2"> People</span>',
     icon: 'fas fa-user-friends',
     description: 'We\'ve built a culture that lets our people make the most of every opportunity.',
     link: '/our-commitment'
   },
   {
-    name: 'Our <span class="text-brand-primary"> Communities</span>',
+    name: 'Our <span class="text-brand-primary ml-2"> Communities</span>',
     icon: 'fas fa-globe',
     description: 'Improving lives through active involvement and raising standards for the industry as a whole.',
     link: '/our-commitment'
@@ -234,16 +234,14 @@ onMounted(() => {
                 Corporate Social Responsibility
                 <span class="text-brand-primary"><br> & Sustainability</span>
               </h1>
-              <p
-                class="content text-white">
+              <p class="content text-white">
                 Our initiatives focus on reducing our environmental impact, promoting ethical business
                 practices, and contributing positively to the communities we serve. We believe in creating
                 long-term value for our stakeholders by integrating sustainable practices into our core
                 operations and fostering a culture of responsibility and transparency.
               </p>
               <div class="mt-5">
-                <NuxtLink to="/csr"
-                  class="subheading-class text-white underline underline-offset-8 button-animation">
+                <NuxtLink to="/csr" class="subheading-class text-white underline underline-offset-8 button-animation">
                   Learn More <i class="fas fa-caret-right mt-2"></i>
                 </NuxtLink>
               </div>
@@ -256,32 +254,31 @@ onMounted(() => {
         <Awards />
       </div>
 
-      <div class="w-full h-full container mx-auto max-w-6xl">
-        <div class="font-sans my-0">
-          <div class="py-10 sm:px-2 lg:px-4">
-            <div class="lg:max-w-none">
-              <div class="justify-between content-center">
-                <h2 class="text-2xl font-semibold text-white text-left">
-                  Lets Grow <span class="text-brand-primary">Together</span>
-                </h2>
+      <div class="container py-5">
+
+        <div class="justify-between content-center">
+          <h2 class="section-heading text-white text-left pb-5">
+            Lets Grow <span class="text-brand-primary">Together</span>
+          </h2>
+
+          <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+            <NuxtLink v-motion-fade-visible :href="member.link" v-for="member in joinAsMembers" :key="member.name"
+              class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8 border-brand-primary">
+              <div class="sm:flex-shrink-0 flex justify-center py-5">
+                <i :class="member.icon" class="text-black fa-xl"></i>
               </div>
-              <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
-                <NuxtLink v-motion-fade-visible :href="member.link" v-for="member in joinAsMembers" :key="member.name"
-                  class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8 border-brand-primary">
-                  <div class="sm:flex-shrink-0 flex justify-center">
-                    <i :class="member.icon" class="text-black text-2xl"></i>
-                  </div>
-                  <div class="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                    <h3 class="subheading-class text-brand-primary flex justify-center">{{ member.name }}</h3>
-                    <p class="mt-2 text-[13px] text-gray-500">{{ member.description }}</p>
-                    <i
-                      class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
-                  </div>
-                </NuxtLink>
+              <div>
+                <h3 class="card-heading text-brand-primary flex justify-center">{{ member.name }}</h3>
+                <p class="mt-2 content">{{ member.description }}</p>
+                <i
+                  class="fas fa-arrow-right mt-5 font-bold text-md text-brand-primary group-hover:text-gray-300 duration-700"></i>
               </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
+
+
+
       </div>
 
     </div>
