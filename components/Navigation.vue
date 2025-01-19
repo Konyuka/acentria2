@@ -68,11 +68,6 @@ const menus = ref([
         icon: 'fas fa-laptop-code',
         link: '/',
     },
-    // {
-    //     name: 'Insights',
-    //     icon: 'fas fa-chart-line',
-    //     link: '/investment',
-    // },
     {
         name: 'Investment',
         icon: 'fas fa-chart-line',
@@ -112,14 +107,14 @@ const showDropdown = (menu) => {
         isAboutDropdownVisible.value = false;
 
         isReinsuranceDropdownVisible.value = true;
-    } else if (menu == 'about'){
+    } else if (menu == 'about') {
         isInsuranceDropdownVisible.value = false;
         isActuarialDropdownVisible.value = false;
         isITDropdownVisible.value = false;
         isReinsuranceDropdownVisible.value = false;
 
         isAboutDropdownVisible.value = true;
-    } 
+    }
 };
 
 const hideDropdown = (menu) => {
@@ -135,7 +130,7 @@ const hideDropdown = (menu) => {
             isITDropdownVisible.value = false;
         } else if (menu == 'reinsurance') {
             isReinsuranceDropdownVisible.value = false;
-        }else if (menu == 'about') {
+        } else if (menu == 'about') {
             isAboutDropdownVisible.value = false;
         }
     }, 200);
@@ -216,9 +211,6 @@ onBeforeUnmount(() => {
                             <a href="https://www.instagram.com/acentriagroup/" target="_blank">
                                 <div
                                     class="bg-white w-6 h-6 rounded-full flex justify-center items-center button-animation">
-                                    <!-- <i
-                                        class="!text-lg fab fa-instagram icon-style text-black hover:text-brand-primary"></i> -->
-
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                                         viewBox="0 0 48 48">
                                         <path fill="#304ffe"
@@ -287,9 +279,6 @@ onBeforeUnmount(() => {
                             <a href="https://x.com/acentriagroup?lang=en" target="_blank">
                                 <div
                                     class="bg-white w-6 h-6 rounded-full flex justify-center items-center button-animation">
-                                    <!-- <i
-                                        class="!text-lg fab fa-x-twitter icon-style text-black hover:text-brand-primary"></i> -->
-
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                                         viewBox="0 0 48 48">
                                         <path fill="#212121" fill-rule="evenodd"
@@ -308,8 +297,6 @@ onBeforeUnmount(() => {
                             <a href="https://www.linkedin.com/company/acentria-groupltd/" target="_blank">
                                 <div
                                     class="bg-white w-6 h-6 rounded-full flex justify-center items-center button-animation">
-                                    <!-- <i
-                                        class="!text-lg fab fa-linkedin icon-style text-black hover:text-brand-primary"></i> -->
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                                         viewBox="0 0 48 48">
                                         <path fill="#0288D1"
@@ -324,9 +311,6 @@ onBeforeUnmount(() => {
                             <a href="https://www.tiktok.com/@acentria.group" target="_blank">
                                 <div
                                     class="bg-white w-6 h-6 rounded-full flex justify-center items-center button-animation">
-                                    <!-- <i
-                                        class="!text-lg fab fa-tiktok icon-style text-black hover:text-brand-primary"></i> -->
-
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                                         viewBox="0 0 48 48">
                                         <path fill="#212121" fill-rule="evenodd"
@@ -350,22 +334,22 @@ onBeforeUnmount(() => {
                     <div class="flex justify-center text-[14px] gap-1">
                         <NuxtLink to="/"
                             :class="currentRoute === '/' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation small-text text-[14px] font-bold">
                             Home
                         </NuxtLink>
                         <NuxtLink to="/acentria-news-and-blogs"
                             :class="currentRoute === '/acentria-news-and-blogs' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation small-text text-[14px] font-bold">
                             News
                         </NuxtLink>
                         <NuxtLink to="/acentria-group-careers"
                             :class="currentRoute === '/acentria-group-careers' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                            class=" relative border-r border-brand-divider px-3 py-1 hover:text-brand-primary button-animation small-text text-[14px] font-bold">
                             Careers
                         </NuxtLink>
                         <NuxtLink to="/contact-acentria-group"
                             :class="currentRoute === '/contact-acentria-group' ? 'text-brand-primary font-semibold scale-105' : ''"
-                            class=" relative px-3 py-1 hover:text-brand-primary button-animation font-bold">
+                            class=" relative px-3 py-1 hover:text-brand-primary button-animation small-text text-[14px] font-bold">
                             Contacts
                         </NuxtLink>
                     </div>
