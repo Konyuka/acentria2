@@ -65,25 +65,25 @@ const joinAsMembers = ref([
 
 const commitments = ref([
   {
-    name: 'Our Customers',
+    name: 'Our <span class="text-brand-primary"> Customers</span>',
     icon: 'fas fa-users',
     description: 'We\'re committed to helping live a life that\'s as healthy and as full as possible.',
     link: '/our-commitment'
   },
   {
-    name: 'Our Partners',
+    name: 'Our <span class="text-brand-primary"> Partners</span>',
     icon: 'fas fa-handshake',
     description: 'Our partnerships with advisers, super funds and employer funds help us protect more people.',
     link: '/our-commitment'
   },
   {
-    name: 'Our People',
+    name: 'Our <span class="text-brand-primary"> People</span>',
     icon: 'fas fa-user-friends',
     description: 'We\'ve built a culture that lets our people make the most of every opportunity.',
     link: '/our-commitment'
   },
   {
-    name: 'Our Communities',
+    name: 'Our <span class="text-brand-primary"> Communities</span>',
     icon: 'fas fa-globe',
     description: 'Improving lives through active involvement and raising standards for the industry as a whole.',
     link: '/our-commitment'
@@ -94,37 +94,37 @@ const others = ref([
   {
     name: 'Vision <span class="text-brand-primary">& Mission</span>',
     description: 'A Lifestyle Built <span class="text-brand-primary"> Around Excellence</span>',
-    image: '/img/vision-mission.jpg',
+    image: 'https://img.freepik.com/premium-photo/vision-mission-values-outline-signpost-with-three-arrows_764664-8909.jpg?w=1380',
     link: '/our-brand',
   },
   {
     name: 'Our <span class="text-brand-primary">Leadership</span>',
     description: 'The leaders who inspire us',
-    image: '/img/leadership.jpg',
+    image: '/img/iStock-2148737980 Leadership.jpg',
     link: '/meet-the-team',
   },
   {
     name: 'Our <span class="text-brand-primary">Culture</span>',
     description: 'The Acentria Way!',
-    image: '/img/hi5.jpg',
+    image: '/img/Things that Inspire Us.JPG',
     link: '/corporate-culture',
   },
   {
     name: 'Our <span class="text-brand-primary">Brand</span>',
     description: 'A Lifestyle Built Around Excellence',
-    image: '/img/Acentria Logo-01.jpg',
+    image: '/img/join.jpg',
     link: '/our-brand',
   },
   {
     name: 'News &<span class="text-brand-primary"> Updates</span>',
     description: 'Stay informed with the latest news, trends, and updates from our company and industry.',
-    image: '/img/join.jpg',
+    image: 'https://img.freepik.com/free-photo/online-blog_53876-123696.jpg?t=st=1737285729~exp=1737289329~hmac=0699c60be392436d82c05b4f4e9a880ca2116b9b18e0814bf0964e103f4182e1&w=900',
     link: '/contact-acentria-group',
   },
   {
     name: 'Acentria <span class="text-brand-primary">Careers</span>',
     description: 'Explore exciting career opportunities and join our team to build a future of excellence.',
-    image: '/img/careers-shake.jpg',
+    image: '/img/team4.jpg',
     link: '/acentria-group-careers',
   },
 
@@ -149,85 +149,73 @@ onMounted(() => {
     <div class="font-sans">
       <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
       <MakesUs2 />
-      
-
-      <div class="container relative min-h-[30vh] ">
-        <div class="mb-5 bottom-0 absolute max-w-7xl mx-auto">
-          <h2 class="text-2xl font-semibold text-white py-1">
+      <div class="container relative min-h-[30vh]">
+        <div class="bottom-5 absolute">
+          <h1 class="section-heading pb-3 text-white">
             Your might also <span class="text-brand-primary">be interested in</span>
-          </h2>
-          <h3 class="text-xl font-semibold text-white">
+          </h1>
+          <h4 class="bannerDescription text-white">
             More about <span class="text-brand-primary"> Acentria</span>
-          </h3>
+          </h4>
         </div>
       </div>
-
-      <div class="!overflow-x-hidden !font-sans bg-white pb-5">
+      <div class="!overflow-x-hidden !font-sans bg-white py-5">
         <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1">
           <Slide v-for="(chunk, cIndex) in chunkedBlogs" :key="cIndex" class="relative">
-            <!-- Grid of Cards Inside One Slide -->
-            <div class="bg-white">
-              <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">
-                <NuxtLink v-for="(blog, index) in chunk" :key="index" :to="blog.link"
-                  class="button-animation rounded-xl p-3 shadow-md group flex flex-col items-start justify-between">
+            <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+              <NuxtLink v-for="(blog, index) in chunk" :key="index" :to="blog.link"
+                class="button-animation rounded-md p-3 shadow-md group flex flex-col items-start justify-between !bg-black">
 
-                  <div class="relative w-full">
-                    <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
-                      class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
-                      :src="blog.image" style="color: transparent;" />
-                    <div
-                      class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
-                    </div>
+                <div class="relative w-full">
+                  <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
+                    class="aspect-[16/9] w-full rounded-md bg-red-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                    :src="blog.image" style="color: transparent;" />
+                  <div
+                    class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
                   </div>
+                </div>
 
-                  <div class="">
-                    <div class="text-center font-sans group">
-                      <h1 v-html="blog.name"
-                        class="text-center mt-3 text-[16px] font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
-                      </h1>
-                      <p v-html="blog.description" class="text-center text-[13px] leading-normal text-black">
-                      </p>
-                    </div>
-                    <div class="font-semibold mt-5 text-xs">
+                <div>
+                  <div class="text-left font-sans group pb-5">
+                    <h1 v-html="blog.name" class="card-heading !text-white mt-3 group-hover:text-brand-primary pb-2">
+                    </h1>
+                    <p v-html="blog.description" class="content !text-white">
+                    </p>
+                    <p class="small-text !text-white">
                       Learn More <i class="ml-2 fas fa-arrow-right"></i>
-                    </div>
+                    </p>
                   </div>
-                </NuxtLink>
-              </div>
+                </div>
+              </NuxtLink>
             </div>
           </Slide>
 
-          <!-- Carousel Controls (Pagination & Navigation) -->
           <template #addons>
             <Pagination />
             <Navigation class="text-black px-10" />
           </template>
         </Carousel>
       </div>
-
-      <section class="container max-w-6xl mx-auto relative py-5">
-        <div class="py-5 text-2xl font-semibold text-white text-left">
+      <div class="container relative py-5">
+        <h1 class="section-heading text-white text-left">
           Our <span class="text-brand-primary">Commitments</span>
-          <h3 class="text-xl font-semibold text-white">
-            Always looking for ways <span class="text-brand-primary">to do things better!</span>
-          </h3>
-        </div>
-
+        </h1>
+        <h4 class="bannerDescription text-white pb-3">
+          Always looking for ways <span class="text-brand-primary">to do things better!</span>
+        </h4>
         <div class="font-sans grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 py-0">
           <NuxtLink v-motion-fade-visible :to="item.link" v-for="item in commitments"
             class="shadow-2xl button-animation duration-700 group border-0 border-solid border-black shadow-card m-auto flex rounded-lg bg-black/40 p-5 w-full h-full">
             <div class="flex h-fit flex-col">
               <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary" translate="no"></i>
-              <h3 class="text-md font-semibold text-brand-primary flex justify-left group-hover:text-black">
-                {{ item.name }}
-              </h3>
-              <p class="text-sm text-white">{{ item.description }}</p>
+              <h3 class="card-heading flex justify-left group-hover:text-black" v-html="item.name"></h3>
+              <p class="content text-white">{{ item.description }}</p>
               <i
                 class="fas fa-arrow-right mt-5 font-bold text-right text-lg group-hover:text-brand-primary text-gray-300 duration-700"></i>
             </div>
           </NuxtLink>
         </div>
-      </section>
+      </div>
 
       <Stats />
 

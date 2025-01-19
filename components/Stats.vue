@@ -1,66 +1,49 @@
 <script setup>
-// import CountUp from 'vue-countup-v2';
+const stats = ref([
+    {
+        number: '13k+',
+        title: 'Customers'
+    },
+    {
+        number: '10+',
+        title: 'Years'
+    },
+    {
+        number: '5+',
+        title: 'Awards'
+    },
+    {
+        number: '5+',
+        title: 'Countries'
+    },
+    {
+        number: '24h',
+        title: 'Support'
+    }
+]);
 </script>
 
 <template>
-    <div class="container mx-auto max-w-6xl py-10">
-        <div class="text-center mb-10">
-            <h2 class="text-2xl font-semibold text-white">
-                Top Choice for Professional <span class="text-brand-primary">Services and Client Satisfaction</span>
+    <div class="container py-5">
+        <div class="text-left mb-10">
+            <h2 class="section-heading text-white">
+                Top Choice for Professional <span class="text-brand-primary">Services & Client Satisfaction</span>
             </h2>
         </div>
-        <div id="stats" class="text-white font-sans">
-            <div class="flex flex-wrap justify-center gap-16">
-                <div class="flex items-center justify-center mb-12">
-                    <div class="border-brand-divider border-l pl-6 text-dark-title">
-                        <span class="flex text-2xl font-semibold">
-                            13k+
+        <div class="text-white font-sans">
+            <div class="flex flex-wrap justify-left w-full justify-around">
+
+                <div v-for="stat in stats" class="flex items-center justify-center mb-12">
+                    <div class="border-brand-divider border-l-4 !border-l-black pl-6">
+                        <span class="flex text-3xl font-semibold">
+                            {{ stat.number }}
                         </span>
-                        <p class="text-base md:text-xl font-semibold">
-                            Customers
+                        <p class="section-heading text-white">
+                            {{ stat.title }}
                         </p>
                     </div>
                 </div>
-                <div class="flex items-center justify-center mb-12">
-                    <div class="border-brand-divider border-l pl-6 text-dark-title">
-                        <span class="flex text-2xl font-semibold">
-                            10+
-                        </span>
-                        <p class="text-base md:text-xl font-semibold">
-                            Years
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center justify-center mb-12">
-                    <div class="border-brand-divider border-l pl-6 text-dark-title">
-                        <span class="flex text-2xl font-semibold">
-                            5+
-                        </span>
-                        <p class="text-base md:text-xl font-semibold">
-                            Awards
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center justify-center mb-12">
-                    <div class="border-brand-divider border-l pl-6 text-dark-title">
-                        <span class="flex text-2xl font-semibold">
-                            5+
-                        </span>
-                        <p class="text-base md:text-xl font-semibold">
-                            Countries
-                        </p>
-                    </div>
-                </div>
-                <div class="flex items-center justify-center mb-12">
-                    <div class="border-brand-divider border-l pl-6 text-dark-title">
-                        <span class="flex text-2xl font-semibold">
-                            24h
-                        </span>
-                        <p class="text-base md:text-xl font-semibold">
-                            Support
-                        </p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

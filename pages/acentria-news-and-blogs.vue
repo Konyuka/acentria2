@@ -9,11 +9,6 @@ const formatDate = (date) => {
     return moment(date).format('lll');
 }
 
-const ReinsuranceBannerContent = ref({
-    title: 'Acentria\'s Newsroom',
-    image: 'https://www.shutterstock.com/shutterstock/photos/1023861067/display_1500/stock-photo-morning-cup-of-coffee-warm-coffee-and-morning-news-concept-on-a-wooden-textured-table-1023861067.jpg',
-})
-
 const bannerContent = ref({
     subtitle: 'News & Updates',
     title: 'Acentria\'s Newsroom',

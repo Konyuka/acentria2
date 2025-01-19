@@ -445,7 +445,7 @@ const openProfileModal = (product) => {
                     </p>
 
 
-                    <div class="my-5">
+                    <div class="py-5">
                         <NuxtLink to="/about-us/who-we-are">
                             <AppButton :title="'Learn More'" />
                         </NuxtLink>
@@ -454,12 +454,12 @@ const openProfileModal = (product) => {
                 </div>
             </div>
 
-            <div class="py-5">
+            <!-- <div class="py-5">
                 <h1 class="section-heading leading-relaxed text-gray-500">
                     “At Acentria, we reject the notion that ‘better’ is enough. We go beyond conventional thinking to
                     deliver the smartest and most effective solutions possible.”
                 </h1>
-            </div>
+            </div> -->
 
             <div class="py-5">
                 <div class="font-sans grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-3">
@@ -488,13 +488,8 @@ const openProfileModal = (product) => {
 
             </div> -->
 
-        </div>
-
-
-        <div class="bg-white">
-
-            <div class="container mx-auto py-5">
-                <h2 class="section-heading pb-3">
+            <div class="py-5">
+                <h2 class=" section-heading pb-3">
                     Our <span class="text-brand-primary">Capabilities</span>
                 </h2>
                 <div>
@@ -518,111 +513,106 @@ const openProfileModal = (product) => {
                         ensure success for our clients, colleagues, and the communities we serve.
                     </p>
                 </div>
+            </div>
 
+            <div class="py-5">
+                <h2 class="section-heading pb-3">
+                    The <span class="text-brand-primary">Industries</span>
+                </h2>
 
-                <div class="py-5">
-                    <h2 class="section-heading pb-3">
-                        The <span class="text-brand-primary">Industries</span>
-                    </h2>
+                <p>
+                    At Acentria Group, our divisions in Insurance Broking, Reinsurance Broking, Actuarial and
+                    Financial Services, and Technology enable us to offer cutting-edge, industry-specific
+                    solutions. Guided by our brand promise, "Done Smart," we combine innovation, expertise, and
+                    a deep understanding of industry challenges to help our clients achieve their goals
+                    efficiently and effectively.
+                </p>
 
-                    <p>
-                        At Acentria Group, our divisions in Insurance Broking, Reinsurance Broking, Actuarial and
-                        Financial Services, and Technology enable us to offer cutting-edge, industry-specific
-                        solutions. Guided by our brand promise, "Done Smart," we combine innovation, expertise, and
-                        a deep understanding of industry challenges to help our clients achieve their goals
-                        efficiently and effectively.
-                    </p>
+                <div class="py-10 gap-x-6 gap-y-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 ">
+                    <button @click="openProfileModal(product)" v-for="product in specials" :key="product.id" " class="
+                        button-animation group">
+                        <div
+                            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
+                            <NuxtImg :src="product.img" :alt="product.img"
+                                class="h-full w-full object-cover object-center group-hover:opacity-75" />
+                        </div>
+                        <div class="flex flex-col items-center justify-between">
+                            <h4 class="card-heading pb-1">{{ product.name }}</h4>
+                            <p class="small-text italic"> Learn More <i
+                                    class="ml-2 fas fa-arrow-right text-brand-primary"></i>
+                            </p>
+                        </div>
+                    </button>
+                </div>
 
-                    <div class="py-10 gap-x-6 gap-y-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 ">
-                        <button @click="openProfileModal(product)" v-for="product in specials"
-                            :key="product.id" " class=" button-animation group">
-                            <div
-                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                                <NuxtImg :src="product.img" :alt="product.img"
-                                    class="h-full w-full object-cover object-center group-hover:opacity-75" />
-                            </div>
-                            <div class="flex flex-col items-center justify-between">
-                                <h4 class="card-heading pb-1">{{ product.name }}</h4>
-                                <p class="small-text italic"> Learn More <i
-                                        class="ml-2 fas fa-arrow-right text-brand-primary"></i>
-                                </p>
-                            </div>
-                        </button>
-                    </div>
+                <div v-if="profileModal" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"
+                    aria-modal="true">
+                    <div class="fixed inset-0 bg-black/20"></div>
 
+                    <div class="fixed inset-0 overflow-hidden">
+                        <div class="absolute inset-0 overflow-hidden">
+                            <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-3xl pl-10">
 
+                                <div class="pointer-events-auto w-screen max-w-3xl">
+                                    <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                                        <div class="px-4 sm:px-6">
+                                            <div class="flex items-start justify-between">
+                                                <h2 class="text-base font-semibold leading-6 text-gray-900"
+                                                    id="slide-over-title">
 
-
-
-                    <div v-if="profileModal" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"
-                        aria-modal="true">
-                        <div class="fixed inset-0 bg-black/20"></div>
-
-                        <div class="fixed inset-0 overflow-hidden">
-                            <div class="absolute inset-0 overflow-hidden">
-                                <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-3xl pl-10">
-
-                                    <div class="pointer-events-auto w-screen max-w-3xl">
-                                        <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
-                                            <div class="px-4 sm:px-6">
-                                                <div class="flex items-start justify-between">
-                                                    <h2 class="text-base font-semibold leading-6 text-gray-900"
-                                                        id="slide-over-title">
-
-                                                    </h2>
-                                                    <div class="ml-3 flex h-7 items-center">
-                                                        <button @click="profileModal = false" type="button"
-                                                            class="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2">
-                                                            <span class="absolute -inset-2.5"></span>
-                                                            <span class="sr-only">Close panel</span>
-                                                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                                                stroke-width="1.5" stroke="currentColor"
-                                                                aria-hidden="true" data-slot="icon">
-                                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                                    d="M6 18 18 6M6 6l12 12" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
+                                                </h2>
+                                                <div class="ml-3 flex h-7 items-center">
+                                                    <button @click="profileModal = false" type="button"
+                                                        class="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2">
+                                                        <span class="absolute -inset-2.5"></span>
+                                                        <span class="sr-only">Close panel</span>
+                                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                            stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                                                            data-slot="icon">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M6 18 18 6M6 6l12 12" />
+                                                        </svg>
+                                                    </button>
                                                 </div>
                                             </div>
-                                            <div class="relative mt-6 flex-1 px-4 sm:px-6">
-                                                <div class="relative z-0 flex flex-1 overflow-hidden">
-                                                    <main
-                                                        class="relative z-0 flex-1 overflow-y-auto focus:outline-none xl:order-last">
+                                        </div>
+                                        <div class="relative mt-6 flex-1 px-4 sm:px-6">
+                                            <div class="relative z-0 flex flex-1 overflow-hidden">
+                                                <main
+                                                    class="relative z-0 flex-1 overflow-y-auto focus:outline-none xl:order-last">
 
 
-                                                        <article>
-                                                            <div class="bg-white rounded-lg shadow-lg">
-                                                                <h2 class="text-2xl font-bold text-brand-primary">{{
-                                                                    currentIndustry.name }} <span
-                                                                        class="text-black">Industry</span></h2>
-                                                                <p class="mt-4 text-gray-700">{{
-                                                                    currentIndustry.overview }}</p>
-                                                                <h3 class="mt-6 text-xl font-semibold">Expertise:
-                                                                </h3>
-                                                                <ul class="list-disc ml-6 mt-2">
-                                                                    <li v-for="(item, index) in currentIndustry.expertise"
-                                                                        :key="index" class="text-gray-600">
-                                                                        {{ item }}
-                                                                    </li>
-                                                                </ul>
-                                                                <h3 class="mt-6 text-xl font-semibold">FAQs:</h3>
-                                                                <div class="mt-2">
+                                                    <article>
+                                                        <div class="bg-white rounded-lg shadow-lg">
+                                                            <h2 class="text-2xl font-bold text-brand-primary">{{
+                                                                currentIndustry.name }} <span
+                                                                    class="text-black">Industry</span></h2>
+                                                            <p class="mt-4 text-gray-700">{{
+                                                                currentIndustry.overview }}</p>
+                                                            <h3 class="mt-6 text-xl font-semibold">Expertise:
+                                                            </h3>
+                                                            <ul class="list-disc ml-6 mt-2">
+                                                                <li v-for="(item, index) in currentIndustry.expertise"
+                                                                    :key="index" class="text-gray-600">
+                                                                    {{ item }}
+                                                                </li>
+                                                            </ul>
+                                                            <h3 class="mt-6 text-xl font-semibold">FAQs:</h3>
+                                                            <div class="mt-2">
 
-                                                                    <Accordion :faqs="currentIndustry.faqs" />
+                                                                <Accordion :faqs="currentIndustry.faqs" />
 
-                                                                </div>
-                                                                <button
-                                                                    class="mt-6 px-4 py-2 bg-gray-700 text-white rounded-md"
-                                                                    @click="profileModal = false">
-                                                                    Close
-                                                                </button>
                                                             </div>
+                                                            <button
+                                                                class="mt-6 px-4 py-2 bg-gray-700 text-white rounded-md"
+                                                                @click="profileModal = false">
+                                                                Close
+                                                            </button>
+                                                        </div>
 
-                                                        </article>
-                                                    </main>
+                                                    </article>
+                                                </main>
 
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -631,28 +621,24 @@ const openProfileModal = (product) => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
-            <div class="container mx-auto py-10">
-                <div class="mx-auto max-w-6xl lg:mx-0 mb-2">
-                    <h2 class="text-2xl font-semibold text-black">
-                        Why Acentria <span class="text-brand-primary">Group?</span>
-                    </h2>
-                    <h3 class="font-semibold text-xl mt-2">
-                        We Ensure<span class="text-brand-primary"> Smart!</span>
-                    </h3>
-                </div>
+            <div class="py-5">
+                <h2 class="section-heading">
+                    Why Acentria <span class="text-brand-primary">Group?</span>
+                </h2>
+                <h3 class="card-heading pb-3">
+                    We Ensure<span class="text-brand-primary"> Smart!</span>
+                </h3>
 
-                <div class="px-20 py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
+                <div class="py-5 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-5">
                     <div v-for="feature in whys" class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
                         <div class="mr-6">
                             <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                         </div>
                         <div>
                             <div class="flex justify-between items-center w-full">
-                                <p class="text-[14px] text-black font-medium text-left">
+                                <p class="content">
                                     {{ feature.name }}
                                 </p>
 
@@ -660,13 +646,8 @@ const openProfileModal = (product) => {
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
-
-
     </div>
 </template>
 

@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <NuxtLink :to="item.link" class="card button-animation">
+    <NuxtLink :to="item.link" class="card button-animation !z-10">
         <div class="bg p-2">
 
             <dt class="card-heading">
@@ -17,7 +17,8 @@ const props = defineProps({
             <dd class="mt-1 flex flex-auto flex-col">
                 <p class="flex-auto content">{{ item.description }}</p>
                 <p
-                    class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary">Learn more <span aria-hidden="true">→</span>
+                    class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary">
+                    Learn more <span aria-hidden="true">→</span>
                 </p>
             </dd>
         </div>

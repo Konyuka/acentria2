@@ -1,9 +1,5 @@
 <script setup>
-const bannerContent = ref({
-    subtitle: 'About Us',
-    title: 'About <span class="text-brand-primary">Acentria Group</span>',
-    image: '/img/Cover page- Acentria Who we are.jpg'
-})
+
 
 const bannerMainContent = ref({
     title: 'About <br><span class="text-brand-primary">Acentria Group</span>',
@@ -11,18 +7,11 @@ const bannerMainContent = ref({
     image: '/img/Cover page- Acentria Who we are.jpg',
 })
 
-
-const mission = ref(null)
-const selectedMenu = computed(() => {
-    return mission.value?.currentMenu
-})
-
 const scrollToSetScroll = () => {
     const setScroll = localStorage.getItem('scrollTo');
     console.log(setScroll);
 };
 
-const router = useRoute();
 const beforeRouteUpdate = (to, from, next) => {
     console.log(to.path, from.path);
     scrollToSetScroll();
