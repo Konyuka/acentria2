@@ -53,10 +53,10 @@ const specials = ref([
                 content: 'Our actuarial and financial services team stays updated on regulations to guide compliance.',
             },
         ],
-        img:'/img/rope-gray.jpeg'
+        img: '/img/rope-gray.jpeg'
     },
-   
-   
+
+
     {
         name: 'Professionals & Business Services',
         overview: 'From legal firms to consultancy businesses, professional service providers require protection against errors, omissions, and operational risks. We help safeguard your reputation and assets.',
@@ -224,7 +224,7 @@ const specials = ref([
         ],
         img: '/img/travel3.jpg'
     },
-    
+
     {
         name: 'Industrial & Manufacturing',
         overview: 'The industrial and manufacturing sector faces challenges ranging from supply chain disruptions to workplace safety and environmental regulations. Our solutions are designed to mitigate these risks effectively.',
@@ -362,6 +362,40 @@ const whys = ref([
     },
 ]);
 
+const features = [
+    {
+        icon: 'fas fa-shield-alt',
+        title: 'Insurance',
+        description: 'Mitigating Risks, Maximizing Opportunities',
+        url: '/acentria-group-insurance',
+    },
+    {
+        icon: 'fas fa-shield-virus',
+        title: 'Reinsurance',
+        description: 'Protecting Your Assets, Empowering Your Future',
+        url: '/acentria-group-reinsurance',
+    },
+    {
+        icon: 'fas fa-calculator',
+        title: 'Actuarial',
+        description: 'Empowering Decisions, Simplifying Complexity',
+        url: '/acentria-group-actuarial',
+    },
+    {
+        icon: 'fas fa-laptop-code',
+        title: 'Technology',
+        description: 'Building prosperity, Securing Futures',
+        url: '/lines-of-business',
+    },
+    {
+        icon: 'fas fa-dollar-sign',
+        title: 'Investment',
+        description: 'Protecting Your Assets, Empowering Your Future',
+        url: '/acentria-group-investment',
+    },
+
+]
+
 const profileModal = ref(false);
 const currentIndustry = ref(null);
 
@@ -377,8 +411,8 @@ const openProfileModal = (product) => {
 
         <div class="container">
 
-            <div class="grid grid-cols-12 gap-2">
-                <div class="col-span-4 mt-5 container max-w-6xl mx-auto justify-between content-center">
+            <div class="grid grid-cols-12 gap-2 py-5">
+                <div class="col-span-3 container max-w-6xl mx-auto justify-between content-center">
 
                     <h1 class="section-heading">
                         About
@@ -391,28 +425,25 @@ const openProfileModal = (product) => {
                     </h1>
                 </div>
 
-                <div class="col-span-8 relative mt-5">
-                    <h2 class="text-2xl font-medium text-left">
+                <div class="col-span-9 relative">
+                    <h2 class="section-heading pb-3">
                         Acentria <span class="text-brand-primary"> Group</span>
                     </h2>
-                    <div class="relative mx-auto pt-4 flex">
-                        <span
-                            class="text-brand-primary font-semibold text-4xl border-2 border-brand-primary h-[60px]"></span>
-                        <span class="ml-4">
-                            We drive the future for our partners through expertise and innovative solutions, empowering
-                            the
-                            visions of our clients and the communities we serve. By fostering innovation, we deliver the
-                            best
-                            strategies to enhance prosperity and success.
-                            <br><br>
-                            Our mission is to continuously seek better ways to manage risks and guide effective pathways
-                            toward
-                            achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our
-                            clients,
-                            our
-                            company, our colleagues, and the communities we proudly serve.
-                        </span>
-                    </div>
+                    <p>
+                        We drive the future for our partners through expertise and innovative solutions, empowering
+                        the
+                        visions of our clients and the communities we serve. By fostering innovation, we deliver the
+                        best
+                        strategies to enhance prosperity and success.
+                        <br><br>
+                        Our mission is to continuously seek better ways to manage risks and guide effective pathways
+                        toward
+                        achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our
+                        clients,
+                        our
+                        company, our colleagues, and the communities we proudly serve.
+                    </p>
+
 
                     <div class="my-5">
                         <NuxtLink to="/about-us/who-we-are">
@@ -423,76 +454,71 @@ const openProfileModal = (product) => {
                 </div>
             </div>
 
-            <div class="container my-10">
-                <h1 class="text-semibold text-2xl text-center leading-none">
+            <div class="py-5">
+                <h1 class="section-heading leading-relaxed text-gray-500">
                     “At Acentria, we reject the notion that ‘better’ is enough. We go beyond conventional thinking to
                     deliver the smartest and most effective solutions possible.”
                 </h1>
             </div>
 
-            <div class="container mt-5">
-                <div
-                    class="font-sans grid  grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-1 gap-y-2 text-base leading-normal text-gray-600">
+            <div class="py-5">
+                <div class="font-sans grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-3">
                     <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
                         :key="incentive.name"
-                        class="shadow-2xl button-animation relative flex flex-row gap-1 border-2 border-black/10 py-5 px-5 rounded-lg">
+                        class="shadow-2xl !button-animation relative flex flex-row gap-1 border-2 border-black/10 py-5 px-5 rounded-lg">
                         <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
                         <div class="relative">
                             <div class="flex justify-between w-full">
-                                <h5 v-html="incentive.name" class="text-md pb-1 font-semibold leading-tight text-black">
+                                <h5 v-html="incentive.name" class="card-heading pb-1">
                                 </h5>
                             </div>
-                            <p class="leading-normal font-regular text-light-content text-[14px]">
+                            <p class="content">
                                 {{ incentive.description }}
                             </p>
-                            <i class="absolute fas fa-arrow-right text-md right-0 top-1"></i>
+                            <i class="absolute fas fa-arrow-right card-heading right-0 top-0"></i>
                         </div>
                     </NuxtLink>
                 </div>
             </div>
 
-        </div>
-
-
-
-        <div class="container relative min-h-[60vh] ">
-            <div class="mb-24 bottom-0 absolute max-w-7xl mx-auto !py-auto ]">
-                <h2 class="text-[40px] font-semibold text-white py-1">
+            <!-- <div class="mb-24 bottom-0 max-w-7xl mx-auto !py-auto">
+                <h2 class="section-heading">
                     “SMART people, SMART solutions, <br> SMART technology, SMART organization, SMART clients“
                 </h2>
 
-            </div>
+            </div> -->
+
         </div>
+
 
         <div class="bg-white">
 
-            <div class="container mx-auto pt-10 ">
-                <div class="mx-auto max-w-6xl lg:mx-0 mb-2">
-                    <h2 class="text-2xl font-semibold text-black">
-                        Our <span class="text-brand-primary">Capabilities</span>
-                    </h2>
-                </div>
-
+            <div class="container mx-auto py-5">
+                <h2 class="section-heading pb-3">
+                    Our <span class="text-brand-primary">Capabilities</span>
+                </h2>
                 <div>
-                    <p class="my-5 text-sm leading-normal">
+                    <p class="pb-5">
                         At Acentria Group, we offer a comprehensive suite of services tailored to meet the evolving
                         needs
                         of our clients. Through innovation, expertise, and unwavering dedication, we empower businesses
                         and individuals to thrive across the following areas.
-                        <br><br>
-                        <Services />
-                        <br>
+
+                    </p>
+                    <div class="grid grid-cols-5 gap-3 py-10">
+                        <HighlightCard :item="feature" v-for="feature in features" :key="feature.name" />
+                    </div>
+                    <p class="pb-5">
                         We provide expert insights and innovative solutions designed to address complex challenges and
                         unlock new opportunities. Our capabilities span a diverse range of fields, enabling us to
                         deliver
                         customized strategies that drive growth, mitigate risks, and enhance prosperity in an
                         ever-changing global landscape.
-                        <br><br>
                         With a focus on inclusivity, sustainability, and impactful results, we leverage our expertise to
                         ensure success for our clients, colleagues, and the communities we serve.
-
                     </p>
                 </div>
+
 
                 <div class="pt-5">
                     <div class="">

@@ -29,7 +29,7 @@ const props = defineProps({
         <div class="container">
             <div class="flex h-screen items-center justify-center flex-col text-left text-white z-10 relative">
                 <div class="w-full pb-5">
-                    <h1 v-html="InsuranceBannerContent.title" class="section-heading !text-[45px]">
+                    <h1 v-html="InsuranceBannerContent.title" class="section-heading !text-white !text-[45px]">
                     </h1>
                 </div>
                 <div class="text-left w-full">
