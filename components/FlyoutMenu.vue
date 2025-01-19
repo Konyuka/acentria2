@@ -39,11 +39,11 @@
                             <div class="col-span-4 relative border-r-2 border-red-600 h-full mt-2">
 
                                 <div class="flex flex-col gap-1 mx-3 mt-7">
-                                    <h2 class="text-2xl font-semibold" v-html="currentMainHeading"></h2>
+                                    <h2 class="section-heading pb-3" v-html="currentMainHeading"></h2>
                                     <p class="text-[13px] leading-normal">
                                         {{ currentMainDescription }}
                                     </p>
-                                    <div class="mt-5">
+                                    <!-- <div class="mt-5">
                                         <NuxtLink :to="ctaLink" class="leading-normal font-semibold flex text-black">
                                             {{ ctaWording }}
                                             <span class=" ml-2 h-6 w-6 rounded-full border-[1px] border-gray-400 flex
@@ -51,7 +51,7 @@
                                                 <i class="text-[10px] fas fa-arrow-right"></i>
                                             </span>
                                         </NuxtLink>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -63,7 +63,7 @@
                                                 <p @click="setSubmenu(item, index)"
                                                     @mouseenter="setSubmenu(item, index)"
                                                     :class="[currentSubmenu === item.name ? 'text-brand-primary bg-red-100' : '']"
-                                                    class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary font-semibold text-[15px]">
+                                                    class="rounded-md py-1 px-5 group hover:cursor-pointer hover:text-brand-primary card-heading">
                                                     {{ item.name }} <i v-if="currentSubmenu === item.name"
                                                         class="absolute right-4 text-brand-primary ml-8 fas fa-arrow-right mt-1"></i>
                                                 </p>
@@ -115,7 +115,7 @@
                             <div class="flex col-span-2 w-full justify-between !pr-5">
                                 <NuxtLink v-for="item in footerOptions" :key="item.name" :to="item.link"
                                     @click="closeFlyOver()"
-                                    class=" group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 text-[13px] font-semibold leading-normal text-black sm:justify-center sm:px-0">
+                                    class="card-heading group button-animation flex items-center hover:text-gray-600 gap-x-2.5 py-3 sm:justify-center sm:px-0">
                                     <i :class="item.icon" class="flex-none group-hover:text-black text-brand-primary" />
                                     {{ item.name }} <i class="fas fa-arrow-right"></i>
                                 </NuxtLink>

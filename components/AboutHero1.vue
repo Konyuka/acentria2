@@ -6,11 +6,11 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative h-screen mt-2">
+    <div class="relative h-screen ">
 
         <client-only>
-            <video preload="metadata" loading="lazy" autoplay muted loop
-                class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 -z-10" src="/img/hd2.mp4"
+            <video preload="metadata" autoplay muted loop
+                class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 -z-20" src="/img/hd2.mp4"
                 style="color: transparent">
                 Your browser does not support the video tag.
             </video>
@@ -26,24 +26,16 @@ const props = defineProps({
         <!-- <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-white/40 opacity-100 z-0"></div> -->
 
 
-        <div
-            class="absolute top-1/2 pl-10 mx-10 md:mx-0 md:left-1/3 transform md:-translate-x-1/2 -translate-y-1/2 text-center px-0 sm:px-3 text-white min-w-[60vw]">
-            <div class="container">
-                <div
-                    class="flex flex-col items-center bg-cover px-0 py-6 text-center lg:px-0 lg:text-left bg-right lg:flex-row lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                    <div
-                        class="flex flex-col gap-6 mx-auto max-w-xs items-start justify-center text-center md:max-w-lg lg:mx-0 lg:max-w-[100%] lg:justify-start lg:text-left">
-                        <div class="w-full">
-                            <h1 v-html="InsuranceBannerContent.title"
-                                class="font-sans tracking-normal text-[48px]  text-white !font-medium leading-tight lg:leading-tight">
-                            </h1>
-                        </div>
-                        <div>
-                            <p v-html="InsuranceBannerContent.content"
-                                class="font-semibold font-sans tracking-wide text-base text-white leading-7 pb-2">
-                            </p>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="flex h-screen items-center justify-center flex-col text-left text-white z-10 relative">
+                <div class="w-full pb-5">
+                    <h1 v-html="InsuranceBannerContent.title" class="section-heading !text-[50px]">
+                    </h1>
+                </div>
+                <div class="text-left w-full">
+                    <p v-html="InsuranceBannerContent.content"
+                        class="card-heading font-sans text-white pb-2 leading-loose">
+                    </p>
                 </div>
             </div>
         </div>
