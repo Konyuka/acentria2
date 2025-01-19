@@ -216,40 +216,35 @@ onMounted(() => {
           </NuxtLink>
         </div>
       </div>
-
       <Stats />
-
       <Testimonials />
-
-      <div class="bg-white">
-        <div class="container max-w-6xl mx-auto text-left py-5">
-          <h1 class="text-2xl font-semibold text-black">
-            Corporate Social Responsibility
-            <span class="text-brand-primary"><br> & Sustainability</span>
-          </h1>
-        </div>
-      </div>
-
-      <div class="mx-auto bg-white w-screen">
+      <div class=" bg-white w-screen pt-10 pb-5">
         <div class="relative">
+
           <NuxtImg src="/img/esggreen.jpg" alt="city view"
             class="w-full h-full object-center object-cover absolute sm:block hidden" />
-          <NuxtImg src="https://i.ibb.co/LQpxBsc/mobile.png" alt="city view"
+          <NuxtImg src="/img/esggreen.jpg" alt="city view"
             class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
+
           <div
             class="!py-28 text-xl relative z-20  to-transparent w-full h-full top-0 md:p-16 p-6 flex flex-col justify-between rounded-md">
-            <div>
+
+            <div class="container">
+              <h1 class="section-heading text-white pb-5">
+                Corporate Social Responsibility
+                <span class="text-brand-primary"><br> & Sustainability</span>
+              </h1>
               <p
-                class="container ml-20 text-xs leading-loose   text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4">
+                class="content text-white">
                 Our initiatives focus on reducing our environmental impact, promoting ethical business
                 practices, and contributing positively to the communities we serve. We believe in creating
                 long-term value for our stakeholders by integrating sustainable practices into our core
                 operations and fostering a culture of responsibility and transparency.
               </p>
-              <div class="ml-20 mt-10 max-w-md">
+              <div class="mt-5">
                 <NuxtLink to="/csr"
-                  class="subheading-class text-white underline underline-offset-8 hover:button-animation">
-                  Learn More <i class="fas fa-caret-right mt-1"></i>
+                  class="subheading-class text-white underline underline-offset-8 button-animation">
+                  Learn More <i class="fas fa-caret-right mt-2"></i>
                 </NuxtLink>
               </div>
             </div>
