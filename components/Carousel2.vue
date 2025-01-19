@@ -11,7 +11,7 @@
             </div>
 
             <div class="container relative z-50 mx-auto max-w-6xl font-sans">
-                <div class="grid grid-cols-10 -gap-10">
+                <div class="grid grid-cols-10 -gap-10 -mt-5">
                     <div class="text-white col-span-1">
                         <div class="w-20 h-1 bg-white mt-7">
                         </div>

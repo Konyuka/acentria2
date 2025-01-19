@@ -139,7 +139,7 @@ const introContent = ref({
 })
 
 const bannerMainContent = ref({
-    title: 'Acentria Group  <br> <span class="text-brand-primary"> Insurance & Risk Management</span>',
+    title: 'Acentria Group Insurance <br> <span class="text-brand-primary"> & Risk Management</span>',
     subtitle: 'Protecting Your World with Precision',
     image: '/img/rope-gray.jpeg',
 })

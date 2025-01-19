@@ -41,7 +41,7 @@
 }
 
 .bannerDescription{
-  @apply tracking-normal text-3xl text-black font-semibold leading-normal capitalize
+  @apply tracking-normal text-xl text-black font-semibold leading-normal capitalize
 }
 
 
