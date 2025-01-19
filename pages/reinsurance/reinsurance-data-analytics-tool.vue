@@ -4,7 +4,7 @@ import { ref } from "vue";
 const ReinsuranceBannerContent = ref({
     title: 'Data Analytics tool',
     subTitle: 'Data Strategy',
-    image: 'https://images.pexels.com/photos/3183170/pexels-photo-3183170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: '/img/Data Analytics.jpg',
 })
 const ReinsuranceFeatureContent = ref(
     {

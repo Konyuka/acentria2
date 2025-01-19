@@ -1,32 +1,32 @@
 <script setup>
 const awards = ref([
     {
-        name: '2021 Sanlam Awards',
+        name: '<span class="text-black">2021 | </span> Sanlam Awards',
         title: '1st Runners Up Most Improved Broker GLA',
         img: '/img/sanlam.png',
     },
     {
-        name: '2023 Think Business Awards',
+        name: '<span class="text-black">2023 | </span>  Think Business Awards',
         title:'2nd Runners Up Most Customer Centric',
         img: '/img/think.png',
     },
     {
-        name: '2024 Capex Life Assurance',
+        name: '<span class="text-black">2024 | </span>  Capex Life Assurance',
         title: 'Award for Valued Broker',
         img: '/img/capex.png',
     },
     {
-        name: '2024 Kenya-Re Award',
+        name: '<span class="text-black">2024 | </span>  Kenya-Re Award',
         title: '2nd Runners Up on Timely Premium Remitance',
         img: '/img/kenyare2.png',
     },
     {
-        name: '2024 Think Business Awards',
+        name: '<span class="text-black">2024 | </span>  Think Business Awards',
         title: '2nd Runners Up Best Broker in Technology Application',
         img: '/img/think2.png',
     },
     {
-        name: '2024 Think Business Awards',
+        name: '<span class="text-black">2024 | </span>  Think Business Awards',
         title:'2nd Runners Up Most Customer Centric Broker',
         img: '/img/think3.png',
     },
@@ -53,8 +53,8 @@ const awards = ref([
                                 class="h-full w-full object-contain object-center group-hover:opacity-75" />
                         </div>
                         <div class="flex flex-col items-center justify-between pt-3">
-                            <h4 class="content !font-bold pb-2 text-left" v-html="product.name"></h4>
-                            <p class="content text-left" v-html="product.name"></p>
+                            <h4 class="content !font-bold pb-2 text-left !text-brand-primary" v-html="product.name"></h4>
+                            <p class="small-text text-left" v-html="product.name"></p>
                         </div>
                     </button>
                 </div>

@@ -207,8 +207,8 @@ onMounted(() => {
           <NuxtLink v-motion-fade-visible :to="item.link" v-for="item in commitments"
             class="shadow-2xl button-animation duration-700 group border-0 border-solid border-black shadow-card m-auto flex rounded-lg bg-black/40 p-5 w-full h-full">
             <div class="flex h-fit flex-col">
-              <i :class="item.icon" class="text-black text-lg pb-2 group-hover:text-brand-primary" translate="no"></i>
-              <h3 class="card-heading flex justify-left group-hover:text-black" v-html="item.name"></h3>
+              <i :class="item.icon" class="text-white text-lg pb-2 group-hover:text-brand-primary" translate="no"></i>
+              <h3 class="text-white card-heading flex justify-left group-hover:text-black" v-html="item.name"></h3>
               <p class="content text-white">{{ item.description }}</p>
               <i
                 class="fas fa-arrow-right mt-5 font-bold text-right text-lg group-hover:text-brand-primary text-gray-300 duration-700"></i>
