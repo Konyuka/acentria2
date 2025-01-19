@@ -520,41 +520,36 @@ const openProfileModal = (product) => {
                 </div>
 
 
-                <div class="pt-5">
-                    <div class="">
-                        <h2 class="text-2xl font-semibold text- mb-4">
-                            The <span class="text-brand-primary">Industries</span>
-                        </h2>
+                <div class="py-5">
+                    <h2 class="section-heading pb-3">
+                        The <span class="text-brand-primary">Industries</span>
+                    </h2>
+
+                    <p>
+                        At Acentria Group, our divisions in Insurance Broking, Reinsurance Broking, Actuarial and
+                        Financial Services, and Technology enable us to offer cutting-edge, industry-specific
+                        solutions. Guided by our brand promise, "Done Smart," we combine innovation, expertise, and
+                        a deep understanding of industry challenges to help our clients achieve their goals
+                        efficiently and effectively.
+                    </p>
+
+                    <div class="py-10 gap-x-6 gap-y-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 ">
+                        <button @click="openProfileModal(product)" v-for="product in specials"
+                            :key="product.id" " class=" button-animation group">
+                            <div
+                                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
+                                <NuxtImg :src="product.img" :alt="product.img"
+                                    class="h-full w-full object-cover object-center group-hover:opacity-75" />
+                            </div>
+                            <div class="flex flex-col items-center justify-between">
+                                <h4 class="card-heading pb-1">{{ product.name }}</h4>
+                                <p class="small-text italic"> Learn More <i
+                                        class="ml-2 fas fa-arrow-right text-brand-primary"></i>
+                                </p>
+                            </div>
+                        </button>
                     </div>
 
-                    <div class=" mx-auto text-black">
-                        <p>
-                            At Acentria Group, our divisions in Insurance Broking, Reinsurance Broking, Actuarial and
-                            Financial Services, and Technology enable us to offer cutting-edge, industry-specific
-                            solutions. Guided by our brand promise, "Done Smart," we combine innovation, expertise, and
-                            a deep understanding of industry challenges to help our clients achieve their goals
-                            efficiently and effectively.
-                        </p>
-
-                        <div class="py-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                            <button @click="openProfileModal(product)" v-for="product in specials" :key="product.id" "
-                                class=" button-animation group">
-                                <div
-                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                                    <NuxtImg :src="product.img" :alt="product.img"
-                                        class="h-full w-full object-cover object-center group-hover:opacity-75" />
-                                </div>
-                                <div
-                                    class=" mt-4 flex flex-col items-center justify-between subheading-class text-black">
-                                    <h3 class="text-xs">{{ product.name }}</h3>
-                                    <p class="text-xs italic mt-3">
-                                        Learn More <i class="ml-2 fas fa-arrow-right text-brand-primary"></i>
-                                    </p>
-                                </div>
-                                <!-- <p class="mt-1 text-xs italic text-gray-500">{{ product.description }}</p> -->
-                            </button>
-                        </div>
-                    </div>
 
 
 
