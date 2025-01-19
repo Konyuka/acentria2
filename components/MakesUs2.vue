@@ -373,16 +373,16 @@ const openProfileModal = (product) => {
 </script>
 
 <template>
-    <div class="font-sans">
+    <div class="bg-white font-sans">
 
-        <div class="bg-white py-5">
+        <div class="container">
 
-            <div class=" container grid grid-cols-7 gap-2">
-                <div class="col-span-3 mt-5 container max-w-6xl mx-auto justify-between content-center">
+            <div class="grid grid-cols-12 gap-2">
+                <div class="col-span-4 mt-5 container max-w-6xl mx-auto justify-between content-center">
 
-                    <h2 class="text-5xl font-semibold text-left">
+                    <h1 class="section-heading">
                         About
-                    </h2>
+                    </h1>
                     <h1 class="text-[10rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
                         style="background-image: url('/img/sun-tornado.png');">
                         <div class="-ml-3">
@@ -391,7 +391,7 @@ const openProfileModal = (product) => {
                     </h1>
                 </div>
 
-                <div class="col-span-4 relative mt-5">
+                <div class="col-span-8 relative mt-5">
                     <h2 class="text-2xl font-medium text-left">
                         Acentria <span class="text-brand-primary"> Group</span>
                     </h2>
@@ -415,9 +415,8 @@ const openProfileModal = (product) => {
                     </div>
 
                     <div class="my-5">
-                        <NuxtLink to="/about-us/who-we-are"
-                            class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm">
-                            Learn More <i data-v-02281a80="" class="fas fa-arrow-right text-primary ml-2"></i>
+                        <NuxtLink to="/about-us/who-we-are">
+                            <AppButton :title="'Learn More'" />
                         </NuxtLink>
                     </div>
 
@@ -451,6 +450,7 @@ const openProfileModal = (product) => {
                     </NuxtLink>
                 </div>
             </div>
+
         </div>
 
 
@@ -573,7 +573,8 @@ const openProfileModal = (product) => {
                                                         <article>
                                                             <div class="bg-white rounded-lg shadow-lg">
                                                                 <h2 class="text-2xl font-bold text-brand-primary">{{
-                                                                    currentIndustry.name }} <span class="text-black">Industry</span></h2>
+                                                                    currentIndustry.name }} <span
+                                                                        class="text-black">Industry</span></h2>
                                                                 <p class="mt-4 text-gray-700">{{
                                                                     currentIndustry.overview }}</p>
                                                                 <h3 class="mt-6 text-xl font-semibold">Expertise:

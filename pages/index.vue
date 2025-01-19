@@ -148,10 +148,8 @@ onMounted(() => {
   <div>
     <div class="font-sans">
       <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
-
-      <div class="w-full h-full border-t-4 border-brand-primary">
-        <MakesUs2 />
-      </div>
+      <MakesUs2 />
+      
 
       <div class="container relative min-h-[30vh] ">
         <div class="mb-5 bottom-0 absolute max-w-7xl mx-auto">

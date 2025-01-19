@@ -6,7 +6,7 @@ const props = defineProps({
 
 <template>
     <div>
-        <button class="btn-31 hover:!border-2 !border-[#ed1c24] hover:!text-brand-primary">
+        <button class="btn-31 hover:!border-2 !border-[#ed1c24] ">
             <span class="text-container">
                 <span class="text !font-sans !card-heading">{{ title }} <i
                         class="fas fa-arrow-right text-primary ml-2"></i>
