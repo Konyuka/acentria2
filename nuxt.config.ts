@@ -42,7 +42,6 @@ export default defineNuxtConfig({
   },
   css: [
     '@/assets/css/main.css',
-    // '@/assets/css/fonts.css',
     '@/assets/css/8184c082007826aa.css',
   ],
   postcss: {
