@@ -8,11 +8,11 @@ const props = defineProps({
 <template>
     <div class="relative h-screen ">
 
-        <!-- hd2.mp4 -->
+        <!-- hd2.mp4  redvid.mp4-->
 
         <client-only>
             <video autoplay muted loop class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 -z-20"
-                src="/img/redvid.mp4" style="color: transparent">
+                src="/img/hd2.mp4" style="color: transparent">
                 Your browser does not support the video tag.
             </video>
         </client-only>

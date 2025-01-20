@@ -1,9 +1,4 @@
 <script setup>
-const content = ref({
-    vid: '/img/hd3.mp4',
-    pageTitle: 'Acentria Group Actuarial & Financial Services',
-    title: 'Expert Actuarial & Financial <br> <span class="text-brand-primary">Services for Your Business</span>',
-})
 
 const serviceHeading = ref('Best of Actuarial Consulting, <span class="text-brand-primary">Products & Services</span>')
 
@@ -69,40 +64,6 @@ const data = ref({
     ]
 });
 
-
-
-const whys = ref([
-    {
-        name: 'Innovation',
-        content: 'We are Passionate about innovation because we believe its a driving force that fuels creativity, curiosity, and the pursuit of novel ideas and solutions',
-        icon: '',
-    },
-    {
-        name: 'Data driven analytical capabilities',
-        content: 'Our ability to use data, advanced analytics, and technology to extract valuable insights, help us to guide business to make informed decisions',
-        icon: '',
-    },
-    {
-        name: 'Distinctive consumer insight capabilities',
-        content: 'We offer distinctive consumer insight capabilities to help our clients understand the needs, and preferences of their clients.',
-        icon: '',
-    },
-    {
-        name: 'Better results',
-        content: 'Achieving better results and long term prosperity is a shared long term goal for Acentria group, individuals, organizations, and societies alike',
-        icon: '',
-    },
-])
-
-const heroContent = ref({
-    name: `<h1
-                                    class="font-sans tracking-normal text-4xl lg:text-5xl  text-brand-primary font-semibold leading-normal lg:leading-normal">
-                                    <span
-                                        class="font-sans tracking-normal text-gray-900 leading-normal lg:leading-normal">Acentria</span>
-                                    Actuarial & Financial Services
-                                </h1>`,
-})
-
 const systems = ref([
     {
         name: 'Acent<span class="text-brand-primary">Re </span>',
@@ -136,7 +97,7 @@ const exploreHelp = ref({
 const bannerMainContent = ref({
     title: 'Acentria Group Actuarial<br> <span class="text-brand-primary"> & Financial Services</span>',
     subtitle: ' Expert Actuarial & Financial Services for Your Business',
-    image: '/img/istockphoto-1306957177-Actuarial.jpg',
+    image: 'https://img.freepik.com/free-photo/man-trading-browsing-online-stock-investments-night_169016-57448.jpg?t=st=1737346848~exp=1737350448~hmac=4b3ba2859dad28d8c5ba7e8866df752381ef2be2e92b2d9830df0d058946ef6d&w=900',
 })
 
 const introContent = ref({
