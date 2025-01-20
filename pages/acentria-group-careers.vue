@@ -229,33 +229,6 @@ const products = [
                     </div>
                 </div>
 
-                <!-- <section class="container mx-auto py-5 font-sans">
-                    <h2 class="section-heading">
-                        What Drives Us <span class="text-brand-primary"> at Acentria Group</span>
-                    </h2>
-                </section>
-
-                <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
-                    <NuxtImg src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
-                    <div class="absolute inset-0 bg-black opacity-40"></div>
-                    <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
-                        <dl class="font-sans grid grid-cols-1 gap-10 text-white sm:grid-cols-2 lg:grid-cols-3">
-                            <div v-for="(feature, index) in joinAsMembers" :key="feature.name" class="flex flex-col">
-                                <dt class="text-white flex items-center">
-                                    <div
-                                        class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
-                                        <i :class="feature.icon" class="text-white" aria-hidden="true"></i>
-                                    </div>
-                                    <span class="ml-2">{{ feature.name }}</span>
-                                </dt>
-                                <dd class="mt-1 text-xs text-white">
-                                    <p v-html="feature.description"></p>
-                                </dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div> -->
-
                 <section class="relative py-5">
                     <div class="container">
                         <h2 class="section-heading pb-3">

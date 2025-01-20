@@ -65,7 +65,7 @@ const faqs = ref([
             <h2 class="text-2xl !font-semibold text-black pb-5">
                 Our <span class="text-brand-primary"> Approach</span>
             </h2>
-            <p>
+            <p class="pb-5">
                 Financial reviews and analysis are crucial components of treaty analysis and reinsurance program design.
                 Our expert team is dedicated to helping insurers manage risk, optimize capital, and enhance
                 profitability through innovative reinsurance solutions.

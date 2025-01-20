@@ -4,7 +4,7 @@
 const bannerMainContent = ref({
     title: 'About <br><span class="text-brand-primary">Acentria Group</span>',
     subtitle: '<span class="text-brand-primary">#</span>Empower | <span class="text-brand-primary">#</span>Innovate | <span class="text-brand-primary">#</span>Prosper',
-    image: '/img/Cover page- Acentria Who we are.jpg',
+    image: '/img/aboutuus.jpg',
 })
 
 const scrollToSetScroll = () => {

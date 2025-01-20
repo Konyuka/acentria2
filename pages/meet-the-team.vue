@@ -21,7 +21,7 @@ const profileBoardData = computed(() => {
 const bannerContent = ref({
     subtitle: 'Meet the Team',
     title: 'Governance & Leadership',
-    image: '/img/board.jpg'
+    image: '/img/board2.jpg'
 })
 
 const currentMenu = ref('Board');
@@ -151,10 +151,9 @@ onMounted(() => {
 
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="800" decoding="async"
-                        data-nimg="1"
-                        src="https://images.pexels.com/photos/3832684/pexels-photo-3832684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
+                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="400" decoding="async"
+                        data-nimg="1" src="/img/compass.jpg" style="color: transparent; object-fit: contain;"
+                        class="rounded-lg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 id="" class="heading-class pb-4 ">
