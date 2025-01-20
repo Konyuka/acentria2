@@ -109,7 +109,7 @@ const helps = ref([
     {
         heading: 'Live agent assistance',
         subheading: 'Review your quotes online, then get tailored advice from our agents.',
-        cta: 'See my Quotes',
+        cta: 'Connect with an Agent',
         img: 'https://images.pexels.com/photos/5453822/pexels-photo-5453822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     },
     {
