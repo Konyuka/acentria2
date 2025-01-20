@@ -22,7 +22,7 @@ const teams = ref([
         name: "Moses Musau",
         title: "CEO / Managing Director",
         profile:"Moses is one the pioneers of Acentria Group and focuses on developing insurance & Reinsurance solutions that strengthen Acentria’s presence in the market and its commitment to client-relationships and exceptional service. With over 18 years of industry experience, he specializes in the overall growth of Acentria as is passionate about Empowering, Innovation and Prosperity. Moses holds a master’s in strategic management (Daystar University) Bachelor of commerce Finance Jomo Kenyatta University of technology, He is also a Fellow of the chartered Insurance Institute of Kenya (FIIK) and Holds a diploma in Insurance institute of Kenya (AIIK)",
-        image: "https://acentriagroup.com/wp-content/uploads/2024/02/mose-1.jpg",
+        image: "/img/mose-1.jpg",
     },
     {
         name: "Carolyne Wambu",
@@ -31,10 +31,10 @@ const teams = ref([
         image: "img/caro.jpg",
     },
     {
-        name: "Isabella Mwende",
+        name: "Isabella Kamau",
         title: "Executive Director",
-        profile:"Isabella Mwende Kamau is one of the pioneers of Acentria Group, driving innovation and strategic business development to strengthen the company’s market presence and uphold its commitment to exceptional client relationships. With over 20 years of experience in risk management, she is passionate about effective risk strategies that safeguard against financial losses, preserve reputation, and foster business resilience in a dynamic financial landscape. Isabella holds a Bachelor of Commerce degree in Marketing from Kenya Methodist University, and she is also an Associate of the Insurance Institute of Kenya (AIIK), where she earned her diploma.",
-        image: "img/isa.jpg",
+        profile:"Isabella Kamau is one of the pioneers of Acentria Group, driving innovation and strategic business development to strengthen the company’s market presence and uphold its commitment to exceptional client relationships. With over 20 years of experience in risk management, she is passionate about effective risk strategies that safeguard against financial losses, preserve reputation, and foster business resilience in a dynamic financial landscape. Isabella holds a Bachelor of Commerce degree in Marketing from Kenya Methodist University, and she is also an Associate of the Insurance Institute of Kenya (AIIK), where she earned her diploma.",
+        image: "img/nophoto.jpg",
     },
     {
         name: "Stephen Wandera",
