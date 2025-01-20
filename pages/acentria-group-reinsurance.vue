@@ -138,7 +138,7 @@ const content5 = ref({
     orientation: 'image-left',
     heading: 'Elevate your Strategies <br/><span class="text-brand-primary">with Precision & Innovation</span>',
     subheading: '',
-    image: '/img/Re5.jpg',
+    image: '/img/precise.jpg',
     link: '/img/Precision and innovation.jpg',
     content: 'Harness the power of advanced analytics and technology to optimize insurance, reinsurance, and investment decisions. Our solutions provide you with the insights needed to make data-driven decisions, reduce risks, and enhance profitability. By leveraging state-of-the-art tools and methodologies, we help you navigate the complexities of the financial landscape, adapt to changing conditions, and seize new opportunities for growth. Stay competitive and resilient with our comprehensive suite of services designed to meet the unique needs of your business.'
 })
@@ -162,7 +162,7 @@ const content8 = ref({
     orientation: 'image-right',
     heading: 'Partner with Us for <br/><span class="text-brand-primary">a Resilient Future</span>',
     subheading: '',
-    image: '/img/Re8.jpg',
+    image: '/img/resilient.jpg',
     link: '/insurance-claims',
     content: 'In the dynamic world of insurance and reinsurance, having a reliable partner can make all the difference. At Acentria we stand out as your ideal reinsurance broker, offering unparalleled expertise, tailored solutions, and a commitment to excellence. Here\'s why partnering with us is a smart choice for your business: '
 })
