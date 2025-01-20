@@ -94,7 +94,7 @@ const data = ref({
             name: 'Marine Insurance Covers',
             icon: 'fas fa-ship',
             content: 'Comprehensive coverage for your marine vessels and cargo, protecting against risks such as damage, theft, and loss during transit.',
-            link: '/insurance/marine-covers',
+            link: '/insurance/marine-cover',
         },
     ]
 });
