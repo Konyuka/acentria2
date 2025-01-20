@@ -16,7 +16,7 @@ const subtitle = computed(() => {
 
 <template>
 
-    <div class="relative isolate overflow-hidden bg-white py-24 mt-20 mb-5">
+    <div class="relative isolate overflow-hidden bg-white py-40 mt-20">
 
         <NuxtImg :src="content.image" alt="Success Team Hands Up"
             class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
@@ -30,12 +30,11 @@ const subtitle = computed(() => {
 
                     </div>
                 </div>
-                <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
-                    <h2
-                        class="capitalize text-left text-xl font-bold tracking-tight text-white sm:text-6xl font-sans mb-4">
+                <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-left">
+                    <h2 class="bannerDescription text-white mb-5">
                         {{ content.subTitle }}
                     </h2>
-                    <h2 class="text-left text-4xl font-bold tracking-tight text-white sm:text-6xl font-sans">
+                    <h2 class="bannerHeading text-white">
                         {{ content.title }}
                     </h2>
                 </div>
