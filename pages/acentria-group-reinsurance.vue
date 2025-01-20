@@ -217,7 +217,7 @@ const content8 = ref({
     subheading: '',
     image: '/img/balance.jpg',
     link: '/insurance-claims',
-    content: 'In the dynamic world of insurance and reinsurance, having a reliable partner can make all the difference. At Acentria we stand out as your ideal reinsurance broker, offering unparalleled expertise, tailored solutions, and a commitment to excellence. Here\'s why partnering with us is a smart choice for your business: '
+    content: 'In the dynamic world of insurance and reinsurance, having a reliable partner can make all the difference. At Acentria we stand out as your ideal reinsurance broker, offering unparalleled expertise, tailored solutions, and a commitment to excellence.'
 })
 
 
@@ -264,6 +264,46 @@ const blackBannerContent = ref(
     '<span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br> Let Acentria Tailor Your Coverage To Your Needs'
 )
 
+
+const benefits = ref([
+    {
+        icon: "fas fa-user-tie", // Represents expertise and professionalism
+        title: "Expertise and Experience",
+        description: "With years of industry experience, our team of seasoned professionals brings a wealth of knowledge and expertise to the table. We understand the complexities of the reinsurance market and provide tailored solutions to meet your specific needs.",
+    },
+    {
+        icon: "fas fa-th-list", // Represents a wide range of services or solutions
+        title: "Comprehensive Solutions",
+        description: "We provide a full suite of services, including risk management, actuarial services, and advanced technological solutions. Our integrated approach ensures you have all the tools and insights necessary to navigate challenges, reduce risks, and seize opportunities.",
+    },
+    {
+        icon: "fas fa-cogs", // Represents customization and crafted strategies
+        title: "Customized Reinsurance Strategies",
+        description: "Every business is unique, and so are its risk management needs. We craft bespoke reinsurance solutions that align with your business objectives, helping you stabilize loss experience, optimize capital, and enhance profitability.",
+    },
+    {
+        icon: "fas fa-chart-line", // Represents data and analytics
+        title: "Advanced Analytics and Technology",
+        description: "We leverage advanced analytics and state-of-the-art technology to empower data-driven decisions. Our catastrophe models and impact forecasting tools help analyze financial impacts, develop effective strategies, and adapt to the evolving market.",
+    },
+    {
+        icon: "fas fa-handshake", // Represents trust and claims management
+        title: "Reliable Claims Management",
+        description: "Our seamless claims management ensures a smooth process from filing to settlement. We help maintain business continuity and accelerate recovery, minimizing disruption during significant events.",
+    },
+    {
+        icon: "fas fa-award", // Represents excellence and dedication
+        title: "Commitment to Excellence",
+        description: "We are dedicated to delivering exceptional service and building long-lasting relationships based on trust and reliability. Our commitment to excellence ensures that you can count on us as your steadfast partner in risk management and reinsurance.",
+    },
+    {
+        icon: "fas fa-lightbulb", // Represents strategic guidance and support
+        title: "Strategic Guidance and Support",
+        description: "We offer proactive advice and strategic support to help you adapt to changing financial conditions, navigate challenges, and seize growth opportunities. Our goal is to empower you to make informed decisions with confidence and achieve your objectives.",
+    },
+]);
+
+
 </script>
 
 <template>
@@ -280,11 +320,30 @@ const blackBannerContent = ref(
             <ServiceTabs :serviceHeading="serviceHeading" :menus="menus" :data="data" />
             <ContentPic :content="content8" class="my-5" />
 
-            <div class="bg-white pb-5">
+
+            <div class="container font-sans py-5">
+                <h1 class="section-heading pb-3">
+                    Why Partner <span class="text-brand-primary"> with Acentria</span>
+                </h1>
+                <p class="!content pb-5">
+                    Here are some compelling reasons why you should partner with us:
+                </p>
+                <div class="grid grid-cols-3 gap-5 text-left ">
+                    <div v-for="(item, index) in benefits" :key="index" class="shadow-md py-2 px-4 rounded-md">
+                        <div class="text-red-600 text-3xl mb-3 flex items-center justify-between">
+                            <h3 class=" card-heading">{{ item.title }}</h3>
+                            <i :class="item.icon"></i>
+                        </div>
+                        <p class="!content !text-left">{{ item.description }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="bg-white pb-5">
                 <div class="container">
                     <Accordion :faqs="faqs" />
                 </div>
-            </div>
+            </div> -->
 
             <ReinsuranceInsights />
 
