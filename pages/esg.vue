@@ -57,7 +57,7 @@ const bannerContent = ref({
                             We recognize the importance of environmental sustainability in preserving our planet for
                             future generations. Acentria Group is dedicated to minimizing our environmental footprint
                             through initiatives such as:
-                        <div class="text-xs mx-10 text-black">
+                        <span class="text-xs mx-10 text-black">
                             <span class="font-semibold mr-2 text-2xl pb-2">.</span>
                             Implementing energy-efficient practices in our offices and operations.
                             <br>
@@ -67,7 +67,7 @@ const bannerContent = ref({
                             <span class="font-semibold mr-2 text-2xl pb-2">.</span>
                             Supporting renewable energy sources and reducing greenhouse gas emissions.
                             <br>
-                        </div>
+                        </span>
                         </p>
                     </div>
                 </div>

@@ -2,31 +2,18 @@
 import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
-useSeoMeta({
-  title: 'Acentria Group - Comprehensive Coverage Solutions',
-  description: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
-  ogTitle: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
-  ogDescription: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
-  ogImage: '/img/LogoT.png',
-  ogUrl: 'https://www.acentriagroup.com',
-  twitterTitle: 'Acentria Group - Comprehensive Coverage Solutions',
-  twitterDescription: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
-  twitterImage: '/img/LogoT.png',
-  twitterCard: 'summary_large_image'
-});
-
-useHead({
-  htmlAttrs: {
-    lang: 'en'
-  },
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/png',
-      href: '/img/favicon.png'
-    }
-  ]
-})
+// useSeoMeta({
+//   title: 'Acentria Group - Comprehensive Coverage Solutions',
+//   description: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
+//   ogTitle: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
+//   ogDescription: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
+//   ogImage: '/img/LogoT.png',
+//   ogUrl: 'https://www.acentriagroup.com',
+//   twitterTitle: 'Acentria Group - Comprehensive Coverage Solutions',
+//   twitterDescription: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
+//   twitterImage: '/img/LogoT.png',
+//   twitterCard: 'summary_large_image'
+// });
 
 const InsuranceBannerContent = ref({
   subtitle: "Acentria Group",
@@ -35,12 +22,6 @@ const InsuranceBannerContent = ref({
   content:
     "At Acentria Group, we drive prosperity by unlocking infinite possibilities, <br> empowering dreams, and igniting imagination to shape a brighter future.",
 });
-
-const mission = ref(null)
-
-
-
-
 
 const joinAsMembers = ref([
   {

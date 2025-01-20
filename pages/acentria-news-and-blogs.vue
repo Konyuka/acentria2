@@ -40,7 +40,7 @@ const loadTwitterWidgets = () => {
     document.body.appendChild(script);
 };
 
-onMounted(async () => {
+onMounted(async () => { 
     loadTwitterWidgets();
     try {
         const response = await axios.get('https://admin.acentriagroup.com/api/get-published-blogs', {

@@ -207,13 +207,13 @@ const options = {
 // tree.render(data);
 
 onMounted(() => {
-    const treeElement = document.getElementById('svg-tree');
-    if (treeElement) {
-        const tree = new ApexTree(treeElement, options);
-        tree.render(data);
-    } else {
-        console.error('Element with id "svg-tree" not found.');
-    }
+    // const treeElement = document.getElementById('svg-tree');
+    // if (treeElement) {
+    //     const tree = new ApexTree(treeElement, options);
+    //     tree.render(data);
+    // } else {
+    //     console.error('Element with id "svg-tree" not found.');
+    // }
 });
 
 </script>
