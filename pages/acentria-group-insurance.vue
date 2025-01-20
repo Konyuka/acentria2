@@ -148,7 +148,7 @@ const products = ref([
    
     {
         name: 'Financial <br/> <span class="text-brand-primary">Wellness</span>',
-        img: '/img/risk-areas.jpg',
+        img: '/img/iStock-483918009.jpg',
         link:'/financial-wellness',
         description: 'Comprehensive financial planning and advisory services to help you achieve your long-term financial goals and secure your future.'
     },
