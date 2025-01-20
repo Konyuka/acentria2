@@ -6,8 +6,8 @@ const teams = ref([
         email:"mmusau@acentriagroup.com",
         linkedin: "https://www.linkedin.com/in/moses-musau-a84b1968/",
         profile:'Moses Musau Is a Corporate Leader in the Insurance and Reinsurance field, his focus is on developing solutions that strengthen Acentria’s presence as experts in the industry with commitment to exemplary client-relationships and service delivery for the overall growth of Acentria Group. His experience spans over 19 years of corporate exposure, where he has gained extensive experience in leading organizational transformations backed by a record of developing executable people strategy that motivates teams individually and financially to exceed the corporate objectives through various economic cycles. Mr. Moses very passionate about Empowering dreams, igniting imagination and propelling prosperity to infinite possibilities with a solid work ethic often resulting in the setting of high-performance standards in by himself and the others who work or interact with him. He is a logical, analytical and ingenious thinker and long-range planner good at anything that requires rapid and innovative reasoning. He holds a master’s degree in strategic management from Daystar University and a Bachelor of commerce Degree in Finance from Jomo Kenyatta University of Technology- JKUAT, he is also a Fellow of the chartered Insurance Institute of Kenya –(FIIK) and holds a diploma in Insurance institute of Kenya (AIIK).',
-        // image:"https://old.acentriagroup.com/wp-content/uploads/2024/02/mose-1.jpg",
-        image:"https://old.acentriagroup.com/wp-content/uploads/2024/02/mose-1.jpg",
+        // image:"/img/mose-1.jpg",
+        image:"/img/mose-1.jpg",
     },
     {
         name: "Evelyne Wanjohi",
@@ -16,7 +16,7 @@ const teams = ref([
         email: "ewanjohi@acentriagroup.com",
         profile:"Evelyne is an accomplished insurance professional with over twelve years of experience in risk management, pensions, insurance, and reinsurance broking. She is passionate about improving insurance penetration through developing insurance solutions, implementing strategies, and stakeholder management. At Acentria Group, she provided strategic guidance to the Insurance and reinsurance Broking, Actuarial and Financial Services, and Investments teams to ensure growth and sustainability, operational efficiency, excellent customer experience, and a better working environment for employees through coordination of the available resources for maximum output. She holds a Master’s Degree in Finance Management from Daystar University and a Bachelor of commerce Degree in Finance from Jomo Kenyatta University of Technology- JKUAT, she is also a Certified Public accountant (CPAK)",
         image:
-            "https://old.acentriagroup.com/wp-content/uploads/2024/02/evelyne-1.jpg",
+            "/img/evelyne-1.jpg",
     },
     {
         name: "CPA Winnie Chitai",
@@ -43,7 +43,7 @@ const teams = ref([
         email: "sgatimu@acentriagroup.com",
         profile: "Symon Gatimu is a dedicated professional with extensive experience and a deep understanding of the insurance and reinsurance industry. He is committed to driving innovation and empowering both internal teams and external partners at Acentria Group. With a strong track record of leadership, Symon has been pivotal in executing strategic plans that enhance market share, profitability, and client retention. He excels in developing tailored insurance solutions, particularly in specialized lines with limited underwriting capacities, and nurturing relationships with clients and partners across African and international markets. His focus on profitable underwriting and identifying new business opportunities continues to contribute to Acentria's success in the reinsurance sector. Currently pursuing an MBA in Strategic Management at Daystar University, Symon holds a Bachelor's degree in Mathematics and Computer Science from Meru University of Science and Technology, where he graduated with a 2nd Class Upper Division. He is also working toward a Diploma in CII. His professional training includes distinctions such as the Proficiency in Short-Term Reinsurance Practice course, where he was recognized as the best candidate by the College of Insurance in collaboration with ZEP RE Academy. Additionally, he has completed certifications in Upstream Oil & Gas Insurance, Engineering Insurance, Risk Assessment, Advanced Fire & Business Interruption Underwriting, and other key areas of reinsurance. Symon's commitment to continuous professional development, combined with his strategic mindset and innovative approach, positions him as a key leader in the reinsurance field at Acentria Group.",
         image:
-            "https://old.acentriagroup.com/wp-content/uploads/2024/02/symon-1.jpg",
+            "/img/symon-1.jpg",
     },
     {
         name: "Donald Were, FIA",
@@ -52,7 +52,7 @@ const teams = ref([
         email: "dwere@acentriagroup.com",
         profile: "Donald is the Head of Actuarial and Financial Services at Acentria Group. He is a qualified actuary and a Fellow of the Institute and Faculty of Actuaries in United Kingdom. He holds an MSc in Actuarial Management from Bayes Business School in London, and a Bachelor’s degree in Actuarial Science with Information Technology. He is an expert in actuarial techniques and risk management, with great interest in innovation and how tech and finance can be merged to deliver sustainable financial solutions. He has worked on numerous innovative projects, including development of a reinsurance pricing and optimization tool, to guide (re)insurance companies in impact assessment of reinsurance and retro structures. He is also an expert in the IFRS17 reporting standard and the current secretary to the TASK IFRS Working Party. Before joining Acentria, Donald was responsible for guiding Jubilee Holding Limited in transitioning to the IFRS17 reporting standard across 4 countries in East Africa, namely Kenya, Uganda, Tanzania and Burundi. He also worked for the Insurance Regulatory Authority in Kenya, where he was responsible for actuarial analytics and driving innovation.",
         image:
-            "https://old.acentriagroup.com/wp-content/uploads/2024/02/donald-1.jpg",
+            "/img/donald-1.jpg",
     },
     {
         name: "Kelvin Mwangi",
@@ -70,7 +70,7 @@ const teams = ref([
         email: "fkinyanjui@acentriagroup.com",
         profile: "Fiona is an accomplished marketing and brand strategist with a robust professional background spanning nearly half a decade within the banking industry. Her diverse experience has honed her skills in developing and executing effective marketing strategies, strategic communications, brand management, and digital marketing solutions. Having earned a Bachelor’s Degree in Marketing from Daystar University, Fiona’s commitment to professional growth is evident through her certifications from the Chartered Institute of Marketing (CIM-UK). Her certifications in Managing Brands, Planning Campaigns, and Innovation in Marketing exemplify her dedication to staying at the forefront of the industry. Additionally, as an Associate Member of the Chartered Institute of Marketing (CIM-UK), she remains actively engaged in the latest advancements and best practices within the marketing domain.",
         image:
-            "https://old.acentriagroup.com/wp-content/uploads/2024/02/fiona-1.jpg",
+            "/img/fiona-1.jpg",
     },
     {
         name: "Andrew Mwangi",
