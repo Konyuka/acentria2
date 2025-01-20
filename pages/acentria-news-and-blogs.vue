@@ -55,29 +55,26 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div class="font-sans mt-5 bg-white">
+    <div class="font-sans bg-white">
         <BannerMain :content="bannerContent" />
 
-        <div class="bg-white w-full h-full">
-            <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
-                <div class="mx-auto mb-3 font-sans">
-                    <p class="mt-2 text-2xl font-semibold text-black">
-                        News & <span class="text-brand-primary">Updates</span>
-                    </p>
-                </div>
-                <p class="text-sm leading-normal">
-                    Welcome to the Acentria Group News & Updates and Blogs page. Here, you will find the latest news,
-                    insightful articles, and updates about our company, industry trends, and more. Our goal is to keep
-                    you informed and engaged with valuable content that highlights our commitment to excellence,
-                    innovation, and customer satisfaction. Whether you are looking for the latest company announcements,
-                    expert opinions, or in-depth analyses, our blogs and news sections are designed to provide you with
-                    the information you need. Stay connected with Acentria Group and explore the wealth of knowledge and
-                    insights we have to offer.
-                </p>
-            </div>
+        <div class="container py-5 font-sans text-black">
+            <p class="section-heading pb-5">
+                News & <span class="text-brand-primary">Updates</span>
+            </p>
+          
+            <p class="content">
+                Welcome to the Acentria Group News & Updates and Blogs page. Here, you will find the latest news,
+                insightful articles, and updates about our company, industry trends, and more. Our goal is to keep
+                you informed and engaged with valuable content that highlights our commitment to excellence,
+                innovation, and customer satisfaction. Whether you are looking for the latest company announcements,
+                expert opinions, or in-depth analyses, our blogs and news sections are designed to provide you with
+                the information you need. Stay connected with Acentria Group and explore the wealth of knowledge and
+                insights we have to offer.
+            </p>
         </div>
 
-        <div class="container bg-white max-w-screen mx-auto">
+        <div class="container bg-white">
             <div class="sm:hidden px-4">
                 <label for="tabs" class="sr-only">Select a tab</label>
                 <select @change="setMobileMenu($event)" id="tabs" name="tabs"
@@ -92,17 +89,17 @@ onMounted(async () => {
                     <nav class="-mb-px flex font-sans gap-20" aria-label="Tabs">
                         <button @click="setMenu('blogs')"
                             :class="[currentMenu == 'blogs' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
+                            class="w-1/4 px-1 py-4 text-center card-heading hover:text-brand-primary">
                             <i class="fas fa-images mr-2"></i> Latest News
                         </button>
                         <button @click="setMenu('event')"
                             :class="[currentMenu == 'event' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
+                            class="w-1/4 px-1 py-4 text-center card-heading hover:text-brand-primary">
                             <i class="fas fa-blog mr-2"></i> News Feeds
                         </button>
                         <button @click="setMenu('media')"
                             :class="[currentMenu == 'media' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py-4 text-center text-xl font-semibold hover:text-brand-primary">
+                            class="w-1/4 px-1 py-4 text-center card-heading hover:text-brand-primary">
                             <i class="fas fa-calendar-alt mr-2"></i> Media Kit
                         </button>
                     </nav>
@@ -137,11 +134,11 @@ onMounted(async () => {
                                     </div>
                                     <div class="font-sans group relative">
                                         <h3
-                                            class="mt-3 line-clamp-1 text-lg font-semibold leading-normal text-black transition-colors group-hover:text-brand-primary">
+                                            class="mt-3 line-clamp-1 card-heading group-hover:text-brand-primary">
                                             <span class="absolute inset-0"></span>
                                             {{ blog.title }}
                                         </h3>
-                                        <p class="mt-2 line-clamp-3 text-[12px] leading-normal text-black">
+                                        <p class="mt-2 line-clamp-3 content">
                                             {{ blog.excerpt }}
                                         </p>
                                     </div>
