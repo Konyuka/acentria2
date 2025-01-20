@@ -145,7 +145,7 @@ const data = ref({
             link: '/reinsurance/reinsurance-data-analytics-tool',
         },
         {
-            name: 'AcenRe Solution',
+            name: 'AcentRe Solution',
             content: 'Optimize reinsurance strategies with our comprehensive reinsurance solutions.',
             icon: 'fas fa-briefcase',
             link: '/reinsurance/acentre-reinsurance-solution',
@@ -167,7 +167,7 @@ const content2 = ref({
     orientation: 'image-right',
     heading: 'Stabilizing the Company\'s  <br/><span class="text-brand-primary">Overall Operating Results</span>',
     subheading: '',
-    image: '/img/Re2.jpg',
+    image: '/img/stable.jpg',
     link: '/operating-results',
     content: 'Achieve a new level of financial stability with our expert services aimed at stabilizing your company\'s overall operating results.By implementing strategic risk management, optimizing capital allocation, and enhancing operational efficiency, we help you navigate uncertainties and ensure consistent performance.Our tailored approach is designed to protect your bottom line, drive sustainable growth, and secure your business\'s future in a dynamic market. Transform volatility into predictability and resilience with our comprehensive solutions, and watch your business thrive with confidence.'
 })

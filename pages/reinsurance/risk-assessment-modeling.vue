@@ -21,16 +21,16 @@ const faqs = ref([
         models play a crucial role in pricing, underwriting, and making
         informed reinsurance purchase decisions.
       </p>
-      <p class="mt-3">
-        <NuxtLink
-          to="/catastrophic-modelling"
+      <div class="mt-3">
+        <a
+          href="/reinsurance/catastrophic-modelling"
           class="!button-animation bg-black !hover:bg-brand-primary
                  text-white font-medium py-1 px-12 text-sm rounded-sm"
         >
           Learn More
           <i class="fas fa-arrow-right text-primary ml-2"></i>
-        </NuxtLink>
-      </p>
+        </a>
+      </div>
     `,
     },
     {

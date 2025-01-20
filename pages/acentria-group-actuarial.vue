@@ -97,7 +97,7 @@ const exploreHelp = ref({
 const bannerMainContent = ref({
     title: 'Acentria Group Actuarial<br> <span class="text-brand-primary"> & Financial Services</span>',
     subtitle: ' Expert Actuarial & Financial Services for Your Business',
-    image: 'https://img.freepik.com/free-photo/man-trading-browsing-online-stock-investments-night_169016-57448.jpg?t=st=1737346848~exp=1737350448~hmac=4b3ba2859dad28d8c5ba7e8866df752381ef2be2e92b2d9830df0d058946ef6d&w=900',
+    image: '/img/ACTUARIAL- MAIN PAGE.jpg',
 })
 
 const introContent = ref({

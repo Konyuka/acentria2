@@ -114,7 +114,7 @@ const bannerContent = ref({
         <div class="!pt-5 container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16 pb-10">
             <div class="relative p-4 lg:basis-1/2">
                 <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                    data-nimg="1" src="/img/award.jpg" style="color: transparent; object-fit: contain;"
+                    data-nimg="1" src="/img/brandpromise.jpg" style="color: transparent; object-fit: contain;"
                     class="rounded-lg" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2 ">

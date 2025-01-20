@@ -1,4 +1,6 @@
 <script setup>
+import CorporateGovernance from './corporate-governance.vue'
+
 const teamComponent = ref(null)
 const teamBoardComponent = ref(null)
 const profileModal = ref(false)
@@ -61,13 +63,31 @@ const governance = ref([
     }
 ]);
 
+const corporateGovernance = ref({
+    orientation: 'image-right',
+    heading: 'Corporate <span class="text-brand-primary">Governance</span>',
+    subheading: '',
+    image: '/img/compass.jpg',
+    link: '/',
+    content: 'At Acentria Group, we are committed to upholding the highest standards of corporate governance, ensuring accountability, transparency, and ethical conduct in every aspect of our operations. Our governance framework is designed to support long-term value creation, foster trust with stakeholders, and ensure that we act responsibly in all our business dealings. <br><br> We adhere to robust policies and practices that promote integrity, manage risks effectively, and safeguard the interests of our clients, employees, shareholders, and the communities we serve. Our leadership team, alongside the Board of Directors, plays a vital role in steering the company toward sustainable growth while maintaining compliance with all regulatory requirements and industry standards.'
+})
+
+const corporateGovernancePhilosophy = ref({
+    orientation: 'image-left',
+    heading: 'Corporate Governance <span class="text-brand-primary">Philosophy</span>',
+    subheading: '',
+    image: '/img/corporate governance philosophy.jpg',
+    link: '/',
+    content: 'Our business strategy is powered by our strong commitment to good governance, which goes beyond compliance and statutory norms. We believe that purpose-led corporate governance and ethics-led corporate behaviour are essential to our success. <br><br> Our business strategy is pillared around the twin approach of being structured as a group of entities, each with its own individual management and systems, while also concurrently functioning as a single unit oriented towards our collective purpose. <br><br> We draw from the insights and expertise of our illustrious and proficient directors and are able to continuously predict and proactively manage our opportunities and risks to protect and enhance our business value.'
+});
+
 
 onMounted(() => {
     const targetSection = localStorage.getItem('targetSection');
 
-    if (targetSection =='Our Governance') {
+    if (targetSection == 'Our Governance') {
         setMenu('Governance')
-    }else if (targetSection == 'Board') {
+    } else if (targetSection == 'Board') {
         setMenu('Board')
     } else if (targetSection == 'Management Team') {
         setMenu('Executive')
@@ -78,9 +98,6 @@ onMounted(() => {
 
 <template>
     <section class="min-h-screen bg-white">
-
-
-
         <BannerMain :content="bannerContent" />
 
         <div class="max-w-6xl justify-center mx-auto mt-10">
@@ -98,17 +115,17 @@ onMounted(() => {
                 <div class="divide-x divide-gray-200 ">
                     <nav class="-mb-px flex font-sans gap-40" aria-label="Tabs">
                         <button @click="setMenu('Governance')"
-                            :class="[currentMenu == 'Governance' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            :class="[currentMenu == 'Governance' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
                             class="w-1/4  px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
                             <i class="fas fa-images mr-2"></i> Corporate Governance
                         </button>
                         <button @click="setMenu('Board')"
-                            :class="[currentMenu == 'Board' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            :class="[currentMenu == 'Board' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
                             class="w-1/4 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
                             <i class="fas fa-blog mr-2"></i> Board of Directors
                         </button>
                         <button @click="setMenu('Executive')"
-                            :class="[currentMenu == 'Executive' ? 'border-b-4 border-brand-primary text-black' : 'border-transparent text-black']"
+                            :class="[currentMenu == 'Executive' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
                             class="w-1/4 px-1 py- text-center text-md subheading-class   hover:text-brand-primary">
                             <i class="fas fa-calendar-alt mr-2"></i> Management Team
                         </button>
@@ -123,104 +140,36 @@ onMounted(() => {
         <Team v-if="currentMenu == 'Executive'" @openProfile="openProfileModal" ref="teamComponent" />
 
         <div v-if="currentMenu == 'Governance'" class="container">
-            <div class="relative w-full bg-cover bg-center bg-no-repeat false" style="background-image: none;">
+            <div class="relative w-full bg-cover bg-center bg-no-repeat false font-sans"
+                style="background-image: none;">
+
                 <div class="container">
-                    <div
-                        class="flex items-center bg-cover pt-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-left">
-                            <div>
-                                <h1 id="" class="heading-class text-brand-primary">
-                                    <span class="text-black">Transforming to </span>
-                                    become more responsible
-                                </h1>
 
-                                <p class="mt-5 font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
+                    <div class="py-10">
+                        <h1 id="" class="section-heading text-brand-primary">
+                            <span class="text-black">Transforming to </span>
+                            become more responsible
+                        </h1>
 
-                                    At Acentria Group, corporate governance is more than a policy—it’s a way of life. It
-                                    defines how we lead, operate, and serve. Built on a foundation of <b>Integrity,
-                                        Innovation, and Excellence,</b> our governance framework ensures we deliver
-                                    sustainable
-                                    value while upholding the trust placed in us by our stakeholders.
+                        <p class="mt-5 pb-3 content">
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            At Acentria Group, corporate governance is more than a policy—it’s a way of life. It
+                            defines how we lead, operate, and serve. Built on a foundation of <b>Integrity,
+                                Innovation, and Excellence,</b> our governance framework ensures we deliver
+                            sustainable
+                            value while upholding the trust placed in us by our stakeholders.
 
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
-                <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="400" decoding="async"
-                        data-nimg="1" src="/img/compass.jpg" style="color: transparent; object-fit: contain;"
-                        class="rounded-lg" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 id="" class="heading-class pb-4 ">
-                        Corporate <span class="text-brand-primary">Governance</span>
-                    </h2>
-                    <div class="text-light-content pb-5 ">
-                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-
-                            At Acentria Group, we are committed to upholding the highest standards of corporate
-                            governance, ensuring accountability, transparency, and ethical conduct in every aspect of
-                            our operations. Our governance framework is designed to support long-term value creation,
-                            foster trust with stakeholders, and ensure that we act responsibly in all our business
-                            dealings.
-                            <br><br>
-                            We adhere to robust policies and practices that promote integrity, manage risks effectively,
-                            and safeguard the interests of our clients, employees, shareholders, and the communities we
-                            serve. Our leadership team, alongside the Board of Directors, plays a vital role in steering
-                            the company toward sustainable growth while maintaining compliance with all regulatory
-                            requirements and industry standards.
                         </p>
                     </div>
-                </div>
-            </div>
 
-            <div class="container mx-auto flex px-4 lg:flex-row flex-col py-2 lg:gap-16">
-                <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="200" decoding="async"
-                        data-nimg="1"
-                        src="https://images.pexels.com/photos/66100/pexels-photo-66100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 id="" class="heading-class pb-4 ">
-                        Corporate Governance <span class="text-brand-primary">Philosophy</span>
-                    </h2>
-                    <div class="text-light-content pb-5 ">
-                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                            Our business strategy is powered by our strong commitment to good governance, which goes
-                            beyond compliance and statutory norms. We believe that purpose-led corporate governance and
-                            ethics-led corporate behaviour are essential to our success.
-                            <br><br>
-                            Our business strategy is pillared around the twin approach of being structured as a group of
-                            entities, each with its own individual management and systems, while also concurrently
-                            functioning as a single unit oriented towards our collective purpose.
-                            <br><br>
-                            We draw from the insights and expertise of our illustrious and proficient directors and are
-                            able to continuously predict and proactively manage our opportunities and risks to protect
-                            and enhance our business value.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                    <ContentPic :content="corporateGovernance" />
+                    <ContentPic :content="corporateGovernancePhilosophy" />
 
-
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
-                <!-- <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="700" decoding="async"
-                        data-nimg="1"
-                        src="https://images.pexels.com/photos/885880/pexels-photo-885880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
-                </div> -->
-                <div class="flex flex-col justify-center lg:basis-full">
-                    <h2 id="" class="heading-class pb-4 ">
-                        Our Governance <span class="text-brand-primary">Policies</span>
-                    </h2>
-                    <div class="text-light-content pb-5 ">
-                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
+                    <div class="flex flex-col justify-center lg:basis-full">
+                        <h2 id="" class="section-heading pb-5">
+                            Our Governance <span class="text-brand-primary">Policies</span>
+                        </h2>
+                        <div class="content pb-5">
                             At Acentria Group, our governance policies are the cornerstone of our commitment to
                             integrity, accountability, and transparency. We have established a robust framework to
                             ensure that all operations are conducted with the highest ethical standards, in full
@@ -229,30 +178,31 @@ onMounted(() => {
                             Our policies cover key areas, including:
                             <br><br>
 
-                        <div class="px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-                            <div v-for="feature in governance"
-                                class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
-                                <div class="mr-6">
-                                    <i :class="feature.icon" class="text-brand-primary text-xl"></i>
-                                </div>
-                                <div>
-                                    <div class=" items-center w-full">
-                                        <p class="text-[14px] text-black font-medium text-left">
-                                            {{ feature.title }}
-                                        </p>
-                                        <p>
-                                            {{ feature.description }}
-                                        </p>
-
+                            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-5">
+                                <div v-for="feature in governance"
+                                    class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
+                                    <div class="mr-6">
+                                        <i :class="feature.icon" class="text-brand-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class=" items-center w-full">
+                                            <p class="card-heading text-left">
+                                                {{ feature.title }}
+                                            </p>
+                                            <p class="content">
+                                                {{ feature.description }}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <br>
+                            These policies provide a framework that guides our operations, ensuring that we remain
+                            aligned with our values and consistently deliver on our promise of excellence and
+                            integrity.
                         </div>
-                        <br>
-                        These policies provide a framework that guides our operations, ensuring that we remain
-                        aligned with our values and consistently deliver on our promise of excellence and integrity.
-                        </p>
                     </div>
+
                 </div>
             </div>
 
@@ -581,9 +531,6 @@ onMounted(() => {
                 </div>
             </div>
         </div>
-
-
-
 
     </section>
 </template>

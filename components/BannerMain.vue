@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="relative isolate overflow-hidden bg-white py-32 mt-8">
+    <div class="relative isolate overflow-hidden bg-white py-40 mt-20">
 
         <NuxtImg :src="content.image" :alt="content.subtitle"
             class="absolute inset-0 -z-10 h-full w-full !object-cover object-right md:object-center" />

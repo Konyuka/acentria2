@@ -2,7 +2,7 @@
 const bannerContent = ref({
     subtitle: 'Acentria Group',
     title: 'Things That Inspire Us',
-    image: 'https://img.freepik.com/free-vector/illustration-light-bulb-ideas_53876-18150.jpg?t=st=1736940696~exp=1736944296~hmac=0aa459f06202624661843cf8965815496b30607258bc135ab65108ea150e1b6d&w=996'
+    image: '/img/inspireUs.jpg'
 })
 
 const faqs = ref([
