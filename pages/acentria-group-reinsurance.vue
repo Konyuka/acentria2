@@ -71,16 +71,16 @@ const data = ref({
             link: '/reinsurance/treaty-administration',
         },
         {
-            name: 'Reinsurance Optimization',
-            content: 'Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance.',
-            icon: 'fas fa-chart-line',
-            link: '/reinsurance/reinsurance-optimization',
-        },
-        {
             name: 'Claims Management',
             content: 'Empower your business with our comprehensive claims management solutions and see the difference in your bottom line.',
             icon: 'fas fa-tasks',
             link: '/reinsurance/claims-management',
+        },
+        {
+            name: 'Market Insights and Negotiations',
+            content: 'Leverage market insights to refine coverage terms, mitigate volatility, and enhance risk placement through strategic negotiations',
+            icon: 'fas fa-eye',
+            link: '/reinsurance/market-insights',
         },
         {
             name: 'Catastrophic Modelling',
@@ -88,24 +88,34 @@ const data = ref({
             icon: 'fas fa-cloud-showers-heavy',
             link: '/reinsurance/catastrophic-modelling',
         },
-        {
-            name: 'Return on Risk Adjusted Capital',
-            content: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
-            icon: 'fas fa-coins',
-            link: '/reinsurance/return-on-risk-adjusted-capital',
-        },
-        {
-            name: 'Rating Agency Advisory',
-            content: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
-            icon: 'fas fa-star',
-            link: '/reinsurance/rating-agency-advisory',
-        },
-        {
-            name: 'Risk Based Capital Regulation',
-            content: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
-            icon: 'fas fa-balance-scale',
-            link: '/reinsurance/risk-based-capital-regulation',
-        },
+
+        
+        // {
+        //     name: 'Reinsurance Optimization',
+        //     content: 'Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance.',
+        //     icon: 'fas fa-chart-line',
+        //     link: '/reinsurance/reinsurance-optimization',
+        // },
+        
+       
+        // {
+        //     name: 'Return on Risk Adjusted Capital',
+        //     content: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
+        //     icon: 'fas fa-coins',
+        //     link: '/reinsurance/return-on-risk-adjusted-capital',
+        // },
+        // {
+        //     name: 'Rating Agency Advisory',
+        //     content: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
+        //     icon: 'fas fa-star',
+        //     link: '/reinsurance/rating-agency-advisory',
+        // },
+        // {
+        //     name: 'Risk Based Capital Regulation',
+        //     content: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
+        //     icon: 'fas fa-balance-scale',
+        //     link: '/reinsurance/risk-based-capital-regulation',
+        // },
     ],
     solutions: [
         {
@@ -138,7 +148,7 @@ const data = ref({
             name: 'AcenRe Solution',
             content: 'Optimize reinsurance strategies with our comprehensive reinsurance solutions.',
             icon: 'fas fa-briefcase',
-            link: '/reinsurance/acenre-solution',
+            link: '/reinsurance/acentre-solution',
         },
     ]
 });

@@ -783,16 +783,6 @@ const ReinsuranceMenus = ref([
                 description: 'Harness advanced catastrophe modeling to assess and manage exposure to natural disasters, ensuring robust risk management strategies.',
                 link: '/reinsurance/catastrophic-modelling',
             },
-            // {
-            //     name: 'Return on Risk Adjusted Capital',
-            //     description: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
-            //     link: '/reinsurance/return-on-risk-adjusted-capital',
-            // },
-            // {
-            //     name: 'Risk Based Capital Regulation',
-            //     description: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
-            //     link: '/reinsurance/risk-based-capital-regulation',
-            // },
         ]
     },
     {
@@ -1071,7 +1061,7 @@ const openFlyover = (menu, type) => {
                 currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
                 currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
                 currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
-                currentSubmenu.value = 'Reinsurance Services'
+                currentSubmenu.value = 'Strategic Advisory'
                 currentSubmenuItems.value = currentMenuItems.value[0]?.items
                 currentMenuSubtitle.value = currentMenuItems.value[0]?.subMenu
                 currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
