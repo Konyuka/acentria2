@@ -3,7 +3,10 @@ const props = defineProps({
     content: Object
 })
 
-const currentRoute = useRoute().fullPath
+// const currentRoute = useRoute().fullPath
+
+const route = useRoute();
+const currentRoute = route.path;
 
 const showButton = computed(() => {
     if (props.content.link === '/' || props.content.link === '/operating-results' || currentRoute === '/insurance-products' || currentRoute === '/insurance/aviation-cover' || currentRoute === '/acentria-group-reinsurance' || props.content.subheading === 'A reliable partner you can trust in <br>  Insurance & Risk Management') {
