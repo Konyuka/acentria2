@@ -9,7 +9,7 @@ const props = defineProps({
         <div class="bg p-2">
 
             <dt class="card-heading">
-                <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
+                <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-black">
                     <i :class="item.icon" class="text-white" aria-hidden="true"></i>
                 </div>
                 {{ item.title }}
