@@ -60,7 +60,7 @@ const socials = ref([
 
                 <div class="font-sans flex flex-col pb-10">
                     <div class="grid grid-cols-6 gap-5">
-                        <div class="col-span-2 flex flex-col gap-5 w-full">
+                        <div class="col-span-2 flex flex-col justify-center gap-5 w-full">
                             <div class="border-b border-black pb-3">
                                 <h4 class="card-heading">
                                     Contact <span class="text-brand-primary">Us</span>
@@ -74,7 +74,7 @@ const socials = ref([
                                 </p>
                             </div>
 
-                            <div class="border-b border-black pb-3">
+                            <div class=" pb-3">
                                 <h4 class="card-heading">
                                     Visit <span class="text-brand-primary">Us</span>
                                 </h4>
@@ -88,7 +88,7 @@ const socials = ref([
                                 </p>
                             </div>
 
-                            <div>
+                            <!-- <div>
                                 <h4 class="card-heading">
                                     Working <span class="text-brand-primary">Hours</span>
                                 </h4>
@@ -96,7 +96,7 @@ const socials = ref([
                                     <i class="fas mr-3 text-xl fa-calendar-day text-brand-primary"></i> Monday to Friday
                                     <br>
                                 </p>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="col-span-4">

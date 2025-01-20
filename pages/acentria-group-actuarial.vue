@@ -105,7 +105,7 @@ const introContent = ref({
     heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
     subheading: 'Your Trusted <span class="text-brand-primary"> Actuarial & Financial Services Partner</span>',
     image: '/img/lady-shake.jpg',
-    link: '/insurance-claims',
+    link: '/',
     content: 'Acentria Actuarial & financial services is one of the leading Actuarial independent specialists’ firms operating in Kenya, and international markets. Our Actuarial team is led by a Fellow Actuary and has expertise in financial risk and capital modelling, helping clients to manage business complexities. We use a blend of technical and commercial expertise to provide insight, assurance and enable effective insightful decision-making by business leaders'
 })
 
@@ -150,8 +150,7 @@ const blackBannerContent = ref(
                                     </p>
                                 </div>
 
-                                <span class="text-black">Learn More <i
-                                        class="mt-2 fas fa-arrow-right ml-3"></i></span>
+                                <span class="text-black">Learn More <i class="mt-2 fas fa-arrow-right ml-3"></i></span>
                             </div>
                         </NuxtLink>
                     </article>
@@ -161,7 +160,7 @@ const blackBannerContent = ref(
 
             <BlackBanner :content="blackBannerContent" />
 
-            <News />
+            <ReinsuranceInsights />
 
             <ContactForm />
 
