@@ -134,7 +134,7 @@ const introContent = ref({
     heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
     subheading: 'A Reliable Partner <span class="text-brand-primary">  You Can Trust</span>',
     image: '/img/lady-shake.jpg',
-    link: '/insurance-claims',
+    link: '/',
     content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
 })
 
@@ -172,7 +172,7 @@ const products = ref([
     },
     {
         name: 'Insurance Policy <br/> <span class="text-brand-primary">Management</span>',
-        img: '/img/policy.png',
+        img: '/img/policy.jpg',
         link: '/insurance-policy-management',
         description: 'Comprehensive policy administration and review services to ensure optimal coverage and cost-effectiveness.'
     }
