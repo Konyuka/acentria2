@@ -9,63 +9,43 @@ const bannerContent = ref({
 <template>
     <div class="bg-white">
 
-
         <BannerMain :content="bannerContent" />
 
-        <div class="bg-white py-8">
-
-            <div class="isolate !mb-5 py-5 md:py-0">
-                <div class="relative isolate -z-10">
-                    <div class="container overflow-hidden">
-
-                        <div class="max-w-full">
-                            <div class=" gap-x-2 lg:mx-0 lg:flex lg:max-w-none lg:items-center lg:justify-between">
-
-                                <div class="flex w-full max-w-6xl flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0">
-                                    <h1 id="" class="text-2xl font-semibold">
-                                        <span class="text-brand-primary">Connect
-                                            with</span> <br>
-                                        Our Experts
-                                    </h1>
-                                    <p class="font-sans text-sm leading-normal">
-                                        We value your trust and are committed to safeguarding your future with
-                                        precision and excellence.
-                                        If you have any questions or need assistance, please don't hesitate to
-                                        contact us.
-                                        We are here to help and look forward to hearing from you.
-                                        <br> <br>
-                                        We believe in building lasting relationships with our
-                                        clients, grounded in trust and mutual respect.
-                                        Our team of dedicated professionals is always ready to provide you with the
-                                        support and guidance you need.
-                                        Whether you are looking for information about our services, need help with a
-                                        specific issue, or just want to learn more about how we can assist you, we
-                                        are here for you.
-                                        <br><br>
-                                        We understand the importance of timely and accurate communication, and we
-                                        are committed to responding to your inquiries promptly.
-                                        Thank you for choosing Acentria Group. We look forward to serving you and
-                                        helping you achieve your goals.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container mx-auto  mb-5 font-sans mt-8">
-                <p class="mt-2 text-2xl font-semibold text-black">
-                    Contact <span class="text-brand-primary">us on</span>
+        <div class="container font-sans">
+            <div class="flex w-full flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0 py-10">
+                <h1 id="" class="section-heading">
+                    <span class="text-brand-primary">Connect with</span> Our Experts
+                </h1>
+                <p class="content">
+                    We value your trust and are committed to safeguarding your future with
+                    precision and excellence.
+                    If you have any questions or need assistance, please don't hesitate to
+                    contact us.
+                    We are here to help and look forward to hearing from you.
+                    <br> <br>
+                    We believe in building lasting relationships with our
+                    clients, grounded in trust and mutual respect.
+                    Our team of dedicated professionals is always ready to provide you with the
+                    support and guidance you need.
+                    Whether you are looking for information about our services, need help with a
+                    specific issue, or just want to learn more about how we can assist you, we
+                    are here for you.
+                    <br><br>
+                    We understand the importance of timely and accurate communication, and we
+                    are committed to responding to your inquiries promptly.
+                    Thank you for choosing Acentria Group. We look forward to serving you and
+                    helping you achieve your goals.
                 </p>
             </div>
+            <div class="container font-sans py-5">
+                <p class="section-heading pb-3">
+                    Contact <span class="text-brand-primary">us on</span>
+                </p>
+                <Socials />
+            </div>
+            <div class="container font-sans grid grid-cols-3 items-center gap-5 py-5 lg:grid-cols-5">
 
-            <Socials />
-
-            <div class="container mt-10 max-w-6xl mx-auto font-sans grid grid-cols-3 gap-y-1 py-5 lg:grid-cols-5">
-
-                <div class="mt-5">
+                <div class="">
                     <h2 class="text-xl font-semibold">
                         Visit <span class="text-brand-primary">Us</span>
                     </h2>
@@ -93,13 +73,13 @@ const bannerContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto  mb-0 font-sans my-5">
-                <p class="mt-2 text-2xl font-semibold text-black">
+            <div class="container font-sans py-5">
+                <p class="section-heading">
                     Follow <span class="text-brand-primary">us on</span>
                 </p>
+                <Socials2 />
             </div>
 
-            <Socials2 />
             <ContactForm />
         </div>
 
