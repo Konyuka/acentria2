@@ -25,7 +25,10 @@ const showButton2 = computed(() => {
 const theButtonTitle = computed(() => {
     if (props.content.link === '/insurance-products' || props.content.link === '/reinsurance-products') {
         return 'Pick your Industry'
-    } else {
+    } else if (props.content.link === '/acentria-benefits'){
+        return 'Learn how you benefit by joining us'
+    } 
+    else {
         return 'Learn More'
     }
 })

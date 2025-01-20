@@ -83,6 +83,8 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
   ],
   image: {
-    domains: ['cdn.sanity.io']
-  }
+    // provider: 'static',
+    // dir: 'public/img',
+    domains: ['cdn.sanity.io', 'www.acentriagroup.com', 'acentriagroup.com']
+  },
 })
