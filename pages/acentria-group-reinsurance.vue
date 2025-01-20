@@ -3,7 +3,12 @@ const serviceHeading = ref('Resilience Through Tailored<span class="text-brand-p
 
 const menus = ref([
     {
-        name: 'Expert Services',
+        name: 'Strategic Advisory',
+        tag: 'strategic',
+        icon: 'fas fa-handshake',
+    },
+    {
+        name: 'Reinsurance Services',
         tag: 'services',
         icon: 'fas fa-handshake',
     },
@@ -13,13 +18,51 @@ const menus = ref([
         icon: 'fas fa-cogs',
     },
     {
-        name: 'Innovation and Digitization',
+        name: 'Innovation',
         tag: 'data',
         icon: 'fas fa-chart-line',
     },
 ])
 
 const data = ref({
+    strategic: [
+        {
+            name: 'Market Insights & Negotiation',
+            content: 'Advising on emerging market trends, regulatory environments, and pricing to optimize placements and financing terms.',
+            icon: 'fas fa-file-contract',
+            link: '/reinsurance/market-insights',
+        },
+        {
+            name: 'Financial Planning & Structuring',
+            content: 'Crafting strategies that balance liquidity, solvency, and growth targets, ensuring optimal capital allocation.',
+            icon: 'fas fa-chart-line', // Financial planning
+            link: '/reinsurance/financial-planning-structuring',
+        },
+        {
+            name: 'Risk Assessment & Modeling',
+            content: 'In-depth analysis of potential exposures and loss scenarios, using quantitative and qualitative methods to forecast financial impacts.',
+            icon: 'fas fa-balance-scale', // Risk assessment
+            link: '/reinsurance/risk-assessment-modeling',
+        },
+        {
+            name: 'Program Design & Optimization',
+            content: 'Structuring reinsurance solutions aligned with a client’s risk tolerance and balance sheet objectives to optimize capital usage and minimize volatility.',
+            icon: 'fas fa-cogs', // Optimization
+            link: '/reinsurance/reinsurance-optimization',
+        },
+        {
+            name: 'Regulatory Compliance & Governance',
+            content: 'Implementing best practices in corporate governance, financial reporting, and solvency management to ensure adherence to regulatory standards.',
+            icon: 'fas fa-gavel', // Compliance
+            link: '/reinsurance/regulatory-compliance-governance',
+        },
+        {
+            name: 'Rating Agency Advisory',
+            content: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
+            icon: 'fas fa-star', // Ratings
+            link: '/reinsurance/rating-agency-advisory',
+        },
+    ],
     services: [
         {
             name: 'Treaty Administration',

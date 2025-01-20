@@ -698,11 +698,6 @@ const ReinsuranceMenus = ref([
         description: 'Explore our comprehensive reinsurance services for risk management.',
         icon: 'fas fa-sync-alt',
         items: [
-            // {
-            //     name: 'Reinsurance Optimization',
-            //     description: 'Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance.',
-            //     link: '/reinsurance/reinsurance-optimization',
-            // },
             {
                 name: 'Market Insights & Negotiation',
                 description: 'Advising on emerging market trends, regulatory environments, and pricing to optimize placements and financing terms.',

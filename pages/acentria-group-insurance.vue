@@ -70,13 +70,13 @@ const data = ref({
             name: 'Staff Life Covers',
             icon: 'fas fa-heartbeat',
             content: 'Provide financial security for employees’ families with life insurance.',
-            link: '/insurance/staff-health-cover',
+            link: '/insurance/staff-life-cover',
         },
         {
             name: 'Asset & Stock Covers',
             icon: 'fas fa-warehouse',
             content: 'Protect your business assets and stock against damage or loss.',
-            link: '/insurance/asset-stock-covers',
+            link: '/insurance/general-asset-covers',
         },
         {
             name: 'Financial Losses Covers',
@@ -85,10 +85,10 @@ const data = ref({
             link: '/insurance/financial-losses-money-covers',
         },
         {
-            name: 'Biashara Cover',
-            icon: 'fas fa-briefcase',
-            content: 'Comprehensive business insurance to protect your enterprise from risks.',
-            link: '/insurance/biasahara-cover',
+            name: 'Aviation Covers',
+            icon: 'fas fa-plane',
+            content: 'Coverage for aircraft, pilots, and aviation operations.',
+            link: '/insurance/aviation-cover',
         },
         {
             name: 'Marine Insurance Covers',

@@ -16,7 +16,7 @@ const currentRoute = computed(() => {
 const gridCols =  computed(() => {
   
     if (currentRoute.value === '/acentria-group-reinsurance') {
-        return 'grid-cols-3'
+        return 'grid-cols-4'
     }else{
         return 'grid-cols-2'
     }
