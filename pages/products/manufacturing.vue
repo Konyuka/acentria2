@@ -92,7 +92,7 @@ const benefits3 = ref([
             <h1 class="text-2xl text-black !font-semibold mb-6">Types of <span class="text-brand-primary">Manufacturing
                     Insurance</span></h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-                <NuxtLink :href="feature.url" v-for="feature in whatsCovered" class="flex p-5 shadow-md">
+                <NuxtLink :to="feature.url" v-for="feature in whatsCovered" class="flex p-5 shadow-md">
                     <div class="mr-6">
                         <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                     </div>

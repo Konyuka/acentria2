@@ -296,7 +296,7 @@ const products = [
                                 engagement forums, propagate empowerment and job autonomy, and nurture a supportive and
                                 inclusive environment.
                             </p>
-                            <NuxtLink href="/acentria-benefits"
+                            <NuxtLink to="/acentria-benefits"
                                 class="text-center !button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                                 Learn how you benefit by joining us
                                 <i class="fas fa-arrow-right text-primary ml-2"></i>
@@ -312,7 +312,7 @@ const products = [
                                 Career Paths <span class="text-brand-primary">At Acentria</span>
                             </h2>
                             <div class="my-6">
-                                <NuxtLink href="/our-brand"
+                                <NuxtLink to="/our-brand"
                                     class="!button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                                     Search for Open Positions <i class="fas fa-search text-primary ml-2"></i>
                                 </NuxtLink>
@@ -386,7 +386,7 @@ const products = [
                                 At Acentria Group, we are catalysts of transformation. Please join our talent community
                                 to get job alerts and share your career details with us for future considerations.
                             </p>
-                            <NuxtLink href="/meet-the-team"
+                            <NuxtLink to="/meet-the-team"
                                 class="text-center !button-animation !hover:bg-black bg-brand-primary text-white font-medium py-3 px-12 text-sm rounded-md mt-10">
                                 Join Now
                                 <i class="fas fa-award text-primary ml-2"></i>
@@ -403,7 +403,7 @@ const products = [
                                         placeholder="you@example.com">
                                 </div>
                             </div>
-                            <NuxtLink href="/meet-the-team"
+                            <NuxtLink to="/meet-the-team"
                                 class="text-center !button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                                 Subscribe for job alerts
                                 <i class="fas fa-arrow-right text-primary ml-2"></i>

@@ -31,7 +31,7 @@ const faqs = ref([
     },
     {
         name: 'How do I claim & how fast is the claims process?',
-        content: '<p>Our claims process is hassle free.</p><p>The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary claims documents in the event of a claims.</p><NuxtLink href="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
+        content: '<p>Our claims process is hassle free.</p><p>The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary claims documents in the event of a claims.</p><NuxtLink to="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
     },
     {
         name: 'What are the exclusions in Home Insurance?',
@@ -157,7 +157,7 @@ const getStarted = ref({
                 purchasing cover. <br> Our team of experts are readily available to guide you through the process.
             </p>
             <div class="mt-5">
-                <NuxtLink href="/"
+                <NuxtLink to="/"
                     class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                     Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i>
                 </NuxtLink>

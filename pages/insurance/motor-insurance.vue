@@ -47,7 +47,7 @@ const faqs = ref([
     },
     {
         name: 'How do I file a claim?',
-        content: '<p>To file a motor insurance claim, follow these steps:</p><ol class="ml-5 list-decimal"><li>Report the Incident: Notify your provider as soon as possible after the incident occurs.</li><li>Provide Documentation: Submit necessary documents, such as a police report, photos of the damage, and any other relevant information.</li><li>Assessment: The insurance company will assess the damage and determine the coverage amount.</li><li>Repair or Compensation: Depending on the policy, the insurance company will either arrange for repairs or provide a compensation payout.</li></ol><p>Our claims process is hassle free. The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary claims documents in the event of a claims.</p><NuxtLink href="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
+        content: '<p>To file a motor insurance claim, follow these steps:</p><ol class="ml-5 list-decimal"><li>Report the Incident: Notify your provider as soon as possible after the incident occurs.</li><li>Provide Documentation: Submit necessary documents, such as a police report, photos of the damage, and any other relevant information.</li><li>Assessment: The insurance company will assess the damage and determine the coverage amount.</li><li>Repair or Compensation: Depending on the policy, the insurance company will either arrange for repairs or provide a compensation payout.</li></ol><p>Our claims process is hassle free. The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary claims documents in the event of a claims.</p><NuxtLink to="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
     },
     {
         name: 'What should I do if my vehicle is stolen?',
@@ -207,7 +207,7 @@ const getStarted = ref({
                 purchasing cover. <br> Our team of experts are readily available to guide you through the process.
             </p>
             <div class="mt-5">
-                <NuxtLink href="/"
+                <NuxtLink to="/"
                     class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                     Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i>
                 </NuxtLink>

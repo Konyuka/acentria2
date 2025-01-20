@@ -97,7 +97,7 @@ const exploreAviation = ref({
                 <div class="py-10 sm:px-2 lg:px-4">
                     <div class="lg:max-w-none">
                         <div class="mt-5 grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-3">
-                            <NuxtLink :href="member.link" v-for="member in joinAsMembers" :key="member.name"
+                            <NuxtLink :to="member.link" v-for="member in joinAsMembers" :key="member.name"
                                 class="relative group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8 border-brand-primary">
                                 <div class="sm:flex-shrink-0 flex justify-center">
                                     <i :class="member.icon" class="text-black text-2xl"></i>

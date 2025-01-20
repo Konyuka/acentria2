@@ -157,7 +157,7 @@ const setMobileMenu = (event) => {
                             </p>
                         </div>
                         <div class="my-6">
-                            <NuxtLink href="/"
+                            <NuxtLink to="/"
                                 class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                                 Log in to start <i class="fas fa-arrow-right text-primary ml-2"></i>
                             </NuxtLink>

@@ -262,7 +262,7 @@ onMounted(() => {
           </h2>
 
           <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
-            <NuxtLink v-motion-fade-visible :href="member.link" v-for="member in joinAsMembers" :key="member.name"
+            <NuxtLink v-motion-fade-visible :to="member.link" v-for="member in joinAsMembers" :key="member.name"
               class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8 border-brand-primary">
               <div class="sm:flex-shrink-0 flex justify-center py-5">
                 <i :class="member.icon" class="text-black fa-xl"></i>

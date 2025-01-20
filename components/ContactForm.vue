@@ -104,7 +104,7 @@ const company = computed(() => {
                     </p>
 
                     <div class="mt-5">
-                        <NuxtLink href="/meet-the-team"
+                        <NuxtLink to="/meet-the-team"
                             class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                             Lets Talk
                             <i class="fas fa-arrow-right text-primary ml-2"></i>

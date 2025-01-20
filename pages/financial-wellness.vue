@@ -242,7 +242,7 @@ const features = [
 
             <div class="mb-5">
                 <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-5">
-                    <NuxtLink :href="feature.url" v-for="feature in features"
+                    <NuxtLink :to="feature.url" v-for="feature in features"
                         class="button-animation flex px-3 py-2 shadow-md border-l-4 border-brand-primary">
                         <div class="mr-6">
                             <i :class="feature.icon" class="text-brand-primary text-xl"></i>

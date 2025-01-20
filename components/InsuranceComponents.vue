@@ -21,7 +21,7 @@ const props = defineProps({
             <h1 class="text-2xl text-black !font-semibold mb-6">What's <span class="text-brand-primary"> Covered</span>
             </h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                <NuxtLink :href="feature.url" v-for="feature in whatsCovered"
+                <NuxtLink :to="feature.url" v-for="feature in whatsCovered"
                     class="flex p-5 shadow-md">
                     <div class="mr-6">
                         <i :class="feature.icon" class="text-brand-primary text-xl"></i>

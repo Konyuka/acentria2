@@ -24,7 +24,7 @@
                                 conversation.
                             </p>
                         </div>
-                        <NuxtLink href="/contact-acentria-group"
+                        <NuxtLink to="/contact-acentria-group"
                             class="inline-flex items-center justify-center rounded-md font-semibold transition-colors duration-300 focus:outline-none bg-brand-primary text-white hover:bg-brand-primary-dark focus:ring-brand-primary-dark px-4 py-3 text-base">
                             Talk
                             to support<svg
@@ -62,7 +62,7 @@
                                     24/7/365.
                                 </p>
                             </div>
-                            <NuxtLink href="/about-acentria-group"
+                            <NuxtLink to="/about-acentria-group"
                                 class="cursor-pointer font-semibold text-brand-primary hover:text-brand-gray-1 text-base relative flex items-center">
                                 Learn
                                 more<svg

@@ -254,7 +254,7 @@ onMounted(() => {
 
                 <div class="col-span-2">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-                        <NuxtLink :href="feature.url" v-for="feature in features"
+                        <NuxtLink :to="feature.url" v-for="feature in features"
                             class="button-animation flex p-3 shadow-md border-l-4 border-brand-primary">
                             <div class="pr-3">
                                 <i :class="feature.icon" class="text-brand-primary text-xl"></i>
@@ -359,7 +359,7 @@ onMounted(() => {
                                 unwavering dedication and forward-thinking approach ensure we remain at the forefront of
                                 our industry, consistently adapting to new challenges and seizing opportunities.
                             </p>
-                            <NuxtLink href="/meet-the-team"
+                            <NuxtLink to="/meet-the-team"
                                 class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                                 Meet the Team
                                 <i class="fas fa-arrow-right text-primary ml-2"></i>
@@ -391,7 +391,7 @@ onMounted(() => {
                                 values and principles shape every engagement, driving us to deliver excellence while
                                 empowering our people and the communities we serve.
                             </p>
-                            <NuxtLink href="/corporate-culture"
+                            <NuxtLink to="/corporate-culture"
                                 class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                                 Learn More
                                 <i class="fas fa-arrow-right text-primary ml-2"></i>
@@ -423,7 +423,7 @@ onMounted(() => {
                                 world. Our promise reflects the precision, thoughtfulness, and expertise we bring to
                                 every project.
                             </p>
-                            <NuxtLink href="/our-brand"
+                            <NuxtLink to="/our-brand"
                                 class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                                 Learn More
                                 <i class="fas fa-arrow-right text-primary ml-2 text-[12px]"></i>

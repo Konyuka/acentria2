@@ -175,7 +175,7 @@ onMounted(() => {
                                                 remain at the forefront of our industry, continuously
                                                 adapting to new challenges and opportunities.
                                             </p>
-                                            <NuxtLink href="/meet-the-team"
+                                            <NuxtLink to="/meet-the-team"
                                                 class="!button-animation z-[10] relative bg-brand-primary !hover:bg-black text-white font-medium py-1 sm:py-1 md:py-2 px-6 sm:px-8 md:px-10 text-sm sm:text-md rounded-sm mt-10">
                                                 Meet the Team
                                                 <i class="fas fa-arrow-right text-primary ml-2"></i>
