@@ -162,7 +162,7 @@ const content8 = ref({
     orientation: 'image-right',
     heading: 'Partner with Us for <br/><span class="text-brand-primary">a Resilient Future</span>',
     subheading: '',
-    image: '/img/resilient.jpg',
+    image: '/img/balance.jpg',
     link: '/insurance-claims',
     content: 'In the dynamic world of insurance and reinsurance, having a reliable partner can make all the difference. At Acentria we stand out as your ideal reinsurance broker, offering unparalleled expertise, tailored solutions, and a commitment to excellence. Here\'s why partnering with us is a smart choice for your business: '
 })
