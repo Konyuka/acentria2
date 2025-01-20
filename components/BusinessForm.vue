@@ -99,6 +99,24 @@ const setStage = (number) => {
                     </p>
                 </div>
 
+                <div class="col-span-full font-sans">
+                    <label for="cover-photo" class="block text-md font-semibold text-gray-700">Document Uploads</label>
+                    <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+                        <div class="text-center">
+                            <i class="fas fa-folder text-gray-500 text-xl"></i>
+                            <div class="mt-4 flex text-sm/6 text-gray-600">
+                                <label for="file-upload"
+                                    class="relative cursor-pointer rounded-md bg-white font-semibold text-brand-primary focus-within:outline-none focus-within:ring-2 focus-within:ring-brand-primary focus-within:ring-offset-2 hover:text-indigo-500">
+                                    <span>Attech relevant files</span>
+                                    <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                                </label>
+                                <p class="pl-1">or drag and drop</p>
+                            </div>
+                            <p class="text-xs/5 text-gray-600">PDF, Word, Excel, JPG up to 10MB</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div>
                     <button @click="setStage(5)"
                         class="mt-2 button-animation text-brand-primary group text-xl font-semibold">
@@ -169,7 +187,8 @@ const setStage = (number) => {
 
                 <div class="mt-20 flex flex-col justify-center items-center">
                     <h1 class="text-lg font-semibold text-center">
-                        We look forward to hearing from you and <br> <span class="text-brand-primary">discussing how we
+                        We look forward to hearing from you and <br> <span class="text-brand-primary">discussing how
+                            we
                             can
                             support your business.</span>
                     </h1>
