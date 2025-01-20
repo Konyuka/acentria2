@@ -21,7 +21,7 @@ const profileBoardData = computed(() => {
 const bannerContent = ref({
     subtitle: 'Meet the Team',
     title: 'Governance & Leadership',
-    image: 'https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg'
+    image: 'https://old.acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg'
 })
 
 const currentMenu = ref('Board');

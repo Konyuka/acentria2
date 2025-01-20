@@ -37,7 +37,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2">
                     <NuxtImg alt="Image of Environmental Responsibility" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="https://acentriagroup.com/wp-content/uploads/2023/12/12-1024x625.jpg" />
+                        class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/12-1024x625.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="heading-class pb-4">
@@ -64,7 +64,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2">
                     <NuxtImg alt="Image of Philanthropic Responsibility" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="https://acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
+                        class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="heading-class pb-4">
@@ -125,7 +125,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2">
                     <NuxtImg alt="Image of Economic Responsibility" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="https://acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
+                        class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="heading-class pb-4">

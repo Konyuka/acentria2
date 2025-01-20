@@ -149,7 +149,7 @@ onMounted(() => {
                                         <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
-                                            src="https://acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg"
+                                            src="https://old.acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg"
                                             data-v-inspector="components/Why.vue:34:17" />
                                     </div>
                                     <div class="flex flex-col justify-center lg:basis-1/2">

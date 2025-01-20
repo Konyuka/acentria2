@@ -1166,7 +1166,7 @@ const closeFlyOver = (type) => {
 
     if (type == 'Technology') {
         // alert('hi')
-        window.open('https://https://tech.acentriagroup.com/', '_blank');
+        window.open('https://tech.acentriagroup.com/', '_blank');
         return;
     }
 

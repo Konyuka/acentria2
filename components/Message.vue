@@ -13,7 +13,7 @@
                         <NuxtImg alt="Barclays" loading="lazy" width="455" height="227" decoding="async" data-nimg="1"
                             class="false undefined absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
                             style="color: transparent" sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
-                            src="https://acentriagroup.com/wp-content/uploads/2024/01/Moses-Musau-2-683x1024.jpg" />
+                            src="https://old.acentriagroup.com/wp-content/uploads/2024/01/Moses-Musau-2-683x1024.jpg" />
                     </div>
                 </div>
                 <div class="relative w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-11">

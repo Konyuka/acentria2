@@ -37,7 +37,7 @@ const ReinsuranceBannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
                     <NuxtImg alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="https://acentriagroup.com/wp-content/uploads/2023/12/screenshot-25.jpg"
+                        class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/screenshot-25.jpg"
                         data-v-inspector="components/Why.vue:10:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
