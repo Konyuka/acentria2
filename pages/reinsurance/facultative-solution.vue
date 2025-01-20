@@ -12,46 +12,6 @@ const ReinsuranceFeatureContent = ref({
     content: 'Acentria Re excels in both automatic and semiautomatic solutions, meticulously designed to address your specific risks with precision, ensuring high operational efficiency and cost-effectiveness. We assist our clients in increasing their risk capacity by offering alternative and innovative channels for individual risks where treaty capacities are limited. The facultative arrangement is both under proportional and non-proportional forms. Risks under this arrangement are placed with well-rated securities and take into consideration the risk appetite and profile of both the ceding and the securing companies. Our capability in creating, automatic; facultative obligatory treaties and semiautomatic reinsurance structures for property, liability, and casualty risks will help you make the most of opportunities, improve capital management, and advance underwriting strategies and risk management.'
 })
 
-const services = ref(
-    [
-        {
-            name: 'Energy',
-            image: 'https://www.guycarp.com/content/dam/guycarp-rebrand/adobe-assets/Energy/Energy-009-solar-panels-wind-turbines-96622127.jpeg',
-            content: 'On-shore | Off-shore | Terrorism | Renewable | Utilities',
-            icon: 'fas fa-bolt'
-        },
-        {
-            name: 'Car/Ear',
-            image: 'https://www.guycarp.com/content/dam/guycarp-rebrand/adobe-assets/Construction/Construction-001-man-harness-179035709.jpeg',
-            content: 'Advance loss of profits | Civil works | Construction liability | Contractors plant & equipment | Engineering | Terrorism',
-            icon: 'fas fa-hard-hat'
-        },
-        {
-            name: 'Property',
-            image: 'https://www.guycarp.com/content/dam/guycarp-rebrand/adobe-assets/City/City-006-abstract-building-268916410.jpeg',
-            content: 'Commercial property | Heavy & process industry | Infrastructure | Municipalities | Terrorism',
-            icon: 'fas fa-building'
-        },
-        {
-            name: 'Casualty',
-            image: 'https://www.guycarp.com/content/dam/guycarp-rebrand/adobe-assets/Terrorism/Terrorism-001-disaster-catastrophe-217590408.jpeg',
-            content: 'General liability | Product liability | Product recall | Terrorism',
-            icon: 'fas fa-shield-alt'
-        },
-        {
-            name: 'Specialty',
-            image: 'https://www.guycarp.com/content/dam/guycarp-rebrand/adobe-assets/Medical/Pandemic-001-coronavirus-pathogen-covid-19-virus-pandemic-327378972.jpeg',
-            content: 'Agriculture | Directors & officers | Financial & commercial crime | Medical malpractice | Professional indemnity',
-            icon: 'fas fa-star'
-        },
-        {
-            name: 'Marine',
-            image: 'https://www.guycarp.com/content/dam/guycarp-rebrand/adobe-assets/Marine/Marine-003-ship-aerial-cargo-204103708.jpeg',
-            content: 'Aquaculture | Cargo | Fine arts | Hull | Liability | P & I',
-            icon: 'fas fa-ship'
-        }
-    ]
-)
 
 const specials = ref([
     {
@@ -86,7 +46,7 @@ const specials = ref([
             '• Terrorism and Sabotage',
             '• Business interruption'
         ],
-        img: 'https://images.pexels.com/photos/2698473/pexels-photo-2698473.jpeg?auto=compress&cs=tinysrgb&w=600',
+        img: 'https://img.freepik.com/free-photo/two-soldiers-war_1048-1894.jpg?t=st=1737372802~exp=1737376402~hmac=19d881267372e09f6feb36bfa0ee98f69026e761b19eb97069c65791c6a4e7ef&w=996',
         description: 'In uncertain times, having the right coverage in place ensures your business is shielded from the impact of political unrest and terrorism. At Acentria, we help our clients identify the exposures to such risks and provide tailored reinsurance solutions that offer protection against a wide range of threats, including war, civil commotion, insurrection, and terrorist attacks.'
     },
     {
@@ -141,7 +101,7 @@ const specials = ref([
             '• Product Recall',
             '• Environmental Liability'
         ],
-        img: 'https://images.pexels.com/photos/163016/crash-test-collision-60-km-h-distraction-163016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        img: 'https://img.freepik.com/free-photo/image-auto-accident-involving-two-cars_613910-929.jpg?t=st=1737372737~exp=1737376337~hmac=bba0d55ea366d127ae993dad3011abe09021a4961a330cd5289a266aa3253489&w=900',
         description: 'Casualty and liability insurance provides essential protection for businesses against third-party claims arising from injuries, property damage, or legal liabilities. This class of insurance covers a wide range of exposures, including general liability, employer’s liability, product liability, professional liability, and environmental liability.'
     },
     {
