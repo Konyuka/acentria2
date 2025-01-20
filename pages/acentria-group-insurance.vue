@@ -197,7 +197,7 @@ onMounted(() => {
             <ContentPic :content="introContent" />
             <div class="container py-5">
                 <h1 class="section-heading pb-3">
-                    Expert <span class="text-brand-primary">Insurance Services</span>
+                    Expert <span class="text-brand-primary"> Services</span>
                 </h1>
                 <p class="!font-sans content pb-3">
                     Our expert insurance services combine deep industry knowledge with cutting-edge solutions to

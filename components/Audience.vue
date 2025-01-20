@@ -30,7 +30,7 @@ const gridCols = computed(() => {
                 <div>
                     <div :class="gridCols" class="container grid  gap-4 py-0">
                         <NuxtLink :to="user.link" v-for="user in InsuranceCardsContent.users" :key="user.name"
-                            class="relative shadow-2xl group button-animation border-t-8 border-solid border-brand-primary shadow-card m-auto flex min-h-fit rounded-xl bg-white p-5 w-full h-full">
+                            class="relative shadow-2xl group button-animation border-t-8 border-solid border-gray-500 shadow-card m-auto flex min-h-fit rounded-xl bg-white p-5 w-full h-full">
                             <div class=" font-sans flex h-fit flex-col">
 
                                 <div class="flex justify-between">
