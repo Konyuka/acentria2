@@ -11,7 +11,7 @@ const principles = ref([
         description: 'We are intentional in sourcing talent aligned with our values. We place the right people in the right positions, develop their skills, and provide opportunities for them to influence positive outcomes.'
     },
     {
-        name: 'Innovate and Focus on Solutions, Not Problems',
+        name: 'Innovate & Focus on Solutions, Not Problems',
         icon: 'fas fa-lightbulb',
         description: 'We begin with the end in mind, involve the right people, and stay positive as we work together to achieve desired results.'
     },
@@ -152,21 +152,22 @@ const products = [
 
 <template>
     <main>
-        <div class="bg-white">
-            <div>
-                <BannerMain :content="bannerContent" />
+        <div class="bg-white !font-sans">
+            <BannerMain :content="bannerContent" />
 
-                <div class="isolate !mb-5 py-5 md:py-0 mt-5 bg-white">
+            <div class="container mx-auto">
+
+                <div class="isolate py-5">
                     <div class="relative isolate -z-10">
                         <div class="container overflow-hidden">
                             <div class="container max-w-6xl mx-auto">
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                                     <div class="flex flex-col gap-2">
-                                        <h1 class="text-2xl font-semibold leading-normal">
-                                            <span class="text-brand-primary">Grow With a</span> <br>
+                                        <h1 class="section-heading">
+                                            <span class="text-brand-primary ">Grow With a</span> <br>
                                             Pathfinder
                                         </h1>
-                                        <p class="text-sm leading-normal">
+                                        <p class="content">
                                             Acentria Group has experienced remarkable growth over the past few years,
                                             driven by business diversification, continuous learning, and a
                                             transformation in corporate culture. As we evolve, our relationships with
@@ -180,11 +181,10 @@ const products = [
                                             guide
                                             our path forward as we continue to foster a thriving culture and pave the
                                             way for long-term success.
-
                                         </p>
                                     </div>
 
-                                    <div class="relative py-4">
+                                    <div class="relative">
                                         <NuxtImg alt="Image of growth" loading="lazy" decoding="async"
                                             src="/img/give.jpg" class="rounded-xl w-full h-[250px] object-cover" />
                                     </div>
@@ -207,11 +207,11 @@ const products = [
                                     </div>
 
                                     <div class="flex flex-col gap-2">
-                                        <h1 class="text-2xl font-semibold leading-normal">
+                                        <h1 class="section-heading">
                                             <span class="text-brand-primary">Our</span> <br>
                                             People
                                         </h1>
-                                        <p class="text-sm leading-normal">
+                                        <p class="content">
                                             At Acentria Group, we are SMART people—driven by the belief that everything
                                             we do should be SMART in thinking, design, and the value it brings to both
                                             our company and the market. We are committed to ensuring smart solutions are
@@ -229,8 +229,8 @@ const products = [
                     </div>
                 </div>
 
-                <section class="container mx-auto mb-5 font-sans">
-                    <h2 class="text-2xl font-semibold text-black">
+                <!-- <section class="container mx-auto py-5 font-sans">
+                    <h2 class="section-heading">
                         What Drives Us <span class="text-brand-primary"> at Acentria Group</span>
                     </h2>
                 </section>
@@ -254,35 +254,32 @@ const products = [
                             </div>
                         </dl>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="py-2">
-                    <section class="relative py-1">
-                        <div class="container px-4">
-                            <h2 class="text-2xl font-semibold text-black mb-4">
-                                We are Devoted to <br><span class="text-brand-primary">Our Core Principles</span>
-                            </h2>
-                            <div class="my-5">
-                                <p class="text-sm leading-normal">
-                                    At Acentria Group, we are guided by a set of core principles that shape everything
-                                    we do. These principles ensure we build strong relationships, foster innovation, and
-                                    achieve success together.
-                                </p>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                <div v-for="principle in principles"
-                                    class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
-                                    <div class="flex flex-col">
-                                        <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
-                                        <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
-                                            principle.name }}</h4>
-                                        <p class="text-sm leading-normal text-black">{{ principle.description }}</p>
-                                    </div>
+                <section class="relative py-5">
+                    <div class="container">
+                        <h2 class="section-heading pb-3">
+                            We are Devoted to <br><span class="text-brand-primary">Our Core Principles</span>
+                        </h2>
+                        <p class="content pb-5">
+                            At Acentria Group, we are guided by a set of core principles that shape everything
+                            we do. These principles ensure we build strong relationships, foster innovation, and
+                            achieve success together.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div v-for="principle in principles"
+                                class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
+                                <div class="flex flex-col">
+                                    <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
+                                    <h4 class="card-heading pb-3">{{
+                                        principle.name }}</h4>
+                                    <p class="content">{{ principle.description }}</p>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
 
                 <div class="font-sans py-0" style="background-color: white">
                     <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
