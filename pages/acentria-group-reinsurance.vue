@@ -142,13 +142,13 @@ const data = ref({
             name: 'Reinsurance Data Analytics Tool',
             content: 'Enhance decision making with our reinsurance data analytics tools.',
             icon: 'fas fa-chart-bar',
-            link: '/reinsurance/data-analytics-tool',
+            link: '/reinsurance/reinsurance-data-analytics-tool',
         },
         {
             name: 'AcenRe Solution',
             content: 'Optimize reinsurance strategies with our comprehensive reinsurance solutions.',
             icon: 'fas fa-briefcase',
-            link: '/reinsurance/acentre-solution',
+            link: '/reinsurance/acentre-reinsurance-solution',
         },
     ]
 });
