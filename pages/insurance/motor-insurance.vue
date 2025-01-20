@@ -4,7 +4,7 @@ import { ref } from "vue";
 const InsuranceBannerContent = ref({
     subtitle: 'Ensure Smart Motor Insurance!',
     title: 'Hit the Road with Confidence',
-    image: '/img/in-car.jpg',
+    image: 'https://img.freepik.com/free-photo/car-dashboard-lit-red-with-steering-wheel-night_181624-3294.jpg?t=st=1737358651~exp=1737362251~hmac=13c6dc720494c983301288b644d0b51f00297f3323aca7cb1d39b38eebcbf6b7&w=900',
     content: 'Discover our life insurance & make sure your loved ones are safe and sound, no matter what happens. Let’s talk about securing your loved ones’ future. Explore our life insurance options and ensure their financial well-being, no matter what life brings.',
 })
 

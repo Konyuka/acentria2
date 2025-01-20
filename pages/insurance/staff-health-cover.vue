@@ -85,7 +85,7 @@ const whys = ref([
 const benefits3 = ref([
     {
         name: 'Affordable Plans',
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         description: 'We offer a range of plans to fit different budgets and healthcare needs, ensuring everyone has access to quality health insurance.',
     },
     {

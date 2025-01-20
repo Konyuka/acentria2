@@ -23,7 +23,7 @@ const benefits = ref([
     },
     {
         name: 'Affordable Premiums',
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         description: 'Our last expense insurance offers affordable premiums as a Low as KES 1,500 making it accessible for individuals seeking to plan ahead without straining their budget.',
     },
     {

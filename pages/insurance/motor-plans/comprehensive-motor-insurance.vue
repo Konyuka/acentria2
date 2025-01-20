@@ -26,7 +26,7 @@ const benefits = ref([
 const considerations = ref([
     {
         name: 'Cost',
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         description: 'Comprehensive motor insurance tends to be more expensive than basic third-party liability insurance due to the broader range of coverage it offers.',
     },
     {

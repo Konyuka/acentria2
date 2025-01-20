@@ -8,7 +8,7 @@ const ReinsuranceBannerContent = ref({
 const benefits = ref([
     {
         name: 'Affordable Premiums',
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave',
         description: 'Term life insurance typically offers lower premiums compared to other types of life insurance. This makes it an attractive option for individuals seeking significant coverage at a reasonable cost.',
     },
     {

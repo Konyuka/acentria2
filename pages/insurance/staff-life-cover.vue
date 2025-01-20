@@ -90,7 +90,7 @@ const benefits3 = ref([
     },
     {
         name: 'Affordable Rates',
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         description: 'We provide competitive group rates, making it cost-effective for both employers and employees.',
     },
     {

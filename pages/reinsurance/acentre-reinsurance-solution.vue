@@ -99,7 +99,7 @@ const reinsuranceFeatures = [
         description: 'Tailored solutions to meet your specific actuarial and reinsurance needs. We work closely with you to develop customized strategies that align with your goals.'
     },
     {
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         description: 'Reduce operational costs through powerful automation and real-time data. Our cost-effective solutions help you achieve financial efficiency and sustainability.'
     },
     {

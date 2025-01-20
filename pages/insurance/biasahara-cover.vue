@@ -133,7 +133,7 @@ const benefits = ref([
     },
     {
         name: 'Budget-Friendly Premiums',
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         description: 'We provide affordable premiums, ensuring businesses of all sizes can access quality insurance solutions without financial strain.',
     },
 ]);

@@ -121,7 +121,7 @@ const whys = ref([
 const benefits = ref([
     {
         name: 'Affordable Plans',
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         description: '<p>We offer a range of plans to fit different budgets and healthcare needs.</p>',
     },
     {

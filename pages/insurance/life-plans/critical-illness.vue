@@ -8,7 +8,7 @@ const ReinsuranceBannerContent = ref({
 const benefits = ref([
     {
         name: 'Affordable Cost',
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         description: 'Pay premiums as low as Kes 1,000.',
     },
     {

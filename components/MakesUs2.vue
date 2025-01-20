@@ -388,7 +388,7 @@ const features = [
         url: '/lines-of-business',
     },
     {
-        icon: 'fas fa-dollar-sign',
+        icon: 'fas fa-money-bill-wave-sign',
         title: 'Investment',
         description: 'Protecting Your Assets, Empowering Your Future',
         url: '/acentria-group-investment',
