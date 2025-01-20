@@ -128,7 +128,7 @@ const data = ref({
             name: 'Facultative Solutions',
             content: 'Customized solutions for specific risks on both traditional lines and special lines of business.',
             icon: 'fas fa-tools',
-            link: '/reinsurance/facultative-solutions',
+            link: '/reinsurance/facultative-solution',
         },
         {
             name: 'Structured Solutions',
