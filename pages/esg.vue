@@ -14,7 +14,6 @@ const bannerContent = ref({
 
         <BannerMain :content="bannerContent" />
 
-        <div class="font-sans mx-auto max-w-7xl my-5" data-v-inspector="components/ReinsuranceWhy.vue:15:17"></div>
 
         <div class="bg-white max-w-6xl mx-auto h-full">
             <div class="container max-w-6xl mx-auto font-sans text-black mt-10">
@@ -57,17 +56,17 @@ const bannerContent = ref({
                             We recognize the importance of environmental sustainability in preserving our planet for
                             future generations. Acentria Group is dedicated to minimizing our environmental footprint
                             through initiatives such as:
-                        <span class="text-xs mx-10 text-black">
-                            <span class="font-semibold mr-2 text-2xl pb-2">.</span>
-                            Implementing energy-efficient practices in our offices and operations.
-                            <br>
-                            <span class="font-semibold mr-2 text-2xl pb-2">.</span>
-                            Promoting recycling and waste reduction programs.
-                            <br>
-                            <span class="font-semibold mr-2 text-2xl pb-2">.</span>
-                            Supporting renewable energy sources and reducing greenhouse gas emissions.
-                            <br>
-                        </span>
+                            <span class="text-xs mx-10 text-black">
+                                <span class="font-semibold mr-2 text-2xl pb-2">.</span>
+                                Implementing energy-efficient practices in our offices and operations.
+                                <br>
+                                <span class="font-semibold mr-2 text-2xl pb-2">.</span>
+                                Promoting recycling and waste reduction programs.
+                                <br>
+                                <span class="font-semibold mr-2 text-2xl pb-2">.</span>
+                                Supporting renewable energy sources and reducing greenhouse gas emissions.
+                                <br>
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -108,7 +107,7 @@ const bannerContent = ref({
                 <div class="relative p-4 lg:basis-1/2 content-center">
                     <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                        class="rounded-lg" src="/img/governance.jpg" />
+                        class="rounded-lg" src="/img/compass.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
                     <h2 class="text-xl font-semibold pb-4 leading-normal text-black">
@@ -136,42 +135,6 @@ const bannerContent = ref({
                 </div>
             </div>
 
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                <div class="relative p-4 lg:basis-1/2 content-center">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
-                        data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
-                        src="/img/economic.jpeg" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 class="text-xl font-semibold pb-4 leading-normal text-black">
-                        Economic Responsibility
-                    </h2>
-                    <div class="text-light-content pb-5 md:pb-6">
-                        <p class="text-xs leading-normal text-black mb-4">
-                            Acentria Group strives to contribute to economic development by creating value for our
-                            stakeholders, promoting responsible growth, and providing innovative solutions that support
-                            financial stability and prosperity. These are some of our initiatives:
-                            <br>
-                            <span class="font-semibold mr-2 text-2xl pb-2">.</span>
-                            Supporting small and medium-sized enterprises (SMEs) by providing tailored insurance
-                            products and financial services that promote their growth and resilience.
-                            <br>
-                            <span class="font-semibold mr-2 text-2xl pb-2">.</span>
-                            Investing in local communities by creating job opportunities and fostering economic
-                            empowerment through skills development programs.
-                            <br>
-                            <span class="font-semibold mr-2 text-2xl pb-2">.</span>
-                            Contributing to financial literacy initiatives that educate individuals and businesses on
-                            the importance of risk management and insurance in securing their future.
-                            <br>
-                            <span class="font-semibold mr-2 text-2xl pb-2">.</span>
-                            Prioritizing long-term sustainable business practices that drive profitability while
-                            ensuring positive socio-economic impacts.
-                            <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
 
         </div>
 

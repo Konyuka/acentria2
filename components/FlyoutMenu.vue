@@ -24,13 +24,11 @@
                 @mouseleave="closeFlyOver()">
 
                 <div class="relative border-b-4 border-brand-primary px-5 my-2">
-                    <!-- Background Image -->
+
                     <NuxtImg
                         src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
                         alt="" class="absolute inset-0 -z-10 h-full w-full object-fit" />
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>
-
-
 
                     <div class="h-auto w-full">
 
@@ -43,15 +41,6 @@
                                     <p class="text-[13px] leading-normal">
                                         {{ currentMainDescription }}
                                     </p>
-                                    <!-- <div class="mt-5">
-                                        <NuxtLink :to="ctaLink" class="leading-normal font-semibold flex text-black">
-                                            {{ ctaWording }}
-                                            <span class=" ml-2 h-6 w-6 rounded-full border-[1px] border-gray-400 flex
-                                                items-center justify-center">
-                                                <i class="text-[10px] fas fa-arrow-right"></i>
-                                            </span>
-                                        </NuxtLink>
-                                    </div> -->
                                 </div>
                             </div>
 
@@ -132,7 +121,7 @@
 </template>
 
 <script setup>
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
+import { Popover } from '@headlessui/vue'
 const props = defineProps({
     theMenu: Object,
 })
@@ -153,30 +142,6 @@ const currentMenuDescription = ref(null)
 const currentSubmenuItems = ref(null)
 const footerOptions = ref(null)
 const flyoverHeader = ref(null)
-
-const ctaWording = computed(() => {
-    if (currentMenu.value == 'Insurance') {
-        return 'Learn More About Insurance'
-    } else if (currentMenu.value == 'Reinsurance') {
-        return 'Learn More About Reinsurance'
-    } else if (currentMenu.value == 'Actuarial') {
-        return 'Learn More About Actuarial'
-    } else if (currentMenu.value == 'About') {
-        return 'Learn More About Our History'
-    }
-})
-
-const ctaLink = computed(() => {
-    if (currentMenu.value == 'Insurance') {
-        return '/acentria-group-insurance'
-    } else if (currentMenu.value == 'Reinsurance') {
-        return '/acentria-group-reinsurance'
-    } else if (currentMenu.value == 'Actuarial') {
-        return '/acentria-group-actuarial'
-    } else if (currentMenu.value == 'About') {
-        return '/about-us/who-we-are'
-    }
-})
 
 const currentActionMenu = ref(null)
 const currentActionMenuItems = ref(null)
@@ -264,10 +229,7 @@ const actionMenus = ref([
         ]
     }
 ])
-const setActionSubmenu = (item, index) => {
-    currentActionMenu.value = item.name
-    currentActionMenuItems.value = item.items
-}
+
 
 
 const aboutFooterMenus = ref([
@@ -1165,7 +1127,6 @@ const keepOpen = (theMenuName) => {
 const closeFlyOver = (type) => {
 
     if (type == 'Technology') {
-        // alert('hi')
         window.open('https://tech.acentriagroup.com/', '_blank');
         return;
     }
@@ -1225,24 +1186,6 @@ const setSubmenu = (menu, index) => {
     currentLinksHeading.value = menu.linksHeading
     currentSubmenuItems.value = menu.items
     selectedIndex.value = index;
-    // if (menu.name === 'Personal Cover') {
-    //     currentSubmenuItems.value = currentMenuItems.value[0].items
-    // }
 }
-
-const shouldInsertSubmenu = (index) => {
-    const isEndOfRow = (index + 1) % 5 === 0;
-    const isLastItem = index + 1 === currentMenuItems.value?.length;
-    const result = (isEndOfRow || isLastItem) && currentSubmenuItems.value?.length > 0 && selectedIndex.value <= index;
-
-    if (result) {
-        if (index <= 4 && selectedIndex.value < 4) {
-            return true
-        }
-        if (index > 4 && selectedIndex.value > 4) {
-            return true
-        }
-    }
-};
 
 </script>

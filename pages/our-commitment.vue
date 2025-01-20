@@ -65,7 +65,7 @@ const ReinsuranceBannerContent = ref({
                 <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/customers.jpg" style="color: transparent; object-fit: contain;"
+                            data-nimg="1" src="/img/data.jpg" style="color: transparent; object-fit: contain;"
                             class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
@@ -92,7 +92,7 @@ const ReinsuranceBannerContent = ref({
                 <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
                         <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/patners.jpg" style="color: transparent; object-fit: contain;"
+                            data-nimg="1" src="/img/partner.jpg" style="color: transparent; object-fit: contain;"
                             class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">

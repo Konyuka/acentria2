@@ -1,9 +1,4 @@
 <script setup>
-const isScrolled = ref(false);
-const bottomBarClass = computed(() => {
-    return isScrolled.value ? 'sticky bg-white' : 'sticky bg-white';
-});
-
 
 const currentRoute = computed(() => {
     const route = useRoute();
@@ -35,12 +30,6 @@ const toggleMenu = () => {
 const closeMenu = () => {
     openMobileMenu.value = false
 }
-
-
-let hideTimeout = null;
-
-
-const activeMenuData = ref([]);
 
 const menus = ref([
     {
@@ -75,94 +64,22 @@ const menus = ref([
     },
 ]);
 
-const showDropdown = (menu) => {
-    if (hideTimeout) {
-        clearTimeout(hideTimeout);
-    }
-    if (menu == 'insurance') {
-        isActuarialDropdownVisible.value = false;
-        isITDropdownVisible.value = false;
-        isReinsuranceDropdownVisible.value = false;
-        isAboutDropdownVisible.value = false;
-
-        isInsuranceDropdownVisible.value = true;
-    } else if (menu == 'actuarial') {
-        isInsuranceDropdownVisible.value = false;
-        isITDropdownVisible.value = false;
-        isReinsuranceDropdownVisible.value = false;
-        isAboutDropdownVisible.value = false;
-
-        isActuarialDropdownVisible.value = true;
-    } else if (menu == 'it') {
-        isInsuranceDropdownVisible.value = false;
-        isActuarialDropdownVisible.value = false;
-        isReinsuranceDropdownVisible.value = false;
-        isAboutDropdownVisible.value = false;
-
-        isITDropdownVisible.value = true;
-    } else if (menu == 'reinsurance') {
-        isInsuranceDropdownVisible.value = false;
-        isActuarialDropdownVisible.value = false;
-        isITDropdownVisible.value = false;
-        isAboutDropdownVisible.value = false;
-
-        isReinsuranceDropdownVisible.value = true;
-    } else if (menu == 'about') {
-        isInsuranceDropdownVisible.value = false;
-        isActuarialDropdownVisible.value = false;
-        isITDropdownVisible.value = false;
-        isReinsuranceDropdownVisible.value = false;
-
-        isAboutDropdownVisible.value = true;
-    }
-};
-
-const hideDropdown = (menu) => {
-    if (hideTimeout) {
-        clearTimeout(hideTimeout);
-    }
-    hideTimeout = setTimeout(() => {
-        if (menu == 'insurance') {
-            isInsuranceDropdownVisible.value = false;
-        } else if (menu == 'actuarial') {
-            isActuarialDropdownVisible.value = false;
-        } else if (menu == 'it') {
-            isITDropdownVisible.value = false;
-        } else if (menu == 'reinsurance') {
-            isReinsuranceDropdownVisible.value = false;
-        } else if (menu == 'about') {
-            isAboutDropdownVisible.value = false;
-        }
-    }, 200);
-};
-
-const handleScroll = () => {
-    isScrolled.value = window.scrollY > 100;
-};
-
 onMounted(() => {
-    window.addEventListener('scroll', handleScroll);
 
     setTimeout(() => {
         showBanner.value = false;
     }, 500);
 });
 
-onBeforeUnmount(() => {
-    window.removeEventListener('scroll', handleScroll);
-});
-
 </script>
 
 <template>
-    <div :class="bottomBarClass" class="z-50 ">
+    <div class="z-50 sticky bg-white">
 
-        <div class="relative z-50 mx-auto hidden w-full  px-2 my-3 lg:block">
+        <div class=" relative z-50 mx-auto hidden w-full  px-2 my-3 lg:block">
             <div class="font-sans px-1 mx-auto flex flex-row items-center justify-between">
 
-
                 <div class="flex flex-col font-sans mb-0 mt-1">
-
 
                     <NuxtLink to="/">
                         <NuxtImg alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
@@ -354,12 +271,9 @@ onBeforeUnmount(() => {
                         </NuxtLink>
                     </div>
 
-
                 </div>
             </div>
         </div>
-        <!-- <CovidBanner v-if="showBanner" @close="showBanner = !showBanner" /> -->
-
 
 
         <div class="flex w-full flex-row justify-between bg-white lg:hidden">
