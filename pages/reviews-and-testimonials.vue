@@ -68,36 +68,6 @@ const testimonials2 = [
     ],
 ]
 
-const products = [
-    {
-        id: 1,
-        name: 'Video 1',
-        href: '#',
-        price: '$13',
-        description: 'Ms 1',
-        imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-01-image-card-01.jpg',
-        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-    },
-    {
-        id: 2,
-        name: 'Video 2',
-        href: '#',
-        price: '$64',
-        description: 'Mr 1',
-        imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-01-image-card-02.jpg',
-        imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
-    },
-    {
-        id: 3,
-        name: 'Video 3',
-        href: '#',
-        price: '$32',
-        description: 'Ms 2',
-        imageSrc: 'https://tailwindui.com/plus/img/ecommerce-images/category-page-01-image-card-03.jpg',
-        imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
-    },
-    // More products...
-]
 </script>
 
 <template>
@@ -137,7 +107,7 @@ const products = [
                         class="space-y-8 xl:contents xl:space-y-0">
                         <div v-for="(column, columnIdx) in columnGroup" :key="columnIdx"
                             :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
-                            <figure v-for="testimonial in column" :key="testimonial.author.handle"
+                            <figure v-for="testimonial in column"
                                 class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                                 <blockquote class="text-gray-900">
                                     <p>{{ `“${testimonial.body}”` }}</p>
@@ -160,7 +130,7 @@ const products = [
                         class="space-y-8 xl:contents xl:space-y-0">
                         <div v-for="(column, columnIdx) in columnGroup" :key="columnIdx"
                             :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
-                            <figure v-for="testimonial in column" :key="testimonial.author.handle"
+                            <figure v-for="testimonial in column"
                                 class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                                 <blockquote class="text-gray-900">
                                     <p>{{ `“${testimonial.body}”` }}</p>
@@ -172,34 +142,6 @@ const products = [
 
             </div>
         </div>
-
-        <!-- <div class="bg-white">
-            <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:max-w-7xl lg:px-8">
-
-                <div class="mx-auto max-w-6xl text-center mb-5">
-                    <p class="mt-2 text-balance text-2xl font-semibold tracking-tight text-gray-900 ">
-                        Hear from our clients
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                    <a v-for="product in products" :key="product.id" :href="product.href" class="group">
-                        <div
-                            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                            <NuxtImg :src="product.imageSrc" :alt="product.imageAlt"
-                                class="h-full w-full object-cover object-center group-hover:opacity-75" />
-                        </div>
-                        <div class="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
-                            <h3>{{ product.name }}</h3>
-                            <p>
-                                <i class="fas fa-play text-2xl text-brand-primary"></i>    
-                            </p>
-                        </div>
-                        <p class="mt-1 text-sm italic text-gray-500">{{ product.description }}</p>
-                    </a>
-                </div>
-            </div>
-        </div> -->
 
     </section>
 </template> 
