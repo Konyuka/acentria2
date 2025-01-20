@@ -529,7 +529,7 @@ const openProfileModal = (product) => {
                 </p>
 
                 <div class="py-10 gap-x-6 gap-y-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 ">
-                    <button @click="openProfileModal(product)" v-for="product in specials" :key="product.id" " class="
+                    <button @click="openProfileModal(product)" v-for="product in specials" class="
                         button-animation group">
                         <div
                             class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
