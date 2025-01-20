@@ -112,23 +112,21 @@ const openProfile = (member) => {
 </script>
 
 <template>
-    <div class="container px-4 py-10">
-        <div class="text-center">
-            <h2 id="" class="heading-class text-brand-primary mb-2">
-                <span class="text-black">Management</span>
-                Team
-            </h2>
-            <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5">
-                Acentria's Management Team is responsible for executing the company's vision and aligning day-to-day
-                operations with long-term strategic goals. They play a pivotal role in fostering a culture of
-                innovation, growth, and operational excellence.
-                By effectively managing resources and prioritizing the well-being of both employees and clients, the
-                Management Team ensures Acentria’s continued success and strengthens its reputation as a trusted partner
-                in the insurance and financial industries. Their commitment to delivering exceptional customer
-                satisfaction forms the cornerstone of Acentria's ongoing growth and achievement.
-
-            </p>
-        </div>
+    <div class="container py-10">
+        <h2 class="section-heading text-brand-primary mb-2">
+            <span class="text-black">Management</span>
+            Team
+        </h2>
+        <p class="content mb-5">
+            Acentria's Management Team is responsible for executing the company's vision and aligning day-to-day
+            operations with long-term strategic goals. They play a pivotal role in fostering a culture of
+            innovation, growth, and operational excellence.
+            By effectively managing resources and prioritizing the well-being of both employees and clients, the
+            Management Team ensures Acentria’s continued success and strengthens its reputation as a trusted partner
+            in the insurance and financial industries. Their commitment to delivering exceptional customer
+            satisfaction forms the cornerstone of Acentria's ongoing growth and achievement.
+        </p>
+       
         <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-5">
             <div v-for="member in teams" @click="openProfile(member)" class="flex shadow-xl button-animation">
                 <div class="w-full cursor-pointer rounded-xl bg-white">
@@ -136,13 +134,13 @@ const openProfile = (member) => {
                         class="p-5 min-h-[150px] w-full rounded-t-xl object-cover md:min-h-[200px]"
                         style="color: transparent" :src="member.image" />
                     <div class="font-sans flex max-h-[200px] flex-col items-center p-4">
-                        <span class="text-md font-bold text-light-title">
+                        <span class="card-heading">
                             {{ member.name }}
                         </span>
-                        <span class="mb-4 flex-grow text-sm text-light-content">
+                        <span class="mb-5 content">
                             {{ member.title }}
                         </span>
-                        <span class="font-bold text-brand-primary">
+                        <span class="small-text font-bold text-brand-primary">
                             Read Bio
                         </span>
                     </div>

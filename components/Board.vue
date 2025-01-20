@@ -67,38 +67,35 @@ const openProfile = (member) => {
 </script>
 
 <template>
-    <div class="container px-4 py-10">
-        <div class="text-center">
-            <h2 id="" class="heading-class text-brand-primary mb-2">
-                <span class="text-black">Acentria's Board</span>
-                of Directors
-            </h2>
-            <p class="text-xs leading-normal font-regular text-light-content !text-inherit mb-4 font-sans mb-5"
-                data-v-inspector="components/Why.vue:47:21">
-                Acentria’s Board of Directors is composed of highly experienced and accomplished professionals, all
-                committed to guiding the company toward sustainable growth and long-term success. The board oversees
-                strategic decisions, risk management, and corporate governance, ensuring Acentria consistently meets
-                client needs while upholding the highest standards of service and ethical conduct.
-                With strong leadership and a focus on fostering innovation, the board plays a critical role in shaping
-                the company’s vision and driving its continued success.
-
-            </p>
-        </div>
+    <div class="container py-10">
+        <h2 id="" class="section-heading text-brand-primary mb-2">
+            <span class="text-black">Acentria's Board</span>
+            of Directors
+        </h2>
+        <p class="content mb-5">
+            Acentria’s Board of Directors is composed of highly experienced and accomplished professionals, all
+            committed to guiding the company toward sustainable growth and long-term success. The board oversees
+            strategic decisions, risk management, and corporate governance, ensuring Acentria consistently meets
+            client needs while upholding the highest standards of service and ethical conduct.
+            With strong leadership and a focus on fostering innovation, the board plays a critical role in shaping
+            the company’s vision and driving its continued success.
+        </p>
+       
         <div class="container mx-auto grid grid-cols-1 gap-5 text-center md:grid-cols-3 lg:grid-cols-4">
 
             <div v-for="member in teams" @click="openProfile(member)" class="flex shadow-xl button-animation">
                 <div class="w-full cursor-pointer rounded-xl bg-white">
-                    <NuxtImg alt="Brian Stafford" loading="lazy" width="400" height="400" decoding="async" data-nimg="1"
+                    <NuxtImg :alt="member.name" loading="lazy" width="400" height="400" decoding="async" data-nimg="1"
                         class="p-5 min-h-[150px] w-full rounded-t-xl object-cover md:min-h-[200px]"
                         style="color: transparent" :src="member.image" />
                     <div class="font-sans flex max-h-[200px] flex-col items-center p-4">
-                        <span class="text-md font-bold text-light-title">
+                        <span class="card-heading">
                             {{ member.name }}
                         </span>
-                        <span class="mb-4 flex-grow text-sm text-light-content">
+                        <span class="mb-5 flex-grow content">
                             {{ member.title }}
                         </span>
-                        <span class="font-bold text-brand-primary">
+                        <span class="small-text font-bold text-brand-primary">
                             Read Bio
                         </span>
                     </div>

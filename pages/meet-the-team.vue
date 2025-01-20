@@ -81,6 +81,35 @@ const corporateGovernancePhilosophy = ref({
     content: 'Our business strategy is powered by our strong commitment to good governance, which goes beyond compliance and statutory norms. We believe that purpose-led corporate governance and ethics-led corporate behaviour are essential to our success. <br><br> Our business strategy is pillared around the twin approach of being structured as a group of entities, each with its own individual management and systems, while also concurrently functioning as a single unit oriented towards our collective purpose. <br><br> We draw from the insights and expertise of our illustrious and proficient directors and are able to continuously predict and proactively manage our opportunities and risks to protect and enhance our business value.'
 });
 
+const boardGovernance = ref({
+    orientation: 'image-right',
+    heading: 'Board <span class="text-brand-primary">Governance</span>',
+    subheading: '',
+    image: '/img/Governance Board governance.jpg',
+    link: '/',
+    content: `As we grow, we continue to elevate our governance practices, encompassing groundbreaking ESG commitments, best-in-class disclosures, Board independence, diversity and inclusion, alignment with globally accepted norms, and a focus on technology-driven, digitally enabled operations.
+    <br><br>
+    Our Board ensures the implementation of the company&#39;s strategic objectives, guiding management to fulfill commitments made to stakeholders while upholding ethical business practices and promoting responsible growth.`
+});
+
+const esgGovernance = ref({
+    orientation: 'image-left',
+    heading: 'ESG <span class="text-brand-primary">Governance</span>',
+    subheading: '',
+    image: '/img/ESG GOVERNANCE.jpg',
+    link: '/',
+    content: `As part of our strong and sustained commitment to ESG, we have implemented a uniform ESG governance structure across the organization. The ESG Committee, together with our Group Sustainability and ESG function, is mandated with the responsibility to drive positive, sustainable change that benefits businesses, communities, and the world at large.
+    <br><br>
+    We have also established dedicated forums for regular management and oversight at all levels. In conducting its business, the Board is supported by:
+    <br><br>
+    <span>
+        • Established Committees <br>
+        • Risk Management Framework <br>
+        • Acentria Group Sustainability Framework <br>
+        • Code of Business Conduct and Ethics, and various other policies and practices adopted by the Group
+    </span>`
+});
+
 
 onMounted(() => {
     const targetSection = localStorage.getItem('targetSection');
@@ -203,72 +232,11 @@ onMounted(() => {
                         </div>
                     </div>
 
+                    <ContentPic :content="boardGovernance" />
+                    <ContentPic :content="esgGovernance" />
+
                 </div>
             </div>
-
-            <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
-                <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="400" height="200" decoding="async"
-                        data-nimg="1"
-                        src="https://images.pexels.com/photos/17184739/pexels-photo-17184739/free-photo-of-compass-on-the-background-of-the-map-travel-concept-route-planning-find-your-direction-in-life.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 id="" class="heading-class pb-4 ">
-                        Board <span class="text-brand-primary">Governance</span>
-                    </h2>
-                    <div class="text-light-content pb-5 ">
-                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                            As we grow, we continue to elevate our governance practices, encompassing groundbreaking ESG
-                            commitments, best-in-class disclosures, Board independence, diversity and inclusion,
-                            alignment with
-                            globally accepted norms, and a focus on technology-driven, digitally enabled operations.
-
-                            Our Board ensures the implementation of the company&#39;s strategic objectives, guiding
-                            management to
-                            fulfill commitments made to stakeholders while upholding ethical business practices and
-                            promoting
-                            responsible growth.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col py-2 lg:gap-16">
-                <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="400" decoding="async"
-                        data-nimg="1"
-                        src="https://images.pexels.com/photos/1578750/pexels-photo-1578750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        style="color: transparent; object-fit: contain;" class="rounded-lg" />
-                </div>
-                <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 id="" class="heading-class pb-4 ">
-                        ESG <span class="text-brand-primary">Governance</span>
-                    </h2>
-                    <div class="text-light-content pb-5 ">
-                        <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                            As part of our strong and sustained commitment to ESG, we have implemented a uniform ESG
-                            governance structure across the organization. The ESG Committee, together with our Group
-                            Sustainability and ESG function, is mandated with the responsibility to drive positive,
-                            sustainable change that benefits businesses, communities, and the world at large.
-                            <br>
-                            We have
-                            also established
-                            dedicated forums for regular management and oversight at all levels.
-                            In conducting its business, the Board is supported by:
-                            <br><br>
-                            <span>
-                                • Established Committees <br>
-                                • Risk Management Framework <br>
-                                • Acentria Group Sustainability Framework <br>
-                                • Code of Business Conduct and Ethics, and various other policies and practices adopted
-                                by the Group
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
 
