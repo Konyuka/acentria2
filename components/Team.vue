@@ -25,7 +25,7 @@ const teams = ref([
         email: "chitaw@acentriagroup.com",
         profile:"Winnie Chitai is a visionary financial leader, known for her strategic acumen in steering financial management firms towards success. With over seven years of diverse experience, she excels in managing financing, investment, and liquidity decisions, ensuring sound fiscal governance to drive organizational growth. Her expertise spans various industries, including financial services, stock brokerage, hospitality, non-profit entities, manufacturing, and agriculture. Winnie has also played a key role in capital expenditure monitoring, tax planning initiatives, and contributing to board-level decision-making. Armed with a Bachelor of Commerce Degree in Finance and Accounting from Strathmore University, Winnie is a Certified Public Accountant of Kenya (CPA-K). She is currently pursuing an MBA in Strategic Management and Finance at Daystar University and is a published academic author in her field. As a dedicated member of the Institute of Certified Public Accountants of Kenya (ICPAK), she combines academic excellence with practical expertise to lead with impact. Winnie’s multifaceted background positions her as a trailblazer in financial leadership, continually driving success and growth for the organizations she serves. Her commitment to excellence, strategic insight, and unwavering dedication make her a standout professional in financial management services.",
         image:
-            "https://old.acentriagroup.com/wp-content/uploads/2024/02/winnie-1.jpg",
+            "/img/winnie.png",
     },
     {
         name: "Maureen Wakini",
