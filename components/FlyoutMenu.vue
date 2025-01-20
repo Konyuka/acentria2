@@ -1052,7 +1052,7 @@ const openFlyover = (menu, type) => {
         if (type == 'hover') {
             return;
         } else {
-            window.open('https://acentria-tech.vercel.app/', '_blank');
+            window.open('https://tech.acentriagroup.com/', '_blank');
             return;
         }
     }
@@ -1166,7 +1166,7 @@ const closeFlyOver = (type) => {
 
     if (type == 'Technology') {
         // alert('hi')
-        window.open('https://acentria-tech.vercel.app/', '_blank');
+        window.open('https://https://tech.acentriagroup.com/', '_blank');
         return;
     }
 
