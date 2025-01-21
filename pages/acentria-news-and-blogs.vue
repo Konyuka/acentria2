@@ -12,7 +12,7 @@ const formatDate = (date) => {
 const bannerContent = ref({
     subtitle: 'News & Updates',
     title: 'Acentria\'s Newsroom',
-    image: 'img/maureen2.jpg'
+    image: 'img/NEWS MAIN PAGE.jpg UPDATED.jpg'
 })
 
 const getUrl = (title, id) => {

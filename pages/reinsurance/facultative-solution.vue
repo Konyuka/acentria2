@@ -101,7 +101,7 @@ const specials = ref([
             '• Product Recall',
             '• Environmental Liability'
         ],
-        img: 'https://img.freepik.com/free-photo/image-auto-accident-involving-two-cars_613910-929.jpg?t=st=1737372737~exp=1737376337~hmac=bba0d55ea366d127ae993dad3011abe09021a4961a330cd5289a266aa3253489&w=900',
+        img: '/img/REINSURANCE FACULTATIVE casuality & Liability.jpg',
         description: 'Casualty and liability insurance provides essential protection for businesses against third-party claims arising from injuries, property damage, or legal liabilities. This class of insurance covers a wide range of exposures, including general liability, employer’s liability, product liability, professional liability, and environmental liability.'
     },
     {
@@ -129,7 +129,7 @@ const specials = ref([
             '• Group Credit & Mortgage',
             '• Keyman Insurance'
         ],
-        img: 'https://images.pexels.com/photos/208189/pexels-photo-208189.jpeg?auto=compress&cs=tinysrgb&w=600',
+        img: '/img/REINSURANCE FACULTATIVE LIFE.jpg',
         description: 'Life insurance plays a pivotal role in providing financial security and peace of mind to individuals and families. As a reinsurance broker, we specialize in supporting life insurers by designing reinsurance solutions that help them manage risks, improve capital efficiency, and ensure long-term sustainability. From traditional life insurance to innovative products like critical illness and annuities, our tailored programs address the evolving needs of the life insurance market.'
     }
 ]);
