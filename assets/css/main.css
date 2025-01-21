@@ -39,7 +39,7 @@
 }
 
 .content{
-  @apply tracking-normal text-[16px] text-black !font-sans 
+  @apply tracking-normal text-[14px] text-black !font-sans 
 }
 .content{
   font-family: "Lato", serif !important;

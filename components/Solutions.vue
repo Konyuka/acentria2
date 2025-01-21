@@ -30,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div>
+    <div class="">
         <div class="grid grid-cols-3 gap-10 mb-5">
             <div>
                 <div class="grid md:grid-cols-1 gap-4 mb-5">
