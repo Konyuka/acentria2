@@ -698,11 +698,11 @@ const ReinsuranceMenus = ref([
         description: 'Explore our comprehensive reinsurance services for risk management.',
         icon: 'fas fa-sync-alt',
         items: [
-            {
-                name: 'Market Insights & Negotiation',
-                description: 'Advising on emerging market trends, regulatory environments, and pricing to optimize placements and financing terms.',
-                link: '/reinsurance/market-insights',
-            },
+            // {
+            //     name: 'Market Insights & Negotiation',
+            //     description: 'Advising on emerging market trends, regulatory environments, and pricing to optimize placements and financing terms.',
+            //     link: '/reinsurance/market-insights',
+            // },
             {
                 name: 'Financial Planning & Structuring',
                 description: 'Crafting strategies that balance liquidity, solvency, and growth targets, ensuring optimal capital allocation.',
