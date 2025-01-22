@@ -48,28 +48,29 @@ const commitments = ref([
   {
     name: 'Our <span class="text-brand-primary ml-2"> Customers</span>',
     icon: 'fas fa-users',
-    description: 'We\'re committed to helping live a life that\'s as healthy and as full as possible.',
+    description: 'At Acentria, we prioritize our customers by delivering innovative and tailored solutions that safeguard their interests and empower their success.',
     link: '/our-commitment'
   },
   {
     name: 'Our <span class="text-brand-primary ml-2"> Partners</span>',
     icon: 'fas fa-handshake',
-    description: 'Our partnerships with advisers, super funds and employer funds help us protect more people.',
+    description: 'We foster strong partnerships to create value, drive growth, and collaborate on delivering exceptional services that benefit all stakeholders.',
     link: '/our-commitment'
   },
   {
     name: 'Our <span class="text-brand-primary ml-2"> People</span>',
     icon: 'fas fa-user-friends',
-    description: 'We\'ve built a culture that lets our people make the most of every opportunity.',
+    description: 'Acentria is committed to nurturing a thriving workplace where our people can grow, innovate, and achieve excellence in their professional journeys.',
     link: '/our-commitment'
   },
   {
     name: 'Our <span class="text-brand-primary ml-2"> Communities</span>',
     icon: 'fas fa-globe',
-    description: 'Improving lives through active involvement and raising standards for the industry as a whole.',
+    description: 'We are dedicated to enriching communities by supporting initiatives that promote sustainability, education, and social well-being.',
     link: '/our-commitment'
   },
-])
+]);
+
 
 const others = ref([
   {
