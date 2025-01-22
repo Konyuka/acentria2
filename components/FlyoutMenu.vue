@@ -999,7 +999,7 @@ const openFlyover = (menu, type) => {
         if (type == 'hover') {
             return;
         } else {
-            window.open('https://technologies.acentriagroup.com/', '_blank');
+            window.open('https://tech.acentriagroup.com/', '_blank');
             return;
         }
     }
@@ -1112,7 +1112,7 @@ const keepOpen = (theMenuName) => {
 const closeFlyOver = (type) => {
 
     if (type == 'Technology') {
-        window.open('https://technologies.acentriagroup.com/', '_blank');
+        window.open('https://tech.acentriagroup.com/', '_blank');
         return;
     }
 

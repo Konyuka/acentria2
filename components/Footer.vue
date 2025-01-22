@@ -301,7 +301,7 @@ const showDropdown = (menu) => {
                     </div>
                     <div class="flex flex-col items-center gap-y-2 md:flex-row md:gap-x-2 md:gap-y-0">
                         <div class="content text-white">
-                            Developed by <a href="https://technologies.acentriagroup.com" target="_blank"
+                            Developed by <a href="https://tech.acentriagroup.com" target="_blank"
                                 class="underline button-animation">Acentria Technologies</a>
                         </div>
                     </div>

@@ -365,7 +365,7 @@ onMounted(() => {
                         </NuxtLink>
                     </div>
                     <div class="border-b border-brand-divider">
-                        <a href="https://technologies.acentriagroup.com/" target="_blank"
+                        <a href="https://tech.acentriagroup.com/" target="_blank"
                             class="flex flex-row justify-between py-3">
                             <div class="text-base font-semibold text-light-title">
                                 Technologies
