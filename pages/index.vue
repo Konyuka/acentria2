@@ -141,7 +141,8 @@ onMounted(() => {
           </h4>
         </div>
       </div>
-      <div class="!overflow-x-hidden !font-sans bg-white py-5">
+
+      <div class="!overflow-x-hidden !font-sans bg-black py-5">
         <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1">
           <Slide v-for="(chunk, cIndex) in chunkedBlogs" :key="cIndex" class="relative">
             <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
