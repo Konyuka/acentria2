@@ -2,7 +2,7 @@
 const bannerContent = ref({
     subtitle: 'What out customers are saying',
     title: 'Reviews and Testimonials',
-    image: 'https://media.istockphoto.com/id/1447969085/photo/business-people-using-smartphone-and-pressing-review-popup-on-visual-screen-customer-review.jpg?s=1024x1024&w=is&k=20&c=Ghbm-TAZNrQbBoo3BBqrRbBuhvQc9bnHV3wuetp-MgM='
+    image: 'https://img.freepik.com/free-photo/group-happy-workmates-showing-thumbs-up_1098-1817.jpg?t=st=1737721220~exp=1737724820~hmac=5fc2249638b599a3191d6a34c00b953aa638657b1233d279c2e6629c5d0c0493&w=900'
 })
 
 const featuredTestimonial = {
