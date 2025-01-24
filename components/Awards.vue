@@ -67,7 +67,7 @@ const awards = ref([
 
                     <template #addons>
                         <Navigation />
-                        <Pagination />
+                        <!-- <Pagination /> -->
                     </template>
                 </Carousel>
 
