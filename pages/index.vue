@@ -175,7 +175,7 @@ onMounted(() => {
 
           <template #addons>
             <Pagination />
-            <Navigation class="text-black px-10" />
+            <Navigation class="text-black -px-40" />
           </template>
         </Carousel>
       </div>

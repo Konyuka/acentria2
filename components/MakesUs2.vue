@@ -515,7 +515,7 @@ const openProfileModal = (product) => {
                     efficiently and effectively.
                 </p>
 
-                <Carousel :items-to-show="3" :wrap-around="true" :transition="500" class="py-10">
+                <Carousel :items-to-show="3" :wrap-around="true" :transition="500" :autoplay="2000" class="py-10">
                     <Slide v-for="product in specials" :key="product.id">
                         <div class="carousel__item">
                             <button @click="openProfileModal(product)" class="button-animation group w-full">
@@ -535,16 +535,12 @@ const openProfileModal = (product) => {
                     </Slide>
 
                     <template #addons>
-                        <!-- <Navigation /> -->
+                        <!-- <Navigation class="text-black px-10" /> -->
                         <Pagination />
                     </template>
                 </Carousel>
 
-
-
-
-
-                <div class="py-10 gap-x-6 gap-y-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 ">
+                <!-- <div class="py-10 gap-x-6 gap-y-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 ">
                     <button @click="openProfileModal(product)" v-for="product in specials" class="
                         button-animation group">
                         <div
@@ -559,7 +555,7 @@ const openProfileModal = (product) => {
                             </p>
                         </div>
                     </button>
-                </div>
+                </div> -->
 
                 <div v-if="profileModal" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"
                     aria-modal="true">
