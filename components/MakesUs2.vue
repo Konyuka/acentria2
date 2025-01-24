@@ -1,4 +1,7 @@
 <script setup>
+import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
+
 const incentives = [
     {
         name: 'Who we are',
@@ -326,7 +329,6 @@ const specials = ref([
     },
 ]);
 
-
 const whys = ref([
     {
         name: 'We create innovative, future-ready solutions that stay ahead of industry trends.',
@@ -453,13 +455,6 @@ const openProfileModal = (product) => {
                 </div>
             </div>
 
-            <!-- <div class="py-5">
-                <h1 class="section-heading leading-relaxed text-gray-500">
-                    “At Acentria, we reject the notion that ‘better’ is enough. We go beyond conventional thinking to
-                    deliver the smartest and most effective solutions possible.”
-                </h1>
-            </div> -->
-
             <div class="py-5">
                 <div class="font-sans grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-3">
                     <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
@@ -479,13 +474,6 @@ const openProfileModal = (product) => {
                     </NuxtLink>
                 </div>
             </div>
-
-            <!-- <div class="mb-24 bottom-0 max-w-7xl mx-auto !py-auto">
-                <h2 class="section-heading">
-                    “SMART people, SMART solutions, <br> SMART technology, SMART organization, SMART clients“
-                </h2>
-
-            </div> -->
 
             <div class="py-5">
                 <h2 class=" section-heading pb-3">
@@ -526,6 +514,35 @@ const openProfileModal = (product) => {
                     a deep understanding of industry challenges to help our clients achieve their goals
                     efficiently and effectively.
                 </p>
+
+                <Carousel :items-to-show="3" :wrap-around="true" :transition="500" class="py-10">
+                    <Slide v-for="product in specials" :key="product.id">
+                        <div class="carousel__item">
+                            <button @click="openProfileModal(product)" class="button-animation group w-full">
+                                <div
+                                    class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
+                                    <NuxtImg :src="product.img" :alt="product.name"
+                                        class="h-full w-full object-cover object-center group-hover:opacity-75" />
+                                </div>
+                                <div class="flex flex-col items-center justify-between mt-4">
+                                    <h4 class="card-heading pb-1">{{ product.name }}</h4>
+                                    <p class="small-text italic">
+                                        Learn More <i class="ml-2 fas fa-arrow-right text-brand-primary"></i>
+                                    </p>
+                                </div>
+                            </button>
+                        </div>
+                    </Slide>
+
+                    <template #addons>
+                        <!-- <Navigation /> -->
+                        <Pagination />
+                    </template>
+                </Carousel>
+
+
+
+
 
                 <div class="py-10 gap-x-6 gap-y-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 ">
                     <button @click="openProfileModal(product)" v-for="product in specials" class="
@@ -650,4 +667,51 @@ const openProfileModal = (product) => {
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.carousel__item {
+    min-height: 200px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.carousel__slide {
+    padding: 10px;
+}
+
+.carousel__viewport {
+    perspective: 2000px;
+}
+
+.carousel__track {
+    transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+    transition: 0.5s;
+}
+
+.carousel__slide {
+    opacity: 0.9;
+    transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active~.carousel__slide {
+    transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+    opacity: 1;
+    transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--next {
+    opacity: 1;
+    transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+    opacity: 1;
+    transform: rotateY(0) scale(1.1);
+}
+</style>
