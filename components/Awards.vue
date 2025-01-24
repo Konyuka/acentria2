@@ -1,4 +1,7 @@
 <script setup>
+import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
+
 const awards = ref([
     {
         name: '<span class="text-black">2021 | </span> Sanlam Awards',
@@ -45,7 +48,30 @@ const awards = ref([
                     & Recognitions
                 </h1>
 
-                <div class="py-5 gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <Carousel :items-to-show="3" :wrap-around="true" :transition="500" :autoplay="2000" class="">
+                    <Slide v-for="product in awards" :key="product.id">
+                        <div class="carousel__item px-2 py-5">
+                            <button class="group w-full">
+                                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg">
+                                    <NuxtImg :src="product.img" :alt="product.name"
+                                        class="h-full w-full object-contain object-center group-hover:opacity-75" />
+                                </div>
+                                <div class="flex flex-col items-center justify-between pt-3">
+                                    <h4 class="content !font-bold pb-2 text-left !text-brand-primary"
+                                        v-html="product.name"></h4>
+                                    <p class="small-text text-left" v-html="product.name"></p>
+                                </div>
+                            </button>
+                        </div>
+                    </Slide>
+
+                    <template #addons>
+                        <Navigation />
+                        <Pagination />
+                    </template>
+                </Carousel>
+
+                <!-- <div class="py-5 gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     <button v-for="product in awards" class="group">
                         <div
                             class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1">
@@ -53,14 +79,68 @@ const awards = ref([
                                 class="h-full w-full object-contain object-center group-hover:opacity-75" />
                         </div>
                         <div class="flex flex-col items-center justify-between pt-3">
-                            <h4 class="content !font-bold pb-2 text-left !text-brand-primary" v-html="product.name"></h4>
+                            <h4 class="content !font-bold pb-2 text-left !text-brand-primary" v-html="product.name">
+                            </h4>
                             <p class="small-text text-left" v-html="product.name"></p>
                         </div>
                     </button>
-                </div>
+                </div> -->
+
             </div>
         </section>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.carousel__item {
+    min-height: 200px;
+    width: 100%;
+}
+
+.carousel__slide {
+    padding: 10px;
+}
+
+.carousel__viewport {
+    perspective: 2000px;
+}
+
+.carousel__track {
+    transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+    transition: 0.5s;
+}
+
+.carousel__slide {
+    opacity: 0.9;
+    transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active~.carousel__slide {
+    transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+    opacity: 1;
+    transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--next {
+    opacity: 1;
+    transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+    opacity: 1;
+    transform: rotateY(0) scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel {
+        --carousel-item-width: 80%;
+    }
+}
+</style>
