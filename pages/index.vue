@@ -179,6 +179,7 @@ onMounted(() => {
           </template>
         </Carousel>
       </div>
+
       <div class="container relative py-5">
         <h1 class="section-heading text-white text-left">
           Our <span class="text-brand-primary">Commitments</span>
@@ -201,6 +202,7 @@ onMounted(() => {
       </div>
       <Stats />
       <Testimonials />
+      
       <div class=" bg-white w-screen pt-10 pb-5">
         <div class="relative">
 

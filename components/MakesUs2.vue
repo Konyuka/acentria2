@@ -535,27 +535,9 @@ const openProfileModal = (product) => {
                     </Slide>
 
                     <template #addons>
-                        <!-- <Navigation class="text-black px-10" /> -->
                         <Pagination />
                     </template>
                 </Carousel>
-
-                <!-- <div class="py-10 gap-x-6 gap-y-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 ">
-                    <button @click="openProfileModal(product)" v-for="product in specials" class="
-                        button-animation group">
-                        <div
-                            class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                            <NuxtImg :src="product.img" :alt="product.img"
-                                class="h-full w-full object-cover object-center group-hover:opacity-75" />
-                        </div>
-                        <div class="flex flex-col items-center justify-between">
-                            <h4 class="card-heading pb-1">{{ product.name }}</h4>
-                            <p class="small-text italic"> Learn More <i
-                                    class="ml-2 fas fa-arrow-right text-brand-primary"></i>
-                            </p>
-                        </div>
-                    </button>
-                </div> -->
 
                 <div v-if="profileModal" class="relative z-50" aria-labelledby="slide-over-title" role="dialog"
                     aria-modal="true">
@@ -659,6 +641,7 @@ const openProfileModal = (product) => {
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </template>
