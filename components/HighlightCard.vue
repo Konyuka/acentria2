@@ -5,25 +5,22 @@ const props = defineProps({
 </script>
 
 <template>
-    <NuxtLink :to="item.link" class="card button-animation !z-10">
-        <div class="bg p-2">
-
-            <dt class="card-heading">
-                <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-black">
-                    <i :class="item.icon" class="text-white" aria-hidden="true"></i>
-                </div>
-                {{ item.title }}
-            </dt>
-            <dd class="mt-1 flex flex-auto flex-col">
-                <p class="flex-auto content">{{ item.description }}</p>
-                <p
-                    class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary">
-                    Learn more <span aria-hidden="true">→</span>
-                </p>
-            </dd>
-        </div>
-        <div class="blob"></div>
-    </NuxtLink>
+   <NuxtLink :to="item.link" class="card h-full button-animation !z-10">
+    <div class="bg p-2 w-full ">
+        <dt class="card-heading">
+            <img :src="item.img" alt="Icon" class="h-[150px] w-full object-cover rounded-lg" />
+            {{ item.title }}
+        </dt>
+        <dd class="mt-1 flex flex-col">
+            <p class="flex-auto content">{{ item.description }}</p>
+            <p
+                class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary">
+                Learn more <span aria-hidden="true">→</span>
+            </p>
+        </dd>
+    </div>
+    <div class="blob"></div>
+</NuxtLink>
 
 </template>
 
@@ -31,7 +28,7 @@ const props = defineProps({
 .card {
     position: relative;
     width: 200px;
-    height: 180px;
+    height: 280px;
     border-radius: 14px;
     z-index: 1111;
     overflow: hidden;
@@ -48,7 +45,7 @@ const props = defineProps({
     top: 5px;
     left: 5px;
     width: 190px;
-    height: 240px;
+    height: 340px;
     z-index: 2;
     background: rgba(255, 255, 255, .95);
     backdrop-filter: blur(24px);

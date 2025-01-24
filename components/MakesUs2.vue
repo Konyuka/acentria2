@@ -364,37 +364,36 @@ const whys = ref([
 
 const features = [
     {
-        icon: 'fas fa-shield-alt',
+        img: '/img/rope-gray.jpeg',
         title: 'Insurance',
         description: 'Mitigating Risks, Maximizing Opportunities',
         url: '/acentria-group-insurance',
     },
     {
-        icon: 'fas fa-shield-virus',
+        img: '/img/reinsure.jpeg',
         title: 'Reinsurance',
         description: 'Protecting Your Assets, Empowering Your Future',
         url: '/acentria-group-reinsurance',
     },
     {
-        icon: 'fas fa-calculator',
+        img: '/img/ACTUARIAL- MAIN PAGE.jpg',
         title: 'Actuarial',
         description: 'Empowering Decisions, Simplifying Complexity',
         url: '/acentria-group-actuarial',
     },
     {
-        icon: 'fas fa-laptop-code',
+        img: '/img/industry-tech.jpg',
         title: 'Technology',
         description: 'Building prosperity, Securing Futures',
         url: '/lines-of-business',
     },
     {
-        icon: 'fas fa-money-bill-wave',
+        img: '/img/iStock-483918009.jpg',
         title: 'Investment',
         description: 'Protecting Your Assets, Empowering Your Future',
         url: '/acentria-group-investment',
     },
-
-]
+];
 
 const profileModal = ref(false);
 const currentIndustry = ref(null);
