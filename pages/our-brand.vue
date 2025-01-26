@@ -121,23 +121,24 @@ const bannerContent = ref({
                 <h2 id="" class="heading-class">
                     Our Brand <span class="text-brand-primary">Promise</span>
                 </h2>
-                <h5 class="text-brand-primary text-lg font-semibold pb-2">
+                <!-- <h5 class="text-brand-primary text-lg font-semibold pb-2">
                     Done Smart
-                </h5>
+                </h5> -->
                 <div class="text-light-content pb-5 md:pb-6">
                     <p class="text-xs leading-normal font-regular text-light-content pb-4 !text-inherit">
-                        At Acentria, our brand promise is simple yet powerful: "Done Smart." Every strategy, every
-                        service, and every solution we deliver is designed with intelligence and innovation in mind. We
-                        commit to providing our clients with the smartest solutions, empowering them to thrive in an
-                        ever-evolving world. Our promise reflects the precision, thoughtfulness, and expertise we bring
-                        to every project.
-                        At Acentria, we don’t settle for the status quo. Our approach goes beyond traditional methods.
-                        We lead by embracing fresh ideas, challenging norms, and applying cutting-edge strategies. With
-                        a focus on innovation and creativity, we empower our teams to think smarter, collaborate more
-                        effectively, and deliver exceptional results. It’s not just about being good; it’s about being
-                        intelligent in every decision and every step we take. Through forward-thinking leadership, we
-                        stay ahead of the curve and set new standards for excellence.
+                        At Acentria, our brand promise is "Done Smart." Every solution we deliver is designed with
+                        intelligence and innovation, empowering our clients to thrive in a rapidly changing world. We go
+                        beyond the status quo, embracing fresh ideas, challenging norms, and applying cutting-edge
+                        strategies. Through smart thinking, collaboration, and forward-looking leadership, we deliver
+                        exceptional results while setting new standards for excellence.
                     </p>
+                    <h2 class="card-heading mt-2">
+                        We communicate transformative
+                        insights, demonstrating how
+                        intelligence, innovation, and
+                        implementation converge into
+                        truly “smart” solutions.
+                    </h2>
                 </div>
                 <h2 id="" class="heading-class">
                     We are Acentria <br> <span class="text-brand-primary">We Ensure Smart Solutions.</span>
