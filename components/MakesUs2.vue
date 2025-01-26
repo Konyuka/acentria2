@@ -405,6 +405,15 @@ const openProfileModal = (product) => {
     profileModal.value = true
 }
 
+const introContent = ref({
+    orientation: 'image-left',
+    heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
+    subheading: 'A Reliable Partner <span class="text-brand-primary">  You Can Trust</span>',
+    image: '/img/lady-shake.jpg',
+    link: '/',
+    content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
+})
+
 </script>
 
 <template>
@@ -412,66 +421,39 @@ const openProfileModal = (product) => {
 
         <div class="container">
 
-            <div class="grid grid-cols-12 gap-2 py-5">
-                <div class="col-span-3 container max-w-6xl mx-auto justify-between content-center">
-
-                    <h1 class="section-heading">
-                        About
-                    </h1>
-                    <h1 class="text-[10rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
-                        style="background-image: url('/img/sun-tornado.png');">
-                        <div class="-ml-3">
-                            US
-                        </div>
-                    </h1>
+            <div class="grid grid-cols-12 gap-10 py-10">
+                <div class="col-span-5 relative flex items-center">
+                    <NuxtImg alt="content" loading="lazy" decoding="async"
+                        class="w-full h-auto shadow-2xl rounded-lg !object-cover"
+                        src="/img/comitment to our partners.jpg" />
                 </div>
-
-                <div class="col-span-9 relative">
-                    <h2 class="section-heading pb-3">
-                        Acentria <span class="text-brand-primary"> Group</span>
-                    </h2>
-                    <p>
-                        We drive the future for our partners through expertise and innovative solutions, empowering
-                        the
-                        visions of our clients and the communities we serve. By fostering innovation, we deliver the
-                        best
-                        strategies to enhance prosperity and success.
-                        <br><br>
-                        Our mission is to continuously seek better ways to manage risks and guide effective pathways
-                        toward
-                        achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our
-                        clients,
-                        our
-                        company, our colleagues, and the communities we proudly serve.
-                    </p>
-
-
-                    <div class="py-5">
-                        <NuxtLink to="/about-us/who-we-are">
-                            <AppButton :title="'Learn More'" />
-                        </NuxtLink>
+                <div class="col-span-7 flex flex-col justify-center">
+                    <div class="pb-3">
+                        <h1 class="section-heading">
+                            Shaping the future for our partners
+                            through expertise & innovative solutions
+                            <span class="text-brand-primary">
+                                by fostering innovation, that drive
+                                prosperity and ensure success.
+                            </span>
+                        </h1>
+                        <h4 class="card-heading pt-5">
+                            Let us help you navigate the
+                            complexities of today’s world and
+                            unlock your true potential.
+                        </h4>
                     </div>
+                    <div>
+                        <!-- <p class="content !font-sans pb-5">
+                            Let us help you navigate the
+                            complexities of today’s world and
+                            unlock your true potential.
+                        </p> -->
+                        <NuxtLink to="/about-us/who-we-are">
+                            <AppButton title="Learn More" />
+                        </NuxtLink>
 
-                </div>
-            </div>
-
-            <div class="py-5">
-                <div class="font-sans grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-3">
-                    <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
-                        :key="incentive.name"
-                        class="shadow-2xl !button-animation relative flex flex-row gap-1 border-2 border-black/10 py-5 px-5 rounded-lg">
-                        <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
-                        <div class="relative">
-                            <div class="flex justify-between w-full">
-                                <h5 v-html="incentive.name" class="card-heading pb-1">
-                                </h5>
-                            </div>
-                            <p class="content">
-                                {{ incentive.description }}
-                            </p>
-                            <i class="absolute fas fa-arrow-right card-heading right-0 top-0"></i>
-                        </div>
-                    </NuxtLink>
+                    </div>
                 </div>
             </div>
 
@@ -641,7 +623,7 @@ const openProfileModal = (product) => {
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </template>

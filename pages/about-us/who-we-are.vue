@@ -193,6 +193,27 @@ const whatWeDo = ref({
     content: 'At Acentria Group, we deliver transformative products and solutions in Risk and Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology. We believe our greatest asset is the trust of our clients and communities. Success, for us, isn’t just about delivering exceptional services—it’s about creating sustainable, impactful solutions that benefit society and protect the environment. Every project we undertake, every partner we collaborate with, and every decision we make reflects our commitment to compliance, ethical practices, and the public good.'
 });
 
+const incentives = [
+    {
+        name: 'Who we are',
+        icon: 'fas fa-users',
+        link: '/about-us/who-we-are',
+        description: "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment Advisory.",
+    },
+    {
+        name: 'What We Do',
+        icon: 'fas fa-briefcase',
+        link: '/about-us/who-we-are',
+        description: "At Acentria Group, we deliver transformative products and solutions in Risk and Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology.",
+    },
+    {
+        name: 'Our journey',
+        icon: 'fas fa-road',
+        link: '/about-us/who-we-are',
+        description: "At Acentria Group, our journey is a testament to resilience, vision, and the boundless possibilities that come with dedication.",
+    },
+]
+
 
 onMounted(() => {
     scrollToSection();
@@ -202,7 +223,8 @@ onMounted(() => {
 <template>
     <section class="bg-white">
         <Carousel2 :content="bannerMainContent" />
-        <div class="container py-5">
+
+        <!-- <div class="container py-5">
             <h1 class="section-heading pb-3">Welcome to <span class="text-brand-primary">Acentria Group</span>
             </h1>
             <p class="!content">
@@ -215,7 +237,75 @@ onMounted(() => {
                     Let us help you navigate the complexities of today’s world and unlock your true potential.
                 </span>
             </p>
+        </div> -->
+
+        <div class="container">
+            <div class="grid grid-cols-12 gap-2 py-5">
+                <div class="col-span-3 container max-w-6xl mx-auto justify-between content-center">
+    
+                    <h1 class="section-heading">
+                        About
+                    </h1>
+                    <h1 class="text-[10rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
+                        style="background-image: url('/img/sun-tornado.png');">
+                        <div class="-ml-3">
+                            US
+                        </div>
+                    </h1>
+                </div>
+    
+                <div class="col-span-9 relative">
+                    <h2 class="section-heading pb-3">
+                        Acentria <span class="text-brand-primary"> Group</span>
+                    </h2>
+                    <p>
+                        We drive the future for our partners through expertise and innovative solutions, empowering
+                        the
+                        visions of our clients and the communities we serve. By fostering innovation, we deliver the
+                        best
+                        strategies to enhance prosperity and success.
+                        <br><br>
+                        Our mission is to continuously seek better ways to manage risks and guide effective pathways
+                        toward
+                        achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our
+                        clients,
+                        our
+                        company, our colleagues, and the communities we proudly serve.
+                    </p>
+    
+    
+                    <!-- <div class="py-5">
+                        <NuxtLink to="/about-us/who-we-are">
+                            <AppButton :title="'Learn More'" />
+                        </NuxtLink>
+                    </div> -->
+    
+                </div>
+            </div>
+    
+            <div class="py-5">
+                <div class="font-sans grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-3">
+                    <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
+                        :key="incentive.name"
+                        class="shadow-2xl !button-animation relative flex flex-row gap-1 border-2 border-black/10 py-5 px-5 rounded-lg">
+                        <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
+                        <div class="relative">
+                            <div class="flex justify-between w-full">
+                                <h5 v-html="incentive.name" class="card-heading pb-1">
+                                </h5>
+                            </div>
+                            <p class="content">
+                                {{ incentive.description }}
+                            </p>
+                            <i class="absolute fas fa-arrow-right card-heading right-0 top-0"></i>
+                        </div>
+                    </NuxtLink>
+                </div>
+            </div>
         </div>
+
+
+
         <ContentPic :content="whoWeAre" />
         <ContentPic :content="thingsThatInspireUs" />
         <ContentPic :content="whatWeDo" />
