@@ -490,7 +490,7 @@ const introContent = ref({
                     Explore the <span class="text-brand-primary"> Industries</span>
                 </h2>
 
-                <h2 class="max-w-5xl section-heading !normal-case italic !text-[20px]">
+                <h2 class="max-w-5xl section-heading !normal-case !text-[20px]">
                     We blend innovation, expertise, and a nuanced understanding of industry-specific challenges to
                     empower our clients in
                     <span class="text-brand-primary">
