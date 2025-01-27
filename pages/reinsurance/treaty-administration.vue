@@ -4,7 +4,7 @@ import { ref } from "vue";
 const ReinsuranceBannerContent = ref({
     title: 'Unlock the full potential of your reinsurance program',
     subTitle: 'Treaty Administration',
-    image: '/img/treaty-admin.jpg',
+    image: 'img.freepik.com/free-photo/closeup-businesspeople-handshake_74855-1535.jpg?t=st=1737954955~exp=1737958555~hmac=ed70db64168dffe80c223d08a4d0e3438f0a64611eb9703fc3222fbbe75f3945&w=900',
 })
 const ReinsuranceFeatureContent = ref({
     title: 'Our Approach',
