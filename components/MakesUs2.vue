@@ -430,10 +430,9 @@ const introContent = ref({
                 <div class="col-span-7 flex flex-col justify-center">
                     <div class="pb-3">
                         <h1 class="section-heading">
-                            Shaping the future for our partners
-                            through expertise & innovative solutions
+                            Shaping the future for our partners through empowerment &
                             <span class="text-brand-primary">
-                                by fostering innovation, that drive
+                                innovative solutions that drive
                                 prosperity and ensure success.
                             </span>
                         </h1>

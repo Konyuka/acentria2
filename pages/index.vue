@@ -19,8 +19,7 @@ const InsuranceBannerContent = ref({
   subtitle: "Acentria Group",
   title: `Empowering Dreams <br /> <span class="font-sans tracking-normal text-brand-primary leading-normal lg:leading-normal"> Igniting Imagination </span>`,
   image: "/img/empower.jpeg",
-  content:
-    "At Acentria Group, we drive prosperity by unlocking infinite possibilities, <br> empowering dreams, and igniting imagination to shape a brighter future.",
+  content:"At Acentria Group, we drive prosperity by unlocking infinite possibilities, <br> empowering dreams, and igniting imagination to shape a brighter future.",
 });
 
 const joinAsMembers = ref([
