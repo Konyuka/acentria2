@@ -479,17 +479,33 @@ const introContent = ref({
             </div>
 
             <div class="py-5">
-                <h2 class="section-heading pb-3">
+                <!-- <h2 class="section-heading pb-3">
                     The <span class="text-brand-primary">Industries</span>
+                </h2> -->
+
+
+
+
+                <h2 class="section-heading !normal-case py-5">
+                    Explore the <span class="text-brand-primary"> Industries</span>
                 </h2>
 
-                <p>
+                <h2 class="max-w-5xl section-heading !normal-case italic !text-[20px]">
+                    We blend innovation, expertise, and a nuanced understanding of industry-specific challenges to
+                    empower our clients in
+                    <span class="text-brand-primary">
+                        achieving their objectives with precision & impact by addressing complex
+                        needs with tailored strategies.
+                    </span>
+                </h2>
+
+                <!-- <p>
                     At Acentria Group, our divisions in Insurance Broking, Reinsurance Broking, Actuarial and
                     Financial Services, and Technology enable us to offer cutting-edge, industry-specific
                     solutions. Guided by our brand promise, "Done Smart," we combine innovation, expertise, and
                     a deep understanding of industry challenges to help our clients achieve their goals
                     efficiently and effectively.
-                </p>
+                </p> -->
 
                 <Carousel :items-to-show="3" :wrap-around="true" :transition="500" :autoplay="2000" class="py-10">
                     <Slide v-for="product in specials" :key="product.id">
@@ -617,7 +633,8 @@ const introContent = ref({
 
                         </div>
                         <div class="py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-                            <div v-for="feature in whys" class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
+                            <div v-for="feature in whys"
+                                class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
                                 <div class="mr-6">
                                     <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                                 </div>
@@ -626,7 +643,7 @@ const introContent = ref({
                                         <p class="content">
                                             {{ feature.name }}
                                         </p>
-        
+
                                     </div>
                                 </div>
                             </div>
