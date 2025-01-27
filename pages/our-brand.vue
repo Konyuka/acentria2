@@ -114,7 +114,7 @@ const bannerContent = ref({
         <div class="!pt-5 container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16 pb-10">
             <div class="relative p-4 lg:basis-1/2">
                 <NuxtImg alt="Image of Risk Management" loading="lazy" width="500" height="450" decoding="async"
-                    data-nimg="1" src="/img/our brand promise.JPG" style="color: transparent; object-fit: contain;"
+                    data-nimg="1" src="/img/brandpromise.jpg" style="color: transparent; object-fit: contain;"
                     class="rounded-lg" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2 ">
@@ -132,13 +132,6 @@ const bannerContent = ref({
                         strategies. Through smart thinking, collaboration, and forward-looking leadership, we deliver
                         exceptional results while setting new standards for excellence.
                     </p>
-                    <h2 class="card-heading mt-2">
-                        We communicate transformative
-                        insights, demonstrating how
-                        intelligence, innovation, and
-                        implementation converge into
-                        truly “smart” solutions.
-                    </h2>
                 </div>
                 <h2 id="" class="heading-class">
                     We are Acentria <br> <span class="text-brand-primary">We Ensure Smart Solutions.</span>

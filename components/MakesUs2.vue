@@ -346,22 +346,22 @@ const whys = ref([
         name: 'We deliver data-driven customer experiences tailored to evolving market demands.',
         icon: 'fas fa-chart-line',
     },
-    {
-        name: 'We implement smart processes and methodologies backed by competitive, value-based pricing.',
-        icon: 'fas fa-cogs',
-    },
-    {
-        name: 'We attract and retain forward-thinking talent skilled in blending artificial and human intelligence.',
-        icon: 'fas fa-users',
-    },
-    {
-        name: 'We develop and integrate seamless smart systems, platforms, and automated workflows that boost efficiency and agility.',
-        icon: 'fas fa-network-wired',
-    },
-    {
-        name: 'We communicate transformative insights, demonstrating how intelligence, innovation, and implementation converge into truly “smart” solutions.',
-        icon: 'fas fa-comments',
-    },
+    // {
+    //     name: 'We implement smart processes and methodologies backed by competitive, value-based pricing.',
+    //     icon: 'fas fa-cogs',
+    // },
+    // {
+    //     name: 'We attract and retain forward-thinking talent skilled in blending artificial and human intelligence.',
+    //     icon: 'fas fa-users',
+    // },
+    // {
+    //     name: 'We develop and integrate seamless smart systems, platforms, and automated workflows that boost efficiency and agility.',
+    //     icon: 'fas fa-network-wired',
+    // },
+    // {
+    //     name: 'We communicate transformative insights, demonstrating how intelligence, innovation, and implementation converge into truly “smart” solutions.',
+    //     icon: 'fas fa-comments',
+    // },
 ]);
 
 const features = [
@@ -443,11 +443,6 @@ const introContent = ref({
                         </h4>
                     </div>
                     <div>
-                        <!-- <p class="content !font-sans pb-5">
-                            Let us help you navigate the
-                            complexities of today’s world and
-                            unlock your true potential.
-                        </p> -->
                         <NuxtLink to="/about-us/who-we-are">
                             <AppButton title="Learn More" />
                         </NuxtLink>
@@ -599,28 +594,46 @@ const introContent = ref({
             </div>
 
             <div class="py-5">
-                <h2 class="section-heading">
+                <h1 class="section-heading pb-5">
                     Why Acentria <span class="text-brand-primary">Group?</span>
-                </h2>
-                <h3 class="card-heading pb-3">
-                    We Ensure<span class="text-brand-primary"> Smart!</span>
-                </h3>
+                </h1>
+                <div class="grid grid-cols-12 gap-10">
+                    <div class="col-span-5 relative flex items-center">
+                        <NuxtImg alt="content" loading="lazy" decoding="async"
+                            class="w-full h-auto shadow-2xl rounded-lg !object-cover"
+                            src="/img/our brand promise.JPG" />
+                    </div>
+                    <div class="col-span-7 flex flex-col justify-center">
+                        <div class="pb-3">
+                            <h1 class="card-heading !text-[20px]">
+                                We Ensure <span class="text-brand-primary">Smart!</span>
+                            </h1>
+                            <h2 class="section-heading py-3 !normal-case">
+                                We communicate transformative insights, demonstrating how <span
+                                    class="text-brand-primary"> intelligence, innovation, &
+                                    implementation converge into truly “Smart”
+                                    solutions.</span>
+                            </h2>
 
-                <div class="py-5 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-5">
-                    <div v-for="feature in whys" class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
-                        <div class="mr-6">
-                            <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                         </div>
-                        <div>
-                            <div class="flex justify-between items-center w-full">
-                                <p class="content">
-                                    {{ feature.name }}
-                                </p>
-
+                        <div class="py-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
+                            <div v-for="feature in whys" class="flex px-3 py-3 shadow-md border-l-4 border-brand-primary">
+                                <div class="mr-6">
+                                    <i :class="feature.icon" class="text-brand-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between items-center w-full">
+                                        <p class="content">
+                                            {{ feature.name }}
+                                        </p>
+        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>

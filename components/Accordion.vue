@@ -11,6 +11,11 @@ const openIndex = ref(null);
 const toggle = (index) => {
     openIndex.value = openIndex.value === index ? null : index;
 };
+
+const capitalizeFirstWord = (text) => {
+    if (!text) return '';
+    return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+}
 </script>
 
 <template>
@@ -25,7 +30,8 @@ const toggle = (index) => {
                         <dt :class="[open ? 'bg-brand-primary' : 'bg-black']" class="py-3 px-5">
                             <DisclosureButton @click="toggle(index)"
                                 class="flex w-full items-start justify-between text-left">
-                                <span :class="[open ? 'text-white' : 'text-white']" class="card-heading">{{ faq.name
+                                <span :class="[open ? 'text-white' : 'text-white']" class="card-heading !normal-case">{{
+    capitalizeFirstWord(faq.name)
                                     }}</span>
                                 <span class="flex h-7 items-center">
                                     <PlusSmallIcon v-if="openIndex !== index" class="text-white h-6 w-6"
@@ -45,4 +51,8 @@ const toggle = (index) => {
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* .normal-case {
+    text-transform: none !important;
+} */
+</style>

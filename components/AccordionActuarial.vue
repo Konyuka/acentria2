@@ -29,7 +29,7 @@ import { CheckIcon } from '@heroicons/vue/20/solid'
                                 <DisclosureButton
                                     class="flex w-full items-start justify-between text-left text-gray-900">
                                     <span :class="[open ? 'text-white' : 'text-white']"
-                                        class="text-base font-semibold leading-7">{{ faq.name }}</span>
+                                        class="text-base font-semibold leading-7 !normal-case">{{ faq.name }}</span>
                                     <span class="ml-6 flex h-7 items-center">
                                         <PlusSmallIcon v-if="!open" class="text-white h-6 w-6" aria-hidden="true" />
                                         <MinusSmallIcon v-else class="text-white h-6 w-6" aria-hidden="true" />
