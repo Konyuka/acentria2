@@ -436,7 +436,7 @@ const introContent = ref({
                                 prosperity and ensure success.
                             </span>
                         </h1>
-                        <h4 class="card-heading pt-5">
+                        <h4 class="card-heading pt-5 !normal-case">
                             Let us help you navigate the
                             complexities of today’s world and
                             unlock your true potential.
