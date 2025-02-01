@@ -4,7 +4,7 @@
         <div class="font-sans space-y-12">
             <div class="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-12 md:grid-cols-3">
                 <div>
-                    <h2 class="subheading-class text-black">Member <span class="text-brand-primary">Categories</span>
+                    <h2 class="subsection-heading text-black">Member <span class="text-brand-primary">Categories</span>
                     </h2>
                     <p class="mt-1 text-xs text-gray-600">
                         Please select your desired category.
@@ -35,7 +35,7 @@
 
             <div class="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-12 md:grid-cols-3">
                 <div>
-                    <h2 class="subheading-class text-gray-900">Personal <span
+                    <h2 class="subsection-heading text-gray-900">Personal <span
                             class="text-brand-primary">Information</span></h2>
                     <p class="mt-1 text-sm/6 text-gray-600">Use a permanent address where you can receive mail.</p>
                 </div>

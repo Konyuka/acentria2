@@ -63,7 +63,7 @@ const exploreAviation = ref({
         <div class="bg-white w-full h-full">
             <div class="container py-5 max-w-6xl mx-auto font-sans text-black mt-2">
                 <div class="mx-auto mb-3 font-sans">
-                    <p class="mt-2 heading-class text-black">
+                    <p class="mt-2 section-heading text-black">
                         Welcome to an easy <span class="text-brand-primary">claim experience</span>
                     </p>
                 </div>
@@ -85,7 +85,7 @@ const exploreAviation = ref({
 
         <div class="container">
             <div class="mx-auto pb-3 font-sans">
-                <p class="mt-2 subheading-class text-black">
+                <p class="mt-2 subsection-heading text-black">
                     Select a product to view the insurance claims process
                 </p>
                 <p class="text-xs">Get a breakdown of the claims process, what to do, and where to go from here.</p>

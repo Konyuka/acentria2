@@ -42,7 +42,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:14:13">
 
-                    <h2 class="heading-class pb-4"
+                    <h2 class="section-heading pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Client-Centric Approach
                     </h2>
@@ -55,7 +55,7 @@ const ReinsuranceBannerContent = ref({
                             transparency and fair dealing in every client interaction.
                         </p>
                     </div>
-                    <h2 class="heading-class pb-4"
+                    <h2 class="section-heading pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Avoidance of Conflicts of Interest
                     </h2>
@@ -82,7 +82,7 @@ const ReinsuranceBannerContent = ref({
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
-                    <h2 class="heading-class pb-4"
+                    <h2 class="section-heading pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Stringent Regulatory Adherence
                     </h2>
@@ -96,7 +96,7 @@ const ReinsuranceBannerContent = ref({
                             of their information.
                         </p>
                     </div>
-                    <h2 class="heading-class pb-4"
+                    <h2 class="section-heading pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Robust Compliance Framework
                     </h2>
@@ -122,7 +122,7 @@ const ReinsuranceBannerContent = ref({
                         data-v-inspector="components/Why.vue:34:17" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2" data-v-inspector="components/Why.vue:38:13">
-                    <h2 class="heading-class pb-4"
+                    <h2 class="section-heading pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Strong Governance Structure
                     </h2>
@@ -135,7 +135,7 @@ const ReinsuranceBannerContent = ref({
                             each team member is committed to upholding our ethical principles.
                         </p>
                     </div>
-                    <h2 class="heading-class pb-4"
+                    <h2 class="section-heading pb-4"
                         data-v-inspector="components/Why.vue:18:17">
                         Continuous Training and Development
                     </h2>

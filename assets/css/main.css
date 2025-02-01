@@ -104,11 +104,11 @@ html {
   @apply text-base leading-relaxed text-gray-700;
 }
 
-.heading-class {
+.section-heading {
     @apply text-[27px] font-semibold text-gray-900
 }
 
-.subheading-class {
+.subsection-heading {
     @apply text-[18px] font-semibold text-gray-900
 }
 

@@ -2,91 +2,78 @@
 const props = defineProps({
     item: Object
 })
+
+const route = useRoute();
+const currentRoute = computed(() => route.path);
 </script>
 
 <template>
-   <NuxtLink :to="item.link" class="card h-full button-animation !z-10">
-    <div class="bg p-2 w-full ">
-        <dt class="card-heading">
-            <img :src="item.img" alt="Icon" class="h-[150px] w-full object-cover rounded-lg" />
-            {{ item.title }}
-        </dt>
-        <dd class="mt-1 flex flex-col">
-            <p class="flex-auto content">{{ item.description }}</p>
-            <p
-                class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary">
-                Learn more <span aria-hidden="true">→</span>
-            </p>
-        </dd>
-    </div>
-    <div class="blob"></div>
-</NuxtLink>
-
+    <NuxtLink :to="item.link" class="card button-animation !z-10 flex flex-col">
+        <div class="bg p-4 flex flex-col flex-grow">
+            <dt class="card-heading mb-2">
+                <img :src="item.img" alt="Icon" class="w-full h-40 object-cover rounded-lg mb-2" />
+                {{ item.title }}
+            </dt>
+            <dd class="flex flex-col flex-grow">
+                <p class="flex-grow content">{{ item.description }}</p>
+                <p v-if="currentRoute !== '/acentria-group-investment'"
+                    class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary mt-2">
+                    Learn more <span aria-hidden="true">→</span>
+                </p>
+            </dd>
+        </div>
+        <div class="blob"></div>
+    </NuxtLink>
 </template>
 
 <style scoped>
 .card {
-    position: relative;
-    width: 200px;
-    height: 280px;
-    border-radius: 14px;
-    z-index: 1111;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    ;
+    height: 100%;
+    min-height: 250px;
+    overflow: hidden;
+    position: relative;
 }
 
 .bg {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 190px;
-    height: 340px;
-    z-index: 2;
-    background: rgba(255, 255, 255, .95);
-    backdrop-filter: blur(24px);
-    border-radius: 10px;
-    overflow: hidden;
-    outline: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-heading {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.content {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
 }
 
 .blob {
     position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    background-color: #ff0000;
-    opacity: 1;
-    filter: blur(12px);
-    animation: blob-bounce 5s infinite ease;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s;
+    pointer-events: none;
 }
 
-@keyframes blob-bounce {
-    0% {
-        transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-
-    25% {
-        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-    }
-
-    50% {
-        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-    }
-
-    75% {
-        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-    }
-
-    100% {
-        transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
+.card:hover .blob {
+    transform: translate(-50%, -50%) scale(5);
 }
 </style>

@@ -15,7 +15,7 @@
                 <dl
                     class="pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-4 text-white sm:grid-cols-2  lg:mx-0 lg:max-w-none lg:grid-cols-4">
                     <div v-for="(feature, index) in contacts" :key="feature.name" class="flex flex-col">
-                        <dt class="subheading-class text-white">
+                        <dt class="subsection-heading text-white">
                             <div class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
                                 <i :class="feature.icon" class=" text-white" aria-hidden="true" />
                             </div>

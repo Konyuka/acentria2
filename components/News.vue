@@ -30,7 +30,7 @@ const news = ref([
         <section class="pb-10 container">
             <div class="font-sans">
                 <div class="py-7 text-left">
-                    <h2 class="heading-class text-black">
+                    <h2 class="section-heading text-black">
                         Insights &<span class="text-brand-primary"> Resources</span>
                     </h2>
                 </div>
@@ -78,7 +78,7 @@ const news = ref([
                                     <label class="text-xs text-brand-primary capitalize">
                                         {{ news.tag }}
                                     </label>
-                                    <h6 class="subheading-class text-black line-clamp-1">
+                                    <h6 class="subsection-heading text-black line-clamp-1">
                                         {{ news.title }}
                                     </h6>
                                 </div>

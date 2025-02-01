@@ -157,7 +157,7 @@ const data = ref({
 
 const content1 = ref({
     orientation: 'image-left',
-    heading: '<h1 class="heading-class text-left"> Welcome to <span class="text-brand-primary"> Acentria </span> </h1> <h4 class="text-xl font-semibold text-left"> Your Trusted <span class="text-brand-primary">Reinsurance Partner</span> </h4>',
+    heading: '<h1 class="section-heading text-left"> Welcome to <span class="text-brand-primary"> Acentria </span> </h1> <h4 class="text-xl font-semibold text-left"> Your Trusted <span class="text-brand-primary">Reinsurance Partner</span> </h4>',
     subheading: '',
     image:'/img/Re1.jpg',
     link: '/insurance-claims',

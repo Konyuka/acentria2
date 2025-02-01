@@ -1,6 +1,6 @@
 <template>
     <div class="accordion-container container font-sanst-sans ">
-        <h1 class="m-5 heading-class text-left">
+        <h1 class="m-5 section-heading text-left">
             Treaty <span class="text-brand-primary"> Review Process
             </span>
         </h1>

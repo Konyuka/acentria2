@@ -40,7 +40,7 @@ const bannerContent = ref({
                     </figcaption>
                 </figure>
 
-                <h1 class="mt-5 heading-class text-gray-900">
+                <h1 class="mt-5 section-heading text-gray-900">
                     How we support our people
                 </h1>
 

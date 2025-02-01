@@ -58,7 +58,7 @@ const splitAndStyle = (text) => {
 
         <div class="bg-white">
             <div class="container">
-                <h1 class="my-5 heading-class text-left">
+                <h1 class="my-5 section-heading text-left">
                     Market <span class="text-brand-primary"> Intelligence </span>
                 </h1>
                 <p

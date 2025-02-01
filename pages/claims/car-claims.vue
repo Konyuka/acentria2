@@ -122,7 +122,7 @@ const windscreenClaims = ref([
 
         <div class="container my-10 flex flex-col gap-5 divide-y-4">
             <div v-for="claim in carClaims" class="p-5">
-                <h1 class="subheading-class">
+                <h1 class="subsection-heading">
                     <span class="font-semibold">{{ claim.number }}</span> <span
                         class="font-semibold text-brand-primary">/</span>
                     {{ claim.title }}
@@ -134,7 +134,7 @@ const windscreenClaims = ref([
 
         <div class="container max-w-6xl pt-5">
             <div class="mt-5">
-                <h1 class="heading-class">
+                <h1 class="section-heading">
                     Claims process for <span class="text-brand-primary">windshield and glass repairs</span>
                 </h1>
             </div>
@@ -142,7 +142,7 @@ const windscreenClaims = ref([
 
         <div class="container my-10 flex flex-col gap-5 divide-y-4">
             <div v-for="claim in windscreenClaims" class="p-5">
-                <h1 class="subheading-class">
+                <h1 class="subsection-heading">
                     <span class="font-semibold">{{ claim.number }}</span> <span
                         class="font-semibold text-brand-primary">/</span>
                     {{ claim.title }}

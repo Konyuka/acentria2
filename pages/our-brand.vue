@@ -14,7 +14,7 @@ const bannerContent = ref({
             <div class="container">
                 <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
                     <div>
-                        <h1 class="my-5 heading-class text-black text-left">
+                        <h1 class="my-5 section-heading text-black text-left">
                             Our <span class="text-brand-primary">Brand</span>
                         </h1>
                         <p
@@ -39,7 +39,7 @@ const bannerContent = ref({
                     class="rounded-lg" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2">
-                <h2 id="" class="heading-class pb-4 md:pb-5">
+                <h2 id="" class="section-heading pb-4 md:pb-5">
                     Our Commitment <span class="text-brand-primary">To Excellence</span>
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
@@ -57,7 +57,7 @@ const bannerContent = ref({
         <div class="!pt-5 container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
 
             <div class="flex flex-col justify-center lg:basis-1/2">
-                <h2 id="" class="heading-class pb-4 md:pb-5">
+                <h2 id="" class="section-heading pb-4 md:pb-5">
                     The Heart of <span class="text-brand-primary">Our Brand</span>
                 </h2>
                 <div class="text-light-content pb-5 md:pb-6">
@@ -85,7 +85,7 @@ const bannerContent = ref({
                         class="rounded-lg w-full" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
-                    <h2 id="" class="heading-class pb-4 md:pb-5">
+                    <h2 id="" class="section-heading pb-4 md:pb-5">
                         Beyond a Logo <span class="text-brand-primary">or Tagline</span>
                         <br>
                         <span class="text-brand-primary">
@@ -118,7 +118,7 @@ const bannerContent = ref({
                     class="rounded-lg" />
             </div>
             <div class="flex flex-col justify-center lg:basis-1/2 ">
-                <h2 id="" class="heading-class">
+                <h2 id="" class="section-heading">
                     Our Brand <span class="text-brand-primary">Promise</span>
                 </h2>
                 <!-- <h5 class="text-brand-primary text-lg font-semibold pb-2">
@@ -133,7 +133,7 @@ const bannerContent = ref({
                         exceptional results while setting new standards for excellence.
                     </p>
                 </div>
-                <h2 id="" class="heading-class">
+                <h2 id="" class="section-heading">
                     We are Acentria <br> <span class="text-brand-primary">We Ensure Smart Solutions.</span>
                 </h2>
             </div>

@@ -225,7 +225,7 @@ onMounted(() => {
                 operations and fostering a culture of responsibility and transparency.
               </p>
               <div class="mt-5">
-                <NuxtLink to="/csr" class="subheading-class text-white underline underline-offset-8 button-animation">
+                <NuxtLink to="/csr" class="subsection-heading text-white underline underline-offset-8 button-animation">
                   Learn More <i class="fas fa-caret-right mt-2"></i>
                 </NuxtLink>
               </div>

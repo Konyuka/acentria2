@@ -42,7 +42,7 @@ const faqs = ref([
 
         <div class="bg-white">
             <div class="container">
-                <h1 class="my-5 heading-class text-left">
+                <h1 class="my-5 section-heading text-left">
                     Return on Risk-Adjusted Capital
                     <span class="text-brand-primary"> (RORAC)
                     </span>

@@ -144,7 +144,7 @@ const specials = ref([
 
         <div class="bg-white">
             <div class="container">
-                <h1 class="my-5 heading-class text-left">
+                <h1 class="my-5 section-heading text-left">
                     Simplifying Reinsurance <br> <span class="text-brand-primary"> for the Most Complex Risks
                     </span>
                 </h1>
@@ -177,7 +177,7 @@ const specials = ref([
                             <NuxtImg :src="product.img" :alt="product.img"
                                 class="h-full w-full object-cover object-center group-hover:opacity-75" />
                         </div>
-                        <div class=" mt-4 flex flex-col items-center justify-between subheading-class text-black">
+                        <div class=" mt-4 flex flex-col items-center justify-between subsection-heading text-black">
                             <h3 class="text-xs">{{ product.name }}</h3>
                             <p class="text-xs italic mt-3">
                                 Learn More <i class="ml-2 fas fa-arrow-right text-brand-primary"></i>

@@ -287,7 +287,7 @@ const getStarted = ref({
                         </div>
                         <div>
                             <div class="flex justify-between items-center w-full">
-                                <p class="subheading-class text-left">
+                                <p class="subsection-heading text-left">
                                     {{ feature.name }}
                                 </p>
 

@@ -112,7 +112,7 @@ const faqs = ref([
 
         <div class="bg-white">
             <div class="container">
-                <h1 class="my-5 heading-class text-left">
+                <h1 class="my-5 section-heading text-left">
                     Treaty <span class="text-brand-primary"> Administration
                     </span>
                 </h1>
@@ -140,7 +140,7 @@ const faqs = ref([
 
         <div class="bg-white !pb-10">
             <div class="container">
-                <h1 class="my-3 heading-class text-left">
+                <h1 class="my-3 section-heading text-left">
                     Elite Tech Tools for<br> <span class="text-brand-primary"> Optimal Reinsurance Solutions</span>
                 </h1>
             </div>
@@ -155,7 +155,7 @@ const faqs = ref([
                             <div class="font-sans group relative">
                                 <div class="flex">
                                     <h3 v-html="service.name"
-                                        class="text-lg font-semibold mt-3 line-clamp-2 subheading-class leading-normal text-black transition-colors group-hover:text-brand-primary">
+                                        class="text-lg font-semibold mt-3 line-clamp-2 subsection-heading leading-normal text-black transition-colors group-hover:text-brand-primary">
                                     </h3>
                                     <i class="fas fa-trademark"></i>
                                 </div>

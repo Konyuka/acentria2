@@ -172,7 +172,7 @@ const whoWeAre = ref({
     subheading: '',
     image: '/img/Who we are.jpg',
     link: '/',
-    content:'Acentria Group of Companies is a trusted global consultant dedicated to empowering growth and prosperity in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. With over a decade of expertise and an unwavering commitment to excellence, we craft tailored solutions that empower our clients to thrive. Our innovative approach to risk management, insurance optimization, and investment advisory ensures you’re always ahead of the curve. When you partner with Acentria Group, you’re not just accessing solutions—you’re unlocking a world of knowledge and resources designed to mitigate risks, maximize opportunities, and achieve your financial goals.'
+    content:'Acentria Group is a trusted global consultant dedicated to empowering growth in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. With over a decade of expertise, we craft innovative solutions that stay ahead of the curve, ensuring that our clients unlock opportunities and navigate challenges with confidence.'
 })
 
 const thingsThatInspireUs = ref({
@@ -181,7 +181,7 @@ const thingsThatInspireUs = ref({
     subheading: '<span class="text-brand-primary">#</span> Empower <span class="text-brand-primary">#</span> Innovate <span class="text-brand-primary">#</span> Prosper',
     image: '/img/inspire.jpg',
     link: '/things-that-inspire-us',
-    content: 'We find inspiration in empowering individuals, businesses, and communities to achieve their dreams. Innovation fuels our creativity, helping us craft transformative solutions that tackle today’s challenges. Prosperity motivates us to create lasting impact—building success stories that uplift not just our clients but society as a whole. Together, we turn possibilities into progress, delivering excellence every step of the way.'
+    content:'We are inspired by the potential to empower individuals, businesses, and communities. Innovation fuels our creativity to craft transformative solutions that drive success, while prosperity motivates us to create a lasting impact—building stories of growth for our clients and society as a whole.'
 });
 
 const whatWeDo = ref({
@@ -190,30 +190,8 @@ const whatWeDo = ref({
     subheading: '',
     image: '/img/dreads.jpg',
     link: '/',
-    content: 'At Acentria Group, we deliver transformative products and solutions in Risk and Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology. We believe our greatest asset is the trust of our clients and communities. Success, for us, isn’t just about delivering exceptional services—it’s about creating sustainable, impactful solutions that benefit society and protect the environment. Every project we undertake, every partner we collaborate with, and every decision we make reflects our commitment to compliance, ethical practices, and the public good.'
+    content:'At Acentria Group, we provide transformative solutions in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. Success for us goes beyond exceptional service; it’s about creating sustainable solutions that benefit society, protect the environment, and create value for all our stakeholders.'
 });
-
-const incentives = [
-    {
-        name: 'Who we are',
-        icon: 'fas fa-users',
-        link: '/about-us/who-we-are',
-        description: "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment Advisory.",
-    },
-    {
-        name: 'What We Do',
-        icon: 'fas fa-briefcase',
-        link: '/about-us/who-we-are',
-        description: "At Acentria Group, we deliver transformative products and solutions in Risk and Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology.",
-    },
-    {
-        name: 'Our journey',
-        icon: 'fas fa-road',
-        link: '/about-us/who-we-are',
-        description: "At Acentria Group, our journey is a testament to resilience, vision, and the boundless possibilities that come with dedication.",
-    },
-]
-
 
 onMounted(() => {
     scrollToSection();
@@ -242,64 +220,26 @@ onMounted(() => {
         <div class="container">
             <div class="grid grid-cols-12 gap-2 py-5">
                 <div class="col-span-3 container max-w-6xl mx-auto justify-between content-center">
-    
                     <h1 class="section-heading">
                         About
                     </h1>
-                    <h1 class="text-[10rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
+                    <h1 class="text-[7rem] text-transparent bg-clip-text bg-contain bg-center leading-none font-extrabold tracking-tighter"
                         style="background-image: url('/img/sun-tornado.png');">
-                        <div class="-ml-3">
+                        <div class="">
                             US
                         </div>
                     </h1>
                 </div>
-    
+
                 <div class="col-span-9 relative">
                     <h2 class="section-heading pb-3">
                         Acentria <span class="text-brand-primary"> Group</span>
                     </h2>
                     <p>
-                        We drive the future for our partners through expertise and innovative solutions, empowering
-                        the
-                        visions of our clients and the communities we serve. By fostering innovation, we deliver the
-                        best
-                        strategies to enhance prosperity and success.
-                        <br><br>
-                        Our mission is to continuously seek better ways to manage risks and guide effective pathways
-                        toward
-                        achieving smart outcomes. We go beyond addressing risks to unlocking rewards—for our
-                        clients,
-                        our
-                        company, our colleagues, and the communities we proudly serve.
+                        At Acentria Group, we rise with our clients, unlocking possibilities and empowering success
+                        through innovative solutions. Our mission is to transform risk management, drive growth,
+                        and create lasting impact for our clients, colleagues, and communities.
                     </p>
-    
-    
-                    <!-- <div class="py-5">
-                        <NuxtLink to="/about-us/who-we-are">
-                            <AppButton :title="'Learn More'" />
-                        </NuxtLink>
-                    </div> -->
-    
-                </div>
-            </div>
-    
-            <div class="py-5">
-                <div class="font-sans grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-x-3">
-                    <NuxtLink v-motion-fade-visible :to="incentive.link" v-for="incentive in incentives"
-                        :key="incentive.name"
-                        class="shadow-2xl !button-animation relative flex flex-row gap-1 border-2 border-black/10 py-5 px-5 rounded-lg">
-                        <i :class="incentive.icon" class="text-4xl text-brand-primary mr-2"></i>
-                        <div class="relative">
-                            <div class="flex justify-between w-full">
-                                <h5 v-html="incentive.name" class="card-heading pb-1">
-                                </h5>
-                            </div>
-                            <p class="content">
-                                {{ incentive.description }}
-                            </p>
-                            <i class="absolute fas fa-arrow-right card-heading right-0 top-0"></i>
-                        </div>
-                    </NuxtLink>
                 </div>
             </div>
         </div>
@@ -319,10 +259,9 @@ onMounted(() => {
                     Our <span class="text-brand-primary">Capabilities</span>
                 </h2>
                 <p class="content">
-                    At Acentria Group, we offer a comprehensive suite of services tailored to meet the evolving
-                    needs
-                    of our clients. Through innovation, expertise, and unwavering dedication, we empower businesses
-                    and individuals to thrive across the following areas.
+                    We offer a comprehensive suite of services designed to meet the evolving needs of our
+                    clients. Through innovation, expertise, and unwavering dedication, we empower businesses
+                    and individuals to thrive in diverse areas, including:
                 </p>
             </div>
             =
@@ -380,7 +319,7 @@ onMounted(() => {
                                 class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-10 text-white sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                 <div v-for="(feature, index) in joinAsMembers" :key="feature.name"
                                     class="flex flex-col">
-                                    <dt class="subheading-class text-white">
+                                    <dt class="subsection-heading text-white">
                                         <div
                                             class="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-primary">
                                             <i :class="feature.icon" class="text-white" aria-hidden="true" />
@@ -405,7 +344,7 @@ onMounted(() => {
                             class="rounded-lg" src="/img/bill.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="heading-class mb-4">
+                        <h2 class="section-heading mb-4">
                             Our <span class="text-brand-primary">Journey</span>
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
@@ -436,7 +375,7 @@ onMounted(() => {
                             class="rounded-lg" src="/img/iStock-2148737980 Leadership.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="heading-class mb-4">
+                        <h2 class="section-heading mb-4">
                             Our <span class="text-brand-primary">Leadership</span>
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
@@ -467,7 +406,7 @@ onMounted(() => {
                             class="rounded-lg" src="/img/Things that Inspire Us.JPG" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="heading-class mb-4">
+                        <h2 class="section-heading mb-4">
                             Our <span class="text-brand-primary">Culture</span>
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
@@ -499,7 +438,7 @@ onMounted(() => {
                             class="rounded-lg" src="/img/join.jpg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="heading-class mb-4">
+                        <h2 class="section-heading mb-4">
                             Our <span class="text-brand-primary">Brand</span>
                         </h2>
                         <div class="text-black pb-5 md:pb-6">

@@ -26,7 +26,7 @@ const props = defineProps({
                             <dt class="text-lg font-semibold leading-7 text-white">
                                 <div
                                     class="mb-2 left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                                    <i :class="cont.icon" class="fas text-brand-primary subheading-class"></i>
+                                    <i :class="cont.icon" class="fas text-brand-primary subsection-heading"></i>
                                 </div>
                                 {{ cont.title }}
                             </dt>

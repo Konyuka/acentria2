@@ -214,7 +214,7 @@ onMounted(() => {
                             <NuxtImg :src="product.img" :alt="product.img"
                                 class="w-full object-cover object-center group-hover:opacity-75" />
                         </div>
-                        <div class="mt-4 flex flex-col items-start justify-between subheading-class text-black">
+                        <div class="mt-4 flex flex-col items-start justify-between subsection-heading text-black">
                             <h4 class="carding-heading" v-html="product.name"></h4>
                             <p class="!small-text mt-3">
                                 Learn More <i class="ml-2 fas fa-arrow-right text-brand-primary"></i>

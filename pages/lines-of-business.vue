@@ -48,7 +48,7 @@ const features = [
         <div class="2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
             <div class="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
                 <div class="w-full lg:w-6/12 items-center">
-                    <h1 class="w-full heading-class text-left">
+                    <h1 class="w-full section-heading text-left">
                         Our Diverse <span class="text-brand-primary">Lines of Business</span>
                     </h1>
                     <p class="font-normal text-xs leading-normal text-black mt-6 text-left">
@@ -88,7 +88,7 @@ const features = [
                                 <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                             </div>
                             <div>
-                                <p class="subheading-class text-left">
+                                <p class="subsection-heading text-left">
                                     {{ feature.title }}
                                 </p>
                                 <p class="mt-2 font-normal text-xs leading-normal text-black text-left">

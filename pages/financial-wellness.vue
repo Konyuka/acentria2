@@ -219,7 +219,7 @@ const features = [
                                 <NuxtImg :src="product.img" :alt="product.img"
                                     class="h-full w-full object-cover object-center group-hover:opacity-75" />
                             </div>
-                            <div class=" mt-4 flex flex-col items-start justify-between subheading-class text-black">
+                            <div class=" mt-4 flex flex-col items-start justify-between subsection-heading text-black">
                                 <h6 class="text-lg" v-html="product.name"></h6>
                                 <p class="font-normal leading-normal text-xs italic mt-3">
                                     {{ product.description }}
@@ -249,7 +249,7 @@ const features = [
                         </div>
                         <div>
                             <div class="flex justify-between items-center w-full">
-                                <p class="subheading-class text-left">
+                                <p class="subsection-heading text-left">
                                     {{ feature.title }}
                                 </p>
 

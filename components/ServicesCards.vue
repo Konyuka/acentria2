@@ -43,10 +43,10 @@ const services = ref([
                 <div class="font-sans flex cursor-default flex-col md:flex-row">
                     <div
                         class="border-brand-light-content flex flex-row items-center justify-center gap-2 border-none py-2 md:border-r-2 md:border-solid md:py-6 md:pr-8">
-                        <h1 id="" class="pb-5 heading-class md:pb-6  leading-normal text-brand-primary">
+                        <h1 id="" class="pb-5 section-heading md:pb-6  leading-normal text-brand-primary">
                             Quality
                         </h1>
-                        <h1 id="" class="pb-5 heading-class md:pb-6  leading-normal text-black">
+                        <h1 id="" class="pb-5 section-heading md:pb-6  leading-normal text-black">
                             Services
                         </h1>
                     </div>

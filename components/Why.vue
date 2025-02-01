@@ -15,7 +15,7 @@
                         src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h1 class="my-3 heading-class text-left">
+                    <h1 class="my-3 section-heading text-left">
                         Elevate Your Strategies <br>
                         <span class="text-brand-primary">
                             with Precision and Innovation
@@ -41,7 +41,7 @@
                         class="rounded-lg" src="/img/boat.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h1 class="my-3 heading-class text-left">
+                    <h1 class="my-3 section-heading text-left">
                         Unlock Greater Efficiency and <br>
                         <span class="text-brand-primary">
                             Insight with Our Expertise.

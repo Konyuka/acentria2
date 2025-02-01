@@ -34,7 +34,7 @@ const gridCols = computed(() => {
                             <div class=" font-sans flex h-fit flex-col">
 
                                 <div class="flex justify-between">
-                                    <h4 id="" class="font-sans subheading-class font-semibold">
+                                    <h4 id="" class="font-sans subsection-heading font-semibold">
                                         <i :class="user.icon" class="text-brand-primary mr-1"></i> {{ user.name }}
                                     </h4>
                                 </div>

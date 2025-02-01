@@ -30,7 +30,7 @@ const news = ref([
         <section class="pb-10 container">
             <div class="font-sans">
                 <div class="py-7 text-left">
-                    <h2 class="heading-class text-black">
+                    <h2 class="section-heading text-black">
                         Insights &<span class="text-brand-primary"> Analytics</span>
                     </h2>
                 </div>

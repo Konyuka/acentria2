@@ -145,17 +145,17 @@ onMounted(() => {
                     <nav class="-mb-px flex font-sans gap-40" aria-label="Tabs">
                         <button @click="setMenu('Governance')"
                             :class="[currentMenu == 'Governance' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
-                            class="w-1/4  px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
+                            class="w-1/4  px-1 py-4 text-center text-md subsection-heading   hover:text-brand-primary">
                             <i class="fas fa-images mr-2"></i> Corporate Governance
                         </button>
                         <button @click="setMenu('Board')"
                             :class="[currentMenu == 'Board' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py-4 text-center text-md subheading-class   hover:text-brand-primary">
+                            class="w-1/4 px-1 py-4 text-center text-md subsection-heading   hover:text-brand-primary">
                             <i class="fas fa-blog mr-2"></i> Board of Directors
                         </button>
                         <button @click="setMenu('Executive')"
                             :class="[currentMenu == 'Executive' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py- text-center text-md subheading-class   hover:text-brand-primary">
+                            class="w-1/4 px-1 py- text-center text-md subsection-heading   hover:text-brand-primary">
                             <i class="fas fa-calendar-alt mr-2"></i> Management Team
                         </button>
 

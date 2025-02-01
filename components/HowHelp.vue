@@ -56,7 +56,7 @@ onMounted(() => {
         <div class="bg-white font-sans">
 
             <div class="py-5 container">
-                <h2 class="heading-class text-black pb-3">
+                <h2 class="section-heading text-black pb-3">
                     Need<span class="text-brand-primary"> Assistance?</span>
                 </h2>
 
@@ -156,7 +156,7 @@ onMounted(() => {
 
                                         <div class="max-w-2xl mx-auto">
                                             <div class="py-2 text-left container">
-                                                <h2 v-html="activeContent.heading" class="heading-class text-black">
+                                                <h2 v-html="activeContent.heading" class="section-heading text-black">
                                                 </h2>
                                                 <p class="text-xs mt-2 text-black leading-normal">
                                                     {{ activeContent.description }}

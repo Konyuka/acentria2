@@ -40,7 +40,7 @@ const bannerContent = ref({
                         class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/12-1024x625.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 class="heading-class pb-4">
+                    <h2 class="section-heading pb-4">
                         Environmental <span class="text-brand-primary">Responsibility</span>
                     </h2>
                     <div class="text-black pb-5 md:pb-6">
@@ -67,7 +67,7 @@ const bannerContent = ref({
                         class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 class="heading-class pb-4">
+                    <h2 class="section-heading pb-4">
                         Philanthropic <span class="text-brand-primary">Responsibility</span>
                     </h2>
                     <div class="text-black pb-5 md:pb-6">
@@ -97,7 +97,7 @@ const bannerContent = ref({
                         src="https://images.pexels.com/photos/761297/pexels-photo-761297.jpeg?auto=compress&cs=tinysrgb&w=600" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 class="heading-class pb-4">
+                    <h2 class="section-heading pb-4">
                         Ethical <span class="text-brand-primary">Responsibility</span>
                     </h2>
                     <div class="text-black pb-5 md:pb-6">
@@ -128,7 +128,7 @@ const bannerContent = ref({
                         class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
                 </div>
                 <div class="flex flex-col justify-center lg:basis-1/2">
-                    <h2 class="heading-class pb-4">
+                    <h2 class="section-heading pb-4">
                         Economic <span class="text-brand-primary">Responsibility</span>
                     </h2>
                     <div class="text-black pb-5 md:pb-6">

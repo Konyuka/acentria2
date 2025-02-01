@@ -36,7 +36,7 @@ const partners = ref([
 
         <div class="bg-white px-6 py-10 lg:px-8 font-sans">
             <div class="mx-auto max-w-5xl text-base leading-7 text-gray-700">
-                <h1 class="mt-5 heading-class">
+                <h1 class="mt-5 section-heading">
                     We're a business built on partnerships
                 </h1>
 
@@ -50,7 +50,7 @@ const partners = ref([
                     protection for more Australians.
                 </p>
 
-                <h1 class="mt-10 heading-class">
+                <h1 class="mt-10 section-heading">
                     Our Partners
                 </h1>
 
@@ -61,7 +61,7 @@ const partners = ref([
                         </i>
                         <div>
                             <h5 v-html="partner.name"
-                                class="subheading-class pb-3 leading-normal">
+                                class="subsection-heading pb-3 leading-normal">
                             </h5>
                             <p class="text-xs leading-normal text-light-content">
                                 {{ partner.description }}

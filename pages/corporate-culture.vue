@@ -33,160 +33,121 @@ const faqs = ref([
     <section class="min-h-screen font-sans bg-white">
         <BannerMain :content="bannerContent" />
 
-        <div>
-            <div class="relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
-                <div class="container">
-                    <div
-                        class="flex items-center bg-cover py-10 text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-center">
-                            <div>
-                                <h1 class="my-5 heading-class text-black text-left">
-                                    The <span class="text-brand-primary">Acentria Way</span>
-                                </h1>
-                                <p
-                                    class="text-left font-sans tracking-normal text-xs text-gray-900 leading-normal pb-2">
-                                    At Acentria Group, our corporate culture is the driving force behind everything we
-                                    do. It is shaped by a clear sense of purpose and guided by our commitment to
-                                    fostering a supportive, innovative, and dynamic environment where every employee
-                                    thrives.
-                                    Our culture isn't just about the work we do—it’s about how we do it and the values
-                                    that shape our interactions. We call this <b>The Acentria Way!</b>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+
+            <div class="py-5">
+                <h1 class="pb-5 section-heading">
+                    The <span class="text-brand-primary">Acentria Way</span>
+                </h1>
+                <p class="content">
+                    The Acentria Way defines how we work, collaborate, and innovate. It’s a culture built on
+                    empowerment, innovation, and shared prosperity. We focus not only on the work we do but
+                    on how we do it and the values guiding our interactions.
+                </p>
+            </div>
+
+            <div class="container mx-auto flex lg:flex-row-reverse flex-col gap-10 py-5">
+                <div class="flex flex-col justify-center">
+                    <h1 class="section-heading">
+                        Our <span class="text-brand-primary">Culture</span>
+                    </h1>
+                    <h6 id="" class="card-heading mb-3">
+                        Creating the Best <span class="text-brand-primary">Employee Experience</span>
+                    </h6>
+                    <p class="content pb-5">
+                        The Acentria Way unites us through collaboration and innovation, empowering individuals to
+                        thrive.
+                        <br><br>
+                        <span>
+                            • <b>Purpose-Driven:</b> We empower dreams, ignite imagination, and propel prosperity.
+                            <br><br>
+                            • <b>Employee Experience:</b> We foster a culture where employees feel valued and supported.
+                            <br><br>
+                            • <b>Impactful Leadership:</b> Our leaders inspire with transparency, integrity, and
+                            empathy.
+                        </span>
+                    </p>
+                </div>
+                <div class="col-span-5 relative flex items-center">
+                    <NuxtImg alt="content" loading="lazy" decoding="async"
+                        class="w-full h-auto shadow-2xl rounded-lg !object-cover"
+                        src="https://img.freepik.com/free-photo/handsome-african-guy-black-jeans-holding-laptop-showing-co-workers-presentation-indoor-portrait-asian-man-glasses-embracing-blonde-woman-posing-with-other-employees_197531-3775.jpg?t=st=1738408774~exp=1738412374~hmac=1b223112608c3ab2406ad821a046dbcc1d03965e9499dfaf19a65595bcc088dc&w=900" />
                 </div>
             </div>
 
-            <div class="text-white">
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col">
-                    <div class="flex flex-col justify-center">
-                        <h1 class="heading-class">
-                            Our <span class="text-brand-primary">Culture</span>
-                        </h1>
-                        <h6 id="" class="subheading-class leading-normal mb-3">
-                            Creating the Best Employee Experience and Driving Business with Purpose
-                        </h6>
-                        <div class="text-light-content pb-2">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                The Acentria Way is more than a set of principles—it’s a culture that unites us across
-                                borders, disciplines, and functions. It defines how we collaborate, innovate, and
-                                empower one another.
-                                <br><br>
-                                <span>
-                                    • <b>Purpose-Driven:</b> At Acentria, we work with a clear vision to “empower
-                                    dreams, ignite imagination, and propel prosperity.” Every day, we inspire each other
-                                    to aim higher, think bolder, and achieve greater success. <br><br>
-                                    • <b>Employee Experience:</b> We are committed to creating a workplace where every
-                                    employee feels valued, heard, and supported. From fostering a culture of open
-                                    communication to offering continuous development opportunities, we believe in
-                                    empowering our people to reach their full potential. <br><br>
-                                    • <b>Impactful Leadership:</b> Our leaders set the tone by modelling transparency,
-                                    integrity, and empathy, inspiring teams to work with purpose and passion. Through
-                                    collaboration and shared values, we collectively drive results that matter.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
+            <div class="container mx-auto flex lg:flex-row flex-col gap-10 py-5">
+                <div class="flex flex-col justify-center">
+                    <h1 class="section-heading">
+                        Less <span class="text-brand-primary">is More</span>
+                    </h1>
+                    <h6 id="" class="card-heading mb-5">
+                        Leveraging Technology for Smarter Solutions
+                    </h6>
+                    <p class="content pb-5">
+                        We embrace technology to streamline processes, enhance efficiency, and make smarter decisions.
+                        <br><br>
+                        <span>
+                            • <b>Agility Through Technology:</b> We stay ahead by using tech to improve and adapt
+                            quickly. <br><br>
+                            • <b>Innovation at Our Core:</b> We simplify challenges and integrate solutions for client
+                            satisfaction. <br><br>
+                            • <b>Driving Change:</b> We lead through digital evolution and operational efficiency.
+                        </span>
+                    </p>
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col lg:gap-16">
-                    <div class="flex flex-col justify-center">
-                        <h1 class="heading-class">
-                            Less <span class="text-brand-primary">is more</span>
-                        </h1>
-                        <h6 id="" class="subheading-class leading-normal mb-3">
-                            Leveraging Technological Advancements to Respond Faster to Market Needs and Innovation to
-                            Improve Our Processes
-                        </h6>
-                        <div class="text-light-content pb-2">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                In an ever-evolving business landscape, less is more means leveraging the power of
-                                technology to streamline operations and drive smarter, faster, and more effective
-                                decision-making.
-                                <br><br>
-                                <span>
-                                    • <b>Agility Through Technology:</b> We embrace cutting-edge technology to improve
-                                    our processes, reduce inefficiencies, and meet market demands swiftly. Whether it’s
-                                    automating routine tasks, or utilizing advanced data analytics, we continuously
-                                    explore ways to stay ahead of the curve. <br><br>
-                                    • <b>Innovation at Our Core:</b> We believe innovation is key to staying relevant in
-                                    today’s fast-paced world. By simplifying complex processes and integrating tech
-                                    solutions, we’re able to move quickly, adapt to changes, and deliver impactful
-                                    results to our clients. <br><br>
-                                    • <b>Driving Change:</b> Through constant digital evolution, we ensure that Acentria
-                                    remains a leader in delivering the highest quality services with unparalleled
-                                    efficiency, ensuring we can meet evolving client needs and exceed market
-                                    expectations.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-span-5 relative flex items-center">
+                    <NuxtImg alt="content" loading="lazy" decoding="async"
+                        class="w-full h-auto shadow-2xl rounded-lg !object-cover"
+                        src="https://img.freepik.com/free-photo/business-executive-using-virtual-reality-headset-working-laptop_107420-65761.jpg?t=st=1738408942~exp=1738412542~hmac=49cc608c58417f2d77700300ba57b44a70c11f01ded8208f5f1266c66b5e15ca&w=900" />
                 </div>
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col lg:gap-16">
-                    <div class="flex flex-col justify-center">
-                        <h1 class="heading-class">
-                            Create <span class="text-brand-primary">Balance</span>
-                        </h1>
-                        <h6 id="" class="subheading-class leading-normal mb-3">
-                            Shifting from Labor Force to Talent, Building Capabilities, Maximizing Potential in a
-                            Holistic Manner, and Driving Productivity through Empathic Leadership
-                        </h6>
-                        <div class="text-light-content pb-2">
-                            <p class="text-xs leading-normal font-regular text-light-content mb-4 !text-inherit">
-                                Creating a balanced and inclusive environment is essential for driving sustainable
-                                growth. At Acentria, we understand that success isn’t just about the work—it’s about how
-                                we approach talent, development, and leadership.
-                                <br><br>
-                                <span>
-                                    • <b>Talent Over Labor:</b> We focus on attracting and nurturing talent—not just
-                                    filling positions. This shift allows us to build an empowered, engaged workforce
-                                    that brings fresh ideas and a passion for progress. <br><br>
-                                    • <b>Holistic Development:</b> We emphasize the importance of professional and
-                                    personal growth, offering opportunities for skill development, emotional
-                                    intelligence, and leadership training to ensure our teams are well-rounded and
-                                    prepared for future challenges. <br><br>
-                                    • <b>Empathic Leadership:</b> We understand that strong leadership goes beyond
-                                    decision-making—it’s about inspiring, motivating, and supporting our teams. Our
-                                    leaders practice empathy, recognizing the diverse needs of their teams and creating
-                                    a work culture that prioritizes well-being, collaboration, and respect. <br><br>
-                                    • <b>Maximizing Potential:</b> By aligning personal growth with organizational
-                                    goals, we ensure that our employees are not only productive but also fulfilled in
-                                    their roles. We help people discover their strengths, foster creativity, and achieve
-                                    their personal best, leading to a more productive, satisfied, and resilient
-                                    workforce.
-                                </span>
-                            </p>
-                        </div>
+            </div>
+
+            <div class="container mx-auto flex lg:flex-row-reverse flex-col gap-10 py-5 ">
+                <div class="flex flex-col justify-center">
+                    <h1 class="section-heading">
+                        Create <span class="text-brand-primary">Balance</span>
+                    </h1>
+                    <h6 id="" class="card-heading mb-5">
+                        Shifting from Labor Force to Talent
+                    </h6>
+                    <p class="content pb-5">
+                        We focus on nurturing talent and empowering growth through empathetic leadership.
+                        <br><br>
+                        <span>
+                            • <b>Talent Over Labor:</b> We attract and nurture talent that drives progress. <br><br>
+                            • <b>Holistic Development:</b> We support personal and professional growth. <br><br>
+                            • <b>Empathic Leadership:</b> We lead with empathy, ensuring a balanced, collaborative
+                            culture.
+                        </span>
+                    </p>
+                </div>
+                <div class="col-span-5 relative flex items-center">
+                    <NuxtImg alt="content" loading="lazy" decoding="async"
+                        class="w-full h-auto shadow-2xl rounded-lg !object-cover"
+                        src="https://img.freepik.com/free-vector/alternative-medicine-libra-balance-concept_1284-39224.jpg?t=st=1738408995~exp=1738412595~hmac=4abca02164b0743dfc9443ff983b7fb9fc35562ce7d6dcd9620cf63209325204&w=826" />
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container py-5">
+            <h1 class="pb-5 section-heading">Our Commitment <span class="text-brand-primary">to
+                    Culture</span></h1>
+            <div
+                class="flex items-center bg-cover text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
+                <div class="flex flex-col gap-6 mx-auto items-center justify-center text-left">
+                    <div>
+                        <p class="content pb-5">
+                            The Acentria Way shapes our work, collaboration, and innovation. We are committed to
+                            empowering our people, embracing technology, and fostering growth, ensuring a positive
+                            impact on our future and the world.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div>
-            <div class="relative w-full bg-cover bg-center bg-no-repeat" style="background-image: none;">
-                <div class="container">
-                    <h1 class="mb-3 heading-class text-left">Our Commitment <span class="text-brand-primary">to
-                            Culture</span></h1>
-                    <div
-                        class="flex items-center bg-cover text-center lg:text-left flex-col lg:items-center justify-between flex-no-wrap gap-6 md:gap-12">
-                        <div class="flex flex-col gap-6 mx-auto items-center justify-center text-left">
-                            <div>
-                                <p
-                                    class="font-sans tracking-normal text-xs text-gray-900 leading-normal lg:leading-normal pb-2">
-                                    At Acentria, our corporate culture is what makes us unique. It drives the way we
-                                    work, collaborate, and innovate. We’re committed to a culture that empowers our
-                                    people, embraces technology, and encourages holistic growth. As we continue to
-                                    evolve, The Acentria Way will remain at the heart of everything we do—shaping our
-                                    future, our success, and our collective impact on the world.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <Accordion :faqs="faqs" />
-        </div>
+        <Accordion :faqs="faqs" />
     </section>
 </template>
 

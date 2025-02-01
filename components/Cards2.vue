@@ -19,7 +19,7 @@ const props = defineProps({
                             <i :class="item.icon" class="text-brand-primary text-4xl pb-4" translate="no"></i>
                             <div>
                                 <h4
-                                    class="subheading-class pb-4 md:pb-5">
+                                    class="subsection-heading pb-4 md:pb-5">
                                    {{ item.name }}
                                 </h4>
                             </div>

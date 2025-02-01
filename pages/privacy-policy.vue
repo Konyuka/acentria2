@@ -20,7 +20,7 @@ const ReinsuranceBannerContent = ref({
                     your information when you visit our website or use our services.
                 </p>
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">How We Use Your Information</p>
+                    <p class="section-heading">How We Use Your Information</p>
                     <p class="mt-8">
                         We use your information for the following purposes:
                     </p>
@@ -94,7 +94,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
 
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">Information we collect</p>
+                    <p class="section-heading">Information we collect</p>
                     <p class="mt-8">
                         We may collect personal information when you interact with us, including but not limited to:
                     </p>
@@ -169,7 +169,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
 
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">How We Use Your Information</p>
+                    <p class="section-heading">How We Use Your Information</p>
                     <p class="mt-8">
                         We use your information for the following purposes:
                     </p>
@@ -205,7 +205,7 @@ const ReinsuranceBannerContent = ref({
 
                 <!-- New sections -->
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">4. Information Sharing</p>
+                    <p class="section-heading">4. Information Sharing</p>
                     <p class="mt-8">
                         We may share your information with third parties, including:
                     </p>
@@ -253,7 +253,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
 
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">5. Your Rights</p>
+                    <p class="section-heading">5. Your Rights</p>
                     <p class="mt-8">
                         You have the right to:
                     </p>
@@ -301,7 +301,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
 
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">6. Data Security</p>
+                    <p class="section-heading">6. Data Security</p>
                     <p class="mt-8">
                         We implement reasonable security measures to protect your information from unauthorized access,
                         disclosure, alteration, and destruction.
@@ -309,7 +309,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
 
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">7. Cookies and Similar Technologies</p>
+                    <p class="section-heading">7. Cookies and Similar Technologies</p>
                     <p class="mt-8">
                         Our website may use cookies and similar technologies. You can control cookies through your
                         browser settings.
@@ -317,7 +317,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
 
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">8. Children’s Privacy</p>
+                    <p class="section-heading">8. Children’s Privacy</p>
                     <p class="mt-8">
                         Our services are not intended for individuals under the age of 18. We do not knowingly collect
                         personal information from children.
@@ -325,7 +325,7 @@ const ReinsuranceBannerContent = ref({
                 </div>
 
                 <div class="mt-10 max-w-3xl mx-auto">
-                    <p class="heading-class">9. Changes to This Privacy Policy</p>
+                    <p class="section-heading">9. Changes to This Privacy Policy</p>
                     <p class="mt-8">
                         We may update this Privacy Policy from time to time. The latest version will be posted on our
                         website with the updated date.

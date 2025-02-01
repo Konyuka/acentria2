@@ -118,7 +118,7 @@ const socials = ref([
                     <dl class="grid grid-cols-5 gap-3">
                         <a :href="feature.link" target="_blank" v-for="(feature, index) in socials" :key="index"
                             class="shadow-2xl rounded-md p-3 button-animation flex flex-col">
-                            <dt class="subheading-class text-black flex gap-3">
+                            <dt class="subsection-heading text-black flex gap-3">
                                 <div
                                     class="mb-2 flex h-14 w-14 items-center justify-center rounded-lg bg-brand-primary">
                                     <i :class="feature.icon" class=" text-white" aria-hidden="true"></i>
