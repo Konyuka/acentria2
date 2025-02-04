@@ -221,7 +221,7 @@ const whyWork = ref({
                 <div class="text-white py-10">
                     <div class="container grid grid-cols-12 gap-10">
 
-                        <div class="col-span-4 flex flex-col justify-center lg:basis-2/5">
+                        <div class="col-span-5 flex flex-col justify-center lg:basis-2/5">
                             <h2 class="pb-3 section-heading text-brand-primary">
                                 <span class="font-sans text-black">Join our</span> <br>
                                 Talent Community
@@ -256,7 +256,7 @@ const whyWork = ref({
                             </p>
                         </div>
 
-                        <div class="col-span-8 relative py-4">
+                        <div class="col-span-7 relative py-4">
                             <NuxtImg alt="Image of community" loading="lazy" decoding="async" src="/img/Join our.JPG"
                                 class="rounded-xl w-full h-[500px]" />
                         </div>

@@ -111,7 +111,7 @@ const socials = ref([
                     </div>
                 </div>
 
-                <div class="mx-auto py-5 font-sans">
+                <!-- <div class="mx-auto py-5 font-sans">
                     <p class="section-heading pb-5">
                         Follow <span class="text-brand-primary">us on</span>
                     </p>
@@ -134,7 +134,8 @@ const socials = ref([
                             </dt>
                         </a>
                     </dl>
-                </div>
+                </div> -->
+
             </div>
         </div>
     </div>
