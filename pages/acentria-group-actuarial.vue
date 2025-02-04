@@ -86,7 +86,7 @@ const systems = ref([
 ])
 
 const exploreHelp = ref({
-    orientation: 'image-right',
+    orientation: 'image-left',
     heading: 'How Acentria Actuaries <span class="text-brand-primary">Can Help</span>',
     subheading: '',
     image: '/img/handshake.jpg',
@@ -113,6 +113,52 @@ const blackBannerContent = ref(
     '<span class="text-brand-primary">Your Actuarial Services, Your Way.</span> <br> Let Acentria Tailor Your Solutions To Your Needs'
 )
 
+const transformingRiskIntoOpportunities = ref({
+    orientation: 'image-right',
+    heading: 'Transforming risks <span class="text-brand-primary"> into Opportunities</span>',
+    subheading: 'Innovative <span class="text-brand-primary">Risk Management & Insurance Solutions</span>',
+    image: 'https://img.freepik.com/free-photo/african-business-male-people-shaking-hands_1303-18516.jpg?t=st=1738681016~exp=1738684616~hmac=2de40fba10b5b489b9c115ab6888f34f7a61fdab5965c9461c2b3e9646358529&w=900',
+    link: '/actuarial/insurance-consulting',
+    content: 'At Acentria we pride ourselves in ensuring our clients understand their risk exposure and are well prepared to mitigate it. Through our expertise and experience, we work with our insurance clients to design and price insurance products. We also support our clients in liability assessment and capital modelling. Through our strategy teams we support our clients to embed modern and innovative solutions in their long-term and short-term strategies.'
+})
+
+const enablingAndEmpoweringPeople = ref({
+    orientation: 'image-left',
+    heading: 'Enabling and <span class="text-brand-primary">Empowering Your People</span>',
+    subheading: 'World-Class <span class="text-brand-primary">Employee & Retirement Benefits</span>',
+    image: 'https://img.freepik.com/free-photo/portrait-upset-old-man-covering-face-while-crying-isolated-grey-wall_155003-18418.jpg?t=st=1738680969~exp=1738684569~hmac=4bb5cb21ae6f33a101a239428c383bad7a22d171354195fd4090c87d95e2c410&w=900',
+    link: '/actuarial/retirement-and-employee-benefits',
+    content: 'We understand that people are the most important resource of any organization. Therefore, we are committed to providing world-class employee and retirement benefits, ranging from pension fund valuations to employee benefits structuring and optimization.'
+})
+
+const uncertaintyToResilience = ref({
+    orientation: 'image-right',
+    heading: 'From <span class="text-brand-primary">Uncertainty to Resilience</span>',
+    subheading: 'Expert <span class="text-brand-primary">Risk Analytics & Optimization</span>',
+    image: 'https://img.freepik.com/free-vector/resilience-concept-illustration_114360-14888.jpg?t=st=1738680867~exp=1738684467~hmac=2750418417a00537ac1d322ec3a139c52c3617b1dc0b2924ac7b94627ae6dd27&w=900',
+    link: '/actuarial/reinsurance-consulting',
+    content: 'We have built over 10 years’ worth of experience in risk analytics, optimization and transfer. This ensures we comfortably support our clients in risk assessment and mitigation through reinsurance optimization and catastrophic risk assessment. Our proprietary AcentRe tool utilizes AI powered engines to deliver excellent results, on reinsurance pricing and analytics to the users.'
+})
+
+const resilienceInFinancialServices = ref({
+    orientation: 'image-left',
+    heading: 'Resilience in <span class="text-brand-primary">Financial Services</span>',
+    subheading: 'Driving Insights for <span class="text-brand-primary">Banks, SACCOs, and Insurers</span>',
+    image: 'https://img.freepik.com/free-photo/workplace-team-cooperation-businesswoman-laptop-office_1418-44.jpg?t=st=1738681078~exp=1738684678~hmac=0ef2e1f2778b3c367e4d248b060352e609d20c15e5c255d09af12411c4ca585d&w=900',
+    link: '/actuarial/financial-services',
+    content: 'To support our financial services clients, we provide excellent analysis to drive insights for banks, SACCOs and insurance companies. Our services range from IFRS9 implementation, asset liability matching and financial strategy setting. Our experts have diverse and rich experience and are eager to support the clients we have.'
+})
+
+const dataDrivenTransformation = ref({
+    orientation: 'image-right',
+    heading: 'Data Driven <span class="text-brand-primary">Transformation</span>',
+    subheading: 'Innovative <span class="text-brand-primary">Data Management & AI Solutions</span>',
+    image: 'https://img.freepik.com/free-photo/3d-robot-hand-background-ai-technology-side-view_53876-129789.jpg?t=st=1738681084~exp=1738684684~hmac=f1d716490dc2369523c15df8dc797311f426662ab525562e5eadd201778ce3a4&w=900',
+    link: '/',
+    content: 'Our approach includes a proper review of the data strategy of the company, to understand the gaps and inefficiencies available. Our data processes include setting up data management strategies and advisory on process automation and artificial intelligence. Our team of tech experts is always ready to deliver excellent solutions.'
+})
+
+
 </script>
 
 <template>
@@ -120,7 +166,16 @@ const blackBannerContent = ref(
         <div class="bg-white">
             <Carousel2 :content="bannerMainContent" />
             <ContentPic :content="introContent" />
+
+            <ContentPic :content="transformingRiskIntoOpportunities" />
+            <ContentPic :content="enablingAndEmpoweringPeople" />
+            <ContentPic :content="uncertaintyToResilience" />
+            <ContentPic :content="resilienceInFinancialServices" />
+            <ContentPic :content="dataDrivenTransformation" />
+
             <ContentPic :content="exploreHelp" />
+
+
             <ServiceTabs :serviceHeading="serviceHeading" :menus="menus" :data="data" />
 
             <div class="bg-white pb-6">
