@@ -32,12 +32,11 @@
                                                 Reviews & <span class="text-brand-primary">Testimonials</span>
                                             </h1>
                                             <p class="content pb-5">
-                                                Clients’ positive experiences and continued trust reflect Acentria’s
-                                                success in
-                                                exceeding expectations and solidifying a reputation for reliability and
-                                                excellence. They frequently commend their responsiveness, the clarity of
-                                                their
-                                                advice, and their ability to deliver effective solutions.
+                                                Our customers highlight how Acentria we rise to every challenge with a
+                                                blend of innovation
+                                                and care. Whether navigating complexities or seizing new opportunities,
+                                                they trust us to
+                                                deliver solutions that truly empower their journey.
                                             </p>
                                             <NuxtLink to="/reviews-and-testimonials">
                                                 <AppButton :title="'Read Reviews'" />

@@ -331,37 +331,21 @@ const specials = ref([
 
 const whys = ref([
     {
-        name: 'We create innovative, future-ready solutions that stay ahead of industry trends.',
+        name: 'Innovative, future-ready solutions',
         icon: 'fas fa-lightbulb',
     },
     {
-        name: 'We provide real-time, adaptive service delivery that flexes with your needs.',
+        name: 'Adaptive service delivery',
         icon: 'fas fa-sync-alt',
     },
     {
-        name: 'We design intelligent solutions that are both user-centric and future-focused.',
+        name: 'User-centric, intelligent designs',
         icon: 'fas fa-user-cog',
     },
     {
-        name: 'We deliver data-driven customer experiences tailored to evolving market demands.',
+        name: 'Data-driven experiences',
         icon: 'fas fa-chart-line',
     },
-    // {
-    //     name: 'We implement smart processes and methodologies backed by competitive, value-based pricing.',
-    //     icon: 'fas fa-cogs',
-    // },
-    // {
-    //     name: 'We attract and retain forward-thinking talent skilled in blending artificial and human intelligence.',
-    //     icon: 'fas fa-users',
-    // },
-    // {
-    //     name: 'We develop and integrate seamless smart systems, platforms, and automated workflows that boost efficiency and agility.',
-    //     icon: 'fas fa-network-wired',
-    // },
-    // {
-    //     name: 'We communicate transformative insights, demonstrating how intelligence, innovation, and implementation converge into truly “smart” solutions.',
-    //     icon: 'fas fa-comments',
-    // },
 ]);
 
 const features = [
@@ -430,10 +414,9 @@ const introContent = ref({
                 <div class="col-span-7 flex flex-col justify-center">
                     <div class="pb-3">
                         <h1 class="section-heading">
-                            Shaping the future for our partners through empowerment &
+                            We rise with you, crafting solutions <br>
                             <span class="text-brand-primary">
-                                innovative solutions that drive
-                                prosperity and ensure success.
+                                that empower your growth and success.
                             </span>
                         </h1>
                         <h4 class="card-heading pt-5 !normal-case">
@@ -491,11 +474,10 @@ const introContent = ref({
                 </h2>
 
                 <h2 class="max-w-5xl section-heading !normal-case !text-[20px]">
-                    We blend innovation, expertise, and a nuanced understanding of industry-specific challenges to
-                    empower our clients in
+                    We stand with you, blending innovation and expertise to tackle industry challenges. <br>
                     <span class="text-brand-primary">
-                        achieving their objectives with precision & impact by addressing complex
-                        needs with tailored strategies.
+                        Our
+                        tailored strategies empower you to achieve your goals with precision and impact.
                     </span>
                 </h2>
 
@@ -624,11 +606,14 @@ const introContent = ref({
                             <h1 class="card-heading !text-[20px]">
                                 We Ensure <span class="text-brand-primary">Smart!</span>
                             </h1>
-                            <h2 class="section-heading py-3 !normal-case">
-                                We communicate transformative insights, demonstrating how <span
-                                    class="text-brand-primary"> intelligence, innovation, &
-                                    implementation converge into truly “Smart”
-                                    solutions.</span>
+                            <h2 class="content py-3 !normal-case">
+                                We promise to stand with you, walk with you, and rise with you. At Acentria Group, we
+                                blend
+                                intelligence, innovation, and practical implementation to create &quot;smart&quot;
+                                solutions that
+                                empower your journey.
+
+                              
                             </h2>
 
                         </div>

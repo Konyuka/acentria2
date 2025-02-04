@@ -15,19 +15,19 @@ const joinAsMembers = ref([
     name: 'New Customer',
     icon: 'fas fa-user-plus',
     link: '/join-our-team',
-    description: 'Join us as a new customer and experience our exceptional services tailored to meet your needs.',
+    description: 'Join us and experience solutions that are tailored to your needs, designed to help you thrive and succeed.',
   },
   {
     name: 'Supplier',
     icon: 'fas fa-truck',
     link: '/join-our-team',
-    description: 'Partner with us as a supplier and contribute to our supply chain with your quality products and services.',
+    description: 'Collaborate with us to expand our network. Contribute to our supply chain and help us deliver excellence.',
   },
   {
     name: 'Career',
     icon: 'fas fa-briefcase',
     link: '/acentria-group-careers',
-    description: 'Explore career opportunities at Acentria Group and become a part of our dynamic and innovative team.',
+    description: 'Rise with us! Join a team that fosters growth, innovation, and professional excellence. Explore our career opportunities today.',
   },
 ])
 
