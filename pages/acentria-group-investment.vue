@@ -28,25 +28,25 @@ const features = [
         img: 'https://img.freepik.com/free-photo/light-bulb-with-drawing-graph_1232-2775.jpg?t=st=1738395013~exp=1738398613~hmac=4a3a104adca9baf074d808b3a7aaff0c3cac0bb7abcd61c3d2c5e8abbec6ebd0&w=900',
         title: 'Savings with Strategy',
         description: 'We help you save by combining insurance and investments, ensuring a strategic approach to growing your wealth.',
-        url: '/', 
+        url: '/acentria-group-investment', 
     },
     {
         img: 'https://img.freepik.com/free-photo/focused-call-center-operator-typing-laptop_74855-4213.jpg?t=st=1738395063~exp=1738398663~hmac=694fda4068ed3ae8c10745e29a2cc71b883f4de5f9f2330c7dc2ae017290759a&w=900', 
         title: 'Support When You Need It',
         description: 'Get expert advice tailored to your needs, ensuring you have the right guidance at every step.',
-        url: '/', 
+        url: '/acentria-group-investment', 
     },
     {
         img: 'https://img.freepik.com/free-photo/confident-man_176420-33461.jpg?t=st=1738395113~exp=1738398713~hmac=a6d4ea514d22b6b56192ca4a46f99111c4f90026da58550fe8ffa55da376d690&w=900', 
         title: 'Easy to Use',
         description: 'Access convenient and user-friendly investment solutions designed for your comfort.',
-        url: '/', 
+        url: '/acentria-group-investment', 
     },
     {
         img: 'https://img.freepik.com/free-photo/front-view-confident-woman-studio_23-2148410803.jpg?t=st=1738395153~exp=1738398753~hmac=fc56a9fc501561107a40511439143855ce76ba30d2e473ef2b796394e2feac68&w=900',
         title: 'Confidence and Care',
         description: 'Professional guidance to secure your future, giving you confidence in your financial decisions.',
-        url: '/', 
+        url: '/acentria-group-investment', 
     },
 ];
 

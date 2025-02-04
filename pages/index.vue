@@ -2,18 +2,6 @@
 import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
-useSeoMeta({
-  title: 'Acentria Group - Comprehensive Coverage Solutions',
-  description: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
-  ogTitle: 'Acentria Group Insurance - Comprehensive Coverage Solutions',
-  ogDescription: 'Discover Acentria Group Insurance, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
-  ogImage: '/img/LogoT.png',
-  ogUrl: 'https://www.acentriagroup.com',
-  twitterTitle: 'Acentria Group - Comprehensive Coverage Solutions',
-  twitterDescription: 'Discover Acentria Group, your trusted partner for comprehensive coverage solutions. Protect your health, home, car, and business with our tailored insurance plans.',
-  twitterImage: '/img/LogoT.png',
-  twitterCard: 'summary_large_image'
-});
 
 const InsuranceBannerContent = ref({
   subtitle: "Acentria Group",
