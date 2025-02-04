@@ -172,7 +172,7 @@ const whoWeAre = ref({
     subheading: '',
     image: '/img/Who we are.jpg',
     link: '/',
-    content:'Acentria Group is a trusted global consultant dedicated to empowering growth in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. With over a decade of expertise, we craft innovative solutions that stay ahead of the curve, ensuring that our clients unlock opportunities and navigate challenges with confidence.'
+    content:'Acentria Group is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. We empower clients with tailored, forward-thinking solutions.'
 })
 
 const thingsThatInspireUs = ref({
@@ -190,7 +190,7 @@ const whatWeDo = ref({
     subheading: '',
     image: '/img/dreads.jpg',
     link: '/',
-    content:'At Acentria Group, we provide transformative solutions in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. Success for us goes beyond exceptional service; it’s about creating sustainable solutions that benefit society, protect the environment, and create value for all our stakeholders.'
+    content:'We deliver transformative services in Risk Management, Reinsurance, Actuarial, Investment Advisory, and Technology to maximize opportunities and achieve financial success.'
 });
 
 onMounted(() => {
@@ -264,43 +264,29 @@ onMounted(() => {
                     and individuals to thrive in diverse areas, including:
                 </p>
             </div>
-            =
 
-            <div class="container grid grid-cols-3 gap-5 justify-between py-5">
-
-                <p class="content">
-                    We provide expert insights and innovative solutions designed to address complex challenges and
-                    unlock new opportunities.
-                    <br><br>
-                    Our capabilities span a diverse range of fields, enabling us to
-                    deliver
-                    customized strategies that drive growth, mitigate risks, and enhance prosperity in an
-                    ever-changing global landscape.
-                    <br><br>
-                    With a focus on inclusivity, sustainability, and impactful results, we leverage our expertise to
-                    ensure success for our clients, colleagues, and the communities we serve.
-                </p>
-
-                <div class="col-span-2">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-                        <NuxtLink :to="feature.url" v-for="feature in features"
-                            class="button-animation flex p-3 shadow-md border-l-4 border-brand-primary">
-                            <div class="pr-3">
-                                <i :class="feature.icon" class="text-brand-primary text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="card-heading text-left">
-                                    {{ feature.title }}
-                                </h4>
-                                <p class="content">
-                                    {{ feature.description }}
-                                </p>
-                            </div>
-                        </NuxtLink>
+            <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 my-5">
+                <NuxtLink :to="feature.url" v-for="feature in features"
+                    class="button-animation flex p-3 shadow-md border-l-4 border-brand-primary">
+                    <div class="pr-3">
+                        <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                     </div>
-                </div>
-
+                    <div>
+                        <h4 class="card-heading text-left">
+                            {{ feature.title }}
+                        </h4>
+                        <p class="content">
+                            {{ feature.description }}
+                        </p>
+                    </div>
+                </NuxtLink>
             </div>
+
+            <p class="container content">
+                We offer a comprehensive suite of services designed to meet the evolving needs of our
+                clients. Through innovation, expertise, and unwavering dedication, we empower businesses
+                and individuals to thrive in diverse areas, including:
+            </p>
 
             <div class="container my-5">
                 <h2 id="" class="section-heading pb-3  text-brand-primary">
@@ -349,18 +335,10 @@ onMounted(() => {
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                At Acentria Group, our journey is a testament to resilience, vision, and the limitless
-                                possibilities that come with dedication. From humble beginnings, we have evolved,
-                                continuously adapting to the changing times while remaining true to our mission of
-                                empowering individuals, businesses, and communities.
-                                <br><br>
-                                Our growth is rooted in the dreams we nurture—for our clients and our team. By
-                                championing equal opportunities, we’ve fostered a culture where everyone has the chance
-                                to contribute and thrive, laying the groundwork for shared success.
-                                Through strategic partnerships and impactful collaborations, we’ve worked closely with
-                                our stakeholders to strengthen foundations and achieve sustainable progress. Together,
-                                we are shaping a future defined by resilience, shared prosperity, and collective
-                                achievement.
+                                At Acentria Group, our journey is defined by resilience, vision, and dedication. We
+                                adapt to
+                                change while staying true to our mission of empowering businesses and communities.
+                                Together, we rise, shaping a future of shared prosperity and collective success.
                             </p>
                         </div>
                     </div>
@@ -380,13 +358,10 @@ onMounted(() => {
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                Our success is powered by a dynamic and dedicated leadership team. With diverse
-                                expertise and a shared commitment to excellence, our leaders play a crucial role in
-                                shaping our organization's vision, strategy, and culture.
-                                <br><br>
-                                Meet the visionaries and strategists driving innovation, growth, and success. Their
-                                unwavering dedication and forward-thinking approach ensure we remain at the forefront of
-                                our industry, consistently adapting to new challenges and seizing opportunities.
+                                Our leaders are dedicated to innovation and excellence. They drive growth, inspire
+                                change,
+                                and empower us to stay ahead in the industry, rising to new challenges and
+                                opportunities.
                             </p>
                             <NuxtLink to="/meet-the-team"
                                 class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
@@ -411,14 +386,10 @@ onMounted(() => {
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                At Acentria Group, our corporate culture is the foundation of everything we do. It is
-                                the fertile soil where seeds of promise grow into prosperity. Guided by a clear purpose,
-                                our culture fosters a supportive, innovative, and dynamic environment where every
-                                employee has the opportunity to thrive.
-                                <br><br>
-                                The Acentria Way is more than just about the work we do—it’s about how we do it. Our
-                                values and principles shape every engagement, driving us to deliver excellence while
-                                empowering our people and the communities we serve.
+                                The Acentria Way is not just about the work we do—it’s about how we do it. Our culture
+                                is
+                                the foundation of our success. We foster an innovative, supportive environment where
+                                everyone can thrive, delivering excellence and empowering our people and communities.
                             </p>
                             <NuxtLink to="/corporate-culture"
                                 class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
@@ -443,14 +414,8 @@ onMounted(() => {
                         </h2>
                         <div class="text-black pb-5 md:pb-6">
                             <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                At Acentria, our brand promise is simple yet powerful: &quot;Done Smart.&quot; Every
-                                strategy, every service,
-                                and every solution we deliver is designed with intelligence and innovation in mind. We
-                                commit to
-                                providing our clients with the smartest solutions, empowering them to thrive in an
-                                ever-evolving
-                                world. Our promise reflects the precision, thoughtfulness, and expertise we bring to
-                                every project.
+                                Our brand promise is simple: &quot;Done Smart.&quot; Every solution we deliver is
+                                designed with intelligence and innovation to empower clients in a rapidly evolving world.
                             </p>
                             <NuxtLink to="/our-brand"
                                 class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
