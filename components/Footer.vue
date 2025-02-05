@@ -190,7 +190,7 @@ const showDropdown = (menu) => {
                     </div>
 
                     <div v-for="item in menuItem" :key="item.name"
-                        class="pointer-events-auto relative z-10 overflow-hidden border-b-[1px] border-brand-gray-6 lg:border-0">
+                        class="hidden sm:block pointer-events-auto relative z-10 overflow-hidden border-b-[1px] border-brand-gray-6 lg:border-0">
                         <h3 class="mb-1 flex items-center justify-between text-base font-bold lg:text-xl">
                             <span class="hidden">{{ item.name }}</span>
                             <button @click="showItem(item.name)"
@@ -251,7 +251,7 @@ const showDropdown = (menu) => {
                 </div>
 
                 <hr class="h-0.25 bg-brand-divider my-5" />
-                <h2 class="card-heading text-white mb-3 ">Connect with us</h2>
+                <h2 class="hidden sm:block card-heading text-white mb-3 ">Connect with us</h2>
                 <div class="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0">
                     <!-- socials -->
                     <div class="flex items-center justify-end md:justify-end md:col-span-1">
