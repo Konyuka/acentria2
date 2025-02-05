@@ -126,6 +126,7 @@ onMounted(() => {
 <template>
     <section class="min-h-screen bg-white">
         <BannerMain :content="bannerContent" />
+        
 
         <div class="container w-full  mt-10">
             <div class="sm:hidden">
