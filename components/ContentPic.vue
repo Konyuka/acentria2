@@ -37,7 +37,7 @@ const theButtonTitle = computed(() => {
 
 <template>
     <div class="bg-white">
-        <div class="hidden sm:flex container mx-auto gap-10 py-5" :class="content.orientation">
+        <div class="hidden sm:flex container py-5" :class="content.orientation">
             <div class="grid grid-cols-12 gap-10">
                 <template v-if="content.orientation === 'image-left'">
                     <div class="col-span-5 relative flex items-center">

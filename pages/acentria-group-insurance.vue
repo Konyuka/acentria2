@@ -1,5 +1,5 @@
 <script setup>
-const serviceHeading = ref('Pick a cover and, <span class="text-brand-primary"> we\'ll take care of the risks</span > ')
+const serviceHeading = ref('Pick a cover & <br> <span class="text-brand-primary"> we\'ll take care of the risks</span > ')
 
 const menus = ref([
     {
@@ -207,7 +207,7 @@ onMounted(() => {
                     coverage. Our approach integrates comprehensive risk assessment, strategic planning, and
                     proactive risk management to ensure you have the protection you need when you need it most.
                 </p>
-                <div class=" grid grid-cols-5 gap-5">
+                <div class="pb-5 sm:pb-0 sm:grid grid-cols-5 gap-5">
                     <NuxtLink :to="product.link" v-for="product in products" :key="product.id"
                         class="button-animation group shadow-md p-3 rounded-md">
                         <div class="overflow-hidden rounded-lg">

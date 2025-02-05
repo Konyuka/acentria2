@@ -179,9 +179,9 @@ const showDropdown = (menu) => {
 
         <div class="font-sans w-full border-t-8 border-black bg-black/70 py-5">
             <div class="container mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 text-sm px-auto my-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-sm px-auto my-4">
 
-                    <div class="flex items-center justify-center pr-10">
+                    <div class="flex items-center justify-left ">
                         <NuxtLink to="/">
                             <NuxtImg alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
                                 class="mr-8 w-full h-16" style="color: transparent; object-fit: contain;"
@@ -190,7 +190,7 @@ const showDropdown = (menu) => {
                     </div>
 
                     <div v-for="item in menuItem" :key="item.name"
-                        class="hidden sm:block pointer-events-auto relative z-10 overflow-hidden border-b-[1px] border-brand-gray-6 lg:border-0">
+                        class="hidden lg:block pointer-events-auto relative z-10 overflow-hidden border-b-[1px] border-brand-gray-6 lg:border-0">
                         <h3 class="mb-1 flex items-center justify-between text-base font-bold lg:text-xl">
                             <span class="hidden">{{ item.name }}</span>
                             <button @click="showItem(item.name)"

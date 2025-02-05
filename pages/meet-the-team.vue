@@ -126,13 +126,13 @@ onMounted(() => {
 <template>
     <section class="min-h-screen bg-white">
         <BannerMain :content="bannerContent" />
-        
+
 
         <div class="container w-full  mt-10">
             <div class="sm:hidden">
                 <label for="tabs" class="sr-only">Select a tab</label>
                 <select @change="setMobileMenu($event)" id="tabs" name="tabs"
-                    class=" section-heading block w-full rounded-md border-black focus:border-brand-primary focus:ring-brand-primary py-2 font-bold">
+                    class=" section-heading block w-full rounded-md border-black focus:border-brand-primary focus:ring-brand-primary py-5 font-bold">
                     <option selected value="Governance">Corporate Governance</option>
                     <option value="Board">Board of Directors</option>
                     <option value="Executive">Management Team</option>
