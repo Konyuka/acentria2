@@ -60,7 +60,7 @@ onMounted(() => {
                     Need<span class="text-brand-primary"> Assistance?</span>
                 </h2>
 
-                <div class="grid grid-cols-4 gap-2">
+                <div class="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 gap-2">
 
                     <div @click="openFormModal('support')"
                         class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md ">
@@ -154,7 +154,7 @@ onMounted(() => {
                                             </div>
                                         </div>
 
-                                        <div class="max-w-2xl mx-auto">
+                                        <div class="max-w-xs sm:max-w-2xl mx-auto">
                                             <div class="py-2 text-left container">
                                                 <h2 v-html="activeContent.heading" class="section-heading text-black">
                                                 </h2>

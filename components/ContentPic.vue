@@ -91,7 +91,7 @@ const theButtonTitle = computed(() => {
             <div class="flex flex-col justify-center">
                 <div class="pb-3">
                     <h1 v-html="content.heading" class="section-heading"></h1>
-                    <h4 v-html="content.subheading" class="card-heading"></h4>
+                    <!-- <h4 v-html="content.subheading" class="card-heading"></h4> -->
                 </div>
                 <div class="py-5 relative flex items-center">
                     <NuxtImg :alt="content.heading" loading="lazy" decoding="async"

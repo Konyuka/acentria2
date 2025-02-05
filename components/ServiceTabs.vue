@@ -21,35 +21,47 @@ const gridCols = computed(() => {
     }
 });
 
-// Computed property to dynamically set grid classes
+const itemsToShow = ref(2);
 const gridClass = computed(() => {
     const length = menuOptions.value?.length;
     let columns;
     if (length <= 4) {
-        columns = length;
+        if (itemsToShow.value==2) {
+            columns = 2;
+        }else{
+            columns = length;
+        }
     } else {
         columns = Math.ceil(length / Math.ceil(length / 4));
     }
     return `lg:grid-cols-${columns}`;
 });
 
-// Method to set the active menu and update browser state
 const setMenu = (menu) => {
     selectedMenu.value = menu;
     menuOptions.value = props.data[menu];
 
-    // Update the browser history state with the active tab
     router.replace({
         path: route.path,
         query: { ...route.query, activeTab: menu },
     });
 };
 
-// Restore the active menu and options on component mount
+
+
 onMounted(() => {
+    const updateItemsToShow = () => {
+        itemsToShow.value = window.innerWidth < 1000 ? 2 : 4;
+    };
+    updateItemsToShow();
+    window.addEventListener('resize', updateItemsToShow);
+
     const activeTab = route.query.activeTab || props.menus[0].tag;
     selectedMenu.value = activeTab;
     menuOptions.value = props.data[activeTab];
+});
+onBeforeUnmount(() => {
+    window.removeEventListener('resize', updateItemsToShow);
 });
 </script>
 
@@ -62,7 +74,7 @@ onMounted(() => {
             <button v-for="menu in menus" :key="menu.tag" @click="setMenu(menu.tag)"
                 :class="selectedMenu === menu.tag ? 'bg-brand-primary text-white' : 'bg-black text-white'"
                 class="card-heading button-animation inline-flex items-center justify-center rounded-sm hover:bg-brand-primary hover:text-white px-4 py-2">
-                <i :class="menu.icon" class="mr-3"></i> {{ menu.name }}
+                <i :class="menu.icon" class="hidden sm:block mr-3"></i> {{ menu.name }}
             </button>
         </div>
 

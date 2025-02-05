@@ -328,8 +328,9 @@ const benefits = ref([
                 <p class="!content pb-5">
                     Here are some compelling reasons why you should partner with us:
                 </p>
-                <div class="grid grid-cols-3 gap-5 text-left ">
-                    <div v-for="(item, index) in benefits" :key="index" class="shadow-md py-2 px-4 rounded-md">
+                <div class="sm:grid grid-cols-3 gap-5 text-left ">
+                    <div v-for="(item, index) in benefits" :key="index"
+                        class="mb-5 sm:mb-0 shadow-md py-2 px-4 rounded-md">
                         <div class="text-red-600 text-3xl mb-3 flex items-center justify-between">
                             <h3 class=" card-heading">{{ item.title }}</h3>
                             <i :class="item.icon"></i>
