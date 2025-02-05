@@ -99,10 +99,6 @@ const others = ref([
 
 ])
 
-const itemsToShow = computed(() => {
-  return window.innerWidth < 1000 ? 1 : 3; // Adjust 768 to your breakpoint for mobile
-});
-
 const chunkedBlogs = computed(() => {
   const chunkSize = itemsToShow.value
   const result = []
@@ -112,7 +108,19 @@ const chunkedBlogs = computed(() => {
   return result
 })
 
+// const itemsToShow = computed(() => {
+//   return window.innerWidth < 1000 ? 1 : 3;
+// });
+const itemsToShow = ref(3);
 onMounted(() => {
+  const updateItemsToShow = () => {
+    itemsToShow.value = window.innerWidth < 1000 ? 1 : 3;
+  };
+  updateItemsToShow();
+  window.addEventListener('resize', updateItemsToShow);
+});
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', updateItemsToShow);
 });
 
 </script>

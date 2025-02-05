@@ -398,12 +398,20 @@ const introContent = ref({
     content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
 })
 
-const itemsToShow = computed(() => {
-    return window.innerWidth < 1000 ? 1 : 3; // Adjust 768 to your breakpoint for mobile
-});
-// window.addEventListener('resize', () => {
-//     itemsToShow.value = window.innerWidth < 768 ? 1 : 3;
+// const itemsToShow = computed(() => {
+//     return window.innerWidth < 1000 ? 1 : 3; 
 // });
+const itemsToShow = ref(3);
+onMounted(() => {
+    const updateItemsToShow = () => {
+        itemsToShow.value = window.innerWidth < 1000 ? 1 : 3;
+    };
+    updateItemsToShow();
+    window.addEventListener('resize', updateItemsToShow);
+});
+onBeforeUnmount(() => {
+    window.removeEventListener('resize', updateItemsToShow);
+});
 
 </script>
 
