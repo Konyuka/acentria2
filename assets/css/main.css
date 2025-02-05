@@ -29,44 +29,51 @@ html {
 
 
 .section-heading {
-  @apply tracking-normal text-3xl text-black font-semibold leading-tight capitalize
-}
-.section-heading {
+  @apply tracking-normal text-3xl text-black font-semibold leading-tight capitalize;
   font-family: "Lato", serif !important;
+}
+@media (max-width: 768px) {
+  .section-heading {
+    @apply text-2xl leading-snug;
+  }
 }
 
 .card-heading {
-  @apply tracking-normal text-lg text-black  font-semibold leading-normal capitalize
-}
-.card-heading {
+  @apply tracking-normal text-lg text-black font-semibold leading-normal capitalize;
   font-family: "Lato", serif !important;
+}
+@media (max-width: 768px) {
+  .card-heading {
+    @apply text-base leading-normal;
+  }
 }
 
-.content{
-  @apply tracking-normal text-[14px] text-black !font-sans 
-}
-.content{
+.content {
+  @apply tracking-normal text-[14px] text-black !font-sans;
   font-family: "Lato", serif !important;
+}
+@media (max-width: 768px) {
+  .content {
+    @apply text-sm;
+  }
 }
 
 .small-text {
-  @apply tracking-normal text-xs text-black font-normal leading-normal
-}
-.small-text {
+  @apply tracking-normal text-xs text-black font-normal leading-normal;
   font-family: "Lato", serif !important;
 }
-
-.bannerHeading{
-  @apply tracking-normal text-4xl text-black font-semibold leading-normal capitalize
+@media (max-width: 768px) {
+  .small-text {
+    @apply text-[12px];
+  }
 }
-.bannerHeading{
+
+.bannerHeading {
+  @apply tracking-normal text-4xl text-black font-semibold leading-normal capitalize;
   font-family: "Lato", serif !important;
 }
-
 .bannerDescription{
-  @apply tracking-normal text-xl text-black font-semibold leading-normal capitalize
-}
-.bannerDescription{
+  @apply tracking-normal text-xl text-black font-semibold leading-normal capitalize;
   font-family: "Lato", serif !important;
 }
 
