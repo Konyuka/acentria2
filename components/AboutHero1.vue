@@ -8,8 +8,6 @@ const props = defineProps({
 <template>
     <div class="relative h-screen ">
 
-        <!-- hd2.mp4  redvid.mp4-->
-
         <client-only>
             <video autoplay muted loop class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 -z-20"
                 src="/img/hd2.mp4" style="color: transparent">
@@ -17,15 +15,7 @@ const props = defineProps({
             </video>
         </client-only>
 
-
-        <!-- Background Image -->
-        <!-- <img loading="lazy" src="/img/xxl.jpg" alt="Background Image"
-            class="drop-shadow-md w-screen h-screen object-fill fixed top-0 left-0 z-[-1]" style="color: transparent; " /> -->
-
-        <!-- Gradient Overlay -->
-        <!-- <div class="absolute inset-0 bg-black opacity-50 z-0"></div> -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20 opacity-100 z-0"></div>
-
 
         <div class="container">
             <div class="flex h-screen items-center justify-center flex-col text-left text-white z-10 relative">
