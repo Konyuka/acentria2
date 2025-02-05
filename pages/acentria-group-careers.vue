@@ -219,7 +219,7 @@ const whyWork = ref({
                 </div>
 
                 <div class="text-white py-10">
-                    <div class="container grid grid-cols-12 gap-10">
+                    <div class="container sm:grid grid-cols-12 gap-10">
 
                         <div class="col-span-6 flex flex-col justify-center lg:basis-2/5">
                             <h2 class="pb-3 section-heading text-brand-primary">

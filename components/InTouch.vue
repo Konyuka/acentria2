@@ -101,31 +101,6 @@ const socials = ref([
                     </div>
                 </div>
 
-                <!-- <div class="mx-auto py-5 font-sans">
-                    <p class="section-heading pb-5">
-                        Follow <span class="text-brand-primary">us on</span>
-                    </p>
-                    <dl class="grid grid-cols-5 gap-3">
-                        <a :href="feature.link" target="_blank" v-for="(feature, index) in socials" :key="index"
-                            class="shadow-2xl rounded-md p-3 button-animation flex flex-col">
-                            <dt class="subsection-heading text-black flex gap-3">
-                                <div
-                                    class="mb-2 flex h-14 w-14 items-center justify-center rounded-lg bg-brand-primary">
-                                    <i :class="feature.icon" class=" text-white" aria-hidden="true"></i>
-                                </div>
-                                <div>
-                                    <h4 class="card-heading">
-                                        {{ feature.title }}
-                                    </h4>
-                                    <span class="mt-1 flex flex-auto flex-col small-text !font-semibold text-gray-600">
-                                        <p class="flex-auto" v-html="feature.description"></p>
-                                    </span>
-                                </div>
-                            </dt>
-                        </a>
-                    </dl>
-                </div> -->
-
             </div>
         </div>
     </div>
