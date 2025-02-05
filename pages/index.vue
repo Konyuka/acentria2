@@ -99,8 +99,12 @@ const others = ref([
 
 ])
 
+const itemsToShow = computed(() => {
+  return window.innerWidth < 1000 ? 1 : 3; // Adjust 768 to your breakpoint for mobile
+});
+
 const chunkedBlogs = computed(() => {
-  const chunkSize = 3
+  const chunkSize = itemsToShow.value
   const result = []
   for (let i = 0; i < others.value?.length; i += chunkSize) {
     result.push(others.value?.slice(i, i + chunkSize))
@@ -118,12 +122,15 @@ onMounted(() => {
     <div class="font-sans">
       <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
       <MakesUs2 />
-      <div class="container relative min-h-[30vh]">
+      <div class="container relative min-h-[15vh] sm:min-h-[30vh]">
         <div class="bottom-5 absolute">
-          <h1 class="section-heading pb-3 text-white">
-            Your might also <span class="text-brand-primary">be interested in</span>
+          <h1 class="hidden sm:block section-heading pb-3 text-white">
+            You might also <span class="text-brand-primary">be interested in</span>
           </h1>
-          <h4 class="bannerDescription text-white">
+          <h4 class="hidden sm:block bannerDescription text-white">
+            More about <span class="text-brand-primary"> Acentria</span>
+          </h4>
+          <h4 class="block sm:hidden section-heading text-white">
             More about <span class="text-brand-primary"> Acentria</span>
           </h4>
         </div>
@@ -162,7 +169,7 @@ onMounted(() => {
 
           <template #addons>
             <Pagination />
-            <Navigation class="text-black -px-40" />
+            <Navigation class="hidden sm:block text-black -px-40" />
           </template>
         </Carousel>
       </div>

@@ -35,6 +35,10 @@ const awards = ref([
     },
 ])
 
+const itemsToShow = computed(() => {
+    return window.innerWidth < 1000 ? 1 : 3; // Adjust 768 to your breakpoint for mobile
+});
+
 </script>
 
 <template>
@@ -48,7 +52,7 @@ const awards = ref([
                     & Recognitions
                 </h1>
 
-                <Carousel :items-to-show="3" :wrap-around="true" :transition="500" :autoplay="2000" class="">
+                <Carousel :items-to-show="itemsToShow" :wrap-around="true" :transition="500" :autoplay="2000" class="">
                     <Slide v-for="product in awards" :key="product.id">
                         <div class="carousel__item px-2 py-5">
                             <button class="group w-full">
@@ -93,7 +97,7 @@ const awards = ref([
 
 <style scoped>
 .carousel__item {
-    min-height: 200px;
+    min-height: 100px;
     width: 100%;
 }
 

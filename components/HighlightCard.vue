@@ -9,7 +9,7 @@ const currentRoute = computed(() => route.path);
 
 <template>
     <NuxtLink :to="item.link" :class="[currentRoute !== '/acentria-group-investment' ? 'button-animation' : '']" class="card !z-10 flex flex-col">
-        <div class="bg p-4 flex flex-col flex-grow">
+        <div class="bg py-5 flex flex-col flex-grow">
             <dt class="card-heading mb-2">
                 <img :src="item.img" alt="Icon" class="w-full h-40 object-cover rounded-lg mb-2" />
                 {{ item.title }}

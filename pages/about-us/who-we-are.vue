@@ -1,6 +1,4 @@
 <script setup>
-
-
 const bannerMainContent = ref({
     title: 'About <br><span class="text-brand-primary">Acentria Group</span>',
     subtitle: '<span class="text-brand-primary">#</span>Empower | <span class="text-brand-primary">#</span>Innovate | <span class="text-brand-primary">#</span>Prosper',
@@ -109,51 +107,6 @@ const features = [
     },
 ]
 
-const empower = ref([
-    {
-        title: 'For our clients',
-        description: 'We provide the tools, insights, and solutions they need to overcome challenges, seize opportunities, and achieve their goals.',
-    },
-    {
-        title: 'For our employees',
-        description: 'We cultivate an environment where ideas flourish, ambitions are realized, and diverse talents shine.',
-    },
-    {
-        title: 'For our communities',
-        description: 'We strive to create a lasting impact through initiatives that champion equality, inclusion, and sustainability.',
-    }
-])
-
-const innovate = ref([
-    {
-        title: 'Inspired by challenges',
-        description: 'We thrive on solving complex problems, thinking differently, and creating transformative solutions.',
-    },
-    {
-        title: 'Embracing technology and creativity',
-        description: 'We leverage cutting-edge tools and imaginative approaches to redefine possibilities and deliver value in bold, unexpected ways.',
-    },
-    {
-        title: 'Driven by resilience',
-        description: 'The evolving needs of our stakeholders motivate us to stay ahead of the curve and continuously innovate.',
-    }
-]);
-
-const prosper = ref([
-    {
-        title: 'Inspired by impact',
-        description: 'We are driven by the positive difference we make in the lives of our clients and their stakeholders.',
-    },
-    {
-        title: 'Measuring prosperity',
-        description: 'We evaluate success through lasting relationships, ethical practices, and our contributions to a sustainable future.',
-    },
-    {
-        title: 'Motivated by shared growth',
-        description: 'We are inspired by the collective success we achieve alongside our clients and partners.',
-    }
-]);
-
 const scrollToSection = () => {
     const targetSection = localStorage.getItem('targetSection');
     console.log(targetSection);
@@ -172,7 +125,7 @@ const whoWeAre = ref({
     subheading: '',
     image: '/img/Who we are.jpg',
     link: '/',
-    content:'Acentria Group is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. We empower clients with tailored, forward-thinking solutions.'
+    content: 'Acentria Group is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. We empower clients with tailored, forward-thinking solutions.'
 })
 
 const thingsThatInspireUs = ref({
@@ -181,7 +134,7 @@ const thingsThatInspireUs = ref({
     subheading: '<span class="text-brand-primary">#</span> Empower <span class="text-brand-primary">#</span> Innovate <span class="text-brand-primary">#</span> Prosper',
     image: '/img/inspire.jpg',
     link: '/things-that-inspire-us',
-    content:'We are inspired by the potential to empower individuals, businesses, and communities. Innovation fuels our creativity to craft transformative solutions that drive success, while prosperity motivates us to create a lasting impact—building stories of growth for our clients and society as a whole.'
+    content: 'We are inspired by the potential to empower individuals, businesses, and communities. Innovation fuels our creativity to craft transformative solutions that drive success, while prosperity motivates us to create a lasting impact—building stories of growth for our clients and society as a whole.'
 });
 
 const whatWeDo = ref({
@@ -190,8 +143,45 @@ const whatWeDo = ref({
     subheading: '',
     image: '/img/dreads.jpg',
     link: '/',
-    content:'We deliver transformative services in Risk Management, Reinsurance, Actuarial, Investment Advisory, and Technology to maximize opportunities and achieve financial success.'
+    content: 'We deliver transformative services in Risk Management, Reinsurance, Actuarial, Investment Advisory, and Technology to maximize opportunities and achieve financial success.'
 });
+
+const ourJourney = ref({
+    orientation: 'image-left',
+    heading: 'Our <span class="text-brand-primary">Journey</span>',
+    subheading: '',
+    image: '/img/bill.jpg',
+    link: '/',
+    content: 'At Acentria Group, our journey is defined by resilience, vision, and dedication. We adapt to change while staying true to our mission of empowering businesses and communities. Together, we rise, shaping a future of shared prosperity and collective success.'
+});
+
+const ourLeadership = ref({
+    orientation: 'image-right',
+    heading: 'Our <span class="text-brand-primary">Leadership</span>',
+    subheading: '',
+    image: '/img/iStock-2148737980 Leadership.jpg',
+    link: '/meet-the-team',
+    content: 'Our leaders are dedicated to innovation and excellence. They drive growth, inspire change, and empower us to stay ahead in the industry, rising to new challenges and opportunities.'
+});
+
+const ourCulture = ref({
+    orientation: 'image-left',
+    heading: 'Our <span class="text-brand-primary">Culture</span>',
+    subheading: '',
+    image: '/img/Things that Inspire Us.JPG',
+    link: '/corporate-culture',
+    content: 'The Acentria Way is not just about the work we do—it’s about how we do it. Our culture is the foundation of our success. We foster an innovative, supportive environment where everyone can thrive, delivering excellence and empowering our people and communities.'
+});
+
+const ourBrand = ref({
+    orientation: 'image-right',
+    heading: 'Our <span class="text-brand-primary">Brand</span>',
+    subheading: '',
+    image: '/img/join.jpg',
+    link: '/our-brand',
+    content: 'Our brand promise is simple: "Done Smart." Every solution we deliver is designed with intelligence and innovation to empower clients in a rapidly evolving world.'
+});
+
 
 onMounted(() => {
     scrollToSection();
@@ -202,24 +192,10 @@ onMounted(() => {
     <section class="bg-white">
         <Carousel2 :content="bannerMainContent" />
 
-        <!-- <div class="container py-5">
-            <h1 class="section-heading pb-3">Welcome to <span class="text-brand-primary">Acentria Group</span>
-            </h1>
-            <p class="!content">
-                At Acentria Group, we shape the future of our partners through our expertise and solutions by
-                EMPOWERING the vision of our clients and communities. Through INNOVATIVE thinking, we deliver the
-                best solutions that enhance PROSPERITY. We are constantly seeking better ways to manage risk,
-                guiding effective pathways to achieve SMART and sustainable outcomes.
-                <br><br>
-                <span class="tracking-widest font-semibold text-[20px] text-black tm-10">
-                    Let us help you navigate the complexities of today’s world and unlock your true potential.
-                </span>
-            </p>
-        </div> -->
-
         <div class="container">
-            <div class="grid grid-cols-12 gap-2 py-5">
-                <div class="col-span-3 container max-w-6xl mx-auto justify-between content-center">
+            <div class="sm:grid grid-cols-12 gap-2 py-5">
+
+                <div class="hidden sm:block col-span-3 container max-w-6xl mx-auto justify-between content-center">
                     <h1 class="section-heading">
                         About
                     </h1>
@@ -244,15 +220,11 @@ onMounted(() => {
             </div>
         </div>
 
-
-
         <ContentPic :content="whoWeAre" />
         <ContentPic :content="thingsThatInspireUs" />
         <ContentPic :content="whatWeDo" />
 
         <div class="bg-white py-5">
-
-
 
             <div class="container">
                 <h2 class="section-heading pb-3">
@@ -282,13 +254,13 @@ onMounted(() => {
                 </NuxtLink>
             </div>
 
-            <p class="container content">
+            <p class="container content pb-5">
                 We offer a comprehensive suite of services designed to meet the evolving needs of our
                 clients. Through innovation, expertise, and unwavering dedication, we empower businesses
                 and individuals to thrive in diverse areas, including:
             </p>
 
-            <div class="container my-5">
+            <div class="container py-5">
                 <h2 id="" class="section-heading pb-3  text-brand-primary">
                     <span class="text-black">
                         Our Vision |
@@ -302,7 +274,7 @@ onMounted(() => {
                     <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
                         <div>
                             <dl
-                                class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-10 text-white sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                                class="font-sans pl-10 mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-10 text-white sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                                 <div v-for="(feature, index) in joinAsMembers" :key="feature.name"
                                     class="flex flex-col">
                                     <dt class="subsection-heading text-white">
@@ -322,110 +294,11 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="bg-white px-6 py-1 font-sans">
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative py-4 lg:basis-1/2 content-center">
-                        <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
-                            decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/bill.jpg" />
-                    </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="section-heading mb-4">
-                            Our <span class="text-brand-primary">Journey</span>
-                        </h2>
-                        <div class="text-black pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                At Acentria Group, our journey is defined by resilience, vision, and dedication. We
-                                adapt to
-                                change while staying true to our mission of empowering businesses and communities.
-                                Together, we rise, shaping a future of shared prosperity and collective success.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="bg-white px-6 py-1 font-sans">
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative py-4 lg:basis-1/2 content-center">
-                        <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
-                            decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/iStock-2148737980 Leadership.jpg" />
-                    </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="section-heading mb-4">
-                            Our <span class="text-brand-primary">Leadership</span>
-                        </h2>
-                        <div class="text-black pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                Our leaders are dedicated to innovation and excellence. They drive growth, inspire
-                                change,
-                                and empower us to stay ahead in the industry, rising to new challenges and
-                                opportunities.
-                            </p>
-                            <NuxtLink to="/meet-the-team"
-                                class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                                Meet the Team
-                                <i class="fas fa-arrow-right text-primary ml-2"></i>
-                            </NuxtLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white px-6 py-1 font-sans">
-                <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative py-4 lg:basis-1/2 content-center">
-                        <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
-                            decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/Things that Inspire Us.JPG" />
-                    </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="section-heading mb-4">
-                            Our <span class="text-brand-primary">Culture</span>
-                        </h2>
-                        <div class="text-black pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                The Acentria Way is not just about the work we do—it’s about how we do it. Our culture
-                                is
-                                the foundation of our success. We foster an innovative, supportive environment where
-                                everyone can thrive, delivering excellence and empowering our people and communities.
-                            </p>
-                            <NuxtLink to="/corporate-culture"
-                                class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                                Learn More
-                                <i class="fas fa-arrow-right text-primary ml-2"></i>
-                            </NuxtLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white px-6 py-1 font-sans">
-                <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
-                    <div class="relative py-4 lg:basis-1/2 content-center">
-                        <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
-                            decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
-                            class="rounded-lg" src="/img/join.jpg" />
-                    </div>
-                    <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 class="section-heading mb-4">
-                            Our <span class="text-brand-primary">Brand</span>
-                        </h2>
-                        <div class="text-black pb-5 md:pb-6">
-                            <p class="text-xs leading-normal font-regular text-black !text-inherit mb-4">
-                                Our brand promise is simple: &quot;Done Smart.&quot; Every solution we deliver is
-                                designed with intelligence and innovation to empower clients in a rapidly evolving world.
-                            </p>
-                            <NuxtLink to="/our-brand"
-                                class="button-animation bg-black hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
-                                Learn More
-                                <i class="fas fa-arrow-right text-primary ml-2 text-[12px]"></i>
-                            </NuxtLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ContentPic :content="ourJourney" />
+            <ContentPic :content="ourLeadership" />
+            <ContentPic :content="ourCulture" />
+            <ContentPic :content="ourBrand" />
 
         </div>
     </section>

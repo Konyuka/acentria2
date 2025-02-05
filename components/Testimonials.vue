@@ -2,7 +2,7 @@
     <div class="bg-white py-5 font-sans">
         <div class="container font-sans relative">
             <h2 class="section-heading">
-                What Our <span class="text-brand-primary">Customers are Saying!</span>
+                What Our <br class="" > <span class="text-brand-primary">Customers are Saying!</span>
             </h2>
 
             <div class="">

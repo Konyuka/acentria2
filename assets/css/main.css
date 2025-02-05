@@ -72,9 +72,19 @@ html {
   @apply tracking-normal text-4xl text-black font-semibold leading-normal capitalize;
   font-family: "Lato", serif !important;
 }
+@media (max-width: 390px) {
+  .bannerHeading {
+    @apply text-[35px];
+  }
+}
 .bannerDescription{
   @apply tracking-normal text-xl text-black font-semibold leading-normal capitalize;
   font-family: "Lato", serif !important;
+}
+@media (max-width: 390px) {
+  .bannerDescription {
+    @apply text-[12px];
+  }
 }
 
 

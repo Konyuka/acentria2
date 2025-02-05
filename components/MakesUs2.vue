@@ -398,6 +398,13 @@ const introContent = ref({
     content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
 })
 
+const itemsToShow = computed(() => {
+    return window.innerWidth < 1000 ? 1 : 3; // Adjust 768 to your breakpoint for mobile
+});
+// window.addEventListener('resize', () => {
+//     itemsToShow.value = window.innerWidth < 768 ? 1 : 3;
+// });
+
 </script>
 
 <template>
@@ -405,21 +412,27 @@ const introContent = ref({
 
         <div class="container">
 
-            <div class="grid grid-cols-12 gap-10 py-10">
-                <div class="col-span-5 relative flex items-center">
+            <div class="sm:grid sm:grid-cols-12 gap-10 py-10">
+                <div class="pb-10 sm:pb-0 col-span-5 relative flex items-center">
                     <NuxtImg alt="content" loading="lazy" decoding="async"
                         class="w-full h-auto shadow-2xl rounded-lg !object-cover"
                         src="/img/comitment to our partners.jpg" />
                 </div>
                 <div class="col-span-7 flex flex-col justify-center">
                     <div class="pb-3">
-                        <h1 class="section-heading">
+                        <h1 class="hidden sm:block section-heading">
                             We rise with you, crafting solutions <br>
                             <span class="text-brand-primary">
                                 that empower your growth and success.
                             </span>
                         </h1>
-                        <h4 class="card-heading pt-5 !normal-case">
+                        <h1 class="sm:hidden block card-heading pb-3">
+                            We rise with you, crafting solutions <br>
+                            <span class="text-brand-primary">
+                                that empower your growth and success.
+                            </span>
+                        </h1>
+                        <h4 class="card-heading  sm:pt-5 !normal-case">
                             Let us help you navigate the
                             complexities of today’s world and
                             unlock your true potential.
@@ -446,10 +459,10 @@ const introContent = ref({
                         and individuals to thrive across the following areas.
 
                     </p>
-                    <div class="grid grid-cols-5 gap-3 py-10">
+                    <div class="sm:grid grid-cols-5 gap-3 pb-5">
                         <HighlightCard :item="feature" v-for="feature in features" :key="feature.name" />
                     </div>
-                    <p class="pb-5">
+                    <p class="">
                         We provide expert insights and innovative solutions designed to address complex challenges and
                         unlock new opportunities. Our capabilities span a diverse range of fields, enabling us to
                         deliver
@@ -462,34 +475,21 @@ const introContent = ref({
             </div>
 
             <div class="py-5">
-                <!-- <h2 class="section-heading pb-3">
-                    The <span class="text-brand-primary">Industries</span>
-                </h2> -->
-
-
-
 
                 <h2 class="section-heading !normal-case py-5">
                     Explore the <span class="text-brand-primary"> Industries</span>
                 </h2>
 
-                <h2 class="max-w-5xl section-heading !normal-case !text-[20px]">
+                <h2 class="max-w-5xl card-heading sm:section-heading !normal-case !text-[20px]">
                     We stand with you, blending innovation and expertise to tackle industry challenges. <br>
-                    <span class="text-brand-primary">
+                    <span class="hidden sm:block text-brand-primary">
                         Our
                         tailored strategies empower you to achieve your goals with precision and impact.
                     </span>
                 </h2>
 
-                <!-- <p>
-                    At Acentria Group, our divisions in Insurance Broking, Reinsurance Broking, Actuarial and
-                    Financial Services, and Technology enable us to offer cutting-edge, industry-specific
-                    solutions. Guided by our brand promise, "Done Smart," we combine innovation, expertise, and
-                    a deep understanding of industry challenges to help our clients achieve their goals
-                    efficiently and effectively.
-                </p> -->
-
-                <Carousel :items-to-show="3" :wrap-around="true" :transition="500" :autoplay="2000" class="py-10">
+                <Carousel :items-to-show="itemsToShow" :wrap-around="true" :transition="500" :autoplay="2000"
+                    class="py-10">
                     <Slide v-for="product in specials" :key="product.id">
                         <div class="carousel__item">
                             <button @click="openProfileModal(product)" class="button-animation group w-full">
@@ -595,10 +595,10 @@ const introContent = ref({
                 <h1 class="section-heading pb-5">
                     Why Acentria <span class="text-brand-primary">Group?</span>
                 </h1>
-                <div class="grid grid-cols-12 gap-10">
+                <div class="sm:grid grid-cols-12 gap-10">
                     <div class="col-span-5 relative flex items-center">
                         <NuxtImg alt="content" loading="lazy" decoding="async"
-                            class="w-full h-auto shadow-2xl rounded-lg !object-cover"
+                            class="hidden sm:block w-full h-auto shadow-2xl rounded-lg !object-cover"
                             src="/img/our brand promise.JPG" />
                     </div>
                     <div class="col-span-7 flex flex-col justify-center">
@@ -613,7 +613,7 @@ const introContent = ref({
                                 solutions that
                                 empower your journey.
 
-                              
+
                             </h2>
 
                         </div>
@@ -651,7 +651,7 @@ const introContent = ref({
 }
 
 .carousel__slide {
-    padding: 10px;
+    padding: 15px;
 }
 
 .carousel__viewport {

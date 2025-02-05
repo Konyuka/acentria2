@@ -1,6 +1,4 @@
 <script setup>
-import CorporateGovernance from './corporate-governance.vue'
-
 const teamComponent = ref(null)
 const teamBoardComponent = ref(null)
 const profileModal = ref(false)
@@ -129,33 +127,32 @@ onMounted(() => {
     <section class="min-h-screen bg-white">
         <BannerMain :content="bannerContent" />
 
-        <div class="max-w-6xl justify-center mx-auto mt-10">
-            <div class="sm:hidden px-4">
+        <div class="container w-full  mt-10">
+            <div class="sm:hidden">
                 <label for="tabs" class="sr-only">Select a tab</label>
-                <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
                 <select @change="setMobileMenu($event)" id="tabs" name="tabs"
-                    class="block w-full rounded-md border-gray-300 focus:border-brand-primary focus:ring-brand-primary py-2 font-bold">
-                    <option selected value="blogs">Blogs</option>
-                    <option value="event">Events</option>
-                    <option value="media">Media</option>
+                    class=" section-heading block w-full rounded-md border-black focus:border-brand-primary focus:ring-brand-primary py-2 font-bold">
+                    <option selected value="Governance">Corporate Governance</option>
+                    <option value="Board">Board of Directors</option>
+                    <option value="Executive">Management Team</option>
                 </select>
             </div>
             <div class="hidden sm:block font-sans">
                 <div class="divide-x divide-gray-200 ">
-                    <nav class="-mb-px flex font-sans gap-40" aria-label="Tabs">
+                    <nav class="grid grid-cols-3 lg:gap-10 font-sans" aria-label="Tabs">
                         <button @click="setMenu('Governance')"
                             :class="[currentMenu == 'Governance' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
-                            class="w-1/4  px-1 py-4 text-center text-md subsection-heading   hover:text-brand-primary">
+                            class="px-1 py-4 text-left text-md subsection-heading   hover:text-brand-primary">
                             <i class="fas fa-images mr-2"></i> Corporate Governance
                         </button>
                         <button @click="setMenu('Board')"
                             :class="[currentMenu == 'Board' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py-4 text-center text-md subsection-heading   hover:text-brand-primary">
+                            class="px-1 py-4 text-left text-md subsection-heading   hover:text-brand-primary">
                             <i class="fas fa-blog mr-2"></i> Board of Directors
                         </button>
                         <button @click="setMenu('Executive')"
                             :class="[currentMenu == 'Executive' ? 'border-b-4 border-brand-primary text-brand-primary' : 'border-transparent text-black']"
-                            class="w-1/4 px-1 py- text-center text-md subsection-heading   hover:text-brand-primary">
+                            class="px-1 py- text-right text-md subsection-heading   hover:text-brand-primary">
                             <i class="fas fa-calendar-alt mr-2"></i> Management Team
                         </button>
 

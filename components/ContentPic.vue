@@ -37,7 +37,7 @@ const theButtonTitle = computed(() => {
 
 <template>
     <div class="bg-white">
-        <div class="container mx-auto flex gap-10 py-5" :class="content.orientation">
+        <div class="hidden sm:flex container mx-auto gap-10 py-5" :class="content.orientation">
             <div class="grid grid-cols-12 gap-10">
                 <template v-if="content.orientation === 'image-left'">
                     <div class="col-span-5 relative flex items-center">
@@ -82,6 +82,30 @@ const theButtonTitle = computed(() => {
                             class="w-full h-auto shadow-2xl rounded-lg !object-cover" :src="content.image" />
                     </div>
                 </template>
+            </div>
+
+        </div>
+
+        <div class="container block sm:hidden py-5">
+
+            <div class="flex flex-col justify-center">
+                <div class="pb-3">
+                    <h1 v-html="content.heading" class="section-heading"></h1>
+                    <h4 v-html="content.subheading" class="card-heading"></h4>
+                </div>
+                <div class="py-5 relative flex items-center">
+                    <NuxtImg :alt="content.heading" loading="lazy" decoding="async"
+                        class="w-full h-auto shadow-2xl rounded-lg !object-cover" :src="content.image" />
+                </div>
+                <div>
+                    <p v-html="content.content" class="content !font-sans pb-5"></p>
+                    <NuxtLink v-if="showButton" :to="content.link">
+                        <AppButton :title="theButtonTitle" />
+                    </NuxtLink>
+                    <NuxtLink v-if="showButton2" :to="content.link">
+                        <AppButton :title="theButtonTitle" />
+                    </NuxtLink>
+                </div>
             </div>
         </div>
     </div>
