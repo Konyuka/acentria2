@@ -79,9 +79,9 @@ onMounted(async () => {
                 <label for="tabs" class="sr-only">Select a tab</label>
                 <select @change="setMobileMenu($event)" id="tabs" name="tabs"
                     class="block w-full rounded-md border-gray-300 focus:border-brand-primary focus:ring-brand-primary py-2 font-semibold">
-                    <option selected value="blogs">Blogs</option>
-                    <option value="event">Events</option>
-                    <option value="media">Media</option>
+                    <option selected value="blogs">Latest News</option>
+                    <option value="event">News Feeds</option>
+                    <option value="media">Media Kit</option>
                 </select>
             </div>
             <div class="hidden sm:block font-sans">

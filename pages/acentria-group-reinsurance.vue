@@ -310,15 +310,15 @@ const benefits = ref([
     <main>
         <div class="bg-white">
             <Carousel2 :content="bannerMainContent" />
-            <ContentPic :content="content1" class="my-5" />
-            <ContentPic :content="content2" class="my-5" />
-            <ContentPic :content="content3" class="my-5" />
-            <ContentPic :content="content4" class="my-5" />
-            <ContentPic :content="content5" class="my-5" />
-            <ContentPic :content="content6" class="my-5" />
-            <ContentPic :content="content7" class="my-5" />
+            <ContentPic :content="content1"  />
+            <ContentPic :content="content2"  />
+            <ContentPic :content="content3"  />
+            <ContentPic :content="content4"  />
+            <ContentPic :content="content5"  />
+            <ContentPic :content="content6"  />
+            <ContentPic :content="content7"  />
             <ServiceTabs :serviceHeading="serviceHeading" :menus="menus" :data="data" />
-            <ContentPic :content="content8" class="my-5" />
+            <ContentPic :content="content8"  />
 
 
             <div class="container font-sans py-5">

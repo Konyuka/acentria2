@@ -4,6 +4,8 @@ const bannerContent = ref({
     title: 'Reach Out to Us',
     image: '/img/tele.jpeg'
 })
+
+const companyMail = ref('info@acentriagroup.com')
 </script>
 
 <template>

@@ -4,7 +4,7 @@
             <dl
                 class="mx-auto mt-5 grid gap-2 text-black grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
                 <a :href="feature.link" target="_blank" v-for="(feature, index) in socials" :key="index" class="hover:shadow-2xl rounded-md p-3 button-primary flex flex-col">
-                    <dt class="subsection-heading text-black flex gap-3">
+                    <div class="subsection-heading text-black flex gap-3">
                         <div class="mb-2 flex h-14 w-14 items-center justify-center rounded-lg bg-brand-primary">
                             <i :class="feature.icon" class=" text-white" aria-hidden="true" />
                         </div>
@@ -14,7 +14,7 @@
                                 <p class="flex-auto" v-html="feature.description"></p>
                             </dd>
                         </div>
-                    </dt>
+                    </div>
                 </a>
             </dl>
         </div>

@@ -12,25 +12,25 @@ const route = useRoute(); // Use route to check current path
 const selectedMenu = ref(route.query.activeTab || props.menus[0].tag);
 const menuOptions = ref(null);
 
-// Computed property to manage grid columns based on the route
+const itemsToShow = ref(4);
 const gridCols = computed(() => {
     if (route.path === '/acentria-group-reinsurance') {
-        return 'grid-cols-4';
+        if (itemsToShow.value=2){
+            return 'grid-cols-2';
+        }else{
+            return 'grid-cols-4';
+        }
     } else {
         return 'grid-cols-2';
     }
 });
 
-const itemsToShow = ref(2);
+
 const gridClass = computed(() => {
     const length = menuOptions.value?.length;
     let columns;
     if (length <= 4) {
-        if (itemsToShow.value==2) {
-            columns = 2;
-        }else{
-            columns = length;
-        }
+        columns = length;
     } else {
         columns = Math.ceil(length / Math.ceil(length / 4));
     }

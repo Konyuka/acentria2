@@ -56,13 +56,14 @@ const features = [
     <div class="bg-white">
         <Carousel2 :content="bannerMainContent" />
 
+        
         <ContentPic :content="introContent" />
 
         <div class="container py-5">
             <h2 class=" section-heading pb-3">
                 Why Invest <span class="text-brand-primary">with Acentria</span>
             </h2>
-            <div class="grid grid-cols-4 gap-3 py-5">
+            <div class="sm:grid grid-cols-4 gap-3 py-5">
                 <HighlightCard :item="feature" v-for="feature in features" :key="feature.name" />
             </div>
         </div>
