@@ -88,34 +88,6 @@ const data = ref({
             icon: 'fas fa-cloud-showers-heavy',
             link: '/reinsurance/catastrophic-modelling',
         },
-
-        
-        // {
-        //     name: 'Reinsurance Optimization',
-        //     content: 'Elevate your reinsurance strategy and secure a brighter, more resilient future with our expert guidance.',
-        //     icon: 'fas fa-chart-line',
-        //     link: '/reinsurance/reinsurance-optimization',
-        // },
-        
-       
-        // {
-        //     name: 'Return on Risk Adjusted Capital',
-        //     content: 'Maximize your financial performance with our advanced Return on Risk-Adjusted Capital (RORAC) solutions.',
-        //     icon: 'fas fa-coins',
-        //     link: '/reinsurance/return-on-risk-adjusted-capital',
-        // },
-        // {
-        //     name: 'Rating Agency Advisory',
-        //     content: 'Enhance your financial credibility and secure favorable credit ratings with our expert Rating Agency Advisory services.',
-        //     icon: 'fas fa-star',
-        //     link: '/reinsurance/rating-agency-advisory',
-        // },
-        // {
-        //     name: 'Risk Based Capital Regulation',
-        //     content: 'Navigate the complexities of financial stability with our expert Risk-Based Capital Regulation services.',
-        //     icon: 'fas fa-balance-scale',
-        //     link: '/reinsurance/risk-based-capital-regulation',
-        // },
     ],
     solutions: [
         {
@@ -159,7 +131,7 @@ const content1 = ref({
     orientation: 'image-left',
     heading: '<h1 class="section-heading text-left"> Welcome to <span class="text-brand-primary"> Acentria </span> </h1> <h4 class="text-xl font-semibold text-left"> Your Trusted <span class="text-brand-primary">Reinsurance Partner</span> </h4>',
     subheading: '',
-    image:'/img/Re1.jpg',
+    image:'/img/lady-shake.jpg',
     link: '/insurance-claims',
     content:'Acentria is your trusted partner in risk management, boasting a team of seasoned professionals dedicated to protecting your business. With our unrivaled market insights and innovative strategies, we provide bespoke reinsurance solutions that align perfectly with your unique needs. <br> At Acentria, we specialize in transforming complex risks into manageable solutions. As a leading reinsurance broker, we are your go-to experts for navigating the intricate world of reinsurance with ease and confidence.'
 })
@@ -183,7 +155,7 @@ const content4 = ref({
     orientation: 'image-right',
     heading: 'Limiting Liability &  <br/><span class="text-brand-primary">Increasing Capacities</span>',
     subheading: '',
-    image: '/img/Re4.jpg',
+    image: '/img/reinsure.jpeg',
     link: '/reinsurance/treaty-solutions',
     content: 'In a predictable world where re/insurers seek to introduce new solutions to customers, capital can serve as a bridge between innovation and investment. However, optimizing capital requires strategic decisions to support growth and maintain a stable balance sheet. At Acentria we assist insurers in limiting their loss exposure to levels commensurate with their net assets. We structure reinsurance solutions that stabilize loss experiences on individual risks and accumulated losses under multiple policies over a specified period.'
 })

@@ -8,9 +8,9 @@ const props = defineProps({
 <template>
     <div class="relative h-[95vh]">
         <div class="relative">
-            <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
+            <NuxtImg src="/img/mainbg.jpg" alt="Background Image"
             class="drop-shadow-md w-full h-screen object-cover fixed top-0 left-0 z-[-1]"
-            style="color: transparent; transform: scaleX(-1);">
+            style="color: transparent; transform: scaleX(-1);" />
 
             <div class="absolute inset-0 bg-black opacity-40 h-[95vh]"></div>
         </div>

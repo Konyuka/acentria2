@@ -170,11 +170,9 @@ const showDropdown = (menu) => {
 
 <template>
     <div>
-
-
-        <img loading="lazy" src="/img/mainbg.jpg" alt="Background Image"
+        <NuxtImg src="/img/mainbg.jpg" alt="Background Image"
             class="w-full h-screen object-cover fixed top-0 left-0 -z-50"
-            style="color: transparent; transform: scaleX(-1);">
+            style="color: transparent; transform: scaleX(-1);" />
 
 
         <div class="font-sans w-full border-t-8 border-black bg-black/70 py-5">

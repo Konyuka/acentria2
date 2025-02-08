@@ -10,7 +10,6 @@ useSeoMeta({
     ogDescription: 'We offer a diversified range of financial services to help you thrive. From insurance and reinsurance to actuarial services, technology, and investment/asset management, we promise to walk alongside you, designing solutions that cater to your specific needs..',
     ogImage: `${config.public.baseUrl}/img/LogoT.png`,
     ogUrl: fullPath,
-    // ogUrl: 'https://www.acentriagroup.com',
     twitterTitle: 'Acentria Group: Done Smart!',
     twitterDescription: 'We offer a diversified range of financial services to help you thrive. From insurance and reinsurance to actuarial services, technology, and investment/asset management, we promise to walk alongside you, designing solutions that cater to your specific needs..',
     twitterImage: `${config.public.baseUrl}/img/LogoT.png`,

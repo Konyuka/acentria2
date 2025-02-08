@@ -9,7 +9,7 @@ const smartSolutions = ref({
     orientation: 'image-right',
     heading: 'The Power of <span class="text-brand-primary">Smart Solutions</span>',
     subheading: '',
-    image: '/img/compass3.jpg',
+    image: '/img/compass.jpg',
     link: '/',
     content: 'For us, smart solutions go beyond technology—they are about understanding your needs, being creative in our approach, and looking ahead. Done Smart means blending intelligence with action to create solutions that go beyond what’s expected and help you navigate the future with confidence.'
 });

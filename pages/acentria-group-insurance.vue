@@ -124,7 +124,7 @@ const exploreRisks = ref({
     orientation: 'lg:flex-row-reverse flex-col',
     heading: 'Explore <span class="text-brand-primary">Risk Areas</span>',
     subheading: '',
-    image: '/img/risky.jpeg',
+    image: '/img/Re7.jpg',
     link: '/insurance-products',
     content: 'At Acentria we help clients to identify, mitigate and transfer an evolving range of risks and deliver solutions that safegueard people and businesses to recover from financial losses due to accidents, illnesses, natural disasters, and other unforeseen events giving you a financial security.',
 })
