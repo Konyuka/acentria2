@@ -25,7 +25,7 @@
 
                 <div class="relative border-b-4 border-brand-primary px-5 my-2">
 
-                    <NuxtImg
+                    <NuxtImg format="webp" 
                         src="https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?t=st=1731668657~exp=1731672257~hmac=076a7a4e668df8f1f10457e768ab3c441439e1709b43343e2a4671bf79b786d2&w=740"
                         alt="" class="absolute inset-0 -z-10 h-full w-full object-fit" />
                     <div class="absolute inset-0 bg-white opacity-75 -z-10"></div>

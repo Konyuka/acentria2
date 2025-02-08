@@ -68,7 +68,7 @@ const joinAsMembers = ref([
             <div class="">
                 <div class="container mx-auto flex lg:flex-row-reverse flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
-                        <NuxtImg alt="Image of Empowerment" loading="lazy" width="500" height="350" decoding="async"
+                        <NuxtImg format="webp"  alt="Image of Empowerment" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1" src="/img/empowerment.jpg" style="color: transparent; object-fit: contain;"
                             class="rounded-lg" />
                     </div>
@@ -97,7 +97,7 @@ const joinAsMembers = ref([
                 </div>
                 <div class="container mx-auto flex lg:flex-row flex-col lg:gap-16">
                     <div class="relative p-4">
-                        <NuxtImg alt="Image of Innovation" loading="lazy" width="500" height="350" decoding="async"
+                        <NuxtImg format="webp"  alt="Image of Innovation" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1" src="/img/inno.png" style="color: transparent;" class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
@@ -121,7 +121,7 @@ const joinAsMembers = ref([
                 </div>
                 <div class="container mx-auto flex lg:flex-row-reverse flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
-                        <NuxtImg alt="Image of Prosperity" loading="lazy" width="500" height="350" decoding="async"
+                        <NuxtImg format="webp"  alt="Image of Prosperity" loading="lazy" width="500" height="350" decoding="async"
                             data-nimg="1" src="/img/prosper.jpg" style="color: transparent; object-fit: contain;"
                             class="rounded-lg" />
                     </div>

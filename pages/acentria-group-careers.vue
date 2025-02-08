@@ -190,7 +190,7 @@ const whyWork = ref({
                 </h2>
 
                 <div class="relative isolate overflow-hidden bg-black p-5 font-sans">
-                    <NuxtImg src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                    <NuxtImg format="webp"  src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
                     <div class="absolute inset-0 bg-black opacity-30"></div>
 
                     <div class="mb-5 container">
@@ -200,7 +200,7 @@ const whyWork = ref({
                                     class="relative flex flex-col overflow-hidden rounded-md bg-brand-white shadow-card"
                                     href="resources/blog/preparing-for-ai-regulations.html">
                                     <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
-                                        <NuxtImg :src="news.image" alt="Image"
+                                        <NuxtImg format="webp"  :src="news.image" alt="Image"
                                             class="object-center object-cover h-full w-full" />
                                     </div>
                                     <div class="relative z-10 grid gap-2 bg-brand-white px-4 py-2">
@@ -257,7 +257,7 @@ const whyWork = ref({
                         </div>
 
                         <div class="col-span-6 relative py-4">
-                            <NuxtImg alt="Image of community" loading="lazy" decoding="async" src="/img/Join our.JPG"
+                            <NuxtImg format="webp"  alt="Image of community" loading="lazy" decoding="async" src="/img/Join our.JPG"
                                 class="rounded-xl w-full h-[500px]" />
                         </div>
                     </div>

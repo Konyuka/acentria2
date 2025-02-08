@@ -17,7 +17,7 @@ const showButton = computed(() => {
     <div>
         <div class="relative isolate overflow-hidden bg-white py-32 mt-20">
 
-            <NuxtImg :src="InsuranceBannerContent.image" alt="Success Team Hands Up"
+            <NuxtImg format="webp"  :src="InsuranceBannerContent.image" alt="Success Team Hands Up"
                 class="absolute inset-0 -z-10 h-full w-full object-cover" />
 
             <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20 opacity-100 z-0"></div>

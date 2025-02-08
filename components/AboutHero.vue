@@ -36,24 +36,24 @@
 
                     <div class="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
                         <div class="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                            <NuxtImg src="../../cdn.sanity.io/images/33u1mixi/production/50a13b2a8e4f87ca99f037b72f96445b754b6a13-1280x853.jpg"
+                            <NuxtImg format="webp"  src="../../cdn.sanity.io/images/33u1mixi/production/50a13b2a8e4f87ca99f037b72f96445b754b6a13-1280x853.jpg"
                                 alt="Have a discussion in an open space"
                                 class="aspect-[7/4] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover" />
                         </div>
                         <div
                             class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
                             <div class="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                                <NuxtImg src="../../cdn.sanity.io/images/33u1mixi/production/ac37ee50da5c9f21d882c634feda3f1946a5b6aa-1280x853.jpg"
+                                <NuxtImg format="webp"  src="../../cdn.sanity.io/images/33u1mixi/production/ac37ee50da5c9f21d882c634feda3f1946a5b6aa-1280x853.jpg"
                                     alt="Siting in comfy chairs collaborating"
                                     class="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover" />
                             </div>
                             <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                                <NuxtImg src="../../cdn.sanity.io/images/33u1mixi/production/e55c9b31f9c602fa909ec1d2f38123a1bab9b878-1280x853.jpg"
+                                <NuxtImg format="webp"  src="../../cdn.sanity.io/images/33u1mixi/production/e55c9b31f9c602fa909ec1d2f38123a1bab9b878-1280x853.jpg"
                                     alt="Rebecca laughing"
                                     class="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover" />
                             </div>
                             <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                                <NuxtImg src="../../cdn.sanity.io/images/33u1mixi/production/506df8e328b11e13eb9e6fd0853f6a4b349d7948-1280x853.jpg"
+                                <NuxtImg format="webp"  src="../../cdn.sanity.io/images/33u1mixi/production/506df8e328b11e13eb9e6fd0853f6a4b349d7948-1280x853.jpg"
                                     alt="Discussing Board and governance in an open space"
                                     class="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover" />
                             </div>

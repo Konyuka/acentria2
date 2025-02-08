@@ -43,7 +43,7 @@ const bannerContent = ref({
 
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="350"
+                    <NuxtImg format="webp"  alt="Image of Elevate strategic risk management" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="/img/foree.jpg" />
                 </div>
@@ -74,7 +74,7 @@ const bannerContent = ref({
 
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2 content-center">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                    <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="/img/greenbulb.jpg" />
                 </div>
@@ -105,7 +105,7 @@ const bannerContent = ref({
 
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2 content-center">
-                    <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                    <NuxtImg format="webp"  alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="/img/compass2.jpg" />
                 </div>

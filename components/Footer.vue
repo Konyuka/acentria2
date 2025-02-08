@@ -170,7 +170,7 @@ const showDropdown = (menu) => {
 
 <template>
     <div>
-        <NuxtImg src="/img/mainbg.jpg" alt="Background Image"
+        <NuxtImg format="webp"  src="/img/mainbg.jpg" alt="Background Image"
             class="w-full h-screen object-cover fixed top-0 left-0 -z-50"
             style="color: transparent; transform: scaleX(-1);" />
 
@@ -181,7 +181,7 @@ const showDropdown = (menu) => {
 
                     <div class="flex items-center justify-left ">
                         <NuxtLink to="/">
-                            <NuxtImg alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
+                            <NuxtImg format="webp"  alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
                                 class="mr-8 w-full h-16" style="color: transparent; object-fit: contain;"
                                 src="/img/LogoW.png" />
                         </NuxtLink>

@@ -152,7 +152,7 @@ onBeforeUnmount(() => {
                 class="button-animation rounded-md p-3 shadow-md group flex flex-col items-start justify-between !bg-black">
 
                 <div class="relative w-full">
-                  <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
+                  <NuxtImg format="webp"  alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
                     class="aspect-[16/9] w-full rounded-md bg-red-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                     :src="blog.image" style="color: transparent;" />
                   <div
@@ -208,9 +208,9 @@ onBeforeUnmount(() => {
       <div class=" bg-white w-screen pt-10 pb-5">
         <div class="relative">
 
-          <NuxtImg src="/img/esggreen.jpg" alt="city view"
+          <NuxtImg format="webp"  src="/img/esggreen.jpg" alt="city view"
             class="w-full h-full object-center object-cover absolute sm:block hidden" />
-          <NuxtImg src="/img/esggreen.jpg" alt="city view"
+          <NuxtImg format="webp"  src="/img/esggreen.jpg" alt="city view"
             class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
 
           <div

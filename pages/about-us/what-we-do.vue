@@ -14,7 +14,7 @@ const ReinsuranceBannerContent = ref({
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:32:9">
                 <div class="relative py-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:33:13">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                    <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="/img/what.jpg" data-v-inspector="components/Why.vue:34:17" />
                 </div>

@@ -15,7 +15,7 @@ const props = defineProps({
                 <div
                     class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <div class="mr-5">
-                        <NuxtImg alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
+                        <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" decoding="async" data-nimg="1"
                             style="color: transparent; object-fit: contain"
                             class="w-full h-[300px] shadow-2xl rounded-lg !object-cover"
                             src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" />

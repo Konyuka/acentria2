@@ -116,7 +116,7 @@ onMounted(async () => {
                             class="button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
                             <a class="w-full" href="#">
                                 <div class="relative w-full">
-                                    <NuxtImg alt="" loading="lazy" width="300" height="200" decoding="async"
+                                    <NuxtImg format="webp"  alt="" loading="lazy" width="300" height="200" decoding="async"
                                         data-nimg="1"
                                         class="aspect-[16/9] w-full rounded-lg bg-gray-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
                                         sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"

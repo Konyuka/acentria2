@@ -269,7 +269,7 @@ onMounted(() => {
                 </h2>
 
                 <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
-                    <NuxtImg src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                    <NuxtImg format="webp"  src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
                     <div class="absolute inset-0 bg-black opacity-40"></div>
                     <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
                         <div>

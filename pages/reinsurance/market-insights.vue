@@ -80,7 +80,7 @@ const splitAndStyle = (text) => {
                 <div
                     class="font-sans mx-auto grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
                     <div class="flex justify-center lg:justify-end">
-                        <NuxtImg :src="ReinsuranceFeatureContent2.image" alt="Product screenshot"
+                        <NuxtImg format="webp"  :src="ReinsuranceFeatureContent2.image" alt="Product screenshot"
                             class="w-full h-auto max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 object-cover lg:h-1/4" />
                     </div>
                     <div class="lg:pr-8 lg:pt-4">

@@ -353,31 +353,31 @@ const features = [
         img: '/img/rope-gray.jpeg',
         title: 'Insurance',
         description: 'Mitigating Risks, Maximizing Opportunities',
-        url: '/acentria-group-insurance',
+        link: '/acentria-group-insurance',
     },
     {
         img: '/img/reinsure.jpeg',
         title: 'Reinsurance',
         description: 'Protecting Your Assets, Empowering Your Future',
-        url: '/acentria-group-reinsurance',
+        link: '/acentria-group-reinsurance',
     },
     {
         img: '/img/ACTUARIAL- MAIN PAGE.jpg',
         title: 'Actuarial',
         description: 'Empowering Decisions, Simplifying Complexity',
-        url: '/acentria-group-actuarial',
+        link: '/acentria-group-actuarial',
     },
     {
         img: '/img/industry-tech.jpg',
         title: 'Technology',
         description: 'Building prosperity, Securing Futures',
-        url: '/lines-of-business',
+        link: '/lines-of-business',
     },
     {
         img: '/img/iStock-483918009.jpg',
         title: 'Investment',
         description: 'Protecting Your Assets, Empowering Your Future',
-        url: '/acentria-group-investment',
+        link: '/acentria-group-investment',
     },
 ];
 
@@ -422,7 +422,7 @@ onBeforeUnmount(() => {
 
             <div class="sm:grid sm:grid-cols-12 gap-10 py-10">
                 <div class="pb-10 sm:pb-0 col-span-5 relative flex items-center">
-                    <NuxtImg alt="content" loading="lazy" decoding="async"
+                    <NuxtImg format="webp"  alt="content" loading="lazy" decoding="async"
                         class="w-full h-auto shadow-2xl rounded-lg !object-cover"
                         src="/img/comitment to our partners.jpg" />
                 </div>
@@ -503,7 +503,7 @@ onBeforeUnmount(() => {
                             <button @click="openProfileModal(product)" class="button-animation group w-full">
                                 <div
                                     class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                                    <NuxtImg :src="product.img" :alt="product.name"
+                                    <NuxtImg format="webp"  :src="product.img" :alt="product.name"
                                         class="h-full w-full object-cover object-center group-hover:opacity-75" />
                                 </div>
                                 <div class="flex flex-col items-center justify-between mt-4">
@@ -605,7 +605,7 @@ onBeforeUnmount(() => {
                 </h1>
                 <div class="sm:grid grid-cols-12 gap-10">
                     <div class="col-span-5 relative flex items-center">
-                        <NuxtImg alt="content" loading="lazy" decoding="async"
+                        <NuxtImg format="webp"  alt="content" loading="lazy" decoding="async"
                             class="hidden sm:block w-full h-auto shadow-2xl rounded-lg !object-cover"
                             src="/img/our brand promise.JPG" />
                     </div>

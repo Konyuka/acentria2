@@ -27,7 +27,7 @@ const props = defineProps({
                     </div>
                 </div>
                 <div class="relative min-h-[20rem] basis-1/2 md:min-h-[30rem]">
-                    <NuxtImg alt="Business people discussing Singapore AI regulations" fetchpriority="high" decoding="async"
+                    <NuxtImg format="webp"  alt="Business people discussing Singapore AI regulations" fetchpriority="high" decoding="async"
                         data-nimg="fill" class="!rounded-lg h-full w-full object-contain"
                         style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                         sizes="100vw" :src="heroMinData.image">

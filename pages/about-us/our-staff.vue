@@ -28,7 +28,7 @@ const bannerContent = ref({
                 </p>
 
                 <figure class="mt-16">
-                    <NuxtImg class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/team2.jpeg" alt="" />
+                    <NuxtImg format="webp"  class="aspect-video rounded-xl bg-gray-50 object-cover" src="/img/team2.jpeg" alt="" />
                     <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500">
                         <svg class="mt-0.5 h-5 w-5 flex-none text-gray-300" viewBox="0 0 20 20" fill="currentColor"
                             aria-hidden="true" data-slot="icon">

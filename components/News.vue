@@ -49,7 +49,7 @@ const news = ref([
                                             <div
                                                 class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                 <picture class="flex h-[300px] w-full max-w-none">
-                                                    <NuxtImg alt="AI is here. AI regulations are on the way. Is your board ready?"
+                                                    <NuxtImg format="webp"  alt="AI is here. AI regulations are on the way. Is your board ready?"
                                                         loading="lazy" decoding="async" data-nimg="fill"
                                                         class="object-center object-cover" style="
                                 position: absolute;

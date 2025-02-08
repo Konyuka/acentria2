@@ -41,7 +41,7 @@ const theButtonTitle = computed(() => {
             <div class="grid grid-cols-12 gap-10">
                 <template v-if="content.orientation === 'image-left'">
                     <div class="col-span-5 relative flex items-center">
-                        <NuxtImg :alt="content.heading" loading="lazy" decoding="async"
+                        <NuxtImg format="webp"  :alt="content.heading" loading="lazy"
                             class="w-full h-auto shadow-2xl rounded-lg !object-cover" :src="content.image" />
                     </div>
                     <div class="col-span-7 flex flex-col justify-center">
@@ -78,7 +78,7 @@ const theButtonTitle = computed(() => {
                         </div>
                     </div>
                     <div class="col-span-5 relative flex items-center">
-                        <NuxtImg :alt="content.heading" loading="lazy" decoding="async"
+                        <NuxtImg format="webp"  :alt="content.heading" loading="lazy" decoding="async"
                             class="w-full h-auto shadow-2xl rounded-lg !object-cover" :src="content.image" />
                     </div>
                 </template>
@@ -94,7 +94,7 @@ const theButtonTitle = computed(() => {
                     <!-- <h4 v-html="content.subheading" class="card-heading"></h4> -->
                 </div>
                 <div class="py-5 relative flex items-center">
-                    <NuxtImg :alt="content.heading" loading="lazy" decoding="async"
+                    <NuxtImg format="webp"  :alt="content.heading" loading="lazy" decoding="async"
                         class="w-full h-auto shadow-2xl rounded-lg !object-cover" :src="content.image" />
                 </div>
                 <div>

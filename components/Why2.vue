@@ -10,7 +10,7 @@
 
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-20">
                 <div class="relative p-1 lg:basis-1/2">
-                    <NuxtImg alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
+                    <NuxtImg format="webp"  alt="Image of Ensure regulatory compliance" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="/img/iStock-483918009.jpg" />
                 </div>

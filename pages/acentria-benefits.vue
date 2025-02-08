@@ -108,7 +108,7 @@ const benefits = ref([
                     </h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 mx-auto max-w-5xl">
                         <div class="mx-auto">
-                            <NuxtImg alt="Image of Streamline evaluations and questionnaires " loading="lazy"
+                            <NuxtImg format="webp"  alt="Image of Streamline evaluations and questionnaires " loading="lazy"
                             height="450" decoding="async" data-nimg="1"
                                 style="color: transparent; object-fit: contain" class="w-full h-[350px] rounded-xl"
                                 src="/img/simo-office.jpg" />

@@ -68,7 +68,7 @@ onBeforeUnmount(() => {
                         <div class="carousel__item px-2 py-5">
                             <button class="group w-full">
                                 <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg">
-                                    <NuxtImg :src="product.img" :alt="product.name"
+                                    <NuxtImg format="webp"  :src="product.img" :alt="product.name"
                                         class="h-full w-full object-contain object-center group-hover:opacity-75" />
                                 </div>
                                 <div class="flex flex-col items-center justify-between pt-3">
@@ -90,7 +90,7 @@ onBeforeUnmount(() => {
                     <button v-for="product in awards" class="group">
                         <div
                             class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-1">
-                            <NuxtImg :src="product.img" :alt="product.img"
+                            <NuxtImg format="webp"  :src="product.img" :alt="product.img"
                                 class="h-full w-full object-contain object-center group-hover:opacity-75" />
                         </div>
                         <div class="flex flex-col items-center justify-between pt-3">

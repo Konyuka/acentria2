@@ -10,7 +10,7 @@ const props = defineProps({
 
     <div>
         <div class="mt-40 relative isolate overflow-hidden bg-white py-14 font-sans">
-            <NuxtImg :src="content.image" alt="Windmill"
+            <NuxtImg format="webp"  :src="content.image" alt="Windmill"
                 class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
             <div class="absolute inset-0 bg-black opacity-60"></div>
             <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"

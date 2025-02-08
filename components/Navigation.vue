@@ -83,7 +83,7 @@ onMounted(() => {
                 <div class="flex flex-col font-sans mb-0 mt-1">
 
                     <NuxtLink to="/">
-                        <NuxtImg alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
+                        <NuxtImg format="webp"  alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
                             class="mr-8 w-full h-16" style="color: transparent; object-fit: contain;"
                             src="/img/LogoT.png" />
                     </NuxtLink>
@@ -281,7 +281,7 @@ onMounted(() => {
 
             <div class="flex w-full justify-between px-4 py-4 shadow">
                 <a href="/">
-                    <NuxtImg alt="Acentria Group" loading="lazy" width="200" height="50" decoding="async" data-nimg="1"
+                    <NuxtImg format="webp"  alt="Acentria Group" loading="lazy" width="200" height="50" decoding="async" data-nimg="1"
                         style="color: transparent" src="/img/logo.png" />
                 </a>
                 <div @click="toggleMenu()" class="translate-y-2.5 cursor-pointer">
@@ -294,7 +294,7 @@ onMounted(() => {
 
                 <div class="flex w-full justify-between px-4 py-4 shadow">
                     <a href="/">
-                        <NuxtImg alt="Diligent" loading="lazy" width="200" height="60" decoding="async" data-nimg="1"
+                        <NuxtImg format="webp"  alt="Diligent" loading="lazy" width="200" height="60" decoding="async" data-nimg="1"
                             style="color: transparent" src="/img/logo.png" />
                     </a>
                     <div @click="closeMenu()">

@@ -69,13 +69,21 @@ export default defineNuxtConfig({
   },
   modules: [
     "vue3-carousel-nuxt", 
-    "@nuxt/image-edge", 
     "@nuxt/image",
     "@vueuse/motion/nuxt",
   ],
   image: {
-    // provider: 'static',
-    // dir: 'public/img',
-    domains: ['cdn.sanity.io', 'www.acentriagroup.com', 'acentriagroup.com']
+    // domains: ['cdn.sanity.io', 'www.acentriagroup.com', 'acentriagroup.com', '0.0.0.0'],
+    quality: 80,
+    formats: ['webp', 'avif'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536
+    },
+    lazy: true,
   },
 })

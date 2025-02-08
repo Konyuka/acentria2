@@ -8,7 +8,7 @@ const props = defineProps({
 <template>
     <div class="relative isolate overflow-hidden bg-white py-40 mt-20">
 
-        <NuxtImg :src="content.image" :alt="content.subtitle"
+        <NuxtImg format="webp"  :src="content.image" :alt="content.subtitle"
             class="absolute inset-0 -z-10 h-full w-full !object-cover object-right md:object-center" />
 
         <!-- <div class="absolute inset-0 bg-black opacity-30"></div> -->

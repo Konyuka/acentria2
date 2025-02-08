@@ -146,7 +146,7 @@ onMounted(() => {
                                 <div
                                     class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                                     <div class="relative py-4 lg:basis-1/2">
-                                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350"
+                                        <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
                                             src="https://old.acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg"
@@ -209,7 +209,7 @@ onMounted(() => {
                                         </div>
                                     </div>
                                     <div class="relative py-4 lg:basis-1/2">
-                                        <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350"
+                                        <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" width="500" height="350"
                                             decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
                                             src="/img/purpose.jpeg" data-v-inspector="components/Why.vue:34:17" />
@@ -371,7 +371,7 @@ onMounted(() => {
                     <div class="mx-auto max-w-screen">
                         <div
                             class="relative bg-gray-900 px-6 py-20 shadow-xl sm:rounded-xs sm:px-10 sm:py-24 md:px-12 lg:px-40">
-                            <NuxtImg class="absolute inset-0 h-full w-full object-cover brightness-50 saturate-10"
+                            <NuxtImg format="webp"  class="absolute inset-0 h-full w-full object-cover brightness-50 saturate-10"
                                 src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
                                 alt="" />
                             <div class="absolute inset-0 bg-gray-900/5 mix-blend-multiply" />

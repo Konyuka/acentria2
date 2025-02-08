@@ -10,7 +10,7 @@
                 class="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-2 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
                 <div class="-mt-8 w-full md:max-w-[455px] xl:-mb-8 xl:w-96 xl:max-w-[255px] xl:flex-none">
                     <div class="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
-                        <NuxtImg alt="Barclays" loading="lazy" width="455" height="227" decoding="async" data-nimg="1"
+                        <NuxtImg format="webp"  alt="Barclays" loading="lazy" width="455" height="227" decoding="async" data-nimg="1"
                             class="false undefined absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
                             style="color: transparent" sizes="(max-width: 600px) 90vw, (max-width: 1200px) 60vw, 500px"
                             src="https://old.acentriagroup.com/wp-content/uploads/2024/01/Moses-Musau-2-683x1024.jpg" />
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="w-fit max-w-[120px] text-center md:top-[5%]">
-                            <!-- <NuxtImg
+                            <!-- <NuxtImg format="webp" 
                         src="https://cdn.sanity.io/images/33u1mixi/production/bdee543a7500ad0542afd6cb8d91e356f4d96e53-200x40.svg"
                         alt="Barclays" class /> -->
                         </div>

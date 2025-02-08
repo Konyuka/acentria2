@@ -91,7 +91,7 @@ const specials = ref([
                 <NuxtLink :to="product.link" v-for="product in riskAreas" class="
                     button-animation group">
                     <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                        <NuxtImg :src="product.img" :alt="product.img"
+                        <NuxtImg format="webp"  :src="product.img" :alt="product.img"
                             class="h-full w-full object-cover object-center group-hover:opacity-75" />
                     </div>
                     <div class="flex flex-col items-left justify-between pt-3">

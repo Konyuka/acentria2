@@ -35,7 +35,7 @@ const ReinsuranceBannerContent = ref({
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:8:9">
                 <div class="relative p-4 lg:basis-1/2" data-v-inspector="components/Why.vue:9:13">
-                    <NuxtImg alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
+                    <NuxtImg format="webp"  alt="Image of Elevate strategic risk management " loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/screenshot-25.jpg"
                         data-v-inspector="components/Why.vue:10:17" />
@@ -76,7 +76,7 @@ const ReinsuranceBannerContent = ref({
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:32:9">
                 <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:33:13">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                    <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="https://images.pexels.com/photos/12324202/pexels-photo-12324202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         data-v-inspector="components/Why.vue:34:17" />
@@ -116,7 +116,7 @@ const ReinsuranceBannerContent = ref({
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16"
                 data-v-inspector="components/Why.vue:32:9">
                 <div class="relative p-4 lg:basis-1/2 content-center" data-v-inspector="components/Why.vue:33:13">
-                    <NuxtImg alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
+                    <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" width="500" height="350" decoding="async"
                         data-nimg="1" style="color: transparent; object-fit: contain" class="rounded-lg"
                         src="https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         data-v-inspector="components/Why.vue:34:17" />

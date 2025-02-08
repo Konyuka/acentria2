@@ -35,7 +35,7 @@ const bannerContent = ref({
             <!-- Environmental Responsibility -->
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Environmental Responsibility" loading="lazy" width="500" height="350"
+                    <NuxtImg format="webp"  alt="Image of Environmental Responsibility" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/12-1024x625.jpg" />
                 </div>
@@ -62,7 +62,7 @@ const bannerContent = ref({
             <!-- Philanthropic Responsibility -->
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Philanthropic Responsibility" loading="lazy" width="500" height="350"
+                    <NuxtImg format="webp"  alt="Image of Philanthropic Responsibility" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
                 </div>
@@ -91,7 +91,7 @@ const bannerContent = ref({
             <!-- Ethical Responsibility -->
             <div class="container mx-auto flex px-4 lg:flex-row flex-col my-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Ethical Responsibility" loading="lazy" width="500" height="350"
+                    <NuxtImg format="webp"  alt="Image of Ethical Responsibility" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg"
                         src="https://images.pexels.com/photos/761297/pexels-photo-761297.jpeg?auto=compress&cs=tinysrgb&w=600" />
@@ -123,7 +123,7 @@ const bannerContent = ref({
             <!-- Economic Responsibility -->
             <div class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-2 lg:gap-16">
                 <div class="relative p-4 lg:basis-1/2">
-                    <NuxtImg alt="Image of Economic Responsibility" loading="lazy" width="500" height="350"
+                    <NuxtImg format="webp"  alt="Image of Economic Responsibility" loading="lazy" width="500" height="350"
                         decoding="async" data-nimg="1" style="color: transparent; object-fit: contain"
                         class="rounded-lg" src="https://old.acentriagroup.com/wp-content/uploads/2023/12/13.jpg" />
                 </div>

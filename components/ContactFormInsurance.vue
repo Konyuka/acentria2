@@ -28,7 +28,7 @@ const company = computed(() => {
             <div class="my-5 grid grid-cols-1 gap-5 lg:grid-cols-2">
                 <div class="h-fit rounded-xl bg-black px-5 md:px-12 py-5 md:py-14 shadow-card">
                     <div>
-                        <NuxtImg alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
+                        <NuxtImg format="webp"  alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
                             style="color: transparent; object-fit: cover" src="/img/Talk to Us.JPG"
                             class="rounded-xl w-full h-[45vh]" />
                     </div>

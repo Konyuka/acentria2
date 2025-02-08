@@ -211,7 +211,7 @@ onMounted(() => {
                     <NuxtLink :to="product.link" v-for="product in products" :key="product.id"
                         class="button-animation group shadow-md p-3 rounded-md">
                         <div class="overflow-hidden rounded-lg">
-                            <NuxtImg :src="product.img" :alt="product.img"
+                            <NuxtImg format="webp"  :src="product.img" :alt="product.img"
                                 class="w-full object-cover object-center group-hover:opacity-75" />
                         </div>
                         <div class="mt-4 flex flex-col items-start justify-between subsection-heading text-black">
