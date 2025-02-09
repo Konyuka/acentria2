@@ -129,58 +129,8 @@ onBeforeUnmount(() => {
   <div>
     <div class="font-sans">
       <AboutHero1 :InsuranceBannerContent="InsuranceBannerContent" />
-      <MakesUs2 />
-      <div class="container relative min-h-[15vh] sm:min-h-[30vh]">
-        <div class="bottom-5 absolute">
-          <h1 class="hidden sm:block section-heading pb-3 text-white">
-            You might also <span class="text-brand-primary">be interested in</span>
-          </h1>
-          <h4 class="hidden sm:block bannerDescription text-white">
-            More about <span class="text-brand-primary"> Acentria</span>
-          </h4>
-          <h4 class="block sm:hidden section-heading text-white">
-            More about <span class="text-brand-primary"> Acentria</span>
-          </h4>
-        </div>
-      </div>
+      <MakesUs2 :chunkedBlogs="chunkedBlogs" />
 
-      <div class="!overflow-x-hidden !font-sans  py-5">
-        <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1">
-          <Slide v-for="(chunk, cIndex) in chunkedBlogs" :key="cIndex" class="relative">
-            <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
-              <NuxtLink v-for="(blog, index) in chunk" :key="index" :to="blog.link"
-                class="button-animation rounded-md p-3 shadow-md group flex flex-col items-start justify-between !bg-black">
-
-                <div class="relative w-full">
-                  <NuxtImg format="webp"  alt="" loading="lazy" width="300" height="200" decoding="async" data-nimg="1"
-                    class="aspect-[16/9] w-full rounded-md bg-red-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
-                    :src="blog.image" style="color: transparent;" />
-                  <div
-                    class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
-                  </div>
-                </div>
-
-                <div>
-                  <div class="text-left font-sans group pb-5">
-                    <h1 v-html="blog.name" class="card-heading !text-white mt-3 group-hover:text-brand-primary pb-2">
-                    </h1>
-                    <p v-html="blog.description" class="content !text-white">
-                    </p>
-                    <p class="small-text !text-white">
-                      Learn More <i class="ml-2 fas fa-arrow-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </NuxtLink>
-            </div>
-          </Slide>
-
-          <template #addons>
-            <Pagination />
-            <Navigation class="hidden sm:block text-black -px-40" />
-          </template>
-        </Carousel>
-      </div>
 
       <div class="container relative py-5">
         <h1 class="section-heading text-white text-left">
@@ -204,14 +154,17 @@ onBeforeUnmount(() => {
       </div>
       <Stats />
       <Testimonials />
-      
-      <div class=" bg-white w-screen pt-10 pb-5">
+
+      <!-- <div class=" bg-white w-screen pt-10">
         <div class="relative">
 
-          <NuxtImg format="webp"  src="/img/esggreen.jpg" alt="city view"
+          <NuxtImg format="webp" src="/img/esggreen.jpg" alt="city view"
             class="w-full h-full object-center object-cover absolute sm:block hidden" />
-          <NuxtImg format="webp"  src="/img/esggreen.jpg" alt="city view"
+          <NuxtImg format="webp" src="/img/esggreen.jpg" alt="city view"
             class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
+
+          <div class="absolute inset-0 bg-gradient-to-b from-[#ed1c24] via-[#ed1c24]/50 to-transparent z-10"></div>
+
 
           <div
             class="!py-28 text-xl relative z-20  to-transparent w-full h-full top-0 md:p-16 p-6 flex flex-col justify-between rounded-md">
@@ -235,11 +188,7 @@ onBeforeUnmount(() => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="bg-white w-full h-full">
-        <Awards />
-      </div>
+      </div> -->
 
       <div class="container py-5">
 

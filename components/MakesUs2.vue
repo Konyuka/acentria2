@@ -2,26 +2,14 @@
 import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
-const incentives = [
-    {
-        name: 'Who we are',
-        icon: 'fas fa-users',
-        link: '/about-us/who-we-are',
-        description: "Acentria Group of companies is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology and Investment Advisory.",
-    },
-    {
-        name: 'What We Do',
-        icon: 'fas fa-briefcase',
-        link: '/about-us/who-we-are',
-        description: "At Acentria Group, we deliver transformative products and solutions in Risk and Insurance, Reinsurance, Actuarial, Investment Advisory, and Technology.",
-    },
-    {
-        name: 'Our journey',
-        icon: 'fas fa-road',
-        link: '/about-us/who-we-are',
-        description: "At Acentria Group, our journey is a testament to resilience, vision, and the boundless possibilities that come with dedication.",
-    },
-]
+const props = defineProps({
+    chunkedBlogs: Array
+})
+
+const blackBannerContent = ref(
+    '<span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br> Let Acentria Tailor Your Coverage To Your Needs'
+)
+
 
 const specials = ref([
     {
@@ -389,18 +377,6 @@ const openProfileModal = (product) => {
     profileModal.value = true
 }
 
-const introContent = ref({
-    orientation: 'image-left',
-    heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
-    subheading: 'A Reliable Partner <span class="text-brand-primary">  You Can Trust</span>',
-    image: '/img/lady-shake.jpg',
-    link: '/',
-    content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
-})
-
-// const itemsToShow = computed(() => {
-//     return window.innerWidth < 1000 ? 1 : 3; 
-// });
 const itemsToShow = ref(3);
 onMounted(() => {
     const updateItemsToShow = () => {
@@ -422,7 +398,7 @@ onBeforeUnmount(() => {
 
             <div class="sm:grid sm:grid-cols-12 gap-10 py-10">
                 <div class="pb-10 sm:pb-0 col-span-5 relative flex items-center">
-                    <NuxtImg format="webp"  alt="content" loading="lazy" decoding="async"
+                    <NuxtImg format="webp" alt="content" loading="lazy" decoding="async"
                         class="w-full h-auto shadow-2xl rounded-lg !object-cover"
                         src="/img/comitment to our partners.jpg" />
                 </div>
@@ -503,7 +479,7 @@ onBeforeUnmount(() => {
                             <button @click="openProfileModal(product)" class="button-animation group w-full">
                                 <div
                                     class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-1 sm:aspect-w-2">
-                                    <NuxtImg format="webp"  :src="product.img" :alt="product.name"
+                                    <NuxtImg format="webp" :src="product.img" :alt="product.name"
                                         class="h-full w-full object-cover object-center group-hover:opacity-75" />
                                 </div>
                                 <div class="flex flex-col items-center justify-between mt-4">
@@ -605,7 +581,7 @@ onBeforeUnmount(() => {
                 </h1>
                 <div class="sm:grid grid-cols-12 gap-10">
                     <div class="col-span-5 relative flex items-center">
-                        <NuxtImg format="webp"  alt="content" loading="lazy" decoding="async"
+                        <NuxtImg format="webp" alt="content" loading="lazy" decoding="async"
                             class="hidden sm:block w-full h-auto shadow-2xl rounded-lg !object-cover"
                             src="/img/our brand promise.JPG" />
                     </div>
@@ -647,12 +623,71 @@ onBeforeUnmount(() => {
             </div>
 
         </div>
+
+        <div class="py-5">
+            <BlackBanner :content="blackBannerContent" />
+        </div>
+
+
+        <div class="container py-5">
+            <div class="">
+                <h1 class="hidden sm:block section-heading pb-3 text-black">
+                    You might also <span class="text-brand-primary">be interested in</span>
+                </h1>
+                <h4 class="hidden sm:block bannerDescription text-black">
+                    More about <span class="text-brand-primary"> Acentria</span>
+                </h4>
+                <h4 class="block sm:hidden section-heading text-black">
+                    More about <span class="text-brand-primary"> Acentria</span>
+                </h4>
+            </div>
+        </div>
+
+        <div class=" !overflow-x-hidden !font-sans py-5 container">
+            <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="1">
+                <Slide v-for="(chunk, cIndex) in chunkedBlogs" :key="cIndex" class="relative">
+                    <div class=" container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 ">
+                        <NuxtLink v-for="(blog, index) in chunk" :key="index" :to="blog.link"
+                            class="button-animation rounded-md p-3 shadow-md group flex flex-col items-start justify-between !bg-gray-50">
+
+                            <div class="relative w-full">
+                                <NuxtImg format="webp" alt="" loading="lazy" width="300" height="200" decoding="async"
+                                    data-nimg="1"
+                                    class="aspect-[16/9] w-full rounded-md bg-red-100 object-cover transition-all sm:aspect-[2/1] lg:aspect-[3/2]"
+                                    :src="blog.image" style="color: transparent;" />
+                                <div
+                                    class="absolute inset-0 flex flex-col items-start justify-between rounded-lg ring-1 ring-inset ring-gray-900/10 transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="text-left font-sans group pb-5">
+                                    <h1 v-html="blog.name"
+                                        class="card-heading !text-black mt-3 group-hover:text-brand-primary pb-2">
+                                    </h1>
+                                    <p v-html="blog.description" class="content !text-black">
+                                    </p>
+                                    <p class="small-text !text-black !mt-3">
+                                        Learn More <i class="ml-2 fas fa-arrow-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </NuxtLink>
+                    </div>
+                </Slide>
+
+                <template #addons>
+                    <Pagination />
+                    <!-- <Navigation class="hidden sm:block text-black -px-40" /> -->
+                </template>
+            </Carousel>
+        </div>
     </div>
 </template>
 
 <style scoped>
 .carousel__item {
-    min-height: 200px;
+    min-height: 100px;
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
@@ -663,7 +698,7 @@ onBeforeUnmount(() => {
 }
 
 .carousel__viewport {
-    perspective: 2000px;
+    perspective: 100px;
 }
 
 .carousel__track {

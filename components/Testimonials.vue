@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white py-5 font-sans">
+    <div class="bg-white py-10 font-sans">
         <div class="container font-sans relative">
             <h2 class="section-heading">
                 What Our <br class="" > <span class="text-brand-primary">Customers are Saying!</span>
@@ -15,9 +15,9 @@
                         <div class="slide-ana">
                             <div class="flex relative" style="transform: translateX(0%)">
                                 <div class="mt-2 md:flex">
-                                    <div class="relative lg:w-1/2 h-72">
+                                    <div class="relative lg:w-1/2 ">
                                         <NuxtImg format="webp"  v-motion-fade-visible src="/img/woman-arms.jpg" alt="image of profile"
-                                            class="w-full h-[320px] flex-shrink-0 object-fit object-cover shadow-lg rounded" />
+                                            class="w-full h-[300px] flex-shrink-0 object-fit object-cover shadow-lg rounded" />
                                         <div
                                             class="mt-20 w-28 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-28 bg-red-100 rounded-full">
                                             <i

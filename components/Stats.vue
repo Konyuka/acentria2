@@ -46,6 +46,13 @@ const stats = ref([
 
             </div>
         </div>
+        <div class="py-5">
+            <NuxtLink to="/awards"
+                class="group button-animation bg-white hover:bg-brand-primary text-black hover:text-white px-5 py-3 rounded-sm card-heading">
+                <i class="fas fa-award text-black group-hover:text-white mr-3"></i> Awards & Recognitions <i
+                    class="ml-5 fas fa-arrow-right"></i>
+            </NuxtLink>
+        </div>
     </div>
 </template>
 

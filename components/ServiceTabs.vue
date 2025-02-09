@@ -2,7 +2,7 @@
 const props = defineProps({
     serviceHeading: String,
     menus: Array,
-    data: Array,
+    data: Object,
 });
 
 const router = useRouter(); // Use router for navigation control
