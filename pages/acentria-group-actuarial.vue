@@ -126,7 +126,7 @@ const enablingAndEmpoweringPeople = ref({
     orientation: 'image-left',
     heading: 'Enabling and <span class="text-brand-primary">Empowering Your People</span>',
     subheading: 'World-Class <span class="text-brand-primary">Employee & Retirement Benefits</span>',
-    image: 'https://img.freepik.com/free-photo/portrait-upset-old-man-covering-face-while-crying-isolated-grey-wall_155003-18418.jpg?t=st=1738680969~exp=1738684569~hmac=4bb5cb21ae6f33a101a239428c383bad7a22d171354195fd4090c87d95e2c410&w=900',
+    image: 'https://img.freepik.com/free-photo/happy-excited-businessteam-celebrating-successful-partnership-enjoying-together-startup-office-diverse-smiling-businesspeople-achievement-business-collaboration-concept-victory_482257-36889.jpg?t=st=1739167712~exp=1739171312~hmac=5a8fad3f12107ad4986d8c73d2035e103e4ee0d305c76dbcbe3e3804f3fc1f64&w=996',
     link: '/actuarial/retirement-and-employee-benefits',
     content: 'We understand that people are the most important resource of any organization. Therefore, we are committed to providing world-class employee and retirement benefits, ranging from pension fund valuations to employee benefits structuring and optimization.'
 })
@@ -135,7 +135,7 @@ const uncertaintyToResilience = ref({
     orientation: 'image-right',
     heading: 'From <span class="text-brand-primary">Uncertainty to Resilience</span>',
     subheading: 'Expert <span class="text-brand-primary">Risk Analytics & Optimization</span>',
-    image: 'https://img.freepik.com/free-vector/resilience-concept-illustration_114360-14888.jpg?t=st=1738680867~exp=1738684467~hmac=2750418417a00537ac1d322ec3a139c52c3617b1dc0b2924ac7b94627ae6dd27&w=900',
+    image: 'https://img.freepik.com/free-photo/tree-bubble_1048-4660.jpg?t=st=1739167817~exp=1739171417~hmac=c62361896755560a97bac182ada62ce9e798dcc0edc86c8a835798c55dc266cd&w=1060',
     link: '/actuarial/reinsurance-consulting',
     content: 'We have built over 10 years’ worth of experience in risk analytics, optimization and transfer. This ensures we comfortably support our clients in risk assessment and mitigation through reinsurance optimization and catastrophic risk assessment. Our proprietary AcentRe tool utilizes AI powered engines to deliver excellent results, on reinsurance pricing and analytics to the users.'
 })
@@ -153,7 +153,7 @@ const dataDrivenTransformation = ref({
     orientation: 'image-right',
     heading: 'Data Driven <span class="text-brand-primary">Transformation</span>',
     subheading: 'Innovative <span class="text-brand-primary">Data Management & AI Solutions</span>',
-    image: 'https://img.freepik.com/free-photo/3d-robot-hand-background-ai-technology-side-view_53876-129789.jpg?t=st=1738681084~exp=1738684684~hmac=f1d716490dc2369523c15df8dc797311f426662ab525562e5eadd201778ce3a4&w=900',
+    image: '/img/precise.jpg',
     link: '/',
     content: 'Our approach includes a proper review of the data strategy of the company, to understand the gaps and inefficiencies available. Our data processes include setting up data management strategies and advisory on process automation and artificial intelligence. Our team of tech experts is always ready to deliver excellent solutions.'
 })

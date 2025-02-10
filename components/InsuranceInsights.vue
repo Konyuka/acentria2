@@ -4,7 +4,7 @@ const news = ref([
     {
         tag: 'blog',
         title: 'Workshops & Webinars',
-        img: '/img/workshop.jpg',
+        img: '/img/Professionals and Business Service.JPG',
     },
     {
         tag: 'guide',
@@ -51,7 +51,7 @@ const news = ref([
                                                 <NuxtImg format="webp" 
                                                     alt="AI is here. AI regulations are on the way. Is your board ready?"
                                                     loading="lazy" decoding="async" data-nimg="fill"
-                                                    class="object-center object-cover image-style" sizes="240w 100vw"
+                                                    class="object-center object-cover image-style"
                                                     :src="news.img" />
                                             </picture>
                                         </div>
