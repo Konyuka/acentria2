@@ -270,11 +270,11 @@ const actuarialFooterMenus = ref([
         link: '/acentria-group-actuarial',
     },
 ]);
-const insightsFooterMenus = ref([
+const techFooterMenus = ref([
     {
-        name: 'Insights Home Page',
+        name: 'Tech Home Page',
         icon: 'fas fa-home',
-        link: '/acentria-group-actuarial',
+        link: '/',
     },
 ]);
 
@@ -920,12 +920,12 @@ const ActuarialMenus = ref([
         ]
     },
 ])
-const InsightsMenus = ref([
+const TechMenus = ref([
     {
-        name: 'Our Insights',
-        linksHeading: 'Actuarial<span class="text-brand-primary"> Services<span/>',
-        mainMenu: 'Actuarial <span class="text-brand-primary">Products<span/>',
-        mainHeading: 'Acentria\'s <span class="text-brand-primary">Insights<span/>',
+        name: 'Acentria Tech',
+        linksHeading: 'Technology<span class="text-brand-primary"> Services<span/>',
+        mainMenu: 'Technology <span class="text-brand-primary">Products<span/>',
+        mainHeading: 'Acentria <span class="text-brand-primary">Technologies<span/>',
         mainDescription: 'Acentria\'s Insights provide expert analysis and updates on the latest trends in insurance, reinsurance, actuarial, and technology sectors.',
         subMenu: 'Our <span class="text-brand-primary">Services<span/>',
         menuHeading: 'Acentria <span class="text-brand-primary">Profile Links<span/>',
@@ -1085,7 +1085,7 @@ const openFlyover = (menu, type) => {
             }
             if (currentMenu.value === 'Insights') {
                 flyoverHeader.value = 'Acentria Insights'
-                currentMenuItems.value = InsightsMenus.value
+                currentMenuItems.value = TechMenus.value
                 currentMainMenu.value = currentMenuItems.value[0]?.mainMenu
                 currentMainDescription.value = currentMenuItems.value[0]?.mainDescription
                 currentMainHeading.value = currentMenuItems.value[0]?.mainHeading
@@ -1095,7 +1095,7 @@ const openFlyover = (menu, type) => {
                 currentLinksHeading.value = currentMenuItems.value[0]?.linksHeading
                 currentMenuHeading.value = currentMenuItems.value[0]?.menuHeading
                 currentMenuDescription.value = currentMenuItems.value[0]?.description
-                footerOptions.value = insightsFooterMenus.value
+                footerOptions.value = techFooterMenus.value
             }
         }
 

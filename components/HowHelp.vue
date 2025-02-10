@@ -66,11 +66,11 @@ onMounted(() => {
                         class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md ">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-question text-brand-primary text-2xl"></i>
-                            <h3 class="ml-4 text-lg font-semibold text-gray-900">
+                            <h3 class="ml-4 card-heading">
                                 Request Support <i class="fas fa-arrow-right ml-4"></i>
                             </h3>
                         </div>
-                        <p>
+                        <p class="content">
                             If you need assistance in
                             claims, policy administration, accounts or other support services, please don&#39;t
                             hesitate to reach out to us.
@@ -81,11 +81,11 @@ onMounted(() => {
                         class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-building text-brand-primary text-2xl"></i>
-                            <h3 class="ml-4 text-lg font-semibold text-gray-900">
+                            <h3 class="ml-4 card-heading">
                                 Business Inquiry <i class="fas fa-arrow-right ml-4"></i>
                             </h3>
                         </div>
-                        <p>
+                        <p class="content">
                             We are excited to assist you with your business needs. Our commitment to excellence
                             ensures that you receive personalized and professional service every step of the
                             way.
@@ -96,11 +96,11 @@ onMounted(() => {
                         class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-comment-dots text-brand-primary text-2xl"></i>
-                            <h3 class="ml-4 text-lg font-semibold text-gray-900">
+                            <h3 class="ml-4 card-heading">
                                 Give Feedback <i class="fas fa-arrow-right ml-4"></i>
                             </h3>
                         </div>
-                        <p>
+                        <p class="content">
                             Your feedback is invaluable to us & helps us serve you better. We
                             appreciate your input and are committed to making improvements based on
                             your suggestions.
@@ -111,11 +111,11 @@ onMounted(() => {
                         class="button-animation p-6 border rounded-lg shadow-sm hover:shadow-md">
                         <div class="flex items-center mb-4">
                             <i class="fas fa-frown text-brand-primary text-2xl"></i>
-                            <h3 class="ml-4 text-lg font-semibold text-gray-900">
+                            <h3 class="ml-4 card-heading">
                                 Complaints <i class="fas fa-arrow-right ml-4"></i>
                             </h3>
                         </div>
-                        <p>
+                        <p class="content">
                             If you have any complaints or concerns, please let us know. We are committed to
                             addressing your issues promptly and ensuring your satisfaction.
                         </p>

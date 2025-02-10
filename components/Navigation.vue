@@ -106,15 +106,9 @@ onMounted(() => {
                     <!-- socials -->
                     <div class="flex items-center justify-end md:justify-end md:col-span-1">
                         <div class="flex gap-5">
-                            <!-- <button class="mr-6">
-                                <i class="fas fa-search"></i>
-                            </button> -->
                             <a href="https://www.facebook.com/Acentriagroup" target="_blank">
                                 <div
                                     class="bg-white w-6 h-6 rounded-full flex justify-center items-center button-animation">
-                                    <!-- <i
-                                        class="!text-lg fab fa-facebook icon-style text-black hover:text-brand-primary"></i> -->
-
                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                                         viewBox="0 0 48 48">
                                         <path fill="#3F51B5"
