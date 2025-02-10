@@ -25,11 +25,11 @@ const heartOfBrand = ref({
 
 const beyondLogo = ref({
     orientation: 'image-left',
-    heading: 'Beyond a Logo <span class="text-brand-primary">or Tagline</span> <br> <span class="text-brand-primary">Empower |</span> Innovate | <span class="text-brand-primary">Prosper</span>',
+    heading: 'The  <span class="text-brand-primary">Acentria Way</span>',
     subheading: '',
     image: '/img/LogoT.png',
     link: '/',
-    content: 'Our logo and tagline, "Empower, Innovate, Prosper", capture the essence of what we stand for. We believe in empowering our clients, partners, and communities to innovate and drive meaningful change. Through innovation, we push the boundaries of what’s possible, and by prospering together, we create sustainable success for everyone involved.'
+    content:'At Acentria, Done Smart is part of everything we do. It’s in how we collaborate, how we innovate, and how we empower you to achieve your goals. Together, we rise.'
 });
 
 const brandPromise = ref({
@@ -38,9 +38,31 @@ const brandPromise = ref({
     subheading: '',
     image: '/img/brandpromise.jpg',
     link: '/',
-    content: 'We’re here to help you build a future that’s smarter, more efficient, and full of possibilities. With Done Smart, we’re not just creating solutions—we’re helping you unlock your potential and succeed, no matter what challenges come your way.',
+    content:'We’re here to help you build a future that’s smarter, more efficient, and full of possibilities. With Done Smart, we’re not just creating solutions—we’re helping you unlock your potential and succeed, no matter what challenges come your way.’',
     cta: 'Ready for Smart Solutions? <br> <span class="text-brand-primary">Let’s start your smart journey today.</span>'
 });
+
+const joinAsMembers = ref([
+    {
+        name: 'Empowering Ideas',
+        icon: 'fas fa-lightbulb',
+        link: '/empowering-ideas',
+        description: 'We’re here to stand by you with tailored solutions that make your journey smoother, more innovative, and ultimately, more successful.',
+    },
+    {
+        name: 'Innovating for Impact',
+        icon: 'fas fa-chart-line',
+        link: '/innovating-for-impact',
+        description: 'We don’t just follow trends—we set them. Done Smart is about embracing change, simplifying complexity, and delivering results that really matter to you.',
+    },
+    {
+        name: 'Prosperity in Every Step',
+        icon: 'fas fa-seedling',
+        link: '/prosperity-in-every-step',
+        description: 'We believe success is about more than just today. Done Smart ensures that every solution is designed for long-term growth and sustainable success.',
+    },
+]);
+
 
 </script>
 
@@ -62,9 +84,31 @@ const brandPromise = ref({
         </div>
 
         <ContentPic :content="smartSolutions" />
-        <ContentPic :content="heartOfBrand" />
+        <div class="container py-5">
+
+            <div class="justify-between content-center">
+                <h2 class="section-heading text-black text-left pb-5">
+                    Lets Grow <span class="text-brand-primary">Together</span>
+                </h2>
+
+                <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+                    <NuxtLink v-motion-fade-visible :to="member.link" v-for="member in joinAsMembers" :key="member.name"
+                        class="group button-animation sm:flex lg:block bg-gray-50 px-5 py-2 rounded-xs border-t-8 border-brand-primary">
+                        <div class="sm:flex-shrink-0 flex justify-center py-5">
+                            <i :class="member.icon" class="text-black fa-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="card-heading text-brand-primary flex justify-center">{{ member.name }}</h3>
+                            <p class="mt-2 content">{{ member.description }}</p>
+                        </div>
+                    </NuxtLink>
+                </div>
+            </div>
+
+        </div>
         <ContentPic :content="beyondLogo" />
-        <ContentPic :content="brandPromise" />
+        <ContentPic :content="heartOfBrand" />
+        <!-- <ContentPic :content="brandPromise" /> -->
 
         <div class="container py-5">
             <h2 id="" class="section-heading">

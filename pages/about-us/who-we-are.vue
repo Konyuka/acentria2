@@ -125,7 +125,7 @@ const whoWeAre = ref({
     subheading: '',
     image: '/img/inspire.jpg',
     link: '/',
-    content: 'Acentria Group is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. We empower clients with tailored, forward-thinking solutions.'
+    content:'Acentria Group is a trusted global consultant dedicated to empowering growth in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. With over a decade of expertise, we craft innovative solutions that stay ahead of the curve, ensuring that our clients unlock opportunities and navigate challenges with confidence.'
 })
 
 const thingsThatInspireUs = ref({
@@ -143,7 +143,7 @@ const whatWeDo = ref({
     subheading: '',
     image: '/img/dreads.jpg',
     link: '/',
-    content: 'We deliver transformative services in Risk Management, Reinsurance, Actuarial, Investment Advisory, and Technology to maximize opportunities and achieve financial success.'
+    content:'At Acentria Group, we provide transformative solutions in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. Success for us goes beyond exceptional service; it’s about creating sustainable solutions that benefit society, protect the environment, and create value for all our stakeholders.'
 });
 
 const ourJourney = ref({
