@@ -120,6 +120,9 @@ onMounted(() => {
   window.addEventListener('resize', updateItemsToShow);
 });
 onBeforeUnmount(() => {
+  const updateItemsToShow = () => {
+    itemsToShow.value = window.innerWidth < 1000 ? 1 : 3;
+  };
   window.removeEventListener('resize', updateItemsToShow);
 });
 

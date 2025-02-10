@@ -41,7 +41,7 @@ onMounted(async () => {
             </div>
 
 
-            <div class="bg-white mb-20">
+            <div class="bg-white pb-20">
                 <div class="mx-auto max-w-6xl px-4 py-2 sm:py-2 lg:max-w-8xl">
 
                     <div class="bg-white px-6">
