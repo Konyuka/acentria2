@@ -2,7 +2,7 @@
 const bannerContent = ref({
     subtitle: 'Lines of Business',
     title: 'Services that make a difference',
-    image: 'https://www.shutterstock.com/shutterstock/photos/2508742035/display_1500/stock-photo-service-excellence-high-quality-service-concept-continuous-improvement-and-invest-in-training-and-2508742035.jpg'
+    image: '/img/heart.jpg'
 })
 
 const features = [
@@ -66,12 +66,12 @@ const features = [
                     </p>
                 </div>
                 <div class="w-full lg:w-6/12">
-                    <NuxtImg format="webp"  class="lg:block hidden w-full" src="https://i.ibb.co/RjNH7QB/Rectangle-122-1.png"
-                        alt="people discussing on board" />
-                    <NuxtImg format="webp"  class="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png"
-                        alt="people discussing on board" />
-                    <NuxtImg format="webp"  class="sm:hidden block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png"
-                        alt="people discussing on board" />
+                    <NuxtImg format="webp" class="lg:block hidden w-full"
+                        src="/img/Professionals and Business Service.JPG" alt="people discussing on board" />
+                    <NuxtImg format="webp" class="lg:hidden sm:block hidden w-full"
+                        src="/img/https://i.ibb.co/RjNH7QB/Rectangle-122-1.png" alt="people discussing on board" />
+                    <NuxtImg format="webp" class="sm:hidden block w-full"
+                        src="/img/https://i.ibb.co/RjNH7QB/Rectangle-122-1.png" alt="people discussing on board" />
                 </div>
             </div>
 

@@ -359,7 +359,7 @@ const features = [
         img: '/img/industry-tech.jpg',
         title: 'Technology',
         description: 'Building prosperity, Securing Futures',
-        link: '/lines-of-business',
+        link: 'https://tech.acentriagroup.com/',
     },
     {
         img: '/img/iStock-483918009.jpg',

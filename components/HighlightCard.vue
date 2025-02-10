@@ -5,25 +5,47 @@ const props = defineProps({
 
 const route = useRoute();
 const currentRoute = computed(() => route.path);
+
+const isExternalLink = (link) => {
+    return /^https?:\/\//.test(link);
+}
 </script>
 
 <template>
-    <NuxtLink :to="item.link" :class="[currentRoute !== '/acentria-group-investment' ? 'button-animation' : '']" class="card !z-10 flex flex-col">
-        <div class="bg py-5 flex flex-col flex-grow">
-            <dt class="card-heading mb-2">
-                <NuxtImg format="webp"  :src="item.img" alt="Icon" class="w-full h-40 object-cover rounded-lg mb-2" />
-                {{ item.title }}
-            </dt>
-            <dd class="flex flex-col flex-grow">
-                <p class="flex-grow content">{{ item.description }}</p>
-                <p v-if="currentRoute !== '/acentria-group-investment'"
-                    class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary mt-2">
-                    Learn more <span aria-hidden="true">→</span>
-                </p>
-            </dd>
-        </div>
-        <div class="blob"></div>
-    </NuxtLink>
+    <div>
+        <a v-if="isExternalLink(item.link)" :href="item.link" target="_blank" :class="[currentRoute !== '/acentria-group-investment' ? 'button-animation' : '']" class="card !z-10 flex flex-col">
+            <div class="bg py-5 flex flex-col flex-grow">
+                <dt class="card-heading mb-2">
+                    <NuxtImg format="webp"  :src="item.img" alt="Icon" class="w-full h-40 object-cover rounded-lg mb-2" />
+                    {{ item.title }}
+                </dt>
+                <dd class="flex flex-col flex-grow">
+                    <p class="flex-grow content">{{ item.description }}</p>
+                    <p v-if="currentRoute !== '/acentria-group-investment'"
+                        class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary mt-2">
+                        Learn more <span aria-hidden="true">→</span>
+                    </p>
+                </dd>
+            </div>
+            <div class="blob"></div>
+        </a>
+        <NuxtLink v-else :to="item.link" :class="[currentRoute !== '/acentria-group-investment' ? 'button-animation' : '']" class="card !z-10 flex flex-col">
+            <div class="bg py-5 flex flex-col flex-grow">
+                <dt class="card-heading mb-2">
+                    <NuxtImg format="webp"  :src="item.img" alt="Icon" class="w-full h-40 object-cover rounded-lg mb-2" />
+                    {{ item.title }}
+                </dt>
+                <dd class="flex flex-col flex-grow">
+                    <p class="flex-grow content">{{ item.description }}</p>
+                    <p v-if="currentRoute !== '/acentria-group-investment'"
+                        class="transform transition hover:!scale-90 duration-700 text-sm font-semibold leading-6 text-brand-primary mt-2">
+                        Learn more <span aria-hidden="true">→</span>
+                    </p>
+                </dd>
+            </div>
+            <div class="blob"></div>
+        </NuxtLink>
+    </div>
 </template>
 
 <style scoped>

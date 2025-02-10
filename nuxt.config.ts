@@ -1,4 +1,11 @@
 export default defineNuxtConfig({
+  $development: {
+    vite: {
+      server: {
+        allowedHosts: true,
+      },
+    },
+  },
   compatibilityDate: '2024-04-03',
   devtools: {
     enabled: true,
