@@ -123,7 +123,7 @@ const whoWeAre = ref({
     orientation: 'image-left',
     heading: 'Who <span class="text-brand-primary">We Are</span>',
     subheading: '',
-    image: '/img/Who we are.jpg',
+    image: '/img/inspire.jpg',
     link: '/',
     content: 'Acentria Group is a trusted global consultant in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. We empower clients with tailored, forward-thinking solutions.'
 })

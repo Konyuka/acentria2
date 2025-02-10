@@ -231,8 +231,8 @@ onMounted(() => {
                 </h2>
                 <div class="sm:grid grid-cols-3 gap-5">
                     <div v-for="help in helps" :key="help.heading"
-                        class="mb-5 sm:mb-0 bg-white button-animation rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
-                        <NuxtLink class="w-full" to="/">
+                        class="mb-5 sm:mb-0 bg-white rounded-xl p-3 shadow-2xl group flex flex-col items-start justify-between">
+                        <div class="w-full" to="/">
                             <div class="!text-left font-sans group relative">
                                 <div class="card-heading pb-3">
                                     <h4>
@@ -245,11 +245,11 @@ onMounted(() => {
                                     </p>
                                 </div>
                                 <button type="button"
-                                    class="rounded-sm group-hover:!bg-brand-primary px-5 py-2 text-xs text-white shadow-sm bg-black">
+                                    class="rounded-sm  px-5 py-2 text-xs text-white shadow-sm bg-black">
                                     {{ help.cta }}
                                 </button>
                             </div>
-                        </NuxtLink>
+                        </div>
                     </div>
                 </div>
             </div>
