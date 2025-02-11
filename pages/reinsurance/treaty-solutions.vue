@@ -51,15 +51,15 @@ const faqs = ref([
             <h2 class="text-2xl !font-semibold text-black pb-5">
                 Our <span class="text-brand-primary"> Approach</span>
             </h2>
-            <p>
-                We are keen to apply our expertise on financial analysis, retention and the components of capital enable
-                us assist our insurers and reinsurers in ensuring adherence to regulatory requirements to avoid
-                potential penalties, identifying and mitigating financial risks to maintain stability, optimizing
-                capital allocation to maximize returns on investments, and making informed decisions based on
-                comprehensive risk assessments are all integral aspects of our approach.
-                <br><br>
-                Our Risk-Based Capital Advisory services are designed to help insurance companies navigate the
-                complexities of RBC requirements.
+            <p class="mb-5">
+                Our tailored treaty reinsurance programs provide clients with comprehensive coverage for their
+                portfolio of risk. The programs aim to assist clients in preserving their capital by ensuring proper
+                risk management structures that enable the identification, mitigation, and transfer of risks. We
+                adopt a 360-degree approach to treaty analysis with an objective of giving clients well-balanced
+                programs aimed at achieving optimum treaty structure that help reduce exposure, smooth
+                earnings, supplement capital, and create surplus capital. This is achieved through advice from
+                our team of experts, which includes technical reinsurance analysts, data analysts, and actuaries.
+                Our clientele includes; insurance and reinsurance companies.
             </p>
             <Accordion :faqs="faqs" />
         </div>

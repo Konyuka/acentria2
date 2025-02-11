@@ -4,7 +4,7 @@ import { ref } from "vue";
 const ReinsuranceBannerContent = ref({
     title: 'Unlock the full potential of your reinsurance program',
     subTitle: 'Treaty Administration',
-    image: 'img.freepik.com/free-photo/closeup-businesspeople-handshake_74855-1535.jpg?t=st=1737954955~exp=1737958555~hmac=ed70db64168dffe80c223d08a4d0e3438f0a64611eb9703fc3222fbbe75f3945&w=900',
+    image: '/img/discussion.jpg',
 })
 const ReinsuranceFeatureContent = ref({
     title: 'Our Approach',
@@ -76,32 +76,27 @@ const benefits = ref([
 
 const faqs = ref([
     {
-        name: 'Treaty Bidding, Negotiation, and Placement',
-        content: 'To ensure efficiency and effectiveness in treaty structuring, bidding, negotiation, and placement, we set up clear timelines that guide the treaty renewal action plan from the lobbying stage, treaty analysis, proposals and presentations, panel selection, quotation and negotiation, and signing of cover notes.'
+        name: 'Strategic Business Review',
+        content: 'We conduct a comprehensive assessment and evaluation of the treaty portfolio and overall business strategy. This includes analyzing the effectiveness and profitability of existing treaty agreements and developing strategic recommendations for future growth and success.'
     },
     {
-        name: 'Technical Accounting',
-        content: 'We provide both parties with a detailed calculation for the Profit Commission, Premium Adjustment, Sliding Scale Commission, Loss participation, etc. We make sure that all statements received from the cedant follow the agreed-upon terms and conditions included in the slip. Moreover, we make sure they are transferred to the reinsurers within the assigned time frame set in the respective contracts.'
+        name: 'Legal and Regulatory',
+        content: 'Our review ensures treaty agreements are legally binding and enforceable. We analyze the obligations of both the reinsurer and the primary insurer to avoid potential breaches and to confirm compliance with legal and regulatory requirements.'
     },
     {
-        name: 'Special Acceptance',
-        content: 'We assist cedants on reinsurance agreements that deviate from standard terms or involve unique and complex risks through negotiation with reinsurers to find a mutually beneficial agreement that addresses these specific needs. We also structure tailored solutions to develop structured reinsurance agreements that addresses the unique requirements of the cedant. This may involve drafting custom policy wordings and clauses to accommodate the special acceptance.'
+        name: 'Financial Reviews and Analysis',
+        content: 'We perform detailed examinations of the financial aspects related to treaty agreements. This ensures their effectiveness, profitability, and alignment with the company\'s overall financial goals.'
     },
     {
-        name: 'Contract Wording and Policy Review',
-        content: 'Acentria Re offers contract wording and policy review services to our clients to ensure that reinsurance treaties and underlying insurance policies align effectively, mitigate potential coverage gaps or ambiguities, and provide optimal risk transfer solutions. We assist clients in developing and refining reinsurance contract wordings to meet their specific needs.'
+        name: 'Actuarial and Modelling',
+        content: 'We deploy statistical methods, mathematical models, and actuarial techniques to assess risks, estimate potential losses, and determine the appropriate pricing and structure of reinsurance treaties.'
     },
     {
-        name: 'Documentation and Compliance',
-        content: 'We ensure that the reinsurance contract and associated documentation comply with relevant laws, regulations, and industry standards. This includes compliance with financial solvency requirements, licensing obligations, reporting obligations, and other legal and regulatory mandates specific to the jurisdiction in which the treaty operates. Review and management of amendments/endorsement to assess the impact of proposed amendments, evaluate their compliance with regulatory requirements, and ensure that the revised contract accurately reflects the agreed-upon modifications.'
+        name: 'Treaty Optimization and Design',
+        content: 'We strategically structure and fine-tune reinsurance treaties to align with the company\'s goals. This maximizes profitability and effectively manages risk, ensuring long-term success and resilience.'
     },
-    {
-        name: 'Rensurance Wording',
-        content: 'An in-depth understanding of reinsurance wording is a fundamental requirement for insurance and reinsurance professionals. It directly impacts risk management, regulatory compliance, transparency, and the overall financial stability of insurance companies. Clear, precise, and comprehensive reinsurance wordings ensures that cedants/reinsurers; Achieve their desired level of risk transfer. Eliminate ambiguities and claim disputes. Clearly establish contractual obligations of each party and avoid breaches. Align their intended reinsurance arrangements with companies’ reinsurance management strategies. Our team of experts has a wealth of experience in review and advisory on reinsurance wordings.'
-    },
+]);
 
-
-])
 </script>
 
 <template>
