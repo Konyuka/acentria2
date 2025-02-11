@@ -3242,7 +3242,7 @@ video {
 }
 
 .bg-\[url\(https\:\/\/cdn\.sanity\.io\/images\/33u1mixi\/production\/7c60407a736fe6cd67ff4c94d195ff5eede77552-1024x389\.png\)\] {
-    background-image: url(../../../../cdn.sanity.io/images/33u1mixi/production/7c60407a736fe6cd67ff4c94d195ff5eede77552-1024x389.png)
+    /* background-image: url(../../../../cdn.sanity.io/images/33u1mixi/production/7c60407a736fe6cd67ff4c94d195ff5eede77552-1024x389.png) */
 }
 
 .bg-gradient-to-tr {
