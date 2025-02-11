@@ -98,7 +98,8 @@ onMounted(() => {
                                             class="flex flex-col gap-6 mx-auto items-center justify-center text-center md:max-w-md lg:max-w-5xl">
                                             <div class="w-full grid grid-cols-10">
                                                 <div class="col-span-3">
-                                                    <h1 class="text-3xl text-white font-bold my-2 ">About Acentria Group</h1>
+                                                    <h1 class="text-3xl text-white font-bold my-2 ">About Acentria Group
+                                                    </h1>
                                                 </div>
                                                 <div class="col-span-7">
                                                 </div>
@@ -141,13 +142,13 @@ onMounted(() => {
                             </div>
 
 
-                            <div class="font-sans py-2 text-white" >
+                            <div class="font-sans py-2 text-white">
 
                                 <div
                                     class="container mx-auto flex px-4 lg:flex-row-reverse flex-col my-8 lg:my-4 lg:gap-16">
                                     <div class="relative py-4 lg:basis-1/2">
-                                        <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" width="500" height="350"
-                                            decoding="async" data-nimg="1"
+                                        <NuxtImg format="webp" alt="Image of Enable growth" loading="lazy" width="500"
+                                            height="350" decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
                                             src="https://old.acentriagroup.com/wp-content/uploads/2023/11/stock-photo-leadership-and-synergy-concept-a-number-of-white-paper-arrow-against-a-bright-black-texture-439660462-transformed-1024x600.jpeg"
                                             data-v-inspector="components/Why.vue:34:17" />
@@ -209,10 +210,10 @@ onMounted(() => {
                                         </div>
                                     </div>
                                     <div class="relative py-4 lg:basis-1/2">
-                                        <NuxtImg format="webp"  alt="Image of Enable growth" loading="lazy" width="500" height="350"
-                                            decoding="async" data-nimg="1"
+                                        <NuxtImg format="webp" alt="Image of Enable growth" loading="lazy" width="500"
+                                            height="350" decoding="async" data-nimg="1"
                                             style="color: transparent; object-fit: contain" class="rounded-lg"
-                                            src="/img/purpose.jpeg" data-v-inspector="components/Why.vue:34:17" />
+                                            src="/img/Re5.jpg" data-v-inspector="components/Why.vue:34:17" />
                                     </div>
                                 </div>
 
@@ -223,7 +224,8 @@ onMounted(() => {
                                     <div class="mx-auto max-w-7xl lg:mx-0">
                                         <h2 class="text-3xl font-bold tracking-tight text-white text-center"> Empower
                                             <span class="text-primary">|</span> Innovate <span
-                                                class="text-primary">|</span> Prosper </h2>
+                                                class="text-primary">|</span> Prosper
+                                        </h2>
                                     </div>
                                     <div class="mx-auto text-md mt-10 max-w-2xl lg:max-w-5xl text-white">
                                         <div class="grid grid-cols-3 gap-5">
@@ -288,7 +290,7 @@ onMounted(() => {
                                 </div>
                             </div>
 
-                            <div class=" py-10" >
+                            <div class=" py-10">
                                 <h2
                                     class="text-center font-sans tracking-normal text-2xl lg:text-3xl text-gray-900 font-semibold leading-normal lg:leading-normal py-2">
                                     We Firmly Believe That What Makes Us <br>
@@ -371,7 +373,8 @@ onMounted(() => {
                     <div class="mx-auto max-w-screen">
                         <div
                             class="relative bg-gray-900 px-6 py-20 shadow-xl sm:rounded-xs sm:px-10 sm:py-24 md:px-12 lg:px-40">
-                            <NuxtImg format="webp"  class="absolute inset-0 h-full w-full object-cover brightness-50 saturate-10"
+                            <NuxtImg format="webp"
+                                class="absolute inset-0 h-full w-full object-cover brightness-50 saturate-10"
                                 src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=600"
                                 alt="" />
                             <div class="absolute inset-0 bg-gray-900/5 mix-blend-multiply" />

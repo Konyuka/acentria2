@@ -4,7 +4,7 @@ import { ref } from "vue";
 const InsuranceBannerContent = ref({
     subtitle: 'Cyber Liability Insurance',
     title: 'Safeguard your business against digital threats.',
-    image: '/img/in-cyber.jpg',
+    image: 'https://img.freepik.com/free-photo/eye-futuristic-robot_53876-95096.jpg?t=st=1739262115~exp=1739265715~hmac=d4439bcfdf0975b96882f35fa047585e67ec544df30cab35c392bd41c19f466c&w=1380',
     content:'With Acentria, you’re not just getting insurance; you’re getting a partner committed to your digital security. Don’t leave your business vulnerable to cyber threats.let’s fortify your business’s digital defenses with the best cyber insurance coverage available. Your digital future deserves nothing less than the best protection'
 })
 

@@ -46,19 +46,19 @@ const joinAsMembers = ref([
     {
         name: 'Empowering Ideas',
         icon: 'fas fa-lightbulb',
-        link: '/empowering-ideas',
+        link: '/',
         description: 'We’re here to stand by you with tailored solutions that make your journey smoother, more innovative, and ultimately, more successful.',
     },
     {
         name: 'Innovating for Impact',
         icon: 'fas fa-chart-line',
-        link: '/innovating-for-impact',
+        link: '/',
         description: 'We don’t just follow trends—we set them. Done Smart is about embracing change, simplifying complexity, and delivering results that really matter to you.',
     },
     {
         name: 'Prosperity in Every Step',
         icon: 'fas fa-seedling',
-        link: '/prosperity-in-every-step',
+        link: '/',
         description: 'We believe success is about more than just today. Done Smart ensures that every solution is designed for long-term growth and sustainable success.',
     },
 ]);

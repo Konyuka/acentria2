@@ -101,7 +101,7 @@ const specials = ref([
             '• Product Recall',
             '• Environmental Liability'
         ],
-        img: '/img/REINSURANCE FACULTATIVE casuality & Liability.jpg',
+        img: 'https://img.freepik.com/free-photo/closeup-view-twocar-collision_157027-3862.jpg?t=st=1739263410~exp=1739267010~hmac=3fd0576564e5675551c7e22917ff43901fd00ccb85eca30f791ff4ea39e2ca67&w=1380',
         description: 'Casualty and liability insurance provides essential protection for businesses against third-party claims arising from injuries, property damage, or legal liabilities. This class of insurance covers a wide range of exposures, including general liability, employer’s liability, product liability, professional liability, and environmental liability.'
     },
     {

@@ -69,9 +69,9 @@ const features = [
                     <NuxtImg format="webp" class="lg:block hidden w-full"
                         src="/img/Professionals and Business Service.JPG" alt="people discussing on board" />
                     <NuxtImg format="webp" class="lg:hidden sm:block hidden w-full"
-                        src="/img/https://i.ibb.co/RjNH7QB/Rectangle-122-1.png" alt="people discussing on board" />
+                        src="/img/Professionals and Business Service.JPG" alt="people discussing on board" />
                     <NuxtImg format="webp" class="sm:hidden block w-full"
-                        src="/img/https://i.ibb.co/RjNH7QB/Rectangle-122-1.png" alt="people discussing on board" />
+                        src="/img/Professionals and Business Service.JPG" alt="people discussing on board" />
                 </div>
             </div>
 
