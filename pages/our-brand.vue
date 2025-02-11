@@ -107,7 +107,7 @@ const joinAsMembers = ref([
 
         </div>
         <ContentPic :content="beyondLogo" />
-        <ContentPic :content="heartOfBrand" />
+        <ContentPic :content="brandPromise" />
         <!-- <ContentPic :content="brandPromise" /> -->
 
         <div class="container py-5">
