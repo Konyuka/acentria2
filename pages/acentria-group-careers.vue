@@ -163,7 +163,7 @@ const whyWork = ref({
                     Career Paths <span class="text-brand-primary">At Acentria</span>
                 </h2>
                 <div class="my-6">
-                    <NuxtLink to="/our-brand" class="pt-5">
+                    <NuxtLink to="/vacancies" class="pt-5">
                         <AppButton title="Search for Open Positions" />
                     </NuxtLink>
                 </div>
@@ -190,7 +190,8 @@ const whyWork = ref({
                 </h2>
 
                 <div class="relative isolate overflow-hidden bg-black p-5 font-sans">
-                    <NuxtImg format="webp"  src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                    <NuxtImg format="webp" src="/img/tornado.png" alt=""
+                        class="absolute inset-0 -z-10 h-full w-full object-cover" />
                     <div class="absolute inset-0 bg-black opacity-30"></div>
 
                     <div class="mb-5 container">
@@ -200,7 +201,7 @@ const whyWork = ref({
                                     class="relative flex flex-col overflow-hidden rounded-md bg-brand-white shadow-card"
                                     href="resources/blog/preparing-for-ai-regulations.html">
                                     <div class="relative mx-1 mt-1 aspect-[1.5] origin-top overflow-hidden rounded">
-                                        <NuxtImg format="webp"  :src="news.image" alt="Image"
+                                        <NuxtImg format="webp" :src="news.image" alt="Image"
                                             class="object-center object-cover h-full w-full" />
                                     </div>
                                     <div class="relative z-10 grid gap-2 bg-brand-white px-4 py-2">
@@ -230,7 +231,7 @@ const whyWork = ref({
                                 At Acentria Group, we are catalysts of transformation. Please join our talent community
                                 to get job alerts and share your career details with us for future considerations.
                             </p>
-                            <NuxtLink to="/meet-the-team" class="">
+                            <NuxtLink to="/vacancies" class="">
                                 <AppButton title="Join Now" />
                             </NuxtLink>
 
@@ -246,8 +247,7 @@ const whyWork = ref({
                                         placeholder="you@example.com">
                                 </div>
                             </div>
-                            <a href="#"
-                                class="mt-3">
+                            <a href="#" class="mt-3">
                                 <AppButton title="Subscribe for job alerts" />
                             </a>
                             <p class="small-text italic mt-2 text-[10px]">
@@ -257,8 +257,8 @@ const whyWork = ref({
                         </div>
 
                         <div class="col-span-6 relative py-4">
-                            <NuxtImg format="webp"  alt="Image of community" loading="lazy" decoding="async" src="/img/Join our.JPG"
-                                class="rounded-xl w-full h-[500px]" />
+                            <NuxtImg format="webp" alt="Image of community" loading="lazy" decoding="async"
+                                src="/img/Join our.JPG" class="rounded-xl w-full h-[500px]" />
                         </div>
                     </div>
                 </div>

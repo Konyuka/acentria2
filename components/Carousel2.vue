@@ -4,7 +4,6 @@
         <div class="relative isolate overflow-hidden py-36 mt-20">
 
             <NuxtImg format="webp" :src="content.image" :alt="content.title"
-                :modifiers="{ grayscale: true, tint: '#00DC82' }"
                 class="absolute inset-0 -z-10 h-full w-full !object-cover" />
 
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent opacity-100 z-0">
