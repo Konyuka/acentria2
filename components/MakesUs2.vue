@@ -7,7 +7,7 @@ const props = defineProps({
 })
 
 const blackBannerContent = ref(
-    '<span class="text-brand-primary">Your Reinsurance, Your Way.</span> <br> Let Acentria Tailor Your Coverage To Your Needs'
+    '<span class="text-brand-primary">Empowering Growth, Together.</span> <br> Partner with Acentria for Innovative Solutions That Drive Success.'
 )
 
 

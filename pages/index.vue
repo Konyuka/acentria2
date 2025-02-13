@@ -35,28 +35,29 @@ const commitments = ref([
   {
     name: 'Our <span class="text-brand-primary ml-2"> Customers</span>',
     icon: 'fas fa-users',
-    description: 'At Acentria, we prioritize our customers by delivering innovative and tailored solutions that safeguard their interests and empower their success.',
+    description: 'We walk with you, providing innovative solutions that drive your success.',
     link: '/our-commitment'
   },
   {
     name: 'Our <span class="text-brand-primary ml-2"> Partners</span>',
     icon: 'fas fa-handshake',
-    description: 'We foster strong partnerships to create value, drive growth, and collaborate on delivering exceptional services that benefit all stakeholders.',
+    description: 'Together, we build strong partnerships to create lasting value.',
     link: '/our-commitment'
   },
   {
     name: 'Our <span class="text-brand-primary ml-2"> People</span>',
     icon: 'fas fa-user-friends',
-    description: 'Acentria is committed to nurturing a thriving workplace where our people can grow, innovate, and achieve excellence in their professional journeys.',
+    description: 'We rise with our team, fostering growth and excellence every step of the way.',
     link: '/our-commitment'
   },
   {
     name: 'Our <span class="text-brand-primary ml-2"> Communities</span>',
     icon: 'fas fa-globe',
-    description: 'We are dedicated to enriching communities by supporting initiatives that promote sustainability, education, and social well-being.',
+    description: 'We stand with communities, supporting initiatives for a sustainable and prosperous future.',
     link: '/our-commitment'
   },
 ]);
+
 
 
 const others = ref([
@@ -197,7 +198,7 @@ onBeforeUnmount(() => {
 
         <div class="justify-between content-center">
           <h2 class="section-heading text-white text-left pb-5">
-            Lets Grow <span class="text-brand-primary">Together</span>
+            Let's Grow <span class="text-brand-primary">Together</span>
           </h2>
 
           <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">

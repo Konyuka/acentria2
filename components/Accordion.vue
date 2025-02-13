@@ -12,10 +12,18 @@ const toggle = (index) => {
     openIndex.value = openIndex.value === index ? null : index;
 };
 
+// const capitalizeFirstWord = (text) => {
+//     if (!text) return '';
+//     return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+// }
 const capitalizeFirstWord = (text) => {
     if (!text) return '';
-    return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
-}
+    let formattedText = text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+    formattedText = formattedText.replace(/\b(i)\b/g, 'I');
+
+    return formattedText;
+};
+
 </script>
 
 <template>
