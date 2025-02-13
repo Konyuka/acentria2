@@ -27,7 +27,9 @@ const theButtonTitle = computed(() => {
         return 'Pick your Industry'
     } else if (props.content.link === '/acentria-benefits'){
         return 'Learn how you benefit by joining us'
-    } 
+    } else if (props.content.link === '/meet-the-team'){
+        return 'Meet the Team'
+    }
     else {
         return 'Learn More'
     }

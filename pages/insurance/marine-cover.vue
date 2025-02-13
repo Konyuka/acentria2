@@ -26,7 +26,7 @@ const benefits3 = ref([
     {
         name: 'Easy Claims Process',
         icon: 'fas fa-check-circle',
-        description: 'Our claims process is hassle free. It is important to familiarize yourself with your policy coverage and necessary claims documents when purchasing cover. Our team of experts are readily available to guide you through the process. <a href="/launch-claim" class="text-brand-primary underline">Launch a claim</a>.',
+        description: 'Our claims process is hassle free. It is important to familiarize yourself with your policy coverage and necessary claims documents when purchasing cover. Our team of experts are readily available to guide you through the process. <NuxtLink to="/contact-acentria-group" class="text-brand-primary underline">Launch a claim</NuxtLink>.',
     },
 ]);
 

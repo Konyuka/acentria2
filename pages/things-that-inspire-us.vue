@@ -68,12 +68,12 @@ const joinAsMembers = ref([
             <div class="">
                 <div class="container mx-auto flex lg:flex-row-reverse flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
-                        <NuxtImg format="webp"  alt="Image of Empowerment" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/empowerment.jpg" style="color: transparent; object-fit: contain;"
-                            class="rounded-lg" />
+                        <NuxtImg format="webp" alt="Image of Empowerment" loading="lazy" width="500" height="350"
+                            decoding="async" data-nimg="1" src="/img/empowerment.jpg"
+                            style="color: transparent; object-fit: contain;" class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="section-class pb-5">
+                        <h2 id="" class="section-heading pb-5">
                             <span class="text-brand-primary">Empower</span>
                         </h2>
                         <p class="content mb-5">
@@ -97,11 +97,12 @@ const joinAsMembers = ref([
                 </div>
                 <div class="container mx-auto flex lg:flex-row flex-col lg:gap-16">
                     <div class="relative p-4">
-                        <NuxtImg format="webp"  alt="Image of Innovation" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/inno.png" style="color: transparent;" class="rounded-lg" />
+                        <NuxtImg format="webp" alt="Image of Innovation" loading="lazy" width="500" height="350"
+                            decoding="async" data-nimg="1" src="/img/inno.png" style="color: transparent;"
+                            class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2 mt-5">
-                        <h2 id="" class="section-heading">
+                        <h2 id="" class="section-heading pb-5">
                             <span class="text-brand-primary">Innovate</span>
                         </h2>
                         <p class="content mb-5">
@@ -121,12 +122,12 @@ const joinAsMembers = ref([
                 </div>
                 <div class="container mx-auto flex lg:flex-row-reverse flex-col lg:gap-16">
                     <div class="relative p-4 lg:basis-1/2">
-                        <NuxtImg format="webp"  alt="Image of Prosperity" loading="lazy" width="500" height="350" decoding="async"
-                            data-nimg="1" src="/img/prosper.jpg" style="color: transparent; object-fit: contain;"
-                            class="rounded-lg" />
+                        <NuxtImg format="webp" alt="Image of Prosperity" loading="lazy" width="500" height="350"
+                            decoding="async" data-nimg="1" src="/img/prosper.jpg"
+                            style="color: transparent; object-fit: contain;" class="rounded-lg" />
                     </div>
                     <div class="flex flex-col justify-center lg:basis-1/2">
-                        <h2 id="" class="section-heading">
+                        <h2 id="" class="section-heading pb-5">
                             <span class="text-brand-primary">Prosper</span>
                         </h2>
                         <p class="content mb-5">

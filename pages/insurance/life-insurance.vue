@@ -75,7 +75,7 @@ const faqs = ref([
     },
     {
         name: 'How do I claim & how fast is the claims process?',
-        content: 'Our claims process is hassle free.<br><br>The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary <a href="#" class="text-brand-primary italic font-bold">claims documents</a> in the event of a claim.<br><br> <NuxtLink to="/" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
+        content: 'Our claims process is hassle free.<br><br>The claims process varies depending on the nature of cover. It is important to familiarize yourself with your policy coverage and necessary <a href="#" class="text-brand-primary italic font-bold">claims documents</a> in the event of a claim.<br><br> <NuxtLink to="/contact-acentria-group" class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10"> Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i> </NuxtLink>',
     },
     {
         name: 'What are the exclusions in Life Insurance?',
@@ -208,7 +208,7 @@ const getStarted = ref({
                 purchasing cover. <br> Our team of experts are readily available to guide you through the process.
             </p>
             <div class="mt-5">
-                <NuxtLink to="/"
+                <NuxtLink to="/contact-acentria-group"
                     class="button-animation bg-black !hover:bg-brand-primary text-white font-medium py-1 px-12 text-sm rounded-sm mt-10">
                     Launch a Claim <i class="fas fa-arrow-right text-primary ml-2"></i>
                 </NuxtLink>

@@ -88,7 +88,7 @@ const joinAsMembers = ref([
 
             <div class="justify-between content-center">
                 <h2 class="section-heading text-black text-left pb-5">
-                    Lets Grow <span class="text-brand-primary">Together</span>
+                    Our Smart <span class="text-brand-primary">Approach</span>
                 </h2>
 
                 <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
