@@ -106,7 +106,7 @@ const company = computed(() => {
                 <div class="mt-10">
                     <NuxtLink to="/meet-the-team"
                         class="mt-5">
-                        <AppButton title="Lets Talk" />
+                        <AppButton title="Let's Talk" />
                         
                     </NuxtLink>
                 </div>

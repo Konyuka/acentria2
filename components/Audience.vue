@@ -30,7 +30,8 @@ const gridCols = computed(() => {
                 <div>
                     <div :class="gridCols" class="container grid  gap-4 py-0">
                         <NuxtLink :to="user.link" v-for="user in InsuranceCardsContent.users" :key="user.name"
-                            class="relative shadow-2xl group button-animation border-t-8 border-solid border-gray-500 shadow-card m-auto flex min-h-fit rounded-xl bg-white p-5 w-full h-full">
+                            :class="[user.link !== '/' ? 'button-animation ' : 'cursor-text']"
+                            class="relative shadow-2xl group border-t-8 border-solid border-gray-500 shadow-card m-auto flex min-h-fit rounded-xl bg-white p-5 w-full h-full">
                             <div class=" font-sans flex h-fit flex-col">
 
                                 <div class="flex justify-between">
@@ -41,7 +42,7 @@ const gridCols = computed(() => {
                                 <p class="!mb-3  font-sans text-sm text-gray-700 leading-tight">
                                     {{ user.description }}
                                 </p>
-                                <div class="text-[13px] font-bold absolute bottom-0 right-5 text-gray-600">
+                                <div v-if="user.link !== '/'" class="text-[13px] font-bold absolute bottom-0 right-5 text-gray-600">
 
                                     Learn More <i class=" ml-2 fas fa-arrow-right text-brand-primary text-md pb-2"
                                         translate="no"></i>
