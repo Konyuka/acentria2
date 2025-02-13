@@ -1,6 +1,6 @@
 <script setup>
 const ReinsuranceBannerContent = ref({
-    title: 'Drive with Confidence with Our Comprehensive Motor Insurance',
+    title: 'Drive Confidently with Full Protection',
     subTitle: 'Comprehensive Motor Insurance',
     image: 'https://images.pexels.com/photos/2265634/pexels-photo-2265634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
 })
@@ -114,10 +114,9 @@ const coverages = ref([
     <section class="bg-white">
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
-        <div class="container mx-auto py-10">
+        <div class="container mx-auto py-5">
             <h1 class="section-heading pb-5">
-                Comprehensive Motor Insurance <br> <span class="text-brand-primary">Drive Confidently with Full
-                    Protection</span>
+                Why Comprehensive <br> <span class="text-brand-primary">Motor Insurance</span>
             </h1>
             <p class="mt-5 content">
             <p>At <strong>Acentria</strong>, we promise to stand with you, walk with you, and rise with you by designing

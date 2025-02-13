@@ -121,7 +121,7 @@ const whyWork = ref({
     orientation: 'image-left',
     heading: '<span class="text-black">Why would you <br></span> <span class="text-brand-primary">work for Acentria</span>',
     subheading: '',
-    image: 'https://img.freepik.com/free-photo/group-multinational-busy-people-working-office_146671-15660.jpg?t=st=1739261781~exp=1739265381~hmac=b353417b7185d794374c0f094d0311c14a86d0a59180d7d8a7860d3659b972c5&w=996',
+    image: '/img/lady-shake.jpg',
     link: '/acentria-benefits',
     content: 'At Acentria Group, we are SMART people—driven by the belief that everything we do should be SMART in thinking, design, and the value it brings to both our company and the market. We are committed to ensuring smart solutions are at the core of our actions, staying energized, passionate, and focused on executing this vision. <br><br> This mindset is a fundamental part of Acentria Group’s DNA, fueling our continuous growth and the success of our clients, partners, and employees.'
 })

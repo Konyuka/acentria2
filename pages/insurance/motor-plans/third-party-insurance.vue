@@ -1,7 +1,7 @@
 <script setup>
 const ReinsuranceBannerContent = ref({
-    title: 'Protect Yourself with Our Reliable Third-Party Insurance',
-    subTitle: 'Third Party Insurance',
+    title: 'Stay Protected & Legally Compliant',
+    subTitle: 'Third Party Car Insurance',
     image: 'https://images.pexels.com/photos/2265634/pexels-photo-2265634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
 })
 
@@ -9,29 +9,30 @@ const benefits = ref([
     {
         name: 'Liability Coverage',
         icon: 'fas fa-shield-alt',
-        description: 'Our third-party insurance covers your legal liability for causing injury or damage to other people or their property while driving. This ensures that you\'re protected from significant financial losses.',
+        description: 'Covers your legal responsibility if you cause injury or damage to other people or their property while driving, protecting you from significant financial losses.',
     },
     {
         name: 'Bodily Injury',
         icon: 'fas fa-user-injured',
-        description: 'Receive coverage for medical expenses, lost wages, and other related costs if you are at fault in an accident that causes injury or death to another person.',
+        description: 'Pays for medical expenses, lost wages, and other related costs if you are at fault in an accident that injures or kills another person.',
     },
     {
         name: 'Property Damage',
         icon: 'fas fa-car-crash',
-        description: 'Provides coverage for repair or replacement costs if you cause damage to someone else\'s property, such as their vehicle, buildings, or other structures.',
+        description: 'Covers repairs or replacement costs if you damage someone else’s vehicle, building, or other structures.',
     },
     {
         name: 'Legal Compliance',
         icon: 'fas fa-balance-scale',
-        description: 'Our third-party insurance ensures that you comply with legal requirements, avoiding potential fines and penalties for driving without the necessary coverage.',
+        description: 'Ensures you meet mandatory motor insurance requirements, protecting you from penalties and fines for non-compliance.',
     },
     {
         name: 'Peace of Mind',
         icon: 'fas fa-smile',
-        description: 'Drive with confidence knowing that you are covered for potential liabilities, allowing you to focus on the road ahead without worrying about the financial implications of an accident.',
+        description: 'Provides financial security and allows you to drive without worrying about liability claims, ensuring a stress-free driving experience.',
     },
 ]);
+
 
 </script>
 
@@ -41,12 +42,18 @@ const benefits = ref([
 
         <div class="container mx-auto py-10">
             <h1 class="section-heading pb-5">
-                Why <span class="text-brand-primary">Third-Party Insurance</span>
+                Why Third-Party <br><span class="text-brand-primary"> Insurance</span>
             </h1>
             <p class="content">
-                Accidents can happen at any time, and it's essential to have the right protection in place. Our
-                third-party insurance provides coverage for damages or injuries you cause to others while driving.
-                Ensure you're covered and compliant with legal requirements, providing peace of mind on the road.
+            <p>Accidents happen when you least expect them, and having the right coverage is essential.
+                <strong>Third-party car insurance</strong> provides financial protection for damages or injuries you
+                cause to others while driving. Whether you're navigating busy streets or highways, this policy ensures
+                you stay legally compliant and financially secure.
+            </p>
+            <br>
+            <p>With Acentria, you can drive with peace of mind, knowing you're covered against potential liabilities.
+                When protection is done smart, it’s done with care.</p>
+
             </p>
         </div>
 
@@ -54,7 +61,7 @@ const benefits = ref([
             <section class="relative py-1">
                 <div class="container">
                     <h2 class="section-heading pb-5">
-                        Key <span class="text-brand-primary"> Benefits</span>
+                        What’s Covered Under <span class="text-brand-primary"> Third-Party Motor Insurance?</span>
                     </h2>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
