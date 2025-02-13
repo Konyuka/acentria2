@@ -419,15 +419,15 @@ onBeforeUnmount(() => {
                                 that empower your growth and success.
                             </span>
                         </h1>
-                        <h4 class="card-heading  sm:pt-5 !normal-case">
+                        <!-- <h4 class="card-heading  sm:pt-5 !normal-case">
                             Let us help you navigate the
                             complexities of today’s world and
                             unlock your true potential.
-                        </h4>
+                        </h4> -->
                     </div>
-                    <div>
+                    <div class="pt-5">
                         <NuxtLink to="/about-us/who-we-are">
-                            <AppButton title="Learn More" />
+                            <AppButton title="Learn More About Us" />
                         </NuxtLink>
 
                     </div>
