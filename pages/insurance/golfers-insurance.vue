@@ -211,7 +211,7 @@ const benefits2 = ref([
                         <h5 v-html="benefit.name" class="card-heading pb-1">
 
                         </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs">
+                        <p class="content">
                             {{ benefit.description }}
                         </p>
                     </div>

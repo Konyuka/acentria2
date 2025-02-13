@@ -198,10 +198,10 @@ const getStarted = ref({
         </div>
 
         <div class="container py-5">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Easy & Hassle-Free <span
+            <h1 class="section-heading pb-6">Easy & Hassle-Free <span
                     class="text-brand-primary">Claim
                     Process</span></h1>
-            <p class="mt-6 text-xs leading-normal">
+            <p class="content">
                 Our streamlined claims process ensures fast reimbursements and easy access to medical care.
                 💡 Familiarize yourself with your coverage and required claim documents before traveling.
 
@@ -215,14 +215,14 @@ const getStarted = ref({
         </div>
 
         <div class="container mx-auto px-4 py-2 mt-5">
-            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            <h1 class="section-heading pb-5">Frequently <span class="text-brand-primary">Asked Questions</span>
             </h1>
-            <p class="text-sm leading-normal text-gray-700 font-semibold pb-5">We have all the answers to your questions.</p>
+            <p class="content pb-5">We have all the answers to your questions.</p>
             <Accordion :faqs="faqs" />
         </div>
 
         <div class="container py-5">
-            <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
+            <h1 class="section-heading pb-5">Why <span class="text-brand-primary">Choose Us</span>
             </h1>
             <div
                 class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
@@ -230,10 +230,10 @@ const getStarted = ref({
                     class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
                     <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
                     <div>
-                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+                        <h5 v-html="benefit.name" class="card-heading pb-1 ">
 
                         </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs">
+                        <p class="content">
                             {{ benefit.description }}
                         </p>
                     </div>
