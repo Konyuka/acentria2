@@ -27,7 +27,6 @@ const InsuranceCardsContent = ref({
 
 })
 
-
 const faqs = ref([
     {
         name: 'Can I transfer my motor insurance to a new vehicle?',

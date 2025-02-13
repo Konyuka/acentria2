@@ -30,6 +30,27 @@ const wordings = computed(() => {
         }
         return words
     }
+    else if (currentRoute.value == '/insurance/travel-insurance') {
+        const words = {
+            title: 'Get a Travel <br><span class="text-brand-primary">Insurance  Quote Today</span>',
+            content: 'Wherever you go, we go with you. Let’s ensure your journey is safe, secure, and stress-free. Compare travel insurance plans and get covered today!',
+        }
+        return words
+    }
+    else if (currentRoute.value == '/insurance/international-medical') {
+        const words = {
+            title: 'Get International  <br><span class="text-brand-primary">Medical Insurance Quote Today!</span>',
+            content: 'Your health is your greatest asset. Wherever you go, we ensure you’re covered.  Compare international medical insurance plans and get covered today!',
+        }
+        return words
+    }
+    else if (currentRoute.value == '/insurance/golfers-insurance') {
+        const words = {
+            title: 'Get a Golfer’s <br><span class="text-brand-primary"> Insurance Quote Today!</span>',
+            content: 'Your game deserves the best protection. Let’s ensure every swing, every round, and every achievement is backed by smart coverage. Compare golfer’s insurance plans and get covered today!',
+        }
+        return words
+    }
     else{
         const words = {
             title: 'Engage <span class="text-brand-primary">an Expert</span>',

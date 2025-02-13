@@ -2,8 +2,8 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Golfing!',
-    title: 'Protect Your Passion with Our Comprehensive Golfer\'s Insurance',
+    subtitle: 'Golfer’s Insurance in Kenya',
+    title: 'Play with Confidence, Covered with Care',
     image: 'https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
@@ -47,113 +47,108 @@ const faqs = ref([
     },
 ])
 
-const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
-const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
-const whys = ref([
-    {
-        title: 'We save you money',
-        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products & reduce your loss ratios',
-        icon: 'savings',
-    },
-    {
-        title: 'We are there for you',
-        content: 'We will take care of your insurance needs through our versatile products and scope',
-        icon: 'support_agent',
-    },
-    {
-        title: 'Easy claim process',
-        content: 'Our claims process is hassle-free, and we are proud of our service',
-        icon: 'assignment_turned_in',
-    },
-    {
-        title: 'Prompt Quotations',
-        content: 'Let us help you with the best timely quotations for your needs',
-        icon: 'query_builder',
-    },
-    {
-        title: 'Convenience',
-        content: 'Our services and solutions are simplified for clients\' use.',
-        icon: 'thumb_up',
-    },
-    {
-        title: 'Peace of Mind',
-        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
-        icon: 'sentiment_satisfied',
-    },
-])
-
 const benefits = ref([
     {
         name: 'Trusted Provider',
         icon: 'fas fa-shield-alt',
-        description: 'With years of experience and a strong reputation, we are a trusted name in the insurance industry.',
+        description: 'A leading name in sports insurance in Kenya, with a reputation you can trust.',
     },
     {
         name: 'Customer Satisfaction',
         icon: 'fas fa-smile',
-        description: 'We prioritize our customers\' well-being, offering personalized service and prompt claims processing.',
+        description: 'Fast claims processing and dedicated customer support for a seamless experience.',
     },
     {
-        name: 'Easy and Hassle-Free',
-        icon: 'fas fa-check-circle',
-        description: 'Purchasing golfer\'s insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and file claims on the go.',
+        name: 'Easy & Digital',
+        icon: 'fas fa-mobile-alt',
+        description: 'Compare plans, get quotes, and purchase coverage online or via our user-friendly mobile app.',
     },
     {
-        name: 'Customized Plans',
-        icon: 'fas fa-cogs',
-        description: 'Tailor your coverage to fit your unique needs and financial goals.',
+        name: 'Customizable Coverage',
+        icon: 'fas fa-sliders-h',
+        description: 'Tailor your policy to match your playing needs and equipment value for personalized protection.',
     },
-    
-])
+]);
+
 
 
 const whyTheInsurance = ref({
     title: 'Why Choose <span class="text-brand-primary">Golfer’s Insurance</span>',
-    description: 'Golfing is a wonderful sport, but it comes with its share of risks. Our golfer\'s insurance provides specialized coverage to protect you, your equipment, and your liabilities on the course. Ensure you can enjoy your game with peace of mind, knowing that you\'re covered for any unexpected events.',
+    description: '<p>We ensure that every swing, every game, and every moment on the course is backed by <strong>specialized golfer’s insurance</strong>. Whether you\'re a seasoned professional or a weekend golfer, unexpected events can happen—from equipment damage to personal injuries.</p> <p>Our <strong>comprehensive golfer’s insurance</strong> gives you peace of mind on and off the course, ensuring that when you play, you do so with confidence and freedom. Because when protection is done smart, it’s done with care.</p>',
 })
 
 const whatsCovered = ref([
     {
-        name: 'Equipment Protection',
+        name: 'Golf Equipment Protection',
         icon: 'fas fa-golf-club',
-        description: 'Covers loss, theft, or damage to your golf clubs, bags, and other equipment, ensuring that you\'re always ready to play with confidence.',
+        description: 'Covers loss, theft, or accidental damage to your golf clubs, bags, and gear, ensuring you\'re always prepared for your next game.',
     },
     {
-        name: 'Personal Liability',
+        name: 'Personal Liability Cover',
         icon: 'fas fa-user-shield',
-        description: 'Provides coverage for any accidental damage or injury you may cause to others while on the golf course, protecting you from potential legal and financial liabilities.',
+        description: 'Provides protection if you accidentally cause injury to someone or damage property while on the golf course.',
     },
     {
-        name: 'Accident Coverage',
+        name: 'Accident & Medical Coverage',
         icon: 'fas fa-ambulance',
-        description: 'Includes coverage for accidental injuries sustained while playing golf, such as broken bones or other medical emergencies.',
+        description: 'Pays for medical treatment if you sustain injuries while playing golf, offering peace of mind on the course.',
     },
     {
-        name: 'Hole-In-One Coverage',
+        name: 'Hole-in-One Celebration Cover',
         icon: 'fas fa-trophy',
-        description: 'Celebrate your achievement without financial worry. Our policy covers the cost of traditional hole-in-one celebrations, ensuring you can enjoy the moment.',
+        description: 'Celebrate your hole-in-one moment stress-free with coverage for traditional celebration costs.',
     },
     {
-        name: 'Trolley and Buggy Cover',
+        name: 'Golf Buggy & Trolley Cover',
         icon: 'fas fa-car',
-        description: 'Protects your golf trolley and buggy against theft or damage, keeping your game running smoothly.',
+        description: 'Ensures repair or replacement of your buggy or trolley if it is stolen or damaged.',
+    },
+    {
+        name: 'Personal Possessions Protection',
+        icon: 'fas fa-briefcase',
+        description: 'Coverage for valuables like watches, phones, or wallets while you\'re on the golf course.',
     },
     {
         name: 'Worldwide Coverage',
         icon: 'fas fa-globe',
-        description: 'Whether you\'re playing locally or internationally, our insurance provides coverage wherever you go, ensuring that you\'re protected no matter where your game takes you.',
+        description: 'Whether playing at your local club or abroad, your policy remains active for comprehensive protection.',
     },
-    {
-        name: 'Personal Possessions',
-        icon: 'fas fa-briefcase',
-        description: 'Coverage for personal possessions that you bring to the golf course, such as watches, phones, or other valuable items.',
-    },
-])
+]);
+
 
 const getStarted = ref({
-    title: 'Get <span class="text-brand-primary">Started!</span>',
-    description: 'Protect yourself and your equipment with our comprehensive golfer\'s insurance. Get a quote today and take the first step towards peace of mind and an enjoyable golfing experience.',
+    title: 'Get Started <span class="text-brand-primary"> Today!</span>',
+    description: 'Protect yourself, your gear, and your game with Golfer’s Insurance. Compare plans and get a quote today!',
 })
+
+const benefits2 = ref([
+    {
+        name: 'Protect Your Golf Equipment',
+        icon: 'fas fa-golf-club',
+        description: 'Coverage for stolen, lost, or damaged golf clubs, bags, and accessories, ensuring you\'re always ready to play.',
+    },
+    {
+        name: 'Personal Liability Cover',
+        icon: 'fas fa-user-shield',
+        description: 'Stay financially secure if you accidentally injure someone or damage property on the golf course.',
+    },
+    {
+        name: 'Accident Coverage',
+        icon: 'fas fa-ambulance',
+        description: 'Get compensation for medical expenses in case of injuries sustained while playing golf.',
+    },
+    {
+        name: 'Hole-in-One Cover',
+        icon: 'fas fa-trophy',
+        description: 'Celebrate your achievement without worrying about the cost with our Hole-in-One coverage.',
+    },
+    {
+        name: 'Worldwide Coverage',
+        icon: 'fas fa-globe',
+        description: 'Whether you\'re playing in Kenya or internationally, stay protected with comprehensive worldwide coverage.',
+    },
+]);
+
 
 </script>
 
@@ -165,15 +160,29 @@ const getStarted = ref({
         <InsuranceComponents :whatsCovered="whatsCovered" :whyTheInsurance="whyTheInsurance" :getStarted="getStarted" />
 
         <div class="container py-5">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Easy <span class="text-brand-primary">Claim
-                    Process</span></h1>
-            <p class="mt-6 text-xs leading-normal">
-                Our claims process is hassle free.
-                <br>
-                It is important to familiarize yourself with your policy coverage and necessary <span
-                    class="text-brand-primary italic font-semibold">claims
-                    documents</span> when
-                purchasing cover. <br> Our team of experts are readily available to guide you through the process.
+            <h2 class="section-heading pb-5">
+                Why Golfer’s Insurance <br> <span class="text-brand-primary"> is Essential</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div v-for="principle in benefits2"
+                    class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
+                    <div class="flex flex-col">
+                        <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
+                        <h4 class="card-heading pb-1">{{
+                            principle.name }}</h4>
+                        <p class="content">{{ principle.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <h1 class="section-heading pb-5">Easy & Hassle-Free <span class="text-brand-primary"> Claim Process</span></h1>
+            <p class="content">
+                Filing a claim shouldn’t slow down your game. Our fast and efficient claims process ensures you get back
+                on the course without unnecessary delays. 💡 Understand your policy coverage and required claim
+                documents before purchasing.
             </p>
             <div class="mt-5">
                 <NuxtLink to="/"
@@ -184,14 +193,14 @@ const getStarted = ref({
         </div>
 
         <div class="container mx-auto px-4 py-2 mt-5">
-            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            <h1 class="section-heading pb-5">Frequently <span class="text-brand-primary">Asked Questions</span>
             </h1>
-            <p class="text-sm leading-normal text-gray-700">We have all the answers to your questions.</p>
+            <p class="content pb-5">We have all the answers to your questions.</p>
             <Accordion :faqs="faqs" />
         </div>
 
         <div class="container py-5">
-            <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
+            <h1 class="section-heading pb-5">Why <span class="text-brand-primary">Choose Us</span>
             </h1>
             <div
                 class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
@@ -199,7 +208,7 @@ const getStarted = ref({
                     class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
                     <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
                     <div>
-                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+                        <h5 v-html="benefit.name" class="card-heading pb-1">
 
                         </h5>
                         <p class="leading-normal font-regular text-light-content text-xs">

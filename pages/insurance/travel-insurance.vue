@@ -2,24 +2,26 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Travel!',
-    title: 'Travel with confidence',
+    subtitle: 'Travel Insurance',
+    title: 'Explore the World with Confidence',
     image: '/img/in-travel.jpg',
-    content: 'Discover our life insurance & make sure your loved ones are safe and sound, no matter what happens. Let’s talk about securing your loved ones’ future. Explore our life insurance options and ensure their financial well-being, no matter what life brings.',
+    content: 'At Acentria, we promise to stand with you, walk with you, and rise with you—so you can travel freely, knowing you’re protected. Whether you\'re exploring Kenya’s landscapes or flying across the globe, unexpected events can disrupt your plans.That’s why our comprehensive travel insurance provides medical, trip cancellation, and luggage protection, ensuring peace of mind every step of the way.When protection is done smart, it’s done with care.',
 })
 
 const InsuranceCardsContent = ref({
-    title:'What kind of travel insurance do you need?',
+    title:'What kind of travel  <span class="text-brand-primary"> insurance do you need?</span> ',
     users: [
         {
-            name:'Local Travel',
+            name:'Local Travel Insurance',
             icon:'fas fa-user',
-            description: 'Planning a local getaway? Keep all worries at bay with our local travel insurance. Your hassle-free adventure starts here – get your coverage today.',
+            description: 'Planning a trip within Kenya? Stay protected from unexpected medical expenses, trip delays, and lost belongings.',
+            link: '/',
         },
         {
-            name:'International Travel',
+            name:'International Travel Insurance',
             icon: 'fas fa-users',
-            description: 'Ready to set off on a global adventure? Our international travel insurance has got you covered every step of the way. Say hello to stress-free explorations – secure your journey now and travel the world with confidence',
+            description: 'Heading abroad? Our global travel insurance ensures seamless protection wherever you go.',
+            link: '/',
         },
     ],
 
@@ -64,39 +66,59 @@ const benefits = ref([
     {
         name: 'Comprehensive Coverage',
         icon: 'fas fa-globe',
-        description: 'We offer a range of plans tailored to meet your needs, whether you\'re a solo traveler, a family on vacation, or a business professional.',
+        description: 'From solo travelers to families and business professionals, we offer tailored travel insurance plans.',
     },
     {
-        name: 'Easy and Hassle-Free',
+        name: 'Fast & Easy',
         icon: 'fas fa-check-circle',
-        description: 'Purchasing travel insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and file claims on the go.',
+        description: 'Get instant quotes, compare plans, and purchase insurance online or via our mobile app.',
     },
     {
-        name: '24/7 Assistance',
+        name: '24/7 Global Assistance',
         icon: 'fas fa-phone-alt',
-        description: 'Our dedicated support team is available around the clock to assist you with any travel-related issues.',
+        description: 'Our support team is available round-the-clock for any travel-related emergencies.',
     },
     {
         name: 'Trusted Provider',
         icon: 'fas fa-shield-alt',
-        description: 'With years of experience and a strong reputation, we are a trusted name in the travel insurance industry.',
+        description: 'With years of expertise, we’re a leading name in travel insurance in Kenya.',
     },
     {
-        name: 'Flexible Plans',
+        name: 'Flexible & Affordable Plans',
         icon: 'fas fa-exchange-alt',
-        description: 'Choose from a variety of plans that fit your travel style and budget.',
+        description: 'Choose a plan that matches your budget and travel needs.',
     },
     {
         name: 'Customer Satisfaction',
         icon: 'fas fa-smile',
-        description: 'We prioritize customer satisfaction, offering personalized service and prompt claims processing.',
-    },
-    {
-        name: 'Easy Claims Process',
-        icon: 'fas fa-file-alt',
-        description: 'Our streamlined claims process makes it simple and hassle-free to get the payout you deserve.',
+        description: 'We prioritize fast claims processing and personalized service.',
     },
 ]);
+
+
+const benefits2 = ref([
+    {
+        name: 'Stay Protected',
+        icon: 'fas fa-globe',
+        description: 'Coverage for medical emergencies, lost baggage, and trip disruptions, ensuring a worry-free travel experience.',
+    },
+    {
+        name: 'Financial Security',
+        icon: 'fas fa-money-bill-wave',
+        description: 'Avoid costly medical bills and unexpected travel expenses with our comprehensive travel insurance.',
+    },
+    {
+        name: '24/7 Travel Assistance',
+        icon: 'fas fa-phone-alt',
+        description: 'Receive immediate help when you need it, wherever you are, through our dedicated support team.',
+    },
+    {
+        name: 'Local & International Coverage',
+        icon: 'fas fa-plane-departure',
+        description: 'Whether you’re traveling within Kenya or abroad, our plans provide reliable coverage tailored to your needs.',
+    },
+]);
+
 
 
 
@@ -105,33 +127,39 @@ const whatsCovered = ref([
     {
         name: 'Medical Emergencies',
         icon: 'fas fa-briefcase-medical',
+        description: 'Covers hospital bills, emergency treatments, and medical evacuations during your trip.',
     },
     {
-        name: 'Trip Cancellations',
+        name: 'Trip Cancellations & Interruptions',
         icon: 'fas fa-calendar-times',
+        description: 'Get reimbursed for cancellations due to illness, weather disruptions, or other covered reasons.',
     },
     {
-        name: 'Delay or Lost Luggage',
+        name: 'Lost or Delayed Luggage',
         icon: 'fas fa-suitcase-rolling',
+        description: 'Compensation for lost, stolen, or delayed baggage, ensuring you’re never left stranded.',
     },
     {
         name: 'Travel Delays',
         icon: 'fas fa-clock',
+        description: 'Covers expenses for accommodation, meals, and other costs when flights or transport are delayed.',
     },
     {
         name: 'Personal Liability',
         icon: 'fas fa-user-shield',
+        description: 'Provides protection in case you’re legally responsible for injury or property damage during your trip.',
     },
 ]);
 
+
 const whyTheInsurance = ref({
     title: 'Why <span class="text-brand-primary">Travel Insurance</span>',
-    description: 'Traveling is an exciting adventure, but unexpected events can turn your trip upside down. With Acentria Travel Insurance, you can explore the world with peace of mind, knowing you\'re protected against unforeseen circumstances.',
+    description: 'At Acentria, we promise to stand with you, walk with you, and rise with you—so you can travel freely, knowing you’re protected. Whether you\'re exploring Kenya’s landscapes or flying across the globe, unexpected events can disrupt your plans. That’s why our comprehensive travel insurance provides medical, trip cancellation, and luggage protection, ensuring peace of mind every step of the way. When protection is done smart, it’s done with care.',
 });
 
 const getStarted = ref({
-    title: 'Get <span class="text-brand-primary">Started</span>',
-    description: 'Don\'t let unexpected events ruin your travel plans. Protect your adventure with our reliable travel insurance. Get a quote today and embark on your journey with confidence.',
+    title: 'Get Started<span class="text-brand-primary"> Today!</span>',
+    description: 'Protect your travels with Acentria Travel Insurance. Get a quote today and embark on your journey worry-free!',
 });
 
 
@@ -147,16 +175,33 @@ const getStarted = ref({
 
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
+        <div class="container py-5">
+            <h2 class="section-heading pb-5">
+                Why Travel Insurance <span class="text-brand-primary"> is Essential</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div v-for="principle in benefits2"
+                    class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
+                    <div class="flex flex-col">
+                        <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
+                        <h4 class="card-heading pb-1">{{
+                            principle.name }}</h4>
+                        <p class="content">{{ principle.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Easy <span class="text-brand-primary">Claim
+            <h1 class="section-heading pb-5">Easy & Hassle-Free <span class="text-brand-primary">Claim
                     Process</span></h1>
-            <p class="mt-6 text-xs leading-normal">
-                Our claims process is hassle free.
-                <br>
-                It is important to familiarize yourself with your policy coverage and necessary <span
-                    class="text-brand-primary italic font-semibold">claims
-                    documents</span> when
-                purchasing cover. <br> Our team of experts are readily available to guide you through the process.
+            <p class="content">
+            <p>We believe in <strong>fast, straightforward claims processing</strong>—so you can focus on your trip, not
+                paperwork.</p>
+            <p> <strong>Before traveling</strong>, familiarize yourself with your coverage details and required claim
+                documents.</p>
+
             </p>
             <div class="mt-5">
                 <NuxtLink to="/contact-acentria-group"
@@ -167,15 +212,15 @@ const getStarted = ref({
         </div>
 
         <div class="container mx-auto py-5">
-            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+            <h1 class="section-heading pb-5">Frequently <span class="text-brand-primary">Asked Questions</span>
             </h1>
-            <p class="text-xs leading-normal text-gray-700 font-semibold">We have all the answers to your questions.</p>
+            <p class="content pb-5">We have all the answers to your questions.</p>
             <Accordion :faqs="faqs" />
         </div>
 
 
         <div class="container py-5">
-            <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
+            <h1 class="section-heading pb-5">Why Choose Acentria <span class="text-brand-primary"> Travel Insurance?</span>
             </h1>
             <div
                 class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
@@ -183,10 +228,10 @@ const getStarted = ref({
                     class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
                     <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
                     <div>
-                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+                        <h5 v-html="benefit.name" class="card-heading pb-1 ">
 
                         </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs">
+                        <p class="content">
                             {{ benefit.description }}
                         </p>
                     </div>
@@ -194,7 +239,6 @@ const getStarted = ref({
             </div>
         </div>
 
-        <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
         <ContactForm />
     </div>
 

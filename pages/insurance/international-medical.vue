@@ -2,8 +2,8 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Health!',
-    title: 'Comprehensive Health Insurance Plans for Every Stage of Life',
+    subtitle: 'International Medical Insurance',
+    title: 'Your Health, Protected Anywhere in the World',
     image: '/img/safehouse.jpg',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
@@ -55,139 +55,119 @@ const faqs = ref([
     },
 ]);
 
-
-const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
-const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
-const whys = ref([
-    {
-        title: 'We save you money',
-        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products & reduce your loss ratios',
-        icon: 'savings',
-    },
-    {
-        title: 'We are there for you',
-        content: 'We will take care of your insurance needs through our versatile products and scope',
-        icon: 'support_agent',
-    },
-    {
-        title: 'Easy claim process',
-        content: 'Our claims process is hassle-free, and we are proud of our service',
-        icon: 'assignment_turned_in',
-    },
-    {
-        title: 'Prompt Quotations',
-        content: 'Let us help you with the best timely quotations for your needs',
-        icon: 'query_builder',
-    },
-    {
-        title: 'Convenience',
-        content: 'Our services and solutions are simplified for clients\' use.',
-        icon: 'thumb_up',
-    },
-    {
-        title: 'Peace of Mind',
-        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
-        icon: 'sentiment_satisfied',
-    },
-])
-
 const benefits = ref([
     {
-        name: 'Trusted Provider',
+        name: 'Trusted Global Provider',
         icon: 'fas fa-shield-alt',
-        description: 'With years of experience and a strong reputation, we are a trusted name in the international medical insurance industry.',
+        description: 'A leader in international medical insurance in Kenya with years of experience and expertise.',
     },
     {
-        name: 'Customer Focus',
+        name: 'Customer-Focused Service',
         icon: 'fas fa-users',
-        description: 'We prioritize our customers\' well-being, offering personalized service and prompt claims processing.',
-    },
-    {
-        name: 'Affordable Plans',
-        icon: 'fas fa-money-bill-wave',
-        description: 'We offer a range of plans to fit different budgets and healthcare needs.',
-    },
-    {
-        name: 'Network of Providers',
-        icon: 'fas fa-network-wired',
-        description: 'Access to an extensive network of healthcare providers, ensuring you receive the best care possible.',
-    },
-    {
-        name: 'Customer Satisfaction',
-        icon: 'fas fa-smile',
-        description: 'We prioritize our customers\' well-being, offering personalized service and prompt claims processing.',
-    },
-    {
-        name: 'Easy and Hassle-Free',
-        icon: 'fas fa-check-circle',
-        description: 'Purchasing health insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and file reimbursement claims on the go.',
+        description: 'Personalized assistance and fast claims processing to ensure customer satisfaction.',
     },
     {
         name: '24/7 Assistance',
         icon: 'fas fa-headset',
-        description: 'Our dedicated support team is available around the clock to assist you with any health-related issues.',
+        description: 'Emergency medical support anytime, anywhere for your peace of mind.',
+    },
+    {
+        name: 'Wide Healthcare Network',
+        icon: 'fas fa-network-wired',
+        description: 'Access to top-tier hospitals and specialists worldwide for high-quality care.',
+    },
+    {
+        name: 'Flexible & Affordable Plans',
+        icon: 'fas fa-money-bill-wave',
+        description: 'Coverage options tailored to match your healthcare needs and budget.',
+    },
+    {
+        name: 'Digital Convenience',
+        icon: 'fas fa-mobile-alt',
+        description: 'Compare plans, get quotes, and manage policies online or via our mobile app for hassle-free service.',
     },
 ]);
-
 
 
 const whyTheInsurance = ref({
     title: 'Why Choose <span class="text-brand-primary">International Medical Insurance</span>',
-    description: 'Traveling or living abroad can be an exciting adventure, but it\'s essential to have the right medical coverage to protect yourself and your loved ones. Our international medical insurance provides extensive coverage, ensuring that you have access to quality healthcare wherever you are in the world.',
+    description: '<p>We ensure that wherever life takes you, you have access to <strong>world-class healthcare</strong>. Whether you\'re traveling for business, relocating, or studying abroad, our<strong>comprehensive international medical insurance</strong> provides peace of mind and financial security—because when protection is done smart, it’s done with care.</p > ',
 });
 
 const whatsCovered = ref([
     {
-        name: 'Global Coverage',
+        name: 'Worldwide Medical Coverage',
         icon: 'fas fa-globe',
-        description: 'Our plans offer worldwide coverage, so you can travel or live abroad with peace of mind, knowing that you\'re protected no matter where you go.',
+        description: 'No matter where you are, your health is protected with our comprehensive worldwide plans.',
     },
     {
-        name: 'Comprehensive Medical Care',
+        name: 'Hospitalization & Emergency Care',
         icon: 'fas fa-hospital',
-        description: 'Access to a wide range of medical services, including hospitalization, specialist consultations, surgeries, and emergency care.',
+        description: 'Covers surgeries, ICU stays, specialist treatments, and other critical emergency care needs.',
     },
     {
-        name: 'Preventive Care',
+        name: 'Preventive Healthcare',
         icon: 'fas fa-syringe',
-        description: 'Coverage for routine check-ups, vaccinations, and preventive screenings to help you stay healthy while abroad.',
+        description: 'Includes vaccinations, wellness check-ups, and screenings to help you maintain good health.',
     },
     {
-        name: 'Dental and Vision Care',
+        name: 'Dental & Vision Care',
         icon: 'fas fa-tooth',
-        description: 'Includes coverage for dental and vision care, ensuring that your overall health is well taken care of.',
+        description: 'Optional add-ons for dental treatments and eye care to ensure complete health coverage.',
     },
     {
-        name: '24/7 Assistance',
-        icon: 'fas fa-phone-alt',
-        description: 'Access to our 24/7 assistance services for medical advice, emergency support, and help with finding local healthcare providers.',
+        name: 'Medical Evacuation & Repatriation',
+        icon: 'fas fa-plane',
+        description: 'Provides coverage for emergency transport to the nearest medical facility or back home.',
     },
     {
-        name: 'Telemedicine',
+        name: '24/7 Telemedicine Support',
         icon: 'fas fa-video',
-        description: 'Convenient access to telemedicine services, allowing you to consult with healthcare professionals remotely.',
-    },
-    {
-        name: 'Personalized Plans',
-        icon: 'fas fa-sliders-h',
-        description: 'Tailor your coverage to meet your specific needs, whether you\'re traveling for a short period or living abroad long-term.',
-    },
-    {
-        name: 'Family Coverage',
-        icon: 'fas fa-users',
-        description: 'Options to include coverage for your family members, ensuring that everyone is protected while you\'re away from home.',
+        description: 'Virtual consultations with healthcare professionals anytime, anywhere for convenience and care.',
     },
     {
         name: 'Flexible Payment Options',
         icon: 'fas fa-wallet',
-        description: 'Choose from a range of payment options to suit your budget and preferences.',
+        description: 'Choose a payment plan that aligns with your budget and lifestyle needs.',
     },
 ]);
 
+
+const benefits2 = ref([
+    {
+        name: 'Global Healthcare Access',
+        icon: 'fas fa-hospital',
+        description: 'Get medical care in top hospitals and clinics worldwide, ensuring your health is always a priority.',
+    },
+    {
+        name: 'Comprehensive Protection',
+        icon: 'fas fa-shield-alt',
+        description: 'Coverage for emergency care, hospitalization, and specialist treatments for total peace of mind.',
+    },
+    {
+        name: '24/7 Medical Support',
+        icon: 'fas fa-phone-alt',
+        description: 'Round-the-clock assistance for emergencies and healthcare guidance no matter where you are.',
+    },
+    {
+        name: 'Flexible & Affordable Plans',
+        icon: 'fas fa-money-bill-wave',
+        description: 'Choose a plan that fits your travel and lifestyle needs while staying within your budget.',
+    },
+    {
+        name: 'Family Coverage Options',
+        icon: 'fas fa-users',
+        description: 'Extend protection to your loved ones while abroad with our family-friendly plans.',
+    },
+]);
+
+
 const getStarted = ref({
-    title: 'Get <span class="text-brand-primary">Started!</span>',
-    description: 'Protect yourself and your loved ones with our comprehensive international medical insurance. Get a quote today and take the first step towards peace of mind and financial security, no matter where your travels take you.',
+    title: 'Get <span class="text-brand-primary">Started Today!</span>',
+    description: 'Secure your health with our international medical insurance. Compare plans and get a quote today!',
 });
+
+
 
 
 </script>
@@ -200,15 +180,31 @@ const getStarted = ref({
         <InsuranceComponents :whatsCovered="whatsCovered" :whyTheInsurance="whyTheInsurance" :getStarted="getStarted" />
 
         <div class="container py-5">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Easy <span class="text-brand-primary">Claim
+            <h2 class="section-heading pb-5">
+                Why Choose <br> <span class="text-brand-primary"> International Medical Insurance</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div v-for="principle in benefits2"
+                    class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
+                    <div class="flex flex-col">
+                        <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
+                        <h4 class="card-heading pb-1">{{
+                            principle.name }}</h4>
+                        <p class="content">{{ principle.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <h1 class="text-2xl text-black !font-semibold mb-6">Easy & Hassle-Free <span
+                    class="text-brand-primary">Claim
                     Process</span></h1>
             <p class="mt-6 text-xs leading-normal">
-                Our claims process is hassle free.
-                <br>
-                It is important to familiarize yourself with your policy coverage and necessary <span
-                    class="text-brand-primary italic font-semibold">claims
-                    documents</span> when
-                purchasing cover. <br> Our team of experts are readily available to guide you through the process.
+                Our streamlined claims process ensures fast reimbursements and easy access to medical care.
+                💡 Familiarize yourself with your coverage and required claim documents before traveling.
+
             </p>
             <div class="mt-5">
                 <NuxtLink to="/contact-acentria-group"
@@ -221,7 +217,7 @@ const getStarted = ref({
         <div class="container mx-auto px-4 py-2 mt-5">
             <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
             </h1>
-            <p class="text-sm leading-normal text-gray-700 font-semibold">We have all the answers to your questions.</p>
+            <p class="text-sm leading-normal text-gray-700 font-semibold pb-5">We have all the answers to your questions.</p>
             <Accordion :faqs="faqs" />
         </div>
 
