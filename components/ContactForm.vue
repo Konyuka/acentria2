@@ -19,11 +19,18 @@ const company = computed(() => {
 const wordings = computed(() => {
     if (currentRoute.value == '/insurance/health-insurance') {
         const words = {
-            title:'Get a Health <br><span class="text-brand-primary">Insurance  Quote Today</span>',
+            title:'Get Your Health <br><span class="text-brand-primary">Insurance  Quote Today</span>',
             content:'<b>Secure your peace of mind</b> with our <b>affordable</b> and <b>reliable health insurance plans</b>. Let us walk with you toward a <b>healthier</b>, <b>happier future</b>.',
         }
         return words
-    }else{
+    } else if (currentRoute.value == '/insurance/motor-insurance') {
+        const words = {
+            title: 'Get a Motor <br><span class="text-brand-primary">Insurance  Quote Today</span>',
+            content: '<p>Protect your vehicle with a <strong>trusted, reliable, and affordable motor insurance plan</strong>.</p> <p> <em>Compare quotes, choose the best plan, and get covered in minutes!</em></p>',
+        }
+        return words
+    }
+    else{
         const words = {
             title: 'Engage <span class="text-brand-primary">an Expert</span>',
             content: 'Interested in learning more about how we can support your business? Fill in your details, and one of our experts will reach out to you with personalized information on our comprehensive services. Let’s start a conversation.',

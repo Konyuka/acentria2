@@ -40,10 +40,10 @@ const benefits = ref([
         <ReinsuranceBanner :content="ReinsuranceBannerContent" />
 
         <div class="container mx-auto py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">
+            <h1 class="section-heading pb-5">
                 Why <span class="text-brand-primary">Third-Party Insurance</span>
             </h1>
-            <p class="mt-6 text-xs leading-normal">
+            <p class="content">
                 Accidents can happen at any time, and it's essential to have the right protection in place. Our
                 third-party insurance provides coverage for damages or injuries you cause to others while driving.
                 Ensure you're covered and compliant with legal requirements, providing peace of mind on the road.
@@ -53,7 +53,7 @@ const benefits = ref([
         <div class="py-2">
             <section class="relative py-1">
                 <div class="container">
-                    <h2 class="text-2xl !font-semibold text-black mb-4">
+                    <h2 class="section-heading pb-5">
                         Key <span class="text-brand-primary"> Benefits</span>
                     </h2>
 
@@ -62,20 +62,20 @@ const benefits = ref([
                             class="border-t-8 border-solid border-gray-400 shadow-card m-auto flex min-h-fit md:min-h-[200px] rounded-xs bg-white p-5 w-full h-full">
                             <div class="flex flex-col">
                                 <i :class="[principle.icon]" class="text-brand-primary text-xl pb-1"></i>
-                                <h4 class="font-semibold text-black !text-[16px] pb-1 leading-normal">{{
+                                <h4 class="card-heading pb-1">{{
                                     principle.name }}</h4>
-                                <p class="text-sm leading-normal text-black">{{ principle.description }}</p>
+                                <p class="content">{{ principle.description }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="container py-10 mt-5">
-                    <h2 class="text-2xl !font-semibold text-black mb-4">
+                    <h2 class="section-heading pb-5">
                         Get a <span class="text-brand-primary"> Quote Today</span>
                     </h2>
                     <div class="my-5">
-                        <p class="text-sm leading-normal">
+                        <p class="content">
                             Protect yourself and your loved ones with our comprehensive critical illness insurance.
                             Compare Quotes today and take the first step towards financial security and peace of mind.
                         </p>

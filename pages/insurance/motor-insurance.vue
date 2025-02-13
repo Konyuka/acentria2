@@ -15,13 +15,13 @@ const InsuranceCardsContent = ref({
             name: 'Comprehensive Motor Insurance',
             icon: 'fas fa-car',
             link: '/insurance/motor-plans/comprehensive-motor-insurance',
-            description: 'Provides robust protection for your vehicle, ensuring that you are covered in various scenarios that could lead to significant financial loss such as third-party liability and damage to the vehicle arising out of fire, theft, or accidents.',
+            description: 'Offers full protection against accidents, fire, theft, and third-party liabilities, minimizing financial loss and ensuring complete coverage.',
         },
         {
             name: 'Third Party Insurance',
             icon: 'fas fa-user-friends',
             link: '/insurance/motor-plans/third-party-insurance',
-            description: 'Provides coverage for damages or injuries that you cause to another person or their property while operating a vehicle.',
+            description: 'Covers damages or injuries you cause to others but does not cover your own vehicle. A budget-friendly option to meet legal requirements.',
         },
     ],
 
@@ -72,22 +72,22 @@ const benefits = ref([
     {
         name: 'Trusted Provider',
         icon: 'fas fa-shield-alt',
-        description: 'With years of experience and a strong reputation, we are a trusted name in the insurance industry.',
+        description: 'A reputable and experienced insurance company with a strong track record in the industry.',
     },
     {
         name: 'Customized Plans',
         icon: 'fas fa-cogs',
-        description: 'Tailor your coverage to fit your unique needs and financial goals.',
+        description: 'Choose coverage tailored to your specific needs and budget for maximum flexibility.',
     },
     {
         name: 'Customer Satisfaction',
         icon: 'fas fa-smile',
-        description: 'We prioritize our customers\' well-being, offering personalized service and prompt claims processing.',
+        description: 'We prioritize personalized service and fast claims processing to ensure your satisfaction.',
     },
     {
-        name: 'Easy and Hassle-Free',
-        icon: 'fas fa-check-circle',
-        description: 'Purchasing motor insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks. Plus, our mobile app makes it convenient to access your policy information and file claims on the go.',
+        name: 'Convenient & Digital-Friendly',
+        icon: 'fas fa-mobile-alt',
+        description: 'Our online platform lets you compare plans, get instant quotes, and purchase coverage easily from anywhere.',
     },
 ]);
 
@@ -97,54 +97,64 @@ const whatsCovered = ref([
     {
         name: 'Accidental Damage',
         icon: 'fas fa-car-crash',
+        description: 'Covers the cost of repairs or replacement if your vehicle is damaged in an accident.',
     },
     {
-        name: 'Theft and Vandalism',
+        name: 'Theft & Vandalism',
         icon: 'fas fa-user-secret',
+        description: 'Protects against vehicle theft and intentional damage caused by vandalism.',
     },
     {
-        name: 'Natural Disasters',
+        name: 'Natural Disaster Protection',
         icon: 'fas fa-cloud-showers-heavy',
+        description: 'Covers damage caused by floods, storms, earthquakes, and fires.',
     },
     {
         name: 'Third-Party Liability',
         icon: 'fas fa-people-arrows',
+        description: 'Ensures you’re financially protected if you cause damage to another vehicle, property, or injure someone.',
     },
     {
         name: 'Fire Damage',
         icon: 'fas fa-fire',
+        description: 'Covers fire-related damages to your car.',
     },
     {
-        name: 'Glass Damage',
+        name: 'Glass & Windscreen Cover',
         icon: 'fas fa-wind',
-        description: 'Windows and windshield',
+        description: 'Protects against windshield and window damage.',
     },
     {
-        name: 'Personal Belongings',
+        name: 'Personal Belongings Cover',
         icon: 'fas fa-box-open',
+        description: 'Compensation for stolen or damaged valuables inside your car.',
     },
     {
         name: 'Medical Expenses',
         icon: 'fas fa-briefcase-medical',
+        description: 'Covers hospital bills for you and your passengers in case of an accident.',
     },
     {
-        name: 'Roadside Assistance',
+        name: '24/7 Roadside Assistance',
         icon: 'fas fa-truck-pickup',
+        description: 'Get immediate help for breakdowns, towing, battery jump-starts, and flat tires.',
     },
     {
-        name: 'Rental / Courtesy Car Coverage',
+        name: 'Rental Car Coverage',
         icon: 'fas fa-car',
+        description: 'Provides a courtesy car while your vehicle is being repaired.',
     },
 ]);
 
+
 const whyTheInsurance = ref({
-    title: 'Why <span class="text-brand-primary">Motor Insurance</span>',
-    description: 'Driving comes with its share of risks, and it\'s essential to have reliable motor insurance to protect you, your vehicle, and others on the road. Our comprehensive motor insurance provides the coverage you need to drive with confidence, knowing that you\'re protected against a wide range of incidents.',
+    title: 'Motor Insurance <br> <span class="text-brand-primary">Reliable Protection for Every Journey</span>',
+    description:'Driving comes with its fair share of risks, but with the right motor insurance, you can navigate the road with confidence and peace of mind. We offer comprehensive motor insurance that safeguards you, your vehicle, and others against accidents, theft, natural disasters, and third-party liabilities. When protection is done smart, it’s done with care—ensuring financial security and worry-free driving.'
 });
 
 const getStarted = ref({
-    title: 'Get <span class="text-brand-primary">Started</span>',
-    description: 'Protect your vehicle and drive with confidence with our comprehensive motor insurance. Get a quote today and take the first step towards peace of mind and financial security.',
+    title: 'Get <span class="text-brand-primary">Started Today!</span>',
+    description: 'Protect your vehicle and drive with confidence with our comprehensive motor insurance. Compare insurance plans and get a free quote today!',
 });
 
 
@@ -160,15 +170,16 @@ const getStarted = ref({
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
         <div class="container py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Easy <span class="text-brand-primary">Claim
-                    Process</span></h1>
+            <h1 class="text-2xl text-black !font-semibold mb-6">
+                Easy & Hassle-Free
+                <span class="text-brand-primary">Claim
+                    Process</span>
+            </h1>
             <p class="mt-6 text-xs leading-normal">
-                Our claims process is hassle free.
-                <br>
-                It is important to familiarize yourself with your policy coverage and necessary <span
-                    class="text-brand-primary italic font-semibold">claims
-                    documents</span> when
-                purchasing cover. <br> Our team of experts are readily available to guide you through the process.
+            <p>Filing an insurance claim should be <strong>simple</strong> and <strong>stress-free</strong>. Our
+                dedicated claims team will guide you through every step, ensuring a seamless experience.</p>
+            <p><br> <strong>Before purchasing a cover</strong>, familiarize yourself with <strong>policy coverage</strong>
+                and <strong>required claim documents</strong>.</p>
             </p>
             <div class="mt-5">
                 <NuxtLink to="/contact-acentria-group"
@@ -181,7 +192,7 @@ const getStarted = ref({
         <div class="container mx-auto py-5">
             <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
             </h1>
-            <p class="text-xs leading-normal text-gray-700 font-semibold">We have all the answers to your questions.</p>
+            <p class="text-xs leading-normal text-gray-700 font-semibold pb-5">We have all the answers to your questions.</p>
             <Accordion :faqs="faqs" />
         </div>
 
@@ -209,12 +220,12 @@ const getStarted = ref({
                 class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
                 <div v-for="benefit in benefits"
                     class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
-                    <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
+                    <i :class="benefit.icon" class="text-xl text-brand-primary mr-4"></i>
                     <div>
-                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+                        <h5 v-html="benefit.name" class="card-heading ">
 
                         </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs">
+                        <p class="content">
                             {{ benefit.description }}
                         </p>
                     </div>
