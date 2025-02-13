@@ -132,10 +132,10 @@ const exploreRisks = ref({
 const introContent = ref({
     orientation: 'image-left',
     heading: 'Welcome to <span class="text-brand-primary">  Acentria</span>',
-    subheading: 'A Reliable Partner <span class="text-brand-primary">  You Can Trust</span>',
+    subheading: 'Your Partner <span class="text-brand-primary"> in Confidence</span>',
     image: '/img/lady-shake.jpg',
     link: '/',
-    content: 'Acentria is a world class Insurance Broker that has skills and expertise to combine specialized insurance brokerage services with deep analytics to provide tailored smart solutions that meet the unique needs of our clients worldwide. We pride ourselves as top-notch insurance experts with a reputation to handle complex risks and claims.',
+    content:'We believe insurance should do more than just cover risks—it should empower you. At Acentria, we promise to stand with you, walk with you, and rise with you, designing solutions around your unique journey. With our expertise in insurance brokerage and data-driven insights, we deliver smart, personalized protection, ensuring you have the freedom to live confidently. After all, when it is done smart, it is done with care.'
 })
 
 const bannerMainContent = ref({

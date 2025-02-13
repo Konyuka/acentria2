@@ -30,7 +30,7 @@ const showButton = computed(() => {
                     </div>
                     <div class="col-span-9 ml-20 max-w-6xl lg:mx-0 text-center">
                         <h2
-                            class="text-left text-xl font-semibold tracking-tight text-white sm:text-6xl font-sans mb-4">
+                            class="text-left text-xl font-semibold tracking-tight text-brand-primary sm:text-6xl font-sans pp-4">
                             {{ InsuranceBannerContent.subtitle }}
                         </h2>
                         <h2 v-html="InsuranceBannerContent.title"

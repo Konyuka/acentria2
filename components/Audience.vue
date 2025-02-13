@@ -24,7 +24,7 @@ const gridCols = computed(() => {
         <section id="" class="relative py-5">
             <div class="container">
                 <div class="pb-7 text-left">
-                    <h1 v-html="InsuranceCardsContent.title" class="font-sans  text-2xl text-black font-semibold">
+                    <h1 v-html="InsuranceCardsContent.title" class="section-heading">
                     </h1>
                 </div>
                 <div>
@@ -35,11 +35,11 @@ const gridCols = computed(() => {
                             <div class=" font-sans flex h-fit flex-col">
 
                                 <div class="flex justify-between">
-                                    <h4 id="" class="font-sans subsection-heading font-semibold">
+                                    <h4 id="" class="card-heading">
                                         <i :class="user.icon" class="text-brand-primary mr-1"></i> {{ user.name }}
                                     </h4>
                                 </div>
-                                <p class="!mb-3  font-sans text-sm text-gray-700 leading-tight">
+                                <p class="py-3  content">
                                     {{ user.description }}
                                 </p>
                                 <div v-if="user.link !== '/'" class="text-[13px] font-bold absolute bottom-0 right-5 text-gray-600">

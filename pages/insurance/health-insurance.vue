@@ -15,39 +15,39 @@ const InsuranceCardsContent = ref({
             name: 'Family/Individual Health Covers',
             icon: 'fas fa-users',
             link: '/',
-            description: 'The cover is purchased by an individual to cover themselves and their dependents (spouse and children). In most cases, this is an off-the-shelf product with various options.',
+            description: 'Ideal for individuals or families seeking off-the-shelf healthcare solutions.',
         },
         {
             name: 'Junior Medical Covers',
             icon: 'fas fa-child',
             link: '/',
-            description: 'This is a cover designed for children 2 years and above without having the parent as a main member.',
+            description: 'Designed for children (2+ years) without needing a parent as the main member.',
         },
         {
             name: 'Senior’s Medical Covers',
             icon: 'fas fa-user-clock',
             link: '/',
-            description: 'With most covers having an upper age limit of 65 years, this product is designed to ensure that those above 65 years are covered for the rest of their life.',
+            description: 'Ensures coverage for those above 65 years, offering lifelong protection.',
         },
         {
             name: 'Corporate Covers',
             icon: 'fas fa-building',
             link: '/',
-            description: 'This is a health plan purchased by an employer for the employees only, or with their families (spouses and children). This cover is flexible and can be customized to the employer’s needs. The plan can be fully insured or partly funded (Hybrid).',
+            description: 'Flexible health plans customized for employers and their teams.',
         },
         {
             name: 'Micro Covers (SME)',
             icon: 'fas fa-briefcase',
             link: '/',
-            description: 'This is a cover for small and micro enterprise companies and those corporates looking for an off-the-shelf product specifically designed to suit their coverage needs. The cover is designed for companies with populations of between 3-10 employees. The plans have been negotiated to waive waiting periods and co-pays.',
+            description: 'Perfect for small businesses needing cost-effective yet comprehensive benefits.',
         },
         {
             name: 'International Medical Cover',
             icon: 'fas fa-globe',
             link: '/',
-            description: 'This cover is designed to assist access to private healthcare in your country of residence and abroad. It is ideal for people who plan to spend more than a year abroad or are frequent travelers.',
+            description: 'Access to private healthcare locally and abroad, ideal for frequent travelers.',
         },
-    ],
+    ]
 });
 
 
@@ -120,38 +120,42 @@ const whys = ref([
 
 const benefits = ref([
     {
-        name: 'Affordable Plans',
-        icon: 'fas fa-money-bill-wave-sign',
-        description: '<p>We offer a range of plans to fit different budgets and healthcare needs.</p>',
+        name: 'Comprehensive Coverage',
+        icon: 'fas fa-list-alt',
+        description: '<p>From family plans to corporate packages, find the perfect fit for your needs.</p>',
     },
     {
-        name: 'Network of Providers',
-        icon: 'fas fa-network-wired',
-        description: '<p>Access to an extensive network of healthcare providers, ensuring you receive the best care possible.</p>',
+        name: 'Affordable Plans',
+        icon: 'fas fa-money-bill-wave',
+        description: '<p>Flexible pricing to suit different budgets and healthcare requirements.</p>',
+    },
+    {
+        name: 'Wide Network of Providers',
+        icon: 'fas fa-hospital',
+        description: '<p>Get care from trusted hospitals and specialists across Kenya.</p>',
     },
     {
         name: '24/7 Assistance',
         icon: 'fas fa-headset',
-        description: '<p>Our dedicated support team is available around the clock to assist you with any health-related issues.</p>',
+        description: '<p>Our support team is ready to help with any health-related concerns.</p>',
     },
     {
         name: 'Trusted Provider',
         icon: 'fas fa-shield-alt',
-        description: '<p>With years of experience and a strong reputation, we are a trusted name in the health insurance industry.</p>',
+        description: '<p>With years of experience, we’re a leading name in the Kenyan health insurance industry.</p>',
     },
     {
         name: 'Customer Satisfaction',
         icon: 'fas fa-smile',
-        description: '<p>We prioritize our customers\' well-being, offering personalized service and prompt claims processing.</p>',
+        description: '<p>Prompt claims processing and personalized service come standard.</p>',
     },
     {
-        name: 'Easy and Hassle-Free',
+        name: 'Easy & Hassle-Free',
         icon: 'fas fa-check-circle',
-        description: `<p>Purchasing health insurance should be quick and easy. Our online platform allows you to compare plans, get quotes, and purchase coverage in just a few clicks.</p>
-        <p>Plus, our mobile app makes it convenient to access your policy information and file reimbursement claims on the go.</p>`,
+        description: `<p>Compare plans, get quotes, and purchase coverage online or via our mobile app—all in just a few clicks.</p>`,
     },
-    
 ]);
+
 
 const benefits2 = ref([
     {
@@ -174,51 +178,50 @@ const whatsCovered = ref([
     {
         name: 'Hospitalization Benefits',
         icon: 'fas fa-hospital',
-        description: 'Coverage for inpatient hospital stays, surgeries, and treatments.',
+        description: 'Inpatient stays, surgeries, and treatments.',
     },
     {
         name: 'Outpatient Care',
         icon: 'fas fa-user-md',
-        description: 'Access to outpatient services, including doctor visits, specialist consultations, and diagnostic tests.',
+        description: 'Doctor visits, specialist consultations, and diagnostic tests.',
     },
     {
         name: 'Preventive Care',
         icon: 'fas fa-syringe',
-        description: 'Coverage for vaccinations, screenings, and wellness programs to keep you healthy.',
+        description: 'Vaccinations, health screenings, and wellness programs.',
     },
     {
         name: 'Prescription Drugs',
         icon: 'fas fa-pills',
-        description: 'Benefits for prescribed medications, both generic and brand-name.',
+        description: 'Coverage for essential medications—both brand-name and generic.',
     },
     {
-        name: 'Maternity and Newborn Care',
+        name: 'Maternity & Newborn Care',
         icon: 'fas fa-baby',
-        description: 'Comprehensive coverage for maternity care, childbirth, and newborn health services.',
+        description: 'Comprehensive support for childbirth and newborn health.',
     },
     {
         name: 'Chronic Disease Management',
         icon: 'fas fa-heartbeat',
-        description: 'Support and coverage for managing chronic conditions such as diabetes, hypertension, and asthma.',
+        description: 'Ongoing care for conditions like diabetes, hypertension, and asthma.',
     },
     {
         name: 'Mental Health Services',
         icon: 'fas fa-brain',
-        description: 'Access to mental health professionals and coverage for therapy and counseling services.',
+        description: 'Access to counseling and therapy sessions when you need it.',
     },
 ]);
 
+
 const whyTheInsurance = ref({
-    title: 'Why <span class="text-brand-primary">Health Insurance</span>',
-    description: 'Your health is your most valuable asset. With rising medical costs, having health insurance ensures that you and your loved ones are protected against unexpected medical expenses. Our health insurance plans offer the coverage you need to stay healthy and financially secure.',
+    title: 'Health Insurance <br> <span class="text-brand-primary">Safeguard Your Well-being</span>',
+    description: 'Rising medical costs can catch anyone off-guard. Protecting your <b>health</b> (and your <b>family’s</b>) with <b>comprehensive health insurance</b> ensures you’re covered for <b>hospital stays</b>, <b>outpatient care</b>, and <b>unexpected emergencies</b>. Stay <b>financially secure</b> while focusing on what truly matters—<b>your well-being</b>.'
 });
 
 const getStarted = ref({
     title: 'Get <span class="text-brand-primary">Started</span>',
-    description: 'Invest in your health and well-being with our reliable health insurance plans. Get a quote today and take the first step towards a healthier future.',
+    description: 'Invest in your health and secure your future.<br> <nuxt-link to="/contact-acentria-group" class="text-brand-primary font-bold hover:underline"> Get a Quote Today </nuxt-link> and take the first step toward a healthier, more confident life.',
 });
-
-
 
 </script>
 
@@ -231,16 +234,13 @@ const getStarted = ref({
 
         <Audience :InsuranceCardsContent="InsuranceCardsContent" />
 
-        <div class="container py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Easy <span class="text-brand-primary">Claim
+        <div class="container py-5">
+            <h1 class="section-heading pb-5">Easy <span class="text-brand-primary">Claim
                     Process</span></h1>
-            <p class="mt-6 text-xs leading-normal">
-                Our claims process is hassle free.
-                <br>
-                It is important to familiarize yourself with your policy coverage and necessary <span
-                    class="text-brand-primary italic font-semibold">claims
-                    documents</span> when
-                purchasing cover. <br> Our team of experts are readily available to guide you through the process.
+            <p class="content">
+                Our claims process is <b>straightforward</b> and <b>hassle-free</b>. Simply familiarize yourself with
+                your <b>policy coverage</b> and <b>required documents</b>, and our team will guide you every step of the
+                way.
             </p>
             <div class="mt-5">
                 <NuxtLink to="/contact-acentria-group"
@@ -250,57 +250,35 @@ const getStarted = ref({
             </div>
         </div>
 
-        <div class="container mx-auto py-5">
-            <h1 class="text-2xl font-semibold mb-4">Frequently <span class="text-brand-primary">Asked Questions</span>
+        <div class="section-heading container mx-auto py-5">
+            <h1 class="section-heading pb-5">Frequently <span class="text-brand-primary">Asked Questions</span>
             </h1>
-            <p class="text-xs leading-normal text-gray-700 font-semibold">We have all the answers to your questions.</p>
+            <p class="content pb-5">We have all the answers to your questions.</p>
             <Accordion :faqs="faqs" />
         </div>
 
 
         <div class="container py-5">
-            <h1 class="text-2xl font-semibold pb-10">Why <span class="text-brand-primary">Choose Us</span>
+            <h1 class="section-heading pb-5">Why <span class="text-brand-primary">Choose Us</span>
             </h1>
 
-            <div class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 mb-2 text-base text-gray-600">
-                <div v-for="benefit in benefits2"
-                    class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
-                    <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
-                    <div>
-                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
-
-                        </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs">We offer a range of plans
-                            tailored to meet your needs. Our health plans include:</p>
-                        <div class="grid grid-cols-3 gap-5 p-5">
-                            <div v-for="item in benefit.items" v-html="item">
-                            </div>
-                        </div>    
-                        <p class="leading-normal font-regular text-light-content text-xs" v-html="benefit.description">
-                        </p>
-                        <p class="leading-normal font-regular text-light-content text-xs">Each plan is designed to
-                            provide comprehensive coverage tailored to your specific needs.</p>
-                    </div>
-                </div>
-            </div>
             <div
-                class="font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
+                class="pt-3 font-sans col-span-2 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-gray-600 sm:grid-cols-2">
 
                 <div v-for="benefit in benefits"
                     class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
-                    <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
+                    <i :class="benefit.icon" class="text-2xl text-brand-primary mr-4"></i>
                     <div>
-                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+                        <h5 v-html="benefit.name" class="card-heading">
 
                         </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs" v-html="benefit.description">
+                        <p class="content" v-html="benefit.description">
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- <WhyUs :whys="whys" :intro="intro" :leftTitle="leftTitle" /> -->
         <ContactForm />
     </div>
 

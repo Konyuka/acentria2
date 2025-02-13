@@ -15,27 +15,43 @@ const company = computed(() => {
         return 'Acentria Group'
     }
 })
+
+const wordings = computed(() => {
+    if (currentRoute.value == '/insurance/health-insurance') {
+        const words = {
+            title:'Get a Health <br><span class="text-brand-primary">Insurance  Quote Today</span>',
+            content:'<b>Secure your peace of mind</b> with our <b>affordable</b> and <b>reliable health insurance plans</b>. Let us walk with you toward a <b>healthier</b>, <b>happier future</b>.',
+        }
+        return words
+    }else{
+        const words = {
+            title: 'Engage <span class="text-brand-primary">an Expert</span>',
+            content: 'Interested in learning more about how we can support your business? Fill in your details, and one of our experts will reach out to you with personalized information on our comprehensive services. Let’s start a conversation.',
+        }
+        return words
+    } 
+})
+
+
 </script>
 
 <template>
     <section class="relative py-5 mx-auto container">
         <div class="text-left">
-            <h2 class="section-heading">
-                Engage <span class="text-brand-primary">an Expert</span>
+            <h2 class="section-heading" v-html="wordings.title">
+
             </h2>
         </div>
 
         <div class="py-5 grid grid-cols-1 gap-5 lg:grid-cols-2">
             <div class="h-fit rounded-md bg-black px-2 py-5 md:py-14 shadow-card">
                 <div>
-                    <NuxtImg format="webp"  alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
+                    <NuxtImg format="webp" alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
                         style="color: transparent; object-fit: cover" src="/img/Talk to Us.JPG"
                         class="rounded-xl w-full h-[45vh]" />
                 </div>
-                <h5 class="content text-white py-2">
-                    Interested in learning more about how {{ company }} can support your business? Fill in your
-                    details, and one of our experts will reach out to you with personalized information on our
-                    comprehensive services. Let’s start a conversation.
+                <h5 class="content text-white py-2" v-html="wordings.content">
+
                 </h5>
             </div>
 
@@ -104,10 +120,9 @@ const company = computed(() => {
                 </p>
 
                 <div class="mt-10">
-                    <NuxtLink to="/meet-the-team"
-                        class="mt-5">
+                    <NuxtLink to="/meet-the-team" class="mt-5">
                         <AppButton title="Let's Talk" />
-                        
+
                     </NuxtLink>
                 </div>
             </form>
