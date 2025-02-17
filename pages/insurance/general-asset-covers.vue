@@ -2,8 +2,8 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Company!',
-    title: 'Protect Your Corporate Assets.',
+    subtitle: 'Asset & Stock Covers',
+    title: 'Safeguard Your Business with Smart Protection',
     image: 'https://img.freepik.com/free-photo/happy-african-woman-raincoat-posing-with-umbrella_171337-14578.jpg?t=st=1736534992~exp=1736538592~hmac=47af9e4d5f9c923cfa31bfe3fae7d937f8ee899e210b78678e256864d4f00223&w=900',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
@@ -47,157 +47,59 @@ const faqs = ref([
     },
 ])
 
-const intro = ref('At Acentria, we’re not just about insurance – we understand what’s on your mind. Our easy process takes care of your insurance needs, offering reliable coverage that gives you peace of mind.Let us handle your insurance worries at Acentria.')
-const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Acentria</span>`)
-const whys = ref([
-    {
-        title: 'We save you money',
-        content: 'Through innovation, we provide unique offerings that enable you to combine your insurance products & reduce your loss ratios',
-        icon: 'savings',
-    },
-    {
-        title: 'We are there for you',
-        content: 'We will take care of your insurance needs through our versatile products and scope',
-        icon: 'support_agent',
-    },
-    {
-        title: 'Easy claim process',
-        content: 'Our claims process is hassle-free, and we are proud of our service',
-        icon: 'assignment_turned_in',
-    },
-    {
-        title: 'Prompt Quotations',
-        content: 'Let us help you with the best timely quotations for your needs',
-        icon: 'query_builder',
-    },
-    {
-        title: 'Convenience',
-        content: 'Our services and solutions are simplified for clients\' use.',
-        icon: 'thumb_up',
-    },
-    {
-        title: 'Peace of Mind',
-        content: 'Your peace of mind is our priority. Our team of experts shall offer professional advice for your needs.',
-        icon: 'sentiment_satisfied',
-    },
-])
-
 const benefits3 = ref([
     {
-        name: 'Tailored Solutions',
+        name: 'Tailored Business Protection',
         icon: 'fas fa-cogs',
-        description: 'Our policies are customized to meet the specific needs of your corporate operations.',
+        description: 'Customized policies that fit your industry and risk profile, ensuring optimal coverage for your business.',
     },
     {
         name: 'Comprehensive Coverage',
         icon: 'fas fa-shield-alt',
-        description: 'We offer a wide range of insurance options to protect every aspect of your business.',
+        description: 'From property damage to cyber risks, our policies cover all essential aspects of business protection.',
     },
     {
-        name: 'Expert Support',
+        name: 'Expert Guidance',
         icon: 'fas fa-user-tie',
-        description: 'Our team of experienced professionals is here to help you navigate the complexities of corporate insurance and find the best solutions for your needs.',
+        description: 'Our dedicated insurance advisors help you navigate policy selection and find the best coverage for your needs.',
     },
     {
-        name: 'Easy Claims Process',
+        name: 'Easy & Digital Claims',
         icon: 'fas fa-check-circle',
-        description: 'Our claims process is hassle free. It is important to familiarize yourself with your policy coverage and necessary claims documents when purchasing cover. Our team of experts are readily available to guide you through the process. <a href="/launch-claim" class="text-brand-primary underline">Launch a claim</a>.',
+        description: 'Enjoy a hassle-free claims process with online and mobile access. <a href="/launch-claim" class="text-brand-primary underline">Launch a claim</a> today.',
+    },
+]);
+
+const whatsCovered2 = ref([
+    {
+        name: 'Protect Business Assets',
+        icon: 'fas fa-building',
+        description: 'Coverage for property, equipment, and vehicles against fire, theft, and natural disasters, ensuring your business stays protected.',
+    },
+    {
+        name: 'Mitigate Financial Risk',
+        icon: 'fas fa-balance-scale',
+        description: 'Safeguard your business from liabilities, lawsuits, and fraud, reducing financial exposure and ensuring stability.',
+    },
+    {
+        name: 'Ensure Business Continuity',
+        icon: 'fas fa-chart-line',
+        description: 'Minimize downtime and recover lost income due to operational disruptions, helping your business bounce back quickly.',
+    },
+    {
+        name: 'Defend Against Cyber Threats',
+        icon: 'fas fa-shield-alt',
+        description: 'Shield your company from cyberattacks and data breaches, keeping sensitive information and operations secure.',
+    },
+    {
+        name: 'Secure Leadership & Reputation',
+        icon: 'fas fa-user-tie',
+        description: 'Protect directors and officers from legal claims, ensuring business leaders can make decisions with confidence.',
     },
 ]);
 
 
 
-
-const benefits2 = ref([
-    {
-        name: 'Corporate Covers',
-        icon: 'fas fa-users',
-        description: 'Purchased by an employer for employees only, or with their families (spouses and children). This cover is flexible and can be customized to the employer’s needs. The plan can be fully insured or partly funded (Hybrid).',
-    },
-    {
-        name: 'Micro Covers (SME)',
-        icon: 'fas fa-briefcase',
-        description: 'Designed for small and micro enterprises with populations of 3-10 employees. These plans waive waiting periods and co-pays, offering a tailored solution for businesses seeking off-the-shelf products.',
-    },
-    {
-        name: 'International Medical Cover',
-        icon: 'fas fa-plane',
-        description: 'Ideal for individuals planning to spend more than a year abroad or frequent travelers. This cover provides access to private healthcare in your country of residence and internationally.',
-    },
-]);
-
-const benefits = ref([
-
-    {
-        name: 'Outpatient Care',
-        icon: 'fas fa-stethoscope',
-        description: 'Access to outpatient services, including doctor visits, specialist consultations, and diagnostic tests.',
-    },
-    {
-        name: 'Maternity and Newborn Care',
-        icon: 'fas fa-baby',
-        description: 'Comprehensive coverage for maternity care, childbirth, and newborn health services.',
-    },
-    {
-        name: 'Chronic Disease Management',
-        icon: 'fas fa-heartbeat',
-        description: 'Support and coverage for managing chronic conditions such as diabetes, hypertension, and asthma.',
-    },
-    {
-        name: 'Preventive Care',
-        icon: 'fas fa-shield-virus',
-        description: 'Coverage for routine check-ups, vaccinations, and preventive screenings to help employees maintain their health and catch potential issues early.',
-    },
-    {
-        name: 'Dental and Vision Care',
-        icon: 'fas fa-teeth',
-        description: 'Includes coverage for dental and vision care, supporting overall health and well-being.',
-    },
-    {
-        name: 'Mental Health Support',
-        icon: 'fas fa-brain',
-        description: 'Access to mental health services, including counseling and therapy, to support employees\' emotional and psychological well-being.',
-    },
-    {
-        name: 'Prescription Drug Coverage',
-        icon: 'fas fa-pills',
-        description: 'Coverage for prescription medications, ensuring employees can access necessary treatments without financial strain.',
-    },
-    {
-        name: 'Wellness Programs',
-        icon: 'fas fa-dumbbell',
-        description: 'Access to wellness programs, including fitness memberships, nutrition counseling, and health education, promoting a healthy lifestyle for employees.',
-    },
-    {
-        name: 'Family Coverage',
-        icon: 'fas fa-users',
-        description: 'Options to include coverage for employees\' families, ensuring their loved ones are protected and cared for.',
-    },
-    {
-        
-        name: '24/7 Assistance',
-        icon: 'fas fa-clock',
-        description: 'Access to 24/7 assistance services for medical advice and support, providing peace of mind for employees and their families.',
-    },
-    {
-        name: 'Customizable Plans',
-        icon: 'fas fa-cogs',
-        description: 'Tailor your health insurance plan to meet the specific needs of your workforce, ensuring comprehensive and relevant coverage.',
-    },
-    {
-        name: 'Comprehensive Medical Coverage',
-        icon: 'fas fa-notes-medical',
-        description: 'Access to a wide range of medical services, including hospitalization, specialist consultations, surgeries, and emergency care, ensuring your employees receive the best care possible. The panel of providers shall be readily available on the <span class="text-brand-primary italic">self-help portal</span> or availed to you by our <span class="text-brand-primary italic">customer care.</span>',
-    },
-]);
-
-
-
-
-const whyTheInsurance = ref({
-    title: 'Why Choose <span class="text-brand-primary">Golfer’s Insurance</span>',
-    description: 'Golfing is a wonderful sport, but it comes with its share of risks. Our golfer\'s insurance provides specialized coverage to protect you, your equipment, and your liabilities on the course. Ensure you can enjoy your game with peace of mind, knowing that you\'re covered for any unexpected events.',
-})
 
 const whatsCovered = ref([ 
     {
@@ -250,14 +152,6 @@ const whatsCovered = ref([
     },
 ]);
 
-
-
-const getStarted = ref({
-    title: 'Get <span class="text-brand-primary">Started!</span>',
-    description: 'Protect yourself and your equipment with our comprehensive golfer\'s insurance. Get a quote today and take the first step towards peace of mind and an enjoyable golfing experience.',
-})
-
-
 </script>
 
 <template>
@@ -266,18 +160,46 @@ const getStarted = ref({
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
         <div class="container mx-auto py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">
+            <h1 class="section-heading pb-5">
                 Asset <span class="text-brand-primary"> Covers</span>
             </h1>
-            <p class="mt-6 text-xs leading-normal">
-                In today's dynamic business environment, protecting your corporate assets is crucial. Our comprehensive
-                general asset insurance covers are designed to safeguard your business from a wide range of risks,
-                ensuring financial stability and peace of mind.
+            <p class="content pb-5">
+                We ensure your business assets are protected from unexpected risks. Whether you own property, equipment,
+                vehicles, or digital assets, our comprehensive asset insurance solutions provide financial stability and
+                business continuity.
+                In today’s dynamic business environment, one incident can lead to significant financial loss. With our
+                tailored insurance covers, you can focus on growth while we handle the risks. When protection is done
+                smart, it’s done with care.
+
             </p>
         </div>
 
+        <div class="container py-5">
+            <h1 class="section-heading pb-5">Why Asset <span class="text-brand-primary"> Insurance is Essential</span>
+            </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <NuxtLink :to="feature.url" v-for="feature in whatsCovered2" class="flex p-5 shadow-md">
+                    <div class="mr-6">
+                        <i :class="feature.icon" class="text-brand-primary text-4xl"></i>
+                    </div>
+                    <div>
+                        <div class=" mt-1 card-heading">
+                            <p>
+                                {{ feature.name }}
+                            </p>
+                        </div>
+                        <div class="mt-1 content">
+                            <p>
+                                {{ feature.description }}
+                            </p>
+                        </div>
+                    </div>
+                </NuxtLink>
+            </div>
+        </div>
+
         <div class="container">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Types of General<span class="text-brand-primary"> Asset
+            <h1 class="section-heading pb-5">Types of General<span class="text-brand-primary"> Asset
                     Insurance</span>
             </h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
@@ -286,17 +208,17 @@ const getStarted = ref({
                         <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                     </div>
                     <div>
-                        <div class=" mt-1 text-black text-md leading-normal font-bold">
+                        <div class=" mt-1 card-heading">
                             <p>
                                 {{ feature.name }}
                             </p>
                         </div>
                         <div class="flex flex-col gap-5 text-brand-primary font-semibold">
                             <p class="mt-5">
-                                Coverage: <span class="text-black !font-normal">{{ feature.coverage }}</span>
+                                Coverage: <span class="content font-normal">{{ feature.coverage }}</span>
                             </p>
                             <p>
-                                Benefits: <span class="text-black !font-normal">{{ feature.benefits }}</span>
+                                Benefits: <span class="content font-normal">{{ feature.benefits }}</span>
                             </p>
                         </div>
 
@@ -314,10 +236,10 @@ const getStarted = ref({
                     class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
                     <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
                     <div>
-                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+                        <h5 v-html="benefit.name" class="card-heading pb-1">
 
                         </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs" v-html="benefit.description">
+                        <p class="content" v-html="benefit.description">
                         </p>
                     </div>
                 </div>
@@ -326,15 +248,11 @@ const getStarted = ref({
         </div>
 
         <div class="container mx-auto py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">
+            <h1 class="section-heading pb-5">
                 Get <span class="text-brand-primary">Started Today</span>
             </h1>
-            <p class="mt-6 text-xs leading-normal">
-
-                Protect your corporate assets with our reliable and comprehensive insurance solutions. <span
-                    class="text-brand-primary italic underline">Contact us today</span>
-                to learn more about our policies and how we can help you secure your future in the corporate world.
-
+            <p class="content pb-5">
+                Your business is your greatest asset—let us walk with you in securing its future.
             </p>
         </div>
 
