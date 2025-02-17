@@ -90,33 +90,29 @@ const leftTitle = ref(`Why Insure with <br> <span class="text-brand-primary">Ace
 const whys = ref([
     {
         title: 'Comprehensive Coverage',
-        content: 'We offer end-to-end protection for all aspects of aviation operations.',
+        content: 'From private pilots to commercial fleets, we cover every aspect of aviation operations.',
         icon: 'shield'
     },
     {
-        title: 'Global Expertise',
-        content: 'Backed by partnerships with A-rated global reinsurers, ensuring reliability and security.',
-        icon: 'public'
-    },
-    {
-        title: 'Customized Solutions',
-        content: 'Tailored policies to meet the specific needs of individuals, operators, and organizations.',
-        icon: 'tune'
-    },
-    {
-        title: 'Exceptional Customer Support',
-        content: 'A dedicated team of aviation insurance experts to guide you through the process and provide unmatched service.',
+        title: '24/7 Claims & Risk Support',
+        content: 'We’re always available for emergency claims assistance and risk advisory, ensuring peace of mind.',
         icon: 'support_agent'
     },
     {
-        title: 'Active Risk Management',
-        content: 'Beyond insurance, we engage in proactive risk assessment, identifying potential threats and advising mitigation strategies to ensure your operations are continuously protected.',
+        title: 'Global Reinsurance Backing',
+        content: 'Partnered with A-rated global insurers for financial stability and security.',
+        icon: 'public'
+    },
+    {
+        title: 'Proactive Risk Management',
+        content: 'We go beyond insurance to help mitigate potential risks and improve operational safety.',
         icon: 'assessment'
     }
-])
+]);
+
 
 const exploreAviation = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
+    orientation: 'image-right',
     heading: 'Aviation<span class="text-brand-primary"> Insurance</span>',
     subheading: '',
     image: '/img/63.jpg',
@@ -124,7 +120,7 @@ const exploreAviation = ref({
     content:'At Acentria, we provide aviation professionals with insurance policies tailored to their unique needs. Our dedicated team of aviation insurance brokers combines in-depth industry knowledge and exceptional service to offer you strategic advice, comprehensive coverage, and competitive pricing. Regardless of your flying experience or the type of aircraft you operate, we’re here to ensure your peace of mind with coverage that lets you fly confidently.'
 })
 const whatWeDo = ref({
-    orientation: 'lg:flex-row flex-col',
+    orientation: 'image-left',
     heading: 'What <span class="text-brand-primary">We Do</span>',
     subheading: '',
     image: '/img/59.jpg',
@@ -132,7 +128,7 @@ const whatWeDo = ref({
     content:'Our mission extends beyond offering general insurance coverage; we aim to build long-term relationships with our clients to ensure their aviation ventures remain safe with tailored insurance solutions and comprehensive risk management. We specialise in creating custom policies for small aircraft, UAVs (unmanned aerial vehicles), and helicopters, as well as hangarkeepers’ liability and additional insurance catered to the needs of the aviation industry, its assets, and associated businesses. At Acentria, we leverage our deep understanding of the industry to bridge these gaps. We take a proactive approach to risk management and provide you with insights and expert advice you need to remain compliant and safe. We cover all potential risks and advise strategies to mitigate them, ensuring you’re always prepared and protected. Our commitment to fostering a long-lasting relationship means we’re here for you, from policy inception to claim resolution, offering ongoing support to keep your operations soaring smoothly.'
 })
 const whyAviation = ref({
-    orientation: 'lg:flex-row-reverse flex-col',
+    orientation: 'image-right',
     heading: 'Why might you need an <span class="text-brand-primary">aviation insurance broker?</span>',
     subheading: '',
     image: '/img/53.jpg',
@@ -142,71 +138,71 @@ const whyAviation = ref({
 
 const joinAsMembers = ref([
     {
+        name: 'Aircraft Hull Insurance',
+        icon: 'fas fa-plane',
+        description: 'Coverage: <br/> <div class="ml-3">• All-Risks Hull Coverage – Protection for aircraft in-flight and on the ground. <br/> • Ground Risks Hull Coverage – Covers aircraft while parked or undergoing maintenance.</div>'
+    },
+    {
         name: 'Aviation Liability Insurance',
         icon: 'fas fa-shield-alt',
-        description: 'Coverage: <br/> <div class="ml-3">• Passenger Liability Insurance <br/> • Third-Party Liability Insurance <br/> • Baggage Liability Insurance</div>'
-    },
-    {
-        name: 'Ground Risk Insurance',
-        icon: 'fas fa-cloud',
-        description: 'Coverage: <br/> <div class="ml-3">• Damage from weather events <br/> • Incidents involving ground handling operations</div>'
-    },
-    {
-        name: 'Drone Insurance',
-        icon: 'fas fa-drone',
-        description: 'Coverage: Tailored policies for unmanned aerial vehicles (UAVs) and drones.<br/> <div class="ml-3">• Hull Insurance <br/> • Third-Party Liability <br/> • Payload and Equipment Coverage</div>'
-    },
-    {
-        name: 'Personal Accident Insurance for Aviation Personnel',
-        icon: 'fas fa-user-shield',
-        description: 'Coverage: <br/> <div class="ml-3">• Pilots <br/> • Crew members <br/> • Ground personnel</div>'
+        description: 'Coverage: <br/> <div class="ml-3">• Passenger Liability Insurance – Covers legal liability for passenger injuries or fatalities. <br/> • Third-Party Liability Insurance – Protection against claims from damages to people or property. <br/> • Baggage Liability Insurance – Covers loss, damage, or mishandling of passenger baggage.</div>'
     },
     {
         name: 'Pilot Loss of License (PLOL) Insurance',
         icon: 'fas fa-id-badge',
-        description: 'Coverage: <br/> <div class="ml-3">• Illness or accident <br/> • Permanent loss of license <br/> • Temporary loss of license</div> <br/> Benefits: Provides income replacement, helping pilots maintain financial stability during their career transitions.'
+        description: 'Coverage: <br/> <div class="ml-3">• Loss of license due to illness, injury, or permanent disability.</div> <br/> Benefits: Provides income replacement to help pilots maintain financial stability.'
     },
     {
         name: 'Hull War and Allied Perils Insurance',
         icon: 'fas fa-bomb',
-        description: 'Coverage: <br/> <div class="ml-3">• War <br/> • Terrorism <br/> • Hijacking <br/> • Strikes <br/> • Riots <br/> • Other politically motivated actions</div>'
+        description: 'Coverage: <br/> <div class="ml-3">• Protection against war, terrorism, hijacking, riots, and politically motivated risks.</div>'
+    },
+    {
+        name: 'Ground Risk Insurance',
+        icon: 'fas fa-cloud',
+        description: 'Coverage: <br/> <div class="ml-3">• Weather-related damage to aircraft. <br/> • Incidents involving ground handling operations.</div>'
+    },
+    {
+        name: 'Drone & UAV Insurance',
+        icon: 'fas fa-drone',
+        description: 'Coverage: Tailored for commercial drone operators and UAV businesses. <br/> <div class="ml-3">• Hull Insurance – Covers damage or loss of the UAV. <br/> • Third-Party Liability – Protects against claims for injuries or damages caused by drones. <br/> • Payload & Equipment Coverage – Protects high-value drone equipment and sensors.</div>'
     },
     {
         name: 'Hangarkeepers Liability Insurance',
         icon: 'fas fa-warehouse',
-        description: 'Coverage: <br/> <div class="ml-3">• Hangar operators <br/> • Repair stations <br/> • FBOs (Fixed Base Operators)</div>'
+        description: 'Coverage: <br/> <div class="ml-3">• Liability protection for hangar operators, MROs (Maintenance, Repair, Overhaul), and Fixed Base Operators (FBOs).</div>'
     },
     {
-        name: 'Aircraft Hull Insurance',
-        icon: 'fas fa-plane',
-        description: 'Coverage: <br/> <div class="ml-3">• All-Risks Hull Coverage <br/> • Ground Risks Hull Coverage</div>'
+        name: 'Personal Accident Insurance for Aviation Personnel',
+        icon: 'fas fa-user-shield',
+        description: 'Coverage: <br/> <div class="ml-3">• Protection for pilots, crew members, and ground personnel in case of injury or accident.</div>'
     },
     {
         name: 'Airport Liability Insurance',
         icon: 'fas fa-plane-departure',
-        description: 'Coverage: <br/> <div class="ml-3">• Public liability <br/> • Hangarkeeper’s liability <br/> • Environmental liability</div>'
+        description: 'Coverage: <br/> <div class="ml-3">• Public liability – Covers injuries or property damage at airports. <br/> • Hangarkeeper’s liability – Covers aircraft under the care of ground services. <br/> • Environmental liability – Covers pollution and environmental damage claims.</div>'
     },
     {
         name: 'Aviation Products Liability Insurance',
         icon: 'fas fa-cogs',
-        description: 'Coverage: <br/> <div class="ml-3">• Covers legal costs and settlements related to product failures</div>'
+        description: 'Coverage: <br/> <div class="ml-3">• Protection against legal costs and settlements related to aviation product failures.</div>'
     },
     {
         name: 'Aviation Cargo Insurance',
         icon: 'fas fa-box',
-        description: 'Coverage: <br/> <div class="ml-3">• Comprehensive protection for freight forwarders and logistics companies <br/> • Optional add-ons for high-value shipments</div>'
+        description: 'Coverage: <br/> <div class="ml-3">• Protection for freight forwarders and logistics companies handling cargo shipments. <br/> • Optional add-ons for high-value shipments.</div>'
     },
     {
         name: 'Flight School Insurance',
         icon: 'fas fa-school',
-        description: 'Coverage: <br/> <div class="ml-3">• Hull and liability coverage for training aircraft <br/> • PLOL coverage for student pilots</div>'
+        description: 'Coverage: <br/> <div class="ml-3">• Hull & liability coverage for training aircraft. <br/> • PLOL coverage for student pilots.</div>'
     },
     {
         name: 'Cyber Liability Insurance for Aviation',
         icon: 'fas fa-shield-virus',
-        description: 'Coverage: <br/> <div class="ml-3">• Coverage for data restoration <br/> • Liability for third-party damages</div>'
+        description: 'Coverage: <br/> <div class="ml-3">• Data restoration coverage in case of cyberattacks. <br/> • Liability protection against third-party claims due to cyber breaches.</div>'
     }
-])
+]);
 
 const content = ref({
     vid: '/img/hd1.mp4',
@@ -266,7 +262,7 @@ const content = ref({
         </div> -->
 
         <div class="bg-white py-5">
-            <div class="container">
+            <div class="container pb-5">
                 <h1 class="text-2xl font-semibold">Frequently <span class="text-brand-primary">Asked Questions</span>
                 </h1>
                 <p class="text-sm text-gray-700">We have all the answers to your questions.</p>
