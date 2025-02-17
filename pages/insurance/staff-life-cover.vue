@@ -2,8 +2,8 @@
 import { ref } from "vue";
 
 const InsuranceBannerContent = ref({
-    subtitle: 'Ensure Smart Life!',
-    title: 'Providing peace of mind for your employees',
+    subtitle: 'Staff Life Covers',
+    title: 'Secure Your Employees’ Future',
     image: 'https://img.freepik.com/free-photo/relax-woman-looking-sea-beach_1249-611.jpg?t=st=1736531397~exp=1736534997~hmac=951e45cb932a04b418c35910b6d760c91c19f24cd4c7af1d7b2fdaae7e58149b&w=900',
     content: 'Feel at ease in your own home with our Home Insurance package. This plan protects your house and the stuff inside from things like fires and other bad situations. It even helps if things get stolen after a break-in or if something bad happens to things you usually take outside. And if someone who works at your home gets hurt while working, or if there’s a problem caused by you or your family, this plan has your back.',
 })
@@ -86,29 +86,30 @@ const benefits3 = ref([
     {
         name: 'Comprehensive Protection',
         icon: 'fas fa-shield-alt',
-        description: 'Our policies offer extensive coverage options to meet the diverse needs of your workforce.',
+        description: 'Coverage that meets the diverse needs of your workforce, ensuring peace of mind for employees and their families.',
     },
     {
-        name: 'Affordable Rates',
-        icon: 'fas fa-money-bill-wave-sign',
-        description: 'We provide competitive group rates, making it cost-effective for both employers and employees.',
+        name: 'Affordable & Competitive Rates',
+        icon: 'fas fa-money-bill-wave',
+        description: 'Budget-friendly group life assurance plans designed to offer cost-effective protection for employers and employees.',
     },
     {
-        name: 'Flexible Options',
+        name: '24/7 Expert Support',
+        icon: 'fas fa-headset',
+        description: 'Dedicated claims assistance and expert guidance available around the clock to help with any inquiries or claims.',
+    },
+    {
+        name: 'Customizable Options',
         icon: 'fas fa-cogs',
-        description: 'Employees can customize their coverage to suit their personal and family needs.',
+        description: 'Employees can adjust their coverage as their needs change, ensuring personalized protection for different life stages.',
     },
     {
-        name: 'Expert Support',
-        icon: 'fas fa-user-tie',
-        description: 'Our team of experienced professionals is here to help you navigate the complexities of life assurance and find the best solutions for your organization.',
-    },
-    {
-        name: 'Easy Claims Process',
-        icon: 'fas fa-check-circle',
-        description: 'Our claims process is hassle free. It is important to familiarize yourself with your policy coverage and necessary claims documents when purchasing cover. Our team of experts are readily available to guide you through the process. <a href="/launch-claim" class="text-brand-primary underline">Launch a claim</a>.',
+        name: 'Easy & Digital',
+        icon: 'fas fa-mobile-alt',
+        description: 'Compare plans, get quotes, and manage policies online with our seamless digital platform for maximum convenience.',
     },
 ]);
+
 
 
 const benefits2 = ref([
@@ -205,40 +206,65 @@ const whatsCovered = ref([
     {
         name: 'Group Life Assurance',
         icon: 'fas fa-users',
-        coverage: 'Provides a lump sum payment to the beneficiaries of an employee in the event of their death.',
-        benefits: 'Offers financial support to the employee\'s family, helping to cover funeral costs, outstanding debts, and living expenses.',
+        coverage: 'Pays a lump sum to an employee’s beneficiaries in the event of their passing.',
+        benefits: 'Helps families cover funeral costs, outstanding debts, and living expenses.',
     },
     {
         name: 'Voluntary Life Assurance',
         icon: 'fas fa-hand-holding-heart',
-        coverage: 'Allows employees to purchase additional life assurance coverage at discounted group rates.',
-        benefits: 'Provides employees with the flexibility to enhance their coverage based on their individual needs and circumstances.',
+        coverage: 'Allows employees to purchase additional life cover at discounted group rates.',
+        benefits: 'Employees can enhance their coverage based on individual needs.',
     },
     {
         name: 'Dependent Life Assurance',
         icon: 'fas fa-child',
-        coverage: 'Provides coverage for the dependents of employees, ensuring financial support in the event of their death.',
-        benefits: 'Offers peace of mind to employees, knowing their loved ones are protected.',
+        coverage: 'Extends financial support to an employee’s dependents in case of their passing.',
+        benefits: 'Offers peace of mind, knowing their loved ones are protected.',
     },
     {
-        name: 'Acentria Last Expense',
+        name: 'Acentria Last Expense Cover',
         icon: 'fas fa-cross',
-        coverage: 'Provides a simple and affordable way to cover costs such as funeral services, burial or cremation, and other end-of-life expenses, ensuring your family can focus on celebrating your life and legacy. Get a cover for premiums as low as KES 1,500 Per Annum.',
-        benefits: 'Alleviate the cost and hustle of funeral expense contributions by employees.',
+        coverage: 'Covers funeral expenses such as burial, cremation, and related costs.',
+        benefits: 'Premiums as low as KES 1,500 per annum, reducing financial stress for families.',
     },
     {
-        name: 'Critical Illness',
+        name: 'Critical Illness Cover',
         icon: 'fas fa-heartbeat',
-        coverage: 'Provides coverage for the employees and dependents against financial burden as a result of severe health conditions. Our policy covers a wide range of critical illnesses, including cancer, heart attack, stroke, and more.',
-        benefits: 'Our critical illness insurance provides a safety net to help you manage the financial impact of severe health conditions, allowing you to focus on your recovery without added stress.',
+        coverage: 'Financial support for employees and dependents diagnosed with severe illnesses.',
+        benefits: 'Covers conditions such as cancer, heart attack, and stroke, allowing employees to focus on recovery.',
     },
 ]);
 
 
-const getStarted = ref({
-    title: 'Get <span class="text-brand-primary">Started!</span>',
-    description: 'Protect yourself and your equipment with our comprehensive golfer\'s insurance. Get a quote today and take the first step towards peace of mind and an enjoyable golfing experience.',
-})
+
+const whatsCovered2 = ref([
+    {
+        name: 'Financial Security for Families',
+        icon: 'fas fa-hand-holding-usd',
+        description: 'Provides lump sum payments to beneficiaries in case of an employee’s passing, ensuring their loved ones are financially secure.',
+    },
+    {
+        name: 'Affordable Group Rates',
+        icon: 'fas fa-piggy-bank',
+        description: 'Cost-effective life assurance solutions designed for both employers and employees, making protection accessible and affordable.',
+    },
+    {
+        name: 'Employee Retention & Satisfaction',
+        icon: 'fas fa-users',
+        description: 'Enhance employee benefits by offering life assurance, demonstrating a commitment to their long-term security and well-being.',
+    },
+    {
+        name: 'Customizable Coverage Options',
+        icon: 'fas fa-sliders-h',
+        description: 'Employees can personalize their plans to match their personal and family needs, ensuring the right level of coverage.',
+    },
+    {
+        name: 'Seamless Claims Process',
+        icon: 'fas fa-file-invoice-dollar',
+        description: 'Our hassle-free claims support ensures families receive their benefits quickly and efficiently when they need it the most.',
+    },
+]);
+
 
 
 </script>
@@ -249,18 +275,46 @@ const getStarted = ref({
         <InsuranceHero :InsuranceBannerContent="InsuranceBannerContent" />
 
         <div class="container mx-auto py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">
+            <h1 class="section-heading pb-5">
                 Staff <span class="text-brand-primary">Life Assurance</span>
             </h1>
-            <p class="mt-6 text-xs leading-normal">
-                Offering life assurance as part of your employee benefits package is a valuable way to show your
-                commitment to your staff's well-being. Our staff life assurance covers are designed to provide financial
-                security and peace of mind for your employees and their families.
+            <p class="content pb-5">
+                Ensuring that your employees and their families are financially protected in times of loss. Offering
+                staff life assurance is not just a benefit—it’s a commitment to your team’s well-being. Our
+                comprehensive life assurance plans provide a financial safety net for employees and their loved ones,
+                ensuring they have the peace of mind to focus on their work and future. <br>
+                <b>
+                    Because when protection is done smart, it’s done with care.
+                </b>
             </p>
         </div>
 
+        <div class="container pb-5">
+            <h1 class="section-heading pb-5">Why Choose <span class="text-brand-primary"> Staff Life Assurance?</span>
+            </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <NuxtLink :to="feature.url" v-for="feature in whatsCovered2" class="flex p-5 shadow-md">
+                    <div class="mr-6">
+                        <i :class="feature.icon" class="text-brand-primary text-4xl"></i>
+                    </div>
+                    <div>
+                        <div class=" mt-1 card-heading">
+                            <p>
+                                {{ feature.name }}
+                            </p>
+                        </div>
+                        <div class="mt-1 content">
+                            <p>
+                                {{ feature.description }}
+                            </p>
+                        </div>
+                    </div>
+                </NuxtLink>
+            </div>
+        </div>
+
         <div class="container">
-            <h1 class="text-2xl text-black !font-semibold mb-6">Types of Life <span class="text-brand-primary">
+            <h1 class="section-heading pb-5">Types of Life <span class="text-brand-primary">
                     Assurance Covers</span>
             </h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
@@ -269,7 +323,7 @@ const getStarted = ref({
                         <i :class="feature.icon" class="text-brand-primary text-xl"></i>
                     </div>
                     <div>
-                        <div class=" mt-1 text-black text-md leading-normal font-bold">
+                        <div class=" mt-1 card-heading">
                             <p>
                                 {{ feature.name }}
                             </p>
@@ -282,14 +336,13 @@ const getStarted = ref({
                                 Benefits: <span class="text-black !font-normal">{{ feature.benefits }}</span>
                             </p>
                         </div>
-
                     </div>
                 </NuxtLink>
             </div>
         </div>
 
         <div class="container py-5">
-            <h1 class="text-2xl font-semibold pb-10">Why Choose Our <span class="text-brand-primary">Life Assurance
+            <h1 class="section-heading pb-5">Why Choose Our <span class="text-brand-primary">Life Assurance
                     Covers?</span>
             </h1>
             <div
@@ -298,10 +351,10 @@ const getStarted = ref({
                     class="flex flex-row gap-2 border-2 border-gray-100 py-2 px-4 rounded-md shadow-md">
                     <i :class="benefit.icon" class="text-3xl text-brand-primary mr-4"></i>
                     <div>
-                        <h5 v-html="benefit.name" class="text-lg pb-1 font-semibold leading-normal text-gray-600">
+                        <h5 v-html="benefit.name" class="card-heading pb-1 ">
 
                         </h5>
-                        <p class="leading-normal font-regular text-light-content text-xs" v-html="benefit.description">
+                        <p class="content" v-html="benefit.description">
                         </p>
                     </div>
                 </div>
@@ -309,14 +362,11 @@ const getStarted = ref({
         </div>
 
         <div class="container mx-auto py-10">
-            <h1 class="text-2xl text-black !font-semibold mb-6">
+            <h1 class="section-heading pb-5">
                 Get <span class="text-brand-primary">Started Today</span>
             </h1>
-            <p class="mt-6 text-xs leading-normal">
-                Show your employees that you care about their future with our reliable and comprehensive life assurance
-                covers. <span class="text-brand-primary italic underline">Contact us today</span> to learn more about
-                our policies and how we can help you provide peace of mind
-                for your staff.
+            <p class="content pb-5">
+                Show your employees you care about their future by offering reliable life assurance coverage.
             </p>
         </div>
 

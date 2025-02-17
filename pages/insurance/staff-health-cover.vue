@@ -121,43 +121,35 @@ const whyTheInsurance = ref({
     description: 'Golfing is a wonderful sport, but it comes with its share of risks. Our golfer\'s insurance provides specialized coverage to protect you, your equipment, and your liabilities on the course. Ensure you can enjoy your game with peace of mind, knowing that you\'re covered for any unexpected events.',
 })
 
+
 const whatsCovered = ref([
     {
-        name: 'Equipment Protection',
-        icon: 'fas fa-golf-club',
-        description: 'Covers loss, theft, or damage to your golf clubs, bags, and other equipment, ensuring that you\'re always ready to play with confidence.',
+        name: 'Access to Quality Healthcare',
+        icon: 'fas fa-hospital',
+        description: 'Comprehensive coverage for hospitalization, outpatient care, and preventive screenings to keep employees healthy.',
     },
     {
-        name: 'Personal Liability',
-        icon: 'fas fa-user-shield',
-        description: 'Provides coverage for any accidental damage or injury you may cause to others while on the golf course, protecting you from potential legal and financial liabilities.',
+        name: 'Boost Employee Productivity',
+        icon: 'fas fa-chart-line',
+        description: 'A healthier workforce leads to fewer sick days and improved efficiency, ensuring business success.',
     },
     {
-        name: 'Accident Coverage',
-        icon: 'fas fa-ambulance',
-        description: 'Includes coverage for accidental injuries sustained while playing golf, such as broken bones or other medical emergencies.',
+        name: 'Financial Security',
+        icon: 'fas fa-shield-alt',
+        description: 'Protects employees from high medical costs, providing peace of mind and financial stability.',
     },
     {
-        name: 'Hole-In-One Coverage',
-        icon: 'fas fa-trophy',
-        description: 'Celebrate your achievement without financial worry. Our policy covers the cost of traditional hole-in-one celebrations, ensuring you can enjoy the moment.',
+        name: '24/7 Assistance',
+        icon: 'fas fa-phone-alt',
+        description: 'Round-the-clock access to medical support and emergency care whenever needed.',
     },
     {
-        name: 'Trolley and Buggy Cover',
-        icon: 'fas fa-car',
-        description: 'Protects your golf trolley and buggy against theft or damage, keeping your game running smoothly.',
+        name: 'Family Coverage Options',
+        icon: 'fas fa-users',
+        description: 'Extend healthcare benefits to employees’ families, ensuring their loved ones receive quality care too.',
     },
-    {
-        name: 'Worldwide Coverage',
-        icon: 'fas fa-globe',
-        description: 'Whether you\'re playing locally or internationally, our insurance provides coverage wherever you go, ensuring that you\'re protected no matter where your game takes you.',
-    },
-    {
-        name: 'Personal Possessions',
-        icon: 'fas fa-briefcase',
-        description: 'Coverage for personal possessions that you bring to the golf course, such as watches, phones, or other valuable items.',
-    },
-])
+]);
+
 
 const getStarted = ref({
     title: 'Get <span class="text-brand-primary">Started!</span>',
@@ -182,6 +174,31 @@ const getStarted = ref({
                 When protection is done smart, it’s done with care.
 
             </p>
+        </div>
+
+        <div class="container pb-5">
+            <h1 class="section-heading pb-5">Why Choose <span class="text-brand-primary"> Staff
+                    Health Assurance?</span>
+            </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <NuxtLink :to="feature.url" v-for="feature in whatsCovered2" class="flex p-5 shadow-md">
+                    <div class="mr-6">
+                        <i :class="feature.icon" class="text-brand-primary text-4xl"></i>
+                    </div>
+                    <div>
+                        <div class=" mt-1 card-heading">
+                            <p>
+                                {{ feature.name }}
+                            </p>
+                        </div>
+                        <div class="mt-1 content">
+                            <p>
+                                {{ feature.description }}
+                            </p>
+                        </div>
+                    </div>
+                </NuxtLink>
+            </div>
         </div>
 
         <div class="container mx-auto pb-10">
