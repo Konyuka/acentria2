@@ -126,7 +126,7 @@ const enablingAndEmpoweringPeople = ref({
     orientation: 'image-left',
     heading: 'Enabling and <span class="text-brand-primary">Empowering Your People</span>',
     subheading: 'World-Class <span class="text-brand-primary">Employee & Retirement Benefits</span>',
-    image: 'https://img.freepik.com/free-photo/happy-excited-businessteam-celebrating-successful-partnership-enjoying-together-startup-office-diverse-smiling-businesspeople-achievement-business-collaboration-concept-victory_482257-36889.jpg?t=st=1739167712~exp=1739171312~hmac=5a8fad3f12107ad4986d8c73d2035e103e4ee0d305c76dbcbe3e3804f3fc1f64&w=996',
+    image: 'https://img.freepik.com/free-photo/diversity-people-digital-device-communication-concept_53876-42679.jpg?t=st=1739860560~exp=1739864160~hmac=f7029bb40aaa50c133da48f0d246ad5f641d031127ab75e4b4a74813eded3f09&w=996',
     link: '/actuarial/retirement-and-employee-benefits',
     content: 'We understand that people are the most important resource of any organization. Therefore, we are committed to providing world-class employee and retirement benefits, ranging from pension fund valuations to employee benefits structuring and optimization.'
 })
