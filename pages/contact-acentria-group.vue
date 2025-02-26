@@ -37,31 +37,6 @@ const introContent = ref({
         <ContentPic :content="introContent" />
 
         <div class="container font-sans">
-            <!-- <div class="flex w-full flex-col gap-2 pr-0 sm:pr-10 lg:shrink-0 lg:pr-0 py-10">
-                <h1 id="" class="section-heading">
-                    <span class="text-brand-primary">Connect with</span> Our Experts
-                </h1>
-                <p class="content">
-                    We value your trust and are committed to safeguarding your future with
-                    precision and excellence.
-                    If you have any questions or need assistance, please don't hesitate to
-                    contact us.
-                    We are here to help and look forward to hearing from you.
-                    <br> <br>
-                    We believe in building lasting relationships with our
-                    clients, grounded in trust and mutual respect.
-                    Our team of dedicated professionals is always ready to provide you with the
-                    support and guidance you need.
-                    Whether you are looking for information about our services, need help with a
-                    specific issue, or just want to learn more about how we can assist you, we
-                    are here for you.
-                    <br><br>
-                    We understand the importance of timely and accurate communication, and we
-                    are committed to responding to your inquiries promptly.
-                    Thank you for choosing Acentria Group. We look forward to serving you and
-                    helping you achieve your goals.
-                </p>
-            </div> -->
             <div class="container font-sans py-5">
                 <p class="section-heading pb-3">
                     Contact <span class="text-brand-primary">us on</span>
