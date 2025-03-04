@@ -80,7 +80,6 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
   ],
   image: {
-    // domains: ['cdn.sanity.io', 'www.acentriagroup.com', 'acentriagroup.com', '0.0.0.0'],
     quality: 80,
     formats: ['webp', 'avif'],
     screens: {
