@@ -65,7 +65,6 @@ const menus = ref([
 ]);
 
 onMounted(() => {
-
     setTimeout(() => {
         showBanner.value = false;
     }, 500);
@@ -267,6 +266,7 @@ onMounted(() => {
                     </div>
 
                 </div>
+
             </div>
         </div>
 
