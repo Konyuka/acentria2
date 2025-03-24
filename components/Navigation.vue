@@ -82,7 +82,7 @@ onMounted(() => {
                 <div class="flex flex-col font-sans mb-0 mt-1">
 
                     <NuxtLink to="/">
-                        <NuxtImg format="webp"  alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
+                        <NuxtImg format="webp" alt="Acentria" fetchPriority="high" decoding="async" data-nimg="1"
                             class="mr-8 w-full h-16" style="color: transparent; object-fit: contain;"
                             src="/img/LogoT.png" />
                     </NuxtLink>
@@ -275,8 +275,8 @@ onMounted(() => {
 
             <div class="flex w-full justify-between px-4 py-4 shadow">
                 <a href="/">
-                    <NuxtImg format="webp"  alt="Acentria Group" loading="lazy" width="200" height="50" decoding="async" data-nimg="1"
-                        style="color: transparent" src="/img/logo.png" />
+                    <NuxtImg format="webp" alt="Acentria Group" loading="lazy" width="200" height="50" decoding="async"
+                        data-nimg="1" style="color: transparent" src="/img/logo.png" />
                 </a>
                 <div @click="toggleMenu()" class="translate-y-2.5 cursor-pointer">
                     <i class="fas fa-bars text-3xl"></i>
@@ -288,8 +288,8 @@ onMounted(() => {
 
                 <div class="flex w-full justify-between px-4 py-4 shadow">
                     <a href="/">
-                        <NuxtImg format="webp"  alt="Diligent" loading="lazy" width="200" height="60" decoding="async" data-nimg="1"
-                            style="color: transparent" src="/img/logo.png" />
+                        <NuxtImg format="webp" alt="Diligent" loading="lazy" width="200" height="60" decoding="async"
+                            data-nimg="1" style="color: transparent" src="/img/logo.png" />
                     </a>
                     <div @click="closeMenu()">
                         <i class="fas fa-xmark text-3xl mt-2"></i>
@@ -470,14 +470,22 @@ onMounted(() => {
 
                     <div class="container px-5">
                         <div v-for="menu in menus" class="border-b border-brand-divider py-2">
-                            <NuxtLink :to="menu.link"
+                            <NuxtLink :to="menu.link" v-if="menu.link !== '/'"
                                 :class="[currentRoute === menu.link ? '!text-brand-primary scale-105' : 'text-light-title']"
                                 class="flex flex-row justify-between py-3">
                                 <div class="text-sm font-medium">
-                                    <i :class="menu.icon" class="pr-3 text-brand-primary"></i> {{ menu.name  }}
+                                    <i :class="menu.icon" class="pr-3 text-brand-primary"></i> {{ menu.name }}
                                 </div>
                                 <i class="fas fa-chevron-right text-gray-200 text-xs"></i>
                             </NuxtLink>
+                            <a href="https://tech.acentriagroup.com/" target="_blank" v-else
+                                :class="[currentRoute === menu.link ? '!text-brand-primary scale-105' : 'text-light-title']"
+                                class="flex flex-row justify-between py-3">
+                                <div class="text-sm font-medium">
+                                    <i :class="menu.icon" class="pr-3 text-brand-primary"></i> {{ menu.name }}
+                                </div>
+                                <i class="fas fa-chevron-right text-gray-200 text-xs"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
