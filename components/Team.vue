@@ -88,7 +88,7 @@ const teams = ref([
         email: "amwangi@acentriagroup.com",
         profile: "",
         image:
-            "/img/Andrew.JPG",
+            "/img/andrew.jpg",
     },
     {
         name: "Kelvin Ombal",
@@ -97,7 +97,7 @@ const teams = ref([
         email: "kombal@acentriagroup.com",
         profile: "Kelvin Ombal is a leading cybersecurity and IT solutions specialist with over six years of experience designing, implementing, and managing secure, high-performance networks across various industries. As a trusted expert in IT security architecture, he has a proven track record of helping organizations safeguard their digital assets, mitigate threats, and enhance their overall cybersecurity posture. Kelvin’s work spans across cloud security, endpoint protection, data loss prevention (DLP), and advanced security monitoring systems. He is known for his hands-on expertise in deploying and managing a broad spectrum of security tools, such as SIEM, IDS/IPS, PAM, and encryption technologies, ensuring companies remain protected from ever-evolving cyber threats. In addition to his technical skills, Kelvin is highly skilled in cybersecurity strategy, threat detection, and vulnerability assessment, making him a go-to resource for businesses seeking to strengthen their security operations.",
         image:
-            "/img/Ombal.JPG",
+            "/img/ombal.jpg",
     },
 ],)
 
