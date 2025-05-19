@@ -37,17 +37,26 @@ const teams = ref([
             "img/maureen.jpg",
     },
     {
-        name: "Symon Gatimu",
+        name: "Virginia Njehia",
         title: "Head of Reinsurance Business",
-        linkedin: "https://www.linkedin.com/in/symon-gatimu-28b8a7143/",
+        linkedin: "https://www.linkedin.com/in/virginia-njehia-2b64a915b/",
         email: "sgatimu@acentriagroup.com",
-        profile: "Symon Gatimu is a dedicated professional with extensive experience and a deep understanding of the insurance and reinsurance industry. He is committed to driving innovation and empowering both internal teams and external partners at Acentria Group. With a strong track record of leadership, Symon has been pivotal in executing strategic plans that enhance market share, profitability, and client retention. He excels in developing tailored insurance solutions, particularly in specialized lines with limited underwriting capacities, and nurturing relationships with clients and partners across African and international markets. His focus on profitable underwriting and identifying new business opportunities continues to contribute to Acentria's success in the reinsurance sector. Currently pursuing an MBA in Strategic Management at Daystar University, Symon holds a Bachelor's degree in Mathematics and Computer Science from Meru University of Science and Technology, where he graduated with a 2nd Class Upper Division. He is also working toward a Diploma in CII. His professional training includes distinctions such as the Proficiency in Short-Term Reinsurance Practice course, where he was recognized as the best candidate by the College of Insurance in collaboration with ZEP RE Academy. Additionally, he has completed certifications in Upstream Oil & Gas Insurance, Engineering Insurance, Risk Assessment, Advanced Fire & Business Interruption Underwriting, and other key areas of reinsurance. Symon's commitment to continuous professional development, combined with his strategic mindset and innovative approach, positions him as a key leader in the reinsurance field at Acentria Group.",
+        profile:'Virginia Njehia is a highly accomplished reinsurance professional with over eight years of progressive experience in delivering strategic, value-driven solutions across the reinsurance landscape. She is recognized for her results-oriented mindset, collaborative leadership style, and ability to structure innovative reinsurance programs that strengthen risk management frameworks and drive business growth. Since joining Acentria Group, Virginia has demonstrated exceptional leadership and impact rising through the ranks to take on key supervisory roles and significantly contributing to revenue performance. Her expertise spans local, regional, and international markets, bringing a nuanced understanding of the evolving reinsurance landscape. Virginia is known for her technical proficiency, negotiation acumen, and unwavering commitment to client success. Through her extensive industry knowledge and strong professional networks, she continues to champion sustainable growth, forge strategic partnerships, and deliver smart, tailored solutions across the reinsurance value chain.',
         image:
-            "/img/symon-1.jpg",
+            "/img/virginia.jpeg",
     },
+    // {
+    //     name: "Symon Gatimu",
+    //     title: "Head of Reinsurance Business",
+    //     linkedin: "https://www.linkedin.com/in/symon-gatimu-28b8a7143/",
+    //     email: "sgatimu@acentriagroup.com",
+    //     profile: "Symon Gatimu is a dedicated professional with extensive experience and a deep understanding of the insurance and reinsurance industry. He is committed to driving innovation and empowering both internal teams and external partners at Acentria Group. With a strong track record of leadership, Symon has been pivotal in executing strategic plans that enhance market share, profitability, and client retention. He excels in developing tailored insurance solutions, particularly in specialized lines with limited underwriting capacities, and nurturing relationships with clients and partners across African and international markets. His focus on profitable underwriting and identifying new business opportunities continues to contribute to Acentria's success in the reinsurance sector. Currently pursuing an MBA in Strategic Management at Daystar University, Symon holds a Bachelor's degree in Mathematics and Computer Science from Meru University of Science and Technology, where he graduated with a 2nd Class Upper Division. He is also working toward a Diploma in CII. His professional training includes distinctions such as the Proficiency in Short-Term Reinsurance Practice course, where he was recognized as the best candidate by the College of Insurance in collaboration with ZEP RE Academy. Additionally, he has completed certifications in Upstream Oil & Gas Insurance, Engineering Insurance, Risk Assessment, Advanced Fire & Business Interruption Underwriting, and other key areas of reinsurance. Symon's commitment to continuous professional development, combined with his strategic mindset and innovative approach, positions him as a key leader in the reinsurance field at Acentria Group.",
+    //     image:
+    //         "/img/symon-1.jpg",
+    // },
     {
         name: "Donald Were, FIA",
-        title: "Actuarial & Financial Services",
+        title: "Head of Actuarial and Financial Services",
         linkedin: "https://www.linkedin.com/in/donaldwere/",
         email: "dwere@acentriagroup.com",
         profile: "Donald is the Head of Actuarial and Financial Services at Acentria Group. He is a qualified actuary and a Fellow of the Institute and Faculty of Actuaries in United Kingdom. He holds an MSc in Actuarial Management from Bayes Business School in London, and a Bachelor’s degree in Actuarial Science with Information Technology. He is an expert in actuarial techniques and risk management, with great interest in innovation and how tech and finance can be merged to deliver sustainable financial solutions. He has worked on numerous innovative projects, including development of a reinsurance pricing and optimization tool, to guide (re)insurance companies in impact assessment of reinsurance and retro structures. He is also an expert in the IFRS17 reporting standard and the current secretary to the TASK IFRS Working Party. Before joining Acentria, Donald was responsible for guiding Jubilee Holding Limited in transitioning to the IFRS17 reporting standard across 4 countries in East Africa, namely Kenya, Uganda, Tanzania and Burundi. He also worked for the Insurance Regulatory Authority in Kenya, where he was responsible for actuarial analytics and driving innovation.",
@@ -74,21 +83,21 @@ const teams = ref([
     },
     {
         name: "Andrew Mwangi",
-        title: "Finance & Credit Control Manager",
+        title: "Risk and Compliance Officer",
         linkedin: "",
         email: "amwangi@acentriagroup.com",
         profile: "",
         image:
-            "/assets/media/andrew.jpg",
+            "/img/andrew.jpg",
     },
     {
         name: "Kelvin Ombal",
-        title: "IT Manager",
+        title: "Head of ICT & Cybersecurity",
         linkedin: "https://www.linkedin.com/in/kelvin-ombal-2475281b2/",
         email: "kombal@acentriagroup.com",
         profile: "Kelvin Ombal is a leading cybersecurity and IT solutions specialist with over six years of experience designing, implementing, and managing secure, high-performance networks across various industries. As a trusted expert in IT security architecture, he has a proven track record of helping organizations safeguard their digital assets, mitigate threats, and enhance their overall cybersecurity posture. Kelvin’s work spans across cloud security, endpoint protection, data loss prevention (DLP), and advanced security monitoring systems. He is known for his hands-on expertise in deploying and managing a broad spectrum of security tools, such as SIEM, IDS/IPS, PAM, and encryption technologies, ensuring companies remain protected from ever-evolving cyber threats. In addition to his technical skills, Kelvin is highly skilled in cybersecurity strategy, threat detection, and vulnerability assessment, making him a go-to resource for businesses seeking to strengthen their security operations.",
         image:
-            "/assets/media/kelvin.jpg",
+            "/img/ombal.jpg",
     },
 ],)
 
