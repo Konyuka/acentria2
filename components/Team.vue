@@ -43,7 +43,7 @@ const teams = ref([
         email: "sgatimu@acentriagroup.com",
         profile:'Virginia Njehia is a highly accomplished reinsurance professional with over eight years of progressive experience in delivering strategic, value-driven solutions across the reinsurance landscape. She is recognized for her results-oriented mindset, collaborative leadership style, and ability to structure innovative reinsurance programs that strengthen risk management frameworks and drive business growth. Since joining Acentria Group, Virginia has demonstrated exceptional leadership and impact rising through the ranks to take on key supervisory roles and significantly contributing to revenue performance. Her expertise spans local, regional, and international markets, bringing a nuanced understanding of the evolving reinsurance landscape. Virginia is known for her technical proficiency, negotiation acumen, and unwavering commitment to client success. Through her extensive industry knowledge and strong professional networks, she continues to champion sustainable growth, forge strategic partnerships, and deliver smart, tailored solutions across the reinsurance value chain.',
         image:
-            "/img/virginia.jpeg",
+            "/img/Virginia.png",
     },
     // {
     //     name: "Symon Gatimu",
