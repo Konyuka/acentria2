@@ -6,12 +6,12 @@ const teams = ref([
         profile: "Enosh is experienced in Organizational development, HR Advisory, and Public Sector reforms in areas of restructuring Job Evaluation, HR audits and policies review and development, change management, productivity improvements & measurements, strategy formulation, performance management, training and research. He is a member of the ILO Dialogue Forum on formulation of Global Strategy for G20 to address global challenges such as global economic up skilling out of downturn, vocational education and training, and development of the HR toolkit for the teaching profession. He is experienced in matters of leadership, governance and industrial relations having served as the Deputy Executive Director, Federation of Kenya Employers (FKE), Head of Consulting, Kenya Institute of Management (KIM), Head of School improvement program and staff training, Ministry of Education in the Seychelles. He is also a Company of the Year Award (COYA) consultant and served as Board member to Sports Stadia, National Industrial Training Council of DIT and HELB.",
         image: "img/enosh.jpg",
     },
-    {
-        name: "Flossie Njagi",
-        title: "Chairlady",
-        profile: "Flossie, a seasoned C-suit Corporate Leader in the Human Resources field, who has influenced high performing cultures with progressive technical resources, prolific communications and robust development programs that bring double digit revenue growth with over 16 years’ experience in corporate exposure, Flossie has extensive experience leading organizational transformations. I employ current human capital practices that attract and retain high-potential talent and is backed by a record of developing executable people strategy that motivates teams individually and financially to exceed the corporate objectives through various economic cycles. Flossie has a Bachelor of Education with honours from Kenyatta University, a post-graduate National Diploma in Human Resources Management from IHRM and an MBA degree from Strathmore Business School, with an International Business class exposure at IESE Business School, University of Navara, Spain and a Certified Practicing Member of IHRM (K).",
-        image: "img/flo.jpg",
-    },
+    // {
+    //     name: "Flossie Njagi",
+    //     title: "Chairlady",
+    //     profile: "Flossie, a seasoned C-suit Corporate Leader in the Human Resources field, who has influenced high performing cultures with progressive technical resources, prolific communications and robust development programs that bring double digit revenue growth with over 16 years’ experience in corporate exposure, Flossie has extensive experience leading organizational transformations. I employ current human capital practices that attract and retain high-potential talent and is backed by a record of developing executable people strategy that motivates teams individually and financially to exceed the corporate objectives through various economic cycles. Flossie has a Bachelor of Education with honours from Kenyatta University, a post-graduate National Diploma in Human Resources Management from IHRM and an MBA degree from Strathmore Business School, with an International Business class exposure at IESE Business School, University of Navara, Spain and a Certified Practicing Member of IHRM (K).",
+    //     image: "img/flo.jpg",
+    // },
     {
         name: "Eric Orende",
         title: "Board Secretary",
