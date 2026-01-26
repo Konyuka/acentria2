@@ -36,15 +36,15 @@ const teams = ref([
         image:
             "img/maureen.jpg",
     },
-    {
-        name: "Virginia Njehia",
-        title: "Head of Reinsurance Business",
-        linkedin: "https://www.linkedin.com/in/virginia-njehia-2b64a915b/",
-        email: "sgatimu@acentriagroup.com",
-        profile:'Virginia Njehia is a highly accomplished reinsurance professional with over eight years of progressive experience in delivering strategic, value-driven solutions across the reinsurance landscape. She is recognized for her results-oriented mindset, collaborative leadership style, and ability to structure innovative reinsurance programs that strengthen risk management frameworks and drive business growth. Since joining Acentria Group, Virginia has demonstrated exceptional leadership and impact rising through the ranks to take on key supervisory roles and significantly contributing to revenue performance. Her expertise spans local, regional, and international markets, bringing a nuanced understanding of the evolving reinsurance landscape. Virginia is known for her technical proficiency, negotiation acumen, and unwavering commitment to client success. Through her extensive industry knowledge and strong professional networks, she continues to champion sustainable growth, forge strategic partnerships, and deliver smart, tailored solutions across the reinsurance value chain.',
-        image:
-            "/img/Virginia.png",
-    },
+    // {
+    //     name: "Virginia Njehia",
+    //     title: "Head of Reinsurance Business",
+    //     linkedin: "https://www.linkedin.com/in/virginia-njehia-2b64a915b/",
+    //     email: "sgatimu@acentriagroup.com",
+    //     profile:'Virginia Njehia is a highly accomplished reinsurance professional with over eight years of progressive experience in delivering strategic, value-driven solutions across the reinsurance landscape. She is recognized for her results-oriented mindset, collaborative leadership style, and ability to structure innovative reinsurance programs that strengthen risk management frameworks and drive business growth. Since joining Acentria Group, Virginia has demonstrated exceptional leadership and impact rising through the ranks to take on key supervisory roles and significantly contributing to revenue performance. Her expertise spans local, regional, and international markets, bringing a nuanced understanding of the evolving reinsurance landscape. Virginia is known for her technical proficiency, negotiation acumen, and unwavering commitment to client success. Through her extensive industry knowledge and strong professional networks, she continues to champion sustainable growth, forge strategic partnerships, and deliver smart, tailored solutions across the reinsurance value chain.',
+    //     image:
+    //         "/img/Virginia.png",
+    // },
     // {
     //     name: "Symon Gatimu",
     //     title: "Head of Reinsurance Business",
@@ -83,7 +83,7 @@ const teams = ref([
     },
     {
         name: "Andrew Mwangi",
-        title: "Risk and Compliance Officer",
+        title: "Head of Risk and Insurance",
         linkedin: "",
         email: "amwangi@acentriagroup.com",
         profile: "",
@@ -92,7 +92,7 @@ const teams = ref([
     },
     {
         name: "Kelvin Ombal",
-        title: "Head of ICT & Cybersecurity",
+        title: "Head of ICT & Cyber Security",
         linkedin: "https://www.linkedin.com/in/kelvin-ombal-2475281b2/",
         email: "kombal@acentriagroup.com",
         profile: "Kelvin Ombal is a leading cybersecurity and IT solutions specialist with over six years of experience designing, implementing, and managing secure, high-performance networks across various industries. As a trusted expert in IT security architecture, he has a proven track record of helping organizations safeguard their digital assets, mitigate threats, and enhance their overall cybersecurity posture. Kelvin’s work spans across cloud security, endpoint protection, data loss prevention (DLP), and advanced security monitoring systems. He is known for his hands-on expertise in deploying and managing a broad spectrum of security tools, such as SIEM, IDS/IPS, PAM, and encryption technologies, ensuring companies remain protected from ever-evolving cyber threats. In addition to his technical skills, Kelvin is highly skilled in cybersecurity strategy, threat detection, and vulnerability assessment, making him a go-to resource for businesses seeking to strengthen their security operations.",
