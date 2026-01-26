@@ -18,6 +18,22 @@ const teams = ref([
         image:
             "/img/evelyne-1.jpg",
     },
+     {
+        name: "Bargottio Kwonyike",
+        title: "General Manager Commercial",
+        linkedin: "https://www.linkedin.com/in/evelyne-wanjohi-59715691/",
+        email: "kbargottio@acentriagroup.com",
+        profile:"Bargottio Kwonyike is the General Manager Commercial at Acentria Group and has over 13 years of experience in the financial services industry. In his current role, he is responsible for leading and managing the commercial aspects of the business through the implementation of branding, marketing, and sales strategies across the group. This role provides strategic leadership in driving sustainable profitability, growth, and market presence across all business channels including Insurance Broking, Reinsurance Broking, Actuarial and Financial Services, Technology, and Investment, spanning the Uganda, Rwanda, and Zambia markets. He is a Fellow of the Life Office Management Association (FLMI-LOMA), a member of the Chartered Insurance Institute (CII), the Insurance Institute of Kenya (IIK), and the Chartered Institute of Procurement and Supply (CIPS). He also holds an MBA in Strategic Management from Daystar University. Before joining Acentria Group, Bargottio was a founding General Manager of Equity Life Assurance Kenya Limited and subsequently served as Head of Group Risk and Digital Distribution at Sanlam Life Insurance Limited.",
+        image: "img/bari.jpeg",
+    },
+    {
+        name: "Esther Kiguta",
+        title: "General Manager, Risk and Insurance",
+        linkedin: "https://www.linkedin.com/in/evelyne-wanjohi-59715691/",
+        email: "ekiguta@acentriagroup.com",
+        profile:"Esther is a senior insurance leader with over 15 years of experience driving strategic planning, regulatory compliance, talent development, and operational efficiency across complex insurance environments. She holds a Bachelor of Commerce in Actuarial Science, complemented by ACII and Reinsurance certifications, and is an Associate Member of the Insurance Institute of Kenya (IIK). She currently serves on the Education Committee of Kenya Women in Insurance (KWIIN) and is a frequent speaker at insurance and risk forums, contributing to industry thought leadership and capacity building. Esther has successfully managed Retail and Corporate insurance portfolios, including SMEs and high-value accounts across sectors such as manufacturing, energy, hospitality, financial services, NGOs, and the public sector. Her expertise includes advanced risk management, structuring specialized insurance solutions and packages ,claims advocacy, strategic partnerships, and ISO standards compliance, supporting Acentria Group’s advisory-led, client-centric approach.",
+        image: "img/esther.jpg",
+    },
     {
         name: "CPA Winnie Chitai",
         title: "Head of Finance",
