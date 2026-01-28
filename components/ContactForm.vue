@@ -19,8 +19,8 @@ const company = computed(() => {
 const wordings = computed(() => {
     if (currentRoute.value == '/insurance/health-insurance') {
         const words = {
-            title:'Get Your Health <br><span class="text-brand-primary">Insurance  Quote Today</span>',
-            content:'<b>Secure your peace of mind</b> with our <b>affordable</b> and <b>reliable health insurance plans</b>. Let us walk with you toward a <b>healthier</b>, <b>happier future</b>.',
+            title: 'Get Your Health <br><span class="text-brand-primary">Insurance  Quote Today</span>',
+            content: '<b>Secure your peace of mind</b> with our <b>affordable</b> and <b>reliable health insurance plans</b>. Let us walk with you toward a <b>healthier</b>, <b>happier future</b>.',
         }
         return words
     } else if (currentRoute.value == '/insurance/motor-insurance') {
@@ -51,13 +51,13 @@ const wordings = computed(() => {
         }
         return words
     }
-    else{
+    else {
         const words = {
             title: 'Engage <span class="text-brand-primary">an Expert</span>',
             content: 'Interested in learning more about how we can support your business? Fill in your details, and one of our experts will reach out to you with personalized information on our comprehensive services. Let’s start a conversation.',
         }
         return words
-    } 
+    }
 })
 
 
@@ -75,7 +75,7 @@ const wordings = computed(() => {
             <div class="h-fit rounded-md bg-black px-2 py-5 md:py-14 shadow-card">
                 <div>
                     <NuxtImg format="webp" alt="Image of null" loading="lazy" decoding="async" data-nimg="1"
-                        style="color: transparent; object-fit: cover" src="/img/Talk to Us.JPG"
+                        style="color: transparent; object-fit: cover" src="/img/Talk to Us.avif"
                         class="rounded-xl w-full h-[45vh]" />
                 </div>
                 <h5 class="content text-white py-2" v-html="wordings.content">

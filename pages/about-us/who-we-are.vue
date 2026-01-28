@@ -123,9 +123,9 @@ const whoWeAre = ref({
     orientation: 'image-left',
     heading: 'Who <span class="text-brand-primary">We Are</span>',
     subheading: '',
-    image: '/img/Professionals and Business Service.JPG',
+    image: '/img/Professionals and Business Service.png',
     link: '/',
-    content:'Acentria Group is a trusted global consultant dedicated to empowering growth in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. With over a decade of expertise, we craft innovative solutions that stay ahead of the curve, ensuring that our clients unlock opportunities and navigate challenges with confidence.'
+    content: 'Acentria Group is a trusted global consultant dedicated to empowering growth in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. With over a decade of expertise, we craft innovative solutions that stay ahead of the curve, ensuring that our clients unlock opportunities and navigate challenges with confidence.'
 })
 
 const thingsThatInspireUs = ref({
@@ -143,14 +143,14 @@ const whatWeDo = ref({
     subheading: '',
     image: '/img/dreads.jpg',
     link: '/',
-    content:'At Acentria Group, we provide transformative solutions in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. Success for us goes beyond exceptional service; it’s about creating sustainable solutions that benefit society, protect the environment, and create value for all our stakeholders.'
+    content: 'At Acentria Group, we provide transformative solutions in Risk and Insurance, Reinsurance, Actuarial, Technology, and Investment Advisory. Success for us goes beyond exceptional service; it’s about creating sustainable solutions that benefit society, protect the environment, and create value for all our stakeholders.'
 });
 
 const ourJourney = ref({
     orientation: 'image-left',
     heading: 'Our <span class="text-brand-primary">Journey</span>',
     subheading: '',
-    image: '/img/bill.jpg',
+    image: 'https://images.unsplash.com/photo-1628144527410-a4ba57eff3ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '/',
     content: 'At Acentria Group, our journey is defined by resilience, vision, and dedication. We adapt to change while staying true to our mission of empowering businesses and communities. Together, we rise, shaping a future of shared prosperity and collective success.'
 });
@@ -168,7 +168,7 @@ const ourCulture = ref({
     orientation: 'image-left',
     heading: 'Our <span class="text-brand-primary">Culture</span>',
     subheading: '',
-    image: '/img/Things that Inspire Us.JPG',
+    image: 'https://images.unsplash.com/photo-1519802772250-a52a9af0eacb?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '/corporate-culture',
     content: 'The Acentria Way is not just about the work we do—it’s about how we do it. Our culture is the foundation of our success. We foster an innovative, supportive environment where everyone can thrive, delivering excellence and empowering our people and communities.'
 });
@@ -177,7 +177,7 @@ const ourBrand = ref({
     orientation: 'image-right',
     heading: 'Our <span class="text-brand-primary">Brand</span>',
     subheading: '',
-    image: '/img/join.jpg',
+    image: 'https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '/our-brand',
     content: 'Our brand promise is simple: "Done Smart." Every solution we deliver is designed with intelligence and innovation to empower clients in a rapidly evolving world.'
 });
@@ -269,7 +269,8 @@ onMounted(() => {
                 </h2>
 
                 <div class="relative isolate overflow-hidden bg-black py-5 font-sans">
-                    <NuxtImg format="webp"  src="/img/tornado.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+                    <NuxtImg format="webp" src="/img/tornado.png" alt=""
+                        class="absolute inset-0 -z-10 h-full w-full object-cover" />
                     <div class="absolute inset-0 bg-black opacity-40"></div>
                     <div class="container relative mx-auto max-w-6xl px-6 lg:px-8">
                         <div>

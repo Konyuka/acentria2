@@ -76,13 +76,13 @@ const others = ref([
   {
     name: 'Our <span class="text-brand-primary">Culture</span>',
     description: 'The Acentria Way!',
-    image: '/img/Things that Inspire Us.JPG',
+    image: 'https://images.unsplash.com/photo-1519802772250-a52a9af0eacb?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '/corporate-culture',
   },
   {
     name: 'Our <span class="text-brand-primary">Brand</span>',
     description: 'A Lifestyle Built Around Excellence',
-    image: '/img/join.jpg',
+    image: 'https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '/our-brand',
   },
   {

@@ -24,7 +24,7 @@ const teams = ref([
         linkedin: "https://www.linkedin.com/in/evelyne-wanjohi-59715691/",
         email: "kbargottio@acentriagroup.com",
         profile:"Bargottio Kwonyike is the General Manager Commercial at Acentria Group and has over 13 years of experience in the financial services industry. In his current role, he is responsible for leading and managing the commercial aspects of the business through the implementation of branding, marketing, and sales strategies across the group. This role provides strategic leadership in driving sustainable profitability, growth, and market presence across all business channels including Insurance Broking, Reinsurance Broking, Actuarial and Financial Services, Technology, and Investment, spanning the Uganda, Rwanda, and Zambia markets. He is a Fellow of the Life Office Management Association (FLMI-LOMA), a member of the Chartered Insurance Institute (CII), the Insurance Institute of Kenya (IIK), and the Chartered Institute of Procurement and Supply (CIPS). He also holds an MBA in Strategic Management from Daystar University. Before joining Acentria Group, Bargottio was a founding General Manager of Equity Life Assurance Kenya Limited and subsequently served as Head of Group Risk and Digital Distribution at Sanlam Life Insurance Limited.",
-        image: "img/bari.jpeg",
+        image: "img/Bari.jpg",
     },
     {
         name: "Esther Kiguta",
@@ -93,18 +93,9 @@ const teams = ref([
         title: "Marketing & Branding Manager",
         linkedin: "https://www.linkedin.com/in/fiona-kinyanjui-acim/",
         email: "fkinyanjui@acentriagroup.com",
-        profile: "Fiona is an accomplished marketing and brand strategist with a robust professional background spanning nearly half a decade within the banking industry. Her diverse experience has honed her skills in developing and executing effective marketing strategies, strategic communications, brand management, and digital marketing solutions. Having earned a Bachelor’s Degree in Marketing from Daystar University, Fiona’s commitment to professional growth is evident through her certifications from the Chartered Institute of Marketing (CIM-UK). Her certifications in Managing Brands, Planning Campaigns, and Innovation in Marketing exemplify her dedication to staying at the forefront of the industry. Additionally, as an Associate Member of the Chartered Institute of Marketing (CIM-UK), she remains actively engaged in the latest advancements and best practices within the marketing domain.",
+        profile:"Fiona Kinyanjui is an award-winning marketing and brand strategist with close to a decade of experience driving brand growth, market positioning, and strategic communications within the financial services and professional services sectors. Recognized as a Top Rising Star in Marketing, she brings a rare blend of strategic insight, creative leadership, and executional excellence to complex, multi- stakeholder environments. Fiona has a proven track record in developing and executing integrated marketing strategies, leading brand transformations, strengthening corporate reputations, and delivering impactful digital and customer-centric initiatives. Her work spans brand strategy development, strategic communications, digital marketing, stakeholder engagement, and internal brand alignment, ensuring that brand intent translates into measurable business impact. She holds a Bachelor’s Degree in Marketing from Daystar University and is an Associate Member of the Chartered Institute of Marketing (CIM-UK), with professional certifications in Managing Brands, Planning Campaigns, and Innovation in Marketing. Demonstrating a strong commitment to continuous growth and strategic leadership, Fiona is currently pursuing a Master of Business Administration (MBA) in Marketing and Strategic Management at Daystar University. Driven by curiosity, purpose, and a results-oriented mindset, Fiona remains at the forefront of marketing best practices, bringing clarity, consistency, and strategic direction to brands navigating growth, transformation, and evolving market demands.",
         image:
             "/img/fiona-1.jpg",
-    },
-    {
-        name: "Andrew Mwangi",
-        title: "Head of Risk and Insurance",
-        linkedin: "",
-        email: "amwangi@acentriagroup.com",
-        profile: "",
-        image:
-            "/img/andrew.jpg",
     },
     {
         name: "Kelvin Ombal",
@@ -113,8 +104,17 @@ const teams = ref([
         email: "kombal@acentriagroup.com",
         profile: "Kelvin Ombal is a leading cybersecurity and IT solutions specialist with over six years of experience designing, implementing, and managing secure, high-performance networks across various industries. As a trusted expert in IT security architecture, he has a proven track record of helping organizations safeguard their digital assets, mitigate threats, and enhance their overall cybersecurity posture. Kelvin’s work spans across cloud security, endpoint protection, data loss prevention (DLP), and advanced security monitoring systems. He is known for his hands-on expertise in deploying and managing a broad spectrum of security tools, such as SIEM, IDS/IPS, PAM, and encryption technologies, ensuring companies remain protected from ever-evolving cyber threats. In addition to his technical skills, Kelvin is highly skilled in cybersecurity strategy, threat detection, and vulnerability assessment, making him a go-to resource for businesses seeking to strengthen their security operations.",
         image:
-            "/img/ombal.jpg",
+            "/img/Ombal.JPG",
     },
+    {
+        name: "Andrew Mwangi",
+        title: "Head of Risk and Insurance",
+        linkedin: "",
+        email: "amwangi@acentriagroup.com",
+        profile: "",
+        image:
+            "/img/Andrew.JPG",
+    }, 
 ],)
 
 const emits = defineEmits([

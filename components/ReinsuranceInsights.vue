@@ -12,14 +12,14 @@ const news = ref([
         img: 'https://images.pexels.com/photos/29452731/pexels-photo-29452731/free-photo-of-display-of-various-travel-and-tourism-brochures.jpeg?auto=compress&cs=tinysrgb&w=600',
     },
     {
-        tag:'guide',
-        title:'Learn',
-        img:'https://images.pexels.com/photos/5905443/pexels-photo-5905443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        tag: 'guide',
+        title: 'Learn',
+        img: 'https://images.pexels.com/photos/5905443/pexels-photo-5905443.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
     {
         tag: 'blog',
         title: 'Workshops & Webinars',
-        img: '/img/Professionals and Business Service.JPG',
+        img: '/img/Professionals and Business Service.png',
     },
 ])
 
@@ -50,9 +50,11 @@ const news = ref([
                                             <div
                                                 class="absolute left-0 top-0 h-full w-full origin-center will-change-transform">
                                                 <picture class="flex h-[300px] w-full max-w-none">
-                                                    <NuxtImg format="webp"  alt="AI is here. AI regulations are on the way. Is your board ready?"
+                                                    <NuxtImg format="webp"
+                                                        alt="AI is here. AI regulations are on the way. Is your board ready?"
                                                         loading="lazy" decoding="async" data-nimg="fill"
-                                                        class="object-center object-cover image-style"  :src="news.img" />
+                                                        class="object-center object-cover image-style"
+                                                        :src="news.img" />
                                                 </picture>
                                             </div>
                                         </div>
@@ -83,7 +85,8 @@ const news = ref([
                                 fill="none" stroke="currentColor" viewBox="0 0 10 10" aria-hidden="true">
                                 <g fill-rule="evenodd">
                                     <path class="transition-opacity opacity-0" d="M0 5h7"></path>
-                                    <path class="transition-all duration-75 translate-x-0 transform-none" d="M1 1l4 4-4 4">
+                                    <path class="transition-all duration-75 translate-x-0 transform-none"
+                                        d="M1 1l4 4-4 4">
                                     </path>
                                 </g>
                             </svg>
@@ -96,15 +99,14 @@ const news = ref([
 </template>
 
 <style scoped>
-
-.image-style{
+.image-style {
     position: absolute;
-                                height: 100%;
-                                width: 100%;
-                                left: 0;
-                                top: 0;
-                                right: 0;
-                                bottom: 0;
-                                color: transparent;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    color: transparent;
 }
 </style>

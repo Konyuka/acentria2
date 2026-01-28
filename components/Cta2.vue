@@ -1,7 +1,7 @@
 <template>
     <div class="relative bg-brand-dim grid grid-cols-2 font-sans h-[85vh]">
         <div class="relative h-60 overflow-hidden bg-brand-primary md:absolute md:left-0 md:h-3/4 w-full">
-            <NuxtImg format="webp"  class="h-full w-full object-cover" src="/img/join.jpg" alt="" />
+            <NuxtImg format="webp"  class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
             <svg viewBox="0 0 926 676" aria-hidden="true"
                 class="absolute -bottom-24 left-24 w-[57.875rem] transform-gpu blur-[118px]">
                 <path fill="url(#60c3c621-93e0-4a09-a0e6-4c228a0116d8)" fill-opacity=".4"

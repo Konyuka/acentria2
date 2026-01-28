@@ -112,7 +112,7 @@ const ourPeople = ref({
     orientation: 'image-left',
     heading: '<span class="text-brand-primary">Our</span> <br>People',
     subheading: '',
-    image: '/img/Professionals and Business Service.JPG',
+    image: '/img/Professionals and Business Service.png',
     link: '/',
     content: 'At Acentria Group, we are SMART people—driven by the belief that everything we do should be SMART in thinking, design, and the value it brings to both our company and the market. We are committed to ensuring smart solutions are at the core of our actions, staying energized, passionate, and focused on executing this vision. <br><br> This mindset is a fundamental part of Acentria Group’s DNA, fueling our continuous growth and the success of our clients, partners, and employees.'
 })
@@ -175,7 +175,7 @@ const whyWork = ref({
                         </div>
                         <div class="mt-1 sm:ml-6 lg:ml-0">
                             <h3 class="text-brand-primary flex justify-center font-semibold">{{ member.name
-                                }}</h3>
+                            }}</h3>
                             <i
                                 class="fas fa-arrow-right mt-5 font-bold text-md group-hover:text-brand-primary text-gray-300 duration-700"></i>
                         </div>
