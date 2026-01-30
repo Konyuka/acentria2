@@ -108,7 +108,7 @@ const teams = ref([
     },
     {
         name: "Andrew Mwangi",
-        title: "Head of Risk and Insurance",
+        title: "Group Risk and Compliance Officer",
         linkedin: "",
         email: "amwangi@acentriagroup.com",
         profile: "",
