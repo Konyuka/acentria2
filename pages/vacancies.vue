@@ -2,7 +2,7 @@
 const ReinsuranceBannerContent = ref({
     title: 'Acentria Group Careers',
     subTitle: 'Open Postions',
-    image: '/img/Professionals and Business Service.png',
+    image: '/img/Professionals and Business Service.jpg',
 })
 
 </script>

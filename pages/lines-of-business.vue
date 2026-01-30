@@ -67,11 +67,11 @@ const features = [
                 </div>
                 <div class="w-full lg:w-6/12">
                     <NuxtImg format="webp" class="lg:block hidden w-full"
-                        src="/img/Professionals and Business Service.png" alt="people discussing on board" />
+                        src="/img/Professionals and Business Service.jpg" alt="people discussing on board" />
                     <NuxtImg format="webp" class="lg:hidden sm:block hidden w-full"
-                        src="/img/Professionals and Business Service.png" alt="people discussing on board" />
+                        src="/img/Professionals and Business Service.jpg" alt="people discussing on board" />
                     <NuxtImg format="webp" class="sm:hidden block w-full"
-                        src="/img/Professionals and Business Service.png" alt="people discussing on board" />
+                        src="/img/Professionals and Business Service.jpg" alt="people discussing on board" />
                 </div>
             </div>
 

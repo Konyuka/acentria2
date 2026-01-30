@@ -4,7 +4,7 @@ const news = ref([
     {
         tag: 'blog',
         title: 'Workshops & Webinars',
-        img: '/img/Professionals and Business Service.png',
+        img: '/img/Professionals and Business Service.jpg',
     },
     {
         tag: 'guide',
